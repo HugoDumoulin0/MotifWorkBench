@@ -1,0 +1,19 @@
+# Ignore .tsv, .conllu, and .pk files
+*.tsv
+*.conllu
+*.pk
+
+# Ignore common system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python-specific files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.venv/
+
+# Ignore version control directories
+.git/
