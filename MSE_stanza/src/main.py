@@ -49,40 +49,55 @@ if __name__ == "__main__":
 
     #----- RUN STANZA ON MERGED FILES -----
 
-    for type_texte in types_textes:                         #loop for each corpus
-        print("\t Type_texte:", type_texte, "(tagging is ongoing, please wait)")#print corpus name
+    from replace_underscore import replace_underscore_in_conllu #Import function to replace underscores
+    from replace_underscore import delete_empty_line
 
-        rep = "./Data/Textes_merged/{}".format(type_texte)  #create path to dir based on arg
-                                                                #change path to Textes_raw for non-merged files
+    #Check if tagged files exists to speed up process
+    for type_texte in types_textes:
+        print("\t Stanza: checking if tagged files already exists")
+        output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
+        # print(output_folder)
 
-        output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)  # Output folder
-        os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
+        if os.path.exists(output_folder):  # Check if the file exists
+            print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
+        else:
+            print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
+            rep = "./Data/Textes_merged/{}".format(type_texte)
+            os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
 
-        for file in os.listdir(rep):                        #loop for each file in dir
-            if file[0] == ".": continue                     #ignore hidden UNIX files
-            file_path = os.path.join(rep, file)             #get the full path of each file
+            for file in os.listdir(rep):                        #loop for each file in dir
+                if file[0] == ".": continue                     #ignore hidden UNIX files
+                file_path = os.path.join(rep, file)             #get the full path of each file
 
-            with open(file_path, "r", encoding="utf-8") as f:                           
-                text = f.read()
-                output = nlp(text)                                                      #Define output as the object created by stanza
+                with open(file_path, "r", encoding="utf-8") as f:
+                    text = f.read()
+                    output = nlp(text)                          #Define output as the object created by stanza
+                    output_file = os.path.join(output_folder, "{}.conllu".format(type_texte, file.split('.')[0])) #Define export path from variables
+                    CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
+                    
+            for filename in os.listdir(output_folder):
+                file_path = os.path.join(output_folder, filename)
+                replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by word form
 
-                output_file = os.path.join(output_folder, "{}.conllu".format(type_texte, file.split('.')[0]))
-                                                                                        #Define export path from variables
-                CoNLL.write_doc2conll(output, output_file)                              #Make stanza export each text in conllu format
-
-
-    print("All texts saved in CoNLL-U format.")
-
-    print("1.2. Tagging data with camamBERT : word pieces")
+                print("\t", type_texte, "has been tagged and saved:", output_file)
 
     for type_texte in types_textes:
-        print("\t Type_texte:", type_texte)
-        rep = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-        for file in os.listdir(rep):
-            if file[0] == ".": continue
-            tag_WP.parse_conll(os.path.join(rep,file), type_texte)
+        print("\t CamamBERT/WP: Checking if tagged files already exists")
+        output_file = "./Data/Textes_tagged_WP/{0}_{0}.conllu".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
+        # print(output_file)
 
-    print("Tagging with camamBERT has been performed.")
+        if os.path.exists(output_file):  # Check if the file exists
+            print(f"\t CamamBERT/WP: file {output_folder} already exists. Delete it to perform WP tokenization again.")
+        else:
+            print(f"\t CamamBERT/WP: file {output_folder} does not exist. Proceeds with WP tokenization.")
+            rep = "./Data/Textes_tagged_stanza/{}".format(type_texte)
+            output_file = os.path.join(output_folder, "{}.conllu".format(type_texte)) #Define export path from variables; only used for printing.
+            for file in os.listdir(rep):
+                if file[0] == ".": continue
+                tag_WP.parse_conll(os.path.join(rep,file), type_texte)
+                print("\t", type_texte, "has been WP-tokenized and saved:", output_file)
+
+    print("\t Tagging: done!")
 
     #-------------------------------------------------------------------------------------------------------------------
     # DMT4 files
@@ -92,15 +107,24 @@ if __name__ == "__main__":
 
     # # types_textes = ["1984ca", "2008ca"]
 
+    #Avoid generating sorted_sorted file names and file not found error.
+    for type_texte in types_textes:
+        print("\t Checking if DMT4 files already exists")
+        target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+        print(target)
+        if os.path.exists(target):  # Check if the file exists
+            os.remove(target)       # delete existing files
+            print(f"\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+
     conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
     for type_texte in types_textes:
             conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte)
     conll_dmt4.sort_dmtfiles()
-    
-    
-    ##ajout au script de Jade - réunion Timothée Hugo 30-01-25 ##
+
     for type_texte in types_textes:
         conll_dmt4.make_DMT4_file(type_texte)
+        #This creates the missing dict_sorted.pk files. For some reason,
+        #the function wasn't called in the original script.
         
 
 

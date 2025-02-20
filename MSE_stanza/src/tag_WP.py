@@ -19,7 +19,7 @@ def parse_conll(path_file, type_texte):
                         tokens = line.strip().split("\t")
                         WP = tokenizer.tokenize(tokens[1])
                         for wp in WP:
-                            if wp != "▁":
+                            if wp != "▁": #Tim commented because caused index out of range with no '_' in .conllu file (?)
                                 tokens.append("wp_{}".format(wp))
                         output.write("\t".join(tokens)+"\n")
     return True
@@ -32,6 +32,8 @@ if __name__ == "__main__":
         if file[0] == ".": continue
         parse_conll(os.path.join(rep,file), type_texte)
 
-
-
+# This is not the right way to feed Camambert! It needs a list of word, not a word by word file.
+# This writes WP at the end of the line in the conll. But it should have a string in input, not the conll itself.
+# So: use string after # in conll-u files, match with sentence number, and split par words, and write at the end of the right lines.
+# Or... We don't care.
 
