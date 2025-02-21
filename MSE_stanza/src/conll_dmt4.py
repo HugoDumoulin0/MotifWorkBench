@@ -128,6 +128,8 @@ def transform_data(rep, type_texte):
                         file_dmt4.write("seqId {}\n".format(index_seq))
                         index_seq += 1
                         index_itemset = 1
+                        # 21-02-2025: this means that seq = sentences from the parser.
+                        # D = set of corpus sentences
 
                     list_token = list()
                     # form = "form_{}".format(tokens[0])

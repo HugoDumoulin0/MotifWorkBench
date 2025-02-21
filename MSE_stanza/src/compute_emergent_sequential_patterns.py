@@ -64,6 +64,7 @@ def compute_GR(type_1, type_2):
 
         nbr_seq_1 = get_nbr_seq("./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_1))
         nbr_seq_2 = get_nbr_seq("./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_2))
+        # 21-02-2025 : nbr_seq_ = number of sentences of the corpus (from conl_dmt4.transform_data, l. 131)
 
 
         # lexic_int_str = formate_patterns.load_lexique() ### Modification du script de Jade qui présente un problème ici ####
