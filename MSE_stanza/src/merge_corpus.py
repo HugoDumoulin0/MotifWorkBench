@@ -34,4 +34,4 @@ def merge_texts(input_base_folder, output_base_folder, types_textes):
                     with open(file_path, "r", encoding="utf-8") as infile:
                         outfile.write(infile.read() + "\n")  # Merge content with newline
 
-            print(f"Merged {len(files)} files into {output_file}")
+            print(f"\t Merged {len(files)} files into {output_file}")

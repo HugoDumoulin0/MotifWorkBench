@@ -88,9 +88,9 @@ if __name__ == "__main__":
         # print(output_file)
 
         if os.path.exists(output_file):  # Check if the file exists
-            print(f"\t CamamBERT/WP: file {output_folder} already exists. Delete it to perform WP tokenization again.")
+            print(f"\t CamamBERT/WP: file {output_file} already exists. Delete it to perform WP tokenization again.")
         else:
-            print(f"\t CamamBERT/WP: file {output_folder} does not exist. Proceeds with WP tokenization.")
+            print(f"\t CamamBERT/WP: file {output_file} does not exist. Proceeds with WP tokenization.")
             rep = "./Data/Textes_tagged_stanza/{}".format(type_texte)
             output_file = os.path.join(output_folder, "{}.conllu".format(type_texte)) #Define export path from variables; only used for printing.
             for file in os.listdir(rep):
@@ -100,101 +100,101 @@ if __name__ == "__main__":
 
     print("\t Tagging: done!")
 
-    #-------------------------------------------------------------------------------------------------------------------
-    # DMT4 files
-    #-------------------------------------------------------------------------------------------------------------------
-    print("-"*75)
-    print("2. Creating DMT4 files")
+    # #-------------------------------------------------------------------------------------------------------------------
+    # # DMT4 files
+    # #-------------------------------------------------------------------------------------------------------------------
+    # print("-"*75)
+    # print("2. Creating DMT4 files")
 
-    # # types_textes = ["1984ca", "2008ca"]
+    # # # types_textes = ["1984ca", "2008ca"]
 
-    #Avoid generating sorted_sorted file names and file not found error.
-    for type_texte in types_textes:
-        print("\t Checking if DMT4 files already exists")
-        target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
-        print(target)
-        if os.path.exists(target):  # Check if the file exists
-            os.remove(target)       # delete existing files
-            print(f"\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+    # #Avoid generating sorted_sorted file names and file not found error.
+    # for type_texte in types_textes:
+    #     print("\t Checking if DMT4 files already exists")
+    #     target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+    #     print(target)
+    #     if os.path.exists(target):  # Check if the file exists
+    #         os.remove(target)       # delete existing files
+    #         print(f"\t DMT4: Previous DMT4 files with same corpus have been deleted.")
 
-    conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
-    for type_texte in types_textes:
-            conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte)
-    conll_dmt4.sort_dmtfiles()
+    # conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
+    # for type_texte in types_textes:
+    #         conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte)
+    # conll_dmt4.sort_dmtfiles()
 
-    for type_texte in types_textes:
-        conll_dmt4.make_DMT4_file(type_texte)
-        # This creates the missing dict_sorted.pk files. For some reason,
-        # the function wasn't called in the original script.
+    # for type_texte in types_textes:
+    #     conll_dmt4.make_DMT4_file(type_texte)
+    #     # This creates the missing dict_sorted.pk files. For some reason,
+    #     # the function wasn't called in the original script.
         
+    # # #-------------------------------------------------------------------------------------------------------------------
+    # # # Mining Pattern
+    # # #-------------------------------------------------------------------------------------------------------------------
+    # print("-"*75)
+    # print("3. Extracting freq & closed patterns")
+
+    # # # types_textes = ["1984ca", "2008ca"]
+
+    # for type_texte in types_textes:
+    #     print("\t Type_texte:", type_texte)
+
+    #     dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+    #     minsup_percent = 25
+    #     minsup = get_minsup(float(minsup_percent), dmt4_files)
+    #     print(f"\t Minsup {minsup_percent}% ")
+    #     gap_min = 0
+    #     gap_max = 0
+    #     threads = 30
+
+    #     print("\t\t Extracting freq patterns")
+
+    #     file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
+
+    #     with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
+    #         set_up.write("MINSUP={}\n".format(minsup))
+    #         set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+    #         set_up.write("THREAD={}\n".format(threads))
+    #         set_up.write("GAPMIN={}\n".format(gap_min))
+    #         set_up.write("GAPMAX={}\n".format(gap_max))
+
+    #     os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
+
+    #     print("\t\t Extracting closed patterns")
+
+    #     with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
+    #         set_up.write("MINSUP={}\n".format(minsup))
+    #         set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+    #         set_up.write("THREAD=1\n")
+    #         set_up.write("GAPMIN={}\n".format(0))
+    #         set_up.write("GAPMAX={}\n".format(0))
+
+    #     os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
+
     # #-------------------------------------------------------------------------------------------------------------------
-    # # Mining Pattern
+    # # Compute Emergent Pattern
     # #-------------------------------------------------------------------------------------------------------------------
-    print("-"*75)
-    print("3. Extracting freq & closed patterns")
+    # print("-"*75)
+    # print("4. Extracting emergent patterns")
 
-    # # types_textes = ["1984ca", "2008ca"]
+    # rep_freq = "./Patterns_results/Freq/"
+    # rep_clos = "./Patterns_results/Closed/"
 
-    for type_texte in types_textes:
-        print("\t Type_texte:", type_texte)
+    # print("4.1. Transform freq patterns")
+    # for f_freq in os.listdir(rep_freq):
+    #     if "txt" not in f_freq: continue
+    #     compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_freq,f_freq))
 
-        dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
-        minsup_percent = 25
-        minsup = get_minsup(float(minsup_percent), dmt4_files)
-        print(f"\t Minsup {minsup_percent}% ")
-        gap_min = 0
-        gap_max = 0
-        threads = 30
+    # print("4.2. Transform closed patterns")
+    # for f_clos in os.listdir(rep_clos):
+    #     if "txt" not in f_clos: continue
+    #     compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos,f_clos))
 
-        print("\t\t Extracting freq patterns")
-
-        file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-
-        with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
-            set_up.write("MINSUP={}\n".format(minsup))
-            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-            set_up.write("THREAD={}\n".format(threads))
-            set_up.write("GAPMIN={}\n".format(gap_min))
-            set_up.write("GAPMAX={}\n".format(gap_max))
-
-        os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
-
-        print("\t\t Extracting closed patterns")
-
-        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-            set_up.write("MINSUP={}\n".format(minsup))
-            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-            set_up.write("THREAD=1\n")
-            set_up.write("GAPMIN={}\n".format(0))
-            set_up.write("GAPMAX={}\n".format(0))
-
-        os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
-
-    #-------------------------------------------------------------------------------------------------------------------
-    # Compute Emergent Pattern
-    #-------------------------------------------------------------------------------------------------------------------
-    print("-"*75)
-    print("4. Extracting emergent patterns")
-
-    rep_freq = "./Patterns_results/Freq/"
-    rep_clos = "./Patterns_results/Closed/"
-
-    print("4.1. Transform freq patterns")
-    for f_freq in os.listdir(rep_freq):
-        if "txt" not in f_freq: continue
-        compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_freq,f_freq))
-
-    print("4.2. Transform closed patterns")
-    for f_clos in os.listdir(rep_clos):
-        if "txt" not in f_clos: continue
-        compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos,f_clos))
-
-    print("4.3. Computing sequentiel emergent patterns")
-    for type_1 in types_textes:
-        for type_2 in types_textes:
-            if type_1 == type_2: continue
-            print("\t{} x {} ".format(type_1, type_2))
-            compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
+    # print("4.3. Computing sequentiel emergent patterns")
+    # for type_1 in types_textes:
+    #     for type_2 in types_textes:
+    #         if type_1 == type_2: continue
+    #         print("\t{} x {} ".format(type_1, type_2))
+    #         compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
 
 
     # #-------------------------------------------------------------------------------------------------------------------
