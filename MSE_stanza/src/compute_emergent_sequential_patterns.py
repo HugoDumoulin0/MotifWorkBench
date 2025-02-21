@@ -75,20 +75,23 @@ def compute_GR(type_1, type_2):
         index_p = 0
         for p in dict_1:
             freq_1 = dict_1.get(p)
+                #21-02-2025: this is absolute freq (number of sentences comprising motif)
             if p in dict_2:
                 freq_2 = dict_2.get(p)
                 gr = (freq_1 / nbr_seq_1) / (freq_2 / nbr_seq_2)
+                    #21-02-2025: freq_1 / nbr_seq_1) = relative freq, i.e., what is called
+                    #"frequence" in Mekki PhD (2022: p. 95)
                 dict_gr[index_p] = [formate_patterns.from_str_to_list(p),
                                     formate_patterns.from_int_to_str(p, lexic_int_str),
                                     gr,
-                                    freq_1,
+                                    freq_1, #21-02-2025: it is absolute freq that is written in .tsv
                                     freq_2]
             else:
                 gr = freq_1
                 dict_gr[index_p] = [formate_patterns.from_str_to_list(p),
                                     formate_patterns.from_int_to_str(p, lexic_int_str),
                                     gr,
-                                    (freq_1 / nbr_seq_1),
+                                    (freq_1 / nbr_seq_1), #21-02-2025: it is relative freq that is written in .tsv
                                     0]
             index_p+=1
         file_out = "./Patterns_results/Emergent/{}_00_{}_{}.pk".format(mins,
@@ -97,3 +100,6 @@ def compute_GR(type_1, type_2):
         save_pickles_results(dict_gr, file_out)
         from_dict_to_df(file_out)
     return True
+
+#21-02-2025: There is quite a problem there: GR and freq have different definitions depending on wether
+#the motif appears in both corpora or not.
