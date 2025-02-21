@@ -25,7 +25,8 @@ def get_minsup(minsup, dmt4_files):
 
 if __name__ == "__main__":
     python = "python3.7"
-    types_textes = [sys.argv[1], sys.argv[2]]
+    # types_textes = [sys.argv[1], sys.argv[2]]
+    types_textes = sys.argv[1:] #Tim: to accept as many texts as args
 
     #-------------------------------------------------------------------------------------------------------------------
     # Annotation des données
@@ -123,79 +124,77 @@ if __name__ == "__main__":
 
     for type_texte in types_textes:
         conll_dmt4.make_DMT4_file(type_texte)
-        #This creates the missing dict_sorted.pk files. For some reason,
-        #the function wasn't called in the original script.
+        # This creates the missing dict_sorted.pk files. For some reason,
+        # the function wasn't called in the original script.
         
-
-
-    # # #-------------------------------------------------------------------------------------------------------------------
-    # # # Mining Pattern
-    # # #-------------------------------------------------------------------------------------------------------------------
-    # print("-"*75)
-    # print("3. Extracting freq & closed patterns")
-
-    # # # types_textes = ["1984ca", "2008ca"]
-
-    # for type_texte in types_textes:
-    #     print("\t Type_texte:", type_texte)
-
-    #     dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
-    #     minsup_percent = 25
-    #     minsup = get_minsup(float(minsup_percent), dmt4_files)
-    #     print(f"\t Minsup {minsup_percent}% ")
-    #     gap_min = 0
-    #     gap_max = 0
-    #     threads = 30
-
-    #     print("\t\t Extracting freq patterns")
-
-    #     file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-
-    #     with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
-    #         set_up.write("MINSUP={}\n".format(minsup))
-    #         set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-    #         set_up.write("THREAD={}\n".format(threads))
-    #         set_up.write("GAPMIN={}\n".format(gap_min))
-    #         set_up.write("GAPMAX={}\n".format(gap_max))
-
-    #     os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
-
-    #     print("\t\t Extracting closed patterns")
-
-    #     with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-    #         set_up.write("MINSUP={}\n".format(minsup))
-    #         set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-    #         set_up.write("THREAD=1\n")
-    #         set_up.write("GAPMIN={}\n".format(0))
-    #         set_up.write("GAPMAX={}\n".format(0))
-
-    #     os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
-
     # #-------------------------------------------------------------------------------------------------------------------
-    # # Compute Emergent Pattern
+    # # Mining Pattern
     # #-------------------------------------------------------------------------------------------------------------------
-    # print("-"*75)
-    # print("4. Extracting emergent patterns")
+    print("-"*75)
+    print("3. Extracting freq & closed patterns")
 
-    # rep_freq = "./Patterns_results/Freq/"
-    # rep_clos = "./Patterns_results/Closed/"
+    # # types_textes = ["1984ca", "2008ca"]
 
-    # print("4.1. Transform freq patterns")
-    # for f_freq in os.listdir(rep_freq):
-    #     if "txt" not in f_freq: continue
-    #     compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_freq,f_freq))
+    for type_texte in types_textes:
+        print("\t Type_texte:", type_texte)
 
-    # print("4.2. Transform closed patterns")
-    # for f_clos in os.listdir(rep_clos):
-    #     if "txt" not in f_clos: continue
-    #     compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos,f_clos))
+        dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+        minsup_percent = 25
+        minsup = get_minsup(float(minsup_percent), dmt4_files)
+        print(f"\t Minsup {minsup_percent}% ")
+        gap_min = 0
+        gap_max = 0
+        threads = 30
 
-    # print("4.3. Computing sequentiel emergent patterns")
-    # for type_1 in types_textes:
-    #     for type_2 in types_textes:
-    #         if type_1 == type_2: continue
-    #         print("\t{} x {} ".format(type_1, type_2))
-    #         compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
+        print("\t\t Extracting freq patterns")
+
+        file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
+
+        with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
+            set_up.write("MINSUP={}\n".format(minsup))
+            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+            set_up.write("THREAD={}\n".format(threads))
+            set_up.write("GAPMIN={}\n".format(gap_min))
+            set_up.write("GAPMAX={}\n".format(gap_max))
+
+        os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
+
+        print("\t\t Extracting closed patterns")
+
+        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
+            set_up.write("MINSUP={}\n".format(minsup))
+            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+            set_up.write("THREAD=1\n")
+            set_up.write("GAPMIN={}\n".format(0))
+            set_up.write("GAPMAX={}\n".format(0))
+
+        os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
+
+    #-------------------------------------------------------------------------------------------------------------------
+    # Compute Emergent Pattern
+    #-------------------------------------------------------------------------------------------------------------------
+    print("-"*75)
+    print("4. Extracting emergent patterns")
+
+    rep_freq = "./Patterns_results/Freq/"
+    rep_clos = "./Patterns_results/Closed/"
+
+    print("4.1. Transform freq patterns")
+    for f_freq in os.listdir(rep_freq):
+        if "txt" not in f_freq: continue
+        compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_freq,f_freq))
+
+    print("4.2. Transform closed patterns")
+    for f_clos in os.listdir(rep_clos):
+        if "txt" not in f_clos: continue
+        compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos,f_clos))
+
+    print("4.3. Computing sequentiel emergent patterns")
+    for type_1 in types_textes:
+        for type_2 in types_textes:
+            if type_1 == type_2: continue
+            print("\t{} x {} ".format(type_1, type_2))
+            compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
 
 
     # #-------------------------------------------------------------------------------------------------------------------
