@@ -49,8 +49,8 @@ def data_for_specifs(liste_fichiers):
     mins = "25"
     for fichier in liste_fichiers:
         dictionnaire_specifs[fichier]={}
-        dictionnaire_specifs[fichier]["dict_frequents"] = load_pickles("./Patterns_results/Closed/{}_00_DMT4_{}_files_sorted_closed.pk".format(mins, fichier))
-        # dictionnaire_specifs[fichier]["dict_frequents"] = load_pickles("./{}_00_DMT4_{}_files_sorted_closed.pk".format(mins, fichier))
+        dictionnaire_specifs[fichier]["dict_clos"] = load_pickles("./Patterns_results/Closed/{}_00_DMT4_{}_files_sorted_closed.pk".format(mins, fichier))
+        dictionnaire_specifs[fichier]["dict_frequents"] = load_pickles("./Patterns_results/Freq/{}_00_DMT4_{}_files_sorted_freq.pk".format(mins, fichier))
         dictionnaire_specifs[fichier]["t"]=get_nbr_seq("./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(fichier))
         # dictionnaire_specifs[fichier]["t"]=get_nbr_seq("./DMT4_{}_files_sorted.txt".format(fichier))
     return dictionnaire_specifs
@@ -66,9 +66,9 @@ def compute_k_specifs(dictionnaire_specifs):
     for fichier in dictionnaire_specifs:
         print(fichier)
         dictionnaire_k[fichier]={}
-        for motif in dictionnaire_specifs[fichier]["dict_frequents"]:
+        for motif in dictionnaire_specifs[fichier]["dict_clos"]:
             dictionnaire_k[fichier][motif] = {}
-            k = dictionnaire_specifs[fichier]["dict_frequents"][motif]
+            k = dictionnaire_specifs[fichier]["dict_clos"][motif]
             dictionnaire_k[fichier][motif] = k
     return dictionnaire_k
  
@@ -77,8 +77,9 @@ def compute_f_specifs(dictionnaire_specifs):
      dictionnaire_f = {}
      liste_motifs = []
      for fichier in dictionnaire_specifs:
-         for motif in dictionnaire_specifs[fichier]["dict_frequents"]:
-             liste_motifs.append(motif)
+         for motif in dictionnaire_specifs[fichier]["dict_clos"]:
+             if motif not in liste_motifs:
+                 liste_motifs.append(motif)
      for motif in liste_motifs:
          f = 0
          for fichier in dictionnaire_specifs:
@@ -149,5 +150,5 @@ def main(liste_fichiers):
     save_pickles_results(dictionnaire_k,"Patterns_results/Specifs/dictionnaire_k.pk")
 
 
-# liste_fichiers = ["Rapports18", "Rapports70to90"]
-# main(liste_fichiers)
+liste_fichiers = ["MODYCO", "ISP"]
+main(liste_fichiers)
