@@ -150,5 +150,5 @@ def main(liste_fichiers):
     save_pickles_results(dictionnaire_k,"Patterns_results/Specifs/dictionnaire_k.pk")
 
 
-liste_fichiers = ["MODYCO", "ISP"]
-main(liste_fichiers)
+# liste_fichiers = ["MODYCO", "ISP"]
+# main(liste_fichiers)
