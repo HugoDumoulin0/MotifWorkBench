@@ -235,8 +235,8 @@ if __name__ == "__main__":
     nbr_pool=2
 
     ###
-
-    emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/1_00_{}_{}.pk".format(type_1, type_2))
+        #Here there is something I (Tim) do not understand: the script had 1_{}_{}.pk, but it should be an interactive argument, right? I crashes when minsup ≠ value 
+    emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/{}_00_{}_{}.pk".format(minsup_percent, type_1, type_2))
     index_motifs = [patt_info[0] for patt_info in list(emergent_patt.values()) if patt_info[2] >=1]
 
     print("\t Type texte 1 :", type_1)
@@ -325,8 +325,10 @@ if __name__ == "__main__":
 
     emergent_patterns = [p
                         for p
-                        in list(formate_patterns.load_pk("./Patterns_results/Emergent/1_00_{}_{}.pk".format(type_1,type_2)).values())
+                        in list(formate_patterns.load_pk("./Patterns_results/Emergent/{}_00_{}_{}.pk".format(minsup_percent, type_1,type_2)).values())
                         if p[2] >= 1]
+
+        #Warning Tim: changed 1_00 to minsup_percent_00
 
     dict_emergent_patt = dict()
     for p in emergent_patterns:
