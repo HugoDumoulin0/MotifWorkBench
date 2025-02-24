@@ -110,14 +110,29 @@ if __name__ == "__main__":
 
     # # types_textes = ["1984ca", "2008ca"]
 
+    #Purge DMT4 file
+    #Two reasons to purge DMT4 folder: (a) the general dictionnary (lexique) is built
+    #based on all DMT4 files, so that any parsing error in any .conllu file, even outside
+    #sys.argv texts, will fail it, and (b) when DMT4 files are already present, the script
+    #over-generate new DMT4 files with reduplication in file name.
+
+    folder_path = "./Data/DMT4_files/"
+
+    if os.path.exists(folder_path):
+        for file_name in os.listdir(folder_path):
+            file_path = os.path.join(folder_path, file_name)
+            if os.path.isfile(file_path):
+                os.remove(file_path)  # Delete file
+
+        #Alternative to purging the folder:
     #Avoid generating sorted_sorted file names and file not found error.
-    for type_texte in types_textes:
-        print("\t Checking if DMT4 files already exists")
-        target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
-        print(target)
-        if os.path.exists(target):  # Check if the file exists
-            os.remove(target)       # delete existing files
-            print(f"\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+    # for type_texte in types_textes:
+    #     print("\t Checking if DMT4 files already exists")
+    #     target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+    #     print(target)
+    #     if os.path.exists(target):  # Check if the file exists
+    #         os.remove(target)       # delete existing files
+    #         print(f"\t DMT4: Previous DMT4 files with same corpus have been deleted.")
 
     conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
     for type_texte in types_textes:
