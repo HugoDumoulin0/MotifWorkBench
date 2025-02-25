@@ -1,0 +1,866 @@
+Unité de recherche
+Dossier d’autoévaluation
+CAMPAGNE D’EVALUATION 2018-2019
+VAGUE E
+N.-B. : on renseignera ce dossier d’autoévaluation en s’appuyant sur l’ « Aide à la rédaction du dossier d'autoévaluation d'une unité de recherche ».
+INFORMATIONS GENERALES
+Nom de l’unité :	THERMIQUE INTERFACES ENVIRONNEMENT	
+Acronyme :	TIE			
+Domaine et sous-domaine dans la nomenclature du Hcéres :	 STI
+Directeur.rice pour le contrat en cours :	LARAQI Najib			
+Directeur.rice (ou du porteur de projet) pour le contrat à venir :	LARAQI Najib
+Type de demande :
+Renouvellement à l’identique   	Restructuration  □ 	Création ex nihilo  □
+Établissements et organismes de rattachement :
+Liste des établissements et organismes tutelles de l’unité de recherche pour le contrat en cours et pour le prochain contrat (tutelles).
+Contrat en cours :		Prochain contrat :
+- UNIVERSITE PARIS NANTERRE…	- UNIVERSITE PARIS NANTERRE
+- …	- …
+- …	- …
+- …	- …
+Choix de l’évaluation interdisciplinaire de l’unité de recherche (ou d’une ou plusieurs équipes internes) :
+	Oui   □		Non   
+Laboratoire
+Thermique Interfaces Environnement
+EA 4415
+Université Paris Nanterre
+Pôle Scientifique & Technologique de Ville d'Avray
+50, Rue de Sèvres, 92410 Ville d'Avray
+Prof. Najib LARAQI
+Dossier d’autoévaluation
+Sommaire
+	page
+1- Présentation de l'Unité ............................................................	5
+1.1- Introduction .............................................................................................	5
+1.1.1- Historique, localisation de l'unité ................................................................	5
+1.1.2- Structuration de l'unité (équipes,ou thèmes) ..................................................	5
+1.1.3- Organigramme fonctionnel ........................................................................	5
+1.2- Tableau des effectifs et moyens de l'unité ..........................................................	7
+1.3- Politique scientifique ....................................................................................	8
+2- Présentation de l'écosystème recherche de l'unité ...........................................	9
+3- Produits et activités de recherche ..................................................................	10
+3.1- Bilan scientifique .........................................................................................	10
+3.2- Données chiffrées ........................................................................................	10
+3.3- Sélection des produits et des activités de recherche .............................................	11
+3.4- Faits marquants ...........................................................................................	11
+4- Organisation et vie de l'unité .........................................................................	13
+4.1- Données chiffrées ........................................................................................	14
+4.2- Pilotage, animation, organisation de l'unité ........................................................	14
+4.3- Parité ........................................................................................................	14
+4.4- Intégrité scientifique ....................................................................................	15
+4.5- Protection et sécurité ...................................................................................	15
+5- Analyse SWOT ...............................................................................................	16
+6- Projet scientifique à 5 ans .............................................................................	17
+Annexes ............................................................................................................	25
+Annexe1 - Lettre de mission contractuelle ....................................................................	25
+Annexe2 - Equipements, plateformes ...........................................................................	25
+Annexe3 - Organigramme fonctionnel ..........................................................................	26
+Annexe4 - Sélection des produits et activités de recherche ................................................	27
+Production scientifique (détails) ............................................................................
+Revues Internationales à Comité de Lecture (ACL)
+Congrès Internationaux avec Acte et Comité de Lecture (C-ACTI)
+Congrès Nationaux avec Acte et Comité de Lecture (C-ACTN)
+Brevets (BRE)
+Chapitres d'Ouvrages Scientifique (OS)
+Direction d'Ouvrages (DO)
+Logiciels finalisés	
+Accueil de personnalités étrangères .................................................................	40
+Implication des membres de l'unité dans les formations et autres ……………………………………..	41
+Devenir de quelques doctorants ……………………………………………………………………………………………	41
+DOSSIER D’AUTOÉVALUATION
+On rédigera le dossier en complétant les rubriques ci-dessous, suivant le plan indiqué. Les parties du texte en italique seront supprimées dans le dossier rédigé.
+1-	 Présentation de l’unité
+1.1- Introduction
+1.1.1- Historique, localisation de l’unité
+Le Laboratoire Thermique Interfaces et Environnement, LTIE (EA 4415) est rattaché à l'Université Paris Nanterre (Ex Université Paris X, Nanterre). Il a été habilité par le ministère suite à la première expertise de l’AERES en 2009. Ce Laboratoire est né des activités de recherches développées depuis 2000 par une équipe d’enseignants-chercheurs (EC) en Thermique-Energétique en exercice au sein du Pôle Scientifique et Technologique (PST) de l'IUT de Ville d'Avray (composante des SPI de l’Université Paris Nanterre). La deuxième expertise par l'AERES en 2013 a été très favorable tant pour la production scientifique que pour de l'organisation de l'unité et de son activité, notamment en direction des industries de pointes. Le LTIE a tiré profit des recommandations et des encouragements de l'AERES à l'occasion des deux visites (2009 et 2013) ce qui lui a permis de mieux se structurer et de mettre en place une stratégie efficace de recherche, de formation et de développement de partenariats académiques et industriels.
+Le LTIE a démarré avec 5 EC, il en compte actuellement 8 (dont 1 en détachement) et a développé aux cours des années de nombreux partenariats académiques et industriels.
+Les locaux du LTIE sont situés au sein même de l'IUT de Ville d'Avray.
+1.1.2- Structuration de l’unité (équipes ou thèmes)
+Compte tenu de son petit effectif actuel (7 EC + 1 PRAG docteur) le LTIE est organisé en une seule équipe de recherche.
+1.1.3- Organigramme fonctionnel en annexe 3 (voir ci-après p. 6)
+1.2- Tableau des effectifs et moyens de l’unité
+On renseignera les deux documents joints au dossier d’autoévaluation et se présentant sous forme de fichiers Excel : « Données du contrat en cours » et « Données du prochain contrat ».
+À l’appui de ces deux documents, on commentera ici l’évolution des effectifs et des moyens financiers de l’unité.
+Personnel EC
+Nom	Prénom	Fonction	CNU	Etab.
+Alilat	Nacim	MCF	62	UPN
+Baïri	Abderrahmane	PR	62	UPN
+Bauzin	Jean-Gabriel	MCF	62	UPN
+Hamouda	Abderrezak	MCF	62	UPN
+Hocine	Ali	MCF	62	UPN
+Laraqi	Najib	PR	62	UPN
+Peter	Zsolt	MCF	26	UPN
+Lamriben*	Cyril	PRAG Docteur	62	UPN
+Ségui**	Lionel	MCF	26	U. Toulouse
+* PRAG Docteur
+**MCF en détachement durant le précédent contrat
+Personnel technique (appui à la recherche)
+Nom	Prénom	Fonction
+Bengareh	Nassira	Secrétaire (1/2 poste)
+Boulvais	Frédédric	Technicien (1/2 poste)
+Doctorants et Post-Doc
+Nom	Prénom	début	soutenance	Financement
+Retamal	Cesar	01/10/2009	12/12/2012	ETR
+Merabtine	Abdeltif	01/10/2009	19/11/2012	CD
+Zarco-Pernia	Esther	01/10/2009	12/12/2013	Vacations IUT
+Chbiki	Mounirf	01/09/2011	10/12/2014	CIFRE
+Dia	Cheikh	01/09/2012	11/12/2015	CIFRE
+Haddad	Oriana	01/09/2014	Prévue 2018	CD
+Keruzoré	Nicolas	01/12/2014	Prévue 2018	CIFRE
+Monier-Vinard	Eric	01/09/2015	Prévue 2019	INDUSTR
+Rogié	Brice	01/09/2015	Prévue 2018	CIFRE
+Cherikh	Mehdi	01/09/2017	Prévue 2020	CD
+Nguyen	Minh-Nhat	01/09/2012	31/08/2018	Post-Doc
+xxx*		01/09/2018		CIFRE (Safran en cours)
+xxx*		01/09/2018		CIFRE (Thales en cours)
+* 2 Thèses CIFRE en cours de recrutement
+Le LTIE a recruté 1 nouveau MCF en 2015 (J.G. Bauzin) et a eu un rattachement à son unité d'1 MCF de l'université Paris Nanterre (A. Hamouda) en 2016. Cependant, le problème de remplacement du MCF (L. Ségui) en détachement depuis plus d'une dizaine d'années n'est toujours pas résolu. Le LTIE attend que l'université trouve une solution à ce problème.
+En terme de moyens financiers, les nouveaux partenariats, notamment avec Bugatti (1 convention) et Thales (1 convention + 1 contrat post-doc) ont permis au LTIE d'augmenter de façon significative ses ressources et de pouvoir ainsi acquérir de nouveaux équipements et rémunérer les stagiaires accueillis au Laboratoire.
+Les ressources issues des partenariats industriels (Thales, Bugatti, CNES) sont de l'ordre de 120 000 €/an
+1.3- Politique scientifique
+Missions, objectifs scientifiques, stratégie de l’unité de recherche pour le contrat en cours, position nationale, internationale.
+On détaillera les actions entreprises pour mettre en œuvre les recommandations de la précédente évaluation.
+On précisera le profil d’activités de l’unité de recherche : comment se répartissent globalement ses activités entre production de connaissance, activités de valorisation et de transfert, appui à la communauté. Ce profil d’activité doit permettre en particulier aux unités fortement orientées vers la recherche finalisée (translationnelle, clinique) de faire apparaître leur spécificité.
+Le LTIE est engagé dans une démarche de développement d’une dynamique de Recherche dans les domaines de la Thermique et de l’Energétique en s’appuyant sur la plateforme technologique du PST (notamment le Département Génie Thermique et Energie de l’IUT de Ville d’Avray, 92) et sur le potentiel socioéconomique du département des Hauts de Seine (92) et de sa région, plus particulièrement 78 (Safran et Thales) et 91 (CNES, Evry). Malgré son petit effectif, le LTIE a su se faire une place dans le paysage national et international de la Recherche. Les raisons à cela sont d'une part son positionnement sur des thématiques de recherche originales et porteuses tant au plan fondamental qu'appliqué et d'autre part grâce à un réel engagement des enseignants chercheurs EC qui le composent.
+Le LTIE fait des choix judicieux de ses partenariats industriels avec l'objectif de conduire des recherches originales de nature à faire évoluer ses compétences et par la même à répondre à des besoins industriels cruciaux (des industries de pointe, comme l'aéronautique, l'électronique ...).
+Des résultats pertinents ont été obtenus dans le cadre de ces partenariats, ce qui a conduit à la fidélisation de nos partenaires et donc au prolongement systématique des conventions et de mise en place de thèses CIFRE.
+2-	Présentation de l’écosystème recherche de l’unité
+On présentera les structures de coordination (pôle, champ de recherche, Institut, etc.), à l’échelle du site, dans lesquelles l’unité est impliquée. On précisera les objectifs scientifiques poursuivis, les ressources obtenues (ressources techniques, ressources RH, financements, etc.), et les plus-values pour l’unité en termes de production scientifique, d’attractivité, de rayonnement, et de valorisation de la recherche.
+Le LTIE évolue au sein de la composante SPI de l'Université Paris Nanterre, université à dominante SHS. La composante SPI est délocalisée dans l'IUT de Ville d'Avray. Elle profite alors de la plateforme technologique de l'IUT et forme en même temps des chercheurs capables d'occuper des fonctions d'EC ou d'intégrer le milieu industriel en R&D. La majorité des thèses effectuées au LTIE sont des cifre issues des partenariats que l'unité a su développer et fidéliser au cours des années avec des industries de pointes (Thales, Bugatti, Safran …). Le positionnement thématique de l'unité et sa situation géographique (département des Hauts de Seine) lui procurent des conditions idéales pour mener des recherches fondamentales et de répondre à des problématiques industrielles cruciales. Le LTIE a également développé au cours des années de nombreux partenariat académiques à l'international. Il reçoit régulièrement des étudiants étrangers (notamment dans le cadre de la mobilité Erasmus) et aussi des collègues chercheurs ou enseignants-chercheurs de différents pays du monde (voir tableau annexé des Profs accueillis durant la période de référence).
+Les ressources des contrats industriels ont permis au LTIE d'acquérir de nombreux équipements, mais aussi de payer les étudiants accueillis au laboratoire.
+Malgré ses petits effectifs et une forte implication de tous les EC que le composent (voir tableau annexé des responsabilités collectives des EC de l'unité) le LTIE a su développer une dynamique de production scientifique qui a connu une croissance significative au cours des contrats successifs: 18 en 2009, 44 en 2013, 76 en 2018 (il s'agit des articles de revues répertoriées JCR).
+3-	Produits et activités de recherche
+(pour l’unité puis par équipe ou thème)
+3.1- Bilan scientifique
+L’unité (l’équipe ou le thème) dressera un bilan global de son activité scientifique
+Le bilan scientifique du l'unité, jugé très bon par l'aeres lors du précédent contrat, a connu encore une nette progression avec quasiment le même effectif. En effet, le nombre d'articles de rang A (répertoriés JCR) publiés par l'unité au cours de la période de référence est de 76, contre 44 en 2013 et 18 en 2009. Le nombre de doctorant est également passé de 4, lors du précédent contrat, à 6. Il faut ajouter à cela deux nouveaux partenariats avec des industries de pointe: Messier-Bugatti-Dowty (leader mondial en matière de trains d'atterrissage des avions) et Thales (leader mondial en électronique). Ces partenariats ont permis de mettre en place des thèses CIFRE ainsi que des post-doc, et de développer des activités nouvelles qui sont amenées à être pérennisées.
+En outre, l'unité a développé des dispositifs expérimentaux nouveaux pour des besoins de caractérisation et/ou de validation.
+3.2- Données chiffrées
+Ces données chiffrées concernent la totalité de la production et des activités de l’unité de recherche.
+Dans le fichier Excel « Données du contrat en cours », on renseignera le tableau quatre intitulé « Produits et activités de la recherche – Données chiffrées ».
+Si l’unité de recherche est une unité mono-équipe, on ne renseignera qu’une seule colonne pour l’unité dans son ensemble. Si l’unité de recherche est une unité pluri-équipes (ou si elle est organisée par thèmes, voire si elle combine équipes et thèmes), chaque équipe (ou thème) renseignera sa propre colonne.
+Articles de Revues Int à comité de lecture	76 (44 en 2013 et 18 en 2009)
+Actes de Congrès Int avec comité de lecture	44 (38 en 2013)
+Actes de Congrès Nat avec comité de lecture	12
+Brevets	1
+Conf. invitées	
+Contrats: Nombre (Montants)	6 (756 k€ sur la période de référence)
+Expertises	HCERES, ANR, ANRT
+Revues Int: environ 20/an
+Jurys: 21 thèses et 5 HDR
+3.3- Sélection des produits et des activités de recherche
+En annexe du dossier d’autoévaluation, on joindra une « Sélection des produits et des activités » en annexe 4 (voir ci-après p. 6).
+Pour chaque produit et pour chaque activité, l’unité (ou l’équipe / le thème) dressera la liste d’un nombre limité des produits et des activités qu’elle juge les plus significatifs.
+La limitation de ce nombre sera fixée à 20 % de la production totale concernée pour les rubriques 1 (Journaux / Revues), 2 (Ouvrages) et 3 (Colloques, congrès, séminaires de recherche). Pour les autres rubriques, ce pourcentage est laissé à l’appréciation de l’unité de recherche.
+Si la.le président.e du comité d’expert.e.s en fait la demande, l’unité de recherche fournira la liste complète de ses produits et activités, qu’elle devra établir et tenir, si besoin, à disposition du comité d’experts (par exemple sur un site prévu à cet effet).
+Se référer à l'Annexe 4 en fin de rapport
+3.4- Faits marquants
+Dans cette partie, on retiendra donc un petit nombre de faits marquants qui peuvent non seulement concerner aussi bien la production de connaissance, les interactions avec l’environnement social, économique, culturel et sanitaire, l’implication dans la formation, mais aussi l’organisation et la vie de l’unité.
+ Cette dernière est également invitée, s’il y a lieu, à mettre en évidence les faits marquants relatifs à des transversalités entre équipes ou thèmes quand cela est justifié.
+Pour chacune des réalisations retenues, on expliquera, dans une analyse développée, en quoi elle constitue un fait marquant, en présentant des arguments qui peuvent être épistémologiques, théoriques, méthodologiques, organisationnels, didactiques. Ces arguments peuvent aussi porter sur des retombées de la recherche en matière de valorisation et de transfert.
+Le nombre des faits marquants variera selon la taille et l’organisation de l’unité, qui en déterminera elle-même le nombre. Dans le cas d’une unité structurée en équipes ou en thèmes, on dressera une liste de faits marquants pour l’unité pour son ensemble et une autre pour chaque équipe interne ou thème. Un même fait marquant peut figurer aux deux niveaux, unité et équipe(s) interne(s) ou thèmes.
+Instrumentation d'un frein d'avion grandeur réelle (Bugatti)
+Un nouveau partenariat a été mis en place en 2015 avec la société Messier-Bugatti-Dowty MBD (leader mondial en trains d'atterrissage d'avions) pour l'étude du freinage aéronautique hautes performances. Nous avons mis en place une thèse CIFRE qui sera soutenue courant 2018. Nous avons instrumenté à cette occasion les stators et retors du frein sur un banc disponible chez MBD. Des mesures de températures ont été effectuées et ont permis d'identifier par méthode inverse les puissances dissipées à chaque interface tout au long de la phase du freinage. Cette identification s'est révélée pertinente, puisque l'utilisation des flux identifiés dans une modélisation directe a permis de retrouver avec une grande précision les températures mesurées (ce résultat vient d'être publié dans IJTS, vol. 130, 2018).
+Banc de frein d'avion grandeur réelle	Disques de frein instrumentés (stators et rotors)
+Instrumentation d'un Tube à Ondes progressives (Thales Eltecronic Devices, TED)
+Dans le cadre du partenariat avec Thales Electronic Devices (TED), nous nous sommes intéressés à l'étude thermo-mécanique des Tubes à Ondes Progressives (TOP), destinés à des applications spatiales. Des modèles analytiques et des simulations numériques ont été développés pour les besoins de cette étude dans le cadre d'une thèse CIFRE. Nous avons instrumenté ce dispositif pour mesurer des résistances thermiques dans des tubes dont l'hélice est de diamètre de l'ordre du millimètre. Des thermocouples ont été soudés au laser dans une espace très étroit. Le modèle analytique développé a présenté une excellente concordance avec les mesures. Cet outil, validé, sert à notre partenaire pour le dimensionnement et/ou l'interprétation du comportement des TOP.
+Nous avons pu, à l'occasion de cette étude, concevoir et réaliser un dispositif de mesure de résistance thermique de contact dont on peut faire varier la température de fonctionnement.
+Enfin, une étude d'indentation des matériaux antagonistes a pu être réalisée à Supmeca, en partenariat avec nos collègues tribologues.
+Tube à Ondes Progressives (TOP)	Zoom sur la partie centrale à instrumenter (diamètre de l'ordre du millimètre)
+Développement et acquisition de nombreux moyens d'essais
+Une liste exhaustive est donnée en Annexe. On donne ci-dessous quelques exemple de réalisations et d'acquisitions:
+- Banc de velocimétrie PIV en soufflerie subsonique
+- Caractérisation thermique des matériaux (conductivité, diffusivité, effusivité, chaleur spécifique, ....).
+Méthode Transient Source (TPS): 
+Banc dévelopé au LTIE +  Banc Hot Disc TPS2500
+- Quantification des échanges convectifs naturels en milieu confiné:
+Air, Nanofluides, Milieux poreux
+- Banc de freinage automobile
+4-	Organisation et vie de l’unité ou de l’équipe si pertinent
+4.1- Données chiffrées
+Dans le fichier Excel « Données du contrat en cours », on complètera le tableau intitulé « Synthèse personnels unité ».
+Se référer au fichier excel annexé (données contrat en cours).
+4.2- Pilotage, animation, organisation de l'unité
+On décrira les structures et les instruments dont l’unité s’est dotée en matière de pilotage (directoire, conseil de laboratoire, conseil scientifique, scientific advisory board etc.), d’affectation des ressources, de politique des ressources humaines, d’animation scientifique.
+On donnera, le cas échéant, la liste des équipements utilisés, des plateformes, des grands instruments, des centres de calcul, etc. en annexe 2 (voir ci-après p. 6).
+Le LTIE est doté d’un Conseil de Laboratoire, composé de 6 membres : 2 EC Rang A, 2 EC Rang B, 1 IATOS et 1 Doctorant. Le Directeur de l’unité est membre de Droit.
+Le Conseil est élu par tous les membres du Laboratoire pour une durée de 3 ans. Il se réunit 4 fois par an et, d’une manière exceptionnelle, à chaque fois qu’un point important doit être traité de façon urgente.
+Les missions essentielles du Conseil du Laboratoire consistent à veiller au bon déroulement des Thèses (avancement, publications, durée …), à organiser et planifier les séminaires du Laboratoire, à préparer et voter le Budget, à veiller à la production scientifique et à recenser et diffuser les informations relatives à la recherche : Congrès, Appels à Projets …
+Le Conseil du Laboratoire rend compte de ses conclusions à tous les membres de l’unité et organise des débats ouverts.
+4.3- Parité
+En s’appuyant sur les données chiffrées contenues dans le tableau Excel intitulé « Synthèse personnels unité », on présentera les mesures prises par l’unité pour favoriser la parité et l’égalité professionnelle entre les femmes et les hommes.
+Le LTIE est une petite équipe de 7 EC qui ne compte pas actuellement de femmes dans ses effectifs d'EC. Il compte cependant 2 doctorantes. En effet, l'unité a été créée en 2008 par un groupe de 5 d'EC thermiciens déjà en service à l'IUT de Ville d'Avray (EC recrutés auparavant par l'IUT, tous des hommes). Un EC (homme) également déjà enseignant à l'IUT a demandé son rattachement au LTIE en 2016. Un seul recrutement a été effectué à ce jour par le LTIE (en 2015) mais malheureusement il n'y a pas une seule candidature féminine. Il convient de préciser que la section CNU 62 dont relève les EC du LTIE et plus particulièrement sa composante Thermique-Energéique est une très majoritairement composée d'hommes au plan national.
+4.4- Intégrité scientifique
+En s’appuyant sur les éléments décrits dans le référentiel d’évaluation des unités de recherche (téléchargeable sur le site du Hcéres), on décrira les mesures prises par l’unité pour veiller au respect de l’intégrité scientifique
+4.5- Protection et sécurité
+En s’appuyant sur les éléments décrits dans le référentiel d’évaluation des unités de recherche (téléchargeable sur le site du Hcéres), on décrira les mesures prises par l’unité pour veiller au respect de la protection du patrimoine (protection des données, des résultats) et à la sécurité.
+5-	Analyse SWOT
+En se plaçant dans la perspective de son projet scientifique à cinq ans, l’unité dressera la liste :
+- des points forts ;
+Les points forts qui vont aider à la conduite du projet sont: 
+1- La dynamique mise en place durant le précédent contrat tant en termes de production scientifique que de réalisations expérimentales et de développement de partenariats
+2- Les thématiques traitées sont porteuses
+3- La plateforme expérimentale développée
+4- L'équipe est jeune, soudée et y règne une très bonne entente.
+- des points à améliorer ;
+Les éléments internes qui pourraient éventuellement pénaliser le projet sont:
+1- Les très nombreuses sollicitations d'ordre administratif, particulièrement exigeantes dans un IUT
+2- L'insuffisance en termes de locaux et de personnel technique
+- des possibilités offertes par le contexte / l’environnement dans lequel elle se trouve ;
+Les éléments externes qui vont favoriser l'émergence du projet sont de notre point de vue: l'originalité des travaux de l'unité, ses partenariats académiques tant au national qu'à l'international et les partenariats industriels développés et fidélisés au cours de ces dernières années.
+- des risques liés à ce contexte / cet environnement.
+Les risques liés au contexte peuvent éventuellement être la lenteur du projet de réalisation de la tranche de travaux de chantier prévue depuis de nombreuses années, qui devait nous permettre d'avoir des locaux dédiés à la recherche. L'unité s'est accommodée de la mutualisation de certains locaux avec le département d'enseignement GTE dont l'ensemble des EC du LTIE sont des enseignants
+6-	Projet scientifique à cinq ans
+Pour l’unité, l’équipe ou le thème, on précisera le mode de structuration de l’unité (équipes / thèmes) et on présentera les effectifs, les orientations scientifiques, les choix stratégiques, les objectifs scientifiques, les moyens à mobiliser pour atteindre ces objectifs, les partenariats, les nouvelles thématiques scientifiques, …
+Le projet scientifique de l'unité à cinq ans se décline sous forme de sujets d'investigation nouveaux et aussi la poursuite de certaines études abordées durant le précédent contrat.
+Les sujets qui seront abordés au cours du prochain contrat s'inscrivent dans les axes de recherche couverts par le LTIE et porteront sur les points suivants:
+Freinage aéronautique hautes performances (partenariat Messier-Bugatti-Dowty)
+Le LTIE a développé un partenariat nouveau durant le précédent contrat quinquennal avec la Société Messier-Bugatti-Dowty (leader mondial en matière de trains d'atterrissage d'avions). La problématique étudiée concerne les freins à carbone qui équipent les avions. Une première thèse CIFRE a été réalisée pour étudier la dissipation thermique dans les différentes interfaces stator-rotor du frein durant la phase de freinage. Des résultats intéressants ont pu être obtenus, ce qui a conduit au démarrage d'une deuxième thèse CIFRE (recrutement en cours) pour étendre l'étude à l'ensemble des pièces du dispositif depuis les disques de freins jusqu'à la roue. On prospectera tout particulièrement la phase de refroidissement du dispositif de freinage. Des essais, des modélisations numériques directes et inverses ainsi que des caractérisations thermophysiques sont développés au cours de ces travaux pour mener à bien cette activité.
+Atterrisseur principal d'un A320
+(image Bugatti)	Vue interne du frein, disques et jante
+(image Bugatti)
+Identification des sources de chaleur et des températures dans les puces électroniques encastrées (partenariat Thales TGS)
+Il s'agit d'une activité nouvelle qui va consister à identifier les sources de chaleur encastrées dans des matrices de cartes électroniques. Ce travail s'effectuera en partenariat avec Thales dans le cadre d'une thèse CIFRE en cours de recrutement. L'expérience du LTIE en matière d'identification et d'expérimentation va être mise à profit pour conduire cette activité. Des techniques d'identification appropriées et une instrumentation thermique fine seront développées à ces fins.
+Développement de modèles compacts dynamiques pour les cartes électroniques et leurs puces (partenariat Thales TGS)
+Le LTIE développe des travaux de modélisation des cartes électroniques en partenariat avec Thales depuis 2011. Il s'agit d'une modélisation originale qui vise à élaborer des modèles réduits permettant d'obtenir les cartographies thermiques en des temps de calcul relativement courts. Deux thèses CIFRE, l'une soutenue en 2015 et l'autre le sera fin 2018, ont été réalisées dans le cadre de cette activités. La partenaire Thales finance également un post-doc depuis 2012 pour accompagner ses travaux. De nombreuses publications a été réalisées dans la cadre de ce partenariat. Une nouvelle thèse CIFRE sera demandée pour poursuivre cette activité en considérant des composants électroniques nouveaux. Des travaux de caractérisation, de nouveaux modèles dynamiques réduits spécifiques et des expérimentations seront développés pour mener à bien ce projet.
+Activités aérodynamiques
+a- Détermination de coefficients d’échange convectif local
+L’objectif de ce projet porte sur l’identification du coefficient d’échange convectif local. L’identification utilisera une solution analytique développée au laboratoire. Cette solution permet de calculer la température locale ou moyenne d’échauffement d’un solide dont les caractéristiques thermiques sont connues. Il est soumis à un flux surfacique de chaleur généré par une source Laser maîtrisée et placé dans une veine de soufflerie pour être refroidi par convection. Les relevés expérimentaux de températures seront effectués par caméra infra rouge et permettront ainsi l’identification expérimentale du coefficient d’échange par inversion de mesures. Les essais étant effectués en soufflerie (cf. Figure ci-dessous), une mesure du champ de vitesse sera effectuée par méthode PIV. Ainsi, il sera possible de calculer le coefficient d’échange local à partir des corrélations de la littérature et de le comparer aux résultats obtenus par identification.
+Soufflerie S1, subsonique de type Prandtl
+Les figures ci-dessous représentent les cartographies obtenues par caméra infra-rouge avec et sans écoulement d’air. On trace également la répartition de la température dans l’espace puis en fonction du temps .
+Cartographie obtenue par thermographie infra-rouge à un instant donné (vitesse d’air 10 m/s)	Evolution de la température au centre du spot en fonction du temps (vitesse d’air 10 m/s)
+Cartographie obtenue par thermographie infra-rouge à un instant donné (vitesse d’air 0 m/s)	Evolution de la température selon un diamètre (vitesse d’air 0 m/s)
+Étude Thermomécanique de l'interface Ciment osseux-Prothèse
+Il s'agit de l'arthroplastie qui est une intervention chirurgicale qui vise à remplacer une articulation malade par une autre, de caractéristiques artificielles, constituée de matériaux biocompatibles à base appelée prothèses. Une des façons les plus courantes de fixation et d'ancrage de la prothèse est d'utiliser un matériau thermoplastique communément connu sous le nom de ciment osseux. Depuis plus de 60 ans, le ciment osseux est utilisé dans la fixation chirurgicale de prothèses, avec un accent particulier sur l'arthroplastie totale de la hanche. Un problème majeur lié à l'utilisation de ciment osseux est la nécrose thermique qui peut être causée par des températures élevées générées par la réaction exothermique lors de la polymérisation. Ceci peut également entraîner une défaillance mécanique de la prothèse. Ainsi, il est important d'améliorer la connaissance des caractéristiques thermiques et mécaniques du ciment osseux couramment utilisés.
+Cette activité vise à étudier les transferts de chaleur lors de la polymérisation du ciment osseux et plus particulièrement au voisinage de l'interface os-ciment qui présente la caractéristique d'être déformable (gonflement et rétraction du thermoplastique). Ces phénomènes sont couplés aux aspects mécaniques (contraintes et déformations). 	 
+Coupes indiquant la mise en place de la prothèse et le thermoplastique (ciment) injecté entre la prothèse et la cavité de l'os.
+Convection naturelle en milieu confiné
+Les travaux dans ce domaine sont abordés par voies numérique et expérimentale, en relation avec des applications réelles dans divers domaines: électronique, bâtiment, aéronautique, alimentaire, énergies renouvelables, environnement. Plusieurs bancs expérimentaux ont été réalisés. Ils permettent d'explorer les conséquences thermiques de l'écoulement sur les frontières de l'enceinte concernée dont la géométrie varie d'une application à une autre. Les mesures conduisant à déterminer l’influence de plusieurs paramètres physiques sur les caractéristiques de l'écoulement: qualités radiatives des revêtements des parois internes de l’enceinte; conditions aux limites thermiques des parois passives; qualités thermophysiques du fluide caloporteur; effets de bords... Outre les cavités de sections carrée et rectangulaire, la cavité de section parallélogrammatique caractérisée par son effet convectif diode a fait l'objet de plusieurs travaux et s'applique dans divers domaines. Plusieurs configurations ont été examinées, mettant en évidence l’influence de divers paramètres sur les échanges convectifs naturels (angle d’inclinaison, rapport de forme de la cavité, écart des températures entre les parois actives chaude et froide, conditions aux limites). Les nombreuses conditions géométriques et thermiques traitées ont permis de déterminer plusieurs paramètres importants tels les coefficients d’échange locaux, nécessaires au dimensionnement des systèmes dans divers domaines industriels et le recalage des modèles numériques. La cavité hémisphérique a aussi été examinée ces dernières années avec des approches numériques et expérimentales. Les travaux considèrent une large gamme du nombre de Rayleigh et plusieurs inclinaisons du disque, pour en permettre l'application à divers secteurs tels l'énergétique nucléaire, l'énergétique solaire, le bâtiment ou encore les montages électroniques embarqués. La convection naturelle transitoire expérimentale fait l'objet d'une attention particulière. Elle constitue l'originalité de nos études par rapport à celles qui sont traitées dans d'autres laboratoires à l'échelle internationale. Certains travaux sont consacrés à l'étude des écoulements générés par des sources actives discrètes soumises à diverses conditions aux limites. Ces travaux qui se font en collaboration avec des industriels permettent de qualifier et quantifier les échanges convectifs naturels transitoires dans les boîtiers contenant des composants électroniques répartis de manière aléatoire, générant des flux variables ou maintenus à des températures de fonctionnement différentes. 
+Le domaine de la thermique des montages électroniques est un sujet phare dans notre laboratoire. De nombreux articles ont été publiés dans des revues internationales et permis un contact étroit avec l'entreprise Thales, spécialisée dans ce domaine. Quatre enseignants chercheurs locaux, un post doctorant, trois thésards et une moyenne de 3 élèves ingénieurs par an travaillent sur ce sujet, avec des approches analytiques, numériques et expérimentales. L’équipe du LTIE travaille par ailleurs en collaboration avec d’autres chercheurs d’établissements partenaires en France (Onera, Thales) et à l’international tels l’Université Polytechnique de Madrid, l’Université du Pays basque (Bilbao - San Sebastian), l’Université de Coimbra, Bath University, University of Brighton, Firat University ou encore Bharathiar University (Coimbatore, Inde). Deux thèses sont actuellement financées par des bourses Cifre avec l'entreprise Thales et une autre par une bourse du ministère. Deux autres thèses (Cifre et Ministère) s’y ajouteront dès la rentrée 2018, complétées par 2 thèses en co-tutelle avec Bharathiar University (Coimbatore, Inde). Des bancs expérimentaux ont été mis au point utilisant entre autres la thermographie IR et la spectrophotométrie IR. Ils sont complétés par un équipement précis de caractérisation thermique des matériaux (conductivité, diffusivité, effusivité, chaleur spécifique, ..). La mesure permet l'accès à des données thermiques intéressantes, qui ont contribué à recaler les modèles numériques mis en œuvre. Au LTIE, les approches numériques sont en effet systématiquement complétées par des mesures sur des prototypes conçus, réalisés et mis en œuvre dans le laboratoire.
+Plusieurs travaux ont été publiés récemment, consistant à mettre au point des corrélations du type Nusselt-Rayleigh permettant le dimensionnement des montages électroniques équipés de composants électroniques du type QFN (16,32 et 64). Ces outils couvrent de larges gammes de puissance générée, d'inclinaison de la carte électronique support et conditions thermiques particulières correspondant aux applications envisagées. L'influence de divers paramètres physiques sont examinés dans ces travaux.
+Pour les montages électroniques générant des grandes puissances, l’utilisation de nanofluides peut être envisagée. Cet aspect a été traité récemment avec diverses combinaisons fluide de base – nanoparticules, fraction volumique et angle d’inclinaison, dans une large gamme du nombre de Rayleigh. Les nombreux travaux effectués montrent que les échanges convectifs naturels sont effectivement améliorés pour certaines combinaisons de ces paramètres d’influence, mais cependant dans des proportions très variables. Cette amélioration est en effet négligeable dans certains cas et la convection naturelle est clairement défavorisée pour certaines configurations. Les travaux numériques et expérimentaux mettent clairement en évidence des phénomènes.
+Les milieux poreux saturés de nanofluides ont été envisagés pour améliorer la thermorégulation des montages électroniques de formes diverses, contenues dans des cavités hémisphériques inclinées. Les travaux effectués par voie numérique et confirmés par l’expérience conduisent à la mise au point de corrélations nouvelles, publiées récemment. Elles permettant d’optimiser le dimensionnement thermique ce ces composants pour diverses configurations des principaux paramètres physiques d’influence.
+Energie et préservation de l’eau
+Le LTIE collabore avec les Universités de Bath et de Brighton (Royaume Uni) dans autre thème de recherche traitant d’économie d’énergie et la préservation des ressources en eau. Le projet qui a démarré en 2015 consiste à faire le point sur les systèmes existants et proposer des solutions techniques pour une gestion automatique et centralisée des ressources, durable et rationnelle. Une première phase a été conduite avec succès, et se poursuit actuellement en parallèle avec une demande de financement par l’Engineering and Physical Sciences Research Council (EPSRC_LWEC, 60 mois, Budget £294,800). Des publications illustrent les travaux effectués dans ce domaine.
+Ci-dessous des photos de quelques dispositifs expérimentaux destinés aux études de la convection naturelle en milieu confiné:
+  (a)
+  (b)
+(a) Les montages à tester avec les trois géométries de composant électrique à tester et (b) le bâti utilisé pour incliner la cavité.
+Source chaude plane circulaire positionnée dans son logement. 
+Les trois dilutions de nanofluides de fractions massiques :
+ ,   et  .
+Sonde circulaire plongée dans de l’eau déminéralisée et dans un nanofluide
+ANNEXES
+Annexe 1 :	Lettre de mission contractuelle
+Une copie de la lettre de mission adressée au.à la directeur.rice d’unité de recherche en début de contrat, si elle existe, sera jointe au dossier.
+Sans objet
+Annexe 2 :	Équipements, plateformes
+Une liste des équipements et des plateformes utilisés par l’unité de recherche sera jointe au dossier.
+1	Banc de freinage automobile
+2	Banc convection naturelle (air): amélioration du rendement des capteurs solaires thermiques plans
+3	Banc de velocimétrie PIV en soufflerie subsonique
+4	Thermographie IR
+5	Caractérisation thermique des matériaux (conductivité, diffusivité, effusivité, chaleur spécifique, ....). Méthode Transient Source (TPS): 
+•	* Banc dévelopé au LTIE
+•	* Banc Hot Disc TPS2500
+6	Quantification des échanges convectifs naturels appliqués à l’électronique:
+•	* Air
+•	* Nanofluides 
+•	* Milieux poreux
+7	Intrumentation d'un banc de freinage d'avion (échelle réelle) chez Bugatti 
+8	Caractérisaton thermique des puces et cartes électroniques (Thermographie IR, mesures dans bains diélectriques) pour les besoins d pertenariat Thales Global Services, TGS
+9	Instrumentation d'un Tube à Ondes Progressives TOP (très petites dimensions) pour les besoins de partenariat avec Thales Electronic Devices, TED 
+10	Montage de mesure de résistances de contact 
+11	Caractérisation thermomécanique des TOP (Thales TED) en partenariat avec Supmeca
+12	Distillation solaire
+13	Salle de calcul: 25 postes opérationnels
+Annexe 3 :	Organigramme fonctionnel
+Une présentation schématique du mode d’organisation de l’unité de recherche sera jointe au dossier.
+Annexe 4 :	Sélection des produits et des activités de recherche
+Donner la sélection des productions et des activités de recherche par catégorie en recourant au document « Sélection des produits et des activités de recherche ».
+Dans les publications collectives, les noms des membres de l’unité, de l’équipe ou du thème seront soulignés. On veillera à faire ressortir les productions portées par l’unité, l’équipe ou le thème (par exemple dans certains domaines, les publications signées en premier ou dernier auteur).
+A4.1- Journaux / Revues
+P1
+	S. Vintrou, N. Laraqi, A. Baïri,
+Calculation and analysis of thermal impedance of microelectronic structures from analytical models, 
+Solid-State Electronics 67(1), 45–52, 2012
+P2	A. Baïri, E. Zarco-Pernia, J-M. Garcia de Maria, N. Laraqi, 
+Free convection in parallelogram-shaped enclosures with isothermal active walls: viscous shear stress in active systems, 
+Fluid Dynamics Research 44, 055504 (14pp) doi:10.1088/0169-5983/44/5/055504, July 2012
+P3	M.M. Rashidi, N. Laraqi, S.M. Sadri,
+Semi analytical solution of boundary-layer flow of a micropolar fluid through a porous channel, Walailak Journal of Science and Technology, 9(4)(2012) 381-393
+P4	A. Baïri, J.-M. García de María, I. Baïri, E. Zarco-Pernia, N. Alilat, N. Laraqi, 
+2D transient natural convection in diode cavities containing an electronic equipment with discrete active bands under constant heat flux, 
+International Journal of Heat and Mass Transfer 55 (19-20), 4970-4980, 2012
+P5	A. Merabtine, S. Mokraoui, R. Benelmir, N. Laraqi,
+A bond graph model validation of an experimental single zone building, 
+Fluid Dynamics and Materials Processing, 8(2)(2012) 215-240
+P6	S. Guenoun, A. Baïri, N. Laraqi, J. M. García de María,
+Convection correlations at high Re numbers for cavities of cylindrical roller bearings
+Fluid Dynamics and Materials Processing, FDMP20120219311, 8 (2), 197-214, 2012
+P7	N. Dihmani, S. Amraqui, A. Mezrhab, N. Laraqi, 
+Numerical modelling of ribwidth and surface radiation effect on natural convection in a vertical vented and divided channel, 
+Fluid Dynamics and Materials Processing, 8(3)(2012) 311-322
+P8	N. Laraqi, M. El Ganaoui,
+Analytical computation of transient heat transfer and macro-constriction resistance applied to thermal spraying processes, 
+Comptes Rendus - Mecanique, 340(7)(2012) 536-542
+P9	S. Mokraoui, A. Merabtine, R. Benelmir, N. Laraqi,
+Bond graph approach for modeling and analysis of transient heat conduction in the prospect of energy building application, 
+International Journal of Energy, Environment and Economics, 20(1)(2012) 53-73
+P10	A. Merabtine, S. Mokraoui, R. Benelmir, N. Laraqi, 
+Dynamic model of the floor heating system combined with the roof cooling system using the Bond Graph approach, 
+Mechanics and Industry, 13(1)(2012) 77-86
+P11	A. Baïri, J.-M. García de María, 
+Nu-Ra-Fo correlations for transient free convection in 2D convective diode cavities with discrete heat sources, 
+International Journal of Heat and Mass Transfer 57 (2), 623-628, 2013
+P12	N. Laraqi, E. Monier-Vinard,
+New analytical solution for solving steady-state heat conduction problems with singularities,
+Thermal Science, 17(3)(2013) 665-672
+P13	A. Baïri, 
+Correlations for transient natural convection in parallelogrammic enclosures with isothermal hot wall, 
+Applied Thermal Engineering 51, 833-838, 2013
+P14	M. Hamraoui, M. Chbiki, N. Laraqi, L. Roseiro, 
+Analytical study of the temperature distribution in solids subjected to non-uniform moving heat sources, 
+Thermal Science, 17(3)(2013) 687-694
+P15	A. Baïri, J.-M. García de María, 
+Numerical and experimental study of steady state free convection generated by constant heat flux in tilted hemispherical cavities, 
+International Journal of Heat and Mass Transfer 66, 355-365, 2013
+P16	E. Monier-Vinard, N. Laraqi, C.T. Dia, M.N. Nguyen, V. Bissuel, 
+Analytical thermal modelling of multilayered active embedded chips into high density electronic board, 
+Thermal Science, 17(3)(2013) 695-706
+P17	L. Roseiro, C. Veiga, V. Maranha, A. Neto, N. Laraqi, A. Baïri, N. Alilat, Induced Bone Tissue Temperature in Drilling Procedures: A Comparative Laboratory Study with and without Lubrication, 
+Int. Journal of Medical, Health, Pharmaceutical and Biomedical Engineering 8(11), 2014.
+https://waset.org/Publication/induced-bone-tissue-temperature-in-drilling-procedures-a-comparative-laboratory-study-with-and-without-lubrication/10000507
+P18	F. Moufekkir, M.A Moussaoui, A. Mezrhab, M. Bouzidi, N. Laraqi,
+Study of double-diffusive natural convection and radiation in an inclined cavity using lattice Boltzmann method, 
+International Journal of Thermal Sciences, 63(2013) 65-86
+P19	N. Dihmani, S. Amraqui, A. Mezrhab, M. Bouzidi, N. Laraqi, 
+Modeling of natural convection with surface radiation in vented vertical channel with rectangular RIB, 
+International Journal of Computational Methods, 10(3)(2013) Article number 1350001
+P20	A. Baïri, E. Zarco-Pernia, J.-M. García de María, 
+A review on natural convection in enclosures for engineering applications. The particular case of the parallelogrammic diode cavity, 
+Applied Thermal Engineering 63, 304-322, 2014
+P21	A. Baïri, 
+Nu–Ra–Fo correlations for thermal control of embarked radars contained in tilted hemispherical cavities and subjected to constant heat flux, 
+Applied Thermal Engineering 67, 540–544, 2014
+P22	A. Baïri, H.F. Öztop, 
+Free convection in inclined hemispherical cavities with dome faced downwards. Nu–Ra relationships for disk submitted to constant heat flux,
+International Journal of Heat and Mass Transfer 78, 481–487, 2014
+P23	A. Baïri, H.F. Öztop, 
+On thermal control of devices contained in inclined hemispherical cavities with dome oriented downwards and subjected to transient natural convection, 
+International Communications of Heat and Mass Transfer 55,  109–112, 2014
+P24	A. Baïri, 
+Quantification of natural convective heat transfer within air-filled hemispherical cavities. Isothermal tilted disk with dome oriented upwards and wide Ra range, 
+International Communications of Heat and Mass Transfer 57, 291–296, 2014
+P25	A. Baïri, E. Monier-Vinard, N. Laraqi, I. Baïri, M.N. Nguyen, C.T. Dia, 
+Natural convection in inclined hemispherical cavities with isothermal disk and dome faced downwards. Experimental and numerical study,
+Applied Thermal Engineering 73, 1338–1345, 2014
+P26	A. Baïri, 
+Empirical Nu–Ra–Fo relationships for natural convection in air-filled hemispherical enclosures. Isothermal and inclined disk with dome oriented downwards,
+International Communications of Heat and Mass Transfer 57, 347–352, 2014
+P27	A. Baïri, 
+A synthesis of correlations on quantification of free convective heat transfer in inclined air-filled hemispherical enclosures, 
+International Communications of Heat and Mass Transfer 59, 174–177, 2014
+P28	A. Baïri, J.M. García de María, N. Alilat, N. Laraqi, J.G. Bauzin, 
+Nu–Ra correlations for natural convection at high Ra numbers in air-filled tilted hemispherical cavities with dome oriented upwards. Disk submitted to constant heat flux, 
+International Journal of Numerical Methods for Heat & Fluid Flow 25 (3), 504-512, 2015
+P29	A. Baïri, 
+Natural convection on inclined QFN32 electronic package generating constant volumetric heat flux, 
+International Communications in Heat and Mass Transfer 66, 133–139, 2015
+P30	A. Baïri, 
+Transient free convection within air-filled hemispherical enclosures. Nu–Ra–Fo relationships for isothermal and inclined disk with dome oriented upwards,
+International Journal of Numerical Methods for Heat & Fluid Flow 25 (4), 629-638, 2015
+P31	A. Baïri, 
+Thermal design of tilted electronic assembly with active QFN16 package subjected to natural convection, 
+International Communications in Heat and Mass Transfer 66, 240–245, 2015
+P32	E. Monier-Vinard, N. Laraqi, C.T. Dia, M.N. Nguyen, V. Bissuel,
+Analytical modeling of multi-layered Printed Circuit Board dedicated to electronic component thermal characterization, 
+Solid-State Electronics, 103(2015) 30-39
+P33	A. Baïri, Effects of the wire-bonding technique on the QFN16b's thermal performance. New correlations for the free convective heat transfer coefficient, 
+International Communications in Heat and Mass Transfer 69, 59-65, 2015
+P34	A. Baïri, C. Crua, J.G. Bauzin, I. Baïri, 
+Aerodynamical phenomena in a large  top covered wind mill with vertical axis wind turbine,
+International Journal of Numerical Methods for Heat & Fluid Flow 26 (1), 1-17, 2015
+P35	M.M. Rashidi, M. Nasiri, M. Khezerloo, N. Laraqi, 
+Numerical investigation of magnetic field effect on mixed convection heat transfer of nanofluid in a channel with sinusoidal walls, 
+Journal of Magnetism and Magnetic Materials, 401(2016) 159-168
+P36	A. Baïri, 
+Correlations highlighting effects of the PCB’s Copper ratio on the free convective heat transfer for a tilted QFN32 electronic package, 
+International Journal of Heat and Mass Transfer 92 (2016) 110–119
+P37	A. Baïri, O. Haddad, 
+Detailed correlations on natural convective heat transfer coefficients for QFN32 electronic device on inclined PCB,
+Numerical Heat Transfer Part A; Applications 69(8) 841-849, 2016
+P38	M.N. Nguyen, E. Monier-Vinard, N. Laraqi, V. Bissuel, 
+Effect of Heat Source Orientation on the Thermal Behavior of NLayer Electronic Board, International Journal of Thermal Sciences 109(2016) 23-32
+P39	A. Baïri, D. San Martín, I. Baïri, K. Adeyeye, K. She, A. Hocine, N. Alilat, J.G. Bauzin, C. Lamriben, B. Chanetz, N. Laraqi, 
+Aerodynamics in the open channel of the Sistan-type Wind-Mill with Vertical Axis Wind Turbine.
+International Journal of Numerical Methods for Heat & Fluid Flow 26(8), 1-13, 2016
+P40	A. Purusothaman, A. Baïri, N. Nithyadevi, 
+3D natural convection on a horizontal and vertical thermally active plate in a closed cubical cavity, 
+International Journal of Numerical Methods for Heat & Fluid Flow, 26(8) (2016) 2528-2542
+P41	A. Baïri, 
+Quantification of the natural convective heat transfer for the tilted and wire-bonded QFN32b-PCB electronic assembly, 
+International Communications in Heat and Mass Transfer 72, (2016) 84–89.
+http://dx.doi.org/10.1016/j.icheatmasstransfer.2016.01.011
+P42	M. Chbiki, T. Da Silva Botelho, J.G. Bauzin, N. Laraqi, J.-F. Jarno, 
+Thermal effect on the thermomechanical behavior of contacts in a Traveling Wave Tube (TWT), 
+Thermal Science 20(6)(2016) 1983-1990
+P43	A. Baïri, 
+Temperature determination of tilted electronic assemblies equipped with basic and wire-bonded QFN16 and 32 devices subjected to free convection
+Applied Thermal Engineering, 102 (2016) 565–569
+P44	A. Baïri, 
+On the junction temperature of the QFN64 electronic package subjected to free convection. Effects of the encapsulating molding compound,
+Numerical Heat Transfer 70(7) (2016) 809-814
+P45	A. Baïri, 
+Free convective heat transfer for the wire-bonded and low powered QFN64b electronic device, 
+International Communications in Heat and Mass Transfer 77 (2016) 94–99
+P46	E. Monier-Vinard, N. Laraqi, C.T. Dia, M.N. Nguyen, V. Bissuel,
+Analytical modeling of multi-layered printed circuit board using multi-stacked via clusters as component heat spreader, 
+Thermal Science, 20(5)(2016) 1633-1647
+P47	A. Baïri, 
+Free convection on inclined electronic assembly with active QFN16 package
+International Journal of Numerical Methods for Heat & Fluid Flow 26(5) (2016) 1446 – 1459 
+P48	A. Baïri, J.G. Bauzin, N. Alilat,
+Experimental and Numerical Study of Natural Convection for High Powered and Wire-Bonded QFN64b Electronic Device
+International Communications in Heat and Mass Transfer 78 (2016) 264–270
+P49	E. Monier-Vinard, B. Rogié, C.T. Dia, V. Bissuel, N. Laraqi, O. Daniel, M.C. Kotelon, A.I. Faha, 
+Experimental Characterization of Predictive Thermal Behaviour Model of a Surface-Mounted Soft Magnetic Composite Inductor, 
+Microelectronics Reliability, 67(2016) 54-63
+P50	O. Haddad, A. Baïri,
+Natural convective heat transfer within nanofluid-filled hemispherical horizontal enclosure, Journal of Physics 745 (2016) 032161, IOP Publishing
+doi:10.1088/1742-6596/745/3/032161
+P51	A. Baïri, C. Ortega Hermoso, D. San Martín Ortega, I. Baïri, Z. Peter,
+Surface temperature of electronic assemblies equipped with tilted and low powered QFN64 subjected to free convection,
+International Journal of Numerical Methods for Heat & Fluid Flow 27(6) (2017) 1304-1310
+P52	A. Baïri,
+Free convective heat transfer coefficient for high powered and tilted QFN64 electronic device
+Microelectronics Reliability 66 (2016) 85–91
+P53	M.N. Nguyen, E. Monier-Vinard, N. Laraqi, V. Bissuel, 
+Practical analytical Steady-State temperature solution for Annealed Pyrolytic Graphite Heat Spreader, 
+International Journal of Numerical Methods for Heat & Fluid Flow, 27(1)(2017) 174-188
+P54	K. Adeyeye, K. She, A. Baïri, 
+Design factors and functionality matching in sustainability products: A study of eco-showerheads
+Journal of Cleaner Production 142(4) (2017) 4214-4229.
+P55	A. Baïri, L. Roseiro, A. Martín-Garín, K. Adeyeye, J.A. Millán-García,
+Thermal State of Electronic Assemblies Applied to Smart Building Equipped with QFN64 Device Subjected to Natural Convection
+Microelectronics Reliability 70 (2017) 79–83.
+http://www.sciencedirect.com/science/article/pii/S0026271417300021 
+P56	A. Baïri, N. Nithyadevi, I. Baïri, A. Martin-Garín, J.A. Millán-García,
+Thermal Design of a Sensor For Building Control Equipped With QFN Electronic Devices Subjected To Free Convection. Effects of The Encapsulating Resin.
+Energy and Buildings 141 (2017) 218–225
+http://dx.doi.org/10.1016/j.enbuild.2017.02.022
+P57	E. Monier-Vinard, M.N. Nguyen, N. Laraqi, V. Bissuel,
+Thermal modeling of multi-shape heating sources on n-layer electronic board, 
+Thermal Science 21(2)(2017) 797-811
+P58	A. Baïri, N. Alilat, A. Hocine, A. Hamouda, O. Haddad
+Numerical and experimental study of free convection on wire-bonded QFN64b electronic package.
+International Journal of Numerical Methods for Heat & Fluid Flow 27(6) (2017) 1323-1331
+P59	N. Laraqi, E. Chahour, E. Monier-Vinard, N. Fahdi, C. Zerbini, M.-N. Nguyen, 
+Simple and accurate correlations for some problems of heat conduction with nonhomogeneous boundary conditions, 
+Thermal Science, 21(1)(2017) 125-132
+P60	A. Baïri, L. Roseiro, J.A. Millán-García, I. Gómez-Arriaran, M. Odriozola-Maritorena,
+Energy management in smart building with wire-bonded QFN64b electronic package subjected to air free convection. Experimental and numerical study
+Energy & Buildings 148 (2017) 321–328
+P61	E. Monier-Vinard, B. Rogie, V. Bissuel, N. Laraqi, O. Daniel, M.C. Kotelon, 
+State of the art of thermal characterization of electronic components using computational fluid dynamic tools, 
+International Journal of Numerical Methods for Heat & Fluid Flow, 27(11)(2017) 2433-2450
+P62	A. Baïri,
+Junction Temperature of QFN32 and 64 Electronic Devices subjected to free convection. Effects Of The Resin's Thermal Conductivity.
+Microelectronics Reliability 74 (2017) 67-73
+P63	A. Baïri,
+Quantification of Free Convection for Embarked QFN64 Electronic Package. An Experimental and Numerical Survey.
+The European Physical Journal Plus 132 (2017) 343-351
+Eur. Phys. J. Plus (2017) 132: 343; DOI 10.1140/epjp/i2017-11615-5 
+https://link.springer.com/article/10.1140/epjp/i2017-11615-5?wt_mc=Internal.Event.1.SEM.ArticleAuthorIncrementalIssue 
+P64	N. Laraqi, C. Lamriben, A. Hocine, Z.A. Peter, A. Hamouda, 
+Analytical modeling of the thermal behavior of a thin lubricant film under non-linear condition,
+Thermal Science 21(1)(2017) 117-124, DOI: 10.2298/TSCI160415242L
+P65	A. Baïri, O. Haddad, N. Alilat,
+Nu-Ra-Pr Correlations For Nanofluidic Natural Convection In Tilted Hemispherical Enclosures With Active Disk
+Numerical Heat Transfer 71(11) (2017) 1094-1103
+P66	O. Haddad, A. Baïri, N. Alilat, J.G. Bauzin, N. Laraqi,
+Free Convection In ZnO Nanofluid-Filled And Tilted Hemispherical Enclosures Containing A Cubic Electronic Device
+International Communications in Heat and Mass Transfer 87 (2017) 204–211
+P67	A. Baïri, B. Chanetz, J.A. Millán-García,
+Embarked electronics with QFN16, 32 and 64 devices subjected to free convection. Influence of the adhesive paste on the junction temperature
+Journal of Electronic Packaging ASME, December 2017, Vol. 139, Issue 4 / 041009-1-5
+DOI: 10.1115/1.4038113
+http://electronicpackaging.asmedigitalcollection.asme.org/article.aspx?articleid=2657105 
+P68	N. Alilat, Natural convective heat transfer in the air-filled interstice between inclined concentric hemispheres: Application to thermoregulation in electronics
+International Journal of Numerical Methods for Heat & Fluid Flow 27(10) (2017) 2375-2384
+P69	A. Baïri, J.P. Guinart, O. Haddad, K. Adeyeye, N. Alilat,
+Effects of the encapsulating resin on the junction temperature of the QFN16 and QFN32 electronic packages subjected to free convection
+Heat Transfer Engineering 39(4) (2018) 353-358
+http://www.tandfonline.com/doi/full/10.1080/01457632.2017.1305834  
+P70	E. Monier-Vinard, V. Bissuel, B. Rogie, N. Laraqi, O. Daniel,
+Investigation on Steady-State and Transient Boundary Conditions Scenarios for Optimizing the Creation of Multi-port Surrogate Thermal Models,
+IEEE Transactions on Components, Packaging and Manufacturing Technology, (2017), in press, 10.1109/TCPMT.2017.2778511
+P71	A. Baïri,
+Natural Convection Between Concentric And Inclined Hemispherical Cavities Filled With Cu-Water Nanofluid
+Journal of Molecular Liquids 249 (2018) 1263–1270
+https://doi.org/10.1016/j.molliq.2017.11.079 
+P72	A. Martín-Garín, J.A. Millán-García,  A. Baïri, J. Millán-Medel, J.M. Sala Lizarraga,
+Environmental monitoring system based on an open source platform and the internet of things for a building energy retrofit
+Automation in Construction 87 (2018) 201–214
+P73	A. Baïri, J.G. Bauzin, A. Martín-Garín, N. Alilat, J.A. Millán-García,
+Natural convective cooling of electronics contained in tilted hemispherical enclosure filled with a porous medium saturated by H2O-Cu nanofluid
+International Journal of Numerical Methods for Heat & Fluid Flow (2018)
+P74	E. Monier-Vinard, B. Rogie, M.N. Nguyen, N. Laraqi, V. Bissuel,
+Practical Analytical Modeling of 3D Multi-Layer Printed Wired Board with Buried Volumetric Heating Sources
+International Journal of Thermal Sciences, 129 (2018) 404-415
+P75	A. Baïri, N. Laraqi, K. Adeyeye,
+Thermal behavior of an active electronic dome contained in a tilted hemispherical enclosure and subjected to nanofluidic Cu-water free convection 
+The European Physical Journal Plus 133 (2018) 93-103;  DOI: 10.1140/epjp/i2018-11914-3
+P76	J.G. Bauzin, N. Keruzore, N. Laraqi, A. Gapin, J.F. Diebold,
+Identification of the heat flux generated by friction in an aircraft braking system
+International Journal of Thermal Sciences, 130 (2018) 449-456; DOI: 10.1016/j.ijthermalsci.2018.05.008
+P77	B. Rogié, L. Codecasa, E. Monier-Vinard, V. Bissuel, N. Laraqi,O. Daniel, D. D'Amore, A. Magnani, V. d'Alessandro, N. Rinaldi,
+Multi-port Delphi-like Compact Thermal Models using Model Order Reduction,
+Microelectronics Reliability, (2018) in press
+A4.2- Ouvrages - Direction et coordination d’ouvrages
+CL1	B. Chanetz, J. Délery, A. Baïri, 
+Aerodynamics of Rotating Bodies
+Int. J. Engineering Systems Modelling and Simulation, Inderscience Publishers
+Volume 4, Issue 1/2, 2012
+http://www.inderscience.com/browse/index.php?journalID=288&year=2012&vol=4&issue=1/2 
+CL2	B. Chanetz, J. Délery, A. Baïri, 
+Wind tunnel and computation: a joint strategy for flow prediction
+Int. J. Engineering Systems Modelling and Simulation, Inderscience Publishers, 
+Volume 5, Issue 1/2/3, 2013
+http://www.inderscience.com/info/inarticletoc.php?jcode=ijesms&year=2013&vol=5&issue=1/2/3s
+CL3	B. Chanetz, J. Délery, A. Baïri, 
+Aerodynamics of Small Bodies and details
+Int. J. Engineering Systems Modelling and Simulation, Inderscience Publishers, 
+Volume 6, Issue 3/4, 2014
+http://www.inderscience.com/info/inarticletoc.php?jcode=ijesms&year=2014&vol=6&issue=3/4
+CL4	B. Chanetz, J. Délery, A. Baïri, 
+Aerodynamics of Land Vehicles
+International Journal of Aerodynamics, Inderscience Publishers
+Volume 4, Issue 1/2, 2014
+http://www.inderscience.com/info/inarticletoc.php?jcode=ijad&year=2014&vol=4&issue=1/2
+CL5	Motsa, S., Shateyi, S. Van Gorder, Laraqi, N., Rush Kumar, B.,
+Mathematical Problems in Engineering
+Special issue: Volume 2015, 2015, Article number 673890, 10.1155/2015/673890
+CL6	A. Baïri, B. Chanetz, J. Delery, J.D. Parisse
+Forthcoming challenges for aerodynamics
+International Journal of Numerical Methods for Heat & Fluid Flow, 
+http://www.emeraldinsight.com/toc/hff/26/7
+Volume 26, Issue 7, 2016
+CL7	A. Baïri, B. Chanetz, J. Delery
+Thermal Effects and Aerodynamics
+International Journal of Numerical Methods for Heat & Fluid Flow, 
+En cours, publication 3ème trimestre 2018
+CL8	A. Baïri, B. Chanetz, J. Delery
+Progress in Flow Control
+International Journal of Numerical Methods for Heat & Fluid Flow, 
+En cours, publication 4ème trimestre 2018
+CL9	A. Baïri, B. Chanetz , J. Delery
+Multiphysics approach in Aerodynamics
+International Journal of Numerical Methods for Heat & Fluid Flow, 
+Publication 4ème trimestre 2019
+Chapitres d’ouvrage
+CO1	L. Roseiro, C. Alcobia, P. Ferreira, A. Baïri, N. Laraqi, N. Alilat,, Identification of the forces in the suspension system of a race car using artificial neural networks,
+Book Chapter "Computational Intelligence and Decision Making - Trends and Applications",  Springer Ed., 2012 , V. 61, Ch 44, 469-477, 2013. ISBN: 978-94-007-4721-0.
+http://www.springer.com/engineering/computational+intelligence+and+complexity/book/978-94-007-4721-0
+A4.3- Colloques / congrès, séminaires de recherche
+Articles publiés dans des actes de congrès internationaux
+Ci1	A. Hocine,  B. Chanetz, S. Guenoun, A. Baïri, A. Tomassetti, M. Brocato, K. Gohari, 
+Experimental and numerical simulation of an old Iranian wind mill, 
+47th International Symposium of Applied Aerodynamics, Wind tunnel and computation: a joint strategy for flow prediction, Paris, 26-8 March 2012
+Ci2	Cheikh Dia, Najib Laraqi, Eric Monier-Vinard, Valentin Bissuel, Olivier Daniel, 
+Dynamic compact thermal model for stacked-dies electronic components, 
+SEMI-THERM 2012, San José, USA, March 18-22, 10.1109/STHERM.2012.6188821.
+Ci3	A. Baïri, E. Zarco-Pernia, A. Bravo Malo, N. Laraqi, M. Camarasa Rius, N. Alilat, J.M. García de María, 
+Steady state natural convection in hemispherical cavities, 
+International Congress on Water, Waste and Energy Management, Salamanca (Spain), 23-25 May 2012
+Ci4	Cheikh Dia, Najib  Laraqi, Eric Monier-Vinard, Valentin Bissuel, Olivier Daniel, 
+Thermal modeling of active embedded chip into high density electronic board, 
+EUROSIME 2012, Lisbon, Portugal, April 16-18, 10.1109/ESimE.2012.6191720.
+Ci5	A. Bravo Malo, J.M. García de María,  M. Camarasa Rius, E. Zarco-Pernia, A. Baïri, N. Laraqi, 
+Thermal and energy analysis of double-skin facades, 
+9th International Conference on Heat Transfer, Fluid Mechanics and Thermodynamics, HEFAT, Malta 16-18 July 2012
+Ci6	Cheikh Dia, Najib  Laraqi, Eric Monier-Vinard, Valentin Bissuel, Olivier Daniel, DELPHI style compact modeling by means of genetic algorithms of System in Package devices using composite sub-compact thermal models dedicated to model order reduction, 
+ITHERM 2012, San Diego, USA ,May 30- June1, 2012, 10.1109/ITHERM.2012.6231555.
+Ci7	E. Zarco-Pernia, A. Baïri, J.-M. García de María, M. Camarasa, N. Laraqi, A. Bravo, 
+Influence of the thermal capacity of the hot active wall on the 2D transient free natural convection in diode cavities, 
+The Energy & Materials Research Conference (EMR2012), Torremolinos (Malaga, Spain), 20-22 June 2012
+Ci8	Cheikh Dia, Najib  Laraqi, Eric Monier-Vinard, Valentin Bissuel, Olivier Daniel, 
+Advanced thermal modeling by means of genetic algorithms of high density 3D electronic packages, 
+EUROTHERM 2012, Poitiers, France, September 04-07, 2012.
+Ci9	A. Baïri, 
+Thermal control in intelligent buildings. The case of active sensors contained in hemispherical and inclined cavities subjected to transient free convection. 
+Seminar on thermal control of smart engineering devices sensors, San Sebastian (Spain), 2-5 July 2013
+Ci10	Cheikh Dia, Najib  Laraqi, Eric Monier-Vinard, Valentin Bissuel, Olivier Daniel, 
+Investigation of DELPHI Compact Thermal Model style for modeling surface-mounted soft magnetic composite inductor, 
+THERMINIC 2013, Berlin, Germany September 25-27, 2013
+10.1109/THERMINIC.2013.6675210. 
+Ci11	Cheikh Dia, Najib  Laraqi, Eric Monier-Vinard, Valentin Bissuel, Olivier Daniel, 
+Dynamic sub compact model and global compact model reduction for Multi-Chip Components, THERMINIC 2013, Berlin Germany September 25-27,2013,
+10.1109/THERMINIC.2013.6675190
+Ci12	G.R. Dehghan-Kamarag, A. Hocine, A. Baïri, B. Chanetz, 
+Experimental and numerical simulation of an iranian wind tower, 
+49th International Symposium of Applied Aerodynamics, Aerodynamics and Environment, Lille, France - March 24-25-26, 2014
+Ci13	E. Monier-Vinard, C. Dia, V. Bissuel, N. Laraqi, O. Daniel, 
+Latest developments of Compact Thermal Modeling of System in Package devices by means of Genetic Algorithm, 
+ITHERM XIV, 2014, USA, 10.1109/ITHERM.2014.6892390.
+Ci14	A. Baïri, L. Roseiro, N. Laraqi, N. Alilat, J. Bauzin, 
+Saving energy with intelligent devices activated by sensors subjected to free convection in inclined hemispherical cavities, 
+International Congress on Water, Waste and Energy Management, Oporto (Portugal), July 16-18, 2014
+Ci15	N. Nguyen, E. Monier-Vinard, N. Laraqi, C. Dia, V. Bissuel, 
+Calculation Limits of the homogeneous effective Thermal Conductivity Approach in Modeling of Printed Circuit Board, 
+THERMINIC XX, 2014, London, United Kingdom, 10.1109/THERMINIC.2014.6972484.
+Ci16	A. Baïri, A. Hocine, B. Chanetz, Kambiz Gohari, 
+Improving aerodynamic performances of an old vertical axis windmill of large dimensions, World Renewable Energy Congress 13 WREC XIII, University of Kingston London (UK), 3-8 August, 2014
+Ci17	E. Monier-Vinard, V. Bissuel, C. Dia, O. Daniel, N. Laraqi, Electronic Board modeling by the means of DELPHI Compact Thermal Model of Components, THERMINIC XX, 2014, United Kingdom, 10.1109/THERMINIC.2014.6972491
+Ci18	L. Roseiro, C. Veiga, V. Maranha, A. Neto, N. Laraqi, A. Baïri, N. Alilat 
+Induced Bone Tissue Temperature in Drilling Procedures: A Comparative Laboratory Study  with and without Lubrication, 
+XII International Conference on Applied Biomaterials and Biomechanics, ICABB 2014, Venice (Italy), 13-14 November 2014 
+Ci19	A. Baïri, N. Laraqi, N. Alilat, Natural convection in hemispherical geometries. Application in building
+III International Congress on Construction and Building Research, COINVEDI, 6p., Proceedings of COINVEDI, Madrid (Spain) December 14-16, 2015
+Ci20	E. Monier-Vinard, M.-N. Nguyen, N. Laraqi, V. Bissuel, 
+Practical Analytical Steady-State Temperature Solution for Annealed Pyrolytic Graphite Spreader: partial results, 
+THERMINIC XXI, 2015, Paris, France, 10.1109/THERMINIC.2015.7389615.
+Ci21	A. Baïri, D. San Martín, N. Laraqi, N. Alilat, J.G. Bauzin, A. Hocine, 
+Review of the main turbulence models used in thermal and aerodynamical problems, 
+Invited Conference
+International Symposium on Numerical Methods in Thermal Engineering and Aerodynamics, Proceedings of ISNMTEA, pp. 38-52, San Sebastian (Spain), August 10-13, 2015.
+Ci22	E. Monier-Vinard, Valentin Bissuel, Najib Laraqi, Olivier Daniel, D. Signing, 
+Experimental Characterization of DELPHI Compact Thermal Model For Surface-Mounted Soft Magnetic Composite Inductor, 
+THERMINIC XXI, 2015, Paris, France, 10.1109/THERMINIC.2015.7389618.
+Ci23	A. Baïri, Thermal and aerodynamical phenonema in applied natural convection
+51th 3AF International Conference on Applied Aerodynamics
+“Natural convective and aerodynamics”, Strasbourg (France), April 4-6, 2016.
+http://www.3af-aerodynamics2016.com/ 
+Ci24	E. Monier-Vinard, M.N. Nguyen, N. Laraqi, V. Bissuel, O. Daniel, 
+Steady-State Temperature Solution for Early Design of Annealed Pyrolytic Graphite Heat Spreader: Full Results, 
+ITHERM XV, 2016, Las Vegas, USA, 10.1109/ITHERM.2016.7517647.
+Ci25	A. Baïri, N. Laraqi, N. Alilat, O. Haddad, D. San Martín, C. Ortega Hermoso, 
+Thermal control of electronics subjected to natural convection,  
+XIV International Conference on Simulation and Experiments in Heat Transfer and its Applications, Ancona (Italy), 7-9 September 2016
+http://www.wessex.ac.uk/conferences/2016/heat-transfer-2016 
+Ci26	E. Monier-Vinard, B. Rogié, V. Bissuel, N. Laraqi , O. Daniel, M.C. Kotelon, 
+State of the Art of Numerical Thermal Characterization of Electronic Component, 
+EUROSIME XVIII, 2016, Montpellier, France, 10.1109/EuroSimE.2016.7463296.
+Ci27	A. Baïri, Free convection on QFN64.
+XII International Conference on Heat Transfer, Fluid Mechanics and Thermodynamics, HEFAT 2016, ICHMT, Malaga, Costa del Sol (Spain) , 11-13 July 2016 
+http://edas.info/web/hefat2016/index.html 
+Ci28	E. Monier-Vinard, B. Rogié, M.N. Nguyen, N. Laraqi, V. Bissuel, O. Daniel, 
+Practical Steady-State Temperature Prediction of Active Embedded Chips into High Density Electronic Board, 
+EUROTHERM VII, 2016, Krakow, Poland, 10.1088/1742-6596/745/3/032095.
+Ci29	A. Baïri, D. San Martín, C. Ortega Hermoso, 
+Effects of the Molding Compound's Thermal Conductivity on the Thermal State of the QFN64 Electronic Package Subjected to Natural Convection
+XII International Conference on Heat Transfer, Fluid Mechanics and Thermodynamics, HEFAT 2016, ICHMT, Malaga, Costa del Sol (Spain) , 11-13 July 2016 
+http://edas.info/web/hefat2016/index.html 
+Ci30	E. Monier-Vinard, M.N. Nguyen, N. Laraqi, V. Bissuel,O. Daniel, 
+Analysis of Heat-Spreading Capability of encapsulated Annealed Pyrolytic Graphite Cores,
+THERMAM III, 2016, Izmir, Turkey.
+Ci31	O. Haddad, A. Baïri, Natural convective heat transfer within tilted hemispherical cavity with and without nanofluid, 
+7th European Thermal-Sciences Conference, Krakow (Poland), 19-23 June 2016
+http://www.eurotherm2016.agh.edu.pl/ 
+Ci32	E. Monier-Vinard, V. Bissuel, Brice Rogié, N. Laraqi, O. Daniel, Marie-Cécile Kotelon,
+Evolution of the DELPHI Compact Thermal Modelling Method: an Investigation on the Boundary Conditions Scenarios, 
+THERMINIC XXII, 2016, Budapest, Hungary, 10.1109/THERMINIC.2016.7748651.
+Ci33	N. Alilat, J.G. Bauzin, A. Baïri, Thermal state of electronic assemblies equipped with the QFN64 package, Seminar on Heat transfer and its applications, Universidad de Sevilla (Spain), TNH64HLP/16 May 2016 (2016) 48-56.
+Ci34	O. Haddad, A. Baïri, N. Alilat, J.G. Bauzin, N. Laraqi, 
+Natural Convection Within Nanofluid-filled Hemispherical Enclosure Containing a Cubic Electronic Device,
+XIII International Conference on Heat Transfer, Fluid Mechanics and Thermodynamics, HEFAT 2017, ICHMT, Portoroz, Slovenia, 11-19 July 2017
+https://edas.info/web/hefat2017/index.html       https://edas.info/p23201
+Ci35	B. Rogié, E. Monier-Vinard, M.N. Nguyen, N. Laraqi, V. Bissuel, O. Daniel, 
+Three dimensional steady-state temperature prediction of volumetric heating sources embedded into multi-layer electronic board substrate, 
+ITHERM XVI, 2017, Orlando, USA, 10.1109/ITHERM.2017.799252
+Ci36	I. Gomez-Arriaran, I. Sellens, M. Odriozola-Maritorena, E. Pérez-Iribarren, A. Baïri,
+Hygroscopic inertia influence on indoor environments: moisture buffering
+XIII International Conference on Heat Transfer, Fluid Mechanics and Thermodynamics, HEFAT 2017, ICHMT, Portoroz, Slovenia, 11-19 July 2017
+https://edas.info/web/hefat2017/index.html https://edas.info/p23201
+Ci37	B. Rogié, L. Codecasa, E. Monier-Vinard, V. Bissuel, N. Laraqi, O. Daniel, D. D'Amore, A. Magnani, V. d'Alessandro, N. Rinaldi, 
+Delphi-like Dynamical Compact Thermal Models using Model Order Reduction, THERMINIC XXIII, 2017, Amsterdam, Netherland
+Ci38	L. Roseiro, M. El Ghazali, A. Garruço, F. Expedito, N. Laraqi, A. Baïri, N. Alilat
+Induced Bone Tissue Temperature from Pin Insertion: Experimental Comparation of Self-drilling and Pre-drilling Methodology 
+19th International Conference on Cyber Cognition and Autonomic Learning Systems, ICCCALS 2017, Paris, France, May 18 - 19, 2017
+https://waset.org/conference/2017/05/paris/ICCCALS/program?forceTentative=1 
+Ci39	E. Monier-Vinard, V. Bissuel, B. Rogié, N. Laraqi, O. Daniel, 
+Investigation on boundary conditions scenarios for optimizing the creation of DELPHI-style surrogate thermal models, 
+ITHERM XVI, 2017, Orlando, USA, 10.1109/ITHERM.2017.799250 
+Ci40	A. Baïri, A. Martín-Garín, N. Laraqi, K. Adeyeye, N. Alilat, J.A. Millán-García, L. Roseiro,
+Thermoregulation of electronics contained in hemispheric cavity through porous medium saturated with ZnO-H2O nanofluid
+International Conference on MATERIALS & ENERGY, ICOME 2018, 
+April 30th - May 04th, 2018 San Sebastian (Spain)
+http://icome18.lmt.ens-cachan.fr/submission/index.html 
+Ci41	A. Baïri, J-G. Bauzin, A. Vaca Hernández, N. Laraqi, I. Gómez-Arriaran, K. She, M. Odriozola-Maritorena, J.P. Guinart,
+Natural convection for cooling cubic electronics contained in a hemispherical enclosure filled with saturated ZnO-Water nanofluid porous medium. Nu-Ra-Pr correlations.
+31st International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy systems, ECOS 2018, 17th–22th  June 2018, Guimarães (Portugal) http://www.ecos2018.org/ 
+Ci42	K. Adeyeye, I. Meireles, K. She, V. Sousa, R. Cobacho, A. Baïri,
+Towards an Integrated RatIng System for Water-Efficient Products (Showerhead IRIS)
+WATEF Conference 2018, 5th–7th  September 2018, Aveiro, (Portugal)
+https://www.watefnetwork.co.uk/home 
+Ci43	N. Alilat, O. Haddad, A. Baïri, L. Roseiro, A. Vaca Hernández, N. Laraqi,
+Numerical study of natural convection of ZnO-water enclosed between two inclined concentric hemispheres
+31st International Conference on Efficiency, Cost, Optimization, Simulation and Environmental Impact of Energy systems, ECOS 2018, 17th–22th  June 2018, Guimarães (Portugal) http://www.ecos2018.org/ 
+Ci44	V. Bissuel, L. Codecasa, E. Monier-Vinard, B. Rogié, A. Olivier, A. Mahé, N. Laraqi, V. d'Alessandro, C. Gougis,
+Novel Approach to the Extraction of Delphi-like Boundary-Condition-Independent Compact Thermal Models of Planar Transformer Devices,
+Therminnic 2018 
+Articles publiés dans des actes de congrès nationaux
+C1	M. Chbiki, N. Laraqi, J.-F. Jarno, J. Herrewyn, T. Da Silva Bothelo, A. Baïri, 
+Résistance thermique d’un tube à ondes progressives, 
+Congrès de la Société Française de Thermique SFT13, Gérardmer, 28-31 Mai 2013
+C2	Cheikh Dia, Najib  Laraqi, Eric Monier-Vinard, Valentin Bissuel, 
+Modélisation Thermique Dynamique des « Powerpaks », 
+Congrès de la Société Française de Thermique SFT13, Gérardmer, 28-31 Mai 2013
+C3	M. Hamraoui, N. Laraqi, J.G. Bauzin, A. Baïri, N. Alilat, A. Boucheffa, T. Osman, 
+Température d'un solide soumis à des sources de chaleur surfaciques mobiles non uniformes
+Congrès de la Société Française de Thermique SFT13, Gérardmer, 28-31 Mai 2013
+C4	A. Baïri, J.-G. Bauzin, N. Alilat, J.M. García de María, N. Laraqi, 
+Quantification des échanges convectifs naturels permanents dans les cavités hémisphériques fermées et inclinées
+Congrès de la Société Française de Thermique SFT14, Lyon 03-06 Juin 2014
+C5	N. Alilat, J. Bauzin, J.A. Mate Lopez, A. Baïri, Convection naturelle entre deux hémisphères concentriques et inclinées. Application à la thermorégulation des montages électroniques. Congrès de la Société Française de Thermique SFT15, La Rochelle 26-29 Mai 2015
+C6	A. Baïri, N. Laraqi, N. Alilat 
+"Identification of natural convective heat transfer coefficients in closed cavities" 
+Symposium on numerical methods in heat transfer, Univ. Politécnica Madrid (Spain),  02-03 December 2014.
+C7	A. Baïri, N. Laraqi, N. Alilat, O. Haddad 
+"Precauciones para establecer correlaciones del tipo Nu-Ra en convección natural. Un ejemplo con los montages electrónicos" 
+Talleres de térmica aplicada, San Sebastian, Univ. Pais Vasco (Spain),  03-04 de Agosto de 2015.
+C8	A. Baïri, O. Haddad, C. Ortega, D. San Martín, 
+Quantification des échanges convectifs naturels pour les montages électroniques équipés de QFN, 
+Congrès de la Société Française de Thermique SFT 2016, 31 Mai-03 Juin 2016
+C9	B. Rogié, E. Monier-Vinard, N. Laraqi, V. Bissuel, 
+Modélisation électro-magnéto-thermique des composants électroniques passifs miniaturisés,
+Congrès de la Société Française de Thermique SFT 2016, 31 Mai-03 Juin 2016
+C10	A. Baïri, O. Haddad, N. Alilat
+Natural conveccion con nanofluidos en cavidades hemisféricas. Medidas, simulatión.
+Seminario Intercambio de Calor y Arquitectura de los Edificios tradicionales. 
+Univ. Politéc. de Madrid (Spain), 26-28.04.2017.
+C11	A. Baïri, 
+Convección natural : métodos de quantification del intercambio de calor,
+10º Congreso Nacional Ingeniería Termodinámica, Lleida (Espagne), 28-30 Juin 2017, in proceedings CNIT
+C12	L. Roseiro, A. Baïri, N. Laraqi, 
+Thermal measurements in natural convection and associated uncertainty calculation, 
+Seminar on Experimental Methods in Engineering, Univ. of Coimbra (Portugal), in proceedings EME, 29-30 Mai 2017.
+A4.4- Organisation de colloques / congrès
+OS1	Workshop annuel du CNRT R2A
+Aérodynamique et Aéroacoustique des véhicules terrestres 
+Onera, Meudon, 25 janvier 2012
+OS2	47th International Symposium of Applied Aerodynamics, 
+Wind tunnel and computation: a joint strategy for flow prediction, 
+Paris, 26-28 March 2012
+OS3	48th International Symposium of Applied Aerodynamics, 
+Aerodynamics of small bodies and details, 
+Saint-Louis, France - March 25-26-27, 2013
+OS4	Workshop annuel du CNRT R2A, 
+Aérodynamique et Aéroacoustique des véhicules terrestres 
+Onera, Meudon, 23 janvier 2013
+OS5	Seminar on thermal control of smart engineering devices sensors, 
+San Sebastian (Spain), 2-5 July 2013
+OS6	49th International Conference of Applied Aerodynamics, 
+Aerodynamics and Environment, 
+Lille, France - March 24-25-26, 2014
+OS7	Workshop annuel du CNRT R2A, 
+Aérodynamique et Aéroacoustique des véhicules terrestres 
+Onera, Meudon, 22 janvier 2014
+OS8	50th International Conference of Applied Aerodynamics, 
+Aerodynamics Forthcoming Challenges for Aerodynamics, 
+Toulouse, France - March 30, 31, April 1, 2015, 
+http://3af-aerodynamics2015.com 
+OS9	Workshop annuel du CNRT R2A, 
+Aérodynamique et Aéroacoustique des véhicules terrestres 
+Onera, Meudon, 21 janvier 2015
+OS10	III International Congress on Construction and Building Research (COINVEDI), 
+Escuela Técnica Superior de edificacion, Universidad Politécnica de Madrid, 14-16 December 2015, http://www.edificacion.upm.es/congresos/III_coinvedi/ 
+OS11	Workshop annuel du CNRT R2A, 
+Aérodynamique et Aéroacoustique des véhicules terrestres 
+Onera, Meudon, 03 Février 2016
+OS12	51th International Conference on Applied Aerodynamics, 
+Thermal effects and aerodynamics, 
+Strasbourg, France, April 4-6, 2016.
+http://www.3af-aerodynamics2016.com/ 
+OS13	52th International Conference on Applied Aerodynamics, 
+Progress in Flow Control, 
+Lyon, France, March, 27-29, 2017.
+http://www.3af.fr/evenement/52nd-international-conference-applied-aerodynamics-aero-2017 
+OS14	Workshop annuel du CNRT R2A, 
+Aérodynamique et Aéroacoustique des véhicules terrestres 
+Onera, Meudon, 01 Février 2017
+OS15	Seminario Intercambio de Calor y Arquitectura de los Edificios tradicionales. 
+Univ. Politéc. de Madrid (Spain), 26-28.04.2017.
+OS16	International Conference On Energy And Thermal Engineering, 
+Istanbul (Turkey) 25-28 April 2017.
+http://www.icte2017conference.com/index.php 
+OS17	Workshop annuel du CNRT R2A, 
+Aérodynamique et Aéroacoustique des véhicules terrestres 
+Onera, Meudon, 07 Février 2018
+OS18	53th International Conference on Applied Aerodynamics, 
+Multiphysics approach in Aerodynamics
+Salon-de-Provence, France, March, 26-28, 2018.
+http://3af-aerodynamics2018.com/    
+OS19	Journée thématique SFT
+Paris, France, Septembre, 2018.
+OS20	Journée thématique SFT-SFMM
+Paris, France, novembre, 2018.
+A4.5- Produits et outils informatiques
+La liste de ces produits de la recherche n’a pas à être exhaustive. On mettra en évidence les réalisations les plus significatives.
+Logiciels
+N°	Intitulé	Partenaire
+1	Calcul analytique des températures en 3D stationnaire dans les puces et cartes électronique	Thales Global Services (TGS)
+2	Algorithmes génétiques  pour les puces et cartes électroniques	Thales Global Services (TGS)
+3	Dimensionnement thermique des Tubes à Ondes progressive	Tales Electronic Devices (TED)
+4	Modèle réduit pour les puces et cartes électroniques	Thales Global Services (TGS)
+5	Calcul analytique des températures en 3D transitoire pour les puces encastrées	Thales Global Services (TGS)
+6	Modélisation d'un frein d'avion multi-disques	Messier Bugatti Dowty (MBD)
+7	Modèle compact dynamique pour les puces et cartes électroniques	Thales Global Services (TGS)
+8	Identification des flux de chaleur dans un frein d'avion hautes performances	Messier Bugatti Dowty (MBD)
+Chercheurs seniors accueillis
+Nom et Prénom	Etablissement	Programme
+Prof. Luis Roseiro	Université de Coimbra (Portugal)	*Erasmus+
+*Invitation LTIE-U Paris Nanterre
++ Publications communes
+Prof. V. Costa	Université de Aveiro (Portugal)	Erasmus+
++ Publications communes
+Prof. M. García de María	Université Polytechnique de Madrid (Espagne)	*Erasmus+
+*Invitation LTIE-U Paris Nanterre
++ Publications communes
+Prof. M. Hamraoui	Université Hassan III Casablanca (Maroc)	Invitation LTIE-U Paris Nanterre
++ Publications communes
+Prof. N. Belouaggadia	Université Hassan III Casablanca (Maroc)	Invitation LTIE
++ Publications communes
+Prof. F. Gutiérrez	Université Polytechnique de Madrid (Espagne)	Erasmus+
++ Publications communes
+Prof. A. Ilinca	Université du Quebec à Rimouski (Canada)	Invitation LTIE-U Paris Nanterre
+Prof. A. Mezrhab	Université Mohammed I, Oujda (Maroc)	Invitation LTIE-U Paris Nanterre
++ Publications communes
+Prof. M. Lagos Infante	Université de Talca (Chili) 	Invitation LTIE
++ Thèse cotutelle
+Prof. H. F. Öztop	Université de Firat (Turquie)	Erasmus+
++ Publications communes
+Prof. Y. Varol	Université de Firat (Turquie)	Erasmus+
++ Publications communes
+Prof. N. Sabry	Université de Mansourah (Egypte)	Invitation LTIE
+Prof. C.-D. Pérez-Segarra	Université Polytechnique de Cataluña (Espagne)	Invitation LTIE
+Prof. M. M. Rashidi	Université de Birmingham (Royaume Uni)	Invitation LTIE
++ Publications communes
+Implication des membres du LTIE dans les formations et autres
+Nom (Grade)	Responsabilités
+N. Alilat (MCF)	Responsable de la Lic. Pro, spécialité Propulseurs (LP PAS)
+Responsable des Labos d'enseignements (Modélisation, combustion ...)
+A. Baïri (PR)	Fondateur et Responsable des Relations Internationales - gestion des mobilités. Responsable des Labos de Transfert ... Membres des sociétés savantes A3F et CNRT, CNU
+J.G. Bauzin (MCF)	Chef du Département GTE (pendant 7 ans)
+Responsable des Laboratoires de Régulation, Thermique des Locaux ... Membre élu du CA de l’Université
+A. Hocine (MCF)	Directeur des études du Département GTE2 
+Responsable des bancs de Mécanique des Fluides
+Responsable des installations d’Aérodynamique (dont 3 souffleries)
+N. Laraqi (PR)	Directeur du Laboratoire
+Chargé des partenariats industriels ...
+Membre de la société savante SFT. Expert HCERES, CNU …
+Z. Peter (MCF)	Directeur des Etudes de la Lic. Pro. Maîtrise de l’Energie et de l’Environnement. Responsable du parc informatique du département GTE. Recrutement APB
+A. Hamouda (MCF)	Responsable de la lic. MEE
+Responsable des labos d'enseignement Thermo
+C. Lamriben (PRAG Dr)	Directeur des études du Département GTE1
+Coresponsable bancs d’essais aéro
+Devenir de quelques doctorants
+Docteur	Situation actuelle
+S. Vintrou	R&D chez Alsthom
+S. Guenoun	Ass Prof. à l'Université de Sherbrooke (Canada)
+C. Retamal	MCF à l'université UTALCA (Chili)
+A. Merabtine	MCF EPF (Troyes)
+E. Zarco-Pernia	EC (Allemagne)
+M. Chbiki	Post-Doc UTC
+C. Dia	Enseignant
+N. Keruzoré	R&D chez safran
