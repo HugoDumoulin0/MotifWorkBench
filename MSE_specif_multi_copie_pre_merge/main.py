@@ -53,6 +53,7 @@ if __name__ == "__main__":
     #----- RUN STANZA ON MERGED FILES -----
 
     from replace_underscore import replace_underscore_in_conllu #Import function to replace underscores
+    from replace_underscore import delete_empty_line
 
     #Check if tagged files exists to speed up process
     for type_texte in types_textes:
@@ -145,9 +146,9 @@ if __name__ == "__main__":
         
 
 
-    # -------------------------------------------------------------------------------------------------------------------
+    #-------------------------------------------------------------------------------------------------------------------
     # Mining Pattern
-    # -------------------------------------------------------------------------------------------------------------------
+    #-------------------------------------------------------------------------------------------------------------------
     print("-"*75)
     print("3. Extracting freq & closed patterns")
 
