@@ -1,0 +1,1339 @@
+	motifs_int	motifs_str	k	M	f	t	T	indice
+{3} {20} {5,80,81,82,83} {3,5}	[{3}, {20}, {5, 80, 81, 82, 83}, {3, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	374	158	664	1361	5729	inf
+{5,24,80,81,82,83,85} {5}	[{5, 80, 81, 82, 83, 85, 24}, {5}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {feats_Number=Sing}	487	221	930	1361	5729	inf
+{5} {19,20} {4}	[{5}, {19, 20}, {4}]	{feats_Number=Sing} {lemma_de,pos_ADP} {feats_Gender=Fem}	409	164	690	1361	5729	inf
+{5,24,81,83} {3,4,5}	[{24, 81, 83, 5}, {3, 4, 5}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	409	160	675	1361	5729	inf
+{20} {4,5,81} {4,5}	[{20}, {81, 4, 5}, {4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	409	180	757	1361	5729	inf
+{120} {20} {3}	[{120}, {20}, {3}]	{feats_Gender=Masc} {pos_ADP} {pos_NOUN}	409	180	759	1361	5729	inf
+{5,24,81,83}	[{24, 81, 83, 5}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art}	533	239	1006	1361	5729	inf
+{19,20,50,52} {5,81} {3,5}	[{50, 19, 20, 52}, {81, 5}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	533	228	962	1361	5729	inf
+{20} {5,120} {3,5,120}	[{20}, {120, 5}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	533	229	966	1361	5729	inf
+{3} {19,20,50,52} {3,5}	[{3}, {50, 19, 20, 52}, {3, 5}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {pos_NOUN,feats_Number=Sing}	340	148	625	1361	5729	inf
+{3} {20} {5} {3,4,5}	[{3}, {20}, {5}, {3, 4, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	340	135	569	1361	5729	inf
+{20} {81} {3} {5}	[{20}, {81}, {3}, {5}]	{pos_ADP} {pos_DET} {pos_NOUN} {feats_Number=Sing}	340	140	592	1361	5729	inf
+{81} {4} {5}	[{81}, {4}, {5}]	{pos_DET} {feats_Gender=Fem} {feats_Number=Sing}	340	149	626	1361	5729	inf
+{81} {120} {20} {5}	[{81}, {120}, {20}, {5}]	{pos_DET} {feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	340	160	673	1361	5729	inf
+{2698} {2602,2605}	[{2698}, {2602, 2605}]	{pos_PRON} {feats_Mood=Ind,feats_VerbForm=Fin}	340	156	656	1361	5729	inf
+{5,24,80,81,82,83} {5}	[{5, 80, 81, 82, 83, 24}, {5}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	525	237	997	1361	5729	inf
+{59,80,81,82,83} {3,59,120}	[{80, 81, 82, 83, 59}, {120, 3, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	410	186	784	1361	5729	inf
+{20} {5,81,120} {3,5,120}	[{20}, {120, 81, 5}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	525	227	955	1361	5729	inf
+{3,4} {4,59}	[{3, 4}, {59, 4}]	{pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Plur}	405	167	705	1361	5729	inf
+{5} {5} {20} {5} {5}	[{5}, {5}, {20}, {5}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	405	179	756	1361	5729	inf
+{5,24,80,81,82,83} {4}	[{5, 80, 81, 82, 83, 24}, {4}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	405	162	682	1361	5729	inf
+{19,20} {5} {5,120}	[{19, 20}, {5}, {120, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc}	405	188	794	1361	5729	inf
+{3,4} {20} {5}	[{3, 4}, {20}, {5}]	{pos_NOUN,feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	513	213	898	1361	5729	inf
+{5} {20} {3}	[{5}, {20}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_NOUN}	513	205	865	1361	5729	inf
+{5,24,80,81,82,83} {3,5}	[{5, 80, 81, 82, 83, 24}, {3, 5}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	513	213	896	1361	5729	inf
+{5,24,80,81,82,83}	[{5, 80, 81, 82, 83, 24}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	527	237	1000	1361	5729	inf
+{5,24} {5}	[{24, 5}, {5}]	{feats_Number=Sing,wp_’} {feats_Number=Sing}	538	241	1017	1361	5729	inf
+{19,20,50,52} {5} {3}	[{50, 19, 20, 52}, {5}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {pos_NOUN}	538	231	971	1361	5729	inf
+{19,20,52} {5} {3,5}	[{19, 20, 52}, {5}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	538	231	971	1361	5729	inf
+{80,81,82,83} {3} {19,20,50,52}	[{80, 81, 82, 83}, {3}, {50, 19, 20, 52}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	425	193	812	1361	5729	inf
+{5} {19,20} {3}	[{5}, {19, 20}, {3}]	{feats_Number=Sing} {lemma_de,pos_ADP} {pos_NOUN}	409	164	692	1361	5729	inf
+{5,24,81,83} {4,5}	[{24, 81, 83, 5}, {4, 5}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	410	163	687	1361	5729	inf
+{5} {20} {5} {3,5}	[{5}, {20}, {5}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	471	197	828	1361	5729	inf
+{80,81,82,83} {3} {75}	[{80, 81, 82, 83}, {3}, {75}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADJ}	451	188	792	1361	5729	inf
+{5,24}	[{24, 5}]	{feats_Number=Sing,wp_’}	543	243	1023	1361	5729	inf
+{3,4,5} {5}	[{3, 4, 5}, {5}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {feats_Number=Sing}	457	189	797	1361	5729	inf
+{3,5} {19,20} {5}	[{3, 5}, {19, 20}, {5}]	{pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP} {feats_Number=Sing}	457	194	819	1361	5729	inf
+{81} {3} {20} {4}	[{81}, {3}, {20}, {4}]	{pos_DET} {pos_NOUN} {pos_ADP} {feats_Gender=Fem}	457	189	798	1361	5729	inf
+{5} {5,120} {20}	[{5}, {120, 5}, {20}]	{feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc} {pos_ADP}	460	203	856	1361	5729	inf
+{5} {20} {5,81} {3,5}	[{5}, {20}, {81, 5}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	460	193	815	1361	5729	inf
+{2601}	[{2601}]	{pos_AUX}	460	216	911	1361	5729	inf
+{5,80,81,82,83} {3,4,5}	[{5, 80, 81, 82, 83}, {3, 4, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	647	520	2189	1361	5729	inf
+{20} {5,81}	[{20}, {81, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET}	840	706	2973	1361	5729	inf
+{3} {20} {5} {3,5}	[{3}, {20}, {5}, {3, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	451	191	803	1361	5729	inf
+{5} {20} {4,5}	[{5}, {20}, {4, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	451	184	774	1361	5729	inf
+{20} {4,5} {4,5}	[{20}, {4, 5}, {4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	451	198	834	1361	5729	inf
+{20} {5,81,82,83,120} {3,5,120}	[{20}, {5, 81, 82, 83, 120}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	451	200	841	1361	5729	inf
+{81,83} {3,4} {20}	[{81, 83}, {3, 4}, {20}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem} {pos_ADP}	451	196	826	1361	5729	inf
+{5,24,81,83} {3,4}	[{24, 81, 83, 5}, {3, 4}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	410	160	676	1361	5729	inf
+{1125,2603,2605}	[{1125, 2603, 2605}]	{pos_VERB,feats_Person=3,feats_VerbForm=Fin}	451	202	851	1361	5729	inf
+{3,59,120} {59}	[{120, 3, 59}, {59}]	{pos_NOUN,feats_Number=Plur,feats_Gender=Masc} {feats_Number=Plur}	376	148	625	1361	5729	inf
+{3,120} {19,20} {5}	[{120, 3}, {19, 20}, {5}]	{pos_NOUN,feats_Gender=Masc} {lemma_de,pos_ADP} {feats_Number=Sing}	376	176	740	1361	5729	inf
+{5,24,80,81,82,83,85} {3,4,5}	[{5, 80, 81, 82, 83, 85, 24}, {3, 4, 5}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	376	148	624	1361	5729	inf
+{5,81} {3,5} {75}	[{81, 5}, {3, 5}, {75}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {pos_ADJ}	376	162	684	1361	5729	inf
+{19,20} {5,120} {5}	[{19, 20}, {120, 5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing}	376	170	718	1361	5729	inf
+{19,20,50,52} {5} {4}	[{50, 19, 20, 52}, {5}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Gender=Fem}	376	155	653	1361	5729	inf
+{59,81} {59} {59,75}	[{81, 59}, {59}, {59, 75}]	{feats_Number=Plur,pos_DET} {feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	376	152	641	1361	5729	inf
+{120} {20} {5} {3,5}	[{120}, {20}, {5}, {3, 5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	376	162	682	1361	5729	inf
+{5,81} {5} {20}	[{81, 5}, {5}, {20}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_ADP}	569	245	1034	1361	5729	inf
+{5,24,80,81,82,83,85} {3,5}	[{5, 80, 81, 82, 83, 85, 24}, {3, 5}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Number=Sing}	472	197	830	1361	5729	inf
+{19,20,50,52} {80,81,82,83} {120}	[{50, 19, 20, 52}, {80, 81, 82, 83}, {120}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	472	218	919	1361	5729	inf
+{5,24,81,83} {3}	[{24, 81, 83, 5}, {3}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art} {pos_NOUN}	520	214	903	1361	5729	inf
+{3} {20} {5,81} {5}	[{3}, {20}, {81, 5}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	471	210	884	1361	5729	inf
+{5} {120} {20}	[{5}, {120}, {20}]	{feats_Number=Sing} {feats_Gender=Masc} {pos_ADP}	471	209	879	1361	5729	inf
+{2601,2602,2603,2604,2605}	[{2601, 2602, 2603, 2604, 2605}]	{pos_AUX,feats_Mood=Ind,feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	353	179	756	1361	5729	inf
+{1125} {20} {81} {3}	[{1125}, {20}, {81}, {3}]	{pos_VERB} {pos_ADP} {pos_DET} {pos_NOUN}	375	149	628	1361	5729	inf
+{3} {20} {5} {4,5}	[{3}, {20}, {5}, {4, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	388	157	662	1361	5729	inf
+{5,81,83} {5} {19,20,50,52}	[{81, 83, 5}, {5}, {50, 19, 20, 52}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	388	173	730	1361	5729	inf
+{59} {20} {81}	[{59}, {20}, {81}]	{feats_Number=Plur} {pos_ADP} {pos_DET}	388	173	729	1361	5729	inf
+{3,5} {20} {81,83}	[{3, 5}, {20}, {81, 83}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art}	384	174	733	1361	5729	inf
+{20} {5,80,81,82,83,85} {3,5}	[{20}, {5, 80, 81, 82, 83, 85}, {3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Number=Sing}	384	162	682	1361	5729	inf
+{20} {5,80,81,82,83,120,915,916}	[{20}, {5, 80, 81, 82, 83, 915, 916, 120}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,dep_le,wp_▁le}	384	179	753	1361	5729	inf
+{20} {59} {3,4,59}	[{20}, {59}, {3, 59, 4}]	{pos_ADP} {feats_Number=Plur} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	384	174	734	1361	5729	inf
+{3,4} {4,5}	[{3, 4}, {4, 5}]	{pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Sing}	375	156	658	1361	5729	inf
+{5} {20} {120}	[{5}, {20}, {120}]	{feats_Number=Sing} {pos_ADP} {feats_Gender=Masc}	375	157	663	1361	5729	inf
+{5,81} {5} {5,75}	[{81, 5}, {5}, {75, 5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	375	162	681	1361	5729	inf
+{20} {5,81,83} {5} {20}	[{20}, {81, 83, 5}, {5}, {20}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	375	167	703	1361	5729	inf
+{59} {1125}	[{59}, {1125}]	{feats_Number=Plur} {pos_VERB}	375	158	665	1361	5729	inf
+{120} {20} {4,5}	[{120}, {20}, {4, 5}]	{feats_Gender=Masc} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	375	163	687	1361	5729	inf
+{3,4,5} {20} {5}	[{3, 4, 5}, {20}, {5}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	406	158	665	1361	5729	inf
+{81,120} {3,120}	[{120, 81}, {120, 3}]	{pos_DET,feats_Gender=Masc} {pos_NOUN,feats_Gender=Masc}	654	534	2246	1361	5729	inf
+{20} {4} {3,4}	[{20}, {4}, {3, 4}]	{pos_ADP} {feats_Gender=Fem} {pos_NOUN,feats_Gender=Fem}	406	176	740	1361	5729	inf
+{5,81,83} {3,5} {19,20}	[{81, 83, 5}, {3, 5}, {19, 20}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	449	198	836	1361	5729	inf
+{20} {59} {4}	[{20}, {59}, {4}]	{pos_ADP} {feats_Number=Plur} {feats_Gender=Fem}	449	200	841	1361	5729	inf
+{5,81,83} {3,5} {5}	[{81, 83, 5}, {3, 5}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	447	187	790	1361	5729	inf
+{19,20,50,52,263} {80,81,82,83} {120}	[{263, 50, 19, 20, 52}, {80, 81, 82, 83}, {120}]	{lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	447	206	868	1361	5729	inf
+{120} {120} {37}	[{120}, {120}, {37}]	{feats_Gender=Masc} {feats_Gender=Masc} {pos_PUNCT}	447	188	793	1361	5729	inf
+{19,20} {3,4}	[{19, 20}, {3, 4}]	{lemma_de,pos_ADP} {pos_NOUN,feats_Gender=Fem}	456	196	827	1361	5729	inf
+{19,20} {5,120}	[{19, 20}, {120, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,feats_Gender=Masc}	456	206	869	1361	5729	inf
+{19,20} {59} {3,59}	[{19, 20}, {59}, {3, 59}]	{lemma_de,pos_ADP} {feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	456	202	850	1361	5729	inf
+{5,85}	[{5, 85}]	{feats_Number=Sing,wp_▁l}	510	232	976	1361	5729	inf
+{19,20,50,52} {5,80,81,82,83} {3,5}	[{50, 19, 20, 52}, {5, 80, 81, 82, 83}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	510	217	914	1361	5729	inf
+{59,81,83} {59,120}	[{81, 83, 59}, {120, 59}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Number=Plur,feats_Gender=Masc}	510	226	953	1361	5729	inf
+{5} {19,20} {5}	[{5}, {19, 20}, {5}]	{feats_Number=Sing} {lemma_de,pos_ADP} {feats_Number=Sing}	506	217	914	1361	5729	inf
+{5,81,83,120} {3,5,120}	[{120, 81, 83, 5}, {120, 3, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	627	504	2121	1361	5729	inf
+{19,20,52} {5,81} {3,5}	[{19, 20, 52}, {81, 5}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	534	229	963	1361	5729	inf
+{5} {4} {20}	[{5}, {4}, {20}]	{feats_Number=Sing} {feats_Gender=Fem} {pos_ADP}	492	204	860	1361	5729	inf
+{5} {20} {5} {4}	[{5}, {20}, {5}, {4}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	392	160	675	1361	5729	inf
+{81} {3} {59}	[{81}, {3}, {59}]	{pos_DET} {pos_NOUN} {feats_Number=Plur}	492	208	875	1361	5729	inf
+{3} {19,20,50,52} {5} {5}	[{3}, {50, 19, 20, 52}, {5}, {5}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Number=Sing}	357	163	689	1361	5729	inf
+{3,4,5} {19,20,50,52}	[{3, 4, 5}, {50, 19, 20, 52}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	357	144	607	1361	5729	inf
+{3,5,120} {120}	[{120, 3, 5}, {120}]	{pos_NOUN,feats_Number=Sing,feats_Gender=Masc} {feats_Gender=Masc}	357	141	596	1361	5729	inf
+{5} {2602,2603,2605}	[{5}, {2602, 2603, 2605}]	{feats_Number=Sing} {feats_Mood=Ind,feats_Person=3,feats_VerbForm=Fin}	357	162	684	1361	5729	inf
+{5,81,83} {5} {5,75}	[{81, 83, 5}, {5}, {75, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	357	153	643	1361	5729	inf
+{19,20} {81,120}	[{19, 20}, {120, 81}]	{lemma_de,pos_ADP} {pos_DET,feats_Gender=Masc}	357	164	691	1361	5729	inf
+{3} {19,20} {5} {5}	[{3}, {19, 20}, {5}, {5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	412	185	779	1361	5729	inf
+{81,83} {3,4} {4}	[{81, 83}, {3, 4}, {4}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem}	412	176	740	1361	5729	inf
+{5} {5} {20} {81} {3}	[{5}, {5}, {20}, {81}, {3}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN}	415	178	749	1361	5729	inf
+{3} {20} {81} {3,4}	[{3}, {20}, {81}, {3, 4}]	{pos_NOUN} {pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem}	392	161	680	1361	5729	inf
+{5} {5} {19,20} {5}	[{5}, {5}, {19, 20}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP} {feats_Number=Sing}	392	174	733	1361	5729	inf
+{5} {5} {20} {81,83}	[{5}, {5}, {20}, {81, 83}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art}	392	174	735	1361	5729	inf
+{59,80,81,82,83,266} {4,59}	[{266, 80, 81, 82, 83, 59}, {59, 4}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {feats_Gender=Fem,feats_Number=Plur}	392	178	750	1361	5729	inf
+{81,83} {4} {4}	[{81, 83}, {4}, {4}]	{pos_DET,feats_PronType=Art} {feats_Gender=Fem} {feats_Gender=Fem}	458	199	839	1361	5729	inf
+{81} {3} {19,20} {3}	[{81}, {3}, {19, 20}, {3}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP} {pos_NOUN}	392	173	727	1361	5729	inf
+{81} {3} {20} {4,5}	[{81}, {3}, {20}, {4, 5}]	{pos_DET} {pos_NOUN} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	392	164	691	1361	5729	inf
+{81} {3,4} {75}	[{81}, {3, 4}, {75}]	{pos_DET} {pos_NOUN,feats_Gender=Fem} {pos_ADJ}	392	168	709	1361	5729	inf
+{3} {19,20} {4,5}	[{3}, {19, 20}, {4, 5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	448	185	781	1361	5729	inf
+{5} {3} {20} {5}	[{5}, {3}, {20}, {5}]	{feats_Number=Sing} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	448	188	794	1361	5729	inf
+{5} {5} {20} {81}	[{5}, {5}, {20}, {81}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {pos_DET}	448	202	849	1361	5729	inf
+{19,20,52,263} {80,81,82,83} {120}	[{19, 20, 52, 263}, {80, 81, 82, 83}, {120}]	{lemma_de,pos_ADP,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	448	206	869	1361	5729	inf
+{2586}	[{2586}]	{pos_ADV}	448	220	927	1361	5729	inf
+{20} {5,81} {4,5}	[{20}, {81, 5}, {4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	605	468	1970	1361	5729	inf
+{5,81,120} {3,5,120}	[{120, 81, 5}, {120, 3, 5}]	{feats_Number=Sing,pos_DET,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	652	527	2220	1361	5729	inf
+{5} {20} {81,82,83}	[{5}, {20}, {81, 82, 83}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art}	462	204	861	1361	5729	inf
+{5,81} {5} {19,20}	[{81, 5}, {5}, {19, 20}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {lemma_de,pos_ADP}	462	205	862	1361	5729	inf
+{5,81} {3,5} {19,20}	[{81, 5}, {3, 5}, {19, 20}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	458	203	856	1361	5729	inf
+{3} {19,20} {3}	[{3}, {19, 20}, {3}]	{pos_NOUN} {lemma_de,pos_ADP} {pos_NOUN}	543	233	980	1361	5729	inf
+{1125} {20} {81,83}	[{1125}, {20}, {81, 83}]	{pos_VERB} {pos_ADP} {pos_DET,feats_PronType=Art}	353	145	610	1361	5729	inf
+{5,2602,2603,2605}	[{5, 2602, 2603, 2605}]	{feats_Number=Sing,feats_Mood=Ind,feats_Person=3,feats_VerbForm=Fin}	563	239	1007	1361	5729	inf
+{3,59} {4,75}	[{3, 59}, {75, 4}]	{pos_NOUN,feats_Number=Plur} {feats_Gender=Fem,pos_ADJ}	360	147	621	1361	5729	inf
+{3,5} {19,20,50,52} {5}	[{3, 5}, {50, 19, 20, 52}, {5}]	{pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	383	167	702	1361	5729	inf
+{5} {5} {120}	[{5}, {5}, {120}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Gender=Masc}	383	165	696	1361	5729	inf
+{5,85} {4}	[{5, 85}, {4}]	{feats_Number=Sing,wp_▁l} {feats_Gender=Fem}	383	154	651	1361	5729	inf
+{5,120} {5,120} {20}	[{120, 5}, {120, 5}, {20}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc} {pos_ADP}	383	173	727	1361	5729	inf
+{19,20} {5,81} {5,120}	[{19, 20}, {81, 5}, {120, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Masc}	383	180	760	1361	5729	inf
+{20} {4,5,81} {3,4,5}	[{20}, {81, 4, 5}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	383	168	706	1361	5729	inf
+{20} {81} {4,59}	[{20}, {81}, {59, 4}]	{pos_ADP} {pos_DET} {feats_Gender=Fem,feats_Number=Plur}	383	175	737	1361	5729	inf
+{52} {120} {120}	[{52}, {120}, {120}]	{wp_▁de} {feats_Gender=Masc} {feats_Gender=Masc}	383	170	715	1361	5729	inf
+{80,81,82,83} {3} {19,20} {5}	[{80, 81, 82, 83}, {3}, {19, 20}, {5}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	383	176	740	1361	5729	inf
+{81} {3} {20} {5} {5}	[{81}, {3}, {20}, {5}, {5}]	{pos_DET} {pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	383	172	726	1361	5729	inf
+{85} {4,5}	[{85}, {4, 5}]	{wp_▁l} {feats_Gender=Fem,feats_Number=Sing}	383	154	651	1361	5729	inf
+{3,4} {4,59,75}	[{3, 4}, {59, 75, 4}]	{pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Plur,pos_ADJ}	360	148	623	1361	5729	inf
+{3,4} {20} {81}	[{3, 4}, {20}, {81}]	{pos_NOUN,feats_Gender=Fem} {pos_ADP} {pos_DET}	360	161	680	1361	5729	inf
+{5} {5} {20} {81,83} {3}	[{5}, {5}, {20}, {81, 83}, {3}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	360	151	636	1361	5729	inf
+{59,80,81,82,83,266} {59,120}	[{266, 80, 81, 82, 83, 59}, {120, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {feats_Number=Plur,feats_Gender=Masc}	387	178	749	1361	5729	inf
+{5,81,1076}	[{81, 1076, 5}]	{feats_Number=Sing,pos_DET,lemma_un}	360	158	668	1361	5729	inf
+{5,120} {75}	[{120, 5}, {75}]	{feats_Number=Sing,feats_Gender=Masc} {pos_ADJ}	360	144	606	1361	5729	inf
+{19,20} {5,81} {3,4,5}	[{19, 20}, {81, 5}, {3, 4, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	360	146	614	1361	5729	inf
+{20} {80,81,82,83} {3} {37}	[{20}, {80, 81, 82, 83}, {3}, {37}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_PUNCT}	360	160	675	1361	5729	inf
+{59} {120} {59}	[{59}, {120}, {59}]	{feats_Number=Plur} {feats_Gender=Masc} {feats_Number=Plur}	360	142	599	1361	5729	inf
+{59,81,83} {59} {59,75}	[{81, 83, 59}, {59}, {59, 75}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	360	143	603	1361	5729	inf
+{80,81,82,83} {120} {20}	[{80, 81, 82, 83}, {120}, {20}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc} {pos_ADP}	360	169	714	1361	5729	inf
+{81,83} {3} {59,75}	[{81, 83}, {3}, {59, 75}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Number=Plur,pos_ADJ}	360	143	604	1361	5729	inf
+{120} {5,75}	[{120}, {75, 5}]	{feats_Gender=Masc} {feats_Number=Sing,pos_ADJ}	360	143	604	1361	5729	inf
+{5,24,85}	[{24, 5, 85}]	{feats_Number=Sing,wp_’,wp_▁l}	495	224	943	1361	5729	inf
+{5,80,81,82,83,85} {5}	[{5, 80, 81, 82, 83, 85}, {5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {feats_Number=Sing}	495	226	954	1361	5729	inf
+{80,81,82,83} {3} {19,20}	[{80, 81, 82, 83}, {3}, {19, 20}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP}	495	224	944	1361	5729	inf
+{3,4,5} {19,20,52}	[{3, 4, 5}, {19, 20, 52}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {lemma_de,pos_ADP,wp_▁de}	358	144	608	1361	5729	inf
+{81} {3,4} {4,75}	[{81}, {3, 4}, {75, 4}]	{pos_DET} {pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem,pos_ADJ}	387	166	699	1361	5729	inf
+{3} {20} {3,4,5}	[{3}, {20}, {3, 4, 5}]	{pos_NOUN} {pos_ADP} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	387	161	677	1361	5729	inf
+{5,81,83} {3,5} {75}	[{81, 83, 5}, {3, 5}, {75}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADJ}	358	153	645	1361	5729	inf
+{85}	[{85}]	{wp_▁l}	561	244	1028	1361	5729	inf
+{1126,1127} {20}	[{1126, 1127}, {20}]	{feats_Tense=Past,feats_VerbForm=Part} {pos_ADP}	399	161	680	1361	5729	inf
+{5} {20} {81,83} {3}	[{5}, {20}, {81, 83}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	501	211	888	1361	5729	inf
+{19,20,50,52} {4}	[{50, 19, 20, 52}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Gender=Fem}	501	214	903	1361	5729	inf
+{81} {3} {75}	[{81}, {3}, {75}]	{pos_DET} {pos_NOUN} {pos_ADJ}	599	484	2036	1361	5729	inf
+{85} {5}	[{85}, {5}]	{wp_▁l} {feats_Number=Sing}	502	229	964	1361	5729	inf
+{24} {3}	[{24}, {3}]	{wp_’} {pos_NOUN}	619	259	1092	1361	5729	inf
+{3} {19,20,50,52} {4}	[{3}, {50, 19, 20, 52}, {4}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Gender=Fem}	426	176	743	1361	5729	inf
+{4} {4} {37}	[{4}, {4}, {37}]	{feats_Gender=Fem} {feats_Gender=Fem} {pos_PUNCT}	426	181	762	1361	5729	inf
+{19,20,50,52} {59,81} {3,59}	[{50, 19, 20, 52}, {81, 59}, {3, 59}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur}	426	189	798	1361	5729	inf
+{19,20} {5} {4,5}	[{19, 20}, {5}, {4, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	423	174	732	1361	5729	inf
+{19,20,50,52} {4,5}	[{50, 19, 20, 52}, {4, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Gender=Fem,feats_Number=Sing}	423	185	778	1361	5729	inf
+{81,83} {3,120} {20}	[{81, 83}, {120, 3}, {20}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc} {pos_ADP}	423	194	819	1361	5729	inf
+{5} {20} {5,81,83}	[{5}, {20}, {81, 83, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	464	203	857	1361	5729	inf
+{5,81} {3,4,5}	[{81, 5}, {3, 4, 5}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	754	601	2530	1361	5729	inf
+{80,81,82,83}	[{80, 81, 82, 83}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	969	851	3582	1361	5729	inf
+{5} {4,75}	[{5}, {75, 4}]	{feats_Number=Sing} {feats_Gender=Fem,pos_ADJ}	365	161	677	1361	5729	inf
+{5} {120} {37}	[{5}, {120}, {37}]	{feats_Number=Sing} {feats_Gender=Masc} {pos_PUNCT}	365	163	689	1361	5729	inf
+{19,20} {5} {3,5,120}	[{19, 20}, {5}, {120, 3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	365	170	718	1361	5729	inf
+{23,24}	[{24, 23}]	{wp_▁d,wp_’}	365	162	682	1361	5729	inf
+{59,81,83} {59} {75}	[{81, 83, 59}, {59}, {75}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Number=Plur} {pos_ADJ}	365	145	612	1361	5729	inf
+{2601,2604,2605}	[{2601, 2604, 2605}]	{pos_AUX,feats_Tense=Pres,feats_VerbForm=Fin}	365	185	778	1361	5729	inf
+{2609}	[{2609}]	{lemma_être}	365	161	677	1361	5729	inf
+{4} {20} {81} {3}	[{4}, {20}, {81}, {3}]	{feats_Gender=Fem} {pos_ADP} {pos_DET} {pos_NOUN}	465	196	826	1361	5729	inf
+{20} {4,81} {3,4}	[{20}, {81, 4}, {3, 4}]	{pos_ADP} {feats_Gender=Fem,pos_DET} {pos_NOUN,feats_Gender=Fem}	390	170	718	1361	5729	inf
+{20} {59} {59} {59}	[{20}, {59}, {59}, {59}]	{pos_ADP} {feats_Number=Plur} {feats_Number=Plur} {feats_Number=Plur}	390	164	691	1361	5729	inf
+{59,120} {59,120}	[{120, 59}, {120, 59}]	{feats_Number=Plur,feats_Gender=Masc} {feats_Number=Plur,feats_Gender=Masc}	390	151	637	1361	5729	inf
+{85} {4}	[{85}, {4}]	{wp_▁l} {feats_Gender=Fem}	390	156	658	1361	5729	inf
+{3,120} {120}	[{120, 3}, {120}]	{pos_NOUN,feats_Gender=Masc} {feats_Gender=Masc}	583	447	1880	1361	5729	inf
+{3,4,59} {4,75}	[{3, 59, 4}, {75, 4}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur} {feats_Gender=Fem,pos_ADJ}	358	147	618	1361	5729	inf
+{5,81,83,1076,1077}	[{5, 81, 83, 1076, 1077}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,lemma_un,feats_Definite=Ind}	358	158	666	1361	5729	inf
+{120} {20} {81} {4}	[{120}, {20}, {81}, {4}]	{feats_Gender=Masc} {pos_ADP} {pos_DET} {feats_Gender=Fem}	353	145	613	1361	5729	inf
+{19,20} {81,83} {3,4}	[{19, 20}, {81, 83}, {3, 4}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	481	197	832	1361	5729	inf
+{5,81} {3,4,5} {20}	[{81, 5}, {3, 4, 5}, {20}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	394	160	673	1361	5729	inf
+{3} {2603}	[{3}, {2603}]	{pos_NOUN} {feats_Person=3}	374	165	694	1361	5729	inf
+{120} {20} {5,81} {5}	[{120}, {20}, {81, 5}, {5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	394	178	749	1361	5729	inf
+{3,59} {59}	[{3, 59}, {59}]	{pos_NOUN,feats_Number=Plur} {feats_Number=Plur}	635	515	2167	1361	5729	inf
+{3} {20} {81,83} {4}	[{3}, {20}, {81, 83}, {4}]	{pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	380	158	667	1361	5729	inf
+{3} {37,440,441,443}	[{3}, {440, 441, 443, 37}]	{pos_NOUN} {pos_PUNCT,lemma_,,feats_,,wp_,}	380	180	758	1361	5729	inf
+{3,5} {120}	[{3, 5}, {120}]	{pos_NOUN,feats_Number=Sing} {feats_Gender=Masc}	380	153	645	1361	5729	inf
+{5,80,81,82,83,85} {3,4,5}	[{5, 80, 81, 82, 83, 85}, {3, 4, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	380	151	638	1361	5729	inf
+{81} {3} {5,75}	[{81}, {3}, {75, 5}]	{pos_DET} {pos_NOUN} {feats_Number=Sing,pos_ADJ}	380	163	687	1361	5729	inf
+{120} {5} {5}	[{120}, {5}, {5}]	{feats_Gender=Masc} {feats_Number=Sing} {feats_Number=Sing}	380	168	708	1361	5729	inf
+{2601,2604}	[{2601, 2604}]	{pos_AUX,feats_Tense=Pres}	380	189	797	1361	5729	inf
+{5} {5} {19,20,50,52}	[{5}, {5}, {50, 19, 20, 52}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	481	212	894	1361	5729	inf
+{5,80,81,82,83,85} {3}	[{5, 80, 81, 82, 83, 85}, {3}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN}	481	202	852	1361	5729	inf
+{81,83,1076,1077} {3}	[{81, 83, 1076, 1077}, {3}]	{pos_DET,feats_PronType=Art,lemma_un,feats_Definite=Ind} {pos_NOUN}	481	210	885	1361	5729	inf
+{3,4,59} {4,59}	[{3, 59, 4}, {59, 4}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur}	394	163	685	1361	5729	inf
+{5} {20} {5,81}	[{5}, {20}, {81, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET}	491	217	913	1361	5729	inf
+{5,80,81,82,83} {5} {20}	[{5, 80, 81, 82, 83}, {5}, {20}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	491	214	901	1361	5729	inf
+{20} {59} {120}	[{20}, {59}, {120}]	{pos_ADP} {feats_Number=Plur} {feats_Gender=Masc}	491	216	911	1361	5729	inf
+{5,80,81,82,83} {4,5}	[{5, 80, 81, 82, 83}, {4, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	659	534	2249	1361	5729	inf
+{81} {3}	[{81}, {3}]	{pos_DET} {pos_NOUN}	1009	857	3606	1361	5729	inf
+{5,81} {5} {20} {5}	[{81, 5}, {5}, {20}, {5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	427	182	769	1361	5729	inf
+{19,20} {120} {120}	[{19, 20}, {120}, {120}]	{lemma_de,pos_ADP} {feats_Gender=Masc} {feats_Gender=Masc}	427	186	783	1361	5729	inf
+{19,20,50,52,263} {80,81,82,83} {3,120}	[{263, 50, 19, 20, 52}, {80, 81, 82, 83}, {120, 3}]	{lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	427	193	812	1361	5729	inf
+{20} {81,83} {3} {75}	[{20}, {81, 83}, {3}, {75}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADJ}	427	176	740	1361	5729	inf
+{2601,2603,2605}	[{2601, 2603, 2605}]	{pos_AUX,feats_Person=3,feats_VerbForm=Fin}	427	203	857	1361	5729	inf
+{5} {20} {3,4}	[{5}, {20}, {3, 4}]	{feats_Number=Sing} {pos_ADP} {pos_NOUN,feats_Gender=Fem}	353	141	593	1361	5729	inf
+{5,80,81,82,83} {3,5} {5}	[{5, 80, 81, 82, 83}, {3, 5}, {5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	353	148	624	1361	5729	inf
+{19,20} {5,81,120} {5,120}	[{19, 20}, {120, 81, 5}, {120, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	353	162	681	1361	5729	inf
+{3,120} {19,20,50,52}	[{120, 3}, {50, 19, 20, 52}]	{pos_NOUN,feats_Gender=Masc} {lemma_de,pos_ADP,feats_de,wp_▁de}	394	185	779	1361	5729	inf
+{5,1125}	[{5, 1125}]	{feats_Number=Sing,pos_VERB}	587	471	1981	1361	5729	inf
+{81} {3} {20} {3,5}	[{81}, {3}, {20}, {3, 5}]	{pos_DET} {pos_NOUN} {pos_ADP} {pos_NOUN,feats_Number=Sing}	358	160	675	1361	5729	inf
+{5} {19,20,52} {5}	[{5}, {19, 20, 52}, {5}]	{feats_Number=Sing} {lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing}	437	189	798	1361	5729	inf
+{2602,2605} {5}	[{2602, 2605}, {5}]	{feats_Mood=Ind,feats_VerbForm=Fin} {feats_Number=Sing}	358	160	676	1361	5729	inf
+{3,4} {5}	[{3, 4}, {5}]	{pos_NOUN,feats_Gender=Fem} {feats_Number=Sing}	468	194	819	1361	5729	inf
+{5,2603,2604,2605}	[{5, 2603, 2604, 2605}]	{feats_Number=Sing,feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	468	210	885	1361	5729	inf
+{1125,2602,2605}	[{2602, 1125, 2605}]	{pos_VERB,feats_Mood=Ind,feats_VerbForm=Fin}	468	206	870	1361	5729	inf
+{81,83} {4}	[{81, 83}, {4}]	{pos_DET,feats_PronType=Art} {feats_Gender=Fem}	857	719	3026	1361	5729	inf
+{3} {65}	[{3}, {65}]	{pos_NOUN} {pos_CCONJ}	372	179	756	1361	5729	inf
+{19,20} {5,120} {5,120}	[{19, 20}, {120, 5}, {120, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	372	169	712	1361	5729	inf
+{19,20,50,52} {3,4}	[{50, 19, 20, 52}, {3, 4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_NOUN,feats_Gender=Fem}	372	161	680	1361	5729	inf
+{19,20,52} {5} {120}	[{19, 20, 52}, {5}, {120}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {feats_Gender=Masc}	372	177	745	1361	5729	inf
+{20} {81} {3,4,59}	[{20}, {81}, {3, 59, 4}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	372	169	711	1361	5729	inf
+{81,83} {3} {20} {81}	[{81, 83}, {3}, {20}, {81}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {pos_DET}	372	173	729	1361	5729	inf
+{120} {20} {81,82,83}	[{120}, {20}, {81, 82, 83}]	{feats_Gender=Masc} {pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art}	372	167	705	1361	5729	inf
+{3,120} {59}	[{120, 3}, {59}]	{pos_NOUN,feats_Gender=Masc} {feats_Number=Plur}	437	182	766	1361	5729	inf
+{5} {2603}	[{5}, {2603}]	{feats_Number=Sing} {feats_Person=3}	437	197	832	1361	5729	inf
+{3} {20} {4}	[{3}, {20}, {4}]	{pos_NOUN} {pos_ADP} {feats_Gender=Fem}	587	470	1980	1361	5729	inf
+{5} {3} {5}	[{5}, {3}, {5}]	{feats_Number=Sing} {pos_NOUN} {feats_Number=Sing}	519	219	921	1361	5729	inf
+{5,24,81,83} {3,5}	[{24, 81, 83, 5}, {3, 5}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	519	214	902	1361	5729	inf
+{5,80,81,82,83,120,916} {3,5,120}	[{5, 80, 81, 82, 83, 916, 120}, {120, 3, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,wp_▁le} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	519	229	965	1361	5729	inf
+{19,20} {81} {3,120}	[{19, 20}, {81}, {120, 3}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Masc}	519	235	988	1361	5729	inf
+{59,81} {59} {59}	[{81, 59}, {59}, {59}]	{feats_Number=Plur,pos_DET} {feats_Number=Plur} {feats_Number=Plur}	519	219	923	1361	5729	inf
+{5} {5} {20}	[{5}, {5}, {20}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP}	712	577	2427	1361	5729	inf
+{19,20,52} {5} {3}	[{19, 20, 52}, {5}, {3}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {pos_NOUN}	539	231	972	1361	5729	inf
+{120} {75,120}	[{120}, {120, 75}]	{feats_Gender=Masc} {pos_ADJ,feats_Gender=Masc}	539	213	897	1361	5729	inf
+{59} {59}	[{59}, {59}]	{feats_Number=Plur} {feats_Number=Plur}	928	796	3351	1361	5729	inf
+{5} {3,5} {37}	[{5}, {3, 5}, {37}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_PUNCT}	395	176	743	1361	5729	inf
+{5,75,120}	[{120, 75, 5}]	{feats_Number=Sing,pos_ADJ,feats_Gender=Masc}	395	159	672	1361	5729	inf
+{20} {4,5} {3,4}	[{20}, {4, 5}, {3, 4}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	395	172	723	1361	5729	inf
+{20} {5} {3,5} {20}	[{20}, {5}, {3, 5}, {20}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP}	395	172	725	1361	5729	inf
+{5} {20} {4}	[{5}, {20}, {4}]	{feats_Number=Sing} {pos_ADP} {feats_Gender=Fem}	506	206	866	1361	5729	inf
+{5} {3}	[{5}, {3}]	{feats_Number=Sing} {pos_NOUN}	952	805	3387	1361	5729	inf
+{81} {3} {19,20,50,52} {5}	[{81}, {3}, {50, 19, 20, 52}, {5}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	399	181	764	1361	5729	inf
+{81,83,1076,1077}	[{81, 83, 1076, 1077}]	{pos_DET,feats_PronType=Art,lemma_un,feats_Definite=Ind}	540	237	998	1361	5729	inf
+{5,120} {5,75,120}	[{120, 5}, {120, 75, 5}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing,pos_ADJ,feats_Gender=Masc}	346	138	581	1361	5729	inf
+{19,20} {5,81,83} {3,5,120}	[{19, 20}, {81, 83, 5}, {120, 3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	346	160	676	1361	5729	inf
+{19,20} {120} {3,120}	[{19, 20}, {120}, {120, 3}]	{lemma_de,pos_ADP} {feats_Gender=Masc} {pos_NOUN,feats_Gender=Masc}	346	154	651	1361	5729	inf
+{19,20,23}	[{19, 20, 23}]	{lemma_de,pos_ADP,wp_▁d}	346	158	664	1361	5729	inf
+{20} {5,81,83} {5} {5}	[{20}, {81, 83, 5}, {5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	346	148	623	1361	5729	inf
+{20} {59,81} {59} {59}	[{20}, {81, 59}, {59}, {59}]	{pos_ADP} {feats_Number=Plur,pos_DET} {feats_Number=Plur} {feats_Number=Plur}	346	149	630	1361	5729	inf
+{81} {3} {20} {81,83}	[{81}, {3}, {20}, {81, 83}]	{pos_DET} {pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art}	346	161	679	1361	5729	inf
+{120} {2603}	[{120}, {2603}]	{feats_Gender=Masc} {feats_Person=3}	346	162	681	1361	5729	inf
+{20} {5,81,82,83} {3,5}	[{20}, {81, 82, 83, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	735	601	2530	1361	5729	inf
+{3} {19,20,50,52} {3}	[{3}, {50, 19, 20, 52}, {3}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {pos_NOUN}	445	189	797	1361	5729	inf
+{20} {59} {4,59}	[{20}, {59}, {59, 4}]	{pos_ADP} {feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur}	445	198	836	1361	5729	inf
+{81} {120} {20}	[{81}, {120}, {20}]	{pos_DET} {feats_Gender=Masc} {pos_ADP}	445	205	862	1361	5729	inf
+{5} {5} {20} {5}	[{5}, {5}, {20}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	540	229	965	1361	5729	inf
+{20} {81,83}	[{20}, {81, 83}]	{pos_ADP} {pos_DET,feats_PronType=Art}	929	795	3348	1361	5729	inf
+{5} {3} {20} {4}	[{5}, {3}, {20}, {4}]	{feats_Number=Sing} {pos_NOUN} {pos_ADP} {feats_Gender=Fem}	346	138	582	1361	5729	inf
+{5} {20} {5,81,82,83} {3,5}	[{5}, {20}, {81, 82, 83, 5}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	378	157	660	1361	5729	inf
+{5,1076}	[{1076, 5}]	{feats_Number=Sing,lemma_un}	378	166	700	1361	5729	inf
+{19,20,50,52} {120} {120}	[{50, 19, 20, 52}, {120}, {120}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Gender=Masc} {feats_Gender=Masc}	378	168	708	1361	5729	inf
+{20} {5,24,80,81,82,83,85} {3}	[{20}, {5, 80, 81, 82, 83, 85, 24}, {3}]	{pos_ADP} {feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN}	378	158	664	1361	5729	inf
+{59,80,81,82,83} {59} {59}	[{80, 81, 82, 83, 59}, {59}, {59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Plur} {feats_Number=Plur}	378	157	663	1361	5729	inf
+{59,80,81,82,83,266} {3,59,120}	[{266, 80, 81, 82, 83, 59}, {120, 3, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	378	172	726	1361	5729	inf
+{59,81} {3,59} {75}	[{81, 59}, {3, 59}, {75}]	{feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur} {pos_ADJ}	378	152	642	1361	5729	inf
+{20} {5,81,83} {4,5}	[{20}, {81, 83, 5}, {4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	571	448	1886	1361	5729	inf
+{52}	[{52}]	{wp_▁de}	955	830	3493	1361	5729	inf
+{5,81} {3,5} {20}	[{81, 5}, {3, 5}, {20}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {pos_ADP}	564	242	1020	1361	5729	inf
+{20} {81}	[{20}, {81}]	{pos_ADP} {pos_DET}	953	813	3422	1361	5729	inf
+{20} {81,120} {3,120}	[{20}, {120, 81}, {120, 3}]	{pos_ADP} {pos_DET,feats_Gender=Masc} {pos_NOUN,feats_Gender=Masc}	529	229	966	1361	5729	inf
+{3} {20} {5,80,81,82,83} {5}	[{3}, {20}, {5, 80, 81, 82, 83}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	396	179	755	1361	5729	inf
+{5} {5} {20} {4,5}	[{5}, {5}, {20}, {4, 5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	346	140	589	1361	5729	inf
+{3,59,120} {120}	[{120, 3, 59}, {120}]	{pos_NOUN,feats_Number=Plur,feats_Gender=Masc} {feats_Gender=Masc}	346	82	346	1361	5729	inf
+{3,59} {4,59}	[{3, 59}, {59, 4}]	{pos_NOUN,feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur}	396	163	688	1361	5729	inf
+{59} {59} {59,75}	[{59}, {59}, {59, 75}]	{feats_Number=Plur} {feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	418	170	718	1361	5729	inf
+{2603} {1125}	[{2603}, {1125}]	{feats_Person=3} {pos_VERB}	421	190	802	1361	5729	inf
+{3} {19,20} {3,5}	[{3}, {19, 20}, {3, 5}]	{pos_NOUN} {lemma_de,pos_ADP} {pos_NOUN,feats_Number=Sing}	422	183	772	1361	5729	inf
+{59,1125}	[{59, 1125}]	{feats_Number=Plur,pos_VERB}	422	184	777	1361	5729	inf
+{81,83} {3} {20} {4}	[{81, 83}, {3}, {20}, {4}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Gender=Fem}	422	175	738	1361	5729	inf
+{20} {4} {3}	[{20}, {4}, {3}]	{pos_ADP} {feats_Gender=Fem} {pos_NOUN}	407	176	742	1361	5729	inf
+{20} {24}	[{20}, {24}]	{pos_ADP} {wp_’}	407	188	794	1361	5729	inf
+{20} {59,81} {59,120}	[{20}, {81, 59}, {120, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET} {feats_Number=Plur,feats_Gender=Masc}	407	188	792	1361	5729	inf
+{20} {85}	[{20}, {85}]	{pos_ADP} {wp_▁l}	407	189	795	1361	5729	inf
+{120} {59,120}	[{120}, {120, 59}]	{feats_Gender=Masc} {feats_Number=Plur,feats_Gender=Masc}	407	158	668	1361	5729	inf
+{3,4} {19,20}	[{3, 4}, {19, 20}]	{pos_NOUN,feats_Gender=Fem} {lemma_de,pos_ADP}	504	217	913	1361	5729	inf
+{20} {5,80,81,82,83} {3,5,120}	[{20}, {5, 80, 81, 82, 83}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	504	228	959	1361	5729	inf
+{81,83} {3} {20}	[{81, 83}, {3}, {20}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP}	665	539	2270	1361	5729	inf
+{19,20,50,52}	[{50, 19, 20, 52}]	{lemma_de,pos_ADP,feats_de,wp_▁de}	948	816	3435	1361	5729	inf
+{3,59}	[{3, 59}]	{pos_NOUN,feats_Number=Plur}	997	874	3677	1361	5729	inf
+{81,1076}	[{81, 1076}]	{pos_DET,lemma_un}	542	237	1000	1361	5729	inf
+{20} {81,83} {3,120}	[{20}, {81, 83}, {120, 3}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	705	578	2434	1361	5729	inf
+{20} {5} {4,5}	[{20}, {5}, {4, 5}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	636	504	2123	1361	5729	inf
+{3,4} {19,20,52}	[{3, 4}, {19, 20, 52}]	{pos_NOUN,feats_Gender=Fem} {lemma_de,pos_ADP,wp_▁de}	443	187	786	1361	5729	inf
+{20} {59,80,81,82,83,265,266}	[{20}, {265, 266, 80, 81, 82, 83, 59}]	{pos_ADP} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les}	443	200	844	1361	5729	inf
+{3,120} {19,20}	[{120, 3}, {19, 20}]	{pos_NOUN,feats_Gender=Masc} {lemma_de,pos_ADP}	475	217	916	1361	5729	inf
+{20} {3,4,5}	[{20}, {3, 4, 5}]	{pos_ADP} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	475	200	841	1361	5729	inf
+{5} {1125}	[{5}, {1125}]	{feats_Number=Sing} {pos_VERB}	463	200	842	1361	5729	inf
+{80,81,82,83} {3} {20} {5}	[{80, 81, 82, 83}, {3}, {20}, {5}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	463	207	873	1361	5729	inf
+{81,83} {3} {59}	[{81, 83}, {3}, {59}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Number=Plur}	463	192	807	1361	5729	inf
+{5,80,81,82,83,85}	[{5, 80, 81, 82, 83, 85}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l}	497	228	959	1361	5729	inf
+{5,81,83} {5} {5}	[{81, 83, 5}, {5}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	497	220	928	1361	5729	inf
+{20,727,1403,1405}	[{1403, 20, 1405, 727}]	{pos_ADP,lemma_à,feats_à,wp_▁à}	432	202	849	1361	5729	inf
+{20} {120} {120}	[{20}, {120}, {120}]	{pos_ADP} {feats_Gender=Masc} {feats_Gender=Masc}	625	513	2158	1361	5729	inf
+{3,5} {4}	[{3, 5}, {4}]	{pos_NOUN,feats_Number=Sing} {feats_Gender=Fem}	396	166	699	1361	5729	inf
+{5} {3,5} {5,75}	[{5}, {3, 5}, {75, 5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	396	168	709	1361	5729	inf
+{120,1126,1127}	[{120, 1126, 1127}]	{feats_Gender=Masc,feats_Tense=Past,feats_VerbForm=Part}	421	189	797	1361	5729	inf
+{81} {3} {4,75}	[{81}, {3}, {75, 4}]	{pos_DET} {pos_NOUN} {feats_Gender=Fem,pos_ADJ}	389	166	701	1361	5729	inf
+{3,4,5}	[{3, 4, 5}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	985	859	3617	1361	5729	inf
+{3} {20} {4,5}	[{3}, {20}, {4, 5}]	{pos_NOUN} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	522	215	904	1361	5729	inf
+{5,81,83} {3,4,5}	[{81, 83, 5}, {3, 4, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	714	571	2403	1361	5729	inf
+{3} {75,120}	[{3}, {120, 75}]	{pos_NOUN} {pos_ADJ,feats_Gender=Masc}	521	202	849	1361	5729	inf
+{5} {20} {80,81,82,83} {3}	[{5}, {20}, {80, 81, 82, 83}, {3}]	{feats_Number=Sing} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	428	181	761	1361	5729	inf
+{19,20,52,263} {80,81,82,83} {3,120}	[{19, 20, 52, 263}, {80, 81, 82, 83}, {120, 3}]	{lemma_de,pos_ADP,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	428	193	813	1361	5729	inf
+{81,83} {3} {37}	[{81, 83}, {3}, {37}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_PUNCT}	428	189	797	1361	5729	inf
+{19,20,50,52} {81} {3}	[{50, 19, 20, 52}, {81}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN}	719	598	2516	1361	5729	inf
+{3,120}	[{120, 3}]	{pos_NOUN,feats_Gender=Masc}	1107	1000	4210	1361	5729	inf
+{5,2603}	[{2603, 5}]	{feats_Number=Sing,feats_Person=3}	582	250	1051	1361	5729	inf
+{81,83} {3} {75}	[{81, 83}, {3}, {75}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADJ}	582	467	1965	1361	5729	inf
+{5} {20} {5} {4,5}	[{5}, {20}, {5}, {4, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	389	159	672	1361	5729	inf
+{20} {4,5,81,83}	[{20}, {81, 83, 4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing,pos_DET,feats_PronType=Art}	389	172	725	1361	5729	inf
+{5,80,81,82,83} {5} {5}	[{5, 80, 81, 82, 83}, {5}, {5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	386	174	734	1361	5729	inf
+{81} {3} {20} {5}	[{81}, {3}, {20}, {5}]	{pos_DET} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	565	247	1041	1361	5729	inf
+{59} {4,75}	[{59}, {75, 4}]	{feats_Number=Plur} {feats_Gender=Fem,pos_ADJ}	386	162	684	1361	5729	inf
+{19,20,52} {120}	[{19, 20, 52}, {120}]	{lemma_de,pos_ADP,wp_▁de} {feats_Gender=Masc}	485	212	894	1361	5729	inf
+{5,80,81,82,83} {3,5} {20}	[{5, 80, 81, 82, 83}, {3, 5}, {20}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	484	210	883	1361	5729	inf
+{19,20} {81,83} {3,120}	[{19, 20}, {81, 83}, {120, 3}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	484	218	918	1361	5729	inf
+{19,20,50,52} {81} {3,4}	[{50, 19, 20, 52}, {81}, {3, 4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Fem}	484	200	844	1361	5729	inf
+{24} {4}	[{24}, {4}]	{wp_’} {feats_Gender=Fem}	548	220	928	1361	5729	inf
+{3} {20} {5} {3}	[{3}, {20}, {5}, {3}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {pos_NOUN}	452	191	804	1361	5729	inf
+{3,59} {20}	[{3, 59}, {20}]	{pos_NOUN,feats_Number=Plur} {pos_ADP}	452	213	898	1361	5729	inf
+{81} {3} {20} {3}	[{81}, {3}, {20}, {3}]	{pos_DET} {pos_NOUN} {pos_ADP} {pos_NOUN}	452	199	837	1361	5729	inf
+{3} {75} {37}	[{3}, {75}, {37}]	{pos_NOUN} {pos_ADJ} {pos_PUNCT}	434	183	770	1361	5729	inf
+{3,5,120} {20}	[{120, 3, 5}, {20}]	{pos_NOUN,feats_Number=Sing,feats_Gender=Masc} {pos_ADP}	434	196	824	1361	5729	inf
+{20} {81} {3} {37}	[{20}, {81}, {3}, {37}]	{pos_ADP} {pos_DET} {pos_NOUN} {pos_PUNCT}	434	194	816	1361	5729	inf
+{120} {20} {81,83}	[{120}, {20}, {81, 83}]	{feats_Gender=Masc} {pos_ADP} {pos_DET,feats_PronType=Art}	434	193	813	1361	5729	inf
+{20} {5} {3,4}	[{20}, {5}, {3, 4}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	596	458	1930	1361	5729	inf
+{3,4} {59}	[{3, 4}, {59}]	{pos_NOUN,feats_Gender=Fem} {feats_Number=Plur}	479	205	863	1361	5729	inf
+{20} {4,5} {3}	[{20}, {4, 5}, {3}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing} {pos_NOUN}	396	172	725	1361	5729	inf
+{5,24,81,83} {5}	[{24, 81, 83, 5}, {5}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art} {feats_Number=Sing}	531	238	1003	1361	5729	inf
+{20} {59,81} {3,59,120}	[{20}, {81, 59}, {120, 3, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	396	181	764	1361	5729	inf
+{23}	[{23}]	{wp_▁d}	396	173	728	1361	5729	inf
+{37,1118,1119,1121}	[{1121, 37, 1118, 1119}]	{pos_PUNCT,lemma_(,feats_(,wp_▁(}	396	94	396	1361	5729	inf
+{81,83} {3,120} {120}	[{81, 83}, {120, 3}, {120}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc} {feats_Gender=Masc}	396	156	657	1361	5729	inf
+{1125,1127}	[{1125, 1127}]	{pos_VERB,feats_VerbForm=Part}	641	497	2093	1361	5729	inf
+{5} {3} {20} {3}	[{5}, {3}, {20}, {3}]	{feats_Number=Sing} {pos_NOUN} {pos_ADP} {pos_NOUN}	348	144	608	1361	5729	inf
+{5} {4} {20} {5}	[{5}, {4}, {20}, {5}]	{feats_Number=Sing} {feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	348	140	592	1361	5729	inf
+{5} {20} {5} {3,4}	[{5}, {20}, {5}, {3, 4}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	348	140	592	1361	5729	inf
+{19,20} {59} {59,120}	[{19, 20}, {59}, {120, 59}]	{lemma_de,pos_ADP} {feats_Number=Plur} {feats_Number=Plur,feats_Gender=Masc}	348	150	634	1361	5729	inf
+{20} {81,83} {3} {20} {5}	[{20}, {81, 83}, {3}, {20}, {5}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	348	160	675	1361	5729	inf
+{20} {81,83} {4,59}	[{20}, {81, 83}, {59, 4}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Plur}	348	159	672	1361	5729	inf
+{120} {20} {81,82,83} {3}	[{120}, {20}, {81, 82, 83}, {3}]	{feats_Gender=Masc} {pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	348	147	621	1361	5729	inf
+{20} {120} {3,120}	[{20}, {120}, {120, 3}]	{pos_ADP} {feats_Gender=Masc} {pos_NOUN,feats_Gender=Masc}	544	234	985	1361	5729	inf
+{81,83} {3} {20} {5}	[{81, 83}, {3}, {20}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	531	234	984	1361	5729	inf
+{20} {5}	[{20}, {5}]	{pos_ADP} {feats_Number=Sing}	965	831	3499	1361	5729	inf
+{59} {59} {75}	[{59}, {59}, {75}]	{feats_Number=Plur} {feats_Number=Plur} {pos_ADJ}	424	173	729	1361	5729	inf
+{20} {4} {4}	[{20}, {4}, {4}]	{pos_ADP} {feats_Gender=Fem} {feats_Gender=Fem}	508	219	922	1361	5729	inf
+{20} {5,80,81,82,83} {3,4,5}	[{20}, {5, 80, 81, 82, 83}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	508	209	882	1361	5729	inf
+{59} {3,59} {59}	[{59}, {3, 59}, {59}]	{feats_Number=Plur} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur}	508	210	884	1361	5729	inf
+{19,20,50,52} {80,81,82,83} {3,4}	[{50, 19, 20, 52}, {80, 81, 82, 83}, {3, 4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	454	187	786	1361	5729	inf
+{19,20,52} {80,81,82,83} {3,120}	[{19, 20, 52}, {80, 81, 82, 83}, {120, 3}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	454	206	870	1361	5729	inf
+{81,83} {4} {20}	[{81, 83}, {4}, {20}]	{pos_DET,feats_PronType=Art} {feats_Gender=Fem} {pos_ADP}	454	197	832	1361	5729	inf
+{120} {20} {81} {3}	[{120}, {20}, {81}, {3}]	{feats_Gender=Masc} {pos_ADP} {pos_DET} {pos_NOUN}	454	196	824	1361	5729	inf
+{2603} {5}	[{2603}, {5}]	{feats_Person=3} {feats_Number=Sing}	454	204	861	1361	5729	inf
+{20} {5,81,83} {3,5,120}	[{20}, {81, 83, 5}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	551	244	1028	1361	5729	inf
+{3} {20} {3}	[{3}, {20}, {3}]	{pos_NOUN} {pos_ADP} {pos_NOUN}	612	487	2051	1361	5729	inf
+{3} {19,20} {3,4}	[{3}, {19, 20}, {3, 4}]	{pos_NOUN} {lemma_de,pos_ADP} {pos_NOUN,feats_Gender=Fem}	417	175	738	1361	5729	inf
+{20} {5} {5} {20}	[{20}, {5}, {5}, {20}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing} {pos_ADP}	417	184	774	1361	5729	inf
+{1127} {20}	[{1127}, {20}]	{feats_VerbForm=Part} {pos_ADP}	421	172	726	1361	5729	inf
+{81,83} {3} {20} {3}	[{81, 83}, {3}, {20}, {3}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {pos_NOUN}	421	184	774	1361	5729	inf
+{19,52}	[{19, 52}]	{lemma_de,wp_▁de}	952	825	3471	1361	5729	inf
+{3,4} {20} {3}	[{3, 4}, {20}, {3}]	{pos_NOUN,feats_Gender=Fem} {pos_ADP} {pos_NOUN}	401	165	694	1361	5729	inf
+{120} {20} {80,81,82,83} {3}	[{120}, {20}, {80, 81, 82, 83}, {3}]	{feats_Gender=Masc} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	347	147	620	1361	5729	inf
+{3} {20} {81} {3}	[{3}, {20}, {81}, {3}]	{pos_NOUN} {pos_ADP} {pos_DET} {pos_NOUN}	517	226	950	1361	5729	inf
+{5} {3,5} {5}	[{5}, {3, 5}, {5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	517	218	919	1361	5729	inf
+{5} {3,4,5} {20}	[{5}, {3, 4, 5}, {20}]	{feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	414	169	714	1361	5729	inf
+{20} {59,80,81,82,83,265,266} {3,59}	[{20}, {265, 266, 80, 81, 82, 83, 59}, {3, 59}]	{pos_ADP} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les} {pos_NOUN,feats_Number=Plur}	414	186	785	1361	5729	inf
+{5,120} {20} {5}	[{120, 5}, {20}, {5}]	{feats_Number=Sing,feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	391	177	746	1361	5729	inf
+{20} {81} {3} {19,20}	[{20}, {81}, {3}, {19, 20}]	{pos_ADP} {pos_DET} {pos_NOUN} {lemma_de,pos_ADP}	391	183	772	1361	5729	inf
+{81} {3} {20} {81}	[{81}, {3}, {20}, {81}]	{pos_DET} {pos_NOUN} {pos_ADP} {pos_DET}	391	181	763	1361	5729	inf
+{20} {5,81,83} {3,4,5}	[{20}, {81, 83, 5}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	553	228	961	1361	5729	inf
+{19,20,52} {80,81,82,83} {3}	[{19, 20, 52}, {80, 81, 82, 83}, {3}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	682	570	2398	1361	5729	inf
+{5,120} {3,5}	[{120, 5}, {3, 5}]	{feats_Number=Sing,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing}	684	562	2367	1361	5729	inf
+{2605}	[{2605}]	{feats_VerbForm=Fin}	790	626	2634	1361	5729	inf
+{3} {20} {5,80,81,82,83}	[{3}, {20}, {5, 80, 81, 82, 83}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	401	181	762	1361	5729	inf
+{5} {20} {3,5}	[{5}, {20}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {pos_NOUN,feats_Number=Sing}	401	159	669	1361	5729	inf
+{20,23}	[{20, 23}]	{pos_ADP,wp_▁d}	347	158	665	1361	5729	inf
+{5} {20} {81} {3,4}	[{5}, {20}, {81}, {3, 4}]	{feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem}	401	165	696	1361	5729	inf
+{19,20,50,52} {5,120}	[{50, 19, 20, 52}, {120, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,feats_Gender=Masc}	401	183	771	1361	5729	inf
+{81} {3} {19,20} {4}	[{81}, {3}, {19, 20}, {4}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP} {feats_Gender=Fem}	401	164	692	1361	5729	inf
+{5} {20} {5,81,83} {5}	[{5}, {20}, {81, 83, 5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	459	202	849	1361	5729	inf
+{59,81} {3,59} {59}	[{81, 59}, {3, 59}, {59}]	{feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur}	459	188	794	1361	5729	inf
+{5} {20} {5,81,83} {3,5}	[{5}, {20}, {81, 83, 5}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	433	180	757	1361	5729	inf
+{5} {20} {81,82,83} {3}	[{5}, {20}, {81, 82, 83}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	429	181	762	1361	5729	inf
+{20} {59} {3,59,120}	[{20}, {59}, {120, 3, 59}]	{pos_ADP} {feats_Number=Plur} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	429	194	819	1361	5729	inf
+{2601,2605}	[{2601, 2605}]	{pos_AUX,feats_VerbForm=Fin}	429	204	860	1361	5729	inf
+{3} {20} {5,81,83} {3,5}	[{3}, {20}, {81, 83, 5}, {3, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	420	176	743	1361	5729	inf
+{5} {5} {75}	[{5}, {5}, {75}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADJ}	420	180	758	1361	5729	inf
+{5,120} {5} {20}	[{120, 5}, {5}, {20}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing} {pos_ADP}	420	188	794	1361	5729	inf
+{20} {4,81}	[{20}, {81, 4}]	{pos_ADP} {feats_Gender=Fem,pos_DET}	420	184	777	1361	5729	inf
+{20,727,1405} {81}	[{20, 1405, 727}, {81}]	{pos_ADP,lemma_à,wp_▁à} {pos_DET}	347	168	709	1361	5729	inf
+{20} {59,81,83} {4,59}	[{20}, {81, 83, 59}, {59, 4}]	{pos_ADP} {feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Plur}	347	159	671	1361	5729	inf
+{24,81,83} {4}	[{24, 81, 83}, {4}]	{wp_’,pos_DET,feats_PronType=Art} {feats_Gender=Fem}	420	167	702	1361	5729	inf
+{5} {3,5} {20} {5}	[{5}, {3, 5}, {20}, {5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	446	188	792	1361	5729	inf
+{5} {20} {80,81,82,83}	[{5}, {20}, {80, 81, 82, 83}]	{feats_Number=Sing} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	461	204	860	1361	5729	inf
+{5,2602,2603,2604,2605}	[{5, 2602, 2603, 2604, 2605}]	{feats_Number=Sing,feats_Mood=Ind,feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	461	206	866	1361	5729	inf
+{52} {59} {3,59}	[{52}, {59}, {3, 59}]	{wp_▁de} {feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	461	205	862	1361	5729	inf
+{3} {19,20} {81} {3}	[{3}, {19, 20}, {81}, {3}]	{pos_NOUN} {lemma_de,pos_ADP} {pos_DET} {pos_NOUN}	345	148	622	1361	5729	inf
+{3,4} {5,75}	[{3, 4}, {75, 5}]	{pos_NOUN,feats_Gender=Fem} {feats_Number=Sing,pos_ADJ}	345	148	622	1361	5729	inf
+{3,5,120} {5,120}	[{120, 3, 5}, {120, 5}]	{pos_NOUN,feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	345	136	574	1361	5729	inf
+{3,59} {37}	[{3, 59}, {37}]	{pos_NOUN,feats_Number=Plur} {pos_PUNCT}	345	163	689	1361	5729	inf
+{5} {3,5} {19,20} {5}	[{5}, {3, 5}, {19, 20}, {5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP} {feats_Number=Sing}	345	153	645	1361	5729	inf
+{5} {3,5} {20} {4}	[{5}, {3, 5}, {20}, {4}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Gender=Fem}	345	138	580	1361	5729	inf
+{19,20} {5,81,83} {3,4,5}	[{19, 20}, {81, 83, 5}, {3, 4, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	345	139	584	1361	5729	inf
+{52} {59} {120}	[{52}, {59}, {120}]	{wp_▁de} {feats_Number=Plur} {feats_Gender=Masc}	345	148	622	1361	5729	inf
+{19,20,52}	[{19, 20, 52}]	{lemma_de,pos_ADP,wp_▁de}	949	817	3437	1361	5729	inf
+{24} {3,5}	[{24}, {3, 5}]	{wp_’} {pos_NOUN,feats_Number=Sing}	593	247	1040	1361	5729	inf
+{3} {20} {5,81} {4,5}	[{3}, {20}, {81, 5}, {4, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	356	142	600	1361	5729	inf
+{5} {20} {5} {3,4,5}	[{5}, {20}, {5}, {3, 4, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	347	140	591	1361	5729	inf
+{3} {20} {59}	[{3}, {20}, {59}]	{pos_NOUN} {pos_ADP} {feats_Number=Plur}	356	167	705	1361	5729	inf
+{3,4,59} {4,59,75}	[{3, 59, 4}, {59, 75, 4}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur,pos_ADJ}	356	145	613	1361	5729	inf
+{3,5} {5,120}	[{3, 5}, {120, 5}]	{pos_NOUN,feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc}	356	142	600	1361	5729	inf
+{4,5} {4,75}	[{4, 5}, {75, 4}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem,pos_ADJ}	356	156	658	1361	5729	inf
+{5,81,83} {3,5} {5,75}	[{81, 83, 5}, {3, 5}, {75, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	356	151	637	1361	5729	inf
+{5,81,1076} {5}	[{81, 1076, 5}, {5}]	{feats_Number=Sing,pos_DET,lemma_un} {feats_Number=Sing}	356	157	660	1361	5729	inf
+{19,20} {81,120} {120}	[{19, 20}, {120, 81}, {120}]	{lemma_de,pos_ADP} {pos_DET,feats_Gender=Masc} {feats_Gender=Masc}	356	163	686	1361	5729	inf
+{20} {59,81,83} {3,59,120}	[{20}, {81, 83, 59}, {120, 3, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	356	162	684	1361	5729	inf
+{81} {120} {19,20}	[{81}, {120}, {19, 20}]	{pos_DET} {feats_Gender=Masc} {lemma_de,pos_ADP}	356	167	702	1361	5729	inf
+{120}	[{120}]	{feats_Gender=Masc}	1125	1024	4310	1361	5729	inf
+{3} {19,20} {5,81} {5}	[{3}, {19, 20}, {81, 5}, {5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	347	159	669	1361	5729	inf
+{3,120} {59,120}	[{120, 3}, {120, 59}]	{pos_NOUN,feats_Gender=Masc} {feats_Number=Plur,feats_Gender=Masc}	347	82	347	1361	5729	inf
+{5} {3,5} {20} {3}	[{5}, {3, 5}, {20}, {3}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_NOUN}	347	144	607	1361	5729	inf
+{20} {80,81,82,83} {3} {20}	[{20}, {80, 81, 82, 83}, {3}, {20}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	420	195	821	1361	5729	inf
+{81,83} {3} {4}	[{81, 83}, {3}, {4}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Gender=Fem}	420	180	758	1361	5729	inf
+{20} {5,81} {3,5}	[{20}, {81, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	810	651	2740	1361	5729	inf
+{3,120} {75}	[{120, 3}, {75}]	{pos_NOUN,feats_Gender=Masc} {pos_ADJ}	518	202	852	1361	5729	inf
+{20} {5,81,83,120} {3,5,120}	[{20}, {120, 81, 83, 5}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	505	218	919	1361	5729	inf
+{81} {3} {5}	[{81}, {3}, {5}]	{pos_DET} {pos_NOUN} {feats_Number=Sing}	505	215	905	1361	5729	inf
+{5} {20} {5}	[{5}, {20}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	694	553	2330	1361	5729	inf
+{3} {20} {5,81} {3,5}	[{3}, {20}, {81, 5}, {3, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	442	187	788	1361	5729	inf
+{3,4} {19,20,50,52}	[{3, 4}, {50, 19, 20, 52}]	{pos_NOUN,feats_Gender=Fem} {lemma_de,pos_ADP,feats_de,wp_▁de}	442	186	785	1361	5729	inf
+{20} {59,80,81,82,83,265,266} {59}	[{20}, {265, 266, 80, 81, 82, 83, 59}, {59}]	{pos_ADP} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les} {feats_Number=Plur}	442	199	838	1361	5729	inf
+{1125,2602,2603,2605}	[{1125, 2602, 2603, 2605}]	{pos_VERB,feats_Mood=Ind,feats_Person=3,feats_VerbForm=Fin}	442	199	837	1361	5729	inf
+{5,24,80,81,82,83,85} {3}	[{5, 80, 81, 82, 83, 85, 24}, {3}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN}	473	197	831	1361	5729	inf
+{19,20,52} {80,81,82,83} {120}	[{19, 20, 52}, {80, 81, 82, 83}, {120}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	473	218	920	1361	5729	inf
+{3} {20} {5,81}	[{3}, {20}, {81, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET}	476	212	892	1361	5729	inf
+{20} {4,5} {5}	[{20}, {4, 5}, {5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing} {feats_Number=Sing}	476	208	878	1361	5729	inf
+{24} {3,4,5}	[{24}, {3, 4, 5}]	{wp_’} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	476	187	788	1361	5729	inf
+{1125,2605}	[{1125, 2605}]	{pos_VERB,feats_VerbForm=Fin}	476	210	885	1361	5729	inf
+{75}	[{75}]	{pos_ADJ}	904	760	3201	1361	5729	inf
+{19,20,50,52} {3}	[{50, 19, 20, 52}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_NOUN}	505	215	905	1361	5729	inf
+{24} {4,5}	[{24}, {4, 5}]	{wp_’} {feats_Gender=Fem,feats_Number=Sing}	516	206	870	1361	5729	inf
+{20,727}	[{20, 727}]	{pos_ADP,lemma_à}	477	218	920	1361	5729	inf
+{120} {120} {20}	[{120}, {120}, {20}]	{feats_Gender=Masc} {feats_Gender=Masc} {pos_ADP}	477	209	879	1361	5729	inf
+{3} {4,59}	[{3}, {59, 4}]	{pos_NOUN} {feats_Gender=Fem,feats_Number=Plur}	413	170	717	1361	5729	inf
+{3,5} {20} {5} {5}	[{3, 5}, {20}, {5}, {5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	413	181	764	1361	5729	inf
+{5} {3,5} {19,20,50,52}	[{5}, {3, 5}, {50, 19, 20, 52}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	413	185	779	1361	5729	inf
+{20} {4,5,81}	[{20}, {81, 4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing,pos_DET}	413	182	765	1361	5729	inf
+{3} {120}	[{3}, {120}]	{pos_NOUN} {feats_Gender=Masc}	606	470	1980	1361	5729	inf
+{20} {3,5}	[{20}, {3, 5}]	{pos_ADP} {pos_NOUN,feats_Number=Sing}	648	527	2217	1361	5729	inf
+{3} {20} {5,81,83}	[{3}, {20}, {81, 83, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	455	202	852	1361	5729	inf
+{19,20,50,52} {59,81}	[{50, 19, 20, 52}, {81, 59}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Plur,pos_DET}	455	202	851	1361	5729	inf
+{19,20,52} {80,81,82,83} {3,4}	[{19, 20, 52}, {80, 81, 82, 83}, {3, 4}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	455	187	787	1361	5729	inf
+{20} {81,83} {3} {20}	[{20}, {81, 83}, {3}, {20}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP}	455	209	880	1361	5729	inf
+{20} {5,81,82,83} {3,5,120}	[{20}, {81, 82, 83, 5}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	505	228	960	1361	5729	inf
+{81} {120} {120}	[{81}, {120}, {120}]	{pos_DET} {feats_Gender=Masc} {feats_Gender=Masc}	474	195	821	1361	5729	inf
+{1125,1127} {20}	[{1125, 1127}, {20}]	{pos_VERB,feats_VerbForm=Part} {pos_ADP}	420	172	725	1361	5729	inf
+{81} {4} {20} {5}	[{81}, {4}, {20}, {5}]	{pos_DET} {feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	363	155	652	1361	5729	inf
+{2601,2602,2603,2605}	[{2601, 2602, 2603, 2605}]	{pos_AUX,feats_Mood=Ind,feats_Person=3,feats_VerbForm=Fin}	420	200	842	1361	5729	inf
+{3,59} {75}	[{3, 59}, {75}]	{pos_NOUN,feats_Number=Plur} {pos_ADJ}	537	431	1814	1361	5729	inf
+{19,20,50,52} {5} {3,5}	[{50, 19, 20, 52}, {5}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	537	230	970	1361	5729	inf
+{3} {20} {3,5}	[{3}, {20}, {3, 5}]	{pos_NOUN} {pos_ADP} {pos_NOUN,feats_Number=Sing}	507	214	903	1361	5729	inf
+{59} {59} {59}	[{59}, {59}, {59}]	{feats_Number=Plur} {feats_Number=Plur} {feats_Number=Plur}	598	466	1962	1361	5729	inf
+{19}	[{19}]	{lemma_de}	990	859	3617	1361	5729	inf
+{59} {3,59} {75}	[{59}, {3, 59}, {75}]	{feats_Number=Plur} {pos_NOUN,feats_Number=Plur} {pos_ADJ}	408	166	699	1361	5729	inf
+{5} {19,20}	[{5}, {19, 20}]	{feats_Number=Sing} {lemma_de,pos_ADP}	681	556	2341	1361	5729	inf
+{19,20,50,52} {80,81,82,83} {3}	[{50, 19, 20, 52}, {80, 81, 82, 83}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	681	569	2396	1361	5729	inf
+{3,4} {20} {4}	[{3, 4}, {20}, {4}]	{pos_NOUN,feats_Gender=Fem} {pos_ADP} {feats_Gender=Fem}	363	148	625	1361	5729	inf
+{3,4,59} {75}	[{3, 59, 4}, {75}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur} {pos_ADJ}	363	149	627	1361	5729	inf
+{59} {20} {81} {3}	[{59}, {20}, {81}, {3}]	{feats_Number=Plur} {pos_ADP} {pos_DET} {pos_NOUN}	363	156	657	1361	5729	inf
+{59,81,83} {3,59} {75}	[{81, 83, 59}, {3, 59}, {75}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur} {pos_ADJ}	363	144	606	1361	5729	inf
+{81,83} {3} {19,20} {3}	[{81, 83}, {3}, {19, 20}, {3}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP} {pos_NOUN}	363	158	664	1361	5729	inf
+{81,1076} {3}	[{81, 1076}, {3}]	{pos_DET,lemma_un} {pos_NOUN}	483	211	887	1361	5729	inf
+{2605} {5}	[{2605}, {5}]	{feats_VerbForm=Fin} {feats_Number=Sing}	363	163	686	1361	5729	inf
+{3,5} {20} {4}	[{3, 5}, {20}, {4}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Gender=Fem}	431	171	720	1361	5729	inf
+{59,81,83} {3,59} {59}	[{81, 83, 59}, {3, 59}, {59}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur}	431	173	728	1361	5729	inf
+{59,75}	[{59, 75}]	{feats_Number=Plur,pos_ADJ}	640	510	2148	1361	5729	inf
+{59} {75}	[{59}, {75}]	{feats_Number=Plur} {pos_ADJ}	588	472	1987	1361	5729	inf
+{3,4} {59,75}	[{3, 4}, {59, 75}]	{pos_NOUN,feats_Gender=Fem} {feats_Number=Plur,pos_ADJ}	368	152	642	1361	5729	inf
+{19,20} {5} {3,4,5}	[{19, 20}, {5}, {3, 4, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	368	149	627	1361	5729	inf
+{19,20} {5,81,83} {5,120}	[{19, 20}, {81, 83, 5}, {120, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Masc}	368	173	727	1361	5729	inf
+{81} {3,4} {19,20}	[{81}, {3, 4}, {19, 20}]	{pos_DET} {pos_NOUN,feats_Gender=Fem} {lemma_de,pos_ADP}	368	163	686	1361	5729	inf
+{120} {20} {5,81} {3,5}	[{120}, {20}, {81, 5}, {3, 5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	368	158	668	1361	5729	inf
+{20} {81} {3} {75}	[{20}, {81}, {3}, {75}]	{pos_ADP} {pos_DET} {pos_NOUN} {pos_ADJ}	440	183	770	1361	5729	inf
+{37,1151,1152,1154}	[{1152, 1154, 37, 1151}]	{pos_PUNCT,lemma_),feats_),wp_▁)}	440	104	440	1361	5729	inf
+{19,20,50,52} {120}	[{50, 19, 20, 52}, {120}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Gender=Masc}	483	212	892	1361	5729	inf
+{81,83} {3} {120}	[{81, 83}, {3}, {120}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Gender=Masc}	399	158	664	1361	5729	inf
+{5,81} {3,5} {19,20,50,52}	[{81, 5}, {3, 5}, {50, 19, 20, 52}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	394	175	739	1361	5729	inf
+{5,80,81,82,83} {3,5} {20} {5}	[{5, 80, 81, 82, 83}, {3, 5}, {20}, {5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	344	150	632	1361	5729	inf
+{20} {4,5,81,83} {4,5}	[{20}, {81, 83, 4, 5}, {4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	385	170	717	1361	5729	inf
+{5} {5} {20} {5,81} {5}	[{5}, {5}, {20}, {81, 5}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	362	162	684	1361	5729	inf
+{19,20} {5,81} {3,5,120}	[{19, 20}, {81, 5}, {120, 3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	362	169	712	1361	5729	inf
+{19,20,52} {5} {5,120}	[{19, 20, 52}, {5}, {120, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc}	362	173	727	1361	5729	inf
+{59} {3,59} {20}	[{59}, {3, 59}, {20}]	{feats_Number=Plur} {pos_NOUN,feats_Number=Plur} {pos_ADP}	362	178	751	1361	5729	inf
+{81,83} {3} {5,75}	[{81, 83}, {3}, {75, 5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Number=Sing,pos_ADJ}	362	154	648	1361	5729	inf
+{20} {81} {3,4}	[{20}, {81}, {3, 4}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem}	723	591	2489	1361	5729	inf
+{20} {81} {3} {20} {5}	[{20}, {81}, {3}, {20}, {5}]	{pos_ADP} {pos_DET} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	381	174	733	1361	5729	inf
+{4} {5} {20}	[{4}, {5}, {20}]	{feats_Gender=Fem} {feats_Number=Sing} {pos_ADP}	385	165	694	1361	5729	inf
+{5} {5,1125}	[{5}, {5, 1125}]	{feats_Number=Sing} {feats_Number=Sing,pos_VERB}	385	164	692	1361	5729	inf
+{19,20} {5,81} {4,5}	[{19, 20}, {81, 5}, {4, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	385	157	663	1361	5729	inf
+{20} {5,80,81,82,83,85} {3}	[{20}, {5, 80, 81, 82, 83, 85}, {3}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN}	385	162	683	1361	5729	inf
+{1125} {20}	[{1125}, {20}]	{pos_VERB} {pos_ADP}	574	237	997	1361	5729	inf
+{59,80,81,82,83,266} {3,4,59}	[{266, 80, 81, 82, 83, 59}, {3, 59, 4}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	385	174	735	1361	5729	inf
+{2699}	[{2699}]	{feats_PronType=Prs}	385	179	755	1361	5729	inf
+{5,80,81,82,83,85} {3,4}	[{5, 80, 81, 82, 83, 85}, {3, 4}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Gender=Fem}	381	152	639	1361	5729	inf
+{4,5,80,81,82,83,94} {3,4,5}	[{4, 5, 80, 81, 82, 83, 94}, {3, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁la} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	381	172	726	1361	5729	inf
+{3,5} {19,20} {4}	[{3, 5}, {19, 20}, {4}]	{pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP} {feats_Gender=Fem}	381	149	626	1361	5729	inf
+{3,4,5} {4}	[{3, 4, 5}, {4}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem}	381	159	669	1361	5729	inf
+{1125,2604,2605}	[{1125, 2604, 2605}]	{pos_VERB,feats_Tense=Pres,feats_VerbForm=Fin}	400	183	770	1361	5729	inf
+{120} {20} {81,83} {3}	[{120}, {20}, {81, 83}, {3}]	{feats_Gender=Masc} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	400	170	716	1361	5729	inf
+{80,81,82,83} {3} {37}	[{80, 81, 82, 83}, {3}, {37}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_PUNCT}	400	178	752	1361	5729	inf
+{20} {24,81,83}	[{20}, {24, 81, 83}]	{pos_ADP} {wp_’,pos_DET,feats_PronType=Art}	400	185	780	1361	5729	inf
+{1076}	[{1076}]	{lemma_un}	555	243	1022	1361	5729	inf
+{5} {20} {81} {3}	[{5}, {20}, {81}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN}	555	237	1000	1361	5729	inf
+{59} {20} {81,83}	[{59}, {20}, {81, 83}]	{feats_Number=Plur} {pos_ADP} {pos_DET,feats_PronType=Art}	350	156	658	1361	5729	inf
+{20} {81} {4} {4}	[{20}, {81}, {4}, {4}]	{pos_ADP} {pos_DET} {feats_Gender=Fem} {feats_Gender=Fem}	343	149	626	1361	5729	inf
+{3} {20} {81,83} {3}	[{3}, {20}, {81, 83}, {3}]	{pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	470	202	853	1361	5729	inf
+{4,5} {20} {5}	[{4, 5}, {20}, {5}]	{feats_Gender=Fem,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	470	187	789	1361	5729	inf
+{19,20,52} {80,81,82,83} {4}	[{19, 20, 52}, {80, 81, 82, 83}, {4}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	470	196	824	1361	5729	inf
+{81} {3} {19,20} {5}	[{81}, {3}, {19, 20}, {5}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	470	211	890	1361	5729	inf
+{59} {20} {3}	[{59}, {20}, {3}]	{feats_Number=Plur} {pos_ADP} {pos_NOUN}	343	158	664	1361	5729	inf
+{3} {20} {81,83} {3,4}	[{3}, {20}, {81, 83}, {3, 4}]	{pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	361	149	628	1361	5729	inf
+{3,4,59} {59,75}	[{3, 59, 4}, {59, 75}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	361	148	622	1361	5729	inf
+{4} {4,59,75}	[{4}, {59, 75, 4}]	{feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Plur,pos_ADJ}	361	148	625	1361	5729	inf
+{5} {4,5,75}	[{5}, {75, 4, 5}]	{feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing,pos_ADJ}	361	159	669	1361	5729	inf
+{20,1638,1641}	[{1641, 20, 1638}]	{pos_ADP,lemma_en,wp_▁en}	343	143	601	1361	5729	inf
+{5} {5,75,120}	[{5}, {120, 75, 5}]	{feats_Number=Sing} {feats_Number=Sing,pos_ADJ,feats_Gender=Masc}	361	143	603	1361	5729	inf
+{3,4,5} {5,75}	[{3, 4, 5}, {75, 5}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	343	146	616	1361	5729	inf
+{19,20,50,52} {5,81} {5,120}	[{50, 19, 20, 52}, {81, 5}, {120, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Masc}	343	166	699	1361	5729	inf
+{5,1076} {5}	[{1076, 5}, {5}]	{feats_Number=Sing,lemma_un} {feats_Number=Sing}	361	159	671	1361	5729	inf
+{19,20,50,52} {5,81} {4,5}	[{50, 19, 20, 52}, {81, 5}, {4, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	343	141	593	1361	5729	inf
+{5} {5} {20} {5} {3,5}	[{5}, {5}, {20}, {5}, {3, 5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	343	144	608	1361	5729	inf
+{19,20} {3,4,5}	[{19, 20}, {3, 4, 5}]	{lemma_de,pos_ADP} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	361	157	660	1361	5729	inf
+{5} {3,5,120} {20}	[{5}, {120, 3, 5}, {20}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc} {pos_ADP}	343	158	667	1361	5729	inf
+{19,20} {4} {4}	[{19, 20}, {4}, {4}]	{lemma_de,pos_ADP} {feats_Gender=Fem} {feats_Gender=Fem}	361	151	637	1361	5729	inf
+{19,20,50,52} {5} {5,120}	[{50, 19, 20, 52}, {5}, {120, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc}	361	172	726	1361	5729	inf
+{81,83} {3} {20} {5} {5}	[{81, 83}, {3}, {20}, {5}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	361	163	687	1361	5729	inf
+{4,62}	[{4, 62}]	{feats_Gender=Fem,wp_s}	343	150	633	1361	5729	inf
+{20} {5,80,81,82,83,85} {5}	[{20}, {5, 80, 81, 82, 83, 85}, {5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {feats_Number=Sing}	400	186	783	1361	5729	inf
+{4,5} {19,20,52}	[{4, 5}, {19, 20, 52}]	{feats_Gender=Fem,feats_Number=Sing} {lemma_de,pos_ADP,wp_▁de}	400	163	688	1361	5729	inf
+{20} {5,81} {3,4,5}	[{20}, {81, 5}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	586	452	1902	1361	5729	inf
+{5,81,83} {5} {75}	[{81, 83, 5}, {5}, {75}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {pos_ADJ}	359	154	651	1361	5729	inf
+{19,20,50,52} {5} {4,5}	[{50, 19, 20, 52}, {5}, {4, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	370	153	645	1361	5729	inf
+{59,81,83} {3,59,120}	[{81, 83, 59}, {120, 3, 59}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	490	218	918	1361	5729	inf
+{19,20,52} {81} {3,120}	[{19, 20, 52}, {81}, {120, 3}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Masc}	490	224	942	1361	5729	inf
+{81} {4} {19,20}	[{81}, {4}, {19, 20}]	{pos_DET} {feats_Gender=Fem} {lemma_de,pos_ADP}	370	163	689	1361	5729	inf
+{5,81} {3,5} {5}	[{81, 5}, {3, 5}, {5}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	490	208	876	1361	5729	inf
+{4} {19,20,52}	[{4}, {19, 20, 52}]	{feats_Gender=Fem} {lemma_de,pos_ADP,wp_▁de}	490	208	876	1361	5729	inf
+{3} {19,20,50,52} {4,5}	[{3}, {50, 19, 20, 52}, {4, 5}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Gender=Fem,feats_Number=Sing}	359	152	642	1361	5729	inf
+{3} {59,120}	[{3}, {120, 59}]	{pos_NOUN} {feats_Number=Plur,feats_Gender=Masc}	359	139	588	1361	5729	inf
+{4,5} {20} {81} {3}	[{4, 5}, {20}, {81}, {3}]	{feats_Gender=Fem,feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN}	359	149	626	1361	5729	inf
+{5} {2603,2605}	[{5}, {2603, 2605}]	{feats_Number=Sing} {feats_Person=3,feats_VerbForm=Fin}	359	163	689	1361	5729	inf
+{5,81,83,1076}	[{81, 83, 1076, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,lemma_un}	359	158	667	1361	5729	inf
+{1125} {20} {81}	[{1125}, {20}, {81}]	{pos_VERB} {pos_ADP} {pos_DET}	393	162	682	1361	5729	inf
+{20} {4,5,81,83} {3,4,5}	[{20}, {81, 83, 4, 5}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	359	158	667	1361	5729	inf
+{81,83} {3} {20} {4,5}	[{81, 83}, {3}, {20}, {4, 5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	359	150	631	1361	5729	inf
+{2603,2605} {5}	[{2603, 2605}, {5}]	{feats_Person=3,feats_VerbForm=Fin} {feats_Number=Sing}	359	161	680	1361	5729	inf
+{24} {3,4}	[{24}, {3, 4}]	{wp_’} {pos_NOUN,feats_Gender=Fem}	499	197	829	1361	5729	inf
+{5,85} {5}	[{5, 85}, {5}]	{feats_Number=Sing,wp_▁l} {feats_Number=Sing}	499	228	961	1361	5729	inf
+{5} {5} {19,20}	[{5}, {5}, {19, 20}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP}	552	242	1020	1361	5729	inf
+{4} {20} {81}	[{4}, {20}, {81}]	{feats_Gender=Fem} {pos_ADP} {pos_DET}	499	217	915	1361	5729	inf
+{1641}	[{1641}]	{wp_▁en}	350	147	621	1361	5729	inf
+{5,81,83} {5} {20}	[{81, 83, 5}, {5}, {20}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	552	238	1003	1361	5729	inf
+{81,83} {3,4} {19,20}	[{81, 83}, {3, 4}, {19, 20}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem} {lemma_de,pos_ADP}	350	154	651	1361	5729	inf
+{19,20} {5,81,83} {4,5}	[{19, 20}, {81, 83, 5}, {4, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	370	150	632	1361	5729	inf
+{5} {262}	[{5}, {262}]	{feats_Number=Sing} {wp_▁des}	370	157	662	1361	5729	inf
+{120} {20} {81}	[{120}, {20}, {81}]	{feats_Gender=Masc} {pos_ADP} {pos_DET}	490	219	924	1361	5729	inf
+{5} {4} {5}	[{5}, {4}, {5}]	{feats_Number=Sing} {feats_Gender=Fem} {feats_Number=Sing}	370	162	682	1361	5729	inf
+{59} {19,20}	[{59}, {19, 20}]	{feats_Number=Plur} {lemma_de,pos_ADP}	393	186	785	1361	5729	inf
+{3} {20} {80,81,82,83} {3}	[{3}, {20}, {80, 81, 82, 83}, {3}]	{pos_NOUN} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	404	174	733	1361	5729	inf
+{3,59} {4}	[{3, 59}, {4}]	{pos_NOUN,feats_Number=Plur} {feats_Gender=Fem}	404	166	701	1361	5729	inf
+{5} {20} {5,81,82,83}	[{5}, {20}, {81, 82, 83, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art}	404	178	752	1361	5729	inf
+{5,24,80,81,82,83} {4,5}	[{5, 80, 81, 82, 83, 24}, {4, 5}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	404	162	681	1361	5729	inf
+{4,5,80,81,82,83,94}	[{4, 5, 80, 81, 82, 83, 94}]	{feats_Gender=Fem,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁la}	403	184	776	1361	5729	inf
+{5} {20} {5,80,81,82,83}	[{5}, {20}, {5, 80, 81, 82, 83}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	403	178	751	1361	5729	inf
+{5,24,80,81,82,83} {3,4,5}	[{5, 80, 81, 82, 83, 24}, {3, 4, 5}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	403	159	669	1361	5729	inf
+{19,20,52} {5,120}	[{19, 20, 52}, {120, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,feats_Gender=Masc}	403	183	773	1361	5729	inf
+{59} {3,59} {59,75}	[{59}, {3, 59}, {59, 75}]	{feats_Number=Plur} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	403	163	689	1361	5729	inf
+{80,81,82,83} {4} {20}	[{80, 81, 82, 83}, {4}, {20}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem} {pos_ADP}	403	173	729	1361	5729	inf
+{20} {5,81} {3,5} {20}	[{20}, {81, 5}, {3, 5}, {20}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {pos_ADP}	393	170	718	1361	5729	inf
+{120,1125,1126,1127}	[{120, 1125, 1126, 1127}]	{feats_Gender=Masc,pos_VERB,feats_Tense=Past,feats_VerbForm=Part}	403	179	755	1361	5729	inf
+{20} {5,24,80,81,82,83,85} {5}	[{20}, {5, 80, 81, 82, 83, 85, 24}, {5}]	{pos_ADP} {feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {feats_Number=Sing}	393	181	763	1361	5729	inf
+{4} {20}	[{4}, {20}]	{feats_Gender=Fem} {pos_ADP}	756	625	2631	1361	5729	inf
+{5} {5,120} {5}	[{5}, {120, 5}, {5}]	{feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing}	393	173	730	1361	5729	inf
+{3,5,120} {37}	[{120, 3, 5}, {37}]	{pos_NOUN,feats_Number=Sing,feats_Gender=Masc} {pos_PUNCT}	367	162	683	1361	5729	inf
+{20} {5,81} {5} {5}	[{20}, {81, 5}, {5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing} {feats_Number=Sing}	367	158	666	1361	5729	inf
+{59,120} {37}	[{120, 59}, {37}]	{feats_Number=Plur,feats_Gender=Masc} {pos_PUNCT}	367	160	676	1361	5729	inf
+{81} {3,120} {75}	[{81}, {120, 3}, {75}]	{pos_DET} {pos_NOUN,feats_Gender=Masc} {pos_ADJ}	367	145	611	1361	5729	inf
+{4,5} {20} {81}	[{4, 5}, {20}, {81}]	{feats_Gender=Fem,feats_Number=Sing} {pos_ADP} {pos_DET}	393	168	710	1361	5729	inf
+{120} {20} {5,81,83}	[{120}, {20}, {81, 83, 5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	373	168	708	1361	5729	inf
+{81,83} {3} {19,20,50,52} {5}	[{81, 83}, {3}, {50, 19, 20, 52}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	373	170	716	1361	5729	inf
+{81,83} {3} {4,75}	[{81, 83}, {3}, {75, 4}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Gender=Fem,pos_ADJ}	373	158	668	1361	5729	inf
+{3,4,5} {19,20}	[{3, 4, 5}, {19, 20}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {lemma_de,pos_ADP}	411	168	710	1361	5729	inf
+{1125} {81,83} {3}	[{1125}, {81, 83}, {3}]	{pos_VERB} {pos_DET,feats_PronType=Art} {pos_NOUN}	366	151	636	1361	5729	inf
+{3}	[{3}]	{pos_NOUN}	1238	1122	4723	1361	5729	inf
+{20,727,1405}	[{20, 1405, 727}]	{pos_ADP,lemma_à,wp_▁à}	469	216	908	1361	5729	inf
+{19,20,50,52} {80,81,82,83} {4}	[{50, 19, 20, 52}, {80, 81, 82, 83}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	469	195	823	1361	5729	inf
+{4,59} {59}	[{59, 4}, {59}]	{feats_Gender=Fem,feats_Number=Plur} {feats_Number=Plur}	469	202	849	1361	5729	inf
+{1125} {81}	[{1125}, {81}]	{pos_VERB} {pos_DET}	416	181	761	1361	5729	inf
+{81} {3} {120}	[{81}, {3}, {120}]	{pos_DET} {pos_NOUN} {feats_Gender=Masc}	416	167	704	1361	5729	inf
+{59,81,83} {59} {59}	[{81, 83, 59}, {59}, {59}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Number=Plur} {feats_Number=Plur}	482	199	839	1361	5729	inf
+{81,83,1076} {3}	[{81, 83, 1076}, {3}]	{pos_DET,feats_PronType=Art,lemma_un} {pos_NOUN}	482	210	886	1361	5729	inf
+{3} {20} {81} {4}	[{3}, {20}, {81}, {4}]	{pos_NOUN} {pos_ADP} {pos_DET} {feats_Gender=Fem}	411	171	720	1361	5729	inf
+{24,81,83} {3,4}	[{24, 81, 83}, {3, 4}]	{wp_’,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	416	162	682	1361	5729	inf
+{81,83} {3} {19,20} {5}	[{81, 83}, {3}, {19, 20}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	441	199	838	1361	5729	inf
+{4,59,75}	[{59, 75, 4}]	{feats_Gender=Fem,feats_Number=Plur,pos_ADJ}	411	176	743	1361	5729	inf
+{5,24,81,83} {4}	[{24, 81, 83, 5}, {4}]	{feats_Number=Sing,wp_’,pos_DET,feats_PronType=Art} {feats_Gender=Fem}	411	163	688	1361	5729	inf
+{5,81,83} {5} {20} {5}	[{81, 83, 5}, {5}, {20}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	411	175	738	1361	5729	inf
+{80,81,82,83} {4,59}	[{80, 81, 82, 83}, {59, 4}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Plur}	411	186	783	1361	5729	inf
+{258,259,260,262} {19,20,50,52,263} {59,80,81,82,83,265,266} {59}	[{258, 259, 260, 262}, {263, 50, 19, 20, 52}, {265, 266, 80, 81, 82, 83, 59}, {59}]	{lemma_des,pos_des,feats_des,wp_▁des} {lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les} {feats_Number=Plur}	411	181	763	1361	5729	inf
+{3,5,120} {5}	[{120, 3, 5}, {5}]	{pos_NOUN,feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing}	430	174	733	1361	5729	inf
+{4,59} {4,59}	[{59, 4}, {59, 4}]	{feats_Gender=Fem,feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur}	430	183	770	1361	5729	inf
+{20} {59} {3,120}	[{20}, {59}, {120, 3}]	{pos_ADP} {feats_Number=Plur} {pos_NOUN,feats_Gender=Masc}	430	195	820	1361	5729	inf
+{2698}	[{2698}]	{pos_PRON}	430	202	853	1361	5729	inf
+{4} {4,59}	[{4}, {59, 4}]	{feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Plur}	441	187	789	1361	5729	inf
+{20} {59,81,83} {59,120}	[{20}, {81, 83, 59}, {120, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Number=Plur,feats_Gender=Masc}	366	168	710	1361	5729	inf
+{19,20} {5} {3,120}	[{19, 20}, {5}, {120, 3}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Masc}	366	171	719	1361	5729	inf
+{5} {37,440,441,443}	[{5}, {440, 441, 443, 37}]	{feats_Number=Sing} {pos_PUNCT,lemma_,,feats_,,wp_,}	366	173	730	1361	5729	inf
+{4,59} {20}	[{59, 4}, {20}]	{feats_Gender=Fem,feats_Number=Plur} {pos_ADP}	366	166	700	1361	5729	inf
+{5,24,80,81,82,83} {3}	[{5, 80, 81, 82, 83, 24}, {3}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	514	213	897	1361	5729	inf
+{81} {3} {19,20,50,52}	[{81}, {3}, {50, 19, 20, 52}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	511	229	966	1361	5729	inf
+{19,20,52} {5,80,81,82,83} {3,5}	[{19, 20, 52}, {5, 80, 81, 82, 83}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	511	217	915	1361	5729	inf
+{5} {5} {4,5}	[{5}, {5}, {4, 5}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	352	156	656	1361	5729	inf
+{3,120} {75,120}	[{120, 3}, {120, 75}]	{pos_NOUN,feats_Gender=Masc} {pos_ADJ,feats_Gender=Masc}	511	198	833	1361	5729	inf
+{19,20} {5,81,83} {3,5}	[{19, 20}, {81, 83, 5}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	556	444	1871	1361	5729	inf
+{2601,2602,2604,2605}	[{2601, 2602, 2604, 2605}]	{pos_AUX,feats_Mood=Ind,feats_Tense=Pres,feats_VerbForm=Fin}	355	180	759	1361	5729	inf
+{1125,1126,1127,1128} {20}	[{1128, 1125, 1126, 1127}, {20}]	{pos_VERB,feats_Tense=Past,feats_VerbForm=Part,feats_Voice=Pass} {pos_ADP}	355	140	592	1361	5729	inf
+{81,83} {4} {19,20}	[{81, 83}, {4}, {19, 20}]	{pos_DET,feats_PronType=Art} {feats_Gender=Fem} {lemma_de,pos_ADP}	352	155	654	1361	5729	inf
+{2604} {5}	[{2604}, {5}]	{feats_Tense=Pres} {feats_Number=Sing}	352	160	674	1361	5729	inf
+{80,81,82,83} {3,120} {20}	[{80, 81, 82, 83}, {120, 3}, {20}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc} {pos_ADP}	355	168	707	1361	5729	inf
+{5} {65}	[{5}, {65}]	{feats_Number=Sing} {pos_CCONJ}	355	166	701	1361	5729	inf
+{3} {5,120}	[{3}, {120, 5}]	{pos_NOUN} {feats_Number=Sing,feats_Gender=Masc}	364	145	612	1361	5729	inf
+{5} {5} {20} {5,81}	[{5}, {5}, {20}, {81, 5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET}	364	164	690	1361	5729	inf
+{5} {20} {5,81} {4,5}	[{5}, {20}, {81, 5}, {4, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	364	148	625	1361	5729	inf
+{5} {20} {81,83} {3,4}	[{5}, {20}, {81, 83}, {3, 4}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	364	150	632	1361	5729	inf
+{59} {3} {20}	[{59}, {3}, {20}]	{feats_Number=Plur} {pos_NOUN} {pos_ADP}	364	179	755	1361	5729	inf
+{81} {3,120} {75,120}	[{81}, {120, 3}, {120, 75}]	{pos_DET} {pos_NOUN,feats_Gender=Masc} {pos_ADJ,feats_Gender=Masc}	364	144	606	1361	5729	inf
+{1125,2602,2603,2604,2605}	[{1125, 2602, 2603, 2604, 2605}]	{pos_VERB,feats_Mood=Ind,feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	364	170	716	1361	5729	inf
+{2601,2609}	[{2601, 2609}]	{pos_AUX,lemma_être}	364	160	674	1361	5729	inf
+{3,59} {120}	[{3, 59}, {120}]	{pos_NOUN,feats_Number=Plur} {feats_Gender=Masc}	355	84	355	1361	5729	inf
+{81} {3,120} {20}	[{81}, {120, 3}, {20}]	{pos_DET} {pos_NOUN,feats_Gender=Masc} {pos_ADP}	441	203	857	1361	5729	inf
+{20} {4,81} {4}	[{20}, {81, 4}, {4}]	{pos_ADP} {feats_Gender=Fem,pos_DET} {feats_Gender=Fem}	416	182	769	1361	5729	inf
+{59,81} {3,59} {59,75}	[{81, 59}, {3, 59}, {59, 75}]	{feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	373	150	633	1361	5729	inf
+{5} {19,20} {4,5}	[{5}, {19, 20}, {4, 5}]	{feats_Number=Sing} {lemma_de,pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	342	137	577	1361	5729	inf
+{19,20} {5,81,83,120} {5,120}	[{19, 20}, {120, 81, 83, 5}, {120, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	341	155	654	1361	5729	inf
+{59,80,81,82,83} {3,59} {59}	[{80, 81, 82, 83, 59}, {3, 59}, {59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur}	341	138	581	1361	5729	inf
+{4} {4,5} {20}	[{4}, {4, 5}, {20}]	{feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	351	154	651	1361	5729	inf
+{81,83} {3,120} {19,20}	[{81, 83}, {120, 3}, {19, 20}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc} {lemma_de,pos_ADP}	341	158	668	1361	5729	inf
+{3,5} {20} {3}	[{3, 5}, {20}, {3}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_NOUN}	444	178	752	1361	5729	inf
+{3,120} {5}	[{120, 3}, {5}]	{pos_NOUN,feats_Gender=Masc} {feats_Number=Sing}	444	179	755	1361	5729	inf
+{4} {4} {20}	[{4}, {4}, {20}]	{feats_Gender=Fem} {feats_Gender=Fem} {pos_ADP}	444	191	803	1361	5729	inf
+{3,4,5} {75}	[{3, 4, 5}, {75}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {pos_ADJ}	351	151	637	1361	5729	inf
+{120} {20} {5} {5}	[{120}, {20}, {5}, {5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	444	197	832	1361	5729	inf
+{59} {4,59} {59}	[{59}, {59, 4}, {59}]	{feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur} {feats_Number=Plur}	342	152	641	1361	5729	inf
+{5} {5} {20} {5,81,83}	[{5}, {5}, {20}, {81, 83, 5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	342	152	640	1361	5729	inf
+{4} {20} {3}	[{4}, {20}, {3}]	{feats_Gender=Fem} {pos_ADP} {pos_NOUN}	438	178	750	1361	5729	inf
+{5} {4,5} {20} {5}	[{5}, {4, 5}, {20}, {5}]	{feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	342	138	581	1361	5729	inf
+{5} {4,5} {19,20}	[{5}, {4, 5}, {19, 20}]	{feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing} {lemma_de,pos_ADP}	342	147	619	1361	5729	inf
+{4,5} {20} {81,83}	[{4, 5}, {20}, {81, 83}]	{feats_Gender=Fem,feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art}	342	149	629	1361	5729	inf
+{3} {64,65,68}	[{3}, {64, 65, 68}]	{pos_NOUN} {lemma_et,pos_CCONJ,wp_▁et}	342	165	696	1361	5729	inf
+{3} {20} {120}	[{3}, {20}, {120}]	{pos_NOUN} {pos_ADP} {feats_Gender=Masc}	373	168	709	1361	5729	inf
+{4} {5,75}	[{4}, {75, 5}]	{feats_Gender=Fem} {feats_Number=Sing,pos_ADJ}	373	163	687	1361	5729	inf
+{4} {20} {5,81} {3,5}	[{4}, {20}, {81, 5}, {3, 5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	373	153	643	1361	5729	inf
+{5,81} {5} {37}	[{81, 5}, {5}, {37}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_PUNCT}	373	180	760	1361	5729	inf
+{81,83} {120} {19,20}	[{81, 83}, {120}, {19, 20}]	{pos_DET,feats_PronType=Art} {feats_Gender=Masc} {lemma_de,pos_ADP}	343	159	672	1361	5729	inf
+{20} {5,80,81,82,83,120,915,916} {5,120}	[{20}, {5, 80, 81, 82, 83, 915, 916, 120}, {120, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,dep_le,wp_▁le} {feats_Number=Sing,feats_Gender=Masc}	373	174	733	1361	5729	inf
+{5,81} {5,120} {5}	[{81, 5}, {120, 5}, {5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing}	341	147	618	1361	5729	inf
+{5} {19,20,50,52} {4}	[{5}, {50, 19, 20, 52}, {4}]	{feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Gender=Fem}	341	134	567	1361	5729	inf
+{3,59} {59,120}	[{3, 59}, {120, 59}]	{pos_NOUN,feats_Number=Plur} {feats_Number=Plur,feats_Gender=Masc}	341	81	341	1361	5729	inf
+{5} {5,120} {37}	[{5}, {120, 5}, {37}]	{feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc} {pos_PUNCT}	351	158	666	1361	5729	inf
+{59,120} {59}	[{120, 59}, {59}]	{feats_Number=Plur,feats_Gender=Masc} {feats_Number=Plur}	438	176	743	1361	5729	inf
+{81} {3} {4}	[{81}, {3}, {4}]	{pos_DET} {pos_NOUN} {feats_Gender=Fem}	438	189	796	1361	5729	inf
+{3,5} {20} {3,5}	[{3, 5}, {20}, {3, 5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_NOUN,feats_Number=Sing}	344	134	567	1361	5729	inf
+{4,5} {20} {5} {5}	[{4, 5}, {20}, {5}, {5}]	{feats_Gender=Fem,feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	344	145	612	1361	5729	inf
+{5} {5} {20} {5} {3}	[{5}, {5}, {20}, {5}, {3}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {pos_NOUN}	344	145	610	1361	5729	inf
+{5} {20} {5,81,83} {4,5}	[{5}, {20}, {81, 83, 5}, {4, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	344	141	593	1361	5729	inf
+{59,120} {120}	[{120, 59}, {120}]	{feats_Number=Plur,feats_Gender=Masc} {feats_Gender=Masc}	399	156	656	1361	5729	inf
+{19,20,52} {5,81} {4,5}	[{19, 20, 52}, {81, 5}, {4, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	344	141	594	1361	5729	inf
+{19,20,52} {5,81} {5,120}	[{19, 20, 52}, {81, 5}, {120, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Masc}	344	166	700	1361	5729	inf
+{19,20} {5} {120}	[{19, 20}, {5}, {120}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Gender=Masc}	416	193	812	1361	5729	inf
+{5} {5} {5,75}	[{5}, {5}, {75, 5}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	416	178	749	1361	5729	inf
+{52} {59} {59,120}	[{52}, {59}, {120, 59}]	{wp_▁de} {feats_Number=Plur} {feats_Number=Plur,feats_Gender=Masc}	344	147	621	1361	5729	inf
+{4,5,80,81,82,83} {3,4,5}	[{4, 5, 80, 81, 82, 83}, {3, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	416	188	792	1361	5729	inf
+{4} {20} {81,83} {3}	[{4}, {20}, {81, 83}, {3}]	{feats_Gender=Fem} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	416	175	737	1361	5729	inf
+{120} {20} {5,81,83} {3,5}	[{120}, {20}, {81, 83, 5}, {3, 5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	344	146	616	1361	5729	inf
+{120} {120} {20} {5}	[{120}, {120}, {20}, {5}]	{feats_Gender=Masc} {feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	344	150	632	1361	5729	inf
+{81,83} {3,120} {75,120}	[{81, 83}, {120, 3}, {120, 75}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc} {pos_ADJ,feats_Gender=Masc}	351	136	573	1361	5729	inf
+{59,80,81,82,83,266} {59} {59}	[{266, 80, 81, 82, 83, 59}, {59}, {59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {feats_Number=Plur} {feats_Number=Plur}	351	147	619	1361	5729	inf
+{3} {20} {5} {3,4}	[{3}, {20}, {5}, {3, 4}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	341	135	570	1361	5729	inf
+{3} {20} {5,81,83} {4,5}	[{3}, {20}, {81, 83, 5}, {4, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	341	138	581	1361	5729	inf
+{5,120} {75,120}	[{120, 5}, {120, 75}]	{feats_Number=Sing,feats_Gender=Masc} {pos_ADJ,feats_Gender=Masc}	351	140	590	1361	5729	inf
+{4} {20} {81,83}	[{4}, {20}, {81, 83}]	{feats_Gender=Fem} {pos_ADP} {pos_DET,feats_PronType=Art}	450	197	829	1361	5729	inf
+{3} {1125}	[{3}, {1125}]	{pos_NOUN} {pos_VERB}	367	156	657	1361	5729	inf
+{19,20} {59} {120}	[{19, 20}, {59}, {120}]	{lemma_de,pos_ADP} {feats_Number=Plur} {feats_Gender=Masc}	350	151	636	1361	5729	inf
+{4} {20} {80,81,82,83} {3}	[{4}, {20}, {80, 81, 82, 83}, {3}]	{feats_Gender=Fem} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	349	148	625	1361	5729	inf
+{1125,1126,1127} {20}	[{1125, 1126, 1127}, {20}]	{pos_VERB,feats_Tense=Past,feats_VerbForm=Part} {pos_ADP}	398	161	679	1361	5729	inf
+{120} {5,75,120}	[{120}, {120, 75, 5}]	{feats_Gender=Masc} {feats_Number=Sing,pos_ADJ,feats_Gender=Masc}	349	139	588	1361	5729	inf
+{80,81,82,83} {3} {20} {4}	[{80, 81, 82, 83}, {3}, {20}, {4}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Gender=Fem}	349	144	608	1361	5729	inf
+{19,23}	[{19, 23}]	{lemma_de,wp_▁d}	349	158	667	1361	5729	inf
+{5,81} {3,5} {37}	[{81, 5}, {3, 5}, {37}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {pos_PUNCT}	349	159	669	1361	5729	inf
+{5,80,81,82,83} {5} {20} {5}	[{5, 80, 81, 82, 83}, {5}, {20}, {5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	349	154	647	1361	5729	inf
+{5} {258,259,260,262} {19,20,50,52,263} {59,80,81,82,83,265,266} {59}	[{5}, {258, 259, 260, 262}, {263, 50, 19, 20, 52}, {265, 266, 80, 81, 82, 83, 59}, {59}]	{feats_Number=Sing} {lemma_des,pos_des,feats_des,wp_▁des} {lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les} {feats_Number=Plur}	349	148	623	1361	5729	inf
+{1125,1126,1127}	[{1125, 1126, 1127}]	{pos_VERB,feats_Tense=Past,feats_VerbForm=Part}	591	463	1948	1361	5729	inf
+{3,5} {5}	[{3, 5}, {5}]	{pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	678	563	2369	1361	5729	inf
+{4} {20} {5,81,83} {3,5}	[{4}, {20}, {81, 83, 5}, {3, 5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	349	144	605	1361	5729	inf
+{120} {20} {5,81}	[{120}, {20}, {81, 5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing,pos_DET}	398	180	758	1361	5729	inf
+{4} {19,20} {3}	[{4}, {19, 20}, {3}]	{feats_Gender=Fem} {lemma_de,pos_ADP} {pos_NOUN}	349	143	604	1361	5729	inf
+{4,5} {19,20}	[{4, 5}, {19, 20}]	{feats_Gender=Fem,feats_Number=Sing} {lemma_de,pos_ADP}	453	187	787	1361	5729	inf
+{5,81,83} {5} {19,20}	[{81, 83, 5}, {5}, {19, 20}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {lemma_de,pos_ADP}	453	200	843	1361	5729	inf
+{19,20} {3,5}	[{19, 20}, {3, 5}]	{lemma_de,pos_ADP} {pos_NOUN,feats_Number=Sing}	453	199	837	1361	5729	inf
+{19,20,50,52} {59} {3,59}	[{50, 19, 20, 52}, {59}, {3, 59}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	453	200	844	1361	5729	inf
+{19,20,50,52} {80,81,82,83} {3,120}	[{50, 19, 20, 52}, {80, 81, 82, 83}, {120, 3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	453	206	869	1361	5729	inf
+{3,120} {20} {4}	[{120, 3}, {20}, {4}]	{pos_NOUN,feats_Gender=Masc} {pos_ADP} {feats_Gender=Fem}	349	149	630	1361	5729	inf
+{3,120} {5,120}	[{120, 3}, {120, 5}]	{pos_NOUN,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	349	138	581	1361	5729	inf
+{5} {3,5} {19,20}	[{5}, {3, 5}, {19, 20}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	480	214	902	1361	5729	inf
+{1125} {81} {3}	[{1125}, {81}, {3}]	{pos_VERB} {pos_DET} {pos_NOUN}	398	168	708	1361	5729	inf
+{5,81} {5} {19,20,50,52}	[{81, 5}, {5}, {50, 19, 20, 52}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	398	177	746	1361	5729	inf
+{5,80,81,82,83} {5} {19,20}	[{5, 80, 81, 82, 83}, {5}, {19, 20}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {lemma_de,pos_ADP}	402	178	752	1361	5729	inf
+{5,24,80,81,82,83,85}	[{5, 80, 81, 82, 83, 85, 24}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l}	489	222	934	1361	5729	inf
+{19,20}	[{19, 20}]	{lemma_de,pos_ADP}	984	851	3580	1361	5729	inf
+{20} {5} {3,4,5}	[{20}, {5}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	595	458	1928	1361	5729	inf
+{5,2603,2605}	[{5, 2603, 2605}]	{feats_Number=Sing,feats_Person=3,feats_VerbForm=Fin}	570	243	1023	1361	5729	inf
+{5} {3} {20}	[{5}, {3}, {20}]	{feats_Number=Sing} {pos_NOUN} {pos_ADP}	595	258	1086	1361	5729	inf
+{81} {4} {20}	[{81}, {4}, {20}]	{pos_DET} {feats_Gender=Fem} {pos_ADP}	489	211	889	1361	5729	inf
+{3,5} {20} {81}	[{3, 5}, {20}, {81}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_DET}	435	198	834	1361	5729	inf
+{20} {81} {3} {20}	[{20}, {81}, {3}, {20}]	{pos_ADP} {pos_DET} {pos_NOUN} {pos_ADP}	489	221	931	1361	5729	inf
+{3} {20} {80,81,82,83}	[{3}, {20}, {80, 81, 82, 83}]	{pos_NOUN} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	436	199	838	1361	5729	inf
+{19,20,50,52} {81} {3,120}	[{50, 19, 20, 52}, {81}, {120, 3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Masc}	489	223	941	1361	5729	inf
+{4} {19,20,50,52}	[{4}, {50, 19, 20, 52}]	{feats_Gender=Fem} {lemma_de,pos_ADP,feats_de,wp_▁de}	489	208	875	1361	5729	inf
+{5} {20} {5,80,81,82,83} {5}	[{5}, {20}, {5, 80, 81, 82, 83}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	398	176	743	1361	5729	inf
+{4,5,80,81,82,83} {4,5}	[{4, 5, 80, 81, 82, 83}, {4, 5}]	{feats_Gender=Fem,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	436	198	836	1361	5729	inf
+{4,59} {4}	[{59, 4}, {4}]	{feats_Gender=Fem,feats_Number=Plur} {feats_Gender=Fem}	436	185	780	1361	5729	inf
+{5} {19,20,50,52} {5}	[{5}, {50, 19, 20, 52}, {5}]	{feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	436	189	796	1361	5729	inf
+{1638,1641}	[{1641, 1638}]	{lemma_en,wp_▁en}	349	147	618	1361	5729	inf
+{4} {19,20} {5}	[{4}, {19, 20}, {5}]	{feats_Gender=Fem} {lemma_de,pos_ADP} {feats_Number=Sing}	419	182	765	1361	5729	inf
+{4} {20} {4}	[{4}, {20}, {4}]	{feats_Gender=Fem} {pos_ADP} {feats_Gender=Fem}	419	172	726	1361	5729	inf
+{5} {5}	[{5}, {5}]	{feats_Number=Sing} {feats_Number=Sing}	998	886	3731	1361	5729	inf
+{3,5} {20} {81} {3}	[{3, 5}, {20}, {81}, {3}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN}	398	175	738	1361	5729	inf
+{120} {19,20,52} {5}	[{120}, {19, 20, 52}, {5}]	{feats_Gender=Masc} {lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing}	349	165	696	1361	5729	inf
+{5,80,81,82,83,85} {3,5}	[{5, 80, 81, 82, 83, 85}, {3, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Number=Sing}	480	202	851	1361	5729	inf
+{81} {4} {4}	[{81}, {4}, {4}]	{pos_DET} {feats_Gender=Fem} {feats_Gender=Fem}	480	210	885	1361	5729	inf
+{3,4,5} {37}	[{3, 4, 5}, {37}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {pos_PUNCT}	382	161	679	1361	5729	inf
+{81} {3} {59,75}	[{81}, {3}, {59, 75}]	{pos_DET} {pos_NOUN} {feats_Number=Plur,pos_ADJ}	374	152	639	1361	5729	inf
+{20} {5,81,83} {3,5} {20}	[{20}, {81, 83, 5}, {3, 5}, {20}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	371	163	685	1361	5729	inf
+{20} {59,81} {3,4,59}	[{20}, {81, 59}, {3, 59, 4}]	{pos_ADP} {feats_Number=Plur,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	371	168	710	1361	5729	inf
+{59} {59} {120}	[{59}, {59}, {120}]	{feats_Number=Plur} {feats_Number=Plur} {feats_Gender=Masc}	371	150	633	1361	5729	inf
+{4} {59,75}	[{4}, {59, 75}]	{feats_Gender=Fem} {feats_Number=Plur,pos_ADJ}	369	153	644	1361	5729	inf
+{3,59} {20} {5}	[{3, 59}, {20}, {5}]	{pos_NOUN,feats_Number=Plur} {pos_ADP} {feats_Number=Sing}	369	172	725	1361	5729	inf
+{81,83} {3} {19,20} {4}	[{81, 83}, {3}, {19, 20}, {4}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP} {feats_Gender=Fem}	371	151	637	1361	5729	inf
+{81,83} {3,4} {4,75}	[{81, 83}, {3, 4}, {75, 4}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem,pos_ADJ}	371	158	666	1361	5729	inf
+{120} {20} {80,81,82,83}	[{120}, {20}, {80, 81, 82, 83}]	{feats_Gender=Masc} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	371	167	704	1361	5729	inf
+{1125,2603,2604,2605}	[{1125, 2603, 2604, 2605}]	{pos_VERB,feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	374	174	735	1361	5729	inf
+{5,81,83} {4,5} {20}	[{81, 83, 5}, {4, 5}, {20}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	374	152	641	1361	5729	inf
+{4,5} {5} {20}	[{4, 5}, {5}, {20}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Number=Sing} {pos_ADP}	382	164	690	1361	5729	inf
+{5,81} {3,5} {5,75}	[{81, 5}, {3, 5}, {75, 5}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	374	160	676	1361	5729	inf
+{3,4,59} {4}	[{3, 59, 4}, {4}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur} {feats_Gender=Fem}	399	165	694	1361	5729	inf
+{4,5} {19,20,50,52}	[{4, 5}, {50, 19, 20, 52}]	{feats_Gender=Fem,feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	399	163	687	1361	5729	inf
+{4,59} {37}	[{59, 4}, {37}]	{feats_Gender=Fem,feats_Number=Plur} {pos_PUNCT}	374	164	692	1361	5729	inf
+{5} {3} {75}	[{5}, {3}, {75}]	{feats_Number=Sing} {pos_NOUN} {pos_ADJ}	399	171	719	1361	5729	inf
+{5} {20} {5,81,82,83} {5}	[{5}, {20}, {81, 82, 83, 5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	399	177	744	1361	5729	inf
+{4} {20} {5,81,83} {5}	[{4}, {20}, {81, 83, 5}, {5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	374	161	679	1361	5729	inf
+{3,5} {20} {4,5}	[{3, 5}, {20}, {4, 5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	374	147	620	1361	5729	inf
+{59,120} {20}	[{120, 59}, {20}]	{feats_Number=Plur,feats_Gender=Masc} {pos_ADP}	399	178	752	1361	5729	inf
+{19,20,52} {5} {4,5}	[{19, 20, 52}, {5}, {4, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	371	153	646	1361	5729	inf
+{5} {4,5} {5}	[{5}, {4, 5}, {5}]	{feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing} {feats_Number=Sing}	369	162	681	1361	5729	inf
+{5} {19,20} {5} {5}	[{5}, {19, 20}, {5}, {5}]	{feats_Number=Sing} {lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	369	168	706	1361	5729	inf
+{19,20,50,52} {5} {120}	[{50, 19, 20, 52}, {5}, {120}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Gender=Masc}	371	177	744	1361	5729	inf
+{59} {4,59,75}	[{59}, {59, 75, 4}]	{feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur,pos_ADJ}	382	161	677	1361	5729	inf
+{258,259,260,262} {19,20,50,52,263} {59,80,81,82,83,265,266} {3,59}	[{258, 259, 260, 262}, {263, 50, 19, 20, 52}, {265, 266, 80, 81, 82, 83, 59}, {3, 59}]	{lemma_des,pos_des,feats_des,wp_▁des} {lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les} {pos_NOUN,feats_Number=Plur}	382	169	712	1361	5729	inf
+{1125} {81,83}	[{1125}, {81, 83}]	{pos_VERB} {pos_DET,feats_PronType=Art}	382	163	688	1361	5729	inf
+{3,5} {20} {5,81} {5}	[{3, 5}, {20}, {81, 5}, {5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	349	158	666	1361	5729	inf
+{1638}	[{1638}]	{lemma_en}	369	155	653	1361	5729	inf
+{120} {20} {5,81,83} {5}	[{120}, {20}, {81, 83, 5}, {5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	369	166	700	1361	5729	inf
+{80,81,82,83} {3} {5}	[{80, 81, 82, 83}, {3}, {5}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {feats_Number=Sing}	369	155	653	1361	5729	inf
+{59,75,120}	[{120, 59, 75}]	{feats_Number=Plur,pos_ADJ,feats_Gender=Masc}	369	148	625	1361	5729	inf
+{3} {19,20} {81}	[{3}, {19, 20}, {81}]	{pos_NOUN} {lemma_de,pos_ADP} {pos_DET}	379	175	737	1361	5729	inf
+{3,5} {19,20} {3}	[{3, 5}, {19, 20}, {3}]	{pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP} {pos_NOUN}	379	153	643	1361	5729	inf
+{4} {20} {4,5}	[{4}, {20}, {4, 5}]	{feats_Gender=Fem} {pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	379	154	647	1361	5729	inf
+{4} {20} {80,81,82,83}	[{4}, {20}, {80, 81, 82, 83}]	{feats_Gender=Fem} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	379	169	711	1361	5729	inf
+{5} {5} {5,120}	[{5}, {5}, {120, 5}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc}	379	163	687	1361	5729	inf
+{20} {81,83} {3} {19,20}	[{20}, {81, 83}, {3}, {19, 20}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP}	369	173	730	1361	5729	inf
+{19,20} {5} {3,4}	[{19, 20}, {5}, {3, 4}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	369	149	628	1361	5729	inf
+{19,20,52} {120} {120}	[{19, 20, 52}, {120}, {120}]	{lemma_de,pos_ADP,wp_▁de} {feats_Gender=Masc} {feats_Gender=Masc}	379	168	709	1361	5729	inf
+{20} {81,83} {3} {37}	[{20}, {81, 83}, {3}, {37}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN} {pos_PUNCT}	379	167	702	1361	5729	inf
+{4,5} {5,75}	[{4, 5}, {75, 5}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	371	162	681	1361	5729	inf
+{5} {75,120}	[{5}, {120, 75}]	{feats_Number=Sing} {pos_ADJ,feats_Gender=Masc}	371	147	621	1361	5729	inf
+{5} {5} {20} {4}	[{5}, {5}, {20}, {4}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Gender=Fem}	402	163	686	1361	5729	inf
+{5} {3,5} {75}	[{5}, {3, 5}, {75}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADJ}	398	170	717	1361	5729	inf
+{120} {20} {5} {3}	[{120}, {20}, {5}, {3}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing} {pos_NOUN}	377	162	684	1361	5729	inf
+{1125,2604}	[{2604, 1125}]	{pos_VERB,feats_Tense=Pres}	486	215	906	1361	5729	inf
+{4} {20} {5,81} {5}	[{4}, {20}, {81, 5}, {5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	397	169	714	1361	5729	inf
+{5} {5} {20} {3}	[{5}, {5}, {20}, {3}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {pos_NOUN}	397	165	694	1361	5729	inf
+{5} {20} {59}	[{5}, {20}, {59}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Plur}	397	175	737	1361	5729	inf
+{5,80,81,82,83} {3,5} {19,20}	[{5, 80, 81, 82, 83}, {3, 5}, {19, 20}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	397	177	744	1361	5729	inf
+{81,83} {3,4} {75}	[{81, 83}, {3, 4}, {75}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem} {pos_ADJ}	377	160	676	1361	5729	inf
+{20} {5,24,80,81,82,83,85}	[{20}, {5, 80, 81, 82, 83, 85, 24}]	{pos_ADP} {feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l}	397	183	770	1361	5729	inf
+{20} {5,81} {5} {20}	[{20}, {81, 5}, {5}, {20}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_ADP}	397	174	735	1361	5729	inf
+{1076} {3}	[{1076}, {3}]	{lemma_un} {pos_NOUN}	486	212	893	1361	5729	inf
+{2343}	[{2343}]	{feats_VerbForm=Inf}	354	146	617	1361	5729	inf
+{81} {3,4} {20}	[{81}, {3, 4}, {20}]	{pos_DET} {pos_NOUN,feats_Gender=Fem} {pos_ADP}	486	210	883	1361	5729	inf
+{20} {59} {59,120}	[{20}, {59}, {120, 59}]	{pos_ADP} {feats_Number=Plur} {feats_Number=Plur,feats_Gender=Masc}	486	215	906	1361	5729	inf
+{4} {20} {5} {3,5}	[{4}, {20}, {5}, {3, 5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	377	155	652	1361	5729	inf
+{4} {20} {5,81,83}	[{4}, {20}, {81, 83, 5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	377	163	687	1361	5729	inf
+{5,24,80,81,82,83,85} {3,4}	[{5, 80, 81, 82, 83, 85, 24}, {3, 4}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Gender=Fem}	377	148	625	1361	5729	inf
+{5} {20} {5,81} {5}	[{5}, {20}, {81, 5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	486	215	904	1361	5729	inf
+{5,81} {5} {75}	[{81, 5}, {5}, {75}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_ADJ}	377	163	689	1361	5729	inf
+{3} {20} {5} {4}	[{3}, {20}, {5}, {4}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	397	161	677	1361	5729	inf
+{81,83} {3,120} {75}	[{81, 83}, {120, 3}, {75}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc} {pos_ADJ}	354	137	578	1361	5729	inf
+{59,80,81,82,83} {3,4,59}	[{80, 81, 82, 83, 59}, {3, 59, 4}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	402	182	766	1361	5729	inf
+{5,120} {5,75}	[{120, 5}, {75, 5}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing,pos_ADJ}	354	141	594	1361	5729	inf
+{5} {258,259,260,262} {19,20,50,52,263} {59,80,81,82,83,265,266}	[{5}, {258, 259, 260, 262}, {263, 50, 19, 20, 52}, {265, 266, 80, 81, 82, 83, 59}]	{feats_Number=Sing} {lemma_des,pos_des,feats_des,wp_▁des} {lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les}	350	149	626	1361	5729	inf
+{3,4,5} {20}	[{3, 4, 5}, {20}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	547	220	927	1361	5729	inf
+{5,81,83} {3,5} {20}	[{81, 83, 5}, {3, 5}, {20}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	547	234	987	1361	5729	inf
+{120} {75}	[{120}, {75}]	{feats_Gender=Masc} {pos_ADJ}	547	217	915	1361	5729	inf
+{3,5} {20} {5,81}	[{3, 5}, {20}, {81, 5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET}	354	160	674	1361	5729	inf
+{4} {4,5,75}	[{4}, {75, 4, 5}]	{feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Sing,pos_ADJ}	354	156	658	1361	5729	inf
+{5,81,83,1076,1077} {5}	[{5, 81, 83, 1076, 1077}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,lemma_un,feats_Definite=Ind} {feats_Number=Sing}	354	156	658	1361	5729	inf
+{3,120} {20} {3}	[{120, 3}, {20}, {3}]	{pos_NOUN,feats_Gender=Masc} {pos_ADP} {pos_NOUN}	350	158	666	1361	5729	inf
+{3} {19,20} {5,81}	[{3}, {19, 20}, {81, 5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing,pos_DET}	350	160	674	1361	5729	inf
+{5,1125,1126,1127}	[{5, 1125, 1126, 1127}]	{feats_Number=Sing,pos_VERB,feats_Tense=Past,feats_VerbForm=Part}	354	164	690	1361	5729	inf
+{3,5} {20} {81,83} {3}	[{3, 5}, {20}, {81, 83}, {3}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	350	151	637	1361	5729	inf
+{19,20} {5,81,120}	[{19, 20}, {120, 81, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Masc}	354	163	686	1361	5729	inf
+{20,727} {81}	[{20, 727}, {81}]	{pos_ADP,lemma_à} {pos_DET}	354	171	720	1361	5729	inf
+{81} {3} {20} {81} {3}	[{81}, {3}, {20}, {81}, {3}]	{pos_DET} {pos_NOUN} {pos_ADP} {pos_DET} {pos_NOUN}	354	158	665	1361	5729	inf
+{81} {3,120} {19,20}	[{81}, {120, 3}, {19, 20}]	{pos_DET} {pos_NOUN,feats_Gender=Masc} {lemma_de,pos_ADP}	354	166	699	1361	5729	inf
+{81} {120} {5}	[{81}, {120}, {5}]	{pos_DET} {feats_Gender=Masc} {feats_Number=Sing}	354	152	639	1361	5729	inf
+{5,1126,1127}	[{5, 1126, 1127}]	{feats_Number=Sing,feats_Tense=Past,feats_VerbForm=Part}	377	176	743	1361	5729	inf
+{5,81} {4,5} {20}	[{81, 5}, {4, 5}, {20}]	{feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	397	161	679	1361	5729	inf
+{4,5} {4,5,75}	[{4, 5}, {75, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing,pos_ADJ}	352	155	652	1361	5729	inf
+{19,20} {5,120} {120}	[{19, 20}, {120, 5}, {120}]	{lemma_de,pos_ADP} {feats_Number=Sing,feats_Gender=Masc} {feats_Gender=Masc}	377	171	720	1361	5729	inf
+{59} {59,62}	[{59}, {59, 62}]	{feats_Number=Plur} {feats_Number=Plur,wp_s}	377	182	765	1361	5729	inf
+{19,20,52} {5} {4}	[{19, 20, 52}, {5}, {4}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {feats_Gender=Fem}	377	155	654	1361	5729	inf
+{80,81,82,83} {3} {59}	[{80, 81, 82, 83}, {3}, {59}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {feats_Number=Plur}	377	158	665	1361	5729	inf
+{20} {5,24,80,81,82,83,85} {3,5}	[{20}, {5, 80, 81, 82, 83, 85, 24}, {3, 5}]	{pos_ADP} {feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {pos_NOUN,feats_Number=Sing}	377	157	663	1361	5729	inf
+{59} {59} {20} {5}	[{59}, {59}, {20}, {5}]	{feats_Number=Plur} {feats_Number=Plur} {pos_ADP} {feats_Number=Sing}	402	185	779	1361	5729	inf
+{20} {5} {5} {5}	[{20}, {5}, {5}, {5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing}	402	173	730	1361	5729	inf
+{59,81,83} {3,59} {59,75}	[{81, 83, 59}, {3, 59}, {59, 75}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	358	142	597	1361	5729	13.662333698834527
+{4} {20} {3,5}	[{4}, {20}, {3, 5}]	{feats_Gender=Fem} {pos_ADP} {pos_NOUN,feats_Number=Sing}	359	142	597	1361	5729	13.662333698834527
+{20} {5,80,81,82,83,120,915,916} {3,5,120}	[{20}, {5, 80, 81, 82, 83, 915, 916, 120}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,dep_le,wp_▁le} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	348	161	678	1361	5729	13.493691927434455
+{20,1638}	[{20, 1638}]	{pos_ADP,lemma_en}	363	151	635	1361	5729	13.125285997359978
+{5} {5} {20} {5,81,83} {5}	[{5}, {5}, {20}, {81, 83, 5}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	340	151	635	1361	5729	13.125285997359978
+{5,81,83} {3,4,5} {20}	[{81, 83, 5}, {3, 4, 5}, {20}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	371	151	635	1361	5729	13.124643074249368
+{3} {20} {3,4}	[{3}, {20}, {3, 4}]	{pos_NOUN} {pos_ADP} {pos_NOUN,feats_Gender=Fem}	467	194	817	1361	5729	13.124643074249368
+{81,83} {3} {5}	[{81, 83}, {3}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Number=Sing}	460	194	817	1361	5729	13.124643074249368
+{81}	[{81}]	{pos_DET}	1036	893	3760	1361	5729	12.94006923143308
+{59} {59,75}	[{59}, {59, 75}]	{feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	584	468	1969	1361	5729	12.863626693595272
+{5,81,83} {3,5,120}	[{81, 83, 5}, {120, 3, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	677	561	2362	1361	5729	12.783155869247995
+{19,20} {5} {3,5}	[{19, 20}, {5}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	587	468	1971	1361	5729	12.672874800163708
+{3,5}	[{3, 5}]	{pos_NOUN,feats_Number=Sing}	1142	1035	4358	1361	5729	12.66858264811153
+{1127}	[{1127}]	{feats_VerbForm=Part}	644	501	2109	1361	5729	12.662555334196266
+{120} {3}	[{120}, {3}]	{feats_Gender=Masc} {pos_NOUN}	727	610	2566	1361	5729	12.552844687953941
+{258,259,260,262} {19,20,50,52,263} {59,80,81,82,83,265,266}	[{258, 259, 260, 262}, {263, 50, 19, 20, 52}, {265, 266, 80, 81, 82, 83, 59}]	{lemma_des,pos_des,feats_des,wp_▁des} {lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_les,wp_▁les}	412	182	768	1361	5729	12.52066000458254
+{19,20} {59} {59}	[{19, 20}, {59}, {59}]	{lemma_de,pos_ADP} {feats_Number=Plur} {feats_Number=Plur}	561	456	1920	1361	5729	12.435286920955575
+{81} {3} {20}	[{81}, {3}, {20}]	{pos_DET} {pos_NOUN} {pos_ADP}	689	556	2339	1361	5729	12.42683101767003
+{59} {59,120}	[{59}, {120, 59}]	{feats_Number=Plur} {feats_Number=Plur,feats_Gender=Masc}	681	559	2352	1361	5729	12.426058709555592
+{1125}	[{1125}]	{pos_VERB}	876	689	2901	1361	5729	12.419548956939844
+{5,120} {5} {5}	[{120, 5}, {5}, {5}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing} {feats_Number=Sing}	373	165	695	1361	5729	12.40046418867799
+{3} {64,65,66,68}	[{3}, {64, 65, 66, 68}]	{pos_NOUN} {lemma_et,pos_CCONJ,feats_et,wp_▁et}	341	165	695	1361	5729	12.40046418867799
+{120} {19,20,50,52} {5}	[{120}, {50, 19, 20, 52}, {5}]	{feats_Gender=Masc} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	348	165	695	1361	5729	12.40046418867799
+{19,20,50,52} {3,5}	[{50, 19, 20, 52}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_NOUN,feats_Number=Sing}	379	165	695	1361	5729	12.40046418867799
+{81} {3,120} {120}	[{81}, {120, 3}, {120}]	{pos_DET} {pos_NOUN,feats_Gender=Masc} {feats_Gender=Masc}	413	165	695	1361	5729	12.40046418867799
+{59} {59} {59,120}	[{59}, {59}, {120, 59}]	{feats_Number=Plur} {feats_Number=Plur} {feats_Number=Plur,feats_Gender=Masc}	343	133	562	1361	5729	12.37675342889826
+{2601,2602,2605}	[{2601, 2602, 2605}]	{pos_AUX,feats_Mood=Ind,feats_VerbForm=Fin}	422	201	845	1361	5729	12.370711171692378
+{19,20,52} {81} {3,4}	[{19, 20, 52}, {81}, {3, 4}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Fem}	485	201	845	1361	5729	12.370711171692378
+{20} {4,5} {4}	[{20}, {4, 5}, {4}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem}	458	201	845	1361	5729	12.370711171692378
+{3} {20} {5,81,83} {5}	[{3}, {20}, {81, 83, 5}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	450	201	845	1361	5729	12.370711171692378
+{4,5,80,81,82,83}	[{4, 5, 80, 81, 82, 83}]	{feats_Gender=Fem,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	439	201	845	1361	5729	12.370597970992687
+{19,20,52} {81} {3}	[{19, 20, 52}, {81}, {3}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN}	720	598	2518	1361	5729	12.352095701383723
+{120} {5} {20}	[{120}, {5}, {20}]	{feats_Gender=Masc} {feats_Number=Sing} {pos_ADP}	423	191	806	1361	5729	12.338114256302438
+{59,80,81,82,83} {59,120}	[{80, 81, 82, 83, 59}, {120, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Plur,feats_Gender=Masc}	419	191	806	1361	5729	12.338114256302438
+{81} {3,120}	[{81}, {120, 3}]	{pos_DET} {pos_NOUN,feats_Gender=Masc}	856	719	3025	1361	5729	12.311927438748969
+{20} {3}	[{20}, {3}]	{pos_ADP} {pos_NOUN}	741	608	2558	1361	5729	12.307500341474448
+{81,83} {3} {19,20,50,52}	[{81, 83}, {3}, {50, 19, 20, 52}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	490	220	925	1361	5729	12.291454455233248
+{4,5,75}	[{75, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing,pos_ADJ}	398	175	736	1361	5729	12.274617075913584
+{5} {20} {81} {4}	[{5}, {20}, {81}, {4}]	{feats_Number=Sing} {pos_ADP} {pos_DET} {feats_Gender=Fem}	419	175	736	1361	5729	12.274617075913584
+{20} {59,81} {4,59}	[{20}, {81, 59}, {59, 4}]	{pos_ADP} {feats_Number=Plur,pos_DET} {feats_Gender=Fem,feats_Number=Plur}	382	175	736	1361	5729	12.274617075913584
+{59} {3}	[{59}, {3}]	{feats_Number=Plur} {pos_NOUN}	849	734	3089	1361	5729	12.255012178792095
+{5} {19,20} {81}	[{5}, {19, 20}, {81}]	{feats_Number=Sing} {lemma_de,pos_ADP} {pos_DET}	358	164	693	1361	5729	12.254752044323757
+{5,81} {5}	[{81, 5}, {5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing}	932	803	3381	1361	5729	12.241351308645342
+{81,82,83} {3}	[{81, 82, 83}, {3}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	945	803	3381	1361	5729	12.241351308645342
+{4,5} {75}	[{4, 5}, {75}]	{feats_Gender=Fem,feats_Number=Sing} {pos_ADJ}	379	165	697	1361	5729	12.234844277661427
+{3,4} {19,20} {5}	[{3, 4}, {19, 20}, {5}]	{pos_NOUN,feats_Gender=Fem} {lemma_de,pos_ADP} {feats_Number=Sing}	387	165	697	1361	5729	12.234844277661427
+{3,59} {19,20}	[{3, 59}, {19, 20}]	{pos_NOUN,feats_Number=Plur} {lemma_de,pos_ADP}	347	165	697	1361	5729	12.23476148393667
+{3} {64,65}	[{3}, {64, 65}]	{pos_NOUN} {lemma_et,pos_CCONJ}	343	165	697	1361	5729	12.23476148393667
+{59,81} {59}	[{81, 59}, {59}]	{feats_Number=Plur,pos_DET} {feats_Number=Plur}	795	668	2811	1361	5729	12.223646076763268
+{81} {3,4}	[{81}, {3, 4}]	{pos_DET} {pos_NOUN,feats_Gender=Fem}	870	726	3057	1361	5729	12.218113588163307
+{81,83} {59}	[{81, 83}, {59}]	{pos_DET,feats_PronType=Art} {feats_Number=Plur}	757	635	2672	1361	5729	12.209905706914117
+{3} {59} {37}	[{3}, {59}, {37}]	{pos_NOUN} {feats_Number=Plur} {pos_PUNCT}	340	139	585	1361	5729	12.186469876006207
+{5,24,85} {5}	[{24, 5, 85}, {5}]	{feats_Number=Sing,wp_’,wp_▁l} {feats_Number=Sing}	490	222	936	1361	5729	12.136231892232649
+{120} {19,20} {5}	[{120}, {19, 20}, {5}]	{feats_Gender=Masc} {lemma_de,pos_ADP} {feats_Number=Sing}	428	195	822	1361	5729	12.130985141835845
+{24,81,83}	[{24, 81, 83}]	{wp_’,pos_DET,feats_PronType=Art}	554	246	1035	1361	5729	12.112417540805387
+{20} {5,80,81,82,83,85}	[{20}, {5, 80, 81, 82, 83, 85}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l}	404	188	791	1361	5729	12.094311670438769
+{80,81,82,83} {3}	[{80, 81, 82, 83}, {3}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	944	803	3380	1361	5729	12.08706335899126
+{1125} {20} {5}	[{1125}, {20}, {5}]	{pos_VERB} {pos_ADP} {feats_Number=Sing}	381	154	650	1361	5729	12.032747288785146
+{5,85} {4,5}	[{5, 85}, {4, 5}]	{feats_Number=Sing,wp_▁l} {feats_Gender=Fem,feats_Number=Sing}	382	154	650	1361	5729	12.032747288785146
+{59,81} {59} {75}	[{81, 59}, {59}, {75}]	{feats_Number=Plur,pos_DET} {feats_Number=Plur} {pos_ADJ}	381	154	650	1361	5729	12.032747288785146
+{4,5} {4,5} {20}	[{4, 5}, {4, 5}, {20}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	350	154	650	1361	5729	12.032695299261901
+{4}	[{4}]	{feats_Gender=Fem}	1093	998	4199	1361	5729	12.031138500551352
+{5,81,83}	[{81, 83, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art}	913	797	3354	1361	5729	12.02619391793429
+{20} {81,82,83} {3}	[{20}, {81, 82, 83}, {3}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	852	717	3016	1361	5729	12.013824334559786
+{20}	[{20}]	{pos_ADP}	1094	951	4003	1361	5729	12.002475685284011
+{5} {4,5} {20}	[{5}, {4, 5}, {20}]	{feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	480	199	840	1361	5729	11.985406910958742
+{20} {5,80,81,82,83,120,916} {3,5,120}	[{20}, {5, 80, 81, 82, 83, 916, 120}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,wp_▁le} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	450	199	840	1361	5729	11.98536029032836
+{20} {80,81,82,83} {3}	[{20}, {80, 81, 82, 83}, {3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	851	716	3015	1361	5729	11.984940929710278
+{5} {20} {5,81} {3,4,5}	[{5}, {20}, {81, 5}, {3, 4, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	345	139	587	1361	5729	11.953895454324648
+{20} {5,81,83} {5}	[{20}, {81, 83, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	806	682	2869	1361	5729	11.952683066150119
+{4} {20} {5} {5}	[{4}, {20}, {5}, {5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	435	186	782	1361	5729	11.92965280215356
+{59,80,81,82,83} {4,59}	[{80, 81, 82, 83, 59}, {59, 4}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Plur}	410	186	782	1361	5729	11.92965280215356
+{120} {20} {4}	[{120}, {20}, {4}]	{feats_Gender=Masc} {pos_ADP} {feats_Gender=Fem}	427	184	775	1361	5729	11.929079097338423
+{81} {3,4} {4}	[{81}, {3, 4}, {4}]	{pos_DET} {pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem}	429	184	775	1361	5729	11.929079097338423
+{81,83} {120} {120}	[{81, 83}, {120}, {120}]	{pos_DET,feats_PronType=Art} {feats_Gender=Masc} {feats_Gender=Masc}	457	184	775	1361	5729	11.929038147408459
+{2601,2603,2604,2605}	[{2601, 2603, 2604, 2605}]	{pos_AUX,feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	363	184	775	1361	5729	11.929038147408459
+{5} {3,120}	[{5}, {120, 3}]	{feats_Number=Sing} {pos_NOUN,feats_Gender=Masc}	741	624	2626	1361	5729	11.885143686310691
+{5} {19,20,50,52}	[{5}, {50, 19, 20, 52}]	{feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	601	490	2062	1361	5729	11.87642306202285
+{20} {5,81,83} {3,5}	[{20}, {81, 83, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	782	631	2657	1361	5729	11.864931888569474
+{20} {59}	[{20}, {59}]	{pos_ADP} {feats_Number=Plur}	787	652	2745	1361	5729	11.850991276213065
+{19,20} {5,81} {3,5}	[{19, 20}, {81, 5}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	578	462	1944	1361	5729	11.830770784172007
+{19,20} {5,81,83,120}	[{19, 20}, {120, 81, 83, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc}	342	156	659	1361	5729	11.812889213193612
+{5} {20} {5,80,81,82,83} {3,5}	[{5}, {20}, {5, 80, 81, 82, 83}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	377	156	659	1361	5729	11.812889213193612
+{5,81,83,1076} {5}	[{81, 83, 1076, 5}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,lemma_un} {feats_Number=Sing}	355	156	659	1361	5729	11.812857875423862
+{4} {19,20,50,52} {5}	[{4}, {50, 19, 20, 52}, {5}]	{feats_Gender=Fem} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	364	156	659	1361	5729	11.812857875423862
+{4,5} {4} {20}	[{4, 5}, {4}, {20}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem} {pos_ADP}	355	156	659	1361	5729	11.812857875423862
+{5} {5} {4}	[{5}, {5}, {4}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Gender=Fem}	358	159	670	1361	5729	11.808709973720383
+{2698} {2605}	[{2698}, {2605}]	{pos_PRON} {feats_VerbForm=Fin}	346	159	670	1361	5729	11.808709973720383
+{2602,2603,2605} {5}	[{2602, 2603, 2605}, {5}]	{feats_Mood=Ind,feats_Person=3,feats_VerbForm=Fin} {feats_Number=Sing}	354	159	670	1361	5729	11.808709973720383
+{3,5} {4,5}	[{3, 5}, {4, 5}]	{pos_NOUN,feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	381	159	670	1361	5729	11.80867893605863
+{5,24,80,81,82,83} {3,4}	[{5, 80, 81, 82, 83, 24}, {3, 4}]	{feats_Number=Sing,wp_’,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	404	159	670	1361	5729	11.80867893605863
+{5} {20} {81,83} {4}	[{5}, {20}, {81, 83}, {4}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	382	159	670	1361	5729	11.80867893605863
+{19,20} {5} {3}	[{19, 20}, {5}, {3}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN}	588	469	1976	1361	5729	11.804539825028618
+{20} {81,83} {3,4}	[{20}, {81, 83}, {3, 4}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	688	568	2391	1361	5729	11.803158626529864
+{24}	[{24}]	{wp_’}	743	592	2494	1361	5729	11.794812097403755
+{5,81} {3,5}	[{81, 5}, {3, 5}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	923	773	3254	1361	5729	11.793731239511011
+{19,20} {81,83} {3}	[{19, 20}, {81, 83}, {3}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	715	592	2494	1361	5729	11.792623153826929
+{3,5} {19,20,50,52}	[{3, 5}, {50, 19, 20, 52}]	{pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	523	224	945	1361	5729	11.783917429875427
+{5} {3,5,120}	[{5}, {120, 3, 5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	740	622	2618	1361	5729	11.783390053390582
+{2604}	[{2604}]	{feats_Tense=Pres}	727	588	2477	1361	5729	11.782308008736003
+{5,80,81,82,83,120} {3,5,120}	[{5, 80, 81, 82, 83, 120}, {120, 3, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	555	451	1899	1361	5729	11.7793969818044
+{5,81} {3,5,120}	[{81, 5}, {120, 3, 5}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	709	588	2477	1361	5729	11.77702441444359
+{81,83} {3,120}	[{81, 83}, {120, 3}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	822	689	2902	1361	5729	11.76585809874526
+{1126,1127}	[{1126, 1127}]	{feats_Tense=Past,feats_VerbForm=Part}	594	467	1967	1361	5729	11.765605070718221
+{20} {5} {3,5}	[{20}, {5}, {3, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	821	657	2764	1361	5729	11.764342137152807
+{3,4,5} {4,5}	[{3, 4, 5}, {4, 5}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	371	154	649	1361	5729	11.758385941569856
+{81} {3,4} {20} {5}	[{81}, {3, 4}, {20}, {5}]	{pos_DET} {pos_NOUN,feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	361	154	649	1361	5729	11.75835829974813
+{59} {59} {4}	[{59}, {59}, {4}]	{feats_Number=Plur} {feats_Number=Plur} {feats_Gender=Fem}	346	154	649	1361	5729	11.758303021382128
+{5,120} {3}	[{120, 5}, {3}]	{feats_Number=Sing,feats_Gender=Masc} {pos_NOUN}	685	569	2394	1361	5729	11.757585042167957
+{81,83,1076}	[{81, 83, 1076}]	{pos_DET,feats_PronType=Art,lemma_un}	541	237	999	1361	5729	11.757419523085003
+{81,83} {3}	[{81, 83}, {3}]	{pos_DET,feats_PronType=Art} {pos_NOUN}	997	842	3545	1361	5729	11.756152634865442
+{20} {81,83} {4}	[{20}, {81, 83}, {4}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	704	588	2475	1361	5729	11.750334091710853
+{81,83} {3,4}	[{81, 83}, {3, 4}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	842	702	2955	1361	5729	11.742908693891865
+{2602,2605}	[{2602, 2605}]	{feats_Mood=Ind,feats_VerbForm=Fin}	783	623	2621	1361	5729	11.742748673815662
+{5} {3,4}	[{5}, {3, 4}]	{feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	786	629	2647	1361	5729	11.741630181154267
+{3,4} {20}	[{3, 4}, {20}]	{pos_NOUN,feats_Gender=Fem} {pos_ADP}	658	525	2210	1361	5729	11.731821290842424
+{81,83}	[{81, 83}]	{pos_DET,feats_PronType=Art}	1028	884	3720	1361	5729	11.713516689438016
+{75,120}	[{120, 75}]	{pos_ADJ,feats_Gender=Masc}	630	477	2009	1361	5729	11.713491760787669
+{4,5} {20}	[{4, 5}, {20}]	{feats_Gender=Fem,feats_Number=Sing} {pos_ADP}	619	477	2009	1361	5729	11.713491760787669
+{3,120} {20} {5}	[{120, 3}, {20}, {5}]	{pos_NOUN,feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	468	212	895	1361	5729	11.705783066062283
+{5} {5} {19,20,52}	[{5}, {5}, {19, 20, 52}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP,wp_▁de}	482	212	895	1361	5729	11.705758577383042
+{3} {75}	[{3}, {75}]	{pos_NOUN} {pos_ADJ}	802	682	2870	1361	5729	11.704316183958758
+{20} {80,81,82,83}	[{20}, {80, 81, 82, 83}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	885	767	3229	1361	5729	11.696503485863024
+{5} {20}	[{5}, {20}]	{feats_Number=Sing} {pos_ADP}	857	712	2996	1361	5729	11.685403837377052
+{2603,2605}	[{2603, 2605}]	{feats_Person=3,feats_VerbForm=Fin}	769	615	2590	1361	5729	11.649733176193974
+{20} {5,81,83}	[{20}, {81, 83, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	811	688	2896	1361	5729	11.623506806229974
+{5,120} {19,20}	[{120, 5}, {19, 20}]	{feats_Number=Sing,feats_Gender=Masc} {lemma_de,pos_ADP}	401	178	748	1361	5729	11.609745750853882
+{19,20} {5} {4}	[{19, 20}, {5}, {4}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	434	178	748	1361	5729	11.609745750853882
+{5,120} {120} {20}	[{120, 5}, {120}, {20}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Gender=Masc} {pos_ADP}	393	178	748	1361	5729	11.609726120393875
+{5} {3} {37}	[{5}, {3}, {37}]	{feats_Number=Sing} {pos_NOUN} {pos_PUNCT}	397	178	748	1361	5729	11.609726120393875
+{1125,2602,2604,2605}	[{2602, 1125, 2604, 2605}]	{pos_VERB,feats_Mood=Ind,feats_Tense=Pres,feats_VerbForm=Fin}	389	178	748	1361	5729	11.609726120393875
+{4,5}	[{4, 5}]	{feats_Gender=Fem,feats_Number=Sing}	1001	878	3695	1361	5729	11.609059212156382
+{3,59} {59,75}	[{3, 59}, {59, 75}]	{pos_NOUN,feats_Number=Plur} {feats_Number=Plur,pos_ADJ}	533	426	1794	1361	5729	11.608961223734697
+{3,5} {19,20}	[{3, 5}, {19, 20}]	{pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	605	483	2034	1361	5729	11.608745726998384
+{5,120} {3,5,120}	[{120, 5}, {120, 3, 5}]	{feats_Number=Sing,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	682	559	2354	1361	5729	11.608002105390474
+{3} {20}	[{3}, {20}]	{pos_NOUN} {pos_ADP}	873	729	3069	1361	5729	11.595589542816317
+{59,81,83}	[{81, 83, 59}]	{feats_Number=Plur,pos_DET,feats_PronType=Art}	759	638	2685	1361	5729	11.590771032626826
+{20} {5,81} {5}	[{20}, {81, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	835	700	2946	1361	5729	11.58942013497662
+{20} {5} {5}	[{20}, {5}, {5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	862	728	3066	1361	5729	11.583521907919268
+{19,50,52}	[{50, 19, 52}]	{lemma_de,feats_de,wp_▁de}	951	818	3444	1361	5729	11.579676533532115
+{20} {81} {120}	[{20}, {81}, {120}]	{pos_ADP} {pos_DET} {feats_Gender=Masc}	754	640	2696	1361	5729	11.576228213398032
+{5} {19,20,52}	[{5}, {19, 20, 52}]	{feats_Number=Sing} {lemma_de,pos_ADP,wp_▁de}	602	490	2063	1361	5729	11.57271691569246
+{1125,1126,1127,1128}	[{1128, 1125, 1126, 1127}]	{pos_VERB,feats_Tense=Past,feats_VerbForm=Part,feats_Voice=Pass}	507	207	874	1361	5729	11.564043230302202
+{3} {5}	[{3}, {5}]	{pos_NOUN} {feats_Number=Sing}	695	581	2444	1361	5729	11.5565281760852
+{52} {59}	[{52}, {59}]	{wp_▁de} {feats_Number=Plur}	608	501	2110	1361	5729	11.525661655297682
+{3,4}	[{3, 4}]	{pos_NOUN,feats_Gender=Fem}	1080	984	4143	1361	5729	11.521620479316597
+{5}	[{5}]	{feats_Number=Sing}	1153	1059	4459	1361	5729	11.50630094452388
+{5,81}	[{81, 5}]	{feats_Number=Sing,pos_DET}	935	817	3438	1361	5729	11.502695925286643
+{3,59,120}	[{120, 3, 59}]	{pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	775	657	2766	1361	5729	11.498801155372846
+{4} {20} {5,81}	[{4}, {20}, {81, 5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing,pos_DET}	400	171	722	1361	5729	11.495529161936682
+{80,81,82,83} {3,4} {20}	[{80, 81, 82, 83}, {3, 4}, {20}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem} {pos_ADP}	399	171	722	1361	5729	11.495529161936682
+{5,81,83} {3,5} {20} {5}	[{81, 83, 5}, {3, 5}, {20}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	406	171	722	1361	5729	11.495529161936682
+{5,81,83} {3,5} {19,20,50,52}	[{81, 83, 5}, {3, 5}, {50, 19, 20, 52}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	384	171	722	1361	5729	11.495498980590417
+{20} {4,5} {3,4,5}	[{20}, {4, 5}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	394	171	722	1361	5729	11.495498980590417
+{80,81,82,83} {3,120}	[{80, 81, 82, 83}, {120, 3}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	754	641	2699	1361	5729	11.484900271049899
+{5} {3,5}	[{5}, {3, 5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	949	799	3363	1361	5729	11.480082131074028
+{81,83} {3} {19,20}	[{81, 83}, {3}, {19, 20}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP}	560	250	1054	1361	5729	11.478773357159685
+{3,5} {20} {5}	[{3, 5}, {20}, {5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	578	449	1890	1361	5729	11.47745403922988
+{80,81,82,83} {3,4}	[{80, 81, 82, 83}, {3, 4}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	768	645	2716	1361	5729	11.475792481722376
+{81,82,83} {3,120}	[{81, 82, 83}, {120, 3}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	755	641	2700	1361	5729	11.464223891620177
+{2602,2603,2605}	[{2602, 2603, 2605}]	{feats_Mood=Ind,feats_Person=3,feats_VerbForm=Fin}	761	612	2578	1361	5729	11.462570128525135
+{20} {5,80,81,82,83} {4,5}	[{20}, {5, 80, 81, 82, 83}, {4, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	517	216	909	1361	5729	11.459045432644555
+{3} {19,20} {4}	[{3}, {19, 20}, {4}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Gender=Fem}	524	216	909	1361	5729	11.459045432644555
+{80,81,82,83} {4}	[{80, 81, 82, 83}, {4}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	776	659	2772	1361	5729	11.447206214454617
+{59,81} {3,59,120}	[{81, 59}, {120, 3, 59}]	{feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	536	240	1011	1361	5729	11.444661789033656
+{19,20,50,52} {59,81} {59}	[{50, 19, 20, 52}, {81, 59}, {59}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Plur,pos_DET} {feats_Number=Plur}	454	201	846	1361	5729	11.435602312750047
+{20} {5} {5} {37}	[{20}, {5}, {5}, {37}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing} {pos_PUNCT}	381	179	754	1361	5729	11.435444588222474
+{3,4,59} {59}	[{3, 59, 4}, {59}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur} {feats_Number=Plur}	426	179	754	1361	5729	11.435444588222474
+{5,81} {3,5} {20} {5}	[{81, 5}, {3, 5}, {20}, {5}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	423	179	754	1361	5729	11.435444588222474
+{24,81,83} {3}	[{24, 81, 83}, {3}]	{wp_’,pos_DET,feats_PronType=Art} {pos_NOUN}	526	216	910	1361	5729	11.434748655934266
+{20} {81} {3}	[{20}, {81}, {3}]	{pos_ADP} {pos_DET} {pos_NOUN}	920	768	3234	1361	5729	11.434080036461884
+{120} {20}	[{120}, {20}]	{feats_Gender=Masc} {pos_ADP}	765	646	2718	1361	5729	11.429830265162146
+{24} {5}	[{24}, {5}]	{wp_’} {feats_Number=Sing}	673	533	2242	1361	5729	11.427888731445877
+{20} {80,81,82,83} {3,4}	[{20}, {80, 81, 82, 83}, {3, 4}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	637	529	2225	1361	5729	11.425557444764028
+{81} {3} {19,20}	[{81}, {3}, {19, 20}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP}	579	470	1977	1361	5729	11.423583725076648
+{59,120}	[{120, 59}]	{feats_Number=Plur,feats_Gender=Masc}	784	664	2797	1361	5729	11.416732912022022
+{20} {81,82,83}	[{20}, {81, 82, 83}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art}	886	767	3230	1361	5729	11.416041169893916
+{3,5} {20}	[{3, 5}, {20}]	{pos_NOUN,feats_Number=Sing} {pos_ADP}	737	590	2485	1361	5729	11.414210235520885
+{20} {81} {3,120}	[{20}, {81}, {120, 3}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Masc}	737	606	2549	1361	5729	11.398709705554198
+{5} {20} {81}	[{5}, {20}, {81}]	{feats_Number=Sing} {pos_ADP} {pos_DET}	591	483	2034	1361	5729	11.382357306416258
+{19,20} {81} {3}	[{19, 20}, {81}, {3}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN}	749	619	2605	1361	5729	11.376707510682747
+{20} {5} {4}	[{20}, {5}, {4}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	645	510	2146	1361	5729	11.376133942251162
+{81,82,83}	[{81, 82, 83}]	{pos_DET,feats_Definite=Def,feats_PronType=Art}	970	851	3583	1361	5729	11.375698536301906
+{59} {3,59}	[{59}, {3, 59}]	{feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	846	711	2994	1361	5729	11.37509198765618
+{81,83} {120} {20}	[{81, 83}, {120}, {20}]	{pos_DET,feats_PronType=Art} {feats_Gender=Masc} {pos_ADP}	427	196	825	1361	5729	11.373790199477627
+{5,81,82,83,120} {3,5,120}	[{5, 81, 82, 83, 120}, {120, 3, 5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	556	451	1900	1361	5729	11.367833731016614
+{20} {81} {4}	[{20}, {81}, {4}]	{pos_ADP} {pos_DET} {feats_Gender=Fem}	739	611	2573	1361	5729	11.348735468082099
+{81,83} {120}	[{81, 83}, {120}]	{pos_DET,feats_PronType=Art} {feats_Gender=Masc}	849	722	3041	1361	5729	11.343217012373369
+{5,80,81,82,83} {3,5}	[{5, 80, 81, 82, 83}, {3, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	845	707	2974	1361	5729	11.336499815787016
+{20} {5,80,81,82,83} {3,5}	[{20}, {5, 80, 81, 82, 83}, {3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	734	601	2529	1361	5729	11.335235523676626
+{5} {3,5} {20}	[{5}, {3, 5}, {20}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP}	593	257	1084	1361	5729	11.332448308450118
+{2603}	[{2603}]	{feats_Person=3}	774	621	2615	1361	5729	11.324660552052277
+{20} {59} {59}	[{20}, {59}, {59}]	{pos_ADP} {feats_Number=Plur} {feats_Number=Plur}	719	597	2513	1361	5729	11.323024253436463
+{59} {3,59,120}	[{59}, {120, 3, 59}]	{feats_Number=Plur} {pos_NOUN,feats_Number=Plur,feats_Gender=Masc}	631	521	2192	1361	5729	11.314366800427365
+{5,81,82,83} {3,5}	[{81, 82, 83, 5}, {3, 5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	846	707	2975	1361	5729	11.313383458012481
+{20} {81,83} {3}	[{20}, {81, 83}, {3}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	896	748	3147	1361	5729	11.307108997017327
+{5,81,83} {5}	[{81, 83, 5}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	908	783	3294	1361	5729	11.292313706029432
+{5} {4,5}	[{5}, {4, 5}]	{feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	827	681	2868	1361	5729	11.276326397774273
+{3} {20} {5}	[{3}, {20}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing}	744	607	2557	1361	5729	11.274154534629256
+{5} {4}	[{5}, {4}]	{feats_Number=Sing} {feats_Gender=Fem}	840	691	2909	1361	5729	11.270921468658008
+{20} {5} {3,5,120}	[{20}, {5}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	581	475	2001	1361	5729	11.263428679449822
+{59} {62}	[{59}, {62}]	{feats_Number=Plur} {wp_s}	378	182	767	1361	5729	11.231988750000621
+{80,81,82,83} {3,4,59}	[{80, 81, 82, 83}, {3, 59, 4}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	403	182	767	1361	5729	11.231988750000621
+{4,5,80,81,82,83,94} {4,5}	[{4, 5, 80, 81, 82, 83, 94}, {4, 5}]	{feats_Gender=Fem,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁la} {feats_Gender=Fem,feats_Number=Sing}	400	182	767	1361	5729	11.231988750000621
+{59,81}	[{81, 59}]	{feats_Number=Plur,pos_DET}	797	671	2823	1361	5729	11.229838894792227
+{5} {3,4,5}	[{5}, {3, 4, 5}]	{feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	784	627	2638	1361	5729	11.21374567554673
+{5,81,83} {4,5}	[{81, 83, 5}, {4, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	733	590	2483	1361	5729	11.208025624400104
+{59,81,83} {59}	[{81, 83, 59}, {59}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Number=Plur}	756	635	2671	1361	5729	11.203110505664357
+{81} {4}	[{81}, {4}]	{pos_DET} {feats_Gender=Fem}	887	743	3128	1361	5729	11.202556695899661
+{20} {4}	[{20}, {4}]	{pos_ADP} {feats_Gender=Fem}	734	625	2633	1361	5729	11.194876610180541
+{81} {120}	[{81}, {120}]	{pos_DET} {feats_Gender=Masc}	880	747	3145	1361	5729	11.194340737599408
+{81,83} {3,59}	[{81, 83}, {3, 59}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	712	603	2538	1361	5729	11.182774546513908
+{5,81} {4,5}	[{81, 5}, {4, 5}]	{feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	774	620	2610	1361	5729	11.181644945988326
+{59,81} {3,59}	[{81, 59}, {3, 59}]	{feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur}	753	637	2680	1361	5729	11.145737622655883
+{19,20} {59}	[{19, 20}, {59}]	{lemma_de,pos_ADP} {feats_Number=Plur}	621	516	2171	1361	5729	11.113731216149123
+{3} {59,75}	[{3}, {59, 75}]	{pos_NOUN} {feats_Number=Plur,pos_ADJ}	539	437	1838	1361	5729	11.11024308878551
+{120} {3,120}	[{120}, {120, 3}]	{feats_Gender=Masc} {pos_NOUN,feats_Gender=Masc}	722	590	2482	1361	5729	11.080281937062963
+{120} {120}	[{120}, {120}]	{feats_Gender=Masc} {feats_Gender=Masc}	879	745	3138	1361	5729	11.07239548988535
+{4} {20} {5}	[{4}, {20}, {5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	590	485	2042	1361	5729	11.052771956019726
+{20} {120}	[{20}, {120}]	{pos_ADP} {feats_Gender=Masc}	755	630	2651	1361	5729	11.052652191191989
+{5,81,83} {3,5}	[{81, 83, 5}, {3, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	896	748	3150	1361	5729	11.049231101786981
+{80,81,82,83} {3} {20}	[{80, 81, 82, 83}, {3}, {20}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	591	486	2045	1361	5729	11.034049053688523
+{59,81,83} {3,59}	[{81, 83, 59}, {3, 59}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	711	603	2537	1361	5729	11.031869500932228
+{3} {19,20}	[{3}, {19, 20}]	{pos_NOUN} {lemma_de,pos_ADP}	744	630	2651	1361	5729	11.029721484063383
+{20} {81,83} {120}	[{20}, {81, 83}, {120}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Masc}	723	616	2593	1361	5729	11.027609728843123
+{5,81,82,83} {5}	[{81, 82, 83, 5}, {5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	855	748	3148	1361	5729	11.008806165020417
+{19,20} {81}	[{19, 20}, {81}]	{lemma_de,pos_ADP} {pos_DET}	790	680	2862	1361	5729	10.99377663910152
+{20} {5,120}	[{20}, {120, 5}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Masc}	692	585	2463	1361	5729	10.964668536186853
+{19,20,50,52} {59}	[{50, 19, 20, 52}, {59}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Plur}	600	495	2085	1361	5729	10.944484950608379
+{2604,2605}	[{2604, 2605}]	{feats_Tense=Pres,feats_VerbForm=Fin}	675	569	2396	1361	5729	10.90143830988001
+{59} {120}	[{59}, {120}]	{feats_Number=Plur} {feats_Gender=Masc}	700	593	2498	1361	5729	10.844138113411175
+{5,80,81,82,83} {5}	[{5, 80, 81, 82, 83}, {5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	854	748	3147	1361	5729	10.821367117778715
+{3} {19,20,50,52}	[{3}, {50, 19, 20, 52}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	666	561	2360	1361	5729	10.804100434501352
+{20} {81,82,83} {3,120}	[{20}, {81, 82, 83}, {120, 3}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	651	546	2300	1361	5729	10.767574139787117
+{20} {80,81,82,83} {3,120}	[{20}, {80, 81, 82, 83}, {120, 3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	650	546	2299	1361	5729	10.752259506228578
+{20} {5,81} {3,5,120}	[{20}, {81, 5}, {120, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	573	471	1982	1361	5729	10.71622496669109
+{52} {59} {59}	[{52}, {59}, {59}]	{wp_▁de} {feats_Number=Plur} {feats_Number=Plur}	553	452	1901	1361	5729	10.683782876807134
+{19,20} {3}	[{19, 20}, {3}]	{lemma_de,pos_ADP} {pos_NOUN}	592	490	2062	1361	5729	10.620864475011551
+{20} {4,5}	[{20}, {4, 5}]	{pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	687	582	2449	1361	5729	10.595884163398972
+{20} {80,81,82,83} {4}	[{20}, {80, 81, 82, 83}, {4}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	646	543	2284	1361	5729	10.58166304562357
+{5,81,82,83} {3,5,120}	[{81, 82, 83, 5}, {120, 3, 5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	620	517	2177	1361	5729	10.572124248363284
+{19,20,50,52} {59} {59}	[{50, 19, 20, 52}, {59}, {59}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Plur} {feats_Number=Plur}	545	445	1874	1361	5729	10.564610809621161
+{5,80,81,82,83} {3,5,120}	[{5, 80, 81, 82, 83}, {120, 3, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	619	517	2176	1361	5729	10.53192935911699
+{120} {20} {5}	[{120}, {20}, {5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	606	505	2127	1361	5729	10.280346997987467
+{19,20} {4}	[{19, 20}, {4}]	{lemma_de,pos_ADP} {feats_Gender=Fem}	597	497	2094	1361	5729	10.115696622827985
+{19,20} {5}	[{19, 20}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing}	792	690	2904	1361	5729	10.052493281594893
+{3} {20} {5} {5}	[{3}, {20}, {5}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	541	444	1871	1361	5729	9.991792980918456
+{19,20} {81,83}	[{19, 20}, {81, 83}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art}	759	657	2767	1361	5729	9.943586351515943
+{3} {19,20} {5}	[{3}, {19, 20}, {5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	621	522	2196	1361	5729	9.925139432844786
+{5} {5} {5}	[{5}, {5}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing}	605	506	2131	1361	5729	9.90893317795827
+{59,81} {59,120}	[{81, 59}, {120, 59}]	{feats_Number=Plur,pos_DET} {feats_Number=Plur,feats_Gender=Masc}	557	461	1939	1361	5729	9.805037518227754
+{5} {120}	[{5}, {120}]	{feats_Number=Sing} {feats_Gender=Masc}	814	714	3004	1361	5729	9.789534282989562
+{4,5} {5}	[{4, 5}, {5}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Number=Sing}	717	617	2596	1361	5729	9.742646825077564
+{20} {5,81,82,83} {5}	[{20}, {81, 82, 83, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	754	654	2753	1361	5729	9.654922990710606
+{2602,2604,2605}	[{2602, 2604, 2605}]	{feats_Mood=Ind,feats_Tense=Pres,feats_VerbForm=Fin}	661	562	2367	1361	5729	9.625647579625182
+{5,81,120} {5,120}	[{120, 81, 5}, {120, 5}]	{feats_Number=Sing,pos_DET,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	677	578	2433	1361	5729	9.617148080710725
+{20} {5} {120}	[{20}, {5}, {120}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Masc}	638	540	2273	1361	5729	9.600361244085308
+{5,81} {5,120}	[{81, 5}, {120, 5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Masc}	730	630	2654	1361	5729	9.595615005349822
+{4} {5}	[{4}, {5}]	{feats_Gender=Fem} {feats_Number=Sing}	723	624	2625	1361	5729	9.580777172550292
+{5} {20} {81,83}	[{5}, {20}, {81, 83}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art}	538	444	1868	1361	5729	9.567705193967607
+{5,81,83,120} {5,120}	[{120, 81, 83, 5}, {120, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	654	556	2340	1361	5729	9.542362477164883
+{20} {5,80,81,82,83} {5}	[{20}, {5, 80, 81, 82, 83}, {5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	753	654	2752	1361	5729	9.542079327963405
+{20} {5,120} {120}	[{20}, {120, 5}, {120}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Masc} {feats_Gender=Masc}	588	492	2071	1361	5729	9.519558237758925
+{5,81,82,83}	[{81, 82, 83, 5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art}	860	763	3211	1361	5729	9.391591660891631
+{20} {5,81,82,83}	[{20}, {81, 82, 83, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art}	759	661	2781	1361	5729	9.388015588084667
+{20} {5,120} {5}	[{20}, {120, 5}, {5}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing}	590	495	2084	1361	5729	9.302630409827431
+{3} {4}	[{3}, {4}]	{pos_NOUN} {feats_Gender=Fem}	639	543	2285	1361	5729	9.263884269139705
+{5,80,81,82,83}	[{5, 80, 81, 82, 83}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	859	763	3210	1361	5729	9.262317151064819
+{20} {5,80,81,82,83}	[{20}, {5, 80, 81, 82, 83}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	758	660	2780	1361	5729	9.25899970872478
+{4} {4}	[{4}, {4}]	{feats_Gender=Fem} {feats_Gender=Fem}	812	715	3010	1361	5729	9.205422041488701
+{120} {5}	[{120}, {5}]	{feats_Gender=Masc} {feats_Number=Sing}	787	690	2904	1361	5729	9.197820047579043
+{5,120} {5}	[{120, 5}, {5}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing}	780	683	2875	1361	5729	9.171804580835712
+{19,20,52} {81}	[{19, 20, 52}, {81}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET}	760	663	2791	1361	5729	9.156197223439541
+{59} {3} {59}	[{59}, {3}, {59}]	{feats_Number=Plur} {pos_NOUN} {feats_Number=Plur}	509	418	1762	1361	5729	9.12431933717757
+{20} {120} {5}	[{20}, {120}, {5}]	{pos_ADP} {feats_Gender=Masc} {feats_Number=Sing}	591	497	2093	1361	5729	9.096509784838034
+{3,4} {4}	[{3, 4}, {4}]	{pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem}	625	530	2232	1361	5729	9.084940037846781
+{5,120} {120}	[{120, 5}, {120}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Gender=Masc}	756	659	2776	1361	5729	9.081721954292089
+{20} {5,120} {5,120}	[{20}, {120, 5}, {120, 5}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	582	489	2057	1361	5729	9.070403298138132
+{19,20,50,52} {81}	[{50, 19, 20, 52}, {81}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET}	759	663	2789	1361	5729	9.067046002360797
+{20} {59} {3}	[{20}, {59}, {3}]	{pos_ADP} {feats_Number=Plur} {pos_NOUN}	630	535	2253	1361	5729	9.064411621762419
+{5} {20} {5} {5}	[{5}, {20}, {5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	537	446	1876	1361	5729	9.04243953500029
+{81,120} {120}	[{120, 81}, {120}]	{pos_DET,feats_Gender=Masc} {feats_Gender=Masc}	679	583	2456	1361	5729	9.01849695441076
+{5,81,83,120} {5}	[{120, 81, 83, 5}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing}	655	560	2357	1361	5729	9.013043853757432
+{5,81,83} {5,120}	[{81, 83, 5}, {120, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Masc}	702	606	2552	1361	5729	8.99880305241237
+{19,20} {81} {4}	[{19, 20}, {81}, {4}]	{lemma_de,pos_ADP} {pos_DET} {feats_Gender=Fem}	532	441	1858	1361	5729	8.954599498496355
+{20} {59} {3,59}	[{20}, {59}, {3, 59}]	{pos_ADP} {feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	629	535	2252	1361	5729	8.935760874121119
+{2603,2604,2605}	[{2603, 2604, 2605}]	{feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	652	558	2347	1361	5729	8.917042881789579
+{5} {5,120}	[{5}, {120, 5}]	{feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc}	801	706	2972	1361	5729	8.860793002605236
+{20} {3,4}	[{20}, {3, 4}]	{pos_ADP} {pos_NOUN,feats_Gender=Fem}	555	464	1953	1361	5729	8.850204381738962
+{20} {5} {5,120}	[{20}, {5}, {120, 5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Masc}	627	534	2247	1361	5729	8.805819383029208
+{59} {3,120}	[{59}, {120, 3}]	{feats_Number=Plur} {pos_NOUN,feats_Gender=Masc}	633	541	2277	1361	5729	8.587982001618311
+{5,120} {5,120}	[{120, 5}, {120, 5}]	{feats_Number=Sing,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	746	653	2747	1361	5729	8.571167007955017
+{19,20} {81} {3,4}	[{19, 20}, {81}, {3, 4}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem}	509	422	1775	1361	5729	8.560579104596261
+{120} {5,120}	[{120}, {120, 5}]	{feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	748	656	2761	1361	5729	8.357327910416005
+{4,5} {3,4}	[{4, 5}, {3, 4}]	{feats_Gender=Fem,feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	596	507	2133	1361	5729	8.291230093127487
+{4} {3,4,5}	[{4}, {3, 4, 5}]	{feats_Gender=Fem} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	595	506	2130	1361	5729	8.248113664454236
+{4,5} {3,4,5}	[{4, 5}, {3, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	594	505	2126	1361	5729	8.24542967756122
+{81,82,83} {120}	[{81, 82, 83}, {120}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	765	674	2836	1361	5729	8.229806048513614
+{19,20,52} {5}	[{19, 20, 52}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing}	733	642	2703	1361	5729	8.168249099534613
+{3} {5,75}	[{3}, {75, 5}]	{pos_NOUN} {feats_Number=Sing,pos_ADJ}	542	455	1917	1361	5729	8.166651593681761
+{80,81,82,83} {120}	[{80, 81, 82, 83}, {120}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	764	673	2835	1361	5729	8.10921130992286
+{3,5} {5,75}	[{3, 5}, {75, 5}]	{pos_NOUN,feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	536	450	1895	1361	5729	8.077650180128357
+{19,20,50,52} {5}	[{50, 19, 20, 52}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	732	642	2702	1361	5729	8.048473547224134
+{5,75}	[{75, 5}]	{feats_Number=Sing,pos_ADJ}	630	541	2279	1361	5729	8.027131930778465
+{19,20} {81,83} {4}	[{19, 20}, {81, 83}, {4}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	504	420	1769	1361	5729	7.972393079338726
+{4,5} {3}	[{4, 5}, {3}]	{feats_Gender=Fem,feats_Number=Sing} {pos_NOUN}	599	512	2154	1361	5729	7.94774794557959
+{5} {5,75}	[{5}, {75, 5}]	{feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	592	505	2126	1361	5729	7.924938233075455
+{4} {3,5}	[{4}, {3, 5}]	{feats_Gender=Fem} {pos_NOUN,feats_Number=Sing}	597	510	2147	1361	5729	7.9022619092733
+{5,81,83,120}	[{120, 81, 83, 5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc}	667	579	2436	1361	5729	7.8636579688552315
+{5,81} {5} {5}	[{81, 5}, {5}, {5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {feats_Number=Sing}	538	453	1909	1361	5729	7.839102332713042
+{2602,2603,2604,2605}	[{2602, 2603, 2604, 2605}]	{feats_Mood=Ind,feats_Person=3,feats_Tense=Pres,feats_VerbForm=Fin}	639	551	2321	1361	5729	7.838038657512563
+{19,20,52} {81} {4}	[{19, 20, 52}, {81}, {4}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {feats_Gender=Fem}	500	417	1757	1361	5729	7.807648120503402
+{3} {59}	[{3}, {59}]	{pos_NOUN} {feats_Number=Plur}	701	613	2579	1361	5729	7.801200634653874
+{19,20} {5} {5}	[{19, 20}, {5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	657	569	2397	1361	5729	7.774339711446004
+{5,81,120}	[{120, 81, 5}]	{feats_Number=Sing,pos_DET,feats_Gender=Masc}	688	600	2526	1361	5729	7.758938093258765
+{19,20,50,52} {81} {4}	[{50, 19, 20, 52}, {81}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {feats_Gender=Fem}	499	417	1755	1361	5729	7.726276199486198
+{5} {75}	[{5}, {75}]	{feats_Number=Sing} {pos_ADJ}	600	514	2164	1361	5729	7.72044498049987
+{3,5} {75}	[{3, 5}, {75}]	{pos_NOUN,feats_Number=Sing} {pos_ADJ}	544	460	1937	1361	5729	7.690711664678685
+{4} {3,4}	[{4}, {3, 4}]	{feats_Gender=Fem} {pos_NOUN,feats_Gender=Fem}	622	536	2257	1361	5729	7.614315422313149
+{19,20,52} {80,81,82,83}	[{19, 20, 52}, {80, 81, 82, 83}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	725	639	2688	1361	5729	7.48599645799423
+{3} {19,20,50,52} {5}	[{3}, {50, 19, 20, 52}, {5}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	537	455	1914	1361	5729	7.483815218442765
+{3,120} {20}	[{120, 3}, {20}]	{pos_NOUN,feats_Gender=Masc} {pos_ADP}	606	521	2195	1361	5729	7.477625645579061
+{19,20,50,52} {80,81,82,83}	[{50, 19, 20, 52}, {80, 81, 82, 83}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	724	638	2686	1361	5729	7.407557823978347
+{262}	[{262}]	{wp_▁des}	538	456	1921	1361	5729	7.369723232441221
+{4,5} {4}	[{4, 5}, {4}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem}	678	593	2496	1361	5729	7.336717263358054
+{81,120}	[{120, 81}]	{pos_DET,feats_Gender=Masc}	690	605	2546	1361	5729	7.334054201261897
+{3} {20} {81}	[{3}, {20}, {81}]	{pos_NOUN} {pos_ADP} {pos_DET}	557	475	2001	1361	5729	7.255988699331612
+{80,81,82,83} {59}	[{80, 81, 82, 83}, {59}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Plur}	658	574	2416	1361	5729	7.230033294447288
+{20} {59,81} {3,59}	[{20}, {81, 59}, {3, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET} {pos_NOUN,feats_Number=Plur}	596	513	2161	1361	5729	7.219895210985726
+{80,81,82,83} {3,59}	[{80, 81, 82, 83}, {3, 59}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	629	546	2297	1361	5729	7.202005172171764
+{4,5} {4,5}	[{4, 5}, {4, 5}]	{feats_Gender=Fem,feats_Number=Sing} {feats_Gender=Fem,feats_Number=Sing}	673	589	2479	1361	5729	7.201723369621855
+{59,80,81,82,83} {59}	[{80, 81, 82, 83, 59}, {59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Plur}	657	574	2415	1361	5729	7.117805477847305
+{52} {4}	[{52}, {4}]	{wp_▁de} {feats_Gender=Fem}	503	424	1787	1361	5729	7.095637777730244
+{59,80,81,82,83} {3,59}	[{80, 81, 82, 83, 59}, {3, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	628	545	2296	1361	5729	7.089659860462257
+{4} {59}	[{4}, {59}]	{feats_Gender=Fem} {feats_Number=Plur}	526	447	1880	1361	5729	7.083634874809558
+{4} {4,5}	[{4}, {4, 5}]	{feats_Gender=Fem} {feats_Gender=Fem,feats_Number=Sing}	675	592	2491	1361	5729	7.070948009874631
+{4} {3}	[{4}, {3}]	{feats_Gender=Fem} {pos_NOUN}	626	544	2289	1361	5729	7.045273683787299
+{5,120} {20}	[{120, 5}, {20}]	{feats_Number=Sing,feats_Gender=Masc} {pos_ADP}	562	481	2027	1361	5729	7.04461878207715
+{4,5,81} {4,5}	[{81, 4, 5}, {4, 5}]	{feats_Gender=Fem,feats_Number=Sing,pos_DET} {feats_Gender=Fem,feats_Number=Sing}	579	498	2098	1361	5729	6.9822037879843695
+{20} {5,81,120} {5,120}	[{20}, {120, 81, 5}, {120, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	552	472	1989	1361	5729	6.946654359492663
+{19,20} {5,81} {5}	[{19, 20}, {81, 5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	615	534	2247	1361	5729	6.928708596037018
+{59,80,81,82,83}	[{80, 81, 82, 83, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	659	577	2429	1361	5729	6.916281097540045
+{20} {81,120}	[{20}, {120, 81}]	{pos_ADP} {pos_DET,feats_Gender=Masc}	567	487	2051	1361	5729	6.911283425040257
+{4} {19,20}	[{4}, {19, 20}]	{feats_Gender=Fem} {lemma_de,pos_ADP}	547	468	1970	1361	5729	6.89865600960287
+{4,81} {4}	[{81, 4}, {4}]	{feats_Gender=Fem,pos_DET} {feats_Gender=Fem}	586	506	2129	1361	5729	6.895630198895243
+{20} {81,120} {120}	[{20}, {120, 81}, {120}]	{pos_ADP} {pos_DET,feats_Gender=Masc} {feats_Gender=Masc}	556	477	2007	1361	5729	6.88283396842679
+{19,20} {4,5}	[{19, 20}, {4, 5}]	{lemma_de,pos_ADP} {feats_Gender=Fem,feats_Number=Sing}	516	438	1845	1361	5729	6.881437571063987
+{20} {5,81,120}	[{20}, {120, 81, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Masc}	563	484	2036	1361	5729	6.86420592379023
+{20} {5,81,120} {5}	[{20}, {120, 81, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Masc} {feats_Number=Sing}	553	474	1996	1361	5729	6.8391293982705585
+{19,20} {5,81}	[{19, 20}, {81, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET}	619	539	2267	1361	5729	6.803288005307717
+{20} {59,81} {59}	[{20}, {81, 59}, {59}]	{pos_ADP} {feats_Number=Plur,pos_DET} {feats_Number=Plur}	627	547	2301	1361	5729	6.766653411906556
+{65}	[{65}]	{pos_CCONJ}	679	598	2518	1361	5729	6.711126977831216
+{59}	[{59}]	{feats_Number=Plur}	1047	975	4104	1361	5729	6.694713952768232
+{20} {5,81} {5,120}	[{20}, {81, 5}, {120, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Masc}	597	518	2180	1361	5729	6.684068427765732
+{20} {81,82,83} {120}	[{20}, {81, 82, 83}, {120}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	666	586	2466	1361	5729	6.641345432200895
+{19,20} {120}	[{19, 20}, {120}]	{lemma_de,pos_ADP} {feats_Gender=Masc}	542	465	1957	1361	5729	6.63295170538017
+{59} {20}	[{59}, {20}]	{feats_Number=Plur} {pos_ADP}	634	555	2336	1361	5729	6.555118645021212
+{20} {80,81,82,83} {120}	[{20}, {80, 81, 82, 83}, {120}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	665	586	2465	1361	5729	6.534263738790947
+{19,20,52,263} {80,81,82,83} {3}	[{19, 20, 52, 263}, {80, 81, 82, 83}, {3}]	{lemma_de,pos_ADP,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	535	459	1933	1361	5729	6.474755869093515
+{20} {5,81,83,120} {5,120}	[{20}, {120, 81, 83, 5}, {120, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	532	456	1921	1361	5729	6.468750741050024
+{20} {59,81}	[{20}, {81, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET}	628	550	2314	1361	5729	6.460540114674897
+{59} {4,59}	[{59}, {59, 4}]	{feats_Number=Plur} {feats_Gender=Fem,feats_Number=Plur}	646	567	2389	1361	5729	6.440264040190457
+{4,5,81}	[{81, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing,pos_DET}	583	506	2130	1361	5729	6.4270692858767475
+{120} {59}	[{120}, {59}]	{feats_Gender=Masc} {feats_Number=Plur}	526	451	1898	1361	5729	6.421623883222228
+{4,81}	[{81, 4}]	{feats_Gender=Fem,pos_DET}	590	513	2159	1361	5729	6.415974726086347
+{20} {5,81,83} {5,120}	[{20}, {81, 83, 5}, {120, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Masc}	577	500	2106	1361	5729	6.407923220045417
+{4,5,81} {3,4,5}	[{81, 4, 5}, {3, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	549	473	1992	1361	5729	6.399853278265661
+{19,20,50,52,263} {80,81,82,83} {3}	[{263, 50, 19, 20, 52}, {80, 81, 82, 83}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	534	459	1932	1361	5729	6.366111828385315
+{20} {5,81,83,120} {5}	[{20}, {120, 81, 83, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing}	533	458	1928	1361	5729	6.3640602504854185
+{59,266} {59}	[{266, 59}, {59}]	{feats_Number=Plur,wp_▁les} {feats_Number=Plur}	618	541	2276	1361	5729	6.350660306122206
+{20} {5,81,83,120}	[{20}, {120, 81, 83, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art,feats_Gender=Masc}	543	468	1969	1361	5729	6.350512174392467
+{64,65}	[{64, 65}]	{lemma_et,pos_CCONJ}	631	553	2330	1361	5729	6.338269052155573
+{64,65,66,68}	[{64, 65, 66, 68}]	{lemma_et,pos_CCONJ,feats_et,wp_▁et}	630	553	2327	1361	5729	6.300319712728295
+{3} {20} {81,83}	[{3}, {20}, {81, 83}]	{pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art}	511	437	1841	1361	5729	6.289612046173982
+{59,80,81,82,83,266} {3,59}	[{266, 80, 81, 82, 83, 59}, {3, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {pos_NOUN,feats_Number=Plur}	587	511	2151	1361	5729	6.268735226920934
+{4,81} {3,4}	[{81, 4}, {3, 4}]	{feats_Gender=Fem,pos_DET} {pos_NOUN,feats_Gender=Fem}	556	481	2025	1361	5729	6.243502340617489
+{4} {75}	[{4}, {75}]	{feats_Gender=Fem} {pos_ADJ}	596	520	2189	1361	5729	6.232325070234583
+{59,80,81,82,83,266} {59}	[{266, 80, 81, 82, 83, 59}, {59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {feats_Number=Plur}	616	540	2274	1361	5729	6.141338962304508
+{4} {4,75}	[{4}, {75, 4}]	{feats_Gender=Fem} {feats_Gender=Fem,pos_ADJ}	578	503	2118	1361	5729	6.137339314753077
+{4,75}	[{75, 4}]	{feats_Gender=Fem,pos_ADJ}	632	556	2342	1361	5729	6.076859398152052
+{59} {4}	[{59}, {4}]	{feats_Number=Plur} {feats_Gender=Fem}	651	576	2423	1361	5729	6.001188869809335
+{19,20} {5,81,83} {5}	[{19, 20}, {81, 83, 5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	593	519	2184	1361	5729	5.987552505517531
+{59,266}	[{266, 59}]	{feats_Number=Plur,wp_▁les}	619	544	2292	1361	5729	5.956091069057701
+{3} {4,75}	[{3}, {75, 4}]	{pos_NOUN} {feats_Gender=Fem,pos_ADJ}	560	487	2050	1361	5729	5.948456057778953
+{3,4} {75}	[{3, 4}, {75}]	{pos_NOUN,feats_Gender=Fem} {pos_ADJ}	575	502	2112	1361	5729	5.926923240416498
+{3,4} {4,75}	[{3, 4}, {75, 4}]	{pos_NOUN,feats_Gender=Fem} {feats_Gender=Fem,pos_ADJ}	557	484	2039	1361	5729	5.90657681211794
+{19,20} {5,81,83}	[{19, 20}, {81, 83, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	597	524	2204	1361	5729	5.870564696769082
+{59,80,81,82,83,266}	[{266, 80, 81, 82, 83, 59}]	{feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les}	617	543	2287	1361	5729	5.850518742660444
+{20} {81,83} {3,59}	[{20}, {81, 83}, {3, 59}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	550	479	2017	1361	5729	5.688752276538226
+{59} {59} {37}	[{59}, {59}, {37}]	{feats_Number=Plur} {feats_Number=Plur} {pos_PUNCT}	522	452	1903	1361	5729	5.688324680385967
+{75} {37}	[{75}, {37}]	{pos_ADJ} {pos_PUNCT}	515	446	1876	1361	5729	5.641012474661837
+{20} {59,81,83} {3,59}	[{20}, {81, 83, 59}, {3, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	549	479	2016	1361	5729	5.588085554113842
+{19,20} {81} {120}	[{19, 20}, {81}, {120}]	{lemma_de,pos_ADP} {pos_DET} {feats_Gender=Masc}	539	469	1976	1361	5729	5.562175318467724
+{5,81,82,83} {5,120}	[{81, 82, 83, 5}, {120, 5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Masc}	635	564	2373	1361	5729	5.484416904248933
+{20} {81,83} {59}	[{20}, {81, 83}, {59}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Number=Plur}	583	513	2159	1361	5729	5.4681052270934485
+{5,80,81,82,83} {5,120}	[{5, 80, 81, 82, 83}, {120, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Masc}	634	563	2372	1361	5729	5.387661043629703
+{20} {59,81,83} {59}	[{20}, {81, 83, 59}, {59}]	{pos_ADP} {feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Number=Plur}	582	513	2158	1361	5729	5.370543595317449
+{59} {20} {5}	[{59}, {20}, {5}]	{feats_Number=Plur} {pos_ADP} {feats_Number=Sing}	510	443	1867	1361	5729	5.2708933260475925
+{4,5,81,83} {4,5}	[{81, 83, 4, 5}, {4, 5}]	{feats_Gender=Fem,feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Sing}	541	474	1994	1361	5729	5.246956974178031
+{5,81,82,83,120} {5,120}	[{5, 81, 82, 83, 120}, {120, 5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	574	506	2130	1361	5729	5.2197335533398626
+{3,5,120}	[{120, 3, 5}]	{pos_NOUN,feats_Number=Sing,feats_Gender=Masc}	919	852	3587	1361	5729	5.168355574899856
+{5,80,81,82,83,120} {5,120}	[{5, 80, 81, 82, 83, 120}, {120, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	573	506	2129	1361	5729	5.124422446899414
+{20} {59,81,83}	[{20}, {81, 83, 59}]	{pos_ADP} {feats_Number=Plur,pos_DET,feats_PronType=Art}	583	516	2171	1361	5729	5.097132439265426
+{120} {19,20}	[{120}, {19, 20}]	{feats_Gender=Masc} {lemma_de,pos_ADP}	546	480	2020	1361	5729	5.073694848695229
+{5,80,81,82,83,120,916} {5,120}	[{5, 80, 81, 82, 83, 916, 120}, {120, 5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,wp_▁le} {feats_Number=Sing,feats_Gender=Masc}	539	475	2001	1361	5729	4.781720499593825
+{4,5,81,83} {3,4,5}	[{81, 83, 4, 5}, {3, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Sing}	511	448	1887	1361	5729	4.773138119168683
+{4,5,81,83}	[{81, 83, 4, 5}]	{feats_Gender=Fem,feats_Number=Sing,pos_DET,feats_PronType=Art}	545	481	2026	1361	5729	4.768505442147713
+{19,20,50,52} {5} {5}	[{50, 19, 20, 52}, {5}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Number=Sing}	597	533	2243	1361	5729	4.675735012799145
+{81} {4,59}	[{81}, {59, 4}]	{pos_DET} {feats_Gender=Fem,feats_Number=Plur}	536	473	1993	1361	5729	4.65506688017792
+{81} {3} {37}	[{81}, {3}, {37}]	{pos_DET} {pos_NOUN} {pos_PUNCT}	497	436	1836	1361	5729	4.593085121246611
+{59} {3,4,59}	[{59}, {3, 59, 4}]	{feats_Number=Plur} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	572	509	2143	1361	5729	4.588560097710506
+{59,81} {4,59}	[{81, 59}, {59, 4}]	{feats_Number=Plur,pos_DET} {feats_Gender=Fem,feats_Number=Plur}	535	473	1992	1361	5729	4.564553838698832
+{81} {3,4,59}	[{81}, {3, 59, 4}]	{pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	519	458	1928	1361	5729	4.523663686652201
+{19,20} {81,83} {120}	[{19, 20}, {81, 83}, {120}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Masc}	504	444	1868	1361	5729	4.48914829674127
+{59,81} {3,4,59}	[{81, 59}, {3, 59, 4}]	{feats_Number=Plur,pos_DET} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	518	458	1927	1361	5729	4.4340091391226375
+{59} {59} {20}	[{59}, {59}, {20}]	{feats_Number=Plur} {feats_Number=Plur} {pos_ADP}	517	457	1923	1361	5729	4.431583119133629
+{19,20,52} {5,81} {5}	[{19, 20, 52}, {81, 5}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	565	504	2121	1361	5729	4.395803237658387
+{19,20,50,52} {5,81} {5}	[{50, 19, 20, 52}, {81, 5}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	564	503	2118	1361	5729	4.3646287734413125
+{5,120}	[{120, 5}]	{feats_Number=Sing,feats_Gender=Masc}	963	904	3807	1361	5729	4.345248782793805
+{19,20,52} {5,81}	[{19, 20, 52}, {81, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET}	569	509	2141	1361	5729	4.29736229294346
+{19,20,50,52} {5,81}	[{50, 19, 20, 52}, {81, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET}	568	508	2138	1361	5729	4.266542283097051
+{19,20,52} {81} {120}	[{19, 20, 52}, {81}, {120}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {feats_Gender=Masc}	509	452	1902	1361	5729	4.100583924788944
+{20} {80,81,82,83} {3,59}	[{20}, {80, 81, 82, 83}, {3, 59}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	498	442	1859	1361	5729	4.047444640735649
+{19,20,50,52} {81} {120}	[{50, 19, 20, 52}, {81}, {120}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {feats_Gender=Masc}	508	452	1901	1361	5729	4.015380118138773
+{20} {59,80,81,82,83,266} {3,59}	[{20}, {266, 80, 81, 82, 83, 59}, {3, 59}]	{pos_ADP} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {pos_NOUN,feats_Number=Plur}	497	441	1857	1361	5729	3.9899307374520077
+{5,81,82,83,120}	[{5, 81, 82, 83, 120}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc}	587	529	2227	1361	5729	3.9814070870892815
+{5,80,81,82,83,120}	[{5, 80, 81, 82, 83, 120}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc}	586	529	2226	1361	5729	3.8997167645035358
+{916}	[{916}]	{wp_▁le}	555	500	2104	1361	5729	3.7467483760637847
+{5,916}	[{916, 5}]	{feats_Number=Sing,wp_▁le}	554	499	2101	1361	5729	3.718058505753985
+{120,916}	[{120, 916}]	{feats_Gender=Masc,wp_▁le}	554	499	2101	1361	5729	3.718058505753985
+{19,20,52} {5,80,81,82,83} {5}	[{19, 20, 52}, {5, 80, 81, 82, 83}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	542	487	2052	1361	5729	3.7078644202048556
+{19,20,50,52} {5,80,81,82,83} {5}	[{50, 19, 20, 52}, {5, 80, 81, 82, 83}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	541	487	2049	1361	5729	3.679326181425413
+{20} {5,81,82,83} {5,120}	[{20}, {81, 82, 83, 5}, {120, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Masc}	528	474	1996	1361	5729	3.668344960048431
+{20} {80,81,82,83} {59}	[{20}, {80, 81, 82, 83}, {59}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Plur}	527	473	1993	1361	5729	3.6399494217605226
+{5,120,916}	[{120, 916, 5}]	{feats_Number=Sing,feats_Gender=Masc,wp_▁le}	553	499	2100	1361	5729	3.638750112315576
+{19,20,52} {5,80,81,82,83}	[{19, 20, 52}, {5, 80, 81, 82, 83}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	546	492	2072	1361	5729	3.617712512339885
+{19,20,50,52} {5,80,81,82,83}	[{50, 19, 20, 52}, {5, 80, 81, 82, 83}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	545	491	2069	1361	5729	3.5895409710064374
+{20} {5,80,81,82,83} {5,120}	[{20}, {5, 80, 81, 82, 83}, {120, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Masc}	527	474	1995	1361	5729	3.5889357224705916
+{20} {59,80,81,82,83,266} {59}	[{20}, {266, 80, 81, 82, 83, 59}, {59}]	{pos_ADP} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les} {feats_Number=Plur}	526	473	1991	1361	5729	3.586209781545728
+{5,80,81,82,83,120,916}	[{5, 80, 81, 82, 83, 916, 120}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,wp_▁le}	552	498	2098	1361	5729	3.585385803997094
+{19,20,52,263} {80,81,82,83}	[{19, 20, 52, 263}, {80, 81, 82, 83}]	{lemma_de,pos_ADP,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	574	521	2193	1361	5729	3.4819120484398014
+{3,4,59}	[{3, 59, 4}]	{pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	714	660	2778	1361	5729	3.453293420939801
+{19,20,50,52,263} {80,81,82,83}	[{263, 50, 19, 20, 52}, {80, 81, 82, 83}]	{lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	573	521	2192	1361	5729	3.405931072316513
+{4,59}	[{59, 4}]	{feats_Gender=Fem,feats_Number=Plur}	722	669	2816	1361	5729	3.3525768777870897
+{20} {59,80,81,82,83,266}	[{20}, {266, 80, 81, 82, 83, 59}]	{pos_ADP} {feats_Number=Plur,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁les}	527	476	2005	1361	5729	3.3402019806549355
+{20} {5,81,82,83,120} {5,120}	[{20}, {5, 81, 82, 83, 120}, {120, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc} {feats_Number=Sing,feats_Gender=Masc}	475	427	1796	1361	5729	3.236643352925086
+{20} {5,80,81,82,83,120,916} {5,120}	[{20}, {5, 80, 81, 82, 83, 916, 120}, {120, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,wp_▁le} {feats_Number=Sing,feats_Gender=Masc}	474	426	1793	1361	5729	3.2098541753261265
+{81,83} {4,59}	[{81, 83}, {59, 4}]	{pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Plur}	489	441	1856	1361	5729	3.1706576209896555
+{20} {5,81,82,83,120}	[{20}, {5, 81, 82, 83, 120}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc}	486	438	1845	1361	5729	3.139556083105451
+{20} {5,80,81,82,83,120,916}	[{20}, {5, 80, 81, 82, 83, 916, 120}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Gender=Masc,wp_▁le}	485	437	1842	1361	5729	3.113239459129954
+{59,81,83} {4,59}	[{81, 83, 59}, {59, 4}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {feats_Gender=Fem,feats_Number=Plur}	488	441	1855	1361	5729	3.0963565855270776
+{81,83} {3,4,59}	[{81, 83}, {3, 59, 4}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	473	426	1795	1361	5729	3.0622582118710695
+{120} {37}	[{120}, {37}]	{feats_Gender=Masc} {pos_PUNCT}	681	631	2657	1361	5729	3.056091591038227
+{59,81,83} {3,4,59}	[{81, 83, 59}, {3, 59, 4}]	{feats_Number=Plur,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem,feats_Number=Plur}	472	426	1794	1361	5729	2.9888439579509907
+{4} {37}	[{4}, {37}]	{feats_Gender=Fem} {pos_PUNCT}	698	650	2737	1361	5729	2.8697668057801815
+{120} {19,20,52}	[{120}, {19, 20, 52}]	{feats_Gender=Masc} {lemma_de,pos_ADP,wp_▁de}	466	422	1776	1361	5729	2.8361658800742564
+{120} {19,20,50,52}	[{120}, {50, 19, 20, 52}]	{feats_Gender=Masc} {lemma_de,pos_ADP,feats_de,wp_▁de}	464	421	1772	1361	5729	2.7409244381203095
+{4,5} {37}	[{4, 5}, {37}]	{feats_Gender=Fem,feats_Number=Sing} {pos_PUNCT}	501	457	1925	1361	5729	2.7172244648623654
+{3,5} {37}	[{3, 5}, {37}]	{pos_NOUN,feats_Number=Sing} {pos_PUNCT}	594	555	2335	1361	5729	2.2177937550670332
+{59} {37}	[{59}, {37}]	{feats_Number=Plur} {pos_PUNCT}	688	649	2734	1361	5729	2.114010579497757
+{37}	[{37}]	{pos_PUNCT}	1198	1176	4948	1361	5729	1.7532584307948083
+{3} {37}	[{3}, {37}]	{pos_NOUN} {pos_PUNCT}	763	738	3106	1361	5729	1.2591869859118172
+{3,120} {37}	[{120, 3}, {37}]	{pos_NOUN,feats_Gender=Masc} {pos_PUNCT}	504	484	2037	1361	5729	1.0402041993609745
+{5,120} {37}	[{120, 5}, {37}]	{feats_Number=Sing,feats_Gender=Masc} {pos_PUNCT}	478	459	1934	1361	5729	0.9759323036893158
+{59,62}	[{59, 62}]	{feats_Number=Plur,wp_s}	520	504	2122	1361	5729	0.8354863481904633
+{5} {37}	[{5}, {37}]	{feats_Number=Sing} {pos_PUNCT}	740	724	3048	1361	5729	0.8133838669636795
+{5} {5} {37}	[{5}, {5}, {37}]	{feats_Number=Sing} {feats_Number=Sing} {pos_PUNCT}	555	543	2284	1361	5729	0.6850642214358347
+{3,4} {37}	[{3, 4}, {37}]	{pos_NOUN,feats_Gender=Fem} {pos_PUNCT}	484	484	2036	1361	5729	-0.2824218791988088
+{62}	[{62}]	{wp_s}	591	601	2531	1361	5729	-0.5674031552260137
+{37} {4}	[{37}, {4}]	{pos_PUNCT} {feats_Gender=Fem}	380	400	1683	1361	5729	-1.0284464262259367
+{37,106,306,307}	[{106, 307, 306, 37}]	{pos_PUNCT,wp_.,lemma_.,feats_.}	860	882	3714	1361	5729	-1.1059706396242914
+{106}	[{106}]	{wp_.}	901	928	3906	1361	5729	-1.4036212789737688
+{37} {5}	[{37}, {5}]	{pos_PUNCT} {feats_Number=Sing}	528	557	2345	1361	5729	-1.4513870721369293
+{37} {59}	[{37}, {59}]	{pos_PUNCT} {feats_Number=Plur}	368	411	1731	1361	5729	-2.7385483617603437
+{37} {3}	[{37}, {3}]	{pos_PUNCT} {pos_NOUN}	379	432	1818	1361	5729	-3.6669086029891194
+{37,440,441,443}	[{440, 441, 443, 37}]	{pos_PUNCT,lemma_,,feats_,,wp_,}	636	702	2957	1361	5729	-4.680963922586443
+{101}	[{101}]	{pos_PROPN}	464	609	2564	1361	5729	-19.361189492120477
+{31}	[{31}]	{pos_NUM}	439	593	2495	1361	5729	-21.797198014639367
