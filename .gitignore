@@ -2,6 +2,7 @@
 #*.tsv
 #*.conllu
 #*.pk
+dictionnaire_specifs.pk
 
 # Ignore common system files
 .DS_Store
