@@ -6,14 +6,10 @@ Created on Fri Feb 21 14:59:51 2025
 @author: hugodumoulin
 """
 
-import pickle as pk
 import formate_patterns
-import numpy as np
-from scipy.stats import hypergeom
 import pandas as pd
 import time
 import os
-import grew
 import stats_vocab
 import tools
 import re
@@ -184,7 +180,7 @@ def df_mouture_R_dict_synth(dict_synth, liste_motifs):
     for motif in liste_motifs:
         dict_R_out[motif]=[formate_patterns.from_str_to_list(motif),
                             formate_patterns.from_int_to_str(motif, lexic_int_str)]
-        for fichier in liste_fichiers:
+        for fichier in liste_fichier:
             dict_R_out[motif] += dict_synth[fichier][motif][2:]
     file_out = "./Patterns_results/Specifs/{}_R_df.pk".format(mins)
     tools.save_pickles_results(dict_R_out, file_out)
@@ -213,5 +209,5 @@ def main(liste_fichiers):
     tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs/dictionnaire_k.pk")
 
 
-liste_fichiers = ["MODYCO", "ISP"]
-main(liste_fichiers)
+# liste_fichiers = ["MODYCO", "ISP"]
+# main(liste_fichiers)
