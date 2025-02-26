@@ -216,7 +216,9 @@ if __name__ == "__main__":
 
 #ajout d'une étape qui lance le calcul de spécificité des supports des motifs dans une partition par rapport au reste ( script compute_specifs.py )
     print("4.4. Computing sequentiel specific patterns")
-    compute_specifs.main(types_textes)
+    shortcut_specifs = False
+    shortcut_association = True
+    compute_specifs.main(types_textes, shortcut_specifs, shortcut_association)
 
 
 #     #-------------------------------------------------------------------------------------------------------------------
