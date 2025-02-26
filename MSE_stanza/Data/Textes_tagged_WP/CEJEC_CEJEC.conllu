@@ -1,17 +1,22 @@
 1	Unité	unité	NOUN	Unité	Gender=Fem|Number=Sing	0	root	Unité	start_char=0|end_char=5|ner=O	wp_▁Unité
 2	de	de	ADP	de	de	3	case	de	start_char=6|end_char=8|ner=O	wp_▁de
 3	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	1	nmod	recherche	start_char=9|end_char=18|ner=O|SpacesAfter=\n\n	wp_▁recherche
+
 1	Dossier	dossier	NOUN	Dossier	Gender=Masc|Number=Sing	0	root	Dossier	start_char=20|end_char=27|ner=O	wp_▁Dossier
 2	d’	de	ADP	d’	d’	3	case	d’	start_char=28|end_char=30|ner=O|SpaceAfter=No	wp_▁d	wp_’
 3	autoévaluation	autoévaluation	NOUN	autoévaluation	Gender=Fem|Number=Sing	1	nmod	autoévaluation	start_char=30|end_char=44|ner=O|SpacesAfter=\n\n	wp_▁auto	wp_évaluation
+
 1	CAMPAGNE	campagne	NOUN	CAMPAGNE	Gender=Fem|Number=Sing	0	root	CAMPAGNE	start_char=46|end_char=54|ner=S-ORG	wp_▁C	wp_AMP	wp_AGNE
 2	D’	de	ADP	D’	D’	3	case	D’	start_char=55|end_char=57|ner=O|SpaceAfter=No	wp_▁D	wp_’
 3	EVALUATION	évaluation	NOUN	EVALUATION	Gender=Fem|Number=Sing	1	nmod	EVALUATION	start_char=57|end_char=67|ner=S-ORG	wp_EVA	wp_LU	wp_ATION
 4	2018-2019	2018-2019	NUM	2018-2019	NumType=Card	3	nmod	2018-2019	start_char=68|end_char=77|ner=O|SpacesAfter=\n\n	wp_▁2018-2019
+
 1	VAGUE	vague	NOUN	VAGUE	Gender=Fem|Number=Sing	0	root	VAGUE	start_char=79|end_char=84|ner=B-ORG	wp_VA	wp_GUE
 2	E	E	NOUN	E	E	1	nmod	E	start_char=85|end_char=86|ner=E-ORG|SpacesAfter=\n\n	wp_▁E
+
 1	Informations	information	NOUN	Informations	Gender=Fem|Number=Plur	0	root	Informations	start_char=88|end_char=100|ner=O	wp_▁Informations
 2	générales	général	ADJ	générales	Gender=Fem|Number=Plur	1	amod	générales	start_char=101|end_char=110|ner=O|SpacesAfter=\n\n	wp_▁générales
+
 1	Nom	nom	NOUN	Nom	Gender=Masc|Number=Sing	0	root	Nom	start_char=112|end_char=115|ner=O	wp_▁Nom
 2	de	de	ADP	de	de	4	case	de	start_char=116|end_char=118|ner=O	wp_▁de
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=119|end_char=121|ner=O|SpaceAfter=No	wp_▁l	wp_’
@@ -24,9 +29,11 @@
 10	Européennes	européen	ADJ	Européennes	Gender=Fem|Number=Plur	8	amod	Européennes	start_char=156|end_char=167|ner=I-ORG	wp_▁Européenne	wp_s
 11	et	et	CCONJ	et	et	12	cc	et	start_char=168|end_char=170|ner=I-ORG	wp_▁et
 12	Comparées	comparé	ADJ	Comparées	Gender=Fem|Number=Plur	10	conj	Comparées	start_char=171|end_char=180|ner=E-ORG|SpacesAfter=\t\t\t\t\n\n	wp_▁Compar	wp_ées
+
 1	Acronyme	acronyme	NOUN	Acronyme	Gender=Masc|Number=Sing	0	root	Acronyme	start_char=186|end_char=194|ner=S-MISC|SpacesAfter=\u00A0	wp_▁Ac	wp_ron	wp_yme
 2	:	:	PUNCT	:	:	3	punct	:	start_char=195|end_char=196|ner=O	wp_▁:
 3	CEJEC	CEJEC	PROPN	CEJEC	CEJEC	1	appos	CEJEC	start_char=197|end_char=202|ner=O|SpacesAfter=\t\t\t\t\n\n	wp_▁CE	wp_J	wp_EC
+
 1	Domaine	domaine	NOUN	Domaine	Gender=Masc|Number=Sing	0	root	Domaine	start_char=208|end_char=215|ner=O	wp_▁Domaine
 2	et	et	CCONJ	et	et	3	cc	et	start_char=216|end_char=218|ner=O	wp_▁et
 3	sous-domaine	sous-domaine	NOUN	sous-domaine	Gender=Masc|Number=Sing	1	conj	sous-domaine	start_char=219|end_char=231|ner=O	wp_▁sous	wp_-	wp_dom	wp_aine
@@ -39,6 +46,7 @@
 9	Hcéres	Hcéres	PROPN	Hcéres	Gender=Masc|Number=Sing	6	nmod	Hcéres	start_char=256|end_char=262|ner=S-LOC|SpacesAfter=\u00A0	wp_▁H	wp_cé	wp_res
 10	:	:	PUNCT	:	:	11	punct	:	start_char=263|end_char=264|ner=O	wp_▁:
 11	SHS2_1	SHS2_1	X	SHS2_1	ExtPos=PROPN	1	appos	SHS2_1	start_char=265|end_char=271|ner=O|SpacesAfter=\t\n\n	wp_▁S	wp_HS	wp_2	wp__	wp_1
+
 1	Directeur.rice	directeur.rice	NOUN	Directeur.rice	Gender=Fem|Number=Sing	0	root	Directeur.rice	start_char=274|end_char=288|ner=O|SpacesAfter=\u00A0	wp_▁Directeur	wp_.	wp_rice
 2	pour	pour	ADP	pour	pour	4	case	pour	start_char=289|end_char=293|ner=O	wp_▁pour
 3	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	le	start_char=294|end_char=296|ner=O	wp_▁le
@@ -51,6 +59,7 @@
 10	et	et	CCONJ	et	et	11	cc	et	start_char=333|end_char=335|ner=O	wp_▁et
 11	Sophie	Sophie	PROPN	Sophie	Sophie	8	conj	Sophie	start_char=336|end_char=342|ner=B-PER	wp_▁Sophie
 12	ROZEZ	ROZEZ	PROPN	ROZEZ	ROZEZ	11	flat:name	ROZEZ	start_char=343|end_char=348|ner=E-PER|SpacesAfter=\t\t\t\t\n\n	wp_▁R	wp_OZ	wp_EZ
+
 1	Directeur.rice	directeur.rice	NOUN	Directeur.rice	Gender=Fem|Number=Sing	0	root	Directeur.rice	start_char=354|end_char=368|ner=S-MISC	wp_▁Directeur	wp_.	wp_rice
 2	(	(	PUNCT	(	(	6	punct	(	start_char=369|end_char=370|ner=O|SpaceAfter=No	wp_▁(
 3	ou	ou	CCONJ	ou	ou	6	cc	ou	start_char=370|end_char=372|ner=O	wp_▁ou
@@ -72,10 +81,12 @@
 18	et	et	CCONJ	et	et	19	cc	et	start_char=438|end_char=440|ner=O	wp_▁et
 19	Sophie	Sophie	PROPN	Sophie	Sophie	16	conj	Sophie	start_char=441|end_char=447|ner=B-PER	wp_▁Sophie
 20	ROZEZ	ROZEZ	PROPN	ROZEZ	ROZEZ	19	flat:name	ROZEZ	start_char=448|end_char=453|ner=E-PER|SpacesAfter=\t\n\n	wp_▁R	wp_OZ	wp_EZ
+
 1	Type	type	NOUN	Type	Gender=Masc|Number=Sing	0	root	Type	start_char=456|end_char=460|ner=O	wp_▁Type
 2	de	de	ADP	de	de	3	case	de	start_char=461|end_char=463|ner=O	wp_▁de
 3	demande	demande	NOUN	demande	Gender=Fem|Number=Sing	1	nmod	demande	start_char=464|end_char=471|ner=O|SpacesAfter=\u00A0	wp_▁demande
 4	:	:	PUNCT	:	:	1	punct	:	start_char=472|end_char=473|ner=O|SpacesAfter=\n\n	wp_▁:
+
 1	Renouvellement	renouvellement	NOUN	Renouvellement	Gender=Masc|Number=Sing	0	root	Renouvellement	start_char=475|end_char=489|ner=O	wp_▁Re	wp_nouvelle	wp_ment
 2	à	à	ADP	à	à	4	case	à	start_char=490|end_char=491|ner=O	wp_▁à
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=492|end_char=494|ner=O|SpaceAfter=No	wp_▁l	wp_’
@@ -87,12 +98,14 @@
 9	ex	ex	X	ex	ex	8	appos	ex	start_char=537|end_char=539|ner=I-MISC	wp_▁ex
 10	nihilo	nihilo	X	nihilo	nihilo	9	flat:foreign	nihilo	start_char=540|end_char=546|ner=E-MISC|SpacesAfter=\s\s	wp_▁ni	wp_h	wp_ilo
 11	□	□	PUNCT	□	□	8	punct	□	start_char=548|end_char=549|ner=O|SpacesAfter=\n\n	wp_□
+
 1	Établissements	établissement	NOUN	Établissements	Gender=Masc|Number=Plur	0	root	Établissements	start_char=551|end_char=565|ner=O	wp_▁É	wp_tablissement	wp_s
 2	et	et	CCONJ	et	et	3	cc	et	start_char=566|end_char=568|ner=O	wp_▁et
 3	organismes	organisme	NOUN	organismes	Gender=Masc|Number=Plur	1	conj	organismes	start_char=569|end_char=579|ner=O	wp_▁organismes
 4	de	de	ADP	de	de	5	case	de	start_char=580|end_char=582|ner=O	wp_▁de
 5	rattachement	rattachement	NOUN	rattachement	Gender=Masc|Number=Sing	3	nmod	rattachement	start_char=583|end_char=595|ner=O|SpacesAfter=\u00A0	wp_▁r	wp_attachement
 6	:	:	PUNCT	:	:	1	punct	:	start_char=596|end_char=597|ner=O|SpacesAfter=\n\n	wp_▁:
+
 1	Liste	liste	NOUN	Liste	Gender=Fem|Number=Sing	0	root	Liste	start_char=599|end_char=604|ner=O	wp_▁Liste
 2-3	des	des	des	des	des	des	des	des	start_char=605|end_char=608|ner=O	wp_▁des
 2	de	de	ADP	de	de	4	case	de	de	wp_▁de
@@ -120,6 +133,7 @@
 24	tutelles	tutelle	NOUN	tutelles	Gender=Fem|Number=Plur	22	appos	tutelles	start_char=725|end_char=733|ner=O|SpaceAfter=No	wp_▁tutelle	wp_s
 25	)	)	PUNCT	)	)	24	punct	)	start_char=733|end_char=734|ner=O|SpaceAfter=No	wp_▁)
 26	.	.	PUNCT	.	.	1	punct	.	start_char=734|end_char=735|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Contrat	contrat	NOUN	Contrat	Gender=Masc|Number=Sing	0	root	Contrat	start_char=737|end_char=744|ner=O	wp_▁Contrat
 2	en	en	ADP	en	en	3	case	en	start_char=745|end_char=747|ner=O	wp_▁en
 3	cours	cours	NOUN	cours	Gender=Masc|Number=Sing	1	nmod	cours	start_char=748|end_char=753|ner=O|SpacesAfter=\u00A0	wp_▁cours
@@ -127,26 +141,32 @@
 5	Prochain	prochain	ADJ	Prochain	Gender=Masc|Number=Sing	6	amod	Prochain	start_char=757|end_char=765|ner=O	wp_▁Pro	wp_chain
 6	contrat	contrat	NOUN	contrat	Gender=Masc|Number=Sing	1	appos	contrat	start_char=766|end_char=773|ner=O|SpacesAfter=\u00A0	wp_▁contrat
 7	:	:	PUNCT	:	:	1	punct	:	start_char=774|end_char=775|ner=O|SpacesAfter=\n\n	wp_▁:
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=777|end_char=778|ner=O	wp_▁-
 2	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=779|end_char=789|ner=B-ORG	wp_▁Université
 3	Paris	Paris	PROPN	Paris	Gender=Masc|Number=Sing	2	nmod	Paris	start_char=790|end_char=795|ner=I-ORG	wp_▁Paris
 4	Nanterre	Nanterre	PROPN	Nanterre	Gender=Masc|Number=Sing	3	flat:name	Nanterre	start_char=796|end_char=804|ner=E-ORG|SpacesAfter=\t	wp_▁Nanterre
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=805|end_char=806|ner=O	wp_▁-
 2	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=807|end_char=817|ner=B-ORG	wp_▁Université
 3	Paris	Paris	PROPN	Paris	Gender=Masc|Number=Sing	2	nmod	Paris	start_char=818|end_char=823|ner=I-ORG	wp_▁Paris
 4	Nanterre	Nanterre	PROPN	Nanterre	Gender=Masc|Number=Sing	3	flat:name	Nanterre	start_char=824|end_char=832|ner=E-ORG|SpacesAfter=\n\n	wp_▁Nanterre
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=834|end_char=835|ner=O	wp_▁-
 2	…	…	PUNCT	…	…	1	punct	…	start_char=836|end_char=837|ner=O|SpacesAfter=\t	wp_▁...
 3	-	-	PUNCT	-	-	0	root	-	start_char=838|end_char=839|ner=O	wp_▁-
 4	…	…	PUNCT	…	…	1	punct	…	start_char=840|end_char=841|ner=O|SpacesAfter=\n\n	wp_▁...
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=843|end_char=844|ner=O	wp_▁-
 2	…	…	PUNCT	…	…	1	punct	…	start_char=845|end_char=846|ner=O|SpacesAfter=\t	wp_▁...
 3	-	-	PUNCT	-	-	0	root	-	start_char=847|end_char=848|ner=O	wp_▁-
 4	…	…	PUNCT	…	…	1	punct	…	start_char=849|end_char=850|ner=O|SpacesAfter=\n\n	wp_▁...
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=852|end_char=853|ner=O	wp_▁-
 2	…	…	PUNCT	…	…	1	punct	…	start_char=854|end_char=855|ner=O|SpacesAfter=\t	wp_▁...
 3	-	-	PUNCT	-	-	0	root	-	start_char=856|end_char=857|ner=O	wp_▁-
 4	…	…	PUNCT	…	…	1	punct	…	start_char=858|end_char=859|ner=O|SpacesAfter=\n\n	wp_▁...
+
 1	-Choix	-choix	NOUN	-Choix	Gender=Masc|Number=Sing	0	root	-Choix	start_char=861|end_char=867|ner=O	wp_▁-	wp_C	wp_ho	wp_ix
 2	de	de	ADP	de	de	4	case	de	start_char=868|end_char=870|ner=O	wp_▁de
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=871|end_char=873|ner=O|SpaceAfter=No	wp_▁l	wp_’
@@ -167,18 +187,24 @@
 18	internes	interne	ADJ	internes	Gender=Fem|Number=Plur	17	amod	internes	start_char=958|end_char=966|ner=O|SpaceAfter=No	wp_▁internes
 19	)	)	PUNCT	)	)	17	punct	)	start_char=966|end_char=967|ner=O|SpacesAfter=\u00A0	wp_▁)
 20	:	:	PUNCT	:	:	1	punct	:	start_char=968|end_char=969|ner=O|SpacesAfter=\n\n\t\t\t	wp_▁:
+
 1	Non	non	ADV	Non	Polarity=Neg	2	advmod	Non	start_char=974|end_char=977|ner=O|SpacesAfter=\s\s\s	wp_▁Non
 2	x	x	X	x	x	0	root	x	start_char=980|end_char=981|ner=O|SpacesAfter=\n\n	wp_▁x
+
 1	DOSSIER	dossier	NOUN	DOSSIER	Gender=Masc|Number=Sing	0	root	DOSSIER	start_char=983|end_char=990|ner=S-MISC	wp_▁D	wp_OSS	wp_IER
 2	D’	de	ADP	D’	D’	3	case	D’	start_char=991|end_char=993|ner=O|SpaceAfter=No	wp_▁D	wp_’
 3	AUTOÉVALUATION	autoévaluation	NOUN	AUTOÉVALUATION	Gender=Fem|Number=Sing	1	nmod	AUTOÉVALUATION	start_char=993|end_char=1007|ner=S-ORG|SpacesAfter=\n\n	wp_▁AUTO	wp_É	wp_VAL	wp_U	wp_ATION
+
 1	1-	1-	NOUN	1-	1-	0	root	1-	start_char=1009|end_char=1011|ner=O|SpacesAfter=\t\s	wp_▁1	wp_-
 2	Présentation	présentation	NOUN	Présentation	Gender=Fem|Number=Sing	1	nmod	Présentation	start_char=1013|end_char=1025|ner=O	wp_▁Présentation
 3	de	de	ADP	de	de	5	case	de	start_char=1026|end_char=1028|ner=O	wp_▁de
 4	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	5	det	l’	start_char=1029|end_char=1031|ner=O|SpaceAfter=No	wp_▁l	wp_’
 5	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	2	nmod	unité	start_char=1031|end_char=1036|ner=O|SpacesAfter=\n\n	wp_▁unité
+
 1	Introduction	Introduction	NOUN	Introduction	Gender=Fem|Number=Sing	0	root	Introduction	start_char=1038|end_char=1050|ner=O|SpacesAfter=\n\n	wp_▁Introduction
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=1052|end_char=1053|ner=O|SpacesAfter=\t	wp_▁•
+
 1	Créé	créer	VERB	Créé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	21	advcl	Créé	start_char=1054|end_char=1058|ner=O	wp_▁Créé
 2	en	en	ADP	en	en	3	case	en	start_char=1059|end_char=1061|ner=O	wp_▁en
 3	1990	1990	NUM	1990	Number=Plur	1	obl:mod	1990	start_char=1062|end_char=1066|ner=O|SpaceAfter=No	wp_▁1990
@@ -247,6 +273,7 @@
 65	27	27	NUM	27	Number=Plur	66	nummod	27	start_char=1389|end_char=1391|ner=O	wp_▁27
 66	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	53	conj	doctorants	start_char=1392|end_char=1402|ner=O|SpaceAfter=No	wp_▁doc	wp_tor	wp_ants
 67	.	.	PUNCT	.	.	21	punct	.	start_char=1402|end_char=1403|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	Son	son	DET	Son	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	2	det	Son	start_char=1406|end_char=1409|ner=O|SpacesAfter=\s\s	wp_▁Son
 2	activité	activité	NOUN	activité	Gender=Fem|Number=Sing	6	nsubj:pass	activité	start_char=1411|end_char=1419|ner=O|SpacesAfter=\s\s	wp_▁activité
 3	de	de	ADP	de	de	4	case	de	start_char=1421|end_char=1423|ner=O|SpacesAfter=\s\s	wp_▁de
@@ -308,7 +335,9 @@
 56	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	57	aux:pass	est	start_char=1716|end_char=1719|ner=O	wp_▁est
 57	adossé	adosser	VERB	adossé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	44	acl:relcl	adossé	start_char=1720|end_char=1726|ner=O|SpaceAfter=No	wp_▁adossé
 58	.	.	PUNCT	.	.	6	punct	.	start_char=1726|end_char=1727|ner=O|SpacesAfter=\n\n	wp_.
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=1729|end_char=1730|ner=O|SpacesAfter=\t	wp_▁•
+
 1	Dans	dans	ADP	Dans	Dans	3	case	Dans	start_char=1731|end_char=1735|ner=O	wp_▁Dans
 2	un	un	DET	un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	un	start_char=1736|end_char=1738|ner=O	wp_▁un
 3	contexte	contexte	NOUN	contexte	Gender=Masc|Number=Sing	15	obl:mod	contexte	start_char=1739|end_char=1747|ner=O	wp_▁contexte
@@ -370,6 +399,7 @@
 58	et	et	CCONJ	et	et	59	cc	et	start_char=2141|end_char=2143|ner=O	wp_▁et
 59	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	55	conj	européenne	start_char=2144|end_char=2154|ner=O|SpaceAfter=No	wp_▁européenne
 60	.	.	PUNCT	.	.	15	punct	.	start_char=2154|end_char=2155|ner=O	wp_.
+
 1	Plus	plus	ADV	Plus	Plus	2	advmod	Plus	start_char=2156|end_char=2160|ner=O	wp_▁Plus
 2	précisément	précisément	ADV	précisément	précisément	10	advmod	précisément	start_char=2161|end_char=2172|ner=O|SpaceAfter=No	wp_▁précisément
 3	,	,	PUNCT	,	,	2	punct	,	start_char=2172|end_char=2173|ner=O	wp_,
@@ -386,6 +416,7 @@
 13	double	double	ADJ	double	Gender=Fem|Number=Sing	14	amod	double	start_char=2211|end_char=2217|ner=O	wp_▁double
 14	perspective	perspective	NOUN	perspective	Gender=Fem|Number=Sing	10	obl:arg	perspective	start_char=2218|end_char=2229|ner=O|SpaceAfter=No	wp_▁perspective
 15	.	.	PUNCT	.	.	10	punct	.	start_char=2229|end_char=2230|ner=O	wp_.
+
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	Elle	start_char=2231|end_char=2235|ner=O|SpacesAfter=\s\s	wp_▁Elle
 2	s’	soi	PRON	s’	Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	s’	start_char=2237|end_char=2239|ner=O|SpaceAfter=No	wp_▁s	wp_’
 3	oriente	orienter	VERB	oriente	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	oriente	start_char=2239|end_char=2246|ner=O|SpacesAfter=\s\s	wp_oriente
@@ -398,6 +429,7 @@
 10	droit	droit	NOUN	droit	Gender=Masc|Number=Sing	8	nmod	droit	start_char=2282|end_char=2287|ner=O|SpacesAfter=\s\s	wp_▁droit
 11	européen	européen	ADJ	européen	Gender=Masc|Number=Sing	10	amod	européen	start_char=2289|end_char=2297|ner=O|SpaceAfter=No	wp_▁européen
 12	.	.	PUNCT	.	.	3	punct	.	start_char=2297|end_char=2298|ner=O|SpacesAfter=\s\s	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=2300|end_char=2305|ner=O|SpacesAfter=\s\s	wp_▁Cette
 2	ouverture	ouverture	NOUN	ouverture	Gender=Fem|Number=Sing	8	nsubj:pass	ouverture	start_char=2307|end_char=2316|ner=O|SpacesAfter=\s\s	wp_▁ouverture
 3	vers	vers	ADP	vers	vers	5	case	vers	start_char=2318|end_char=2322|ner=O|SpacesAfter=\s\s	wp_▁vers
@@ -414,6 +446,7 @@
 14	grande	grand	ADJ	grande	Gender=Fem|Number=Sing	15	amod	grande	start_char=2372|end_char=2378|ner=O	wp_▁grande
 15	Europe	Europe	PROPN	Europe	Gender=Fem|Number=Sing	11	nmod	Europe	start_char=2379|end_char=2385|ner=S-LOC|SpaceAfter=No	wp_▁Europe
 16	.	.	PUNCT	.	.	8	punct	.	start_char=2385|end_char=2386|ner=O	wp_.
+
 1	Sont	être	AUX	Sont	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux:pass	Sont	start_char=2387|end_char=2391|ner=O	wp_▁Sont
 2	envisagées	envisager	VERB	envisagées	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	envisagées	start_char=2392|end_char=2402|ner=O	wp_▁envisagée	wp_s
 3	tant	tant	ADV	tant	tant	2	advmod	tant	start_char=2403|end_char=2407|ner=O	wp_▁tant
@@ -448,6 +481,7 @@
 31	deux	deux	NUM	deux	Number=Plur	32	nummod	deux	start_char=2545|end_char=2549|ner=O	wp_▁deux
 32	institutions	institution	NOUN	institutions	Gender=Fem|Number=Plur	28	nmod	institutions	start_char=2550|end_char=2562|ner=O|SpaceAfter=No	wp_▁institutions
 33	.	.	PUNCT	.	.	2	punct	.	start_char=2562|end_char=2563|ner=O|SpacesAfter=\n\n	wp_.
+
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=2565|end_char=2567|ner=O|SpaceAfter=No	wp_▁L	wp_’
 2	action	action	NOUN	action	Gender=Fem|Number=Sing	7	nsubj:pass	action	start_char=2567|end_char=2573|ner=O	wp_▁action
 3	de	de	ADP	de	de	5	case	de	start_char=2574|end_char=2576|ner=O	wp_▁de
@@ -461,6 +495,7 @@
 11	perspective	perspective	NOUN	perspective	Gender=Fem|Number=Sing	7	obl:arg	perspective	start_char=2612|end_char=2623|ner=O	wp_▁perspective
 12	comparatiste	comparatiste	ADJ	comparatiste	Gender=Fem|Number=Sing	11	amod	comparatiste	start_char=2624|end_char=2636|ner=O|SpaceAfter=No	wp_▁compar	wp_a	wp_tiste
 13	.	.	PUNCT	.	.	7	punct	.	start_char=2636|end_char=2637|ner=O|SpacesAfter=\s\s	wp_.
+
 1	Entendue	entendre	VERB	Entendue	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	10	advcl	Entendue	start_char=2639|end_char=2647|ner=O	wp_▁En	wp_tendu	wp_e
 2-3	au	au	au	au	au	au	au	au	start_char=2648|end_char=2650|ner=O	wp_▁au
 2	à	à	ADP	à	à	4	case	à	à	wp_▁à
@@ -488,6 +523,7 @@
 23	comparaison	comparaison	NOUN	comparaison	Gender=Fem|Number=Sing	11	obj	comparaison	start_char=2757|end_char=2768|ner=O	wp_▁comparaison
 24	transdisciplinaire	transdisciplinaire	ADJ	transdisciplinaire	Gender=Fem|Number=Sing	23	amod	transdisciplinaire	start_char=2769|end_char=2787|ner=O|SpaceAfter=No	wp_▁trans	wp_disciplinaire
 25	.	.	PUNCT	.	.	10	punct	.	start_char=2787|end_char=2788|ner=O|SpacesAfter=\s\s	wp_.
+
 1	Sont	être	AUX	Sont	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	aux:pass	Sont	start_char=2790|end_char=2794|ner=O	wp_▁Sont
 2	ainsi	ainsi	ADV	ainsi	ainsi	3	advmod	ainsi	start_char=2795|end_char=2800|ner=O	wp_▁ainsi
 3	étudiées	étudier	VERB	étudiées	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	étudiées	start_char=2801|end_char=2809|ner=O|SpacesAfter=\s\s	wp_▁étudiée	wp_s
@@ -509,6 +545,7 @@
 19	Common	Common	X	Common	Foreign=Yes	17	obl:agent	Common	start_char=2928|end_char=2934|ner=B-MISC|SpacesAfter=\s\s	wp_▁Comm	wp_on
 20	law	law	X	law	Foreign=Yes	19	flat:foreign	law	start_char=2936|end_char=2939|ner=E-MISC|SpaceAfter=No	wp_▁la	wp_w
 21	.	.	PUNCT	.	.	3	punct	.	start_char=2939|end_char=2940|ner=O|SpacesAfter=\s\s	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=2942|end_char=2944|ner=O	wp_▁La
 2	comparaison	comparaison	NOUN	comparaison	Gender=Fem|Number=Sing	4	nsubj	comparaison	start_char=2945|end_char=2956|ner=O	wp_▁comparaison
 3	transdisciplinaire	transdisciplinaire	ADJ	transdisciplinaire	Gender=Fem|Number=Sing	2	amod	transdisciplinaire	start_char=2957|end_char=2975|ner=O	wp_▁trans	wp_disciplinaire
@@ -535,7 +572,9 @@
 23	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	le	le	wp_▁le
 24	droit	droit	NOUN	droit	Gender=Masc|Number=Sing	21	nmod	droit	start_char=3089|end_char=3094|ner=O|SpaceAfter=No	wp_▁droit
 25	.	.	PUNCT	.	.	4	punct	.	start_char=3094|end_char=3095|ner=O|SpacesAfter=\s\s\n\n	wp_.
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=3099|end_char=3100|ner=O|SpacesAfter=\t	wp_▁•
+
 1	Dans	dans	ADP	Dans	Dans	3	case	Dans	start_char=3101|end_char=3105|ner=O	wp_▁Dans
 2	son	son	DET	son	Number=Sing|Poss=Yes	3	det	son	start_char=3106|end_char=3109|ner=O	wp_▁son
 3	fonctionnement	fonctionnement	NOUN	fonctionnement	Gender=Masc|Number=Sing	8	obl:mod	fonctionnement	start_char=3110|end_char=3124|ner=O|SpaceAfter=No	wp_▁fonctionnement
@@ -558,6 +597,7 @@
 20	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	la	start_char=3200|end_char=3202|ner=I-ORG	wp_▁la
 21	Direction	direction	NOUN	Direction	Gender=Fem|Number=Sing	14	conj	Direction	start_char=3203|end_char=3212|ner=E-ORG|SpaceAfter=No	wp_▁Direction
 22	.	.	PUNCT	.	.	8	punct	.	start_char=3212|end_char=3213|ner=O	wp_.
+
 1	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	2	det	L'	start_char=3214|end_char=3216|ner=O|SpaceAfter=No	wp_▁L	wp_'
 2	Assemblée	assemblée	NOUN	Assemblée	Gender=Fem|Number=Sing	4	nsubj	Assemblée	start_char=3216|end_char=3225|ner=B-ORG	wp_▁Assemblée
 3	générale	général	ADJ	générale	Gender=Fem|Number=Sing	2	amod	générale	start_char=3226|end_char=3234|ner=E-ORG	wp_▁générale
@@ -577,6 +617,7 @@
 17	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	12	conj	doctorants	start_char=3317|end_char=3327|ner=O|SpaceAfter=No	wp_▁doc	wp_tor	wp_ants
 18	)	)	PUNCT	)	)	12	punct	)	start_char=3327|end_char=3328|ner=O|SpaceAfter=No	wp_▁)
 19	.	.	PUNCT	.	.	4	punct	.	start_char=3328|end_char=3329|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=3330|end_char=3335|ner=O	wp_▁Cette
 2	assemblée	assemblée	NOUN	assemblée	Gender=Fem|Number=Sing	4	nsubj	assemblée	start_char=3336|end_char=3345|ner=O	wp_▁assemblée
 3	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	4	expl:pv	se	start_char=3346|end_char=3348|ner=O	wp_▁se
@@ -601,6 +642,7 @@
 20	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	le	le	wp_▁le
 21	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	18	nmod	CEJEC	start_char=3424|end_char=3429|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 22	.	.	PUNCT	.	.	4	punct	.	start_char=3429|end_char=3430|ner=O	wp_.
+
 1	Quant	quant	ADV	Quant	ExtPos=ADP	4	case	Quant	start_char=3431|end_char=3436|ner=O	wp_▁Quant
 2-3	au	au	au	au	au	au	au	au	start_char=3437|end_char=3439|ner=O	wp_▁au
 2	à	à	ADP	à	à	1	fixed	à	à	wp_▁à
@@ -625,6 +667,7 @@
 21	des	un	DET	des	Definite=Ind|Number=Plur|PronType=Art	22	det	des	start_char=3554|end_char=3557|ner=O	wp_▁des
 22	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	19	appos	doctorants	start_char=3558|end_char=3568|ner=O|SpaceAfter=No	wp_▁doc	wp_tor	wp_ants
 23	.	.	PUNCT	.	.	7	punct	.	start_char=3568|end_char=3569|ner=O	wp_.
+
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	Il	start_char=3570|end_char=3572|ner=O	wp_▁Il
 2	tient	tenir	VERB	tient	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	tient	start_char=3573|end_char=3578|ner=O	wp_▁tient
 3-4	au	au	au	au	au	au	au	au	start_char=3579|end_char=3581|ner=O	wp_▁au
@@ -662,6 +705,7 @@
 33	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	34	det	la	start_char=3749|end_char=3751|ner=O	wp_▁la
 34	direction	direction	NOUN	direction	Gender=Fem|Number=Sing	32	obj	direction	start_char=3752|end_char=3761|ner=O|SpaceAfter=No	wp_▁direction
 35	.	.	PUNCT	.	.	2	punct	.	start_char=3761|end_char=3762|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=3763|end_char=3768|ner=O	wp_▁Cette
 2	direction	direction	NOUN	direction	Gender=Fem|Number=Sing	4	nsubj	direction	start_char=3769|end_char=3778|ner=O	wp_▁direction
 3	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	4	expl:pv	se	start_char=3779|end_char=3781|ner=O	wp_▁se
@@ -703,6 +747,7 @@
 38	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	39	det	la	start_char=3980|end_char=3982|ner=I-ORG	wp_▁la
 39	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	36	nmod	recherche	start_char=3983|end_char=3992|ner=E-ORG|SpaceAfter=No	wp_▁recherche
 40	.	.	PUNCT	.	.	4	punct	.	start_char=3992|end_char=3993|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=3994|end_char=3996|ner=O	wp_▁La
 2	direction	direction	NOUN	direction	Gender=Fem|Number=Sing	5	nsubj	direction	start_char=3997|end_char=4006|ner=O	wp_▁direction
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	est	start_char=4007|end_char=4010|ner=O	wp_▁est
@@ -724,6 +769,7 @@
 19	gestion	gestion	NOUN	gestion	Gender=Fem|Number=Sing	15	obj	gestion	start_char=4093|end_char=4100|ner=O	wp_▁gestion
 20	quotidienne	quotidien	ADJ	quotidienne	Gender=Fem|Number=Sing	19	amod	quotidienne	start_char=4101|end_char=4112|ner=O|SpaceAfter=No	wp_▁quotidienne
 21	.	.	PUNCT	.	.	5	punct	.	start_char=4112|end_char=4113|ner=O	wp_.
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=4114|end_char=4116|ner=O	wp_▁Au
 1	à	à	ADP	à	à	3	case	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le	wp_▁le
@@ -745,6 +791,7 @@
 18	renouvellement	renouvellement	NOUN	renouvellement	Gender=Masc|Number=Sing	15	nmod	renouvellement	start_char=4184|end_char=4198|ner=O	wp_▁renouvellement
 19	significatif	significatif	ADJ	significatif	Gender=Masc|Number=Sing	18	amod	significatif	start_char=4199|end_char=4211|ner=O|SpaceAfter=No	wp_▁significatif
 20	.	.	PUNCT	.	.	13	punct	.	start_char=4211|end_char=4212|ner=O	wp_.
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=4213|end_char=4215|ner=O	wp_▁Au
 1	à	à	ADP	à	à	3	case	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le	wp_▁le
@@ -789,6 +836,7 @@
 40	Augustin	Augustin	PROPN	Augustin	Augustin	39	appos	Augustin	start_char=4411|end_char=4419|ner=I-PER	wp_▁Augustin
 41	Boujeka	Boujeka	PROPN	Boujeka	Boujeka	40	flat:name	Boujeka	start_char=4420|end_char=4427|ner=E-PER|SpaceAfter=No	wp_▁Bou	wp_je	wp_ka
 42	.	.	PUNCT	.	.	28	punct	.	start_char=4427|end_char=4428|ner=O	wp_.
+
 1	En	en	ADP	En	En	2	case	En	start_char=4429|end_char=4431|ner=O	wp_▁En
 2	septembre	septembre	NOUN	septembre	Gender=Masc|Number=Sing	17	obl:mod	septembre	start_char=4432|end_char=4441|ner=O	wp_▁septembre
 3	2016	2016	NUM	2016	NumType=Card	2	nmod	2016	start_char=4442|end_char=4446|ner=O|SpaceAfter=No	wp_▁2016
@@ -809,6 +857,7 @@
 18	en	en	ADP	en	en	19	case	en	start_char=4527|end_char=4529|ner=O	wp_▁en
 19	fonction	fonction	NOUN	fonction	Gender=Fem|Number=Sing	17	obl:arg	fonction	start_char=4530|end_char=4538|ner=O|SpaceAfter=No	wp_▁fonction
 20	.	.	PUNCT	.	.	17	punct	.	start_char=4538|end_char=4539|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=4540|end_char=4542|ner=O	wp_▁La
 2	politique	politique	NOUN	politique	Gender=Fem|Number=Sing	16	nsubj	politique	start_char=4543|end_char=4552|ner=O	wp_▁politique
 3	scientifique	scientifique	ADJ	scientifique	Gender=Fem|Number=Sing	2	amod	scientifique	start_char=4553|end_char=4565|ner=O	wp_▁scientifique
@@ -837,6 +886,7 @@
 26	précédente	précédent	ADJ	précédente	Gender=Fem|Number=Sing	27	amod	précédente	start_char=4668|end_char=4678|ner=O	wp_▁précédente
 27	évaluation	évaluation	NOUN	évaluation	Gender=Fem|Number=Sing	23	obl:arg	évaluation	start_char=4679|end_char=4689|ner=O|SpaceAfter=No	wp_▁évaluation
 28	.	.	PUNCT	.	.	16	punct	.	start_char=4689|end_char=4690|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Tableau	tableau	NOUN	Tableau	Gender=Masc|Number=Sing	0	root	Tableau	start_char=4692|end_char=4699|ner=O	wp_▁Tableau
 2-3	des	des	des	des	des	des	des	des	start_char=4700|end_char=4703|ner=O	wp_▁des
 2	de	de	ADP	de	de	4	case	de	de	wp_▁de
@@ -847,7 +897,9 @@
 7	de	de	ADP	de	de	9	case	de	start_char=4724|end_char=4726|ner=O	wp_▁de
 8	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	9	det	l’	start_char=4727|end_char=4729|ner=O|SpaceAfter=No	wp_▁l	wp_’
 9	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	6	nmod	unité	start_char=4729|end_char=4734|ner=O|SpacesAfter=\n\n	wp_▁unité
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=4736|end_char=4737|ner=O|SpacesAfter=\t	wp_▁•
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=4738|end_char=4740|ner=O	wp_▁Au
 1	à	à	ADP	à	à	3	case	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le	wp_▁le
@@ -871,6 +923,7 @@
 19	relative	relatif	ADJ	relative	Gender=Fem|Number=Sing	20	amod	relative	start_char=4820|end_char=4828|ner=O	wp_▁relative
 20	stabilité	stabilité	NOUN	stabilité	Gender=Fem|Number=Sing	16	obl:arg	stabilité	start_char=4829|end_char=4838|ner=O|SpaceAfter=No	wp_▁stabilité
 21	.	.	PUNCT	.	.	16	punct	.	start_char=4838|end_char=4839|ner=O	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=4840|end_char=4842|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	3	nsubj	CEJEC	start_char=4843|end_char=4848|ner=S-MISC	wp_▁CE	wp_J	wp_EC
 3	conserve	conserver	VERB	conserve	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	conserve	start_char=4849|end_char=4857|ner=O	wp_▁conserve
@@ -891,6 +944,7 @@
 17	précédente	précédent	ADJ	précédente	Gender=Fem|Number=Sing	18	amod	précédente	start_char=4924|end_char=4934|ner=O	wp_▁précédente
 18	évaluation	évaluation	NOUN	évaluation	Gender=Fem|Number=Sing	14	nmod	évaluation	start_char=4935|end_char=4945|ner=O|SpaceAfter=No	wp_▁évaluation
 19	.	.	PUNCT	.	.	3	punct	.	start_char=4945|end_char=4946|ner=O	wp_.
+
 1	Ainsi	ainsi	ADV	Ainsi	Ainsi	8	advmod	Ainsi	start_char=4947|end_char=4952|ner=O|SpaceAfter=No	wp_▁Ainsi
 2	,	,	PUNCT	,	,	1	punct	,	start_char=4952|end_char=4953|ner=O	wp_,
 3	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	le	start_char=4954|end_char=4956|ner=O	wp_▁le
@@ -914,6 +968,7 @@
 21	de	de	ADP	de	de	22	case	de	start_char=5075|end_char=5077|ner=O	wp_▁de
 22	conférences	conférence	NOUN	conférences	Gender=Fem|Number=Plur	20	nmod	conférences	start_char=5078|end_char=5089|ner=O|SpaceAfter=No	wp_▁conférences
 23	.	.	PUNCT	.	.	8	punct	.	start_char=5089|end_char=5090|ner=O	wp_.
+
 1	S'	soi	PRON	S'	Person=3|PronType=Prs|Reflex=Yes	2	expl:pv	S'	start_char=5091|end_char=5093|ner=O|SpaceAfter=No	wp_▁S	wp_'
 2	agissant	agir	VERB	agissant	Tense=Pres|VerbForm=Part	10	advcl	agissant	start_char=5093|end_char=5101|ner=O	wp_▁agissant
 3-4	des	des	des	des	des	des	des	des	start_char=5102|end_char=5105|ner=O	wp_▁des
@@ -955,6 +1010,7 @@
 38	CEDIN	CEDIN	PROPN	CEDIN	CEDIN	34	appos	CEDIN	start_char=5286|end_char=5291|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_DIN
 39	)	)	PUNCT	)	)	38	punct	)	start_char=5291|end_char=5292|ner=O|SpaceAfter=No	wp_▁)
 40	.	.	PUNCT	.	.	10	punct	.	start_char=5292|end_char=5293|ner=O	wp_.
+
 1	En	en	ADP	En	ExtPos=ADV	19	advmod	En	start_char=5294|end_char=5296|ner=O	wp_▁En
 2	outre	outre	ADV	outre	outre	1	fixed	outre	start_char=5297|end_char=5302|ner=O|SpaceAfter=No	wp_▁outre
 3	,	,	PUNCT	,	,	1	punct	,	start_char=5302|end_char=5303|ner=O	wp_,
@@ -980,6 +1036,7 @@
 23	septembre	septembre	NOUN	septembre	Gender=Masc|Number=Sing	19	obl:mod	septembre	start_char=5415|end_char=5424|ner=O	wp_▁septembre
 24	2016	2016	NUM	2016	NumType=Card	23	nmod	2016	start_char=5425|end_char=5429|ner=O|SpaceAfter=No	wp_▁2016
 25	.	.	PUNCT	.	.	19	punct	.	start_char=5429|end_char=5430|ner=O	wp_.
+
 1	Pour	pour	ADP	Pour	ExtPos=ADV	7	advmod	Pour	start_char=5431|end_char=5435|ner=O	wp_▁Pour
 2	autant	autant	ADV	autant	autant	1	fixed	autant	start_char=5436|end_char=5442|ner=O|SpaceAfter=No	wp_▁autant
 3	,	,	PUNCT	,	,	1	punct	,	start_char=5442|end_char=5443|ner=O	wp_,
@@ -999,6 +1056,7 @@
 16	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	le	le	wp_▁le
 17	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	14	nmod	CEJEC	start_char=5521|end_char=5526|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 18	.	.	PUNCT	.	.	7	punct	.	start_char=5526|end_char=5527|ner=O	wp_.
+
 1	De	de	ADP	De	ExtPos=ADV	2	case	De	start_char=5528|end_char=5530|ner=O	wp_▁De
 2	surcroît	surcroît	NOUN	surcroît	Gender=Masc|Number=Sing	13	obl:mod	surcroît	start_char=5531|end_char=5539|ner=O|SpaceAfter=No	wp_▁surcroît
 3	,	,	PUNCT	,	,	2	punct	,	start_char=5539|end_char=5540|ner=O	wp_,
@@ -1048,6 +1106,7 @@
 45	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	46	det	les	les	wp_▁les
 46	Antilles	Antilles	PROPN	Antilles	Number=Plur	43	nmod	Antilles	start_char=5755|end_char=5763|ner=E-ORG|SpaceAfter=No	wp_▁Antilles
 47	.	.	PUNCT	.	.	13	punct	.	start_char=5763|end_char=5764|ner=O	wp_.
+
 1	Enfin	enfin	ADV	Enfin	Enfin	12	advmod	Enfin	start_char=5765|end_char=5770|ner=O|SpaceAfter=No	wp_▁Enfin
 2	,	,	PUNCT	,	,	1	punct	,	start_char=5770|end_char=5771|ner=O	wp_,
 3	Monsieur	monsieur	NOUN	Monsieur	Gender=Masc|Number=Sing	12	nsubj	Monsieur	start_char=5772|end_char=5780|ner=B-PER	wp_▁Monsieur
@@ -1102,6 +1161,7 @@
 51	septembre	septembre	NOUN	septembre	Gender=Masc|Number=Sing	40	obl:mod	septembre	start_char=6040|end_char=6049|ner=O	wp_▁septembre
 52	2017	2017	NUM	2017	Number=Plur	51	nmod	2017	start_char=6050|end_char=6054|ner=O|SpaceAfter=No	wp_▁2017
 53	.	.	PUNCT	.	.	12	punct	.	start_char=6054|end_char=6055|ner=O	wp_.
+
 1	Concernant	concernant	ADP	Concernant	Concernant	3	case	Concernant	start_char=6056|end_char=6066|ner=O	wp_▁Concernant
 2	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	3	det	les	start_char=6067|end_char=6070|ner=O	wp_▁les
 3	arrivés	arriver	NOUN	arrivés	Gender=Masc|Number=Plur	11	obl:mod	arrivés	start_char=6071|end_char=6078|ner=O|SpaceAfter=No	wp_▁arrivés
@@ -1153,6 +1213,7 @@
 48	d'	de	ADP	d'	d'	49	case	d'	start_char=6307|end_char=6309|ner=I-ORG|SpaceAfter=No	wp_▁d	wp_'
 49	Amiens	Amiens	PROPN	Amiens	Gender=Masc|Number=Sing	47	nmod	Amiens	start_char=6309|end_char=6315|ner=E-ORG|SpaceAfter=No	wp_▁Amiens
 50	.	.	PUNCT	.	.	11	punct	.	start_char=6315|end_char=6316|ner=O	wp_.
+
 1	De	de	ADP	De	ExtPos=ADV	2	case	De	start_char=6317|end_char=6319|ner=O	wp_▁De
 2	surcroît	surcroît	NOUN	surcroît	Gender=Masc|Number=Sing	9	obl:mod	surcroît	start_char=6320|end_char=6328|ner=O|SpaceAfter=No	wp_▁surcroît
 3	,	,	PUNCT	,	,	2	punct	,	start_char=6328|end_char=6329|ner=O	wp_,
@@ -1188,6 +1249,7 @@
 32	Paris	Paris	PROPN	Paris	Paris	31	appos	Paris	start_char=6486|end_char=6491|ner=I-ORG	wp_▁Paris
 33	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	32	flat:name	Nanterre	start_char=6492|end_char=6500|ner=E-ORG|SpaceAfter=No	wp_▁Nanterre
 34	.	.	PUNCT	.	.	9	punct	.	start_char=6500|end_char=6501|ner=O	wp_.
+
 1	Enfin	enfin	ADV	Enfin	Enfin	18	advmod	Enfin	start_char=6502|end_char=6507|ner=O|SpaceAfter=No	wp_▁Enfin
 2	,	,	PUNCT	,	,	1	punct	,	start_char=6507|end_char=6508|ner=O	wp_,
 3	Madame	monsieur	NOUN	Madame	Gender=Fem|Number=Sing	18	nsubj	Madame	start_char=6509|end_char=6515|ner=B-PER	wp_▁Madame
@@ -1228,6 +1290,7 @@
 35	Paris	Paris	PROPN	Paris	Paris	34	appos	Paris	start_char=6682|end_char=6687|ner=I-ORG	wp_▁Paris
 36	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	35	flat:name	Nanterre	start_char=6688|end_char=6696|ner=E-ORG|SpaceAfter=No	wp_▁Nanterre
 37	.	.	PUNCT	.	.	18	punct	.	start_char=6696|end_char=6697|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Quant	quant	ADV	Quant	ExtPos=ADP	4	case	Quant	start_char=6699|end_char=6704|ner=O	wp_▁Quant
 2-3	aux	aux	aux	aux	aux	aux	aux	aux	start_char=6705|end_char=6708|ner=O	wp_▁aux
 2	à	à	ADP	à	à	1	fixed	à	à	wp_▁à
@@ -1259,6 +1322,7 @@
 27	de	de	ADP	de	de	28	case	de	start_char=6848|end_char=6850|ner=O	wp_▁de
 28	dix-huit	dix-huit	NUM	dix-huit	Number=Plur	26	nmod	dix-huit	start_char=6851|end_char=6859|ner=O|SpaceAfter=No	wp_▁dix	wp_-	wp_huit
 29	.	.	PUNCT	.	.	10	punct	.	start_char=6859|end_char=6860|ner=O	wp_.
+
 1	Par	par	ADP	Par	ExtPos=ADV	7	advmod	Par	start_char=6861|end_char=6864|ner=O	wp_▁Par
 2	ailleurs	ailleurs	ADV	ailleurs	ailleurs	1	fixed	ailleurs	start_char=6865|end_char=6873|ner=O|SpaceAfter=No	wp_▁ailleurs
 3	,	,	PUNCT	,	,	1	punct	,	start_char=6873|end_char=6874|ner=O	wp_,
@@ -1294,6 +1358,7 @@
 33	avec	avec	ADP	avec	avec	34	case	avec	start_char=7042|end_char=7046|ner=O	wp_▁avec
 34	lui	lui	PRON	lui	Emph=Yes|Gender=Masc|Number=Sing|Person=3|PronType=Prs	30	obl:arg	lui	start_char=7047|end_char=7050|ner=O|SpaceAfter=No	wp_▁lui
 35	.	.	PUNCT	.	.	7	punct	.	start_char=7050|end_char=7051|ner=O	wp_.
+
 1	Par	par	ADP	Par	Par	2	case	Par	start_char=7052|end_char=7055|ner=O	wp_▁Par
 2	là	là	ADV	là	là	6	advmod	là	start_char=7056|end_char=7058|ner=O|SpaceAfter=No	wp_▁là
 3	,	,	PUNCT	,	,	2	punct	,	start_char=7058|end_char=7059|ner=O	wp_,
@@ -1314,6 +1379,7 @@
 18	à	à	ADP	à	à	19	mark	à	start_char=7147|end_char=7148|ner=O	wp_▁à
 19	former	former	VERB	former	VerbForm=Inf	17	xcomp	former	start_char=7149|end_char=7155|ner=O|SpaceAfter=No	wp_▁former
 20	.	.	PUNCT	.	.	6	punct	.	start_char=7155|end_char=7156|ner=O	wp_.
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=7157|end_char=7159|ner=O	wp_▁Au
 1	à	à	ADP	à	ExtPos=ADV	12	advmod	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	le	le	wp_▁le
@@ -1348,6 +1414,7 @@
 28	Zoubida	Zoubida	PROPN	Zoubida	Zoubida	27	flat:name	Zoubida	start_char=7275|end_char=7282|ner=I-PER	wp_▁Z	wp_oub	wp_ida
 29	Saidi	Saidi	PROPN	Saidi	Saidi	28	flat:name	Saidi	start_char=7283|end_char=7288|ner=E-PER|SpaceAfter=No	wp_▁Sa	wp_idi
 30	.	.	PUNCT	.	.	12	punct	.	start_char=7288|end_char=7289|ner=O	wp_.
+
 1	Madame	monsieur	NOUN	Madame	Gender=Fem|Number=Sing	10	nsubj	Madame	start_char=7290|end_char=7296|ner=B-PER	wp_▁Madame
 2	Saidi	Saidi	PROPN	Saidi	Saidi	1	nmod	Saidi	start_char=7297|end_char=7302|ner=E-PER|SpaceAfter=No	wp_▁Sa	wp_idi
 3	,	,	PUNCT	,	,	4	punct	,	start_char=7302|end_char=7303|ner=O	wp_,
@@ -1370,6 +1437,7 @@
 19	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	le	le	wp_▁le
 20	CEJEC	CEJEC	PROPN	CEJEC	CEJEC	14	nmod	CEJEC	start_char=7402|end_char=7407|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 21	.	.	PUNCT	.	.	10	punct	.	start_char=7407|end_char=7408|ner=O	wp_.
+
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	Elle	start_char=7409|end_char=7413|ner=O	wp_▁Elle
 2	partage	partager	VERB	partage	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	partage	start_char=7414|end_char=7421|ner=O	wp_▁partage
 3	son	son	DET	son	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	4	det	son	start_char=7422|end_char=7425|ner=O	wp_▁son
@@ -1401,6 +1469,7 @@
 29	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	30	det	le	start_char=7571|end_char=7573|ner=O	wp_▁le
 30	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	26	obl:arg	CEJEC	start_char=7574|end_char=7579|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 31	.	.	PUNCT	.	.	2	punct	.	start_char=7579|end_char=7580|ner=O|SpacesAfter=\n\n	wp_.
+
 1	A	à	ADP	A	A	2	case	A	start_char=7582|end_char=7583|ner=O	wp_▁A
 2	propos	propos	NOUN	propos	Gender=Masc|Number=Sing	11	obl:mod	propos	start_char=7584|end_char=7590|ner=O	wp_▁propos
 3-4	des	des	des	des	des	des	des	des	start_char=7591|end_char=7594|ner=O	wp_▁des
@@ -1424,6 +1493,7 @@
 20	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	la	start_char=7674|end_char=7676|ner=O	wp_▁la
 21	stabilité	stabilité	NOUN	stabilité	Gender=Fem|Number=Sing	18	nmod	stabilité	start_char=7677|end_char=7686|ner=O|SpaceAfter=No	wp_▁stabilité
 22	.	.	PUNCT	.	.	11	punct	.	start_char=7686|end_char=7687|ner=O	wp_.
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=7688|end_char=7690|ner=O	wp_▁Au
 1	à	à	ADP	à	à	3	case	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le	wp_▁le
@@ -1458,6 +1528,7 @@
 28	période	période	NOUN	période	Gender=Fem|Number=Sing	25	nmod	période	start_char=7809|end_char=7816|ner=O	wp_▁période
 29	précédente	précédent	ADJ	précédente	Gender=Fem|Number=Sing	28	amod	précédente	start_char=7817|end_char=7827|ner=O|SpaceAfter=No	wp_▁précédente
 30	.	.	PUNCT	.	.	10	punct	.	start_char=7827|end_char=7828|ner=O	wp_.
+
 1	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	2	det	L'	start_char=7829|end_char=7831|ner=O|SpaceAfter=No	wp_▁L	wp_'
 2	activité	activité	NOUN	activité	Gender=Fem|Number=Sing	6	nsubj	activité	start_char=7831|end_char=7839|ner=O	wp_▁activité
 3-4	des	des	des	des	des	des	des	des	start_char=7840|end_char=7843|ner=O	wp_▁des
@@ -1494,7 +1565,9 @@
 30	et	et	CCONJ	et	et	31	cc	et	start_char=7982|end_char=7984|ner=O	wp_▁et
 31	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	29	conj	activités	start_char=7985|end_char=7994|ner=O|SpaceAfter=No	wp_▁activités
 32	.	.	PUNCT	.	.	6	punct	.	start_char=7994|end_char=7995|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=7998|end_char=7999|ner=O|SpacesAfter=\t	wp_▁•
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=8000|end_char=8002|ner=O	wp_▁Au
 1	à	à	ADP	à	à	3	case	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le	wp_▁le
@@ -1525,6 +1598,7 @@
 24	précédente	précédent	ADJ	précédente	Gender=Fem|Number=Sing	25	amod	précédente	start_char=8099|end_char=8109|ner=O	wp_▁précédente
 25	évaluation	évaluation	NOUN	évaluation	Gender=Fem|Number=Sing	21	nmod	évaluation	start_char=8110|end_char=8120|ner=O|SpaceAfter=No	wp_▁évaluation
 26	.	.	PUNCT	.	.	15	punct	.	start_char=8120|end_char=8121|ner=O	wp_.
+
 1	Sur	sur	ADP	Sur	Sur	3	case	Sur	start_char=8122|end_char=8125|ner=O	wp_▁Sur
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	start_char=8126|end_char=8128|ner=O	wp_▁le
 3	plan	plan	NOUN	plan	Gender=Masc|Number=Sing	17	obl:mod	plan	start_char=8129|end_char=8133|ner=O	wp_▁plan
@@ -1548,6 +1622,7 @@
 21	18 000	18 000	NUM	18 000	Number=Plur	22	nummod	18 000	start_char=8234|end_char=8240|ner=O	wp_▁18	wp_▁000
 22	€	€	SYM	€	ExtPos=NOUN|Number=Plur	19	obl:arg	€	start_char=8241|end_char=8242|ner=O|SpaceAfter=No	wp_▁€
 23	.	.	PUNCT	.	.	17	punct	.	start_char=8242|end_char=8243|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=8244|end_char=8249|ner=O	wp_▁Cette
 2	dotation	dotation	NOUN	dotation	Gender=Fem|Number=Sing	3	nsubj	dotation	start_char=8250|end_char=8258|ner=O	wp_▁dotation
 3	subit	subir	VERB	subit	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	subit	start_char=8259|end_char=8264|ner=O	wp_▁subit
@@ -1587,6 +1662,7 @@
 36	de	de	ADP	de	de	37	case	de	start_char=8450|end_char=8452|ner=O	wp_▁de
 37	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	35	nmod	recherche	start_char=8453|end_char=8462|ner=O|SpaceAfter=No	wp_▁recherche
 38	.	.	PUNCT	.	.	3	punct	.	start_char=8462|end_char=8463|ner=O	wp_.
+
 1	Par	par	ADP	Par	ExtPos=ADV	13	advmod	Par	start_char=8464|end_char=8467|ner=O	wp_▁Par
 2	ailleurs	ailleurs	ADV	ailleurs	ailleurs	1	fixed	ailleurs	start_char=8468|end_char=8476|ner=O	wp_▁ailleurs
 3	et	et	CCONJ	et	et	5	cc	et	start_char=8477|end_char=8479|ner=O	wp_▁et
@@ -1617,6 +1693,7 @@
 27	financières	financier	ADJ	financières	Gender=Fem|Number=Plur	26	amod	financières	start_char=8623|end_char=8634|ner=O	wp_▁financières
 28	extérieures	extérieur	ADJ	extérieures	Gender=Fem|Number=Plur	26	amod	extérieures	start_char=8635|end_char=8646|ner=O|SpaceAfter=No	wp_▁extérieures
 29	.	.	PUNCT	.	.	13	punct	.	start_char=8646|end_char=8647|ner=O	wp_.
+
 1	Sur	sur	ADP	Sur	Sur	3	case	Sur	start_char=8648|end_char=8651|ner=O	wp_▁Sur
 2	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	3	det	l'	start_char=8652|end_char=8654|ner=O|SpaceAfter=No	wp_▁l	wp_'
 3	ensemble	ensemble	NOUN	ensemble	Gender=Masc|Number=Sing	12	obl:mod	ensemble	start_char=8654|end_char=8662|ner=O	wp_▁ensemble
@@ -1635,6 +1712,7 @@
 16	31 000	31 000	NUM	31 000	Number=Plur	17	nummod	31 000	start_char=8725|end_char=8731|ner=O|SpaceAfter=No	wp_▁31	wp_▁000
 17	€	€	SYM	€	ExtPos=NOUN|Number=Plur	14	obl:arg	€	start_char=8731|end_char=8732|ner=O|SpaceAfter=No	wp_▁€
 18	.	.	PUNCT	.	.	12	punct	.	start_char=8732|end_char=8733|ner=O|SpacesAfter=\n\n	wp_.
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=8735|end_char=8737|ner=O	wp_▁Au
 1	à	à	ADP	à	ExtPos=ADV	12	advmod	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	1	fixed	le	le	wp_▁le
@@ -1675,6 +1753,7 @@
 35	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	le	start_char=8906|end_char=8908|ner=O	wp_▁le
 36	CEDCACE	CEDCACE	PROPN	CEDCACE	Gender=Masc|Number=Sing	33	nmod	CEDCACE	start_char=8909|end_char=8916|ner=S-MISC|SpaceAfter=No	wp_▁CE	wp_DC	wp_ACE
 37	.	.	PUNCT	.	.	12	punct	.	start_char=8916|end_char=8917|ner=O	wp_.
+
 1	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	2	det	L'	start_char=8918|end_char=8920|ner=O|SpaceAfter=No	wp_▁L	wp_'
 2	utilisation	utilisation	NOUN	utilisation	Gender=Fem|Number=Sing	6	nsubj	utilisation	start_char=8920|end_char=8931|ner=O	wp_▁utilisation
 3	de	de	ADP	de	de	5	case	de	start_char=8932|end_char=8934|ner=O	wp_▁de
@@ -1695,7 +1774,9 @@
 17	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	le	le	wp_▁le
 18	CEDCACE	CEDCACE	PROPN	CEDCACE	Gender=Masc|Number=Sing	15	nmod	CEDCACE	start_char=9015|end_char=9022|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_DC	wp_ACE
 19	.	.	PUNCT	.	.	6	punct	.	start_char=9022|end_char=9023|ner=O|SpacesAfter=\n\n	wp_.
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=9025|end_char=9026|ner=O|SpacesAfter=\t	wp_▁•
+
 1	Pour	pour	ADP	Pour	Pour	3	case	Pour	start_char=9027|end_char=9031|ner=O	wp_▁Pour
 2	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	la	start_char=9032|end_char=9034|ner=O	wp_▁la
 3	période	période	NOUN	période	Gender=Fem|Number=Sing	9	obl:mod	période	start_char=9035|end_char=9042|ner=O	wp_▁période
@@ -1712,6 +1793,7 @@
 14	son	son	DET	son	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	15	det	son	start_char=9096|end_char=9099|ner=O	wp_▁son
 15	effectif	effectif	NOUN	effectif	Gender=Masc|Number=Sing	12	nmod	effectif	start_char=9100|end_char=9108|ner=O|SpaceAfter=No	wp_▁effectif
 16	.	.	PUNCT	.	.	9	punct	.	start_char=9108|end_char=9109|ner=O	wp_.
+
 1	Si	si	SCONJ	Si	Si	7	mark	Si	start_char=9110|end_char=9112|ner=O	wp_▁Si
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	start_char=9113|end_char=9115|ner=O	wp_▁le
 3	nombre	nombre	NOUN	nombre	Gender=Masc|Number=Sing	7	nsubj	nombre	start_char=9116|end_char=9122|ner=O	wp_▁nombre
@@ -1739,6 +1821,7 @@
 23	croître	croître	VERB	croître	VerbForm=Inf	22	xcomp	croître	start_char=9241|end_char=9248|ner=O	wp_▁croître
 24	significativement	significativement	ADV	significativement	significativement	23	advmod	significativement	start_char=9249|end_char=9266|ner=O|SpaceAfter=No	wp_▁significative	wp_ment
 25	.	.	PUNCT	.	.	22	punct	.	start_char=9266|end_char=9267|ner=O	wp_.
+
 1	En	en	ADP	En	ExtPos=ADV	9	advmod	En	start_char=9268|end_char=9270|ner=O	wp_▁En
 2	effet	effet	NOUN	effet	Gender=Masc|Number=Sing	1	fixed	effet	start_char=9271|end_char=9276|ner=O|SpaceAfter=No	wp_▁effet
 3	,	,	PUNCT	,	,	1	punct	,	start_char=9276|end_char=9277|ner=O	wp_,
@@ -1771,6 +1854,7 @@
 29	et	et	CCONJ	et	et	30	cc	et	start_char=9443|end_char=9445|ner=O	wp_▁et
 30	comparée	comparer	VERB	comparée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	28	conj	comparée	start_char=9446|end_char=9454|ner=O|SpaceAfter=No	wp_▁comparée
 31	.	.	PUNCT	.	.	9	punct	.	start_char=9454|end_char=9455|ner=O	wp_.
+
 1	En	en	ADP	En	ExtPos=ADV	8	advmod	En	start_char=9456|end_char=9458|ner=O	wp_▁En
 2	outre	outre	ADV	outre	outre	1	fixed	outre	start_char=9459|end_char=9464|ner=O|SpaceAfter=No	wp_▁outre
 3	,	,	PUNCT	,	,	1	punct	,	start_char=9464|end_char=9465|ner=O	wp_,
@@ -1805,6 +1889,7 @@
 31	Droit	droit	NOUN	Droit	Gender=Masc|Number=Sing	27	conj	Droit	start_char=9630|end_char=9635|ner=B-ORG	wp_▁Droit
 32	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	31	acl	comparé	start_char=9636|end_char=9643|ner=E-ORG|SpaceAfter=No	wp_▁comparé
 33	.	.	PUNCT	.	.	8	punct	.	start_char=9643|end_char=9644|ner=O	wp_.
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=9645|end_char=9647|ner=O	wp_▁Au
 1	à	à	ADP	à	à	3	case	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le	wp_▁le
@@ -1840,6 +1925,7 @@
 32	Union	union	NOUN	Union	Gender=Fem|Number=Sing	29	nmod	Union	start_char=9826|end_char=9831|ner=I-ORG	wp_▁Union
 33	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	32	amod	européenne	start_char=9832|end_char=9842|ner=E-ORG|SpaceAfter=No	wp_▁européenne
 34	.	.	PUNCT	.	.	7	punct	.	start_char=9842|end_char=9843|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Afin	afin	ADV	Afin	Afin	10	advmod	Afin	start_char=9845|end_char=9849|ner=O	wp_▁Afin
 2	de	de	ADP	de	de	3	mark	de	start_char=9850|end_char=9852|ner=O	wp_▁de
 3	réaliser	réaliser	VERB	réaliser	VerbForm=Inf	1	xcomp	réaliser	start_char=9853|end_char=9861|ner=O	wp_▁réaliser
@@ -1854,6 +1940,7 @@
 12	ses	son	DET	ses	Number=Plur|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	13	det	ses	start_char=9911|end_char=9914|ner=O	wp_▁ses
 13	moyens	moyen	NOUN	moyens	Gender=Masc|Number=Plur	11	obj	moyens	start_char=9915|end_char=9921|ner=O|SpaceAfter=No	wp_▁moyens
 14	.	.	PUNCT	.	.	10	punct	.	start_char=9921|end_char=9922|ner=O	wp_.
+
 1	Outre	outre	ADP	Outre	Outre	3	case	Outre	start_char=9923|end_char=9928|ner=O	wp_▁Outre
 2	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	la	start_char=9929|end_char=9931|ner=O	wp_▁la
 3	poursuite	poursuite	NOUN	poursuite	Gender=Fem|Number=Sing	16	obl:mod	poursuite	start_char=9932|end_char=9941|ner=O	wp_▁poursuite
@@ -1895,6 +1982,7 @@
 39	de	de	ADP	de	de	40	case	de	start_char=10147|end_char=10149|ner=O	wp_▁de
 40	projet	projet	NOUN	projet	Gender=Masc|Number=Sing	38	nmod	projet	start_char=10150|end_char=10156|ner=O|SpaceAfter=No	wp_▁projet
 41	.	.	PUNCT	.	.	16	punct	.	start_char=10156|end_char=10157|ner=O	wp_.
+
 1	Grâce	grâce	NOUN	Grâce	ExtPos=ADP	4	case	Grâce	start_char=10158|end_char=10163|ner=O	wp_▁Grâce
 2	à	à	ADP	à	à	1	fixed	à	start_char=10164|end_char=10165|ner=O	wp_▁à
 3	ce	ce	DET	ce	Gender=Masc|Number=Sing|PronType=Dem	4	det	ce	start_char=10166|end_char=10168|ner=O	wp_▁ce
@@ -1933,9 +2021,12 @@
 35	sa	son	DET	sa	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	36	det	sa	start_char=10340|end_char=10342|ner=O	wp_▁sa
 36	COMUE	COMUE	PROPN	COMUE	Gender=Fem|Number=Sing	31	conj	COMUE	start_char=10343|end_char=10348|ner=S-ORG|SpaceAfter=No	wp_▁COM	wp_UE
 37	.	.	PUNCT	.	.	9	punct	.	start_char=10348|end_char=10349|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	Politique	politique	NOUN	Politique	Gender=Fem|Number=Sing	0	root	Politique	start_char=10352|end_char=10361|ner=O	wp_▁Politique
 2	scientifique	scientifique	ADJ	scientifique	Number=Sing	1	amod	scientifique	start_char=10362|end_char=10374|ner=O|SpacesAfter=\n\n	wp_▁scientifique
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=10376|end_char=10377|ner=O|SpacesAfter=\t	wp_▁•
+
 1	Conformément	conformément	ADV	Conformément	Conformément	13	advmod	Conformément	start_char=10378|end_char=10390|ner=O	wp_▁Conformément
 2	à	à	ADP	à	à	4	case	à	start_char=10391|end_char=10392|ner=O	wp_▁à
 3	son	son	DET	son	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	4	det	son	start_char=10393|end_char=10396|ner=O	wp_▁son
@@ -1969,6 +2060,7 @@
 29	axes	axe	NOUN	axes	Gender=Masc|Number=Plur	25	obl:arg	axes	start_char=10533|end_char=10537|ner=O	wp_▁axes
 30	suivants	suivant	ADJ	suivants	Gender=Masc|Number=Plur	29	amod	suivants	start_char=10538|end_char=10546|ner=O	wp_▁suivants
 31	:	:	PUNCT	:	:	13	punct	:	start_char=10547|end_char=10548|ner=O|SpacesAfter=\n\n	wp_▁:
+
 1	Premièrement	premièrement	ADV	Premièrement	Premièrement	3	advmod	Premièrement	start_char=10550|end_char=10562|ner=O|SpaceAfter=No	wp_▁Premièrement
 2	,	,	PUNCT	,	,	1	punct	,	start_char=10562|end_char=10563|ner=O	wp_,
 3	déplacer	déplacer	VERB	déplacer	VerbForm=Inf	0	root	déplacer	start_char=10564|end_char=10572|ner=O	wp_▁déplacer
@@ -1978,6 +2070,7 @@
 7	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	la	start_char=10591|end_char=10593|ner=O	wp_▁la
 8	connaissance	connaissance	NOUN	connaissance	Gender=Fem|Number=Sing	5	nmod	connaissance	start_char=10594|end_char=10606|ner=O	wp_▁connaissance
 9	;	;	PUNCT	;	;	3	punct	;	start_char=10607|end_char=10608|ner=O|SpacesAfter=\s\n\n	wp_▁;
+
 1	Deuxièmement	deuxièmement	ADV	Deuxièmement	Deuxièmement	3	advmod	Deuxièmement	start_char=10611|end_char=10623|ner=O|SpaceAfter=No	wp_▁Deuxième	wp_ment
 2	,	,	PUNCT	,	,	1	punct	,	start_char=10623|end_char=10624|ner=O	wp_,
 3	participer	participer	VERB	participer	VerbForm=Inf	0	root	participer	start_char=10625|end_char=10635|ner=O	wp_▁participer
@@ -1994,6 +2087,7 @@
 14	applications	application	NOUN	applications	Gender=Fem|Number=Plur	9	obl:arg	applications	start_char=10691|end_char=10703|ner=O	wp_▁applications
 15	identifiées	identifier	VERB	identifiées	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	14	acl	identifiées	start_char=10704|end_char=10715|ner=O	wp_▁identifié	wp_es
 16	;	;	PUNCT	;	;	3	punct	;	start_char=10716|end_char=10717|ner=O|SpacesAfter=\n\n	wp_▁;
+
 1	Troisièmement	troisièmement	ADV	Troisièmement	Troisièmement	3	advmod	Troisièmement	start_char=10719|end_char=10732|ner=O|SpaceAfter=No	wp_▁Troisième	wp_ment
 2	,	,	PUNCT	,	,	1	punct	,	start_char=10732|end_char=10733|ner=O	wp_,
 3	préparer	préparer	VERB	préparer	VerbForm=Inf	0	root	préparer	start_char=10734|end_char=10742|ner=O	wp_▁préparer
@@ -2008,6 +2102,7 @@
 12	ou	ou	CCONJ	ou	ou	13	cc	ou	start_char=10790|end_char=10792|ner=O	wp_▁ou
 13	culturels	culturel	ADJ	culturels	Gender=Masc|Number=Plur	9	conj	culturels	start_char=10793|end_char=10802|ner=O|SpaceAfter=No	wp_▁culturels
 14	.	.	PUNCT	.	.	3	punct	.	start_char=10802|end_char=10803|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	A	à	ADP	A	A	3	case	A	start_char=10806|end_char=10807|ner=O	wp_▁A
 2	ces	ce	DET	ces	Number=Plur|PronType=Dem	3	det	ces	start_char=10808|end_char=10811|ner=O	wp_▁ces
 3	fins	fin	NOUN	fins	Gender=Fem|Number=Plur	12	obl:mod	fins	start_char=10812|end_char=10816|ner=O|SpaceAfter=No	wp_▁fins
@@ -2044,6 +2139,7 @@
 33	leur	son	DET	leur	Number=Sing|Number[psor]=Plur|Person[psor]=3|Poss=Yes|PronType=Prs	34	det	leur	start_char=10983|end_char=10987|ner=O	wp_▁leur
 34	effectivité	effectivité	NOUN	effectivité	Gender=Fem|Number=Sing	31	nmod	effectivité	start_char=10988|end_char=10999|ner=O|SpaceAfter=No	wp_▁eff	wp_ec	wp_tivité
 35	.	.	PUNCT	.	.	12	punct	.	start_char=10999|end_char=11000|ner=O	wp_.
+
 1	Sur	sur	ADP	Sur	Sur	3	case	Sur	start_char=11001|end_char=11004|ner=O	wp_▁Sur
 2	ces	ce	DET	ces	Number=Plur|PronType=Dem	3	det	ces	start_char=11005|end_char=11008|ner=O	wp_▁ces
 3	bases	base	NOUN	bases	Gender=Fem|Number=Plur	8	obl:mod	bases	start_char=11009|end_char=11014|ner=O|SpaceAfter=No	wp_▁bases
@@ -2122,6 +2218,7 @@
 74	juridiques	juridique	ADJ	juridiques	Gender=Masc|Number=Plur	73	amod	juridiques	start_char=11415|end_char=11425|ner=O	wp_▁juridiques
 75	étrangers	étranger	ADJ	étrangers	Gender=Masc|Number=Plur	73	amod	étrangers	start_char=11426|end_char=11435|ner=O|SpaceAfter=No	wp_▁étrangers
 76	.	.	PUNCT	.	.	8	punct	.	start_char=11435|end_char=11436|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=11437|end_char=11439|ner=O	wp_▁La
 2	pluralité	pluralité	NOUN	pluralité	Gender=Fem|Number=Sing	49	nsubj	pluralité	start_char=11440|end_char=11449|ner=O	wp_▁pluralité
 3-4	des	des	des	des	des	des	des	des	start_char=11450|end_char=11453|ner=O	wp_▁des
@@ -2202,6 +2299,7 @@
 69	ordre	ordre	NOUN	ordre	Gender=Masc|Number=Sing	67	nmod	ordre	start_char=11774|end_char=11779|ner=O	wp_▁ordre
 70	juridique	juridique	ADJ	juridique	Gender=Masc|Number=Sing	69	amod	juridique	start_char=11780|end_char=11789|ner=O|SpaceAfter=No	wp_▁juridique
 71	.	.	PUNCT	.	.	49	punct	.	start_char=11789|end_char=11790|ner=O	wp_.
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=11791|end_char=11794|ner=O	wp_▁Les
 2	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	7	nsubj	activités	start_char=11795|end_char=11804|ner=O	wp_▁activités
 3	en	en	ADP	en	en	4	mark	en	start_char=11805|end_char=11807|ner=O	wp_▁en
@@ -2245,7 +2343,9 @@
 37	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	10	conj	unité	start_char=11966|end_char=11971|ner=O	wp_▁unité
 38	elle-même	lui-même	PRON	elle-même	Emph=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs|Reflex=Yes	37	nmod	elle-même	start_char=11972|end_char=11981|ner=O|SpaceAfter=No	wp_▁elle	wp_-	wp_même
 39	.	.	PUNCT	.	.	7	punct	.	start_char=11981|end_char=11982|ner=O|SpacesAfter=\n\n	wp_.
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=11984|end_char=11985|ner=O|SpacesAfter=\t	wp_▁•
+
 1	A	à	ADP	A	A	3	case	A	start_char=11986|end_char=11987|ner=O	wp_▁A
 2	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	3	det	l'	start_char=11988|end_char=11990|ner=O|SpaceAfter=No	wp_▁l	wp_'
 3	issue	issue	NOUN	issue	Gender=Fem|Number=Sing	11	obl:mod	issue	start_char=11990|end_char=11995|ner=O	wp_▁issue
@@ -2305,6 +2405,7 @@
 56	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	53	nmod	recherche	start_char=12325|end_char=12334|ner=O	wp_▁recherche
 57	dynamique	dynamique	ADJ	dynamique	Gender=Fem|Number=Sing	56	amod	dynamique	start_char=12335|end_char=12344|ner=O|SpaceAfter=No	wp_▁dynamique
 58	.	.	PUNCT	.	.	11	punct	.	start_char=12344|end_char=12345|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=12348|end_char=12350|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	6	nsubj	CEJEC	start_char=12351|end_char=12356|ner=S-ORG	wp_▁CE	wp_J	wp_EC
 3	s'	soi	PRON	s'	Person=3|PronType=Prs|Reflex=Yes	6	obj	s'	start_char=12357|end_char=12359|ner=O|SpaceAfter=No	wp_▁s	wp_'
@@ -2318,6 +2419,7 @@
 11	cette	ce	DET	cette	Gender=Fem|Number=Sing|PronType=Dem	12	det	cette	start_char=12412|end_char=12417|ner=O	wp_▁cette
 12	recommandation	recommandation	NOUN	recommandation	Gender=Fem|Number=Sing	8	obl:arg	recommandation	start_char=12418|end_char=12432|ner=O|SpaceAfter=No	wp_▁recommandation
 13	.	.	PUNCT	.	.	6	punct	.	start_char=12432|end_char=12433|ner=O	wp_.
+
 1	En	en	ADP	En	En	3	case	En	start_char=12434|end_char=12436|ner=O	wp_▁En
 2	premier	premier	ADJ	premier	Gender=Masc|Number=Sing	3	amod	premier	start_char=12437|end_char=12444|ner=O	wp_▁premier
 3	lieu	lieu	NOUN	lieu	Gender=Masc|Number=Sing	10	obl:mod	lieu	start_char=12445|end_char=12449|ner=O|SpaceAfter=No	wp_▁lieu
@@ -2340,6 +2442,7 @@
 20	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	18	nmod	recherche	start_char=12539|end_char=12548|ner=O	wp_▁recherche
 21	appliquée	appliquer	VERB	appliquée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	18	acl	appliquée	start_char=12549|end_char=12558|ner=O|SpaceAfter=No	wp_▁appliquée
 22	.	.	PUNCT	.	.	10	punct	.	start_char=12558|end_char=12559|ner=O	wp_.
+
 1	Un	un	DET	Un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	Un	start_char=12560|end_char=12562|ner=O	wp_▁Un
 2	contrat	contrat	NOUN	contrat	Gender=Masc|Number=Sing	23	nsubj	contrat	start_char=12563|end_char=12570|ner=O	wp_▁contrat
 3	d'	de	ADP	d'	d'	5	case	d'	start_char=12571|end_char=12573|ner=O|SpaceAfter=No	wp_▁d	wp_'
@@ -2412,6 +2515,7 @@
 68	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	69	det	le	le	wp_▁le
 69	travailQUOTE	travailQUOTE	NOUN	travailQUOTE	Gender=Masc|Number=Sing	66	nmod	travailQUOTE	start_char=12914|end_char=12926|ner=E-MISC	wp_▁travail	wp_QU	wp_OTE
 70	.	.	PUNCT	.	.	23	punct	.	start_char=12927|end_char=12928|ner=O	wp_.
+
 1	Cet	ce	DET	Cet	Gender=Masc|Number=Sing|PronType=Dem	2	det	Cet	start_char=12929|end_char=12932|ner=O	wp_▁Cet
 2	ouvrage	ouvrage	NOUN	ouvrage	Gender=Masc|Number=Sing	3	nsubj	ouvrage	start_char=12933|end_char=12940|ner=O	wp_▁ouvrage
 3	résulte	résulter	VERB	résulte	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	résulte	start_char=12941|end_char=12948|ner=O	wp_▁résulte
@@ -2451,6 +2555,7 @@
 34	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	35	det	le	le	wp_▁le
 35	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	32	nmod	CEJEC	start_char=13127|end_char=13132|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 36	.	.	PUNCT	.	.	3	punct	.	start_char=13132|end_char=13133|ner=O	wp_.
+
 1	En	en	ADP	En	En	3	case	En	start_char=13134|end_char=13136|ner=O	wp_▁En
 2	deuxième	deuxième	ADJ	deuxième	Gender=Masc|Number=Sing	3	amod	deuxième	start_char=13137|end_char=13145|ner=O	wp_▁deuxième
 3	lieu	lieu	NOUN	lieu	Gender=Masc|Number=Sing	8	obl:mod	lieu	start_char=13146|end_char=13150|ner=O|SpaceAfter=No	wp_▁lieu
@@ -2502,6 +2607,7 @@
 47	Union	union	NOUN	Union	Gender=Fem|Number=Sing	44	nmod	Union	start_char=13379|end_char=13384|ner=B-ORG	wp_▁Union
 48	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	47	amod	européenne	start_char=13385|end_char=13395|ner=E-ORG|SpaceAfter=No	wp_▁européenne
 49	.	.	PUNCT	.	.	8	punct	.	start_char=13395|end_char=13396|ner=O	wp_.
+
 1	Traduite	traduire	VERB	Traduite	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	23	advcl	Traduite	start_char=13397|end_char=13405|ner=O	wp_▁Tra	wp_duit	wp_e
 2	par	par	ADP	par	par	4	case	par	start_char=13406|end_char=13409|ner=O	wp_▁par
 3	un	un	DET	un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	un	start_char=13410|end_char=13412|ner=O	wp_▁un
@@ -2536,6 +2642,7 @@
 32	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	33	det	l'	start_char=13562|end_char=13564|ner=O|SpaceAfter=No	wp_▁l	wp_'
 33	AERT	AERT	PROPN	AERT	Number=Sing	29	nmod	AERT	start_char=13564|end_char=13568|ner=S-ORG|SpaceAfter=No	wp_▁A	wp_ERT
 34	.	.	PUNCT	.	.	23	punct	.	start_char=13568|end_char=13569|ner=O	wp_.
+
 1	En	en	ADP	En	En	3	case	En	start_char=13570|end_char=13572|ner=O	wp_▁En
 2	troisième	troisième	ADJ	troisième	Gender=Masc|Number=Sing	3	amod	troisième	start_char=13573|end_char=13582|ner=O	wp_▁troisième
 3	lieu	lieu	NOUN	lieu	Gender=Masc|Number=Sing	8	obl:mod	lieu	start_char=13583|end_char=13587|ner=O|SpaceAfter=No	wp_▁lieu
@@ -2583,6 +2690,7 @@
 42	FBF	FBF	PROPN	FBF	FBF	38	appos	FBF	start_char=13834|end_char=13837|ner=S-ORG|SpaceAfter=No	wp_▁FB	wp_F
 43	)	)	PUNCT	)	)	42	punct	)	start_char=13837|end_char=13838|ner=O|SpaceAfter=No	wp_▁)
 44	.	.	PUNCT	.	.	8	punct	.	start_char=13838|end_char=13839|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=13840|end_char=13845|ner=O	wp_▁Cette
 2	collaboration	collaboration	NOUN	collaboration	Gender=Fem|Number=Sing	5	nsubj:pass	collaboration	start_char=13846|end_char=13859|ner=O	wp_▁collaboration
 3	s'	soi	PRON	s'	Person=3|PronType=Prs|Reflex=Yes	5	expl:pass	s'	start_char=13860|end_char=13862|ner=O|SpaceAfter=No	wp_▁s	wp_'
@@ -2640,6 +2748,7 @@
 54	Joly	Joly	PROPN	Joly	Joly	53	flat:name	Joly	start_char=14158|end_char=14162|ner=I-ORG	wp_▁Jo	wp_ly
 55	Bourse	bourse	NOUN	Bourse	Gender=Fem|Number=Sing	53	flat:name	Bourse	start_char=14163|end_char=14169|ner=E-ORG|SpaceAfter=No	wp_▁Bourse
 56	.	.	PUNCT	.	.	5	punct	.	start_char=14169|end_char=14170|ner=O	wp_.
+
 1	Ces	ce	DET	Ces	Number=Plur|PronType=Dem	2	det	Ces	start_char=14171|end_char=14174|ner=O	wp_▁Ces
 2	conférences	conférence	NOUN	conférences	Gender=Fem|Number=Plur	5	nsubj:pass	conférences	start_char=14175|end_char=14186|ner=O	wp_▁conférences
 3	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	5	expl:pass	se	start_char=14187|end_char=14189|ner=O	wp_▁se
@@ -2671,6 +2780,7 @@
 28	conférences	conférence	NOUN	conférences	Gender=Fem|Number=Plur	23	appos	conférences	start_char=14331|end_char=14342|ner=O|SpaceAfter=No	wp_▁conférences
 29	)	)	PUNCT	)	)	28	punct	)	start_char=14342|end_char=14343|ner=O|SpaceAfter=No	wp_▁)
 30	.	.	PUNCT	.	.	5	punct	.	start_char=14343|end_char=14344|ner=O	wp_.
+
 1	Ce	ce	DET	Ce	Gender=Masc|Number=Sing|PronType=Dem	2	det	Ce	start_char=14345|end_char=14347|ner=O	wp_▁Ce
 2	cycle	cycle	NOUN	cycle	Gender=Masc|Number=Sing	4	nsubj	cycle	start_char=14348|end_char=14353|ner=O	wp_▁cycle
 3	a	avoir	AUX	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	a	start_char=14354|end_char=14355|ner=O	wp_▁a
@@ -2741,7 +2851,9 @@
 65	financiers	financier	ADJ	financiers	Gender=Masc|Number=Plur	64	amod	financiers	start_char=14705|end_char=14715|ner=E-ORG|SpaceAfter=No	wp_▁financiers
 66	)	)	PUNCT	)	)	50	punct	)	start_char=14715|end_char=14716|ner=O|SpaceAfter=No	wp_▁)
 67	.	.	PUNCT	.	.	4	punct	.	start_char=14716|end_char=14717|ner=O|SpacesAfter=\n\n	wp_.
+
 1	•	•	PUNCT	•	•	0	root	•	start_char=14719|end_char=14720|ner=O|SpacesAfter=\t	wp_▁•
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=14721|end_char=14723|ner=O	wp_▁Le
 2	profil	profil	NOUN	profil	Gender=Masc|Number=Sing	18	nsubj	profil	start_char=14724|end_char=14730|ner=O	wp_▁profil
 3-4	des	des	des	des	des	des	des	des	start_char=14731|end_char=14734|ner=O	wp_▁des
@@ -2782,6 +2894,7 @@
 35	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	36	det	la	start_char=14902|end_char=14904|ner=O	wp_▁la
 36	communauté	communauté	NOUN	communauté	Gender=Fem|Number=Sing	33	nmod	communauté	start_char=14905|end_char=14915|ner=O|SpaceAfter=No	wp_▁communauté
 37	.	.	PUNCT	.	.	18	punct	.	start_char=14915|end_char=14916|ner=O	wp_.
+
 1	S'	soi	PRON	S'	Person=3|PronType=Prs|Reflex=Yes	2	expl:pv	S'	start_char=14917|end_char=14919|ner=O|SpaceAfter=No	wp_▁S	wp_'
 2	agissant	agir	VERB	agissant	Tense=Pres|VerbForm=Part	16	advcl	agissant	start_char=14919|end_char=14927|ner=O	wp_▁agissant
 3	de	de	ADP	de	de	5	case	de	start_char=14928|end_char=14930|ner=O	wp_▁de
@@ -2820,6 +2933,7 @@
 34	période	période	NOUN	période	Gender=Fem|Number=Sing	31	nmod	période	start_char=15088|end_char=15095|ner=O	wp_▁période
 35	précédente	précédent	ADJ	précédente	Gender=Fem|Number=Sing	34	amod	précédente	start_char=15096|end_char=15106|ner=O|SpaceAfter=No	wp_▁précédente
 36	.	.	PUNCT	.	.	16	punct	.	start_char=15106|end_char=15107|ner=O	wp_.
+
 1	Dans	dans	ADP	Dans	Dans	3	case	Dans	start_char=15108|end_char=15112|ner=O	wp_▁Dans
 2	cette	ce	DET	cette	Gender=Fem|Number=Sing|PronType=Dem	3	det	cette	start_char=15113|end_char=15118|ner=O	wp_▁cette
 3	optique	optique	NOUN	optique	Gender=Fem|Number=Sing	27	obl:mod	optique	start_char=15119|end_char=15126|ner=O|SpaceAfter=No	wp_▁optique
@@ -2865,6 +2979,7 @@
 42	et	et	CCONJ	et	et	43	cc	et	start_char=15350|end_char=15352|ner=I-MISC	wp_▁et
 43	commentaires	commentaire	NOUN	commentaires	Gender=Masc|Number=Plur	41	conj	commentaires	start_char=15353|end_char=15365|ner=E-MISC|SpaceAfter=No	wp_▁commentaires
 44	.	.	PUNCT	.	.	27	punct	.	start_char=15365|end_char=15366|ner=O	wp_.
+
 1	De	de	ADP	De	ExtPos=ADV	18	advmod	De	start_char=15367|end_char=15369|ner=O	wp_▁De
 2	même	même	ADV	même	même	1	fixed	même	start_char=15370|end_char=15374|ner=O|SpaceAfter=No	wp_▁même
 3	,	,	PUNCT	,	,	1	punct	,	start_char=15374|end_char=15375|ner=O	wp_,
@@ -2900,6 +3015,7 @@
 32	Petites	petit	ADJ	Petites	Gender=Fem|Number=Plur	33	amod	Petites	start_char=15531|end_char=15538|ner=B-ORG	wp_▁Petites
 33	Affiches	affiche	NOUN	Affiches	Gender=Fem|Number=Plur	29	nmod	Affiches	start_char=15539|end_char=15547|ner=E-ORG|SpaceAfter=No	wp_▁Affiche	wp_s
 34	.	.	PUNCT	.	.	18	punct	.	start_char=15547|end_char=15548|ner=O	wp_.
+
 1	Cet	ce	DET	Cet	Gender=Masc|Number=Sing|PronType=Dem	2	det	Cet	start_char=15549|end_char=15552|ner=O	wp_▁Cet
 2	objectif	objectif	NOUN	objectif	Gender=Masc|Number=Sing	17	nsubj:pass	objectif	start_char=15553|end_char=15561|ner=O	wp_▁objectif
 3	de	de	ADP	de	de	4	case	de	start_char=15562|end_char=15564|ner=O	wp_▁de
@@ -2941,6 +3057,7 @@
 37	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	38	det	le	le	wp_▁le
 38	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	35	nmod	CEJEC	start_char=15784|end_char=15789|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 39	.	.	PUNCT	.	.	17	punct	.	start_char=15789|end_char=15790|ner=O	wp_.
+
 1	En	en	ADP	En	En	2	case	En	start_char=15791|end_char=15793|ner=O	wp_▁En
 2	2014	2014	NUM	2014	Number=Plur	6	obl:mod	2014	start_char=15794|end_char=15798|ner=O|SpaceAfter=No	wp_▁2014
 3	,	,	PUNCT	,	,	2	punct	,	start_char=15798|end_char=15799|ner=O	wp_,
@@ -2995,6 +3112,7 @@
 52	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	53	det	l'	start_char=16057|end_char=16059|ner=O|SpaceAfter=No	wp_▁l	wp_'
 53	économie	économie	NOUN	économie	Gender=Fem|Number=Sing	50	obl:arg	économie	start_char=16059|end_char=16067|ner=O|SpaceAfter=No	wp_▁économie
 54	.	.	PUNCT	.	.	6	punct	.	start_char=16067|end_char=16068|ner=O	wp_.
+
 1	En	en	ADP	En	En	2	case	En	start_char=16069|end_char=16071|ner=O	wp_▁En
 2	parallèle	parallèle	NOUN	parallèle	Gender=Fem|Number=Sing	8	obl:mod	parallèle	start_char=16072|end_char=16081|ner=O|SpaceAfter=No	wp_▁parallèle
 3	,	,	PUNCT	,	,	2	punct	,	start_char=16081|end_char=16082|ner=O	wp_,
@@ -3021,6 +3139,7 @@
 24	entités	entité	NOUN	entités	Gender=Fem|Number=Plur	19	conj	entités	start_char=16201|end_char=16208|ner=O	wp_▁entités
 25	extérieures	extérieur	ADJ	extérieures	Gender=Fem|Number=Plur	24	amod	extérieures	start_char=16209|end_char=16220|ner=O|SpaceAfter=No	wp_▁extérieures
 26	.	.	PUNCT	.	.	8	punct	.	start_char=16220|end_char=16221|ner=O	wp_.
+
 1	De	de	ADP	De	De	2	case	De	start_char=16222|end_char=16224|ner=O	wp_▁De
 2	façon	façon	NOUN	façon	Gender=Fem|Number=Sing	7	obl:mod	façon	start_char=16225|end_char=16230|ner=O	wp_▁façon
 3	non	non	ADV	non	Polarity=Neg	4	advmod	non	start_char=16231|end_char=16234|ner=O	wp_▁non
@@ -3107,6 +3226,7 @@
 82	en	en	ADP	en	en	83	case	en	start_char=16661|end_char=16663|ner=O	wp_▁en
 83	2017	2017	NUM	2017	Number=Plur	81	nmod	2017	start_char=16664|end_char=16668|ner=O|SpaceAfter=No	wp_▁2017
 84	.	.	PUNCT	.	.	7	punct	.	start_char=16668|end_char=16669|ner=O|SpacesAfter=\s\n\n\t	wp_.
+
 1	Concernant	concerner	VERB	Concernant	Tense=Pres|VerbForm=Part	42	advcl	Concernant	start_char=16673|end_char=16683|ner=O	wp_▁Concernant
 2	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	3	det	l'	start_char=16684|end_char=16686|ner=O|SpaceAfter=No	wp_▁l	wp_'
 3	appui	appui	NOUN	appui	Gender=Masc|Number=Sing	1	obj	appui	start_char=16686|end_char=16691|ner=O	wp_▁appui
@@ -3169,6 +3289,7 @@
 56	monde	monde	NOUN	monde	Gender=Masc|Number=Sing	53	nmod	monde	start_char=16989|end_char=16994|ner=O	wp_▁monde
 57	socio-économique	socio-économique	ADJ	socio-économique	Gender=Masc|Number=Sing	56	amod	socio-économique	start_char=16995|end_char=17011|ner=O|SpaceAfter=No	wp_▁socio	wp_-	wp_économique
 58	.	.	PUNCT	.	.	42	punct	.	start_char=17011|end_char=17012|ner=O	wp_.
+
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	expl:subj	Il	start_char=17013|end_char=17015|ner=O	wp_▁Il
 2	en	en	PRON	en	Emph=No|Person=3|PronType=Prs	4	fixed	en	start_char=17016|end_char=17018|ner=O	wp_▁en
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	est	start_char=17019|end_char=17022|ner=O	wp_▁est
@@ -3214,6 +3335,7 @@
 40	finance	finance	NOUN	finance	Gender=Fem|Number=Sing	36	conj	finance	start_char=17224|end_char=17231|ner=O|SpaceAfter=No	wp_▁finance
 41	)	)	PUNCT	)	)	24	punct	)	start_char=17231|end_char=17232|ner=O|SpaceAfter=No	wp_▁)
 42	.	.	PUNCT	.	.	4	punct	.	start_char=17232|end_char=17233|ner=O|SpacesAfter=\n\n	wp_.
+
 1	2	2	NUM	2	NumType=Card	3	nummod	2	start_char=17235|end_char=17236|ner=O|SpaceAfter=No	wp_▁2
 2	-	-	PUNCT	-	-	1	punct	-	start_char=17236|end_char=17237|ner=O|SpacesAfter=\t	wp_▁-
 3	Présentation	présentation	NOUN	Présentation	Gender=Fem|Number=Sing	0	root	Présentation	start_char=17238|end_char=17250|ner=B-MISC	wp_▁Présentation
@@ -3224,11 +3346,13 @@
 8	de	de	ADP	de	de	10	case	de	start_char=17277|end_char=17279|ner=I-MISC	wp_▁de
 9	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	10	det	l’	start_char=17280|end_char=17282|ner=I-MISC|SpaceAfter=No	wp_▁l	wp_’
 10	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	6	nmod	unité	start_char=17282|end_char=17287|ner=E-MISC|SpacesAfter=\n\n	wp_▁unité
+
 1	•	•	PUNCT	•	•	2	punct	•	start_char=17289|end_char=17290|ner=O|SpacesAfter=\t	wp_▁•
 2	Ecosystème	écosystème	NOUN	Ecosystème	Gender=Masc|Number=Sing	0	root	Ecosystème	start_char=17291|end_char=17301|ner=O	wp_▁Eco	wp_système
 3	de	de	ADP	de	de	5	case	de	start_char=17302|end_char=17304|ner=O	wp_▁de
 4	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	5	det	l'	start_char=17305|end_char=17307|ner=O|SpaceAfter=No	wp_▁l	wp_'
 5	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	2	nmod	unité	start_char=17307|end_char=17312|ner=O|SpacesAfter=\n\n\t	wp_▁unité
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=17315|end_char=17317|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	4	nsubj:pass	CEJEC	start_char=17318|end_char=17323|ner=S-ORG	wp_▁CE	wp_J	wp_EC
 3	s'	soi	PRON	s'	Person=3|PronType=Prs|Reflex=Yes	4	expl:pass	s'	start_char=17324|end_char=17326|ner=O|SpaceAfter=No	wp_▁s	wp_'
@@ -3247,6 +3371,7 @@
 16	structure	structure	NOUN	structure	Gender=Fem|Number=Sing	11	conj	structure	start_char=17391|end_char=17400|ner=O	wp_▁structure
 17	fédérative	fédératif	ADJ	fédérative	Gender=Fem|Number=Sing	16	amod	fédérative	start_char=17401|end_char=17411|ner=O|SpaceAfter=No	wp_▁fé	wp_dé	wp_r	wp_ative
 18	.	.	PUNCT	.	.	4	punct	.	start_char=17411|end_char=17412|ner=O	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=17413|end_char=17415|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	3	nsubj	CEJEC	start_char=17416|end_char=17421|ner=S-ORG	wp_▁CE	wp_J	wp_EC
 3	fait	faire	VERB	fait	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	fait	start_char=17422|end_char=17426|ner=O	wp_▁fait
@@ -3271,6 +3396,7 @@
 22	Paris	Paris	PROPN	Paris	Paris	21	appos	Paris	start_char=17516|end_char=17521|ner=I-ORG	wp_▁Paris
 23	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	22	flat:name	Nanterre	start_char=17522|end_char=17530|ner=E-ORG|SpaceAfter=No	wp_▁Nanterre
 24	.	.	PUNCT	.	.	3	punct	.	start_char=17530|end_char=17531|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=17532|end_char=17537|ner=O	wp_▁Cette
 2	école	école	NOUN	école	Gender=Fem|Number=Sing	12	nsubj	école	start_char=17538|end_char=17543|ner=O	wp_▁école
 3	doctorale	doctoral	ADJ	doctorale	Gender=Fem|Number=Sing	2	amod	doctorale	start_char=17544|end_char=17553|ner=O|SpaceAfter=No	wp_▁doctorale
@@ -3319,6 +3445,7 @@
 42	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	43	det	le	le	wp_▁le
 43	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	40	nmod	CEJEC	start_char=17780|end_char=17785|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 44	.	.	PUNCT	.	.	12	punct	.	start_char=17785|end_char=17786|ner=O	wp_.
+
 1	Notre	son	DET	Notre	Number=Sing|Number[psor]=Plur|Person[psor]=1|Poss=Yes|PronType=Prs	2	det	Notre	start_char=17787|end_char=17792|ner=O	wp_▁Notre
 2	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	3	nsubj	unité	start_char=17793|end_char=17798|ner=O	wp_▁unité
 3	prend	prendre	VERB	prend	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	prend	start_char=17799|end_char=17804|ner=O	wp_▁prend
@@ -3336,6 +3463,7 @@
 15	ED	ED	PROPN	ED	Number=Sing	9	nmod	ED	start_char=17864|end_char=17866|ner=B-ORG	wp_ED
 16	DSP	DSP	PROPN	DSP	DSP	15	flat:name	DSP	start_char=17867|end_char=17870|ner=E-ORG|SpaceAfter=No	wp_▁D	wp_SP
 17	.	.	PUNCT	.	.	3	punct	.	start_char=17870|end_char=17871|ner=O	wp_.
+
 1	Parmi	parmi	ADP	Parmi	Parmi	3	case	Parmi	start_char=17872|end_char=17877|ner=O	wp_▁Parmi
 2	ces	ce	DET	ces	Number=Plur|PronType=Dem	3	det	ces	start_char=17878|end_char=17881|ner=O	wp_▁ces
 3	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	4	obl:mod	activités	start_char=17882|end_char=17891|ner=O	wp_▁activités
@@ -3365,6 +3493,7 @@
 26	de	de	ADP	de	de	27	case	de	start_char=18045|end_char=18047|ner=O	wp_▁de
 27	Goutelas	Goutelas	PROPN	Goutelas	Goutelas	21	nmod	Goutelas	start_char=18048|end_char=18056|ner=S-PER|SpaceAfter=No	wp_▁Gou	wp_tel	wp_as
 28	.	.	PUNCT	.	.	4	punct	.	start_char=18056|end_char=18057|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=18060|end_char=18062|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	5	nsubj	CEJEC	start_char=18063|end_char=18068|ner=S-ORG	wp_▁CE	wp_J	wp_EC
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	est	start_char=18069|end_char=18072|ner=O	wp_▁est
@@ -3419,6 +3548,7 @@
 51	de	de	ADP	de	de	52	case	de	start_char=18327|end_char=18329|ner=I-ORG	wp_▁de
 52	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	49	nmod	Nanterre	start_char=18330|end_char=18338|ner=E-ORG|SpaceAfter=No	wp_▁Nanterre
 53	.	.	PUNCT	.	.	5	punct	.	start_char=18338|end_char=18339|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	Ses	son	DET	Ses	Number=Plur|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	2	det	Ses	start_char=18342|end_char=18345|ner=O	wp_▁Ses
 2	buts	but	NOUN	buts	Gender=Masc|Number=Plur	4	nsubj	buts	start_char=18346|end_char=18350|ner=O	wp_▁buts
 3	sont	être	AUX	sont	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	sont	start_char=18351|end_char=18355|ner=O	wp_▁sont
@@ -3522,6 +3652,7 @@
 98	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	99	det	la	start_char=18961|end_char=18963|ner=O	wp_▁la
 99	FIND	FIND	PROPN	FIND	Gender=Fem|Number=Sing	96	nmod	FIND	start_char=18964|end_char=18968|ner=S-ORG|SpaceAfter=No	wp_▁F	wp_IND
 100	.	.	PUNCT	.	.	4	punct	.	start_char=18968|end_char=18969|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	A	à	ADP	A	A	3	case	A	start_char=18972|end_char=18973|ner=O	wp_▁A
 2	ces	ce	DET	ces	Number=Plur|PronType=Dem	3	det	ces	start_char=18974|end_char=18977|ner=O	wp_▁ces
 3	fins	fin	NOUN	fins	Gender=Fem|Number=Plur	7	obl:mod	fins	start_char=18978|end_char=18982|ner=O|SpaceAfter=No	wp_▁fins
@@ -3576,8 +3707,10 @@
 50	unités	unité	NOUN	unités	Gender=Fem|Number=Plur	47	obl:agent	unités	start_char=19237|end_char=19243|ner=O	wp_▁unités
 51	membres	membre	NOUN	membres	Gender=Masc|Number=Plur	50	nmod	membres	start_char=19244|end_char=19251|ner=O|SpaceAfter=No	wp_▁membres
 52	.	.	PUNCT	.	.	7	punct	.	start_char=19251|end_char=19252|ner=O|SpacesAfter=\n\n	wp_.
+
 1	•	•	PUNCT	•	•	2	punct	•	start_char=19254|end_char=19255|ner=O|SpacesAfter=\t	wp_▁•
 2	Rayonnement	rayonnement	NOUN	Rayonnement	Gender=Masc|Number=Sing	0	root	Rayonnement	start_char=19256|end_char=19267|ner=S-LOC|SpacesAfter=\n\n\t	wp_▁Ray	wp_onnement
+
 1	Par	par	ADP	Par	Par	3	case	Par	start_char=19270|end_char=19273|ner=O	wp_▁Par
 2	sa	son	DET	sa	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	3	det	sa	start_char=19274|end_char=19276|ner=O	wp_▁sa
 3	nature	nature	NOUN	nature	Gender=Fem|Number=Sing	10	obl:mod	nature	start_char=19277|end_char=19283|ner=O	wp_▁nature
@@ -3605,6 +3738,7 @@
 25	droit	droit	NOUN	droit	Gender=Masc|Number=Sing	21	obl:mod	droit	start_char=19416|end_char=19421|ner=O	wp_▁droit
 26	matériel	matériel	NOUN	matériel	Gender=Masc|Number=Sing	25	appos	matériel	start_char=19422|end_char=19430|ner=O|SpaceAfter=No	wp_▁matériel
 27	.	.	PUNCT	.	.	10	punct	.	start_char=19430|end_char=19431|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=19432|end_char=19437|ner=O	wp_▁Cette
 2	orientation	orientation	NOUN	orientation	Gender=Fem|Number=Sing	4	nsubj:pass	orientation	start_char=19438|end_char=19449|ner=O	wp_▁orientation
 3	le	lui	PRON	le	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	obj	le	start_char=19450|end_char=19452|ner=O	wp_▁le
@@ -3631,6 +3765,7 @@
 23	construction	construction	NOUN	construction	Gender=Fem|Number=Sing	19	nmod	construction	start_char=19567|end_char=19579|ner=O	wp_▁construction
 24	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	23	amod	européenne	start_char=19580|end_char=19590|ner=O|SpaceAfter=No	wp_▁européenne
 25	.	.	PUNCT	.	.	4	punct	.	start_char=19590|end_char=19591|ner=O	wp_.
+
 1	Pour	pour	ADP	Pour	Pour	2	mark	Pour	start_char=19592|end_char=19596|ner=O	wp_▁Pour
 2	conduire	conduire	VERB	conduire	VerbForm=Inf	12	advcl	conduire	start_char=19597|end_char=19605|ner=O	wp_▁conduire
 3-4	au	au	au	au	au	au	au	au	start_char=19606|end_char=19608|ner=O	wp_▁au
@@ -3671,6 +3806,7 @@
 36	ou	ou	CCONJ	ou	ou	37	cc	ou	start_char=19769|end_char=19771|ner=O	wp_▁ou
 37	étrangères	étranger	ADJ	étrangères	Gender=Fem|Number=Plur	35	conj	étrangères	start_char=19772|end_char=19782|ner=O|SpaceAfter=No	wp_▁étrangères
 38	.	.	PUNCT	.	.	12	punct	.	start_char=19782|end_char=19783|ner=O	wp_.
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=19784|end_char=19787|ner=O	wp_▁Les
 2	membres	membre	NOUN	membres	Gender=Masc|Number=Plur	8	nsubj	membres	start_char=19788|end_char=19795|ner=O	wp_▁membres
 3-4	du	du	du	du	du	du	du	du	start_char=19796|end_char=19798|ner=O	wp_▁du
@@ -3684,6 +3820,7 @@
 10	démarche	démarche	NOUN	démarche	Gender=Fem|Number=Sing	8	obj	démarche	start_char=19826|end_char=19834|ner=O	wp_▁démarche
 11	collaborative	collaboratif	ADJ	collaborative	Gender=Fem|Number=Sing	10	amod	collaborative	start_char=19835|end_char=19848|ner=O|SpaceAfter=No	wp_▁collaborative
 12	.	.	PUNCT	.	.	8	punct	.	start_char=19848|end_char=19849|ner=O	wp_.
+
 1	Sur	sur	ADP	Sur	Sur	3	case	Sur	start_char=19850|end_char=19853|ner=O|SpacesAfter=\s\s	wp_▁Sur
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	start_char=19855|end_char=19857|ner=O|SpacesAfter=\s\s	wp_▁le
 3	plan	plan	NOUN	plan	Gender=Masc|Number=Sing	8	obl:mod	plan	start_char=19859|end_char=19863|ner=O|SpacesAfter=\s\s	wp_▁plan
@@ -3707,6 +3844,7 @@
 21	Paris	Paris	PROPN	Paris	Paris	20	appos	Paris	start_char=19973|end_char=19978|ner=I-ORG	wp_▁Paris
 22	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	21	flat:name	Nanterre	start_char=19979|end_char=19987|ner=E-ORG|SpaceAfter=No	wp_▁Nanterre
 23	.	.	PUNCT	.	.	8	punct	.	start_char=19987|end_char=19988|ner=O	wp_.
+
 1	Dans	dans	ADP	Dans	Dans	3	case	Dans	start_char=19989|end_char=19993|ner=O	wp_▁Dans
 2	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	la	start_char=19994|end_char=19996|ner=O	wp_▁la
 3	période	période	NOUN	période	Gender=Fem|Number=Sing	8	obl:mod	période	start_char=19997|end_char=20004|ner=O	wp_▁période
@@ -3827,6 +3965,7 @@
 108	conférences	conférence	NOUN	conférences	Gender=Fem|Number=Plur	100	conj	conférences	start_char=20446|end_char=20457|ner=O	wp_▁conférences
 109	débats	débat	NOUN	débats	Gender=Masc|Number=Plur	108	appos	débats	start_char=20458|end_char=20464|ner=O|SpaceAfter=No	wp_▁débats
 110	.	.	PUNCT	.	.	8	punct	.	start_char=20464|end_char=20465|ner=O	wp_.
+
 1	Sur	sur	ADP	Sur	Sur	3	case	Sur	start_char=20466|end_char=20469|ner=O	wp_▁Sur
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	start_char=20470|end_char=20472|ner=O	wp_▁le
 3	plan	plan	NOUN	plan	Gender=Masc|Number=Sing	9	obl:mod	plan	start_char=20473|end_char=20477|ner=O	wp_▁plan
@@ -3859,6 +3998,7 @@
 29	justice	justice	NOUN	justice	Gender=Fem|Number=Sing	17	conj	justice	start_char=20604|end_char=20611|ner=E-ORG	wp_▁justice
 30	»	»	PUNCT	»	»	17	punct	»	start_char=20612|end_char=20613|ner=O|SpaceAfter=No	wp_▁»
 31	.	.	PUNCT	.	.	9	punct	.	start_char=20613|end_char=20614|ner=O	wp_.
+
 1	Créé	créer	VERB	Créé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	10	advcl	Créé	start_char=20615|end_char=20619|ner=O	wp_▁Créé
 2	en	en	ADP	en	en	3	case	en	start_char=20620|end_char=20622|ner=O	wp_▁en
 3	2011	2011	NUM	2011	Number=Plur	1	obl:mod	2011	start_char=20623|end_char=20627|ner=O	wp_▁2011
@@ -3949,6 +4089,7 @@
 87	4211	4211	NUM	4211	Number=Plur	86	nmod	4211	start_char=20991|end_char=20995|ner=E-ORG	wp_▁42	wp_11
 88	)	)	PUNCT	)	)	33	punct	)	start_char=20996|end_char=20997|ner=O|SpaceAfter=No	wp_▁)
 89	.	.	PUNCT	.	.	10	punct	.	start_char=20997|end_char=20998|ner=O	wp_.
+
 1	Sur	sur	ADP	Sur	Sur	3	case	Sur	start_char=20999|end_char=21002|ner=O	wp_▁Sur
 2	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	la	start_char=21003|end_char=21005|ner=O	wp_▁la
 3	période	période	NOUN	période	Gender=Fem|Number=Sing	10	obl:mod	période	start_char=21006|end_char=21013|ner=O	wp_▁période
@@ -3998,6 +4139,7 @@
 45	et	et	CCONJ	et	et	46	cc	et	start_char=21236|end_char=21238|ner=O	wp_▁et
 46	justice	justice	NOUN	justice	Gender=Fem|Number=Sing	42	conj	justice	start_char=21239|end_char=21246|ner=O|SpaceAfter=No	wp_▁justice
 47	.	.	PUNCT	.	.	10	punct	.	start_char=21246|end_char=21247|ner=O	wp_.
+
 1	Bien	bien	ADV	Bien	ExtPos=SCONJ	13	mark	Bien	start_char=21248|end_char=21252|ner=O	wp_▁Bien
 2	que	que	SCONJ	que	que	1	fixed	que	start_char=21253|end_char=21256|ner=O	wp_▁que
 3	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	la	start_char=21257|end_char=21259|ner=O	wp_▁la
@@ -4026,6 +4168,7 @@
 25	oeuvre	oeuvre	NOUN	oeuvre	Gender=Fem|Number=Sing	23	obj	oeuvre	start_char=21365|end_char=21371|ner=O	wp_▁oeuvre
 26	commune	commun	ADJ	commune	Gender=Fem|Number=Sing	25	amod	commune	start_char=21372|end_char=21379|ner=O|SpaceAfter=No	wp_▁commune
 27	.	.	PUNCT	.	.	21	punct	.	start_char=21379|end_char=21380|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	En	en	ADP	En	ExtPos=ADV	6	advmod	En	start_char=21383|end_char=21385|ner=O	wp_▁En
 2	outre	outre	ADV	outre	outre	1	fixed	outre	start_char=21386|end_char=21391|ner=O|SpaceAfter=No	wp_▁outre
 3	,	,	PUNCT	,	,	1	punct	,	start_char=21391|end_char=21392|ner=O	wp_,
@@ -4054,6 +4197,7 @@
 25	il	lui	PRON	il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	26	nsubj	il	start_char=21537|end_char=21539|ner=O	wp_▁il
 26	organise	organiser	VERB	organise	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	acl:relcl	organise	start_char=21540|end_char=21548|ner=O|SpaceAfter=No	wp_▁organise
 27	.	.	PUNCT	.	.	6	punct	.	start_char=21548|end_char=21549|ner=O	wp_.
+
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=21550|end_char=21552|ner=O	wp_▁Au
 1	à	à	ADP	à	à	3	case	à	à	wp_▁à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le	wp_▁le
@@ -4093,6 +4237,7 @@
 36	été	être	AUX	été	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	37	aux:pass	été	start_char=21756|end_char=21759|ner=O	wp_▁été
 37	accueillis	accueillir	VERB	accueillis	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	accueillis	start_char=21760|end_char=21770|ner=O|SpaceAfter=No	wp_▁accueillis
 38	.	.	PUNCT	.	.	37	punct	.	start_char=21770|end_char=21771|ner=O	wp_.
+
 1	De	de	ADP	De	ExtPos=ADV	6	advmod	De	start_char=21772|end_char=21774|ner=O	wp_▁De
 2	plus	plus	ADV	plus	plus	1	fixed	plus	start_char=21775|end_char=21779|ner=O|SpaceAfter=No	wp_▁plus
 3	,	,	PUNCT	,	,	1	punct	,	start_char=21779|end_char=21780|ner=O	wp_,
@@ -4129,6 +4274,7 @@
 33	Grande	grand	ADJ	Grande	Gender=Fem|Number=Sing	34	amod	Grande	start_char=21948|end_char=21954|ner=B-LOC	wp_▁Grande
 34	Région	région	NOUN	Région	Gender=Fem|Number=Sing	27	nmod	Région	start_char=21955|end_char=21961|ner=E-LOC|SpaceAfter=No	wp_▁Région
 35	.	.	PUNCT	.	.	6	punct	.	start_char=21961|end_char=21962|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=21963|end_char=21968|ner=O	wp_▁Cette
 2	collaboration	collaboration	NOUN	collaboration	Gender=Fem|Number=Sing	6	nsubj	collaboration	start_char=21969|end_char=21982|ner=O	wp_▁collaboration
 3	initiée	initier	VERB	initiée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	2	acl	initiée	start_char=21983|end_char=21990|ner=O	wp_▁initiée
@@ -4193,6 +4339,7 @@
 59	Allemagne	Allemagne	PROPN	Allemagne	Number=Sing	47	conj	Allemagne	start_char=22276|end_char=22285|ner=S-LOC|SpaceAfter=No	wp_▁Allemagne
 60	)	)	PUNCT	)	)	40	punct	)	start_char=22285|end_char=22286|ner=O|SpaceAfter=No	wp_▁)
 61	.	.	PUNCT	.	.	6	punct	.	start_char=22286|end_char=22287|ner=O	wp_.
+
 1	Enfin	enfin	ADV	Enfin	Enfin	6	advmod	Enfin	start_char=22288|end_char=22293|ner=O|SpaceAfter=No	wp_▁Enfin
 2	,	,	PUNCT	,	,	1	punct	,	start_char=22293|end_char=22294|ner=O	wp_,
 3	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	le	start_char=22295|end_char=22297|ner=O	wp_▁le
@@ -4221,6 +4368,7 @@
 25	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	le	le	wp_▁le
 26	Bénin	Bénin	PROPN	Bénin	Gender=Masc|Number=Sing	16	nmod	Bénin	start_char=22416|end_char=22421|ner=S-LOC|SpaceAfter=No	wp_▁Bénin
 27	.	.	PUNCT	.	.	6	punct	.	start_char=22421|end_char=22422|ner=O	wp_.
+
 1	Cet	ce	DET	Cet	Gender=Masc|Number=Sing|PronType=Dem	2	det	Cet	start_char=22423|end_char=22426|ner=O	wp_▁Cet
 2	accord	accord	NOUN	accord	Gender=Masc|Number=Sing	3	nsubj	accord	start_char=22427|end_char=22433|ner=O	wp_▁accord
 3	favorise	favoriser	VERB	favorise	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	favorise	start_char=22434|end_char=22442|ner=O	wp_▁favorise
@@ -4268,6 +4416,7 @@
 42	Affaires	affaire	NOUN	Affaires	Gender=Fem|Number=Plur	39	nmod	Affaires	start_char=22660|end_char=22668|ner=E-ORG|SpaceAfter=No	wp_▁Affaires
 43	)	)	PUNCT	)	)	31	punct	)	start_char=22668|end_char=22669|ner=O|SpaceAfter=No	wp_▁)
 44	.	.	PUNCT	.	.	3	punct	.	start_char=22669|end_char=22670|ner=O|SpacesAfter=\n\n	wp_.
+
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=22672|end_char=22673|ner=O|SpaceAfter=No	wp_▁3
 2	-	-	PUNCT	-	-	3	punct	-	start_char=22673|end_char=22674|ner=O|SpacesAfter=\t	wp_▁-
 3	Produits	produit	NOUN	Produits	Gender=Masc|Number=Plur	1	conj	Produits	start_char=22675|end_char=22683|ner=O	wp_▁Produits
@@ -4275,6 +4424,7 @@
 5	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	1	conj	activités	start_char=22687|end_char=22696|ner=O	wp_▁activités
 6	de	de	ADP	de	de	7	case	de	start_char=22697|end_char=22699|ner=O	wp_▁de
 7	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	5	nmod	recherche	start_char=22700|end_char=22709|ner=O|SpacesAfter=\n\n	wp_▁recherche
+
 1	(	(	PUNCT	(	(	4	punct	(	start_char=22711|end_char=22712|ner=O|SpaceAfter=No	wp_▁(
 2	pour	pour	ADP	pour	pour	4	case	pour	start_char=22712|end_char=22716|ner=O	wp_▁pour
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=22717|end_char=22719|ner=O|SpaceAfter=No	wp_▁l	wp_’
@@ -4285,8 +4435,10 @@
 8	ou	ou	CCONJ	ou	ou	9	cc	ou	start_char=22741|end_char=22743|ner=O	wp_▁ou
 9	thème	thème	NOUN	thème	Gender=Masc|Number=Sing	4	conj	thème	start_char=22744|end_char=22749|ner=O|SpaceAfter=No	wp_▁thème
 10	)	)	PUNCT	)	)	4	punct	)	start_char=22749|end_char=22750|ner=O|SpacesAfter=\n\n	wp_▁)
+
 1	Bilan	bilan	NOUN	Bilan	Gender=Masc|Number=Sing	0	root	Bilan	start_char=22752|end_char=22757|ner=O	wp_▁Bilan
 2	scientifique	scientifique	ADJ	scientifique	Number=Sing	1	amod	scientifique	start_char=22758|end_char=22770|ner=O|SpacesAfter=\n\n\t	wp_▁scientifique
+
 1	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	2	det	L'	start_char=22773|end_char=22775|ner=O|SpaceAfter=No	wp_▁L	wp_'
 2	activité	activité	NOUN	activité	Gender=Fem|Number=Sing	14	nsubj	activité	start_char=22775|end_char=22783|ner=O	wp_▁activité
 3-4	du	du	du	du	du	du	du	du	start_char=22784|end_char=22786|ner=O	wp_▁du
@@ -4330,6 +4482,7 @@
 39	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	40	det	l'	start_char=22975|end_char=22977|ner=O|SpaceAfter=No	wp_▁l	wp_'
 40	expertise	expertise	NOUN	expertise	Gender=Fem|Number=Sing	19	conj	expertise	start_char=22977|end_char=22986|ner=O|SpaceAfter=No	wp_▁expertise
 41	.	.	PUNCT	.	.	14	punct	.	start_char=22986|end_char=22987|ner=O	wp_.
+
 1	S'	soi	PRON	S'	Person=3|PronType=Prs|Reflex=Yes	2	expl:pv	S'	start_char=22988|end_char=22990|ner=O|SpaceAfter=No	wp_▁S	wp_'
 2	agissant	agir	VERB	agissant	Tense=Pres|VerbForm=Part	12	advcl	agissant	start_char=22990|end_char=22998|ner=O	wp_▁agissant
 3	de	de	ADP	de	de	5	case	de	start_char=22999|end_char=23001|ner=O	wp_▁de
@@ -4357,6 +4510,7 @@
 25	format	format	NOUN	format	Gender=Masc|Number=Sing	21	conj	format	start_char=23118|end_char=23124|ner=O	wp_▁format
 26	unique	unique	ADJ	unique	Gender=Masc|Number=Sing	25	amod	unique	start_char=23125|end_char=23131|ner=O|SpaceAfter=No	wp_▁unique
 27	.	.	PUNCT	.	.	12	punct	.	start_char=23131|end_char=23132|ner=O	wp_.
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=23133|end_char=23136|ner=O	wp_▁Les
 2	membres	membre	NOUN	membres	Gender=Masc|Number=Plur	7	nsubj	membres	start_char=23137|end_char=23144|ner=O	wp_▁membres
 3-4	du	du	du	du	du	du	du	du	start_char=23145|end_char=23147|ner=O	wp_▁du
@@ -4388,6 +4542,7 @@
 28	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	29	det	l'	start_char=23269|end_char=23271|ner=O|SpaceAfter=No	wp_▁l	wp_'
 29	étranger	étranger	NOUN	étranger	Gender=Masc|Number=Sing	24	conj	étranger	start_char=23271|end_char=23279|ner=O|SpaceAfter=No	wp_▁étranger
 30	.	.	PUNCT	.	.	7	punct	.	start_char=23279|end_char=23280|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=23281|end_char=23283|ner=O	wp_▁La
 2	production	production	NOUN	production	Gender=Fem|Number=Sing	6	nsubj	production	start_char=23284|end_char=23294|ner=O	wp_▁production
 3	de	de	ADP	de	de	4	case	de	start_char=23295|end_char=23297|ner=O	wp_▁de
@@ -4425,6 +4580,7 @@
 35	et	et	CCONJ	et	et	36	cc	et	start_char=23503|end_char=23505|ner=O	wp_▁et
 36	recensions	recension	NOUN	recensions	Gender=Fem|Number=Plur	34	conj	recensions	start_char=23506|end_char=23516|ner=O|SpaceAfter=No	wp_▁rec	wp_ens	wp_ions
 37	.	.	PUNCT	.	.	6	punct	.	start_char=23516|end_char=23517|ner=O	wp_.
+
 1	Concernant	concerner	VERB	Concernant	Tense=Pres|VerbForm=Part	12	advcl	Concernant	start_char=23518|end_char=23528|ner=O	wp_▁Concernant
 2	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	la	start_char=23529|end_char=23531|ner=O	wp_▁la
 3	formation	formation	NOUN	formation	Gender=Fem|Number=Sing	1	obj	formation	start_char=23532|end_char=23541|ner=O	wp_▁formation
@@ -4476,6 +4632,7 @@
 44	leur	son	DET	leur	Number=Sing|Number[psor]=Plur|Person[psor]=3|Poss=Yes|PronType=Prs	45	det	leur	start_char=23751|end_char=23755|ner=O	wp_▁leur
 45	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	42	nmod	recherche	start_char=23756|end_char=23765|ner=O|SpaceAfter=No	wp_▁recherche
 46	.	.	PUNCT	.	.	12	punct	.	start_char=23765|end_char=23766|ner=O	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=23767|end_char=23769|ner=O	wp_▁Le
 2	séminaire	séminaire	NOUN	séminaire	Gender=Masc|Number=Sing	10	nsubj	séminaire	start_char=23770|end_char=23779|ner=O	wp_▁séminaire
 3	d'	de	ADP	d'	d'	4	case	d'	start_char=23780|end_char=23782|ner=O|SpaceAfter=No	wp_▁d	wp_'
@@ -4509,6 +4666,7 @@
 29	unités	unité	NOUN	unités	Gender=Fem|Number=Plur	18	obl:mod	unités	start_char=23925|end_char=23931|ner=O	wp_▁unités
 30	voisines	voisin	ADJ	voisines	Gender=Fem|Number=Plur	29	amod	voisines	start_char=23932|end_char=23940|ner=O|SpaceAfter=No	wp_▁voisines
 31	.	.	PUNCT	.	.	10	punct	.	start_char=23940|end_char=23941|ner=O	wp_.
+
 1	Quant	quant	ADV	Quant	ExtPos=ADP	4	case	Quant	start_char=23942|end_char=23947|ner=O	wp_▁Quant
 2	à	à	ADP	à	à	1	fixed	à	start_char=23948|end_char=23949|ner=O	wp_▁à
 3	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	4	det	l'	start_char=23950|end_char=23952|ner=O|SpaceAfter=No	wp_▁l	wp_'
@@ -4560,8 +4718,10 @@
 48	testamentaire	testamentaire	ADJ	testamentaire	Gender=Masc|Number=Sing	47	amod	testamentaire	start_char=24200|end_char=24213|ner=O	wp_▁testament	wp_aire
 49	européen	européen	ADJ	européen	Gender=Masc|Number=Sing	47	amod	européen	start_char=24214|end_char=24222|ner=O|SpaceAfter=No	wp_▁européen
 50	.	.	PUNCT	.	.	8	punct	.	start_char=24222|end_char=24223|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Données	donnée	NOUN	Données	Gender=Fem|Number=Plur	0	root	Données	start_char=24225|end_char=24232|ner=O	wp_▁Données
 2	chiffrées	chiffré	ADJ	chiffrées	Gender=Fem|Number=Plur	1	amod	chiffrées	start_char=24233|end_char=24242|ner=O|SpacesAfter=\n\n\t	wp_▁chiffrées
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=24245|end_char=24248|ner=O	wp_▁Les
 2	produits	produit	NOUN	produits	Gender=Masc|Number=Plur	8	nsubj	produits	start_char=24249|end_char=24257|ner=O	wp_▁produits
 3	et	et	CCONJ	et	et	4	cc	et	start_char=24258|end_char=24260|ner=O	wp_▁et
@@ -4609,6 +4769,7 @@
 44	référence	référence	NOUN	référence	Gender=Fem|Number=Sing	42	nmod	référence	start_char=24497|end_char=24506|ner=O|SpaceAfter=No	wp_▁référence
 45	)	)	PUNCT	)	)	38	punct	)	start_char=24506|end_char=24507|ner=O|SpaceAfter=No	wp_▁)
 46	.	.	PUNCT	.	.	8	punct	.	start_char=24507|end_char=24508|ner=O	wp_.
+
 1	33	33	NUM	33	Number=Plur	2	nummod	33	start_char=24509|end_char=24511|ner=O	wp_▁33
 2	participations	participation	NOUN	participations	Gender=Fem|Number=Plur	12	nsubj	participations	start_char=24512|end_char=24526|ner=O	wp_▁participation	wp_s
 3	à	à	ADP	à	à	5	case	à	start_char=24527|end_char=24528|ner=O	wp_▁à
@@ -4634,6 +4795,7 @@
 22	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	23	det	l'	start_char=24637|end_char=24639|ner=O|SpaceAfter=No	wp_▁l	wp_'
 23	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	17	nmod	unité	start_char=24639|end_char=24644|ner=O|SpaceAfter=No	wp_▁unité
 24	.	.	PUNCT	.	.	12	punct	.	start_char=24644|end_char=24645|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Sélection	sélection	NOUN	Sélection	Gender=Fem|Number=Sing	0	root	Sélection	start_char=24647|end_char=24656|ner=O	wp_▁Sélection
 2-3	des	des	des	des	des	des	des	des	start_char=24657|end_char=24660|ner=O	wp_▁des
 2	de	de	ADP	de	de	4	case	de	de	wp_▁de
@@ -4646,6 +4808,7 @@
 8	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	4	conj	activités	start_char=24677|end_char=24686|ner=O	wp_▁activités
 9	de	de	ADP	de	de	10	case	de	start_char=24687|end_char=24689|ner=O	wp_▁de
 10	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	8	nmod	recherche	start_char=24690|end_char=24699|ner=O|SpacesAfter=\n\n\t	wp_▁recherche
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=24702|end_char=24704|ner=O	wp_▁La
 2	sélection	sélection	NOUN	sélection	Gender=Fem|Number=Sing	19	nsubj	sélection	start_char=24705|end_char=24714|ner=O	wp_▁sélection
 3-4	des	des	des	des	des	des	des	des	start_char=24715|end_char=24718|ner=O	wp_▁des
@@ -4697,6 +4860,7 @@
 45	formation	formation	NOUN	formation	Gender=Fem|Number=Sing	42	nmod	formation	start_char=24941|end_char=24950|ner=O	wp_▁formation
 46	doctorale	doctoral	ADJ	doctorale	Gender=Fem|Number=Sing	45	amod	doctorale	start_char=24951|end_char=24960|ner=O|SpaceAfter=No	wp_▁doctorale
 47	.	.	PUNCT	.	.	19	punct	.	start_char=24960|end_char=24961|ner=O	wp_.
+
 1	S'	soi	PRON	S'	Person=3|PronType=Prs|Reflex=Yes	2	expl:pv	S'	start_char=24962|end_char=24964|ner=O|SpaceAfter=No	wp_▁S	wp_'
 2	agissant	agir	VERB	agissant	Tense=Pres|VerbForm=Part	33	advcl	agissant	start_char=24964|end_char=24972|ner=O	wp_▁agissant
 3-4	des	des	des	des	des	des	des	des	start_char=24973|end_char=24976|ner=O	wp_▁des
@@ -4743,6 +4907,7 @@
 41	20,6	20,6	NUM	20,6	Number=Plur	42	nummod	20,6	start_char=25153|end_char=25157|ner=O|SpaceAfter=No	wp_▁20	wp_,	wp_6
 42	%	%	SYM	%	ExtPos=NOUN|Number=Plur	33	obl:mod	%	start_char=25157|end_char=25158|ner=O|SpaceAfter=No	wp_▁%
 43	.	.	PUNCT	.	.	33	punct	.	start_char=25158|end_char=25159|ner=O	wp_.
+
 1	Concernant	concerner	VERB	Concernant	Tense=Pres|VerbForm=Part	31	advcl	Concernant	start_char=25160|end_char=25170|ner=O	wp_▁Concernant
 2	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	la	start_char=25171|end_char=25173|ner=O	wp_▁la
 3	sélection	sélection	NOUN	sélection	Gender=Fem|Number=Sing	1	obj	sélection	start_char=25174|end_char=25183|ner=O	wp_▁sélection
@@ -4786,6 +4951,7 @@
 39	38	38	NUM	38	Number=Plur	40	nummod	38	start_char=25378|end_char=25380|ner=O	wp_▁38
 40	autres	autre	PRON	autres	Number=Plur|Person=3|PronType=Ind	37	appos	autres	start_char=25381|end_char=25387|ner=O|SpaceAfter=No	wp_▁autres
 41	.	.	PUNCT	.	.	31	punct	.	start_char=25387|end_char=25388|ner=O	wp_.
+
 1	En	en	ADP	En	ExtPos=ADV	8	advmod	En	start_char=25389|end_char=25391|ner=O	wp_▁En
 2	bref	bref	NOUN	bref	Gender=Masc|Number=Sing	1	fixed	bref	start_char=25392|end_char=25396|ner=O|SpaceAfter=No	wp_▁bref
 3	,	,	PUNCT	,	,	1	punct	,	start_char=25396|end_char=25397|ner=O	wp_,
@@ -4808,6 +4974,7 @@
 19	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	la	start_char=25484|end_char=25486|ner=O	wp_▁la
 20	période	période	NOUN	période	Gender=Fem|Number=Sing	12	nmod	période	start_char=25487|end_char=25494|ner=O|SpaceAfter=No	wp_▁période
 21	.	.	PUNCT	.	.	8	punct	.	start_char=25494|end_char=25495|ner=O	wp_.
+
 1	Quant	quant	ADV	Quant	ExtPos=ADP	5	case	Quant	start_char=25496|end_char=25501|ner=O	wp_▁Quant
 2-3	aux	aux	aux	aux	aux	aux	aux	aux	start_char=25502|end_char=25505|ner=O	wp_▁aux
 2	à	à	ADP	à	à	1	fixed	à	à	wp_▁à
@@ -4842,6 +5009,7 @@
 30	importance	importance	NOUN	importance	Gender=Fem|Number=Sing	28	obj	importance	start_char=25649|end_char=25659|ner=O	wp_▁importance
 31	fondamentale	fondamental	ADJ	fondamentale	Gender=Fem|Number=Sing	30	amod	fondamentale	start_char=25660|end_char=25672|ner=O|SpaceAfter=No	wp_▁fondamentale
 32	.	.	PUNCT	.	.	12	punct	.	start_char=25672|end_char=25673|ner=O	wp_.
+
 1	En	en	ADP	En	ExtPos=ADV	16	advmod	En	start_char=25674|end_char=25676|ner=O	wp_▁En
 2	définitive	définitif	NOUN	définitive	Gender=Fem|Number=Sing	1	fixed	définitive	start_char=25677|end_char=25687|ner=O|SpaceAfter=No	wp_▁définitive
 3	,	,	PUNCT	,	,	1	punct	,	start_char=25687|end_char=25688|ner=O	wp_,
@@ -4878,8 +5046,10 @@
 32	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	la	start_char=25822|end_char=25824|ner=O	wp_▁la
 33	période	période	NOUN	période	Gender=Fem|Number=Sing	30	nmod	période	start_char=25825|end_char=25832|ner=O|SpaceAfter=No	wp_▁période
 34	.	.	PUNCT	.	.	16	punct	.	start_char=25832|end_char=25833|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Faits	fait	NOUN	Faits	Gender=Masc|Number=Plur	0	root	Faits	start_char=25835|end_char=25840|ner=O	wp_▁Fait	wp_s
 2	marquants	marquant	ADJ	marquants	Gender=Masc|Number=Plur	1	amod	marquants	start_char=25841|end_char=25850|ner=O|SpacesAfter=\n\n\t	wp_▁marquant	wp_s
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=25853|end_char=25856|ner=O	wp_▁Les
 2	points	point	NOUN	points	Gender=Masc|Number=Plur	11	nsubj:pass	points	start_char=25857|end_char=25863|ner=O	wp_▁points
 3	marquants	marquant	ADJ	marquants	Gender=Masc|Number=Plur	2	amod	marquants	start_char=25864|end_char=25873|ner=O	wp_▁marquant	wp_s
@@ -4909,6 +5079,7 @@
 25	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	26	det	l'	start_char=26001|end_char=26003|ner=O|SpaceAfter=No	wp_▁l	wp_'
 26	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	22	nmod	unité	start_char=26003|end_char=26008|ner=O|SpaceAfter=No	wp_▁unité
 27	.	.	PUNCT	.	.	11	punct	.	start_char=26008|end_char=26009|ner=O	wp_.
+
 1	Ces	ce	DET	Ces	Number=Plur|PronType=Dem	2	det	Ces	start_char=26010|end_char=26013|ner=O	wp_▁Ces
 2	points	point	NOUN	points	Gender=Masc|Number=Plur	4	nsubj	points	start_char=26014|end_char=26020|ner=O	wp_▁points
 3	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	4	expl:pass	se	start_char=26021|end_char=26023|ner=O	wp_▁se
@@ -4934,6 +5105,7 @@
 23	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	24	det	l'	start_char=26160|end_char=26162|ner=O|SpaceAfter=No	wp_▁l	wp_'
 24	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	21	nmod	unité	start_char=26162|end_char=26167|ner=O|SpaceAfter=No	wp_▁unité
 25	.	.	PUNCT	.	.	4	punct	.	start_char=26167|end_char=26168|ner=O	wp_.
+
 1	Dans	dans	ADP	Dans	Dans	3	case	Dans	start_char=26169|end_char=26173|ner=O	wp_▁Dans
 2	une	un	DET	une	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	3	det	une	start_char=26174|end_char=26177|ner=O	wp_▁une
 3	sélection	sélection	NOUN	sélection	Gender=Fem|Number=Sing	15	obl:mod	sélection	start_char=26178|end_char=26187|ner=O	wp_▁sélection
@@ -4961,8 +5133,10 @@
 25	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	26	det	l'	start_char=26291|end_char=26293|ner=O|SpaceAfter=No	wp_▁l	wp_'
 26	attention	attention	NOUN	attention	Gender=Fem|Number=Sing	24	obj	attention	start_char=26293|end_char=26302|ner=O	wp_▁attention
 27	:	:	PUNCT	:	:	15	punct	:	start_char=26303|end_char=26304|ner=O|SpacesAfter=\s\n\n	wp_▁:
+
 1	1	1	NUM	1	NumType=Card	0	root	1	start_char=26307|end_char=26308|ner=O|SpaceAfter=No	wp_▁1
 2	)	)	PUNCT	)	)	1	punct	)	start_char=26308|end_char=26309|ner=O	wp_▁)
+
 1	Cycles	cycle	NOUN	Cycles	Gender=Masc|Number=Plur	0	root	Cycles	start_char=26310|end_char=26316|ner=O	wp_▁Cycle	wp_s
 2	de	de	ADP	de	de	3	case	de	start_char=26317|end_char=26319|ner=O	wp_▁de
 3	conférences	conférence	NOUN	conférences	Gender=Fem|Number=Plur	1	nmod	conférences	start_char=26320|end_char=26331|ner=O	wp_▁conférences
@@ -5000,6 +5174,7 @@
 33	Union	union	NOUN	Union	Gender=Fem|Number=Sing	25	obl:mod	Union	start_char=26485|end_char=26490|ner=B-ORG	wp_▁Union
 34	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	33	amod	européenne	start_char=26491|end_char=26501|ner=E-ORG|SpaceAfter=No	wp_▁européenne
 35	,	,	PUNCT	,	,	1	punct	,	start_char=26501|end_char=26502|ner=O	wp_,
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=26503|end_char=26506|ner=O	wp_▁Les
 2	principes	principe	NOUN	principes	Gender=Masc|Number=Plur	0	root	principes	start_char=26507|end_char=26516|ner=O	wp_▁principes
 3	d'	de	ADP	d'	d'	4	case	d'	start_char=26517|end_char=26519|ner=O|SpaceAfter=No	wp_▁d	wp_'
@@ -5014,6 +5189,7 @@
 12	Union	union	NOUN	Union	Gender=Fem|Number=Sing	9	nmod	Union	start_char=26566|end_char=26571|ner=B-ORG	wp_▁Union
 13	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	12	amod	européenne	start_char=26572|end_char=26582|ner=E-ORG|SpaceAfter=No	wp_▁européenne
 14	,	,	PUNCT	,	,	2	punct	,	start_char=26582|end_char=26583|ner=O	wp_,
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=26584|end_char=26587|ner=O	wp_▁Les
 2	réformes	réforme	NOUN	réformes	Gender=Fem|Number=Plur	0	root	réformes	start_char=26588|end_char=26596|ner=O	wp_▁réformes
 3	de	de	ADP	de	de	5	case	de	start_char=26597|end_char=26599|ner=O	wp_▁de
@@ -5042,6 +5218,7 @@
 26	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	27	det	l'	start_char=26727|end_char=26729|ner=O|SpaceAfter=No	wp_▁l	wp_'
 27	économie	économie	NOUN	économie	Gender=Fem|Number=Sing	24	obl:arg	économie	start_char=26729|end_char=26737|ner=O|SpaceAfter=No	wp_▁économie
 28	.	.	PUNCT	.	.	2	punct	.	start_char=26737|end_char=26738|ner=O	wp_.
+
 1	Véritable	véritable	ADJ	Véritable	Gender=Fem|Number=Sing	2	amod	Véritable	start_char=26739|end_char=26748|ner=O	wp_▁Véritable
 2	marque	marque	NOUN	marque	Gender=Fem|Number=Sing	16	advcl	marque	start_char=26749|end_char=26755|ner=O	wp_▁marque
 3	de	de	ADP	de	de	4	case	de	start_char=26756|end_char=26758|ner=O	wp_▁de
@@ -5073,6 +5250,7 @@
 28	de	de	ADP	de	de	29	case	de	start_char=26907|end_char=26909|ner=O	wp_▁de
 29	connaissances	connaissance	NOUN	connaissances	Gender=Fem|Number=Plur	27	nmod	connaissances	start_char=26910|end_char=26923|ner=O|SpaceAfter=No	wp_▁connaissances
 30	.	.	PUNCT	.	.	16	punct	.	start_char=26923|end_char=26924|ner=O	wp_.
+
 1	Leur	son	DET	Leur	Number=Sing|Number[psor]=Plur|Person[psor]=3|Poss=Yes|PronType=Prs	2	det	Leur	start_char=26925|end_char=26929|ner=O	wp_▁Leur
 2	richesse	richesse	NOUN	richesse	Gender=Fem|Number=Sing	3	nsubj	richesse	start_char=26930|end_char=26938|ner=O	wp_▁richesse
 3	tient	tenir	VERB	tient	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	tient	start_char=26939|end_char=26944|ner=O	wp_▁tient
@@ -5103,8 +5281,10 @@
 28	éminemment	éminemment	ADV	éminemment	éminemment	29	advmod	éminemment	start_char=27094|end_char=27104|ner=O	wp_▁é	wp_min	wp_emment
 29	dynamique	dynamique	ADJ	dynamique	Gender=Fem|Number=Sing	27	amod	dynamique	start_char=27105|end_char=27114|ner=O|SpaceAfter=No	wp_▁dynamique
 30	.	.	PUNCT	.	.	3	punct	.	start_char=27114|end_char=27115|ner=O|SpacesAfter=\n\n	wp_.
+
 1	2	2	NUM	2	NumType=Card	0	root	2	start_char=27117|end_char=27118|ner=O|SpaceAfter=No	wp_▁2
 2	)	)	PUNCT	)	)	1	punct	)	start_char=27118|end_char=27119|ner=O	wp_▁)
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=27120|end_char=27123|ner=O	wp_▁Les
 2	journées	journée	NOUN	journées	Gender=Fem|Number=Plur	0	root	journées	start_char=27124|end_char=27132|ner=O	wp_▁journées
 3	d'	de	ADP	d'	d'	4	case	d'	start_char=27133|end_char=27135|ner=O|SpaceAfter=No	wp_▁d	wp_'
@@ -5142,6 +5322,7 @@
 34	son	son	DET	son	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	35	det	son	start_char=27305|end_char=27308|ner=O	wp_▁son
 35	intitulé	intitulé	NOUN	intitulé	Gender=Masc|Number=Sing	32	obl:mod	intitulé	start_char=27309|end_char=27317|ner=O|SpaceAfter=No	wp_▁intitulé
 36	.	.	PUNCT	.	.	2	punct	.	start_char=27317|end_char=27318|ner=O	wp_.
+
 1	Membre	membre	NOUN	Membre	Gender=Masc|Number=Sing	6	advcl	Membre	start_char=27319|end_char=27325|ner=O	wp_▁Membre
 2	fondateur	fondateur	ADJ	fondateur	Gender=Masc|Number=Sing	1	amod	fondateur	start_char=27326|end_char=27335|ner=O|SpaceAfter=No	wp_▁fondateur
 3	,	,	PUNCT	,	,	1	punct	,	start_char=27335|end_char=27336|ner=O	wp_,
@@ -5165,8 +5346,10 @@
 21	session	session	NOUN	session	Gender=Fem|Number=Sing	17	obj	session	start_char=27418|end_char=27425|ner=O	wp_▁session
 22	2014	2014	NUM	2014	Number=Plur	21	nmod	2014	start_char=27426|end_char=27430|ner=O|SpaceAfter=No	wp_▁2014
 23	.	.	PUNCT	.	.	6	punct	.	start_char=27430|end_char=27431|ner=O|SpacesAfter=\n\n	wp_.
+
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=27433|end_char=27434|ner=O|SpaceAfter=No	wp_▁3
 2	)	)	PUNCT	)	)	1	punct	)	start_char=27434|end_char=27435|ner=O	wp_▁)
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=27436|end_char=27439|ner=O	wp_▁Les
 2	actions	action	NOUN	actions	Gender=Fem|Number=Plur	26	nsubj	actions	start_char=27440|end_char=27447|ner=O	wp_▁actions
 3	collectives	collectif	ADJ	collectives	Gender=Fem|Number=Plur	2	amod	collectives	start_char=27448|end_char=27459|ner=O	wp_▁collectives
@@ -5200,6 +5383,7 @@
 31	et	et	CCONJ	et	et	32	cc	et	start_char=27630|end_char=27632|ner=O	wp_▁et
 32	conceptuelle	conceptuel	ADJ	conceptuelle	Gender=Fem|Number=Sing	30	conj	conceptuelle	start_char=27633|end_char=27645|ner=O|SpaceAfter=No	wp_▁concept	wp_uelle
 33	.	.	PUNCT	.	.	26	punct	.	start_char=27645|end_char=27646|ner=O	wp_.
+
 1	Formellement	formellement	ADV	Formellement	Formellement	4	advmod	Formellement	start_char=27647|end_char=27659|ner=O|SpaceAfter=No	wp_▁Form	wp_ellement
 2	,	,	PUNCT	,	,	1	punct	,	start_char=27659|end_char=27660|ner=O	wp_,
 3	il	lui	PRON	il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	4	nsubj	il	start_char=27661|end_char=27663|ner=O	wp_▁il
@@ -5222,6 +5406,7 @@
 19	particulièrement	particulièrement	ADV	particulièrement	particulièrement	20	advmod	particulièrement	start_char=27765|end_char=27781|ner=O	wp_particulièrement
 20	stimulante	stimulant	ADJ	stimulante	Gender=Fem|Number=Sing	17	amod	stimulante	start_char=27782|end_char=27792|ner=O|SpaceAfter=No	wp_▁stimulant	wp_e
 21	.	.	PUNCT	.	.	4	punct	.	start_char=27792|end_char=27793|ner=O	wp_.
+
 1	Conceptuellement	conceptuellement	ADV	Conceptuellement	Conceptuellement	5	advmod	Conceptuellement	start_char=27794|end_char=27810|ner=O|SpaceAfter=No	wp_▁Concept	wp_uelle	wp_ment
 2	,	,	PUNCT	,	,	1	punct	,	start_char=27810|end_char=27811|ner=O	wp_,
 3	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	4	det	l'	start_char=27812|end_char=27814|ner=O|SpaceAfter=No	wp_▁l	wp_'
@@ -5244,6 +5429,7 @@
 19	intérêt	intérêt	NOUN	intérêt	Gender=Masc|Number=Sing	16	obl:arg	intérêt	start_char=27900|end_char=27907|ner=O	wp_▁intérêt
 20	personnel	personnel	ADJ	personnel	Gender=Masc|Number=Sing	19	amod	personnel	start_char=27908|end_char=27917|ner=O|SpaceAfter=No	wp_▁personnel
 21	.	.	PUNCT	.	.	5	punct	.	start_char=27917|end_char=27918|ner=O	wp_.
+
 1	Il	lui	PRON	Il	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	Il	start_char=27919|end_char=27921|ner=O	wp_▁Il
 2	interroge	interroger	VERB	interroge	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	interroge	start_char=27922|end_char=27931|ner=O	wp_▁interroge
 3	tout	tout	ADV	tout	tout	4	advmod	tout	start_char=27932|end_char=27936|ner=O	wp_▁tout
@@ -5268,8 +5454,10 @@
 22	ces	ce	DET	ces	Number=Plur|PronType=Dem	23	det	ces	start_char=28048|end_char=28051|ner=O	wp_▁ces
 23	décisions	décision	NOUN	décisions	Gender=Fem|Number=Plur	19	nmod	décisions	start_char=28052|end_char=28061|ner=O|SpaceAfter=No	wp_▁décisions
 24	.	.	PUNCT	.	.	2	punct	.	start_char=28061|end_char=28062|ner=O|SpacesAfter=\n\n	wp_.
+
 1	4	4	NUM	4	NumType=Card	0	root	4	start_char=28064|end_char=28065|ner=O|SpaceAfter=No	wp_▁4
 2	)	)	PUNCT	)	)	1	punct	)	start_char=28065|end_char=28066|ner=O	wp_▁)
+
 1	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	2	det	L'	start_char=28067|end_char=28069|ner=O|SpaceAfter=No	wp_▁L	wp_'
 2	Union	union	NOUN	Union	Gender=Fem|Number=Sing	0	root	Union	start_char=28069|end_char=28074|ner=B-ORG	wp_▁Union
 3	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	2	amod	européenne	start_char=28075|end_char=28085|ner=E-ORG	wp_▁européenne
@@ -5301,6 +5489,7 @@
 27	éditions	édition	NOUN	éditions	Gender=Fem|Number=Plur	24	obl:arg	éditions	start_char=28203|end_char=28211|ner=B-ORG	wp_▁éditions
 28	Bruylant	Bruylant	PROPN	Bruylant	Bruylant	27	appos	Bruylant	start_char=28212|end_char=28220|ner=E-ORG|SpaceAfter=No	wp_▁Bru	wp_y	wp_lant
 29	.	.	PUNCT	.	.	2	punct	.	start_char=28220|end_char=28221|ner=O|SpacesAfter=\s\s	wp_.
+
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=28223|end_char=28225|ner=O|SpaceAfter=No	wp_▁L	wp_’
 2	organisation	organisation	NOUN	organisation	Gender=Fem|Number=Sing	19	nsubj	organisation	start_char=28225|end_char=28237|ner=O	wp_▁organisation
 3	à	à	ADP	à	à	4	case	à	start_char=28238|end_char=28239|ner=O	wp_▁à
@@ -5331,6 +5520,7 @@
 28	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	29	det	la	start_char=28380|end_char=28382|ner=O	wp_▁la
 29	manifestation	manifestation	NOUN	manifestation	Gender=Fem|Number=Sing	25	nmod	manifestation	start_char=28383|end_char=28396|ner=O|SpaceAfter=No	wp_▁manifestation
 30	.	.	PUNCT	.	.	19	punct	.	start_char=28396|end_char=28397|ner=O	wp_.
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=28398|end_char=28401|ner=O	wp_▁Les
 2	colloques	colloque	NOUN	colloques	Gender=Masc|Number=Plur	10	nsubj	colloques	start_char=28402|end_char=28411|ner=O	wp_▁colloque	wp_s
 3	annuels	annuel	ADJ	annuels	Gender=Masc|Number=Plur	2	amod	annuels	start_char=28412|end_char=28419|ner=O	wp_▁annuels
@@ -5350,6 +5540,7 @@
 17	européaniste	européaniste	ADJ	européaniste	Gender=Fem|Number=Sing	15	amod	européaniste	start_char=28513|end_char=28525|ner=O	wp_▁euro	wp_pé	wp_a	wp_niste
 18	française	français	ADJ	française	Gender=Fem|Number=Sing	15	amod	française	start_char=28526|end_char=28535|ner=O|SpaceAfter=No	wp_▁française
 19	.	.	PUNCT	.	.	10	punct	.	start_char=28535|end_char=28536|ner=O	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=28537|end_char=28539|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	20	nsubj	CEJEC	start_char=28540|end_char=28545|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 3	,	,	PUNCT	,	,	4	punct	,	start_char=28545|end_char=28546|ner=O	wp_,
@@ -5387,6 +5578,7 @@
 34	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	35	det	les	les	wp_▁les
 35	migrations	migration	NOUN	migrations	Gender=Fem|Number=Plur	30	conj	migrations	start_char=28697|end_char=28707|ner=O|SpaceAfter=No	wp_▁migration	wp_s
 36	.	.	PUNCT	.	.	20	punct	.	start_char=28707|end_char=28708|ner=O	wp_.
+
 1	Associant	associer	VERB	Associant	Tense=Pres|VerbForm=Part	45	advcl	Associant	start_char=28709|end_char=28718|ner=O	wp_▁Asso	wp_ci	wp_ant
 2-3	des	des	des	des	des	des	des	des	start_char=28719|end_char=28722|ner=O	wp_▁des
 2	de	de	ADP	de	de	4	case	de	de	wp_▁de
@@ -5468,8 +5660,10 @@
 78	Union	union	NOUN	Union	Gender=Fem|Number=Sing	75	nmod	Union	start_char=29136|end_char=29141|ner=B-ORG	wp_▁Union
 79	Européenne	européen	ADJ	Européenne	Gender=Fem|Number=Sing	78	amod	Européenne	start_char=29142|end_char=29152|ner=E-ORG|SpaceAfter=No	wp_▁Européenne
 80	.	.	PUNCT	.	.	45	punct	.	start_char=29152|end_char=29153|ner=O|SpacesAfter=\n\n	wp_.
+
 1	5	5	NUM	5	NumType=Card	0	root	5	start_char=29155|end_char=29156|ner=O|SpaceAfter=No	wp_▁5
 2	)	)	PUNCT	)	)	1	punct	)	start_char=29156|end_char=29157|ner=O	wp_▁)
+
 1	«	«	PUNCT	«	«	3	punct	«	start_char=29158|end_char=29159|ner=O|SpacesAfter=\u00A0	wp_▁«
 2	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=29160|end_char=29162|ner=O	wp_▁La
 3	lutte	lutte	NOUN	lutte	Gender=Fem|Number=Sing	53	nsubj	lutte	start_char=29163|end_char=29168|ner=O	wp_▁lutte
@@ -5556,6 +5750,7 @@
 80	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	81	det	l'	start_char=29567|end_char=29569|ner=I-ORG|SpaceAfter=No	wp_▁l	wp_'
 81	Homme	homme	NOUN	Homme	Gender=Masc|Number=Sing	78	nmod	Homme	start_char=29569|end_char=29574|ner=E-ORG|SpaceAfter=No	wp_▁Homme
 82	.	.	PUNCT	.	.	53	punct	.	start_char=29574|end_char=29575|ner=O	wp_.
+
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	Il	start_char=29576|end_char=29578|ner=O	wp_▁Il
 2	participe	participer	VERB	participe	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	participe	start_char=29579|end_char=29588|ner=O	wp_▁participe
 3	de	de	ADP	de	de	5	case	de	start_char=29589|end_char=29591|ner=O	wp_▁de
@@ -5580,8 +5775,10 @@
 21	continent	continent	NOUN	continent	Gender=Masc|Number=Sing	15	nmod	continent	start_char=29674|end_char=29683|ner=O	wp_▁continent
 22	sud-américain	sud-américain	ADJ	sud-américain	Gender=Masc|Number=Sing	21	amod	sud-américain	start_char=29684|end_char=29697|ner=O|SpaceAfter=No	wp_▁sud	wp_-	wp_américain
 23	.	.	PUNCT	.	.	2	punct	.	start_char=29697|end_char=29698|ner=O|SpacesAfter=\n\n	wp_.
+
 1	6	6	NUM	6	NumType=Card	0	root	6	start_char=29700|end_char=29701|ner=O|SpaceAfter=No	wp_▁6
 2	)	)	PUNCT	)	)	1	punct	)	start_char=29701|end_char=29702|ner=O	wp_▁)
+
 1	Géométries	géométrie	NOUN	Géométries	Gender=Fem|Number=Plur	47	advcl	Géométries	start_char=29703|end_char=29713|ner=O	wp_▁Géo	wp_métrie	wp_s
 2	variables	variable	ADJ	variables	Gender=Fem|Number=Plur	1	amod	variables	start_char=29714|end_char=29723|ner=O	wp_▁variables
 3-4	des	des	des	des	des	des	des	des	start_char=29724|end_char=29727|ner=O	wp_▁des
@@ -5665,6 +5862,7 @@
 77	justice	justice	NOUN	justice	Gender=Fem|Number=Sing	74	xcomp	justice	start_char=30169|end_char=30176|ner=O	wp_▁justice
 78	alternative	alternative	ADJ	alternative	Gender=Fem|Number=Sing	77	amod	alternative	start_char=30177|end_char=30188|ner=O|SpaceAfter=No	wp_▁alternative
 79	.	.	PUNCT	.	.	47	punct	.	start_char=30188|end_char=30189|ner=O|SpacesAfter=\n\n	wp_.
+
 1	7	7	NUM	7	Number=Plur	28	obl:mod	7	start_char=30191|end_char=30192|ner=O|SpaceAfter=No	wp_▁7
 2	)	)	PUNCT	)	)	1	punct	)	start_char=30192|end_char=30193|ner=O	wp_▁)
 3	Manuel	Manuel	PROPN	Manuel	Manuel	28	obl:mod	Manuel	start_char=30194|end_char=30200|ner=O	wp_▁Manuel
@@ -5716,6 +5914,7 @@
 46	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	47	det	le	le	wp_▁le
 47	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	44	nmod	CEJEC	start_char=30429|end_char=30434|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 48	.	.	PUNCT	.	.	28	punct	.	start_char=30434|end_char=30435|ner=O	wp_.
+
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	Il	start_char=30436|end_char=30438|ner=O	wp_▁Il
 2	œuvrera	œuvrer	VERB	œuvrera	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	œuvrera	start_char=30439|end_char=30446|ner=O	wp_▁œuvre	wp_ra
 3	à	à	ADP	à	à	5	case	à	start_char=30447|end_char=30448|ner=O	wp_▁à
@@ -5727,6 +5926,7 @@
 9	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	la	start_char=30484|end_char=30486|ner=O	wp_▁la
 10	matière	matière	NOUN	matière	Gender=Fem|Number=Sing	2	obl:mod	matière	start_char=30487|end_char=30494|ner=O|SpaceAfter=No	wp_▁matière
 11	.	.	PUNCT	.	.	2	punct	.	start_char=30494|end_char=30495|ner=O|SpacesAfter=\n\n	wp_.
+
 1	4	4	NUM	4	NumType=Card	0	root	4	start_char=30497|end_char=30498|ner=O|SpaceAfter=No	wp_▁4
 2	-	-	PUNCT	-	-	3	punct	-	start_char=30498|end_char=30499|ner=O|SpacesAfter=\t	wp_▁-
 3	Organisation	organisation	NOUN	Organisation	Gender=Fem|Number=Sing	1	appos	Organisation	start_char=30500|end_char=30512|ner=B-MISC	wp_▁Organisation
@@ -5736,6 +5936,7 @@
 7	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	8	det	l’	start_char=30523|end_char=30525|ner=I-MISC|SpaceAfter=No	wp_▁l	wp_’
 8	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	3	nmod	unité	start_char=30525|end_char=30530|ner=E-MISC	wp_▁unité
 9	:	:	PUNCT	:	:	1	punct	:	start_char=30531|end_char=30532|ner=O|SpacesAfter=\n\n	wp_▁:
+
 1	Pilotage	pilotage	NOUN	Pilotage	Gender=Masc|Number=Sing	0	root	Pilotage	start_char=30534|end_char=30542|ner=S-MISC|SpaceAfter=No	wp_▁P	wp_il	wp_otage
 2	,	,	PUNCT	,	,	3	punct	,	start_char=30542|end_char=30543|ner=O	wp_,
 3	animation	animation	NOUN	animation	Gender=Fem|Number=Sing	1	conj	animation	start_char=30544|end_char=30553|ner=O|SpaceAfter=No	wp_▁animation
@@ -5745,6 +5946,7 @@
 7	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	8	det	l’	start_char=30571|end_char=30573|ner=O|SpaceAfter=No	wp_▁l	wp_’
 8	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	5	nmod	unité	start_char=30573|end_char=30578|ner=O	wp_▁unité
 9	:	:	PUNCT	:	:	1	punct	:	start_char=30579|end_char=30580|ner=O|SpacesAfter=\n\n	wp_▁:
+
 1	Se	soi	PRON	Se	Person=3|PronType=Prs|Reflex=Yes	2	expl:pv	Se	start_char=30582|end_char=30584|ner=O	wp_▁Se
 2	reporter	reporter	VERB	reporter	VerbForm=Inf	0	root	reporter	start_char=30585|end_char=30593|ner=O	wp_▁reporter
 3	à	à	ADP	à	à	5	case	à	start_char=30594|end_char=30595|ner=O	wp_▁à
@@ -5756,9 +5958,11 @@
 9	annexe	annexe	NOUN	annexe	Gender=Fem|Number=Sing	5	conj	annexe	start_char=30618|end_char=30624|ner=O	wp_▁annexe
 10	2	2	NUM	2	NumType=Card	9	nmod	2	start_char=30625|end_char=30626|ner=O|SpaceAfter=No	wp_▁2
 11	.	.	PUNCT	.	.	2	punct	.	start_char=30626|end_char=30627|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Protection	protection	NOUN	Protection	Gender=Fem|Number=Sing	0	root	Protection	start_char=30629|end_char=30639|ner=B-MISC	wp_▁Protection
 2	et	et	CCONJ	et	et	3	cc	et	start_char=30640|end_char=30642|ner=I-MISC	wp_▁et
 3	sécurité	sécurité	NOUN	sécurité	Gender=Fem|Number=Sing	1	conj	sécurité	start_char=30643|end_char=30651|ner=E-MISC|SpacesAfter=\n\n	wp_▁sécurité
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=30653|end_char=30654|ner=O	wp_▁-
 2	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=30655|end_char=30657|ner=O	wp_▁La
 3	sensibilisation	sensibilisation	NOUN	sensibilisation	Gender=Fem|Number=Sing	0	root	sensibilisation	start_char=30658|end_char=30673|ner=O	wp_▁sensibilisation
@@ -5793,6 +5997,7 @@
 30	,	,	PUNCT	,	,	31	punct	,	start_char=30801|end_char=30802|ner=O	wp_,
 31	etc.	etc.	X	etc.	etc.	3	conj	etc.	start_char=30803|end_char=30807|ner=O	wp_▁etc	wp_.
 32	;	;	PUNCT	;	;	3	punct	;	start_char=30808|end_char=30809|ner=O|SpacesAfter=\s\n\n	wp_▁;
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=30812|end_char=30814|ner=O	wp_▁Le
 2	Comité	comité	NOUN	Comité	Gender=Masc|Number=Sing	20	nsubj	Comité	start_char=30815|end_char=30821|ner=B-ORG	wp_▁Comité
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=30822|end_char=30824|ner=I-ORG|SpaceAfter=No	wp_▁d	wp_’
@@ -5830,6 +6035,7 @@
 34	de	de	ADP	de	de	35	case	de	start_char=30981|end_char=30983|ner=O	wp_▁de
 35	travail	travail	NOUN	travail	Gender=Masc|Number=Sing	33	nmod	travail	start_char=30984|end_char=30991|ner=O|SpaceAfter=No	wp_▁travail
 36	.	.	PUNCT	.	.	20	punct	.	start_char=30991|end_char=30992|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=30993|end_char=30998|ner=O	wp_▁Cette
 2	instance	instance	NOUN	instance	Gender=Fem|Number=Sing	7	nsubj	instance	start_char=30999|end_char=31007|ner=O	wp_▁instance
 3	qui	qui	PRON	qui	PronType=Rel	5	nsubj	qui	start_char=31008|end_char=31011|ner=O	wp_▁qui
@@ -5854,6 +6060,7 @@
 20	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	le	le	wp_▁le
 21	personnel	personnel	NOUN	personnel	Gender=Masc|Number=Sing	18	nmod	personnel	start_char=31106|end_char=31115|ner=O|SpaceAfter=No	wp_▁personnel
 22	.	.	PUNCT	.	.	7	punct	.	start_char=31115|end_char=31116|ner=O	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=31117|end_char=31119|ner=O	wp_▁Le
 2	CHSCT	CHSCT	PROPN	CHSCT	Gender=Masc|Number=Sing	5	nsubj:pass	CHSCT	start_char=31120|end_char=31125|ner=S-ORG	wp_▁CHSCT
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	est	start_char=31126|end_char=31129|ner=O	wp_▁est
@@ -5870,6 +6077,7 @@
 13	risques	risque	NOUN	risques	Gender=Masc|Number=Plur	10	nmod	risques	start_char=31181|end_char=31188|ner=O	wp_▁risques
 14	professionnels	professionnel	ADJ	professionnels	Gender=Masc|Number=Plur	13	amod	professionnels	start_char=31189|end_char=31203|ner=O|SpaceAfter=No	wp_▁professionnels
 15	.	.	PUNCT	.	.	5	punct	.	start_char=31203|end_char=31204|ner=O	wp_.
+
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=31205|end_char=31207|ner=O|SpaceAfter=No	wp_▁L	wp_’
 2	établissement	établissement	NOUN	établissement	Gender=Masc|Number=Sing	4	nsubj	établissement	start_char=31207|end_char=31220|ner=O	wp_▁établissement
 3	a	avoir	AUX	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	a	start_char=31221|end_char=31222|ner=O	wp_▁a
@@ -5896,6 +6104,7 @@
 22	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	23	det	les	les	wp_▁les
 23	personnels	personnel	NOUN	personnels	Gender=Masc|Number=Plur	20	nmod	personnels	start_char=31308|end_char=31318|ner=O|SpaceAfter=No	wp_▁personnels
 24	.	.	PUNCT	.	.	4	punct	.	start_char=31318|end_char=31319|ner=O	wp_.
+
 1	Un	un	DET	Un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	Un	start_char=31320|end_char=31322|ner=O	wp_▁Un
 2	travail	travail	NOUN	travail	Gender=Masc|Number=Sing	5	nsubj:pass	travail	start_char=31323|end_char=31330|ner=O	wp_▁travail
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	est	start_char=31331|end_char=31334|ner=O	wp_▁est
@@ -5925,6 +6134,7 @@
 25	risques	risque	NOUN	risques	Gender=Masc|Number=Plur	22	nmod	risques	start_char=31446|end_char=31453|ner=O	wp_▁risques
 26	professionnels	professionnel	ADJ	professionnels	Gender=Masc|Number=Plur	25	amod	professionnels	start_char=31454|end_char=31468|ner=O|SpaceAfter=No	wp_▁professionnels
 27	.	.	PUNCT	.	.	5	punct	.	start_char=31468|end_char=31469|ner=O	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=31470|end_char=31472|ner=O	wp_▁Le
 2	travail	travail	NOUN	travail	Gender=Masc|Number=Sing	3	nsubj	travail	start_char=31473|end_char=31480|ner=O	wp_▁travail
 3	consiste	consister	VERB	consiste	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	consiste	start_char=31481|end_char=31489|ner=O	wp_▁consiste
@@ -5952,6 +6162,7 @@
 24	de	de	ADP	de	de	25	case	de	start_char=31607|end_char=31609|ner=O	wp_▁de
 25	prévention	prévention	NOUN	prévention	Gender=Fem|Number=Sing	23	nmod	prévention	start_char=31610|end_char=31620|ner=O|SpaceAfter=No	wp_▁prévention
 26	.	.	PUNCT	.	.	3	punct	.	start_char=31620|end_char=31621|ner=O	wp_.
+
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=31622|end_char=31624|ner=O|SpaceAfter=No	wp_▁L	wp_’
 2	UFR	UFR	PROPN	UFR	Number=Sing	3	nsubj	UFR	start_char=31624|end_char=31627|ner=S-ORG	wp_▁U	wp_FR
 3	a	avoir	VERB	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	a	start_char=31628|end_char=31629|ner=O	wp_▁a
@@ -5973,6 +6184,7 @@
 18	de	de	ADP	de	de	19	case	de	start_char=31722|end_char=31724|ner=O	wp_▁de
 19	service	service	NOUN	service	Gender=Masc|Number=Sing	17	nmod	service	start_char=31725|end_char=31732|ner=O|SpaceAfter=No	wp_▁service
 20	.	.	PUNCT	.	.	3	punct	.	start_char=31732|end_char=31733|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	Chaque	chaque	DET	Chaque	Number=Sing|PronType=Ind	2	det	Chaque	start_char=31736|end_char=31742|ner=O	wp_▁Chaque
 2	année	année	NOUN	année	Gender=Fem|Number=Sing	10	obl:mod	année	start_char=31743|end_char=31748|ner=O|SpaceAfter=No	wp_▁année
 3	,	,	PUNCT	,	,	2	punct	,	start_char=31748|end_char=31749|ner=O	wp_,
@@ -5992,6 +6204,7 @@
 16	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	le	le	wp_▁le
 17	travail	travail	NOUN	travail	Gender=Masc|Number=Sing	12	nmod	travail	start_char=31849|end_char=31856|ner=E-MISC|SpaceAfter=No	wp_▁travail
 18	.	.	PUNCT	.	.	10	punct	.	start_char=31856|end_char=31857|ner=O|SpacesAfter=\s\s	wp_.
+
 1	Enfin	enfin	ADV	Enfin	Enfin	6	advmod	Enfin	start_char=31859|end_char=31864|ner=O|SpaceAfter=No	wp_▁Enfin
 2	,	,	PUNCT	,	,	1	punct	,	start_char=31864|end_char=31865|ner=O	wp_,
 3	sept	sept	NUM	sept	Number=Plur	4	nummod	sept	start_char=31866|end_char=31870|ner=O	wp_▁sept
@@ -6008,6 +6221,7 @@
 14	de	de	ADP	de	de	15	case	de	start_char=31925|end_char=31927|ner=O	wp_▁de
 15	sûreté	sûreté	NOUN	sûreté	Gender=Fem|Number=Sing	12	conj	sûreté	start_char=31928|end_char=31934|ner=O|SpaceAfter=No	wp_▁sûreté
 16	.	.	PUNCT	.	.	6	punct	.	start_char=31934|end_char=31935|ner=O|SpacesAfter=\n\n	wp_.
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=31937|end_char=31938|ner=O	wp_▁-
 2	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=31939|end_char=31941|ner=O	wp_▁La
 3	politique	politique	NOUN	politique	Gender=Fem|Number=Sing	0	root	politique	start_char=31942|end_char=31951|ner=O	wp_▁politique
@@ -6025,6 +6239,7 @@
 14	dans	dans	ADP	dans	dans	16	case	dans	start_char=32005|end_char=32009|ner=O	wp_▁dans
 15	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	16	det	l’	start_char=32010|end_char=32012|ner=O|SpaceAfter=No	wp_▁l	wp_’
 16	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	11	obl:mod	unité	start_char=32012|end_char=32017|ner=O|SpacesAfter=\s\n\n	wp_▁unité
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=32020|end_char=32022|ner=O	wp_▁La
 2	politique	politique	NOUN	politique	Gender=Fem|Number=Sing	12	nsubj	politique	start_char=32023|end_char=32032|ner=O	wp_▁politique
 3	de	de	ADP	de	de	4	case	de	start_char=32033|end_char=32035|ner=O	wp_▁de
@@ -6048,6 +6263,7 @@
 19	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	20	det	l’	start_char=32111|end_char=32113|ner=O|SpaceAfter=No	wp_▁l	wp_’
 20	Etablissement	établissement	NOUN	Etablissement	Gender=Masc|Number=Sing	17	nmod	Etablissement	start_char=32113|end_char=32126|ner=S-LOC|SpaceAfter=No	wp_▁E	wp_tablissement
 21	.	.	PUNCT	.	.	12	punct	.	start_char=32126|end_char=32127|ner=O	wp_.
+
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	Elle	start_char=32128|end_char=32132|ner=O	wp_▁Elle
 2	sera	être	AUX	sera	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	aux:pass	sera	start_char=32133|end_char=32137|ner=O	wp_▁sera
 3	effective	effectif	VERB	effective	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	effective	start_char=32138|end_char=32147|ner=O	wp_▁effective
@@ -6055,6 +6271,7 @@
 5	mai	mai	NOUN	mai	Gender=Masc|Number=Sing	4	nmod	mai	start_char=32152|end_char=32155|ner=O	wp_▁mai
 6	2018	2018	NUM	2018	Number=Plur	5	nmod	2018	start_char=32156|end_char=32160|ner=O|SpaceAfter=No	wp_▁2018
 7	.	.	PUNCT	.	.	3	punct	.	start_char=32160|end_char=32161|ner=O|SpacesAfter=\s\s	wp_.
+
 1	Plusieurs	plusieurs	DET	Plusieurs	Number=Plur|PronType=Ind	2	det	Plusieurs	start_char=32163|end_char=32172|ner=O	wp_▁Plusieurs
 2	entretiens	entretien	NOUN	entretiens	Gender=Masc|Number=Plur	7	nsubj:pass	entretiens	start_char=32173|end_char=32183|ner=O	wp_▁entretiens
 3	et	et	CCONJ	et	et	4	cc	et	start_char=32184|end_char=32186|ner=O	wp_▁et
@@ -6072,12 +6289,15 @@
 15	différents	différent	ADJ	différents	Gender=Masc|Number=Plur	16	amod	différents	start_char=32250|end_char=32260|ner=O	wp_▁différents
 16	contextes	contexte	NOUN	contextes	Gender=Masc|Number=Plur	10	obl:mod	contextes	start_char=32261|end_char=32270|ner=O|SpaceAfter=No	wp_▁contexte	wp_s
 17	.	.	PUNCT	.	.	7	punct	.	start_char=32270|end_char=32271|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	5	5	NUM	5	NumType=Card	0	root	5	start_char=32274|end_char=32275|ner=O|SpaceAfter=No	wp_▁5
 2	-	-	PUNCT	-	-	3	punct	-	start_char=32275|end_char=32276|ner=O|SpacesAfter=\t	wp_▁-
 3	Analyse	analyse	NOUN	Analyse	Gender=Fem|Number=Sing	1	nmod	Analyse	start_char=32277|end_char=32284|ner=B-MISC	wp_▁Analyse
 4	SWOT	SWOT	PROPN	SWOT	SWOT	3	nmod	SWOT	start_char=32285|end_char=32289|ner=E-MISC|SpacesAfter=\n\n	wp_▁SW	wp_OT
+
 1	Points	point	NOUN	Points	Gender=Masc|Number=Plur	0	root	Points	start_char=32291|end_char=32297|ner=O	wp_▁Points
 2	forts	fort	ADJ	forts	Gender=Masc|Number=Plur	1	amod	forts	start_char=32298|end_char=32303|ner=O|SpacesAfter=\s\n\n	wp_▁forts
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=32306|end_char=32307|ner=O|SpacesAfter=\s\s	wp_▁-
 2	Cohésion	cohésion	NOUN	Cohésion	Gender=Fem|Number=Sing	0	root	Cohésion	start_char=32309|end_char=32317|ner=O	wp_▁Co	wp_hé	wp_sion
 3	de	de	ADP	de	de	5	case	de	start_char=32318|end_char=32320|ner=O	wp_▁de
@@ -6105,6 +6325,7 @@
 25	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	26	det	les	start_char=32449|end_char=32452|ner=O	wp_▁les
 26	réalisations	réalisation	NOUN	réalisations	Gender=Fem|Number=Plur	23	conj	réalisations	start_char=32453|end_char=32465|ner=O|SpaceAfter=No	wp_▁réalisations
 27	.	.	PUNCT	.	.	2	punct	.	start_char=32465|end_char=32466|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=32469|end_char=32470|ner=O|SpacesAfter=\s\s	wp_▁-
 2	Composition	composition	NOUN	Composition	Gender=Fem|Number=Sing	0	root	Composition	start_char=32472|end_char=32483|ner=O	wp_▁Composition
 3	de	de	ADP	de	de	5	case	de	start_char=32484|end_char=32486|ner=O	wp_▁de
@@ -6173,6 +6394,7 @@
 62	financier	financier	ADJ	financier	Gender=Masc|Number=Sing	61	amod	financier	start_char=32787|end_char=32796|ner=O|SpaceAfter=No	wp_▁financier
 63	)	)	PUNCT	)	)	40	punct	)	start_char=32796|end_char=32797|ner=O|SpaceAfter=No	wp_▁)
 64	.	.	PUNCT	.	.	2	punct	.	start_char=32797|end_char=32798|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=32799|end_char=32801|ner=O	wp_▁La
 2	réunion	réunion	NOUN	réunion	Gender=Fem|Number=Sing	6	nsubj	réunion	start_char=32802|end_char=32809|ner=O	wp_▁réunion
 3	de	de	ADP	de	de	5	case	de	start_char=32810|end_char=32812|ner=O	wp_▁de
@@ -6217,6 +6439,7 @@
 41	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	42	det	l’	start_char=33046|end_char=33048|ner=O|SpaceAfter=No	wp_▁l	wp_’
 42	Union	union	NOUN	Union	Gender=Fem|Number=Sing	39	nmod	Union	start_char=33048|end_char=33053|ner=S-ORG|SpaceAfter=No	wp_▁Union
 43	.	.	PUNCT	.	.	6	punct	.	start_char=33053|end_char=33054|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=33057|end_char=33058|ner=O|SpacesAfter=\s\s	wp_▁-
 2	Relations	relation	NOUN	Relations	Gender=Fem|Number=Plur	0	root	Relations	start_char=33060|end_char=33069|ner=O	wp_▁Relations
 3	entretenues	entretenu	VERB	entretenues	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	2	acl	entretenues	start_char=33070|end_char=33081|ner=O	wp_▁entretenue	wp_s
@@ -6264,6 +6487,7 @@
 44	autres	autre	ADJ	autres	Gender=Fem|Number=Plur	45	amod	autres	start_char=33265|end_char=33271|ner=O	wp_▁autres
 45	disciplines	discipline	NOUN	disciplines	Gender=Fem|Number=Plur	42	nmod	disciplines	start_char=33272|end_char=33283|ner=O|SpaceAfter=No	wp_▁disciplines
 46	.	.	PUNCT	.	.	2	punct	.	start_char=33283|end_char=33284|ner=O	wp_.
+
 1	Ces	ce	DET	Ces	Number=Plur|PronType=Dem	2	det	Ces	start_char=33285|end_char=33288|ner=O	wp_▁Ces
 2	relations	relation	NOUN	relations	Gender=Fem|Number=Plur	5	nsubj	relations	start_char=33289|end_char=33298|ner=O	wp_▁relations
 3	sont	être	AUX	sont	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	sont	start_char=33299|end_char=33303|ner=O	wp_▁sont
@@ -6291,6 +6515,7 @@
 23	plusieurs	plusieurs	DET	plusieurs	Number=Plur|PronType=Ind	24	det	plusieurs	start_char=33409|end_char=33418|ner=O	wp_▁plusieurs
 24	unités	unité	NOUN	unités	Gender=Fem|Number=Plur	22	obj	unités	start_char=33419|end_char=33425|ner=O|SpaceAfter=No	wp_▁unités
 25	.	.	PUNCT	.	.	5	punct	.	start_char=33425|end_char=33426|ner=O|SpacesAfter=\n\n	wp_.
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=33428|end_char=33429|ner=O|SpacesAfter=\s\s	wp_▁-
 2	Forte	fort	ADJ	Forte	Gender=Fem|Number=Sing	3	amod	Forte	start_char=33431|end_char=33436|ner=O	wp_▁Forte
 3	implication	implication	NOUN	implication	Gender=Fem|Number=Sing	0	root	implication	start_char=33437|end_char=33448|ner=O	wp_▁implication
@@ -6333,6 +6558,7 @@
 37	doc	doc	NOUN	doc	Gender=Masc|Number=Plur	34	nmod	doc	start_char=33625|end_char=33628|ner=O	wp_▁doc
 38	»	»	PUNCT	»	»	34	punct	»	start_char=33629|end_char=33630|ner=O|SpaceAfter=No	wp_▁»
 39	.	.	PUNCT	.	.	3	punct	.	start_char=33630|end_char=33631|ner=O	wp_.
+
 1	Implication	implication	NOUN	Implication	Gender=Fem|Number=Sing	0	root	Implication	start_char=33632|end_char=33643|ner=O	wp_▁Im	wp_plication
 2	renforcée	renforcer	VERB	renforcée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	renforcée	start_char=33644|end_char=33653|ner=O	wp_▁renforcée
 3	par	par	ADP	par	par	5	case	par	start_char=33654|end_char=33657|ner=O	wp_▁par
@@ -6374,6 +6600,7 @@
 36	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	37	det	les	les	wp_▁les
 37	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	34	nmod	doctorants	start_char=33841|end_char=33851|ner=O|SpaceAfter=No	wp_▁doc	wp_tor	wp_ants
 38	.	.	PUNCT	.	.	1	punct	.	start_char=33851|end_char=33852|ner=O	wp_.
+
 1	Implication	implication	NOUN	Implication	Gender=Fem|Number=Sing	0	root	Implication	start_char=33853|end_char=33864|ner=O	wp_▁Im	wp_plication
 2	renforcée	renforcer	VERB	renforcée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	renforcée	start_char=33865|end_char=33874|ner=O	wp_▁renforcée
 3	d'	de	ADP	d'	d'	4	case	d'	start_char=33875|end_char=33877|ner=O|SpaceAfter=No	wp_▁d	wp_'
@@ -6423,9 +6650,11 @@
 46	de	de	ADP	de	de	47	case	de	start_char=34151|end_char=34153|ner=O	wp_▁de
 47	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	45	nmod	doctorants	start_char=34154|end_char=34164|ner=O|SpaceAfter=No	wp_▁doc	wp_tor	wp_ants
 48	.	.	PUNCT	.	.	1	punct	.	start_char=34164|end_char=34165|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Points	point	NOUN	Points	Gender=Masc|Number=Plur	0	root	Points	start_char=34167|end_char=34173|ner=O	wp_▁Points
 2	à	à	ADP	à	à	3	mark	à	start_char=34174|end_char=34175|ner=O	wp_▁à
 3	améliorer	améliorer	VERB	améliorer	VerbForm=Inf	1	acl	améliorer	start_char=34176|end_char=34185|ner=O|SpacesAfter=\n\n	wp_▁améliorer
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=34187|end_char=34188|ner=O|SpacesAfter=\s\s	wp_▁-
 2	Manque	manque	NOUN	Manque	Gender=Masc|Number=Sing	0	root	Manque	start_char=34190|end_char=34196|ner=O	wp_▁Manque
 3	de	de	ADP	de	de	4	case	de	start_char=34197|end_char=34199|ner=O	wp_▁de
@@ -6449,6 +6678,7 @@
 21	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	le	start_char=34297|end_char=34299|ner=O	wp_▁le
 22	CEDCACE	CEDCACE	PROPN	CEDCACE	CEDCACE	19	obl:arg	CEDCACE	start_char=34300|end_char=34307|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_DC	wp_ACE
 23	.	.	PUNCT	.	.	2	punct	.	start_char=34307|end_char=34308|ner=O|SpacesAfter=\s\s	wp_.
+
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=34310|end_char=34312|ner=O|SpaceAfter=No	wp_▁L	wp_’
 2	absence	absence	NOUN	absence	Gender=Fem|Number=Sing	10	nsubj	absence	start_char=34312|end_char=34319|ner=O	wp_▁absence
 3	d’	de	ADP	d’	d’	5	case	d’	start_char=34320|end_char=34322|ner=O|SpaceAfter=No	wp_▁d	wp_’
@@ -6472,6 +6702,7 @@
 21	projet	projet	NOUN	projet	Gender=Masc|Number=Sing	19	nmod	projet	start_char=34408|end_char=34414|ner=O	wp_▁projet
 22	européens	européen	ADJ	européens	Gender=Masc|Number=Plur	19	amod	européens	start_char=34415|end_char=34424|ner=O|SpaceAfter=No	wp_▁européens
 23	.	.	PUNCT	.	.	10	punct	.	start_char=34424|end_char=34425|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	Possibilités	possibilité	NOUN	Possibilités	Gender=Fem|Number=Plur	0	root	Possibilités	start_char=34428|end_char=34440|ner=O	wp_▁Possibilité	wp_s
 2	liées	lier	VERB	liées	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	liées	start_char=34441|end_char=34446|ner=O	wp_▁liées
 3-4	au	au	au	au	au	au	au	au	start_char=34447|end_char=34449|ner=O	wp_▁au
@@ -6479,6 +6710,7 @@
 4	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	le	le	wp_▁le
 5	contexte	contexte	NOUN	contexte	Gender=Masc|Number=Sing	2	obl:arg	contexte	start_char=34450|end_char=34458|ner=O	wp_▁contexte
 6	:	:	PUNCT	:	:	1	punct	:	start_char=34459|end_char=34460|ner=O|SpacesAfter=\s\n\n\t	wp_▁:
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=34464|end_char=34466|ner=O	wp_▁La
 2	constitution	constitution	NOUN	constitution	Gender=Fem|Number=Sing	10	nsubj	constitution	start_char=34467|end_char=34479|ner=O	wp_▁constitution
 3	de	de	ADP	de	de	5	case	de	start_char=34480|end_char=34482|ner=O	wp_▁de
@@ -6515,6 +6747,7 @@
 33	Paris	Paris	PROPN	Paris	Paris	25	obl:mod	Paris	start_char=34637|end_char=34642|ner=B-LOC	wp_▁Paris
 34	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	33	flat:name	Nanterre	start_char=34643|end_char=34651|ner=E-LOC|SpaceAfter=No	wp_▁Nanterre
 35	.	.	PUNCT	.	.	10	punct	.	start_char=34651|end_char=34652|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=34653|end_char=34655|ner=O	wp_▁La
 2	montée	montée	NOUN	montée	Gender=Fem|Number=Sing	9	nsubj	montée	start_char=34656|end_char=34662|ner=O	wp_▁montée
 3	progressive	progressif	ADJ	progressive	Gender=Fem|Number=Sing	2	amod	progressive	start_char=34663|end_char=34674|ner=O	wp_▁progressive
@@ -6586,6 +6819,7 @@
 66	organismes	organisme	NOUN	organismes	Gender=Masc|Number=Plur	61	conj	organismes	start_char=34991|end_char=35001|ner=O	wp_▁organismes
 67	extérieurs	extérieur	ADJ	extérieurs	Gender=Masc|Number=Plur	66	amod	extérieurs	start_char=35002|end_char=35012|ner=O|SpaceAfter=No	wp_▁extérieurs
 68	.	.	PUNCT	.	.	9	punct	.	start_char=35012|end_char=35013|ner=O|SpacesAfter=\n\n	wp_.
+
 1	6	6	NUM	6	NumType=Card	3	nummod	6	start_char=35015|end_char=35016|ner=O|SpaceAfter=No	wp_▁6
 2	-	-	PUNCT	-	-	1	punct	-	start_char=35016|end_char=35017|ner=O|SpacesAfter=\t	wp_▁-
 3	Projet	projet	NOUN	Projet	Gender=Masc|Number=Sing	0	root	Projet	start_char=35018|end_char=35024|ner=B-MISC	wp_▁Projet
@@ -6593,6 +6827,7 @@
 5	à	à	ADP	à	à	7	case	à	start_char=35038|end_char=35039|ner=O	wp_▁à
 6	cinq	cinq	NUM	cinq	NumType=Card	7	nummod	cinq	start_char=35040|end_char=35044|ner=O	wp_▁cinq
 7	ans	an	NOUN	ans	Gender=Masc|Number=Plur	3	nmod	ans	start_char=35045|end_char=35048|ner=O|SpacesAfter=\n\n\t	wp_▁ans
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=35051|end_char=35054|ner=O	wp_▁Les
 2	orientations	orientation	NOUN	orientations	Gender=Fem|Number=Plur	16	nsubj:pass	orientations	start_char=35055|end_char=35067|ner=O	wp_▁orientations
 3	et	et	CCONJ	et	et	5	cc	et	start_char=35068|end_char=35070|ner=O	wp_▁et
@@ -6642,6 +6877,7 @@
 46	de	de	ADP	de	de	47	case	de	start_char=35296|end_char=35298|ner=O	wp_▁de
 47	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	45	nmod	recherche	start_char=35299|end_char=35308|ner=O|SpaceAfter=No	wp_▁recherche
 48	.	.	PUNCT	.	.	16	punct	.	start_char=35308|end_char=35309|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	3	det	Cette	start_char=35310|end_char=35315|ner=O	wp_▁Cette
 2	double	double	ADJ	double	Gender=Fem|Number=Sing	3	amod	double	start_char=35316|end_char=35322|ner=O	wp_▁double
 3	ambition	ambition	NOUN	ambition	Gender=Fem|Number=Sing	23	nsubj	ambition	start_char=35323|end_char=35331|ner=O|SpaceAfter=No	wp_▁ambition
@@ -6721,6 +6957,7 @@
 75	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	73	conj	comparé	start_char=35736|end_char=35743|ner=O|SpaceAfter=No	wp_▁comparé
 76	)	)	PUNCT	)	)	47	punct	)	start_char=35743|end_char=35744|ner=O|SpaceAfter=No	wp_▁)
 77	.	.	PUNCT	.	.	23	punct	.	start_char=35744|end_char=35745|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	C’	ce	PRON	C’	Gender=Masc|Number=Sing|Person=3|PronType=Dem	7	expl:subj	C’	start_char=35748|end_char=35750|ner=O|SpaceAfter=No	wp_▁C	wp_’
 2	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	cop	est	start_char=35750|end_char=35753|ner=O	wp_▁est
 3	d’	de	ADP	d’	ExtPos=ADV	7	advmod	d’	start_char=35754|end_char=35756|ner=O|SpaceAfter=No	wp_▁d	wp_’
@@ -6737,6 +6974,7 @@
 14	d’	de	ADP	d’	d’	15	mark	d’	start_char=35811|end_char=35813|ner=O|SpaceAfter=No	wp_▁d	wp_’
 15	insister	insister	VERB	insister	VerbForm=Inf	13	csubj	insister	start_char=35813|end_char=35821|ner=O|SpaceAfter=No	wp_▁insister
 16	.	.	PUNCT	.	.	7	punct	.	start_char=35821|end_char=35822|ner=O	wp_.
+
 1	Depuis	depuis	ADP	Depuis	Depuis	3	case	Depuis	start_char=35823|end_char=35829|ner=O	wp_▁Depuis
 2	sa	son	DET	sa	Gender=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	3	det	sa	start_char=35830|end_char=35832|ner=O	wp_▁sa
 3	création	création	NOUN	création	Gender=Fem|Number=Sing	8	obl:mod	création	start_char=35833|end_char=35841|ner=O|SpaceAfter=No	wp_▁création
@@ -6774,6 +7012,7 @@
 34	et	et	CCONJ	et	et	35	cc	et	start_char=36001|end_char=36003|ner=O	wp_▁et
 35	étrangers	étranger	ADJ	étrangers	Gender=Masc|Number=Plur	33	conj	étrangers	start_char=36004|end_char=36013|ner=O|SpaceAfter=No	wp_▁étrangers
 36	.	.	PUNCT	.	.	8	punct	.	start_char=36013|end_char=36014|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=36015|end_char=36020|ner=O	wp_▁Cette
 2	démarche	démarche	NOUN	démarche	Gender=Fem|Number=Sing	3	nsubj	démarche	start_char=36021|end_char=36029|ner=O	wp_▁démarche
 3	représente	représenter	VERB	représente	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	représente	start_char=36030|end_char=36040|ner=O	wp_▁représente
@@ -6795,6 +7034,7 @@
 17	à	à	ADP	à	à	18	mark	à	start_char=36095|end_char=36096|ner=O	wp_▁à
 18	venir	venir	VERB	venir	VerbForm=Inf	16	acl	venir	start_char=36097|end_char=36102|ner=O|SpaceAfter=No	wp_▁venir
 19	.	.	PUNCT	.	.	3	punct	.	start_char=36102|end_char=36103|ner=O	wp_.
+
 1	Son	son	DET	Son	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	2	det	Son	start_char=36104|end_char=36107|ner=O	wp_▁Son
 2	originalité	originalité	NOUN	originalité	Gender=Fem|Number=Sing	27	nsubj:pass	originalité	start_char=36108|end_char=36119|ner=O|SpaceAfter=No	wp_▁originalité
 3	,	,	PUNCT	,	,	5	punct	,	start_char=36119|end_char=36120|ner=O	wp_,
@@ -6838,6 +7078,7 @@
 40	période	période	NOUN	période	Gender=Fem|Number=Sing	38	nmod	période	start_char=36326|end_char=36333|ner=O	wp_▁période
 41	précédente	précédent	ADJ	précédente	Gender=Fem|Number=Sing	40	amod	précédente	start_char=36334|end_char=36344|ner=O|SpaceAfter=No	wp_▁précédente
 42	.	.	PUNCT	.	.	27	punct	.	start_char=36344|end_char=36345|ner=O	wp_.
+
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=36346|end_char=36348|ner=O|SpaceAfter=No	wp_▁L	wp_’
 2	ouverture	ouverture	NOUN	ouverture	Gender=Fem|Number=Sing	38	nsubj	ouverture	start_char=36348|end_char=36357|ner=O	wp_▁ouverture
 3	à	à	ADP	à	à	5	case	à	start_char=36358|end_char=36359|ner=O	wp_▁à
@@ -6912,6 +7153,7 @@
 66	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	67	det	l’	start_char=36696|end_char=36698|ner=O|SpaceAfter=No	wp_▁l	wp_’
 67	Union	union	NOUN	Union	Gender=Fem|Number=Sing	64	nmod	Union	start_char=36698|end_char=36703|ner=S-ORG|SpaceAfter=No	wp_▁Union
 68	.	.	PUNCT	.	.	38	punct	.	start_char=36703|end_char=36704|ner=O	wp_.
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=36705|end_char=36707|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	3	nsubj	CEJEC	start_char=36708|end_char=36713|ner=S-ORG	wp_▁CE	wp_J	wp_EC
 3	maintiendra	maintenir	VERB	maintiendra	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	maintiendra	start_char=36714|end_char=36725|ner=O	wp_▁maintien	wp_dra
@@ -6931,6 +7173,7 @@
 17	ses	son	DET	ses	Number=Plur|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	18	det	ses	start_char=36818|end_char=36821|ner=O	wp_▁ses
 18	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	15	nmod	doctorants	start_char=36822|end_char=36832|ner=O|SpaceAfter=No	wp_▁doc	wp_tor	wp_ants
 19	.	.	PUNCT	.	.	3	punct	.	start_char=36832|end_char=36833|ner=O	wp_.
+
 1	A	à	ADP	A	A	3	case	A	start_char=36834|end_char=36835|ner=O	wp_▁A
 2	cette	ce	DET	cette	Gender=Fem|Number=Sing|PronType=Dem	3	det	cette	start_char=36836|end_char=36841|ner=O	wp_▁cette
 3	fin	fin	NOUN	fin	Gender=Fem|Number=Sing	7	obl:mod	fin	start_char=36842|end_char=36845|ner=O|SpaceAfter=No	wp_▁fin
@@ -6979,6 +7222,7 @@
 45	d'	de	ADP	d'	d'	46	case	d'	start_char=37097|end_char=37099|ner=O|SpaceAfter=No	wp_▁d	wp_'
 46	écriture	écriture	NOUN	écriture	Gender=Fem|Number=Sing	44	nmod	écriture	start_char=37099|end_char=37107|ner=O|SpaceAfter=No	wp_▁écriture
 47	.	.	PUNCT	.	.	7	punct	.	start_char=37107|end_char=37108|ner=O	wp_.
+
 1	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	2	det	L'	start_char=37109|end_char=37111|ner=O|SpaceAfter=No	wp_▁L	wp_'
 2	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	3	nsubj	unité	start_char=37111|end_char=37116|ner=O	wp_▁unité
 3	continuera	continuer	VERB	continuera	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	continuera	start_char=37117|end_char=37127|ner=O	wp_▁continuera
@@ -7030,6 +7274,7 @@
 47	et	et	CCONJ	et	et	48	cc	et	start_char=37399|end_char=37401|ner=O	wp_▁et
 48	européen	européen	ADJ	européen	Gender=Masc|Number=Sing	46	conj	européen	start_char=37402|end_char=37410|ner=O|SpaceAfter=No	wp_▁européen
 49	.	.	PUNCT	.	.	3	punct	.	start_char=37410|end_char=37411|ner=O	wp_.
+
 1	Dans	dans	ADP	Dans	Dans	4	case	Dans	start_char=37412|end_char=37416|ner=O	wp_▁Dans
 2	tous	tout	ADJ	tous	Gender=Masc|Number=Plur	4	amod	tous	start_char=37417|end_char=37421|ner=O	wp_▁tous
 3	ces	ce	DET	ces	Number=Plur|PronType=Dem	4	det	ces	start_char=37422|end_char=37425|ner=O	wp_▁ces
@@ -7053,6 +7298,7 @@
 21	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	la	start_char=37528|end_char=37530|ner=O	wp_▁la
 22	spécificité	spécificité	NOUN	spécificité	Gender=Fem|Number=Sing	19	conj	spécificité	start_char=37531|end_char=37542|ner=O|SpaceAfter=No	wp_▁spécificité
 23	.	.	PUNCT	.	.	8	punct	.	start_char=37542|end_char=37543|ner=O|SpacesAfter=\s\n\n\t	wp_.
+
 1	C’	ce	PRON	C’	Gender=Masc|Number=Sing|Person=3|PronType=Dem	6	nsubj	C’	start_char=37547|end_char=37549|ner=O|SpaceAfter=No	wp_▁C	wp_’
 2	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	est	start_char=37549|end_char=37552|ner=O	wp_▁est
 3	aussi	aussi	ADV	aussi	aussi	6	advmod	aussi	start_char=37553|end_char=37558|ner=O	wp_▁aussi
@@ -7084,6 +7330,7 @@
 29	prochaines	prochain	ADJ	prochaines	Gender=Fem|Number=Plur	30	amod	prochaines	start_char=37711|end_char=37721|ner=O	wp_▁prochaines
 30	années	année	NOUN	années	Gender=Fem|Number=Plur	25	obl:mod	années	start_char=37722|end_char=37728|ner=O|SpaceAfter=No	wp_▁années
 31	.	.	PUNCT	.	.	6	punct	.	start_char=37728|end_char=37729|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=37730|end_char=37732|ner=O	wp_▁La
 2	promotion	promotion	NOUN	promotion	Gender=Fem|Number=Sing	20	nsubj	promotion	start_char=37733|end_char=37742|ner=O	wp_▁promotion
 3	de	de	ADP	de	de	5	case	de	start_char=37743|end_char=37745|ner=O	wp_▁de
@@ -7113,6 +7360,7 @@
 26	plus	plus	ADV	plus	plus	27	advmod	plus	start_char=37885|end_char=37889|ner=O	wp_▁plus
 27	prometteuses	prometteur	ADJ	prometteuses	Gender=Fem|Number=Plur	24	nmod	prometteuses	start_char=37890|end_char=37902|ner=O|SpaceAfter=No	wp_▁prometteuse	wp_s
 28	.	.	PUNCT	.	.	20	punct	.	start_char=37902|end_char=37903|ner=O	wp_.
+
 1	Adossés	adosser	VERB	Adossés	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	13	advcl	Adossés	start_char=37904|end_char=37911|ner=O	wp_▁Ado	wp_ssé	wp_s
 2-3	au	au	au	au	au	au	au	au	start_char=37912|end_char=37914|ner=O	wp_▁au
 2	à	à	ADP	à	à	4	case	à	à	wp_▁à
@@ -7156,6 +7404,7 @@
 40	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	41	det	la	start_char=38110|end_char=38112|ner=O	wp_▁la
 41	formation	formation	NOUN	formation	Gender=Fem|Number=Sing	38	nmod	formation	start_char=38113|end_char=38122|ner=O|SpaceAfter=No	wp_▁formation
 42	.	.	PUNCT	.	.	13	punct	.	start_char=38122|end_char=38123|ner=O	wp_.
+
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	Il	start_char=38124|end_char=38126|ner=O	wp_▁Il
 2	s’	soi	PRON	s’	Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	s’	start_char=38127|end_char=38129|ner=O|SpaceAfter=No	wp_▁s	wp_’
 3	agira	agir	VERB	agira	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	agira	start_char=38129|end_char=38134|ner=O	wp_▁agir	wp_a
@@ -7201,6 +7450,7 @@
 42	thématiques	thématique	NOUN	thématiques	Gender=Fem|Number=Plur	39	nmod	thématiques	start_char=38319|end_char=38330|ner=O	wp_▁thématiques
 43	choisies	choisir	VERB	choisies	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	42	acl	choisies	start_char=38331|end_char=38339|ner=O|SpaceAfter=No	wp_▁choisies
 44	.	.	PUNCT	.	.	3	punct	.	start_char=38339|end_char=38340|ner=O	wp_.
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=38341|end_char=38344|ner=O	wp_▁Les
 2	approches	approche	NOUN	approches	Gender=Fem|Number=Plur	8	nsubj:pass	approches	start_char=38345|end_char=38354|ner=O	wp_▁approches
 3	juridiques	juridique	ADJ	juridiques	Gender=Fem|Number=Plur	2	amod	juridiques	start_char=38355|end_char=38365|ner=O	wp_▁juridiques
@@ -7236,6 +7486,7 @@
 31	langue	langue	NOUN	langue	Gender=Fem|Number=Sing	29	conj	langue	start_char=38505|end_char=38511|ner=O	wp_▁langue
 32	étrangère	étranger	ADJ	étrangère	Gender=Fem|Number=Sing	31	amod	étrangère	start_char=38512|end_char=38521|ner=O|SpaceAfter=No	wp_▁étrangère
 33	.	.	PUNCT	.	.	8	punct	.	start_char=38521|end_char=38522|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=38525|end_char=38527|ner=O	wp_▁La
 2	promotion	promotion	NOUN	promotion	Gender=Fem|Number=Sing	10	nsubj	promotion	start_char=38528|end_char=38537|ner=O	wp_▁promotion
 3	de	de	ADP	de	de	5	case	de	start_char=38538|end_char=38540|ner=O	wp_▁de
@@ -7282,6 +7533,7 @@
 43	projets	projet	NOUN	projets	Gender=Masc|Number=Plur	41	nmod	projets	start_char=38768|end_char=38775|ner=O	wp_▁projets
 44	PIA3	PIA3	PROPN	PIA3	PIA3	41	appos	PIA3	start_char=38776|end_char=38780|ner=S-MISC|SpaceAfter=No	wp_▁P	wp_IA	wp_3
 45	.	.	PUNCT	.	.	10	punct	.	start_char=38780|end_char=38781|ner=O	wp_.
+
 1	Non	non	ADV	Non	Polarity=Neg	2	advmod	Non	start_char=38782|end_char=38785|ner=O	wp_▁Non
 2	retenu	retenir	VERB	retenu	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	34	advcl	retenu	start_char=38786|end_char=38792|ner=O	wp_▁retenu
 3	en	en	ADP	en	en	5	case	en	start_char=38793|end_char=38795|ner=O	wp_▁en
@@ -7351,6 +7603,7 @@
 67	langues	langue	NOUN	langues	Gender=Fem|Number=Plur	55	conj	langues	start_char=39126|end_char=39133|ner=O	wp_▁langues
 68	étrangères	étranger	ADJ	étrangères	Gender=Fem|Number=Plur	67	amod	étrangères	start_char=39134|end_char=39144|ner=O|SpaceAfter=No	wp_▁étrangères
 69	.	.	PUNCT	.	.	34	punct	.	start_char=39144|end_char=39145|ner=O	wp_.
+
 1	En	en	ADP	En	En	2	mark	En	start_char=39146|end_char=39148|ner=O	wp_▁En
 2	croisant	croire	VERB	croisant	Tense=Pres|VerbForm=Part	12	advcl	croisant	start_char=39149|end_char=39157|ner=O	wp_▁crois	wp_ant
 3	ainsi	ainsi	ADV	ainsi	ainsi	2	advmod	ainsi	start_char=39158|end_char=39163|ner=O	wp_▁ainsi
@@ -7373,6 +7626,7 @@
 20	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	la	start_char=39268|end_char=39270|ner=O	wp_▁la
 21	justice	justice	NOUN	justice	Gender=Fem|Number=Sing	18	conj	justice	start_char=39271|end_char=39278|ner=O|SpaceAfter=No	wp_▁justice
 22	.	.	PUNCT	.	.	12	punct	.	start_char=39278|end_char=39279|ner=O	wp_.
+
 1	En	en	PRON	En	Emph=No|Person=3|PronType=Prs	2	expl:comp	En	start_char=39280|end_char=39282|ner=O	wp_▁En
 2	résulteront	résulter	VERB	résulteront	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	0	root	résulteront	start_char=39283|end_char=39294|ner=O	wp_▁résulte	wp_ront
 3	de	un	DET	de	Definite=Ind|Number=Plur|PronType=Art	5	det	de	start_char=39295|end_char=39297|ner=O	wp_▁de
@@ -7405,6 +7659,7 @@
 30	peu	peu	ADV	peu	peu	31	advmod	peu	start_char=39487|end_char=39490|ner=O	wp_▁peu
 31	répandue	répandu	VERB	répandue	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	26	amod	répandue	start_char=39491|end_char=39499|ner=O|SpaceAfter=No	wp_▁répandue
 32	.	.	PUNCT	.	.	2	punct	.	start_char=39499|end_char=39500|ner=O	wp_.
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=39501|end_char=39506|ner=O	wp_▁Cette
 2	ouverture	ouverture	NOUN	ouverture	Gender=Fem|Number=Sing	6	nsubj	ouverture	start_char=39507|end_char=39516|ner=O	wp_▁ouverture
 3	inter	inter	ADJ	inter	Gender=Fem|Number=Sing	2	amod	inter	start_char=39517|end_char=39522|ner=O	wp_▁inter
@@ -7449,6 +7704,7 @@
 42	et	et	CCONJ	et	et	43	cc	et	start_char=39771|end_char=39773|ner=O	wp_▁et
 43	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	8	conj	comparé	start_char=39774|end_char=39781|ner=O|SpaceAfter=No	wp_▁comparé
 44	.	.	PUNCT	.	.	6	punct	.	start_char=39781|end_char=39782|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	1	1	NUM	1	NumType=Card	3	nummod	1	start_char=39785|end_char=39786|ner=O|SpaceAfter=No	wp_▁1
 2	)	)	PUNCT	)	)	1	punct	)	start_char=39786|end_char=39787|ner=O	wp_▁)
 3	Transformation	transformation	NOUN	Transformation	Gender=Fem|Number=Sing	0	root	Transformation	start_char=39788|end_char=39802|ner=O	wp_▁Trans	wp_formation
@@ -7460,6 +7716,7 @@
 9	européen	européen	ADJ	européen	Gender=Masc|Number=Sing	8	amod	européen	start_char=39826|end_char=39834|ner=O	wp_▁européen
 10	et	et	CCONJ	et	et	11	cc	et	start_char=39835|end_char=39837|ner=O	wp_▁et
 11	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	9	conj	comparé	start_char=39838|end_char=39845|ner=O|SpacesAfter=\n\n\t	wp_▁comparé
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=39848|end_char=39850|ner=O	wp_▁Le
 2	colloque	colloque	NOUN	colloque	Gender=Masc|Number=Sing	11	nsubj	colloque	start_char=39851|end_char=39859|ner=O	wp_▁colloque
 3	de	de	ADP	de	de	4	case	de	start_char=39860|end_char=39862|ner=O	wp_▁de
@@ -7488,6 +7745,7 @@
 25	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	la	start_char=39984|end_char=39986|ner=O	wp_▁la
 26	justice	justice	NOUN	justice	Gender=Fem|Number=Sing	23	nmod	justice	start_char=39987|end_char=39994|ner=O|SpaceAfter=No	wp_▁justice
 27	.	.	PUNCT	.	.	11	punct	.	start_char=39994|end_char=39995|ner=O	wp_.
+
 1	Deux	deux	NUM	Deux	Number=Plur	2	nummod	Deux	start_char=39996|end_char=40000|ner=O	wp_▁Deux
 2	pistes	piste	NOUN	pistes	Gender=Fem|Number=Plur	6	nsubj:pass	pistes	start_char=40001|end_char=40007|ner=O	wp_▁pistes
 3	seront	être	AUX	seront	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	aux:pass	seront	start_char=40008|end_char=40014|ner=O	wp_▁seront
@@ -7500,6 +7758,7 @@
 10	de	de	ADP	de	de	11	case	de	start_char=40060|end_char=40062|ner=O	wp_▁de
 11	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	9	nmod	recherche	start_char=40063|end_char=40072|ner=O|SpacesAfter=\u00A0	wp_▁recherche
 12	:	:	PUNCT	:	:	6	punct	:	start_char=40073|end_char=40074|ner=O|SpacesAfter=\s\n\n	wp_▁:
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=40077|end_char=40078|ner=O	wp_▁-
 2	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	la	start_char=40079|end_char=40081|ner=O	wp_▁la
 3	promotion	promotion	NOUN	promotion	Gender=Fem|Number=Sing	0	root	promotion	start_char=40082|end_char=40091|ner=O	wp_▁promotion
@@ -7553,6 +7812,7 @@
 48	de	de	ADP	de	de	49	mark	de	start_char=40311|end_char=40313|ner=O	wp_▁de
 49	juger	juger	VERB	juger	VerbForm=Inf	47	acl	juger	start_char=40314|end_char=40319|ner=O|SpaceAfter=No	wp_▁juger
 50	.	.	PUNCT	.	.	3	punct	.	start_char=40319|end_char=40320|ner=O	wp_.
+
 1	Dans	dans	ADP	Dans	Dans	3	case	Dans	start_char=40321|end_char=40325|ner=O	wp_▁Dans
 2	cette	ce	DET	cette	Gender=Fem|Number=Sing|PronType=Dem	3	det	cette	start_char=40326|end_char=40331|ner=O	wp_▁cette
 3	perspective	perspective	NOUN	perspective	Gender=Fem|Number=Sing	7	obl:mod	perspective	start_char=40332|end_char=40343|ner=O|SpaceAfter=No	wp_▁perspective
@@ -7581,6 +7841,7 @@
 26	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	27	det	la	start_char=40442|end_char=40444|ner=O	wp_▁la
 27	médiation	médiation	NOUN	médiation	Gender=Fem|Number=Sing	22	nmod	médiation	start_char=40445|end_char=40454|ner=O|SpaceAfter=No	wp_▁médiation
 28	.	.	PUNCT	.	.	7	punct	.	start_char=40454|end_char=40455|ner=O	wp_.
+
 1	Initiée	initier	VERB	Initiée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	9	advcl	Initiée	start_char=40456|end_char=40463|ner=O	wp_▁In	wp_iti	wp_ée
 2	par	par	ADP	par	par	3	case	par	start_char=40464|end_char=40467|ner=O	wp_▁par
 3	Sophie	Sophie	PROPN	Sophie	Sophie	1	obl:agent	Sophie	start_char=40468|end_char=40474|ner=B-PER	wp_▁Sophie
@@ -7620,7 +7881,9 @@
 36	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	37	det	la	start_char=40675|end_char=40677|ner=O	wp_▁la
 37	matière	matière	NOUN	matière	Gender=Fem|Number=Sing	34	nmod	matière	start_char=40678|end_char=40685|ner=O|SpaceAfter=No	wp_▁matière
 38	.	.	PUNCT	.	.	9	punct	.	start_char=40685|end_char=40686|ner=O|SpacesAfter=\n\n	wp_.
+
 1	-	-	PUNCT	-	-	0	root	-	start_char=40688|end_char=40689|ner=O	wp_▁-
+
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	Il	start_char=40690|end_char=40692|ner=O	wp_▁Il
 2	s’	soi	PRON	s’	Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	s’	start_char=40693|end_char=40695|ner=O|SpaceAfter=No	wp_▁s	wp_’
 3	agira	agir	VERB	agira	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	agira	start_char=40695|end_char=40700|ner=O	wp_▁agir	wp_a
@@ -7684,6 +7947,7 @@
 60	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	61	det	la	start_char=40982|end_char=40984|ner=O	wp_▁la
 61	justice	justice	NOUN	justice	Gender=Fem|Number=Sing	58	nmod	justice	start_char=40985|end_char=40992|ner=O|SpaceAfter=No	wp_▁justice
 62	.	.	PUNCT	.	.	3	punct	.	start_char=40992|end_char=40993|ner=O	wp_.
+
 1	Des	un	DET	Des	Definite=Ind|Number=Plur|PronType=Art	2	det	Des	start_char=40994|end_char=40997|ner=O	wp_▁Des
 2	séminaires	séminaire	NOUN	séminaires	Gender=Masc|Number=Plur	9	nsubj:pass	séminaires	start_char=40998|end_char=41008|ner=O	wp_▁séminaires
 3	et	et	CCONJ	et	et	4	cc	et	start_char=41009|end_char=41011|ner=O	wp_▁et
@@ -7721,6 +7985,7 @@
 34	entre	entre	ADP	entre	entre	35	case	entre	start_char=41170|end_char=41175|ner=O	wp_▁entre
 35	autres	autre	PRON	autres	Number=Plur|Person=3|PronType=Ind	27	nmod	autres	start_char=41176|end_char=41182|ner=O|SpaceAfter=No	wp_▁autres
 36	.	.	PUNCT	.	.	9	punct	.	start_char=41182|end_char=41183|ner=O|SpacesAfter=\n\n	wp_.
+
 1	2	2	NUM	2	NumType=Card	3	nummod	2	start_char=41185|end_char=41186|ner=O|SpaceAfter=No	wp_▁2
 2	)	)	PUNCT	)	)	1	punct	)	start_char=41186|end_char=41187|ner=O	wp_▁)
 3	Protections	protection	NOUN	Protections	Gender=Fem|Number=Plur	0	root	Protections	start_char=41188|end_char=41199|ner=B-MISC	wp_▁Protection	wp_s
@@ -7731,6 +7996,7 @@
 8	européen	européen	ADJ	européen	Gender=Masc|Number=Sing	7	amod	européen	start_char=41224|end_char=41232|ner=E-MISC	wp_▁européen
 9	et	et	CCONJ	et	et	10	cc	et	start_char=41233|end_char=41235|ner=O	wp_▁et
 10	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	8	conj	comparé	start_char=41236|end_char=41243|ner=O|SpacesAfter=\s\n\n\t	wp_▁comparé
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	3	det	Cette	start_char=41247|end_char=41252|ner=O	wp_▁Cette
 2	nouvelle	nouveau	ADJ	nouvelle	Gender=Fem|Number=Sing	3	amod	nouvelle	start_char=41253|end_char=41261|ner=O	wp_▁nouvelle
 3	thématique	thématique	NOUN	thématique	Gender=Fem|Number=Sing	5	nsubj:pass	thématique	start_char=41262|end_char=41272|ner=O	wp_▁thématique
@@ -7769,6 +8035,7 @@
 33	en	en	ADP	en	ExtPos=ADV	32	advmod	en	start_char=41425|end_char=41427|ner=O	wp_▁en
 34	particulier	particulier	NOUN	particulier	Gender=Masc|Number=Sing	33	fixed	particulier	start_char=41428|end_char=41439|ner=O|SpaceAfter=No	wp_▁particulier
 35	.	.	PUNCT	.	.	5	punct	.	start_char=41439|end_char=41440|ner=O	wp_.
+
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	5	nsubj:pass	Elle	start_char=41441|end_char=41445|ner=O	wp_▁Elle
 2	sera	être	AUX	sera	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	5	aux:pass	sera	start_char=41446|end_char=41450|ner=O	wp_▁sera
 3	cette	ce	DET	cette	Gender=Fem|Number=Sing|PronType=Dem	4	det	cette	start_char=41451|end_char=41456|ner=O	wp_▁cette
@@ -7804,6 +8071,7 @@
 33	de	de	ADP	de	de	34	case	de	start_char=41652|end_char=41654|ner=O	wp_▁de
 34	migrations	migration	NOUN	migrations	Gender=Fem|Number=Plur	31	conj	migrations	start_char=41655|end_char=41665|ner=O|SpaceAfter=No	wp_▁migration	wp_s
 35	.	.	PUNCT	.	.	5	punct	.	start_char=41665|end_char=41666|ner=O|SpacesAfter=\s\n\n\t	wp_.
+
 1	Une	un	DET	Une	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	Une	start_char=41670|end_char=41673|ner=O	wp_▁Une
 2	attention	attention	NOUN	attention	Gender=Fem|Number=Sing	15	nsubj	attention	start_char=41674|end_char=41683|ner=O	wp_▁attention
 3	particulière	particulier	ADJ	particulière	Gender=Fem|Number=Sing	2	amod	particulière	start_char=41684|end_char=41696|ner=O|SpaceAfter=No	wp_▁particulière
@@ -7842,6 +8110,7 @@
 35	et	et	CCONJ	et	et	36	cc	et	start_char=41897|end_char=41899|ner=O	wp_▁et
 36	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	17	conj	comparé	start_char=41900|end_char=41907|ner=O|SpaceAfter=No	wp_▁comparé
 37	.	.	PUNCT	.	.	15	punct	.	start_char=41907|end_char=41908|ner=O	wp_.
+
 1	Dans	dans	ADP	Dans	Dans	3	case	Dans	start_char=41909|end_char=41913|ner=O	wp_▁Dans
 2	cette	ce	DET	cette	Gender=Fem|Number=Sing|PronType=Dem	3	det	cette	start_char=41914|end_char=41919|ner=O	wp_▁cette
 3	perspective	perspective	NOUN	perspective	Gender=Fem|Number=Sing	14	obl:mod	perspective	start_char=41920|end_char=41931|ner=O|SpaceAfter=No	wp_▁perspective
@@ -7891,8 +8160,10 @@
 44	Unies	uni	ADJ	Unies	Gender=Fem|Number=Plur	43	amod	Unies	start_char=42160|end_char=42165|ner=E-ORG|SpacesAfter=\u00A0	wp_▁Unies
 45	»	»	PUNCT	»	»	26	punct	»	start_char=42166|end_char=42167|ner=O|SpaceAfter=No	wp_▁»
 46	.	.	PUNCT	.	.	14	punct	.	start_char=42167|end_char=42168|ner=O|SpacesAfter=\s\n\n	wp_.
+
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=42171|end_char=42172|ner=O|SpaceAfter=No	wp_▁3
 2	)	)	PUNCT	)	)	1	punct	)	start_char=42172|end_char=42173|ner=O	wp_▁)
+
 1	Interactions	interaction	NOUN	Interactions	Gender=Fem|Number=Plur	0	root	Interactions	start_char=42174|end_char=42186|ner=O	wp_▁Inter	wp_actions
 2	entre	entre	ADP	entre	entre	3	case	entre	start_char=42187|end_char=42192|ner=O	wp_▁entre
 3	espace	espace	NOUN	espace	Gender=Masc|Number=Sing	1	nmod	espace	start_char=42193|end_char=42199|ner=O	wp_▁espace
@@ -7903,6 +8174,7 @@
 8	européen	européen	ADJ	européen	Gender=Masc|Number=Sing	7	amod	européen	start_char=42221|end_char=42229|ner=O	wp_▁européen
 9	et	et	CCONJ	et	et	10	cc	et	start_char=42230|end_char=42232|ner=O	wp_▁et
 10	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	8	conj	comparé	start_char=42233|end_char=42240|ner=O|SpacesAfter=\s\n\n\t	wp_▁comparé
+
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=42244|end_char=42249|ner=O	wp_▁Cette
 2	thématique	thématique	NOUN	thématique	Gender=Fem|Number=Sing	3	nsubj	thématique	start_char=42250|end_char=42260|ner=O	wp_▁thématique
 3	entend	entendre	VERB	entend	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	entend	start_char=42261|end_char=42267|ner=O	wp_▁entend
@@ -7926,6 +8198,7 @@
 19	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	le	le	wp_▁le
 20	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	17	nmod	CEJEC	start_char=42351|end_char=42356|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 21	.	.	PUNCT	.	.	3	punct	.	start_char=42356|end_char=42357|ner=O	wp_.
+
 1	A	à	ADP	A	A	3	case	A	start_char=42358|end_char=42359|ner=O	wp_▁A
 2	cette	ce	DET	cette	Gender=Fem|Number=Sing|PronType=Dem	3	det	cette	start_char=42360|end_char=42365|ner=O	wp_▁cette
 3	fin	fin	NOUN	fin	Gender=Fem|Number=Sing	11	obl:mod	fin	start_char=42366|end_char=42369|ner=O|SpaceAfter=No	wp_▁fin
@@ -7960,7 +8233,9 @@
 32	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	la	start_char=42510|end_char=42512|ner=O	wp_▁la
 33	concurrence	concurrence	NOUN	concurrence	Gender=Fem|Number=Sing	30	nmod	concurrence	start_char=42513|end_char=42524|ner=O|SpaceAfter=No	wp_▁concurrence
 34	.	.	PUNCT	.	.	11	punct	.	start_char=42524|end_char=42525|ner=O|SpacesAfter=\n\n	wp_.
+
 1	ANNEXES	annexe	NOUN	ANNEXES	Gender=Fem|Number=Plur	0	root	ANNEXES	start_char=42527|end_char=42534|ner=S-ORG|SpacesAfter=\n\n	wp_ANNE	wp_X	wp_ES
+
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=42536|end_char=42542|ner=B-MISC	wp_▁Annexe
 2	1	1	NUM	1	NumType=Card	1	nmod	1	start_char=42543|end_char=42544|ner=I-MISC	wp_▁1
 3	:	:	PUNCT	:	:	4	punct	:	start_char=42545|end_char=42546|ner=I-MISC|SpacesAfter=\t	wp_▁:
@@ -7968,6 +8243,7 @@
 5	de	de	ADP	de	de	6	case	de	start_char=42554|end_char=42556|ner=I-MISC	wp_▁de
 6	mission	mission	NOUN	mission	Gender=Fem|Number=Sing	4	nmod	mission	start_char=42557|end_char=42564|ner=I-MISC	wp_▁mission
 7	contractuelle	contractuel	ADJ	contractuelle	Gender=Fem|Number=Sing	6	amod	contractuelle	start_char=42565|end_char=42578|ner=E-MISC|SpacesAfter=\n\n	wp_▁contractuelle
+
 1	Une	un	DET	Une	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	Une	start_char=42580|end_char=42583|ner=O	wp_▁Une
 2	copie	copie	NOUN	copie	Gender=Fem|Number=Sing	26	nsubj:pass	copie	start_char=42584|end_char=42589|ner=O	wp_▁copie
 3	de	de	ADP	de	de	5	case	de	start_char=42590|end_char=42592|ner=O	wp_▁de
@@ -7999,12 +8275,14 @@
 28	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	le	le	wp_▁le
 29	dossier	dossier	NOUN	dossier	Gender=Masc|Number=Sing	26	obl:arg	dossier	start_char=42719|end_char=42726|ner=O|SpaceAfter=No	wp_▁dossier
 30	.	.	PUNCT	.	.	26	punct	.	start_char=42726|end_char=42727|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=42729|end_char=42735|ner=B-MISC	wp_▁Annexe
 2	2	2	NUM	2	NumType=Card	1	nmod	2	start_char=42736|end_char=42737|ner=I-MISC	wp_▁2
 3	:	:	PUNCT	:	:	4	punct	:	start_char=42738|end_char=42739|ner=I-MISC|SpacesAfter=\t	wp_▁:
 4	Équipements	équipement	NOUN	Équipements	Gender=Masc|Number=Plur	1	nmod	Équipements	start_char=42740|end_char=42751|ner=I-MISC|SpaceAfter=No	wp_▁Équipement	wp_s
 5	,	,	PUNCT	,	,	6	punct	,	start_char=42751|end_char=42752|ner=I-MISC	wp_,
 6	plateformes	plateforme	NOUN	plateformes	Gender=Fem|Number=Plur	4	conj	plateformes	start_char=42753|end_char=42764|ner=E-MISC|SpacesAfter=\n\n	wp_▁plateformes
+
 1	Une	un	DET	Une	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	Une	start_char=42766|end_char=42769|ner=O	wp_▁Une
 2	liste	liste	NOUN	liste	Gender=Fem|Number=Sing	16	nsubj:pass	liste	start_char=42770|end_char=42775|ner=O	wp_▁liste
 3-4	des	des	des	des	des	des	des	des	start_char=42776|end_char=42779|ner=O	wp_▁des
@@ -8027,10 +8305,13 @@
 18	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	19	det	le	le	wp_▁le
 19	dossier	dossier	NOUN	dossier	Gender=Masc|Number=Sing	16	obl:arg	dossier	start_char=42860|end_char=42867|ner=O|SpaceAfter=No	wp_▁dossier
 20	.	.	PUNCT	.	.	16	punct	.	start_char=42867|end_char=42868|ner=O|SpacesAfter=\n\n	wp_.
+
 1	1	1	NUM	1	NumType=Card	0	root	1	start_char=42870|end_char=42871|ner=O	wp_▁1
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=42872|end_char=42873|ner=O	wp_▁-
 2	Locaux	local	NOUN	Locaux	Gender=Masc|Number=Plur	0	root	Locaux	start_char=42874|end_char=42880|ner=S-LOC	wp_▁L	wp_oc	wp_aux
 3	:	:	PUNCT	:	:	2	punct	:	start_char=42881|end_char=42882|ner=O|SpacesAfter=\n\n\t	wp_▁:
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=42885|end_char=42887|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	3	nsubj	CEJEC	start_char=42888|end_char=42893|ner=S-ORG	wp_▁CE	wp_J	wp_EC
 3	partage	partager	VERB	partage	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	partage	start_char=42894|end_char=42901|ner=O	wp_▁partage
@@ -8064,6 +8345,7 @@
 29	420	420	NUM	420	Number=Plur	25	conj	420	start_char=43019|end_char=43022|ner=O|SpaceAfter=No	wp_▁4	wp_20
 30	)	)	PUNCT	)	)	25	punct	)	start_char=43022|end_char=43023|ner=O|SpaceAfter=No	wp_▁)
 31	.	.	PUNCT	.	.	3	punct	.	start_char=43023|end_char=43024|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=43025|end_char=43027|ner=O	wp_▁La
 2	salle	salle	NOUN	salle	Gender=Fem|Number=Sing	4	nsubj	salle	start_char=43028|end_char=43033|ner=O	wp_▁salle
 3	413	413	NUM	413	Number=Plur	2	nmod	413	start_char=43034|end_char=43037|ner=O	wp_▁4	wp_13
@@ -8097,6 +8379,7 @@
 28	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	le	le	wp_▁le
 29	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	26	nmod	CEJEC	start_char=43176|end_char=43181|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 30	.	.	PUNCT	.	.	4	punct	.	start_char=43181|end_char=43182|ner=O	wp_.
+
 1	D'	un	DET	D'	Definite=Ind|Number=Plur|PronType=Art	3	det	D'	start_char=43183|end_char=43185|ner=O|SpaceAfter=No	wp_▁D	wp_'
 2	autres	autre	ADJ	autres	Gender=Fem|Number=Plur	3	amod	autres	start_char=43185|end_char=43191|ner=O	wp_▁autres
 3	salles	salle	NOUN	salles	Gender=Fem|Number=Plur	12	nsubj:pass	salles	start_char=43192|end_char=43198|ner=O	wp_▁salles
@@ -8126,12 +8409,15 @@
 26	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	27	det	les	start_char=43312|end_char=43315|ner=O	wp_▁les
 27	colloques	colloque	NOUN	colloques	Gender=Masc|Number=Plur	24	conj	colloques	start_char=43316|end_char=43325|ner=O|SpaceAfter=No	wp_▁colloque	wp_s
 28	.	.	PUNCT	.	.	12	punct	.	start_char=43325|end_char=43326|ner=O|SpacesAfter=\n\n	wp_.
+
 1	2	2	NUM	2	NumType=Card	0	root	2	start_char=43328|end_char=43329|ner=O	wp_▁2
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=43330|end_char=43331|ner=O	wp_▁-
 2	Ouvrages	ouvrage	NOUN	Ouvrages	Gender=Masc|Number=Plur	0	root	Ouvrages	start_char=43332|end_char=43340|ner=O	wp_▁Ouvrage	wp_s
 3	et	et	CCONJ	et	et	4	cc	et	start_char=43341|end_char=43343|ner=O	wp_▁et
 4	revues	revue	NOUN	revues	Gender=Fem|Number=Plur	2	conj	revues	start_char=43344|end_char=43350|ner=O	wp_▁revues
 5	:	:	PUNCT	:	:	2	punct	:	start_char=43351|end_char=43352|ner=O|SpacesAfter=\n\n\t	wp_▁:
+
 1	Compte	compte	NOUN	Compte	ExtPos=ADV|Gender=Masc|Number=Sing	19	advmod	Compte	start_char=43355|end_char=43361|ner=O	wp_▁Compte
 2	tenu	tenir	VERB	tenu	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	fixed	tenu	start_char=43362|end_char=43366|ner=O	wp_▁tenu
 3	des	un	DET	des	Definite=Ind|Number=Plur|PronType=Art	4	det	des	start_char=43367|end_char=43370|ner=O	wp_▁des
@@ -8174,6 +8460,7 @@
 37	et	et	CCONJ	et	et	38	cc	et	start_char=43553|end_char=43555|ner=O	wp_▁et
 38	comparé	comparer	VERB	comparé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	34	conj	comparé	start_char=43556|end_char=43563|ner=O|SpaceAfter=No	wp_▁comparé
 39	.	.	PUNCT	.	.	19	punct	.	start_char=43563|end_char=43564|ner=O	wp_.
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=43565|end_char=43568|ner=O	wp_▁Les
 2	ouvrages	ouvrage	NOUN	ouvrages	Gender=Masc|Number=Plur	7	nsubj	ouvrages	start_char=43569|end_char=43577|ner=O	wp_▁ouvrages
 3	et	et	CCONJ	et	et	5	cc	et	start_char=43578|end_char=43580|ner=O	wp_▁et
@@ -8187,6 +8474,7 @@
 11	et	et	CCONJ	et	et	12	cc	et	start_char=43622|end_char=43624|ner=O	wp_▁et
 12	420	420	NUM	420	Number=Plur	10	conj	420	start_char=43625|end_char=43628|ner=O|SpaceAfter=No	wp_▁4	wp_20
 13	.	.	PUNCT	.	.	7	punct	.	start_char=43628|end_char=43629|ner=O	wp_.
+
 1	D'	un	DET	D'	Definite=Ind|Number=Plur|PronType=Art	2	det	D'	start_char=43630|end_char=43632|ner=O|SpaceAfter=No	wp_▁D	wp_'
 2	autres	autre	PRON	autres	Number=Plur|Person=3|PronType=Ind	4	nsubj:pass	autres	start_char=43632|end_char=43638|ner=O	wp_▁autres
 3	sont	être	AUX	sont	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	sont	start_char=43639|end_char=43643|ner=O	wp_▁sont
@@ -8199,11 +8487,14 @@
 9	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	10	det	l'	start_char=43671|end_char=43673|ner=O|SpaceAfter=No	wp_▁l	wp_'
 10	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	7	nmod	unité	start_char=43673|end_char=43678|ner=O|SpaceAfter=No	wp_▁unité
 11	.	.	PUNCT	.	.	4	punct	.	start_char=43678|end_char=43679|ner=O|SpacesAfter=\n\n	wp_.
+
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=43681|end_char=43682|ner=O	wp_▁3
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=43683|end_char=43684|ner=O	wp_▁-
 2	Matériel	matériel	NOUN	Matériel	Gender=Masc|Number=Sing	0	root	Matériel	start_char=43685|end_char=43693|ner=B-MISC	wp_▁Matériel
 3	informatique	informatique	ADJ	informatique	Gender=Masc|Number=Sing	2	amod	informatique	start_char=43694|end_char=43706|ner=E-MISC	wp_▁informatique
 4	:	:	PUNCT	:	:	2	punct	:	start_char=43707|end_char=43708|ner=O|SpacesAfter=\n\n\t	wp_▁:
+
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=43711|end_char=43714|ner=O	wp_▁Les
 2	locaux	local	NOUN	locaux	Gender=Masc|Number=Plur	7	nsubj:pass	locaux	start_char=43715|end_char=43721|ner=O	wp_▁locaux
 3-4	du	du	du	du	du	du	du	du	start_char=43722|end_char=43724|ner=O	wp_▁du
@@ -8223,7 +8514,9 @@
 15	documentaires	documentaire	ADJ	documentaires	Gender=Fem|Number=Plur	14	amod	documentaires	start_char=43785|end_char=43798|ner=O	wp_▁documentaires
 16	électroniques	électronique	ADJ	électroniques	Gender=Fem|Number=Plur	14	amod	électroniques	start_char=43799|end_char=43812|ner=O|SpaceAfter=No	wp_▁électroniques
 17	.	.	PUNCT	.	.	7	punct	.	start_char=43812|end_char=43813|ner=O|SpacesAfter=\n\n	wp_.
+
 1	4	4	NUM	4	NumType=Card	0	root	4	start_char=43815|end_char=43816|ner=O	wp_▁4
+
 1	-	-	PUNCT	-	-	2	punct	-	start_char=43817|end_char=43818|ner=O	wp_▁-
 2	Site	site	NOUN	Site	Gender=Masc|Number=Sing	0	root	Site	start_char=43819|end_char=43823|ner=O	wp_▁Site
 3	Internet	Internet	PROPN	Internet	Internet	2	nmod	Internet	start_char=43824|end_char=43832|ner=S-MISC	wp_▁Internet
@@ -8232,6 +8525,7 @@
 5	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	le	le	wp_▁le
 6	CEJEC	CEJEC	PROPN	CEJEC	CEJEC	2	nmod	CEJEC	start_char=43836|end_char=43841|ner=S-ORG	wp_▁CE	wp_J	wp_EC
 7	:	:	PUNCT	:	:	2	punct	:	start_char=43842|end_char=43843|ner=O|SpacesAfter=\n\n\t	wp_▁:
+
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=43846|end_char=43848|ner=O	wp_▁Le
 2	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	3	nsubj	CEJEC	start_char=43849|end_char=43854|ner=S-MISC	wp_▁CE	wp_J	wp_EC
 3	dispose	disposer	VERB	dispose	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	dispose	start_char=43855|end_char=43862|ner=O	wp_▁dispose
@@ -8241,6 +8535,7 @@
 7	Internet	Internet	PROPN	Internet	Internet	6	appos	Internet	start_char=43873|end_char=43881|ner=S-MISC	wp_▁Internet
 8	:	:	PUNCT	:	:	9	punct	:	start_char=43882|end_char=43883|ner=O	wp_▁:
 9	www.cejec.eu.	www.cejec.eu.	X	www.cejec.eu.	ExtPos=PROPN	6	appos	www.cejec.eu.	start_char=43884|end_char=43897|ner=O	wp_▁www	wp_.	wp_ce	wp_je	wp_c	wp_.	wp_eu	wp_.
+
 1	Ce	ce	DET	Ce	Gender=Masc|Number=Sing|PronType=Dem	2	det	Ce	start_char=43898|end_char=43900|ner=O	wp_▁Ce
 2	site	site	NOUN	site	Gender=Masc|Number=Sing	4	nsubj:pass	site	start_char=43901|end_char=43905|ner=O	wp_▁site
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	est	start_char=43906|end_char=43909|ner=O	wp_▁est
@@ -8265,11 +8560,13 @@
 19	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	le	le	wp_▁le
 20	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	17	nmod	CEJEC	start_char=43987|end_char=43992|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 21	.	.	PUNCT	.	.	4	punct	.	start_char=43992|end_char=43993|ner=O|SpacesAfter=\n\n	wp_.
+
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=43995|end_char=44001|ner=B-MISC	wp_▁Annexe
 2	3	3	NUM	3	NumType=Card	1	nmod	3	start_char=44002|end_char=44003|ner=I-MISC	wp_▁3
 3	:	:	PUNCT	:	:	4	punct	:	start_char=44004|end_char=44005|ner=I-MISC|SpacesAfter=\t	wp_▁:
 4	Organigramme	organigramme	NOUN	Organigramme	Gender=Masc|Number=Sing	1	appos	Organigramme	start_char=44006|end_char=44018|ner=I-MISC	wp_▁Organ	wp_i	wp_gramme
 5	fonctionnel	fonctionnel	ADJ	fonctionnel	Gender=Masc|Number=Sing	4	amod	fonctionnel	start_char=44019|end_char=44030|ner=E-MISC|SpacesAfter=\n\n	wp_▁fonctionnel
+
 1	Une	un	DET	Une	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	Une	start_char=44032|end_char=44035|ner=O	wp_▁Une
 2	présentation	présentation	NOUN	présentation	Gender=Fem|Number=Sing	15	nsubj:pass	présentation	start_char=44036|end_char=44048|ner=O	wp_▁présentation
 3	schématique	schématique	ADJ	schématique	Gender=Fem|Number=Sing	2	amod	schématique	start_char=44049|end_char=44060|ner=O	wp_▁schéma	wp_tique
@@ -8291,6 +8588,7 @@
 17	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	le	le	wp_▁le
 18	dossier	dossier	NOUN	dossier	Gender=Masc|Number=Sing	15	obl:arg	dossier	start_char=44123|end_char=44130|ner=O|SpaceAfter=No	wp_▁dossier
 19	.	.	PUNCT	.	.	15	punct	.	start_char=44130|end_char=44131|ner=O|SpacesAfter=\n\n\t	wp_.
+
 1	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	2	det	L'	start_char=44134|end_char=44136|ner=O|SpaceAfter=No	wp_▁L	wp_'
 2	organigramme	organigramme	NOUN	organigramme	Gender=Masc|Number=Sing	8	nsubj:pass	organigramme	start_char=44136|end_char=44148|ner=O	wp_▁orga	wp_ni	wp_gramme
 3	fonctionnel	fonctionnel	ADJ	fonctionnel	Gender=Masc|Number=Sing	2	amod	fonctionnel	start_char=44149|end_char=44160|ner=O	wp_▁fonctionnel
@@ -8315,11 +8613,14 @@
 21	Assemblée	assemblée	NOUN	Assemblée	Gender=Fem|Number=Sing	15	conj	Assemblée	start_char=44237|end_char=44246|ner=B-ORG	wp_▁Assemblée
 22	générale	général	ADJ	générale	Gender=Fem|Number=Sing	21	amod	générale	start_char=44247|end_char=44255|ner=E-ORG|SpaceAfter=No	wp_▁générale
 23	.	.	PUNCT	.	.	8	punct	.	start_char=44255|end_char=44256|ner=O|SpacesAfter=\n\n	wp_.
+
 1	1	1	NUM	1	NumType=Card	0	root	1	start_char=44258|end_char=44259|ner=O	wp_▁1
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=44260|end_char=44261|ner=O	wp_▁-
 2	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=44262|end_char=44264|ner=B-ORG	wp_▁La
 3	Direction	direction	NOUN	Direction	Gender=Fem|Number=Sing	0	root	Direction	start_char=44265|end_char=44274|ner=E-ORG	wp_▁Direction
 4	:	:	PUNCT	:	:	3	punct	:	start_char=44275|end_char=44276|ner=O|SpacesAfter=\n\n\t	wp_▁:
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=44279|end_char=44281|ner=O	wp_▁La
 2	Direction	direction	NOUN	Direction	Gender=Fem|Number=Sing	7	nsubj	Direction	start_char=44282|end_char=44291|ner=B-ORG	wp_▁Direction
 3-4	du	du	du	du	du	du	du	du	start_char=44292|end_char=44294|ner=I-ORG	wp_▁du
@@ -8348,6 +8649,7 @@
 25	directrice	directrice	NOUN	directrice	Gender=Fem|Number=Sing	12	conj	directrice	start_char=44395|end_char=44405|ner=O	wp_▁directrice
 26	adjointe	adjointe	ADJ	adjointe	Gender=Fem|Number=Sing	25	amod	adjointe	start_char=44406|end_char=44414|ner=O|SpaceAfter=No	wp_▁adjointe
 27	.	.	PUNCT	.	.	7	punct	.	start_char=44414|end_char=44415|ner=O	wp_.
+
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=44416|end_char=44418|ner=O	wp_▁La
 2	direction	direction	NOUN	direction	Gender=Fem|Number=Sing	3	nsubj	direction	start_char=44419|end_char=44428|ner=O	wp_▁direction
 3	donne	donner	VERB	donne	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	donne	start_char=44429|end_char=44434|ner=O	wp_▁donne
@@ -8381,11 +8683,14 @@
 27	orientations	orientation	NOUN	orientations	Gender=Fem|Number=Plur	22	nmod	orientations	start_char=44540|end_char=44552|ner=O	wp_▁orientations
 28	scientifiques	scientifique	ADJ	scientifiques	Gender=Fem|Number=Plur	27	amod	scientifiques	start_char=44553|end_char=44566|ner=O|SpaceAfter=No	wp_▁scientifiques
 29	.	.	PUNCT	.	.	3	punct	.	start_char=44566|end_char=44567|ner=O|SpacesAfter=\s\s\n\n	wp_.
+
 1	2	2	NUM	2	NumType=Card	0	root	2	start_char=44571|end_char=44572|ner=O	wp_▁2
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=44573|end_char=44574|ner=O	wp_▁-
 2	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	Le	start_char=44575|end_char=44577|ner=O	wp_▁Le
 3	Conseil	conseil	NOUN	Conseil	Gender=Masc|Number=Sing	0	root	Conseil	start_char=44578|end_char=44585|ner=S-ORG	wp_▁Conseil
 4	:	:	PUNCT	:	:	3	punct	:	start_char=44586|end_char=44587|ner=O|SpacesAfter=\n\n\t	wp_▁:
+
 1	Composé	composer	VERB	Composé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	21	advcl	Composé	start_char=44590|end_char=44597|ner=O	wp_▁Composé
 2	de	de	ADP	de	de	4	case	de	start_char=44598|end_char=44600|ner=O	wp_▁de
 3	quinze	quinze	NUM	quinze	Number=Plur	4	nummod	quinze	start_char=44601|end_char=44607|ner=O	wp_▁quinze
@@ -8441,6 +8746,7 @@
 49	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	50	det	la	start_char=44862|end_char=44864|ner=I-ORG	wp_▁la
 50	Recherche	recherche	NOUN	Recherche	Gender=Fem|Number=Sing	47	nmod	Recherche	start_char=44865|end_char=44874|ner=E-ORG|SpaceAfter=No	wp_▁Recherche
 51	.	.	PUNCT	.	.	21	punct	.	start_char=44874|end_char=44875|ner=O	wp_.
+
 1	Ce	ce	DET	Ce	Gender=Masc|Number=Sing|PronType=Dem	2	det	Ce	start_char=44876|end_char=44878|ner=O	wp_▁Ce
 2	Conseil	conseil	NOUN	Conseil	Gender=Masc|Number=Sing	4	nsubj	Conseil	start_char=44879|end_char=44886|ner=S-ORG	wp_▁Conseil
 3	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	4	expl:pv	se	start_char=44887|end_char=44889|ner=O	wp_▁se
@@ -8454,12 +8760,15 @@
 10	par	par	ADP	par	par	11	case	par	start_char=44916|end_char=44919|ner=O	wp_▁par
 11	an	an	NOUN	an	Gender=Masc|Number=Sing	4	obl:mod	an	start_char=44920|end_char=44922|ner=O|SpaceAfter=No	wp_▁an
 12	.	.	PUNCT	.	.	4	punct	.	start_char=44922|end_char=44923|ner=O|SpacesAfter=\n\n	wp_.
+
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=44925|end_char=44926|ner=O	wp_▁3
+
 1	-	-	PUNCT	-	-	3	punct	-	start_char=44927|end_char=44928|ner=O	wp_▁-
 2	L'	le	DET	L'	Definite=Def|Number=Sing|PronType=Art	3	det	L'	start_char=44929|end_char=44931|ner=O|SpaceAfter=No	wp_▁L	wp_'
 3	Assemblée	assemblée	NOUN	Assemblée	Gender=Fem|Number=Sing	0	root	Assemblée	start_char=44931|end_char=44940|ner=B-ORG	wp_▁Assemblée
 4	générale	général	ADJ	générale	Gender=Fem|Number=Sing	3	amod	générale	start_char=44941|end_char=44949|ner=E-ORG	wp_▁générale
 5	:	:	PUNCT	:	:	3	punct	:	start_char=44950|end_char=44951|ner=O|SpacesAfter=\n\n\t	wp_▁:
+
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=44954|end_char=44956|ner=O|SpaceAfter=No	wp_▁L	wp_’
 2	Assemblée	assemblée	NOUN	Assemblée	Gender=Fem|Number=Sing	5	nsubj:pass	Assemblée	start_char=44956|end_char=44965|ner=B-ORG	wp_▁Assemblée
 3	générale	général	ADJ	générale	Gender=Fem|Number=Sing	2	amod	générale	start_char=44966|end_char=44974|ner=E-ORG	wp_▁générale
@@ -8495,6 +8804,7 @@
 30	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	le	le	wp_▁le
 31	CEJEC	CEJEC	PROPN	CEJEC	Gender=Masc|Number=Sing	28	obl:arg	CEJEC	start_char=45120|end_char=45125|ner=S-ORG|SpaceAfter=No	wp_▁CE	wp_J	wp_EC
 32	.	.	PUNCT	.	.	5	punct	.	start_char=45125|end_char=45126|ner=O	wp_.
+
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	3	nsubj	Elle	start_char=45127|end_char=45131|ner=O	wp_▁Elle
 2	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	se	start_char=45132|end_char=45134|ner=O	wp_▁se
 3	réunit	réunir	VERB	réunit	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	réunit	start_char=45135|end_char=45141|ner=O	wp_▁réunit
@@ -8523,3 +8833,4 @@
 24	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	25	det	l'	start_char=45249|end_char=45251|ner=O|SpaceAfter=No	wp_▁l	wp_'
 25	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	21	nmod	unité	start_char=45251|end_char=45256|ner=O|SpaceAfter=No	wp_▁unité
 26	.	.	PUNCT	.	.	3	punct	.	start_char=45256|end_char=45257|ner=O|SpacesAfter=\s\n\n	wp_.
+
