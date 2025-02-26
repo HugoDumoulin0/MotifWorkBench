@@ -1,15 +1,29 @@
+# text = Unité de recherche
+# sent_id = 0
 1	Unité	unité	NOUN	Unité	Gender=Fem|Number=Sing	0	root	Unité	start_char=0|end_char=5|ner=O
 2	de	de	ADP	de	de	3	case	de	start_char=6|end_char=8|ner=O
 3	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	1	nmod	recherche	start_char=9|end_char=18|ner=O|SpacesAfter=\n\n
+
+# text = Dossier d’autoévaluation
+# sent_id = 1
 1	Dossier	dossier	NOUN	Dossier	Gender=Masc|Number=Sing	0	root	Dossier	start_char=20|end_char=27|ner=O
 2	d’	de	ADP	d’	d’	3	case	d’	start_char=28|end_char=30|ner=O|SpaceAfter=No
 3	autoévaluation	autoévaluation	NOUN	autoévaluation	Gender=Fem|Number=Sing	1	nmod	autoévaluation	start_char=30|end_char=44|ner=O|SpacesAfter=\n\n
+
+# text = CAMPAGNE D’EVALUATION 2018-2019
+# sent_id = 2
 1	CAMPAGNE	campagne	NOUN	CAMPAGNE	Gender=Fem|Number=Sing	0	root	CAMPAGNE	start_char=46|end_char=54|ner=S-ORG
 2	D’	de	ADP	D’	D’	3	case	D’	start_char=55|end_char=57|ner=O|SpaceAfter=No
 3	EVALUATION	évaluation	NOUN	EVALUATION	Gender=Fem|Number=Sing	1	nmod	EVALUATION	start_char=57|end_char=67|ner=S-ORG
 4	2018-2019	2018-2019	NUM	2018-2019	NumType=Card	3	nmod	2018-2019	start_char=68|end_char=77|ner=O|SpacesAfter=\n\n
+
+# text = VAGUE E
+# sent_id = 3
 1	VAGUE	vague	NOUN	VAGUE	Gender=Fem|Number=Sing	0	root	VAGUE	start_char=79|end_char=84|ner=B-ORG
 2	E	E	NOUN	E	E	1	nmod	E	start_char=85|end_char=86|ner=E-ORG|SpacesAfter=\n\n
+
+# text = N.-B. : on renseignera ce dossier d’autoévaluation en s’appuyant sur l’ « Aide à la rédaction du dossier d'autoévaluation d'une unité de recherche ».
+# sent_id = 4
 1	N.-B.	N.-B.	PROPN	N.-B.	N.-B.	4	obl:mod	N.-B.	start_char=88|end_char=93|ner=O
 2	:	:	PUNCT	:	:	4	punct	:	start_char=94|end_char=95|ner=O
 3	on	on	PRON	on	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Ind	4	nsubj	on	start_char=96|end_char=98|ner=O
@@ -41,8 +55,14 @@
 28	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	26	nmod	recherche	start_char=225|end_char=234|ner=O
 29	»	»	PUNCT	»	»	15	punct	»	start_char=235|end_char=236|ner=O|SpaceAfter=No
 30	.	.	PUNCT	.	.	4	punct	.	start_char=236|end_char=237|ner=O|SpacesAfter=\n\n
+
+# text = INFORMATIONS GENERALES
+# sent_id = 5
 1	INFORMATIONS	information	NOUN	INFORMATIONS	Gender=Fem|Number=Plur	0	root	INFORMATIONS	start_char=239|end_char=251|ner=B-ORG
 2	GENERALES	general	ADJ	GENERALES	Gender=Fem|Number=Plur	1	amod	GENERALES	start_char=252|end_char=261|ner=E-ORG|SpacesAfter=\n\n
+
+# text = Nom de l’unité : Centre de Recherche pluridisciplinaire et multilingue
+# sent_id = 6
 1	Nom	nom	NOUN	Nom	Gender=Masc|Number=Sing	0	root	Nom	start_char=263|end_char=266|ner=O
 2	de	de	ADP	de	de	4	case	de	start_char=267|end_char=269|ner=O
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=270|end_char=272|ner=O|SpaceAfter=No
@@ -54,11 +74,17 @@
 9	pluridisciplinaire	pluridisciplinaire	ADJ	pluridisciplinaire	Gender=Fem|Number=Sing	8	amod	pluridisciplinaire	start_char=300|end_char=318|ner=I-ORG
 10	et	et	CCONJ	et	et	11	cc	et	start_char=319|end_char=321|ner=I-ORG
 11	multilingue	multilingue	ADJ	multilingue	Gender=Masc|Number=Sing	9	conj	multilingue	start_char=322|end_char=333|ner=E-ORG|SpacesAfter=\t\t\t\n\n
+
+# text = Acronyme : CRPM EA 4418
+# sent_id = 7
 1	Acronyme	acronyme	NOUN	Acronyme	Gender=Masc|Number=Sing	0	root	Acronyme	start_char=338|end_char=346|ner=S-MISC
 2	:	:	PUNCT	:	:	3	punct	:	start_char=347|end_char=348|ner=O
 3	CRPM	CRPM	PROPN	CRPM	CRPM	1	appos	CRPM	start_char=349|end_char=353|ner=B-MISC
 4	EA	EA	X	EA	EA	3	flat:name	EA	start_char=354|end_char=356|ner=E-MISC
 5	4418	4418	NUM	4418	Number=Plur	3	nmod	4418	start_char=357|end_char=361|ner=O|SpacesAfter=\t\t\t\t\n\n
+
+# text = Domaine et sous-domaine dans la nomenclature du Hcéres : SHS, SHS5_2, Littératures et langues étrangères, civilisations, cultures et langues régionales
+# sent_id = 8
 1	Domaine	domaine	NOUN	Domaine	Gender=Masc|Number=Sing	0	root	Domaine	start_char=367|end_char=374|ner=O
 2	et	et	CCONJ	et	et	3	cc	et	start_char=375|end_char=377|ner=O
 3	sous-domaine	sous-domaine	NOUN	sous-domaine	Gender=Masc|Number=Sing	1	conj	sous-domaine	start_char=378|end_char=390|ner=O
@@ -85,6 +111,9 @@
 23	et	et	CCONJ	et	et	24	cc	et	start_char=497|end_char=499|ner=O
 24	langues	langue	NOUN	langues	Gender=Fem|Number=Plur	11	conj	langues	start_char=500|end_char=507|ner=O
 25	régionales	régional	ADJ	régionales	Gender=Fem|Number=Plur	24	amod	régionales	start_char=508|end_char=518|ner=O|SpacesAfter=\t\n\n
+
+# text = Directeur.rice pour le contrat en cours : Bernd Zielinski (jusqu’au 04/05/2015), Jean-Robert Raviot (du 05/05/2015 jusqu’au 17/09/2017) et Pascale Cohen-Avenel, Lucia Quaquarelli et Jean-Robert Raviot depuis le 18/09/2017
+# sent_id = 9
 1	Directeur.rice	directeur.rice	NOUN	Directeur.rice	Gender=Fem|Number=Sing	0	root	Directeur.rice	start_char=521|end_char=535|ner=S-MISC
 2	pour	pour	ADP	pour	pour	4	case	pour	start_char=536|end_char=540|ner=O
 3	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	le	start_char=541|end_char=543|ner=O
@@ -127,6 +156,9 @@
 37	depuis	depuis	ADP	depuis	depuis	39	case	depuis	start_char=722|end_char=728|ner=O
 38	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	39	det	le	start_char=729|end_char=731|ner=O
 39	18/09/2017	18/09/2017	NUM	18/09/2017	Number=Sing	29	nmod	18/09/2017	start_char=732|end_char=742|ner=O|SpacesAfter=\t\n\n
+
+# text = Directeur.rice (ou du porteur de projet) pour le contrat à venir :
+# sent_id = 10
 1	Directeur.rice	directeur.rice	NOUN	Directeur.rice	Gender=Masc|Number=Sing	0	root	Directeur.rice	start_char=745|end_char=759|ner=S-MISC
 2	(	(	PUNCT	(	(	6	punct	(	start_char=760|end_char=761|ner=O|SpaceAfter=No
 3	ou	ou	CCONJ	ou	ou	6	cc	ou	start_char=761|end_char=763|ner=O
@@ -143,6 +175,9 @@
 13	à	à	ADP	à	à	14	mark	à	start_char=802|end_char=803|ner=O
 14	venir	venir	VERB	venir	VerbForm=Inf	12	acl	venir	start_char=804|end_char=809|ner=O
 15	:	:	PUNCT	:	:	1	punct	:	start_char=810|end_char=811|ner=O|SpacesAfter=\t\n\n
+
+# text = Pascale Cohen-Avenel, Lucia Quaquarelli et Jean-Robert Raviot
+# sent_id = 11
 1	Pascale	Pascale	PROPN	Pascale	Pascale	0	root	Pascale	start_char=814|end_char=821|ner=B-PER
 2	Cohen-Avenel	Cohen-Avenel	PROPN	Cohen-Avenel	Cohen-Avenel	1	flat:name	Cohen-Avenel	start_char=822|end_char=834|ner=E-PER|SpaceAfter=No
 3	,	,	PUNCT	,	,	4	punct	,	start_char=834|end_char=835|ner=O
@@ -151,10 +186,16 @@
 6	et	et	CCONJ	et	et	7	cc	et	start_char=854|end_char=856|ner=O
 7	Jean-Robert	Jean-Robert	PROPN	Jean-Robert	Jean-Robert	1	conj	Jean-Robert	start_char=857|end_char=868|ner=B-PER
 8	Raviot	Raviot	PROPN	Raviot	Raviot	7	flat:name	Raviot	start_char=869|end_char=875|ner=E-PER|SpacesAfter=\t\n\n
+
+# text = Type de demande :
+# sent_id = 12
 1	Type	type	NOUN	Type	Gender=Masc|Number=Sing	0	root	Type	start_char=878|end_char=882|ner=O
 2	de	de	ADP	de	de	3	case	de	start_char=883|end_char=885|ner=O
 3	demande	demande	NOUN	demande	Gender=Fem|Number=Sing	1	nmod	demande	start_char=886|end_char=893|ner=O
 4	:	:	PUNCT	:	:	1	punct	:	start_char=894|end_char=895|ner=O|SpacesAfter=\n\n
+
+# text = Renouvellement à l’identique X Restructuration □ Création ex nihilo
+# sent_id = 13
 1	Renouvellement	renouvellement	NOUN	Renouvellement	Gender=Masc|Number=Sing	0	root	Renouvellement	start_char=897|end_char=911|ner=O
 2	à	à	ADP	à	à	4	case	à	start_char=912|end_char=913|ner=O
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=914|end_char=916|ner=O|SpaceAfter=No
@@ -165,12 +206,18 @@
 8	Création	création	NOUN	Création	Gender=Fem|Number=Sing	1	nmod	Création	start_char=949|end_char=957|ner=I-MISC
 9	ex	ex	X	ex	ex	8	appos	ex	start_char=958|end_char=960|ner=I-MISC
 10	nihilo	nihilo	X	nihilo	Foreign=Yes	9	flat:foreign	nihilo	start_char=961|end_char=967|ner=E-MISC|SpacesAfter=\s\s\n\n
+
+# text = Établissements et organismes de rattachement :
+# sent_id = 14
 1	Établissements	établissement	NOUN	Établissements	Gender=Masc|Number=Plur	0	root	Établissements	start_char=971|end_char=985|ner=O
 2	et	et	CCONJ	et	et	3	cc	et	start_char=986|end_char=988|ner=O
 3	organismes	organisme	NOUN	organismes	Gender=Masc|Number=Plur	1	conj	organismes	start_char=989|end_char=999|ner=O
 4	de	de	ADP	de	de	5	case	de	start_char=1000|end_char=1002|ner=O
 5	rattachement	rattachement	NOUN	rattachement	Gender=Masc|Number=Sing	3	nmod	rattachement	start_char=1003|end_char=1015|ner=O
 6	:	:	PUNCT	:	:	1	punct	:	start_char=1016|end_char=1017|ner=O|SpacesAfter=\n\n
+
+# text = Liste des établissements et organismes tutelles de l’unité de recherche pour le contrat en cours et pour le prochain contrat (tutelles).
+# sent_id = 15
 1	Liste	liste	NOUN	Liste	Gender=Fem|Number=Sing	0	root	Liste	start_char=1019|end_char=1024|ner=O
 2-3	des	des	des	des	des	des	des	des	start_char=1025|end_char=1028|ner=O
 2	de	de	ADP	de	de	4	case	de	de
@@ -198,6 +245,9 @@
 24	tutelles	tutelle	NOUN	tutelles	Gender=Fem|Number=Plur	22	appos	tutelles	start_char=1145|end_char=1153|ner=O|SpaceAfter=No
 25	)	)	PUNCT	)	)	24	punct	)	start_char=1153|end_char=1154|ner=O|SpaceAfter=No
 26	.	.	PUNCT	.	.	1	punct	.	start_char=1154|end_char=1155|ner=O|SpacesAfter=\n\n
+
+# text = Contrat en cours :  Prochain contrat :
+# sent_id = 16
 1	Contrat	contrat	NOUN	Contrat	Gender=Masc|Number=Sing	0	root	Contrat	start_char=1157|end_char=1164|ner=O
 2	en	en	ADP	en	en	3	case	en	start_char=1165|end_char=1167|ner=O
 3	cours	cours	NOUN	cours	Gender=Masc|Number=Sing	1	nmod	cours	start_char=1168|end_char=1173|ner=O
@@ -206,6 +256,9 @@
 6	Prochain	prochain	ADJ	Prochain	Gender=Masc|Number=Sing	7	amod	Prochain	start_char=1178|end_char=1186|ner=O
 7	contrat	contrat	NOUN	contrat	Gender=Masc|Number=Sing	1	appos	contrat	start_char=1187|end_char=1194|ner=O
 8	:	:	PUNCT	:	:	1	punct	:	start_char=1195|end_char=1196|ner=O|SpacesAfter=\n\n
+
+# text = Université Paris Nanterre  Université Paris Nanterre
+# sent_id = 17
 1	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=1198|end_char=1208|ner=B-ORG
 2	Paris	Paris	PROPN	Paris	Paris	1	appos	Paris	start_char=1209|end_char=1214|ner=I-ORG
 3	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	2	flat:name	Nanterre	start_char=1215|end_char=1223|ner=E-ORG|SpacesAfter=\t
@@ -213,6 +266,9 @@
 5	Université	université	NOUN	Université	Gender=Fem|Number=Sing	1	nmod	Université	start_char=1226|end_char=1236|ner=B-ORG
 6	Paris	Paris	PROPN	Paris	Paris	5	appos	Paris	start_char=1237|end_char=1242|ner=I-ORG
 7	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	6	flat:name	Nanterre	start_char=1243|end_char=1251|ner=E-ORG|SpacesAfter=\n\n
+
+# text = Choix de l’évaluation interdisciplinaire de l’unité de recherche (ou d’une ou plusieurs équipes internes) :
+# sent_id = 18
 1	Choix	choix	NOUN	Choix	Gender=Masc|Number=Sing	0	root	Choix	start_char=1253|end_char=1258|ner=O
 2	de	de	ADP	de	de	4	case	de	start_char=1259|end_char=1261|ner=O
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=1262|end_char=1264|ner=O|SpaceAfter=No
@@ -233,18 +289,33 @@
 18	internes	interne	ADJ	internes	Gender=Fem|Number=Plur	17	amod	internes	start_char=1349|end_char=1357|ner=O|SpaceAfter=No
 19	)	)	PUNCT	)	)	17	punct	)	start_char=1357|end_char=1358|ner=O
 20	:	:	PUNCT	:	:	1	punct	:	start_char=1359|end_char=1360|ner=O|SpacesAfter=\n\n\t
+
+# text = Oui Non X
+# sent_id = 19
 1	Oui	oui	INTJ	Oui	Oui	0	root	Oui	start_char=1363|end_char=1366|ner=O|SpacesAfter=\t\t
 2	Non	non	ADV	Non	Polarity=Neg	3	advmod	Non	start_char=1368|end_char=1371|ner=O|SpacesAfter=\s\s\s
 3	X	X	NUM	X	Number=Plur	1	nmod	X	start_char=1374|end_char=1375|ner=O|SpacesAfter=\n\n
+
+# text = DOSSIER D’AUTOÉVALUATION
+# sent_id = 20
 1	DOSSIER	dossier	NOUN	DOSSIER	Gender=Masc|Number=Sing	0	root	DOSSIER	start_char=1377|end_char=1384|ner=S-MISC
 2	D’	de	ADP	D’	D’	3	case	D’	start_char=1385|end_char=1387|ner=O|SpaceAfter=No
 3	AUTOÉVALUATION	autoévaluation	NOUN	AUTOÉVALUATION	Gender=Fem|Number=Sing	1	nmod	AUTOÉVALUATION	start_char=1387|end_char=1401|ner=S-ORG|SpacesAfter=\n\n
+
+# text = 1- Présentation de l’unité
+# sent_id = 21
 1	1-	1-	NOUN	1-	1-	0	root	1-	start_char=1403|end_char=1405|ner=O|SpacesAfter=\t
 2	Présentation	présentation	NOUN	Présentation	Gender=Fem|Number=Sing	1	nmod	Présentation	start_char=1406|end_char=1418|ner=O
 3	de	de	ADP	de	de	5	case	de	start_char=1419|end_char=1421|ner=O
 4	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	5	det	l’	start_char=1422|end_char=1424|ner=O|SpaceAfter=No
 5	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	2	nmod	unité	start_char=1424|end_char=1429|ner=O|SpacesAfter=\n\n
+
+# text = Introduction
+# sent_id = 22
 1	Introduction	Introduction	NOUN	Introduction	Gender=Fem|Number=Sing	0	root	Introduction	start_char=1431|end_char=1443|ner=O|SpacesAfter=\n\n
+
+# text = Créé en 2007, le CRPM réunissait à sa création des enseignants-chercheurs en études slaves et en études germaniques (principalement civilisationnistes et juristes) développant des recherches en sciences humaines et sociales dans une perspective résolument comparatiste et pluridisciplinaire.
+# sent_id = 23
 1	Créé	créer	VERB	Créé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	7	advcl	Créé	start_char=1445|end_char=1449|ner=O
 2	en	en	ADP	en	en	3	case	en	start_char=1450|end_char=1452|ner=O
 3	2007	2007	NUM	2007	Number=Plur	1	obl:mod	2007	start_char=1453|end_char=1457|ner=O|SpaceAfter=No
@@ -288,6 +359,9 @@
 40	et	et	CCONJ	et	et	41	cc	et	start_char=1714|end_char=1716|ner=O
 41	pluridisciplinaire	pluridisciplinaire	ADJ	pluridisciplinaire	Gender=Fem|Number=Sing	39	conj	pluridisciplinaire	start_char=1717|end_char=1735|ner=O|SpaceAfter=No
 42	.	.	PUNCT	.	.	7	punct	.	start_char=1735|end_char=1736|ner=O
+
+# text = Il s’appuyait sur un diplôme de Master LLCER Études germaniques et slaves qui a cessé d’exister en 2016.
+# sent_id = 24
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	nsubj:pass	Il	start_char=1737|end_char=1739|ner=O
 2	s’	soi	PRON	s’	Person=3|PronType=Prs|Reflex=Yes	3	expl:pass	s’	start_char=1740|end_char=1742|ner=O|SpaceAfter=No
 3	appuyait	appuyer	VERB	appuyait	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	appuyait	start_char=1742|end_char=1750|ner=O
@@ -309,6 +383,9 @@
 19	en	en	ADP	en	en	20	case	en	start_char=1833|end_char=1835|ner=O
 20	2016	2016	NUM	2016	Number=Plur	18	obl:mod	2016	start_char=1836|end_char=1840|ner=O|SpaceAfter=No
 21	.	.	PUNCT	.	.	3	punct	.	start_char=1840|end_char=1841|ner=O
+
+# text = En 2017, en vue du nouveau contrat, une restructuration a été entreprise, avec pour objectif une ouverture à toutes les aires culturelles, pour développer des recherches pluridisciplinaires et interculturelles sur la globalisation (cf. infra).
+# sent_id = 25
 1	En	en	ADP	En	En	2	case	En	start_char=1842|end_char=1844|ner=O
 2	2017	2017	NUM	2017	Number=Plur	15	obl:mod	2017	start_char=1845|end_char=1849|ner=O|SpaceAfter=No
 3	,	,	PUNCT	,	,	5	punct	,	start_char=1849|end_char=1850|ner=O
@@ -352,6 +429,9 @@
 40	infra	infra	X	infra	infra	39	obj	infra	start_char=2078|end_char=2083|ner=O|SpaceAfter=No
 41	)	)	PUNCT	)	)	39	punct	)	start_char=2083|end_char=2084|ner=O|SpaceAfter=No
 42	.	.	PUNCT	.	.	15	punct	.	start_char=2084|end_char=2085|ner=O|SpacesAfter=\s\n\n
+
+# text = De 2012 à 2016, le CRPM était structuré en quatre axes :
+# sent_id = 26
 1	De	de	ADP	De	De	2	case	De	start_char=2088|end_char=2090|ner=O
 2	2012	2012	NUM	2012	Number=Plur	9	obl:mod	2012	start_char=2091|end_char=2095|ner=O
 3	à	à	ADP	à	à	4	case	à	start_char=2096|end_char=2097|ner=O
@@ -365,8 +445,14 @@
 11	quatre	quatre	NUM	quatre	Number=Plur	12	nummod	quatre	start_char=2131|end_char=2137|ner=O
 12	axes	axe	NOUN	axes	Gender=Masc|Number=Plur	9	obl:mod	axes	start_char=2138|end_char=2142|ner=O
 13	:	:	PUNCT	:	:	9	punct	:	start_char=2143|end_char=2144|ner=O|SpacesAfter=\s\n\n
+
+# text = 1.
+# sent_id = 27
 1	1	1	NUM	1	NumType=Card	0	root	1	start_char=2147|end_char=2148|ner=O|SpaceAfter=No
 2	.	.	PUNCT	.	.	1	punct	.	start_char=2148|end_char=2149|ner=O
+
+# text = Genèse des concepts « intraduisibles » de l’Etat et de la société
+# sent_id = 28
 1	Genèse	Genèse	NOUN	Genèse	Gender=Fem|Number=Sing	0	root	Genèse	start_char=2150|end_char=2156|ner=O
 2	des	un	DET	des	Definite=Ind|Number=Plur|PronType=Art	3	det	des	start_char=2157|end_char=2160|ner=O
 3	concepts	concept	NOUN	concepts	Gender=Masc|Number=Plur	1	nmod	concepts	start_char=2161|end_char=2169|ner=O
@@ -380,8 +466,14 @@
 11	de	de	ADP	de	de	13	case	de	start_char=2202|end_char=2204|ner=I-MISC
 12	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	la	start_char=2205|end_char=2207|ner=I-MISC
 13	société	société	NOUN	société	Gender=Fem|Number=Sing	9	conj	société	start_char=2208|end_char=2215|ner=E-MISC|SpacesAfter=\n\n
+
+# text = 2.
+# sent_id = 29
 1	2	2	NUM	2	NumType=Card	0	root	2	start_char=2217|end_char=2218|ner=O|SpaceAfter=No
 2	.	.	PUNCT	.	.	1	punct	.	start_char=2218|end_char=2219|ner=O
+
+# text = Terminologie comparative et terminologie comparative et juridique
+# sent_id = 30
 1	Terminologie	terminologie	NOUN	Terminologie	Gender=Fem|Number=Sing	0	root	Terminologie	start_char=2220|end_char=2232|ner=O
 2	comparative	comparatif	ADJ	comparative	Gender=Fem|Number=Sing	1	amod	comparative	start_char=2233|end_char=2244|ner=O
 3	et	et	CCONJ	et	et	4	cc	et	start_char=2245|end_char=2247|ner=O
@@ -389,8 +481,14 @@
 5	comparative	comparatif	ADJ	comparative	Gender=Fem|Number=Sing	4	amod	comparative	start_char=2261|end_char=2272|ner=O
 6	et	et	CCONJ	et	et	7	cc	et	start_char=2273|end_char=2275|ner=O
 7	juridique	juridique	ADJ	juridique	Gender=Fem|Number=Sing	5	conj	juridique	start_char=2276|end_char=2285|ner=O|SpacesAfter=\s\n\n
+
+# text = 3.
+# sent_id = 31
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=2288|end_char=2289|ner=O|SpaceAfter=No
 2	.	.	PUNCT	.	.	1	punct	.	start_char=2289|end_char=2290|ner=O
+
+# text = Culture juridique et politique des pays européens et de l'Union européenne
+# sent_id = 32
 1	Culture	culture	NOUN	Culture	Gender=Fem|Number=Sing	0	root	Culture	start_char=2291|end_char=2298|ner=O
 2	juridique	juridique	ADJ	juridique	Gender=Fem|Number=Sing	1	amod	juridique	start_char=2299|end_char=2308|ner=O
 3	et	et	CCONJ	et	et	4	cc	et	start_char=2309|end_char=2311|ner=O
@@ -405,8 +503,14 @@
 11	l'	le	DET	l'	Definite=Def|Number=Sing|PronType=Art	12	det	l'	start_char=2347|end_char=2349|ner=O|SpaceAfter=No
 12	Union	union	NOUN	Union	Gender=Fem|Number=Sing	7	conj	Union	start_char=2349|end_char=2354|ner=B-ORG
 13	européenne	européen	ADJ	européenne	Gender=Fem|Number=Sing	12	amod	européenne	start_char=2355|end_char=2365|ner=E-ORG|SpacesAfter=\n\n
+
+# text = 4.
+# sent_id = 33
 1	4	4	NUM	4	NumType=Card	0	root	4	start_char=2367|end_char=2368|ner=O|SpaceAfter=No
 2	.	.	PUNCT	.	.	1	punct	.	start_char=2368|end_char=2369|ner=O
+
+# text = Russie-Europe : politique comparée, changement social, transferts linguistiques/culturels.
+# sent_id = 34
 1	Russie-Europe	Russie-Europe	PROPN	Russie-Europe	Russie-Europe	0	root	Russie-Europe	start_char=2370|end_char=2383|ner=S-LOC
 2	:	:	PUNCT	:	:	3	punct	:	start_char=2384|end_char=2385|ner=O
 3	politique	politique	NOUN	politique	Gender=Fem|Number=Sing	1	appos	politique	start_char=2386|end_char=2395|ner=O
@@ -420,6 +524,9 @@
 11	/	/	SYM	/	ExtPos=CCONJ	12	cc	/	start_char=2449|end_char=2450|ner=O|SpaceAfter=No
 12	culturels	culturel	ADJ	culturels	Gender=Masc|Number=Plur	10	conj	culturels	start_char=2450|end_char=2459|ner=O|SpaceAfter=No
 13	.	.	PUNCT	.	.	1	punct	.	start_char=2459|end_char=2460|ner=O|SpacesAfter=\n\n
+
+# text = En continuité avec sa tradition transdisciplinaire et transnationale, le CRPM a opéré une restructuration en 2017 afin de mieux s’ouvrir à toutes les aires culturelles et linguistiques (Amériques, Afrique, Asie, Europe) pour mieux relever les défis de la recherche actuelle en sciences humaines et sociales ainsi qu’en littérature et étude de textes.
+# sent_id = 35
 1	En	en	ADP	En	En	2	case	En	start_char=2462|end_char=2464|ner=O
 2	continuité	continuité	NOUN	continuité	Gender=Fem|Number=Sing	13	obl:mod	continuité	start_char=2465|end_char=2475|ner=O
 3	avec	avec	ADP	avec	avec	5	case	avec	start_char=2476|end_char=2480|ner=O
@@ -481,6 +588,9 @@
 59	de	de	ADP	de	de	60	case	de	start_char=2802|end_char=2804|ner=O
 60	textes	texte	NOUN	textes	Gender=Masc|Number=Plur	58	nmod	textes	start_char=2805|end_char=2811|ner=O|SpaceAfter=No
 61	.	.	PUNCT	.	.	13	punct	.	start_char=2811|end_char=2812|ner=O
+
+# text = Les orientations fondamentales de l’équipe demeurent et une ouverture s’opère vers des champs nouveaux : rapport aux territoires et aux espaces, médias et circulation des contenus médiatiques, traduction, humanités numériques et « global studies ».
+# sent_id = 36
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=2813|end_char=2816|ner=O
 2	orientations	orientation	NOUN	orientations	Gender=Fem|Number=Plur	7	nsubj	orientations	start_char=2817|end_char=2829|ner=O
 3	fondamentales	fondamental	ADJ	fondamentales	Gender=Fem|Number=Plur	2	amod	fondamentales	start_char=2830|end_char=2843|ner=O
@@ -528,6 +638,9 @@
 42	studies	studies	X	studies	Foreign=Yes	41	flat:foreign	studies	start_char=3051|end_char=3058|ner=O
 43	»	»	PUNCT	»	»	41	punct	»	start_char=3059|end_char=3060|ner=O|SpaceAfter=No
 44	.	.	PUNCT	.	.	7	punct	.	start_char=3060|end_char=3061|ner=O|SpacesAfter=\s\n\n
+
+# text = L’espace contemporain mondialisé fait ainsi l’objet d’approches croisées – culturelle, géopolitique, juridique, économique, sociologique, linguistique, médiatique – qui témoignent d’une réelle dynamique transdisciplinaire et fondent la possibilité d’un regard critique ouvert sur les dimensions transnationales des phénomènes culturels, politiques et sociaux liés à la globalisation.
+# sent_id = 37
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=3064|end_char=3066|ner=O|SpaceAfter=No
 2	espace	espace	NOUN	espace	Gender=Masc|Number=Sing	5	nsubj	espace	start_char=3066|end_char=3072|ner=O
 3	contemporain	contemporain	ADJ	contemporain	Gender=Masc|Number=Sing	2	amod	contemporain	start_char=3073|end_char=3085|ner=O
@@ -588,6 +701,9 @@
 57	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	58	det	la	start_char=3430|end_char=3432|ner=O
 58	globalisation	globalisation	NOUN	globalisation	Gender=Fem|Number=Sing	55	obl:arg	globalisation	start_char=3433|end_char=3446|ner=O|SpaceAfter=No
 59	.	.	PUNCT	.	.	5	punct	.	start_char=3446|end_char=3447|ner=O|SpacesAfter=\s\n\n
+
+# text = Trois axes sont actifs à partir du 1er septembre 2017 :
+# sent_id = 38
 1	Trois	trois	NUM	Trois	Number=Plur	2	nummod	Trois	start_char=3450|end_char=3455|ner=O
 2	axes	axe	NOUN	axes	Gender=Masc|Number=Plur	4	nsubj	axes	start_char=3456|end_char=3460|ner=O
 3	sont	être	AUX	sont	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	cop	sont	start_char=3461|end_char=3465|ner=O
@@ -601,8 +717,14 @@
 10	septembre	septembre	NOUN	septembre	Gender=Masc|Number=Sing	9	nmod	septembre	start_char=3489|end_char=3498|ner=O
 11	2017	2017	NUM	2017	Number=Plur	10	nmod	2017	start_char=3499|end_char=3503|ner=O
 12	:	:	PUNCT	:	:	4	punct	:	start_char=3504|end_char=3505|ner=O|SpacesAfter=\n\n
+
+# text = 1.
+# sent_id = 39
 1	1	1	NUM	1	NumType=Card	0	root	1	start_char=3507|end_char=3508|ner=O|SpaceAfter=No
 2	.	.	PUNCT	.	.	1	punct	.	start_char=3508|end_char=3509|ner=O|SpacesAfter=\t
+
+# text = Langues, droit et textes (études juridiques comparatives, circulation et transfert de concepts juridiques et politiques)
+# sent_id = 40
 1	Langues	langue	NOUN	Langues	Gender=Fem|Number=Plur	0	root	Langues	start_char=3510|end_char=3517|ner=S-MISC|SpaceAfter=No
 2	,	,	PUNCT	,	,	3	punct	,	start_char=3517|end_char=3518|ner=O
 3	droit	droit	NOUN	droit	Gender=Masc|Number=Sing	1	conj	droit	start_char=3519|end_char=3524|ner=O
@@ -622,8 +744,14 @@
 17	et	et	CCONJ	et	et	18	cc	et	start_char=3616|end_char=3618|ner=O
 18	politiques	politique	ADJ	politiques	Gender=Masc|Number=Plur	16	conj	politiques	start_char=3619|end_char=3629|ner=O|SpaceAfter=No
 19	)	)	PUNCT	)	)	7	punct	)	start_char=3629|end_char=3630|ner=O|SpacesAfter=\n\n
+
+# text = 2.
+# sent_id = 41
 1	2	2	NUM	2	NumType=Card	0	root	2	start_char=3632|end_char=3633|ner=O|SpaceAfter=No
 2	.	.	PUNCT	.	.	1	punct	.	start_char=3633|end_char=3634|ner=O|SpacesAfter=\t
+
+# text = Espaces et mondialisation (Est/Ouest : rivalités et coopérations / mondialisation, nouvelles économies : approche critique et géopolitique / espace, mobilités et cartographies narratives)
+# sent_id = 42
 1	Espaces	espace	NOUN	Espaces	Gender=Masc|Number=Plur	0	root	Espaces	start_char=3635|end_char=3642|ner=O
 2	et	et	CCONJ	et	et	3	cc	et	start_char=3643|end_char=3645|ner=O
 3	mondialisation	mondialisation	NOUN	mondialisation	Gender=Fem|Number=Sing	1	conj	mondialisation	start_char=3646|end_char=3660|ner=O
@@ -651,8 +779,14 @@
 25	cartographies	cartographie	NOUN	cartographies	Gender=Fem|Number=Plur	5	conj	cartographies	start_char=3797|end_char=3810|ner=O
 26	narratives	narratif	ADJ	narratives	Gender=Fem|Number=Plur	25	amod	narratives	start_char=3811|end_char=3821|ner=O|SpaceAfter=No
 27	)	)	PUNCT	)	)	5	punct	)	start_char=3821|end_char=3822|ner=O|SpacesAfter=\n\n
+
+# text = 3.
+# sent_id = 43
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=3824|end_char=3825|ner=O|SpaceAfter=No
 2	.	.	PUNCT	.	.	1	punct	.	start_char=3825|end_char=3826|ner=O|SpacesAfter=\t
+
+# text = Traduction, médias et humanités numériques (enjeux culturels et politique de la traduction / médias, narration et transmédialité)
+# sent_id = 44
 1	Traduction	traduction	NOUN	Traduction	Gender=Fem|Number=Sing	0	root	Traduction	start_char=3827|end_char=3837|ner=O|SpaceAfter=No
 2	,	,	PUNCT	,	,	3	punct	,	start_char=3837|end_char=3838|ner=O
 3	médias	média	NOUN	médias	Gender=Masc|Number=Plur	1	conj	médias	start_char=3839|end_char=3845|ner=O
@@ -674,6 +808,9 @@
 19	et	et	CCONJ	et	et	20	cc	et	start_char=3938|end_char=3940|ner=O
 20	transmédialité	transmédialité	NOUN	transmédialité	Gender=Fem|Number=Sing	8	conj	transmédialité	start_char=3941|end_char=3955|ner=O|SpaceAfter=No
 21	)	)	PUNCT	)	)	8	punct	)	start_char=3955|end_char=3956|ner=O|SpacesAfter=\n\n
+
+# text = Organigramme fonctionnel en annexe 3 (voir ci-après p. 6)
+# sent_id = 45
 1	Organigramme	organigramme	NOUN	Organigramme	Gender=Masc|Number=Sing	0	root	Organigramme	start_char=3958|end_char=3970|ner=O
 2	fonctionnel	fonctionnel	ADJ	fonctionnel	Gender=Masc|Number=Sing	1	amod	fonctionnel	start_char=3971|end_char=3982|ner=O
 3	en	en	ADP	en	en	4	case	en	start_char=3983|end_char=3985|ner=O
@@ -685,11 +822,17 @@
 9	p.	page	NOUN	p.	Gender=Masc|Number=Sing	7	obj	p.	start_char=4010|end_char=4012|ner=O
 10	6	6	NUM	6	NumType=Card	9	nmod	6	start_char=4013|end_char=4014|ner=O|SpaceAfter=No
 11	)	)	PUNCT	)	)	7	punct	)	start_char=4014|end_char=4015|ner=O|SpacesAfter=\n\n
+
+# text = Voir Annexe 3 infra.
+# sent_id = 46
 1	Voir	voir	VERB	Voir	VerbForm=Inf	0	root	Voir	start_char=4017|end_char=4021|ner=O
 2	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	1	obj	Annexe	start_char=4022|end_char=4028|ner=B-MISC
 3	3	3	NUM	3	NumType=Card	2	nmod	3	start_char=4029|end_char=4030|ner=I-MISC
 4	infra	infra	NOUN	infra	infra	2	nmod	infra	start_char=4031|end_char=4036|ner=E-MISC|SpaceAfter=No
 5	.	.	PUNCT	.	.	1	punct	.	start_char=4036|end_char=4037|ner=O|SpacesAfter=\s\n\n
+
+# text = Tableau des effectifs et moyens de l’unité
+# sent_id = 47
 1	Tableau	tableau	NOUN	Tableau	Gender=Masc|Number=Sing	0	root	Tableau	start_char=4040|end_char=4047|ner=O
 2-3	des	des	des	des	des	des	des	des	start_char=4048|end_char=4051|ner=O
 2	de	de	ADP	de	de	4	case	de	de
@@ -700,6 +843,9 @@
 7	de	de	ADP	de	de	9	case	de	start_char=4072|end_char=4074|ner=O
 8	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	9	det	l’	start_char=4075|end_char=4077|ner=O|SpaceAfter=No
 9	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	6	nmod	unité	start_char=4077|end_char=4082|ner=O|SpacesAfter=\n\n
+
+# text = Au cours de la période 2013-2018 :
+# sent_id = 48
 1-2	Au	Au	Au	Au	Au	Au	Au	Au	start_char=4084|end_char=4086|ner=O
 1	à	à	ADP	à	à	3	case	à	à
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	le
@@ -709,7 +855,13 @@
 6	période	période	NOUN	période	Gender=Fem|Number=Sing	3	nmod	période	start_char=4099|end_char=4106|ner=O
 7	2013-2018	2013-2018	NUM	2013-2018	Number=Plur	6	nmod	2013-2018	start_char=4107|end_char=4116|ner=O
 8	:	:	PUNCT	:	:	3	punct	:	start_char=4117|end_char=4118|ner=O|SpacesAfter=\n\n
+
+# text = -
+# sent_id = 49
 1	-	-	PUNCT	-	-	0	root	-	start_char=4120|end_char=4121|ner=O|SpacesAfter=\s\s
+
+# text = Les effectifs d’enseignants/chercheurs titulaires sont relativement stables (+ 1) entre 2013 et 2018
+# sent_id = 50
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=4123|end_char=4126|ner=O
 2	effectifs	effectif	NOUN	effectifs	Gender=Masc|Number=Plur	10	nsubj	effectifs	start_char=4127|end_char=4136|ner=O
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=4137|end_char=4139|ner=O|SpaceAfter=No
@@ -728,7 +880,13 @@
 16	2013	2013	NUM	2013	Number=Plur	10	obl:mod	2013	start_char=4211|end_char=4215|ner=O
 17	et	et	CCONJ	et	et	18	cc	et	start_char=4216|end_char=4218|ner=O
 18	2018	2018	NUM	2018	Number=Plur	16	conj	2018	start_char=4219|end_char=4223|ner=O|SpacesAfter=\n\n
+
+# text = -
+# sent_id = 51
 1	-	-	PUNCT	-	-	0	root	-	start_char=4225|end_char=4226|ner=O|SpacesAfter=\s\s
+
+# text = Les effectifs de doctorants ont nettement progressé : + 50 %
+# sent_id = 52
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=4228|end_char=4231|ner=O
 2	effectifs	effectif	NOUN	effectifs	Gender=Masc|Number=Plur	7	nsubj	effectifs	start_char=4232|end_char=4241|ner=O
 3	de	de	ADP	de	de	4	case	de	start_char=4242|end_char=4244|ner=O
@@ -740,6 +898,9 @@
 9	+	+	SYM	+	ExtPos=VERB	11	case	+	start_char=4282|end_char=4283|ner=O
 10	50	50	NUM	50	Number=Plur	11	nummod	50	start_char=4284|end_char=4286|ner=O
 11	%	%	SYM	%	ExtPos=NOUN|Number=Plur	7	obl:mod	%	start_char=4287|end_char=4288|ner=O|SpacesAfter=\n\n
+
+# text = - Pour ce qui concerne les dotations internes d’établissement, les moyens financiers étant proportionnels au nombre d’enseignants-chercheurs de l’unité, ils ont peu progressé.
+# sent_id = 53
 1	-	-	PUNCT	-	-	29	punct	-	start_char=4290|end_char=4291|ner=O
 2	Pour	pour	ADP	Pour	ExtPos=ADP	3	case	Pour	start_char=4292|end_char=4296|ner=O
 3	ce	ce	PRON	ce	Gender=Masc|Person=3|PronType=Dem	29	obl:mod	ce	start_char=4297|end_char=4299|ner=O
@@ -771,6 +932,9 @@
 28	peu	peu	ADV	peu	peu	29	advmod	peu	start_char=4451|end_char=4454|ner=O
 29	progressé	progresser	VERB	progressé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	progressé	start_char=4455|end_char=4464|ner=O|SpaceAfter=No
 30	.	.	PUNCT	.	.	29	punct	.	start_char=4464|end_char=4465|ner=O
+
+# text = C’est sans compter l’aide financière d’un projet blanc de la COMUE UPL en 2014-2015 pour le projet « Russie-Occident : l’arc de crise Arctique-Baltique-mer Noire-Caucase ».
+# sent_id = 54
 1	C’	ce	PRON	C’	Gender=Masc|Number=Sing|Person=3|PronType=Dem	4	expl:subj	C’	start_char=4466|end_char=4468|ner=O|SpaceAfter=No
 2	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	est	start_char=4468|end_char=4471|ner=O
 3	sans	sans	ADP	sans	sans	4	mark	sans	start_char=4472|end_char=4476|ner=O
@@ -802,6 +966,9 @@
 29	Noire-Caucase	Noire-Caucase	PROPN	Noire-Caucase	Noire-Caucase	28	flat:name	Noire-Caucase	start_char=4622|end_char=4635|ner=E-MISC
 30	»	»	PUNCT	»	»	22	punct	»	start_char=4636|end_char=4637|ner=O|SpaceAfter=No
 31	.	.	PUNCT	.	.	4	punct	.	start_char=4637|end_char=4638|ner=O|SpacesAfter=\s\s
+
+# text = Notons que le CRPM a pu compter également sur les aides financières des services internes de l’Université (DRED, ED 138, UFR LCE) et qui ne sont pas mentionnées dans le tableau des ressources financières joint.
+# sent_id = 55
 1	Notons	noter	VERB	Notons	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	Notons	start_char=4640|end_char=4646|ner=O
 2	que	que	SCONJ	que	que	6	mark	que	start_char=4647|end_char=4650|ner=O
 3	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	le	start_char=4651|end_char=4653|ner=O
@@ -847,6 +1014,9 @@
 41	financières	financier	ADJ	financières	Gender=Fem|Number=Plur	40	amod	financières	start_char=4832|end_char=4843|ner=O
 42	joint	joindre	VERB	joint	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	40	acl	joint	start_char=4844|end_char=4849|ner=O|SpaceAfter=No
 43	.	.	PUNCT	.	.	1	punct	.	start_char=4849|end_char=4850|ner=O|SpacesAfter=\n\n
+
+# text = - Depuis décembre 2014, le CRPM peut s’appuyer sur Mme Radya El Ayachi, ingénieur d’études rattachée à la Direction de la Recherche et Études Doctorales de l’Université et qu’il partage avec trois autres centres de recherche de l’UFR LCE.
+# sent_id = 56
 1	-	-	PUNCT	-	-	8	punct	-	start_char=4852|end_char=4853|ner=O
 2	Depuis	depuis	ADP	Depuis	Depuis	3	case	Depuis	start_char=4854|end_char=4860|ner=O
 3	décembre	décembre	NOUN	décembre	Gender=Masc|Number=Sing	8	obl:mod	décembre	start_char=4861|end_char=4869|ner=O
@@ -894,6 +1064,9 @@
 45	UFR	UFR	PROPN	UFR	Number=Sing	40	nmod	UFR	start_char=5082|end_char=5085|ner=B-ORG
 46	LCE	LCE	PROPN	LCE	LCE	45	appos	LCE	start_char=5086|end_char=5089|ner=E-ORG|SpaceAfter=No
 47	.	.	PUNCT	.	.	8	punct	.	start_char=5089|end_char=5090|ner=O|SpacesAfter=\s\s
+
+# text = Mme Catherine Bouyer continue d’assurer la gestion financière, également partagée avec les autres équipes de recherches et ses activités annexes notamment logistiques au sein de l’UFR LCE.
+# sent_id = 57
 1	Mme	Mme	NOUN	Mme	Gender=Fem|Number=Sing	4	nsubj	Mme	start_char=5092|end_char=5095|ner=B-PER
 2	Catherine	Catherine	PROPN	Catherine	Catherine	1	flat:name	Catherine	start_char=5096|end_char=5105|ner=I-PER
 3	Bouyer	Bouyer	PROPN	Bouyer	Bouyer	1	flat:name	Bouyer	start_char=5106|end_char=5112|ner=E-PER
@@ -927,8 +1100,14 @@
 30	UFR	UFR	PROPN	UFR	Number=Sing	27	nmod	UFR	start_char=5272|end_char=5275|ner=B-ORG
 31	LCE	LCE	PROPN	LCE	LCE	30	flat:name	LCE	start_char=5276|end_char=5279|ner=E-ORG|SpaceAfter=No
 32	.	.	PUNCT	.	.	4	punct	.	start_char=5279|end_char=5280|ner=O|SpacesAfter=\n\n
+
+# text = Politique scientifique
+# sent_id = 58
 1	Politique	politique	NOUN	Politique	Gender=Fem|Number=Sing	0	root	Politique	start_char=5282|end_char=5291|ner=O
 2	scientifique	scientifique	ADJ	scientifique	Number=Sing	1	amod	scientifique	start_char=5292|end_char=5304|ner=O|SpacesAfter=\n\n
+
+# text = Le CRPM a poursuivi ses orientations de recherche selon les axes présentés dans le contrat quinquennal donnant lieu à des travaux de publication, à l’organisation de colloques internationaux et de journées d’études ainsi qu’à la participation à des colloques internationaux hors de l’université Paris Nanterre.
+# sent_id = 59
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=5306|end_char=5308|ner=O
 2	CRPM	CRPM	PROPN	CRPM	Gender=Masc|Number=Sing	4	nsubj	CRPM	start_char=5309|end_char=5313|ner=S-ORG
 3	a	avoir	AUX	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	a	start_char=5314|end_char=5315|ner=O
@@ -980,6 +1159,9 @@
 49	Paris	Paris	PROPN	Paris	Paris	48	appos	Paris	start_char=5601|end_char=5606|ner=I-ORG
 50	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	49	flat:name	Nanterre	start_char=5607|end_char=5615|ner=E-ORG|SpaceAfter=No
 51	.	.	PUNCT	.	.	4	punct	.	start_char=5615|end_char=5616|ner=O|SpacesAfter=\s\n\n
+
+# text = L’accent a été mis sur la publication d’ouvrages collectifs / actes de colloques organisés par l’équipe.
+# sent_id = 60
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=5619|end_char=5621|ner=O|SpaceAfter=No
 2	accent	accent	NOUN	accent	Gender=Masc|Number=Sing	5	nsubj:pass	accent	start_char=5621|end_char=5627|ner=O
 3	a	avoir	AUX	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	a	start_char=5628|end_char=5629|ner=O
@@ -1000,6 +1182,9 @@
 18	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	19	det	l’	start_char=5714|end_char=5716|ner=O|SpaceAfter=No
 19	équipe	équipe	NOUN	équipe	Gender=Fem|Number=Sing	16	obl:agent	équipe	start_char=5716|end_char=5722|ner=O|SpaceAfter=No
 20	.	.	PUNCT	.	.	5	punct	.	start_char=5722|end_char=5723|ner=O
+
+# text = Chacun des quatre axes justifie d’une activité de colloques et de publications substantielle.
+# sent_id = 61
 1	Chacun	chacun	PRON	Chacun	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	nsubj	Chacun	start_char=5724|end_char=5730|ner=O
 2-3	des	des	des	des	des	des	des	des	start_char=5731|end_char=5734|ner=O
 2	de	de	ADP	de	de	5	case	de	de
@@ -1017,6 +1202,9 @@
 14	publications	publication	NOUN	publications	Gender=Fem|Number=Plur	11	conj	publications	start_char=5790|end_char=5802|ner=O
 15	substantielle	substantiel	ADJ	substantielle	Gender=Fem|Number=Sing	14	amod	substantielle	start_char=5803|end_char=5816|ner=O|SpaceAfter=No
 16	.	.	PUNCT	.	.	6	punct	.	start_char=5816|end_char=5817|ner=O|SpacesAfter=\s\n\n
+
+# text = L’association de jeunes chercheurs, par le biais du développement des études doctorales, a été considérablement renforcée et institutionnalisée : outre la création d’un séminaire doctoral Université Paris-Lumières en études russes contemporaines, un nouveau séminaire de recherche, transversal et commun à tous les axes, intitulé « Langues, espaces et mondialisation », a été inauguré à la rentrée 2017-2018.
+# sent_id = 62
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=5820|end_char=5822|ner=O|SpaceAfter=No
 2	association	association	NOUN	association	Gender=Fem|Number=Sing	21	nsubj:pass	association	start_char=5822|end_char=5833|ner=O
 3	de	de	ADP	de	de	5	case	de	start_char=5834|end_char=5836|ner=O
@@ -1088,6 +1276,9 @@
 67	rentrée	rentrée	NOUN	rentrée	Gender=Fem|Number=Sing	64	obl:mod	rentrée	start_char=6210|end_char=6217|ner=O
 68	2017-2018	2017-2018	NUM	2017-2018	Number=Plur	67	nmod	2017-2018	start_char=6218|end_char=6227|ner=O|SpaceAfter=No
 69	.	.	PUNCT	.	.	21	punct	.	start_char=6227|end_char=6228|ner=O|SpacesAfter=\s\n\n
+
+# text = A partir de 2017, avec la réorganisation des axes et dans un esprit de continuité et cohérence, la politique scientifique de l’EA s’est ouverte à d’autres champs : rapport aux territoires et aux espaces, médias et circulation des contenus médiatiques, traduction, humanités numériques et « global studies ».
+# sent_id = 63
 1	A	à	ADP	A	ExtPos=ADV	29	advmod	A	start_char=6231|end_char=6232|ner=O
 2	partir	partir	VERB	partir	VerbForm=Inf	1	fixed	partir	start_char=6233|end_char=6239|ner=O
 3	de	de	ADP	de	de	4	case	de	start_char=6240|end_char=6242|ner=O
@@ -1153,6 +1344,9 @@
 59	studies	studies	X	studies	Foreign=Yes	58	flat:foreign	studies	start_char=6528|end_char=6535|ner=O
 60	»	»	PUNCT	»	»	58	punct	»	start_char=6536|end_char=6537|ner=O|SpaceAfter=No
 61	.	.	PUNCT	.	.	29	punct	.	start_char=6537|end_char=6538|ner=O|SpacesAfter=\s\n\n
+
+# text = Les doctorants sont désormais systématiquement associés dans les publications du CRPM, de même que dans les colloques et journées d’étude organisées par l’EA.
+# sent_id = 64
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=6541|end_char=6544|ner=O
 2	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	6	nsubj:pass	doctorants	start_char=6545|end_char=6555|ner=O
 3	sont	être	AUX	sont	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	sont	start_char=6556|end_char=6560|ner=O
@@ -1182,6 +1376,9 @@
 26	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	27	det	l’	start_char=6694|end_char=6696|ner=O|SpaceAfter=No
 27	EA	EA	PROPN	EA	Number=Sing	24	obl:agent	EA	start_char=6696|end_char=6698|ner=S-ORG|SpaceAfter=No
 28	.	.	PUNCT	.	.	6	punct	.	start_char=6698|end_char=6699|ner=O
+
+# text = En 2018, un premier colloque co-organisé par les doctorants est organisé (dans le cadre du séminaire doctoral en études russes), consacré à la thématique du Soft Power russe.
+# sent_id = 65
 1	En	en	ADP	En	En	2	case	En	start_char=6700|end_char=6702|ner=O
 2	2018	2018	NUM	2018	Number=Plur	12	obl:mod	2018	start_char=6703|end_char=6707|ner=O|SpaceAfter=No
 3	,	,	PUNCT	,	,	2	punct	,	start_char=6707|end_char=6708|ner=O
@@ -1219,6 +1416,9 @@
 33	Power	Power	PROPN	Power	Power	32	flat:name	Power	start_char=6862|end_char=6867|ner=I-MISC
 34	russe	russe	ADJ	russe	Gender=Masc|Number=Sing	32	amod	russe	start_char=6868|end_char=6873|ner=E-MISC|SpaceAfter=No
 35	.	.	PUNCT	.	.	12	punct	.	start_char=6873|end_char=6874|ner=O|SpacesAfter=\n\n
+
+# text = 2- Présentation de l’écosystème recherche de l’unité
+# sent_id = 66
 1	2	2	NUM	2	NumType=Card	3	nummod	2	start_char=6876|end_char=6877|ner=O|SpaceAfter=No
 2	-	-	PUNCT	-	-	1	punct	-	start_char=6877|end_char=6878|ner=O|SpacesAfter=\t
 3	Présentation	présentation	NOUN	Présentation	Gender=Fem|Number=Sing	0	root	Présentation	start_char=6879|end_char=6891|ner=B-MISC
@@ -1229,6 +1429,9 @@
 8	de	de	ADP	de	de	10	case	de	start_char=6918|end_char=6920|ner=I-MISC
 9	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	10	det	l’	start_char=6921|end_char=6923|ner=I-MISC|SpaceAfter=No
 10	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	6	nmod	unité	start_char=6923|end_char=6928|ner=E-MISC|SpacesAfter=\n\n
+
+# text = A l’échelle locale, des collaborations sont intervenues, sur le site l’Université Paris Nanterre, avec d’autres EA ou UMR : UMR LAVUE (co-organisation de deux journées d’études Espace et déplacements.
+# sent_id = 67
 1	A	à	ADP	A	A	3	case	A	start_char=6930|end_char=6931|ner=O
 2	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	3	det	l’	start_char=6932|end_char=6934|ner=O|SpaceAfter=No
 3	échelle	échelle	NOUN	échelle	Gender=Fem|Number=Sing	9	obl:mod	échelle	start_char=6934|end_char=6941|ner=O
@@ -1267,6 +1470,9 @@
 36	et	et	CCONJ	et	et	37	cc	et	start_char=7114|end_char=7116|ner=I-ORG
 37	déplacements	déplacement	NOUN	déplacements	Gender=Masc|Number=Plur	35	conj	déplacements	start_char=7117|end_char=7129|ner=E-ORG|SpaceAfter=No
 38	.	.	PUNCT	.	.	9	punct	.	start_char=7129|end_char=7130|ner=O
+
+# text = Mobilité, Motilité, cartographies narratives, 14-15 décembre 2017), CREA (participation de deux membres du CRPM à une journée d’études sur La politique étrangère des États-Unis : entre exceptionnalisme et nationalisme, 19 octobre 2017) ;
+# sent_id = 68
 1	Mobilité	mobilité	NOUN	Mobilité	Gender=Fem|Number=Sing	0	root	Mobilité	start_char=7131|end_char=7139|ner=S-MISC|SpaceAfter=No
 2	,	,	PUNCT	,	,	3	punct	,	start_char=7139|end_char=7140|ner=O
 3	Motilité	motilité	NOUN	Motilité	Gender=Fem|Number=Sing	1	conj	Motilité	start_char=7141|end_char=7149|ner=S-ORG|SpaceAfter=No
@@ -1313,6 +1519,9 @@
 42	2017	2017	NUM	2017	Number=Plur	41	nmod	2017	start_char=7361|end_char=7365|ner=O|SpaceAfter=No
 43	)	)	PUNCT	)	)	15	punct	)	start_char=7365|end_char=7366|ner=O
 44	;	;	PUNCT	;	;	1	punct	;	start_char=7367|end_char=7368|ner=O
+
+# text = CREA et CRIIA (co-organisation de la journée d’étude Langues et pratiques du discours en situation professionnelle, 24 novembre 2017).
+# sent_id = 69
 1	CREA	CREA	PROPN	CREA	CREA	0	root	CREA	start_char=7369|end_char=7373|ner=S-ORG
 2	et	et	CCONJ	et	et	3	cc	et	start_char=7374|end_char=7376|ner=O
 3	CRIIA	CRIIA	PROPN	CRIIA	CRIIA	1	conj	CRIIA	start_char=7377|end_char=7382|ner=S-ORG
@@ -1339,6 +1548,9 @@
 23	2017	2017	NUM	2017	Number=Plur	22	nmod	2017	start_char=7497|end_char=7501|ner=O|SpaceAfter=No
 24	)	)	PUNCT	)	)	5	punct	)	start_char=7501|end_char=7502|ner=O|SpaceAfter=No
 25	.	.	PUNCT	.	.	1	punct	.	start_char=7502|end_char=7503|ner=O|SpacesAfter=\n\n
+
+# text = Un « projet blanc » financé par la COMUE UPL a été réalisé (2014-2017) en coopération avec le CRAG (Centre de recherches géopolitiques) de l’Université Paris 8, intitulé « Russie-Occident : l’arc de crise Arctique-Baltique-mer Noire-Caucase ».
+# sent_id = 70
 1	Un	un	DET	Un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	Un	start_char=7505|end_char=7507|ner=O
 2	«	«	PUNCT	«	«	3	punct	«	start_char=7508|end_char=7509|ner=O
 3	projet	projet	NOUN	projet	Gender=Masc|Number=Sing	13	nsubj:pass	projet	start_char=7510|end_char=7516|ner=O
@@ -1384,6 +1596,9 @@
 43	Noire-Caucase	Noire-Caucase	PROPN	Noire-Caucase	Noire-Caucase	42	flat:name	Noire-Caucase	start_char=7732|end_char=7745|ner=E-LOC
 44	»	»	PUNCT	»	»	39	punct	»	start_char=7746|end_char=7747|ner=O|SpaceAfter=No
 45	.	.	PUNCT	.	.	13	punct	.	start_char=7747|end_char=7748|ner=O|SpacesAfter=\s\s\n\n
+
+# text = A l’échelle nationale, le CRPM entretient des collaborations régulières avec plusieurs équipes et centres de recherche (LECEMO
+# sent_id = 71
 1	A	à	ADP	A	A	3	case	A	start_char=7752|end_char=7753|ner=O
 2	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	3	det	l’	start_char=7754|end_char=7756|ner=O|SpaceAfter=No
 3	échelle	échelle	NOUN	échelle	Gender=Fem|Number=Sing	8	obl:mod	échelle	start_char=7756|end_char=7763|ner=O
@@ -1404,6 +1619,9 @@
 18	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	16	nmod	recherche	start_char=7861|end_char=7870|ner=O
 19	(	(	PUNCT	(	(	20	punct	(	start_char=7871|end_char=7872|ner=O|SpaceAfter=No
 20	LECEMO	LECEMO	PROPN	LECEMO	LECEMO	14	appos	LECEMO	start_char=7872|end_char=7878|ner=S-ORG
+
+# text = - EA 3979, ENS, Paris 13, EXPERICE
+# sent_id = 72
 1	-	-	PUNCT	-	-	2	punct	-	start_char=7879|end_char=7880|ner=O
 2	EA	EA	NOUN	EA	EA	0	root	EA	start_char=7881|end_char=7883|ner=S-ORG
 3	3979	3979	NUM	3979	NumType=Card	2	nmod	3979	start_char=7884|end_char=7888|ner=O|SpaceAfter=No
@@ -1414,6 +1632,9 @@
 8	13	13	NUM	13	NumType=Card	7	nmod	13	start_char=7901|end_char=7903|ner=E-ORG|SpaceAfter=No
 9	,	,	PUNCT	,	,	10	punct	,	start_char=7903|end_char=7904|ner=O
 10	EXPERICE	EXPERICE	PROPN	EXPERICE	EXPERICE	2	nmod	EXPERICE	start_char=7905|end_char=7913|ner=S-ORG
+
+# text = - LabEx ICCA, LPCM, UCL LLN – GIRCAM, Paris 3, CERC, EHESS, EHIC…).
+# sent_id = 73
 1	-	-	PUNCT	-	-	2	punct	-	start_char=7914|end_char=7915|ner=O
 2	LabEx	LabEx	PROPN	LabEx	LabEx	0	root	LabEx	start_char=7916|end_char=7921|ner=B-ORG
 3	ICCA	ICCA	PROPN	ICCA	ICCA	2	flat:name	ICCA	start_char=7922|end_char=7926|ner=E-ORG|SpaceAfter=No
@@ -1435,6 +1656,9 @@
 19	EHIC…	EHIC…	PROPN	EHIC…	EHIC…	2	conj	EHIC…	start_char=7974|end_char=7979|ner=S-ORG|SpaceAfter=No
 20	)	)	PUNCT	)	)	2	punct	)	start_char=7979|end_char=7980|ner=O|SpaceAfter=No
 21	.	.	PUNCT	.	.	2	punct	.	start_char=7980|end_char=7981|ner=O
+
+# text = L’EA a notamment organisé, en collaboration avec l’UMR ISP et le CERCEC-CNRS-EHESS, une journée d’études consacrée aux Anciens et nouveaux combattants dans l’espace post-soviétique : trajectoires, genre, générations, le 20 avril 2017.
+# sent_id = 74
 1	L’	le	DET	L’	Definite=Def|Number=Sing|PronType=Art	2	det	L’	start_char=7982|end_char=7984|ner=O|SpaceAfter=No
 2	EA	EA	PROPN	EA	Number=Sing	5	nsubj	EA	start_char=7984|end_char=7986|ner=S-ORG
 3	a	avoir	AUX	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	a	start_char=7987|end_char=7988|ner=O
@@ -1479,10 +1703,16 @@
 41	avril	avril	NOUN	avril	Gender=Masc|Number=Sing	40	nmod	avril	start_char=8205|end_char=8210|ner=O
 42	2017	2017	NUM	2017	Number=Plur	41	nmod	2017	start_char=8211|end_char=8215|ner=O|SpaceAfter=No
 43	.	.	PUNCT	.	.	5	punct	.	start_char=8215|end_char=8216|ner=O
+
+# text = Une journée d’étude
+# sent_id = 75
 1	Une	un	DET	Une	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	Une	start_char=8217|end_char=8220|ner=O
 2	journée	journée	NOUN	journée	Gender=Fem|Number=Sing	0	root	journée	start_char=8221|end_char=8228|ner=O
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=8229|end_char=8231|ner=O|SpaceAfter=No
 4	étude	étude	NOUN	étude	Gender=Fem|Number=Sing	2	nmod	étude	start_char=8231|end_char=8236|ner=O
+
+# text = - Les migrations entre mémoire et patrimoine.
+# sent_id = 76
 1	-	-	PUNCT	-	-	3	punct	-	start_char=8237|end_char=8238|ner=O
 2	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	3	det	Les	start_char=8239|end_char=8242|ner=O
 3	migrations	migration	NOUN	migrations	Gender=Fem|Number=Plur	0	root	migrations	start_char=8243|end_char=8253|ner=O
@@ -1491,6 +1721,9 @@
 6	et	et	CCONJ	et	et	7	cc	et	start_char=8268|end_char=8270|ner=O
 7	patrimoine	patrimoine	NOUN	patrimoine	Gender=Masc|Number=Sing	5	conj	patrimoine	start_char=8271|end_char=8281|ner=O|SpaceAfter=No
 8	.	.	PUNCT	.	.	3	punct	.	start_char=8281|end_char=8282|ner=O
+
+# text = Enjeux, réappropriations, résistances, 18 mai 2018
+# sent_id = 77
 1	Enjeux	enjeu	NOUN	Enjeux	Gender=Masc|Number=Plur	0	root	Enjeux	start_char=8283|end_char=8289|ner=O|SpaceAfter=No
 2	,	,	PUNCT	,	,	3	punct	,	start_char=8289|end_char=8290|ner=O
 3	réappropriations	réappropriation	NOUN	réappropriations	Gender=Fem|Number=Plur	1	conj	réappropriations	start_char=8291|end_char=8307|ner=O|SpaceAfter=No
@@ -1500,6 +1733,9 @@
 7	18	18	NUM	18	NumType=Card	1	nmod	18	start_char=8322|end_char=8324|ner=O
 8	mai	mai	NOUN	mai	Gender=Masc|Number=Sing	7	nmod	mai	start_char=8325|end_char=8328|ner=O
 9	2018	2018	NUM	2018	NumType=Card	8	nmod	2018	start_char=8329|end_char=8333|ner=O
+
+# text = - est en programmation avec la collaboration (et le co-financement) de l’ENS, Département des Littératures et de l’Idemec – UMR 7307 –
+# sent_id = 78
 1	-	-	PUNCT	-	-	4	punct	-	start_char=8334|end_char=8335|ner=O
 2	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	est	start_char=8336|end_char=8339|ner=O
 3	en	en	ADP	en	en	4	case	en	start_char=8340|end_char=8342|ner=O
@@ -1529,11 +1765,17 @@
 26	UMR	UMR	PROPN	UMR	UMR	7	appos	UMR	start_char=8458|end_char=8461|ner=B-ORG
 27	7307	7307	NUM	7307	Number=Plur	26	nmod	7307	start_char=8462|end_char=8466|ner=E-ORG
 28	–	–	PUNCT	–	–	4	punct	–	start_char=8467|end_char=8468|ner=O|SpacesAfter=\n\n
+
+# text = Institut d'ethnologie méditerranéenne,
+# sent_id = 79
 1	Institut	institut	NOUN	Institut	Gender=Masc|Number=Sing	0	root	Institut	start_char=8470|end_char=8478|ner=B-ORG
 2	d'	de	ADP	d'	d'	3	case	d'	start_char=8479|end_char=8481|ner=I-ORG|SpaceAfter=No
 3	ethnologie	ethnologie	NOUN	ethnologie	Gender=Fem|Number=Sing	1	nmod	ethnologie	start_char=8481|end_char=8491|ner=I-ORG
 4	méditerranéenne	méditerranéen	ADJ	méditerranéenne	Gender=Fem|Number=Sing	3	amod	méditerranéenne	start_char=8492|end_char=8507|ner=E-ORG|SpaceAfter=No
 5	,	,	PUNCT	,	,	1	punct	,	start_char=8507|end_char=8508|ner=O|SpacesAfter=\n\n
+
+# text = Européenne et comparative d’Aix Marseille.
+# sent_id = 80
 1	Européenne	européen	ADJ	Européenne	Gender=Fem|Number=Sing	0	root	Européenne	start_char=8510|end_char=8520|ner=O
 2	et	et	CCONJ	et	et	3	cc	et	start_char=8521|end_char=8523|ner=O
 3	comparative	comparatif	ADJ	comparative	Gender=Fem|Number=Sing	1	conj	comparative	start_char=8524|end_char=8535|ner=O
@@ -1541,6 +1783,9 @@
 5	Aix	Aix	PROPN	Aix	Aix	1	obl:mod	Aix	start_char=8538|end_char=8541|ner=B-LOC
 6	Marseille	Marseille	PROPN	Marseille	Marseille	5	flat:name	Marseille	start_char=8542|end_char=8551|ner=E-LOC|SpaceAfter=No
 7	.	.	PUNCT	.	.	1	punct	.	start_char=8551|end_char=8552|ner=O|SpacesAfter=\s\n\n
+
+# text = A l’échelle internationale, depuis la restructuration et l’ouverture à l’aire culturelle italienne, l’EA a tissé des rapports de collaboration (colloques et journées d’études co-organisés et co-financés) avec 3 universités italiennes (voir la liste des activités) :
+# sent_id = 81
 1	A	à	ADP	A	A	3	case	A	start_char=8555|end_char=8556|ner=O
 2	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	3	det	l’	start_char=8557|end_char=8559|ner=O|SpaceAfter=No
 3	échelle	échelle	NOUN	échelle	Gender=Fem|Number=Sing	21	obl:mod	échelle	start_char=8559|end_char=8566|ner=O
@@ -1590,7 +1835,13 @@
 46	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	43	nmod	activités	start_char=8808|end_char=8817|ner=O|SpaceAfter=No
 47	)	)	PUNCT	)	)	41	punct	)	start_char=8817|end_char=8818|ner=O
 48	:	:	PUNCT	:	:	21	punct	:	start_char=8819|end_char=8820|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 82
 1	•	•	PUNCT	•	•	0	root	•	start_char=8822|end_char=8823|ner=O|SpacesAfter=\t
+
+# text = Université de Bologne, FICLIT (Dipartimento di Filologia classica e italianistica ; département d’excellence 2018-2022) et DIT (Dipartimento di Intepretazione e Traduzione).
+# sent_id = 83
 1	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=8824|end_char=8834|ner=B-ORG
 2	de	de	ADP	de	de	3	case	de	start_char=8835|end_char=8837|ner=I-ORG
 3	Bologne	Bologne	PROPN	Bologne	Bologne	1	nmod	Bologne	start_char=8838|end_char=8845|ner=E-ORG|SpaceAfter=No
@@ -1619,6 +1870,9 @@
 26	Traduzione	Traduzione	X	Traduzione	Foreign=Yes	22	flat:foreign	Traduzione	start_char=8985|end_char=8995|ner=E-ORG|SpaceAfter=No
 27	)	)	PUNCT	)	)	22	punct	)	start_char=8995|end_char=8996|ner=O|SpaceAfter=No
 28	.	.	PUNCT	.	.	1	punct	.	start_char=8996|end_char=8997|ner=O|SpacesAfter=\n\n
+
+# text = • Université de Modène et Reggio-Emilia, Dipartimento di Studi Linguistici e Culturali ; département d’excellence 2018-2022)
+# sent_id = 84
 1	•	•	PUNCT	•	•	2	punct	•	start_char=8999|end_char=9000|ner=O|SpacesAfter=\t
 2	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=9001|end_char=9011|ner=B-ORG
 3	de	de	ADP	de	de	4	case	de	start_char=9012|end_char=9014|ner=I-ORG
@@ -1638,6 +1892,9 @@
 17	excellence	excellence	NOUN	excellence	Gender=Fem|Number=Sing	15	nmod	excellence	start_char=9102|end_char=9112|ner=O
 18	2018-2022	2018-2022	NUM	2018-2022	Number=Plur	17	nmod	2018-2022	start_char=9113|end_char=9122|ner=O|SpaceAfter=No
 19	)	)	PUNCT	)	)	2	punct	)	start_char=9122|end_char=9123|ner=O|SpacesAfter=\n\n
+
+# text = • Université de Cagliari, Dipartimento di Filologia, Letteratura, Linguistica.
+# sent_id = 85
 1	•	•	PUNCT	•	•	2	punct	•	start_char=9125|end_char=9126|ner=O|SpacesAfter=\t
 2	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=9127|end_char=9137|ner=B-ORG
 3	de	de	ADP	de	de	4	case	de	start_char=9138|end_char=9140|ner=I-ORG
@@ -1651,6 +1908,9 @@
 11	,	,	PUNCT	,	,	12	punct	,	start_char=9189|end_char=9190|ner=O
 12	Linguistica	Linguistica	PROPN	Linguistica	Linguistica	2	conj	Linguistica	start_char=9191|end_char=9202|ner=S-ORG|SpaceAfter=No
 13	.	.	PUNCT	.	.	2	punct	.	start_char=9202|end_char=9203|ner=O|SpacesAfter=\n\n
+
+# text = Des projets fructueux de plus longue date (organisation d’universités d’été et d’hiver, organisation de colloques et journées d’étude, co-tutelles de thèse, mobilité de recherche pour enseignants et doctorants, voir la liste des activités) sont en cours avec les universités suivantes :
+# sent_id = 86
 1	Des	un	DET	Des	Definite=Ind|Number=Plur|PronType=Art	2	det	Des	start_char=9205|end_char=9208|ner=O
 2	projets	projet	NOUN	projets	Gender=Masc|Number=Plur	47	nsubj	projets	start_char=9209|end_char=9216|ner=O
 3	fructueux	fructueux	ADJ	fructueux	Gender=Masc|Number=Plur	2	amod	fructueux	start_char=9217|end_char=9226|ner=O
@@ -1704,43 +1964,82 @@
 50	universités	université	NOUN	universités	Gender=Fem|Number=Plur	47	nmod	universités	start_char=9468|end_char=9479|ner=O
 51	suivantes	suivant	ADJ	suivantes	Gender=Fem|Number=Plur	50	amod	suivantes	start_char=9480|end_char=9489|ner=O
 52	:	:	PUNCT	:	:	47	punct	:	start_char=9490|end_char=9491|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 87
 1	•	•	PUNCT	•	•	0	root	•	start_char=9493|end_char=9494|ner=O|SpacesAfter=\t
+
+# text = Université franco-allemande
+# sent_id = 88
 1	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=9495|end_char=9505|ner=B-ORG
 2	franco-allemande	franco-allemand	ADJ	franco-allemande	Gender=Fem|Number=Sing	1	amod	franco-allemande	start_char=9506|end_char=9522|ner=E-ORG|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 89
 1	•	•	PUNCT	•	•	0	root	•	start_char=9524|end_char=9525|ner=O|SpacesAfter=\t
+
+# text = Université de Potsdam
+# sent_id = 90
 1	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=9526|end_char=9536|ner=B-ORG
 2	de	de	ADP	de	de	3	case	de	start_char=9537|end_char=9539|ner=I-ORG
 3	Potsdam	Potsdam	PROPN	Potsdam	Potsdam	1	nmod	Potsdam	start_char=9540|end_char=9547|ner=E-ORG|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 91
 1	•	•	PUNCT	•	•	0	root	•	start_char=9549|end_char=9550|ner=O|SpacesAfter=\t
+
+# text = Université de Münster
+# sent_id = 92
 1	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=9551|end_char=9561|ner=B-ORG
 2	de	de	ADP	de	de	3	case	de	start_char=9562|end_char=9564|ner=I-ORG
 3	Münster	Münster	PROPN	Münster	Münster	1	nmod	Münster	start_char=9565|end_char=9572|ner=E-ORG|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 93
 1	•	•	PUNCT	•	•	0	root	•	start_char=9574|end_char=9575|ner=O|SpacesAfter=\t
+
+# text = Université de Dresden
+# sent_id = 94
 1	Université	université	NOUN	Université	Gender=Fem|Number=Sing	0	root	Université	start_char=9576|end_char=9586|ner=B-ORG
 2	de	de	ADP	de	de	3	case	de	start_char=9587|end_char=9589|ner=I-ORG
 3	Dresden	Dresden	PROPN	Dresden	Dresden	1	nmod	Dresden	start_char=9590|end_char=9597|ner=E-ORG|SpacesAfter=\n\n
+
+# text = • Johan-Wolfgang-Goethe Universität Frankfurt/Main
+# sent_id = 95
 1	•	•	PUNCT	•	•	2	punct	•	start_char=9599|end_char=9600|ner=O|SpacesAfter=\t
 2	Johan-Wolfgang-Goethe	Johan-Wolfgang-Goethe	PROPN	Johan-Wolfgang-Goethe	Johan-Wolfgang-Goethe	0	root	Johan-Wolfgang-Goethe	start_char=9601|end_char=9622|ner=B-ORG
 3	Universität	Universität	PROPN	Universität	Universität	2	flat:name	Universität	start_char=9623|end_char=9634|ner=I-ORG
 4	Frankfurt	Frankfurt	PROPN	Frankfurt	Frankfurt	2	flat:name	Frankfurt	start_char=9635|end_char=9644|ner=I-ORG|SpaceAfter=No
 5	/Main	/Main	X	/Main	/Main	2	flat:name	/Main	start_char=9644|end_char=9649|ner=E-ORG|SpacesAfter=\n\n
+
+# text = • University of Mauritius,
+# sent_id = 96
 1	•	•	PUNCT	•	•	2	punct	•	start_char=9651|end_char=9652|ner=O|SpacesAfter=\t
 2	University	University	X	University	Foreign=Yes	0	root	University	start_char=9653|end_char=9663|ner=B-ORG
 3	of	of	X	of	Foreign=Yes	2	flat:foreign	of	start_char=9664|end_char=9666|ner=I-ORG
 4	Mauritius	Mauritius	X	Mauritius	Foreign=Yes	2	flat:foreign	Mauritius	start_char=9667|end_char=9676|ner=E-ORG|SpaceAfter=No
 5	,	,	PUNCT	,	,	2	punct	,	start_char=9676|end_char=9677|ner=O|SpacesAfter=\s\n\n
+
+# text = • Gujarat National Law University,
+# sent_id = 97
 1	•	•	PUNCT	•	•	2	punct	•	start_char=9680|end_char=9681|ner=O|SpacesAfter=\t
 2	Gujarat	Gujarat	PROPN	Gujarat	Gujarat	0	root	Gujarat	start_char=9682|end_char=9689|ner=B-LOC
 3	National	National	X	National	Foreign=Yes	2	flat:foreign	National	start_char=9690|end_char=9698|ner=I-LOC
 4	Law	Law	X	Law	Foreign=Yes	2	flat:foreign	Law	start_char=9699|end_char=9702|ner=I-LOC
 5	University	University	X	University	Foreign=Yes	2	flat:foreign	University	start_char=9703|end_char=9713|ner=E-LOC|SpaceAfter=No
 6	,	,	PUNCT	,	,	2	punct	,	start_char=9713|end_char=9714|ner=O|SpacesAfter=\n\n
+
+# text = • National Law University Delhi.
+# sent_id = 98
 1	•	•	PUNCT	•	•	2	punct	•	start_char=9716|end_char=9717|ner=O|SpacesAfter=\t
 2	National	National	X	National	Foreign=Yes	0	root	National	start_char=9718|end_char=9726|ner=B-LOC
 3	Law	Law	X	Law	Foreign=Yes	2	flat:foreign	Law	start_char=9727|end_char=9730|ner=I-LOC
 4	University	University	X	University	Foreign=Yes	2	flat:foreign	University	start_char=9731|end_char=9741|ner=I-LOC
 5	Delhi	Delhi	X	Delhi	Foreign=Yes	2	flat:foreign	Delhi	start_char=9742|end_char=9747|ner=E-LOC|SpaceAfter=No
 6	.	.	PUNCT	.	.	2	punct	.	start_char=9747|end_char=9748|ner=O|SpacesAfter=\s\n\n
+
+# text = Avec les universités russes, un accord (en cours de signature) de coopération et de double diplomation (Master Études russes et post-soviétiques) avec l’Académie présidentielle de l’économie nationale et de l’administration publique (Moscou) permettra de mettre en œuvre une coopération au niveau Master 2 et études doctorales dans le domaine des études internationales et européennes et des aires culturelles comparées.
+# sent_id = 99
 1	Avec	avec	ADP	Avec	Avec	3	case	Avec	start_char=9751|end_char=9755|ner=O
 2	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	3	det	les	start_char=9756|end_char=9759|ner=O
 3	universités	université	NOUN	universités	Gender=Fem|Number=Plur	43	obl:mod	universités	start_char=9760|end_char=9771|ner=O
@@ -1817,6 +2116,9 @@
 71	culturelles	culturel	ADJ	culturelles	Gender=Fem|Number=Plur	70	amod	culturelles	start_char=10149|end_char=10160|ner=O
 72	comparées	comparer	VERB	comparées	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	70	acl	comparées	start_char=10161|end_char=10170|ner=O|SpaceAfter=No
 73	.	.	PUNCT	.	.	43	punct	.	start_char=10170|end_char=10171|ner=O
+
+# text = La mobilité étudiante a commencé en 2017-2018 et un projet de thèse en cotutelle est en cours d’élaboration et devrait être déposé en septembre 2018.
+# sent_id = 100
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=10172|end_char=10174|ner=O
 2	mobilité	mobilité	NOUN	mobilité	Gender=Fem|Number=Sing	5	nsubj	mobilité	start_char=10175|end_char=10183|ner=O
 3	étudiante	étudiant	ADJ	étudiante	Gender=Fem|Number=Sing	2	amod	étudiante	start_char=10184|end_char=10193|ner=O
@@ -1844,6 +2146,9 @@
 25	septembre	septembre	NOUN	septembre	Gender=Masc|Number=Sing	23	obl:mod	septembre	start_char=10306|end_char=10315|ner=O
 26	2018	2018	NUM	2018	Number=Plur	25	nmod	2018	start_char=10316|end_char=10320|ner=O|SpaceAfter=No
 27	.	.	PUNCT	.	.	5	punct	.	start_char=10320|end_char=10321|ner=O|SpacesAfter=\s\n\n
+
+# text = 3- Produits et activités de recherche
+# sent_id = 101
 1	3	3	NUM	3	NumType=Card	0	root	3	start_char=10324|end_char=10325|ner=O|SpaceAfter=No
 2	-	-	PUNCT	-	-	3	punct	-	start_char=10325|end_char=10326|ner=O|SpacesAfter=\t
 3	Produits	produit	NOUN	Produits	Gender=Masc|Number=Plur	1	conj	Produits	start_char=10327|end_char=10335|ner=O
@@ -1851,6 +2156,9 @@
 5	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	1	conj	activités	start_char=10339|end_char=10348|ner=O
 6	de	de	ADP	de	de	7	case	de	start_char=10349|end_char=10351|ner=O
 7	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	5	nmod	recherche	start_char=10352|end_char=10361|ner=O|SpacesAfter=\n\n
+
+# text = (pour l’unité puis par équipe ou thème)
+# sent_id = 102
 1	(	(	PUNCT	(	(	4	punct	(	start_char=10363|end_char=10364|ner=O|SpaceAfter=No
 2	pour	pour	ADP	pour	pour	4	case	pour	start_char=10364|end_char=10368|ner=O
 3	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	4	det	l’	start_char=10369|end_char=10371|ner=O|SpaceAfter=No
@@ -1861,8 +2169,14 @@
 8	ou	ou	CCONJ	ou	ou	9	cc	ou	start_char=10393|end_char=10395|ner=O
 9	thème	thème	NOUN	thème	Gender=Masc|Number=Sing	4	conj	thème	start_char=10396|end_char=10401|ner=O|SpaceAfter=No
 10	)	)	PUNCT	)	)	4	punct	)	start_char=10401|end_char=10402|ner=O|SpacesAfter=\n\n
+
+# text = Bilan scientifique
+# sent_id = 103
 1	Bilan	bilan	NOUN	Bilan	Gender=Masc|Number=Sing	0	root	Bilan	start_char=10404|end_char=10409|ner=O
 2	scientifique	scientifique	ADJ	scientifique	Number=Sing	1	amod	scientifique	start_char=10410|end_char=10422|ner=O|SpacesAfter=\n\n
+
+# text = Sur l’orientation générale de la politique scientifique, voir supra.
+# sent_id = 104
 1	Sur	sur	ADP	Sur	Sur	3	case	Sur	start_char=10424|end_char=10427|ner=O
 2	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	3	det	l’	start_char=10428|end_char=10430|ner=O|SpaceAfter=No
 3	orientation	orientation	NOUN	orientation	Gender=Fem|Number=Sing	10	obl:mod	orientation	start_char=10430|end_char=10441|ner=O
@@ -1875,8 +2189,14 @@
 10	voir	voir	VERB	voir	VerbForm=Inf	0	root	voir	start_char=10481|end_char=10485|ner=O
 11	supra	supra	NOUN	supra	Gender=Masc|Number=Sing	10	obj	supra	start_char=10486|end_char=10491|ner=O|SpaceAfter=No
 12	.	.	PUNCT	.	.	10	punct	.	start_char=10491|end_char=10492|ner=O|SpacesAfter=\s\n\n
+
+# text = Données chiffrées
+# sent_id = 105
 1	Données	donnée	NOUN	Données	Gender=Fem|Number=Plur	0	root	Données	start_char=10495|end_char=10502|ner=O
 2	chiffrées	chiffré	ADJ	chiffrées	Gender=Fem|Number=Plur	1	amod	chiffrées	start_char=10503|end_char=10512|ner=O|SpacesAfter=\n\n
+
+# text = La production scientifique du CRPM témoigne d’une forte activité scientifique largement ouverte sur l’extérieur impliquant non seulement les membres titulaires et émérites, mais aussi les doctorants.
+# sent_id = 106
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=10514|end_char=10516|ner=O
 2	production	production	NOUN	production	Gender=Fem|Number=Sing	7	nsubj	production	start_char=10517|end_char=10527|ner=O
 3	scientifique	scientifique	ADJ	scientifique	Gender=Fem|Number=Sing	2	amod	scientifique	start_char=10528|end_char=10540|ner=O
@@ -1909,6 +2229,9 @@
 29	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	30	det	les	start_char=10698|end_char=10701|ner=O
 30	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	22	conj	doctorants	start_char=10702|end_char=10712|ner=O|SpaceAfter=No
 31	.	.	PUNCT	.	.	7	punct	.	start_char=10712|end_char=10713|ner=O
+
+# text = Le CRPM est l’organisateur de manifestations scientifiques régulières tandis que ses membres participent tout aussi régulièrement à des manifestations extérieures, pour beaucoup à l’étranger.
+# sent_id = 107
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=10714|end_char=10716|ner=O
 2	CRPM	CRPM	PROPN	CRPM	Gender=Masc|Number=Sing	5	nsubj	CRPM	start_char=10717|end_char=10721|ner=S-ORG
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	est	start_char=10722|end_char=10725|ner=O
@@ -1937,6 +2260,9 @@
 26	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	27	det	l’	start_char=10894|end_char=10896|ner=O|SpaceAfter=No
 27	étranger	étranger	NOUN	étranger	Gender=Masc|Number=Sing	14	obl:mod	étranger	start_char=10896|end_char=10904|ner=O|SpaceAfter=No
 28	.	.	PUNCT	.	.	5	punct	.	start_char=10904|end_char=10905|ner=O|SpacesAfter=\s\n\n
+
+# text = Cette production est forte aussi bien au niveau collectif (organisation de manifestations scientifiques) qu’individuel.
+# sent_id = 108
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=10908|end_char=10913|ner=O
 2	production	production	NOUN	production	Gender=Fem|Number=Sing	4	nsubj	production	start_char=10914|end_char=10924|ner=O
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	est	start_char=10925|end_char=10928|ner=O
@@ -1957,6 +2283,9 @@
 17	qu’	que	SCONJ	qu’	qu’	18	mark	qu’	start_char=11013|end_char=11016|ner=O|SpaceAfter=No
 18	individuel	individuel	ADJ	individuel	Gender=Masc|Number=Sing	5	ccomp	individuel	start_char=11016|end_char=11026|ner=O|SpaceAfter=No
 19	.	.	PUNCT	.	.	4	punct	.	start_char=11026|end_char=11027|ner=O|SpacesAfter=\s\s\n\n
+
+# text = En témoignent quelques chiffres tirés du tableau « données du contrat en cours » pour reprendre uniquement les grandes catégories :
+# sent_id = 109
 1	En	en	PRON	En	Emph=No|Person=3|PronType=Prs	2	iobj	En	start_char=11031|end_char=11033|ner=O
 2	témoignent	témoigner	VERB	témoignent	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	témoignent	start_char=11034|end_char=11044|ner=O
 3	quelques	quelque	DET	quelques	Number=Plur|PronType=Ind	4	det	quelques	start_char=11045|end_char=11053|ner=O
@@ -1982,12 +2311,24 @@
 21	grandes	grand	ADJ	grandes	Gender=Fem|Number=Plur	22	amod	grandes	start_char=11142|end_char=11149|ner=O
 22	catégories	catégorie	NOUN	catégories	Gender=Fem|Number=Plur	18	obj	catégories	start_char=11150|end_char=11160|ner=O
 23	:	:	PUNCT	:	:	2	punct	:	start_char=11161|end_char=11162|ner=O|SpacesAfter=\s\n\n
+
+# text = •
+# sent_id = 110
 1	•	•	PUNCT	•	•	0	root	•	start_char=11165|end_char=11166|ner=O|SpacesAfter=\t
+
+# text = Articles scientifiques : 20
+# sent_id = 111
 1	Articles	article	NOUN	Articles	Gender=Masc|Number=Plur	0	root	Articles	start_char=11167|end_char=11175|ner=O
 2	scientifiques	scientifique	ADJ	scientifiques	Gender=Masc|Number=Plur	1	amod	scientifiques	start_char=11176|end_char=11189|ner=O
 3	:	:	PUNCT	:	:	4	punct	:	start_char=11190|end_char=11191|ner=O
 4	20	20	NUM	20	NumType=Card	1	nmod	20	start_char=11192|end_char=11194|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 112
 1	•	•	PUNCT	•	•	0	root	•	start_char=11196|end_char=11197|ner=O|SpacesAfter=\t
+
+# text = Articles scientifiques en anglais ou langue étrangère : 14
+# sent_id = 113
 1	Articles	article	NOUN	Articles	Gender=Masc|Number=Plur	0	root	Articles	start_char=11198|end_char=11206|ner=O
 2	scientifiques	scientifique	ADJ	scientifiques	Gender=Masc|Number=Plur	1	amod	scientifiques	start_char=11207|end_char=11220|ner=O
 3	en	en	ADP	en	en	4	case	en	start_char=11221|end_char=11223|ner=O
@@ -1997,13 +2338,25 @@
 7	étrangère	étranger	ADJ	étrangère	Gender=Fem|Number=Sing	6	amod	étrangère	start_char=11242|end_char=11251|ner=O
 8	:	:	PUNCT	:	:	9	punct	:	start_char=11252|end_char=11253|ner=O
 9	14	14	NUM	14	Number=Plur	1	nmod	14	start_char=11254|end_char=11256|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 114
 1	•	•	PUNCT	•	•	0	root	•	start_char=11258|end_char=11259|ner=O|SpacesAfter=\t
+
+# text = Chapitres d’ouvrages : 24
+# sent_id = 115
 1	Chapitres	chapitre	NOUN	Chapitres	Gender=Masc|Number=Plur	0	root	Chapitres	start_char=11260|end_char=11269|ner=B-MISC
 2	d’	de	ADP	d’	d’	3	case	d’	start_char=11270|end_char=11272|ner=I-MISC|SpaceAfter=No
 3	ouvrages	ouvrage	NOUN	ouvrages	Gender=Masc|Number=Plur	1	nmod	ouvrages	start_char=11272|end_char=11280|ner=E-MISC
 4	:	:	PUNCT	:	:	5	punct	:	start_char=11281|end_char=11282|ner=O
 5	24	24	NUM	24	Number=Plur	1	nmod	24	start_char=11283|end_char=11285|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 116
 1	•	•	PUNCT	•	•	0	root	•	start_char=11287|end_char=11288|ner=O|SpacesAfter=\t
+
+# text = Chapitres d’ouvrages en anglais ou langue étrangère : 20
+# sent_id = 117
 1	Chapitres	chapitre	NOUN	Chapitres	Gender=Masc|Number=Plur	0	root	Chapitres	start_char=11289|end_char=11298|ner=B-MISC
 2	d’	de	ADP	d’	d’	3	case	d’	start_char=11299|end_char=11301|ner=I-MISC|SpaceAfter=No
 3	ouvrages	ouvrage	NOUN	ouvrages	Gender=Masc|Number=Plur	1	nmod	ouvrages	start_char=11301|end_char=11309|ner=E-MISC
@@ -2014,6 +2367,9 @@
 8	étrangère	étranger	ADJ	étrangère	Gender=Fem|Number=Sing	7	amod	étrangère	start_char=11331|end_char=11340|ner=O
 9	:	:	PUNCT	:	:	10	punct	:	start_char=11341|end_char=11342|ner=O
 10	20	20	NUM	20	Number=Plur	1	nmod	20	start_char=11343|end_char=11345|ner=O|SpacesAfter=\n\n
+
+# text = • Monographies : 7 dont une en langue étrangère
+# sent_id = 118
 1	•	•	PUNCT	•	•	2	punct	•	start_char=11347|end_char=11348|ner=O|SpacesAfter=\t
 2	Monographies	monographie	NOUN	Monographies	Gender=Fem|Number=Plur	0	root	Monographies	start_char=11349|end_char=11361|ner=B-MISC
 3	:	:	PUNCT	:	:	4	punct	:	start_char=11362|end_char=11363|ner=I-MISC
@@ -2023,6 +2379,9 @@
 7	en	en	ADP	en	en	8	case	en	start_char=11375|end_char=11377|ner=O
 8	langue	langue	NOUN	langue	Gender=Fem|Number=Sing	6	nmod	langue	start_char=11378|end_char=11384|ner=O
 9	étrangère	étranger	ADJ	étrangère	Gender=Fem|Number=Sing	8	amod	étrangère	start_char=11385|end_char=11394|ner=O|SpacesAfter=\n\n
+
+# text = • Organisation de colloques et journées d’études : 45
+# sent_id = 119
 1	•	•	PUNCT	•	•	2	punct	•	start_char=11396|end_char=11397|ner=O|SpacesAfter=\t
 2	Organisation	organisation	NOUN	Organisation	Gender=Fem|Number=Sing	0	root	Organisation	start_char=11398|end_char=11410|ner=O
 3	de	de	ADP	de	de	4	case	de	start_char=11411|end_char=11413|ner=O
@@ -2033,7 +2392,13 @@
 8	études	étude	NOUN	études	Gender=Fem|Number=Plur	6	nmod	études	start_char=11438|end_char=11444|ner=O
 9	:	:	PUNCT	:	:	10	punct	:	start_char=11445|end_char=11446|ner=O
 10	45	45	NUM	45	NumType=Card	2	nmod	45	start_char=11447|end_char=11449|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 120
 1	•	•	PUNCT	•	•	0	root	•	start_char=11451|end_char=11452|ner=O|SpacesAfter=\t
+
+# text = Articles publiés dans des actes de colloque : 31
+# sent_id = 121
 1	Articles	article	NOUN	Articles	Gender=Masc|Number=Plur	0	root	Articles	start_char=11453|end_char=11461|ner=O
 2	publiés	publier	VERB	publiés	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	publiés	start_char=11462|end_char=11469|ner=O
 3	dans	dans	ADP	dans	dans	5	case	dans	start_char=11470|end_char=11474|ner=O
@@ -2043,13 +2408,22 @@
 7	colloque	colloque	NOUN	colloque	Gender=Masc|Number=Sing	5	nmod	colloque	start_char=11488|end_char=11496|ner=O
 8	:	:	PUNCT	:	:	9	punct	:	start_char=11497|end_char=11498|ner=O
 9	31	31	NUM	31	Number=Plur	1	nmod	31	start_char=11499|end_char=11501|ner=O|SpacesAfter=\n\n
+
+# text = • Publication d’actes : 11
+# sent_id = 122
 1	•	•	PUNCT	•	•	2	punct	•	start_char=11503|end_char=11504|ner=O|SpacesAfter=\t
 2	Publication	publication	NOUN	Publication	Gender=Fem|Number=Sing	0	root	Publication	start_char=11505|end_char=11516|ner=O
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=11517|end_char=11519|ner=O|SpaceAfter=No
 4	actes	acte	NOUN	actes	Gender=Masc|Number=Plur	2	nmod	actes	start_char=11519|end_char=11524|ner=O
 5	:	:	PUNCT	:	:	6	punct	:	start_char=11525|end_char=11526|ner=O
 6	11	11	NUM	11	NumType=Card	2	nmod	11	start_char=11527|end_char=11529|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 123
 1	•	•	PUNCT	•	•	0	root	•	start_char=11531|end_char=11532|ner=O|SpacesAfter=\t
+
+# text = Conférences et contributions à des colloques ou séminaires de recherche non (encore) publiées : 61
+# sent_id = 124
 1	Conférences	conférence	NOUN	Conférences	Gender=Fem|Number=Plur	0	root	Conférences	start_char=11533|end_char=11544|ner=O
 2	et	et	CCONJ	et	et	3	cc	et	start_char=11545|end_char=11547|ner=O
 3	contributions	contribution	NOUN	contributions	Gender=Fem|Number=Plur	1	conj	contributions	start_char=11548|end_char=11561|ner=O
@@ -2067,6 +2441,9 @@
 15	publiées	publier	VERB	publiées	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	publiées	start_char=11618|end_char=11626|ner=O
 16	:	:	PUNCT	:	:	17	punct	:	start_char=11627|end_char=11628|ner=O
 17	61	61	NUM	61	Number=Plur	1	nmod	61	start_char=11629|end_char=11631|ner=O|SpacesAfter=\n\n
+
+# text = • Publication d’ouvrages collectifs en langue française ou étrangère : 2
+# sent_id = 125
 1	•	•	PUNCT	•	•	2	punct	•	start_char=11633|end_char=11634|ner=O|SpacesAfter=\t
 2	Publication	publication	NOUN	Publication	Gender=Fem|Number=Sing	0	root	Publication	start_char=11635|end_char=11646|ner=O
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=11647|end_char=11649|ner=O|SpaceAfter=No
@@ -2079,6 +2456,9 @@
 10	étrangère	étranger	ADJ	étrangère	Gender=Fem|Number=Sing	8	conj	étrangère	start_char=11692|end_char=11701|ner=O
 11	:	:	PUNCT	:	:	12	punct	:	start_char=11702|end_char=11703|ner=O
 12	2	2	NUM	2	Number=Plur	2	nmod	2	start_char=11704|end_char=11705|ner=O|SpacesAfter=\n\n
+
+# text = Les membres du CRPM sont régulièrement invités dans des colloques en France et à l’étranger (49) et œuvrent pleinement pour la vulgarisation de leurs travaux (12) ou la diffusion de leur expertise auprès des médias (15) ou d’autres organismes qui peuvent faire appel à leur service (4), dont le sénat.
+# sent_id = 126
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=11707|end_char=11710|ner=O
 2	membres	membre	NOUN	membres	Gender=Masc|Number=Plur	8	nsubj:pass	membres	start_char=11711|end_char=11718|ner=O
 3-4	du	du	du	du	du	du	du	du	start_char=11719|end_char=11721|ner=O
@@ -2145,6 +2525,9 @@
 62	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	63	det	le	start_char=11999|end_char=12001|ner=O
 63	sénat	sénat	NOUN	sénat	Gender=Masc|Number=Sing	56	acl:relcl	sénat	start_char=12002|end_char=12007|ner=O|SpaceAfter=No
 64	.	.	PUNCT	.	.	8	punct	.	start_char=12007|end_char=12008|ner=O|SpacesAfter=\n\n
+
+# text = Sélection des produits et des activités de recherche
+# sent_id = 127
 1	Sélection	sélection	NOUN	Sélection	Gender=Fem|Number=Sing	0	root	Sélection	start_char=12010|end_char=12019|ner=O
 2-3	des	des	des	des	des	des	des	des	start_char=12020|end_char=12023|ner=O
 2	de	de	ADP	de	de	4	case	de	de
@@ -2157,6 +2540,9 @@
 8	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	4	conj	activités	start_char=12040|end_char=12049|ner=O
 9	de	de	ADP	de	de	10	case	de	start_char=12050|end_char=12052|ner=O
 10	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	8	nmod	recherche	start_char=12053|end_char=12062|ner=O|SpacesAfter=\n\n
+
+# text = La sélection opérée parmi les multiples travaux du CRPM a été faite afin de donner un reflet aussi fidèle que possible de l’activité pluridisciplinaire du centre de recherche en respectant autant que faire se peut l’équilibre entre les axes, mais aussi entre les différents des membres (titulaires, doctorants, post-docs…).
+# sent_id = 128
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=12064|end_char=12066|ner=O
 2	sélection	sélection	NOUN	sélection	Gender=Fem|Number=Sing	13	nsubj:pass	sélection	start_char=12067|end_char=12076|ner=O
 3	opérée	opérer	VERB	opérée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	2	acl	opérée	start_char=12077|end_char=12083|ner=O
@@ -2221,6 +2607,9 @@
 59	…	…	PUNCT	…	…	54	punct	…	start_char=12384|end_char=12385|ner=O|SpaceAfter=No
 60	)	)	PUNCT	)	)	54	punct	)	start_char=12385|end_char=12386|ner=O|SpaceAfter=No
 61	.	.	PUNCT	.	.	13	punct	.	start_char=12386|end_char=12387|ner=O
+
+# text = Les universités d’été mises en place pour plusieurs années n’ont ainsi été citées qu’une fois.
+# sent_id = 129
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=12388|end_char=12391|ner=O
 2	universités	université	NOUN	universités	Gender=Fem|Number=Plur	15	nsubj:pass	universités	start_char=12392|end_char=12403|ner=O
 3	d’	de	ADP	d’	d’	5	mark	d’	start_char=12404|end_char=12406|ner=O|SpaceAfter=No
@@ -2240,8 +2629,14 @@
 17	une	un	DET	une	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	une	start_char=12473|end_char=12476|ner=O
 18	fois	fois	NOUN	fois	Gender=Fem|Number=Sing	15	obl:mod	fois	start_char=12477|end_char=12481|ner=O|SpaceAfter=No
 19	.	.	PUNCT	.	.	15	punct	.	start_char=12481|end_char=12482|ner=O|SpacesAfter=\s\n\n
+
+# text = Faits marquants
+# sent_id = 130
 1	Faits	fait	NOUN	Faits	Gender=Masc|Number=Plur	0	root	Faits	start_char=12485|end_char=12490|ner=O
 2	marquants	marquant	ADJ	marquants	Gender=Masc|Number=Plur	1	amod	marquants	start_char=12491|end_char=12500|ner=O|SpacesAfter=\n\n
+
+# text = La restructuration opérée en 2017 est le fait le plus marquant des 5 dernières années.
+# sent_id = 131
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=12502|end_char=12504|ner=O
 2	restructuration	restructuration	NOUN	restructuration	Gender=Fem|Number=Sing	8	nsubj	restructuration	start_char=12505|end_char=12520|ner=O
 3	opérée	opérer	VERB	opérée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	2	acl	opérée	start_char=12521|end_char=12527|ner=O
@@ -2260,6 +2655,9 @@
 15	dernières	dernier	ADJ	dernières	Gender=Fem|Number=Plur	16	amod	dernières	start_char=12571|end_char=12580|ner=O
 16	années	année	NOUN	années	Gender=Fem|Number=Plur	8	nmod	années	start_char=12581|end_char=12587|ner=O|SpaceAfter=No
 17	.	.	PUNCT	.	.	8	punct	.	start_char=12587|end_char=12588|ner=O
+
+# text = Elle a pour but, non seulement de doter le centre de recherche d’une structure de gouvernance plus forte, mais aussi de développer son point fort, à savoir la pluridisciplinarité, en renforçant la cohésion et les interactions entre les axes.
+# sent_id = 132
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	Elle	start_char=12589|end_char=12593|ner=O
 2	a	avoir	VERB	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	a	start_char=12594|end_char=12595|ner=O
 3	pour	pour	ADP	pour	pour	4	case	pour	start_char=12596|end_char=12600|ner=O
@@ -2305,6 +2703,9 @@
 43	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	44	det	les	start_char=12821|end_char=12824|ner=O
 44	axes	axe	NOUN	axes	Gender=Masc|Number=Plur	38	nmod	axes	start_char=12825|end_char=12829|ner=O|SpaceAfter=No
 45	.	.	PUNCT	.	.	2	punct	.	start_char=12829|end_char=12830|ner=O|SpacesAfter=\s\n\n
+
+# text = Cette évolution se traduit à la fois par un élargissement à des aires linguistiques plus nombreuses qui permettront d’accueillir des chercheurs de toute l’UFR LCE (allemand, anglais, arabe, chinois, espagnol, grec, italien, portugais, russe) sans exclusive.
+# sent_id = 133
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=12833|end_char=12838|ner=O
 2	évolution	évolution	NOUN	évolution	Gender=Fem|Number=Sing	4	nsubj:pass	évolution	start_char=12839|end_char=12848|ner=O
 3	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	4	expl:pass	se	start_char=12849|end_char=12851|ner=O
@@ -2354,6 +2755,9 @@
 47	sans	sans	ADP	sans	sans	48	case	sans	start_char=13075|end_char=13079|ner=O
 48	exclusive	exclusif	NOUN	exclusive	Gender=Fem|Number=Sing	22	nmod	exclusive	start_char=13080|end_char=13089|ner=O|SpaceAfter=No
 49	.	.	PUNCT	.	.	4	punct	.	start_char=13089|end_char=13090|ner=O
+
+# text = Elle a également pour but de créer de plus grandes synergies et une meilleure circulation entre les différents axes.
+# sent_id = 134
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	Elle	start_char=13091|end_char=13095|ner=O
 2	a	avoir	VERB	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	a	start_char=13096|end_char=13097|ner=O
 3	également	également	ADV	également	également	2	advmod	également	start_char=13098|end_char=13107|ner=O
@@ -2374,6 +2778,9 @@
 18	différents	différent	ADJ	différents	Gender=Masc|Number=Plur	19	amod	différents	start_char=13191|end_char=13201|ner=O
 19	axes	axe	NOUN	axes	Gender=Masc|Number=Plur	15	nmod	axes	start_char=13202|end_char=13206|ner=O|SpaceAfter=No
 20	.	.	PUNCT	.	.	2	punct	.	start_char=13206|end_char=13207|ner=O|SpacesAfter=\s\n\n
+
+# text = Elle permet d’affirmer plus clairement la dimension « pluridisciplinaire multilingue » affichée dans le nom de l’unité et devrait renforcer son attractivité.
+# sent_id = 135
 1	Elle	lui	PRON	Elle	Emph=No|Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	Elle	start_char=13210|end_char=13214|ner=O
 2	permet	permettre	VERB	permet	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	permet	start_char=13215|end_char=13221|ner=O
 3	d’	de	ADP	d’	d’	4	mark	d’	start_char=13222|end_char=13224|ner=O|SpaceAfter=No
@@ -2399,6 +2806,9 @@
 23	son	son	DET	son	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	24	det	son	start_char=13350|end_char=13353|ner=O
 24	attractivité	attractivité	NOUN	attractivité	Gender=Fem|Number=Sing	22	obj	attractivité	start_char=13354|end_char=13366|ner=O|SpaceAfter=No
 25	.	.	PUNCT	.	.	2	punct	.	start_char=13366|end_char=13367|ner=O|SpacesAfter=\n\n
+
+# text = Cette recomposition a permis de créer une nouvelle dynamique qui a immédiatement porté ses fruits.
+# sent_id = 136
 1	Cette	ce	DET	Cette	Gender=Fem|Number=Sing|PronType=Dem	2	det	Cette	start_char=13369|end_char=13374|ner=O
 2	recomposition	recomposition	NOUN	recomposition	Gender=Fem|Number=Sing	4	nsubj	recomposition	start_char=13375|end_char=13388|ner=O
 3	a	avoir	AUX	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	a	start_char=13389|end_char=13390|ner=O
@@ -2415,6 +2825,9 @@
 14	ses	son	DET	ses	Number=Plur|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	15	det	ses	start_char=13456|end_char=13459|ner=O
 15	fruits	fruit	NOUN	fruits	Gender=Masc|Number=Plur	13	obj	fruits	start_char=13460|end_char=13466|ner=O|SpaceAfter=No
 16	.	.	PUNCT	.	.	4	punct	.	start_char=13466|end_char=13467|ner=O
+
+# text = La nouvelle direction tripartite incarne à la fois cette plus grande diversité des aires linguistiques (Allemagne, Italie, Russie) et la pluridisciplinarité dans une étroite coopération.
+# sent_id = 137
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=13468|end_char=13470|ner=O
 2	nouvelle	nouveau	ADJ	nouvelle	Gender=Fem|Number=Sing	3	amod	nouvelle	start_char=13471|end_char=13479|ner=O
 3	direction	direction	NOUN	direction	Gender=Fem|Number=Sing	5	nsubj	direction	start_char=13480|end_char=13489|ner=O
@@ -2447,6 +2860,9 @@
 29	étroite	étroit	ADJ	étroite	Gender=Fem|Number=Sing	30	amod	étroite	start_char=13634|end_char=13641|ner=O
 30	coopération	coopération	NOUN	coopération	Gender=Fem|Number=Sing	26	nmod	coopération	start_char=13642|end_char=13653|ner=O|SpaceAfter=No
 31	.	.	PUNCT	.	.	5	punct	.	start_char=13653|end_char=13654|ner=O|SpacesAfter=\n\n
+
+# text = Le projet d’ANR 2018 en est l’un des premiers aboutissements.
+# sent_id = 138
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=13656|end_char=13658|ner=O
 2	projet	projet	NOUN	projet	Gender=Masc|Number=Sing	9	nsubj	projet	start_char=13659|end_char=13665|ner=O
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=13666|end_char=13668|ner=O|SpaceAfter=No
@@ -2462,6 +2878,9 @@
 12	premiers	premier	ADJ	premiers	Gender=Masc|Number=Plur	13	amod	premiers	start_char=13693|end_char=13701|ner=O
 13	aboutissements	aboutissement	NOUN	aboutissements	Gender=Masc|Number=Plur	9	nmod	aboutissements	start_char=13702|end_char=13716|ner=O|SpaceAfter=No
 14	.	.	PUNCT	.	.	9	punct	.	start_char=13716|end_char=13717|ner=O|SpacesAfter=\s\n\n
+
+# text = 4- Organisation et vie de l’unité ou de l’équipe si pertinent
+# sent_id = 139
 1	4	4	NUM	4	NumType=Card	0	root	4	start_char=13720|end_char=13721|ner=O|SpaceAfter=No
 2	-	-	PUNCT	-	-	3	punct	-	start_char=13721|end_char=13722|ner=O|SpacesAfter=\t
 3	Organisation	organisation	NOUN	Organisation	Gender=Fem|Number=Sing	1	appos	Organisation	start_char=13723|end_char=13735|ner=B-MISC
@@ -2476,18 +2895,30 @@
 12	équipe	équipe	NOUN	équipe	Gender=Fem|Number=Sing	8	conj	équipe	start_char=13762|end_char=13768|ner=O
 13	si	si	ADV	si	si	14	advmod	si	start_char=13769|end_char=13771|ner=O
 14	pertinent	pertinent	ADJ	pertinent	Gender=Masc|Number=Sing	12	amod	pertinent	start_char=13772|end_char=13781|ner=O|SpacesAfter=\n\n
+
+# text = Données chiffrées
+# sent_id = 140
 1	Données	donnée	NOUN	Données	Gender=Fem|Number=Plur	0	root	Données	start_char=13783|end_char=13790|ner=O
 2	chiffrées	chiffré	ADJ	chiffrées	Gender=Fem|Number=Plur	1	amod	chiffrées	start_char=13791|end_char=13800|ner=O|SpacesAfter=\n\n
+
+# text = Le CRPM est constitué de :
+# sent_id = 141
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=13802|end_char=13804|ner=O
 2	CRPM	CRPM	PROPN	CRPM	Gender=Masc|Number=Sing	4	nsubj:pass	CRPM	start_char=13805|end_char=13809|ner=S-LOC
 3	est	être	AUX	est	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	est	start_char=13810|end_char=13813|ner=O
 4	constitué	constituer	VERB	constitué	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	0	root	constitué	start_char=13814|end_char=13823|ner=O
 5	de	de	ADP	de	de	4	obl:arg	de	start_char=13824|end_char=13826|ner=O
 6	:	:	PUNCT	:	:	4	punct	:	start_char=13827|end_char=13828|ner=O|SpacesAfter=\n\n
+
+# text = • 14 membres titulaires
+# sent_id = 142
 1	•	•	PUNCT	•	•	3	punct	•	start_char=13830|end_char=13831|ner=O|SpacesAfter=\t
 2	14	14	NUM	14	NumType=Card	3	nummod	14	start_char=13832|end_char=13834|ner=O
 3	membres	membre	NOUN	membres	Gender=Masc|Number=Plur	0	root	membres	start_char=13835|end_char=13842|ner=O
 4	titulaires	titulaire	ADJ	titulaires	Gender=Masc|Number=Plur	3	amod	titulaires	start_char=13843|end_char=13853|ner=O|SpacesAfter=\n\n
+
+# text = • 4 PR émérites et 1 MCF retraitée
+# sent_id = 143
 1	•	•	PUNCT	•	•	3	punct	•	start_char=13855|end_char=13856|ner=O|SpacesAfter=\t
 2	4	4	NUM	4	NumType=Card	3	nummod	4	start_char=13857|end_char=13858|ner=O
 3	PR	PR	NOUN	PR	PR	0	root	PR	start_char=13859|end_char=13861|ner=O
@@ -2496,15 +2927,27 @@
 6	1	1	NUM	1	NumType=Card	7	nummod	1	start_char=13874|end_char=13875|ner=O
 7	MCF	MCF	PROPN	MCF	MCF	3	conj	MCF	start_char=13876|end_char=13879|ner=S-ORG
 8	retraitée	retraiter	VERB	retraitée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	7	acl	retraitée	start_char=13880|end_char=13889|ner=O|SpacesAfter=\n\n
+
+# text = • 10 doctorants
+# sent_id = 144
 1	•	•	PUNCT	•	•	3	punct	•	start_char=13891|end_char=13892|ner=O|SpacesAfter=\t
 2	10	10	NUM	10	NumType=Card	3	nummod	10	start_char=13893|end_char=13895|ner=O
 3	doctorants	doctorant	NOUN	doctorants	Gender=Masc|Number=Plur	0	root	doctorants	start_char=13896|end_char=13906|ner=O|SpacesAfter=\n\n
+
+# text = • 2 post-doctorants
+# sent_id = 145
 1	•	•	PUNCT	•	•	3	punct	•	start_char=13908|end_char=13909|ner=O|SpacesAfter=\t
 2	2	2	NUM	2	NumType=Card	3	nummod	2	start_char=13910|end_char=13911|ner=O
 3	post-doctorants	post-doctorant	NOUN	post-doctorants	Gender=Masc|Number=Plur	0	root	post-doctorants	start_char=13912|end_char=13927|ner=O|SpacesAfter=\n\n
+
+# text = • 3 docteurs
+# sent_id = 146
 1	•	•	PUNCT	•	•	3	punct	•	start_char=13929|end_char=13930|ner=O|SpacesAfter=\t
 2	3	3	NUM	3	NumType=Card	3	nummod	3	start_char=13931|end_char=13932|ner=O
 3	docteurs	docteur	NOUN	docteurs	Gender=Masc|Number=Plur	0	root	docteurs	start_char=13933|end_char=13941|ner=O|SpacesAfter=\s\n\n
+
+# text = Voir le tableau intitulé « Synthèse personnels unité ».
+# sent_id = 147
 1	Voir	voir	VERB	Voir	VerbForm=Inf	0	root	Voir	start_char=13944|end_char=13948|ner=O
 2	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	le	start_char=13949|end_char=13951|ner=O
 3	tableau	tableau	NOUN	tableau	Gender=Masc|Number=Sing	1	obj	tableau	start_char=13952|end_char=13959|ner=O
@@ -2515,6 +2958,9 @@
 8	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	6	nmod	unité	start_char=13991|end_char=13996|ner=E-MISC
 9	»	»	PUNCT	»	»	6	punct	»	start_char=13997|end_char=13998|ner=O|SpaceAfter=No
 10	.	.	PUNCT	.	.	1	punct	.	start_char=13998|end_char=13999|ner=O|SpacesAfter=\n\n
+
+# text = Pilotage, animation, organisation de l’unité
+# sent_id = 148
 1	Pilotage	pilotage	NOUN	Pilotage	Gender=Masc|Number=Sing	0	root	Pilotage	start_char=14001|end_char=14009|ner=O|SpaceAfter=No
 2	,	,	PUNCT	,	,	3	punct	,	start_char=14009|end_char=14010|ner=O
 3	animation	animation	NOUN	animation	Gender=Fem|Number=Sing	1	conj	animation	start_char=14011|end_char=14020|ner=O|SpaceAfter=No
@@ -2523,6 +2969,9 @@
 6	de	de	ADP	de	de	8	case	de	start_char=14035|end_char=14037|ner=O
 7	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	8	det	l’	start_char=14038|end_char=14040|ner=O|SpaceAfter=No
 8	unité	unité	NOUN	unité	Gender=Fem|Number=Sing	5	nmod	unité	start_char=14040|end_char=14045|ner=O|SpacesAfter=\n\n
+
+# text = Le CRPM a adopté en 2017 de nouveaux statuts notamment un règlement intérieur en cours d’expertise et de validation interne et s’est doté d’une nouvelle structure de gouvernance qui se traduit par la mise en place d’un bureau, d’un conseil de laboratoire et d’une assemblée générale.
+# sent_id = 149
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=14047|end_char=14049|ner=O
 2	CRPM	CRPM	PROPN	CRPM	Gender=Masc|Number=Sing	4	nsubj	CRPM	start_char=14050|end_char=14054|ner=S-ORG
 3	a	avoir	AUX	a	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	a	start_char=14055|end_char=14056|ner=O
@@ -2577,6 +3026,9 @@
 52	assemblée	assemblée	NOUN	assemblée	Gender=Fem|Number=Sing	37	conj	assemblée	start_char=14311|end_char=14320|ner=O
 53	générale	général	ADJ	générale	Gender=Fem|Number=Sing	52	amod	générale	start_char=14321|end_char=14329|ner=O|SpaceAfter=No
 54	.	.	PUNCT	.	.	4	punct	.	start_char=14329|end_char=14330|ner=O
+
+# text = (Cf Annexe 3, Organigramme du CRPM)
+# sent_id = 150
 1	(	(	PUNCT	(	(	2	punct	(	start_char=14331|end_char=14332|ner=O|SpaceAfter=No
 2	Cf	Cf	NOUN	Cf	Cf	0	root	Cf	start_char=14332|end_char=14334|ner=B-MISC
 3	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	2	nmod	Annexe	start_char=14335|end_char=14341|ner=I-MISC
@@ -2588,6 +3040,9 @@
 8	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	9	det	le	le
 9	CRPM	CRPM	PROPN	CRPM	CRPM	6	nmod	CRPM	start_char=14361|end_char=14365|ner=E-MISC|SpaceAfter=No
 10	)	)	PUNCT	)	)	6	punct	)	start_char=14365|end_char=14366|ner=O|SpacesAfter=\s\n\n
+
+# text = Des outils de communication internes et externes ont été développés notamment :
+# sent_id = 151
 1	Des	un	DET	Des	Definite=Ind|Number=Plur|PronType=Art	2	det	Des	start_char=14369|end_char=14372|ner=O
 2	outils	outil	NOUN	outils	Gender=Masc|Number=Plur	10	nsubj:pass	outils	start_char=14373|end_char=14379|ner=O
 3	de	de	ADP	de	de	4	case	de	start_char=14380|end_char=14382|ner=O
@@ -2600,6 +3055,9 @@
 10	développés	développer	VERB	développés	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part|Voice=Pass	0	root	développés	start_char=14426|end_char=14436|ner=O
 11	notamment	notamment	ADV	notamment	notamment	10	advmod	notamment	start_char=14437|end_char=14446|ner=O
 12	:	:	PUNCT	:	:	10	punct	:	start_char=14447|end_char=14448|ner=O|SpacesAfter=\s\n\n
+
+# text = - La création du logo du laboratoire adossé à celui de l’université,
+# sent_id = 152
 1	-	-	PUNCT	-	-	3	punct	-	start_char=14451|end_char=14452|ner=O|SpacesAfter=\t
 2	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=14453|end_char=14455|ner=O
 3	création	création	NOUN	création	Gender=Fem|Number=Sing	0	root	création	start_char=14456|end_char=14464|ner=O
@@ -2618,6 +3076,9 @@
 14	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	15	det	l’	start_char=14506|end_char=14508|ner=O|SpaceAfter=No
 15	université	université	NOUN	université	Gender=Fem|Number=Sing	12	nmod	université	start_char=14508|end_char=14518|ner=O|SpaceAfter=No
 16	,	,	PUNCT	,	,	3	punct	,	start_char=14518|end_char=14519|ner=O|SpacesAfter=\s\n\n
+
+# text = - La création d’une liste de diffusion pour les membres eacrpm@liste.parisnanterre.fr qui permet l’envoi d’informations régulières générales et ciblées (y compris la veille sur les financements de la recherche)
+# sent_id = 153
 1	-	-	PUNCT	-	-	3	punct	-	start_char=14522|end_char=14523|ner=O|SpacesAfter=\t
 2	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=14524|end_char=14526|ner=O
 3	création	création	NOUN	création	Gender=Fem|Number=Sing	0	root	création	start_char=14527|end_char=14535|ner=O
@@ -2652,6 +3113,9 @@
 32	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	33	det	la	start_char=14719|end_char=14721|ner=O
 33	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	30	nmod	recherche	start_char=14722|end_char=14731|ner=O|SpaceAfter=No
 34	)	)	PUNCT	)	)	27	punct	)	start_char=14731|end_char=14732|ner=O|SpacesAfter=\s\n\n
+
+# text = - La refonte du site internet du laboratoire est actuellement en cours.
+# sent_id = 154
 1	-	-	PUNCT	-	-	14	punct	-	start_char=14735|end_char=14736|ner=O|SpacesAfter=\t
 2	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	La	start_char=14737|end_char=14739|ner=O
 3	refonte	refonte	NOUN	refonte	Gender=Fem|Number=Sing	14	nsubj	refonte	start_char=14740|end_char=14747|ner=O
@@ -2669,6 +3133,9 @@
 13	en	en	ADP	en	en	14	case	en	start_char=14797|end_char=14799|ner=O
 14	cours	cours	NOUN	cours	Gender=Masc|Number=Sing	0	root	cours	start_char=14800|end_char=14805|ner=O|SpaceAfter=No
 15	.	.	PUNCT	.	.	14	punct	.	start_char=14805|end_char=14806|ner=O
+
+# text = Ce dernier permet à la fois de valoriser les activités scientifiques sur son site internet propre, mais aussi sur celui de l’Université et de ses services (DRED Actualités de la Recherche/ UFR LCE/ED 138, etc.) et ce grâce à l’utilisation de l’outil web commun K-SUP.
+# sent_id = 155
 1	Ce	ce	DET	Ce	Gender=Masc|Number=Sing|PronType=Dem	2	det	Ce	start_char=14807|end_char=14809|ner=O
 2	dernier	dernier	ADJ	dernier	Gender=Masc|Number=Sing	3	nsubj	dernier	start_char=14810|end_char=14817|ner=O
 3	permet	permettre	VERB	permet	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	permet	start_char=14818|end_char=14824|ner=O
@@ -2725,6 +3192,9 @@
 54	commun	commun	ADJ	commun	Gender=Masc|Number=Sing	52	amod	commun	start_char=15061|end_char=15067|ner=O
 55	K-SUP	K-SUP	PROPN	K-SUP	K-SUP	52	appos	K-SUP	start_char=15068|end_char=15073|ner=S-MISC|SpaceAfter=No
 56	.	.	PUNCT	.	.	3	punct	.	start_char=15073|end_char=15074|ner=O
+
+# text = Le site internet permet également d’informer le public de l’organisation interne du laboratoire via par exemple l’annuaire des membres mais aussi via la rubrique gouvernance https://crpm.parisnanterre.fr/
+# sent_id = 156
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=15075|end_char=15077|ner=O
 2	site	site	NOUN	site	Gender=Masc|Number=Sing	4	nsubj	site	start_char=15078|end_char=15082|ner=O
 3	internet	internet	NOUN	internet	Gender=Masc|Number=Sing	2	nmod	internet	start_char=15083|end_char=15091|ner=O
@@ -2758,6 +3228,9 @@
 29	rubrique	rubrique	NOUN	rubrique	Gender=Fem|Number=Sing	21	conj	rubrique	start_char=15228|end_char=15236|ner=O
 30	gouvernance	gouvernance	NOUN	gouvernance	Gender=Fem|Number=Sing	29	appos	gouvernance	start_char=15237|end_char=15248|ner=O|SpacesAfter=\s\s
 31	https://crpm.parisnanterre.fr/	https://crpm.parisnanterre.fr/	SYM	https://crpm.parisnanterre.fr/	ExtPos=PROPN	30	nmod	https://crpm.parisnanterre.fr/	start_char=15250|end_char=15280|ner=O|SpacesAfter=\s\n\n
+
+# text = Enfin, le CRPM s’engage depuis janvier 2018 vers la publication en Open Access via la plateforme d’archives ouvertes « HAL-Paris Nanterre » de l’Université pour l’ensemble de ses membres (titulaires, émérites, doctorants, post-doctorants).
+# sent_id = 157
 1	Enfin	enfin	ADV	Enfin	Enfin	6	advmod	Enfin	start_char=15283|end_char=15288|ner=O|SpaceAfter=No
 2	,	,	PUNCT	,	,	1	punct	,	start_char=15288|end_char=15289|ner=O
 3	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	le	start_char=15290|end_char=15292|ner=O
@@ -2802,6 +3275,9 @@
 42	post-doctorants	post-doctorant	NOUN	post-doctorants	Gender=Masc|Number=Plur	36	conj	post-doctorants	start_char=15505|end_char=15520|ner=O|SpaceAfter=No
 43	)	)	PUNCT	)	)	36	punct	)	start_char=15520|end_char=15521|ner=O|SpaceAfter=No
 44	.	.	PUNCT	.	.	6	punct	.	start_char=15521|end_char=15522|ner=O
+
+# text = Les notices bibliographiques des membres volontaires depuis 2012 vont être prochainement diffusées grâce à l’aide du personnel d’appui à la recherche mais aussi du SCD (service commun de documentation).
+# sent_id = 158
 1	Les	le	DET	Les	Definite=Def|Number=Plur|PronType=Art	2	det	Les	start_char=15523|end_char=15526|ner=O
 2	notices	notice	NOUN	notices	Gender=Fem|Number=Plur	10	nsubj	notices	start_char=15527|end_char=15534|ner=O
 3	bibliographiques	bibliographique	ADJ	bibliographiques	Gender=Fem|Number=Plur	2	amod	bibliographiques	start_char=15535|end_char=15551|ner=O
@@ -2842,6 +3318,9 @@
 35	documentation	documentation	NOUN	documentation	Gender=Fem|Number=Sing	32	nmod	documentation	start_char=15710|end_char=15723|ner=O|SpaceAfter=No
 36	)	)	PUNCT	)	)	32	punct	)	start_char=15723|end_char=15724|ner=O|SpaceAfter=No
 37	.	.	PUNCT	.	.	10	punct	.	start_char=15724|end_char=15725|ner=O
+
+# text = Un accompagnement et une formation HAL ont été proposés une première fois en interne en mars 2018.
+# sent_id = 159
 1	Un	un	DET	Un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	2	det	Un	start_char=15726|end_char=15728|ner=O
 2	accompagnement	accompagnement	NOUN	accompagnement	Gender=Masc|Number=Sing	9	nsubj:pass	accompagnement	start_char=15729|end_char=15743|ner=O
 3	et	et	CCONJ	et	et	5	cc	et	start_char=15744|end_char=15746|ner=O
@@ -2860,6 +3339,9 @@
 16	mars	mars	NOUN	mars	Gender=Masc|Number=Sing	9	obl:mod	mars	start_char=15814|end_char=15818|ner=O
 17	2018	2018	NUM	2018	Number=Plur	16	nmod	2018	start_char=15819|end_char=15823|ner=O|SpaceAfter=No
 18	.	.	PUNCT	.	.	9	punct	.	start_char=15823|end_char=15824|ner=O
+
+# text = Le dispositif se poursuivra pour les volontaires.
+# sent_id = 160
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=15825|end_char=15827|ner=O
 2	dispositif	dispositif	NOUN	dispositif	Gender=Masc|Number=Sing	4	nsubj:pass	dispositif	start_char=15828|end_char=15838|ner=O
 3	se	soi	PRON	se	Person=3|PronType=Prs|Reflex=Yes	4	expl:pass	se	start_char=15839|end_char=15841|ner=O
@@ -2868,7 +3350,13 @@
 6	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	7	det	les	start_char=15858|end_char=15861|ner=O
 7	volontaires	volontaire	NOUN	volontaires	Gender=Masc|Number=Plur	4	obl:mod	volontaires	start_char=15862|end_char=15873|ner=O|SpaceAfter=No
 8	.	.	PUNCT	.	.	4	punct	.	start_char=15873|end_char=15874|ner=O|SpacesAfter=\n\n
+
+# text = Parité
+# sent_id = 161
 1	Parité	parité	NOUN	Parité	Gender=Fem|Number=Sing	0	root	Parité	start_char=15876|end_char=15882|ner=S-LOC|SpacesAfter=\n\n
+
+# text = La composition de l’équipe ne nécessite pas de mesures spécifiques pour assurer la parité.
+# sent_id = 162
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=15884|end_char=15886|ner=O
 2	composition	composition	NOUN	composition	Gender=Fem|Number=Sing	7	nsubj	composition	start_char=15887|end_char=15898|ner=O
 3	de	de	ADP	de	de	5	case	de	start_char=15899|end_char=15901|ner=O
@@ -2885,8 +3373,14 @@
 14	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	la	start_char=15964|end_char=15966|ner=O
 15	parité	parité	NOUN	parité	Gender=Fem|Number=Sing	13	obj	parité	start_char=15967|end_char=15973|ner=O|SpaceAfter=No
 16	.	.	PUNCT	.	.	7	punct	.	start_char=15973|end_char=15974|ner=O|SpacesAfter=\s\n\n
+
+# text = Intégrité scientifique
+# sent_id = 163
 1	Intégrité	intégrité	NOUN	Intégrité	Gender=Fem|Number=Sing	0	root	Intégrité	start_char=15977|end_char=15986|ner=O
 2	scientifique	scientifique	ADJ	scientifique	Number=Sing	1	amod	scientifique	start_char=15987|end_char=15999|ner=O|SpacesAfter=\n\n
+
+# text = Aucun problème de plagiat ou d’intégrité scientifique ne s’étant encore jamais posé, l’équipe n’a, pour le moment, pas mis en place de dispositif spécifique.
+# sent_id = 164
 1	Aucun	aucun	DET	Aucun	Gender=Masc|Number=Sing|PronType=Neg	2	det	Aucun	start_char=16001|end_char=16006|ner=O
 2	problème	problème	NOUN	problème	Gender=Masc|Number=Sing	14	nsubj:pass	problème	start_char=16007|end_char=16015|ner=O
 3	de	de	ADP	de	de	4	case	de	start_char=16016|end_char=16018|ner=O
@@ -2919,6 +3413,9 @@
 30	dispositif	dispositif	NOUN	dispositif	Gender=Masc|Number=Sing	26	obj	dispositif	start_char=16136|end_char=16146|ner=O
 31	spécifique	spécifique	ADJ	spécifique	Gender=Masc|Number=Sing	30	amod	spécifique	start_char=16147|end_char=16157|ner=O|SpaceAfter=No
 32	.	.	PUNCT	.	.	26	punct	.	start_char=16157|end_char=16158|ner=O
+
+# text = Néanmoins, les instances de l’université et notamment la Commission Recherche s’est saisie de cette question ayant nommé un chargé de mission « éthique et intégrité scientifique » qui a rendu son rapport à l'automne 2017 disponible sur le site de la Direction de la recherche et des études Doctorales.
+# sent_id = 165
 1	Néanmoins	néanmoins	ADV	Néanmoins	Néanmoins	15	advmod	Néanmoins	start_char=16159|end_char=16168|ner=O|SpaceAfter=No
 2	,	,	PUNCT	,	,	1	punct	,	start_char=16168|end_char=16169|ner=O
 3	les	le	DET	les	Definite=Def|Number=Plur|PronType=Art	4	det	les	start_char=16170|end_char=16173|ner=O
@@ -2975,19 +3472,34 @@
 53	études	étude	NOUN	études	Gender=Fem|Number=Plur	49	conj	études	start_char=16442|end_char=16448|ner=I-ORG
 54	Doctorales	doctoral	ADJ	Doctorales	Gender=Fem|Number=Plur	53	amod	Doctorales	start_char=16449|end_char=16459|ner=E-ORG|SpaceAfter=No
 55	.	.	PUNCT	.	.	15	punct	.	start_char=16459|end_char=16460|ner=O|SpacesAfter=\s\n\n
+
+# text = Protection et sécurité
+# sent_id = 166
 1	Protection	protection	NOUN	Protection	Gender=Fem|Number=Sing	0	root	Protection	start_char=16463|end_char=16473|ner=B-MISC
 2	et	et	CCONJ	et	et	3	cc	et	start_char=16474|end_char=16476|ner=I-MISC
 3	sécurité	sécurité	NOUN	sécurité	Gender=Fem|Number=Sing	1	conj	sécurité	start_char=16477|end_char=16485|ner=E-MISC|SpacesAfter=\n\n
+
+# text = Sans objet
+# sent_id = 167
 1	Sans	sans	ADP	Sans	Sans	2	case	Sans	start_char=16487|end_char=16491|ner=O
 2	objet	objet	NOUN	objet	Gender=Masc|Number=Sing	0	root	objet	start_char=16492|end_char=16497|ner=O|SpacesAfter=\n\n
+
+# text = 5- Analyse SWOT
+# sent_id = 168
 1	5	5	NUM	5	NumType=Card	0	root	5	start_char=16499|end_char=16500|ner=O|SpaceAfter=No
 2	-	-	PUNCT	-	-	3	punct	-	start_char=16500|end_char=16501|ner=O|SpacesAfter=\t
 3	Analyse	analyse	NOUN	Analyse	Gender=Fem|Number=Sing	1	nmod	Analyse	start_char=16502|end_char=16509|ner=B-MISC
 4	SWOT	SWOT	PROPN	SWOT	SWOT	3	nmod	SWOT	start_char=16510|end_char=16514|ner=E-MISC|SpacesAfter=\n\n
+
+# text = Points forts 2012 :
+# sent_id = 169
 1	Points	point	NOUN	Points	Gender=Masc|Number=Plur	0	root	Points	start_char=16516|end_char=16522|ner=O
 2	forts	fort	ADJ	forts	Gender=Masc|Number=Plur	1	amod	forts	start_char=16523|end_char=16528|ner=O
 3	2012	2012	NUM	2012	NumType=Card	1	nmod	2012	start_char=16529|end_char=16533|ner=O
 4	:	:	PUNCT	:	:	1	punct	:	start_char=16534|end_char=16535|ner=O|SpacesAfter=\n\n
+
+# text = (cf. rapport d’évaluation AERES)
+# sent_id = 170
 1	(	(	PUNCT	(	(	2	punct	(	start_char=16537|end_char=16538|ner=O|SpaceAfter=No
 2	cf.	cf.	VERB	cf.	VerbForm=Inf	0	root	cf.	start_char=16538|end_char=16541|ner=O
 3	rapport	rapport	NOUN	rapport	Gender=Masc|Number=Sing	2	obj	rapport	start_char=16542|end_char=16549|ner=O
@@ -2995,6 +3507,9 @@
 5	évaluation	évaluation	NOUN	évaluation	Gender=Fem|Number=Sing	3	nmod	évaluation	start_char=16552|end_char=16562|ner=O
 6	AERES	AERES	PROPN	AERES	AERES	5	appos	AERES	start_char=16563|end_char=16568|ner=S-ORG|SpaceAfter=No
 7	)	)	PUNCT	)	)	2	punct	)	start_char=16568|end_char=16569|ner=O|SpacesAfter=\n\n
+
+# text = - Cohérence de la politique scientifique recherchant systématiquement les complémentarités avec double croisement entre disciplines SHS / aires linguistico-culturelles
+# sent_id = 171
 1	-	-	PUNCT	-	-	2	punct	-	start_char=16571|end_char=16572|ner=O|SpacesAfter=\t
 2	Cohérence	cohérence	NOUN	Cohérence	Gender=Fem|Number=Sing	0	root	Cohérence	start_char=16573|end_char=16582|ner=B-MISC
 3	de	de	ADP	de	de	5	case	de	start_char=16583|end_char=16585|ner=I-MISC
@@ -3014,6 +3529,9 @@
 17	/	/	SYM	/	ExtPos=CCONJ	18	cc	/	start_char=16707|end_char=16708|ner=O
 18	aires	aire	NOUN	aires	Gender=Fem|Number=Plur	16	conj	aires	start_char=16709|end_char=16714|ner=O
 19	linguistico-culturelles	linguistico-culturture	ADJ	linguistico-culturelles	Gender=Fem|Number=Plur	18	amod	linguistico-culturelles	start_char=16715|end_char=16738|ner=O|SpacesAfter=\n\n
+
+# text = - Forte activité colloques/journées d’études avec de nombreux partenariats, tant en France qu’à l’international
+# sent_id = 172
 1	-	-	PUNCT	-	-	3	punct	-	start_char=16740|end_char=16741|ner=O|SpacesAfter=\t
 2	Forte	fort	ADJ	Forte	Gender=Fem|Number=Sing	3	amod	Forte	start_char=16742|end_char=16747|ner=O
 3	activité	activité	NOUN	activité	Gender=Fem|Number=Sing	0	root	activité	start_char=16748|end_char=16756|ner=O
@@ -3034,6 +3552,9 @@
 18	à	à	ADP	à	à	20	case	à	start_char=16834|end_char=16835|ner=O
 19	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	20	det	l’	start_char=16836|end_char=16838|ner=O|SpaceAfter=No
 20	international	international	NOUN	international	Gender=Masc|Number=Sing	14	ccomp	international	start_char=16838|end_char=16851|ner=O|SpacesAfter=\n\n
+
+# text = - Appui sur les formations de Master (notamment filières bilingue droit et économie/langues)
+# sent_id = 173
 1	-	-	PUNCT	-	-	2	punct	-	start_char=16853|end_char=16854|ner=O|SpacesAfter=\t
 2	Appui	appui	NOUN	Appui	Gender=Masc|Number=Sing	0	root	Appui	start_char=16855|end_char=16860|ner=B-MISC
 3	sur	sur	ADP	sur	sur	5	case	sur	start_char=16861|end_char=16864|ner=I-MISC
@@ -3051,10 +3572,16 @@
 15	/	/	SYM	/	ExtPos=CCONJ	16	cc	/	start_char=16936|end_char=16937|ner=O|SpaceAfter=No
 16	langues	langue	NOUN	langues	Gender=Fem|Number=Plur	10	conj	langues	start_char=16937|end_char=16944|ner=O|SpaceAfter=No
 17	)	)	PUNCT	)	)	10	punct	)	start_char=16944|end_char=16945|ner=O|SpacesAfter=\s\n\n\t
+
+# text = Situation en 2018 :
+# sent_id = 174
 1	Situation	situation	NOUN	Situation	Gender=Fem|Number=Sing	0	root	Situation	start_char=16949|end_char=16958|ner=O
 2	en	en	ADP	en	en	3	case	en	start_char=16959|end_char=16961|ner=O
 3	2018	2018	NUM	2018	Number=Plur	1	nmod	2018	start_char=16962|end_char=16966|ner=O
 4	:	:	PUNCT	:	:	1	punct	:	start_char=16967|end_char=16968|ner=O|SpacesAfter=\n\n
+
+# text = - Renforcement de ce socle scientifique et du positionnement (croisement entre SHS et aires linguistico-culturelles).
+# sent_id = 175
 1	-	-	PUNCT	-	-	2	punct	-	start_char=16970|end_char=16971|ner=O|SpacesAfter=\t
 2	Renforcement	renforcement	NOUN	Renforcement	Gender=Masc|Number=Sing	0	root	Renforcement	start_char=16972|end_char=16984|ner=O
 3	de	de	ADP	de	de	5	case	de	start_char=16985|end_char=16987|ner=O
@@ -3075,6 +3602,9 @@
 17	linguistico-culturelles	linguistico-culturture	ADJ	linguistico-culturelles	Gender=Fem|Number=Plur	16	amod	linguistico-culturelles	start_char=17062|end_char=17085|ner=O|SpaceAfter=No
 18	)	)	PUNCT	)	)	12	punct	)	start_char=17085|end_char=17086|ner=O|SpaceAfter=No
 19	.	.	PUNCT	.	.	2	punct	.	start_char=17086|end_char=17087|ner=O|SpacesAfter=\s\n\n
+
+# text = Évolution envisagée : élargissement à d’autres aires linguistico-culturelles et ouvertures à d’autres disciplines SHS et lettres.
+# sent_id = 176
 1	Évolution	évolution	NOUN	Évolution	Gender=Fem|Number=Sing	0	root	Évolution	start_char=17090|end_char=17099|ner=O
 2	envisagée	envisager	VERB	envisagée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	envisagée	start_char=17100|end_char=17109|ner=O
 3	:	:	PUNCT	:	:	4	punct	:	start_char=17110|end_char=17111|ner=O
@@ -3094,6 +3624,9 @@
 17	et	et	CCONJ	et	et	18	cc	et	start_char=17208|end_char=17210|ner=O
 18	lettres	lettre	NOUN	lettres	Gender=Fem|Number=Plur	16	conj	lettres	start_char=17211|end_char=17218|ner=O|SpaceAfter=No
 19	.	.	PUNCT	.	.	1	punct	.	start_char=17218|end_char=17219|ner=O|SpacesAfter=\s\n\n
+
+# text = - Poursuite d’une activité soutenue en matière d’organisation ou de co-organisation de colloques/journées d’études avec de nombreux partenariats.
+# sent_id = 177
 1	-	-	PUNCT	-	-	2	punct	-	start_char=17222|end_char=17223|ner=O|SpacesAfter=\t
 2	Poursuite	poursuite	NOUN	Poursuite	Gender=Fem|Number=Sing	0	root	Poursuite	start_char=17224|end_char=17233|ner=O
 3	d’	de	ADP	d’	d’	5	case	d’	start_char=17234|end_char=17236|ner=O|SpaceAfter=No
@@ -3118,6 +3651,9 @@
 22	nombreux	nombreux	ADJ	nombreux	Gender=Masc|Number=Plur	23	amod	nombreux	start_char=17345|end_char=17353|ner=O
 23	partenariats	partenariat	NOUN	partenariats	Gender=Masc|Number=Plur	2	nmod	partenariats	start_char=17354|end_char=17366|ner=O|SpaceAfter=No
 24	.	.	PUNCT	.	.	2	punct	.	start_char=17366|end_char=17367|ner=O|SpacesAfter=\s\n\n
+
+# text = Évolution envisagée : meilleure institutionnalisation de nos activités de colloque et journées d’étude à travers leur publication dans une revue publiée par les Presses de Nanterre.
+# sent_id = 178
 1	Évolution	évolution	NOUN	Évolution	Gender=Fem|Number=Sing	0	root	Évolution	start_char=17370|end_char=17379|ner=O
 2	envisagée	envisager	VERB	envisagée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	envisagée	start_char=17380|end_char=17389|ner=O
 3	:	:	PUNCT	:	:	5	punct	:	start_char=17390|end_char=17391|ner=O
@@ -3146,6 +3682,9 @@
 26	de	de	ADP	de	de	27	case	de	start_char=17539|end_char=17541|ner=I-ORG
 27	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	25	nmod	Nanterre	start_char=17542|end_char=17550|ner=E-ORG|SpaceAfter=No
 28	.	.	PUNCT	.	.	1	punct	.	start_char=17550|end_char=17551|ner=O|SpacesAfter=\n\n
+
+# text = - Poursuite du renforcement du lien entre recherche et formations, avec la création de Masters entièrement adossés au CRPM (Études internationales et européennes, spécialité Affaires russes et post-soviétiques en 2016, Langues étrangères appliquées, Alter-management et coopération internationale en 2020).
+# sent_id = 179
 1	-	-	PUNCT	-	-	2	punct	-	start_char=17553|end_char=17554|ner=O|SpacesAfter=\t
 2	Poursuite	poursuite	NOUN	Poursuite	Gender=Fem|Number=Sing	0	root	Poursuite	start_char=17555|end_char=17564|ner=O
 3-4	du	du	du	du	du	du	du	du	start_char=17565|end_char=17567|ner=O
@@ -3198,6 +3737,9 @@
 47	2020	2020	NUM	2020	Number=Plur	44	nmod	2020	start_char=17853|end_char=17857|ner=O|SpaceAfter=No
 48	)	)	PUNCT	)	)	25	punct	)	start_char=17857|end_char=17858|ner=O|SpaceAfter=No
 49	.	.	PUNCT	.	.	2	punct	.	start_char=17858|end_char=17859|ner=O|SpacesAfter=\s\n\n
+
+# text = Évolution envisagée : meilleur encadrement recherche des étudiants des Masters relevant du CRPM, avec développement des séminaires de recherche niveau Master et Doctorat.
+# sent_id = 180
 1	Évolution	évolution	NOUN	Évolution	Gender=Fem|Number=Sing	0	root	Évolution	start_char=17862|end_char=17871|ner=O
 2	envisagée	envisager	VERB	envisagée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	envisagée	start_char=17872|end_char=17881|ner=O
 3	:	:	PUNCT	:	:	5	punct	:	start_char=17882|end_char=17883|ner=O
@@ -3227,6 +3769,9 @@
 25	et	et	CCONJ	et	et	26	cc	et	start_char=18020|end_char=18022|ner=I-MISC
 26	Doctorat	doctorat	NOUN	Doctorat	Gender=Masc|Number=Sing	24	conj	Doctorat	start_char=18023|end_char=18031|ner=E-MISC|SpaceAfter=No
 27	.	.	PUNCT	.	.	1	punct	.	start_char=18031|end_char=18032|ner=O|SpacesAfter=\s\n\n
+
+# text = Points faibles / à améliorer 2012 :
+# sent_id = 181
 1	Points	point	NOUN	Points	Gender=Masc|Number=Plur	0	root	Points	start_char=18035|end_char=18041|ner=O
 2	faibles	faible	ADJ	faibles	Gender=Masc|Number=Plur	1	amod	faibles	start_char=18042|end_char=18049|ner=O
 3	/	/	SYM	/	ExtPos=CCONJ	5	cc	/	start_char=18050|end_char=18051|ner=O
@@ -3234,6 +3779,9 @@
 5	améliorer	améliorer	VERB	améliorer	VerbForm=Inf	1	acl	améliorer	start_char=18054|end_char=18063|ner=O
 6	2012	2012	NUM	2012	NumType=Card	5	obj	2012	start_char=18064|end_char=18068|ner=O
 7	:	:	PUNCT	:	:	1	punct	:	start_char=18069|end_char=18070|ner=O|SpacesAfter=\n\n
+
+# text = (cf. rapport d’évaluation AERES)
+# sent_id = 182
 1	(	(	PUNCT	(	(	2	punct	(	start_char=18072|end_char=18073|ner=O|SpaceAfter=No
 2	cf.	cf.	VERB	cf.	VerbForm=Inf	0	root	cf.	start_char=18073|end_char=18076|ner=O
 3	rapport	rapport	NOUN	rapport	Gender=Masc|Number=Sing	2	obj	rapport	start_char=18077|end_char=18084|ner=O
@@ -3241,6 +3789,9 @@
 5	évaluation	évaluation	NOUN	évaluation	Gender=Fem|Number=Sing	3	nmod	évaluation	start_char=18087|end_char=18097|ner=O
 6	AERES	AERES	PROPN	AERES	AERES	5	appos	AERES	start_char=18098|end_char=18103|ner=S-ORG|SpaceAfter=No
 7	)	)	PUNCT	)	)	2	punct	)	start_char=18103|end_char=18104|ner=O|SpacesAfter=\n\n
+
+# text = - Faible institutionnalisation des axes de recherche et « gouvernance floue »
+# sent_id = 183
 1	-	-	PUNCT	-	-	3	punct	-	start_char=18106|end_char=18107|ner=O|SpacesAfter=\t
 2	Faible	faible	ADJ	Faible	Gender=Fem|Number=Sing	3	amod	Faible	start_char=18108|end_char=18114|ner=O
 3	institutionnalisation	institutionnalisation	NOUN	institutionnalisation	Gender=Fem|Number=Sing	0	root	institutionnalisation	start_char=18115|end_char=18136|ner=O
@@ -3255,6 +3806,9 @@
 11	gouvernance	gouvernance	NOUN	gouvernance	Gender=Fem|Number=Sing	3	conj	gouvernance	start_char=18164|end_char=18175|ner=O
 12	floue	flou	ADJ	floue	Gender=Fem|Number=Sing	11	amod	floue	start_char=18176|end_char=18181|ner=O
 13	»	»	PUNCT	»	»	11	punct	»	start_char=18182|end_char=18183|ner=O|SpacesAfter=\n\n
+
+# text = - Implication insuffisante dans des projets collectifs de grande ampleur (type ANR, projets européens…)
+# sent_id = 184
 1	-	-	PUNCT	-	-	2	punct	-	start_char=18185|end_char=18186|ner=O|SpacesAfter=\t
 2	Implication	implication	NOUN	Implication	Gender=Fem|Number=Sing	0	root	Implication	start_char=18187|end_char=18198|ner=O
 3	insuffisante	insuffisant	ADJ	insuffisante	Gender=Fem|Number=Sing	2	amod	insuffisante	start_char=18199|end_char=18211|ner=O
@@ -3273,6 +3827,9 @@
 16	européens	européen	ADJ	européens	Gender=Masc|Number=Plur	15	amod	européens	start_char=18277|end_char=18286|ner=O|SpaceAfter=No
 17	…	…	PUNCT	…	…	12	punct	…	start_char=18286|end_char=18287|ner=O|SpaceAfter=No
 18	)	)	PUNCT	)	)	12	punct	)	start_char=18287|end_char=18288|ner=O|SpacesAfter=\n\n
+
+# text = - Encadrement des doctorants / insertion des doctorants et post-doctorants dans les réseaux de recherche à améliorer
+# sent_id = 185
 1	-	-	PUNCT	-	-	2	punct	-	start_char=18290|end_char=18291|ner=O|SpacesAfter=\t
 2	Encadrement	encadrement	NOUN	Encadrement	Gender=Masc|Number=Sing	0	root	Encadrement	start_char=18292|end_char=18303|ner=O
 3	des	un	DET	des	Definite=Ind|Number=Plur|PronType=Art	4	det	des	start_char=18304|end_char=18307|ner=O
@@ -3292,10 +3849,16 @@
 16	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	14	nmod	recherche	start_char=18385|end_char=18394|ner=O
 17	à	à	ADP	à	à	18	mark	à	start_char=18395|end_char=18396|ner=O
 18	améliorer	améliorer	VERB	améliorer	VerbForm=Inf	14	acl	améliorer	start_char=18397|end_char=18406|ner=O|SpacesAfter=\n\n\t
+
+# text = Situation en 2018 :
+# sent_id = 186
 1	Situation	situation	NOUN	Situation	Gender=Fem|Number=Sing	0	root	Situation	start_char=18409|end_char=18418|ner=O
 2	en	en	ADP	en	en	3	case	en	start_char=18419|end_char=18421|ner=O
 3	2018	2018	NUM	2018	Number=Plur	1	nmod	2018	start_char=18422|end_char=18426|ner=O
 4	:	:	PUNCT	:	:	1	punct	:	start_char=18427|end_char=18428|ner=O|SpacesAfter=\n\n
+
+# text = - Renforcement de l’institutionnalisation des axes de recherche suite à la refonte totale de ces axes en 2017.
+# sent_id = 187
 1	-	-	PUNCT	-	-	2	punct	-	start_char=18430|end_char=18431|ner=O|SpacesAfter=\t
 2	Renforcement	renforcement	NOUN	Renforcement	Gender=Masc|Number=Sing	0	root	Renforcement	start_char=18432|end_char=18444|ner=O
 3	de	de	ADP	de	de	5	case	de	start_char=18445|end_char=18447|ner=O
@@ -3318,6 +3881,9 @@
 19	en	en	ADP	en	en	20	case	en	start_char=18532|end_char=18534|ner=O
 20	2017	2017	NUM	2017	NumType=Card	14	nmod	2017	start_char=18535|end_char=18539|ner=O|SpaceAfter=No
 21	.	.	PUNCT	.	.	2	punct	.	start_char=18539|end_char=18540|ner=O
+
+# text = Mise à jour et refonte totale des statuts de l’EA en 2017 ;
+# sent_id = 188
 1	Mise	mise	NOUN	Mise	Gender=Fem|Number=Sing	0	root	Mise	start_char=18541|end_char=18545|ner=O
 2	à	à	ADP	à	à	3	case	à	start_char=18546|end_char=18547|ner=O
 3	jour	jour	NOUN	jour	Gender=Masc|Number=Sing	1	nmod	jour	start_char=18548|end_char=18552|ner=O
@@ -3334,6 +3900,9 @@
 13	en	en	ADP	en	en	14	case	en	start_char=18591|end_char=18593|ner=O
 14	2017	2017	NUM	2017	Number=Plur	1	nmod	2017	start_char=18594|end_char=18598|ner=O
 15	;	;	PUNCT	;	;	1	punct	;	start_char=18599|end_char=18600|ner=O
+
+# text = élection d’un bureau et d’un conseil.
+# sent_id = 189
 1	élection	élection	NOUN	élection	Gender=Fem|Number=Sing	0	root	élection	start_char=18601|end_char=18609|ner=O
 2	d’	de	ADP	d’	d’	4	case	d’	start_char=18610|end_char=18612|ner=O|SpaceAfter=No
 3	un	un	DET	un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	un	start_char=18612|end_char=18614|ner=O
@@ -3343,6 +3912,9 @@
 7	un	un	DET	un	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	un	start_char=18627|end_char=18629|ner=O
 8	conseil	conseil	NOUN	conseil	Gender=Masc|Number=Sing	4	conj	conseil	start_char=18630|end_char=18637|ner=O|SpaceAfter=No
 9	.	.	PUNCT	.	.	1	punct	.	start_char=18637|end_char=18638|ner=O|SpacesAfter=\s\s\n\n
+
+# text = Évolution envisagée : meilleure structuration des thèmes de recherche autour de publications collectives propres à ces axes plus systématiques (dans une revue « propre » ou dans des numéros de revue).
+# sent_id = 190
 1	Évolution	évolution	NOUN	Évolution	Gender=Fem|Number=Sing	0	root	Évolution	start_char=18642|end_char=18651|ner=O
 2	envisagée	envisager	VERB	envisagée	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	envisagée	start_char=18652|end_char=18661|ner=O
 3	:	:	PUNCT	:	:	5	punct	:	start_char=18662|end_char=18663|ner=O
@@ -3379,6 +3951,9 @@
 33	revue	revue	NOUN	revue	Gender=Fem|Number=Sing	31	nmod	revue	start_char=18835|end_char=18840|ner=O|SpaceAfter=No
 34	)	)	PUNCT	)	)	24	punct	)	start_char=18840|end_char=18841|ner=O|SpaceAfter=No
 35	.	.	PUNCT	.	.	1	punct	.	start_char=18841|end_char=18842|ner=O|SpacesAfter=\s\s\n\n
+
+# text = - Mise en œuvre de deux groupes de travail au sein de l’EA en vue de la préparation d’un projet ANR et d’un projet ANR franco-allemand à déposer en 2019 avec l’aide du personnel d’appui à la recherche.
+# sent_id = 191
 1	-	-	PUNCT	-	-	2	punct	-	start_char=18846|end_char=18847|ner=O|SpacesAfter=\t
 2	Mise	mise	NOUN	Mise	Gender=Fem|Number=Sing	0	root	Mise	start_char=18848|end_char=18852|ner=O
 3	en	en	ADP	en	en	4	case	en	start_char=18853|end_char=18855|ner=O
@@ -3427,6 +4002,9 @@
 44	la	le	DET	la	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	45	det	la	start_char=19034|end_char=19036|ner=O
 45	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	40	nmod	recherche	start_char=19037|end_char=19046|ner=O|SpaceAfter=No
 46	.	.	PUNCT	.	.	2	punct	.	start_char=19046|end_char=19047|ner=O|SpacesAfter=\s\n\n
+
+# text = - Création d’un séminaire doctoral Université Paris-Lumières en études russes contemporaines en 2015, mise en place d’un séminaire doctoral propre à toute l’EA (et commun à tous les axes) en 2017-2018.
+# sent_id = 192
 1	-	-	PUNCT	-	-	2	punct	-	start_char=19050|end_char=19051|ner=O|SpacesAfter=\t
 2	Création	création	NOUN	Création	Gender=Fem|Number=Sing	0	root	Création	start_char=19052|end_char=19060|ner=O
 3	d’	de	ADP	d’	d’	5	case	d’	start_char=19061|end_char=19063|ner=O|SpaceAfter=No
@@ -3465,6 +4043,9 @@
 36	en	en	ADP	en	en	37	case	en	start_char=19238|end_char=19240|ner=O
 37	2017-2018	2017-2018	NUM	2017-2018	Number=Plur	30	obl:mod	2017-2018	start_char=19241|end_char=19250|ner=O|SpaceAfter=No
 38	.	.	PUNCT	.	.	2	punct	.	start_char=19250|end_char=19251|ner=O|SpacesAfter=\s\n\n
+
+# text = - Organisation des Doctoriales en Études russes (manifestation nationale sous l’égide de l’Association française des russisants) à l’Université Paris Nanterre en mai 2016.
+# sent_id = 193
 1	-	-	PUNCT	-	-	2	punct	-	start_char=19254|end_char=19255|ner=O|SpacesAfter=\t
 2	Organisation	organisation	NOUN	Organisation	Gender=Fem|Number=Sing	0	root	Organisation	start_char=19256|end_char=19268|ner=B-ORG
 3-4	des	des	des	des	des	des	des	des	start_char=19269|end_char=19272|ner=I-ORG
@@ -3498,6 +4079,9 @@
 29	mai	mai	NOUN	mai	Gender=Masc|Number=Sing	2	nmod	mai	start_char=19416|end_char=19419|ner=O
 30	2016	2016	NUM	2016	NumType=Card	29	nmod	2016	start_char=19420|end_char=19424|ner=O|SpaceAfter=No
 31	.	.	PUNCT	.	.	2	punct	.	start_char=19424|end_char=19425|ner=O|SpacesAfter=\n\n
+
+# text = - Mise en œuvre d’un contrat de recherche d’une post-doctorante du CRPM avec le CNES (2018).
+# sent_id = 194
 1	-	-	PUNCT	-	-	2	punct	-	start_char=19427|end_char=19428|ner=O|SpacesAfter=\t
 2	Mise	mise	NOUN	Mise	Gender=Fem|Number=Sing	0	root	Mise	start_char=19429|end_char=19433|ner=O
 3	en	en	ADP	en	en	4	case	en	start_char=19434|end_char=19436|ner=O
@@ -3521,6 +4105,9 @@
 20	2018	2018	NUM	2018	NumType=Card	2	nmod	2018	start_char=19513|end_char=19517|ner=O|SpaceAfter=No
 21	)	)	PUNCT	)	)	20	punct	)	start_char=19517|end_char=19518|ner=O|SpaceAfter=No
 22	.	.	PUNCT	.	.	2	punct	.	start_char=19518|end_char=19519|ner=O|SpacesAfter=\n\n
+
+# text = 6- Projet scientifique à cinq ans
+# sent_id = 195
 1	6	6	NUM	6	NumType=Card	3	nummod	6	start_char=19521|end_char=19522|ner=O|SpaceAfter=No
 2	-	-	PUNCT	-	-	1	punct	-	start_char=19522|end_char=19523|ner=O|SpacesAfter=\t
 3	Projet	projet	NOUN	Projet	Gender=Masc|Number=Sing	0	root	Projet	start_char=19524|end_char=19530|ner=B-MISC
@@ -3528,6 +4115,9 @@
 5	à	à	ADP	à	à	7	case	à	start_char=19544|end_char=19545|ner=O
 6	cinq	cinq	NUM	cinq	NumType=Card	7	nummod	cinq	start_char=19546|end_char=19550|ner=O
 7	ans	an	NOUN	ans	Gender=Masc|Number=Plur	3	nmod	ans	start_char=19551|end_char=19554|ner=O|SpacesAfter=\n\n
+
+# text = En continuité avec sa tradition transdisciplinaire et transnationale, le CRPM a opéré une restructuration en 2017 qui lui a permis d’anticiper le nouveau projet quinquennal en s’ouvrant à d’autres aires culturelles et linguistiques afin de croiser davantage les approches disciplinaires, en accueillant de nouveaux chercheurs (titulaires et associés) et en réorganisant les axes de recherche de manière à favoriser la cohésion des projets et à œuvrer à la construction d’un regard critique sur les changements culturels, sociaux et politiques en cours à partir de l’interrogation et l’étude des processus de « mondialisation ».
+# sent_id = 196
 1	En	en	ADP	En	En	2	case	En	start_char=19556|end_char=19558|ner=O
 2	continuité	continuité	NOUN	continuité	Gender=Fem|Number=Sing	13	obl:mod	continuité	start_char=19559|end_char=19569|ner=O
 3	avec	avec	ADP	avec	avec	5	case	avec	start_char=19570|end_char=19574|ner=O
@@ -3637,6 +4227,9 @@
 105	mondialisation	mondialisation	NOUN	mondialisation	Gender=Fem|Number=Sing	102	nmod	mondialisation	start_char=20166|end_char=20180|ner=O
 106	»	»	PUNCT	»	»	105	punct	»	start_char=20181|end_char=20182|ner=O|SpaceAfter=No
 107	.	.	PUNCT	.	.	13	punct	.	start_char=20182|end_char=20183|ner=O|SpacesAfter=\n\n
+
+# text = Le travail de l'équipe repose ainsi, et de plus en plus, sur un dialogue serré entre plusieurs disciplines des sciences humaines, sociales et littéraires et s'attache à QUOTE forcerQUOTE les frontières du savoir afin de soumettre le contemporain à une quête « croisée », qui profite à la fois d’études et des compétences sur la circulation et le transfert des langues, des concepts et des lois (axe 1), de recherches sur la reconfiguration et la représentation de l’espace et des mobilités spatiales, ainsi que sur ses implications dans la construction des nouvelles cartographies et des nouvelles communautés (axe 2), et de travaux portants sur les enjeux culturels et politiques des nouvelles formes de narration et remédiations en régime transmédiale (axe 3).
+# sent_id = 197
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=20185|end_char=20187|ner=O
 2	travail	travail	NOUN	travail	Gender=Masc|Number=Sing	6	nsubj	travail	start_char=20188|end_char=20195|ner=O
 3	de	de	ADP	de	de	5	case	de	start_char=20196|end_char=20198|ner=O
@@ -3793,6 +4386,9 @@
 146	3	3	NUM	3	Number=Plur	145	nmod	3	start_char=20945|end_char=20946|ner=O|SpaceAfter=No
 147	)	)	PUNCT	)	)	145	punct	)	start_char=20946|end_char=20947|ner=O|SpaceAfter=No
 148	.	.	PUNCT	.	.	6	punct	.	start_char=20947|end_char=20948|ner=O|SpacesAfter=\n\n
+
+# text = Dans ce même sens, l’EA entend également élargir davantage les collaborations avec d’autres centres de recherche, nationaux et internationaux (voir ci-dessous le détail sur les projets en cours et à venir), favorisant aussi les échanges entre jeunes chercheurs (une journée doctorale commune aux équipes CRPM et CREA est prévue pour le printemps 2019).
+# sent_id = 198
 1	Dans	dans	ADP	Dans	Dans	4	case	Dans	start_char=20950|end_char=20954|ner=O
 2	ce	ce	DET	ce	Gender=Masc|Number=Sing|PronType=Dem	4	det	ce	start_char=20955|end_char=20957|ner=O
 3	même	même	ADJ	même	Gender=Masc|Number=Sing	4	amod	même	start_char=20958|end_char=20962|ner=O
@@ -3858,6 +4454,9 @@
 62	2019	2019	NUM	2019	Number=Plur	61	nmod	2019	start_char=21296|end_char=21300|ner=O|SpaceAfter=No
 63	)	)	PUNCT	)	)	48	punct	)	start_char=21300|end_char=21301|ner=O|SpaceAfter=No
 64	.	.	PUNCT	.	.	8	punct	.	start_char=21301|end_char=21302|ner=O|SpacesAfter=\n\n
+
+# text = Deux projets ANR sont en cours d’élaboration.
+# sent_id = 199
 1	Deux	deux	NUM	Deux	Number=Plur	2	nummod	Deux	start_char=21304|end_char=21308|ner=O
 2	projets	projet	NOUN	projets	Gender=Masc|Number=Plur	6	nsubj	projets	start_char=21309|end_char=21316|ner=O
 3	ANR	ANR	PROPN	ANR	ANR	2	appos	ANR	start_char=21317|end_char=21320|ner=S-ORG
@@ -3867,6 +4466,9 @@
 7	d’	de	ADP	d’	d’	8	case	d’	start_char=21335|end_char=21337|ner=O|SpaceAfter=No
 8	élaboration	élaboration	NOUN	élaboration	Gender=Fem|Number=Sing	6	nmod	élaboration	start_char=21337|end_char=21348|ner=O|SpaceAfter=No
 9	.	.	PUNCT	.	.	6	punct	.	start_char=21348|end_char=21349|ner=O
+
+# text = Le premier porte sur la notion de « communautés globales », ces communautés qui agissent à partir d’intérêts et de références communes (culturelles, professionnelles, artistiques, économiques, politiques, de genre…) s’appuyant sur des réseaux transnationaux pour renforcer leur solidarité par-delà les frontières nationales.
+# sent_id = 200
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=21350|end_char=21352|ner=O
 2	premier	premier	ADJ	premier	Gender=Masc|Number=Sing	3	nsubj	premier	start_char=21353|end_char=21360|ner=O
 3	porte	porter	VERB	porte	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	porte	start_char=21361|end_char=21366|ner=O
@@ -3922,6 +4524,9 @@
 53	frontières	frontière	NOUN	frontières	Gender=Fem|Number=Plur	47	obj	frontières	start_char=21652|end_char=21662|ner=O
 54	nationales	national	ADJ	nationales	Gender=Fem|Number=Plur	53	amod	nationales	start_char=21663|end_char=21673|ner=O|SpaceAfter=No
 55	.	.	PUNCT	.	.	3	punct	.	start_char=21673|end_char=21674|ner=O
+
+# text = En collaboration avec un certain nombre de partenaires nationaux et internationaux, le CRPM entend interroger l’émergence de ces communautés, leurs dispositifs de construction et affirmation, leur statut, leurs effets sur les imaginaires identitaires.
+# sent_id = 201
 1	En	en	ADP	En	En	2	case	En	start_char=21675|end_char=21677|ner=O
 2	collaboration	collaboration	NOUN	collaboration	Gender=Fem|Number=Sing	15	obl:mod	collaboration	start_char=21678|end_char=21691|ner=O
 3	avec	avec	ADP	avec	avec	6	case	avec	start_char=21692|end_char=21696|ner=O
@@ -3961,6 +4566,9 @@
 37	imaginaires	imaginaire	NOUN	imaginaires	Gender=Masc|Number=Plur	34	nmod	imaginaires	start_char=21901|end_char=21912|ner=O
 38	identitaires	identitaire	ADJ	identitaires	Gender=Masc|Number=Plur	37	amod	identitaires	start_char=21913|end_char=21925|ner=O|SpaceAfter=No
 39	.	.	PUNCT	.	.	15	punct	.	start_char=21925|end_char=21926|ner=O|SpacesAfter=\s\n\n
+
+# text = Le deuxième, ANR franco-allemand en 2019, aborde l’analyse comparée de la législation et jurisprudence relatives aux questions de fin de vie.
+# sent_id = 202
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=21929|end_char=21931|ner=O
 2	deuxième	deuxième	ADJ	deuxième	Gender=Masc|Number=Sing	9	nsubj	deuxième	start_char=21932|end_char=21940|ner=O|SpaceAfter=No
 3	,	,	PUNCT	,	,	4	punct	,	start_char=21940|end_char=21941|ner=O
@@ -3988,6 +4596,9 @@
 24	de	de	ADP	de	de	25	case	de	start_char=22063|end_char=22065|ner=O
 25	vie	vie	NOUN	vie	Gender=Fem|Number=Sing	23	nmod	vie	start_char=22066|end_char=22069|ner=O|SpaceAfter=No
 26	.	.	PUNCT	.	.	9	punct	.	start_char=22069|end_char=22070|ner=O
+
+# text = Afin d’initier le projet, un premier colloque est organisé en juin 2018 par le CRPM, l’Université de Potsdam et la National Law University/ Delhi au sujet de « The end of life legislation in France, Germany, the United Kingdom and Italy »
+# sent_id = 203
 1	Afin	afin	ADV	Afin	Afin	11	advmod	Afin	start_char=22071|end_char=22075|ner=O
 2	d’	de	ADP	d’	d’	3	mark	d’	start_char=22076|end_char=22078|ner=O|SpaceAfter=No
 3	initier	initier	VERB	initier	VerbForm=Inf	1	xcomp	initier	start_char=22078|end_char=22085|ner=O
@@ -4039,6 +4650,9 @@
 48	and	and	X	and	Foreign=Yes	35	flat:foreign	and	start_char=22299|end_char=22302|ner=I-ORG
 49	Italy	Italy	X	Italy	Foreign=Yes	35	flat:foreign	Italy	start_char=22303|end_char=22308|ner=E-ORG
 50	»	»	PUNCT	»	»	35	punct	»	start_char=22309|end_char=22310|ner=O|SpacesAfter=\n\n
+
+# text = Le projet d’une revue internationale, consacrée aux études culturelles sur la globalisation, est également en discussion avec les Presses Universitaires de Paris Nanterre.
+# sent_id = 204
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=22312|end_char=22314|ner=O
 2	projet	projet	NOUN	projet	Gender=Masc|Number=Sing	20	nsubj	projet	start_char=22315|end_char=22321|ner=O
 3	d’	de	ADP	d’	d’	5	case	d’	start_char=22322|end_char=22324|ner=O|SpaceAfter=No
@@ -4068,6 +4682,9 @@
 26	Paris	Paris	PROPN	Paris	Paris	23	nmod	Paris	start_char=22468|end_char=22473|ner=I-ORG
 27	Nanterre	Nanterre	PROPN	Nanterre	Nanterre	26	flat:name	Nanterre	start_char=22474|end_char=22482|ner=E-ORG|SpaceAfter=No
 28	.	.	PUNCT	.	.	20	punct	.	start_char=22482|end_char=22483|ner=O
+
+# text = La revue s’ajouterait aux deux collections existantes dirigées par les membres du CRPM aux éditions Peter Lang (« Cultures politiques et juridiques », dirigée par Stephanie Rohlfing-Dijoux et Otmar Seul ;
+# sent_id = 205
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=22484|end_char=22486|ner=O
 2	revue	revue	NOUN	revue	Gender=Fem|Number=Sing	4	nsubj:pass	revue	start_char=22487|end_char=22492|ner=O
 3	s’	soi	PRON	s’	Person=3|PronType=Prs|Reflex=Yes	4	expl:pass	s’	start_char=22493|end_char=22495|ner=O|SpaceAfter=No
@@ -4108,6 +4725,9 @@
 35	Otmar	Otmar	PROPN	Otmar	Otmar	32	conj	Otmar	start_char=22676|end_char=22681|ner=B-PER
 36	Seul	seul	ADJ	Seul	Gender=Masc|Number=Sing	35	amod	Seul	start_char=22682|end_char=22686|ner=E-PER
 37	;	;	PUNCT	;	;	4	punct	;	start_char=22687|end_char=22688|ner=O
+
+# text = « Travaux interdisciplinaires et plurilingues », dirigée par Brigitte Krulic), ainsi qu’à la collection « Allemand juridique / Langues et cultures juridiques et politiques européennes », dirigé par Otmar Seul chez les Presses Universitaires de Paris Nanterre, pour renforcer l’institutionnalisation, la visibilité et la circulation des recherches menées par l’équipe.
+# sent_id = 206
 1	«	«	PUNCT	«	«	2	punct	«	start_char=22689|end_char=22690|ner=O
 2	Travaux	travail	NOUN	Travaux	Gender=Masc|Number=Plur	0	root	Travaux	start_char=22691|end_char=22698|ner=O
 3	interdisciplinaires	interdisciplinaire	ADJ	interdisciplinaires	Gender=Masc|Number=Plur	2	amod	interdisciplinaires	start_char=22699|end_char=22718|ner=O
@@ -4170,6 +4790,9 @@
 59	l’	le	DET	l’	Definite=Def|Number=Sing|PronType=Art	60	det	l’	start_char=23047|end_char=23049|ner=O|SpaceAfter=No
 60	équipe	équipe	NOUN	équipe	Gender=Fem|Number=Sing	57	obl:agent	équipe	start_char=23049|end_char=23055|ner=O|SpaceAfter=No
 61	.	.	PUNCT	.	.	2	punct	.	start_char=23055|end_char=23056|ner=O|SpacesAfter=\n\n
+
+# text = Projets en cours et à venir :
+# sent_id = 207
 1	Projets	projet	NOUN	Projets	Gender=Masc|Number=Plur	0	root	Projets	start_char=23058|end_char=23065|ner=O
 2	en	en	ADP	en	en	3	case	en	start_char=23066|end_char=23068|ner=O
 3	cours	cours	NOUN	cours	Gender=Masc|Number=Sing	1	nmod	cours	start_char=23069|end_char=23074|ner=O
@@ -4177,6 +4800,9 @@
 5	à	à	ADP	à	à	6	mark	à	start_char=23078|end_char=23079|ner=O
 6	venir	venir	VERB	venir	VerbForm=Inf	3	conj	venir	start_char=23080|end_char=23085|ner=O
 7	:	:	PUNCT	:	:	1	punct	:	start_char=23086|end_char=23087|ner=O|SpacesAfter=\n\n
+
+# text = Axe / Langues, droit et textes
+# sent_id = 208
 1	Axe	Axe	NOUN	Axe	Gender=Masc|Number=Sing	0	root	Axe	start_char=23089|end_char=23092|ner=O
 2	/	/	SYM	/	ExtPos=CCONJ	3	cc	/	start_char=23093|end_char=23094|ner=O
 3	Langues	langue	NOUN	Langues	Gender=Fem|Number=Plur	1	conj	Langues	start_char=23095|end_char=23102|ner=S-MISC|SpaceAfter=No
@@ -4184,6 +4810,9 @@
 5	droit	droit	NOUN	droit	Gender=Masc|Number=Sing	1	conj	droit	start_char=23104|end_char=23109|ner=O
 6	et	et	CCONJ	et	et	7	cc	et	start_char=23110|end_char=23112|ner=O
 7	textes	texte	NOUN	textes	Gender=Masc|Number=Plur	1	conj	textes	start_char=23113|end_char=23119|ner=O|SpacesAfter=\n\n
+
+# text = • Colloque international Droit et Culture : Regards croisés pluridisciplinaires sur la fin de vie / Recht und Kultur : Interdisziplinäre Betrachtung der Sterbebegleitung, organisé en collaboration avec l’Université de Postdam, L’Université Franco-allemande, l’Université NLU Delhi, 25 – 27 juin 2018, Villa Finaly, Firenze, Italie.
+# sent_id = 209
 1	•	•	PUNCT	•	•	2	punct	•	start_char=23121|end_char=23122|ner=O|SpacesAfter=\t
 2	Colloque	colloque	NOUN	Colloque	Gender=Masc|Number=Sing	0	root	Colloque	start_char=23123|end_char=23131|ner=B-MISC
 3	international	international	ADJ	international	Gender=Masc|Number=Sing	2	amod	international	start_char=23132|end_char=23145|ner=I-MISC
@@ -4240,6 +4869,9 @@
 54	,	,	PUNCT	,	,	55	punct	,	start_char=23443|end_char=23444|ner=O
 55	Italie	Italie	PROPN	Italie	Italie	8	conj	Italie	start_char=23445|end_char=23451|ner=S-LOC|SpaceAfter=No
 56	.	.	PUNCT	.	.	2	punct	.	start_char=23451|end_char=23452|ner=O|SpacesAfter=\n\n
+
+# text = Axe / Traduction, médias et humanités numériques
+# sent_id = 210
 1	Axe	Axe	NOUN	Axe	Gender=Masc|Number=Sing	0	root	Axe	start_char=23454|end_char=23457|ner=O
 2	/	/	SYM	/	ExtPos=CCONJ	3	cc	/	start_char=23458|end_char=23459|ner=O
 3	Traduction	traduction	NOUN	Traduction	Gender=Fem|Number=Sing	1	conj	Traduction	start_char=23460|end_char=23470|ner=O|SpaceAfter=No
@@ -4248,6 +4880,9 @@
 6	et	et	CCONJ	et	et	7	cc	et	start_char=23479|end_char=23481|ner=O
 7	humanités	humanité	NOUN	humanités	Gender=Fem|Number=Plur	1	conj	humanités	start_char=23482|end_char=23491|ner=O
 8	numériques	numérique	ADJ	numériques	Gender=Fem|Number=Plur	7	amod	numériques	start_char=23492|end_char=23502|ner=O|SpacesAfter=\s\n\n
+
+# text = • « Assises de la recherche en cultures populaires et médiatiques.
+# sent_id = 211
 1	•	•	PUNCT	•	•	3	punct	•	start_char=23505|end_char=23506|ner=O|SpacesAfter=\t
 2	«	«	PUNCT	«	«	3	punct	«	start_char=23507|end_char=23508|ner=O
 3	Assises	assises	NOUN	Assises	Gender=Fem|Number=Plur	0	root	Assises	start_char=23509|end_char=23516|ner=O
@@ -4260,6 +4895,9 @@
 10	et	et	CCONJ	et	et	11	cc	et	start_char=23556|end_char=23558|ner=O
 11	médiatiques	médiatique	ADJ	médiatiques	Gender=Fem|Number=Plur	9	conj	médiatiques	start_char=23559|end_char=23570|ner=O|SpaceAfter=No
 12	.	.	PUNCT	.	.	3	punct	.	start_char=23570|end_char=23571|ner=O
+
+# text = Approches critiques des fictions médiatiques : enjeux, outils, méthodes », Paris 11-13 octobre 2018, projet porté par : Paris 13, EXPERICE - labex ICCA, LPCM, UCL LLN – GIRCAM, Paris 3, CERC, EHESS, EHIC, Univ. Limoges, Univ.
+# sent_id = 212
 1	Approches	approche	NOUN	Approches	Gender=Fem|Number=Plur	0	root	Approches	start_char=23572|end_char=23581|ner=O
 2	critiques	critique	ADJ	critiques	Gender=Fem|Number=Plur	1	amod	critiques	start_char=23582|end_char=23591|ner=O
 3-4	des	des	des	des	des	des	des	des	start_char=23592|end_char=23595|ner=O
@@ -4313,6 +4951,9 @@
 50	,	,	PUNCT	,	,	51	punct	,	start_char=23790|end_char=23791|ner=O
 51	Univ	Univ	PROPN	Univ	Univ	1	conj	Univ	start_char=23792|end_char=23796|ner=S-ORG|SpaceAfter=No
 52	.	.	PUNCT	.	.	1	punct	.	start_char=23796|end_char=23797|ner=O
+
+# text = Le Mans 3-LAM, Queen’s University, Belfast.
+# sent_id = 213
 1	Le	le	DET	Le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	Le	start_char=23798|end_char=23800|ner=B-MISC
 2	Mans	Mans	PROPN	Mans	Gender=Masc|Number=Sing	0	root	Mans	start_char=23801|end_char=23805|ner=I-MISC
 3	3-LAM	3-LAM	PROPN	3-LAM	3-LAM	2	flat:name	3-LAM	start_char=23806|end_char=23811|ner=E-MISC|SpaceAfter=No
@@ -4322,6 +4963,9 @@
 7	,	,	PUNCT	,	,	8	punct	,	start_char=23831|end_char=23832|ner=O
 8	Belfast	Belfast	PROPN	Belfast	Belfast	2	nmod	Belfast	start_char=23833|end_char=23840|ner=S-LOC|SpaceAfter=No
 9	.	.	PUNCT	.	.	2	punct	.	start_char=23840|end_char=23841|ner=O|SpacesAfter=\n\n
+
+# text = • Colloque international « Space in translation », Modena, Università di Modena et Reggio Emilia, mai 2019.
+# sent_id = 214
 1	•	•	PUNCT	•	•	2	punct	•	start_char=23843|end_char=23844|ner=O|SpacesAfter=\t
 2	Colloque	colloque	NOUN	Colloque	Gender=Masc|Number=Sing	0	root	Colloque	start_char=23845|end_char=23853|ner=B-MISC
 3	international	international	ADJ	international	Gender=Masc|Number=Sing	2	amod	international	start_char=23854|end_char=23867|ner=I-MISC
@@ -4343,6 +4987,9 @@
 19	mai	mai	NOUN	mai	Gender=Masc|Number=Sing	16	nmod	mai	start_char=23941|end_char=23944|ner=O
 20	2019	2019	NUM	2019	Number=Plur	19	nmod	2019	start_char=23945|end_char=23949|ner=O|SpaceAfter=No
 21	.	.	PUNCT	.	.	2	punct	.	start_char=23949|end_char=23950|ner=O
+
+# text = Colloque organisé dans le cadre du projet international « Les voix de la traduction », porté par le CRPM, le DIT (Dipartimento di Interpretazione e Traduzione, Università di Bologna) et le Dipartimento di Studi linguistici e culturali, Università di Modena e Reggio Emilia.
+# sent_id = 215
 1	Colloque	colloque	NOUN	Colloque	Gender=Masc|Number=Sing	0	root	Colloque	start_char=23951|end_char=23959|ner=S-MISC
 2	organisé	organiser	VERB	organisé	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	organisé	start_char=23960|end_char=23968|ner=O
 3	dans	dans	ADP	dans	dans	5	case	dans	start_char=23969|end_char=23973|ner=O
@@ -4395,6 +5042,9 @@
 49	Reggio	Reggio	X	Reggio	Foreign=Yes	45	flat:foreign	Reggio	start_char=24210|end_char=24216|ner=I-ORG
 50	Emilia	Emilia	X	Emilia	Foreign=Yes	45	flat:foreign	Emilia	start_char=24217|end_char=24223|ner=E-ORG|SpaceAfter=No
 51	.	.	PUNCT	.	.	1	punct	.	start_char=24223|end_char=24224|ner=O|SpacesAfter=\n\n
+
+# text = • Colloque international « La sérialité d’auteur », Nanterre, octobre 2019 dans le cadre du projet international « Narrations en images », porté par le CRPM, l’Università di Bologna (FICLIT) et l’Accademia delle Belli Arti di Bologna .
+# sent_id = 216
 1	•	•	PUNCT	•	•	2	punct	•	start_char=24226|end_char=24227|ner=O|SpacesAfter=\t
 2	Colloque	colloque	NOUN	Colloque	Gender=Masc|Number=Sing	0	root	Colloque	start_char=24228|end_char=24236|ner=B-MISC
 3	international	international	ADJ	international	Gender=Masc|Number=Sing	2	amod	international	start_char=24237|end_char=24250|ner=I-MISC
@@ -4444,6 +5094,9 @@
 46	di	di	ADP	di	di	42	flat:name	di	start_char=24449|end_char=24451|ner=I-ORG
 47	Bologna	Bologna	PROPN	Bologna	Bologna	42	flat:name	Bologna	start_char=24452|end_char=24459|ner=E-ORG
 48	.	.	PUNCT	.	.	2	punct	.	start_char=24460|end_char=24461|ner=O|SpacesAfter=\n\n
+
+# text = • Projet international déposé DHIS-FICLIT « Digital Humanities », en attente de financement avec Université de Bologna, Universität zu Köln, Consortium BCPS (Indiana University, University of Pennsylvania, University of Winsconsin, Madison, University of Chicago, University of Illinois, University of North Carolina, University of Minnesota – Twin Cities).
+# sent_id = 217
 1	•	•	PUNCT	•	•	2	punct	•	start_char=24463|end_char=24464|ner=O|SpacesAfter=\t
 2	Projet	projet	NOUN	Projet	Gender=Masc|Number=Sing	0	root	Projet	start_char=24465|end_char=24471|ner=B-ORG
 3	international	international	ADJ	international	Gender=Masc|Number=Sing	2	amod	international	start_char=24472|end_char=24485|ner=E-ORG
@@ -4504,11 +5157,17 @@
 58	Cities	Cities	X	Cities	Foreign=Yes	57	flat:foreign	Cities	start_char=24812|end_char=24818|ner=E-ORG|SpaceAfter=No
 59	)	)	PUNCT	)	)	48	punct	)	start_char=24818|end_char=24819|ner=O|SpaceAfter=No
 60	.	.	PUNCT	.	.	2	punct	.	start_char=24819|end_char=24820|ner=O|SpacesAfter=\n\n
+
+# text = Axe / Espaces et mondialisation
+# sent_id = 218
 1	Axe	Axe	NOUN	Axe	Gender=Masc|Number=Sing	0	root	Axe	start_char=24822|end_char=24825|ner=O
 2	/	/	SYM	/	ExtPos=CCONJ	3	cc	/	start_char=24826|end_char=24827|ner=O
 3	Espaces	espace	NOUN	Espaces	Gender=Masc|Number=Plur	1	conj	Espaces	start_char=24828|end_char=24835|ner=O
 4	et	et	CCONJ	et	et	5	cc	et	start_char=24836|end_char=24838|ner=O
 5	mondialisation	mondialisation	NOUN	mondialisation	Gender=Fem|Number=Sing	1	conj	mondialisation	start_char=24839|end_char=24853|ner=O|SpacesAfter=\n\n
+
+# text = • Journée d’étude « Guerre des modèles et circulation des savoirs et des savoir-faire Est-Ouest », octobre 2018.
+# sent_id = 219
 1	•	•	PUNCT	•	•	2	punct	•	start_char=24855|end_char=24856|ner=O|SpacesAfter=\t\s
 2	Journée	journée	NOUN	Journée	Gender=Fem|Number=Sing	0	root	Journée	start_char=24858|end_char=24865|ner=B-MISC
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=24866|end_char=24868|ner=I-MISC|SpaceAfter=No
@@ -4536,6 +5195,9 @@
 22	octobre	octobre	NOUN	octobre	Gender=Masc|Number=Sing	2	nmod	octobre	start_char=24955|end_char=24962|ner=O
 23	2018	2018	NUM	2018	Number=Plur	22	nmod	2018	start_char=24963|end_char=24967|ner=O|SpaceAfter=No
 24	.	.	PUNCT	.	.	2	punct	.	start_char=24967|end_char=24968|ner=O|SpacesAfter=\s\n\n
+
+# text = • Journée d’étude et marche géo-littéraire « WALKIN’ NAVILE », avec le collectif WU MING, en collaboration avec l’Université de Bologne (FICLIT) et l’Accademia di Belle Arti de Bologna, 7 mai 2018.
+# sent_id = 220
 1	•	•	PUNCT	•	•	2	punct	•	start_char=24971|end_char=24972|ner=O|SpacesAfter=\t
 2	Journée	journée	NOUN	Journée	Gender=Fem|Number=Sing	0	root	Journée	start_char=24973|end_char=24980|ner=B-MISC
 3	d’	de	ADP	d’	d’	4	case	d’	start_char=24981|end_char=24983|ner=I-MISC|SpaceAfter=No
@@ -4577,7 +5239,13 @@
 39	mai	mai	NOUN	mai	Gender=Masc|Number=Sing	38	nmod	mai	start_char=25159|end_char=25162|ner=O
 40	2018	2018	NUM	2018	Number=Plur	39	nmod	2018	start_char=25163|end_char=25167|ner=O|SpaceAfter=No
 41	.	.	PUNCT	.	.	2	punct	.	start_char=25167|end_char=25168|ner=O|SpacesAfter=\n\n
+
+# text = •
+# sent_id = 221
 1	•	•	PUNCT	•	•	0	root	•	start_char=25170|end_char=25171|ner=O|SpacesAfter=\t
+
+# text = Journée d’étude « Les migrations entre mémoire et patrimoine.
+# sent_id = 222
 1	Journée	journée	NOUN	Journée	Gender=Fem|Number=Sing	0	root	Journée	start_char=25172|end_char=25179|ner=O
 2	d’	de	ADP	d’	d’	3	case	d’	start_char=25180|end_char=25182|ner=O|SpaceAfter=No
 3	étude	étude	NOUN	étude	Gender=Fem|Number=Sing	1	nmod	étude	start_char=25182|end_char=25187|ner=O
@@ -4589,6 +5257,9 @@
 9	et	et	CCONJ	et	et	10	cc	et	start_char=25219|end_char=25221|ner=O
 10	patrimoine	patrimoine	NOUN	patrimoine	Gender=Masc|Number=Sing	8	conj	patrimoine	start_char=25222|end_char=25232|ner=O|SpaceAfter=No
 11	.	.	PUNCT	.	.	1	punct	.	start_char=25232|end_char=25233|ner=O
+
+# text = Enjeux, réappropriations, résistances », organisée en collaboration avec l’École Normale Supérieure, 18 mai 2018.
+# sent_id = 223
 1	Enjeux	enjeu	NOUN	Enjeux	Gender=Masc|Number=Plur	0	root	Enjeux	start_char=25234|end_char=25240|ner=O|SpaceAfter=No
 2	,	,	PUNCT	,	,	3	punct	,	start_char=25240|end_char=25241|ner=O
 3	réappropriations	réappropriation	NOUN	réappropriations	Gender=Fem|Number=Plur	1	conj	réappropriations	start_char=25242|end_char=25258|ner=O|SpaceAfter=No
@@ -4609,6 +5280,9 @@
 18	mai	mai	NOUN	mai	Gender=Masc|Number=Sing	17	nmod	mai	start_char=25338|end_char=25341|ner=O
 19	2018	2018	NUM	2018	Number=Plur	18	nmod	2018	start_char=25342|end_char=25346|ner=O|SpaceAfter=No
 20	.	.	PUNCT	.	.	1	punct	.	start_char=25346|end_char=25347|ner=O|SpacesAfter=\n\n
+
+# text = • Mise en œuvre (2020) du Master Alter-Management et coopération internationale (soirée de lancement en collaboration avec la Fondation de Nanterre et la Ville de Nanterre prévue pour octobre 2019).
+# sent_id = 224
 1	•	•	PUNCT	•	•	2	punct	•	start_char=25349|end_char=25350|ner=O|SpacesAfter=\t
 2	Mise	mise	NOUN	Mise	Gender=Fem|Number=Sing	0	root	Mise	start_char=25351|end_char=25355|ner=O
 3	en	en	ADP	en	en	4	case	en	start_char=25356|end_char=25358|ner=O
@@ -4646,6 +5320,9 @@
 34	2019	2019	NUM	2019	Number=Plur	33	nmod	2019	start_char=25541|end_char=25545|ner=O|SpaceAfter=No
 35	)	)	PUNCT	)	)	16	punct	)	start_char=25545|end_char=25546|ner=O|SpaceAfter=No
 36	.	.	PUNCT	.	.	2	punct	.	start_char=25546|end_char=25547|ner=O|SpacesAfter=\n\n
+
+# text = • Poursuite de la coopération avec le Centre de Recherches et d’Analyses Géopolitiques (CRAG) de l’Université de Paris 8 dans le domaine des études russes et post-soviétiques avec plusieurs projets de recherche et d’édition en commun.
+# sent_id = 225
 1	•	•	PUNCT	•	•	2	punct	•	start_char=25549|end_char=25550|ner=O|SpacesAfter=\t
 2	Poursuite	poursuite	NOUN	Poursuite	Gender=Fem|Number=Sing	0	root	Poursuite	start_char=25551|end_char=25560|ner=O
 3	de	de	ADP	de	de	5	case	de	start_char=25561|end_char=25563|ner=O
@@ -4690,6 +5367,9 @@
 41	en	en	ADP	en	ExtPos=ADV	35	advmod	en	start_char=25773|end_char=25775|ner=O
 42	commun	commun	NOUN	commun	Gender=Masc|Number=Sing	41	fixed	commun	start_char=25776|end_char=25782|ner=O|SpaceAfter=No
 43	.	.	PUNCT	.	.	2	punct	.	start_char=25782|end_char=25783|ner=O|SpacesAfter=\s\n\n
+
+# text = • Projet d’un cycle de journée d’étude ou d’un colloque consacré aux processus de globalisation du jazz autour de la question de la constitution de communautés de professionnels et d’amateurs de jazz et de la circulation de informations et de la musique entre ces communautés de par le monde.
+# sent_id = 226
 1	•	•	PUNCT	•	•	2	punct	•	start_char=25786|end_char=25787|ner=O|SpacesAfter=\t
 2	Projet	projet	NOUN	Projet	Gender=Masc|Number=Sing	0	root	Projet	start_char=25788|end_char=25794|ner=O
 3	d’	de	ADP	d’	d’	5	case	d’	start_char=25795|end_char=25797|ner=O|SpaceAfter=No
@@ -4748,6 +5428,9 @@
 54	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	55	det	le	start_char=26069|end_char=26071|ner=O
 55	monde	monde	NOUN	monde	Gender=Masc|Number=Sing	51	nmod	monde	start_char=26072|end_char=26077|ner=O|SpaceAfter=No
 56	.	.	PUNCT	.	.	2	punct	.	start_char=26077|end_char=26078|ner=O
+
+# text = Il s’agira d’étudier autant les modes de constitution de ces communautés que le mode d’échanges entre elles.
+# sent_id = 227
 1	Il	lui	PRON	Il	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	Il	start_char=26079|end_char=26081|ner=O
 2	s’	soi	PRON	s’	Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	s’	start_char=26082|end_char=26084|ner=O|SpaceAfter=No
 3	agira	agir	VERB	agira	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	agira	start_char=26084|end_char=26089|ner=O
@@ -4769,6 +5452,9 @@
 19	entre	entre	ADP	entre	entre	20	case	entre	start_char=26175|end_char=26180|ner=O
 20	elles	eux	PRON	elles	Emph=Yes|Gender=Fem|Number=Plur|Person=3|PronType=Prs	16	nmod	elles	start_char=26181|end_char=26186|ner=O|SpaceAfter=No
 21	.	.	PUNCT	.	.	3	punct	.	start_char=26186|end_char=26187|ner=O
+
+# text = Ce projet s’inscrit dans le cadre de l’ANR 2018.
+# sent_id = 228
 1	Ce	ce	DET	Ce	Gender=Masc|Number=Sing|PronType=Dem	2	det	Ce	start_char=26188|end_char=26190|ner=O
 2	projet	projet	NOUN	projet	Gender=Masc|Number=Sing	4	nsubj:pass	projet	start_char=26191|end_char=26197|ner=O
 3	s’	soi	PRON	s’	Person=3|PronType=Prs|Reflex=Yes	4	expl:pass	s’	start_char=26198|end_char=26200|ner=O|SpaceAfter=No
@@ -4781,6 +5467,9 @@
 10	ANR	ANR	PROPN	ANR	Number=Sing	7	nmod	ANR	start_char=26227|end_char=26230|ner=B-ORG
 11	2018	2018	NUM	2018	Number=Plur	10	nmod	2018	start_char=26231|end_char=26235|ner=E-ORG|SpaceAfter=No
 12	.	.	PUNCT	.	.	4	punct	.	start_char=26235|end_char=26236|ner=O|SpacesAfter=\n\n
+
+# text = • Projet « politiques d’influence et iconographies nationales en Europe », plusieurs Journées d’études possibles + projet de colloque en 2018.
+# sent_id = 229
 1	•	•	PUNCT	•	•	2	punct	•	start_char=26238|end_char=26239|ner=O|SpacesAfter=\t
 2	Projet	projet	NOUN	Projet	Gender=Masc|Number=Sing	0	root	Projet	start_char=26240|end_char=26246|ner=O
 3	«	«	PUNCT	«	«	4	punct	«	start_char=26247|end_char=26248|ner=O
@@ -4806,14 +5495,26 @@
 23	en	en	ADP	en	en	24	case	en	start_char=26372|end_char=26374|ner=O
 24	2018	2018	NUM	2018	Number=Plur	15	nmod	2018	start_char=26375|end_char=26379|ner=O|SpaceAfter=No
 25	.	.	PUNCT	.	.	2	punct	.	start_char=26379|end_char=26380|ner=O|SpacesAfter=\n\n
+
+# text = ANNEXES
+# sent_id = 230
 1	ANNEXES	annexe	NOUN	ANNEXES	Gender=Fem|Number=Plur	0	root	ANNEXES	start_char=26382|end_char=26389|ner=S-ORG|SpacesAfter=\n\n
+
+# text = Annexe 1 :
+# sent_id = 231
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=26391|end_char=26397|ner=B-MISC
 2	1	1	NUM	1	NumType=Card	1	nmod	1	start_char=26398|end_char=26399|ner=E-MISC
 3	:	:	PUNCT	:	:	1	punct	:	start_char=26400|end_char=26401|ner=O|SpacesAfter=\t
+
+# text = Lettre de mission contractuelle
+# sent_id = 232
 1	Lettre	lettre	NOUN	Lettre	Gender=Fem|Number=Sing	0	root	Lettre	start_char=26402|end_char=26408|ner=O
 2	de	de	ADP	de	de	3	case	de	start_char=26409|end_char=26411|ner=O
 3	mission	mission	NOUN	mission	Gender=Fem|Number=Sing	1	nmod	mission	start_char=26412|end_char=26419|ner=O
 4	contractuelle	contractuel	ADJ	contractuelle	Gender=Fem|Number=Sing	3	amod	contractuelle	start_char=26420|end_char=26433|ner=O|SpacesAfter=\n\n
+
+# text = La lettre de mission contractuelle sea jointe au dossier
+# sent_id = 233
 1	La	le	DET	La	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	La	start_char=26435|end_char=26437|ner=O
 2	lettre	lettre	NOUN	lettre	Gender=Fem|Number=Sing	0	root	lettre	start_char=26438|end_char=26444|ner=O
 3	de	de	ADP	de	de	4	case	de	start_char=26445|end_char=26447|ner=O
@@ -4825,24 +5526,39 @@
 8	à	à	ADP	à	à	10	case	à	à
 9	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	le	le
 10	dossier	dossier	NOUN	dossier	Gender=Masc|Number=Sing	7	obl:arg	dossier	start_char=26484|end_char=26491|ner=O|SpacesAfter=\n\n
+
+# text = Annexe 2 : Équipements, plateformes
+# sent_id = 234
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=26493|end_char=26499|ner=B-MISC
 2	2	2	NUM	2	NumType=Card	1	nmod	2	start_char=26500|end_char=26501|ner=I-MISC
 3	:	:	PUNCT	:	:	4	punct	:	start_char=26502|end_char=26503|ner=I-MISC|SpacesAfter=\t
 4	Équipements	équipement	NOUN	Équipements	Gender=Masc|Number=Plur	1	nmod	Équipements	start_char=26504|end_char=26515|ner=I-MISC|SpaceAfter=No
 5	,	,	PUNCT	,	,	6	punct	,	start_char=26515|end_char=26516|ner=I-MISC
 6	plateformes	plateforme	NOUN	plateformes	Gender=Fem|Number=Plur	4	conj	plateformes	start_char=26517|end_char=26528|ner=E-MISC|SpacesAfter=\n\n
+
+# text = Néant
+# sent_id = 235
 1	Néant	néant	NOUN	Néant	Gender=Masc|Number=Sing	0	root	Néant	start_char=26530|end_char=26535|ner=O|SpacesAfter=\n\n
+
+# text = Annexe 3 : Organigramme fonctionnel
+# sent_id = 236
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=26537|end_char=26543|ner=B-MISC
 2	3	3	NUM	3	NumType=Card	1	nmod	3	start_char=26544|end_char=26545|ner=I-MISC
 3	:	:	PUNCT	:	:	4	punct	:	start_char=26546|end_char=26547|ner=I-MISC|SpacesAfter=\t
 4	Organigramme	organigramme	NOUN	Organigramme	Gender=Masc|Number=Sing	1	appos	Organigramme	start_char=26548|end_char=26560|ner=I-MISC
 5	fonctionnel	fonctionnel	ADJ	fonctionnel	Gender=Masc|Number=Sing	4	amod	fonctionnel	start_char=26561|end_char=26572|ner=E-MISC|SpacesAfter=\n\n
+
+# text = Annexe jointe au dossier
+# sent_id = 237
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=26574|end_char=26580|ner=O
 2	jointe	joindre	VERB	jointe	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	jointe	start_char=26581|end_char=26587|ner=O
 3-4	au	au	au	au	au	au	au	au	start_char=26588|end_char=26590|ner=O
 3	à	à	ADP	à	à	5	case	à	à
 4	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	le	le
 5	dossier	dossier	NOUN	dossier	Gender=Masc|Number=Sing	2	obl:arg	dossier	start_char=26591|end_char=26598|ner=O|SpacesAfter=\n\n
+
+# text = Annexe 4 : Sélection des produits et des activités de recherche
+# sent_id = 238
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=26600|end_char=26606|ner=B-MISC
 2	4	4	NUM	4	NumType=Card	1	nmod	4	start_char=26607|end_char=26608|ner=E-MISC
 3	:	:	PUNCT	:	:	4	punct	:	start_char=26609|end_char=26610|ner=O|SpacesAfter=\t
@@ -4858,9 +5574,13 @@
 11	activités	activité	NOUN	activités	Gender=Fem|Number=Plur	7	conj	activités	start_char=26641|end_char=26650|ner=O
 12	de	de	ADP	de	de	13	case	de	start_char=26651|end_char=26653|ner=O
 13	recherche	recherche	NOUN	recherche	Gender=Fem|Number=Sing	11	nmod	recherche	start_char=26654|end_char=26663|ner=O|SpacesAfter=\n\n
+
+# text = Annexe jointe au dossier
+# sent_id = 239
 1	Annexe	annexe	NOUN	Annexe	Gender=Fem|Number=Sing	0	root	Annexe	start_char=26665|end_char=26671|ner=O
 2	jointe	joindre	VERB	jointe	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part|Voice=Pass	1	acl	jointe	start_char=26672|end_char=26678|ner=O
 3-4	au	au	au	au	au	au	au	au	start_char=26679|end_char=26681|ner=O
 3	à	à	ADP	à	à	5	case	à	à
 4	le	le	DET	le	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	le	le
 5	dossier	dossier	NOUN	dossier	Gender=Masc|Number=Sing	2	obl:arg	dossier	start_char=26682|end_char=26689|ner=O|SpacesAfter=\n\n
+

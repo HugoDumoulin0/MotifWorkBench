@@ -7,8 +7,8 @@ Created on Mon Feb 24 19:10:29 2025
 """
 
 from collections import Counter
-from grewpy import Corpus, Request
-import grew
+# from grewpy import Corpus, Request
+# import grew
 import re
 import os
 import pandas as pd
@@ -79,19 +79,19 @@ def dump_vocab_specific(index_specificities_filtered):
         df = pd.DataFrame.from_dict(index_specificities_filtered, orient="index", columns=["lemma", "indice"])
         df.to_csv(file_out.replace("pk", "tsv"), sep="\t", encoding="utf-8")
 
-def association_req_vocab_specific(req, index_filtered, cible, T):
-    treebank_path=f"./Data/Textes_tagged_stanza/{cible}/{cible}.conllu"
-    index_req = grew.index(treebank_path, req, "lemma")
-    f = sum(index_filtered[cible].values())
-    k = 0
-    t = 0
-    for occ in index_req:
-        for lemme in occ:
-            if lemme in index_filtered[cible].keys():
-                k += 1
-            t += 1
-    indice_association, M = tools.indice_specificite(k, f, t, T)
-    return indice_association
+# def association_req_vocab_specific(req, index_filtered, cible, T):
+#     treebank_path=f"./Data/Textes_tagged_stanza/{cible}/{cible}.conllu"
+#     index_req = grew.index(treebank_path, req, "lemma")
+#     f = sum(index_filtered[cible].values())
+#     k = 0
+#     t = 0
+#     for occ in index_req:
+#         for lemme in occ:
+#             if lemme in index_filtered[cible].keys():
+#                 k += 1
+#             t += 1
+#     indice_association, M = tools.indice_specificite(k, f, t, T)
+#     return indice_association
 
 def read_req(motif):
     # Expression régulière pour diviser le trigramme en n'importe quel nombre de parties
