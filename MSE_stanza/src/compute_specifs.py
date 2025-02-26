@@ -155,7 +155,7 @@ def tsv_out(dict_synth, columns):
         file_out = "./Patterns_results/Specifs/{}_00_{}.pk".format(mins,
                                                                            fichier)
         tools.save_pickles_results(dict_synth[fichier], file_out)
-        df = pd.DataFrame.from_dict(dict_synth, orient="index", columns=columns)
+        df = pd.DataFrame.from_dict(dict_synth[fichier], orient="index", columns=columns)
         df_sort = df.sort_values(by="indice", ascending=False)
         df_sort.to_csv(file_out.replace("pk", "tsv"), sep="\t", encoding="utf-8")
         
