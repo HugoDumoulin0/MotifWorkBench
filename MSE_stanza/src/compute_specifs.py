@@ -10,9 +10,9 @@ import formate_patterns
 import pandas as pd
 import time
 import os
-import stats_vocab
 import tools
 import re
+# import stats_vocab
 
 def data_for_specifs(liste_fichiers):
     dictionnaire_specifs = {}
@@ -41,7 +41,11 @@ def compute_k_specifs(dictionnaire_specifs, liste_motifs):
             if motif in dictionnaire_specifs[fichier]["dict_clos"]:
                 k = dictionnaire_specifs[fichier]["dict_clos"][motif]
             else: #quand motif n'est pas clos dans fichier (n'est pas présent dans dictionnaire_specifs[fichier]["dict_clos"])
-                k=None 
+                k=None
+            # if motif in dictionnaire_specifs[fichier]["dict_frequents"]:
+            #     k = dictionnaire_specifs[fichier]["dict_frequents"][motif]
+            # else: 
+            #     k=0
             dictionnaire_k[fichier][motif] = k
     return dictionnaire_k
  
@@ -61,7 +65,7 @@ def compute_f_specifs(dictionnaire_specifs):
              dictionnaire_f[motif] = f
      return dictionnaire_f, liste_motifs
     
-def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste_motifs):
+def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste_motifs, shortcut_specifs):
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     dict_synth = {}
     for fichier in dictionnaire_k:
@@ -75,9 +79,18 @@ def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste
             f = dictionnaire_f[motif]
             t = dictionnaire_specifs[fichier]["t"]
             k = dictionnaire_k[fichier][motif]
+            # if k==None:
+            #     indice=None
+            #     M=None
+            # else:
             if k==None:
-                indice=None
-                M=None
+                if motif in dictionnaire_specifs[fichier]["dict_frequents"]:
+                    k = dictionnaire_specifs[fichier]["dict_frequents"][motif]
+                else:
+                    k=0
+            if shortcut_specifs==True:
+                indice = 0
+                M=0
             else:
                 indice = tools.indice_specificite(k,f,t,T)[0]
                 M = tools.indice_specificite(k,f,t,T)[1]
@@ -171,36 +184,49 @@ def all_synth_tsv_out(dict_synth, liste_motifs):
     return dict_out
     
 def df_mouture_R_dict_synth(dict_synth, liste_motifs):
-    dict_R_out = {}
+    dict_spec_out = {}
+    dict_AFC_out = {}
     mins="25"
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_fichier=[]
     for fichier in dict_synth:
         liste_fichier.append(fichier)
     for motif in liste_motifs:
-        dict_R_out[motif]=[formate_patterns.from_str_to_list(motif),
+        dict_spec_out[motif]=[formate_patterns.from_str_to_list(motif),
+                            formate_patterns.from_int_to_str(motif, lexic_int_str)]
+        dict_AFC_out[motif]=[formate_patterns.from_str_to_list(motif),
                             formate_patterns.from_int_to_str(motif, lexic_int_str)]
         for fichier in liste_fichier:
-            dict_R_out[motif] += dict_synth[fichier][motif][2:]
-    file_out = "./Patterns_results/Specifs/{}_R_df.pk".format(mins)
-    tools.save_pickles_results(dict_R_out, file_out)
+            dict_spec_out[motif] += dict_synth[fichier][motif][2:]
+            dict_AFC_out[motif] += [dict_synth[fichier][motif][2]]
+    file_out_spec = "./Patterns_results/Specifs/{}_specR_df.pk".format(mins)
+    file_out_AFC = "./Patterns_results/Specifs/{}_AFC_R_df.pk".format(mins)
+    tools.save_pickles_results(dict_spec_out, file_out_spec)
+    tools.save_pickles_results(dict_AFC_out, file_out_AFC)
     columns_base = ["motifs_int", "motifs_str"]
-    liste_columns=[]
+    liste_columns_spec=[]
+    liste_columns_AFC=[]
     for fichier in liste_fichier:
         items = ["k", "M", "f", "t", "T", "indice"]
+        liste_columns_AFC.append(f"{fichier}")
         for item in items:
-            liste_columns.append(f'{fichier}_{item}')
-    columns=columns_base+liste_columns
-    df = pd.DataFrame.from_dict(dict_R_out, orient="index", columns=columns)
-    df.to_csv(file_out.replace("pk", "tsv"), sep="\t", encoding="utf-8")              
+            liste_columns_spec.append(f'{fichier}_{item}')
+    columns_spec=columns_base+liste_columns_spec
+    columns_AFC=columns_base+liste_columns_AFC
+    df = pd.DataFrame.from_dict(dict_spec_out, orient="index", columns=columns_spec)
+    df = pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
+    df.to_csv(file_out_spec.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    df.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    return dict_spec_out, dict_AFC_out
 
-def main(liste_fichiers):
+def main(liste_fichiers, shortcut_specifs, shortcut_association):
     dictionnaire_specifs = data_for_specifs(liste_fichiers)
     T = compute_T_in_specifs(dictionnaire_specifs)
     dictionnaire_f, liste_motifs = compute_f_specifs(dictionnaire_specifs)
     dictionnaire_k = compute_k_specifs(dictionnaire_specifs, liste_motifs)
-    dict_synth, columns = fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste_motifs)
-    # dict_synth_add_association, columns = add_association_vocab(dict_synth, liste_fichiers, columns)
+    dict_synth, columns = fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste_motifs, shortcut_specifs)
+    if shortcut_association==False:
+        dict_synth_add_association, columns = add_association_vocab(dict_synth, liste_fichiers, columns)
     tsv_out(dict_synth, columns)
     all_synth_tsv_out(dict_synth, liste_motifs)
     df_mouture_R_dict_synth(dict_synth, liste_motifs)
@@ -208,6 +234,9 @@ def main(liste_fichiers):
     tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs/dictionnaire_f.pk")
     tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs/dictionnaire_k.pk")
 
-
-# liste_fichiers = ["MODYCO", "ISP"]
+# liste_fichiers = os.listdir("./Data/Textes_tagged_stanza")
+# if ".DS_Store" in liste_fichiers:
+#     liste_fichiers.remove(".DS_Store")
+# shortcut_specifs = True
+# shortcut_association = True
 # main(liste_fichiers)
