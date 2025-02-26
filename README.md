@@ -5,7 +5,7 @@
 MSE_ArchivU is part of the [ArchivU](https://archivu.hypotheses.org) project. The python script is based on scripts by Jade Mekki (2022).
 
 It aims at detecting reccurrent sequential patterns in textual data, comparing two or more subcorpora.
-Two methods are available: Mekki (2022)'s method for emergent sequential patterns (using Growth Rate), and Demoulin, Premat and Diwersy's method using specificities.
+Two methods are available: Mekki (2022)'s method for emergent sequential patterns (using Growth Rate), and Dumoulin, Premat and Diwersy's method using specificities.
 
 Tagging is privded by Stanza, and word pieces by CamamBERT.
 
