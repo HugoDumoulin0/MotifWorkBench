@@ -1,7 +1,7 @@
 # Ignore .tsv, .conllu, and .pk files
-#*.tsv
+*.tsv
 #*.conllu
-#*.pk
+*.pk
 dictionnaire_specifs.pk
 
 # Ignore common system files
