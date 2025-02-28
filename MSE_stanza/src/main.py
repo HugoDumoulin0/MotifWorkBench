@@ -28,6 +28,9 @@ if __name__ == "__main__":
     python = "python3.7"
     types_textes = sys.argv[1:]
 
+    #Set param for minimal number of itemsets in a pattern
+    nb_itemset_min = 3 #Tim, 27/02
+
     #-------------------------------------------------------------------------------------------------------------------
     # Annotation des données
     #-------------------------------------------------------------------------------------------------------------------
@@ -174,6 +177,7 @@ if __name__ == "__main__":
             set_up.write("THREAD={}\n".format(threads))
             set_up.write("GAPMIN={}\n".format(gap_min))
             set_up.write("GAPMAX={}\n".format(gap_max))
+            set_up.write("NB_ITEMSET_MIN={}\n".format(nb_itemset_min)) #Tim, 27/02
 
         os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
 
@@ -185,6 +189,7 @@ if __name__ == "__main__":
             set_up.write("THREAD=1\n")
             set_up.write("GAPMIN={}\n".format(0))
             set_up.write("GAPMAX={}\n".format(0))
+            set_up.write("NB_ITEMSET_MIN={}\n".format(nb_itemset_min)) #Tim, 27/02
 
         os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
 
