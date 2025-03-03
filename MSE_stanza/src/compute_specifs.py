@@ -108,8 +108,8 @@ def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste
             iteration_time = end_time_iter - start_time_iter
             remaining_motifs = total_motifs - motif_count
             estimated_time_remaining = iteration_time * remaining_motifs
-            print(f"Dans {fichier}, temps estimé restant pour {remaining_motifs} fichier(s) : {estimated_time_remaining/60:.2f} minutes")
-            columns = ["motifs_int","motifs_str", "k", "M", "f", "t", "T", "indice"] 
+            print(f"Dans {fichier}, temps estimé restant pour {remaining_motifs} motif(s) : {estimated_time_remaining/60:.2f} minutes")
+    columns = ["motifs_int","motifs_str", "k", "M", "f", "t", "T", "indice"] 
     return dict_synth, columns
 
 def add_association_vocab(dict_synth, liste_fichiers, columns):
@@ -239,4 +239,4 @@ def main(liste_fichiers, shortcut_specifs, shortcut_association):
 #     liste_fichiers.remove(".DS_Store")
 # shortcut_specifs = True
 # shortcut_association = True
-# main(liste_fichiers)
+# main(liste_fichiers, shortcut_specifs, shortcut_association)
