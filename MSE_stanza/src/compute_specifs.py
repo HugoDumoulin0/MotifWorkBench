@@ -213,10 +213,10 @@ def df_mouture_R_dict_synth(dict_synth, liste_motifs):
             liste_columns_spec.append(f'{fichier}_{item}')
     columns_spec=columns_base+liste_columns_spec
     columns_AFC=columns_base+liste_columns_AFC
-    df = pd.DataFrame.from_dict(dict_spec_out, orient="index", columns=columns_spec)
-    df = pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
-    df.to_csv(file_out_spec.replace("pk", "tsv"), sep="\t", encoding="utf-8")
-    df.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    df_spec = pd.DataFrame.from_dict(dict_spec_out, orient="index", columns=columns_spec)
+    df_AFC = pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
+    df_spec.to_csv(file_out_spec.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    df_AFC.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
     return dict_spec_out, dict_AFC_out
 
 def main(liste_fichiers, shortcut_specifs, shortcut_association):
