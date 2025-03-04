@@ -1,0 +1,70 @@
+	motifs_int	motifs_str	GR	freq_1	freq_2
+35	[{17, 18}, {24, 27}, {3}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	1133.0	0.2804455445544555	0
+42	[{17, 18, 730}, {24}, {3}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN}	1111.0	0.275	0
+27	[{728, 17, 18, 730}, {24}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN}	1110.0	0.2747524752475248	0
+16	[{3}, {17, 18}, {5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	1108.0	0.2742574257425743	0
+19	[{3, 5}, {18}, {5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	1107.0	0.27400990099009903	0
+12	[{18}, {24, 27}, {26, 3}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	1106.0	0.2737623762376238	0
+44	[{18}, {5}, {4}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Masc}	1089.0	0.26955445544554457	0
+2	[{5}, {3}, {18}]	{feats_Number=Sing} {pos_NOUN} {pos_ADP}	1085.0	0.2685643564356436	0
+4	[{5}, {3, 5}, {18}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP}	1084.0	0.26831683168316833	0
+7	[{18}, {5}, {4, 5}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Masc,feats_Number=Sing}	1078.0	0.26683168316831685	0
+21	[{17, 18}, {24, 25, 27, 23}, {3}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	1076.0	0.26633663366336635	0
+24	[{18}, {24, 25, 27, 23}, {26}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	1071.0	0.2650990099009901	0
+23	[{17, 18, 730}, {5}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {feats_Number=Sing}	1071.0	0.2650990099009901	0
+30	[{728, 17, 18, 730}, {5}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Number=Sing}	1070.0	0.26485148514851486	0
+9	[{17, 18}, {24, 5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	1064.0	0.2633663366336634	0
+67	[{4}, {18}, {5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	1059.0	0.26212871287128714	0
+28	[{728, 17, 18, 730}, {24, 25, 27, 23}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	1057.0	0.26163366336633664	0
+68	[{18}, {24, 5}, {26, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Fem}	1055.0	0.26113861386138615	0
+50	[{18}, {24, 27}, {3, 4}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	1054.0	0.2608910891089109	0
+11	[{3}, {18}, {5}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	1053.0	0.26064356435643565	0
+62	[{18}, {24, 25, 27, 23}, {4}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	1050.0	0.2599009900990099	0
+48	[{18}, {24, 25, 27, 23}, {26, 3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	1039.0	0.2571782178217822	0
+34	[{18}, {5}, {26, 3, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	1036.0	0.25643564356435644	0
+0	[{5}, {18}, {5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	1030.0	0.25495049504950495	0
+45	[{24, 5}, {5}, {18}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_ADP}	1028.0	0.25445544554455446	0
+36	[{5}, {18}, {24}]	{feats_Number=Sing} {pos_ADP} {pos_DET}	1027.0	0.2542079207920792	0
+15	[{24, 25, 27, 23}, {3}, {18}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	1024.0	0.25346534653465347	0
+14	[{17, 18}, {24, 27, 5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	1024.0	0.25346534653465347	0
+22	[{24}, {3}, {17, 18}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP}	1023.0	0.2532178217821782	0
+56	[{18}, {24, 5}, {26, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	1022.0	0.252970297029703	0
+18	[{17, 18}, {5}, {3}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN}	1021.0	0.2527227722772277	0
+59	[{17, 18}, {5}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	1020.0	0.2524752475247525	0
+33	[{5}, {5}, {17, 18}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP}	1019.0	0.25222772277227723	0
+25	[{18}, {4}, {4}]	{pos_ADP} {feats_Gender=Masc} {feats_Gender=Masc}	1018.0	0.251980198019802	0
+39	[{18}, {4}, {5}]	{pos_ADP} {feats_Gender=Masc} {feats_Number=Sing}	1016.0	0.2514851485148515	0
+43	[{18}, {4, 5}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {feats_Number=Sing}	1014.0	0.250990099009901	0
+17	[{24, 5}, {3}, {18}]	{feats_Number=Sing,pos_DET} {pos_NOUN} {pos_ADP}	1011.0	0.25024752475247525	0
+20	[{24, 5}, {3, 5}, {18}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {pos_ADP}	1010.0	0.25	0
+37	[{3}, {18}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing}	1.1693465972849262	1404.0	1897
+29	[{5}, {18}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	1.123854920525685	1269.0	1784
+60	[{18}, {5, 23, 24, 25, 27}, {3}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	1.1182491439492475	1320.0	1865
+46	[{18}, {5, 23, 24, 25, 27}, {3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	1.118001450091361	1319.0	1864
+38	[{18}, {24, 27, 5}, {3}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	1.1146987412309068	1404.0	1990
+3	[{18}, {24, 27, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	1.1144648288358248	1403.0	1989
+41	[{17, 18}, {5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	1.1110920295569378	1192.0	1695
+8	[{17, 18}, {24}, {3}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN}	1.1078351104341204	1185.0	1690
+32	[{18}, {24, 25, 27, 23}, {3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	1.0980801961896745	1504.0	2164
+51	[{18}, {5, 23, 24, 25, 27}, {5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	1.097787868386448	1423.0	2048
+55	[{18}, {24, 5}, {3}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN}	1.0973556736648806	1453.0	2092
+10	[{18}, {24, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	1.0966004392026198	1452.0	2092
+47	[{18}, {24, 27, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	1.096543623399037	1513.0	2180
+64	[{18}, {5}, {3}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN}	1.093868277779054	1492.0	2155
+53	[{18}, {5}, {3, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	1.093416738329662	1490.0	2153
+13	[{18}, {24}, {26, 3}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem}	1.0932314171715678	1159.0	1675
+58	[{18}, {5}, {5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	1.0920922897533198	1661.0	2403
+65	[{18}, {24, 27}, {3}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	1.089978988043351	1575.0	2283
+61	[{18}, {5}, {26, 5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Fem}	1.0894208557414224	1126.0	1633
+1	[{18}, {5}, {26}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	1.087724012169085	1127.0	1637
+63	[{18}, {24, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	1.0801065692352474	1558.0	2279
+66	[{18}, {24, 27}, {26}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	1.0707411397556077	1146.0	1691
+57	[{18}, {24}, {3}]	{pos_ADP} {pos_DET} {pos_NOUN}	1.067303491878062	1626.0	2407
+54	[{18}, {24}, {26}]	{pos_ADP} {pos_DET} {feats_Gender=Fem}	1.0639397273060638	1200.0	1782
+5	[{18}, {24, 27}, {4}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Masc}	1.0554663412874776	1137.0	1702
+40	[{18}, {24}, {3, 4}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Masc}	1.0478775239728697	1095.0	1651
+49	[{24, 27}, {3}, {18}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP}	1.0226361316176842	1145.0	1769
+26	[{18}, {24}, {4}]	{pos_ADP} {pos_DET} {feats_Gender=Masc}	1.0167314011335524	1177.0	1829
+6	[{5}, {5}, {18}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP}	1.013462949925855	1272.0	1983
+31	[{24}, {3}, {18}]	{pos_DET} {pos_NOUN} {pos_ADP}	1.007678225862651	1178.0	1847
+52	[{5}, {5}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing}	0.9307050440388376	1035.0	1757
