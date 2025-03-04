@@ -1,0 +1,606 @@
+	motifs_int	motifs_str	Rapports70to80merged	Rapports18
+{5} {5} {18}	[{5}, {5}, {18}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP}	3950	20607
+{5} {3} {18}	[{5}, {3}, {18}]	{feats_Number=Sing} {pos_NOUN} {pos_ADP}	3224	16734
+{18} {24} {3,26}	[{18}, {24}, {26, 3}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem}	3436	20594
+{3} {18} {5}	[{3}, {18}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing}	4083	21955
+{24,27} {3} {18}	[{24, 27}, {3}, {18}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP}	3522	19182
+{18} {5} {3,5}	[{18}, {5}, {3, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	4423	23605
+{18} {23,24,25,27} {3}	[{18}, {24, 25, 27, 23}, {3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	4450	25202
+{18} {24,27} {3}	[{18}, {24, 27}, {3}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	4695	26324
+{3} {17,18} {5}	[{3}, {17, 18}, {5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	3293	18660
+{18} {23,24,25,27} {5}	[{18}, {24, 25, 27, 23}, {5}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	4221	23515
+{18} {24,27} {5}	[{18}, {24, 27}, {5}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Number=Sing}	4502	24492
+{17,18} {24} {3}	[{17, 18}, {24}, {3}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN}	3548	21256
+{18} {24,27} {4}	[{18}, {24, 27}, {4}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Masc}	3510	21522
+{3,5} {18} {5}	[{3, 5}, {18}, {5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	3192	16761
+{5} {18} {5}	[{5}, {18}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	3775	20086
+{18} {5} {3}	[{18}, {5}, {3}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN}	4427	23635
+{4} {18} {5}	[{4}, {18}, {5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	3166	18188
+{18} {24,27} {3,26}	[{18}, {24, 27}, {26, 3}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	3263	19776
+{18} {24,27} {3,4}	[{18}, {24, 27}, {3, 4}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	3179	19964
+{18} {24,25,27} {3}	[{18}, {24, 25, 27}, {3}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	4451	25203
+{18} {23,24,25,27} {4}	[{18}, {24, 25, 27, 23}, {4}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	3227	20289
+{18} {5,23,24,25,27} {3}	[{18}, {5, 23, 24, 25, 27}, {3}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	3863	21685
+{18} {24} {3}	[{18}, {24}, {3}]	{pos_ADP} {pos_DET} {pos_NOUN}	4904	27036
+{18} {5} {26}	[{18}, {5}, {26}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	3352	18799
+{18} {5,24,27} {3}	[{18}, {24, 27, 5}, {3}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	4128	22726
+{5} {5} {5}	[{5}, {5}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing}	3405	19067
+{18} {5,24} {3}	[{18}, {24, 5}, {3}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN}	4314	23413
+{18} {5} {5,26}	[{18}, {5}, {26, 5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Fem}	3344	18675
+{18} {5,24,25,27} {3}	[{18}, {24, 25, 27, 5}, {3}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	3864	21686
+{18} {23,24,25,27} {26}	[{18}, {24, 25, 27, 23}, {26}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	3185	19246
+{17,18} {24} {5}	[{17, 18}, {24}, {5}]	{lemma_de,pos_ADP} {pos_DET} {feats_Number=Sing}	3228	19093
+{18} {24,25,27} {4}	[{18}, {24, 25, 27}, {4}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	3228	20290
+{18} {5,24,27} {3,5}	[{18}, {24, 27, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	4126	22717
+{18} {5,23,24,25,27} {5}	[{18}, {5, 23, 24, 25, 27}, {5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	4213	23507
+{18} {24,27} {26}	[{18}, {24, 27}, {26}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	3437	20582
+{18} {5,23,24,25,27} {3,5}	[{18}, {5, 23, 24, 25, 27}, {3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	3861	21676
+{18} {5,24,25,27} {3,5}	[{18}, {24, 25, 27, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	3862	21677
+{24} {3} {18}	[{24}, {3}, {18}]	{pos_DET} {pos_NOUN} {pos_ADP}	3668	19896
+{18} {24} {5}	[{18}, {24}, {5}]	{pos_ADP} {pos_DET} {feats_Number=Sing}	4675	25090
+{18} {5} {5}	[{18}, {5}, {5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	4940	26166
+{17,18} {5,24} {5}	[{17, 18}, {24, 5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	3218	19083
+{17,18,728,730} {24} {3}	[{728, 17, 18, 730}, {24}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN}	3218	20424
+{18} {24} {4}	[{18}, {24}, {4}]	{pos_ADP} {pos_DET} {feats_Gender=Masc}	3703	22358
+{18} {24} {3,4}	[{18}, {24}, {3, 4}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Masc}	3393	20898
+{18} {5} {4}	[{18}, {5}, {4}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Masc}	3296	19191
+{18} {24,25,27} {5}	[{18}, {24, 25, 27}, {5}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	4222	23516
+{17,18} {24,27} {3}	[{17, 18}, {24, 27}, {3}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	3349	20388
+{17,18,730} {24} {3}	[{17, 18, 730}, {24}, {3}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN}	3222	20447
+{18} {5,24,27} {5}	[{18}, {24, 27, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	4494	24485
+{18} {5} {4,5}	[{18}, {5}, {4, 5}]	{pos_ADP} {feats_Number=Sing} {feats_Gender=Masc,feats_Number=Sing}	3275	18995
+{18} {24} {26}	[{18}, {24}, {26}]	{pos_ADP} {pos_DET} {feats_Gender=Fem}	3613	21368
+{5} {3,5} {18}	[{5}, {3, 5}, {18}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP}	3215	16666
+{18} {5,24} {5}	[{18}, {24, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	4668	25083
+{17,18} {5} {5}	[{17, 18}, {5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	3535	20400
+{18} {5,24,25,27} {5}	[{18}, {24, 25, 27, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	4214	23508
+{18} {5,24} {3,5}	[{18}, {24, 5}, {3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	4313	23405
+{17,18,728,730} {5} {3}	[{728, 17, 18, 730}, {5}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {pos_NOUN}	0	15718
+{17} {24,25,27} {3,26}	[{17}, {24, 25, 27}, {26, 3}]	{lemma_de} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13112
+{17,18,728,730} {23,24,25,27} {3,5}	[{728, 17, 18, 730}, {24, 25, 27, 23}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14855
+{5,24} {3,5} {5}	[{24, 5}, {3, 5}, {5}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	0	14354
+{17} {24} {3,26}	[{17}, {24}, {26, 3}]	{lemma_de} {pos_DET} {pos_NOUN,feats_Gender=Fem}	0	14496
+{17,18} {5,24,27} {5}	[{17, 18}, {24, 27, 5}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	18524
+{24} {3} {730}	[{24}, {3}, {730}]	{pos_DET} {pos_NOUN} {wp_▁de}	0	14652
+{17} {24,25,27} {26}	[{17}, {24, 25, 27}, {26}]	{lemma_de} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	0	13668
+{17,18} {24,27} {26}	[{17, 18}, {24, 27}, {26}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	0	14440
+{17,18} {24,27} {3,4}	[{17, 18}, {24, 27}, {3, 4}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	13615
+{24} {5} {105}	[{24}, {5}, {105}]	{pos_DET} {feats_Number=Sing} {pos_PUNCT}	0	12856
+{18} {5,24} {3,5,26}	[{18}, {24, 5}, {26, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	16701
+{17,18,728,730} {24} {4}	[{728, 17, 18, 730}, {24}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {feats_Gender=Masc}	0	15383
+{17,18,730} {23,24,25,27} {3,26}	[{17, 18, 730}, {24, 25, 27, 23}, {26, 3}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13049
+{24,27} {4} {18}	[{24, 27}, {4}, {18}]	{pos_DET,feats_PronType=Art} {feats_Gender=Masc} {pos_ADP}	0	13049
+{18} {5,24,26,27} {5}	[{18}, {24, 26, 27, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Fem,feats_PronType=Art} {feats_Number=Sing}	0	12271
+{17,18} {5} {4}	[{17, 18}, {5}, {4}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Gender=Masc}	0	12986
+{18} {23,24,25,27,92,881} {3,92}	[{18}, {881, 23, 24, 25, 27, 92}, {3, 92}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Number=Plur,wp_▁les} {pos_NOUN,feats_Number=Plur}	0	13764
+{23,24} {3} {11}	[{24, 23}, {3}, {11}]	{lemma_le,pos_DET} {pos_NOUN} {pos_ADJ}	0	12995
+{17,18} {5} {3}	[{17, 18}, {5}, {3}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN}	0	16996
+{17,18} {24,27} {5}	[{17, 18}, {24, 27}, {5}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	18535
+{17} {23,24,25,27} {26}	[{17}, {24, 25, 27, 23}, {26}]	{lemma_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	0	13666
+{17,18} {24,25,27} {26}	[{17, 18}, {24, 25, 27}, {26}]	{lemma_de,pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	0	13666
+{23,24,25,27} {5} {5}	[{24, 25, 27, 23}, {5}, {5}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	0	13337
+{5} {18} {24,25,27} {3}	[{5}, {18}, {24, 25, 27}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	13110
+{17} {23,24,25,27} {3,26}	[{17}, {24, 25, 27, 23}, {26, 3}]	{lemma_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13110
+{17,18} {24,25,27} {3,26}	[{17, 18}, {24, 25, 27}, {26, 3}]	{lemma_de,pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13110
+{18} {24,25,27} {3,4,5}	[{18}, {24, 25, 27}, {3, 4, 5}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14648
+{18} {24} {3} {18}	[{18}, {24}, {3}, {18}]	{pos_ADP} {pos_DET} {pos_NOUN} {pos_ADP}	0	14666
+{17,18,728,730} {24,27} {3,5}	[{728, 17, 18, 730}, {24, 27}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14856
+{17,18,728,730} {23,24,25,27} {3,26}	[{728, 17, 18, 730}, {24, 25, 27, 23}, {26, 3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13028
+{5} {18} {5} {5}	[{5}, {18}, {5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	0	16529
+{17,18,730} {24,27} {5}	[{17, 18, 730}, {24, 27}, {5}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	17336
+{18} {4,5,44} {3}	[{18}, {4, 5, 44}, {3}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,wp_▁le} {pos_NOUN}	0	12722
+{18} {5,24,25,27} {3,5,26}	[{18}, {24, 25, 27, 5}, {26, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	15029
+{17,18} {5,23,24,25,27} {3}	[{17, 18}, {5, 23, 24, 25, 27}, {3}]	{lemma_de,pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	14975
+{17,18,728,730} {5,23,24,25,27} {5}	[{728, 17, 18, 730}, {5, 23, 24, 25, 27}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17282
+{18} {5,24,27} {3,4}	[{18}, {24, 27, 5}, {3, 4}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	15744
+{17,18,728,730} {92} {92}	[{728, 17, 18, 730}, {92}, {92}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Plur} {feats_Number=Plur}	0	13617
+{3} {18} {3}	[{3}, {18}, {3}]	{pos_NOUN} {pos_ADP} {pos_NOUN}	0	16729
+{3} {17,18} {3}	[{3}, {17, 18}, {3}]	{pos_NOUN} {lemma_de,pos_ADP} {pos_NOUN}	0	14784
+{24} {26} {26}	[{24}, {26}, {26}]	{pos_DET} {feats_Gender=Fem} {feats_Gender=Fem}	0	13679
+{3} {18} {5,24} {5}	[{3}, {18}, {24, 5}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	0	14846
+{17,18} {5,24} {3}	[{17, 18}, {24, 5}, {3}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN}	0	16764
+{3} {18} {24,27}	[{3}, {18}, {24, 27}]	{pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art}	0	15823
+{18} {24,27} {3,92}	[{18}, {24, 27}, {3, 92}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	0	15054
+{17,18} {5,24} {3,5}	[{17, 18}, {24, 5}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	0	16758
+{17,18,730,878} {23,24,25,27} {4}	[{17, 18, 878, 730}, {24, 25, 27, 23}, {4}]	{lemma_de,pos_ADP,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	13682
+{17,18,728,730} {23,24,25,27} {4}	[{728, 17, 18, 730}, {24, 25, 27, 23}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	14541
+{18} {23,24,25,27,92} {3}	[{18}, {23, 24, 25, 27, 92}, {3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Number=Plur} {pos_NOUN}	0	13772
+{24,27} {5} {17}	[{24, 27}, {5}, {17}]	{pos_DET,feats_PronType=Art} {feats_Number=Sing} {lemma_de}	0	12630
+{18} {24} {3,4,5}	[{18}, {24}, {3, 4, 5}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	16475
+{17,18,730} {23} {26}	[{17, 18, 730}, {23}, {26}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le} {feats_Gender=Fem}	0	13603
+{17,18,730} {24,27} {26}	[{17, 18, 730}, {24, 27}, {26}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	0	13603
+{5} {18} {24}	[{5}, {18}, {24}]	{feats_Number=Sing} {pos_ADP} {pos_DET}	0	17493
+{24} {92} {92}	[{24}, {92}, {92}]	{pos_DET} {feats_Number=Plur} {feats_Number=Plur}	0	13217
+{17,18,728,730} {24} {3,5}	[{728, 17, 18, 730}, {24}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN,feats_Number=Sing}	0	15532
+{24} {3,5} {17,18}	[{24}, {3, 5}, {17, 18}]	{pos_DET} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	0	12830
+{17,18,730} {23,24,25,27} {3}	[{17, 18, 730}, {24, 25, 27, 23}, {3}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	19504
+{26} {17,18} {5}	[{26}, {17, 18}, {5}]	{feats_Gender=Fem} {lemma_de,pos_ADP} {feats_Number=Sing}	0	12583
+{730} {24} {5}	[{730}, {24}, {5}]	{wp_▁de} {pos_DET} {feats_Number=Sing}	0	17948
+{17,18,730} {23,24,25,27} {3,4}	[{17, 18, 730}, {24, 25, 27, 23}, {3, 4}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	12796
+{5} {4} {5}	[{5}, {4}, {5}]	{feats_Number=Sing} {feats_Gender=Masc} {feats_Number=Sing}	0	12407
+{17,18,730} {24} {4}	[{17, 18, 730}, {24}, {4}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {feats_Gender=Masc}	0	15415
+{17,18} {23,24,25,27} {3,26}	[{17, 18}, {24, 25, 27, 23}, {26, 3}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13108
+{18} {5,23,24,25,27} {3,4,5}	[{18}, {5, 23, 24, 25, 27}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14646
+{24} {3} {18} {5}	[{24}, {3}, {18}, {5}]	{pos_DET} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	0	16187
+{17,18} {5} {3,5}	[{17, 18}, {5}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	0	16965
+{17,18} {24} {4}	[{17, 18}, {24}, {4}]	{lemma_de,pos_ADP} {pos_DET} {feats_Gender=Masc}	0	16196
+{17,18,730} {24} {5}	[{17, 18, 730}, {24}, {5}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {feats_Number=Sing}	0	17946
+{18} {4,5,24,25,27} {4,5}	[{18}, {4, 5, 24, 25, 27}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	14870
+{17} {23} {26}	[{17}, {23}, {26}]	{lemma_de} {lemma_le} {feats_Gender=Fem}	0	13667
+{24} {3} {17,18} {5}	[{24}, {3}, {17, 18}, {5}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	0	13667
+{4} {18} {24} {3}	[{4}, {18}, {24}, {3}]	{feats_Gender=Masc} {pos_ADP} {pos_DET} {pos_NOUN}	0	12735
+{3,5} {18} {24} {3}	[{3, 5}, {18}, {24}, {3}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN}	0	12346
+{17,18,730} {23,24,25,27} {5}	[{17, 18, 730}, {24, 25, 27, 23}, {5}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17335
+{18} {4,5,23,24,25,27,44} {3}	[{18}, {4, 5, 44, 23, 24, 25, 27}, {3}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁le} {pos_NOUN}	0	12721
+{18} {24,27} {3,5}	[{18}, {24, 27}, {3, 5}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	4126	22718
+{18} {4,5,24} {4}	[{18}, {24, 4, 5}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET} {feats_Gender=Masc}	0	16566
+{17,18,730} {24} {3,4}	[{17, 18, 730}, {24}, {3, 4}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Masc}	0	13680
+{17,18,730} {5} {3,5}	[{17, 18, 730}, {5}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	0	15717
+{24,27} {5} {17,18}	[{24, 27}, {5}, {17, 18}]	{pos_DET,feats_PronType=Art} {feats_Number=Sing} {lemma_de,pos_ADP}	0	12629
+{17,18,728,730} {23} {26}	[{728, 17, 18, 730}, {23}, {26}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le} {feats_Gender=Fem}	0	13583
+{17,18,728,730} {24,27} {26}	[{728, 17, 18, 730}, {24, 27}, {26}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	0	13583
+{3,5} {18} {24,27}	[{3, 5}, {18}, {24, 27}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art}	0	12416
+{17,18,730} {24,27} {3,26}	[{17, 18, 730}, {24, 27}, {26, 3}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13050
+{17,18,730} {5,24,27} {5}	[{17, 18, 730}, {24, 27, 5}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	17325
+{17,18} {5} {5,26}	[{17, 18}, {5}, {26, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Fem}	0	12711
+{24,27} {3,4} {18}	[{24, 27}, {3, 4}, {18}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc} {pos_ADP}	0	12711
+{24} {3,4} {18}	[{24}, {3, 4}, {18}]	{pos_DET} {pos_NOUN,feats_Gender=Masc} {pos_ADP}	0	13435
+{24,27} {3} {17,18}	[{24, 27}, {3}, {17, 18}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP}	0	16360
+{18} {5,24,27} {5,26}	[{18}, {24, 27, 5}, {26, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Fem}	0	16776
+{17,18,730} {5,24,27} {3}	[{17, 18, 730}, {24, 27, 5}, {3}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	0	14900
+{18} {5,24,25,27} {5,26}	[{18}, {24, 25, 27, 5}, {26, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Fem}	0	15669
+{24,27} {3} {105}	[{24, 27}, {3}, {105}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_PUNCT}	0	12198
+{3,4} {18} {5}	[{3, 4}, {18}, {5}]	{pos_NOUN,feats_Gender=Masc} {pos_ADP} {feats_Number=Sing}	0	14921
+{17,18,728,730} {24} {5}	[{728, 17, 18, 730}, {24}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {feats_Number=Sing}	0	17907
+{17,18,730} {5,24,27} {3,5}	[{17, 18, 730}, {24, 27, 5}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14894
+{5,24} {3} {18}	[{24, 5}, {3}, {18}]	{feats_Number=Sing,pos_DET} {pos_NOUN} {pos_ADP}	0	15672
+{18} {24,25,27} {5,26}	[{18}, {24, 25, 27}, {26, 5}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Fem}	0	15672
+{24,25,27} {3} {730}	[{24, 25, 27}, {3}, {730}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {wp_▁de}	0	12596
+{18} {24,27} {3} {18}	[{18}, {24, 27}, {3}, {18}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP}	0	14134
+{5,24} {5} {17,18}	[{24, 5}, {5}, {17, 18}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {lemma_de,pos_ADP}	0	12949
+{5,24,25,27} {5} {5}	[{24, 25, 27, 5}, {5}, {5}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	0	13338
+{17,18,728,730} {23,24,25,27} {3,4}	[{728, 17, 18, 730}, {24, 25, 27, 23}, {3, 4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	12765
+{17} {24} {3}	[{17}, {24}, {3}]	{lemma_de} {pos_DET} {pos_NOUN}	3548	21257
+{17,18,730} {24,27} {3,4}	[{17, 18, 730}, {24, 27}, {3, 4}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	12798
+{3} {18} {5,24,27} {3,5}	[{3}, {18}, {24, 27, 5}, {3, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	12842
+{17,18,728,730} {5,24} {3,5}	[{728, 17, 18, 730}, {24, 5}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	0	15530
+{17,18} {24} {26}	[{17, 18}, {24}, {26}]	{lemma_de,pos_ADP} {pos_DET} {feats_Gender=Fem}	0	15144
+{730} {23,24,25,27} {26}	[{730}, {24, 25, 27, 23}, {26}]	{wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	0	13606
+{17,18} {5,24,27} {3,5}	[{17, 18}, {24, 27, 5}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	16135
+{17,18} {5,23,24,25,27} {3,5}	[{17, 18}, {5, 23, 24, 25, 27}, {3, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14968
+{5} {5} {11}	[{5}, {5}, {11}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADJ}	0	12661
+{24} {5} {18}	[{24}, {5}, {18}]	{pos_DET} {feats_Number=Sing} {pos_ADP}	0	16089
+{5} {18} {5,24,27}	[{5}, {18}, {24, 27, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	0	14551
+{24} {3} {5}	[{24}, {3}, {5}]	{pos_DET} {pos_NOUN} {feats_Number=Sing}	0	14738
+{18} {4,5,24,27} {3}	[{18}, {24, 27, 4, 5}, {3}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	0	13969
+{17,18,728,730} {24,27} {5}	[{728, 17, 18, 730}, {24, 27}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	17294
+{24,27} {3,26} {18}	[{24, 27}, {26, 3}, {18}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem} {pos_ADP}	0	12527
+{730} {23,24,25,27} {5}	[{730}, {24, 25, 27, 23}, {5}]	{wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17337
+{18} {44} {3}	[{18}, {44}, {3}]	{pos_ADP} {wp_▁le} {pos_NOUN}	0	12723
+{18} {23,24,25,27} {3,5,26}	[{18}, {24, 25, 27, 23}, {26, 3, 5}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	15030
+{730} {24} {3}	[{730}, {24}, {3}]	{wp_▁de} {pos_DET} {pos_NOUN}	3222	20449
+{17,18,728,730} {24,27} {3,4}	[{728, 17, 18, 730}, {24, 27}, {3, 4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	12767
+{3,5} {17,18} {5}	[{3, 5}, {17, 18}, {5}]	{pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP} {feats_Number=Sing}	0	13536
+{17,18,730} {5} {5}	[{17, 18, 730}, {5}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {feats_Number=Sing}	0	18991
+{3,5} {18} {24}	[{3, 5}, {18}, {24}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {pos_DET}	0	13608
+{3} {18} {24}	[{3}, {18}, {24}]	{pos_NOUN} {pos_ADP} {pos_DET}	0	17046
+{17,18,728,730} {24,27} {3,26}	[{728, 17, 18, 730}, {24, 27}, {26, 3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13029
+{17,18,730} {5} {3}	[{17, 18, 730}, {5}, {3}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing} {pos_NOUN}	0	15752
+{17,18,728,730} {23,24,25,27} {26}	[{728, 17, 18, 730}, {24, 25, 27, 23}, {26}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	0	13582
+{3} {18} {3,5}	[{3}, {18}, {3, 5}]	{pos_NOUN} {pos_ADP} {pos_NOUN,feats_Number=Sing}	0	13971
+{24} {5} {18} {5}	[{24}, {5}, {18}, {5}]	{pos_DET} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	0	12231
+{17,18,730} {24} {3,26}	[{17, 18, 730}, {24}, {26, 3}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Fem}	0	13787
+{17,18} {4} {4}	[{17, 18}, {4}, {4}]	{lemma_de,pos_ADP} {feats_Gender=Masc} {feats_Gender=Masc}	0	12249
+{17,18,730} {5,23,24,25,27} {5}	[{17, 18, 730}, {5, 23, 24, 25, 27}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17324
+{5,24,27} {5} {17,18}	[{24, 27, 5}, {5}, {17, 18}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {lemma_de,pos_ADP}	0	12620
+{18} {4,5,24} {3,4}	[{18}, {24, 4, 5}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Masc}	0	14479
+{4} {18} {24,27}	[{4}, {18}, {24, 27}]	{feats_Gender=Masc} {pos_ADP} {pos_DET,feats_PronType=Art}	0	13068
+{24,25,27} {3} {18}	[{24, 25, 27}, {3}, {18}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	0	17347
+{18} {4,5,23,24,25,27} {3}	[{18}, {4, 5, 23, 24, 25, 27}, {3}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	12733
+{17,18,728,730} {24} {3,26}	[{728, 17, 18, 730}, {24}, {26, 3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Fem}	0	13766
+{3} {18} {5,24,27} {5}	[{3}, {18}, {24, 27, 5}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	14155
+{18} {44} {5}	[{18}, {44}, {5}]	{pos_ADP} {wp_▁le} {feats_Number=Sing}	0	14924
+{24} {3} {11}	[{24}, {3}, {11}]	{pos_DET} {pos_NOUN} {pos_ADJ}	0	16468
+{23,24,25,27} {3} {17,18,728,730}	[{24, 25, 27, 23}, {3}, {728, 17, 18, 730}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	0	12578
+{18} {4,5,23,24,25,27} {4}	[{18}, {4, 5, 23, 24, 25, 27}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	14885
+{18} {4,5} {4,5}	[{18}, {4, 5}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {feats_Gender=Masc,feats_Number=Sing}	0	17192
+{17,18,728,730} {5} {3,5}	[{728, 17, 18, 730}, {5}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	0	15682
+{17,18,728,730} {5,24,27} {5}	[{728, 17, 18, 730}, {24, 27, 5}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	17283
+{24,27} {3} {730}	[{24, 27}, {3}, {730}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {wp_▁de}	0	14207
+{24} {3,26} {18}	[{24}, {26, 3}, {18}]	{pos_DET} {pos_NOUN,feats_Gender=Fem} {pos_ADP}	0	13230
+{17,18,728,730} {5,24} {3}	[{728, 17, 18, 730}, {24, 5}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN}	0	15537
+{17,18,728,730} {5,24,27} {3,5}	[{728, 17, 18, 730}, {24, 27, 5}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14854
+{17,18} {24} {3,4}	[{17, 18}, {24}, {3, 4}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Masc}	0	14465
+{18} {24} {4,5}	[{18}, {24}, {4, 5}]	{pos_ADP} {pos_DET} {feats_Gender=Masc,feats_Number=Sing}	0	18355
+{24,27} {3} {18} {5}	[{24, 27}, {3}, {18}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	0	15438
+{18} {4,5,23,24,25,27,43,44} {5}	[{18}, {4, 5, 43, 44, 23, 24, 25, 27}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_le,wp_▁le} {feats_Number=Sing}	0	12326
+{18} {4} {3,5}	[{18}, {4}, {3, 5}]	{pos_ADP} {feats_Gender=Masc} {pos_NOUN,feats_Number=Sing}	0	14633
+{17,18,728,730} {5,24} {5}	[{728, 17, 18, 730}, {24, 5}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	0	17897
+{17,18} {24,27} {3,26}	[{17, 18}, {24, 27}, {26, 3}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13792
+{18} {5,24,27} {4,5}	[{18}, {24, 27, 5}, {4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	17637
+{17,18,728,730} {23,24,25,27} {5}	[{728, 17, 18, 730}, {24, 25, 27, 23}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17293
+{5,24,27} {5} {17}	[{24, 27, 5}, {5}, {17}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {lemma_de}	0	12621
+{24,27} {26} {18}	[{24, 27}, {26}, {18}]	{pos_DET,feats_PronType=Art} {feats_Gender=Fem} {pos_ADP}	0	12621
+{18} {4} {4}	[{18}, {4}, {4}]	{pos_ADP} {feats_Gender=Masc} {feats_Gender=Masc}	0	18004
+{18} {5} {3,4,5}	[{18}, {5}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	16642
+{5} {18} {23} {5}	[{5}, {18}, {23}, {5}]	{feats_Number=Sing} {pos_ADP} {lemma_le} {feats_Number=Sing}	0	13087
+{5} {18} {24,25,27} {5}	[{5}, {18}, {24, 25, 27}, {5}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	13087
+{18} {4,5} {3,5}	[{18}, {4, 5}, {3, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	0	14625
+{17,18} {24} {3,26}	[{17, 18}, {24}, {26, 3}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN,feats_Gender=Fem}	0	14495
+{18} {24,27} {3,5,26}	[{18}, {24, 27}, {26, 3, 5}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	16033
+{17,18} {23} {26}	[{17, 18}, {23}, {26}]	{lemma_de,pos_ADP} {lemma_le} {feats_Gender=Fem}	0	13665
+{17,18} {23,24,25,27} {26}	[{17, 18}, {24, 25, 27, 23}, {26}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	0	13664
+{5} {18} {24,27} {5}	[{5}, {18}, {24, 27}, {5}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	14442
+{17} {24,27} {26}	[{17}, {24, 27}, {26}]	{lemma_de} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	0	14442
+{24} {3} {17,18,728,730}	[{24}, {3}, {728, 17, 18, 730}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	0	14629
+{24,27} {4} {4}	[{24, 27}, {4}, {4}]	{pos_DET,feats_PronType=Art} {feats_Gender=Masc} {feats_Gender=Masc}	0	12295
+{4} {5} {18}	[{4}, {5}, {18}]	{feats_Gender=Masc} {feats_Number=Sing} {pos_ADP}	0	12914
+{17,18,728,730} {5,23,24,25,27} {3}	[{728, 17, 18, 730}, {5, 23, 24, 25, 27}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	14859
+{4} {4} {18}	[{4}, {4}, {18}]	{feats_Gender=Masc} {feats_Gender=Masc} {pos_ADP}	0	14094
+{24,27} {3} {17,18} {5}	[{24, 27}, {3}, {17, 18}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing}	0	13129
+{17,18,730} {5,24} {5}	[{17, 18, 730}, {24, 5}, {5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	0	17936
+{24} {26} {18}	[{24}, {26}, {18}]	{pos_DET} {feats_Gender=Fem} {pos_ADP}	0	13322
+{17,18,728,730} {23,24,25,27} {3}	[{728, 17, 18, 730}, {24, 25, 27, 23}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	19474
+{17,18,728,730} {5,24,27} {3}	[{728, 17, 18, 730}, {24, 27, 5}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	0	14860
+{5} {18} {23,24,25,27}	[{5}, {18}, {24, 25, 27, 23}]	{feats_Number=Sing} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	0	14489
+{24} {3} {92}	[{24}, {3}, {92}]	{pos_DET} {pos_NOUN} {feats_Number=Plur}	0	12221
+{17} {24,27} {3}	[{17}, {24, 27}, {3}]	{lemma_de} {pos_DET,feats_PronType=Art} {pos_NOUN}	3349	20390
+{4} {18} {24}	[{4}, {18}, {24}]	{feats_Gender=Masc} {pos_ADP} {pos_DET}	0	14227
+{17,18,730} {23,24,25,27} {26}	[{17, 18, 730}, {24, 25, 27, 23}, {26}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	0	13602
+{4} {18} {26}	[{4}, {18}, {26}]	{feats_Gender=Masc} {pos_ADP} {feats_Gender=Fem}	0	12833
+{24} {3,5} {18}	[{24}, {3, 5}, {18}]	{pos_DET} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	15679
+{18} {4} {4,5}	[{18}, {4}, {4, 5}]	{pos_ADP} {feats_Gender=Masc} {feats_Gender=Masc,feats_Number=Sing}	0	17217
+{5} {18} {5} {3,5}	[{5}, {18}, {5}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	0	14122
+{4} {18} {5} {5}	[{4}, {18}, {5}, {5}]	{feats_Gender=Masc} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	0	13353
+{17,18,730} {24,27} {3}	[{17, 18, 730}, {24, 27}, {3}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN}	0	19505
+{17,18,728,730} {24} {26}	[{728, 17, 18, 730}, {24}, {26}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {feats_Gender=Fem}	0	14333
+{17,18} {5,23,24,25,27} {5}	[{17, 18}, {5, 23, 24, 25, 27}, {5}]	{lemma_de,pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17409
+{4} {17,18} {5}	[{4}, {17, 18}, {5}]	{feats_Gender=Masc} {lemma_de,pos_ADP} {feats_Number=Sing}	0	13555
+{5,23,24,25,27} {3} {18}	[{5, 23, 24, 25, 27}, {3}, {18}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	0	13555
+{23,24,25,27} {3,5} {18}	[{24, 25, 27, 23}, {3, 5}, {18}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	13555
+{5} {18} {5,24,27} {3}	[{5}, {18}, {24, 27, 5}, {3}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	0	13166
+{5} {18} {24,27} {3,5}	[{5}, {18}, {24, 27}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	13166
+{24,27} {3} {11}	[{24, 27}, {3}, {11}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADJ}	0	15857
+{18} {5,24} {4}	[{18}, {24, 5}, {4}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Gender=Masc}	0	18344
+{24} {5} {17,18}	[{24}, {5}, {17, 18}]	{pos_DET} {feats_Number=Sing} {lemma_de,pos_ADP}	0	12961
+{24,92} {92} {92}	[{24, 92}, {92}, {92}]	{pos_DET,feats_Number=Plur} {feats_Number=Plur} {feats_Number=Plur}	0	13212
+{5,24} {3} {17,18}	[{24, 5}, {3}, {17, 18}]	{feats_Number=Sing,pos_DET} {pos_NOUN} {lemma_de,pos_ADP}	0	12823
+{17,18} {23,24,25,27} {3,4}	[{17, 18}, {24, 25, 27, 23}, {3, 4}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	12823
+{24} {4} {4}	[{24}, {4}, {4}]	{pos_DET} {feats_Gender=Masc} {feats_Gender=Masc}	0	12877
+{4} {4} {105}	[{4}, {4}, {105}]	{feats_Gender=Masc} {feats_Gender=Masc} {pos_PUNCT}	0	13266
+{17,18,728,730,878} {23,24,25,27} {4}	[{878, 17, 18, 728, 730}, {24, 25, 27, 23}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	13655
+{24,27} {26} {26}	[{24, 27}, {26}, {26}]	{pos_DET,feats_PronType=Art} {feats_Gender=Fem} {feats_Gender=Fem}	0	13025
+{17} {24,27} {3,26}	[{17}, {24, 27}, {26, 3}]	{lemma_de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13794
+{24} {3} {26}	[{24}, {3}, {26}]	{pos_DET} {pos_NOUN} {feats_Gender=Fem}	0	12256
+{17,18} {23,24,25,27} {3,5}	[{17, 18}, {24, 25, 27, 23}, {3, 5}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14970
+{18} {92} {4}	[{18}, {92}, {4}]	{pos_ADP} {feats_Number=Plur} {feats_Gender=Masc}	0	12663
+{18} {23,24,25,27} {3} {18}	[{18}, {24, 25, 27, 23}, {3}, {18}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	0	13061
+{17,18} {24,27} {3,5}	[{17, 18}, {24, 27}, {3, 5}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	16137
+{18} {4,5,24,27} {5}	[{18}, {24, 27, 4, 5}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	16137
+{18} {4,5,24,25,27} {3}	[{18}, {4, 5, 24, 25, 27}, {3}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	12734
+{5} {26} {18}	[{5}, {26}, {18}]	{feats_Number=Sing} {feats_Gender=Fem} {pos_ADP}	0	13422
+{18} {5,24,27} {3,4,5}	[{18}, {24, 27, 5}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	15729
+{24,27} {3} {17,18,730}	[{24, 27}, {3}, {17, 18, 730}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,wp_▁de}	0	14200
+{5} {18} {5} {5,26}	[{5}, {18}, {5}, {26, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing,feats_Gender=Fem}	0	12255
+{24,27} {3} {17,18,728,730}	[{24, 27}, {3}, {728, 17, 18, 730}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	0	14188
+{17} {23,24,25,27} {3}	[{17}, {24, 25, 27, 23}, {3}]	{lemma_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	19571
+{4,5} {18} {5}	[{4, 5}, {18}, {5}]	{feats_Gender=Masc,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	0	13012
+{18} {4,5,23,24,25,27,43,44} {4}	[{18}, {4, 5, 43, 44, 23, 24, 25, 27}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_le,wp_▁le} {feats_Gender=Masc}	0	12243
+{17,18,730} {5,24} {3}	[{17, 18, 730}, {24, 5}, {3}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN}	0	15572
+{24,25,27} {5} {18}	[{24, 25, 27}, {5}, {18}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	0	14034
+{24,27} {3,5} {17,18}	[{24, 27}, {3, 5}, {17, 18}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	0	12496
+{24,27} {5} {18}	[{24, 27}, {5}, {18}]	{pos_DET,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	0	15505
+{3} {18} {5,24} {3,5}	[{3}, {18}, {24, 5}, {3, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	0	13560
+{18} {23,24,25,27} {5,26}	[{18}, {24, 25, 27, 23}, {26, 5}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Fem}	0	15670
+{730} {5,23,24,25,27} {3}	[{730}, {5, 23, 24, 25, 27}, {3}]	{wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	14901
+{24} {3} {105}	[{24}, {3}, {105}]	{pos_DET} {pos_NOUN} {pos_PUNCT}	0	14132
+{17,18} {23,24,25,27} {3}	[{17, 18}, {24, 25, 27, 23}, {3}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	19569
+{24,25,27} {3} {17,18,728,730}	[{24, 25, 27}, {3}, {728, 17, 18, 730}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de}	0	12582
+{18} {4,5,24,27} {3,4,5}	[{18}, {24, 27, 4, 5}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	13951
+{24,25,27} {3} {17,18}	[{24, 25, 27}, {3}, {17, 18}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP}	0	14720
+{18} {4,24} {5}	[{18}, {24, 4}, {5}]	{pos_ADP} {feats_Gender=Masc,pos_DET} {feats_Number=Sing}	0	16620
+{5} {18} {24} {26}	[{5}, {18}, {24}, {26}]	{feats_Number=Sing} {pos_ADP} {pos_DET} {feats_Gender=Fem}	0	12775
+{24,25,27} {3} {18} {5}	[{24, 25, 27}, {3}, {18}, {5}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	0	13750
+{24,25,27} {5} {5}	[{24, 25, 27}, {5}, {5}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	0	13339
+{17,18,730} {23,24,25,27} {3,5}	[{17, 18, 730}, {24, 25, 27, 23}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14895
+{730} {5,23,24,25,27} {3,5}	[{730}, {5, 23, 24, 25, 27}, {3, 5}]	{wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14895
+{5} {18} {5,24}	[{5}, {18}, {24, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET}	0	15284
+{5,24} {5} {17}	[{24, 5}, {5}, {17}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {lemma_de}	0	12950
+{92} {3} {92}	[{92}, {3}, {92}]	{feats_Number=Plur} {pos_NOUN} {feats_Number=Plur}	0	13065
+{17,18} {5,24,27} {3}	[{17, 18}, {24, 27, 5}, {3}]	{lemma_de,pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	0	16141
+{24,27} {3} {5}	[{24, 27}, {3}, {5}]	{pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Number=Sing}	0	13640
+{5} {18} {24} {5}	[{5}, {18}, {24}, {5}]	{feats_Number=Sing} {pos_ADP} {pos_DET} {feats_Number=Sing}	0	15178
+{17,18} {5} {26}	[{17, 18}, {5}, {26}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	0	12871
+{5,24,27} {3} {18}	[{24, 27, 5}, {3}, {18}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN} {pos_ADP}	0	15070
+{92} {18} {5}	[{92}, {18}, {5}]	{feats_Number=Plur} {pos_ADP} {feats_Number=Sing}	0	15070
+{5} {18} {5,26}	[{5}, {18}, {26, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,feats_Gender=Fem}	0	13292
+{92} {92} {18}	[{92}, {92}, {18}]	{feats_Number=Plur} {feats_Number=Plur} {pos_ADP}	0	15179
+{18} {23,24,25,27,92,881} {92}	[{18}, {881, 23, 24, 25, 27, 92}, {92}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Number=Plur,wp_▁les} {feats_Number=Plur}	0	14790
+{5} {18} {24,27}	[{5}, {18}, {24, 27}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art}	0	16220
+{18} {26} {3,26}	[{18}, {26}, {26, 3}]	{pos_ADP} {feats_Gender=Fem} {pos_NOUN,feats_Gender=Fem}	0	12375
+{17,18,728,730,878} {23,24,25,27} {3}	[{878, 17, 18, 728, 730}, {24, 25, 27, 23}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	14682
+{5} {4} {18}	[{5}, {4}, {18}]	{feats_Number=Sing} {feats_Gender=Masc} {pos_ADP}	0	13913
+{24,27} {3,5} {18}	[{24, 27}, {3, 5}, {18}]	{pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	15071
+{5} {4,5} {5}	[{5}, {4, 5}, {5}]	{feats_Number=Sing} {feats_Gender=Masc,feats_Number=Sing} {feats_Number=Sing}	0	12374
+{5} {4,5} {18}	[{5}, {4, 5}, {18}]	{feats_Number=Sing} {feats_Gender=Masc,feats_Number=Sing} {pos_ADP}	0	13610
+{5} {17,18} {5}	[{5}, {17, 18}, {5}]	{feats_Number=Sing} {lemma_de,pos_ADP} {feats_Number=Sing}	0	15281
+{5,23,24,25,27} {5} {5}	[{5, 23, 24, 25, 27}, {5}, {5}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	0	13336
+{18} {5,24,26,27} {26}	[{18}, {24, 26, 27, 5}, {26}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Fem,feats_PronType=Art} {feats_Gender=Fem}	0	12267
+{5} {17,18,730} {5}	[{5}, {17, 18, 730}, {5}]	{feats_Number=Sing} {lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing}	0	13036
+{5} {17,18,728,730} {5}	[{5}, {728, 17, 18, 730}, {5}]	{feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	0	13017
+{17,18} {24} {3,5}	[{17, 18}, {24}, {3, 5}]	{lemma_de,pos_ADP} {pos_DET} {pos_NOUN,feats_Number=Sing}	0	16760
+{5} {5} {17,18,728,730}	[{5}, {5}, {728, 17, 18, 730}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP,feats_de,wp_▁de}	0	13854
+{17,18} {24,27} {4}	[{17, 18}, {24, 27}, {4}]	{lemma_de,pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Masc}	0	15392
+{5} {5} {17,18,730}	[{5}, {5}, {17, 18, 730}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP,wp_▁de}	0	13872
+{24} {3} {17,18,730}	[{24}, {3}, {17, 18, 730}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP,wp_▁de}	0	14641
+{5} {5} {17,18}	[{5}, {5}, {17, 18}]	{feats_Number=Sing} {feats_Number=Sing} {lemma_de,pos_ADP}	0	15863
+{3} {18} {5} {26}	[{3}, {18}, {5}, {26}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	0	12264
+{17,18,730} {23,24,25,27} {4}	[{17, 18, 730}, {24, 25, 27, 23}, {4}]	{lemma_de,pos_ADP,wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	14571
+{5} {5} {18} {24}	[{5}, {5}, {18}, {24}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {pos_DET}	0	13042
+{5} {730} {5}	[{5}, {730}, {5}]	{feats_Number=Sing} {wp_▁de} {feats_Number=Sing}	0	13042
+{18} {4,24} {4,5}	[{18}, {24, 4}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,pos_DET} {feats_Gender=Masc,feats_Number=Sing}	0	16552
+{18} {24,92} {92}	[{18}, {24, 92}, {92}]	{pos_ADP} {pos_DET,feats_Number=Plur} {feats_Number=Plur}	0	17321
+{18} {5} {5} {105}	[{18}, {5}, {5}, {105}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing} {pos_PUNCT}	0	12335
+{5} {5} {18,730}	[{5}, {5}, {730, 18}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP,wp_▁de}	0	13873
+{5} {5} {105}	[{5}, {5}, {105}]	{feats_Number=Sing} {feats_Number=Sing} {pos_PUNCT}	0	19277
+{5} {5} {730}	[{5}, {5}, {730}]	{feats_Number=Sing} {feats_Number=Sing} {wp_▁de}	0	13894
+{18} {24,27} {92}	[{18}, {24, 27}, {92}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Number=Plur}	0	16201
+{92} {3,92} {92}	[{92}, {3, 92}, {92}]	{feats_Number=Plur} {pos_NOUN,feats_Number=Plur} {feats_Number=Plur}	0	12455
+{5} {5,26} {18}	[{5}, {26, 5}, {18}]	{feats_Number=Sing} {feats_Number=Sing,feats_Gender=Fem} {pos_ADP}	0	13224
+{17,18} {92} {92}	[{17, 18}, {92}, {92}]	{lemma_de,pos_ADP} {feats_Number=Plur} {feats_Number=Plur}	0	14029
+{17,18,730} {24} {3,5}	[{17, 18, 730}, {24}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {pos_NOUN,feats_Number=Sing}	0	15567
+{730} {5,24} {3,5}	[{730}, {24, 5}, {3, 5}]	{wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	0	15567
+{5} {18} {23}	[{5}, {18}, {23}]	{feats_Number=Sing} {pos_ADP} {lemma_le}	0	14490
+{5} {18} {24,25,27}	[{5}, {18}, {24, 25, 27}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art}	0	14490
+{24,25,27} {3} {17,18,730}	[{24, 25, 27}, {3}, {17, 18, 730}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,wp_▁de}	0	12589
+{5,24} {3,5} {18}	[{24, 5}, {3, 5}, {18}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	15665
+{17,18,730} {24,27} {3,5}	[{17, 18, 730}, {24, 27}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14896
+{730} {5,24,27} {3,5}	[{730}, {24, 27, 5}, {3, 5}]	{wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14896
+{5} {5} {18} {5} {5}	[{5}, {5}, {18}, {5}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	0	12398
+{5} {18} {24} {3,5}	[{5}, {18}, {24}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN,feats_Number=Sing}	0	13936
+{5} {18} {23,24,25,27} {3}	[{5}, {18}, {24, 25, 27, 23}, {3}]	{feats_Number=Sing} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	13109
+{18} {5,24,25,27} {3,4,5}	[{18}, {24, 25, 27, 5}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14647
+{18} {23,24,25,27} {3,4,5}	[{18}, {24, 25, 27, 23}, {3, 4, 5}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14647
+{5} {18} {26}	[{5}, {18}, {26}]	{feats_Number=Sing} {pos_ADP} {feats_Gender=Fem}	0	14624
+{5} {18} {23,24,25,27} {5}	[{5}, {18}, {24, 25, 27, 23}, {5}]	{feats_Number=Sing} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	13086
+{17,18,730} {5,23,24,25,27} {3,5}	[{17, 18, 730}, {5, 23, 24, 25, 27}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14893
+{730} {24,27} {3}	[{730}, {24, 27}, {3}]	{wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN}	0	19507
+{3} {18} {23,24,25,27} {5}	[{3}, {18}, {24, 25, 27, 23}, {5}]	{pos_NOUN} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	12975
+{5} {18} {5,24,27} {5}	[{5}, {18}, {24, 27, 5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	14438
+{5} {18} {5,24} {3}	[{5}, {18}, {24, 5}, {3}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN}	0	13934
+{17,18,730,878} {23,24,25,27} {3}	[{17, 18, 878, 730}, {24, 25, 27, 23}, {3}]	{lemma_de,pos_ADP,wp_▁de,dep_de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	14703
+{5} {18} {5,24,27} {3,5}	[{5}, {18}, {24, 27, 5}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	13165
+{18} {4,5,23,24,25,27} {3,4}	[{18}, {4, 5, 23, 24, 25, 27}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	12730
+{23,24,25,27} {3} {18}	[{24, 25, 27, 23}, {3}, {18}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	0	17344
+{18} {24,92} {3,92}	[{18}, {24, 92}, {3, 92}]	{pos_ADP} {pos_DET,feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	0	16177
+{5} {18} {5,24,25,27} {5}	[{5}, {18}, {24, 25, 27, 5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	13083
+{18} {4,24} {3}	[{18}, {24, 4}, {3}]	{pos_ADP} {feats_Gender=Masc,pos_DET} {pos_NOUN}	0	14621
+{5} {18} {5,24,25,27}	[{5}, {18}, {24, 25, 27, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art}	0	13179
+{5} {18} {5,24} {5}	[{5}, {18}, {24, 5}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	0	15172
+{5} {18} {5,24} {3,5}	[{5}, {18}, {24, 5}, {3, 5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	0	13933
+{5} {18} {5,23,24,25,27} {5}	[{5}, {18}, {5, 23, 24, 25, 27}, {5}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	13082
+{18} {44} {3,4}	[{18}, {44}, {3, 4}]	{pos_ADP} {wp_▁le} {pos_NOUN,feats_Gender=Masc}	0	12720
+{3} {18} {5,26}	[{3}, {18}, {26, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,feats_Gender=Fem}	0	15027
+{18} {5,23,24,25,27} {3,5,26}	[{18}, {5, 23, 24, 25, 27}, {26, 3, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	15027
+{5} {18} {5,23,24,25,27}	[{5}, {18}, {5, 23, 24, 25, 27}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	0	13178
+{5} {18} {5} {26}	[{5}, {18}, {5}, {26}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Gender=Fem}	0	12277
+{5} {18} {3}	[{5}, {18}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_NOUN}	0	13598
+{17,18,730} {24,27} {4}	[{17, 18, 730}, {24, 27}, {4}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET,feats_PronType=Art} {feats_Gender=Masc}	0	14575
+{5} {18,730} {5}	[{5}, {730, 18}, {5}]	{feats_Number=Sing} {pos_ADP,wp_▁de} {feats_Number=Sing}	0	13037
+{5} {3} {5}	[{5}, {3}, {5}]	{feats_Number=Sing} {pos_NOUN} {feats_Number=Sing}	0	15147
+{5} {3} {17,18}	[{5}, {3}, {17, 18}]	{feats_Number=Sing} {pos_NOUN} {lemma_de,pos_ADP}	0	13654
+{5,24,27} {3,5} {17,18}	[{24, 27, 5}, {3, 5}, {17, 18}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	0	12487
+{17,18} {23,24,25,27} {5}	[{17, 18}, {24, 25, 27, 23}, {5}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17420
+{5} {3} {18} {5}	[{5}, {3}, {18}, {5}]	{feats_Number=Sing} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	0	12806
+{18} {5,24,26} {26}	[{18}, {24, 26, 5}, {26}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Fem} {feats_Gender=Fem}	0	12806
+{5} {3} {105}	[{5}, {3}, {105}]	{feats_Number=Sing} {pos_NOUN} {pos_PUNCT}	0	12414
+{5} {3,5} {18} {5}	[{5}, {3, 5}, {18}, {5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	0	12728
+{18} {5,24,25,27} {4,5}	[{18}, {24, 25, 27, 5}, {4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	16573
+{5,24,27} {3} {5}	[{24, 27, 5}, {3}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN} {feats_Number=Sing}	0	13319
+{5,24,27} {3} {17,18}	[{24, 27, 5}, {3}, {17, 18}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP}	0	12492
+{730} {5,24} {5}	[{730}, {24, 5}, {5}]	{wp_▁de} {feats_Number=Sing,pos_DET} {feats_Number=Sing}	0	17938
+{3} {18} {24} {3}	[{3}, {18}, {24}, {3}]	{pos_NOUN} {pos_ADP} {pos_DET} {pos_NOUN}	0	15604
+{5,24,27} {5} {5}	[{24, 27, 5}, {5}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {feats_Number=Sing}	0	16041
+{18} {24,26} {26}	[{18}, {24, 26}, {26}]	{pos_ADP} {pos_DET,feats_Gender=Fem} {feats_Gender=Fem}	0	12929
+{3} {18} {24} {26}	[{3}, {18}, {24}, {26}]	{pos_NOUN} {pos_ADP} {pos_DET} {feats_Gender=Fem}	0	12319
+{5,24} {5} {5}	[{24, 5}, {5}, {5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {feats_Number=Sing}	0	16987
+{5} {3,5} {17,18}	[{5}, {3, 5}, {17, 18}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	0	13621
+{5,24} {5} {105}	[{24, 5}, {5}, {105}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_PUNCT}	0	12852
+{17,18,728,730} {24} {3,4}	[{728, 17, 18, 730}, {24}, {3, 4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Masc}	0	13647
+{3} {17,18} {26}	[{3}, {17, 18}, {26}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Gender=Fem}	0	14416
+{17,18,730} {5,24} {3,5}	[{17, 18, 730}, {24, 5}, {3, 5}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing}	0	15565
+{5,24,25,27} {5} {18}	[{24, 25, 27, 5}, {5}, {18}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	0	14027
+{5,23,24,25,27} {5} {18}	[{5, 23, 24, 25, 27}, {5}, {18}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	0	14024
+{730} {23} {26}	[{730}, {23}, {26}]	{wp_▁de} {lemma_le} {feats_Gender=Fem}	0	13607
+{730} {24,27} {26}	[{730}, {24, 27}, {26}]	{wp_▁de} {pos_DET,feats_PronType=Art} {feats_Gender=Fem}	0	13607
+{17} {24} {26}	[{17}, {24}, {26}]	{lemma_de} {pos_DET} {feats_Gender=Fem}	0	15145
+{730} {24,27} {3,26}	[{730}, {24, 27}, {26, 3}]	{wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13054
+{18} {5,23,24,25,27} {5,26}	[{18}, {5, 23, 24, 25, 27}, {26, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Fem}	0	15667
+{730} {24,27} {3,5}	[{730}, {24, 27}, {3, 5}]	{wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14898
+{18} {5,26} {5}	[{18}, {26, 5}, {5}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Fem} {feats_Number=Sing}	0	14871
+{92} {92} {105}	[{92}, {92}, {105}]	{feats_Number=Plur} {feats_Number=Plur} {pos_PUNCT}	0	13333
+{730} {23,24,25,27} {3,5}	[{730}, {24, 25, 27, 23}, {3, 5}]	{wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14897
+{730} {92} {92}	[{730}, {92}, {92}]	{wp_▁de} {feats_Number=Plur} {feats_Number=Plur}	0	13891
+{730} {24} {3,26}	[{730}, {24}, {26, 3}]	{wp_▁de} {pos_DET} {pos_NOUN,feats_Gender=Fem}	0	13791
+{730} {5} {5}	[{730}, {5}, {5}]	{wp_▁de} {feats_Number=Sing} {feats_Number=Sing}	0	19002
+{730} {5} {3}	[{730}, {5}, {3}]	{wp_▁de} {feats_Number=Sing} {pos_NOUN}	0	15754
+{18} {4,5,24,25,27} {5}	[{18}, {4, 5, 24, 25, 27}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	14941
+{730} {5} {3,5}	[{730}, {5}, {3, 5}]	{wp_▁de} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	0	15719
+{18} {24} {92}	[{18}, {24}, {92}]	{pos_ADP} {pos_DET} {feats_Number=Plur}	0	17327
+{730} {5,24,27} {5}	[{730}, {24, 27, 5}, {5}]	{wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	17327
+{730} {5,23,24,25,27} {5}	[{730}, {5, 23, 24, 25, 27}, {5}]	{wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	17326
+{17,18,730} {5,23,24,25,27} {3}	[{17, 18, 730}, {5, 23, 24, 25, 27}, {3}]	{lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	14899
+{23,24,25,27} {3} {730}	[{24, 25, 27, 23}, {3}, {730}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {wp_▁de}	0	12592
+{18} {23,24,25,27} {3,5}	[{18}, {24, 25, 27, 23}, {3, 5}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	3861	21677
+{18} {5,24,26} {5,26}	[{18}, {24, 26, 5}, {26, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Fem} {feats_Number=Sing,feats_Gender=Fem}	0	12802
+{17,18,728,730} {5} {5}	[{728, 17, 18, 730}, {5}, {5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing} {feats_Number=Sing}	0	18954
+{730} {23,24,25,27} {3}	[{730}, {24, 25, 27, 23}, {3}]	{wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	19506
+{23,24,25,27} {3} {17,18,730}	[{24, 25, 27, 23}, {3}, {17, 18, 730}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP,wp_▁de}	0	12585
+{5} {18} {24} {3}	[{5}, {18}, {24}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_DET} {pos_NOUN}	0	16054
+{23,24,25,27} {3} {18} {5}	[{24, 25, 27, 23}, {3}, {18}, {5}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP} {feats_Number=Sing}	0	13747
+{18} {4} {3,4}	[{18}, {4}, {3, 4}]	{pos_ADP} {feats_Gender=Masc} {pos_NOUN,feats_Gender=Masc}	0	14887
+{730} {24} {3,5}	[{730}, {24}, {3, 5}]	{wp_▁de} {pos_DET} {pos_NOUN,feats_Number=Sing}	0	15569
+{23,24,25,27} {5} {18}	[{24, 25, 27, 23}, {5}, {18}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	0	14031
+{5,24,25,27} {3,5} {18}	[{24, 25, 27, 5}, {3, 5}, {18}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	13551
+{23,24,25,27} {3} {17,18}	[{24, 25, 27, 23}, {3}, {17, 18}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {lemma_de,pos_ADP}	0	14718
+{18} {23} {5,26}	[{18}, {23}, {26, 5}]	{pos_ADP} {lemma_le} {feats_Number=Sing,feats_Gender=Fem}	0	15671
+{730} {5,24,27} {3}	[{730}, {24, 27, 5}, {3}]	{wp_▁de} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	0	14902
+{23,24,25,27} {3} {11}	[{24, 25, 27, 23}, {3}, {11}]	{lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADJ}	0	12993
+{18} {4,5,24,27} {4,5}	[{18}, {24, 27, 4, 5}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	16069
+{18} {5,24,26,27} {5,26}	[{18}, {24, 26, 27, 5}, {26, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Fem,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Fem}	0	12265
+{18} {4} {3,4,5}	[{18}, {4}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14617
+{3} {17,18,730} {5}	[{3}, {17, 18, 730}, {5}]	{pos_NOUN} {lemma_de,pos_ADP,wp_▁de} {feats_Number=Sing}	0	16155
+{3} {17,18,728,730} {5}	[{3}, {728, 17, 18, 730}, {5}]	{pos_NOUN} {lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing}	0	16153
+{3} {18} {5} {5}	[{3}, {18}, {5}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	0	16542
+{18} {5,24} {3,26}	[{18}, {24, 5}, {26, 3}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Fem}	0	16705
+{17,18,730} {24} {26}	[{17, 18, 730}, {24}, {26}]	{lemma_de,pos_ADP,wp_▁de} {pos_DET} {feats_Gender=Fem}	0	14353
+{18} {26} {5,26}	[{18}, {26}, {26, 5}]	{pos_ADP} {feats_Gender=Fem} {feats_Number=Sing,feats_Gender=Fem}	0	14353
+{3} {18} {23,24,25,27} {3}	[{3}, {18}, {24, 25, 27, 23}, {3}]	{pos_NOUN} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN}	0	12815
+{3} {18} {5} {3}	[{3}, {18}, {5}, {3}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {pos_NOUN}	0	13804
+{17,18,728,730} {24,27} {4}	[{728, 17, 18, 730}, {24, 27}, {4}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET,feats_PronType=Art} {feats_Gender=Masc}	0	14545
+{3} {18} {5} {3,5}	[{3}, {18}, {5}, {3, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing}	0	13776
+{18} {23,24,25,27} {3,92}	[{18}, {24, 25, 27, 23}, {3, 92}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Plur}	0	13776
+{17,18} {5} {4,5}	[{17, 18}, {5}, {4, 5}]	{lemma_de,pos_ADP} {feats_Number=Sing} {feats_Gender=Masc,feats_Number=Sing}	0	12727
+{3} {18} {5,24,27}	[{3}, {18}, {24, 27, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art}	0	14265
+{18} {5,23,24,25,27} {4,5}	[{18}, {5, 23, 24, 25, 27}, {4, 5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	16572
+{18} {5} {3,26}	[{18}, {5}, {26, 3}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Fem}	0	16908
+{17,18} {23,24,25,27} {4}	[{17, 18}, {24, 25, 27, 23}, {4}]	{lemma_de,pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	14601
+{3} {18} {5,23,24,25,27}	[{3}, {18}, {5, 23, 24, 25, 27}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	0	13063
+{3} {18} {23,24,25,27}	[{3}, {18}, {24, 25, 27, 23}]	{pos_NOUN} {pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art}	0	14187
+{3} {18} {5,24}	[{3}, {18}, {24, 5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET}	0	14956
+{18} {26} {5}	[{18}, {26}, {5}]	{pos_ADP} {feats_Gender=Fem} {feats_Number=Sing}	0	14956
+{3} {17,18} {5,26}	[{3}, {17, 18}, {26, 5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing,feats_Gender=Fem}	0	12760
+{3,26} {18} {5}	[{26, 3}, {18}, {5}]	{pos_NOUN,feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	0	14328
+{18} {23,24,25,27,92,880,881} {92}	[{18}, {880, 881, 23, 24, 25, 27, 92}, {92}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Number=Plur,dep_les,wp_▁les} {feats_Number=Plur}	0	12257
+{3} {18} {3,26}	[{3}, {18}, {26, 3}]	{pos_NOUN} {pos_ADP} {pos_NOUN,feats_Gender=Fem}	0	12361
+{5,24,27} {3,5} {18}	[{24, 27, 5}, {3, 5}, {18}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	15063
+{5,26} {18} {5}	[{26, 5}, {18}, {5}]	{feats_Number=Sing,feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	0	12729
+{18} {23,24,25,27} {3,26}	[{18}, {24, 25, 27, 23}, {26, 3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	18591
+{5,24} {5} {18} {5}	[{24, 5}, {5}, {18}, {5}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	0	12222
+{5,24} {5} {18}	[{24, 5}, {5}, {18}]	{feats_Number=Sing,pos_DET} {feats_Number=Sing} {pos_ADP}	0	16075
+{24} {3} {17,18}	[{24}, {3}, {17, 18}]	{pos_DET} {pos_NOUN} {lemma_de,pos_ADP}	0	16844
+{92} {92} {92}	[{92}, {92}, {92}]	{feats_Number=Plur} {feats_Number=Plur} {feats_Number=Plur}	0	14848
+{18} {24} {3,5}	[{18}, {24}, {3, 5}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Number=Sing}	4313	23406
+{18} {5,23,24,25,27,1271} {5}	[{18}, {5, 1271, 23, 24, 25, 27}, {5}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁l} {feats_Number=Sing}	0	12210
+{5} {5} {18} {5}	[{5}, {5}, {18}, {5}]	{feats_Number=Sing} {feats_Number=Sing} {pos_ADP} {feats_Number=Sing}	0	15815
+{18} {4,5,23,24,25,27,44} {3,4,5}	[{18}, {4, 5, 44, 23, 24, 25, 27}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁le} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	12703
+{3,5} {18} {5} {5}	[{3, 5}, {18}, {5}, {5}]	{pos_NOUN,feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	0	13107
+{18} {4,5,23,24,25,27,44} {3,4}	[{18}, {4, 5, 44, 23, 24, 25, 27}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁le} {pos_NOUN,feats_Gender=Masc}	0	12718
+{18} {4,5,23,24,25,27,44} {4}	[{18}, {4, 5, 44, 23, 24, 25, 27}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁le} {feats_Gender=Masc}	0	14867
+{18} {4,5,23,24,25,27} {4,5}	[{18}, {4, 5, 23, 24, 25, 27}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	14869
+{18} {44} {4}	[{18}, {44}, {4}]	{pos_ADP} {wp_▁le} {feats_Gender=Masc}	0	14869
+{18} {92} {4,92}	[{18}, {92}, {4, 92}]	{pos_ADP} {feats_Number=Plur} {feats_Gender=Masc,feats_Number=Plur}	0	12535
+{18} {24,25,27} {3,5,26}	[{18}, {24, 25, 27}, {26, 3, 5}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	15032
+{18} {24,27,92} {3,92}	[{18}, {24, 27, 92}, {3, 92}]	{pos_ADP} {pos_DET,feats_PronType=Art,feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	0	15050
+{18} {5,23,24,25,27} {4}	[{18}, {5, 23, 24, 25, 27}, {4}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	16588
+{18} {4,5,23,24,25,27,44} {4,5}	[{18}, {4, 5, 44, 23, 24, 25, 27}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁le} {feats_Gender=Masc,feats_Number=Sing}	0	14851
+{18} {92,881} {92}	[{18}, {881, 92}, {92}]	{pos_ADP} {feats_Number=Plur,wp_▁les} {feats_Number=Plur}	0	14792
+{5,24} {3} {5}	[{24, 5}, {3}, {5}]	{feats_Number=Sing,pos_DET} {pos_NOUN} {feats_Number=Sing}	0	14358
+{18} {23,24,25,27} {4,5}	[{18}, {24, 25, 27, 23}, {4, 5}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	16599
+{18} {5,24,27} {4}	[{18}, {24, 27, 5}, {4}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Masc}	0	17653
+{5,24,27} {5} {18}	[{24, 27, 5}, {5}, {18}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Number=Sing} {pos_ADP}	0	15497
+{26} {18} {5} {5}	[{26}, {18}, {5}, {5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	0	13163
+{18} {5,24} {26}	[{18}, {24, 5}, {26}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Gender=Fem}	0	17442
+{18} {23,24,25,27,92} {92}	[{18}, {23, 24, 25, 27, 92}, {92}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Number=Plur} {feats_Number=Plur}	0	14801
+{18} {24,25,27} {3,26}	[{18}, {24, 25, 27}, {26, 3}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	18593
+{18} {23,24,25,27,92} {3,92}	[{18}, {23, 24, 25, 27, 92}, {3, 92}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	0	13771
+{18} {4,5,23,24,25,27,43,44} {4,5}	[{18}, {4, 5, 43, 44, 23, 24, 25, 27}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,dep_le,wp_▁le} {feats_Gender=Masc,feats_Number=Sing}	0	12227
+{18} {23,24,25,27,92,881} {3}	[{18}, {881, 23, 24, 25, 27, 92}, {3}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,feats_Number=Plur,wp_▁les} {pos_NOUN}	0	13765
+{24} {4} {18}	[{24}, {4}, {18}]	{pos_DET} {feats_Gender=Masc} {pos_ADP}	0	13756
+{18} {4,5,44} {5}	[{18}, {4, 5, 44}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,wp_▁le} {feats_Number=Sing}	0	14923
+{18} {4,5,24,25,27} {3,4}	[{18}, {4, 5, 24, 25, 27}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	12731
+{18} {24,25,27} {3,5}	[{18}, {24, 25, 27}, {3, 5}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	3862	21678
+{5,23,24,25,27} {3,5} {18}	[{5, 23, 24, 25, 27}, {3, 5}, {18}]	{feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	13548
+{18} {24,25,27} {26}	[{18}, {24, 25, 27}, {26}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Fem}	3185	19248
+{18} {4,5} {3,4}	[{18}, {4, 5}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {pos_NOUN,feats_Gender=Masc}	0	14632
+{3} {18} {24,27} {5}	[{3}, {18}, {24, 27}, {5}]	{pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	14157
+{18} {5} {5} {5}	[{18}, {5}, {5}, {5}]	{pos_ADP} {feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing}	0	12381
+{18} {5} {3,4}	[{18}, {5}, {3, 4}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Gender=Masc}	0	16669
+{18} {5,24} {5,26}	[{18}, {24, 5}, {26, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Number=Sing,feats_Gender=Fem}	0	17438
+{18} {24,27} {3,4,5}	[{18}, {24, 27}, {3, 4, 5}]	{pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	15730
+{18} {5} {3,5,26}	[{18}, {5}, {26, 3, 5}]	{pos_ADP} {feats_Number=Sing} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	16897
+{3} {18} {5,24,27} {3}	[{3}, {18}, {24, 27, 5}, {3}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN}	0	12843
+{3} {17,18} {5} {5}	[{3}, {17, 18}, {5}, {5}]	{pos_NOUN} {lemma_de,pos_ADP} {feats_Number=Sing} {feats_Number=Sing}	0	12714
+{26} {18} {5}	[{26}, {18}, {5}]	{feats_Gender=Fem} {pos_ADP} {feats_Number=Sing}	0	17168
+{17,18,728,730} {24,27} {3}	[{728, 17, 18, 730}, {24, 27}, {3}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {pos_DET,feats_PronType=Art} {pos_NOUN}	0	19475
+{18} {4,5,44} {4,5}	[{18}, {4, 5, 44}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,wp_▁le} {feats_Gender=Masc,feats_Number=Sing}	0	14852
+{18} {23,24,25,27} {3,4}	[{18}, {24, 25, 27, 23}, {3, 4}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	18697
+{18} {5,23,24,25,27} {3,4}	[{18}, {5, 23, 24, 25, 27}, {3, 4}]	{pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	14661
+{18} {4,5,24,25,27} {3,4,5}	[{18}, {4, 5, 24, 25, 27}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	12716
+{18} {24,92} {3}	[{18}, {24, 92}, {3}]	{pos_ADP} {pos_DET,feats_Number=Plur} {pos_NOUN}	0	16178
+{18} {4,5,44} {3,4,5}	[{18}, {4, 5, 44}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,wp_▁le} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	12704
+{18} {4} {5}	[{18}, {4}, {5}]	{pos_ADP} {feats_Gender=Masc} {feats_Number=Sing}	0	17547
+{18} {5,24,27} {26}	[{18}, {24, 27, 5}, {26}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Fem}	0	16778
+{5} {5} {5,11}	[{5}, {5}, {11, 5}]	{feats_Number=Sing} {feats_Number=Sing} {feats_Number=Sing,pos_ADJ}	0	12537
+{18} {24,25,27} {3,4}	[{18}, {24, 25, 27}, {3, 4}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	18698
+{17,18,728,730} {5,23,24,25,27} {3,5}	[{728, 17, 18, 730}, {5, 23, 24, 25, 27}, {3, 5}]	{lemma_de,pos_ADP,feats_de,wp_▁de} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing}	0	14853
+{18} {44} {4,5}	[{18}, {44}, {4, 5}]	{pos_ADP} {wp_▁le} {feats_Gender=Masc,feats_Number=Sing}	0	14853
+{5,24,27} {3,5} {5}	[{24, 27, 5}, {3, 5}, {5}]	{feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	0	13315
+{18} {4,5,24} {3}	[{18}, {24, 4, 5}, {3}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET} {pos_NOUN}	0	14482
+{18} {4,5,44} {4}	[{18}, {4, 5, 44}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,wp_▁le} {feats_Gender=Masc}	0	14868
+{18} {5,24,27} {3,26}	[{18}, {24, 27, 5}, {26, 3}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	16032
+{18} {5,24,27} {3,5,26}	[{18}, {24, 27, 5}, {26, 3, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	16030
+{18} {5,24,26} {5}	[{18}, {24, 26, 5}, {5}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Gender=Fem} {feats_Number=Sing}	0	12808
+{26} {18} {24} {3}	[{26}, {18}, {24}, {3}]	{feats_Gender=Fem} {pos_ADP} {pos_DET} {pos_NOUN}	0	13001
+{5} {18} {24,27} {3}	[{5}, {18}, {24, 27}, {3}]	{feats_Number=Sing} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	0	14744
+{3} {18} {24,27} {3}	[{3}, {18}, {24, 27}, {3}]	{pos_NOUN} {pos_ADP} {pos_DET,feats_PronType=Art} {pos_NOUN}	0	14355
+{18} {4,5,24,27} {3,4}	[{18}, {24, 27, 4, 5}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	13966
+{18} {24,27,92} {92}	[{18}, {24, 27, 92}, {92}]	{pos_ADP} {pos_DET,feats_PronType=Art,feats_Number=Plur} {feats_Number=Plur}	0	16195
+{18} {5,24,25,27} {4}	[{18}, {24, 25, 27, 5}, {4}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	16589
+{18} {24,27,92} {3}	[{18}, {24, 27, 92}, {3}]	{pos_ADP} {pos_DET,feats_PronType=Art,feats_Number=Plur} {pos_NOUN}	0	15051
+{18} {4,5} {3}	[{18}, {4, 5}, {3}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {pos_NOUN}	0	14662
+{18} {5,24,25,27} {3,4}	[{18}, {24, 25, 27, 5}, {3, 4}]	{pos_ADP} {feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc}	0	14662
+{18} {5,24} {4,5}	[{18}, {24, 5}, {4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {feats_Gender=Masc,feats_Number=Sing}	0	18329
+{24} {5} {17}	[{24}, {5}, {17}]	{pos_DET} {feats_Number=Sing} {lemma_de}	0	12962
+{5} {18} {5} {3}	[{5}, {18}, {5}, {3}]	{feats_Number=Sing} {pos_ADP} {feats_Number=Sing} {pos_NOUN}	0	14142
+{18} {5,26} {3}	[{18}, {26, 5}, {3}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Fem} {pos_NOUN}	0	12197
+{18} {4} {3}	[{18}, {4}, {3}]	{pos_ADP} {feats_Gender=Masc} {pos_NOUN}	0	14920
+{730} {24} {26}	[{730}, {24}, {26}]	{wp_▁de} {pos_DET} {feats_Gender=Fem}	0	14357
+{5} {3,5} {5}	[{5}, {3, 5}, {5}]	{feats_Number=Sing} {pos_NOUN,feats_Number=Sing} {feats_Number=Sing}	0	15126
+{18} {5,24} {3,4}	[{18}, {24, 5}, {3, 4}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Masc}	0	16483
+{18} {4,5,23,24,25,27,44} {5}	[{18}, {4, 5, 44, 23, 24, 25, 27}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art,wp_▁le} {feats_Number=Sing}	0	14922
+{26} {18} {24}	[{26}, {18}, {24}]	{feats_Gender=Fem} {pos_ADP} {pos_DET}	0	14349
+{3} {18} {5,24} {3}	[{3}, {18}, {24, 5}, {3}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN}	0	13562
+{3} {18} {24} {3,5}	[{3}, {18}, {24}, {3, 5}]	{pos_NOUN} {pos_ADP} {pos_DET} {pos_NOUN,feats_Number=Sing}	0	13562
+{18} {24} {5,26}	[{18}, {24}, {26, 5}]	{pos_ADP} {pos_DET} {feats_Number=Sing,feats_Gender=Fem}	0	17439
+{18} {24,25,27} {4,5}	[{18}, {24, 25, 27}, {4, 5}]	{pos_ADP} {pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	16600
+{18} {4,24} {3,4,5}	[{18}, {24, 4}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,pos_DET} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14466
+{18} {4,5,23,24,25,27} {5}	[{18}, {4, 5, 23, 24, 25, 27}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	14940
+{18} {92} {92}	[{18}, {92}, {92}]	{pos_ADP} {feats_Number=Plur} {feats_Number=Plur}	0	19219
+{18} {24} {3,92}	[{18}, {24}, {3, 92}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Number=Plur}	0	16181
+{730} {24,27} {5}	[{730}, {24, 27}, {5}]	{wp_▁de} {pos_DET,feats_PronType=Art} {feats_Number=Sing}	0	17338
+{26} {18} {24,27}	[{26}, {18}, {24, 27}]	{feats_Gender=Fem} {pos_ADP} {pos_DET,feats_PronType=Art}	0	13276
+{18} {5,26} {26}	[{18}, {26, 5}, {26}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Fem} {feats_Gender=Fem}	0	14443
+{18} {92} {3,92}	[{18}, {92}, {3, 92}]	{pos_ADP} {feats_Number=Plur} {pos_NOUN,feats_Number=Plur}	0	17040
+{18} {24,27} {5,26}	[{18}, {24, 27}, {26, 5}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Number=Sing,feats_Gender=Fem}	0	16779
+{18} {4,5,24} {4,5}	[{18}, {24, 4, 5}, {4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET} {feats_Gender=Masc,feats_Number=Sing}	0	16550
+{18} {44} {3,4,5}	[{18}, {44}, {3, 4, 5}]	{pos_ADP} {wp_▁le} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	12705
+{26} {26} {18}	[{26}, {26}, {18}]	{feats_Gender=Fem} {feats_Gender=Fem} {pos_ADP}	0	12690
+{18} {4,5,24,27} {4}	[{18}, {24, 27, 4, 5}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_PronType=Art} {feats_Gender=Masc}	0	16085
+{3} {18} {5,23,24,25,27} {5}	[{3}, {18}, {5, 23, 24, 25, 27}, {5}]	{pos_NOUN} {pos_ADP} {feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Sing}	0	12973
+{18} {26} {26}	[{18}, {26}, {26}]	{pos_ADP} {feats_Gender=Fem} {feats_Gender=Fem}	0	15289
+{4,5} {5} {18}	[{4, 5}, {5}, {18}]	{feats_Gender=Masc,feats_Number=Sing} {feats_Number=Sing} {pos_ADP}	0	12800
+{18} {4,24} {4}	[{18}, {24, 4}, {4}]	{pos_ADP} {feats_Gender=Masc,pos_DET} {feats_Gender=Masc}	0	16690
+{18} {24,27} {4,5}	[{18}, {24, 27}, {4, 5}]	{pos_ADP} {pos_DET,feats_PronType=Art} {feats_Gender=Masc,feats_Number=Sing}	0	17662
+{18} {4,5,23,24,25,27} {3,4,5}	[{18}, {4, 5, 23, 24, 25, 27}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	12715
+{3} {18} {24} {5}	[{3}, {18}, {24}, {5}]	{pos_NOUN} {pos_ADP} {pos_DET} {feats_Number=Sing}	0	14850
+{18} {4,5,24} {3,4,5}	[{18}, {24, 4, 5}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14464
+{5,24} {3,5} {17,18}	[{24, 5}, {3, 5}, {17, 18}]	{feats_Number=Sing,pos_DET} {pos_NOUN,feats_Number=Sing} {lemma_de,pos_ADP}	0	12818
+{5,24,25,27} {3} {18}	[{24, 25, 27, 5}, {3}, {18}]	{feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN} {pos_ADP}	0	13558
+{24,25,27} {3,5} {18}	[{24, 25, 27}, {3, 5}, {18}]	{pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Number=Sing} {pos_ADP}	0	13558
+{18} {26} {3}	[{18}, {26}, {3}]	{pos_ADP} {feats_Gender=Fem} {pos_NOUN}	0	12445
+{18} {92} {3}	[{18}, {92}, {3}]	{pos_ADP} {feats_Number=Plur} {pos_NOUN}	0	17059
+{3} {18} {26}	[{3}, {18}, {26}]	{pos_NOUN} {pos_ADP} {feats_Gender=Fem}	0	16623
+{18} {4,5,24,25,27} {4}	[{18}, {4, 5, 24, 25, 27}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Gender=Masc}	0	14886
+{18} {24} {3,5,26}	[{18}, {24}, {26, 3, 5}]	{pos_ADP} {pos_DET} {pos_NOUN,feats_Number=Sing,feats_Gender=Fem}	0	16702
+{18} {4,5} {4}	[{18}, {4, 5}, {4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {feats_Gender=Masc}	0	17281
+{730} {5,24} {3}	[{730}, {24, 5}, {3}]	{wp_▁de} {feats_Number=Sing,pos_DET} {pos_NOUN}	0	15574
+{730} {23,24,25,27} {3,26}	[{730}, {24, 25, 27, 23}, {26, 3}]	{wp_▁de} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {pos_NOUN,feats_Gender=Fem}	0	13053
+{18} {4,5} {3,4,5}	[{18}, {4, 5}, {3, 4, 5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	14609
+{18} {4,24} {3,4}	[{18}, {24, 4}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,pos_DET} {pos_NOUN,feats_Gender=Masc}	0	14618
+{18} {4,5} {5}	[{18}, {4, 5}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing} {feats_Number=Sing}	0	17477
+{18} {4,5,44} {3,4}	[{18}, {4, 5, 44}, {3, 4}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,wp_▁le} {pos_NOUN,feats_Gender=Masc}	0	12719
+{18} {23,24,25,27} {92}	[{18}, {24, 25, 27, 23}, {92}]	{pos_ADP} {lemma_le,pos_DET,feats_Definite=Def,feats_PronType=Art} {feats_Number=Plur}	0	14808
+{18} {5,26} {5,26}	[{18}, {26, 5}, {26, 5}]	{pos_ADP} {feats_Number=Sing,feats_Gender=Fem} {feats_Number=Sing,feats_Gender=Fem}	0	14323
+{18} {4,5,24} {5}	[{18}, {24, 4, 5}, {5}]	{pos_ADP} {feats_Gender=Masc,feats_Number=Sing,pos_DET} {feats_Number=Sing}	0	16618
+{18} {5,24} {3,4,5}	[{18}, {24, 5}, {3, 4, 5}]	{pos_ADP} {feats_Number=Sing,pos_DET} {pos_NOUN,feats_Gender=Masc,feats_Number=Sing}	0	16469
