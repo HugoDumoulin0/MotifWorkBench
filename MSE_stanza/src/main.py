@@ -26,6 +26,8 @@ def get_minsup(minsup, dmt4_files):
 
 if __name__ == "__main__":
     python = "python3.7"
+    
+    types_textes = os.listdir("./Data/Textes_raw")
     if ".DS_Store" in types_textes:
         types_textes.remove(".DS_Store")
         
