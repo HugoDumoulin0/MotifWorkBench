@@ -93,45 +93,15 @@ def association_req_vocab_specific(req, index_filtered, cible, T):
     indice_association, M = tools.indice_specificite(k, f, t, T)
     return indice_association
 
-def read_req(motif):
-    # Expression régulière pour diviser le trigramme en n'importe quel nombre de parties
-    pattern = r'\{([^}]*)\}' 
-    # Trouver tous les groupes dans le trigramme
-    match = re.findall(pattern, motif)
-    # Si le trigramme n'a pas de nœuds, on lève une exception
-    if not match:
-        raise ValueError("Le ngramme n'a pas de nœuds valides.")
-    # Construire la requête Grew pour chaque nœud
-    req = "pattern {\n"
-    # Parcourir chaque nœud et construire les nœuds avec les relations
-    for i, node in enumerate(match, 1):
-        # Diviser chaque nœud en ses conditions séparées par des virgules
-        node_conditions = node.split(',')
-        # Traiter chaque condition pour ajuster les noms et valeurs
-        conditions = []
-        for item in node_conditions:
-            # Si la condition contient feats_, on la modifie
-            if 'feats_' in item:
-                item = item.replace('feats_', '')
-            if "_" in item:
-                item=item.replace("_", "=")
-            # Si la condition concerne pos, on la transforme en upos
-            if item.startswith('pos='):
-                item = 'upos=' + item.split('=')[1]
-            # Ajouter à la liste des conditions modifiées
-            conditions.append(item)
-        # Joindre toutes les conditions modifiées pour ce nœud
-        conditions_str = ", ".join(conditions)
-        # Ajouter au match Grew avec un nom de nœud dynamique (X1, X2, ...)
-        req += f"    X{i} [{conditions_str}];\n"
-    # Ajouter la relation entre les nœuds (par exemple, X1 < X2)
-    for i in range(1, len(match)):
-        req += f"    X{i} < X{i+1};\n"
-    req += "}"
-    return req
+
     
 
-
+# path = "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_stanza_specifs_rapports_Specifs/Data/Textes_tagged_stanza/CDPC/CDPC.conllu"
+# req = "{feats_Gender=Masc} {feats_Gender=Masc} {feats_Gender=Fem}"
+# sortie = grew.read_req(req)
+# indexx = grew.index(path, sortie, "form")
+# for i in indexx:
+#     print(i)
     
 # liste_fichiers = ["MODYCO", "ISP"]
 # cible = "ISP"

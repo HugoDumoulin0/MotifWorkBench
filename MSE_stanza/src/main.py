@@ -15,6 +15,8 @@ import representants
 import extract_features
 import stanza
 from stanza.utils.conll import CoNLL
+import time
+import shutil
 
 
 def get_nbr_seq(dmt4_files):
@@ -27,6 +29,7 @@ def get_minsup(minsup, dmt4_files):
 if __name__ == "__main__":
     python = "python3.7"
     
+    
     types_textes = os.listdir("./Data/Textes_raw")
     if ".DS_Store" in types_textes:
         types_textes.remove(".DS_Store")
@@ -34,6 +37,7 @@ if __name__ == "__main__":
     shortcut_association = True
     shortcut_specifs = True
     only_clustering = False
+    shortcut_wp = True
     
     #Set param for minimal number of itemsets in a pattern
     nb_itemset_min = 3 #Tim, 27/02
@@ -47,6 +51,7 @@ if __name__ == "__main__":
 
         print("1.1. Tagging data with Stanza: POS, lemma, UD")
         from stanza.pipeline.core import DownloadMethod
+        start_time = time.time()
         nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES)
             #Set language model for stanza and download models on first run only
 
@@ -88,29 +93,31 @@ if __name__ == "__main__":
                         output_file = os.path.join(output_folder, "{}.conllu".format(type_texte, file.split('.')[0])) #Define export path from variables
                         CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
                         
-                # for filename in os.listdir(output_folder):
-                #     file_path = os.path.join(output_folder, filename)
-                #     replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by word form
+                for filename in os.listdir(output_folder):
+                    file_path = os.path.join(output_folder, filename)
+                    replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by word form
 
                     print("\t", type_texte, "has been tagged and saved:", output_file)
-
-        for type_texte in types_textes:
-            print("\t CamamBERT/WP: Checking if tagged files already exists")
-            output_file = "./Data/Textes_tagged_WP/{0}_{0}.conllu".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
-            # print(output_file)
-
-            if os.path.exists(output_file):  # Check if the file exists
-                print(f"\t CamamBERT/WP: file {output_folder} already exists. Delete it to perform WP tokenization again.")
-            else:
-                print(f"\t CamamBERT/WP: file {output_folder} does not exist. Proceeds with WP tokenization.")
-                rep = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-                output_file = os.path.join(output_folder, "{}.conllu".format(type_texte)) #Define export path from variables; only used for printing.
-                for file in os.listdir(rep):
-                    if file[0] == ".": continue
-                    tag_WP.parse_conll(os.path.join(rep,file), type_texte)
-                    print("\t", type_texte, "has been WP-tokenized and saved:", output_file)
-
+                    
+        if shortcut_wp == False:
+            for type_texte in types_textes:
+                print("\t CamamBERT/WP: Checking if tagged files already exists")
+                output_file = "./Data/Textes_tagged_WP/{0}_{0}.conllu".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
+                # print(output_file)
     
+                if os.path.exists(output_file):  # Check if the file exists
+                    print(f"\t CamamBERT/WP: file {output_folder} already exists. Delete it to perform WP tokenization again.")
+                else:
+                    print(f"\t CamamBERT/WP: file {output_folder} does not exist. Proceeds with WP tokenization.")
+                    rep = "./Data/Textes_tagged_stanza/{}".format(type_texte)
+                    output_file = os.path.join(output_folder, "{}.conllu".format(type_texte)) #Define export path from variables; only used for printing.
+                    for file in os.listdir(rep):
+                        if file[0] == ".": continue
+                        tag_WP.parse_conll(os.path.join(rep,file), type_texte)
+                        print("\t", type_texte, "has been WP-tokenized and saved:", output_file)
+        end_time=time.time()
+        time_tag = end_time - start_time
+ 
         #-------------------------------------------------------------------------------------------------------------------
         # DMT4 files
         #-------------------------------------------------------------------------------------------------------------------
@@ -118,7 +125,7 @@ if __name__ == "__main__":
         print("2. Creating DMT4 files")
     
         # # types_textes = ["1984ca", "2008ca"]
-    
+        
         #Avoid generating sorted_sorted file names and file not found error.
         for type_texte in types_textes:
             print("\t Checking if DMT4 files already exists")
@@ -126,18 +133,34 @@ if __name__ == "__main__":
             print(target)
             if os.path.exists(target):  # Check if the file exists
                 os.remove(target)       # delete existing files
-                print(f"\t DMT4: Previous DMT4 files with same corpus have been deleted.")
-    
-        conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
-        for type_texte in types_textes:
-                conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte)
-        conll_dmt4.sort_dmtfiles()
-    
-        for type_texte in types_textes:
-            conll_dmt4.make_DMT4_file(type_texte)
+                print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+                
+        if shortcut_wp == False:
+            conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
+            for type_texte in types_textes:
+                    conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte)
+            conll_dmt4.sort_dmtfiles()
+        
+            for type_texte in types_textes:
+                conll_dmt4.make_DMT4_file(type_texte)
             #This creates the missing dict_sorted.pk files. For some reason,
             #the function wasn't called in the original script.
-            
+        else:
+            if not os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
+                os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
+            for type_texte in types_textes:
+                destination = "./Data/Textes_tagged_stanza_for_dmt4/"
+                source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}.conllu"
+                shutil.copy(source,destination)
+            conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
+            for type_texte in types_textes:
+                    conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte)
+            conll_dmt4.sort_dmtfiles()
+        
+            for type_texte in types_textes:
+                conll_dmt4.make_DMT4_file(type_texte)
+            #This creates the missing dict_sorted.pk files. For some reason,
+            #the function wasn't called in the original script.
     
     
         # #-------------------------------------------------------------------------------------------------------------------
@@ -145,7 +168,7 @@ if __name__ == "__main__":
         # #-------------------------------------------------------------------------------------------------------------------
         print("-"*75)
         print("3. Extracting freq & closed patterns")
-    
+        start_time=time.time()
         # # types_textes = ["1984ca", "2008ca"]
         minsup_percent = 25
     
@@ -183,7 +206,9 @@ if __name__ == "__main__":
                 set_up.write("GAPMAX={}\n".format(0))
     
             os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
-    
+        end_time=time.time()
+        
+        time_DMT4 = end_time - start_time
         #-------------------------------------------------------------------------------------------------------------------
         # Compute Patterns
         #-------------------------------------------------------------------------------------------------------------------
@@ -215,136 +240,156 @@ if __name__ == "__main__":
         compute_specifs.main(types_textes,shortcut_association, shortcut_specifs)
 
 
-    # # #-------------------------------------------------------------------------------------------------------------------
-    # # # Clustering Emergent Pattern
-    # # #-------------------------------------------------------------------------------------------------------------------
-
-    # print("-"*75)
-    # print("5. Clustering emergent patterns")
-
-    # ###adaptation du script de Jade
-
-    # # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
-    # type_1 = types_textes[0]
-    # type_2 = types_textes[1]
-    # nbr_pool=2
-
-    # ###
-
-    # emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1, type_2))
-    # index_motifs = [patt_info[0] for patt_info in list(emergent_patt.values()) if patt_info[2] >=1]
-
-    # print("\t Type texte 1 :", type_1)
-    # print("\t Type texte 2 :", type_2)
-    # print("\t Nbr emergent patterns : ", len(index_motifs))
-
-    # print("5.1. Clustering 1 : 1/6")
-
-    # clustering_index_1 = regroupement.regroupement_1(index_motifs)
-    # print("\t Nbr clusters : ", len(clustering_index_1))
-
-    # clustering_motifcodes_1 = regroupement.from_index_to_motifcodes(clustering_index_1, index_motifs)
-    # title_file_results_1 = "./Clustering_results/Clusters/{}_{}_clustering_1.pk".format(type_1, type_2)
-
-    # regroupement.save_pickles_results(clustering_motifcodes_1, title_file_results_1)
-
-    # print("5.2. Centroids 1 : 2/6")
-
-    # compute_all_centroids = regroupement.main_compute_medoids(title_file_results_1, nbr_pool)
-    # title_file_out_centroids_1 = "./Clustering_results/Medoids/{}_{}_medoids_1.pk".format(type_1, type_2)
-    # regroupement.save_pickles_results(compute_all_centroids, title_file_out_centroids_1)
-
-    # print("5.3. Clustering 2 : 3/6")
-
-    # clusters_1 = regroupement.load_pickles(title_file_results_1)
-    # centroids_files = regroupement.load_pickles(title_file_out_centroids_1)
-    # print("\t Nbr clusters : ", len(centroids_files))
-
-    # index_clusters = list(clusters_1.keys())
-    # clusters_2 = regroupement.clustering_2(index_clusters, clusters_1, centroids_files, nbr_pool)
-
-    # title_file_results_2 = "./Clustering_results/Clusters/{}_{}_clustering_2.pk".format(type_1, type_2)
-    # regroupement.save_pickles_results(clusters_2, title_file_results_2)
-
-    # print("5.4. Centroids 2 : 4/6")
-
-    # compute_all_centroids_2 = regroupement.main_compute_medoids(title_file_results_2, nbr_pool)
-    # title_file_out_centroids_2 = "./Clustering_results/Medoids/{}_{}_medoids_2.pk".format(type_1, type_2)
-    # regroupement.save_pickles_results(compute_all_centroids_2, title_file_out_centroids_2)
-
-    # print("5.5. Clustering 3 : 5/6")
-
-    # clusters_2 = regroupement.load_pickles(title_file_results_2)
-    # centroids_files_2 = regroupement.load_pickles(title_file_out_centroids_2)
-
-    # print("\t Nbr clusters : ", len(centroids_files_2))
-
-    # index_clusters = list(clusters_2.keys())
-    # clusters_3 = regroupement.clustering_2(index_clusters, clusters_2, centroids_files_2, nbr_pool)
-
-    # title_file_results_3 = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
-    # regroupement.save_pickles_results(clusters_3, title_file_results_3)
-
-    # print("5.6. Centroids 3 : 6/6")
-
-    # compute_all_centroids_3 = regroupement.main_compute_medoids(title_file_results_3, nbr_pool)
-
-    # title_file_out_centroids_3 = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
-    # regroupement.save_pickles_results(compute_all_centroids_3, title_file_out_centroids_3)
-
     # #-------------------------------------------------------------------------------------------------------------------
-    # # Extracting Representant Patterns
+    # # Clustering Emergent Pattern
     # #-------------------------------------------------------------------------------------------------------------------
+                
 
-    # print("-"*75)
-    # print("6. Extracting Representant Patterns")
+    def clustering_emergent_patterns(type_1, type_2,nbr_pool):     
+        print("-"*75)
+        print("5. Clustering emergent patterns")
 
-    # print("6.1. Computing Representant Patterns")
-
-
-    # ###adaptation du script de Jade
-
-    # # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
-    # type_1 = types_textes[0]
-    # type_2 = types_textes[1]
-    # nbr_pool=2
-
-    # ###
-
-
-    # title_file_clusters = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
-    # title_file_centroids = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
-
-    # clusters = formate_patterns.load_pk(title_file_clusters)
-    # centroids = formate_patterns.load_pk(title_file_centroids)
-
-    # emergent_patterns = [p
-    #                     for p
-    #                     in list(formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1,type_2)).values())
-    #                     if p[2] >= 1]
-
-    # dict_emergent_patt = dict()
-    # for p in emergent_patterns:
-    #     dict_emergent_patt[str(sorted(p[0]))] = p[3]
-
-    # corpus_dmt4 = formate_patterns.load_pk("./Data/DMT4_files/DMT4_{}_dict_sorted.pk".format(type_1))
-
-    # lexique = formate_patterns.load_lexique()
-
-    # df_all_rep = representants.main_extract_all_representant(type_1,
-    #                             type_2,
-    #                             clusters,
-    #                             centroids,
-    #                             dict_emergent_patt,
-    #                             corpus_dmt4,
-    #                             nbr_pool)
-
-    # print("6.2. Selecting Representant Patterns")
-    # os.mkdir("./Representants_results")
-    # os.mkdir("./Representants_results/Representants_finaux")
+        ###
     
-    # representants.main_select_representants("./Representants_results/{}_{}_representants.pk".format(type_1,type_2))
+        emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1, type_2))
+        index_motifs = [patt_info[0] for patt_info in list(emergent_patt.values()) if patt_info[2] >=1]
+    
+        print("\t Type texte 1 :", type_1)
+        print("\t Type texte 2 :", type_2)
+        print("\t Nbr emergent patterns : ", len(index_motifs))
+    
+        print("5.1. Clustering 1 : 1/6")
+    
+        clustering_index_1 = regroupement.regroupement_1(index_motifs)
+        print("\t Nbr clusters : ", len(clustering_index_1))
+    
+        clustering_motifcodes_1 = regroupement.from_index_to_motifcodes(clustering_index_1, index_motifs)
+        title_file_results_1 = "./Clustering_results/Clusters/{}_{}_clustering_1.pk".format(type_1, type_2)
+    
+        regroupement.save_pickles_results(clustering_motifcodes_1, title_file_results_1)
+    
+        print("5.2. Centroids 1 : 2/6")
+    
+        compute_all_centroids = regroupement.main_compute_medoids(title_file_results_1, nbr_pool)
+        title_file_out_centroids_1 = "./Clustering_results/Medoids/{}_{}_medoids_1.pk".format(type_1, type_2)
+        regroupement.save_pickles_results(compute_all_centroids, title_file_out_centroids_1)
+    
+        print("5.3. Clustering 2 : 3/6")
+    
+        clusters_1 = regroupement.load_pickles(title_file_results_1)
+        centroids_files = regroupement.load_pickles(title_file_out_centroids_1)
+        print("\t Nbr clusters : ", len(centroids_files))
+    
+        index_clusters = list(clusters_1.keys())
+        clusters_2 = regroupement.clustering_2(index_clusters, clusters_1, centroids_files, nbr_pool)
+    
+        title_file_results_2 = "./Clustering_results/Clusters/{}_{}_clustering_2.pk".format(type_1, type_2)
+        regroupement.save_pickles_results(clusters_2, title_file_results_2)
+    
+        print("5.4. Centroids 2 : 4/6")
+    
+        compute_all_centroids_2 = regroupement.main_compute_medoids(title_file_results_2, nbr_pool)
+        title_file_out_centroids_2 = "./Clustering_results/Medoids/{}_{}_medoids_2.pk".format(type_1, type_2)
+        regroupement.save_pickles_results(compute_all_centroids_2, title_file_out_centroids_2)
+    
+        print("5.5. Clustering 3 : 5/6")
+    
+        clusters_2 = regroupement.load_pickles(title_file_results_2)
+        centroids_files_2 = regroupement.load_pickles(title_file_out_centroids_2)
+    
+        print("\t Nbr clusters : ", len(centroids_files_2))
+    
+        index_clusters = list(clusters_2.keys())
+        clusters_3 = regroupement.clustering_2(index_clusters, clusters_2, centroids_files_2, nbr_pool)
+    
+        title_file_results_3 = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
+        regroupement.save_pickles_results(clusters_3, title_file_results_3)
+    
+        print("5.6. Centroids 3 : 6/6")
+    
+        compute_all_centroids_3 = regroupement.main_compute_medoids(title_file_results_3, nbr_pool)
+    
+        title_file_out_centroids_3 = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
+        regroupement.save_pickles_results(compute_all_centroids_3, title_file_out_centroids_3)
 
+    #-------------------------------------------------------------------------------------------------------------------
+    # Extracting Representant Patterns
+    #-------------------------------------------------------------------------------------------------------------------
+    def extracting_representant_patterns(type_1,type_2, nbr_pool):
+        print("-"*75)
+        print("6. Extracting Representant Patterns")
+    
+        print("6.1. Computing Representant Patterns")
+    
+    
+        ###adaptation du script de Jade
+    
+        # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
+        # type_1 = types_textes[0]
+        # type_2 = types_textes[1]
+        # nbr_pool=2
+    
+        ###
+    
+    
+        title_file_clusters = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
+        title_file_centroids = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
+    
+        clusters = formate_patterns.load_pk(title_file_clusters)
+        centroids = formate_patterns.load_pk(title_file_centroids)
+    
+        emergent_patterns = [p
+                            for p
+                            in list(formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1,type_2)).values())
+                            if p[2] >= 1]
+    
+        dict_emergent_patt = dict()
+        for p in emergent_patterns:
+            dict_emergent_patt[str(sorted(p[0]))] = p[3]
+    
+        corpus_dmt4 = formate_patterns.load_pk("./Data/DMT4_files/DMT4_{}_dict_sorted.pk".format(type_1))
+    
+        lexique = formate_patterns.load_lexique()
+    
+        df_all_rep = representants.main_extract_all_representant(type_1,
+                                    type_2,
+                                    clusters,
+                                    centroids,
+                                    dict_emergent_patt,
+                                    corpus_dmt4,
+                                    nbr_pool)
+    
+        print("6.2. Selecting Representant Patterns")
+        if not os.path.exists("./Data/Representants_results/"):
+            os.mkdir("./Representants_results")
+            if not os.path.exists("./Data/Representants_results/Representants_finaux"):
+                os.mkdir("./Representants_results/Representants_finaux")
+        
+        representants.main_select_representants("./Representants_results/{}_{}_representants.pk".format(type_1,type_2))
+    
+    
+    ###adaptation du script de Jade
+    
+    # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
+    nbr_pool=len(types_textes)
+    liste_couples =[]
+    for i in types_textes:
+        for j in types_textes:
+            if i!=j:
+                liste_couples.append((i,j))
+    start_time = time.time()
+    for couple in liste_couples:
+        type_1 = couple[0]
+        type_2 = couple[1]
+        clustering_emergent_patterns(type_1,type_2, nbr_pool)
+        extracting_representant_patterns(type_1, type_2, nbr_pool)
+    end_time = time.time()
+    cluster_time = end_time - start_time
+    
+    print(f"Temps de tagging : {time_tag // 3600}")
+    print(f"Temps de DMT4 : {time_DMT4 // 3600}")
+    print(f"Temps de clustering : {cluster_time // 3600}")
+    
     # #-------------------------------------------------------------------------------------------------------------------
     # # Random Forest
     # #-------------------------------------------------------------------------------------------------------------------
