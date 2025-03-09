@@ -1,71 +1,66 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Feb 21 14:59:51 2025
+Created on Sat Mar  8 23:19:09 2025
 
 @author: hugodumoulin
 """
 
+import count_motifs_orig
 import formate_patterns
-import pandas as pd
 import time
-import os
 import tools
+import os
+import pandas as pd
+import stats_vocab
 import re
-# import stats_vocab
 
-def data_for_specifs(liste_fichiers):
-    dictionnaire_specifs = {}
-    mins = "25"
-    for fichier in liste_fichiers:
-        dictionnaire_specifs[fichier]={}
-        dictionnaire_specifs[fichier]["dict_clos"] = tools.load_pickles("./Patterns_results/Closed/{}_00_DMT4_{}_files_sorted_closed.pk".format(mins, fichier))
-        dictionnaire_specifs[fichier]["dict_frequents"] = tools.load_pickles("./Patterns_results/Freq/{}_00_DMT4_{}_files_sorted_freq.pk".format(mins, fichier))
-        dictionnaire_specifs[fichier]["t"]=tools.get_nbr_seq("./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(fichier))
-        # dictionnaire_specifs[fichier]["t"]=get_nbr_seq("./DMT4_{}_files_sorted.txt".format(fichier))
-    return dictionnaire_specifs
+
+def count_tokens_in_conll(corpus_path):
+    token_count = 0
+    # Ouvrir le fichier CoNLL et lire ligne par ligne
+    with open(corpus_path, 'r') as file:
+        for line in file:
+            # Ignore les lignes vides et les lignes de commentaire (en général, les lignes commencent par '#')
+            if line.strip() and not line.startswith("#"):
+                # Compte chaque token (chaque mot dans une ligne)
+                token_count += 1
+    return token_count
+
+def compute_k_specifs(types_textes, DMT4_clos_corpus):
+    liste_motifs_clos_corpus = count_motifs_orig.from_pk_corpus_to_list(DMT4_clos_corpus)
+    dictionnaire_k = {}
+    for type_texte in types_textes:
+        dictionnaire_k[type_texte]={}
+        print(type_texte)
+        file_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}.conllu"
+        dict_file_motif = count_motifs_orig.count_motif(file_path, liste_motifs_clos_corpus)
+        dictionnaire_k[type_texte]=dict_file_motif
+    return dictionnaire_k, liste_motifs_clos_corpus
     
-def compute_T_in_specifs(dictionnaire_specifs):
+def compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus):
+    dictionnaire_f = {}
+    for motif in liste_motifs_clos_corpus:
+        f = 0
+        for type_texte in dictionnaire_k.keys():
+                f += dictionnaire_k[type_texte][motif]
+        dictionnaire_f[motif]=f
+    return dictionnaire_f
+
+def compute_t_specifs(types_textes):
+    dictionnaire_t = {}
+    for type_texte in types_textes:
+        corpus_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}.conllu"
+        dictionnaire_t[type_texte] = count_tokens_in_conll(corpus_path)
+    return dictionnaire_t
+    
+def compute_T_specifs(dictionnaire_t):
     T = 0
-    for fichier in dictionnaire_specifs:
-        T = T + dictionnaire_specifs[fichier]["t"]
+    for type_texte in dictionnaire_t.keys:
+        T += dictionnaire_t[type_texte]
     return T
 
-def compute_k_specifs(dictionnaire_specifs, liste_motifs):
-    dictionnaire_k = {}
-    for fichier in dictionnaire_specifs:
-        print(fichier)
-        dictionnaire_k[fichier]={}
-        for motif in liste_motifs:
-            dictionnaire_k[fichier][motif] = {}
-            if motif in dictionnaire_specifs[fichier]["dict_clos"]:
-                k = dictionnaire_specifs[fichier]["dict_clos"][motif]
-            else: #quand motif n'est pas clos dans fichier (n'est pas présent dans dictionnaire_specifs[fichier]["dict_clos"])
-                k=None
-            # if motif in dictionnaire_specifs[fichier]["dict_frequents"]:
-            #     k = dictionnaire_specifs[fichier]["dict_frequents"][motif]
-            # else: 
-            #     k=0
-            dictionnaire_k[fichier][motif] = k
-    return dictionnaire_k
- 
-    
-def compute_f_specifs(dictionnaire_specifs):
-     dictionnaire_f = {}
-     liste_motifs = []
-     for fichier in dictionnaire_specifs:
-         for motif in dictionnaire_specifs[fichier]["dict_clos"]:
-             if motif not in liste_motifs:
-                 liste_motifs.append(motif)
-     for motif in liste_motifs:
-         f = 0
-         for fichier in dictionnaire_specifs:
-             if motif in dictionnaire_specifs[fichier]["dict_frequents"]:
-                 f = f + dictionnaire_specifs[fichier]["dict_frequents"][motif]
-             dictionnaire_f[motif] = f
-     return dictionnaire_f, liste_motifs
-    
-def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste_motifs, shortcut_specifs):
+def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_t, T, liste_motifs_clos_corpus, shortcut_specifs):
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     dict_synth = {}
     for fichier in dictionnaire_k:
@@ -73,21 +68,21 @@ def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste
         total_motifs = len(dictionnaire_k[fichier])
         motif_count = 0
         # for motif in dictionnaire_k[fichier]:
-        for motif in liste_motifs:
+        for motif in liste_motifs_clos_corpus:
             motif_count += 1
             start_time_iter = time.time()
             f = dictionnaire_f[motif]
-            t = dictionnaire_specifs[fichier]["t"]
+            t = dictionnaire_t[fichier]
             k = dictionnaire_k[fichier][motif]
             # if k==None:
             #     indice=None
             #     M=None
             # else:
-            if k==None:
-                if motif in dictionnaire_specifs[fichier]["dict_frequents"]:
-                    k = dictionnaire_specifs[fichier]["dict_frequents"][motif]
-                else:
-                    k=0
+            # if k==None:
+            #     if motif in dictionnaire_specifs[fichier]["dict_frequents"]:
+            #         k = dictionnaire_specifs[fichier]["dict_frequents"][motif]
+            #     else:
+            #         k=0
             if shortcut_specifs==True:
                 indice = 0
                 M=0
@@ -150,9 +145,9 @@ def add_association_vocab(dict_synth, liste_fichiers, columns):
 def tsv_out(dict_synth, columns):
     mins="25"
     for fichier in dict_synth:
-        if not os.path.exists("./Patterns_results/Specifs"):
-            os.makedirs("./Patterns_results/Specifs")
-        file_out = "./Patterns_results/Specifs/{}_00_{}.pk".format(mins,
+        if not os.path.exists("./Patterns_results/Specifs_noZero"):
+            os.makedirs("./Patterns_results/Specifs_noZero")
+        file_out = "./Patterns_results/Specifs_noZero/{}_00_{}.pk".format(mins,
                                                                            fichier)
         tools.save_pickles_results(dict_synth[fichier], file_out)
         df = pd.DataFrame.from_dict(dict_synth[fichier], orient="index", columns=columns)
@@ -175,7 +170,7 @@ def all_synth_tsv_out(dict_synth, liste_motifs):
             dict_out[motif].append(dict_synth[fichier][motif][7])
                 # else:
                 #     dict_out[motif].append("None")
-    file_out = "./Patterns_results/Specifs/{}_synthèse.pk".format(mins)
+    file_out = "./Patterns_results/Specifs_noZero/{}_synthèse.pk".format(mins)
     tools.save_pickles_results(dict_out, file_out)
     columns = ["motifs_int", "motifs_str"]
     columns=columns+liste_fichier
@@ -199,8 +194,8 @@ def df_mouture_R_dict_synth(dict_synth, liste_motifs):
         for fichier in liste_fichier:
             dict_spec_out[motif] += dict_synth[fichier][motif][2:]
             dict_AFC_out[motif] += [dict_synth[fichier][motif][2]]
-    file_out_spec = "./Patterns_results/Specifs/{}_specR_df.pk".format(mins)
-    file_out_AFC = "./Patterns_results/Specifs/{}_AFC_R_df.pk".format(mins)
+    file_out_spec = "./Patterns_results/Specifs_noZero/{}_specR_df.pk".format(mins)
+    file_out_AFC = "./Patterns_results/Specifs_noZero/{}_AFC_R_df.pk".format(mins)
     tools.save_pickles_results(dict_spec_out, file_out_spec)
     tools.save_pickles_results(dict_AFC_out, file_out_AFC)
     columns_base = ["motifs_int", "motifs_str"]
@@ -213,30 +208,32 @@ def df_mouture_R_dict_synth(dict_synth, liste_motifs):
             liste_columns_spec.append(f'{fichier}_{item}')
     columns_spec=columns_base+liste_columns_spec
     columns_AFC=columns_base+liste_columns_AFC
-    df_spec = pd.DataFrame.from_dict(dict_spec_out, orient="index", columns=columns_spec)
-    df_AFC = pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
-    df_spec.to_csv(file_out_spec.replace("pk", "tsv"), sep="\t", encoding="utf-8")
-    df_AFC.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    df = pd.DataFrame.from_dict(dict_spec_out, orient="index", columns=columns_spec)
+    df = pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
+    df.to_csv(file_out_spec.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    df.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
     return dict_spec_out, dict_AFC_out
 
-def main(liste_fichiers, shortcut_specifs, shortcut_association):
-    dictionnaire_specifs = data_for_specifs(liste_fichiers)
-    T = compute_T_in_specifs(dictionnaire_specifs)
-    dictionnaire_f, liste_motifs = compute_f_specifs(dictionnaire_specifs)
-    dictionnaire_k = compute_k_specifs(dictionnaire_specifs, liste_motifs)
-    dict_synth, columns = fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_specifs, T, liste_motifs, shortcut_specifs)
+def main(types_textes, shortcut_specifs, shortcut_association):
+    DMT4_clos_corpus = "./Patterns_results/DMT4_clos_corpus/DMT4_clos_corpus.pk"
+    dictionnaire_k, liste_motifs_clos_corpus = compute_k_specifs(types_textes, DMT4_clos_corpus)
+    dictionnaire_f = compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus)
+    dictionnaire_t = compute_t_specifs(types_textes)
+    T = compute_T_specifs(dictionnaire_t)
+    dict_synth, columns = fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_t, T, liste_motifs_clos_corpus, shortcut_specifs)
     if shortcut_association==False:
-        dict_synth_add_association, columns = add_association_vocab(dict_synth, liste_fichiers, columns)
+        dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
     tsv_out(dict_synth, columns)
-    all_synth_tsv_out(dict_synth, liste_motifs)
-    df_mouture_R_dict_synth(dict_synth, liste_motifs)
-    tools.save_pickles_results(dictionnaire_specifs,"Patterns_results/Specifs/dictionnaire_specifs.pk")
-    tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs/dictionnaire_f.pk")
-    tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs/dictionnaire_k.pk")
+    all_synth_tsv_out(dict_synth, liste_motifs_clos_corpus)
+    df_mouture_R_dict_synth(dict_synth, liste_motifs_clos_corpus)
+    tools.save_pickles_results(dictionnaire_t,"Patterns_results/Specifs_noZero/dictionnaire_t.pk")
+    tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs_noZero/dictionnaire_f.pk")
+    tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs_noZero/dictionnaire_k.pk")
 
-liste_fichiers = os.listdir("./Data/Textes_tagged_stanza")
-if ".DS_Store" in liste_fichiers:
-    liste_fichiers.remove(".DS_Store")
-shortcut_specifs = False
+types_textes = os.listdir("./Data/Textes_tagged_stanza/")
+if ".DS_Store" in types_textes:
+    types_textes.remove(".DS_Store")
+shortcut_specifs = True
 shortcut_association = True
-main(liste_fichiers, shortcut_specifs, shortcut_association)
+main(types_textes, shortcut_specifs, shortcut_association)
+    
