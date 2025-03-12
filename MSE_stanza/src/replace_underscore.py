@@ -1,5 +1,6 @@
 # replace_underscore.py
 import pandas as pd
+import random
 
 def replace_underscore_in_conllu(file_path):
     """
@@ -18,7 +19,8 @@ def replace_underscore_in_conllu(file_path):
     # Process each row to replace '_'
     for index, row in df.iterrows():
         second_cell_value = row[1]  # Get the value of the second cell in the row
-        mod = f"underscore_fix={second_cell_value}"
+        random_integer = random.randint(1, 100)
+        mod = f"underscore_fix={random_integer}"
         df.loc[index] = row.apply(lambda x: mod if x == '_' else x)
     
     # Write back to the same file
