@@ -27,7 +27,7 @@ def count_tokens_in_conll(corpus_path):
                 token_count += 1
     return token_count
 
-def compute_k_specifs(types_textes, DMT4_clos_corpus, liste_motifs_clos_corpus, T, dictionnaire_t):
+def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t):
     dictionnaire_k = {}
     total_textes=len(types_textes)
     texte_count = 0
@@ -232,7 +232,7 @@ def main(types_textes, shortcut_specifs, shortcut_association):
     liste_motifs_clos_corpus = count_motifs_orig.from_pk_corpus_to_list(DMT4_clos_corpus)
     dictionnaire_t = compute_t_specifs(types_textes)
     T = compute_T_specifs(dictionnaire_t)
-    dictionnaire_k = compute_k_specifs(types_textes, DMT4_clos_corpus, liste_motifs_clos_corpus, T, dictionnaire_t)
+    dictionnaire_k = compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t)
     dictionnaire_f = compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus)
     dict_synth, columns = fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_t, T, liste_motifs_clos_corpus, shortcut_specifs)
     if shortcut_association==False:
