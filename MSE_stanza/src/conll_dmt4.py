@@ -52,21 +52,22 @@ def instancier_dict(rep="1_data/0_tagged_annotated_corpus/"):
             conll_f = conll_in.read()
             conll = [el for el in conll_f.split("\n") if el != '']
             for line in conll:
-                tokens = line.split("\t")[1:]
-                form = "form_{}".format(tokens[0])
-                lemma = "lemma_{}".format(tokens[1])
-                pos = "pos_{}".format(tokens[2])
-                dep = "dep_{}".format(tokens[8])
-                all_feats = tokens[4].split("|")
-                formate_feats = list()
-                for f in all_feats:
-                    if f != "":
-                        formate_feats.append("feats_{}".format(f))
-                tags = [form, lemma, pos] + formate_feats + [dep] + tokens[9:]
-                for tag in tags:
-                    if tag not in dico_str_to_int:
-                        dico_str_to_int[tag] = i
-                        i = i+1
+                if not line.startswith('#'):
+                    tokens = line.split("\t")[1:]
+                    form = "form_{}".format(tokens[0])
+                    lemma = "lemma_{}".format(tokens[1])
+                    pos = "pos_{}".format(tokens[2])
+                    dep = "dep_{}".format(tokens[8])
+                    all_feats = tokens[4].split("|")
+                    formate_feats = list()
+                    for f in all_feats:
+                        if f != "":
+                            formate_feats.append("feats_{}".format(f))
+                    tags = [form, lemma, pos] + formate_feats + [dep] + tokens[9:]
+                    for tag in tags:
+                        if tag not in dico_str_to_int:
+                            dico_str_to_int[tag] = i
+                            i = i+1
     return save_dict(dico_str_to_int)
 
 
@@ -99,6 +100,7 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
             for itemset in dico_ephemere :
                 file = [file_out.write(str(itemset)+" "+str(el)+"\n") for el in dico_ephemere.get(itemset)]
             index_seq += 1
+    # print("{} : Sorted".format(DMT4_file[:-4]))
     return "{} : Sorted".format(DMT4_file[:-4])
 
 
@@ -113,7 +115,9 @@ def transform_data(rep, type_texte):
     """
     dict_lexic = pickle.load(open("Data/Lexiques/dico_str_to_int_all_items.pk","rb"))
     index_seq = 1
+    # print(os.listdir(rep))
     for i, file_conll in enumerate(os.listdir(rep)):
+        # print(i, file_conll)
         if type_texte not in file_conll: continue
         # print(i) # print de test
         with open(os.path.join(rep,file_conll), "r+", encoding="utf-8", errors='ignore') as conll :
@@ -121,30 +125,32 @@ def transform_data(rep, type_texte):
                 conll = [el for el in conll.read().split("\n") if el != '']
                 # print(conll.readlines())
                 for token in conll:
-                    seg_token_parsed = token.split("\t")
-                    # print(seg_token_parsed)
-                    nbr_token = seg_token_parsed[0]
-                    if nbr_token == "1":
-                        file_dmt4.write("seqId {}\n".format(index_seq))
-                        index_seq += 1
-                        index_itemset = 1
-
-                    list_token = list()
-                    # form = "form_{}".format(tokens[0])
-                    lemma = "lemma_{}".format(seg_token_parsed[2])
-                    pos = "pos_{}".format(seg_token_parsed[3])
-                    dep = "dep_{}".format(seg_token_parsed[9])
-                    all_feats = seg_token_parsed[5].split("|")
-                    formate_feats = list()
-                    for f in all_feats:
-                        if f != "":
-                            formate_feats.append("feats_{}".format(f))
-                    list_token = [lemma, pos] + formate_feats + [dep] + seg_token_parsed[10:]
-
-                    for tag in list_token:
-                        index_item = dict_lexic.get(tag)
-                        file_dmt4.write("{} {}\n".format(index_itemset,index_item))
-                    index_itemset += 1
+                    if not token.startswith("#"):
+                        seg_token_parsed = token.split("\t")
+                        # print(seg_token_parsed)
+                        nbr_token = seg_token_parsed[0]
+                        if nbr_token == "1":
+                            file_dmt4.write("seqId {}\n".format(index_seq))
+                            index_seq += 1
+                            index_itemset = 1
+    
+                        list_token = list()
+                        # form = "form_{}".format(tokens[0])
+                        lemma = "lemma_{}".format(seg_token_parsed[2])
+                        pos = "pos_{}".format(seg_token_parsed[3])
+                        dep = "dep_{}".format(seg_token_parsed[9])
+                        all_feats = seg_token_parsed[5].split("|")
+                        formate_feats = list()
+                        for f in all_feats:
+                            if f != "":
+                                formate_feats.append("feats_{}".format(f))
+                        list_token = [lemma, pos] + formate_feats + [dep] + seg_token_parsed[10:]
+    
+                        for tag in list_token:
+                            index_item = dict_lexic.get(tag)
+                            file_dmt4.write("{} {}\n".format(index_itemset,index_item))
+                        index_itemset += 1
+        # print(f"dmt4 done : {type_texte}")
     return True
 
 
@@ -155,6 +161,7 @@ def sort_dmtfiles(rep_dmtfiles="Data/DMT4_files/"):
     ouput : bool (ok|ko)
     """
     for file in os.listdir(rep_dmtfiles):
+        # print(f'listdir(rep_dmtfiles) : {file}')
         if file[0]==".":continue
          # print de test
         try:
