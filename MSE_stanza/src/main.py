@@ -194,19 +194,19 @@ if __name__ == "__main__":
                 
             ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
             if méthode=="partition":
-                types_textes = ["merged"]
+                liste_textes = ["merged"]
                 conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
                 file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
                 # print(file_list)
                 path = "./Data/Textes_tagged_stanza_for_dmt4/"
                 concat_multiple_conll(path, file_list, "merged")
                 # print(f'liste dir dans ttaggedfordmt4 : {os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")}')
-                for type_texte in types_textes:
+                for type_texte in liste_textes:
                     # print("transform data début")
                     conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte)
                     # print(f"transform_data done : {type_texte}")
                 conll_dmt4.sort_dmtfiles()
-                for type_texte in types_textes:
+                for type_texte in liste_textes:
                     conll_dmt4.make_DMT4_file(type_texte)
                     
             else:
