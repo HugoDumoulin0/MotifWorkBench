@@ -11,8 +11,9 @@ import pandas as pd
 import grew
 import formate_patterns
 import tools
-from grewpy import Corpus
+from grewpy import Corpus,  Request
 from tools import load_pickles
+import time
 
 # dmt4_corpus = "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_stanza_specifs_rapports_noSpecifs/Patterns_results/Closed/25_00_DMT4_ARSCAN_files_sorted_closed.pk"
 
@@ -41,17 +42,29 @@ def from_pk_file_to_list(dmt4_file):
     return file_as_list
 
 
-def count_motif(file_path, liste_motifs_clos_corpus):
+def count_motif(file_path, liste_motifs_clos_corpus, type_texte):
     lexic_int_str = tools.load_pickles("./Data/Lexiques/dico_int_to_str_all_items.pk")
     corpus_grew = Corpus(file_path)
     dict_file_motif={}
+    # motif_count = 0
     for motif in liste_motifs_clos_corpus:
-        print(motif)
-        print(formate_patterns.from_int_to_str(motif, lexic_int_str))
+        # start_time = time.time()
+        # motif_count += 1
+        # print(motif)
+        # print(formate_patterns.from_int_to_str(motif, lexic_int_str))
+        # print(grew.read_req(formate_patterns.from_int_to_str(motif, lexic_int_str)))
         req = grew.read_req(formate_patterns.from_int_to_str(motif, lexic_int_str))
-        indexx = grew.index(corpus_grew, req, "form")
-        freq = len(indexx)
+        # indexx = grew.index(corpus_grew, req, "form")
+        # freq = len(indexx)
+        request = Request(req)
+        freq = corpus_grew.count(request)
+        motif = str(motif)
         dict_file_motif[motif]=freq
+        # end_time = time.time()
+        # iteration_time = end_time - start_time
+        # remaining_motifs = total_motifs - motif_count
+        # estimated_time_remaining = iteration_time * remaining_motifs
+        # print(f"Compte des fréquences par motif : dans {type_texte}, temps estimé restant pour {remaining_motifs} fichier(s) : {estimated_time_remaining/60:.2f} minutes")
     return dict_file_motif
     
     
