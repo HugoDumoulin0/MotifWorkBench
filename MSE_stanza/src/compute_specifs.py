@@ -234,9 +234,9 @@ def main(liste_fichiers, shortcut_specifs, shortcut_association):
     tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs/dictionnaire_f.pk")
     tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs/dictionnaire_k.pk")
 
-liste_fichiers = os.listdir("./Data/Textes_tagged_stanza")
-if ".DS_Store" in liste_fichiers:
-    liste_fichiers.remove(".DS_Store")
-shortcut_specifs = False
-shortcut_association = True
-main(liste_fichiers, shortcut_specifs, shortcut_association)
+# liste_fichiers = os.listdir("./Data/Textes_tagged_stanza")
+# if ".DS_Store" in liste_fichiers:
+#     liste_fichiers.remove(".DS_Store")
+# shortcut_specifs = False
+# shortcut_association = True
+# main(liste_fichiers, shortcut_specifs, shortcut_association)
