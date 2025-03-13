@@ -46,6 +46,7 @@ if __name__ == "__main__":
     shortcut_association = True
     shortcut_specifs = True
     shortcut_GR = True
+    shortcut_underscore_fix=False
     only_clustering = False
     shortcut_wp = True
     tagging=False
@@ -120,22 +121,26 @@ if __name__ == "__main__":
                             print("\t", type_texte, "has been tagged and saved:", output_file)
             end_time=time.time()
             time_tag = end_time - start_time 
+        
+        if shortcut_underscore_fix==False:
         ##underscore fix 
-        if not os.path.exists("./Data/underscore_fix"):
+            if  os.path.exists("./Data/underscore_fix"):
+                shutil.rmtree("./Data/underscore_fix")
                 os.mkdir("./Data/underscore_fix")
-        for filename in os.listdir("./Data/Textes_tagged_stanza/"):
-            if not filename == ".DS_Store":
-                if not os.path.exists(f"./Data/underscore_fix/{filename}"):
-                    os.mkdir(f"./Data/underscore_fix/{filename}")
-                    source = f"./Data/Textes_tagged_stanza/{filename}/{filename}"
-                    destination = f"./Data/underscore_fix/{filename}/{filename}"
-                    shutil.copy(source,destination)
-                    print(f"Underscore fix : {filename}")
-                    filename = f'{filename}'
-                    underscore_folder =f"./Data/underscore_fix/{filename}"
-                    file_path = os.path.join(underscore_folder, filename)
-                    output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
-                    replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
+            else:
+                os.mkdir("./Data/underscore_fix")
+            for filename in os.listdir("./Data/Textes_tagged_stanza/"):
+                if not filename == ".DS_Store":
+                        os.mkdir(f"./Data/underscore_fix/{filename}")
+                        source = f"./Data/Textes_tagged_stanza/{filename}/{filename}"
+                        destination = f"./Data/underscore_fix/{filename}/{filename}"
+                        shutil.copy(source,destination)
+                        print(f"Underscore fix : {filename}")
+                        filename = f'{filename}'
+                        underscore_folder =f"./Data/underscore_fix/{filename}"
+                        file_path = os.path.join(underscore_folder, filename)
+                        output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
+                        replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
                     
 
 
@@ -190,7 +195,10 @@ if __name__ == "__main__":
             #the function wasn't called in the original script.
             
         if shortcut_wp==True:
-            if not os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
+            if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
+                shutil.rmtree("./Data/Textes_tagged_stanza_for_dmt4/")
+                os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
+            else:
                 os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
             for type_texte in types_textes:
                 destination = "./Data/Textes_tagged_stanza_for_dmt4/"
@@ -206,6 +214,13 @@ if __name__ == "__main__":
             ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
             if méthode=="partition":
                 liste_textes = ["merged"]
+                for type_texte in liste_textes:
+                    print("\t Checking if DMT4 files already exists")
+                    target = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+                    print(target)
+                    if os.path.exists(target):  # Check if the file exists
+                        os.remove(target)       # delete existing files
+                        print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
                 conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
                 file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
                 # print(file_list)
