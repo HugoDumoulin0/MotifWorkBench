@@ -38,7 +38,7 @@ def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t)
         dictionnaire_k[type_texte]={}
         taille_texte = dictionnaire_t[type_texte] 
         print(type_texte)
-        file_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}.conllu"
+        file_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
         dict_file_motif = count_motifs_orig.count_motif(file_path, liste_motifs_clos_corpus, type_texte)
         dictionnaire_k[type_texte]=dict_file_motif
         end_time = time.time()
@@ -63,7 +63,7 @@ def compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus):
 def compute_t_specifs(types_textes):
     dictionnaire_t = {}
     for type_texte in types_textes:
-        corpus_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}.conllu"
+        corpus_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
         dictionnaire_t[type_texte] = count_tokens_in_conll(corpus_path)
     return dictionnaire_t
     
