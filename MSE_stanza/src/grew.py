@@ -12,11 +12,14 @@ import os
 import re
 
 def split_with_condition(chaine):
-    s = re.sub(r'_,', ' ', chaine)
+    if not "__," in chaine:
+        s = re.sub(r'_,', ' ', chaine)
+        items = s.split(',')
+        # On replace l'espace (notre caractère temporaire) par "_," pour revenir à la situation originale
+        items = [item.replace(' ', '_,') for item in items]
+    else:
     # On split ensuite la chaîne sur chaque virgule
-    items = s.split(',')
-    # On replace l'espace (notre caractère temporaire) par "_," pour revenir à la situation originale
-    items = [item.replace(' ', '_,') for item in items]
+        items = chaine.split(",")
     return items
 
 def dump_graphique(match, liste_match, corpus, path):
@@ -97,7 +100,7 @@ def read_req(motif):
     return req
 
 
-# grewpy.set_config("sud") # ud or basic 
+# grewpy.set_config("sud") # ud or basic ££
 
 
 # path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/grewpy-tutorial/SUD_English-PUD/"
@@ -108,11 +111,11 @@ def read_req(motif):
 
 
 # treebank_path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_Rapports70to90/Data/Textes_tagged_stanza/Rapports70to90/Rapports70to90.conllu"
-# treebank_path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_stanza_specifs_rapports_specif_noZero/Data/Textes_tagged_stanza_bak/CEDIN/CEDIN.conllu"
+# treebank_path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_Rapports18/Data/Textes_tagged_stanza/IREPH/IREPH.conllu"
 
 # corpus = Corpus(treebank_path)
 # # # print(type(corpus)
-# r = read_req("{lemma_.,pos_PUNCT}")
+# r = read_req('{lemma_à,underscore-fix_"8"}')
 # # req1 = Request('pattern {X1[lemma="."]}')
 # req1 = Request(r)
 # for i in index(corpus, req1, "lemma"):
