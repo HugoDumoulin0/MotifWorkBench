@@ -48,7 +48,7 @@ def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t)
         remaining_textes = total_textes - texte_count
         remaining_occ = T - occ_count
         estimated_time_remaining = (iteration_time * remaining_occ)/taille_texte
-        print(f"Compte des fréquences par texte : dans {type_texte}, temps estimé restant pour {remaining_textes} texte(s) : {estimated_time_remaining/60:.2f} minutes")
+        print(f"Compte des fréquences par texte : temps estimé restant pour {remaining_textes} texte(s) : {estimated_time_remaining/60:.2f} minutes")
     return dictionnaire_k
 
 def compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus):
