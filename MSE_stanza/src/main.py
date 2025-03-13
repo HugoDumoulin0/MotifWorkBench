@@ -118,16 +118,26 @@ if __name__ == "__main__":
                             output_file = os.path.join(output_folder, "{}".format(type_texte, file.split('.')[0])) #Define export path from variables
                             CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
                             print("\t", type_texte, "has been tagged and saved:", output_file)
-                       
-                        ###underscore fix ###
-                    for filename in os.listdir(output_folder):
-                        print(f"Underscore fix : {filename}")
-                        file_path = os.path.join(output_folder, filename)
-                        output_file = os.path.join(output_folder, "{}".format(type_texte)) #Define export path from variables
-                        replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
-                        
             end_time=time.time()
-            time_tag = end_time - start_time
+            time_tag = end_time - start_time 
+        ##underscore fix 
+        if not os.path.exists("./Data/underscore_fix"):
+                os.mkdir("./Data/underscore_fix")
+        for filename in os.listdir("./Data/Textes_tagged_stanza/"):
+            if not filename == ".DS_Store":
+                if not os.path.exists(f"./Data/underscore_fix/{filename}"):
+                    os.mkdir(f"./Data/underscore_fix/{filename}")
+                    source = f"./Data/Textes_tagged_stanza/{filename}/{filename}"
+                    destination = f"./Data/underscore_fix/{filename}/{filename}"
+                    shutil.copy(source,destination)
+                    print(f"Underscore fix : {filename}")
+                    filename = f'{filename}'
+                    underscore_folder =f"./Data/underscore_fix/{filename}"
+                    file_path = os.path.join(underscore_folder, filename)
+                    output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
+                    replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
+                    
+
 
                     
         if shortcut_wp == False:
@@ -184,11 +194,12 @@ if __name__ == "__main__":
                 os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
             for type_texte in types_textes:
                 destination = "./Data/Textes_tagged_stanza_for_dmt4/"
-                source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
+                # source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
+                source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
                 if os.path.exists(source):
                     shutil.copy(source,destination)
                 else:
-                    source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}.conllu"
+                    source = f"./Data/underscore_fix/{type_texte}/{type_texte}.conllu"
                     shutil.copy(source,destination)
                     os.rename(f"./Data/Textes_tagged_stanza_for_dmt4/{type_texte}.conllu", f"./Data/Textes_tagged_stanza_for_dmt4/{type_texte}")
                 
