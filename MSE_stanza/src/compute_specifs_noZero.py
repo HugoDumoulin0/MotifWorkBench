@@ -155,8 +155,8 @@ def add_association_vocab(dict_synth, liste_fichiers, columns):
         columns.append("association_vocab")
     return dict_synth_add_association, columns
 
-def tsv_out(dict_synth, columns):
-    mins="25"
+def tsv_out(dict_synth, columns, minsup_percent):
+    mins=minsup_percent
     for fichier in dict_synth:
         if not os.path.exists("./Patterns_results/Specifs_noZero"):
             os.makedirs("./Patterns_results/Specifs_noZero")
@@ -167,9 +167,9 @@ def tsv_out(dict_synth, columns):
         df_sort = df.sort_values(by="indice", ascending=False)
         df_sort.to_csv(file_out.replace("pk", "tsv"), sep="\t", encoding="utf-8")
         
-def all_synth_tsv_out(dict_synth, liste_motifs):
+def all_synth_tsv_out(dict_synth, liste_motifs, minsup_percent):
     dict_out = {}
-    mins="25"
+    mins=minsup_percent
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_fichier = []
     for fichier in dict_synth:
@@ -191,10 +191,10 @@ def all_synth_tsv_out(dict_synth, liste_motifs):
     df.to_csv(file_out.replace("pk", "tsv"), sep="\t", encoding="utf-8")
     return dict_out
     
-def df_mouture_R_dict_synth(dict_synth, liste_motifs):
+def df_mouture_R_dict_synth(dict_synth, liste_motifs, minsup_percent):
     dict_spec_out = {}
     dict_AFC_out = {}
-    mins="25"
+    mins=minsup_percent
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_fichier=[]
     for fichier in dict_synth:
@@ -227,8 +227,8 @@ def df_mouture_R_dict_synth(dict_synth, liste_motifs):
     df_AFC.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
     return dict_spec_out, dict_AFC_out
 
-def main(types_textes, shortcut_specifs, shortcut_association):
-    DMT4_clos_corpus = "./Patterns_results/Closed/25_00_DMT4_merged_files_sorted_closed.pk"
+def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
+    DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = count_motifs_orig.from_pk_corpus_to_list(DMT4_clos_corpus)
     dictionnaire_t = compute_t_specifs(types_textes)
     T = compute_T_specifs(dictionnaire_t)
@@ -237,9 +237,9 @@ def main(types_textes, shortcut_specifs, shortcut_association):
     dict_synth, columns = fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_t, T, liste_motifs_clos_corpus, shortcut_specifs)
     if shortcut_association==False:
         dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
-    tsv_out(dict_synth, columns)
-    all_synth_tsv_out(dict_synth, liste_motifs_clos_corpus)
-    df_mouture_R_dict_synth(dict_synth, liste_motifs_clos_corpus)
+    tsv_out(dict_synth, columns, minsup_percent)
+    all_synth_tsv_out(dict_synth, liste_motifs_clos_corpus, minsup_percent)
+    df_mouture_R_dict_synth(dict_synth, liste_motifs_clos_corpus, minsup_percent)
     tools.save_pickles_results(dictionnaire_t,"Patterns_results/Specifs_noZero/dictionnaire_t.pk")
     tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs_noZero/dictionnaire_f.pk")
     tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs_noZero/dictionnaire_k.pk")
