@@ -46,7 +46,7 @@ if __name__ == "__main__":
     shortcut_association = True
     shortcut_specifs = True
     shortcut_GR = True
-    shortcut_underscore_fix=False
+    shortcut_underscore_fix=True
     only_clustering = False
     shortcut_wp = True
     tagging=False
@@ -60,6 +60,9 @@ if __name__ == "__main__":
     
     #Set param for minimal number of itemsets in a pattern
     nb_itemset_min = 3 #Tim, 27/02
+    
+    list_minsup_percent = [25,10]
+    
 
     if only_clustering==False:
     #-------------------------------------------------------------------------------------------------------------------
@@ -253,7 +256,7 @@ if __name__ == "__main__":
         print("3. Extracting freq & closed patterns")
         start_time=time.time()
         # # types_textes = ["1984ca", "2008ca"]
-        minsup_percent = 25
+
         
         path_results = "./Patterns_results"
         if not os.path.exists(path_results):
@@ -270,41 +273,44 @@ if __name__ == "__main__":
             
         else:
             liste=types_textes
-    
-        for type_texte in liste:
-            print("\t Type_texte:", type_texte)
-    
-            dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
-            minsup_percent = 25
-            minsup = get_minsup(float(minsup_percent), dmt4_files)
-            print(f"\t Minsup {minsup_percent}% ")
-            gap_min = 0
-            gap_max = 0
-            threads = 30
-    
-            print("\t\t Extracting freq patterns")
-    
-            file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-    
-            with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
-                set_up.write("MINSUP={}\n".format(minsup))
-                set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                set_up.write("THREAD={}\n".format(threads))
-                set_up.write("GAPMIN={}\n".format(gap_min))
-                set_up.write("GAPMAX={}\n".format(gap_max))
-    
-            os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
-    
-            print("\t\t Extracting closed patterns")
-    
-            with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-                set_up.write("MINSUP={}\n".format(minsup))
-                set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                set_up.write("THREAD=1\n")
-                set_up.write("GAPMIN={}\n".format(0))
-                set_up.write("GAPMAX={}\n".format(0))
-    
-            os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
+            
+            
+        for minsup_percent in list_minsup_percent:
+            for type_texte in liste:
+                print("\t Type_texte:", type_texte)
+        
+                dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+                minsup = get_minsup(float(minsup_percent), dmt4_files)
+                print(f"\t Minsup {minsup_percent}% ")
+                gap_min = 0
+                gap_max = 0
+                threads = 30
+        
+                print("\t\t Extracting freq patterns")
+        
+                file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
+        
+                with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
+                    set_up.write("MINSUP={}\n".format(minsup))
+                    set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                    set_up.write("THREAD={}\n".format(threads))
+                    set_up.write("GAPMIN={}\n".format(gap_min))
+                    set_up.write("GAPMAX={}\n".format(gap_max))
+                    set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+        
+                os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
+        
+                print("\t\t Extracting closed patterns")
+        
+                with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
+                    set_up.write("MINSUP={}\n".format(minsup))
+                    set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                    set_up.write("THREAD=1\n")
+                    set_up.write("GAPMIN={}\n".format(0))
+                    set_up.write("GAPMAX={}\n".format(0))
+                    set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+        
+                os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
         end_time=time.time()
         
         time_DMT4 = end_time - start_time
@@ -342,7 +348,8 @@ if __name__ == "__main__":
             if méthode=="partition":
                 print("-"*75)
                 print("4. Extracting patterns in partition")
-                compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs)
+                for minsup_percent in list_minsup_percent:
+                    compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
 
 
     # #-------------------------------------------------------------------------------------------------------------------
@@ -350,13 +357,13 @@ if __name__ == "__main__":
     # #-------------------------------------------------------------------------------------------------------------------
                 
 
-    def clustering_emergent_patterns(type_1, type_2,nbr_pool):     
+    def clustering_emergent_patterns(type_1, type_2,nbr_pool, minsup_percent):     
         print("-"*75)
         print("5. Clustering emergent patterns")
 
         ###
     
-        emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1, type_2))
+        emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/{}_00_{}_{}.pk".format(minsup_percent, type_1, type_2))
         index_motifs = [patt_info[0] for patt_info in list(emergent_patt.values()) if patt_info[2] >=1]
     
         print("\t Type texte 1 :", type_1)
@@ -483,11 +490,12 @@ if __name__ == "__main__":
                 if i!=j:
                     liste_couples.append((i,j))
         start_time = time.time()
-        for couple in liste_couples:
-            type_1 = couple[0]
-            type_2 = couple[1]
-            clustering_emergent_patterns(type_1,type_2, nbr_pool)
-            extracting_representant_patterns(type_1, type_2, nbr_pool)
+        for minsup_percent in list_minsup_percent:
+            for couple in liste_couples:
+                type_1 = couple[0]
+                type_2 = couple[1]
+                clustering_emergent_patterns(type_1,type_2, nbr_pool, minsup_percent)
+                extracting_representant_patterns(type_1, type_2, nbr_pool)
         end_time = time.time()
         cluster_time = end_time - start_time
     
