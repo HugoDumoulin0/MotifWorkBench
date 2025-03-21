@@ -1,0 +1,1314 @@
+library(FactoMineR)#
+library(ggrepel)#
+library(factoextra)
+table = read.csv("25_AFC_R_df.tsv", sep="\t", header=T, row.names=1, encoding="UTF-8")
+bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+dev.off()
+AFC = CA(table[,-c(1,2)], graph=F)
+bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+dev.off()
+bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+dev.off()
+bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+dev.off()
+bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=300)#
+plot.CA(AFC, invisible=c("row"), repel=T)#
+dev.off()
+fviz_ca_biplot(AFC, repel = TRUE)
+fviz_ca_biplot(AFC, repel = TRUE)
+fviz_ca_row(AFC, repel = TRUE)
+fviz_contrib(AFC, choice ="row", axes = 1)
+fviz_contrib(AFC, choice ="col", axes = 1)
+bmp(filename="/graphs/contrib_dim_1.bmp", width=2048, height=2048, res=200)#
+fviz_contrib(AFC, choice ="col", axes = 1)#
+dev.off()#
+#
+bmp(filename="/graphs/contrib_dim_2.bmp", width=2048, height=2048, res=200)#
+fviz_contrib(AFC, choice ="col", axes = 2)#
+dev.off()
+bmp(filename="graphs/contrib_dim_1.bmp", width=2048, height=2048, res=200)#
+fviz_contrib(AFC, choice ="col", axes = 1)#
+dev.off()
+bmp(filename="graphs/contrib_dim_2.bmp", width=2048, height=2048, res=200)#
+fviz_contrib(AFC, choice ="col", axes = 2)#
+dev.off()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+dev.off()
+fviz_screeplot(AFC, addlabels = TRUE, ylim = c(0, 50))
+bmp(filename="graphs/Var_per_dim.bmp", width=2048, height=2048, res=200)#
+fviz_screeplot(AFC, addlabels = TRUE, ylim = c(0, 50))#
+dev.off()
+fviz_ca_biplot(AFC, repel = TRUE)
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="#c30000",#
+	col.quali.sup="darkgreen") +#
+	theme_minimal()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="#c30000",#
+	col.quali.sup="darkgreen")
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="#c30000",#
+	col.quali.sup="darkgreen") +#
+	theme_minimal()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="#c30000",#
+	col.quali.sup="darkgreen")
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="#c30000",#
+	col.quali.sup="darkgreen") +#
+	theme_blank()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="#c30000",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	# gradient.cols="#c30000",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="#c30000",#
+	col.quali.sup="darkgreen",#
+	color = "black") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="contrib",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="black",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="blue",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.ind="blue",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.ind="blue",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="blue",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()
+fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")
+table = read.csv("data/25_AFC_R_df.tsv", sep="\t", header=T, row.names=1, encoding="UTF-8")#
+#
+AFC = CA(table[,-c(1,2)], graph=F)
+fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.var="blue",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()#
+dev.off()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.col="blue",#
+	gradient.cols="black",#
+	col.quali.sup="darkgreen") +#
+	theme_void()#
+dev.off()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_void()#
+dev.off()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+fviz_contrib(AFC,#
+	choice ="col",#
+	axes = 1) +#
+	theme_classic()
+fviz_contrib(AFC,#
+	choice ="col",#
+	axes = 1)
+fviz_contrib(AFC,#
+	choice ="col",#
+	axes = 1)
+bmp(filename="graphs/contrib_dim_1.bmp", width=2048, height=2048, res=200)#
+fviz_contrib(AFC,#
+	choice ="col",#
+	axes = 1)#
+dev.off()#
+#
+bmp(filename="graphs/contrib_dim_2.bmp", width=2048, height=2048, res=200)#
+fviz_contrib(AFC,#
+	choice ="col",#
+	axes = 2)#
+dev.off
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_biplot(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+AFC = CA(table[,-c(1,2)], graph=T)
+AFC = CA(table[,-c(1,2)], graph=T)
+AFC = CA(table[,-c(1,2)], graph=TRUE)
+AFC = CA(table[,-c(1,2)], graph=TRUE)
+print(AFC)
+bmp(filename="graphs/var_expl_per_axis.bmp", width=2048, height=2048, res=200)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE,#
+	ylim = c(0, 50))#
+dev.off()
+fviz_screeplot(AFC,#
+	addlabels = TRUE,#
+	ylim = c(0, 50)) +#
+	theme_classic()#
+dev.off()
+fviz_screeplot(AFC,#
+	addlabels = TRUE,#
+	ylim = c(0, 50)) +#
+	theme_classic()#
+dev.off()
+fviz_screeplot(AFC,#
+	addlabels = TRUE,#
+	ylim = c(0, 50)) +#
+	theme_classic()
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()
+bmp(filename="graphs/var_expl_per_axis.bmp", width=2048, height=2048, res=200)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/var_expl_per_axis.bmp", width=1024, height=1024, res=200)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/var_expl_per_axis.bmp", width=2048, height=2048, res=200)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/var_expl_per_axis.bmp", width=1024, height=1024, res=200)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/var_expl_per_axis.bmp", width=1024, height=1024, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/var_expl_per_axis.bmp", width=1536, height=1536, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+head(row&cos2, 4)
+head(row$cos2, 4)
+row <- get_ca_row(AFC)
+row
+head(row$contrib)
+head(row$contrib, 10)
+contrib_10 <- head(row$contrib, 10)#
+	write.table(contrib_10,#
+		file = "tables/contrib_10.txt",#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)
+fviz_ca_col(AFC,#
+	col.row = "cos2",#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=2,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	# shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=19,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()
+col <- get_ca_col(AFC)
+head(row$contrib, 10)
+head(col$contrib, 10)
+contrib_10_rows <- head(row$contrib, 10)#
+	write.table(contrib_10_rows,#
+		file = "tables/contrib_10_rows.txt",#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Get cols (texts/subcorpora)#
+	col <- get_ca_col(AFC)#
+#
+	#Get the 10 heaviest contributing cols#
+	contrib_10_cols <- head(col$contrib, 10)#
+	write.table(contrib_10_cols,#
+		file = "tables/contrib_10_cols.txt",#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)
+bmp(filename="graphs/contrib_dim_1.bmp", width=1536, height=1536, res=300)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename="graphs/contrib_dim_2.bmp", width=1536, height=1536, res=300)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 2)#
+	dev.off
+bmp(filename="graphs/contrib_dim_1.bmp", width=1536, height=1536, res=300)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename="graphs/contrib_dim_2.bmp", width=1536, height=1536, res=300)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+bmp(filename="graphs/contrib_dim_1.bmp", width=2048, height=2048, res=300)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename="graphs/contrib_dim_2.bmp", width=2048, height=2048, res=300)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+bmp(filename="graphs/contrib_dim_1.bmp", width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename="graphs/contrib_dim_2.bmp", width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2048, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=19,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2200, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=19,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2200, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()#
+dev.off()
+#General plot with cos2 representing contribution#
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2200, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2048, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	theme(legend_position = c(1,1))#
+dev.off()
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2048, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	theme(legend.position = c(1,1))#
+dev.off()
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2048, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	theme(legend.position.inside = c(0,1))#
+dev.off()
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	theme(legend.position.inside = c(0.7,0.7))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	theme(legend.position.inside = c(0.7,0.7))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	theme(legend.position.inside = c(0.7, 0.7))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "bottom"))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside"))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0.7, 0.7))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "right",#
+		legend.justification.inside = c(1, 1))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1),#
+		legend.justification.top = "right",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "right",#
+		legend.justification.inside = c(1, 1))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(1, 1))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1),#
+		legend.justification.top = "right",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(1, 1))
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1),#
+		legend.justification.top = "right",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(1, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1),#
+		legend.justification.top = "right",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.position.inside = c(0, 1),#
+		legend.justification.top = "right",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0.1, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0, 1),#
+		legend.justification.top = "right",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0.1, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0, 1),#
+		legend.justification.top = "right",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(1, 0, 0, 0),#
+		legend.position.inside = c(0, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(10, 0, 0, 0),#
+		legend.position.inside = c(0, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 10, 0, 0),#
+		legend.position.inside = c(0, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 10, 0),#
+		legend.position.inside = c(0, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.5, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.1, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=3,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2048, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=300)#
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()#
+#
+#General plot with cos2 representing contribution#
+bmp(filename="graphs/AFC_1_cos2.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	labelalpha=0.5,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	labelalpha=0.5,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	shape.col=1,#
+	labelsize=4,#
+	labelcolor="blue",#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	labelcolor="blue",#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()
+bmp(filename="graphs/AFC_1.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+fviz_ca_col(AFC,#
+	col.col = "contrib",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+library('tcltk')
+# Interactively ask for input file#
+	#Define default folder#
+	default_folder <- "data/*"#
+#
+	#Filter formats#
+	Filters_file_format <- matrix(c("TSV", ".tsv"),#
+									1, 1, byrow = TRUE)
+Filters_file_format <- matrix(c("TSV", ".tsv"),#
+									2, 1, byrow = TRUE)
+table <- tk_choose.files(default = file.path(default_folder),#
+		caption = paste('Select input table'),#
+		multi = FALSE,#
+		filter = Filters_file_format)
+Filters_file_format <- matrix(c("TSV", ".tsv"),#
+									1, 2, byrow = TRUE)
+table <- tk_choose.files(default = file.path(default_folder),#
+		caption = paste('Select input table'),#
+		multi = FALSE,#
+		filter = Filters_file_format)
+table
+table = read.csv(table, sep="\t", header=T, row.names=1, encoding="UTF-8")
+table
+fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)
+var_name <- readline(prompt="Enter name of dataset (for output naming): ")
+var_name
+paste("graphs/", var_name, "var_expl_per_axis.bmp")
+paste("graphs/", var_name, "var_expl_per_axis.bmp", sep="")
+bmp(filename=paste("graphs/", var_name, "_var_expl_per_axis.bmp", sep=""), width=1536, height=1536, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+library('FactoMineR')#
+library('ggrepel')#
+library('factoextra')#
+library('tcltk')#
+#
+#-----------------------------------#
+# Interactively ask for input file#
+#-----------------------------------#
+	#Define default folder#
+	default_folder <- "data/*"#
+#
+	#Filter formats#
+	Filters_file_format <- matrix(c("TSV", ".tsv"),#
+									1, 2, byrow = TRUE)#
+#
+	#ask user for data file#
+	table <- tk_choose.files(default = file.path(default_folder),#
+		caption = paste('Select input table'),#
+		multi = FALSE,#
+		filter = Filters_file_format)#
+#
+	#read it#
+	table = read.csv(table, sep="\t", header=T, row.names=1, encoding="UTF-8")#
+#
+	#Ask the user for filename prefix#
+	var_name <- readline(prompt="Enter prefix for naming files:")#
+#
+#-----------------------------------#
+# Compute CA (fr. AFC)#
+#-----------------------------------#
+#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=300)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()#
+#-----------------------------------#
+# Plot CA#
+#-----------------------------------#
+#
+#General plot#
+bmp(filename=paste("graphs/", var_name, "AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()#
+#
+#General plot with cos2 representing contribution#
+	#the value of the cos2 is between 0 and 1. A cos2 closed to 1 corresponds#
+	#to a column/row variables that are well represented on the factor map.#
+bmp(filename=paste("graphs/", var_name, "AFC_1_cos2.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()#
+#
+#-----------------------------------#
+# Check accuracy/explanatory power#
+#-----------------------------------#
+#
+#Plot degree of variance explanation per axis#
+bmp(filename=paste("graphs/", var_name, "_var_expl_per_axis.bmp", sep=""),#
+	width=1536, height=1536, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()#
+	#All axis up to the first elbow should be investigated.#
+	#In the first data example, dim2 is not really more explanatory than dim3 etc.#
+#
+#Take a look at representation accuracy#
+	#Get rows (MSE)#
+	row <- get_ca_row(AFC)#
+#
+	#Get the 10 heaviest contributing rows#
+	contrib_10_rows <- head(row$contrib, 10)#
+	write.table(contrib_10_rows,#
+		file = paste("tables/", var_name, "contrib_10_rows.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Get cols (texts/subcorpora)#
+	col <- get_ca_col(AFC)#
+#
+	#Get the 10 heaviest contributing cols#
+	contrib_10_cols <- head(col$contrib, 10)#
+	write.table(contrib_10_cols,#
+		file = paste("tables/", var_name, "contrib_10_cols.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Plot it#
+	bmp(filename=paste("graphs/", var_name, "contrib_dim_1.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename=paste("graphs/", var_name, "contrib_dim_2.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+#-----------------------------------#
+# Interactively ask for input file#
+#-----------------------------------#
+	#Define default folder#
+	default_folder <- "data/*"#
+#
+	#Filter formats#
+	Filters_file_format <- matrix(c("TSV", ".tsv"),#
+									1, 2, byrow = TRUE)#
+#
+	#ask user for data file#
+	table <- tk_choose.files(default = file.path(default_folder),#
+		caption = paste('Select input table'),#
+		multi = FALSE,#
+		filter = Filters_file_format)#
+#
+	#read it#
+	table = read.csv(table, sep="\t", header=T, row.names=1, encoding="UTF-8")#
+#
+	#Ask the user for filename prefix#
+	var_name <- readline(prompt="Enter prefix for naming files:")#
+#
+		# If no name is provided, results to default.#
+		if (is.null(var_name) || var_name == "")#
+			{#
+		    	var_name <- "no-name"  # Set default name if var_name is NULL#
+		  	}#
+#
+#-----------------------------------#
+# Compute CA (fr. AFC)#
+#-----------------------------------#
+#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=300)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()#
+#-----------------------------------#
+# Plot CA#
+#-----------------------------------#
+#
+#General plot#
+bmp(filename=paste("graphs/", var_name, "AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()#
+#
+#General plot with cos2 representing contribution#
+	#the value of the cos2 is between 0 and 1. A cos2 closed to 1 corresponds#
+	#to a column/row variables that are well represented on the factor map.#
+bmp(filename=paste("graphs/", var_name, "AFC_1_cos2.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()#
+#
+#-----------------------------------#
+# Check accuracy/explanatory power#
+#-----------------------------------#
+#
+#Plot degree of variance explanation per axis#
+bmp(filename=paste("graphs/", var_name, "_var_expl_per_axis.bmp", sep=""),#
+	width=1536, height=1536, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()#
+	#All axis up to the first elbow should be investigated.#
+	#In the first data example, dim2 is not really more explanatory than dim3 etc.#
+#
+#Take a look at representation accuracy#
+	#Get rows (MSE)#
+	row <- get_ca_row(AFC)#
+#
+	#Get the 10 heaviest contributing rows#
+	contrib_10_rows <- head(row$contrib, 10)#
+	write.table(contrib_10_rows,#
+		file = paste("tables/", var_name, "contrib_10_rows.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Get cols (texts/subcorpora)#
+	col <- get_ca_col(AFC)#
+#
+	#Get the 10 heaviest contributing cols#
+	contrib_10_cols <- head(col$contrib, 10)#
+	write.table(contrib_10_cols,#
+		file = paste("tables/", var_name, "contrib_10_cols.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Plot it#
+	bmp(filename=paste("graphs/", var_name, "contrib_dim_1.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename=paste("graphs/", var_name, "contrib_dim_2.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+var_name <- readline(prompt="Enter prefix for naming files:")
+var_name
+if (is.null(var_name) || var_name == "")#
+			{#
+		    	var_name <- "no-name"  # Set default name if var_name is NULL#
+		  	}
+var_name
+#Define default folder#
+	default_folder <- "data/*"#
+#
+	#Filter formats#
+	Filters_file_format <- matrix(c("TSV", ".tsv"),#
+									1, 2, byrow = TRUE)#
+#
+	#ask user for data file#
+	table <- tk_choose.files(default = file.path(default_folder),#
+		caption = paste('Select input table'),#
+		multi = FALSE,#
+		filter = Filters_file_format)#
+#
+	#read it#
+	table = read.csv(table, sep="\t", header=T, row.names=1, encoding="UTF-8")#
+#
+	#Ask the user for filename prefix#
+	var_name <- readline(prompt="Enter prefix for naming files: ")#
+#
+	get_prefix <- function(){#
+		var_name <- readline(prompt="Enter prefix for naming files: ")#
+	}#
+#
+	get_prefix()#
+#
+		# If no name is provided, results to default.#
+		if (is.null(var_name) || var_name == "")#
+			{#
+		    	var_name <- "no-name"  # Set default name if var_name is NULL#
+		  	}
+#-----------------------------------#
+# Interactively ask for input file#
+#-----------------------------------#
+	#Define default folder#
+	default_folder <- "data/*"#
+#
+	#Filter formats#
+	Filters_file_format <- matrix(c("TSV", ".tsv"),#
+									1, 2, byrow = TRUE)#
+#
+	#ask user for data file#
+	table <- tk_choose.files(default = file.path(default_folder),#
+		caption = paste('Select input table'),#
+		multi = FALSE,#
+		filter = Filters_file_format)#
+#
+	#read it#
+	table = read.csv(table, sep="\t", header=T, row.names=1, encoding="UTF-8")#
+#
+	#Ask the user for filename prefix#
+	# var_name <- readline(prompt="Enter prefix for naming files: ")#
+#
+	get_prefix <- function(){#
+		var_name <- readline(prompt="Enter prefix for naming files: ")#
+	}#
+#
+	get_prefix()#
+#
+		# If no name is provided, results to default.#
+		if (is.null(var_name) || var_name == "")#
+			{#
+		    	var_name <- "no-name"  # Set default name if var_name is NULL#
+		  	}#
+#
+#-----------------------------------#
+# Compute CA (fr. AFC)#
+#-----------------------------------#
+#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=300)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()#
+#-----------------------------------#
+# Plot CA#
+#-----------------------------------#
+#
+#General plot#
+bmp(filename=paste("graphs/", var_name, "_AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+source("setup.R")
