@@ -4,7 +4,7 @@ shortcut_GR = True
 shortcut_underscore_fix=True
 only_clustering = False
 shortcut_wp = True
-tagging=True
+tagging=False
 shortcut_grewpy = False
 
 #-------------------
@@ -28,3 +28,20 @@ nb_itemset_min = 3 #Tim, 27/02
 
 #Set minimal frequency/ies for a pattern to be reccurrent
 list_minsup_percent = [25,10]
+
+
+#-------------------
+# Patterns detection params
+#-------------------
+Form=False 
+Lemma=True
+Pos=True
+Dep=True
+Feats=False
+
+#attention pour l'instant cela ne fonctionne qu'avec cette condition :
+if Lemma==True or Pos==True or Dep==True:
+    Lemma=True
+    Pos=True
+    Dep=True
+
