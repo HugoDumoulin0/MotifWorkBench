@@ -346,6 +346,8 @@ if __name__ == "__main__":
         if not shortcut_grewpy==True:
             import compute_specifs_noZero
             if méthode=="partition":
+                if not os.path.exists("./Patterns_results/Specifs_noZero/"):
+                    os.mkdir("./Patterns_results/Specifs_noZero/")
                 print("-"*75)
                 print("4. Extracting patterns in partition")
                 for minsup_percent in list_minsup_percent:
