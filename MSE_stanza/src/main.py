@@ -38,12 +38,12 @@ def concat_multiple_conll(path, files_list, output_file):
 
 if __name__ == "__main__":
     python = "python3.7"
-
-
+    
+    
     types_textes = os.listdir("./Data/Textes_raw")
     if ".DS_Store" in types_textes:
         types_textes.remove(".DS_Store")
-
+        
     # shortcut_association = True
     # shortcut_specifs = True
     # shortcut_GR = True
@@ -52,18 +52,18 @@ if __name__ == "__main__":
     # shortcut_wp = True
     # tagging=False
     # shortcut_grewpy = False
-
+    
     # méthode = "partition" #deux paramètres de méthodologie "partition" ou "corpus"
-
+    
     # if méthode=="partition":
     #     shortcut_wp=True
     #     shortcut_GR = True
-
-    #Set param for minimal number of itemsets in a pattern
+    
+    # #Set param for minimal number of itemsets in a pattern
     # nb_itemset_min = 3 #Tim, 27/02
-
+    
     # list_minsup_percent = [25,10]
-
+    
 
     if only_clustering==False:
     #-------------------------------------------------------------------------------------------------------------------
@@ -103,19 +103,19 @@ if __name__ == "__main__":
                 print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
                 tagging = True
                 break
-
+            
         if tagging == True:
             nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES)
             start_time = time.time()
-            for type_texte in types_textes:
+            for type_texte in types_textes: 
                     output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
                     rep = "./Data/Textes_merged/{}".format(type_texte)
                     os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
-
+    
                     for file in os.listdir(rep):                        #loop for each file in dir
                         if file[0] == ".": continue                     #ignore hidden UNIX files
                         file_path = os.path.join(rep, file)             #get the full path of each file
-
+    
                         with open(file_path, "r", encoding="utf-8") as f:
                             text = f.read()
                             output = nlp(text)                          #Define output as the object created by stanza
@@ -124,10 +124,10 @@ if __name__ == "__main__":
                             CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
                             print("\t", type_texte, "has been tagged and saved:", output_file)
             end_time=time.time()
-            time_tag = end_time - start_time
-
+            time_tag = end_time - start_time 
+        
         if shortcut_underscore_fix==False:
-        ##underscore fix
+        ##underscore fix 
             if  os.path.exists("./Data/underscore_fix"):
                 shutil.rmtree("./Data/underscore_fix")
                 os.mkdir("./Data/underscore_fix")
@@ -145,17 +145,17 @@ if __name__ == "__main__":
                         file_path = os.path.join(underscore_folder, filename)
                         output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
                         replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
+                    
 
 
-
-
+                    
         if shortcut_wp == False:
             for type_texte in types_textes:
                 print("\t CamamBERT/WP: Checking if tagged files already exists")
                 # output_file = "./Data/Textes_tagged_WP/{0}_{0}.conllu".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
                 output_file = "./Data/Textes_tagged_WP/{0}_{0}".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
                 # print(output_file)
-
+    
                 if os.path.exists(output_file):  # Check if the file exists
                     print(f"\t CamamBERT/WP: file {output_folder} already exists. Delete it to perform WP tokenization again.")
                 else:
@@ -168,36 +168,43 @@ if __name__ == "__main__":
                         tag_WP.parse_conll(os.path.join(rep,file), type_texte)
                         print("\t", type_texte, "has been WP-tokenized and saved:", output_file)
 
-
+ 
         #-------------------------------------------------------------------------------------------------------------------
         # DMT4 files
         #-------------------------------------------------------------------------------------------------------------------
         print("-"*75)
         print("2. Creating DMT4 files")
-
+    
         # # types_textes = ["1984ca", "2008ca"]
-
+        
         #Avoid generating sorted_sorted file names and file not found error.
         if méthode=="corpus":
-            for type_texte in types_textes:
-                print("\t Checking if DMT4 files already exists")
-                target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
-                print(target)
-                if os.path.exists(target):  # Check if the file exists
-                    os.remove(target)       # delete existing files
-                    print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
-
+            
+            if  os.path.exists("./Data/DMT4_files/"):
+                shutil.rmtree("./Data/DMT4_files/")
+                os.mkdir("./Data/DMT4_files/")
+            else:
+                os.mkdir("./Data/DMT4_files/")
+                print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+            # for type_texte in types_textes:
+            #     print("\t Checking if DMT4 files already exists")
+            #     target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+            #     print(target)
+            #     if os.path.exists(target):  # Check if the file exists
+            #         os.remove(target)       # delete existing files
+            #         print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+                
         if shortcut_wp == False:
             conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
             for type_texte in types_textes:
-                    conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte)
+                    conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte, Form, Lemma, Pos, Dep, Feats)
             conll_dmt4.sort_dmtfiles()
-
+        
             for type_texte in types_textes:
                 conll_dmt4.make_DMT4_file(type_texte)
             #This creates the missing dict_sorted.pk files. For some reason,
             #the function wasn't called in the original script.
-
+            
         if shortcut_wp==True:
             if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
                 shutil.rmtree("./Data/Textes_tagged_stanza_for_dmt4/")
@@ -214,17 +221,24 @@ if __name__ == "__main__":
                     source = f"./Data/underscore_fix/{type_texte}/{type_texte}.conllu"
                     shutil.copy(source,destination)
                     os.rename(f"./Data/Textes_tagged_stanza_for_dmt4/{type_texte}.conllu", f"./Data/Textes_tagged_stanza_for_dmt4/{type_texte}")
-
+                
             ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
             if méthode=="partition":
                 liste_textes = ["merged"]
-                for type_texte in liste_textes:
-                    print("\t Checking if DMT4 files already exists")
-                    target = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
-                    print(target)
-                    if os.path.exists(target):  # Check if the file exists
-                        os.remove(target)       # delete existing files
-                        print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+                
+                if  os.path.exists("./Data/DMT4_files/"):
+                    shutil.rmtree("./Data/DMT4_files/")
+                    os.mkdir("./Data/DMT4_files/")
+                else:
+                    os.mkdir("./Data/DMT4_files/")
+                print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+
+                # for type_texte in liste_textes:
+                #     print("\t Checking if DMT4 files already exists")
+                #     target = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+                #     print(target)
+                #     if os.path.exists(target):  # Check if the file exists
+                #         os.remove(target)       # delete existing files
                 conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
                 file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
                 # print(file_list)
@@ -233,23 +247,23 @@ if __name__ == "__main__":
                 # print(f'liste dir dans ttaggedfordmt4 : {os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")}')
                 for type_texte in liste_textes:
                     # print("transform data début")
-                    conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte)
+                    conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
                     # print(f"transform_data done : {type_texte}")
                 conll_dmt4.sort_dmtfiles()
                 for type_texte in liste_textes:
                     conll_dmt4.make_DMT4_file(type_texte)
-
+                    
             else:
                 conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
                 for type_texte in types_textes:
-                    conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte)
+                    conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
                 conll_dmt4.sort_dmtfiles()
                 for type_texte in types_textes:
                     conll_dmt4.make_DMT4_file(type_texte)
             #This creates the missing dict_sorted.pk files. For some reason,
             #the function wasn't called in the original script.
-
-
+    
+    
         # #-------------------------------------------------------------------------------------------------------------------
         # # Mining Pattern
         # #-------------------------------------------------------------------------------------------------------------------
@@ -258,7 +272,7 @@ if __name__ == "__main__":
         start_time=time.time()
         # # types_textes = ["1984ca", "2008ca"]
 
-
+        
         path_results = "./Patterns_results"
         if not os.path.exists(path_results):
             os.mkdir(path_results)
@@ -268,29 +282,29 @@ if __name__ == "__main__":
         path_file_freq = "./Patterns_results/Freq"
         if not os.path.exists(path_file_freq):
             os.mkdir(path_file_freq)
-
+        
         if méthode=="partition":
             liste = ["merged"]
-
+            
         else:
             liste=types_textes
-
-
+            
+            
         for minsup_percent in list_minsup_percent:
             for type_texte in liste:
                 print("\t Type_texte:", type_texte)
-
+        
                 dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
                 minsup = get_minsup(float(minsup_percent), dmt4_files)
                 print(f"\t Minsup {minsup_percent}% ")
                 gap_min = 0
                 gap_max = 0
                 threads = 30
-
+        
                 print("\t\t Extracting freq patterns")
-
+        
                 file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-
+        
                 with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
                     set_up.write("MINSUP={}\n".format(minsup))
                     set_up.write("CORPUS=../../{}\n".format(dmt4_files))
@@ -298,11 +312,11 @@ if __name__ == "__main__":
                     set_up.write("GAPMIN={}\n".format(gap_min))
                     set_up.write("GAPMAX={}\n".format(gap_max))
                     set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-
+        
                 os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
-
+        
                 print("\t\t Extracting closed patterns")
-
+        
                 with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
                     set_up.write("MINSUP={}\n".format(minsup))
                     set_up.write("CORPUS=../../{}\n".format(dmt4_files))
@@ -310,31 +324,31 @@ if __name__ == "__main__":
                     set_up.write("GAPMIN={}\n".format(0))
                     set_up.write("GAPMAX={}\n".format(0))
                     set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-
+        
                 os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
         end_time=time.time()
-
+        
         time_DMT4 = end_time - start_time
         #-------------------------------------------------------------------------------------------------------------------
         # Compute Patterns
         #-------------------------------------------------------------------------------------------------------------------
-
+        
         print("-"*75)
         print("4. Extracting caracteristic patterns")
-
+        
         rep_freq = "./Patterns_results/Freq/"
         rep_clos = "./Patterns_results/Closed/"
-
+        
         print("4.1. Transform freq patterns")
         for f_freq in os.listdir(rep_freq):
             if "txt" not in f_freq: continue
             compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_freq,f_freq))
-
+        
         print("4.2. Transform closed patterns")
         for f_clos in os.listdir(rep_clos):
             if "txt" not in f_clos: continue
             compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos,f_clos))
-
+                
         if méthode=="corpus":
             print("4.3. Computing sequentiel emergent patterns")
             for type_1 in types_textes:
@@ -342,7 +356,7 @@ if __name__ == "__main__":
                     if type_1 == type_2: continue
                     print("\t{} x {} ".format(type_1, type_2))
                     compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
-
+    
         #ajout d'une étape qui lance le calcul de spécificité des supports des motifs dans une partition par rapport au reste ( script compute_specifs.py )
         if not shortcut_grewpy==True:
             import compute_specifs_noZero
@@ -358,72 +372,72 @@ if __name__ == "__main__":
     # #-------------------------------------------------------------------------------------------------------------------
     # # Clustering Emergent Pattern
     # #-------------------------------------------------------------------------------------------------------------------
+                
 
-
-    def clustering_emergent_patterns(type_1, type_2,nbr_pool, minsup_percent):
+    def clustering_emergent_patterns(type_1, type_2,nbr_pool, minsup_percent):     
         print("-"*75)
         print("5. Clustering emergent patterns")
 
         ###
-
+    
         emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/{}_00_{}_{}.pk".format(minsup_percent, type_1, type_2))
         index_motifs = [patt_info[0] for patt_info in list(emergent_patt.values()) if patt_info[2] >=1]
-
+    
         print("\t Type texte 1 :", type_1)
         print("\t Type texte 2 :", type_2)
         print("\t Nbr emergent patterns : ", len(index_motifs))
-
+    
         print("5.1. Clustering 1 : 1/6")
-
+    
         clustering_index_1 = regroupement.regroupement_1(index_motifs)
         print("\t Nbr clusters : ", len(clustering_index_1))
-
+    
         clustering_motifcodes_1 = regroupement.from_index_to_motifcodes(clustering_index_1, index_motifs)
         title_file_results_1 = "./Clustering_results/Clusters/{}_{}_clustering_1.pk".format(type_1, type_2)
-
+    
         regroupement.save_pickles_results(clustering_motifcodes_1, title_file_results_1)
-
+    
         print("5.2. Centroids 1 : 2/6")
-
+    
         compute_all_centroids = regroupement.main_compute_medoids(title_file_results_1, nbr_pool)
         title_file_out_centroids_1 = "./Clustering_results/Medoids/{}_{}_medoids_1.pk".format(type_1, type_2)
         regroupement.save_pickles_results(compute_all_centroids, title_file_out_centroids_1)
-
+    
         print("5.3. Clustering 2 : 3/6")
-
+    
         clusters_1 = regroupement.load_pickles(title_file_results_1)
         centroids_files = regroupement.load_pickles(title_file_out_centroids_1)
         print("\t Nbr clusters : ", len(centroids_files))
-
+    
         index_clusters = list(clusters_1.keys())
         clusters_2 = regroupement.clustering_2(index_clusters, clusters_1, centroids_files, nbr_pool)
-
+    
         title_file_results_2 = "./Clustering_results/Clusters/{}_{}_clustering_2.pk".format(type_1, type_2)
         regroupement.save_pickles_results(clusters_2, title_file_results_2)
-
+    
         print("5.4. Centroids 2 : 4/6")
-
+    
         compute_all_centroids_2 = regroupement.main_compute_medoids(title_file_results_2, nbr_pool)
         title_file_out_centroids_2 = "./Clustering_results/Medoids/{}_{}_medoids_2.pk".format(type_1, type_2)
         regroupement.save_pickles_results(compute_all_centroids_2, title_file_out_centroids_2)
-
+    
         print("5.5. Clustering 3 : 5/6")
-
+    
         clusters_2 = regroupement.load_pickles(title_file_results_2)
         centroids_files_2 = regroupement.load_pickles(title_file_out_centroids_2)
-
+    
         print("\t Nbr clusters : ", len(centroids_files_2))
-
+    
         index_clusters = list(clusters_2.keys())
         clusters_3 = regroupement.clustering_2(index_clusters, clusters_2, centroids_files_2, nbr_pool)
-
+    
         title_file_results_3 = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
         regroupement.save_pickles_results(clusters_3, title_file_results_3)
-
+    
         print("5.6. Centroids 3 : 6/6")
-
+    
         compute_all_centroids_3 = regroupement.main_compute_medoids(title_file_results_3, nbr_pool)
-
+    
         title_file_out_centroids_3 = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
         regroupement.save_pickles_results(compute_all_centroids_3, title_file_out_centroids_3)
 
@@ -433,39 +447,39 @@ if __name__ == "__main__":
     def extracting_representant_patterns(type_1,type_2, nbr_pool):
         print("-"*75)
         print("6. Extracting Representant Patterns")
-
+    
         print("6.1. Computing Representant Patterns")
-
-
+    
+    
         ###adaptation du script de Jade
-
+    
         # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
         # type_1 = types_textes[0]
         # type_2 = types_textes[1]
         # nbr_pool=2
-
+    
         ###
-
-
+    
+    
         title_file_clusters = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
         title_file_centroids = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
-
+    
         clusters = formate_patterns.load_pk(title_file_clusters)
         centroids = formate_patterns.load_pk(title_file_centroids)
-
+    
         emergent_patterns = [p
                             for p
                             in list(formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1,type_2)).values())
                             if p[2] >= 1]
-
+    
         dict_emergent_patt = dict()
         for p in emergent_patterns:
             dict_emergent_patt[str(sorted(p[0]))] = p[3]
-
+    
         corpus_dmt4 = formate_patterns.load_pk("./Data/DMT4_files/DMT4_{}_dict_sorted.pk".format(type_1))
-
+    
         lexique = formate_patterns.load_lexique()
-
+    
         df_all_rep = representants.main_extract_all_representant(type_1,
                                     type_2,
                                     clusters,
@@ -473,16 +487,16 @@ if __name__ == "__main__":
                                     dict_emergent_patt,
                                     corpus_dmt4,
                                     nbr_pool)
-
+    
         print("6.2. Selecting Representant Patterns")
         if not os.path.exists("./Data/Representants_results/"):
             os.mkdir("./Representants_results")
             if not os.path.exists("./Data/Representants_results/Representants_finaux"):
                 os.mkdir("./Representants_results/Representants_finaux")
-
+        
         representants.main_select_representants("./Representants_results/{}_{}_representants.pk".format(type_1,type_2))
-
-
+    
+    
     ###adaptation du script de Jade
     if shortcut_GR == False:
         # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
@@ -501,13 +515,13 @@ if __name__ == "__main__":
                 extracting_representant_patterns(type_1, type_2, nbr_pool)
         end_time = time.time()
         cluster_time = end_time - start_time
-
+    
     if tagging==True:
         print(f"Temps de tagging : {time_tag // 3600}")
     print(f"Temps de DMT4 : {time_DMT4 // 3600}")
     if shortcut_GR == False:
         print(f"Temps de clustering : {cluster_time // 3600}")
-
+    
     # #-------------------------------------------------------------------------------------------------------------------
     # # Random Forest
     # #-------------------------------------------------------------------------------------------------------------------
