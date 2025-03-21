@@ -17,6 +17,7 @@ import stanza
 from stanza.utils.conll import CoNLL
 import time
 import shutil
+from config import *
 
 
 def get_nbr_seq(dmt4_files):
@@ -37,31 +38,14 @@ def concat_multiple_conll(path, files_list, output_file):
 
 if __name__ == "__main__":
     python = "python3.7"
+    types_textes = sys.argv[1:]
     
-    
-    types_textes = os.listdir("./Data/Textes_raw")
-    if ".DS_Store" in types_textes:
-        types_textes.remove(".DS_Store")
-        
-    shortcut_association = True
-    shortcut_specifs = True
-    shortcut_GR = True
-    shortcut_underscore_fix=True
-    only_clustering = False
-    shortcut_wp = True
-    tagging=False
-    shortcut_grewpy = False
-    
-    méthode = "partition" #deux paramètres de méthodologie "partition" ou "corpus"
-    
-    if méthode=="partition":
-        shortcut_wp=True
-        shortcut_GR = True
-    
-    #Set param for minimal number of itemsets in a pattern
-    nb_itemset_min = 3 #Tim, 27/02
-    
-    list_minsup_percent = [25,10]
+    # types_textes = os.listdir("./Data/Textes_raw")
+    # if ".DS_Store" in types_textes:
+    #     types_textes.remove(".DS_Store")
+        # Tim: I assume this was only for test purposes.
+
+    # many parameters have been moved to config.py (Tim, 19/03).
     
 
     if only_clustering==False:
@@ -85,6 +69,7 @@ if __name__ == "__main__":
         output_folder = "./Data/Textes_merged"  # Folder to store merged files
 
         merge_texts(input_folder, output_folder, types_textes)  # Call the function
+
 
         #----- RUN STANZA ON MERGED FILES -----
 
@@ -110,6 +95,7 @@ if __name__ == "__main__":
                     output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
                     rep = "./Data/Textes_merged/{}".format(type_texte)
                     os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
+                    # print("yolo")
     
                     for file in os.listdir(rep):                        #loop for each file in dir
                         if file[0] == ".": continue                     #ignore hidden UNIX files
