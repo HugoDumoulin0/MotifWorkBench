@@ -1,0 +1,821 @@
+source("setup.R")
+#Load/install packages, input file and set variables#
+source("setup.R")#
+#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=300)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()#
+#-----------------------------------#
+# Plot CA#
+#-----------------------------------#
+#
+#General plot#
+bmp(filename=paste("../graphs/", var_name, "_AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()#
+#
+#General plot with cos2 representing contribution#
+	#the value of the cos2 is between 0 and 1. A cos2 closed to 1 corresponds#
+	#to a column/row variables that are well represented on the factor map.#
+bmp(filename=paste("../graphs/", var_name, "_AFC_1_cos2.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()#
+#
+#-----------------------------------#
+# Check accuracy/explanatory power#
+#-----------------------------------#
+#
+#Plot degree of variance explanation per axis#
+bmp(filename=paste("../graphs/", var_name, "_var_expl_per_axis.bmp", sep=""),#
+	width=1536, height=1536, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()#
+	#All axis up to the first elbow should be investigated.#
+	#In the first data example, dim2 is not really more explanatory than dim3 etc.#
+#
+#Take a look at representation accuracy#
+	#Get rows (MSE)#
+	row <- get_ca_row(AFC)#
+#
+	#Get the 10 heaviest contributing rows#
+	contrib_10_rows <- head(row$contrib, 10)#
+	write.table(contrib_10_rows,#
+		file = paste("../tables/", var_name, "_contrib_10_rows.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Get cols (texts/subcorpora)#
+	col <- get_ca_col(AFC)#
+#
+	#Get the 10 heaviest contributing cols#
+	contrib_10_cols <- head(col$contrib, 10)#
+	write.table(contrib_10_cols,#
+		file = paste("../tables/", var_name, "_contrib_10_cols.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Plot it#
+	bmp(filename=paste("../graphs/", var_name, "_contrib_dim_1.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename=paste("../graphs/", var_name, "_contrib_dim_2.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+source("setup.R")
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=300)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()#
+#-----------------------------------#
+# Plot CA#
+#-----------------------------------#
+#
+#General plot#
+bmp(filename=paste("../graphs/", var_name, "_AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()#
+#
+#General plot with cos2 representing contribution#
+	#the value of the cos2 is between 0 and 1. A cos2 closed to 1 corresponds#
+	#to a column/row variables that are well represented on the factor map.#
+bmp(filename=paste("../graphs/", var_name, "_AFC_1_cos2.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()#
+#
+#-----------------------------------#
+# Check accuracy/explanatory power#
+#-----------------------------------#
+#
+#Plot degree of variance explanation per axis#
+bmp(filename=paste("../graphs/", var_name, "_var_expl_per_axis.bmp", sep=""),#
+	width=1536, height=1536, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()#
+	#All axis up to the first elbow should be investigated.#
+	#In the first data example, dim2 is not really more explanatory than dim3 etc.#
+#
+#Take a look at representation accuracy#
+	#Get rows (MSE)#
+	row <- get_ca_row(AFC)#
+#
+	#Get the 10 heaviest contributing rows#
+	contrib_10_rows <- head(row$contrib, 10)#
+	write.table(contrib_10_rows,#
+		file = paste("../tables/", var_name, "_contrib_10_rows.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Get cols (texts/subcorpora)#
+	col <- get_ca_col(AFC)#
+#
+	#Get the 10 heaviest contributing cols#
+	contrib_10_cols <- head(col$contrib, 10)#
+	write.table(contrib_10_cols,#
+		file = paste("../tables/", var_name, "_contrib_10_cols.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Plot it#
+	bmp(filename=paste("../graphs/", var_name, "_contrib_dim_1.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename=paste("../graphs/", var_name, "_contrib_dim_2.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+bmp(filename=paste("../graphs/", var_name, "_AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+bmp(filename=paste("../graphs/", var_name, "_AFC_1_cos2.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()
+bmp(filename=paste("../graphs/", var_name, "_var_expl_per_axis.bmp", sep=""),#
+	width=1536, height=1536, res=300)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+row <- get_ca_row(AFC)
+contrib_10_rows <- head(row$contrib, 10)#
+	write.table(contrib_10_rows,#
+		file = paste("../tables/", var_name, "_contrib_10_rows.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)
+contrib_10_cols <- head(col$contrib, 10)#
+	write.table(contrib_10_cols,#
+		file = paste("../tables/", var_name, "_contrib_10_cols.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)
+bmp(filename=paste("../graphs/", var_name, "_contrib_dim_1.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()
+bmp(filename=paste("../graphs/", var_name, "_contrib_dim_2.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+bmp(filename=paste("../graphs/", var_name, "_contrib_dim_2.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+bmp(filename=paste("../graphs/", var_name, "_AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()#
+#
+#General plot with cos2 representing contribution#
+	#the value of the cos2 is between 0 and 1. A cos2 closed to 1 corresponds#
+	#to a column/row variables that are well represented on the factor map.#
+bmp(filename=paste("../graphs/", var_name, "_AFC_1_cos2.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")#
+dev.off()#
+#
+#-----------------------------------#
+# Check accuracy/explanatory power#
+#-----------------------------------#
+#
+#Plot degree of variance explanation per axis#
+bmp(filename=paste("../graphs/", var_name, "_var_expl_per_axis.bmp", sep=""),#
+	width=1536, height=1536, res=200)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()#
+	#All axis up to the first elbow should be investigated.#
+	#In the first data example, dim2 is not really more explanatory than dim3 etc.#
+#
+#Take a look at representation accuracy#
+	#Get rows (MSE)#
+	row <- get_ca_row(AFC)#
+#
+	#Get the 10 heaviest contributing rows#
+	contrib_10_rows <- head(row$contrib, 10)#
+	write.table(contrib_10_rows,#
+		file = paste("../tables/", var_name, "_contrib_10_rows.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Get cols (texts/subcorpora)#
+	col <- get_ca_col(AFC)#
+#
+	#Get the 10 heaviest contributing cols#
+	contrib_10_cols <- head(col$contrib, 10)#
+	write.table(contrib_10_cols,#
+		file = paste("../tables/", var_name, "_contrib_10_cols.txt", sep=""),#
+		sep = "\t",#
+        row.names = TRUE,#
+		col.names = NA)#
+#
+	#Plot it#
+	bmp(filename=paste("../graphs/", var_name, "_contrib_dim_1.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 1)#
+	dev.off()#
+#
+	bmp(filename=paste("../graphs/", var_name, "_contrib_dim_2.bmp", sep=""),#
+		width=2048, height=2048, res=200)#
+	fviz_contrib(AFC,#
+		choice ="col",#
+		axes = 2)#
+	dev.off()
+#Load/install packages, input file and set variables#
+source("setup.R")#
+#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_gal.R")#
+#
+# Plot and measures for 2 dims with contrib threshold#
+# source("plots_threshold.R")#
+#
+# Plot and measures for accuracy/explanatory power#
+source("accuracy.R")#
+#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=200)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()
+#Load/install packages, input file and set variables#
+source("setup.R")#
+#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_gal.R")#
+#
+# Plot and measures for 2 dims with contrib threshold#
+# source("plots_threshold.R")#
+#
+# Plot and measures for accuracy/explanatory power#
+source("accuracy.R")
+source("setup.R")
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_gal.R")#
+#
+# Plot and measures for 2 dims with contrib threshold#
+# source("plots_threshold.R")#
+#
+# Plot and measures for accuracy/explanatory power#
+source("accuracy.R")
+source("plots_gal.R")
+bmp(filename=paste("../graphs/", var_name, "_AFC_1.bmp", sep=""),#
+	width=2048, height=2048, res=200)#
+fviz_ca_col(AFC,#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	col.col="black") +#
+	theme_classic()#
+dev.off()
+table
+var_name
+source("plots_gal.R")
+#Load/install packages, input file and set variables#
+source("setup.R")#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_gal.R")#
+# Plot and measures for 2 dims with contrib threshold#
+# source("plots_threshold.R")#
+# Plot and measures for accuracy/explanatory power#
+source("accuracy.R")
+fviz_ca_col
+fviz_ca_col(AFC,#
+	col.col = "cos2",#
+	shape.col=16,#
+	labelsize=4,#
+	repel=T,#
+	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+	theme_classic() +#
+	guides(colour = guide_colourbar(position = "inside")) +#
+	theme(legend.margin = margin(0, 0, 0, 0),#
+		legend.position.inside = c(0.01, 1),#
+		legend.justification.top = "left",#
+		legend.justification.left = "top",#
+		legend.justification.bottom = "left",#
+		legend.justification.inside = c(0, 1),#
+		legend.location = "plot",#
+		plot.title.position = "plot")
+plot_ca_columns <- function(AFC,#
+                            shape.col = 16,#
+                            labelsize = 4,#
+                            repel = TRUE,#
+                            col.col = "black") {#
+  fviz_ca_col(AFC,#
+              shape.col = shape.col,#
+              labelsize = labelsize,#
+              repel = repel,#
+              col.col = col.col) +#
+    theme_classic()#
+}
+plot_ca_columns(AFC)
+#Load/install packages, input file and set variables#
+source("setup.R")#
+#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_gal.R")#
+plot_ca_columns(AFC)
+plot_ca_columns(AFC)
+AFC_plot1 <- plot_ca_columns(AFC)#
+ggsave(plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep="")#
+			width=9,#
+			height = 9,#
+			units = "in")
+AFC_plot1 <- plot_ca_columns(AFC)#
+ggsave(AFC_plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep="")#
+			width=9,#
+			height = 9,#
+			units = "in")
+AFC_plot1 <- plot_ca_columns(AFC)#
+ggsave(AFC_plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep=""),#
+			width=9,#
+			height = 9,#
+			units = "in")
+ggsave(AFC_plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep=""),#
+			width=2048,#
+			height = 2048)
+ggsave(AFC_plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep=""),#
+			width=2048,#
+			height = 2048,#
+			units = "px")
+ggsave(AFC_plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep=""),#
+			width=2048,#
+			height = 2048,#
+			res=200)
+ggsave(AFC_plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep=""),#
+			width=2048,#
+			height = 2048,#
+			units="px")
+ggsave(AFC_plot1,#
+			path = "../graphs",#
+	      	filename=paste(var_name, "_AFC_1.bmp", sep=""),#
+			width=2048,#
+			height = 2048,#
+			units = "px",#
+			dpi = 300)
+create_AFC_plot <- function(AFC) {#
+  # Get the name of the AFC object as a string#
+  var_name <- deparse(substitute(AFC))#
+  # Construct the output filename#
+  filename <- paste("../graphs/", var_name, "_AFC_1.bmp", sep = "")#
+  # Open the BMP device with fixed dimensions and resolution#
+  bmp(filename = filename, width = 2048, height = 2048, res = 200)#
+  # Generate the plot with fixed settings and classic theme#
+  plot_obj <- fviz_ca_col(AFC,#
+                          shape.col = 16,#
+                          labelsize = 4,#
+                          repel = TRUE,#
+                          col.col = "black") +#
+              theme_classic()#
+  # Render the plot to the file and close the device#
+  print(plot_obj)#
+  dev.off()#
+}
+create_AFC_plot(AFC)
+create_AFC_plot <- function(AFC) {#
+  # Get the name of the AFC object as a string#
+  # var_name <- deparse(substitute(AFC))#
+  # Construct the output filename#
+  filename <- paste("../graphs/", var_name, "_AFC_1.bmp", sep = "")#
+  # Open the BMP device with fixed dimensions and resolution#
+  bmp(filename = filename, width = 2048, height = 2048, res = 200)#
+  # Generate the plot with fixed settings and classic theme#
+  plot_obj <- fviz_ca_col(AFC,#
+                          shape.col = 16,#
+                          labelsize = 4,#
+                          repel = TRUE,#
+                          col.col = "black") +#
+              theme_classic()#
+  # Render the plot to the file and close the device#
+  print(plot_obj)#
+  dev.off()#
+}
+create_AFC_plot(AFC)
+AFC_plot_cos2 <- function(AFC){#
+  filename <- paste("../graphs/", var_name, "_AFC_cos2.bmp", sep = "")#
+  bmp(filename = filename, width = 2048, height = 2048, res = 200)#
+  plot_obj <- fviz_ca_col(AFC,#
+  	col.col = "cos2",#
+  	shape.col=16,#
+  	labelsize=4,#
+  	repel=T,#
+  	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+  	theme_classic() +#
+  	guides(colour = guide_colourbar(position = "inside")) +#
+  	theme(legend.margin = margin(0, 0, 0, 0),#
+  		legend.position.inside = c(0.01, 1),#
+  		legend.justification.top = "left",#
+  		legend.justification.left = "top",#
+  		legend.justification.bottom = "left",#
+  		legend.justification.inside = c(0, 1),#
+  		legend.location = "plot",#
+  		plot.title.position = "plot")#
+  print(plot_obj)#
+  dev.o
+AFC_plot_cos2(AFC)
+AFC_plot_cos2 <- function(AFC){#
+  filename <- paste("../graphs/", var_name, "_AFC_cos2.bmp", sep = "")#
+  bmp(filename = filename, width = 2048, height = 2048, res = 200)#
+  plot_obj <- fviz_ca_col(AFC,#
+  	col.col = "cos2",#
+  	shape.col=16,#
+  	labelsize=4,#
+  	repel=T,#
+  	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +#
+  	theme_classic() +#
+  	guides(colour = guide_colourbar(position = "inside")) +#
+  	theme(legend.margin = margin(0, 0, 0, 0),#
+  		legend.position.inside = c(0.01, 1),#
+  		legend.justification.top = "left",#
+  		legend.justification.left = "top",#
+  		legend.justification.bottom = "left",#
+  		legend.justification.inside = c(0, 1),#
+  		legend.location = "plot",#
+  		plot.title.position = "plot")#
+  print(plot_obj)#
+  dev.off()#
+}
+AFC_plot_cos2(AFC)
+plot_ca_columns <- function(AFC,#
+		shape.col = 16,#
+		labelsize = 4,#
+		repel = TRUE,#
+		col.col = "black") {#
+	fviz_ca_col(AFC,#
+		shape.col = shape.col,#
+		labelsize = labelsize,#
+		repel = repel,#
+		col.col = col.col) +#
+ 		theme_classic()#
+}
+plot_ca_columns
+source("plots_gal.R")#
+AFC_plot(AFC)#
+AFC_plot_cos2(AFC)
+source("plots_func.R")#
+AFC_plot(AFC)#
+AFC_plot_cos2(AFC)
+#Load/install packages, input file and set variables#
+source("setup.R")#
+#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_func.R")#
+AFC_plot(AFC)#
+AFC_plot_cos2(AFC)#
+#
+# Plot and measures for 2 dims with contrib threshold#
+# source("plots_threshold.R")#
+#
+# Plot and measures for accuracy/explanatory power#
+source("accuracy.R")
+#Load/install packages, input file and set variables
+#Load/install packages, input file and set variables#
+source("setup.R")#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_func.R")#
+AFC_plot(AFC)#
+AFC_plot_cos2(AFC)#
+# Plot and measures for 2 dims with contrib threshold#
+# source("plots_threshold.R")#
+# Plot and measures for accuracy/explanatory power#
+source("accuracy.R")#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=200)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()
+cat("a string please: ");#
+a <- readLines("stdin",n=1);#
+cat("You entered")#
+ str(a);#
+cat( "\n" )
+#Load/install packages, input file and set variables#
+source("setup.R")#
+# Compute CA (fr. AFC)#
+AFC = CA(table[,-c(1,2)], graph=F)#
+# Plot and measures for 2 dims with no contrib threshold#
+source("plots_func.R")#
+AFC_plot(AFC)#
+AFC_plot_cos2(AFC)#
+# Plot and measures for 2 dims with contrib threshold#
+# source("plots_threshold.R")#
+# Plot and measures for accuracy/explanatory power#
+source("accuracy.R")#
+# bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")#
+# dev.off()#
+##
+# bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)#
+# fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)#
+# dev.off()#
+##
+# bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=200)#
+# plot.CA(AFC, invisible=c("row"), repel=T)#
+# dev.off()
+source("main.R")
+bmp(filename=paste("../graphs/", var_name, "_var_expl_per_axis.bmp", sep=""),#
+	width=1536, height=1536, res=200)#
+fviz_screeplot(AFC,#
+	addlabels = TRUE) +#
+	theme_classic()#
+dev.off()
+source(main.R)
+source("main.R")
+var_per_axis(AFC)
+source("main.R")
+row
+source("main.R")
+cols
+col
+col$contrib
+col$coord
+col$cos2
+col$inertia
+col$contribu
+col$contrib
+col_stringent <- col %>% select(contrib=10)
+col_stringent <- select.col=list(contrib=10)
+library(dplyr)
+col_stringent <- col %>% select(contrib>10)
+col_stringent <- select.col=list(contrib=10)
+col$contrib
+bmp(filename="../graph/AFC_fviz.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+dev.off()
+bmp(filename="../graphs/AFC_fviz.bmp", width=2048, height=2048, res=200)#
+fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)#
+dev.off()
+n.row(col$contrib)
+nrows(col$contrib)
+n.rows(col$contrib)
+count(col$contrib)
+mean(col$contrib)
+mean(col$contrib$Dim 1)
+mean(col$contrib$Dim1)
+table <- as.table(col$contrib)
+table
+table$Dim 1
+table$Dim_1
+table$"Dim 1"
+rename(table, Dim.1 = 'Dim 1')
+typeof(table)
+table <- rename(table, Dim.1 = 'Dim 1')
+table <- as.df(table)
+table as.data.frame(table)
+table <- as.data.frame(table)
+table
+table <- as.table(col$contrib)
+table <- colnames(table) = c("Dim.1", "Dim.2", "Dim.3", "Dim.4", "Dim.5")
+colnames(table) = c("Dim.1", "Dim.2", "Dim.3", "Dim.4", "Dim.5")
+table
+mean(table$Dim.1)
+summarise(table)
+table_df <- as.data.frame(table)
+table
+mean(table$Dim.1)
+summarize(table)
+mean(table_df$Dim.1)
+table_df
+mean(table[["Dim.1"]])
+mean(table_df)
+mean(table_df[["Dim.1"]])
+col$contrib
+contrib <- col$contrib
+contrib
+mean(contrib[["Dim 1"]])
+summarise(contrib)
+typeof(contrib)
+df <- data.frame(values = contrib)
+df
+mean(df$values.Dim.1)
+mean_Dim.1 <- mean(df$values.Dim.1)
+mean_Dim.1
+min_Dim.2 <- mean(df$values.Dim.2)
+min_Dim.2
+mean(df$Dim.3)
+mean(df$values.Dim.3)
+nrow(df)
+source("main.R")
+source("main.R")
+source("main.R")
+source("main.R")
+source("main.R")
+na_count <- sum(is.na(X))#
+cat("Number of missing values:", na_count, "\n")
+na_count(table)
+na_count <- sum(is.na(table))
+na_count
+inf_count <- sum(!is.finite(table))
+M <- crossprod(X, X)#
+if (any(!is.finite(M))) {#
+  cat("Non-finite values found in the cross-product matrix.\n")#
+  print(M)#
+} else {#
+  cat("All values in the cross-product matrix are finite.\n")#
+}
+M <- crossprod(X, X)
+if (!is.numeric(as.matrix(X))) {#
+  stop("X must be a numeric matrix or data frame.")#
+}
+if (!is.numeric(as.matrix(table))) {#
+  stop("X must be a numeric matrix or data frame.")#
+}
+table
+table
