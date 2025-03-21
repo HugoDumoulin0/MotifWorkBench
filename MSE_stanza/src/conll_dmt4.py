@@ -104,7 +104,7 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
     return "{} : Sorted".format(DMT4_file[:-4])
 
 
-def transform_data(rep, type_texte):
+def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats):
     """
     input : 1. nbr d'items par itemset,
                 ex : 4
@@ -135,17 +135,32 @@ def transform_data(rep, type_texte):
                             index_itemset = 1
     
                         list_token = list()
-                        # form = "form_{}".format(tokens[0])
-                        lemma = "lemma_{}".format(seg_token_parsed[2])
-                        pos = "pos_{}".format(seg_token_parsed[3])
-                        dep = "dep_{}".format(seg_token_parsed[9])
-                        all_feats = seg_token_parsed[5].split("|")
-                        formate_feats = list()
-                        for f in all_feats:
-                            if f != "":
-                                formate_feats.append("feats_{}".format(f))
+                        if Form==True:
+                            form = "form_{}".format(seg_token_parsed[1])
+                        else:
+                            form=""
+                        if Lemma==True:
+                            lemma = "lemma_{}".format(seg_token_parsed[2])
+                        else:
+                            lemma=""
+                        if Pos==True:
+                            pos = "pos_{}".format(seg_token_parsed[3])
+                        else:
+                            pos=""
+                        if Dep==True:
+                            dep = "dep_{}".format(seg_token_parsed[9])
+                        else:
+                            dep=""
+                        if Feats==True:
+                            all_feats = seg_token_parsed[5].split("|")
+                            formate_feats = list()
+                            for f in all_feats:
+                                if f != "":
+                                    formate_feats.append("feats_{}".format(f))
+                        else:
+                            formate_feats=[]
                         list_token = [lemma, pos] + formate_feats + [dep] + seg_token_parsed[10:]
-    
+                        print(list_token)
                         for tag in list_token:
                             index_item = dict_lexic.get(tag)
                             file_dmt4.write("{} {}\n".format(index_itemset,index_item))
