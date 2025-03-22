@@ -14,6 +14,7 @@ import os
 import pandas as pd
 import stats_vocab
 import re
+import compute_am_r
 
 
 def count_tokens_in_conll(corpus_path):
@@ -190,9 +191,27 @@ def all_synth_tsv_out(dict_synth, liste_motifs, minsup_percent):
     df = pd.DataFrame.from_dict(dict_out, orient="index", columns=columns)
     df.to_csv(file_out.replace("pk", "tsv"), sep="\t", encoding="utf-8")
     return dict_out
+
+def df_spec(dict_synth, liste_motifs, minsup_percent):
+    mins = minsup_percent
+    donnees_spec = []
+    lexic_int_str = formate_patterns.make_dict_int_to_str()
+    for fichier in dict_synth.keys():
+        for motif in liste_motifs:
+            donnees_spec.append({
+                    "fichier":fichier,
+                    "motif":formate_patterns.from_int_to_str(motif, lexic_int_str),
+                    "k":dict_synth[fichier][str(motif)][2],
+                    "f":dict_synth[fichier][str(motif)][4],
+                    "t":dict_synth[fichier][str(motif)][5],
+                    "T":dict_synth[fichier][str(motif)][6]
+                    })
+    df_spec = pd.DataFrame(donnees_spec)
+    file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df.tsv".format(mins)
+    df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8")
+    return df_spec
     
-def df_mouture_R_dict_synth(dict_synth, liste_motifs, minsup_percent):
-    dict_spec_out = {}
+def df_AFC(dict_synth, liste_motifs, minsup_percent):
     dict_AFC_out = {}
     mins=minsup_percent
     lexic_int_str = formate_patterns.make_dict_int_to_str()
@@ -200,32 +219,24 @@ def df_mouture_R_dict_synth(dict_synth, liste_motifs, minsup_percent):
     for fichier in dict_synth:
         liste_fichier.append(fichier)
     for motif in liste_motifs:
-        dict_spec_out[str(motif)]=[motif,
-                            formate_patterns.from_int_to_str(motif, lexic_int_str)]
+        # dict_spec_out[str(motif)]=[motif,
+        #                     formate_patterns.from_int_to_str(motif, lexic_int_str)]
         dict_AFC_out[str(motif)]=[motif,
                             formate_patterns.from_int_to_str(motif, lexic_int_str)]
         for fichier in liste_fichier:
-            dict_spec_out[str(motif)] += dict_synth[fichier][str(motif)][2:]
+            # dict_spec_out[str(motif)] += dict_synth[fichier][str(motif)][2:]
             dict_AFC_out[str(motif)] += [dict_synth[fichier][str(motif)][2]]
-    file_out_spec = "./Patterns_results/Specifs_noZero/{}_specR_df.pk".format(mins)
     file_out_AFC = "./Patterns_results/Specifs_noZero/{}_AFC_R_df.pk".format(mins)
-    tools.save_pickles_results(dict_spec_out, file_out_spec)
     tools.save_pickles_results(dict_AFC_out, file_out_AFC)
     columns_base = ["motifs_int", "motifs_str"]
-    liste_columns_spec=[]
     liste_columns_AFC=[]
     for fichier in liste_fichier:
-        items = ["k", "M", "f", "t", "T", "indice"]
+        # items = ["k", "M", "f", "t", "T", "indice"]
         liste_columns_AFC.append(f"{fichier}")
-        for item in items:
-            liste_columns_spec.append(f'{fichier}_{item}')
-    columns_spec=columns_base+liste_columns_spec
     columns_AFC=columns_base+liste_columns_AFC
-    df_spec = pd.DataFrame.from_dict(dict_spec_out, orient="index", columns=columns_spec)
     df_AFC= pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
-    df_spec.to_csv(file_out_spec.replace("pk", "tsv"), sep="\t", encoding="utf-8")
     df_AFC.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
-    return dict_spec_out, dict_AFC_out
+    return dict_AFC_out
 
 def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
     DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
@@ -239,11 +250,13 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
         dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
     tsv_out(dict_synth, columns, minsup_percent)
     all_synth_tsv_out(dict_synth, liste_motifs_clos_corpus, minsup_percent)
-    df_mouture_R_dict_synth(dict_synth, liste_motifs_clos_corpus, minsup_percent)
+    df_spec(dict_synth, liste_motifs_clos_corpus, minsup_percent)
+    df_AFC(dict_synth, liste_motifs_clos_corpus, minsup_percent)
     tools.save_pickles_results(dictionnaire_t,"Patterns_results/Specifs_noZero/dictionnaire_t.pk")
     tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs_noZero/dictionnaire_f.pk")
     tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs_noZero/dictionnaire_k.pk")
-
+    # compute_am_r.main(df_spec)
+    
 # types_textes = os.listdir("./Data/Textes_tagged_stanza/")
 # if ".DS_Store" in types_textes:
 #     types_textes.remove(".DS_Store")
