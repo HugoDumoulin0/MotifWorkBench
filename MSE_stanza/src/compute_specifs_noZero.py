@@ -14,7 +14,7 @@ import os
 import pandas as pd
 import stats_vocab
 import re
-import compute_am_r
+# import compute_am_r
 import datetime
 
 def count_tokens_in_conll(corpus_path):
@@ -184,7 +184,7 @@ def all_synth_tsv_out(dict_synth, liste_motifs, minsup_percent, execution_time):
             dict_out[str(motif)].append(dict_synth[fichier][str(motif)][7])
                 # else:
                 #     dict_out[motif].append("None")
-    file_out = "./Patterns_results/Specifs_noZero/{}_{}_synthèse.pk".format(mins, execution_time)
+    file_out = "./Patterns_results/Specifs_noZero/{}_synthèse_{}.pk".format(mins, execution_time)
     tools.save_pickles_results(dict_out, file_out)
     columns = ["motifs_int", "motifs_str"]
     columns=columns+liste_fichier
@@ -207,7 +207,7 @@ def df_spec(dict_synth, liste_motifs, minsup_percent,execution_time):
                     "T":dict_synth[fichier][str(motif)][6]
                     })
     df_spec = pd.DataFrame(donnees_spec)
-    file_out_spec = "./Patterns_results/Specifs_noZero/{}_{}_spec_R_df.tsv".format(mins,execution_time)
+    file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8")
     return df_spec
     
@@ -226,7 +226,7 @@ def df_AFC(dict_synth, liste_motifs, minsup_percent, execution_time):
         for fichier in liste_fichier:
             # dict_spec_out[str(motif)] += dict_synth[fichier][str(motif)][2:]
             dict_AFC_out[str(motif)] += [dict_synth[fichier][str(motif)][2]]
-    file_out_AFC = "./Patterns_results/Specifs_noZero/{}_{}_AFC_R_df.pk".format(mins,execution_time)
+    file_out_AFC = "./Patterns_results/Specifs_noZero/{}_AFC_R_df_{}.pk".format(mins, execution_time)
     tools.save_pickles_results(dict_AFC_out, file_out_AFC)
     columns_base = ["motifs_int", "motifs_str"]
     liste_columns_AFC=[]
@@ -236,7 +236,15 @@ def df_AFC(dict_synth, liste_motifs, minsup_percent, execution_time):
     columns_AFC=columns_base+liste_columns_AFC
     df_AFC= pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
     df_AFC.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    file_out_AFC_for_calc = "./Patterns_results/Specifs_noZero/{}_AFC_R_df.tsv".format(mins)
+    df_AFC.to_csv(file_out_AFC_for_calc, sep="\t", encoding="utf-8")
     return dict_AFC_out
+
+def clean_AFC():
+    liste = os.listdir("./Patterns_results/Specifs_noZero")
+    for fichier in liste:
+        if fichier.endswith("_AFC_R_df.tsv"):
+            os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
 def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
     execution_time = datetime.datetime.now()
@@ -252,6 +260,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
     tsv_out(dict_synth, columns, minsup_percent,execution_time)
     all_synth_tsv_out(dict_synth, liste_motifs_clos_corpus, minsup_percent,execution_time)
     df_spec(dict_synth, liste_motifs_clos_corpus, minsup_percent, execution_time)
+    clean_AFC()
     df_AFC(dict_synth, liste_motifs_clos_corpus, minsup_percent, execution_time)
     tools.save_pickles_results(dictionnaire_t,"Patterns_results/Specifs_noZero/dictionnaire_t.pk")
     tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs_noZero/dictionnaire_f.pk")
