@@ -18,6 +18,8 @@ from stanza.utils.conll import CoNLL
 import time
 import shutil
 from config import *
+import subprocess
+
 
 
 def get_nbr_seq(dmt4_files):
@@ -368,6 +370,8 @@ if __name__ == "__main__":
                 for minsup_percent in list_minsup_percent:
                     compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
 
+
+                subprocess.call(["Rscript", "AFC.R"])
 
     # #-------------------------------------------------------------------------------------------------------------------
     # # Clustering Emergent Pattern
