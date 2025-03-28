@@ -36,7 +36,15 @@ ipak(packages)
 		filter = Filters_file_format)
 
 	#read it
+<<<<<<< Updated upstream
 	table = read.csv(table, sep="\t", header=T, row.names="motifs_str", encoding="UTF-8")
+=======
+<<<<<<< HEAD
+	table = read.csv(table, sep="\t", header=T, row.names=1, encoding="UTF-8")
+=======
+	table = read.csv(table, sep="\t", header=T, row.names="motifs_str", encoding="UTF-8")
+>>>>>>> main
+>>>>>>> Stashed changes
 
 #-----------------------------------------------
 # Interactively ask for prefix for naming files

@@ -793,6 +793,16 @@ mean(df$Dim.3)
 mean(df$values.Dim.3)
 nrow(df)
 source("main.R")
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+source("main.R")
+source("main.R")
+source("main.R")
+source("main.R")
+=======
+>>>>>>> main
+>>>>>>> Stashed changes
 na_count <- sum(is.na(X))#
 cat("Number of missing values:", na_count, "\n")
 na_count(table)
@@ -814,6 +824,12 @@ if (!is.numeric(as.matrix(table))) {#
   stop("X must be a numeric matrix or data frame.")#
 }
 table
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+table
+=======
+>>>>>>> Stashed changes
 # Timothée Premat and Hugo Dumoulin#
 # 27/02/2025#
 # This script must be run in interactive mode! If your setup does not#
@@ -880,3 +896,7 @@ dev.off()#
 # bmp(filename="AFC_var_4.bmp", width=2048, height=2048, res=200)#
 # plot.CA(AFC, invisible=c("row"), repel=T)#
 # dev.off()
+<<<<<<< Updated upstream
+=======
+>>>>>>> main
+>>>>>>> Stashed changes
