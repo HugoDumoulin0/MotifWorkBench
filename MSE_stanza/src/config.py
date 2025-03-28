@@ -26,7 +26,7 @@ if méthode=="partition":
 #Set param for minimal number of itemsets in a pattern
 nb_itemset_min = 3 #Tim, 27/02
 
-#Set minimal frequency/ies for a pattern to be reccurrent
+#Set minimal frequency/ies for a pattern to be reccurrenxt
 list_minsup_percent = [25,10]
 
 
@@ -35,13 +35,10 @@ list_minsup_percent = [25,10]
 #-------------------
 Form=False 
 Lemma=True
-Pos=True
-Dep=True
+Pos=False
+Dep=False
 Feats=False
 
-#attention pour l'instant cela ne fonctionne qu'avec cette condition :
-if Lemma==True or Pos==True or Dep==True:
-    Lemma=True
-    Pos=True
-    Dep=True
+#attention avec form=True il y a aura les résultats non contractés
+
 
