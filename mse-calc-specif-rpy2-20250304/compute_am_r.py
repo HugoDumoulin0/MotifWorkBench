@@ -6,17 +6,21 @@ import argparse
 import pandas as pd
 from stats import stats as amstats
 
-# process command line arguments
-arg_parser = argparse.ArgumentParser(description='Python script to perform Multidimensional Analysis (MDA).')
-arg_parser.add_argument('infile', help='YAML configuration file defining sample composition, MDA feature queries and query engine.')
-arg_parser.add_argument('outfile', help='Output directory for result files.')
-arg_parser.add_argument('--ams', dest="ams", help='Base name of the result files.', action="store")
 
-args = arg_parser.parse_args()
-infile = args.infile
-outfile = args.outfile
-ams = args.ams if args.ams else []
 
+<<<<<<< HEAD
+def main(df):
+    # process command line arguments
+    arg_parser = argparse.ArgumentParser(description='Python script to perform Multidimensional Analysis (MDA).')
+    arg_parser.add_argument('infile', help='YAML configuration file defining sample composition, MDA feature queries and query engine.')
+    arg_parser.add_argument('outfile', help='Output directory for result files.')
+    arg_parser.add_argument('--ams', dest="ams", help='Base name of the result files.', action="store")
+    
+    args = arg_parser.parse_args()
+    infile = args.infile
+    outfile = args.outfile
+    ams = args.ams if args.ams else []
+=======
 <<<<<<< Updated upstream
 # Load input data frame
 df = pd.read_csv(infile, sep="\t")
@@ -46,6 +50,7 @@ def main(df):
     # infile = args.infile
     outfile = "DF_spec.tsv"
     # ams = args.ams if args.ams else []
+>>>>>>> main
     
     # Load input data frame
     # df = pd.read_csv(infile, sep="\t")
@@ -63,4 +68,8 @@ def main(df):
     df_res.to_csv(outfile, sep="\t", index=False)
     
     print("Processing done.")
+<<<<<<< HEAD
+    
+=======
 >>>>>>> Stashed changes
+>>>>>>> main

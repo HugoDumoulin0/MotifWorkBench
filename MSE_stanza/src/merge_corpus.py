@@ -32,16 +32,6 @@ def merge_texts(input_base_folder, output_base_folder, types_textes):
                 for file in sorted(files):  # Sorting ensures a consistent order
                     file_path = os.path.join(rep, file)
                     with open(file_path, "r", encoding="utf-8") as infile:
-                        for line in infile:
-                            # Apply `sed`-like transformations
-                            line = line.replace("#", "HASHTAG ")  # Remove `#` symbols
-                            line = line.replace('“', 'QUOTE ')  # Replace multiple spaces with a single space
-                            line = line.replace('"', 'QUOTE ')  # Replace multiple spaces with a single space
-                            line = line.replace('”', 'QUOTE ')  # Replace multiple spaces with a single space
-                            # line = line.strip()  # Remove leading/trailing whitespace
-                            # line = line.lower()  # Convert text to lowercase
+                        outfile.write(infile.read() + "\n")  # Merge content with newline
 
-                            if line:  # Skip empty lines
-                                outfile.write(line + "\n")  # Write cleaned line with newline
-
-            print(f"\t Merged {len(files)} files into {output_file}")
+            print(f"Merged {len(files)} files into {output_file}")
