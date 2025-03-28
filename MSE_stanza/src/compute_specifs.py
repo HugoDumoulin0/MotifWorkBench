@@ -237,6 +237,6 @@ def main(liste_fichiers, shortcut_specifs, shortcut_association):
 # liste_fichiers = os.listdir("./Data/Textes_tagged_stanza")
 # if ".DS_Store" in liste_fichiers:
 #     liste_fichiers.remove(".DS_Store")
-# shortcut_specifs = True
+# shortcut_specifs = False
 # shortcut_association = True
 # main(liste_fichiers, shortcut_specifs, shortcut_association)
