@@ -54,10 +54,10 @@ def instancier_dict(rep="1_data/0_tagged_annotated_corpus/"):
             for line in conll:
                 if not line.startswith('#'):
                     tokens = line.split("\t")[1:]
-                    form = "form_{}".format(tokens[0])
-                    lemma = "lemma_{}".format(tokens[1])
-                    pos = "pos_{}".format(tokens[2])
-                    dep = "dep_{}".format(tokens[8])
+                    form = 'form_"{}"'.format(tokens[0])
+                    lemma = 'lemma_"{}"'.format(tokens[1])
+                    pos = 'pos_"{}"'.format(tokens[2])
+                    dep = 'dep_"{}"'.format(tokens[6])
                     all_feats = tokens[4].split("|")
                     formate_feats = list()
                     for f in all_feats:
@@ -136,21 +136,25 @@ def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats):
     
                         list_token = list()
                         if Form==True:
-                            form = "form_{}".format(seg_token_parsed[1])
+                            form = 'form_"{}"'.format(seg_token_parsed[1])
+                            form=[form]
                         else:
-                            form=""
+                            form=[]
                         if Lemma==True:
-                            lemma = "lemma_{}".format(seg_token_parsed[2])
+                            lemma = 'lemma_"{}"'.format(seg_token_parsed[2])
+                            lemma=[lemma]
                         else:
-                            lemma=""
+                            lemma=[]
                         if Pos==True:
-                            pos = "pos_{}".format(seg_token_parsed[3])
+                            pos = 'pos_"{}"'.format(seg_token_parsed[3])
+                            pos=[pos]
                         else:
-                            pos=""
+                            pos=[]
                         if Dep==True:
-                            dep = "dep_{}".format(seg_token_parsed[9])
+                            dep = 'dep_"{}"'.format(seg_token_parsed[7])
+                            dep=[dep]
                         else:
-                            dep=""
+                            dep=[]
                         if Feats==True:
                             all_feats = seg_token_parsed[5].split("|")
                             formate_feats = list()
@@ -159,8 +163,7 @@ def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats):
                                     formate_feats.append("feats_{}".format(f))
                         else:
                             formate_feats=[]
-                        list_token = [lemma, pos] + formate_feats + [dep] + seg_token_parsed[10:]
-                        print(list_token)
+                        list_token = form + lemma + pos + formate_feats + dep + seg_token_parsed[10:]
                         for tag in list_token:
                             index_item = dict_lexic.get(tag)
                             file_dmt4.write("{} {}\n".format(index_itemset,index_item))
