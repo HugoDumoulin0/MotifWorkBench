@@ -1,8 +1,10 @@
 # Ignore .tsv, .conllu, and .pk files
-#*.tsv
+*.tsv
 #*.conllu
 *.pk
 dictionnaire_specifs.pk
+*.txt
+*.bmp
 
 # Ignore common system files
 .DS_Store
