@@ -793,16 +793,22 @@ mean(df$Dim.3)
 mean(df$values.Dim.3)
 nrow(df)
 source("main.R")
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main_proposition
 source("main.R")
 source("main.R")
 source("main.R")
 source("main.R")
+<<<<<<< HEAD
 =======
 >>>>>>> main
 >>>>>>> Stashed changes
+=======
+>>>>>>> main_proposition
 na_count <- sum(is.na(X))#
 cat("Number of missing values:", na_count, "\n")
 na_count(table)
@@ -824,6 +830,7 @@ if (!is.numeric(as.matrix(table))) {#
   stop("X must be a numeric matrix or data frame.")#
 }
 table
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 <<<<<<< HEAD
@@ -900,3 +907,6 @@ dev.off()#
 =======
 >>>>>>> main
 >>>>>>> Stashed changes
+=======
+table
+>>>>>>> main_proposition
