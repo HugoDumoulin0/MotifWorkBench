@@ -25,6 +25,7 @@ source("accuracy.R")
 
 bmp(filename="../graphs/AFC_fviz.bmp", width=2048, height=2048, res=200)
 fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 dev.off()
 
@@ -65,27 +66,37 @@ dev.off()
 dev.off()
 
 bmp(filename="../graphs/AFC_fviz_ind.bmp", width=2048, height=2048, res=200)
+=======
+dev.off()
+
+bmp(filename="./graphs/AFC_fviz_ind.bmp", width=2048, height=2048, res=200)
+>>>>>>> main_proposition
 fviz_ca_row(AFC, select.row=list(contrib=10),col.var="contrib", gradient.rows=c("#ffc2ca", "#ff0000"), shape.col=19)
 dev.off()
 
-bmp(filename="../graphs/AFC_fviz2.bmp", width=2048, height=2048, res=200)
+bmp(filename="./graphs/AFC_fviz2.bmp", width=2048, height=2048, res=200)
 fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")
 dev.off()
 
-bmp(filename="../graphs/AFC_fviz3.bmp", width=2048, height=2048, res=200)
+bmp(filename="./graphs/AFC_fviz3.bmp", width=2048, height=2048, res=200)
 fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)
 dev.off()
 
-bmp(filename="../graphs/AFC_fviz3_ind.bmp", width=2048, height=2048, res=200)
+bmp(filename="./graphs/AFC_fviz3_ind.bmp", width=2048, height=2048, res=200)
 fviz_ca_row(AFC, select.row=list(contrib=10),pointsize="contrib", shape.row=19, repel=T)
 dev.off()
 
-bmp(filename="../graphs/AFC_var_4.bmp", width=2048, height=2048, res=300)
+bmp(filename="./graphs/AFC_var_4.bmp", width=2048, height=2048, res=300)
 plot.CA(AFC, invisible=c("row"), repel=T)
 dev.off()
 
-bmp(filename="../graphs/AFC_fviz4_ind.bmp", width=2048, height=2048, res=200)
+bmp(filename="./graphs/AFC_fviz4_ind.bmp", width=2048, height=2048, res=200)
 fviz_ca_row(AFC, select.row=list(contrib=30),pointsize="contrib", shape.row=19, repel=T)
+<<<<<<< HEAD
 dev.off()
 >>>>>>> main
 >>>>>>> Stashed changes
+=======
+dev.off()
+
+>>>>>>> main_proposition
