@@ -1,10 +1,10 @@
 shortcut_association = True
 shortcut_specifs = True
 shortcut_GR = True
-shortcut_underscore_fix=True
+shortcut_underscore_fix=False
 only_clustering = False
 shortcut_wp = True
-tagging=False
+tagging=True
 shortcut_grewpy = False
 
 #-------------------
@@ -27,7 +27,7 @@ if méthode=="partition":
 nb_itemset_min = 3 #Tim, 27/02
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25,10]
+list_minsup_percent = [25,10,5]
 
 
 #-------------------
@@ -35,8 +35,8 @@ list_minsup_percent = [25,10]
 #-------------------
 Form=False 
 Lemma=True
-Pos=False
-Dep=False
+Pos=True
+Dep=True
 Feats=False
 
 #attention avec form=True il y a aura les résultats non contractés
