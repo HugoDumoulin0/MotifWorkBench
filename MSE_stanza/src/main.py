@@ -94,22 +94,20 @@ if __name__ == "__main__":
         from replace_underscore import replace_underscore_in_conllu #Import function to replace underscores
 
         #Check if tagged files exists to speed up process
-        for type_texte in types_textes:
-            print("\t Stanza: checking if tagged files already exists")
-            output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-            # print(output_folder)
-
-            if os.path.exists(output_folder):  # Check if the file exists
-                print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
-            else:
-                print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
-                tagging = True
-                break
-            
         if tagging == True:
-            nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES)
             start_time = time.time()
-            for type_texte in types_textes: 
+            nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES)
+            for type_texte in types_textes:
+                print("\t Stanza: checking if tagged files already exists")
+                output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
+                # print(output_folder)
+    
+                if os.path.exists(output_folder):  # Check if the file exists
+                    print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
+                else:
+                    print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
+                    
+            # for type_texte in types_textes: 
                     output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
                     rep = "./Data/Textes_merged/{}".format(type_texte)
                     os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
@@ -220,9 +218,8 @@ if __name__ == "__main__":
                 if os.path.exists(source):
                     shutil.copy(source,destination)
                 else:
-                    source = f"./Data/underscore_fix/{type_texte}/{type_texte}.conllu"
+                    source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
                     shutil.copy(source,destination)
-                    os.rename(f"./Data/Textes_tagged_stanza_for_dmt4/{type_texte}.conllu", f"./Data/Textes_tagged_stanza_for_dmt4/{type_texte}")
                 
             ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
             if méthode=="partition":
@@ -371,7 +368,7 @@ if __name__ == "__main__":
                     compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
 
 
-                subprocess.call(["Rscript", "AFC.R"])
+                subprocess.call(["Rscript", "./src/AFC.R"])
 
     # #-------------------------------------------------------------------------------------------------------------------
     # # Clustering Emergent Pattern
