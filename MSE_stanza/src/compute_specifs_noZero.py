@@ -28,7 +28,7 @@ def count_tokens_in_conll(corpus_path):
                 token_count += 1
     return token_count
 
-def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t):
+def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t, minsup_percent):
     dictionnaire_k = {}
     total_textes=len(types_textes)
     texte_count = 0
@@ -49,7 +49,7 @@ def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t)
         remaining_textes = total_textes - texte_count
         remaining_occ = T - occ_count
         estimated_time_remaining = (iteration_time * remaining_occ)/taille_texte
-        print(f"Compte des fréquences par texte : temps estimé restant pour {remaining_textes} texte(s) : {estimated_time_remaining/60:.2f} minutes")
+        print(f"Compte des fréquences par texte : pour minsup {minsup_percent}, temps estimé restant pour {remaining_textes} texte(s) : {estimated_time_remaining/60:.2f} minutes")
     return dictionnaire_k
 
 def compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus):
@@ -252,7 +252,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
     liste_motifs_clos_corpus = count_motifs_orig.from_pk_corpus_to_list(DMT4_clos_corpus)
     dictionnaire_t = compute_t_specifs(types_textes)
     T = compute_T_specifs(dictionnaire_t)
-    dictionnaire_k = compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t)
+    dictionnaire_k = compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t, minsup_percent)
     dictionnaire_f = compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus)
     dict_synth, columns = fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_t, T, liste_motifs_clos_corpus, shortcut_specifs)
     if shortcut_association==False:
