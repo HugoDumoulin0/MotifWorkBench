@@ -166,8 +166,8 @@ if __name__ == "__main__":
                     print(f"\t DMT4_file already exists. Delete it to perform DMT4_transform again.")
                     # os.mkdir("./Data/DMT4_files/")
             else:
-                    os.mkdir("./Data/DMT4_files/")
-                    print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+                os.mkdir("./Data/DMT4_files/")
+                print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
                 # for type_texte in types_textes:
                 #     print("\t Checking if DMT4 files already exists")
                 #     target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
@@ -210,7 +210,7 @@ if __name__ == "__main__":
                     if  os.path.exists("./Data/DMT4_files/DMT4_merged_files_sorted.pk"):
                         print(f"\t DMT4: file already exists. Delete it to perform DMT4-transform again.")
                     else:
-                        os.mkdir("./Data/DMT4_file/")
+                        os.mkdir("./Data/DMT4_files/")
                         print("\t DMT4: creating DMT4_file.")
     
                     # for type_texte in liste_textes:
@@ -233,7 +233,7 @@ if __name__ == "__main__":
                         for type_texte in liste_textes:
                             conll_dmt4.make_DMT4_file(type_texte)
                         
-                else:
+        else:
                     conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
                     for type_texte in types_textes:
                         conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
