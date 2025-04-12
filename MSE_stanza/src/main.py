@@ -9,6 +9,7 @@ import formate_patterns
 import tag_WP
 import conll_dmt4
 import compute_emergent_sequential_patterns
+import compute_specifs_noZero
 
 import regroupement
 import representants
@@ -19,6 +20,7 @@ import time
 import shutil
 from config import *
 import subprocess
+
 
 
 
@@ -46,27 +48,8 @@ if __name__ == "__main__":
     if ".DS_Store" in types_textes:
         types_textes.remove(".DS_Store")
         
-    # shortcut_association = True
-    # shortcut_specifs = True
-    # shortcut_GR = True
-    # shortcut_underscore_fix=True
-    # only_clustering = False
-    # shortcut_wp = True
-    # tagging=False
-    # shortcut_grewpy = False
-    
-    # méthode = "partition" #deux paramètres de méthodologie "partition" ou "corpus"
-    
-    # if méthode=="partition":
-    #     shortcut_wp=True
-    #     shortcut_GR = True
-    
-    # #Set param for minimal number of itemsets in a pattern
-    # nb_itemset_min = 3 #Tim, 27/02
-    
-    # list_minsup_percent = [25,10]
-    
-
+        
+        
     if only_clustering==False:
     #-------------------------------------------------------------------------------------------------------------------
     # Annotation des données
@@ -94,62 +77,58 @@ if __name__ == "__main__":
         from replace_underscore import replace_underscore_in_conllu #Import function to replace underscores
 
         #Check if tagged files exists to speed up process
-        if tagging == True:
-            start_time = time.time()
-            nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES)
-            for type_texte in types_textes:
-                print("\t Stanza: checking if tagged files already exists")
-                output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-                # print(output_folder)
+        start_time = time.time()
+        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES)
+        for type_texte in types_textes:
+            print("\t Stanza: checking if tagged files already exists")
+            output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
+            # print(output_folder)
     
-                if os.path.exists(output_folder):  # Check if the file exists
-                    print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
-                else:
-                    print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
-                    
+            if os.path.exists(output_folder):  # Check if the file exists
+                print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
+            else:
+                print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
             # for type_texte in types_textes: 
-                    output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-                    rep = "./Data/Textes_merged/{}".format(type_texte)
-                    os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
+                output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
+                rep = "./Data/Textes_merged/{}".format(type_texte)
+                os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
     
-                    for file in os.listdir(rep):                        #loop for each file in dir
-                        if file[0] == ".": continue                     #ignore hidden UNIX files
-                        file_path = os.path.join(rep, file)             #get the full path of each file
+                for file in os.listdir(rep):                        #loop for each file in dir
+                    if file[0] == ".": continue                     #ignore hidden UNIX files
+                    file_path = os.path.join(rep, file)             #get the full path of each file
     
-                        with open(file_path, "r", encoding="utf-8") as f:
+                    with open(file_path, "r", encoding="utf-8") as f:
                             text = f.read()
                             output = nlp(text)                          #Define output as the object created by stanza
                             # output_file = os.path.join(output_folder, "{}.conllu".format(type_texte, file.split('.')[0])) #Define export path from variables
                             output_file = os.path.join(output_folder, "{}".format(type_texte, file.split('.')[0])) #Define export path from variables
                             CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
                             print("\t", type_texte, "has been tagged and saved:", output_file)
-            end_time=time.time()
-            time_tag = end_time - start_time 
+        end_time=time.time()
+        time_tag = end_time - start_time 
         
-        if shortcut_underscore_fix==False:
+        # if shortcut_underscore_fix==False:
         ##underscore fix 
-            if  os.path.exists("./Data/underscore_fix"):
-                shutil.rmtree("./Data/underscore_fix")
-                os.mkdir("./Data/underscore_fix")
-            else:
-                os.mkdir("./Data/underscore_fix")
+        if  os.path.exists("./Data/underscore_fix"):
+            # shutil.rmtree("./Data/underscore_fix")
+            print(f"\t Underscore_fix file already exists. Delete it to perform underscore_fixing again.")
+        else:
+            os.mkdir("./Data/underscore_fix")
             for filename in os.listdir("./Data/Textes_tagged_stanza/"):
                 if not filename == ".DS_Store":
-                        os.mkdir(f"./Data/underscore_fix/{filename}")
-                        source = f"./Data/Textes_tagged_stanza/{filename}/{filename}"
-                        destination = f"./Data/underscore_fix/{filename}/{filename}"
-                        shutil.copy(source,destination)
-                        print(f"Underscore fix : {filename}")
-                        filename = f'{filename}'
-                        underscore_folder =f"./Data/underscore_fix/{filename}"
-                        file_path = os.path.join(underscore_folder, filename)
-                        output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
-                        replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
+                            os.mkdir(f"./Data/underscore_fix/{filename}")
+                            source = f"./Data/Textes_tagged_stanza/{filename}/{filename}"
+                            destination = f"./Data/underscore_fix/{filename}/{filename}"
+                            shutil.copy(source,destination)
+                            print(f"Underscore fix : {filename}")
+                            filename = f'{filename}'
+                            underscore_folder =f"./Data/underscore_fix/{filename}"
+                            file_path = os.path.join(underscore_folder, filename)
+                            output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
+                            replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
                     
 
-
-                    
-        if shortcut_wp == False:
+        if wordpieces == True:
             for type_texte in types_textes:
                 print("\t CamamBERT/WP: Checking if tagged files already exists")
                 # output_file = "./Data/Textes_tagged_WP/{0}_{0}.conllu".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
@@ -174,93 +153,95 @@ if __name__ == "__main__":
         #-------------------------------------------------------------------------------------------------------------------
         print("-"*75)
         print("2. Creating DMT4 files")
-    
-        # # types_textes = ["1984ca", "2008ca"]
-        
-        #Avoid generating sorted_sorted file names and file not found error.
-        if méthode=="corpus":
+        # if shortcut_DMT4==False: #automatisé
             
-            if  os.path.exists("./Data/DMT4_files/"):
-                shutil.rmtree("./Data/DMT4_files/")
-                os.mkdir("./Data/DMT4_files/")
-            else:
-                os.mkdir("./Data/DMT4_files/")
-                print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
-            # for type_texte in types_textes:
-            #     print("\t Checking if DMT4 files already exists")
-            #     target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
-            #     print(target)
-            #     if os.path.exists(target):  # Check if the file exists
-            #         os.remove(target)       # delete existing files
-            #         print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
-                
-        if shortcut_wp == False:
-            conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
-            for type_texte in types_textes:
-                    conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte, Form, Lemma, Pos, Dep, Feats)
-            conll_dmt4.sort_dmtfiles()
-        
-            for type_texte in types_textes:
-                conll_dmt4.make_DMT4_file(type_texte)
-            #This creates the missing dict_sorted.pk files. For some reason,
-            #the function wasn't called in the original script.
-            
-        if shortcut_wp==True:
-            if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
-                shutil.rmtree("./Data/Textes_tagged_stanza_for_dmt4/")
-                os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
-            else:
-                os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
-            for type_texte in types_textes:
-                destination = "./Data/Textes_tagged_stanza_for_dmt4/"
-                # source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
-                source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
-                if os.path.exists(source):
-                    shutil.copy(source,destination)
-                else:
-                    source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
-                    shutil.copy(source,destination)
-                
-            ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
-            if méthode=="partition":
-                liste_textes = ["merged"]
-                
-                if  os.path.exists("./Data/DMT4_files/"):
-                    shutil.rmtree("./Data/DMT4_files/")
-                    os.mkdir("./Data/DMT4_files/")
-                else:
-                    os.mkdir("./Data/DMT4_files/")
-                print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
 
-                # for type_texte in liste_textes:
+            # # types_textes = ["1984ca", "2008ca"]
+            
+            #Avoid generating sorted_sorted file names and file not found error.
+        if méthode=="corpus":
+                
+            if  os.path.exists("./Data/DMT4_files/"):
+                    # shutil.rmtree("./Data/DMT4_files/")
+                    print(f"\t DMT4_file already exists. Delete it to perform DMT4_transform again.")
+                    # os.mkdir("./Data/DMT4_files/")
+            else:
+                    os.mkdir("./Data/DMT4_files/")
+                    print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
+                # for type_texte in types_textes:
                 #     print("\t Checking if DMT4 files already exists")
-                #     target = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+                #     target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
                 #     print(target)
                 #     if os.path.exists(target):  # Check if the file exists
                 #         os.remove(target)       # delete existing files
-                conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
-                file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
-                # print(file_list)
-                path = "./Data/Textes_tagged_stanza_for_dmt4/"
-                concat_multiple_conll(path, file_list, "merged")
-                # print(f'liste dir dans ttaggedfordmt4 : {os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")}')
-                for type_texte in liste_textes:
-                    # print("transform data début")
-                    conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
-                    # print(f"transform_data done : {type_texte}")
-                conll_dmt4.sort_dmtfiles()
-                for type_texte in liste_textes:
-                    conll_dmt4.make_DMT4_file(type_texte)
+                #         print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
                     
-            else:
-                conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
+            if wordpieces==True:
+                conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
                 for type_texte in types_textes:
-                    conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
+                        conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte, Form, Lemma, Pos, Dep, Feats)
                 conll_dmt4.sort_dmtfiles()
+            
                 for type_texte in types_textes:
                     conll_dmt4.make_DMT4_file(type_texte)
-            #This creates the missing dict_sorted.pk files. For some reason,
-            #the function wasn't called in the original script.
+                #This creates the missing dict_sorted.pk files. For some reason,
+                #the function wasn't called in the original script.
+                
+            if wordpieces==False:
+                if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/merged"):
+                    print(f"\t DMT4: textes_fixed files already exists. Delete it to perform DMT4-underscore_fix again.")
+                else:
+                    print(f"\t DMT4: file does not exist. Proceeds with transform.")
+                    os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
+                    for type_texte in types_textes:
+                        destination = "./Data/Textes_tagged_stanza_for_dmt4/"
+                        # source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
+                        source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
+                        if os.path.exists(source):
+                            shutil.copy(source,destination)
+                        else:
+                            source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
+                            shutil.copy(source,destination)
+                    
+                ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
+                if méthode=="partition":
+                    liste_textes = ["merged"]
+                    print("\t DMT4: checking if DMT4 file already exists")
+                    if  os.path.exists("./Data/DMT4_files/DMT4_merged_files_sorted.pk"):
+                        print(f"\t DMT4: file already exists. Delete it to perform DMT4-transform again.")
+                    else:
+                        os.mkdir("./Data/DMT4_file/")
+                        print("\t DMT4: creating DMT4_file.")
+    
+                    # for type_texte in liste_textes:
+                    #     print("\t Checking if DMT4 files already exists")
+                    #     target = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
+                    #     print(target)
+                    #     if os.path.exists(target):  # Check if the file exists
+                    #         os.remove(target)       # delete existing files
+                        conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
+                        file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
+                        # print(file_list)
+                        path = "./Data/Textes_tagged_stanza_for_dmt4/"
+                        concat_multiple_conll(path, file_list, "merged")
+                        # print(f'liste dir dans ttaggedfordmt4 : {os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")}')
+                        for type_texte in liste_textes:
+                            # print("transform data début")
+                            conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
+                            # print(f"transform_data done : {type_texte}")
+                        conll_dmt4.sort_dmtfiles()
+                        for type_texte in liste_textes:
+                            conll_dmt4.make_DMT4_file(type_texte)
+                        
+                else:
+                    conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
+                    for type_texte in types_textes:
+                        conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
+                    conll_dmt4.sort_dmtfiles()
+                    for type_texte in types_textes:
+                        conll_dmt4.make_DMT4_file(type_texte)
+                #This creates the missing dict_sorted.pk files. For some reason,
+                #the function wasn't called in the original script.
     
     
         # #-------------------------------------------------------------------------------------------------------------------
@@ -271,62 +252,69 @@ if __name__ == "__main__":
         start_time=time.time()
         # # types_textes = ["1984ca", "2008ca"]
 
-        
+        # if shortcut_extract==False:
         path_results = "./Patterns_results"
         if not os.path.exists(path_results):
-            os.mkdir(path_results)
+                os.mkdir(path_results)
+                
         path_file_closed = "./Patterns_results/Closed"
         if not os.path.exists(path_file_closed):
-            os.mkdir(path_file_closed)
+                os.mkdir(path_file_closed)
+            
         path_file_freq = "./Patterns_results/Freq"
         if not os.path.exists(path_file_freq):
-            os.mkdir(path_file_freq)
-        
+                os.mkdir(path_file_freq)
+            
         if méthode=="partition":
             liste = ["merged"]
-            
+                
         else:
             liste=types_textes
-            
-            
-        for minsup_percent in list_minsup_percent:
-            for type_texte in liste:
-                print("\t Type_texte:", type_texte)
-        
-                dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+
+                
+            for minsup_percent in list_minsup_percent:
                 minsup = get_minsup(float(minsup_percent), dmt4_files)
-                print(f"\t Minsup {minsup_percent}% ")
                 gap_min = 0
                 gap_max = 0
                 threads = 30
+                for type_texte in liste:
+                    print("\t Type_texte:", type_texte)
+                    if os.path.exists(f"./Patterns_results/Freq/{minsup}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_freq.pk"):
+                        print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
+                    if os.path.exists(f"./Patterns_results/Closed/{minsup}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.pk"):
+                        print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
+                    else:
+                        dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+                        print(f"\t Minsup {minsup_percent}% ")
+
+                
+                        print("\t\t Extracting freq patterns")
+                
+                        file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
+                
+                        with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
+                            set_up.write("MINSUP={}\n".format(minsup))
+                            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                            set_up.write("THREAD={}\n".format(threads))
+                            set_up.write("GAPMIN={}\n".format(gap_min))
+                            set_up.write("GAPMAX={}\n".format(gap_max))
+                            set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                
+                        os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
+                
+                        print("\t\t Extracting closed patterns")
+                
+                        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
+                            set_up.write("MINSUP={}\n".format(minsup))
+                            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                            set_up.write("THREAD=1\n")
+                            set_up.write("GAPMIN={}\n".format(0))
+                            set_up.write("GAPMAX={}\n".format(0))
+                            set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                
+                        os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
         
-                print("\t\t Extracting freq patterns")
-        
-                file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-        
-                with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
-                    set_up.write("MINSUP={}\n".format(minsup))
-                    set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                    set_up.write("THREAD={}\n".format(threads))
-                    set_up.write("GAPMIN={}\n".format(gap_min))
-                    set_up.write("GAPMAX={}\n".format(gap_max))
-                    set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-        
-                os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
-        
-                print("\t\t Extracting closed patterns")
-        
-                with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-                    set_up.write("MINSUP={}\n".format(minsup))
-                    set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                    set_up.write("THREAD=1\n")
-                    set_up.write("GAPMIN={}\n".format(0))
-                    set_up.write("GAPMAX={}\n".format(0))
-                    set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-        
-                os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
         end_time=time.time()
-        
         time_DMT4 = end_time - start_time
         #-------------------------------------------------------------------------------------------------------------------
         # Compute Patterns
@@ -357,9 +345,7 @@ if __name__ == "__main__":
                     compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
     
         #ajout d'une étape qui lance le calcul de spécificité des supports des motifs dans une partition par rapport au reste ( script compute_specifs.py )
-        if not shortcut_grewpy==True:
-            import compute_specifs_noZero
-            if méthode=="partition":
+        if méthode=="partition":
                 if not os.path.exists("./Patterns_results/Specifs_noZero/"):
                     os.mkdir("./Patterns_results/Specifs_noZero/")
                 print("-"*75)
@@ -499,7 +485,7 @@ if __name__ == "__main__":
     
     
     ###adaptation du script de Jade
-    if shortcut_GR == False:
+    if GrowthRate == True:
         # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
         nbr_pool=len(types_textes)
         liste_couples =[]
@@ -520,7 +506,7 @@ if __name__ == "__main__":
     if tagging==True:
         print(f"Temps de tagging : {time_tag // 3600}")
     print(f"Temps de DMT4 : {time_DMT4 // 3600}")
-    if shortcut_GR == False:
+    if GrowthRate == True:
         print(f"Temps de clustering : {cluster_time // 3600}")
     
     # #-------------------------------------------------------------------------------------------------------------------
