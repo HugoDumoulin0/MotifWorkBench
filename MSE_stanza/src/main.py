@@ -273,7 +273,6 @@ if __name__ == "__main__":
 
                 
         for minsup_percent in list_minsup_percent:
-                minsup = get_minsup(float(minsup_percent), dmt4_files)
                 gap_min = 0
                 gap_max = 0
                 threads = 30
@@ -286,6 +285,7 @@ if __name__ == "__main__":
                     else:
                         print("non existent previous extracted patterns files")
                         dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+                        minsup = get_minsup(float(minsup_percent), dmt4_files)
                         print(f"\t Minsup {minsup_percent}% ")
 
                 
