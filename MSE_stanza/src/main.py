@@ -204,7 +204,7 @@ if __name__ == "__main__":
                             shutil.copy(source,destination)
                     
                 ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
-                if méthode=="partition":
+        if méthode=="partition":
                     liste_textes = ["merged"]
                     print("\t DMT4: checking if DMT4 file already exists")
                     if  os.path.exists("./Data/DMT4_files/DMT4_merged_files_sorted.pk"):
