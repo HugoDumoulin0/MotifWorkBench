@@ -1,12 +1,14 @@
+# tagging=True
+# shortcut_underscore_fix=True
+# shortcut_DMT4=True
+# shortcut_extract = True
+only_clustering = False
 shortcut_association = True
 shortcut_specifs = True
-shortcut_GR = True
-shortcut_underscore_fix=False
-only_clustering = False
-shortcut_wp = True
-tagging=True
-shortcut_grewpy = False
 
+
+GrowthRate = False
+wordpieces = False
 #-------------------
 # Computation method
 #-------------------
@@ -17,8 +19,8 @@ méthode = "partition"
     # This sets the switch between two parallel paths in the script.
 
 if méthode=="partition":
-    shortcut_wp=True
-    shortcut_GR = True
+    wordpieces=False
+    GrowthRate = False
 
 #-------------------
 # Patterns params
