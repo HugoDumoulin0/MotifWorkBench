@@ -84,7 +84,7 @@ def read_req(motif):
                         # print(item)
                         split = item.split("=")[1]
                         # print(split)
-                        mod = f'"{split}"'
+                        mod = f'{split}'
                         item = 'lemma=' + mod
                         # print(item)
             # Ajouter à la liste des conditions modifiées
