@@ -187,8 +187,8 @@ if __name__ == "__main__":
                 #This creates the missing dict_sorted.pk files. For some reason,
                 #the function wasn't called in the original script.
                 
-            if wordpieces==False:
-                if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/merged"):
+        if wordpieces==False:
+                if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
                     print(f"\t DMT4: textes_fixed files already exists. Delete it to perform DMT4-underscore_fix again.")
                 else:
                     print(f"\t DMT4: file does not exist. Proceeds with transform.")
@@ -204,10 +204,10 @@ if __name__ == "__main__":
                             shutil.copy(source,destination)
                     
                 ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
-        if méthode=="partition":
+                if méthode=="partition":
                     liste_textes = ["merged"]
                     print("\t DMT4: checking if DMT4 file already exists")
-                    if  os.path.exists("./Data/DMT4_files/DMT4_merged_files_sorted.pk"):
+                    if  os.path.exists("./Data/DMT4_files/"):
                         print(f"\t DMT4: file already exists. Delete it to perform DMT4-transform again.")
                     else:
                         os.mkdir("./Data/DMT4_files/")
@@ -233,7 +233,7 @@ if __name__ == "__main__":
                         for type_texte in liste_textes:
                             conll_dmt4.make_DMT4_file(type_texte)
                         
-        else:
+                else:
                     conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
                     for type_texte in types_textes:
                         conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
