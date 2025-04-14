@@ -336,6 +336,7 @@ if __name__ == "__main__":
     
         #ajout d'une étape qui lance le calcul de spécificité des supports des motifs dans une partition par rapport au reste ( script compute_specifs.py )
         if méthode=="partition":
+                start_time = time.time()
                 if not os.path.exists("./Patterns_results/Specifs_noZero/"):
                     os.mkdir("./Patterns_results/Specifs_noZero/")
                 print("-"*75)
@@ -343,7 +344,8 @@ if __name__ == "__main__":
                 for minsup_percent in list_minsup_percent:
                     compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
 
-
+                end_time = time.time()
+                time_grew = end_time - start_time
                 subprocess.call(["Rscript", "./src/AFC.R"])
 
     # #-------------------------------------------------------------------------------------------------------------------
@@ -494,10 +496,11 @@ if __name__ == "__main__":
         cluster_time = end_time - start_time
     
     if tagging==True:
-        print(f"Temps de tagging : {time_tag // 3600}")
-    print(f"Temps de DMT4 : {time_DMT4 // 3600}")
+        print(f"Temps de tagging : {time_tag/60:.2f } minutes")
+    print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
+    print((f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes"))
     if GrowthRate == True:
-        print(f"Temps de clustering : {cluster_time // 3600}")
+        print(f"Temps de clustering : {cluster_time/60:.2f} minutes")
     
     # #-------------------------------------------------------------------------------------------------------------------
     # # Random Forest
