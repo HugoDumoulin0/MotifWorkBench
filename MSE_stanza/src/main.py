@@ -61,18 +61,7 @@ if __name__ == "__main__":
             #Set language model for stanza and download models on first run only
         from stanza.pipeline.core import DownloadMethod
 
-        #----- MERGING FILES -----
-        #Unlike what Talismane seems to do, Stanza does not merge the files for each corpus.
-        #The following merge all texts belonging to the same sys.argv[n].
-        #It also deletes '#' signs in text files (this would break ConllU parsing)
-        from merge_corpus import merge_texts
-
-        input_folder = "./Data/Textes_raw"  # Folder containing text files
-        output_folder = "./Data/Textes_merged"  # Folder to store merged files
-
-        merge_texts(input_folder, output_folder, types_textes)  # Call the function
-
-        #----- RUN STANZA ON MERGED FILES -----
+        #----- RUN STANZA ON FILES -----
 
         from replace_underscore import replace_underscore_in_conllu #Import function to replace underscores
 
@@ -90,7 +79,7 @@ if __name__ == "__main__":
                 print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
             # for type_texte in types_textes: 
                 output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-                rep = "./Data/Textes_merged/{}".format(type_texte)
+                rep = "./Data/Textes_raw/{}".format(type_texte)
                 os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
     
                 for file in os.listdir(rep):                        #loop for each file in dir
