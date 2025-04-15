@@ -15,7 +15,7 @@ packages <- c('FactoMineR',
 	'factoextra')
 ipak(packages)
 
-default_folder <- "../Patterns_results/Specifs"
+default_folder <- "../Patterns_results/Specifs_noZero"
 print(default_folder)
 
 input_suffix <- "_AFC_R_df"
@@ -178,27 +178,101 @@ dev.off()
 # dev.off()
 # Redundant with AFC.bmp
 
-bmp(filename=paste(var_name, "AFC_fviz3.bmp"),
-    width=2048, height=2048, res=200)
-plot_obj <- fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)
-    print(plot_obj)
+
+
+
+
+######éléments script R HD local#####
+
+#------AFC various viz-------#
+bmp(filename="AFC_screeplot.bmp", width=2048, height=2048, res=200)
+fviz_screeplot(AFC)
 dev.off()
 
-bmp(filename=paste(var_name, "AFC_fviz3_ind.bmp"),
-    width=2048, height=2048, res=200)
-plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=10),pointsize="contrib", shape.row=19, repel=T)
-    print(plot_obj)
+bmp(filename="AFC_fviz.bmp", width=2048, height=2048, res=200)
+fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)
 dev.off()
 
-bmp(filename=paste(var_name, "AFC_var_4.bmp"),
-    width=2048, height=2048, res=300)
-plot_obj <- plot.CA(AFC, invisible=c("row"), repel=T)
+bmp(filename="AFC_fviz_ind.bmp", width=2048, height=2048, res=200)
+fviz_ca_row(AFC, select.row=list(contrib=10),col.var="contrib", gradient.rows=c("#ffc2ca", "#ff0000"), shape.col=19)
 dev.off()
-    print(plot_obj)
 
-bmp(filename=paste(var_name, "AFC_fviz4_ind.bmp"),
-    width=2048, height=2048, res=200)
-plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=30),pointsize="contrib", shape.row=19, repel=T)
-    print(plot_obj)
+bmp(filename="AFC_fviz2.bmp", width=2048, height=2048, res=200)
+fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")
 dev.off()
+
+bmp(filename="AFC_fviz3.bmp", width=2048, height=2048, res=200)
+fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)
+dev.off()
+
+bmp(filename="AFC_fviz3+.bmp", width=2048, height=2048, res=200)
+fviz_ca_col(AFC, select.col=list(contrib=20),pointsize="contrib", shape.col=19, repel=T)
+dev.off()
+
+bmp(filename="AFC_fviz3_ind.bmp", width=2048, height=2048, res=200)
+fviz_ca_row(AFC, select.row=list(contrib=10),pointsize="contrib", shape.row=19, repel=T)
+dev.off()
+
+bmp(filename="AFC_fviz3+_ind.bmp", width=2048, height=2048, res=200)
+fviz_ca_row(AFC, select.row=list(contrib=20),pointsize="contrib", shape.col=19, repel=T)
+dev.off()
+
+bmp(filename="AFC_fviz4_ind.bmp", width=2048, height=2048, res=200)
+fviz_ca_row(AFC, select.row=list(contrib=30),pointsize="contrib", shape.row=19, repel=T)
+dev.off()
+
+#------hierarchical clustering------#
+hclust = HCPC(AFC, nb.clust=-1, graph=F)
+
+bmp(filename="hclust_map.bmp", width=2048, height=2048, res=200)
+plot.HCPC(hclust, choice="map")
+dev.off()
+
+bmp(filename="hclust_map_light.bmp", width=2048, height=2048, res=200)
+plot(hclust, choice="map", ind.names = FALSE)
+dev.off()
+
+bmp(filename="hclust_chute.bmp", width=2048, height=2048, res=200)
+plot.HCPC(hclust, choice="bar")
+dev.off()
+
+capture.output(hclust$desc.var, file="hclust_desc_var.txt")
+capture.output(hclust$desc.ind, file="hclust_desc_ind.txt")
+
+
+#----IMPORTANT ! création du rep "motifs_cluster" dans lequel le script interpret_association_motif.py vient chercher ses motifs----#
+dir.create("motifs_cluster")
+for (cluster in 1:hclust$call$t$nb.clust) {
+	nom = glue("motifs_cluster/{cluster}.csv")
+	write.csv(hclust$desc.ind$para[cluster], file=nom, row.names=TRUE)
 }
+
+#--force 2 clusters : optionnal--#
+hclust_force2 = HCPC(AFC, nb.clust=2, graph=F)
+bmp(filename="hclust_force2_map.bmp", width=2048, height=2048, res=200)
+plot.HCPC(hclust_force2, choice="map")
+dev.off()
+bmp(filename="hclust_force2_chute.bmp", width=2048, height=2048, res=200)
+plot.HCPC(hclust_force2, choice="bar")
+dev.off()
+capture.output(hclust_force2$desc.var, file="hclust_force2_desc_var.txt")
+capture.output(hclust_force2$desc.ind, file="hclust_force2_desc_ind.txt")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
