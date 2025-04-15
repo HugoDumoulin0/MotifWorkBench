@@ -33,7 +33,7 @@ def dump_graphique(match, liste_match, corpus, path):
 
 def index(corpus, req, param):
     grewpy.set_config("sud")
-    print(req)
+    # print(req)
     # req = req.encode("utf-8")
     # req = req.decode("utf-8")
     request = Request(req)
@@ -49,7 +49,8 @@ def index(corpus, req, param):
         liste_node.sort()
         liste_forms = []
         for node_number in liste_node:
-            liste_forms.append(corpus[sent_id].features[str(node_number)][param])
+            if param in corpus[sent_id].features[str(node_number)]:
+                liste_forms.append(corpus[sent_id].features[str(node_number)][param])
         index.append(liste_forms)
     return index
 
@@ -110,13 +111,18 @@ def read_req(motif):
 
 
 
-# treebank_path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_Rapports70to90/Data/Textes_tagged_stanza/Rapports70to90/Rapports70to90.conllu"
-# treebank_path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_Rapports18/Data/Textes_tagged_stanza/IREPH/IREPH.conllu"
+# # treebank_path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_Rapports70to90/Data/Textes_tagged_stanza/Rapports70to90/Rapports70to90.conllu"
+# treebank_path="/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_CR_local/Data/Textes_tagged_stanza/CA-Nanterre-2002-09-23/CA-Nanterre-2002-09-23"
 
 # corpus = Corpus(treebank_path)
-# # # print(type(corpus)
-# r = read_req('{lemma_à,underscore-fix_"8"}')
-# # req1 = Request('pattern {X1[lemma="."]}')
+# # # # print(type(corpus)
+# r = read_req('{pos_"ADP"} {dep="det"} {pos_"NOUN"}')
+# print(r)
+# print("\n")
+# req = Request(r)
+# print(req)
+# print(corpus.count(req))
+# # # req1 = Request('pattern {X1[lemma="."]}')
 # req1 = Request(r)
 # for i in index(corpus, req1, "lemma"):
 #     print(i)
