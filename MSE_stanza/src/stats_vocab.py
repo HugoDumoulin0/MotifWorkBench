@@ -26,7 +26,7 @@ def index_frequence_lemmes(liste_fichiers):
     index = {}
     for fichier in liste_fichiers:
         index[fichier] = Counter()
-        path = f'./Data/Textes_tagged_stanza/{fichier}/{fichier}.conllu'
+        path = f'./Data/Textes_tagged_stanza/{fichier}/{fichier}'
         with open(path, 'r', encoding='utf-8') as file:
             for ligne in file:
                 # Ignorer les lignes vides et celles qui commencent par un #
