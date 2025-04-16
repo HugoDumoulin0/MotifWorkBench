@@ -25,20 +25,21 @@ def merge_dicts(list_dict):
 def index_frequence_lemmes(liste_fichiers):
     index = {}
     for fichier in liste_fichiers:
-        index[fichier] = Counter()
-        path = f'./Data/Textes_tagged_stanza/{fichier}/{fichier}'
-        with open(path, 'r', encoding='utf-8') as file:
-            for ligne in file:
-                # Ignorer les lignes vides et celles qui commencent par un #
-                if ligne.strip() == '' or ligne.startswith('#'):
-                    continue
-                # Découper la ligne par tabulation (colonnes)
-                colonnes = ligne.split('\t')
-                if len(colonnes) > 1:
-                    lemme = colonnes[2]
-                    # print(lemme)
-                    index[fichier][lemme] += 1
-                    index[fichier]["taille_index_fichier"] += 1
+        if fichier!=".DS_Store": 
+            index[fichier] = Counter()
+            path = f'./Data/Textes_tagged_stanza/{fichier}/{fichier}'
+            with open(path, 'r', encoding='utf-8') as file:
+                for ligne in file:
+                    # Ignorer les lignes vides et celles qui commencent par un #
+                    if ligne.strip() == '' or ligne.startswith('#'):
+                        continue
+                    # Découper la ligne par tabulation (colonnes)
+                    colonnes = ligne.split('\t')
+                    if len(colonnes) > 1:
+                        lemme = colonnes[2]
+                        # print(lemme)
+                        index[fichier][lemme] += 1
+                        index[fichier]["taille_index_fichier"] += 1
     index["index_général"] = merge_dicts([dico for dico in index.values()])
     return index
 
