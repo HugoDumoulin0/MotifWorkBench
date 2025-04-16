@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
         #Check if tagged files exists to speed up process
         start_time = time.time()
-        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES)
+        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=False)
         for type_texte in types_textes:
             print("\t Stanza: checking if tagged files already exists")
             output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
@@ -344,9 +344,10 @@ if __name__ == "__main__":
                 for minsup_percent in list_minsup_percent:
                     compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
 
+                # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
-                subprocess.call(["Rscript", "./src/AFC.R"])
+                subprocess.call(["Rscript", "./src/AFC.r"])
 
     # #-------------------------------------------------------------------------------------------------------------------
     # # Clustering Emergent Pattern

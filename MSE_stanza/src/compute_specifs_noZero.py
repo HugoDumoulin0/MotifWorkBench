@@ -16,6 +16,7 @@ import stats_vocab
 import re
 # import compute_am_r
 import datetime
+import subprocess
 
 def count_tokens_in_conll(corpus_path):
     token_count = 0
@@ -207,8 +208,10 @@ def df_spec(dict_synth, liste_motifs, minsup_percent,execution_time):
                     "T":dict_synth[fichier][str(motif)][6]
                     })
     df_spec = pd.DataFrame(donnees_spec)
-    file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
-    df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8")
+    file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
+    # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
+    df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8", index=False)
+    subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
     return df_spec
     
 def df_AFC(dict_synth, liste_motifs, minsup_percent, execution_time):
@@ -265,12 +268,3 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
     tools.save_pickles_results(dictionnaire_t,"Patterns_results/Specifs_noZero/dictionnaire_t.pk")
     tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs_noZero/dictionnaire_f.pk")
     tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs_noZero/dictionnaire_k.pk")
-    # compute_am_r.main(df_spec)
-    
-# types_textes = os.listdir("./Data/Textes_tagged_stanza/")
-# if ".DS_Store" in types_textes:
-#     types_textes.remove(".DS_Store")
-# shortcut_specifs = True
-# shortcut_association = True
-# main(types_textes, shortcut_specifs, shortcut_association)
-    
