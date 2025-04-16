@@ -211,7 +211,9 @@ def df_spec(dict_synth, liste_motifs, minsup_percent,execution_time):
     file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8", index=False)
+    
     subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
+    
     return df_spec
     
 def df_AFC(dict_synth, liste_motifs, minsup_percent, execution_time):
@@ -239,11 +241,15 @@ def df_AFC(dict_synth, liste_motifs, minsup_percent, execution_time):
     columns_AFC=columns_base+liste_columns_AFC
     df_AFC= pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
     df_AFC.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
+    
     file_out_AFC_for_calc = "./Patterns_results/Specifs_noZero/{}_AFC_R_df.tsv".format(mins)
     df_AFC.to_csv(file_out_AFC_for_calc, sep="\t", encoding="utf-8")
+   
+    subprocess.call(["Rscript", "./src/AFC.r"]) #(moved here by analogy)
+    
     return dict_AFC_out
 
-def clean_AFC():
+def clean_last_AFC():
     liste = os.listdir("./Patterns_results/Specifs_noZero")
     for fichier in liste:
         if fichier.endswith("_AFC_R_df.tsv"):
@@ -262,9 +268,11 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
         dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
     tsv_out(dict_synth, columns, minsup_percent,execution_time)
     all_synth_tsv_out(dict_synth, liste_motifs_clos_corpus, minsup_percent,execution_time)
-    df_spec(dict_synth, liste_motifs_clos_corpus, minsup_percent, execution_time)
-    clean_AFC()
+    clean_last_AFC()
     df_AFC(dict_synth, liste_motifs_clos_corpus, minsup_percent, execution_time)
+    df_spec(dict_synth, liste_motifs_clos_corpus, minsup_percent, execution_time)
     tools.save_pickles_results(dictionnaire_t,"Patterns_results/Specifs_noZero/dictionnaire_t.pk")
     tools.save_pickles_results(dictionnaire_f,"Patterns_results/Specifs_noZero/dictionnaire_f.pk")
     tools.save_pickles_results(dictionnaire_k,"Patterns_results/Specifs_noZero/dictionnaire_k.pk")
+    
+    
