@@ -20,7 +20,7 @@ import time
 import shutil
 from config import *
 import subprocess
-
+import tools
 
 
 
@@ -31,14 +31,6 @@ def get_nbr_seq(dmt4_files):
 def get_minsup(minsup, dmt4_files):
     return round((get_nbr_seq(dmt4_files) / 100) * minsup)
 
-def concat_multiple_conll(path, files_list, output_file):
-    with open(f'{path}{output_file}', 'w', encoding='utf-8') as out:
-        for file in files_list:
-            with open(f'{path}{file}', 'r', encoding='utf-8') as f:
-                out.write(f.read())
-                out.write('\n')
-                os.remove(f'{path}{file}')
-                # print(f"remove{file}")
 
 if __name__ == "__main__":
     python = "python3.7"
@@ -212,7 +204,7 @@ if __name__ == "__main__":
                         file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
                         # print(file_list)
                         path = "./Data/Textes_tagged_stanza_for_dmt4/"
-                        concat_multiple_conll(path, file_list, "merged")
+                        tools.concat_multiple_conll(path, file_list, "merged")
                         # print(f'liste dir dans ttaggedfordmt4 : {os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")}')
                         for type_texte in liste_textes:
                             # print("transform data début")
