@@ -43,15 +43,15 @@ def load_pickles(title_file):
 def get_nbr_seq(dmt4_files):
         with open("{}".format(dmt4_files), 'r', encoding="utf-8") as dmt4 :
             return len([line for line in dmt4.readlines() if "seqId" in line])
-        
+
+                    
 def concat_multiple_conll(path, files_list, output_file):
-    with open(f'{output_file}', 'w', encoding='utf-8') as out:
+    with open(f'{path}{output_file}', 'w', encoding='utf-8') as out:
         for file in files_list:
-            if file!=".DS_Store": 
-                with open(f'{path}{file}', 'r', encoding='utf-8') as f:
-                    out.write(f.read())
-                    out.write('\n')
-                    os.remove(f'{path}{file}')
+            with open(f'{path}{file}', 'r', encoding='utf-8') as f:
+                out.write(f.read())
+                out.write('\n')
+                os.remove(f'{path}{file}')
   
 def unique_sentences_from_stanza(folder_path):
     all_sentences = []
