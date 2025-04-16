@@ -20,7 +20,8 @@ packages <- c('dplyr',
 ipak(packages)
 
 # Variables
-  default_folder <- "./Patterns_results/Specifs_noZero"
+# default_folder <- "./Patterns_results/Specifs_noZero"
+  default_folder <- "./Patterns_results/R" #proposition pour organiser l'espace de travail
   print(default_folder)
 
     # input_file <- spec_R_temp.tsv
