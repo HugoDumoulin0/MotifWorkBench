@@ -347,7 +347,7 @@ if __name__ == "__main__":
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
-                subprocess.call(["Rscript", "./src/AFC.r"])
+                # subprocess.call(["Rscript", "./src/AFC.r"])
 
     # #-------------------------------------------------------------------------------------------------------------------
     # # Clustering Emergent Pattern
