@@ -162,7 +162,9 @@ def tsv_out(dict_synth, columns, minsup_percent,execution_time):
     for fichier in dict_synth:
         if not os.path.exists("./Patterns_results/Specifs_noZero"):
             os.makedirs("./Patterns_results/Specifs_noZero")
-        file_out = "./Patterns_results/Specifs_noZero/{}_00_{}_{}.pk".format(mins,
+        if not os.path.exists("./Patterns_results/Specifs_noZero/détail_textes"):
+            os.makedirs("./Patterns_results/Specifs_noZero/détail_textes")
+        file_out = "./Patterns_results/Specifs_noZero/détail_textes/{}_00_{}_{}.pk".format(mins,
                                                                            fichier, execution_time)
         tools.save_pickles_results(dict_synth[fichier], file_out)
         df = pd.DataFrame.from_dict(dict_synth[fichier], orient="index", columns=columns)
