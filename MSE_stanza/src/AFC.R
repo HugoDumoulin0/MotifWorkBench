@@ -53,43 +53,43 @@ for (file in matching_files) {
 # Define functions
 #---------------------------------
 #General plot
-AFC_plot <- function(AFC){
-  filename <- paste(var_name, "AFC.bmp", sep = "")
-  bmp(filename = filename, width = 2048, height = 2048, res = 200)
-  plot_obj <- fviz_ca_col(AFC,
-                          shape.col = 16,
-                          labelsize = 4,
-                          repel = TRUE,
-                          col.col = "red") +
-              theme_classic()
-  print(plot_obj)
-  dev.off()
-}
+# <- function(AFC){
+ # filename <- paste(var_name, "AFC.bmp", sep = "")
+  #bmp(filename = filename, width = 2048, height = 2048, res = 200)
+  #plot_obj <- fviz_ca_col(AFC,
+   #                       shape.col = 16,
+    #                      labelsize = 4,
+     #                     repel = TRUE,
+      #                    col.col = "red") +
+       #       theme_classic()
+  #print(plot_obj)
+  #dev.off()
+#}
 
 #General plot with cos2 representing contribution
 	#the value of the cos2 is between 0 and 1. A cos2 closed to 1 corresponds
 	#to a column/row variables that are well represented on the factor map.
-AFC_plot_cos2 <- function(AFC){
-  filename <- paste(var_name, "AFC_cos2.bmp", sep = "")
-  bmp(filename = filename, width = 2048, height = 2048, res = 200)
-  plot_obj <- fviz_ca_col(AFC,
-  	col.col = "cos2",
-  	shape.col=16,
-  	labelsize=4,
-  	repel=T,
-  	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +
-  	theme_classic() +
-  	guides(colour = guide_colourbar(position = "inside")) +
-  	theme(legend.margin = margin(0, 0, 0, 0),
-  		legend.position.inside = c(0.01, 1),
-  		legend.justification.top = "left",
-  		legend.justification.left = "top",
-  		legend.justification.bottom = "left",
-  		legend.justification.inside = c(0, 1),
-  		legend.location = "plot")
-  print(plot_obj)
-  dev.off()
-}
+#AFC_plot_cos2 <- function(AFC){
+#  filename <- paste(var_name, "AFC_cos2.bmp", sep = "")
+#  bmp(filename = filename, width = 2048, height = 2048, res = 200)
+#  plot_obj <- fviz_ca_col(AFC,
+ # 	col.col = "cos2",
+  #	shape.col=16,
+  #	labelsize=4,
+  #	repel=T,
+  #	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +
+  #	theme_classic() +
+  #	guides(colour = guide_colourbar(position = "inside")) +
+  #	theme(legend.margin = margin(0, 0, 0, 0),
+  #		legend.position.inside = c(0.01, 1),
+  #		legend.justification.top = "left",
+  #		legend.justification.left = "top",
+  #		legend.justification.bottom = "left",
+  #		legend.justification.inside = c(0, 1),
+  #		legend.location = "plot")
+  #print(plot_obj)
+  #dev.off()
+#}
 
 #-----------------------------------
 # Functions to filter according to treshold
@@ -105,17 +105,17 @@ AFC = CA(df[,-c(1,2)], graph=F)
 
 # Plot and measures for 2 dims with no contrib threshold
 # source("plots_func.R")
-print("1")
-AFC_plot(AFC)
-print("2")
-AFC_plot_cos2(AFC)
-print("3")
+#print("1")
+#AFC_plot(AFC)
+#print("2")
+#AFC_plot_cos2(AFC)
+#print("3")
 #-----------------------------------
 # Check accuracy/explanatory power
 #-----------------------------------
 
 #Plot degree of variance explanation per axis
-bmp(filename=paste(var_name, "var_expl_per_axis.bmp", sep=""),
+bmp(filename=paste(var_name, "screeplot.bmp", sep=""),
 	width=1536, height=1536, res=200)
 plot_obj <- fviz_screeplot(AFC,
 	addlabels = TRUE) +
@@ -171,67 +171,47 @@ dev.off()
 # source("accuracy.R")
 # # var_per_axis(AFC)
 
-bmp(filename=paste(var_name, "contrib10.bmp"),
+bmp(filename=paste(var_name, "txt_contrib10.bmp"),
     width=2048, height=2048, res=200)
 plot_obj <- fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", 
-    gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)
+    gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19, repel=T)
 	print(plot_obj)
 dev.off()
 
-bmp(filename=paste(var_name, "ind_contrib10.bmp"),
+bmp(filename=paste(var_name, "motif_contrib10.bmp"),
     width=2048, height=2048, res=200)
-plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=10),col.var="contrib", gradient.rows=c("#ffc2ca", "#ff0000"), shape.col=19)
+plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=10),col.var="contrib", gradient.rows=c("#ffc2ca", "#ff0000"), shape.col=19, repel=T)
     print(plot_obj)
 dev.off()
-
-# bmp(filename=paste(var_name, "AFC_fviz2.bmp"),
-#     width=2048, height=2048, res=200)
-# plot_obj <- fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")
-#     print(plot_obj)
-# dev.off()
-# Redundant with AFC.bmp
-
-
-
-
-
-######éléments script R HD local#####
-
-#------AFC various viz-------#
-bmp(filename=paste(var_name, "AFC_screeplot.bmp"), width=2048, height=2048, res=200)
-fviz_screeplot(AFC)
+  
+bmp(filename=paste(var_name, "txt_contrib10_size.bmp"), width=2048, height=2048, res=200)
+plot_obj <- fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)
+print(plot_obj)
 dev.off()
 
-bmp(filename=paste(var_name, "AFC_fviz.bmp"), width=2048, height=2048, res=200)
-fviz_ca_col(AFC, select.col=list(contrib=10),col.var="contrib", gradient.cols=c("#ffc2ca", "#ff0000"), shape.col=19)
+bmp(filename=paste(var_name, "txt_contrib20_size.bmp"), width=2048, height=2048, res=200)
+plot_obj <- fviz_ca_col(AFC, select.col=list(contrib=20),pointsize="contrib", shape.col=19, repel=T)
+print(plot_obj)
 dev.off()
 
-bmp(filename=paste(var_name, "AFC_fviz_ind.bmp") , width=2048, height=2048, res=200)
-fviz_ca_row(AFC, select.row=list(contrib=10),col.var="contrib", gradient.rows=c("#ffc2ca", "#ff0000"), shape.col=19)
+bmp(filename=paste(var_name, "motif_contrib10_size.bmp"), width=2048, height=2048, res=200)
+plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=10),pointsize="contrib", shape.row=19, repel=T)
+print(plot_obj)
 dev.off()
 
-bmp(filename=paste(var_name, "AFC_fviz2.bmp"), width=2048, height=2048, res=200)
-fviz_ca_col(AFC, shape.col=1, labelsize=4, repel=T, col.var="contrib", gradient.cols="#c30000", col.quali.sup="darkgreen")
+bmp(filename=paste(var_name, "motif_contrib20_size.bmp"), width=2048, height=2048, res=200)
+plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=20),pointsize="contrib", shape.col=19, repel=T)
+print(plot_obj)
 dev.off()
 
-bmp(filename=paste(var_name, "AFC_fviz3.bmp"), width=2048, height=2048, res=200)
-fviz_ca_col(AFC, select.col=list(contrib=10),pointsize="contrib", shape.col=19, repel=T)
+bmp(filename=paste(var_name, "motif_contrib30_size.bmp"), width=2048, height=2048, res=200)
+plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=30),pointsize="contrib", shape.row=19, repel=T)
+print(plot_obj)
 dev.off()
 
-bmp(filename=paste(var_name, "AFC_fviz3+.bmp"), width=2048, height=2048, res=200)
-fviz_ca_col(AFC, select.col=list(contrib=20),pointsize="contrib", shape.col=19, repel=T)
-dev.off()
-
-bmp(filename=paste(var_name, "AFC_fviz3_ind.bmp"), width=2048, height=2048, res=200)
-fviz_ca_row(AFC, select.row=list(contrib=10),pointsize="contrib", shape.row=19, repel=T)
-dev.off()
-
-bmp(filename=paste(var_name, "AFC_fviz3+_ind.bmp"), width=2048, height=2048, res=200)
-fviz_ca_row(AFC, select.row=list(contrib=20),pointsize="contrib", shape.col=19, repel=T)
-dev.off()
-
-bmp(filename=paste(var_name, "AFC_fviz4_ind.bmp"), width=2048, height=2048, res=200)
-fviz_ca_row(AFC, select.row=list(contrib=30),pointsize="contrib", shape.row=19, repel=T)
+bmp(filename=paste(var_name, "text_contrib30_size.bmp"), width=2048, height=2048, res=200)
+plot_obj <- fviz_ca_col(AFC, select.col=list(contrib=30),pointsize="contrib", shape.col=19, repel=T)
+print(plot_obj)
 dev.off()
 
 #------hierarchical clustering------#
