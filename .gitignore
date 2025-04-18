@@ -3,7 +3,7 @@
 #*.conllu
 *.pk
 dictionnaire_specifs.pk
-*.txt
+#*.txt
 *.bmp
 
 # Ignore common system files
