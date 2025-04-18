@@ -1,0 +1,4878 @@
+
+
+: Contexte
+
+Cette partie a pour but de donner au lecteur les éléments essentiels sur la
+
+maladie de Parkinson (MP) et sa pathophysiologie dans le contexte de cette
+
+étude.
+
+Ce chapitre débute par une revue des éléments essentiels sur la MP tels que ses
+
+aspects cliniques, diagnostiques et un état des traitements actuels. Vient
+
+ensuite une description anatomique et fonctionnelle sommaire des éléments
+
+principaux des ganglions de la base avec la description de modèles fonctionnels
+
+dans la situation normale et dans le cas pathologique de la MP. Les mécanismes
+
+de neuro-dégénérescence dont la littérature fait état lors du développement de
+
+la MP sont décrits dans la section suivante qui présente également les causes
+
+connues ou soupçonnées de la dégénérescence chez les parkinsoniens. La dernière
+
+section de ce chapitre présente plus en détail la stimulation cérébrale profonde
+
+(SCP) utilisée comme traitement de la MP.
+
+La maladie de Parkinson
+
+Introduction
+
+La MP est un trouble moteur qui fut décrit pour la première fois en 1817
+
+par James Parkinson (1755-1827), médecin généraliste anglais, sous le
+
+nom de "shaking palsy" (paralysie agitante). Sa
+
+description était basée sur l’étude de six patients dont un seulement
+
+qu’il a suivi sur le long terme . C’est Charcot, l’un des premiers
+
+neurologues français, qui pérennisa l’appellation de maladie de
+
+Parkinson en 1877.
+
+La MP est une maladie neuro-dégénérative progressive qui touche les
+
+neurones dopaminergiques de la substance noire. Il a été observé que la
+
+vitesse de dégénérescence des neurones de la voie nigro-striée
+
+dopaminergique est deux fois plus rapide chez les sujets parkinsoniens
+
+que lors du vieillissement normal (Agid 1991).
+
+L’étiologie de la maladie reste obscure malgré de grandes avancées dans
+
+la compréhension de sa pathophysiologie. L’immense majorité des cas
+
+(95%) sont sporadiques alors que les 5% restant sont d’origine génétique
+
+et sont généralement familiaux. Les facteurs environnementaux et
+
+génétiques impliqués dans le développement de la maladie seront
+
+développés plus loin dans ce chapitre.
+
+Au niveau clinique, la MP se caractérise essentiellement par trois
+
+symptômes qui constituent ce qu’il est convenu d’appeler la triade
+
+parkinsonienne : la bradykinésie, le tremblement de repos et la
+
+rigidité.
+
+La MP touche plus de 0,1% de la population de plus de 40 ans et l’âge
+
+moyen d’apparition se situ entre 55 et 60 ans . La mortalité des malades
+
+est de 2 à 5 fois supérieure à celle de la population non atteinte .
+
+La première percée majeure dans la recherche sur la MP a eu lieu dans les
+
+années 1960 lorsque l’hypothèse d’un déficit en dopamine de certaines
+
+régions du cerveau a été posée et que le traitement à la lévodopa
+
+(L-dopa) a été introduit . Avant l’introduction de la dopa-thérapie en
+
+1967, les lésions chirurgicales constituaient le seul traitement
+
+envisageable et elles étaient largement pratiquées . Tombées en
+
+désuétudes au cours des années 70 et 80 à cause de l’efficacité et de la
+
+simplicité du traitement à la L-dopa, les procédures chirurgicales ont
+
+connues un regain d’intérêt dans les années 90. En effet, d’une part la
+
+L-dopa induit de nombreux effets secondaires à long terme, d’autre part
+
+les procédures neurochirurgicales se sont développées et améliorées et,
+
+enfin, l’utilisation de la stimulation cérébrale profonde (SCP) à haute
+
+fréquence (HF) a pu se développer à partir de 1987 suite aux travaux de
+
+Benabid (Benabid et al. 1987).
+
+L’amélioration des connaissances du réseau des ganglions de la base a
+
+permis de choisir de nouvelles cibles pour la SCP jusqu’à arriver à la
+
+stimulation du noyaux subthalamique (NST) par Benabid en 1993 . Le NST
+
+constitue aujourd’hui la cible de prédilection pour les interventions
+
+chirurgicales de la MP.
+
+Diagnostic et aspects cliniques
+
+Les syndromes parkinsoniens sont définis par une association de six
+
+troubles moteurs particuliers : le tremblement de repos, la rigidité
+
+musculaire, l’akinésie, une posture fléchie (Figure 1 ), le phénomène de
+
+"freezing", et une instabilité posturale.
+
+Outre ces troubles spécifiques, il existe de nombreuses autres
+
+manifestations complémentaires telles que l’hypocinésie (réduction de
+
+l’amplitude des mouvements) ou l’hypophonie (diminution du volume de la
+
+voix).
+
+Posture parkinsonnienne typique.
+
+Les syndromes parkinsoniens sont classés en 4 catégories (Tableau 1) : le syndrome
+
+parkinsonien primaire ou MP au sens strict, les syndromes parkinsoniens
+
+secondaires provoqués par des facteurs environnementaux, les syndromes
+
+parkinson-plus, dans lesquels le syndrome parkinsonien ne représente
+
+qu’une part des symptômes et enfin les maladies neuro-dégénératives
+
+familiales .
+
+Pour parler de MP et non simplement de syndrome parkinsonien il faut que
+
+toutes les autres causes ou les autres formes aient été exclues
+
+(accident vasculaire cérébral, intoxication chimique…) et qu’il n’y ai
+
+pas de signes autres, tels que la démence .
+
+Le diagnostic n’est pas toujours facile à poser puisqu’il est impossible
+
+de se fier à un seul test et environ 25 % des diagnostics sont
+
+incorrects (Hughes et al. 1992). Les critères généralement admis sont la
+
+bradykinésie (ralentissement des mouvements) et au moins une des trois
+
+autres manifestations primaires que sont la rigidité musculaire
+
+(résistance à un mouvement passif des membres), le tremblement de repos
+
+et des troubles de la posture . La MP idiopathique est caractérisée par
+
+l’apparition unilatérale des symptômes (l’asymétrie persistant au cours
+
+de l’évolution), par une évolution lente (plus de 10 ans avant que les
+
+plus hauts degrés d’incapacité ne soient atteints) et par une réponse
+
+positive aux médicaments dopaminergiques .
+
+Epidémiologie
+
+Les données issues des analyses épidémiologiques de la MP peuvent sembler
+
+incohérentes au premier regard du fait de leur hétérogénéité. Il
+
+apparaît en effet d’assez grandes différences selon les origines
+
+géographiques, ethniques ou environnementales dans lesquelles ont été
+
+recrutés les sujets de l’expérience.
+
+Mais si les études ne sont pas en accord sur certains points, elles
+
+tendent toutes à démontrer que la MP est une maladie liée à l’âge. Par
+
+contre il est difficile de trancher quand à l’influence du sexe. Alors
+
+qu’Elbaz trouve une incidence cumulative supérieure chez l’homme (ratio
+
+1,5) et Baldereschi une incidence deux fois supérieure par rapport aux
+
+femmes , de Rijk n’observe pas de différence de prévalence entre hommes
+
+et femmes . Cette différence pourrait être due à une mortalité
+
+supérieure chez l’homme observée dans certaines études , mais qui n’est
+
+pas toujours constatée .
+
+Prévalence
+
+Toutes les études montrent que la prévalence de la MP augmente avec
+
+l’âge. Elle est de 0,6 % de la population pour la tranche d’âge
+
+65-69 ans et augmente jusqu’à 2,6 % pour la tranche 85-89 ans .
+
+Globalement cela représente 1,8 % de la population de plus de 65
+
+ans, ce qui correspondait à 3 765 000 personnes à travers le monde
+
+en 1997 .
+
+Incidence
+
+Environ 305 000 nouveaux cas sont diagnostiqués par an à travers le
+
+monde .
+
+Toutes les études s’accordent également pour constater que
+
+l’incidence augmente avec l’âge . Selon les études, l’incidence
+
+annuelle varie de 110 à 330 pour 100 000 personnes au-delà de l’âge
+
+de 50 ans, puis augmente jusqu’à 400-500 pour 100 000 après 80 ans .
+
+Au niveau de la population générale l’incidence annuelle observée
+
+pour 100 000 habitants va de 10,8 pour le Comté d’Olmsted
+
+(Minnesota, USA) à 17,2 en Finlande
+
+Malgré cette variabilité importante selon les régions du monde, les
+
+incidences généralement observées en Europe et aux USA vont de 8 à
+
+13 pour 100 000 habitants .
+
+Traitements
+
+La MP est la seule maladie neuro-dégénérative pour laquelle un traitement
+
+de substitution à base du neuromédiateur manquant s’est révélé efficace
+
+. Malheureusement ces traitements ne sont que symptomatiques et ne
+
+traitent pas les causes de la maladie. De plus, les premiers symptômes
+
+n’apparaissent qu’après la perte d’une large part (50 à 60 %) des
+
+neurones dopaminergiques de la substance noire, lorsque la concentration
+
+en dopamine striatale a chutée de 70 % environ (Agid et Blin 1987). Ceci
+
+est du à des mécanismes de compensation (Zigmond et al. 1990 ; Bezard et
+
+Gross 1998), ce qui rend encore plus problématique l’efficacité des
+
+traitements sur le long terme. Bien que certains protocoles de recherche
+
+cherchent à trouver des stratégies neuro-protectrices, il n’existe pas
+
+actuellement de démonstration de l’efficacité de ces thérapeutiques
+
+ralentissant la progression de la maladie et on ne peut pas à l’heure
+
+actuelle parler de traitement curatif.
+
+Traitements pharmacologiques
+
+Aujourd’hui encore, 40 ans après le début de son utilisation, la
+
+lévodopa (L-dopa) constitue la molécule de choix pour le traitement
+
+de la MP. Cependant la nécessité d’un métabolisme intra-neuronal de
+
+la molécule en dopamine constitue un point faible de cette thérapie,
+
+la dégénérescence neuronale altérant progressivement les capacités
+
+de transformation et de stockage du neuromédiateur. Ceci, associé à
+
+d’autres phénomènes, provoque des effets secondaires importants
+
+rendant nécessaires d’autres approches thérapeutiques.
+
+Figure 2. Principaux mécanismes d'actions des médicaments
+
+antiparkinsoniens.( I-DDCP, inhibiteur de la
+
+dopa-décarboxylase périphérique ; MAO-B, monoamine oxydase
+
+B ; IMAO-B, inhibiteur de la MAO-B ; COMT, catéchol-O-méthyl
+
+transférase ; I-COMT, inhibiteur de la COMT ; DDC,
+
+dopadécarboxylase périphérique ; DC, dopadécarboxylase).
+
+Les traitements pharmacologiques de la MP visent à
+
+augmenter l’efficacité de la transmission dopaminergique.
+
+Historiquement, le premier traitement proposé (de l’extrait de
+
+Belladone) visait à diminuer l’hyperactivité cholinergique striatale
+
+(Charcot 1872-1873), mais depuis la découverte de la L-dopa
+
+l’objectif principal est la restauration du tonus dopaminergique
+
+inhibiteur (Figure 2 et Tableau 2).
+
+Les anti-cholinergiques
+
+Les anti-cholinergiques (trihexyphénidyl, biperiden, ophénadrine,
+
+procyclidine, éthopropazine, diphénhydramine) réduisent
+
+l’hyperactivité cholinergique striatale résultant de la
+
+réduction du tonus inhibiteur dopaminergique. Ils agissent
+
+préférentiellement sur le tremblement et sont de peu d’effet
+
+pour les autres manifestations cliniques. Du fait d’effets
+
+indésirables périphériques muscariniques, tels que troubles de
+
+la mémoire, confusion et hallucinations, ils sont beaucoup moins
+
+utilisés depuis l’avènement de la L-dopa.
+
+Stratégies de remplacement dopaminergique
+
+Le but de ces médicaments, généralement associés les uns aux
+
+autres est d’augmenter la stimulation des récepteurs
+
+dopaminergiques, directement ou par l’augmentation de la
+
+biodisponibilité de la dopamine (Figure 2 et Tableau 2).
+
+La L-dopa
+
+C’est le médicament le plus courant, car le plus efficace. Il
+
+est utilisé depuis la fin des années 1960 . Il s’agit d’un
+
+précurseur de la dopamine (Figure 3) qui est capable de
+
+traverser la barrière hémato-encéphalique. La
+
+décarboxylation périphérique limitant la disponibilité du
+
+médicament au niveau cérébral et provoquant des effets
+
+indésirables (hypotension artérielle, nausées et
+
+vomissements) la L-dopa est fréquemment associée à des
+
+inhibiteurs de la décarboxylase périphérique (Olanow et al.
+
+2001). Ces inhibiteurs (bensérazide, carbidopa) permettent
+
+de multiplier par 10 la biodisponibilité de la L-dopa au
+
+niveau cérébral.
+
+Figure 3. Métabolisme et catabolisme de la dopamine (TH,
+
+tyrosine hydroxyase ; COMT, catéchol-O-méthyl transférase ;
+
+MAO, monoamine oxydase ; AD, aldéhyde déshydrogénase).
+
+La L-dopa étant le précurseur du neurotransmetteur naturel on
+
+pourrait penser qu’il s’agit là du médicament idéal. Il
+
+permet en effet la stimulation de tous les types de
+
+récepteurs dopaminergiques et est libéré de manière
+
+physiologique par les neurones dopaminergiques.
+
+Malheureusement, la demi-vie plasmatique de la L-dopa est
+
+faible. Ce sont les neurones dopaminergiques survivants qui
+
+assurent l’amortissement de cette cinétique grâce à leur
+
+capacité de stockage. Mais lorsque la perte neuronale
+
+atteint un niveau critique il devient difficile d’assurer
+
+une stimulation dopaminergique stable. L’état moteur du
+
+patient devient très dépendant de la concentration
+
+plasmatique en L-dopa et de nouveaux troubles moteurs
+
+apparaissent (fluctuations motrices, dyskinésies).
+
+Les agonistes dopaminergiques
+
+Ces molécules vont stimuler directement les récepteurs D2,
+
+initialement considérés comme étant seuls impliqués dans les
+
+effets moteurs de la dopamine. N’agissant pas par le biais
+
+des neurones dopaminergiques, ce traitement n’est pas
+
+sensible à leur diminution au cours de l’évolution de la
+
+maladie. Ils provoquent beaucoup moins de dyskinésies et de
+
+phénomènes "off" que la L-dopa. Étant
+
+relativement spécifiques des récepteurs D2 ils ne présentent
+
+pas certains des effets secondaires de la L-dopa, mais
+
+présentent d’autres inconvénients. En particulier, ils sont
+
+beaucoup plus susceptibles de provoquer des hallucinations,
+
+confusion et psychoses que la L-dopa. Ces produits sont
+
+également nettement moins efficaces que la L-dopa en
+
+monothérapie .
+
+Cependant il semblerait que certains puissent exercer un
+
+certain effet neuro-protecteur, ou tout au moins n’induisent
+
+pas les complications produites par la L-dopa et certains
+
+auteurs suggèrent de commencer la thérapie à base
+
+d’agonistes dopaminergiques avant d’utiliser la L-dopa, afin
+
+de retarder la survenue des effets secondaires liés à la
+
+dopa-thérapie (Olanow et al. 2001).
+
+Les agonistes dopaminergiques sont regroupés en deux
+
+classes : les ergopeptines, dérivés des alcaloïdes de
+
+l’ergot du seigle et les non-ergopeptines qui sont des
+
+composés synthétiques plus spécifiques des récepteurs D2 et
+
+donc présentant moins d’effets indésirables.
+
+Les inhibiteurs enzymatiques
+
+Leur fonction est d’améliorer la biodisponibilité de la
+
+dopamine. Soit par l’inhibition de la décarboxylation
+
+périphérique de la L-dopa afin d’augmenter sa
+
+biodisponibilité au niveau encéphalique, soit par
+
+l’inhibition des enzymes du catabolisme dopaminergique.
+
+Complications liées à la dopa-thérapie
+
+Malgré son efficacité, la L-dopa ne constitue pas un
+
+traitement totalement satisfaisant. Les effets négatifs des
+
+stratégies de remplacement dopaminergiques sont nombreux et
+
+importants. Ils peuvent être classés en trois catégories :
+
+les complications motrices et neuropsychiatriques associées
+
+à la dopa-thérapie chronique, le développement de symptômes
+
+non dopa-sensibles et un possible effet neurotoxique de la
+
+dopamine.
+
+Complications motrices
+
+Elles peuvent être regroupées en deux catégories : les
+
+fluctuations motrices et les dyskinésies.
+
+Les fluctuations motrices sont constituées par
+
+l’alternance entre des périodes pendant lesquelles la
+
+fonction motrice est relativement bonne, appelées
+
+périodes "on", au cours
+
+desquelles le malade répond au traitement médicamenteux
+
+et des périodes, dites "off", de
+
+basse motricité pendant lesquelles la réponse aux
+
+médicaments est nulle ou mauvaise. Ce phénomène
+
+intervient rapidement, après seulement 2 à 5 ans de
+
+traitement. Avec la progression de la maladie et
+
+l’allongement de la durée du traitement dopaminergique
+
+la période d’efficacité de la prise médicamenteuse se
+
+raccourcit, de plus de 4 heures elle peut atteindre 60 à
+
+90 minutes seulement. D’autre part le malade peut subir
+
+des alternances rapides et imprévisibles entre périodes
+
+"on" et "off" . Bien que certains médicaments ou des
+
+modifications des modalités d’administration, comme
+
+l’administration continue à la pompe, puissent être
+
+utilisés pour réduire les périodes "off" ces variations sont un effet secondaire
+
+très gênant pour les patients.
+
+Les dyskinésies induites par la L-dopa sont des
+
+mouvements involontaires qui surviennent lorsque le taux
+
+plasmatique de L-dopa atteint son pic maximum,
+
+c'est-à-dire après la prise médicamenteuse. Ce sont
+
+généralement des mouvements choréiformes mais elles
+
+peuvent se présenter sous forme de dystonies ou de
+
+myoclonies. La fréquence des dyskinésies
+
+dopa-dépendantes augmente avec la durée du traitement
+
+dopaminergique. Environ 60% des patients développent ce
+
+type de complication après 5 ans de traitement . Bien
+
+que le mécanisme ne soit pas totalement éclairci, il
+
+semble que des stimulations pulsatiles des récepteurs
+
+dopaminergiques soit impliquées . Ces dyskinésies sont
+
+difficiles à traiter, mais la stimulation cérébrale
+
+profonde (SCP) et la pallidectomie ont montré leur
+
+efficacité, sans doute par la suppression des profils
+
+anormaux de potentiels d’action .
+
+Selon les études, les complications motrices touchent 50
+
+à 90% des parkinsoniens qui ont reçu de la L-dopa
+
+pendant 5 à 10 ans (Olanow et al. 2001). Elles sont un
+
+problème majeur pour les patients.
+
+Troubles mentaux
+
+Les thérapies dopaminergiques peuvent induire des
+
+confusions, paranoïas, hallucinations visuelles, et des
+
+troubles cognitifs . La pathophysiologie des démences et
+
+hallucinations est liée à la progression de la maladie
+
+qui provoque des dommages en dehors du système
+
+nigro-strié (locus ceruleus,
+
+noyau de Meynert, et cortex cérébral). La gestion des
+
+hallucinations a été largement améliorée par les
+
+traitements avec des neuroleptiques atypiques tels que
+
+la clozapine .
+
+Neurotoxicité potentielle de la lévodopa
+
+Figure 4. Schéma des principaux mécanismes de
+
+toxicité potentielle de la dopamine.
+
+Il existe également une toxicité théorique de
+
+la dopamine pour les neurones dopaminergiques . Cette
+
+toxicité (Blum et al. 2001) serait le résultat de la
+
+production de métabolites oxydatifs (peroxyde
+
+d’hydrogène, radical hydroxyle) lors de la dégradation
+
+de la dopamine ainsi que de l’action inhibitrice de la
+
+dopamine sur le complexe I mitochondrial (Figure 4).
+
+Toutefois, aucune démonstration de cette toxicité n’a pu
+
+être montrée, ni chez l’homme, ni chez des modèles
+
+animaux. De plus quelques études in
+
+vitro ont démontré un effet bénéfique de la
+
+L-dopa sur les neurones dopaminergiques de la SNc ,
+
+alors que d’autres démontrent une toxicité (Tanaka et
+
+al. 1991 ; Walkinshaw et Waters 1995).
+
+Symptômes non dopa-sensibles
+
+Au cours de l’évolution de la maladie de nouveaux
+
+symptômes vont se développer (Tableau 3.). Ces nouveaux
+
+troubles sont liés à la progression des dégénérescences
+
+neuronales et non au traitement médicamenteux. Ils
+
+apparaissent au cours des stades avancés de la maladie et ne
+
+répondent pas à la L-dopa. Ils sont également peu sensibles
+
+aux thérapies chirurgicales (sauf dans le cas de la
+
+stimulation du PPN) ou médicamenteuses. Ce sont
+
+essentiellement des dysarthries, des dysphagies, des
+
+blocages lors des périodes "on", des
+
+pertes d’autonomie, des troubles sensitifs, des changements
+
+d’humeur ou comportementaux et des pertes cognitives et
+
+démences. .
+
+Traitements chirurgicaux
+
+Les traitements chirurgicaux de la MP peuvent être classés en trois
+
+catégories. Les deux premières, dont le principe est lié, tant
+
+historiquement que probablement physiologiquement, sont les lésions
+
+et la stimulation cérébrale profonde (SCP). La troisième approche
+
+qui utilise la chirurgie en est seulement à ses premières étapes de
+
+développement, il s’agit de la greffe de cellules associée ou non à
+
+la thérapie génique.
+
+Les chirurgies lésionnelles
+
+Comme un certain nombre de découvertes essentielles, c’est le
+
+hasard corrélé à l’analyse anatomo-clinique qui a permis de
+
+mettre en évidence que certaines lésions du thalamus ont un
+
+effet notoire sur les tremblements parkinsoniens. Cette
+
+découverte, inespérée à l’époque où aucun autre traitement
+
+n’existait pour la MP, a rapidement été mise en application au
+
+cours des années 1950. Elle est tombée ensuite en désuétude du
+
+fait de l’avènement de la L-dopa. Mais les limites des
+
+traitements dopaminergiques, associés aux progrès des méthodes
+
+stéréotaxiques et à la meilleure connaissance des circuits des
+
+ganglions de la base ont redonné une seconde vigueur à ces
+
+techniques au cours des années 1980.
+
+La pallidectomie
+
+Réalisée à l’origine pour réduire la rigidité, la
+
+pallidectomie est de nouveau pratiquée depuis les années 90
+
+pour limiter les dyskinésies survenant suite à une longue
+
+dopa-thérapie (Jankovic et al, 1995), elle permet également
+
+une certaine amélioration des autres manifestations
+
+parkinsoniennes. La réalisation de lésions bilatérales
+
+s’accompagne de nombreux risques, notamment des dommages sur
+
+d’autres structures cérébrales (capsule interne, tractus
+
+visuel).
+
+La thalamotomie
+
+Des études électro-physiologiques ayant mis en évidence une
+
+activité neuronale anormale du noyau ventral intermédiaire
+
+du thalamus (Vim) chez les patients parkinsoniens sa
+
+destruction a été envisagée (Cooper 1965).
+
+L’expérience a montré qu’au sein du thalamus le Vim offre la
+
+meilleure efficacité. Mais cette cible souffre de nombreuses
+
+limites. Seul le tremblement est traité et environ un quart
+
+des patients ne bénéficie que d’un effet limité ou
+
+transitoire . Bien que d’autres régions du thalamus
+
+permettent d’obtenir des résultats sur la rigidité, ceux-ci
+
+restent faibles . Chez certains patients les dyskinésies
+
+induites par la L-dopa sont améliorées (Olanow et al. 2001).
+
+De plus, les risques de complications empêchent la
+
+réalisation de lésions bilatérales, alors que la maladie
+
+affecte généralement les patients de manière bilatérale.
+
+La sub-thalamotomie
+
+Alors que la pallidectomie et la thalamotomie ont été mises
+
+au point directement chez l’homme, la lésion du NST est le
+
+fruit d’études chez le primate qui ont permis de mettre en
+
+évidence l’effet symptomatique de la lésion du NST. La
+
+technique a été mise en application chez l’homme par Obeso
+
+en 1997. En éliminant l’hyperactivité du NST (Blandini et
+
+al. 1997) la sub-thalamotomie permet d’une part d’obtenir un
+
+effet antiparkinsonien bénéfique et d’autre part de réduire
+
+les dyskinésies, mais le caractère irréversible de la lésion
+
+qui peut provoquer des effets secondaires importants et le
+
+risque de lésions périphériques devrait faire préférer les
+
+méthodes de stimulation haute-fréquence (Henderson et al.
+
+1999).
+
+La stimulation cérébrale profonde (SCP)
+
+Evolution non destructive et donc réversible des traitements par
+
+chirurgie lésionnelle, la SCP sera traitée plus loin dans une
+
+partie spécifique.
+
+Les greffes cellulaires
+
+A la différence de la plupart des autres tissus le système
+
+nerveux n’a qu’une faible capacité de réparation des dommages
+
+subis. Bien qu’il existe des cellules souches neurales dans le
+
+cerveau adulte elles n’ont apparemment qu’une capacité limitée
+
+pour générer des neurones fonctionnels en réponse à des pertes
+
+neuronales.
+
+Le principe de ce traitement est basé sur plusieurs
+
+considérations : la MP est associée à la dégénérescence
+
+sélective des neurones nigro-striés dopaminergiques ; les
+
+thérapies de remplacement dopaminergique ont un excellent
+
+bénéfice clinique ; les neurones dopaminergiques conservent
+
+leurs caractéristiques lorsqu’ils sont placés dans leurs
+
+conditions physiologiques ; il existe une zone de
+
+transplantation clairement définie, le striatum et des études
+
+chez des modèles animaux ont démontré une amélioration du
+
+syndrome parkinsonien (Olanow et al. 1996 ; Hagell et al. 2001).
+
+Les premiers essais ont été réalisés en 1982 par une équipe
+
+suédoise. Il s’agissait d’une autogreffe, dans le noyau caudé,
+
+de tissus de la glande surrénale qui exprime la
+
+tyrosine-hydroxylase (TH) et peut donc libérer de la dopamine.
+
+Mais une forte morbidité postopératoire n’a pas permis à cette
+
+technique de se développer.
+
+Plus récemment, des essais ont été réalisés à partir de
+
+mésencéphale embryonnaire qui contient de nombreux neurones
+
+embryonnaires qui expriment la TH et qui donc synthétisent de la
+
+dopamine (Madrazo et al. 1990 ; Lindvall 2001).
+
+Les résultats des différents essais réalisés sont encourageants,
+
+notamment l’étude réalisée chez un homme (Kordower et al. 1995),
+
+décédé d’une cause indépendante 18 mois après la
+
+transplantation, qui démontre que la greffe a survécu 18 mois
+
+après son implantation et a émis des axones qui font synapse
+
+avec les neurones hôtes. Cette étude a également permis de
+
+corréler l’augmentation de la capture de fluorodopa révélée par
+
+tomographie à émission de positrons avec l’immuno-réactivité TH
+
+de la greffe, qui apparaît donc comme un bon indicateur de
+
+réussite et de suivi de la greffe.
+
+Les différentes études démontrent une efficacité plus ou moins
+
+importante du traitement et Freed a démontré qu’elle est réelle
+
+en réalisant une étude en double aveugle comparant la
+
+transplantation avec une opération contrôle chez quarante
+
+patients (Freed et al. 2001).
+
+Mais aussi prometteuses qu’elles puissent paraître ces
+
+thérapeutiques restent, au travers du peu d’essais cliniques
+
+randomisés réalisés, de faible efficacité. Cette approche ne va
+
+pas sans poser de nombreux problèmes de disponibilité et/ou
+
+d’éthique, les greffons étant issus d’embryons. Le recours à des
+
+xénogreffes ou à des lignées cellulaires pose encore de nombreux
+
+problèmes techniques mais devra être exploré si cette technique
+
+devait se généraliser.
+
+Thérapie génique
+
+Cette approche consiste à greffer des cellules modifiées ou à
+
+modifier les neurones in situ pour
+
+supplémenter une fonction déficiente (synthèse de dopamine) ou
+
+apporter une nouvelle fonction (synthèse de facteurs
+
+neurotrophiques).
+
+La thérapie génique repose sur trois éléments : un gène, un
+
+vecteur, une cellule cible. La thérapie peut être réalisée par
+
+deux approches : in vivo ou ex vivo. L’approche ex
+
+vivo est en fait une greffe de cellules modifiées par
+
+génie génétique. L’avantage par rapport aux techniques in vivo est de ne pas risquer de modifier
+
+d’autres cellules que les cellules cibles et de pouvoir
+
+sélectionner les cellules modifiées avant de les implanter. Par
+
+contre elle soufre des mêmes limites que les techniques de
+
+greffes de cellules (survie du greffon, établissement de
+
+synapses…). La thérapie génique in vivo
+
+peut être réalisée à l’aide de vecteurs viraux (Barkats et al.
+
+1998 ; Horellou et al. 1997), liposomes ou plasmides.
+
+Du fait des mécanismes complexes qui sont à l’origine de la
+
+dégénérescence des neurones dopaminergiques et de la variété des
+
+effets causés par cette perte neuronale, il existe de très
+
+nombreux gènes exploitables et plusieurs localisations de cibles
+
+(Burton et al 2003). Les différentes options peuvent êtres
+
+classés en protectrices, restauratrices et correctrices.
+
+L’approche protectrice a pour but de bloquer ou limiter la
+
+diminution de la population dopaminergique par exemple en
+
+ciblant les gènes impliqués dans des formes héréditaires de la
+
+MP (synucléine, parkine) ou par un effet anti-apoptotique
+
+(bcl-2, inhibiteur Apaf-1) (Mochizuki et al. 2001) ou trophique
+
+(GDNF) (Bilang-Bleuel et al. 1997 ; Gill et al. 2003)).
+
+L’approche restauratrice peut être associée à la greffe de
+
+cellule, elle a alors pour objectif d’augmenter la survie du
+
+greffon et de faciliter son interaction avec les structures
+
+cibles. Elle peut également consister en la synthèse de dopamine
+
+directement au niveau des structures cibles par l’apport du gène
+
+de la TH. L’approche correctrice vise à contrecarrer les effets
+
+de la diminution du signal dopaminergique, par exemple en
+
+corrigeant l’hyperexcitation pathologique du NST en le
+
+transformant en noyau GABAergique par transfert du gène de la
+
+GAD (Bowers et al, 1997). L’équipe de Kaplitt a testé cette
+
+approche par le transfert de la GAD à l’aide d’un vecteur AAV
+
+(adeno-associated virus) chez le
+
+macaque (Emborg et al. 2007), le rat (Luo et al, 2002) et
+
+l’homme (During et al. 2001 ; Kaplitt et al. 2007) avec des
+
+résultats prometteurs. Ils ont pu montrer l’expression de la GAD
+
+au niveau de la cible, mettre en évidence, par tomographie, une
+
+augmentation de l’utilisation du glucose au niveau du NST et
+
+surtout une amélioration persistante des symptômes (plus de 12
+
+mois après le traitement chez l’homme).
+
+Malheureusement l’approche par la thérapie génique butte encore
+
+sur de nombreux obstacles et certains risques pourraient être
+
+sous-estimés (Gluck et al. 2001).
+
+Anatomie des ganglions de la base
+
+Anatomie et fonctions des ganglions de la base
+
+Le réseau des ganglions de la base est impliqué dans la régulation des
+
+fonctions motrices et limbiques. La MP étant due à un dérèglement du
+
+fonctionnement normal de ce circuit nous allons le décrire
+
+succinctement.
+
+Les ganglions de la base sont un ensemble de quatre noyaux : le striatum,
+
+le pallidum, la substance noire et le noyau subthalamique. Contrairement
+
+aux autres structures motrices ils n’ont pas de relations directes avec
+
+la moelle épinière. Les informations proviennent directement du cortex
+
+cérébral alors que les informations sortantes sont envoyées vers le
+
+tronc cérébral et vers le cortex préfrontal, pré-moteur et moteur via le
+
+thalamus (DeLong 2002).
+
+Il existe deux troubles principaux liés aux ganglions de la base : la
+
+chorée de Huntington qui est une pathologie d’hyper-motricité et la MP
+
+qui est une pathologie d’hypo-motricité. Ces pathologies sont
+
+caractérisées par trois aspects semblables : tremblements et mouvements
+
+involontaires, modification de la posture et du tonus musculaire,
+
+pauvreté et ralentissement des mouvements volontaires mais sans
+
+paralysie.
+
+Il est maintenant bien démontré que la fonction des ganglions de la base
+
+n’est pas uniquement motrice, mais comporte une importante part
+
+limbique. Des atteintes des ganglions de la base pouvant provoquer des
+
+troubles neuropsychiatriques, cognitifs et du comportement.
+
+Les ganglions de la base constituent donc un réseau qui établit des
+
+relations essentielles entre le cortex et le thalamus.
+
+Modèle fonctionnel des ganglions de la base
+
+Le modèle actuel du circuit des ganglions de la base a été élaboré à la
+
+fin des années 80 début des années 90 (Albin et al. 1989 ; DeLong 1990 ;
+
+Alexander et Crutcher 1990) et bien qu’il ait été
+
+affiné il n’a pas été fondamentalement modifié depuis . La Figure 5 présente le modèle
+
+couramment admis.
+
+Figure 5. Représentation shématique du circuit des ganglions de la base.
+
+Situation normale et parkinsonienne.
+
+Fonctionnement physiologique normal
+
+La principale structure d’entrée du circuit des ganglions de la base
+
+est le striatum qui comprend le noyau caudé et le putamen. Les
+
+structures de sorties sont le pallidum interne (GPi), correspondant
+
+au noyau entopédonculaire (NPP) chez le rat, et la substance noire
+
+réticulée (SNr). Deux voies assurent la connexion entre les
+
+structures d’entrée et de sortie : la voie directe et la voie
+
+indirecte. La voie directe assure une connexion directe
+
+monosynaptique. La voie indirecte passe par le pallidum externe
+
+(GPe) et le noyau subthalamique (NST) avec une signalisation
+
+polysynaptique. Les neurones striataux impliqués dans le circuit
+
+sont GABAergiques et donc inhibiteurs mais diffèrent selon la voie,
+
+directe ou indirecte, dans laquelle ils sont impliqués. Ceux
+
+impliqués dans la voie directe possèdent des récepteurs
+
+dopaminergiques de type D1 à action activatrice, ainsi que des
+
+récepteurs à la tachykinine et à la dinorphine et se projettent vers
+
+le GPi et la SNr (Albin et al. 1989; DeLong 1990). Les neurones
+
+engagés dans la voie indirecte présentent des récepteurs
+
+dopaminergiques de type D2 à action inhibitrice, ainsi que des
+
+récepteurs aux enképhalines. Ils projettent leur axone vers le GPe
+
+(Araki et al. 1985 ; Reiner et Anderson 1990 ; Brotchie et al.
+
+1991 ; Gerfen et Engber 1992). Le GPe projette à son tour des
+
+terminaisons GABAergiques vers le STN d’une part et vers le GPi et
+
+la SNr d’autre part (Kita et Kitai 1987 ; Smith et Parent 1988 ;
+
+Groenewegen et Berendse 1990 ; Brotchie et al. 1991). Les structures
+
+de sorties (GPi/SNr) envoient alors des projections GABAergiques
+
+vers le thalamus qui possède des liaisons glutamatergiques en
+
+direction du cortex. Le flux de sortie GABAergique est également
+
+projeté vers le noyau pédoculopontin.
+
+La dopamine d’origine nigro-striée a deux effets, d’une part elle
+
+excite les récepteurs D1 de la voie directe et d’autre part elle
+
+inhibe les récepteurs D2 de la voie indirecte. L’activation de la
+
+voie directe augmente le flux inhibiteur du striatum vers l’ensemble
+
+GPi/SNr ce qui a pour effet de réduire le signal en sortie du
+
+circuit des ganglions de la base. L’inhibition des récepteurs D2
+
+réduit l’inhibition du GPe par le striatum. Ce qui provoque une
+
+augmentation du flux inhibiteur du GPe vers le STN et donc réduit le
+
+signal excitateur du STN vers les noyaux de sortie (GPi/SNr),
+
+réduisant donc le flux de sortie des ganglions de la base. Ainsi,
+
+bien qu’ayant un effet synaptique opposé le signal dopaminergique de
+
+la substance noire a le même effet à la sortie des deux voies
+
+directes et indirectes : réduire le niveau de sortie de la boucle
+
+des ganglions de la base et donc réduire le niveau d’inhibition des
+
+neurones thalamo-corticaux ce qui facilite les mouvements initiés au
+
+niveau du cortex. (Gerfen et al. 1995 ; DeLong 2002).
+
+Fonctionnement dans une situation de syndrome parkinsonien
+
+Comme nous l’avons déjà décrit, le syndrome parkinsonien est causé
+
+par la perte du signal dopaminergique issu de la SNc. La voie
+
+directe étant ainsi moins activée le signal inhibiteur généré par
+
+GPi/SNr vers le thalamus sera plus important. De même la voie
+
+indirecte voit son activité modifiée, il est notamment observé une
+
+hyperactivité du STN (Kreiss et al. 1997). Ceci aboutit à augmenter
+
+l’activation de GPi/SNr et donc de la même façon, à inhiber le
+
+thalamus. La boucle facilitatrice du mouvement
+
+cortico-baso-thalamo-corticale est enrayée, ce qui explique les
+
+phénomènes moteurs de rigidité et de lenteur des mouvements observés
+
+dans le syndrome parkinsonien (Blandini et al. 2000).
+
+Mécanismes de neuro-dégénérescence et neuro-protection
+
+La MP est une maladie neuro-dégénérative, l’étude des causes et mécanismes de
+
+cette dégénérescence peuvent apporter une meilleure compréhension de la
+
+progression de la maladie et des traitements.
+
+Etiologie de la maladie de Parkinson
+
+Les causes conduisant au développement de la MP ne sont pas clairement
+
+définies, sauf pour quelques rares formes familiales, mais il existe de
+
+nombreux facteurs de risque qui ont été identifiés. Ceux-ci peuvent être
+
+regroupés en facteurs d’origine génétique et facteurs d’origine
+
+environnementale.
+
+Facteurs génétiques
+
+De nombreuses études épidémiologiques ont révélé un lien entre le
+
+risque de MP et des antécédents familiaux (Marder et al. 1996 ;
+
+Kontakos et Stokes 1999 ; Scott et al. 2001). Dans le cas de MP
+
+familiale plusieurs mutations ont été identifiées notamment au
+
+niveau des gènes de l’ubiquitine carboxy-terminal hydrolase L1
+
+(Leroy et al. 1998), park7 (Bonifati et al. 2003), de l’α-synucléine
+
+(Polymeropoulos et al. 1997 ; Krüger et al. 1998) et de la parkine
+
+(Kitada et al. 2000 ; Lücking et al. 2000). D’autre part certains
+
+allèles codant pour diverses protéines ont montré une association
+
+avec un risque accru de développement de la maladie, notamment : le
+
+cytochrome P450, la glutathion S-transférase, les monoamines
+
+oxydases A et B, la N-acétyl transférase, la protéine Tau et la
+
+parkine (García de Yébenes 2001 ; Steece-Collier et al. 2002), mais
+
+ces allèles sont rares dans la population et ne sont impliqués que
+
+dans peu de cas de MP.
+
+Il faut se souvenir que la MP n’est pas essentiellement familiale
+
+(seulement 5 à 10% des cas) et que ces facteurs génétiques ont
+
+surtout été identifiés dans des cas particuliers de syndrome
+
+parkinsonien, notamment chez des patients jeunes (Tanner et al.
+
+1999) et que même dans cette population particulière la recherche
+
+d’une mutation n’a pas toujours été concluante (Chan et al. 1998).
+
+Toutefois la découverte de ces mutations a permis de mettre au point
+
+des modèles animaux de la MP et de mieux comprendre les causes et
+
+l’évolution de la maladie.
+
+Facteurs environnementaux
+
+Jusqu’à récemment la MP était considérée comme une maladie
+
+exclusivement non génétique, malgré la découverte de l’implication
+
+de quelques gènes dans son étiologie elle le reste, ceci explique
+
+que de très nombreuses études aient été réalisées pour tenter
+
+d’identifier des facteurs de risques liés à l’environnement et au
+
+mode de vie des personnes atteintes. La découverte que le MPTP peut
+
+être à l’origine de syndromes parkinsoniens a renforcé l’idée selon
+
+laquelle la MP peut être causée par des neurotoxines exogènes.
+
+Le milieu rural
+
+Plusieurs études ont recherché un lien entre MP et habitat en
+
+milieu rural ou consommation de l’eau de puits, ces études ont
+
+donné des résultats contradictoires (Kontakos et Stokes 1999).
+
+Par contre plusieurs études ont montré une association entre
+
+utilisation d’herbicides et augmentation du risque de MP (Gorell
+
+et al. 1998 ; Engel et al. 2001 ; Seidler et al. 1996). Un
+
+herbicide, le paraquat, présentant des similitudes avec le MPTP
+
+et un pesticide, la roténone (Betarbet et al. 2000), ont pu être
+
+mis en cause plus spécifiquement.
+
+L’exposition aux métaux
+
+L’accumulation de métaux, fer et cuivre en particulier, au niveau
+
+de la SNc et leur participation aux éventuelles réactions
+
+oxydatives toxiques a amené à étudier le rôle éventuel de
+
+ceux-ci dans l’étiologie de la MP. Outre le fer et le cuivre,
+
+l’implication du manganèse, du mercure, du plomb, du zinc, seuls
+
+ou en associations a été testée au cours d’études variées
+
+(Seidler et al. 1996 ; Kontakos et Stokes 1999 ; Di Monte 2003).
+
+Malheureusement les résultats sont souvent peu significatifs et
+
+se contredisent parfois.
+
+Autres facteurs environnementaux
+
+Les produits de traitement du bois, les solvants, les
+
+traumatismes crâniens pourraient également, ainsi que de
+
+nombreux autres, être des facteurs de risque de développement de
+
+la MP.
+
+En résumé
+
+L’étiologie de la MP reste donc obscure bien que des facteurs variés
+
+aient pu être mis en cause, mais depuis quelques années plusieurs
+
+études montrent un risque accru dans le cas d’associations
+
+particulières entre des facteurs environnementaux et certaines
+
+variantes alléliques ou combinaisons alléliques. Par exemple
+
+l’allèle GSTP1-1 de la glutathione transférase associé à une
+
+exposition aux pesticides augmente le risque de développer la MP
+
+(Menegon et al. 1998 ; Aoyama et al. 2001).
+
+L’origine de la MP est donc largement multifactorielle avec de très
+
+nombreuses causes étiologiques agissant indépendamment ou
+
+concomitamment et plusieurs mécanismes peuvent amener la
+
+dégénérescence des neurones dopaminergiques de la SNc. Le rôle de
+
+l’hérédité dans l’étiologie de la MP semble concerner moins la
+
+transmission de la maladie, elle-même, que la transmission de
+
+facteurs de susceptibilité, tels que des enzymes délétères.
+
+L’éventualité d’une combinaison de facteurs génétiques et
+
+environnementaux est l’hypothèse étiologique la plus acceptable :
+
+une vulnérabilité génétiquement programmée mise en présence d’un
+
+agent potentiellement toxique pourrait induire les processus
+
+dégénératifs.
+
+Mécanismes de neuro-dégénérescence
+
+De nombreuses études ont été réalisées sur la pathogénèse de la MP et
+
+cherchent à élucider les mécanismes de la mort des neurones
+
+dopaminergiques. Il existe en effet un espoir que de telles données
+
+puissent permettre la mise au point de nouvelles thérapies interférant
+
+avec ces mécanismes, même si l’étiologie spécifique reste inconnue.
+
+Les mécanismes possibles entrainant la dégénérescence des neurones
+
+dopaminergiques sont nombreux. On peut citer l’augmentation du niveau de
+
+fer, celui de la monoamine oxydase (MAO-B), le stress oxydatif, le
+
+déficit énergétique, des mécanismes d’inflammation, l’excito-toxicité
+
+glutamatergique, la synthèse d’oxyde nitrique, la conformation protéique
+
+anormale et l’agrégation de ces protéines, la diminution de l’expression
+
+de facteurs trophiques, un déficit en antioxydants tels que le
+
+glutathion, des anomalies de la régulation calcique (Dauer et
+
+Przedborski 2003 ; Mandel et al. 2003) etc. Bien que ces mécanismes de
+
+neuro-dégénérescence soient nombreux les résultats récents semblent
+
+suggérer qu’il existerait deux mécanismes clés. Les mécanismes cités
+
+ci-dessus seraient la conséquence de ces deux dysfonctionnements
+
+primaires.
+
+Le premier de ces mécanismes clés serait lié au mauvais repliement et à
+
+l’agrégation de protéines qui conduiraient à la mort des neurones
+
+dopaminergiques de la SNc.
+
+Le second est basé sur un dysfonctionnement mitochondrial qui provoque un
+
+stress oxydatif amenant la mort neuronale. Dawson a relié ces deux
+
+mécanismes qui forment ainsi les différentes étapes d’un même processus
+
+(Dawson et Dawson 2003).
+
+Les éléments de ce mécanisme global sont : un déficit du complexe I
+
+mitochondrial, la synthèse d’α-synucléine et un défaut du système de
+
+dégradation ubiquitine-protéasome.
+
+Le déficit du complexe I mitochondrial semble jouer un rôle prépondérant
+
+et pourrait être à l’origine des deux mécanismes suivants.
+
+Déficit du complexe I mitochondrial
+
+La découverte que le 1-méthyl-4-phényl-1,2,3,6-tetrahydropyridine
+
+(MPTP) pouvait provoquer l’apparition de syndromes parkinsoniens a
+
+mis en avant qu’un défaut de la phosphorylation oxydative peut jouer
+
+un rôle dans la pathogénèse de la MP (Vila et Przedborski 2003). En
+
+effet, le MPTP bloque la chaine respiratoire mitochondriale en
+
+inhibant le complexe I (Nicklas et al. 1985 ; Dauer et Przedborski
+
+2003). Depuis, la mise en évidence de syndromes parkinsoniens suite
+
+à l’exposition au paraquat (Betarbet et al. 2000) a renforcé cette
+
+hypothèse majeure. De nombreuses études ont ainsi mis en évidence un
+
+déficit mitochondrial au niveau du complexe I chez des patients
+
+atteints de MP sporadique (Shapira et al. 1998 ; Orth et Schapira
+
+2001 ; Sherer et al. 2002). Il existe également une preuve génétique
+
+qu’une altération de l’activité du complexe I peut jouer un rôle
+
+dans le développement de la MP : un polymorphisme conduisant au
+
+remplacement d’une thréonine par une alanine dans la
+
+NADH-déshydrogénase 3 du complexe I diminue significativement le
+
+risque de développer la MP (van der Walt et al. 2003).
+
+Le MPTP tue les neurones dopaminergiques de manière spécifique car le
+
+MPP+, le métabolite actif du MPTP, pénètre dans les corps
+
+cellulaires via les transporteurs de la dopamine (Vila et
+
+Przedborski 2003).
+
+Le complexe I est un élément clé de la chaine respiratoire
+
+mitochondriale qui est la source majeure de synthèse de l’ATP
+
+cellulaire. Les défauts du complexe I provoquent une augmentation
+
+des radicaux libres et de la sensibilité à l’excito-toxicité
+
+glutamatergique (Sherer et al. 2002).
+
+La stimulation cérébrale profonde
+
+Introduction (historique)
+
+Figure 7. Radiographie présentant l'implantation des
+
+stimulateurs.
+
+Figure 6. Radiographie montrant l'implantation bilatérale
+
+d'électrodes.
+
+La stimulation cérébrale profonde (SCP) est une évolution non
+
+lésionnelle des techniques chirurgicales ablatives. Elle consiste en
+
+l’implantation d’électrodes de stimulation chronique au niveau de la
+
+structure cérébrale cible (Figure 6) en se guidant par les techniques
+
+d’IRM, de ventriculographie et d’électrophysiologie (enregistrement et
+
+stimulation par microélectrodes). L’électrode est reliée à un système de
+
+stimulation électrique généralement implanté au niveau sous-claviculaire
+
+(Figure 7).
+
+L’efficacité des méthodes ablatives est limitée, le caractère lésionnel,
+
+et donc irréversible, de ce traitement pouvant amener des complications
+
+motrices et neuropsychologiques, particulièrement lors de lésions
+
+bilatérales (Bravo et al, 1967), d’autre part il peut apparaître des
+
+récidives dans le cas de lésions insuffisante (Cooper et al, 1965).
+
+L’investigation électro-physiologique des cibles au cours du processus
+
+opératoire a permis de mettre en évidence la suppression du tremblement
+
+lors de la stimulation à haute fréquence du Vim (Benabid et al. 1987 ;
+
+1989 ; 1996 ; 2002). Cette méthode thérapeutique non destructrice et
+
+pouvant être qualifiée de fonctionnelle a été développée et appliquée
+
+par Benabid à Grenoble. Contrairement aux méthodes ablatives qui
+
+présentent des risques d’effets indésirables irréversibles, la SHF est
+
+réversible et modulable.
+
+Tout d’abord mise au point au niveau du thalamus (Benabid et al, 1987 et
+
+1989), la SCP a ensuite été appliquée au pallidum (Siegfried et Lippitz,
+
+1994 ; Krack et al, 19981) puis au noyau
+
+subthalamique suite à la mise en évidence de son rôle central dans la MP
+
+(Limousin et al 1995 ; Benabid et al, 1998 ; Krack et al, 19982 ; Benabid et al 2000 ; Krack et al. 2003).
+
+L’efficacité remarquable du traitement par SHF du NST en fait aujourd’hui
+
+le traitement de référence pour les formes avancées de la MP (Benabid et
+
+al. 2003). D’autres cibles apparaissent comme le PPN pour les symptômes
+
+axiaux.
+
+Parallèlement à la découverte de nouvelles cibles pour le traitement de
+
+la MP il a été envisagé avec succès d’avoir recours à la stimulation
+
+cérébrale profonde pour traiter d’autres affections, certaines pouvant
+
+se rapprocher de la MP comme les dystonies (Sun et al. 2007) ou
+
+d’autres, notamment l’épilepsie (Krauss et Koubeissi 2007), les troubles
+
+obsessionnels compulsifs (Lipsman et al. 2007), les douleurs chroniques
+
+(Rasche et al. 2006).
+
+Paramètres de la SHF
+
+Les électrodes de stimulation chroniques comportent quatre plots de
+
+stimulations possibles. Le choix de l’emplacement de l’électrode et du
+
+plot de stimulation ayant été déterminés au cours de l’intervention
+
+chirurgicale en recherchant le meilleur rapport bénéfices/effets
+
+secondaires, les paramètres de la stimulation peuvent ensuite être
+
+réglés et réajustés par le neurologue (Benabid et al. 1998, Limousin et
+
+al. 1995 et 1998).
+
+Les paramètres sont en général :
+
+type de stimulation : cathodique monopolaire
+
+fréquence des impulsions : 130 à 185 Hz
+
+durée des impulsions : 60 à 120 µs
+
+tension : 1 à 3 Volts
+
+L’efficacité de la SCP dépend de la fréquence (Benabid et al 1991, 1994,
+
+Moro et al 2002). La fréquence de stimulation efficace au niveau du NST
+
+est de 100 Hz au minimum, elle est supérieure à 80 Hz pour le pallidum.
+
+Il y a une relation linéaire entre l’intensité de stimulation et les
+
+effets qui vont de la diminution des symptômes jusqu’à l’apparition de
+
+mouvements anormaux. Par contre, la durée de l’impulsion n’a pas d’effet
+
+majeur.
+
+Effets thérapeutiques
+
+La SCP au niveau du NST améliore largement la qualité de vie des patients
+
+puisqu’elle agit sur tous les aspects de la triade parkinsonienne :
+
+tremblement, rigidité et akinésie. Les premiers effets bénéfiques
+
+surviennent dans les minutes qui suivent le début de la stimulation
+
+(Benabid et al. 1994). Sur le long terme la SCP est plus stable que le
+
+traitement à la L-dopa, fluctuations motrices et dyskinésies devenant
+
+mineures (Krack et al. 2003).
+
+Mécanismes d’action de la SCP
+
+Les mécanismes par lesquels la SCP produit cet effet thérapeutique si
+
+important sont très discutés et finalement assez peu étudiés. La
+
+stimulation ayant un effet thérapeutique similaire à celui de la lésion
+
+de la structure cible, cela suggère une hypothèse inhibitrice. Mais la
+
+stimulation électrique d’une structure cérébrale étant généralement
+
+considérée comme excitatrice il existe une importante polémique entre
+
+les tenants de l’inhibition et ceux de l’activation. Les résultats des
+
+différentes études menées étant souvent discordants il est important de
+
+les revoir en détail.
+
+Il y a trois angles d’approche différents et complémentaires qui ont été
+
+utilisés pour comprendre les mécanismes de la SCP :
+
+l’électrophysiologie, la neurochimie et la biologie moléculaire.
+
+Les données de l’électrophysiologie
+
+Dans des modèles lésionnels de la MP il a été décrit une
+
+hyperactivité électro-physiologique des neurones glutamatergiques du
+
+NST, associée à une hyperactivité des structures de sortie de la
+
+boucle des ganglions de la base (SNr et GPi ou noyau
+
+entopédoculopontin chez le rat). La lésion ou la SHF (à une
+
+intensité supérieure à 300 µA) du NST entraine, chez le rat 6-OHDA
+
+une diminution de l’activité basale du noyau entopédoculopontin et
+
+une augmentation de l’activité du pallidum (Burbaud et al. 1995 ;
+
+Benazzouz et al. 1995). Une diminution de l’activité pallidale a
+
+également été observée suite à la lésion du NST chez des singes MPTP
+
+(Hamada et al 1992 ; Guridi et al 1994). D’autres études confirment
+
+ces résultats au niveau du NST et du GPi (Boraud et al 1996 ;
+
+Dostrovsky et al 2000 ; Magarinos et al 2002).
+
+Par contre Hashimato montre une activation des fibres efférentes du
+
+NST vers le GPe et le GPi chez le singe MPTP lors de stimulations
+
+supérieures à 2V (Hashimato et al 2003).
+
+D’autres études montrent une étonnante association entre activation
+
+et inhibition (Garcia et al 2003). Cette étude a été réalisée sur
+
+tranche de tissu déplétée en dopamine. La stimulation provoque un
+
+double résultat : premièrement une inhibition de l’activité
+
+spontanée du NST puis l’apparition d’une activité induite par la
+
+stimulation constituée de bouffées de potentiels d’action (PA) d’une
+
+fréquence de 64 à 84 Hz. Cet effet réversible semble être généré par
+
+l’activation des canaux Na+ et Ca2+ de type L et est non sensible à la suppression
+
+GABAergique ou aminergique. Dostrovsky et Magarinos n’ont pas
+
+observé cet effet, probablement parce qu’ils ont utilisés des
+
+amplitudes de stimulation plus faibles qui ne permettaient pas la
+
+génération de PA par activation des canaux Na+.
+
+Malgré la mise au point de nouveaux matériels de mesure et
+
+d’algorithmes d’analyse il reste difficile de s’affranchir
+
+totalement des artefacts de stimulation.
+
+Les données de la neurochimie
+
+Différentes études ont été faites soit avec des dosages par
+
+micro-dialyse soit par tomographie par émission de positrons (TEP)
+
+avec du [11C]-raclopride.
+
+Les expériences de micro-dialyse montrent une augmentation des
+
+métabolites de la dopamine et une augmentation systématique du
+
+glutamate chez l’animal. Cette augmentation n’est pas observée chez
+
+l’homme par les études par TEP. La micro-dialyse chez l’homme montre
+
+même une diminution du glutamate. Il est possible que les canules de
+
+micro-dialyse, qui sont de dimension relativement importante,
+
+provoquent chez l’animal, une lésion qui serait à l’origine de cette
+
+augmentation du glutamate observée.
+
+L’exploration du rôle des voies GABAergiques et glutamatergiques dans
+
+les effets de la SCP a été faite par l’utilisation d’inhibiteurs
+
+pharmacologiques. Là encore les résultats sont contradictoires.
+
+Un effet neuro-protecteur a été observé au niveau de la SNr suite à
+
+la lésion ou à la stimulation du NST (Piallat et al 1996 ; Saji et
+
+al 1996 ; Nakao et al 1999 ; Carvalho et Nikkhah 2001 ; Paul et al.
+
+2004 ; Wallace 2004). L’hypothèse est qu’il est dû à la suppression
+
+des efférences glutamatergiques du NST vers la SNr qui auraient un
+
+effet excito-toxique. Les essais de thérapie génique montrant
+
+l’intérêt du transfert du gène de la GAD dans le NST vont également
+
+dans ce sens.
+
+Les données de la biologie moléculaire
+
+Il existe peu de travaux ayant étudié les mécanismes de la SCP par
+
+des approches de biologie moléculaire. L’équipe de Kerkerian-Le Goff
+
+a montré que la SHF induit l’expression de c-fos dans le NST et
+
+diminue celle de la cytochrome-oxydase. Ils ont également montré que
+
+l’augmentation de GAD67 provoquée par le 6-OHDA chez le rat est
+
+neutralisée au niveau de la SNr et du noyau entopédoculopontin mais
+
+pas du pallidum (Salin et al 2002 ; Bacci et al 2004).
+
+: Problématique
+
+La stimulation cérébrale profonde (SCP) est aujourd’hui un traitement
+
+majeur de la maladie de Parkinson et malgré sa très grande
+
+efficacité, ses mécanismes d’action restent obscurs. La polémique
+
+demeure vive entre les tenants de l’inhibition et ceux de
+
+l’activation.
+
+À l’examen des articles publiés il ne semble pas y avoir d’éléments
+
+définitifs pour répondre à cette question. Les données
+
+électro-physiologiques restent sujettes à caution du fait des
+
+difficultés à s’affranchir totalement des artefacts de stimulation.
+
+Les expériences de dialyse sont peut-être influencées par des
+
+lésions causées par le matériel. Enfin, la transposition des
+
+paramètres de stimulation utilisés chez l’homme vers l’animal ou des
+
+modèles in vitro est difficile à réaliser. Il
+
+n’existe pas de consensus à l’heure actuelle et la différence des
+
+paramètres pourrait expliquer la discordance apparente des résultats
+
+entre les études.
+
+Nous nous sommes donc orientés vers une approche globale, sans a
+
+priori, afin d’étudier l’effet de la stimulation sur les cellules.
+
+Pour cela nous avons mené une approche par analyse du transcriptome
+
+pour ensuite confirmer et affiner les résultats obtenus par d’autres
+
+méthodes.
+
+: Matériel et méthodes
+
+Etudes in vivo
+
+Animaux
+
+Les animaux utilisés sont des rats Wistar mâles ou des souris. Ils sont
+
+maintenus par groupe dans des cages adaptées avec accès à volonté à
+
+l’eau et aux granulés de nourriture, dans un local aux conditions
+
+contrôlées, conformément aux réglementations en vigueur. Chaque
+
+manipulation est réalisée de façon à limiter au maximum le stress et la
+
+souffrance des animaux.
+
+Prélèvements et traitement des tissus
+
+Fixations
+
+Perfusion au PFA
+
+Immédiatement après la fin de la stimulation l’animal est placé
+
+sur le dos pour permettre l’ouverture de la cage thoracique afin
+
+d’accéder au cœur. Une incision est pratiquée à la base du
+
+ventricule gauche pour introduire un cathéter jusqu’à l’aorte
+
+ascendante. Le cathéter est fixé par un clamp. L’aorte
+
+descendante est également clampée. Une incision est pratiquée
+
+dans l’oreillette droite pour faire circuler du sérum
+
+physiologique pour éliminer le sang du cerveau. L’animal est
+
+ensuite perfusé par la même voie avec du PFA 4% pour fixer les
+
+tissus.
+
+Après décapitation de l’animal, le cerveau est extrait de la
+
+boîte crânienne puis incubé dans du PFA 4% à 4°C pendant 4h. Le
+
+cerveau est ensuite transféré dans une solution de sucrose à 20%
+
+et laissé à 4°C jusqu’à ce qu’il descende au fond du tube par
+
+suite de la saturation des tissus. Le cerveau peut ensuite être
+
+congelé et conservé à -80°C.
+
+Congélation
+
+L’animal est décapité immédiatement après la fin de la
+
+stimulation. Le cerveau est rapidement extrait de la boîte
+
+crânienne et congelé dans des vapeurs d’azote liquide. Il est
+
+ensuite conservé à -80°C.
+
+Colorations
+
+Coloration rapide RAL555
+
+Cette coloration est réalisée avec le kit de coloration RAL555
+
+(Réactifs RAL, Martillac, France)
+
+Les lames histologiques portant les coupes sont plongées cinq
+
+fois une seconde dans trois bains successifs. Le premier est un
+
+fixateur à base de méthanol, le second est un mélange de
+
+fixation et coloration à base d’éosine et de PFA. Le dernier est
+
+une solution de coloration contenant du bleu de méthylène. Les
+
+lames sont ensuite rincées à l’eau.
+
+Coloration à l’hématoxyline
+
+Les coupes sont d’abord fixées par un bain de deux minutes dans
+
+de l’éthanol à 70% puis rincées à l’eau et colorées deux minutes
+
+à l’hématoxyline de Harris (réactifs RAL). Les lames sont
+
+ensuite rincées à l’eau et déshydratées par un traitement d’une
+
+minute à l’éthanol 70% puis une minute à l’éthanol pur.
+
+Immuno-histochimie anti-tyrosine hydroxylase
+
+Après une fixation de deux minutes à l’éthanol 70% les lames
+
+histologiques sont traitées pendant cinq minutes avec une
+
+solution de saturation composée de PBS de Dulbecco stérile (Life
+
+Technologies, Paisley, Écosse) et de 3% d’albumine sérique
+
+bovine stérilisée ou de 1% de lait en poudre écrémé.
+
+L’incubation de cinq minutes avec l’anticorps primaire
+
+(anticorps monoclonal de souris anti-tyrosine hydroxylase, clone
+
+TH-16, Sigma, Saint-Louis, USA) dilué dans la solution de
+
+saturation est suivie de cinq lavages d’une minute avec la
+
+solution de saturation. Les coupes sont ensuite incubées cinq
+
+minutes en présence de l’anticorps secondaire (anticorps de
+
+lapin anti-IgG de souris, couplé à la peroxydase) et lavées cinq
+
+fois comme précédemment. Le marquage est révélé avec le kit
+
+substrat peroxydase DAB (Vector, Burlingame, USA). L’intensité
+
+du marquage est contrôlée en direct sous la loupe binoculaire et
+
+la réaction est stoppée par un rinçage à l’eau. Les coupes sont
+
+enfin déshydratées par un passage d’une minute dans de l’éthanol
+
+70% puis une minute dans de l’éthanol 100%.
+
+Traitement de préservation des ARN
+
+Pour améliorer la protection des ARN vis-à-vis des RNases les coupes
+
+sont traitées avec du RNA later (Ambion,
+
+Austin, USA) avant d’être colorées. L’incubation en présence de RNA later doit être de trois minutes au
+
+minimum, mais peut être prolongée sans dommage plusieurs heures à
+
+température ambiante. Les lames doivent ensuite être rincées
+
+soigneusement à l’eau puis colorées comme décrit précédemment.
+
+Stimulation à haute fréquence in vivo
+
+Après anesthésie par injection intra-péritonéale d’hydrate de chloral à
+
+4% (1mL/100g de masse corporelle), l’animal est fixé dans un cadre
+
+stéréotaxique. Après incision de la peau du crâne, le crâne est percé à
+
+l’aide d’une mini foreuse. L’électrode de stimulation est ensuite
+
+implantée dans le cerveau selon les coordonnées stéréotaxiques de la
+
+cible.
+
+Le courant électrique de stimulation est un courant monophasique carré
+
+bipolaire de 500 µA avec une durée d’impulsion de 60 µs à une fréquence
+
+de 130 Hz (soit des intervalles de 7,7 ms (Figure 8). Il est délivré par
+
+un ensemble générateur-isolateur. Le second pôle de stimulation est
+
+constitué soit en plaçant l’animal sur une grille métallique soit par
+
+une pince au niveau de la patte antérieure ipsilatérale. La stimulation
+
+est maintenue pendant une durée de trois heures. Il est en effet
+
+difficile de maintenir l’anesthésie plus longtemps sans risque de mort
+
+de l’animal.
+
+Figure 8. Stimulation monophasique carrée. T1=60µs ; T2=7,7 ms ;
+
+amplitude=500µA.
+
+Etudes in vitro
+
+Culture cellulaire
+
+Lignée cellulaire PC12
+
+La lignée PC12 a été établie en 1976 (Greene et Tischler, 1976) à
+
+partir d’une tumeur de la glande surrénale (phéochromocytome) de
+
+rat. Elle répond au NGF en développant un phénotype neuronal. Ces
+
+cellules synthétisent et sécrètent des catécholamines (dopamine,
+
+adrénaline et noradrénaline) ce qui en fait un modèle pour les
+
+études de neurobiologie.
+
+Ces cellules sont cultivées en monocouche adhérente dans un milieu
+
+RPMI 1640 84% (SIGMA-Aldrich, France), supplémenté à 10% en sérum de
+
+cheval, 5% en sérum de veau fœtal, 200 mM de L-Glutamine et d'un
+
+mélange de 100 U.mL-1 de pénicilline et
+
+50 µg.mL-1 de streptomycine.
+
+Lignée cellulaire GH3
+
+La lignée GH3 a été établie en 1965 par Tashjian, à partir d'une
+
+tumeur pituitaire d’une femelle rat Wistar-Furth de 7 mois (Tashjian
+
+et al, 1968). Cette lignée a la propriété de produire des facteurs
+
+de croissance et de sécréter de la prolactine. Nous l’avons obtenue
+
+de la collection ATCC (American Type Culture Collection, Rockville,
+
+USA).
+
+Les cellules GH3 sont cultivées en monocouche adhérente dans un
+
+milieu Ham's F10 (SIGMA-Aldrich, France) 81,5%, supplémenté à 15% en
+
+sérum de cheval (GIBCO, Invitrogen France), 2,5% en sérum de veau
+
+fœtal (SIGMA-Aldrich, France), 200 mM L-Glutamine (Bio-Whittaker,
+
+France) et d'un mélange de 100 U.mL-1 de
+
+pénicilline et 50 µg.mL-1 de streptomycine
+
+(GIBCO, Invitrogen France).
+
+Conditions de culture
+
+Les cultures sont réalisées en incubateur à 37°C, en atmosphère
+
+humide et à 5% de CO2.
+
+Lorsque la confluence ou la densité cellulaire sont suffisantes, les
+
+cellules adhérentes sont détachées à l'aide d'une solution de
+
+trypsine-EDTA (0,25%-1mM). Elles sont comptées à l'aide d'un
+
+hématimètre de Neubauer avec exclusion au bleu Trypan et
+
+réensemencées à la densité désirée ou bien stockées dans l’azote
+
+liquide dans un milieu cryo-protecteur (milieu de culture
+
+supplémenté à 5% de DMSO (v/v)).
+
+Stimulation électrique in vitro
+
+Montage expérimental
+
+Le montage expérimental (modifié d’après Brevet et al, 1976) a été
+
+adapté à différents supports de culture cellulaire : boîte de Pétri
+
+de 10 cm de diamètre, plaques 12 ou 24 puits et lames de cultures.
+
+Pour les plaques multi-puits les puits de culture sont reliés en
+
+série par des ponts en titane qui assurent le passage du courant
+
+électrique d’un puits à l’autre (Figure 9).
+
+Figure 9. Montage expérimental pour la stimulation des
+
+cellules en culture en plaque 24 puits.
+
+Pour les boîtes de Pétri de 10 cm de diamètre les deux électrodes en
+
+titane de 8 cm de long qui fixées sur le fond de la boîte,
+
+parallèlement et à 3 cm l’une de l’autre. Ce système a l’avantage de
+
+permettre la stimulation d’un plus grand nombre de cellules
+
+simultanément (Figure 10).
+
+Figure 10. Montage expérimental pour la stimulation des
+
+cellules en culture en boîte de Pétri.
+
+Afin de pouvoir réaliser des observations au microscope le premier
+
+système a été adapté pour être appliqué avec des systèmes de culture
+
+en puits sur lames de microscope.
+
+Ces différents supports de culture sont intégrés dans un circuit
+
+électrique contenant un générateur et un isolateur permettant de
+
+délivrer le courant de stimulation désiré. Le courant de stimulation
+
+est contrôlé à l’aide d’un oscilloscope (Figure 11). Pendant la
+
+durée de la stimulation le support de culture est maintenu dans
+
+l’incubateur.
+
+Figure 11. Vue du système de stimulation en boîte de culture au
+
+début de la stimulation (la boîte est ensuite replacée dans
+
+l’incubateur).
+
+Paramètres de la stimulation électrique
+
+Les cellules à confluence sont stimulées à l’aide des dispositifs
+
+décrits avec un courant monophasique carré bipolaire de 500 µA
+
+pendant des durées de 3 ou 24 heures. La durée d’impulsion est de
+
+60 µs et la fréquence est fixée à 130 Hz (soit des intervalles de
+
+7,7 ms).
+
+Les cellules témoins sont cultivées dans les mêmes conditions mais
+
+sans application du courant électrique.
+
+Analyse d’expression génique
+
+Cette analyse est réalisée selon une approche globale par micro-array.
+
+Principe
+
+Le transcriptome est constitué de l’ensemble des ARN présents dans un
+
+échantillon soumis à des conditions données. L’analyse d’expression par
+
+micro-array permet d’obtenir simultanément des informations comparatives
+
+sur de très nombreux ARNm constituants le transcriptome de l’échantillon
+
+(Figure 12). On obtient ainsi une indication du niveau d’expression des
+
+gènes de l’organisme dans cet échantillon.
+
+Le principe du micro-array repose sur l’hybridation ADN-ADN, qui se fait
+
+de manière spécifique, par complémentarité de séquence. Le brin d’ADN de
+
+séquence connu, et dont la séquence est spécifique d’un gène de l’espèce
+
+étudiée est appelé par convention : la sonde. Les brins d’ADN issus de
+
+l’échantillon par rétro-transcription sont appelés cible complexe. Le
+
+terme complexe signifie que la cible est constituée d’une multitude de
+
+brins de séquences différentes.
+
+Figure 12. Schéma du protocole d’analyse du transcriptome par
+
+micro-array.
+
+Cibles
+
+Extraction des ARN
+
+L’ensemble des opérations sur les ARN doit être réalisé avec du
+
+matériel et des solutions exempts de RNases. Les ARN sont isolés par
+
+une méthode d’extraction de type phénol-chloroforme réalisée à
+
+l’aide du kit RNAgents
+
+®
+
+total RNA isolation system commercialisé par
+
+la société Promega. Cette technique a été utilisée avec de légères
+
+adaptations selon le type d’échantillon (tissus frais, coupes
+
+microscopiques ou cellules en culture).
+
+L’échantillon est dénaturé dans un tampon spécifique (thiocyanate de
+
+guanidine 4 M ; β-mercaptoéthanol 0,125 M ; N-lauryl sarcosine
+
+0,5% ; citrate de sodium 26 mM ; pH 6,8) en recourant, si nécessaire
+
+à un broyeur. Ce tampon permet de lyser les cellules et de dénaturer
+
+les complexes nucléoprotéiques. Les RNases endogènes sont inactivées
+
+par l’action du thiocyanate de guanidine et du β-mercaptoéthanol.
+
+L’ensemble des opérations est réalisé dans la glace afin de réduire
+
+encore l’activité des RNases.
+
+L’ajout d’un mélange de phénol-chloroforme-acide isoamylique
+
+(25:24:1), en présence d’acétate de sodium (1/10 du volume, 2M, pH
+
+4) permet de séparer l’ARN des autres composants cellulaires par
+
+solubilité différentielle. Les ARN se répartissent
+
+préférentiellement dans la phase aqueuse.
+
+Après récupération de la phase aqueuse, les ARN sont précipités par
+
+adjonction d’isopropanol (1/2 volume).
+
+Les ARN sont ensuite lavés à l’éthanol (70%) avant d’être solubilisés
+
+dans de l’eau.
+
+Dosage et contrôle de qualité
+
+Nous avons utilisé deux types de protocoles.
+
+Protocole classique
+
+Les ARN sont dosés par spectrométrie UV à 260 nm
+
+(1 DO ↔ 40 µg.mL-1). La pureté est
+
+évaluée par des dosages à 230 et 280 nm (présence de sels,
+
+protéines, phénol…).
+
+La qualité des ARN, c'est-à-dire le fait qu’ils n’ont pas été
+
+dégradés, est évaluée par la présence des ARNr 28S et 18S. Le
+
+rapport de quantité entre les deux doit être de deux environ.
+
+Ce contrôle de qualité peut être réalisé par migration
+
+électro-phorétique en gel d’agarose en conditions dénaturantes
+
+ou par Northern-blot avec une sonde 28S.
+
+L’inconvénient de ces méthodes est qu’elles utilisent une grande
+
+quantité d’ARN, plusieurs microgrammes, qui sont donc perdus
+
+pour l’analyse.
+
+Protocole Agilent 2100 Bioanalyzer
+
+Le système 2100 Bioanalyzer commercialisé
+
+par Agilent Technologies est un système d’analyse automatisé
+
+permettant de réaliser rapidement et simplement des migrations
+
+électro-phorétiques avec le dosage global et celui de chaque
+
+bande observée. Ce protocole ne nécessite qu’une très petite
+
+quantité d’ADN, de l’ordre de la centaine de nanogrammes.
+
+Northern blot
+
+Après séparation électrophorétique en gel dénaturant (agarose 1%,
+
+formaldéhyde 1,9%, tampon MOPS 1X) les ARN sont transférés sur
+
+une membrane de nylon. Le transfert est réalisé à l’aide d’un
+
+appareil à vide, en présence d’eau pendant 5 minutes, en
+
+solution basique 10 minutes, en tampon Tris pH 7,5 dix minutes,
+
+puis 2 heures avec du tampon SSC 10X. L’ARN est fixé à la
+
+membrane par un passage aux UV.
+
+La sonde oligonucléotidique 28S est marquée radioactivement par
+
+l’action de la T4 polynucléotide kinase en présence de γ(33P)ATP. Après précipitation à l’éthanol, en
+
+présence d’acétate de sodium et d’ADN de sperme de hareng, la
+
+sonde est reprise dans un volume approprié d’eau ultrapure. Le
+
+marquage est contrôlé par le comptage de la radioactivité de
+
+1 µL de la sonde.
+
+La membrane est préhybridée dans 10 mL de tampon de saturation
+
+(SSC 5X, Denhardt 5X, SDS 0,5%) contenant 100 µg.mL-1 d’ADN de sperme de hareng soniqué et
+
+dénaturé. Après 6 heures de préhybridation à 42°C, un mélange de
+
+sonde marquée (1 à 2 millions de cpm) et non marquée (5 µg) est
+
+ajouté. L’hybridation est poursivie à 42°C pendant au moins
+
+12 heures. Après 3 lavages de 5 minutes à température ambiante
+
+(SSC 2X, SDS 0,1%) un écran de phosphore est mis en exposition
+
+sur la membrane puis lu avec un phosphoimageur (BAS 5000, Fuji,
+
+Kanagawa, Japon).
+
+Rétro-transcription et marquage
+
+Le marquage de la cible complexe est réalisé par rétro-transcription
+
+d’ARN total avec incorporation de nucléotides radioactifs marqués au
+
+33P.
+
+Deux à cinq microgrammes d’ARN total de l’échantillon à analyser et
+
+0,2 ng d’un ARN de contrôle (gène de tomate) sont mis en présence de
+
+l’amorce poly-T (8µg dT25) pendant 8 minutes à 70°C. Afin de
+
+permettre l’hybridation, la température est ensuite diminuée
+
+lentement jusqu’à 50°C. Le mélange réactionnel (40 U de RNAsine,
+
+20 mM de dTTP, 20 mM de dATP, 20 mM de dGTP, 120 µM de dCTP, 30 µCi
+
+de αdCTP 33P, 100 U de rétro-transcriptase
+
+déficiente pour la fonction RNAse H, dans le tampon optimum) est
+
+ajouté pour un volume final de 30 µL. La réaction est réalisée à
+
+50°C pendant 2h avec ajout de 100 U de rétro-transcriptase après la
+
+première heure. Après la fin de la réaction les ADNc sont purifiés à
+
+l’aide d’une colonne microcon YM-50 (Millipore) afin d’éliminer les
+
+nucléotides non incorporés. Les ADNc sont récupérés dans un volume
+
+de 100 µL d’eau. Le contrôle de la réaction est réalisé par le
+
+comptage de la radioactivité de 1 µL de la cible complexe avec un
+
+compteur à scintillation β.
+
+Les acides nucléiques sont présents sous forme d’hétéro-duplex
+
+ADN-ARN, il est donc nécessaire de dégrader les ARN matrices avant
+
+de pouvoir réaliser l’hybridation sur les membranes sondes.
+
+L’incubation de la cible dans une solution à 0,25 M de NaOH, 0,2% de
+
+SDS et 15 mM d’EDTA à 68°C pendant 30 minutes permet la lyse des
+
+ARN. L’ajout de HCl et Tris (concentration finale de 0,12 M et
+
+250 mM respectivement) permet de neutraliser et tamponner la
+
+solution à pH 7. La cible complexe est conservée à 4°C.
+
+Immédiatement avant l’hybridation elle est dénaturée par un passage
+
+de 5 minutes à 100°C.
+
+Sondes
+
+Oligonucléotides sondes
+
+Pan® Rat Oligo Test Set de MWG Biotech
+
+Il s’agit d’un lot de 96 oligonucléotides extraits de la
+
+bibliothèque Pan® Rat 5K de MWG Biotech. Le
+
+design des séquences a été réalisé par MWG afin d’être
+
+spécifique du gène ciblé.
+
+Rat OligoLibrary TM de Sigma Genosys
+
+Il s’agit d’une banque de 4 854 oligonucléotides représentant
+
+4803 ARNm dont la séquence est disponible dans GenBank (version
+
+#121) et 51 contrôles.
+
+Les séquences oligonucléotidiques ont été optimisées par Sigma
+
+selon plusieurs critères :
+
+Épissage alternatif. La séquence est sélectionnée pour être
+
+commune au plus grand nombre de variants d’épissage alternatif
+
+du gène.
+
+Homologie croisée. L’homologie des séquences avec l’ensemble des
+
+séquences de rat connues a été minimisée.
+
+Qualité de séquence. Les oligonucléotides sont sélectionnés dans
+
+des régions pour laquelle la séquence connue est de grande
+
+qualité et en excluant les sites polymorphes probables.
+
+Contenu en GC. Il est équilibré afin d’assurer une température de
+
+fusion et des conditions d’hybridation homogènes pour toute la
+
+banque.
+
+Distance de l’extrémité 3’. La distance par rapport à l’extrémité
+
+3’ est minimisée afin de permettre les hybridations à partir de
+
+rétro-transcription utilisant une amorce dT.
+
+Structures secondaires. Les séquences sont optimisées afin de
+
+réduire la formation de structures secondaires et
+
+d’auto-hybridation.
+
+Gestion des oligonucléotides
+
+Les oligonucléotides sont reçus sous forme lyophilisée en plaques
+
+96 puits. Ils sont solubilisés à une concentration de 100 µM
+
+dans du SSC 1X coloré par du bleu de bromophénol.
+
+Préparation des membranes
+
+Dépôt des sondes
+
+Les sondes sont déposées sur des membranes de nylon N+ (Hybond) à
+
+l’aide d’un robot GMS 417 arrayer (MWG
+
+Biotech). Les dépôts sont espacés de 500 µm les uns des autres.
+
+Chaque sonde est déposée en double sur la membrane.
+
+Contrôle des membranes
+
+Le contrôle de qualité des membranes est réalisé sur une seule
+
+membrane par série, la reproductibilité du robot étant vérifiée
+
+par ailleurs. Il est réalisé par le marquage radioactif des
+
+oligonucléotides fixés sur la membrane par une réaction de
+
+phosphorylation catalysée par la T4 polynucléotide kinase (El
+
+Atifi et al 2003.).
+
+Après prétraitement de la membrane (tampon de la T4
+
+polynucléotide kinase ; Tween 2% ; BSA 12%) la T4 polynuclétide
+
+kinase et le γ-ATP 33P sont ajoutés. Après
+
+lavage à 60°C dans un tampon 1% SDS, SSC 0,1X, le résultat est
+
+révélé au phospho-imageur.
+
+Ce contrôle permet d’obtenir une information qualitative et
+
+quantitative des dépôts sur la membrane.
+
+Hybridation
+
+Les membranes sont pré-hybridées 24h à 55°C dans un tampon SSC 5X,
+
+Denhardt 5X, 1 mg.mL-1 d’ADN de sperme de saumon et
+
+0,5% SDS afin de saturer la membrane et limiter les hybridations non
+
+spécifiques. La cible complexe est ensuite ajoutée et l’hybridation est
+
+poursuivie à 55°C pendant 4 jours. Les membranes sont ensuite lavées
+
+dans un tampon SSC 2X, 0,5% SDS à 45°C pendant 3 heures, puis séchées à
+
+l’air avant d’être révélées.
+
+Révélation
+
+Un écran phosphore est exposé sur les membranes pendant plusieurs jours,
+
+il est ensuite révélé par lecture avec un phospho-imageur à haute
+
+résolution (PhosphoImager BAS-5000, Fuji-Film™). L’intensité de chaque
+
+spot est ensuite quantifiée à l’aide du logiciel Array Gauge (Fuji).
+
+Analyse
+
+Pour chaque membrane le bruit de fond moyen est calculé et retranché des
+
+valeurs brutes. Chaque gène étant représenté par deux spots sur la
+
+membrane, moyenne et écart-type sont calculés. Lorsque l’une des valeurs
+
+est manifestement faussée (absence du spot, débordement du spot voisin…)
+
+le gène est exclu des analyses ultérieures. Pour normaliser des
+
+expériences entre elles, la somme des signaux de chaque membrane est
+
+réalisée et son rapport avec la somme des signaux d’une membrane de
+
+référence est calculé. Les intensités de chaque membrane sont ensuite
+
+corrigées par le facteur obtenu. Seuls les gènes dont l’expression est
+
+modifiée d’un facteur supérieur à 2 entre deux conditions étudiées sont
+
+considérés pour des analyses ultérieures.
+
+Analyse d’expression protéique
+
+Par incorporation de méthionine marquée
+
+Principe
+
+Des cellules sont cultivées en présence de méthionine marquée au 35S. Le marqueur sera incorporé par la cellule
+
+dans les protéines néo-synthétisées qui pourront ainsi être
+
+détectées par autoradiographie.
+
+Incorporation de méthionine 35S
+
+Des cellules (PC12 ou GH3) sont cultivées en boîtes de Pétri de
+
+10 cm, elles sont soumises ou non (contrôle) à une stimulation
+
+électrique tel que décrit précédemment. Elles sont mises en présence
+
+de 50 µCi de méthionine-35S pendant toute la
+
+durée de la stimulation (3 h ou 24 h).
+
+Préparation de l’extrait protéique
+
+Après avoir été lavées trois fois avec du PBS pour éliminer la
+
+radioactivité non incorporée, les cellules sont récupérées par
+
+grattage puis centrifugation. Le culot est repris dans 80 µl de
+
+tampon de lyse Reporter Lysis Buffer 5X
+
+(Promega), supplémenté par un cocktail d'inhibiteurs de protéases
+
+Complete (Roche), après centrifugation le
+
+surnageant contenant les extraits protéiques cellulaires est
+
+aliquoté et conservé à -80°C. Afin de limiter la dégradation
+
+protéique, toutes ces opérations sont réalisées sur de la glace.
+
+Séparation et autoradiographie
+
+La séparation des protéines est réalisée par électrophorèse en gel
+
+SDS-PAGE (12% d’acrylamide). Des dépôts de 10 µg de protéines sont
+
+réalisés, en parallèle un marqueur de taille moléculaire Full range Rainbow (Amersham Biosciences,
+
+Grande-Bretagne) est déposé. Après migration, le gel est exposé,
+
+environ 6 heures, sur un écran phosphore (Image Plate Fujifilm) qui
+
+est ensuite révélé à l’aide d’un phospho-imageur (PhosphoImager
+
+BAS-5000, Fuji-Film™; Raytest, Paris la Défense, France). Les
+
+données sont ensuite analysées (Figure 13) à l’aide du logiciel
+
+Image Reader (Fuji).
+
+Figure 13. Analyse quantitative des protéines marquées
+
+radioactivement. Le logiciel Image Reader localise les bandes sur la
+
+piste de migration (à gauche), puis calcule l’intensité par unité de
+
+surface de chacune (à droite). Par SELDI-TOF
+
+Par spectrométrie de masse
+
+Principe
+
+La spectrométrie de masse SELDI-TOF (Surface
+
+Enhanced Laser Desorption Ionization-Time Of Flight) est un
+
+outil d’analyse protéique combinant la sélection d’une partie de
+
+l’échantillon selon ses propriétés, par chromatographie d’affinité,
+
+avec une analyse par spectrométrie de masse en temps de vol (Figure 14).
+
+Nous avons utilisé le système commercialisé par Ciphergen Biosystem (Palo Alto, Californie, USA).
+
+Figure 14. Principe de la spectrométrie de masse SELDI-TOF.
+
+L’échantillon protéique à analyser est d’abord déposé sur la surface
+
+chromatographique d’une puce (ProteinChip). Chaque puce comporte
+
+huit spots, permettant d’analyser huit échantillons en parallèle. Il
+
+existe différents types de surfaces chromatographiques (échangeuse
+
+d’anions ou de cations, hydrophobe, ions métalliques ou permettant
+
+la fixation de molécules sondes telles que anticorps, récepteurs ou
+
+ligands, acides nucléiques…) permettant de sélectionner la fraction
+
+d’intérêt de l’échantillon.
+
+L’utilisation de ces surfaces permet de réduire un échantillon
+
+biologique complexe (fluides biologiques tels que sérum, plasma,
+
+urine, liquide pleural…, ou extraits protéiques bruts issus de
+
+tissus ou cellules) à une fraction dotée de propriétés communes. En
+
+permettant ainsi l’analyse d’un sous-protéome, la technique rend
+
+possible la mise en évidence et l’étude de protéines non
+
+majoritaires. De plus l’identification d’une protéine à partir d’un
+
+sous-protéome particulier permet de faciliter la mise en œuvre de sa
+
+purification ultérieure.
+
+Protocole
+
+Figure 15. Shéma de principe de l’analyse protéomique SELDI-TOF.
+
+Dépôt (Figure 15)
+
+Quelques microlitres de l’extrait brut sont déposés sur le
+
+spot de la barrette ProteinChip®. Les
+
+protéines de l’échantillon ayant une affinité pour la
+
+surface chromatographique utilisée s’y lient.
+
+Lavage
+
+Le lavage des spots permet d’éliminer les protéines non
+
+retenues à la surface, ainsi que toute trace de sels,
+
+détergents… qui ont été apportés avec l’échantillon. Ceci
+
+permet de s’affranchir de différences dues au mode de
+
+préparation de l’échantillon.
+
+Cette étape est optimisable et permet en adaptant la
+
+stringence des lavages d’augmenter encore la spécificité de
+
+la sous-population à analyser.
+
+Dépôt de la matrice
+
+Après séchage de la surface la solution contenant la matrice
+
+EAM (Energy Absorption Molecules) est
+
+déposée sur les spots. La matrice va cristalliser avec les
+
+protéines retenues à la surface et faciliter leur désorption
+
+et leur ionisation par le laser du spectromètre.
+
+Spectrométrie de masse
+
+Après leur ionisation les protéines vont voler dans le tube,
+
+leur vitesse est proportionnelle au rapport M/Z
+
+(masse/charge). On obtient ainsi un profil protéique qui
+
+peut être analysé avec les logiciels ProteinChip et
+
+Biomarker Wizard.
+
+Analyse d’extrait protéique de cellules en culture
+
+Nous avons utilisé des barrettes H50, hydrophobes, avec la technique
+
+de dépôt dite “en gouttes” (Figure 16).
+
+Figure 16. Dépôt en goutte sur une barrette.
+
+Prétraitement
+
+La surface chromatographique de la barrette doit être activée par
+
+un traitement spécifique. La surface hydrophobe H50 est activée
+
+à l'acétonitrile 5% en PBS pendant 5 minutes à température
+
+ambiante, rincée à l’eau distillée puis incubée en acétonitrile
+
+10%, acide trifluoroacétique 0,1% et NaCl 200 mM dans du PBS,
+
+pendant 5 minutes supplémentaires.
+
+Dépôt des échantillons
+
+Cinq microgrammes de protéines dans 10 µL de tampon de lyse
+
+(Promega) sont incubés en goutte sur la barrette pendant 30
+
+minutes à température ambiante dans une chambre humide.
+
+Lavages
+
+Les spots sont rincés 3 fois avec 5 µl d’acétonitrile 10%, acide
+
+trifluoroacétique 0,1% et NaCl 200 mM dans du PBS puis
+
+séchés.
+
+Dépôt de la matrice
+
+La matrice est constituée d’une solution d’acide sinapinique dans
+
+de l’acétonitrile 50% et acide trifluoroacétique 0,5%. La
+
+solution est centrifugée 2 minutes à 14 000 rpm à température
+
+ambiante et la matrice est prélevée dans le surnageant en
+
+évitant les particules non dissoutes. La matrice peut alors être
+
+conservée quelques jours à 4°C et à l’abri de la lumière. Deux
+
+dépôts successifs de 1 µL de matrice sont faits sur chaque spot,
+
+puis les barrettes sont séchées à l’abri de la lumière jusqu’à
+
+la lecture.
+
+Lecture
+
+L’intensité du bombardement laser peut être réglée, ce qui permet
+
+de sélectionner les masses des protéines d’intérêt. Plus
+
+l’intensité est élevée, plus les protéines de haut poids
+
+moléculaire vont pouvoir être ionisées et donc détectées.
+
+Nous avons utilisé trois paramètres d’intensité différents pour
+
+analyser chaque spot : 160, 175 et 190. Ces paramètres
+
+permettent d’analyser respectivement les petites masses, les
+
+masses intermédiaires et les hautes masses moléculaires.
+
+Analyse des données
+
+Le profil SELDI-TOF est normalisé à l’aide du logiciel
+
+Bio-pattern, en utilisant une normalisation globale débutant
+
+après 2500 Daltons afin d’éviter le bruit de fond de la matrice.
+
+Un repérage automatique des pics est effectué. L’analyse
+
+statistique des données quantitatives est ensuite réalisée (test
+
+de Student), ainsi qu’une analyse de type clustering d’Eisen, similaire à celle effectuée pour
+
+le transcriptome (Eisen et al 1998).
+
+Imagerie protéomique tissulaire
+
+L’appareil SELDI-TOF PCS 4000 (Ciphergen) permet la détermination
+
+précise de la localisation des flashs laser ce qui permet d’analyser
+
+le profil protéique local en différents points du spot (Figure 17) avec une
+
+résolution spatiale de 50 microns. Cette propriété associée à la
+
+technique de dépôt de coupes cryogéniques de tissus directement sur
+
+les spots des barrettes (Figure 17) permet de réaliser de l’imagerie
+
+protéomique tissulaire (Bouamrani et al. 2006).
+
+Figure 17. Interface de localisation des flashs laser. Dépôt d’une
+
+coupe cryogénique sur un spot d’une barrette.
+
+: Résultats
+
+Premières expériences in vivo
+
+L’étude a commencé par une approche in vivo à partir
+
+des modèles de rats stimulés mis au point dans le laboratoire pour de
+
+nombreuses autres études. Il était primordial de valider ces modèles pour
+
+des analyses de l’ARN. L’ARN est en effet extrêmement fragile du fait de
+
+l’action des RNases extracellulaires présentes dans le tissu d’origine. Les
+
+différents traitements réalisés ensuite sur le tissu prélevé peuvent
+
+également dégrader l’ARN et donc influer fortement sur la qualité des
+
+résultats obtenus.
+
+Fixation des tissus et qualité des ARN
+
+Traditionnellement les cerveaux disséqués sont fixés au PFA comme décrit
+
+précédemment. Nous avons comparé cette méthode de fixation à une simple
+
+congélation rapide dans des vapeurs d’azote liquide.
+
+Nous avons mis en évidence que la fixation au PFA des cerveaux provoque
+
+une forte dégradation des ARN. En conséquence nous avons décidé
+
+d’abandonner cette méthode pour adopter celle de la congélation rapide
+
+qui permet de maintenir l’intégrité des ARN pour les analyses
+
+ultérieures.
+
+Coloration des tissus
+
+Notre but initial étant d’analyser l’effet de la SCP sur différentes
+
+structures cérébrales nous avons testé l’influence sur l’intégrité des
+
+ARN de plusieurs techniques de coloration des coupes histologiques de
+
+cerveau congelé.
+
+Nous avons d’abord comparé un kit de coloration rapide RAL555 qui permet
+
+de colorer les coupes à l’éosine et au bleu de méthylène en trois étapes
+
+de 5 secondes, et une coloration à l’hématoxyline de Harris plus longue
+
+mais en moins d’étapes (Figure 18).
+
+Figure 18. Coupes de cerveau de rat réalisées au niveau de la substance
+
+noire. Coloration à l’hématoxyline de Harris ; immuno-histochimie rapide
+
+anti-TH ; coloration rapide RAL555.
+
+L’analyse par électrophorèse des ARN extraits de tissus colorés par ces
+
+méthodes (Figure 19) a révélé l’impossibilité d’obtenir des ARN non
+
+dégradés suite à la coloration rapide RAL555. Il était par contre
+
+possible d’obtenir un profil d’ARN non dégradé avec la coloration à
+
+l’hématoxyline, malheureusement pas de façon systématique.
+
+Dans le but d’affiner et de faciliter la localisation des structures
+
+cérébrales nous avons étudié une méthode de coloration
+
+immuno-histochimiques pour mettre en évidence la tyrosine hydroxylase.
+
+Nous avons optimisé les techniques habituelles en réduisant les étapes
+
+et les durées d’incubation. Malheureusement, s’il a été possible de
+
+mettre au point une méthode permettant un marquage efficace de la TH il
+
+a été impossible d’obtenir des ARN d’une qualité satisfaisante suite à
+
+l’immuno-histochimie.
+
+Figure 19. Gel de contrôle de qualité des ARN extrait dans les
+
+différentes conditions de coloration. Ø : tissu contrôle sans traitement
+
+de coloration ; H : coloration à l’hématoxyline de Harris ; RH : idem +
+
+traitement au RNA later ; Rac : immuno-histochimie + traitement RNA
+
+later ; 555 : coloration rapide RAL555 ; R555 : idem + traitement RNA
+
+later.
+
+Agent de stabilisation
+
+Malgré toutes les optimisations réalisées, il est impossible d’obtenir
+
+systématiquement des ARN de bonne qualité. Environ 25% des échantillons
+
+sont en effet dégradés en dépit de toutes les précautions. Nous avons
+
+donc introduit l’utilisation du RNA later qui est
+
+normalement un agent de conservation, comme agent de stabilisation (voir
+
+matériel et méthode p51). Ceci permet d’améliorer encore la possibilité
+
+d’obtenir des ARN de qualité optimale (Figure 20). Toutes les
+
+extractions d’ARN avec ce protocole optimisé ont été de bonne qualité,
+
+mais cela ne doit pas dispenser de faire une analyse de qualité avant
+
+toute étude de l’échantillon.
+
+Figure 20. Northern blot de contrôle de qualité des ARN. Une sonde
+
+radioactive complémentaire de l’ARNr 28S est utilisée. Témoin : ARN
+
+extrait sans traitement du tissu ; H : ARN dégradé par la coloration à
+
+l’hématoxyline de Harris ; RH : ARN préservé par le prétraitement au RNA
+
+later.
+
+Qualité des ARN et micro-array
+
+Le laboratoire a développé depuis plusieurs années la technique d’analyse du
+
+transcriptome par micro-array (El Atifi et al 2002). Les contrôles de
+
+qualités ont toujours été au centre des préoccupations (El Atifi et al
+
+2003). Dans le domaine de l’analyse moléculaire in
+
+situ, en particulier avec microdissection, la plupart des publications
+
+ne font pas mention de contrôle de qualité des ARN utilisés pour l’analyse.
+
+Nous avons voulu vérifier si la qualité des ARN influe ou non sur la validité
+
+des résultats de ce type d’expériences. Nous avons donc fait des analyses
+
+sur les membranes MWG à 96 gènes avec des ARN extraits à partir de coupes de
+
+cerveau colorées à l’hématoxyline. Nous avons choisi quatre échantillons :
+
+deux non dégradés et deux présentant un profil de dégradation partielle
+
+d’après une analyse sur Bioanalyzer Agilent (Figure 21).
+
+Figure 21. Image type gel d’un ARN non dégradé (à gauche) et d’un ARN
+
+présentant un profil de dégradation partielle (à droite). Électrophérogramme
+
+de l’ARN non dégradé (en haut) et partiellement dégradé (en bas).
+
+L’analyse micro-array de ces échantillons fait apparaître un nombre important
+
+de différences dont certaines avec des niveaux d’expression apparents deux
+
+fois plus élevés ou plus faibles (Tableau 4).
+
+Tableau 4. Liste représentative des gènes dont le niveau d’expression
+
+apparent est différent dans les échantillons d’ARN partiellement dégradés.
+
+Le facteur de variation est positif pour les gènes surexprimés dans les
+
+échantillons dégradés, il est négatif pour les gènes sous-exprimés.
+
+Par l’analyse en clustering d’Eisen il est possible de
+
+discriminer les échantillons dégradés et non dégradés (Figure 22). Ces
+
+résultats montrent que la qualité des ARN utilisés lors d’expériences de
+
+micro-array est extrêmement importante et qu’il est donc indispensable de
+
+contrôler cette qualité.
+
+Figure 22. Dendrogramme pour une analyse sur l’ensemble des 96 gènes ;
+
+dendrogramme à partir des gènes les plus significatifs. Dans les deux cas
+
+les ARN dégradés et non dégradés sont discriminés par le logiciel d’analyse.
+
+Les gènes surexprimés sont en vert, les gènes sous-exprimés en rouge.
+
+Etudes in vitro
+
+L’étude in vivo nécessite la mise au point d’un
+
+protocole permettant : la localisation précise de la structure étudiée ;
+
+l’isolement de cette structure ; l’extraction d’une quantité suffisante
+
+d’ARN pour l’étude et pour des contrôles de qualité ; l’obtention d’ARN non
+
+dégradés. N’ayant pas réussi à remplir la totalité de ces conditions, nous
+
+avons envisagé de réaliser une étude in vitro dans un
+
+premier temps.
+
+Criblage d’expression génique
+
+Afin de rechercher les mécanismes cellulaires et moléculaires mis en jeu
+
+par la stimulation électrique à haute fréquence nous avons réalisé un
+
+criblage d’expression génique par micro-array sur des cellules en
+
+culture (PC12) soumises ou non à une stimulation à haute fréquence.
+
+Ces expériences ont été réalisées à l’aide du montage expérimental mis au
+
+point par Rong Xia (Figure 23). Elle a démontré la non-toxicité du
+
+système après des durées de stimulation de 3 ou 24 h (Xia et al. 2007).
+
+Figure 23. Montages expérimentaux permettant la SHF des cellules en
+
+culture. Le système est constitué d’un générateur, d’un isolateur et
+
+d’un dispositif de culture-stimulation. Deux dispositifs de culture ont
+
+été utilisés, l’un en puits dans lequel les 12 puits centraux sont mis
+
+en série par des ponts en titane, l’autre en boite de Pétri sur le fond
+
+de laquelle sont fixées deux électrodes en titane.
+
+Une étude préliminaire a été menée sur les membranes à 96 gènes portant
+
+les oligonucléotides fournis par MWG Biotech. Cette étude a permis
+
+d’identifier un certain nombre de gènes dont l’expression est modifiée
+
+par le traitement (Tableau 5 et Figure 24).
+
+Tableau 5. Niveau d’expression, en unité arbitraire, ±
+
+l’intervalle de confiance, des cellules PC12 en condition contrôle et
+
+SHF pendant 3 h. Le facteur de diminution de l’expression dans les
+
+cellules stimulées est indiqué (p&lt;0,05 sauf ‡
+
+p&lt;0,01 et ° p=0,06).
+
+.
+
+Tous les gènes analysés dans ces expériences, dont le niveau d’expression
+
+est changé fortement, sont sous-exprimés après traitement par SHF. Ce
+
+set d’oligonucléotides n’offrant pas toutes les garanties de contrôle de
+
+qualité, nous avons par la suite utilisé les oligonucléotides fournis
+
+par Sigma Genosys. L’étude menée avec les membranes portant les
+
+oligonucléotides Sigma a permis d’analyser les changements d’expression
+
+de 4803 gènes. Nous avons mis en évidence, de manière significative, que
+
+37 gènes sont sous-exprimés (Tableau 6) suite au traitement à haute
+
+fréquence, dont trois sont totalement réprimés, et que 19 gènes sont
+
+surexprimés (Tableau 7), dont quatre n’étaient pas détectable dans la
+
+condition contrôle.
+
+Figure 24. Niveau d’expression, en unité arbitraire, des gènes dont
+
+l’expresFsion est fortement modifiée par la SHF. L’intervalle de
+
+confiance est indiqué.
+
+Tableau 6. Gènes inhibés dans les cellules PC12 après 3 h de SHF.
+
+1 moyenne du niveau d’expression (± l’intervalle de confiance) en unité
+
+arbitraire dans la condition contrôle.
+
+2 moyenne du niveau d’expression (± l’intervalle de confiance) en unité
+
+arbitraire dans l’échantillon soumis à la stimulation électrique à haute
+
+fréquence (SHF)
+
+3 facteur de variation de l’expression entre les conditions contrôles et
+
+SHF. Les différences entre les valeurs contrôle et SHF sont
+
+statistiquement significatives (test de Student, unilatéral,
+
+hétéroscédastique) avec p&lt;5% ( ‡ :
+
+p&lt;1%).
+
+Tableau 7. Gènes activés dans les cellules PC12 après 3 h de SHF.
+
+1 moyenne du niveau d’expression (± l’intervalle de
+
+confiance) en unité arbitraire dans la condition contrôle.
+
+2 moyenne du niveau d’expression (± l’intervalle de
+
+confiance) en unité arbitraire dans l’échantillon soumis à la
+
+stimulation électrique à haute fréquence (SHF)
+
+3 facteur de variation de l’expression entre les
+
+conditions contrôles et SHF. Les différences entre les valeurs contrôle
+
+et SHF sont statistiquement significatives (test de Student, unilatéral,
+
+hétéroscédastique) avec p&lt;5% ( ‡ :
+
+p&lt;1%).
+
+Cette action majoritairement inhibitrice, sur des gènes liés notamment à
+
+la synthèse (eef1α2, eif5, uba56, nudt6-gfg, protéines ribosomales P34,
+
+S2, S9, L8, L8a, L13a, L14, L32, ubiquitine-L40) ou à la dégradation
+
+(psma2, psmd1, uba52, ube2i, prei3, trypsine Vb, cma1, ubiquitine-L40)
+
+protéique nous ont conduit à réaliser une analyse de l’expression
+
+protéique dans des conditions de stimulation. Il faut aussi noter la
+
+régulation de gènes liés à la transcription et à la maturation des ARN
+
+(npm1, hrnpk, hnrpa1, hnrpf, nol5, nxph4, ak2, nr1h2, cebpb).
+
+Analyse de l’expression protéique
+
+Afin de vérifier si la SHF a une influence globale sur la production
+
+protéique des cellules, telle que suggérée par les résultats de
+
+l’analyse transcriptomique, nous avons utilisé deux méthodes :
+
+l’incorporation de méthionine marquée au 35S et la
+
+spectrométrie de masse SELDI-TOF.
+
+Incorporation de méthionine marquée
+
+Des expériences indépendantes ont été menées sur les lignées
+
+cellulaires PC12 et GH3. Elles montrent une diminution significative
+
+de l’incorporation de méthionine marquée dans les conditions de
+
+stimulation HF par rapport au contrôle. Cette diminution est
+
+constatée après une stimulation de 24 h mais également après une
+
+stimulation de 3 h.
+
+Les protéines sont détectées après électrophorèse (SDS-PAGE) de
+
+l’extrait cellulaire puis analysées quantitativement à l’aide d’un
+
+détecteur à haute-sensibilité PhosphoImager.
+
+La comparaison avec les bandes du standard de masse moléculaire Full range Rainbow 
+
+TM (Amersham), montre que les protéines
+
+détectées présentent des masses comprises entres 20 et 75 kDa.
+
+Les quantités de radioactivité incorporée, mesurées par unité de
+
+surface de gel, ont été comparées entre les cellules témoins et
+
+stimulées (Figures 25 à 32). Une analyse statistique des résultats
+
+par le test de Student montre que la diminution de l’incorporation
+
+de méthionine marquée est significative dans les cellules stimulées
+
+par rapport aux cellules contrôles et ceci quelles que soient les
+
+cellules (GH3 ou PC12) ou le temps de stimulation (3 h ou 24 h).
+
+Figure 25. Profil de migration protéique pour les cellules GH3 après
+
+3h de stimulation. noir : contrôle ; bleu : SHF 3h.
+
+Figure 26. Comparaison pour les cellules GH3, après 3h de traitement,
+
+de la quantité de radioactivité par unité de surface pour chacune
+
+des bandes protéiques. Bleu : contrôle ; rose : SHF. L’inhibition
+
+globale est de 28,64%. Pour chacune des 4 expériences indépendantes
+
+l’inhibition globale est de 25,85% (p=0,044) ; 22,16%
+
+(p&lt;0,001) ; 26,85%(p=0,055) ; 39,69% (p&lt;0,001).
+
+Figure 27. Profil de migration protéique pour les cellules GH3 après
+
+24h de stimulation. noir : contrôle ; vert : SHF 24h.
+
+Figure 28. Comparaison pour les cellules GH3, après 24h de
+
+traitement, de la quantité de radioactivité par unité de surface
+
+pour chacune des bandes protéiques. Bleu : contrôle ; rose : SHF.
+
+L’inhibition globale est de 46,53%. Pour chacune des 4 expériences
+
+indépendantes l’inhibition globale est de 58,35% (p&lt;0,001) ;
+
+52,58% (p&lt;0,001) ; 40,94% (p=0,001) ; 34,27% (p=0,001)
+
+Figure 29. Profil de migration protéique pour les cellules PC12 après
+
+3h de stimulation. noir : contrôle ; rouge : SHF 3h.
+
+Figure 30. Comparaison pour les cellules PC12, après 3h de
+
+traitement, de la quantité de radioactivité par unité de surface
+
+pour chacune des bandes protéiques. Bleu : contrôle ; rose : SHF.
+
+Pour chacune des 2 expériences indépendantes l’inhibition globale
+
+est de 16,73% (p&lt;0,001) ; 12,59% (p&lt;0,01).
+
+Figure 31. Profil de migration protéique pour les cellules PC12 après
+
+24h de stimulation. Noir : contrôle ; bleu : SHF 24h.
+
+Figure 32. Comparaison pour les cellules PC12, après 24h de
+
+traitement, de la quantité de radioactivité par unité de surface
+
+pour chacune des bandes protéiques. Bleu : contrôle ; rose : SHF.
+
+Pour chacune des 2 expériences indépendantes l’inhibition globale
+
+est de 17,16% (p&lt;0,001) ; 25,62% (p=0,003).
+
+Ces résultats de l’incorporation de méthionine par les cellules
+
+montrent que la SHF a une action inhibitrice globale sur la synthèse
+
+protéique des cellules avec des diminutions de 12 à 58 %. Il
+
+apparaît que les cellules GH3 sont plus sensibles quantitativement à
+
+la stimulation que les cellules PC12.
+
+SELDI-TOF
+
+Devant la difficulté pour réaliser in vivo
+
+l’étude de l’expression protéique globale, nous avons utilisé la
+
+technique d’imagerie protéomique in situ mise
+
+au point par le labo (Bouamrani et al. 2006) qui permet d’effectuer
+
+une cartographie globale des protéines. Il nous est apparu
+
+intéressant de réaliser au cours de cette étude une analyse avec un
+
+spectromètre de masse SELDI-TOF (Surface
+
+E
+
+nhanced Laser Desorption/Ionization-Time Of
+
+Flight).
+
+De plus, avec le choix des différentes surfaces chromatographiques,
+
+il est possible de faire des analyses sur des fractions de
+
+l’échantillon ayant des propriétés physico-chimiques particulières
+
+(sub-protéomes). Après des études préliminaires nous avons choisi la
+
+surface H50 (hydrophobe) qui montre les profils les plus
+
+discriminants. Deux types d’analyse ont été appliqués sur les
+
+résultats bruts, une comparaison multiparamétrique des données
+
+quantitatives de différentes protéines et peptides détectés afin de
+
+déterminer ceux qui augmentent ou diminuent et une analyse non
+
+supervisée par clustering (Eisen’s Cluster et Treeview
+
+software). Cette dernière méthode permet de regrouper les
+
+échantillons en fonction de similarités dans les niveaux de chaque
+
+pic protéique. Il est ainsi possible d’obtenir un profil typique des
+
+conditions expérimentales.
+
+Les résultats SELDI-TOF sur les cellules GH3 et PC12 montrent que la
+
+plupart des peptides et protéines détectés sont quantitativement
+
+diminués après un traitement de 3h par SHF (Figure 33).
+
+Pour les cellules GH3, 32 des 47 pics détectés, soit 68%, sont
+
+diminués par la SHF. Pour les cellules PC12 ce sont 28 des 33 pics
+
+qui sont diminués par la SHF, soit 85%. Il existe donc un certain
+
+nombre de pics qui sont augmentés par la SHF ce qui tend à montrer
+
+que la SHF agit par des mécanismes spécifiques et non par une simple
+
+diminution de l’activité cellulaire.
+
+Il semble que les cellules PC12 soient plus sensibles qualitativement
+
+à la stimulation que les cellules GH3.
+
+L’analyse par clustering non supervisé permet
+
+de regrouper les cellules contrôles d’une part et les cellules
+
+traitées par SHF d’autre part, faisant apparaître ainsi une
+
+signature protéomique spécifique de la SHF (Figure 34).
+
+Figure 33. Distribution des peptides et protéines détectés.
+
+Comparaison entre les groupes contrôle et SHF pour les
+
+cellules PC12 et GH3 sur barrettes H50.
+
+Figure. Distribution des peptides et protéines détectées.
+
+Figure 34. Clustering de Eisen des données SELDI-TOF en
+
+fonction de la moyenne des intensités. Comparaison entre les
+
+groupes contrôle et SHF pour les cellules PC12 et GH3.
+
+Figure. Clustering de Eisen des données SELDI-TOF en fonction de la
+
+moyenne des intensités.
+
+Validation in vivo
+
+Afin de valider ces résultats nous avons voulu revenir sur une
+
+expérimentation in vivo. La technique SELDI-TOF peut
+
+être appliquée sur des coupes fines de tissus de manière géographique,
+
+permettant ainsi d’obtenir une imagerie tissulaire protéomique.
+
+Nous avons réalisé une stimulation électrique à haute fréquence au niveau
+
+cortical sur des cerveaux de souris. Après 3 heures de stimulation le
+
+cerveau est disséqué au niveau de la zone de stimulation. Après avoir
+
+vérifié l’absence de lésion par une analyse histologique nous avons analysé
+
+les niveaux d’expression protéique locaux par imagerie tissulaire
+
+protéomique SELDI-TOF, avec des barrettes H50 et CM10, sur une zone de 2 mm
+
+à partir du point d’implantation de l’électrode (Figure 35). On observe que
+
+l’expression protéique est très faible au contact de l’électrode et sur une
+
+zone de 1 mm environ. Puis l’expression protéique augmente en s’éloignant de
+
+l’électrode jusqu’à une distance de 2 mm environ à partir de laquelle le
+
+courant électrique parait ne plus avoir d’effet.
+
+Figure 35. Figure. Analyse protéomique SELDI-TOF in situ sur coupe
+
+autour de l’électrode de stimulation corticale.
+
+Figure. Analyse protéomique SELDI-TOF in situ sur coupe autour de l’électrode
+
+de stimulation corticale.
+
+: Discussion
+
+Première approche in vivo
+
+Afin de nous rapprocher le plus possible des conditions expérimentales
+
+d’autres études nous avons d’abord envisagé de réaliser cette étude sur des
+
+modèles de rat. Le modèle de lésion par la 6-OHDA et le système de SCP est
+
+bien maîtrisé dans le laboratoire mais nous devions nous assurer de la
+
+compatibilité de ces protocoles avec l’étude du transcriptome par
+
+micro-array envisagée.
+
+Importance du contrôle qualité
+
+Nos études préliminaires ont montré que le protocole habituel de fixation
+
+des cerveaux au PFA était incompatible avec l’obtention d’ARN de qualité
+
+satisfaisante. Nous avons pu mettre au point un protocole de
+
+conservation et coloration des coupes de cerveau compatible avec l’étude
+
+du transcriptome. Cette méthode consiste en une congélation rapide du
+
+cerveau immédiatement après la dissection, la réalisation de coupes
+
+microscopiques, l’utilisation d’un traitement de préservation des ARN au
+
+RNA later et enfin une coloration à
+
+l’hématoxyline.
+
+La plupart des articles, utilisant la technique de micro-array, ne
+
+faisant pas mention d’un contrôle de qualité des ARN autre que
+
+l’obtention de résultats ou la possibilité de faire la
+
+rétro-transcription d’un ARN de contrôle, nous avons voulu vérifier si
+
+une dégradation partielle des ARN affecte la validité des données. Nous
+
+avons donc réalisé en parallèle l’hybridation, sur deux membranes
+
+micro-array MWG, d’un ARN de bonne qualité et d’un ARN partiellement
+
+dégradé d’après l’analyse sur Bioanalyzer. Cette étude montre un impact
+
+majeur de la dégradation sur le profil d’expression apparent (Tableau 4 et Figure 22). Certains gènes ont
+
+une expression apparente largement augmentée et d’autres largement
+
+diminuée, donnant l’impression de deux échantillons totalement
+
+différents. Il apparaît donc crucial de pouvoir effectuer un contrôle de
+
+la qualité de l’échantillon ARN avant l’hybridation sur membrane
+
+micro-array.
+
+Limites technologiques
+
+Il est connu que la zone d’efficacité de la SCP est très petite, de
+
+l’ordre de 1 à 2 mm de l’électrode, nous avons donc essayé de
+
+micro-disséquer les structures cérébrales d’intérêt afin que les
+
+résultats obtenus ne perdent pas leur significativité du fait d’une
+
+dilution de l’effet de la stimulation. Nous avons utilisé un microscope
+
+à microdissection PALM laserbeam microsystem et
+
+il a été possible d’isoler certaines structures cérébrales de manière
+
+précise. Malheureusement les quantités de tissus isolées ne permettaient
+
+que l’extraction d’une quantité d’ARN trop faible pour pouvoir réaliser
+
+les contrôles de qualité nécessaires et l’analyse par micro-array. Ces
+
+limites nous ont conduits à réorienter l’étude par une approche in vitro qui permet l’obtention d’une quantité
+
+d’ARN suffisante pour la réalisation des contrôles de qualité
+
+indispensables à la fiabilité des résultats.
+
+Étude in vitro
+
+Nous avons mené cette étude à l’aide d’un système de stimulation de cellules
+
+en culture mis au point dans le laboratoire.
+
+Criblage d’expression génique par micro-array
+
+Cette étude a été menée par micro-array en utilisant la banque
+
+d’oligonucléotides Sigma Genosys Pan rat 5K de
+
+façon à explorer globalement les changements d’expression génique
+
+induits par la stimulation haute fréquence (SHF). La méthode utilisée
+
+permet la normalisation des résultats en fonction de la quantité de
+
+sonde oligonucléotique déposée sur la membrane. L’absence de ce type de
+
+contrôle, ainsi que du contrôle de la qualité des échantillons d’ARN,
+
+pourrait être à l’origine d’une part de la non-reproductibilité des
+
+résultats parfois relevée dans le domaine de l’analyse transcriptomique.
+
+Parmi les gènes analysés environ 200 ont été détectés comme exprimés dans
+
+les cellules, 56 de ces gènes ont leur expression modifiée d’un facteur
+
+supérieur à deux par la SHF. 37 gènes sont inhibés par la SHF dont 3
+
+totalement (Tableau 6) alors que 19 gènes sont surexprimés dont 4 qui ne
+
+sont pas exprimés dans la condition contrôle (Tableau 7). On remarque
+
+que les
+
+des gènes modulés le sont à la baisse et que
+
+seulement des gènes modulés le sont à la hausse. Bien que les
+
+phénomènes d’inhibition apparaissent largement majoritaires il semble
+
+bien s’agir d’une véritable reprogrammation du fonctionnement de la
+
+cellule.
+
+Les gènes dont l’expression est modifiée peuvent être classés en
+
+plusieurs catégories selon leur fonction biologique :
+
+canaux ioniques et transduction du signal (- : mclc, cacna1d,
+
+rsg4, stmn1, rhoA, rheb, cald1, sdfr1, adcy4 ; + : cacna2d1 ;
+
+nr1h2, kcnk13)
+
+transcription et maturation des ARN (- : npm1, hnrpk, nol5,
+
+hnrpa1, hnrpf ; + : phax, nxph4, cebpb)
+
+synthèse, élongation, maturation et dégradation des protéines
+
+(- : nudt6, psma2, prei3, psmd1, lin7a, trypsine Vb, cma1,
+
+Eef1α2, Eif5, uba52, ube2i)
+
+énergétique cellulaire (- : atp5b, pgk1)
+
+Un certain nombre de gènes ne peuvent pas être classés, soit parce que
+
+leur fonction est inconnue, soit parce qu’elle est difficile à relier
+
+aux conditions étudiées. Bien que devant être pris avec certaines
+
+précautions du fait de la moindre qualité de la sélection des
+
+oligonucléotides, les résultats de l’analyse protéomique avec le set MWG
+
+(Tableau 5) sont intéressants car ils montrent une inhibition de la
+
+transcription des gènes de plusieurs sous-unités du ribosome (S2, S9,
+
+L8, L8a, L13a, L14, L32, L40).
+
+Une vue d’ensemble de ces données suggère une diminution de l’activité
+
+cellulaire globale (modification de la régulation de la transcription,
+
+diminution de l’énergétique cellulaire et diminution des synthèses
+
+protéiques). Il était intéressant de vérifier cet effet sur la synthèse
+
+protéique des cellules.
+
+Analyse de l’expression protéique
+
+Nous avons utilisé deux méthodes : l’incorporation de méthionine
+
+radioactive et la spectrométrie de masse SELDI-TOF.
+
+Ces techniques ont confirmé une inhibition globale de la synthèse
+
+protéique dans les cellules soumises à la SHF mais, de même qu’au niveau
+
+transcriptomique, il existe un certain nombre de pics protéiques qui
+
+sont augmentés. La SHF produit donc une véritable modification de
+
+l’activité de la cellule qui est beaucoup plus complexe qu’une simple
+
+mise en sommeil.
+
+Retour in vivo
+
+Après avoir validé cette diminution de la synthèse protéique il était
+
+important de revenir sur un modèle in vivo afin de
+
+vérifier l’existence d’un tel effet dans une situation de stimulation
+
+cérébrale.
+
+L’expérience clinique a montré que la zone d’efficacité de la stimulation
+
+n’est que de quelques millimètres autour du plot de l’électrode, avec une
+
+diminution rapide de l’efficacité en fonction de l’éloignement. La faiblesse
+
+des volumes tissulaires dans la zone d’efficacité fait qu’il est difficile
+
+d’observer les effets moléculaires de la stimulation sans un important effet
+
+de dilution. Il était important de pouvoir mettre en évidence des
+
+différences d’expression protéique entre des points situés à très courte
+
+distance de l’électrode. L’utilisation d’une analyse SELDI-TOF géographique
+
+a permis de confirmer la diminution de la quantité de protéines à proximité
+
+immédiate de l’électrode (Figure 35). La diffusion de l’effet sur une
+
+distance de 1 à 2 mm correspond à ce qui est observé chez l’homme au niveau
+
+de l’effet clinique.
+
+: Conclusion
+
+Le but de ce travail était de mettre en évidence des mécanismes nouveaux
+
+sous-tendant les effets de la neurostimulation à haute fréquence dans le
+
+cerveau. Prenant en compte la similitude d’effet entre la lésion et la
+
+neurostimulation à haute fréquence, un effet inhibiteur de cette approche est
+
+parfois proposé. Les données de la micro-dialyse cérébrale, dosant le GABA et le
+
+glutamate, ont donné des résultats contradictoires montrant à la fois une
+
+inhibition et une augmentation en particulier du glutamate. L’une des
+
+explications probables de ces incohérences apparentes pourraient être que le
+
+matériel utilisé provoque des microlésions des tissus analysés. De la même façon
+
+les analyses électro-physiologiques font apparaitre des résultats dont l’analyse
+
+est rendue difficile par les artefacts dus à la stimulation elle-même.
+
+Nous écartant des approches électro-physiologiques/dosages de neuromédiateurs
+
+classiques qui ont quasiment été les seules utilisées pour comprendre les
+
+mécanismes de la neurostimulation, nous avons mené une étude transcriptomique
+
+in vitro des effets de la SHF.
+
+Parmi les gènes pour lesquels nous avons mis en évidence une régulation par la
+
+SHF, une sous-expression dans la majorité des cas, nous avons été surpris de
+
+constater la présence de nombreux gènes impliqués dans la synthèse protéique en
+
+particulier des gènes d’élongation (EEF) ou ribosomaux. À travers cette
+
+conjonction de données transcriptomiques nous avons posé l’hypothèse d’un effet
+
+sur la synthèse protéique. Les données obtenues in vitro
+
+montrent de façon très significative une inhibition de la synthèse protéique qui
+
+est confirmée in vivo sur une étude de la cartographie
+
+protéique in situ. L’effet de la neurostimulation étant
+
+très local, il est très difficile de prélever la zone d’efficacité de la
+
+neurostimulation qui se mélange avec la zone non efficace ce qui moyenne les
+
+résultats par un effet de dilution. Ainsi, seule une analyse in situ utilisant l’imagerie protéomique à grande résolution permet de
+
+confirmer, chez l’animal, notre hypothèse.
+
+Des données récentes sont venues confirmer l’importance de la synthèse protéique
+
+(traduction, élongation) dans la physiologie neuronale, par exemple la
+
+régulation locale de la synthèse protéique intervient dans l’apprentissage
+
+(Tsokas et al. 2007). Il a également été montré qu’une diminution de la
+
+traduction est un mécanisme neuronal de protection en réponse à un stress
+
+(Paschen et al. 2007). Une diminution rapide de la synthèse protéique et
+
+l’inhibition de la synthèse protéique est un mécanisme neuroprotecteur puissant
+
+en particulier vis à vis du glutamate.
+
+Ainsi il pourrait être envisagé que la neurostimulation à haute fréquence
+
+constitue un stress pour la structure cible et que les cellules réagiraient par
+
+une sidération rapide de la synthèse protéique, participant ainsi, par un
+
+mécanisme complémentaire de ceux précédemment révélés, à inactiver la structure
+
+tout en la protégeant. Ce type de réponse est également mis en évidence dans les
+
+phénomènes liés à l’hibernation chez les animaux (Frerichs et al. 1998).
+
+En conclusion nous avons pu mettre en évidence un mécanisme original. Il pourrait
+
+passer par l’activation de molécules membranaires puis par la cascade de
+
+signalisation calcique en régulant notamment l’élongation protéique comme le
+
+suggèrent les gènes dont l’expression est modifiée. Ce mécanisme inhibiteur
+
+global de la synthèse protéique dans le cerveau participant probablement aux
+
+effets de la SHF en inhibant la structure fonctionnellement mais aussi en la
+
+protégeant. Les données moléculaires rapportées dans cette étude montrent que
+
+l’impact de la SHF n’est pas un unique problème d’activation ou d’inhibition de
+
+la structure cible mais qu’il y a une véritable reprogrammation cellulaire qui
+
+est faite.
+
+Les perspectives sont cruciales, pour mimer les effets de la neurostimulation par
+
+exemple en inhibant par des drogues injectées localement le NST comme cela a été
+
+fait récemment avec la GAD. Mais aussi en mettant au point de nouveaux
+
+dispositifs intracérébraux inhibant les structures cérébrales, par le froid par
+
+exemple.
+
+Bibliographie
+
+(2000). "Pramipexole vs levodopa as initial treatment for Parkinson
+
+disease: A randomized controlled trial. Parkinson Study Group." Journal of
+
+the American Medical Association 284(15): 1931-8.
+
+(2000). Press Release October 9, 2000: Nobel Prize in Physiology or
+
+Medicine 2000, Nobelförsamlingen Karolinska Institutet. 2004.
+
+(2002). "Factors impacting on quality of life in Parkinson's disease:
+
+results from an international survey." Movement Disorders 17(1): 60-7.
+
+Agid, Y. et J. Blin (1987). "Nerve cell death in degenerative diseases of
+
+the central nervous system: clinical aspects." Ciba Foundation Symposium
+
+126: 3-29.
+
+Agid, Y. (1991). "Parkinson's disease: pathophysiology." Lancet
+
+337(8753): 1321-4
+
+Agid, Y. (2001). "Levodopa. Is toxicity a myth? 1998." Neurology 57(10
+
+Suppl 3): S46-51.
+
+Albin, R. L., J. W. Aldridge, et al. (1989). "Feline subthalamic nucleus
+
+neurons contain glutamate-like but not GABA- like or glycine-like
+
+immunoreactivity." Brain Research. 491(1): 185-188.
+
+Albin, R. L., A. B. Young, et al. (1989). "The functional anatomy of
+
+basal ganglia disorders." Trends in Neurosciences 12(10): 366-75.
+
+Alexander, G. E., Crutcher, M. D. (1990). "Functionnal architecture of
+
+basal ganglia circuits: neural substrates of parallel processing." Trends in
+
+Neurosciences 13(7): 266-71.
+
+Aoyama, K., K. Matsubara, M. Kondo, Y. Murakawa, M. Suno, K. Yamashita,
+
+S. Yamagushi et S. Kobayashi (2001). "Nicotinamide-N-methyltransferase is
+
+higher in the lumbar cerebrospinal fluid of patients with Parkinson's
+
+disease." Neuroscience Letters 298: 78-80.
+
+Araki, M., P. L. McGeer, et al. (1985). "Striatonigral and pallidonigral
+
+pathways studied by a combination of retrograde horseradish peroxidase
+
+tracing and a pharmacohistochemical method for gamma-aminobutyric acid
+
+transaminase." Brain Research 331(1): 17-24.
+
+Bacci JJ, Salin P, Kerkerian-Le Goff L. (2004) “Systemic administration
+
+of dizocilpine maleate (MK-801) or L-dopa reverses the increases in GAD65
+
+and GAD67 mRNA expression in the globus pallidus in a rat hemiparkinsonian
+
+model.” Synapse 46(4):224-34.
+
+Baldereschi, M., A. Di Carlo, W. A. Rocca, P. Vanni, S. Maggi, E.
+
+Perissinotto, F. Grigoletto, L. Amaducci et D. Inzitari (2000). "Parkinson's
+
+disease and parkinsonism in a longitudinal study: two-fold higher incidence
+
+in men. ILSA Working Group. Italian Longitudinal Study on Aging." Neurology
+
+55(9): 1358-63.
+
+Barkats, M., A. Bilang-Bleuel, M. H. Buc-Caron, M. N. Castel-Barthe, O.
+
+Corti, F. Finiels, P. Horellou, F. Revah, O. Sabate, J. Mallet (1998).
+
+"Adenovirus in the brain: recent advances of gene therapy for
+
+neurodegenerative diseases." Progress in Neurobiology 55: 333-41.
+
+Benabid, A. L., P. Pollak, A. Louveau, S. Henry and J. de Rougemont
+
+(1987). "Combined (thalamotomy and stimulation) stereotactic surgery of the
+
+VIM thalamic nucleus for bilateral Parkinson disease." Applied
+
+Neurophysiology 50(1-6): 344-6.
+
+Benabid, A. L. et L. Jeaugey (1989). "Cells of the rat lateral habenula
+
+respond to high-threshold somatosensory inputs." Neuroscience Letters 96(3):
+
+289-94.
+
+Benabid, A. L., P. Pollak, C. Gervason, D. Hoffmann, D. M. Gao, M.
+
+Hommel, J. E. Perret et J. de Rougemont (1991). "Long-term suppression of
+
+tremor by chronic stimulation of the ventral intermediate thalamic nucleus."
+
+Lancet 337(8738): 403-6.
+
+Benabid, A. L. et P. Pollak (1993). "Maladie de Parkinson - Les nouvelles
+
+approches chirurgicales et médicales." Der informierte Arzt - Gazette
+
+Médicale 14: 885-891.
+
+Benabid, A. L., P. Pollak, C. Gross, D. Hoffmann, A. Benazzouz, D. M.
+
+Gao, A. Laurent, M. Gentil et J. Perret (1994). "Acute and long-term effects
+
+of subthalamic nucleus stimulation in Parkinson's disease." Stereotactic and
+
+Functional Neurosurgery 62(1-4): 76-84.
+
+Benabid, A. L., P. Pollak, D. Gao, D. Hoffmann, P. Limousin, E. Gay, I.
+
+Payen et A. Benazzouz (1996). "Chronic electrical stimulation of the
+
+ventralis intermedius nucleus of the thalamus as a treatment of movement
+
+disorders." Journal of Neurosurgery 84(2): 203-14.
+
+Benabid, A. L., A. Benazzouz, D. Hoffmann, P. Limousin, P. Krack et P.
+
+Pollak (1998). "Long-term electrical inhibition of deep brain targets in
+
+movement disorders." Movement Disorders 13(Suppl 3): 119-25.
+
+Benabid, A. L., A. Koudsie, P. Pollak, P. Kahane, S. Chabardes, E.
+
+Hirsch, C. Marescaux et A. Benazzouz (2000). "Future prospects of brain
+
+stimulation." Neurological Research 22(3): 237-46.
+
+Benabid, A. L., A. Benazzous and P. Pollak (2002). "Mechanisms of deep
+
+brain stimulation." Movements Disorders 17 (Suppl 3): S73-4.
+
+Benabid, A. L., A. Koudsie, A. Benazzouz, J. F. Le Bas and P. Pollak
+
+(2002). "Imaging of subthalamic nucleus and ventralis intermedius of the
+
+thalamus." Movement Disorders 17(Suppl 3): S123-9.
+
+Benabid, AL. L., J. F. Le Bas, P. Pollak (2003). "Apport thérapeutique et
+
+physiologique de la stimulation des structures cérébrales profondes dans la
+
+maladie de Parkinson." Bulletin de l'Académie Nationale de Médecine 187(2):
+
+305-322.
+
+Benazzouz, A., B. Piallat, P. Pollak and A. L. Benabid (1995). "Responses
+
+of substantia nigra pars reticulata and globus pallidus complex to high
+
+frequency stimulation of the subthalamic nucleus in rats:
+
+electrophysiological data." Neuroscience Letter 189(2): 77-80.
+
+Bennett, D. A., L. A. Beckett, A. M. Murray, K. M. Shannon, C. G. Goetz,
+
+D. M. Pilgrim et D. A. Evans (1996). "Prevalence of parkinsonian signs and
+
+associated mortality in a community population of older people." New England
+
+Journal of Medicine 334(2): 71-6.
+
+Betarbet, R., T. B. Sherer, G. Mac Kenzie, M. Garcia-Osuna, A. V. Panov
+
+et J. T. Greenamyre (2000). "Chronic systemic pesticide exposure reproduces
+
+features of Parkinson's disease." Nature Neuroscience.
+
+Bezard, E. et C. E. Gross (1998). "Compensatory mechanisms in
+
+experimental and human parkinsonism: towards a dynamic approach." Progress
+
+in Neurobiology 55: 93-116.
+
+Bilang-Bleuel, A., F. Revah, P. Colin, I. Locquet, J-J. Robert, J. Mallet
+
+et P. Horellou (1997). "Intrastriatal injection of an adenoviral vector
+
+expressing glial-cell-line-derived neurotrophic factor prevents dopaminergic
+
+neuron degeneration and behavioral impairment in a rat model of parkinson
+
+disease." Proceedings of the National Academy of Sciences 94: 8818-23.
+
+Blandini, F., M. Garcia-Osuna et J. T. Greenamyre (1997). "Subthalamic
+
+ablation reverses changes in basal ganglia oxydative metabolism and motor
+
+response to apomorphine induced by nigrostriatal lesion in rats." European
+
+Journal of Neuroscience 9:1407-13.
+
+Blandini, F., G. Nappi, C. Tassorelli et E. Martignoni (2000).
+
+"Functional changes of the basal ganglia circuitry in Parkinson's disease."
+
+Progress in Neurobiology 62: 63-88
+
+Blum, D., S. Torch, et al. (2001). "Molecular pathways involved in the
+
+neurotoxicity of 6-OHDA, dopamine and MPTP: contribution to the apoptotic
+
+theory in Parkinson's disease." Progress in Neurobiology 65(2): 135-72.
+
+Bonifati, V., P. Rizzu, M. J. van Baren, O. schaap, G. J. Breedveld, E.
+
+Krieger, M. C. J. Dekker, F. Squitieri, P. Ibanez, M. Joosse, J. W. van
+
+Dongen, N. Vanacore, J. C. van Swieten, A. Brice, G. Meco, C. M. van Duijn,
+
+B. A. Oostra et P. Heutink (2003). "Mutations in the DJ-1 gene associated
+
+with autosomal recessive early-onset parkinsonism." Science 299(5604):256-9
+
+Boraud, T., E. Bezard, B. Bioulac et C. Gross (1996). "High frequency
+
+stimulation of the internal Globus Pallidus (GPi) simultaneously improves
+
+parkinsonian symptoms and reduces the firing frequency of GPi neurons in the
+
+MPTP-treated monkey." Neuroscience Letters 215(1): 17-20.
+
+Bouamrani, A., J. Ternier, D. Ratel, A. L. Benabid, J. P. Issartel, E.
+
+Brambilla et F. Berger (2006). "Direct-tissue SELDI-TOF mass spectrometry
+
+analysis: a nex application for clinical proteomics." Clinical Chemistry
+
+52(11): 2103-6.
+
+Bowers, W. J., D. F. Howard et H. J. Federoff (1997). "Gene therapeutic
+
+strategies for neuroprotection: implications for Parkinson's disease."
+
+Experimental Neurology 144(1): 58-68.
+
+Bravo, G., P. Mata and G. Seiquer (1967). "Surgery for bilateral
+
+Parkinson's disease." Confinia Neurologica 29(2): 133-8.
+
+Brevet, A., E. Pinto, J. Peacock et F. E. Stockdale (1976). "Myosin
+
+synthesis increased by electrical stimulation of skeletal muscle cell
+
+cultures." Science 193(4258): 1152-4.
+
+Brotchie, J. M., I. J. Mitchell, et al. (1991). "Alleviation of
+
+parkinsonism by antagonism of excitatory amino acid transmission in the
+
+medial segment of the globus pallidus in rat and primate." Movement
+
+Disorders 6(2): 133-8.
+
+Burbaud P, Gross C, Benazzouz A, Coussemacq M, Bioulac B (1995)
+
+“Reduction of apomorphine-induced rotational behaviour by subthalamic lesion
+
+in 6-OHDA lesioned rats is associated with a normalization of firing rate
+
+and discharge pattern of pars reticulata neurons.”Experimental Brain
+
+Research.;105(1):48-58.
+
+Burton, E. A., J. C. Glorioso et D. J. Fink (2003). "Gene therapy
+
+progress and prospects: Parkinson's disease." Gene Therapy 10: 1721-7.
+
+Carvalho, G. A. et G. Nikkhah (2001). "Subthalamic nucleus lesions are
+
+neuroprotective against terminal 6-OHDA-induced striatal lesions and restore
+
+postural balancing reactions." Experimental Neurology 171(2): 405-17.
+
+Chan, P., C. M. Tanner, X. Jiang et J. W. Langston (1998). "Failure to
+
+fid the ?-synuclein gene missense mutation (G209A) in 100 patients with
+
+younger onset Parkinson's disease." Neurology 50(2): 513-4.
+
+Charcot, J-M. "Leçons sur les maladies du système nerveux." Paris:
+
+Delahaye, 1872-1873.
+
+Cooper, I. S. (1965). "Surgical Treatment of Parkinsonism." Annual
+
+Reviews of Medicine 16: 309-30.
+
+Dauer, W. et S. Przedborski (2003). "Parkinson's disease: mechanisms and
+
+models." Neuron 39(6): 889-909.
+
+Dawson, T. M. and V. L. Dawson (2003). "Molecular pathways of
+
+neurodegeneration in Parkinson's disease." Science 302(5646): 819-22.
+
+de Rijk, M. C., L. J. Launer, K. Berger, M. M. Breteler, J. F. Dartigues,
+
+M. Baldereschi, L. Fratiglioni, A. Lobo, J. Martinez-Lage, C. Trenkwalder et
+
+A. Hofman (2000). "Prevalence of Parkinson's disease in Europe: A
+
+collaborative study of population-based cohorts. Neurologic Diseases in the
+
+Elderly Research Group." Neurology 54(11 Suppl 5): S21-3.
+
+DeLong, M. R. (1990). "Primate models of movement disorders of basal
+
+ganglia origin." Trends in Neurosciences 13(7): 281-285.
+
+DeLong, M. R. (2002). Ch. 43: The Basal Ganglia. Principles of Neural
+
+Science. S. Kandel: 853-867.
+
+Dostrovsky, J. O., R. Levy, J. P. Wu, W. D. Hutchison, R. R. Tasker et A.
+
+M. Lozano (2000). "Microstimulation-induced inhibition of neuronal firing in
+
+human globus pallidus." J Neurophysiol 84(1): 570-4.
+
+Di Monte, D. A. (2003). "The environment and Parkinson's disease: is the
+
+nigrostriatal system preferentially targeted by neurotoxins?" The Lancet 2:
+
+531-8
+
+During, M. J., M. G. Kaplitt, M. B. Stern et D. Heidelberg (2001). "
+
+Subthalamic GAD gene transfer in Parkinson disease patients who are
+
+candidates for deep brain stimulation." Human Gene Therapy 12(12): 1589-91.
+
+Eisen, M. B., P. T. Spellman, P. O. Brown et D. Botstein (1998). "Cluster
+
+analysis and display of genome-wide expression patterns." Proceedings of the
+
+National Acadademy of Sciences USA 95(25): 14863-8.
+
+El Atifi, M., I. Dupré, B. Rostaing, E. M. Chambaz, A. L. Benabid et F.
+
+Berger (2002). "Long oligonucleotide arrays on nylon for large-scale gene
+
+expression analysis." Biotechniques 33(3): 612-6.
+
+El Atifi, M., I. Dupré, B. Rostain, A. L. Benabid et F. Berger (2003).
+
+"Quantification of DNA probes on nylon micro-arrays using T4 polynucleotide
+
+kinase labeling." Biotechniques 35(2): 262-4.
+
+Elbaz, A., J. H. Bower, D. M. Maraganore, S. K. McDonnell, B. J.
+
+Peterson, J. E. Ahlskog, D. J. Schaid et W. A. Rocca (2002). "Risk tables
+
+for parkinsonism and Parkinson's disease." Journal of Clinical Epidemiology
+
+55(1): 25-31.
+
+Emborg, M. E., M. Carbon, J. E. Holden, M. J. During, Y. Ma, C. Tang, J.
+
+Moirano, H. Fitzsimons, B. Z. Roitberg, E. Tuccar, A. Roberts, M. G. Kaplitt
+
+et D. Eidelberg (2007). "Subthalamic glutamic acid decarboxylase gene
+
+therapy: changes in motor function and cortical metabolism." Journal of
+
+Cerebral Blood Flow and Metabolism 27(3): 501-9.
+
+Engel, L. S., H. Checkoway, M. C. Keifer, N. S. Seixas, W. T. Longtreth
+
+Jr, K. C. Scott, K. Hudnell, W. K. Angers et R. Camicioli (2001).
+
+"Parkinsonism and occupational exposure to pesticides." Occupational and
+
+Environmental Medicine 58: 582-9.
+
+Fahn, S. (2003). "Description of Parkinson's Disease as a Clinical
+
+Syndrome." Annals of the New York Academy of Sciences
+
+Fahn, S. (2003). "Description of Parkinson's disease as a clinical
+
+syndrome." Annals of the New-York Academy of Sciences 991: 1-14.
+
+Freef, C. R., Greene, P. E., Breeze, R. E., Wei-Yann Tsai, DuMouchel, W.,
+
+Kao, R., Dillon, S., Winfield, H., Culver, S., Trojanowsji, J. Q.,
+
+Eidelberg, D., Fahn, S. (2001). "Transplantation of embryonic dopamine
+
+neurons for severe Parkinson's disease." New England Journal of Medicine
+
+344(10): 710-19
+
+Frerichs, K. U., C. B. Smith, M. Brenner, D. J. DeGracia, G. S. Krause,
+
+L. Marrone, T. E. Dever et J. M. Hallenbeck (1998). "Suppression of protein
+
+synthesis in brain during hibernation involves inhibition of protein
+
+initiation and elongation." Proceedings of the National Academy of Sciences
+
+of the USA 95(24): 14511-6
+
+Garcia, L., J. Audin, G. D'Alessandro, B. Bioulac et C. Hammond (2003).
+
+"Dual effect of high-frequency stimulation on subthalamic neuron activity."
+
+Journal of Neuroscience 23(25): 8743-51.
+
+García de Yébenes J. (2001). "Genética de la enfermedad de Parkinson."
+
+Neurología 16: 1-6.
+
+Garcia Ruiz, P. J. et E. Meseguer (2002). "Breve historia de la L-Dopa."
+
+Neurologia 17(4): 214-7.
+
+Gerfen, C. R. et T. M. Engber (1992). "Molecular neuroanatomic mechanisms
+
+of Parkinson's disease: a proposed therapeutic approach." Neurol Clin 10(2):
+
+435-49.
+
+Gerfen, C. R., K. A. Keefe, et al. (1995). "D1 and D2 dopamine receptor
+
+function in the striatum: coactivation of D1- and D2-dopamine receptors on
+
+separate populations of neurons results in potentiated immediate early gene
+
+response in D1-containing neurons." Journal of Neuroscience 15(12): 8167-76.
+
+Gill, S. S., N. K. Patel, G. R. Hotton, K. O'Sullivan, R. McCarter, M.
+
+Bunnage, D. J. Brooks, C. N. Svendsen et P. Heywood (2003). "Direct brain
+
+infusion of glial cell line-derived neurotrophic factor in Parkinson
+
+disease." Nature Medicine 9(5): 589-95.
+
+Gluck, L., L. Alazay, D. Ratel, S. Puget et D. Wion (2001). "Quality
+
+control of plasmid preparations." Nature Biotechnology 19(8):715
+
+Gorell, J. M., C. C. Johnson, B. A. Rybicki, E. L. Peterson et R. J.
+
+Richardson (1998). "The risk of Parkonson's disease with exposure to
+
+pesticides, farming, well water, and rural living." Neurology 50(5):
+
+1346-50.
+
+Greene, L. A. et A. S. Tischler (1976). "Establishment of a noradrenergic
+
+clonal line of rat adrenal pheochromocytoma cells which respond to nerve
+
+growth factor." Proceedings of the National Academy of Sciences U S A 73(7):
+
+2424-8.
+
+Groenewegen, H. J. and H. W. Berendse (1990). "Connections of the
+
+subthalamic nucleus with ventral striatopallidal parts of the basal ganglia
+
+in the rat."Journal of Comparative Neurology 294(4): 607-22.
+
+Gross, C. E., T. Boraud, D. Guehl, B. Bioulac et E. Bezard (1999). "From
+
+experimentation to the surgical treatment of Parkinson's disease: prelude or
+
+suite in basal ganglia research?" Progress in Neurobiology 59(5): 509-32.
+
+Guridi J., Herrero M. T., Luquin R., Guillen J. et J. A. Obeso (1994)
+
+“Subthalamotomy improves MPTP-induced parkinsonism in monkeys.”
+
+Stereotactactic and Functional Neurosurgery. 62(1-4):98-102.
+
+Hagell, P. et P. Brundin (2001). "Cell survival and clinical outcome
+
+following intrastriatal transplantation in Parkinson disease." Journal of
+
+Neuropathology and Experimental Neurology 60(8): 741-52.
+
+Hely, M. A., J. G. Morris, R. Traficante, W. G. Reid, D. J. O'Sullivan et
+
+P. M. Williamson (1999). "The sydney multicentre study of Parkinson's
+
+disease: progression and mortality at 10 years." Journal of Neurology
+
+Neurosurgery and Psychiatry 67(3): 300-7.
+
+Hamada O., Garcia-Rill E. et R. D. Skinner (1992). “Respiration in vitro:
+
+I. Spontaneous activity.” Somatosensory and Motor Research. 9(4):313-26.
+
+Hamada O., Garcia-Rill E. et R. D. Skinner (1992). “Respiration in vitro:
+
+II. Electrical stimulation.” Somatosensory and Motor Research. 9(4):327-37.
+
+Hashimoto, T., C. M. Elder, M. S. Okun, S. K. Patrick et J. L. Vitek
+
+(2003). "Stimulation of the subthalamic nucleus changes the firing pattern
+
+of pallidal neurons." Journal of Neuroscience 23(5): 1916-23.
+
+Henderson, J. M., L. E. Annett, L. J. Ryan, W. Chiang, S. Hidaka, E. M.
+
+Torres et S. B. Dunnett (1999). "Subthalamic nucleus lesions induce deficits
+
+as well as benefits in the hemiparkinsonian rat." European Journal of
+
+Neuroscience 11: 2749-57.
+
+Horelou, P., A. Bilang-Bleuel et J. Mallet (1997). "In vivo
+
+adenovirus-mediated gene transfer for Parkinson's disease." Neurobiology of
+
+disease 4: 280-7
+
+Hughes, A. J., S. E. Daniel, L. Kilford et A. J. Lees (1992). "Accuracy
+
+of clinical diagnosis of idiopathic Parkinson's disease: a
+
+clinico-pathological study of 100 cases." Journal of Neurology Neurosurgery
+
+and Psychiatry 55:181-4.
+
+Jankovic, J., F. Cardoso, R. G. Grossman and W. J. Hamilton (1995).
+
+"Outcome after stereotactic thalamotomy for parkinsonian, essential, and
+
+other types of tremor." Neurosurgery 37(4): 680-6; discussion 686-7.
+
+Kaplitt, M. G., A. Feigin, C. Tang, H. L. Fitzsimons, P. Mattis, P. A.
+
+Lawlor, R. J. Bland, D. Young, K. Strybing, D. Heidelberg et M. J. During
+
+(2007). "Safety and tolerability of gene therapy with an adeno-associated
+
+virus (AAV) borne GAD gene for Parkinson's disease: an open label, phase I
+
+trial." The Lancet 369(9579): 2097-105.
+
+Kita, H. et S. T. Kitai (1987). "Efferent projections of the subthalamic
+
+nucleus in the rat: light and electron microscopic analysis with the PHA-L
+
+method." Journal of Comparative Neurology 260(3): 435-52.
+
+Kitada, T., S. Asakawa, N. Hattori, H. Matsumine, Y. Yamamura, S.
+
+Minoshima, M. Yokochi, Y. Mizuno et N. Shimizu (1998). "Mutations in the
+
+parkin gene cause autosomal recessive juvenile parkinsonism." Nature 392:
+
+605-8.
+
+Koller, W. C. et W. Tse (2004). "Unmet medical needs in Parkinson's
+
+disease." Neurology 62(90011): 1S-8.
+
+Kontakos, N. et J. Stokes (1999). "Série de monographies sur les maladies
+
+liées au viellissement: XII. Maladie de Parkinson Percées récentes et
+
+nouvelles orientations." Maladies chroniques au Canada 20(2): 65-85.
+
+Kordower, H. J., T. B. Freeman, B. J. Snow, F. J. G. Vingerhoets, E. J.
+
+Mufson, P. R. Sanberg, R. A. Hauser, D. A. Smith, G. M. Nauert, D. P. Perl
+
+et C. W. Olanow (1995). "Neuropathological evidence of graft survival and
+
+striatum reinnervation after the transplantation of fetal mesencephalic
+
+tissue in a patient with Parkinson's disease." The New England Journal of
+
+Medicine 332(17): 1118-24.
+
+Krauss, G. L. et M. Z. Koubeissi (2007) " Cerebellar and thalamic
+
+stimulation treatment for epilepsy." Acta Neurochirurgica Supplement 97(Pt
+
+2): 347-56.
+
+Krack, P., P. Pollak, P. Limousin, D. Hoffmann, J. Xie, A. Benazzouz et
+
+A. L. Benabid (1998). "Subthalamic nucleus or internal pallidal stimulation
+
+in young onset Parkinson's disease." Brain 121: 451-7.
+
+Krack, P., P. Pollak, P. Limousin, D. Hoffmann, A. Benazzouz, J. F. Le
+
+Bas, A. Koudsie et A. L. Benabid (1998). "Opposite motor effects of pallidal
+
+stimulation in Parkinson's disease." Annals of Neurology 43(2): 180-92.
+
+Krack, P., A. Batir, N. Van Blercom, S. Chabardes, V. Fraix, C. Ardouin,
+
+A. Koudsie, P. D. Limousin, A. Benazzouz, J. F. LeBas, A. L. Benabid and P.
+
+Pollak (2003). "Five-year follow-up of bilateral stimulation of the
+
+subthalamic nucleus in advanced Parkinson's disease." New England Journal of
+
+Medicine 349(20): 1925-34.
+
+Kreiss, D. S., C. W. Mastropietro, S. S. Rawji et J. R. Walters (1997)
+
+"The response of subthalamic nucleus neurons to dopamine receptor
+
+stimulation in a rodent model of Parkinson's disease." Journal of
+
+Neuroscience 17(17): 6807-19.
+
+Krüger, R., W. Kuhn, T. Müller, D. Woitalla, M. Graeber, S. Kösel, H.
+
+Przuntek, J. T. Epplen, L. Schols et O. Riess (1998). "Ala30Pro mutation in
+
+the gene encoding alpha-synuclein in Parkinson's disease." Nature Genetics
+
+18(2):106-8.
+
+Le Cavorzin, P. (1999). "Pharmacologie de la maladie de Parkinson." 2004.
+
+Leroy, E., R. Boyer, G. Auburger, B. Leube, G. Ulm, E. Mezey, G. Harta,
+
+M. J. Brownstein, S. Jonnalagada, T. Chernova, A. Dehejia, C. Lavedan, T.
+
+Gasser, P. J. Steinbach, K. D. Wilkinson et M. H. Polymeropoulos (1998).
+
+"The ubiquitin pathway in Parkinson's disease." Nature 395(6701):451-2.
+
+Limousin, P., P. Pollak, A. Benazzouz, D. Hoffmann, J. F. Le Bas, E.
+
+Broussolle, J. E. Perret et A. L. Benabid (1995). "Effect on parkinsonian
+
+signs and symptoms of bilateral subthalamic nucleus stimulation." Lancet
+
+345(8942): 91-5.
+
+Limousin, P., P. Krack, P. Pollak, A. Benazzouz, C. Ardouin, D. Hoffmann
+
+and A. L. Benabid (1998). "Electrical stimulation of the subthalamic nucleus
+
+in advanced Parkinson's disease." New England Journal of Medicine 339(16):
+
+1105-11.
+
+Linazasoro, G. (2001). "Fisiopatología del parkinsonismo y las
+
+discinesias: enseñenzas de las observaciones quirúrgicas." Neurología 16(1):
+
+17-29
+
+Lindvall, O. (2001). "Parkinson disease. Stem cell transplantation."
+
+Lancet 358 (Suppl): S48.
+
+Lipsman, N., J. S. Neimat et A. M. Lozano (2007). " Deep brain
+
+stimulation for treatment-refractory obsessive-compulsive disorder: the
+
+search for a valid target." Neurosurgery 61(1): 1-13
+
+Lücking, C. B., A. Dürr, V. Bonifati, J. Vaughan, G. De Michele, T.
+
+Gasser, B. S. Harhangi, G. Meco, P. Denèfle, N. W. Wood, Y. Agid et A. Brice
+
+(2000). "Association between early-onset Parkinson's disease and mutations
+
+in the parkin gene." New England Journal of Medicine 342(21): 1560-7
+
+Louis, E. D., K. Marder, L. Cote, M. Tang et R. Mayeux (1997). "Mortality
+
+from Parkinson disease." Archives of Neurology 54(3): 260-4.
+
+Luo, J., M. G. Kaplitt, H. L. Fitzsimons, D. S. Zuzga, Y. Liu, M. L.
+
+Oshinsky et M. J. During (2002). "Subthalamic GAD gene therapy in a
+
+Parkinson's disease rat model." Science 298(5592): 425-9.
+
+Madrazo, I., Aguilera, M. et Franco-Bourland, R. (1990). "Cell
+
+implantation in Parkinson's disease." British Medical Journal 301(6756):
+
+874.
+
+Magarinos-Ascone, C., J. H. Pazo, O. Macadar and W. Buno (2002).
+
+"High-frequency stimulation of the subthalamic nucleus silences subthalamic
+
+neurons: a possible cellular mechanism in Parkinson's disease." Neuroscience
+
+115(4): 1109-17.
+
+Mandel, S., E. Grunblatt, et al. (2003). "Neuroprotective strategies in
+
+Parkinson's disease : an update on progress." CNS Drugs 17(10): 729-62.
+
+Marder, K., M-X. Tang, H. Mejia, B. Alfaro, L. Cote, E. Louis, J. Groves
+
+et R. Mayeux (1996). "Risk of Parkinson's disease among first degree
+
+relatives: a community-based study." Neurology 47(1): 155-60
+
+Mayeux, R. (2003). "Epidemiology of neurodegeneration." Annual Review of
+
+Neuroscience 26: 81-104.
+
+Menegon, A., P. G. Board, A. C. Blackburn, G. D. Mellick et D. G. Le
+
+Couteur (1998). "Parkinson's disease, pesticides, and glutathione
+
+transferase polymorphisms." The Lancet 352: 1344-6.
+
+Mochizuki, H., H. Hayakawa, M. Migita, M. Shibata, R. Tanaka, A. Suzuki,
+
+Y. Shimo-Nakanishi, T. Urabe, M. Yamada, K. Tamayose, T. Shimada, M. Miura
+
+et Y. Mizuno (2001). "An AAV-derived Apaf-1 dominant negative inhibitor
+
+prevents MPTP toxicity as antiapoptotic gene therapy for Parkinson's
+
+disease." Proceedings of the National Academy of Sciences 98(9): 10918-23
+
+Morens, D. M., A. grandinetti, D. Reed, L. R. White et G. W. Ross (1995).
+
+"Cigarette smoking and protection from Parkinson's disease: False
+
+association or etiologic clue?" Neurology 45(6): 1041-51.
+
+Morens, D. M., J. W. Davis, A. Grandinetti, G. W. Ross, J. S. Popper et
+
+L. R. White (1996). "Epidemiologic observations on Parkinson's disease:
+
+incidence and mortality in a prospective study of middle-aged men."
+
+Neurology 46(4): 1044-50.
+
+Moro, E., R. J. Esselink, J. Xie, M. Hommel, A. L. Benabid et P. Pollak
+
+(2002). "The impact on Parkinson's disease of electrical parameter settings
+
+in STN stimulation." Neurology 59(5): 706-13.
+
+N
+
+Nakao, N., E. Nakai, et al. (1999). "Ablation of the subthalamic nucleus
+
+supports the survival of nigral dopaminergic neurons after nigrostriatal
+
+lesions induced by the mitochondrial toxin 3-nitropropionic acid."
+
+Ann.Neurol. 45(5): 640-651.
+
+Nicklas, W. J., I. Vyas, et al. (1985). "Inhibition of NADH-linked
+
+oxidation in brain mitochondria by 1-methyl-4-phenyl-pyridine, a metabolite
+
+of the neurotoxin, 1-methyl-4-phenyl-1,2,5,6-tetrahydropyridine." Life
+
+Science 36(26): 2503-8.
+
+Obeso, J. A., C. W. Olanow et J. G. Nutt (2000). "Levodopa motor
+
+complications in Parkinson's disease." Trends in Neurosciences 23(10 Suppl):
+
+S2-7.
+
+Olanow, C. W., J. H. Kordower et T. B. Freeman (1996). "Fetal nigral
+
+transplantation as a therapy for Parkinson's disease." Trends in
+
+Neurosciences 19(3): 102-9
+
+Olanow, W., A. H. Schapira et O. Rascol (2000). "Continuous
+
+dopamine-receptor stimulation in early Parkinson's disease." Trends in
+
+Neurosciences 23(10 Suppl): S117-26.
+
+Olanow, C. W., R. L. Watts et W. C. Koller (2001). "An algorithm
+
+(decision tree) for the management of Parkinson's disease (2001): treatment
+
+guidelines." Neurology 56(11 Suppl 5): S1-S88.
+
+Olanow, C. W. (2002). "Surgical therapy for Parkinson's disease."
+
+European Journal of Neurology 9(Suppl 3): 31-9.
+
+Orth, M. and A. H. Schapira (2001). "Mitochondria and degenerative
+
+disorders." American Journal of Medical Genetics 106(1): 27-36.
+
+Paschen, W., C. G. Proud et G. Mies (2007). "Shut-down of translation, a
+
+global neuronal stress response: mechanisms and pathological relevance."
+
+Current Pharmaceutical Design 13(18): 1887-902.
+
+Paul, G., W. Meissner, et al. (2004). "Ablation of the subthalamic
+
+nucleus protects dopaminergic phenotype but not cell survival in a rat model
+
+of Parkinson's disease." Experimental Neurology 185(2): 272-80.
+
+Piallat, B., Benazzouz A. et A. L. Benabid (1996). "Subthalamic nucleus
+
+lesion in ratsprevents dopaminergic nigral neuron degeneration after
+
+striatal 6-OHDA injection: behavioural and immunohistochemical studies"
+
+European Journal of Neuroscience 8: 1408-14
+
+Poewe, W. H. (1991). Clinical differential diagnosis of Parkinson's
+
+disease. International workshop Berlin Parkinson's disease, Berlin, Medicom.
+
+Polymeropoulos, M. H., C. Lavedan, E. Leroy, S. E. Ide, A. Dehejia, A.
+
+Dutra, B. Pike, H. Root, J. Rubensteien, R. Boyer, E. S. Stenroos, S.
+
+Chandrasekharappa, A. Athanassiadou, T. Papapetropoulos, W. G. Johnson, A.
+
+M. Lazzarini, R. C. Duvoisin, G. Di Iorio, L. I. Golbe et R. L. Nussbaum
+
+(1997). "Mutation in the ?-synuclein gene identified in families with
+
+Parkinson's disease." Science 276: 2045-7
+
+Quinn, N. (1999). "Progress in functional neurosurgery for Parkinson's
+
+disease." Lancet 354(9191): 1658-9.
+
+Rajput, A. H., M. Fenton, S. Birdi et R. Macaulay (1997). "Is levodopa
+
+toxic to human substantia nigra?" Movement Disorders 12(5): 634-8.
+
+Rasche, D., P. C. Rinaldi, R. F. Young et V. M. Tronnier (2006) " Deep
+
+brain stimulation for the treatment of various chronic pain syndromes."
+
+Neurosurgical Focus 21(6): E8
+
+Rascol, O., D. J. Brooks, A. D. Korczyn, P. P. De Deyn, C. E. Clarke et
+
+A. E. Lang (2000). "A five-year study of the incidence of dyskinesia in
+
+patients with early Parkinson's disease who were treated with ropinirole or
+
+levodopa. 056 Study Group." New England Journal of Medicine 342(20):
+
+1484-91.
+
+Reiner, A. et K. D. Anderson (1990). "The patterns of neurotransmitter
+
+and neuropeptide co-occurrence among striatal projection neurons:
+
+conclusions based on recent findings." Brain Research Brain Research Review
+
+15(3): 251-65.
+
+Ross, G. W., R. D. Abbott, H. Petrovitch, D. M. Morens, A. Grandinetti,
+
+K-H. Tung, C. M. Tanner, K. H. Masaki, P. L. Blanchette, J. D. Curb, J. S.
+
+Popper et L. R. White (2000). "Association of coffee and caffeine intake
+
+with the risk of Parkinson disease." Journal of American Medical Association
+
+283(20): 2674-9.
+
+Saji, M., A. D. Blau, et al. (1996). "Prevention of transneuronal
+
+degeneration of neurons in the substantia nigra reticulata by ablation of
+
+the subthalamic nucleus" Experimental.Neurology 141(1): 120-129.
+
+Salin, P., C. Manrique, C. Forni and L. Kerkerian-Le Goff (2002).
+
+"High-frequency stimulation of the subthalamic nucleus selectively reverses
+
+dopamine denervation-induced cellular defects in the output structures of
+
+the basal ganglia in the rat." Journal of Neuroscience 22(12): 5137-48.
+
+Schapira, A. H., M. Gu, et al. (1998). "Mitochondria in the etiology and
+
+pathogenesis of Parkinson's disease." Annals of Neurology 44(3 Suppl 1):
+
+S89-98.
+
+Schrag, A. et N. Quinn (2000). "Dyskinesias and motor fluctuations in
+
+Parkinson's disease. A community-based study." Brain 123 (Pt 11): 2297-305.
+
+Scott, W. K., M. A. Nance, R. L. Watts, J. P. Hubble, W. C. Koller, K.
+
+Lyons, R. Pahwa, M. B. Stern, A. Colcher, B. C. Hiner, J. Jankovic, W. G.
+
+Ondo, F. H. Allen Jr, C. G. Goetz, G. W. Small, D. Masterman, F. Mastaglia,
+
+N. G. Laing, J. M. Stajich, B. Slotterbeck, M. W. Booze, R. C. Ribble, E.
+
+Rampersaud, S. G. West, R. A. Gibson, L. T. Middleton, A. D. Roses, J. L.
+
+Haines, B. L. Scott, J. M. Vance et M. A. Pericak-Vance (2001). "Complete
+
+genomic screen in Parkinson disease. Evidence for multiple genes." Journal
+
+of the American Medical Association 286(18): 2239-44.
+
+Seidler, A., W. Hellenbrand, B.-P. Robra, P. Vieregge, P. Nischan, J.
+
+Joerg, W. H. Oertel, G. Ulm et E. Schneider (1996). "Possible environmental,
+
+occupationnal, and other etiologic factors for Parkinson's disease: a
+
+case-control study in Germany." Neurology 45(5): 1275-84.
+
+Sherer, T. B., R. Betarbet, et al. (2002). "An in vitro model of
+
+Parkinson's disease: linking mitochondrial impairment to altered
+
+alpha-synuclein metabolism and oxidative damage." Journal of Neurosciences
+
+22(16): 7006-15.
+
+Siderowf, A. et M. Stern (2003). "Update on Parkinson disease." Annals of
+
+Internal Medicine 138(8): 651-8.
+
+Siegfried, J. et B. Lippitz (1994). "Bilateral chronic electrostimulation
+
+of ventroposterolateral pallidum: a new therapeutic approach for alleviating
+
+all parkinsonian symptoms." Neurosurgery 35(6): 1126-9; discussion 1129-30.
+
+Smith, Y. and A. Parent (1988). "Neurons of the subthalamic nucleus in
+
+primates display glutamate but not GABA immunoreactivity." Brain Research
+
+453(1-2): 353-6.
+
+Steece-Collier K., E. Maries et J. H. Kordower (2002). "Etiology of
+
+Parkinson's disease: genetics and environment revisited." Proceeding of the
+
+National Academy of Sciences 99(22): 13972-4.
+
+Sun, B., S. Chen, S. Zhan, W. Le et S. E. Krahl (2007). " Subthalamic
+
+nucleus stimulation for primary dystonia and tardive dystonia." Acta
+
+Neurochirurgica Supplement 97(Pt 2): 207-14
+
+Tanaka, M., A. Sotomatsu, H. Kanai et S. Hirai (1991). "Dopa and dopamine
+
+cause cultured neuronal death in the presence of iron." Journal of Neurol.
+
+Sci. 101: 198-203.
+
+Tanner, C. M., R. Ottman, S. M. Goldman, J. Ellenberg, P. Chan, R. Mayeux
+
+et J. W. Langston (1999). "Parkinson disease in twins: an etiologic study."
+
+Journal of the American Medical Association 281(4): 341-6.
+
+Tanner, C. M. et D. A. Aston (2000). "Epidemiology of Parkinson's disease
+
+and akinetic syndromes." Current Opinion in Neurology 13(4): 427-30.
+
+Tashjian, A. H., Jr., Y. Yasumura, L. Levine, G. H. Sato et M. L. Parker
+
+(1968). "Establishment of clonal strains of rat pituitary tumor cells that
+
+secrete growth hormone." Endocrinology 82(2): 342-52.
+
+Troster, A. I., L. D. Stalp, A. M. Paolo, J. A. Fields et W. C. Koller
+
+(1995). "Neuropsychological impairment in Parkinson's disease with and
+
+without depression." Archives of Neurology 52(12): 1164-9.
+
+Tsokas, P, T. Ma, R. Iyengar, E. M. Landau et R. D. Blitzer (2007).
+
+"Mitogen-activated protein kinase upregulates the dendritic translation
+
+machinery in long-term potentiation by controlling the mammalian target of
+
+rapamycin pathway." Journal of Neurosciences 27(22): 5885-94.
+
+van der Walt, J. M., E. R. Martin, et al. (2003). "Genetic polymorphisms
+
+of the N-acetyltransferase genes and risk of Parkinson's disease." Neurology
+
+60(7): 1189-91.
+
+Vila, M. and S. Przedborski (2003). "Targeting programmed cell death in
+
+neurodegenerative diseases." Nature Reviews Neuroscience 4(5): 365-75.
+
+Walkinshaw, G. et C. M. Waters (1995). "Induction of apoptosisin
+
+catecholinergic PC12 cells by L-DOPA. Implicationsfor the treatment of
+
+Parkinson's disase." J. Clin. Invest. 95: 2458-64.
+
+Wallace B. A. "The neuroprotective effects of subthalamic nucleus (STN)
+
+suppression." Thèse de doctorat, Université Joseph Fourier Grenoble 1, juin
+
+2004.
+
+Wichmann, T. et M. R. DeLong (2003). "Functional neuroanatomy of the
+
+basal ganglia in Parkinson's disease." Advances in Neurology 91: 9-18.
+
+Xia, R. Etude des effets de la stimulation électrique à haute fréquence
+
+dans un modèle cellulaire in vitro. Thèse de doctorat, Université Joseph
+
+Fourier Grenoble 1, juin 2005.
+
+Xia, R., F. Berger, B. Piallat et A. L. Benabid (2007). "Alteration of
+
+hormone and neurotransmitter production in cultured cells by high and low
+
+frequency electrical stimulation." Acta Neurochirurgica 149: 67-73
+
+Zigmond, M. J., E. D. Abercrombie, T. W. Berger, A. A. Grace et E. M.
+
+Stricker (1990). "Compensations after lesions of central dopaminergic
+
+neurons: some clinical and basic implications." Trends in Neurosciences
+
+13(7): 290-6
+
+
+

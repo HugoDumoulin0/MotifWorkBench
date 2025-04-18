@@ -1,0 +1,1090 @@
+
+
+Introduction
+
+Cette contribution introductive au symposium proposé sur le thème « Dispositifs
+
+de formation numériques et écrits professionnalisés »?? a pour but de cadrer
+
+l’expérimentation en cours dans le paysage général des évolutions liées à
+
+l’usage des environnements numériques – et plus généralement à la numérisation –
+
+dans les formations universitaires, et d’analyser ce faisant les conditions de
+
+l’innovation pédagogique. Nous prendrons pour angle d’attaque les logiques
+
+sociales à l’œuvre dans ces évolutions en nous intéressant plus précisément à
+
+celles qui sous-tendent l’intervention des professionnels enseignants et nous
+
+argumenterons la thèse que la logique professionnaliste classique, non seulement
+
+caractérise la démarche des intervenants engagés dans notre expérience PCDAI,
+
+mais que les traits de cette logique s’en trouvent éventuellement renforcés.
+
+Cela n’empêche pas qu’elle rencontre des obstacles sur le terrain qui freinent
+
+le développement du processus d’innovation. Le principal d’entre eux nous semble
+
+être la difficulté à coordonner initiatives institutionnelles et initiatives
+
+individuelles autour d’un enjeu qui serait, certes, celui d’une
+
+« démocratisation de l’innovation » (pour reprendre l’expression du théoricien
+
+E.Von Hippel), mais accompagnée par l’institution et mise au service d’une
+
+meilleure qualité pédagogique des enseignements-apprentissages
+
+universitaires.
+
+2. Logiques sociales, logique professionnaliste, rapport aux
+
+outils
+
+Précisons tout d’abord que nous intervenons dans ce colloque placé sous le signe
+
+conjoint des sciences de l’éducation et des sciences de l’information et de la
+
+communication à partir d’une problématique forgée dans le champ des SIC, que
+
+nous mettons en œuvre pour notre part sur le terrain de la formation.
+
+2.1Médiatisation de la communication
+
+éducative
+
+Ce qui nous intéresse depuis de nombreuses années sur ce terrain, c’est de
+
+comprendre ce qui se produit concernant la communication éducative du fait
+
+de sa médiatisation. Par communication éducative, nous entendons bien sûr la
+
+dimension relationnelle de l’activité, très importante, distribuée
+
+différemment selon les modèles pédagogiques et les modes d’intervention (cf. un cours magistral v/s un
+
+atelier collaboratif), mais aussi plus largement les supports de l’activité
+
+éducative, dont l’écrit (le manuel par exemple depuis le 19ème siècle) et
+
+l’image (cf. J. Perriault, 1981) sont des exemples
+
+classiques. Par « médiatisation » de la communication éducative, nous ne
+
+faisons que constater dans ce secteur un processus massif qui s’est produit
+
+au long du siècle dernier, à savoir que des techniques, par vagues et
+
+grappes successives (la radiodiffusion, l’audiovisuel, la téléphonie,
+
+l’informatique, la numérisation qui aujourd’hui les affecte tous et
+
+démultiplie leurs potentialités) se sont inscrites dans l’ordinaire des
+
+pratiques de communication et d’information et ont contribué à des
+
+évolutions qui ne sont jamais appréciables que dans l’après coup et sur un
+
+temps long. Aujourd’hui, notre attention se porte sur ce qui est rendu
+
+possible – ce qui ne signifie pas « réalisé » – par un fait majeur : les
+
+politiques ministérielles volontaristes en matière d’infrastructures en
+
+réseaux et d’équipements en matériels, relayées par les politiques publiques
+
+régionales, ont doté tous les établissements universitaires de systèmes
+
+d’information techniques (plates-formes logicielles interopérables,
+
+dénommées aussi « portails »), performants tant en ce qui concerne la
+
+gestion que l’administration et la pédagogie, même si c’est précisément dans
+
+ce domaine que les développements sont balbutiants.
+
+L’appel d’offres ministériel « Usages de l’Internet », dans lequel se cadre
+
+l’opération PCDAI, est très représentatif de cet état des lieux : l’objectif
+
+est de favoriser des expérimentations intégrant l’usage du réseau dans
+
+divers secteurs, dont l’éducatif. Plus précisément, il s’est agi pour notre
+
+équipe de recherche-action, dont certains membres étaient déjà utilisateurs
+
+de plates-formes logicielles constituant un lieu d’échange et d’archivage
+
+virtualisé d’une partie de l’activité pédagogique, de réfléchir à
+
+l’enrichissement de ces « environnements » ou à en concevoir d’autres selon
+
+des hypothèses et des modalités que les interventions notamment de P. A.
+
+Caron et F. Hoogstoel vont permettre d’expliciter.
+
+2.2 Logiques sociales, logique
+
+administrativo-professionnaliste
+
+Ce que nous cherchons à approfondir pour notre part, c’est la façon dont des
+
+logiques sociales sont « déjà là », à la manière d’un tiers, dans ce qui
+
+pourrait se concevoir de manière réductrice comme la rencontre entre des
+
+usagers (enseignants ou étudiants) avec des outils (ici constitués en
+
+environnement modulable, finalisé par rapport à telle ou telle activité
+
+pédagogique, et comment elles se trouvent mises ou non en question,
+
+amplifiées ou déstabilisées, offrant ainsi à lire des tendances d’évolution
+
+plus générales.
+
+Nous reprenons ici la notion de « logique sociale », particulièrement
+
+travaillée dans notre champ par des auteurs comme B. Miège, dans son rapport
+
+avec les mécanismes de la formation des usages sociaux des techniques :
+
+l’idée est que des déterminants sociaux profonds - et pas seulement des
+
+comportements ou des stratégies propres aux individus, ni des
+
+caractéristiques intrinsèques des outils - sont à l’œuvre dans la façon dont
+
+les techniques trouvent ou ne trouvent pas leur inscription dans la vie
+
+sociale.
+
+Il nous a semblé intéressant de retenir dans cette perspective les
+
+caractéristiques fondant la logique « professionnaliste » de l’activité de
+
+l’enseignant du supérieur, en référence au sociologue américain E. Freidson
+
+(2001) et telle que l’a reformulée P. Grevet en parlant de modèle
+
+administrativo-professionnaliste en France  :
+
+« Il [le modèle] est ‘professionnaliste’ en un sens
+
+influencé par les débats partant de la sociologie nord-américaine des
+
+professions et tenant compte des différences profondes de contexte. La
+
+caractéristique "professionnaliste" dans la situation française signifie
+
+qu'une autonomie importante est conférée aux enseignants-chercheurs dans
+
+l'organisation et le fonctionnement des universités […]. Cette autonomie
+
+des enseignants-chercheurs comporte six dimensions : (NDLR : nous
+
+ne reprenons que trois d’entre elles utiles pour notre propos)
+
+Un accès aux ressources informationnelles libre et gratuit pour eux
+
+ou à des coûts qu'ils sont en mesure de couvrir personnellement (par
+
+exemple dans l'achat de livres)
+
+Une très large autonomie individuelle dans le processus de travail
+
+signifiant, entre autres aspects, qu'ils contrôlent les usages des
+
+ressources informationnelles dans leurs relations avec les
+
+étudiants, qu'ils ont la possibilité de façonner ces ressources
+
+[…]
+
+Un principe de justification mettant en avant les avantages pour la
+
+collectivité nationale des cinq caractéristiques précédentes :
+
+nécessités de la liberté intellectuelle et d'une grande autonomie
+
+professionnelle pour l'avancée de la connaissance scientifique, pour
+
+la constitution et la mobilisation des compétences des
+
+enseignants-chercheurs, rôle central dans les apprentissages des
+
+interactions entre enseignants très qualifiés autonomes et personnes
+
+en formation, etc. »
+
+Considérant ces traits, nous avons cherché à comprendre sur le terrain de
+
+l’enseignement supérieur ce qu’il en advenait : repère-t-on des indices de
+
+changement par rapport à cette logique professionnaliste  et, si oui, de
+
+quel ordre sont-ils (dégradation, maintien en l’état, nouveau type de
+
+qualification ) ? Comment par ailleurs le rapport aux outils se trouve-t-il
+
+impliqué (à côté d’autres paramètres) dans ces éventuels changements :
+
+sont-ils perçus dans un rapport potentiel de substitution là où il manque à
+
+l’évidence de personnel face à des cohortes importantes d’étudiants à
+
+former  ? Ce type de substitution va-t-il dans le sens d’une dégradation de
+
+la qualité du service de formation rendu ou peut-il ouvrir la voie à des
+
+propositions alternatives intéressantes ? Qu’en est-il de l’importance de la
+
+qualification de l’enseignant-chercheur pour les interactions avec les
+
+étudiants : ne se trouve-t-elle pas niée ou dévalorisée si l’accompagnement
+
+du service de formation se trouve assuré par des tuteurs n’ayant pas comme
+
+lui la maîtrise de savoirs spécialisés ? L’autonomie et la responsabilité de
+
+l’enseignant quant au contrôle qu’il exerce sur sa propre activité
+
+professionnelle sont-elles maintenues et de quelle façon ? Ou bien se
+
+trouve-t-il mis en situation de dépendance par rapport à d’autres acteurs
+
+professionnels dans l’institution (informaticiens, médiatisateurs/designers
+
+de contenus) dans ce qui ressemblerait à une division du travail ?
+
+Telles sont les questions qu’il nous paraît aussi intéressant de poser aussi
+
+par rapport à notre opération de recherche pour la resituer dans un cadre
+
+d’évolutions plus générales et dégager, à travers l’analyse des obstacles
+
+auxquelles elle se heurte, quelques uns des enjeux dont elle est
+
+porteuse.
+
+3. Permanence et renforcement de traits professionnalistes
+
+dans PCDAI
+
+3.1. En préalable : statut et rôle des acteurs,
+
+importance de certaines variables
+
+L’opération PCDAI a affiché dès le départ un principe clair : il s’agissait
+
+pour un groupe d’enseignants – de statut universitaire ou non – de partir de
+
+leur réalité familière, à savoir l’intervention dans des filières
+
+professionnalisées de deux universités lilloises auprès d’étudiants de
+
+formation initiale ou continue. A Lille 1, les collègues, engagés dans des
+
+parcours avec des partenaires par ailleurs financeurs conventionnels, ne
+
+pouvaient ni courir, ni faire courir le risque d’un échec du dispositif de
+
+formation pour les étudiants et leurs commanditaires, tout comme les
+
+collègues de Lille 3, engagés auprès d’étudiants en attente d’un diplôme, ne
+
+pouvaient faire passer coûte que coûte au premier plan la volonté
+
+d’expérimentation. Autrement dit, dans un tel contexte, l’idée de permanence
+
+quant à la logique professionnaliste paraît beaucoup plus attendue a priori qu’elle ne le serait dans tel ou tel autre
+
+type de contexte impliquant une rupture plus grande (dispositif de formation
+
+à distance, tutoré ou non ; centre de ressources …). Ce qui pour autant, on
+
+le verra, ne signifie pas simple continuité.
+
+Un autre aspect important est également à souligner : le professionnel qui a
+
+joué le rôle d’informaticien était un enseignant-chercheur impliqué à ce
+
+double titre dans le projet de recherche. Ce n’était pas un choix au départ,
+
+car un ingénieur de recherche à temps complet ou à mi-temps était prévu.
+
+Mais, outre qu’il n’y avait pas de solution alternative, il fallait trouver
+
+un concepteur informatique qui soit engagé dans une réflexion sur sa propre
+
+pratique et qui soit disposé à laisser suffisamment de place aux pédagogues
+
+et aux utilisateurs pour une co-conception du dispositif. Il s’agissait donc
+
+d’un rôle beaucoup trop spécifique pour le faire endosser par quelqu’un de
+
+complètement étranger à la problématique et recruté pour la circonstance.
+
+Enfin, il est important d’avoir présent à l’esprit une dernière variable : le
+
+groupe des professionnels directement au cœur de l’opération avait une
+
+double motivation à sa réussite, pédagogique et scientifique, du fait qu’il
+
+s’agissait d’une recherche-action. Le retrait des PAST, de même que
+
+l’attitude beaucoup plus attentiste des intervenants pédagogues
+
+non-chercheurs, sont autant de signes dont il faut tenir compte pour bien
+
+comprendre que l’analyse qui suit suppose des conditions d’intervention
+
+gratifiantes  pour ces professionnels, même s’il ne s’agit pas d’une
+
+gratification financière.
+
+3.2. Autonomie et responsabilité professionnelle : un
+
+premier trait à double tranchant
+
+Cette caractéristique garde complètement sa place dans l’opération engagée.
+
+On pourrait même dire d’une certaine façon que celle-ci, du fait de son lien
+
+avec la recherche, est exemplaire de la liberté d’action dont dispose un
+
+enseignant ou une équipe d’enseignants-chercheurs : d’abord parce que la
+
+décision de répondre à un appel d’offres ministériel en matière de recherche
+
+relève de l’initiative des chercheurs qui élaborent la réponse, le visa
+
+qu’apposent les responsables politiques de l’université ne correspondant pas
+
+à une forme de contrôle sur le projet à engager. Ensuite parce que, en tant
+
+que pédagogues, ils disposent de la même capacité d’autonomie et
+
+d’initiative : aucune autorisation particulière n’est à négocier avec le
+
+directeur d’UFR en ce qui concerne le mode d’intervention pédagogique en
+
+formation initiale, et c’est peut-être davantage dans le cas des formations
+
+commanditées par des partenaires du monde professionnel à Lille 1 que ce
+
+type de négociation a existé et qu’un suivi de la part de ceux-ci s’est
+
+effectué par le biais de leur participation au comité de pilotage. Par la
+
+suite, la mise en oeuvre de l’action a été réalisée par la petite équipe
+
+d’acteurs les plus engagés qui en a simplement référé à trois reprises au
+
+comité de pilotage, plus d’ailleurs dans le souci de valoriser
+
+l’expérimentation auprès des partenaires que de la soumettre à
+
+approbation.
+
+Toutefois, cette large autonomie a des contre-parties : si les acteurs
+
+enseignants n’ont, d’une certaine façon, de compte à rendre qu’au financeur
+
+de la recherche par le biais d’un rapport, les responsables politiques de
+
+l’établissement ne sont de leur côté redevables d’aucun engagement à leur
+
+égard. C’est ainsi qu’au moment du démarrage en octobre 2004, ils ne se
+
+sentaient pas concernés par une opération qui n’entrait dans aucune
+
+programmation préalable ni dans leurs préoccupations immédiates. Très
+
+concrètement, si l’opération a pu démarrer dans les délais qui
+
+correspondaient au calendrier de la recherche, c’est grâce à la bonne
+
+volonté du CUEEP, un organisme de formation continue à Lille 1 impliqué de
+
+longue date dans les expérimentations TICE, qui a mis à notre disposition
+
+son serveur et qui a accepté que le responsable technique de ce serveur nous
+
+donne de son temps.
+
+Nous reviendrons en conclusion sur cette « dis-chronie » entre temps des
+
+individus et temps de l’institution qui a des incidences en ce qui concerne
+
+les conditions de possibilité d’un processus d’innovation
+
+technico-pédagogique.
+
+3.3. La recherche d’une interpénétration des rôles liée
+
+à l’hypothèse de malléabilité du système technique
+
+Un autre trait de la logique professionnaliste se trouve non seulement
+
+maintenu, mais renforcé dans le type d’opération en jeu : celui de la
+
+qualification des acteurs susceptible de s’accroître du fait même des
+
+hypothèses guidant la conception du système technico-pédagogique. En effet,
+
+un des objectifs poursuivis en particulier par les collègues informaticiens
+
+est de retravailler à travers le projet PCDAI une des limites perçue dans
+
+les premiers modèles considérés par eux comme malléables, à savoir qu’ils ne
+
+l’étaient qu’à leur propre regard et non à celui des autres acteurs
+
+« non-spécialistes ». Dès lors, l’idée est de favoriser au maximum la prise
+
+en main du système par les pédagogues dans des processus de co-construction
+
+et de co-évolution du dispositif au cours desquels s’opèrent « tant les ajustements continus, négociés et socialement
+
+situés de pratiques de la part des individus, que les ajustements
+
+apportés au comportement du système interactif considéré ». Dans
+
+une communication récente, nous avons cherché à évaluer quelle part de
+
+réalité correspond effectivement à cet attendu dans le projet tel que vécu
+
+et réalisé (cf. Fichez, Varga, 2006). Nous nous
+
+contenterons ici de souligner qu’elle va exactement à l’encontre de l’idée
+
+d’une spécialisation, voire d’une division du travail entre les acteurs
+
+impliqués, car il ne s’agit pas qu’un acteur soit dessaisi de son rôle au
+
+profit d’un autre, mais au contraire qu’un continuum s’établisse entre les
+
+rôles des divers acteurs souhaitant pouvoir accommoder le système existant.
+
+Et si de fait peu de collègues ont « pris » la main sur le système, la
+
+préoccupation commune autour de l’« objet-frontière » que constituait
+
+l’environnement numérique a fait que tous ont bougé dans leurs
+
+représentations et ont fait un réel pas dans la compréhension de celles de
+
+l’autre. Sans doute peut-on lire ainsi la préfiguration d’un vrai travail
+
+d’interfaçage indispensable à divers niveaux dans nos institutions, même si
+
+des obstacles en limitent la portée, notamment l’éloignement des Centres de
+
+Ressources Informatiques par rapport aux enseignants qui se situent à la
+
+périphérie des UFR et l’absence d’institut pédagogique multimédia dans les
+
+universités françaises en général .
+
+3.4. Le rôle central des interactions médiées par la
+
+plate-forme
+
+Pour en terminer avec cette analyse concernant la logique professionnaliste
+
+et son devenir, nous évoquerons un dernier trait relatif à l’importance des
+
+interactions.
+
+S’il est en effet un trait que les auteurs des monographies réalisées à
+
+propos des différents chantiers mettent en avant fortement, c’est à quel
+
+point la réussite des projets repose sur la qualité de la présence de
+
+l’enseignant dans l’environnement de travail et sur son implication comme
+
+amorce et aiguillon d’interactions plus directes entre les apprenants
+
+eux-mêmes. R. Varga souligne même le caractère paradoxal des effets induits
+
+par l’EN en termes de convivialité, tandis qu’a
+
+contrario, D. Delache note, à propos du dispositif ANFA que
+
+l’absence d’implication des enseignants (non-concepteurs du dispositif) sur
+
+la plate-forme est une explication à sa désaffection.
+
+Donc, même si une visée rationalisatrice peut être présente (par exemple,
+
+tirer parti de la plate-forme pour optimiser certaines tâches redondantes
+
+dans des pratiques d’accompagnement se jouant la plupart du temps duellement
+
+entre enseignant et apprenant), il ne s’agit pas pour l’enseignant de se
+
+décharger de sa tâche d’animation sur les apprenants sous couvert de
+
+pratiques collaboratives entre eux. Autrement dit, aucun impératif lié à un
+
+gain économique en termes de diminution de coût du travail qualifié du
+
+formateur n’est en jeu, même si d’une part le temps passé doit être régulé
+
+et si, d’autre part, les observations menées avec une deuxième génération
+
+d’étudiants montrent que ce temps peut être moins important en durée dès
+
+lors que les pratiques collaboratives des étudiants entre eux
+
+s’intensifient.
+
+4. Obstacles et enjeux ou les conditions d’un processus
+
+d’innovation pédagogique dans l’organisation universitaire
+
+Nous avons évoqué à plusieurs reprises dans notre analyse des traits
+
+professionnalistes l’idée d’un processus d’innovation pédagogique dont
+
+participerait la démarche des professionnels (enseignants et informaticiens)
+
+engagés dans l’opération PCDAI. Il nous paraît important d’approfondir ce point
+
+dans une dernière partie en partant d’un éclairage externe au champ pédagogique,
+
+celui de la modélisation d’ une « innovation centrée sur l’usager » (« user-centered ») que développe Von Hippel (2005). Cela
+
+nous permettra en contrepoint de mieux cerner quels sont les traits spécifiques
+
+du processus d’innovation dans le champ qui nous concerne et de mieux comprendre
+
+en quoi les obstacles ou les limites que nous avons rencontrés sont autant de
+
+points critiques révélateurs de modes de fonctionnement culturels et
+
+organisationnels appelés à évoluer.
+
+4.1. Le modèle d’innovation « user-centered »
+
+E. Von Hippel, chercheur de longue date dans le domaine de l’innovation
+
+économique, fait l’hypothèse que nous sommes entrés dans une ère de
+
+« démocratisation de l’innovation » Democratizing Innovation est le titre de son
+
+ouvrage de 2005.  parce que les usagers, du fait des
+
+améliorations concernant les TIC, sont en mesure de développer les produits
+
+et les services ajustés à leurs besoins. Plusieurs traits de son
+
+argumentation sont intéressants à relever pour notre propos :
+
+Les usagers innovateurs sont aussi bien des individus que des
+
+communautés au sein desquelles se manifeste de la coopération
+
+informelle et formelle
+
+Cette coopération est très largement facilitée aujourd’hui grâce à la
+
+connexion des participants à des infrastructures et des outils
+
+librement modifiables
+
+Il s’agit de produire pour soi-même et par soi-même du bien (ou du
+
+service » d’information, distribué gratuitement sur le WEB, sans
+
+besoin de passer par un producteur puisqu’il n’y a pas de
+
+reproduction matérielle de masse.
+
+le phénomène observé peut être relié à d’autres champs, notamment
+
+ceux de l’open source et de l’économie de la
+
+connaissance .
+
+Les traits de ressemblance entre le processus d’innovation dans ce modèle et
+
+celui qui caractérise la démarche PCDAI sont assez frappants : nous avons en
+
+effet mis en évidence la mise en marche d’une petite communauté de
+
+professionnels innovateurs (qui l’avaient déjà été à titre individuel pour
+
+certains dans leurs pratiques préalables), qui a organisé sa propre
+
+coopération sur le mode collaboratif dans un esprit de non-division du
+
+travail, s’est appuyée sur une infrastructure et des outils modifiables, a
+
+produit par elle-même et pour elle-même du « service » d’information
+
+immatériel mis en ligne à destination d’étudiants dont elle souhaite qu’ils
+
+entrent eux aussi dans une co-élaboration du dispositif au fur et à mesure
+
+de l’usage qu’ils en font. Mais, et c’est l’occasion pour nous de revenir
+
+sur les problèmes et obstacles rencontrés, Von Hippel traite de la
+
+démocratisation de l’innovation à travers des exemples très généraux, en
+
+n’évoquant le processus que sous l’angle de ce qui en fait le succès.
+
+4.2. Contextualisation de l’opération PCDAI au regard de
+
+ce modèle d’innovation
+
+Dans notre propre démarche du « faire autrement », nous étions très
+
+concrètement situés dans l’institution universitaire française avec ses
+
+modèles organisationnels encore largement marqués par des forces de la
+
+bureaucratie professionnelle et une grande difficulté à intégrer les
+
+capacités de souplesse et d’ajustement propres à un modèle
+
+« adhocratique » . Ainsi avons-nous noté ci-dessus l’existence d’une
+
+dis-chronie, l’initiative prise par les innovateurs PCDAI ne s’ajustant pas
+
+à ce que de leur côté les responsables de la politique universitaire en
+
+matière d’infrastructures (choix et mise en service d’une plate-forme dans
+
+le contexte des UNR (Universités Numériques Régionales) ont choisi de
+
+privilégier. Nous avons noté aussi les limites du point de vue de
+
+l’interfaçage dans un contexte institutionnel jusqu’à présent marqué par la
+
+concentration de l’expertise technique aux mains des ingénieurs dans des
+
+Centres de Ressources informatiques - elle ne se révèle donc pas
+
+suffisante.. Si l’une des conditions importantes de la démocratisation de
+
+l’innovation est, comme l’a amplement montré Von Hippel, la plus grande
+
+facilité de prise en mains des plates-formes et des outils par les
+
+non-experts et le plus grand degré de malléabilité de ces systèmes- ce que
+
+confirme notre démarche 
+
+5. Conclusion :  l’innovation pédagogique assistée dans et par
+
+l’organisation
+
+Nous avons montré comment la logique professionnaliste peut entrer en conjonction
+
+avec un certain type de développements technologiques en permettant aux
+
+enseignants de construire des dispositifs sur mesure au plus près de leur
+
+activité ordinaire, illustrant en cela le modèle général de l’innovation « user-centered ». Mais l’expérience de PCDAI montre que ce
+
+type d’innovation à l’université a besoin d’être coordonné, accompagné et
+
+soutenu. Dans l’université française en effet, on le sait, les compétences
+
+d’ordre pédagogique et l’amélioration de la qualité de
+
+l’enseignement/apprentissage ne sont pas reconnues comme des priorités par
+
+rapport à la dimension « recherche ». Or, il ne s’agit pas simplement de faire
+
+usage d’outils, mais de se demander comment ceux-ci peuvent apporter une valeur
+
+ajoutée aux pratiques courantes, ce qui amène à réfléchir en profondeur aux
+
+modèles méthodologiques et à la façon dont ils peuvent pas à pas évoluer.
+
+Certes, l’opération PCDAI a concerné des formations professionnelles faisant une
+
+assez large place notamment à la conduite de projet et à l’écriture comme mode
+
+d’intégration de la formation (voir plusieurs autres articles de ce symposium)
+
+et visait d’emblée l’expérimentation de l’apprentissage coopératif, c’est-à-dire
+
+un modèle en rupture avec le modèle transmissif dominant. Mais il n’y a pas a priori de raison de penser que les formations
+
+professionnelles restent les seuls laboratoires possibles d’innovation
+
+pédagogique. Pourtant, il n’existe pas beaucoup d’exemples en France
+
+d’universités ayant imaginé comme à Louvain la Neuve, en Belgique, un véritable
+
+dispositif institutionnel (voté, financé et évalué) d’apprentissage de
+
+l’innovation , celle-ci étant précisément conçue comme un apprentissage passant
+
+par différentes étapes .
+
+Une logique professionnaliste renforcée au contact d’une instrumentation qui,
+
+comme le développera Pierre-André Caron, peut accompagner le « bricolage »
+
+enseignant, mais soutenue par un pilotage proactif et incitatif de l’institution
+
+permettant d’articuler de manière flexible et évolutive les projets individuels
+
+et institutionnels, tels nous semblent donc être les ingrédients d’un processus
+
+idéaltypique d’innovation pédagogique.
+
+L’ expérience PCDAI est un exemple d’amorce d’un tel processus, encore en quête
+
+de son inscription organisationnelle.
+
+5.1 Bibliographie
+
+Barna, J. (2005). Les processus de modernisation dans l’enseignement des
+
+langues pour adultes, Thèse de doctorat en sciences de
+
+l’Information et de la Communication, Lille, Université Lille 3,
+
+348 pages.
+
+Bourguin, G., Derycke, A.(2005). Systèmes Interactifs en Co-évolution.
+
+Réflexion sur les apports de la théorie de l’activité au support des
+
+pratiques collectives distribuées. Revue d’Interaction
+
+Homme-Machine, Vol. 6, n°1.
+
+Fichez, E., Varga, R. (2006). Plate-forme collaborative « postnuke » :
+
+dynamiques de co-construction. In Sidir, Bruillard, Baron (Ed.) JOCAIR’ 2006 .
+
+Premières journées Communication et apprentissage
+
+instrumentés en réseau. Amiens. Université de Picardie Jules Verne,
+
+27-51.
+
+Lebrun, M. (2005). eLearning pour enseigner et
+
+apprendre. Allier pédagogie et technologie. Louvain la Neuve,
+
+Bruylant-Academia.
+
+Miège, B. (2004). L’information-communication, objet de
+
+connaissance. Bruxelles, De Boeck Université.
+
+Mintzberg, H. (1982, tr. fr.)
+
+Structure et dynamique des organisations. Paris, Les
+
+Editions d’Organisation.
+
+Perriault, J. (1981). Mémoires de l’ombre et du
+
+son. Une archéologie de l’audiovisuel. Paris,
+
+Flammarion.
+
+Thibault, F. (2006).  Autour des campus numériques français. Repères dans
+
+les initiatives du ministère en charge de l’enseignement supérieur . Distances et Savoirs,  Vol.4, n°2, 109-112.
+
+Weber, S. (2004). The success of Open Source.
+
+Cambridge Massachussets, Harvard University Press.
+
+5.2Références sur le WEB.
+
+Delache, D. (2006), Intégrer une interface numérique pour accompagner un
+
+parcours de formation professionnelle. Préparation de formateurs de CFA à la
+
+Licence IUP : groupe ANFA, accessible à l’adresse
+
+Delache, D., D’Halluin, Ch., Fichez, E., Hoogstoel, F., Leclercq, G.,
+
+Varga R., (2006) : « Environnements numériques et pratiques collaboratives
+
+d’apprentissage » Rapport de recherche concernant
+
+l’opération PCDAI, MEN/ ANR,:Octobre 2006, 23 pages + annexes à
+
+l’adresse suivante accessible à l’adresse :
+
+http://archive-edutice.ccsd.cnrs.fr
+
+Grevet, P. (2005).  Socio-économie de l’information
+
+et des services interpersonnels. Une approche de l’enseignement supérieur
+
+utilisant le numérique. Note de recherche, IFRESI, Contrat
+
+de plan CNRS-Région Nord-Pas de Calais. Accessible à l’adresse:
+
+(consultation le 7 février 2007).
+
+Varga, R. (2006). Suivi de stages sur une plate-forme pédagogique
+
+POSTNUKE. Monographie, 56 p., ,
+
+(consultation le 7 février 2007).
+
+Von Hippel, E. (2005). Democratizing Innovation.
+
+Cambridge Massachussets, MIT Press, http///mitpress.mit.edu, (consultation
+
+le 4 février 2007).
+
+La numérisation est au sens premier un procédé de
+
+traitement et de compression de l’information., qui présente des avantages
+
+importants en matière de transport, de diffusion et d’édition des données.
+
+Aujourd’hui, le mot est employé par métonymie pour désigner à la fois le
+
+processus technique et ses incidences dans un domaine d’application . Il est
+
+ainsi question de la « numérisation pédagogique » au sens à la fois de la
+
+numérisation des ressources pédagogiques, du recours à des plates-formes
+
+logicielles pour la diffusion numérique des cours et de matériaux associés, la
+
+gestion des interactions synchrones ou asynchrones au travers d’outils
+
+configurés sur ces plates-formes, etc. On parle même globalement de la
+
+« numérisation du supérieur » en se référant au processus de virtualisation des
+
+campus physiques.
+
+On se reportera à F. Thibault (2006) pour un repérage
+
+chronologique concernant entre autres les événements marquants des politiques
+
+publiques.
+
+Des précisions sur les environnements techniques utilisés
+
+seront donnés dans les communications qui vont suivre. En bref, deux
+
+plates-formes collaboratives ont été utilisées, l’une propre au CUEEP, ACCEL, et
+
+l’autre POSTNUKE, mise au point par le TECFA à Genève.
+
+Cet auteur y revient dans la plupart de ses écrits depuis
+
+une vingtaine d’années. On se reportera en particulier à la synthèse récente
+
+proposée dans B. Miège (2004, p. 123-133). Il entend par là des tendances de
+
+fond, « autour desquelles les stratégies des acteurs sociaux
+
+(dominants ou dominés) sont plus ou moins contraints de s’organiser et de se
+
+développer » (p. 125).
+
+P. Grevet, dont les travaux de recherche portent sur la
+
+socioéconomie de l’enseignement supérieur et de la formation continue, parle
+
+« d’existant ‘administratif’ au sens des administrations
+
+publiques instituées et structurées directement par l'
+
+état, avec des tâches définies en termes de service public et
+
+un financement venant d'abord et directement de l'impôt ». (Grevet,
+
+2005, p. 21-22).
+
+Voir le domaine des langues, que ce soit en IUFM où
+
+l’obligation récente de certification en langues des Professeurs d’Ecole rend
+
+cruciale et urgente la mise en place de dispositifs d’autoformation alternatifs
+
+en centres de ressources ou dans les premiers cycles universitaires où il a
+
+fallu développer l’enseignement des langues pour non-spécialistes.
+
+Voir sur ce point le travail très important fourni en
+
+langues précisément par les acteurs universitaires pour mettre sur pied des
+
+méthodes de certification telles que le CLES (Certificat de compétences en
+
+Langues de l’Enseignement Supérieur) ou le DCL (Diplôme de Compétences en
+
+Langues) considérées comme moins « industrialisées » que les tests TOEIC ou du
+
+TOEFL mises sur le marché par des firmes privées (cf. J. Barna, 2005).
+
+Ont participé effectivement à l’enseignement au total une
+
+douzaine de personnes dont des enseignants-chercheurs (Professeurs et MCF),
+
+quelques enseignants de statut type second degré ou vacataires, une
+
+ATER/doctorante. Trois disciplines étaient représentées : les sciences de
+
+l’information et de la communication, les sciences de l’éducation et
+
+l’informatique. Deux PAST (Professeurs Associés à Temps Partiel) étaient au
+
+départ associés à la recherche, mais ils n’ont pas traduit leur engagement
+
+(limité dans le temps) sur le terrain de l’intervention pédagogique.
+
+Certes, les établissements élaborent des volets « TICE »
+
+pour les contrats quadriennaux, mais il s’agit de fixer des objectifs
+
+relativement généraux afin de justifier les sommes demandées. Ce volet ne
+
+comporte ni programmation d’expérimentation pédagogique ni de programmation de
+
+recherches dans le domaine, celles-ci relevant, le cas échéant, des volets
+
+« formation » ou « recherche ».
+
+Cf. G. Bourguin, A.Derycke, (2005) : « Cette souplesse n’était accessible qu’aux concepteurs… Lors de nos mises en
+
+œuvre expérimentales, il est apparu que les divers acteurs souhaitaient
+
+pouvoir accommoder le système existant (et opérationnel) pour tenir compte
+
+des changements intervenus tant dans le contexte organisationnel de leurs
+
+activités que dans la définition de l’activité elle-même ».
+
+Cf. R. Varga : « Nous avions souhaité
+
+alléger notre travail de tuteur en regroupant les informations données mais
+
+cet accompagnement a au contraire demandé un investissement personnel plus
+
+important. Et l’interface numérique, qui pourrait introduire plus de
+
+distance dans les relations, s’est révélé un outil convivial favorisant les
+
+contacts humains » (2006, p. 24) et D. Delache : « L’interface n’est jamais qu’un outil au service du dispositif. Les
+
+étudiants expliquent l’échec relatif de l’usage de l’outil par la nécessité
+
+d’une impulsion initiale par le dispositif, d’une présentation formelle et
+
+d’animation de l’interface, au moins au départ par les responsables
+
+enseignants du dispositif. […] Il y a donc bien une dynamique de groupe à
+
+instaurer, et c’est là le travail des animateurs du dispositif, un sens à
+
+proposer à l’activité de groupe pour que cet usage numérique en formation
+
+porte ses fruits sur l’ensemble de la formation » ( 2006, p.12 ). Voir
+
+aussi les contributions de l’un et l’autre dans ce symposium.
+
+Il évoque à ce propos la thèse centrale de S. Weber
+
+concernant le mode d’organisation de la production dans le champ de l’open source : « Le succès de l’open
+
+source montre l’importance d’une solution radicalement différente [de
+
+l’économie ordinaire] reposant principalement sur l’interprétation non
+
+conventionnelle des droits de propriété configurés sur le principe de la
+
+distribution. Il repose ainsi sur un ensemble de structures
+
+organisationnelles qui coordonnent les comportements autour du management de
+
+l’innovation distribuée, ce qui est différent de la division du
+
+travail » (S. Weber, 2004, p. 224, cité par Von Hippel, p. 169-170).
+
+Nous faisons ici allusion aux différentes configurations
+
+développées par H. Mintzberg (1982). Ce spécialiste canadien en sciences des
+
+organisations propose une théorie de la structure de l’entreprise en 5
+
+configurations : structure simple (caractérisée par une supervision directe),
+
+bureaucratie mécaniste (standardisation du travail), bureaucratie
+
+professionnelle (standardisation des qualifications), structure divisionnalisée
+
+(standardisation des productions) et adhocratie (ajustement mutuel) (p. 409
+
+sqq.). Ajoutons qu’il développe assez largement un exemple d’organisation
+
+universitaire à propos de la configuration « bureaucratie professionnelle »
+
+(l’Université Mc Gill à Montréal), alors qu’il fait référence (p. 398) à de
+
+toutes autres organisations que l’université pour la configuration adhocratique
+
+(il parle des « nouvelles industries de notre époque,
+
+aérospatiale, électronique, conseil, recherche, publicité … »).
+
+Voir D. Delache, Ch. D’Halluin, E. Fichez, F. Hoogstoel,
+
+G. Leclercq, R. Varga, (2006) : « Il n’est pas dans les habitudes des CRI de
+
+partir des besoins des usagers enseignants ni de se donner comme priorité de
+
+co-concevoir des environnements avec eux. Il faut dire que ce genre de démarche
+
+est encore peu courant et récent. Il faut dire aussi que les sensibilités et
+
+l’écoute peuvent déjà être tout autres chez certains ingénieurs d’étude frottés
+
+de longue date à la pédagogie et qui jouent aujourd’hui dans nos institutions
+
+des rôles très importants d’interface entre les enseignants et les
+
+techniciens/ingénieurs des CRI », 2006, p. 16.Diffusion prévue par
+
+l'INIST
+
+Voir E. Fichez, R. Varga (2006), article déjà cité.
+
+Cf. M. Lebrun : « Afin de favoriser
+
+l’entrée des enseignants dans des dispositifs innovateurs, il fallait leur
+
+proposer un outil simple (« i-campus ») qui leur permettait de faire des
+
+expériences. Même si cette façon de faire risquait de reproduire uniquement
+
+les anciennes pratiques, ce passage par l’expérimentation nous paraît
+
+inévitable […]. L’assimilation (utiliser l’outil nouveau pour faire comme
+
+avant) précède bien souvent l’accomodation (imaginer de nouvelles niches, de
+
+nouveaux usages). Cette démarche d’assimilation-accomodation fait ressembler
+
+le processus d’innovation à un processus d’apprentissage » (2005, p.
+
+31-32).
+
+
+

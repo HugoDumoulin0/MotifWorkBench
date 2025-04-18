@@ -1,0 +1,5922 @@
+
+
+INTRODUCTION
+
+Les cancers des voies aéro-digestives supérieures (VADS) occupent la 4ème place
+
+des causes de décès dans le monde et chaque année 500 000 nouveaux cas
+
+apparaissent. Les progrès thérapeutiques réalisés ces dernières années
+
+permettent d’intégrer aux nécessités carcinologiques les dimensions esthétiques
+
+et fonctionnelles. Mais les outils, chirurgie, radiothérapie et chimiothérapie,
+
+demeurent les mêmes depuis plus de vingt ans. La recherche d’une meilleure
+
+efficacité au prix du minimum de séquelles fonctionnelles reste toujours une
+
+équation difficile lors de la prise en charge individuelle.
+
+De nombreuses études tentent de valider des schémas thérapeutiques plus
+
+efficaces, et d’autres essaient d’identifier des critères prédictifs de réponse
+
+aux traitements et de pronostique. Mais cette recherche constante de meilleurs
+
+index thérapeutiques est un combat qui semble inégal, car nous savons tout
+
+simplement comment éviter l’apparition de la majorité des cancers des VADS. Les
+
+facteurs de risques sont connus depuis de nombreuses années. En effet, la
+
+cigarette est directement responsable de plus de 95 % des cancers des VADS. Le
+
+tabac et l’alcool sont à l’origine d’une mortalité et d’une morbidité en France
+
+considérable (sans compter les dégâts socio-économiques et familiaux), qui nous
+
+place à la première place des pays industrialisés.
+
+Le meilleur traitement repose sur une politique de santé publique volontariste
+
+basée sur la prévention et l’information au sein de la population, et en
+
+particulier des jeunes.
+
+Malgré cela, le pronostic global des cancers des VADS reste toujours mauvais,
+
+avec toujours moins de 1 patient sur 2, toutes localisations et tous stades
+
+confondus, qui peut espérer un contrôle de sa maladie à 5 ans.
+
+L’amélioration des chances de réponse aux traitements passe par la connaissance
+
+du cancer et de ses mécanismes intimes. De plus en plus de travaux tentent de
+
+rechercher des indicateurs pronostiques au sein même de la cellule cancéreuse,
+
+par l’étude des susceptibilités génétiques individuelles ou bien des processus
+
+de carcinogenèse.
+
+L’identification de ces mécanismes génétiques permettra peut-être de trouver de
+
+nouvelles cibles thérapeutiques, afin d’obtenir un meilleur contrôle de la
+
+maladie et donc un meilleur pronostic global.
+
+En ORL, les carcinomes épidermoïdes, représentent 95 % des tumeurs, et nous
+
+savons que le pronostic est lié à la localisation, au stade TNM, à l’aspect
+
+macroscopique de la tumeur et à la qualité du traitement, mais l’agressivité
+
+intrinsèque des carcinomes épidermoïdes n’est pas encore prévisible.
+
+Il y a moins de vingt ans, Waine et al. [1] décrivait une forme atypique de
+
+carcinome épidermoïde touchant la muqueuse des VADS : le carcinome basaloïde
+
+squameux (basaloïd squamous cell carcinoma en anglais, ou BSCC). D’emblée cette
+
+nouvelle entité histologique semblait avoir un mode évolutif et un pronostic
+
+moins favorable que les carcinomes épidermoïdes classiques. De nombreuses études
+
+sont venues confirmer ces hypothèses et d’autres remettent en question le
+
+caractère péjoratif du pronostic des BSCC. Or, toutes ces études ont en commun
+
+le faible effectif de patients et donc la faible puissance statistique des
+
+résultats. Cette entité histopathologique de découverte récente est rare puisque
+
+environ 200 cas pour les VADS ont été décrits jusqu’à présent.
+
+Il paraît donc difficile pour les auteurs d’affirmer le caractère péjoratif du
+
+pronostic du carcinome basaloïde squameux, tant les effectifs de patients
+
+rapportés par leurs études sont faibles.
+
+Pour notre part, nous avons été amenés à traité plusieurs dizaines de patients
+
+pour un carcinome basaloïde des VADS. Si pour certains le pronostic était
+
+comparable aux patients traités pour un carcinome épidermoïde, d’autres avaient
+
+eu une évolution marquée par un décès précoce. Il nous a paru important de
+
+déterminer si ces décès étaient en relation avec le carcinome basaloïde squameux
+
+et si la survie d’une telle population était significativement plus péjorative
+
+que celle des patients traités pour un carcinome épidermoïde.
+
+En effet, si cette entité histopathologique apparaissait être un critère
+
+pronostique à part entière, cela induirait des modifications dans notre prise en
+
+charge globale.
+
+Cette étude clinique a donc pour but d’évaluer le pronostic et le mode évolutif
+
+propre à ces tumeurs, à partir d’une population de 49 patients atteints de
+
+carcinome basaloïde squameux des VADS dont nous avons comparé l’évolution et la
+
+survie à celle d’une population témoin de carcinome épidermoïde.
+
+L’appariement de chaque patient a été réalisé strictement selon la localisation
+
+anatomique initiale, le stade TNM, la séquence thérapeutique, le sexe, et dans
+
+la majorité des cas, l’âge, la date de prise en charge et l’aspect macroscopique
+
+de la tumeur. Il s’agit du plus grand effectif de carcinomes basaloïdes squameux
+
+décrit jusqu’à présent.
+
+Après avoir rappelé des données générales concernant l’épidémiologie, le
+
+diagnostic et la thérapeutique des cancers des voies aéro-digestives
+
+supérieures, nous ferons le point sur les critères pronostiques validés ou
+
+discutés en cancérologie ORL.
+
+Nous étudierons ensuite à partir de notre propre série l'évolution et le
+
+pronostic des carcinomes basaloïdes squameux, pour proposer une conduite à tenir
+
+thérapeutique et un suivi adaptés.
+
+DONNEES BIBLIOGRAPHIQUES
+
+Actualités sur les tumeurs des voies aéro-digestives supérieures
+
+I. Epidémiologie
+
+1) Fréquence :
+
+Les cancers des VADS représentent en France 10 à 12 % de la totalité
+
+des cancers. On diagnostique chaque année en France plus de 15000
+
+nouveaux cas chez l’homme et environ 2000 nouveaux cas chez la femme
+
+[2]. Même s’il existe une amorce d’inflexion de l’incidence des
+
+cancers des VADS [2], ils restent responsables de près de 9000 décès
+
+chaque année, soit près de 7,5 % de la mortalité par cancer.
+
+L’âge au diagnostic est le plus souvent compris entre 45 et 75 ans
+
+avec un pic de fréquence entre la sixième et la septième décade.
+
+L’âge moyen au diagnostic diminue actuellement pour se rapprocher
+
+des 60 ans.
+
+La prédominance masculine nette (90 %) à tendance à diminuer en
+
+raison de l’augmentation de la consommation de tabac chez les
+
+femmes.
+
+2) Facteurs de risque :
+
+En France, le tabac et l’alcool sont les deux principaux facteurs de
+
+risques des cancers des VADS.
+
+Le tabac est un carcinogène reconnu, responsable chaque année de 2
+
+millions de nouveaux cas de cancers dans le monde. Le lien
+
+épidémiologique avec les cancers des VADS est évident puisqu’il
+
+existe seulement 2 % de patients non-fumeurs (localisations
+
+rhino-sinusiennes et rhinopharyngiennes exclues). Le risque est
+
+influencé par la quantité consommée chaque jour mais encore plus par
+
+la durée d’intoxication. Une consommation de plus de 20 cigarettes
+
+par jour est retrouvée dans les 2/3 des cas.
+
+Le rôle de l’alcool dans la carcinogenèse est difficile à établir.
+
+Chez l’animal, il n’est pas cancérigène. En revanche chez l’homme il
+
+est clairement responsable d’un excès de risque de cancer sans
+
+qu’une action cancérigène directe n’ait été démontrée. Le risque ne
+
+dépend pas du type de boisson, en revanche il augmente avec la dose
+
+ingérée quotidiennement sans effet seuil. Dans les cancers des VADS,
+
+il agit comme un co-carcinogène avec le tabac, car c’est surtout la
+
+synergie alcool-tabac qui en constitue le principal facteur de
+
+risque.
+
+D’autres facteurs de risques existent, en particulier l’exposition
+
+professionnelle aux hydrocarbures polycycliques pour les cancers de
+
+la bouche et du larynx, les facteurs irritatifs locaux (dentier…),
+
+la mauvaise hygiène bucco-dentaire ou l’hérédité.
+
+3) Les lésions précancéreuses :
+
+Les cancers des VADS se développent sur des lésions précancéreuses
+
+dans 5 à 10% des cas : dysplasie muqueuse, leucoplasie, plus
+
+rarement érythroplasie ou kératose villeuse.
+
+Ces lésions imposent toujours une biopsie et une surveillance
+
+étroite.
+
+II. Modalités d’extension des cancers des VADS
+
+1) Histoire naturelle des cancers des VADS
+
+Il s’agit d’une maladie d’évolution loco-régionale. La tumeur évolue
+
+de proche en proche, infiltrant de façon centripète la zone
+
+anatomique atteinte, avec plus ou moins de facilité. En effet, il
+
+existe des barrières anatomiques à l’extension tumorale (os,
+
+cartilages, ligaments, fascias), et des structures facilitant au
+
+contraire sa progression (fibres musculaires, gaines nerveuses ou
+
+vasculaires).
+
+La lymphophilie des cancers en ORL est importante mais variable (très
+
+faible pour les cancers du plan glottique, maximum pour les cancers
+
+de l’hypopharynx). Les ganglions le plus souvent atteints sont ceux
+
+du groupe sous-digastrique pour les cancers de l’oropharynx et de
+
+l’hypopharynx. Pour les cancers de la cavité buccale, le premier
+
+relais ganglionnaire est sous-mentonnier et sous-maxillaire. Le
+
+nombre et la taille sont corrélés au pronostic de la maladie.
+
+Le risque métastatique global en cancérologie ORL est de 15 %
+
+environ. Les localisations secondaires les plus fréquentes sont
+
+pulmonaires, puis hépatiques et osseuses.
+
+Les patients présentent tous un risque très important de développer
+
+un cancer synchrone (10 à 15 %) ou métachrone. Ceux-ci doivent être
+
+recherchés lors du bilan initial ou de la surveillance.
+
+2) L’oropharynx :
+
+L’extension des cancers de l’oropharynx dépend du site anatomique
+
+atteint initialement mais cette localisation ne présente pas à
+
+proprement parlé de barrière anatomique à l’extension tumorale :
+
+- Loge amygdalienne : la face interne de la branche montante de la
+
+mandibule constitue une extension latérale possible. L’extension se
+
+fait également en bas et en dedans vers le sillon amygdalo-glosse
+
+(SAG) et la base de la langue.
+
+- Base de langue : l’évolution se fait rapidement vers l’avant
+
+(plancher buccal et muscles intrinsèques), latéralement (SAG et
+
+loges amygdaliennes) et vers l’arrière (vallécules et épiglotte).
+
+- Vallécules : l’extension se fait le plus souvent vers l’épiglotte
+
+en arrière et la base de la langue en avant. La membrane
+
+hyo-épiglottique, en avant, constitue une barrière anatomique à
+
+l’extension tumorale. Lorsque celle-ci est dépassée, la loge
+
+hyo-thyro-épiglottique (loge HTE) peut être envahie, modifiant alors
+
+l’attitude thérapeutique.
+
+Les cancers de l’oropharynx sont très lymphophiles. Ils envahissent
+
+le plus fréquemment en premier le ganglion sous-digastrique
+
+ipsi-latéral.
+
+3) L’hypopharynx :
+
+Ses modalités d’extension pour les différents sites anatomiques sont
+
+:
+
+- Les sinus piriformes : l’extension se fait vers le haut (région des
+
+trois replis et margelle laryngée) et vers le bas (bouche de
+
+l’œsophage). Le mur pharyngo-laryngé, constitué des cartilages du
+
+larynx, représente une barrière d’extension locale. Lorsque celui-ci
+
+est atteint, la tumeur peut bloquer l’articulation
+
+crico-aryténoïdienne et provoquer une immobilité de l’hémi-larynx
+
+ipsi-latéral.
+
+- La paroi postérieure : l’extension se fait en « tache d’huile » car
+
+le plan osseux vertébral est une importante barrière d’extension.
+
+Elle s’accompagne souvent d’une atteinte du fascia pré-vertébral.
+
+- Le rétro-cricoïde : vers la bouche de l’œsophage en bas et la
+
+margelle laryngée en avant et en haut. Les cartilages thyroïde et
+
+cricoïde limitent l’extension en avant.
+
+La lymphophilie de ces tumeurs est très importante. Lors du
+
+diagnostic initial, une adénopathie est présente dans deux cas sur
+
+trois. Les chaînes lymphatiques qui drainent le sinus piriforme
+
+suivent le trajet des pédicules laryngés supérieurs et franchissent
+
+en dehors la membrane hyo-thyroïdienne pour atteindre les premiers
+
+relais ganglionnaires sous-digastriques et sus-omohyoïdiens.
+
+Les tumeurs de l’hypopharynx ont le plus fort taux de dissémination
+
+métastatique parmi les cancers des VADS, soit 15 à 20 %.
+
+4) Le rhinopharynx (ou cavum) :
+
+Le cavum représente un site anatomique lymphophile et se draine dans
+
+les territoires jugulo-carotidiens (sous-digastriques) et
+
+rétro-spinaux.
+
+Les limites osseuses postéro-supérieures sont une barrière importante
+
+à l’extension tumorale. En revanche les parois latérales
+
+représentent une zone de faiblesse et l’extension peut se faire vers
+
+les espaces para-pharyngés.
+
+La particularité épidémiologique des cancers du cavum est l’absence
+
+de corrélation à l’intoxication alcoolo-tabagique. Il s’agit d’un
+
+cancer de l’homme jeune, lié à l’Epstein Barr virus.
+
+L’anatomo-pathologie est également différente, car on retrouve une
+
+majorité de carcinomes indifférenciés (UCNT), quelques fois des
+
+carcinomes différenciés ou des lymphomes.
+
+5) Le larynx :
+
+Les lymphatiques endolaryngés sont peu développés dans la région
+
+glottique, ce qui explique leurs bons pronostics. Le pédicule
+
+supérieur draine la région sus-glottique vers la chaîne
+
+jugulo-carotidienne supérieure. Le pédicule antérieur draine le
+
+réseau sous-glottique vers les chaînes jugulo-carotidiennes moyennes
+
+et pré-laryngées. Le pédicule postérieur draine le réseau
+
+sous-glottique vers la chaîne récurrentielle.
+
+L’anatomie endolaryngée conditionne les modalités évolutives des
+
+cancers par l’existence de zones de résistances naturelles aux
+
+extensions et des points de faiblesses :
+
+- Zones de résistance : Les cartilages thyroïde et cricoïde forment
+
+une barrière efficace à l’extension extra laryngée. De même, le toit
+
+de la loge HTE, la membrane hyo-épiglottique, représente une limite
+
+anatomique à l’extension tumorale vers le haut. Vers le bas, le cône
+
+élastique représente une barrière d’extension aux cancers du
+
+ventricule et de l’espace para-glottique.
+
+- Zones de faiblesse : Au niveau de la commissure antérieure,
+
+l’absence de périchondre interne favorise l’extension en avant. La
+
+membrane crico-thyroïdienne permet une extension tumorale
+
+extra-laryngée des tumeurs glotto-sous-glottiques. La face laryngée
+
+de l’épiglotte, traversée d’orifices cribiformes, et le ligament
+
+thyro-épiglottique sont des points de faiblesse pour l’extension
+
+tumorale vers la loge HTE.
+
+Du fait de la faible lymphophilie, le taux de métastase pour cette
+
+région est inférieur à 5 %.
+
+Pour l’épiglotte et la margelle laryngée, deux sous-localisations
+
+anatomiques du larynx, l’évolution n’est pas du tout comparable a
+
+celles de l’endolarynx. En effet, ils présentent la même
+
+lymphophilie que les localisations hypopharyngées. Leurs traitements
+
+et leurs pronostics sont de fait différents. Pour cette étude
+
+clinique, la margelle laryngée et l’épiglotte sus-hyoïdienne seront
+
+apparentées à deux sous-localisations de l’hypopharynx.
+
+III. Anatomo-pathologie
+
+1) Les tumeurs malignes épithéliales :
+
+1-a Le carcinome in situ :
+
+Il s’agit d’une lésion pré-invasive, c’est un carcinome
+
+intra-épithélial. Il n’existe pas de franchissement de la
+
+membrane basale.
+
+1-b Le carcinome épidermoïde (ou malpighien) :
+
+Dans sa forme invasive, il représente 90 à 95 % des cancers des
+
+VADS (localisations rhino-sinusiennes et rhinopharynx exclus).
+
+Il existe 2 critères de différenciation qui sont :
+
+- la présence de kératine, soit dans le cytoplasme, soit au sein
+
+de la tumeur sous forme de globes cornés ;
+
+- la présence de ponts d’union inter-cellulaire.
+
+Plus la tumeur présente de kératine et de ponts d’union
+
+inter-cellulaire, plus elle est différenciée. On distingue ainsi
+
+des carcinomes épidermoïdes bien différenciés, moyennement
+
+différenciés et peu différenciés.
+
+1-c Le carcinome adénoïde kystique :
+
+Il s’agit d’une tumeur développée aux dépents des cellules
+
+basales des canaux excréteurs des glandes salivaires. Elle se
+
+présente sous la forme de lobules comprennant de petites
+
+cellules rondes au rapport nucléo-cytoplasmique élevé. Il existe
+
+des formations pseudo-canalaires au sein de la tumeur. Les
+
+figures mitotiques sont rares ainsi que la présence
+
+d’envahissement lymphatique et d’engainement péri-nerveux. En
+
+périphérie des lobules, on retrouve des cellules
+
+myo-épithéliales ?-actine-muscle lisse et PS100 positives.
+
+Les colorations au PAS (periodic acid Schiff) et/ou au bleu
+
+alcalin sont négatives.
+
+On décrit trois formes de carcinome adénoïde kystique :
+
+tubulaire, cribiforme et solide.
+
+1-d Le carcinome basaloïde squameux :
+
+Il s’agit d’une variante rare de carcinome épidermoïde, puisqu’il
+
+n’en représente que moins de 2 % des cas [3]. En 1991 il a été
+
+inclus dans la version corrigée de la classification
+
+histologique des tumeurs des voies aéro-digestives supérieures
+
+de l’Organisation Mondiale de la Santé (OMS).
+
+Le carcinome basaloïde squameux (BSCC), peut être pur (carcinome
+
+basaloïde) ou associé à un contingent malpighien d’importance
+
+variable. Pour les localisations ORL, il est très rare de
+
+trouver un carcinome basaloïde pur à 100 %. En effet, on
+
+retrouve quasiment toujours la présence ça ou là d’une plage de
+
+carcinome malpighien ou d’un globe corné.
+
+Dans la classification OMS des tumeurs du poumon il appartient
+
+aux carcinomes épidermoïdes lorsqu’il y est associé, et à la
+
+catégorie des carcinomes à grandes cellules (large cell
+
+carcinoma) lorsqu’il est pur.
+
+D’un point de vue histopathologique [1, 3, 4, 5, 6] (figure 1 et
+
+2), la tumeur se présente sous la forme de massifs pleins à
+
+contours arrondis ou polycycliques, composés de petites cellules
+
+monomorphes disposées en palissade à la périphérie de ces
+
+lobules. Les cellules présentent un rapport nucléo-cytoplasmique
+
+élevé (7-8/10) et des noyaux ovales hyperchromatiques non
+
+nucléolés. De nombreuses figures mitotiques sont présentes (15 à
+
+50 par 2 mm²). On ne met pas en évidence de ponts d’union entre
+
+les cellules.
+
+Figure 1 : Carcinome basaloïde pur (x 100).
+
+Ces lobules peuvent être centrés par des foyers de nécrose de
+
+type comédonienne, et dans un tiers des cas on retrouve des
+
+images de rosettes dans les massifs cellulaires. Des espaces
+
+microkystiques d’aspect pseudocylindromateux sont souvent mis en
+
+évidence au sein de l’architecture cellulaire, après coloration
+
+au PAS (periodic acid Schiff) et/ou au bleu alcalin, avec
+
+présence de dépots de matériel basal. Le stroma périphérique
+
+contient beaucoup de fibroblastes et de cellules inflammatoires.
+
+Figure 2 : Carcinome Basaloïde pur (x 300).
+
+Figure 3 : Carcinome basaloïde squameux.
+
+Au sein de la tumeur cohabitent des plages de carcinome basaloïde
+
+et de carcinome épidermoïde plus ou moins bien différenciés, en
+
+pourcentage variable. Ce contingent malpighien, caractérisé par
+
+la présence de globes cornés et de cellules séparées par des
+
+ponts d’union inter-cellulaire, est le plus souvent moyennement
+
+à bien différencié (figure 3). A la périphérie de la tumeur, on
+
+peut retrouver des foyers de carcinome in situ.
+
+Les diagnostics différentiels histopathologiques sont :
+
+- le carcinome adénoïde kystique ;
+
+- le carcinome neuro-endocrine ;
+
+- le carcinome épidermoïde peu différencié ;
+
+- plus rarement, l’adénocarcinome à cellules basales ou le
+
+carcinome adéno-squameux.
+
+Pour aider au diagnostic positif de BSCC, l’analyse
+
+immuno-histochimique des tumeurs est souvent utile, parfois
+
+indispensable :
+
+- Les BSCC répondent positivement à l’immunomarquage par les
+
+anti-corps monoclonaux anti-cytokératines (anti-CK) 1, 5, 10, 14
+
+(groupe 34?E12). Les cytokératines 1 et 10 sont exprimées par
+
+les cellules kératinisantes des épithélium stratifiés
+
+malpighiens et les cytokératines 5 et 14 sont exprimées par les
+
+cellules basales de ces épithélium (Catalogue Moll R. et al.,
+
+1982). La positivité à l’immunomarquage par les cytokératines du
+
+groupe 34?E12 n’est pas spécifique aux BSCC, puisque les SCC y
+
+répondent également positivement.
+
+- Les cellules n’expriment pas les marqueurs neuro-endocrines
+
+comme la chromogranine A, la synaptophysine et le CD56 (N-CAM).
+
+La négativité de ces marqueurs permet d’éliminer un carcinome
+
+neuro-endocrine.
+
+- Le matériel basal est positif pour la laminine et le collagène
+
+de type IV.
+
+Si l’immuno-histochimie peut trancher en faveur d’un carcinome
+
+basaloïde squameux par rapport à un carcinome neuro-endocrine,
+
+il n’en est pas de même pour le différencier d’un carcinome
+
+adénoïde kystique. Ellis et Auclair [6] affirment que la
+
+positivité commune à un trop large panel de biomarqueurs ne
+
+permet pas de les différencier sur des seuls arguments
+
+histochimiques.
+
+Dans sa forme solide, le carcinome adénoïde kystique reste le
+
+diagnostic différentiel le plus difficile à écarter selon
+
+Coletta et al. [7]. Tsang et al. [8] a montré que la plupart des
+
+carcinomes adénoïdes kystiques de l’œsophage décrits dans la
+
+littérature répondaient aux critères histopathologiques du BSCC.
+
+Pour Abe et al. [5] la positivité pour la laminine et le
+
+collagène de type IV dans les espaces microkystiques des
+
+carcinomes basaloïdes, est l’élément le plus important pour
+
+éliminer un carcinome adénoïde kystique. Morice et Ferreiro [9]
+
+ont montré que la desmine et l’actine sont utiles pour
+
+différencier les deux tumeurs.
+
+Mais d’autres éléments peuvent trancher en faveur d’un BSCC par
+
+rapport à un carcinome adénoïde kystique comme la présence de
+
+plage de carcinome malpighien et de globes cornés, l’index
+
+mitotique élevé, les foyers de nécroses comédoniennes ou la
+
+présence de carcinome in-situ à la périphérie de la tumeur.
+
+Le diagnostic positif histologique repose en fait sur un faisceau
+
+d’arguments cliniques, architecturaux et
+
+immuno-histochimiques.
+
+1-e Les autres tumeurs malignes épithéliales :
+
+On retrouve principalement des tumeurs à point de départ
+
+glandulaire : le carcinome muco-épidermoïde, l’adénocarcinome,
+
+le carcinome à cellules claires, le carcinome à cellules
+
+acineuses.
+
+2) Les tumeurs malignes non épithéliales :
+
+Ce sont les lymphomes, les mélanomes et les sarcomes.
+
+IV. Diagnostic
+
+1) Circonstances de découverte :
+
+Le diagnostic est le plus souvent évoqué devant une symptomatologie
+
+persistante chez un homme mûr alcoolo-tabagique : trouble de
+
+déglutition (dysphagie), douleur (de la simple gêne pharyngée à
+
+l’odynophagie), otalgie réflexe (signe fonctionnel toujours
+
+recherché lors de l’interrogatoire), dysphonie ou dyspnée.
+
+Les autres signes d’appel peuvent être une tuméfaction cervicale, un
+
+trismus ou une altération de l’état général, dans d’autres cas la
+
+découverte est systématique à l’occasion d’un examen clinique.
+
+2) Diagnostic positif :
+
+On pratique un examen clinique des VADS avec exploration de la cavité
+
+buccale, de l’oropharynx et, en laryngoscopie indirecte (miroir ou
+
+naso-fibroscopie), de l’hypopharynx dans sa partie haute, et du
+
+larynx. La palpation des aires ganglionnaires recherche des
+
+adénopathies.
+
+2-a Bilan clinique :
+
+La perte de poids du patient, ses antécédents et la
+
+quantification de son intoxication alcoolo-tabagique son notés.
+
+Un schéma de la lésion tumorale et des éventuelles adénopathies
+
+est réalisé. Un examen clinique général recherche des signes de
+
+localisations secondaires.
+
+2-b Bilan endoscopique :
+
+On pratique une pan-endoscopie des VADS sous anesthésie générale.
+
+Elle comporte systématiquement un examen de la cavité buccale et
+
+de l’oropharynx, une hypopharyngoscopie, une laryngoscopie
+
+directe, une oesophagoscopie et une bronchoscopie.
+
+Elle permet de définir exactement les limites de la tumeur, de
+
+pratiquer des biopsies et de rechercher une localisation
+
+synchrone.
+
+2-c Bilan d’imagerie :
+
+Le bilan d’imagerie est absolument nécessaire pour le bilan
+
+d’extension et la classification TNM de la tumeur. Il faut tout
+
+de même garder à l’esprit que la TDM et même l’IRM n’ont pas une
+
+grande spécificité pour le diagnostic des tumeurs des VADS [10],
+
+en particulier lorsqu’il existe une suspicion de récidive après
+
+un traitement par radiothérapie. L’imagerie vient apporter des
+
+arguments complémentaires à la clinique et surtout à
+
+l’histologie. Le choix entre TDM et IRM dépend de plusieurs
+
+critères objectifs et subjectifs. L’IRM permet une meilleure
+
+appréciation de l’envahissement des parties molles (graisse,
+
+muscles, nerfs) [10] mais la TDM permet une analyse plus fine
+
+des structures osseuses (mandibule, base du crâne). La TDM offre
+
+donc actuellement, pour le bilan des cancers des VADS, le
+
+meilleur rapport coût/bénéfice et la meilleure accessibilité.
+
+Le reste du bilan comportera une TDM thoracique (ou à défaut une
+
+radiographie pulmonaire) et une échographie abdominale à la
+
+recherche de localisations secondaires hépatiques.
+
+Une IRM vient systématiquement compléter le bilan s’il s’agit
+
+d’une lésion du cavum.
+
+En fonction de l’examen clinique, on réalisera une scintigraphie
+
+osseuse ou une TDM cérébrale.
+
+2-d Place de la TEP-FDG :
+
+La place de la tomographie par émission de positons au 18
+
+fluoro-désoxyglucose (ou TEP-FDG) dans le schéma diagnostique
+
+est en cours d’évaluation. Elle offre une image fonctionnelle
+
+qui témoigne de l’hyper-métabolisme cellulaire. Il s’agit d’un
+
+examen très sensible mais dont la spécificité ne permet pas le
+
+diagnostic de cancer en dehors d’un faisceau d’arguments
+
+clinico-radiologiques.
+
+L’examen n’est pas, en ORL, systématique dans le cadre du bilan
+
+d’extension. La Fédération Nationale des Centres de Lutte contre
+
+le Cancer (la FNCLCC) a émis un rapport sur les recommandations
+
+pour l’utilisation de la TEP-FDG en cancérologie [11] en
+
+novembre 2003, dans le cadre du programme « Standards, Options
+
+et recommandations ». Pour ce qui est des cancers des VADS, les
+
+recommandations globales sont les suivantes :
+
+- la TEP-FDG est une option dans la recherche d’un second cancer
+
+;
+
+- option également pour le diagnostic différentiel entre tumeur
+
+bénigne et maligne, lorsque la biopsie ne peut être réalisée ;
+
+- option, pour la recherche de localisations à distance (bilan
+
+d’extension) ;
+
+- l’utilisation de la TEP-FDG pour disposer d’un facteur
+
+pronostique de la survie ou de la probabilité de récidive après
+
+traitement, relève de la recommandation (situation d’exception
+
+ou indication spécifique dans le cadre de protocole)
+
+De nombreuses études [12, 13, 14], montrent que l’examen pratiqué
+
+dans le cadre du bilan clinique entraîne un reclassement du
+
+stade de la maladie (30 à 42 % des cas) avec à la clé, une
+
+modification radicale de la thérapeutique initialement prévue
+
+(46 à 60 %). Pour 75 % des reclassements du stade tumoral,
+
+celui-ci est revu à la hausse.
+
+Il n’existe donc aucun standard en ORL et la TEP-FDG reste en
+
+cours d’évaluation pour le diagnostic ou le suivi des patients.
+
+2-e Autres examens :
+
+On réalise un bilan biologique pré-thérapeutique, un ECG, des EFR
+
+en cas de chirurgie partielle laryngée ou d’antécédents
+
+broncho-pulmonaires. Une remise en état bucco-dentaire est
+
+effectuée lors d’une consultation de stomatologie.
+
+V. Classifications TNM
+
+La classification utilisée est celle de l'UICC 1997 [15], en ORL elle est
+
+clinico-radiologique. Elle nécessite obligatoirement le trépied
+
+clinique/endoscopie/imagerie.
+
+1) Classification T pour l’oropharynx et la cavité buccale :
+
+• Tis : Carcinome in-situ (commun à toutes les localisations).
+
+• Tx : conditions minimales requises pour classer la tumeur, non
+
+obtenues (commun à toutes les localisations).
+
+• T1 : grand axe 2cm.
+
+• T2 : grand axe entre 2-4 cm.
+
+• T3 : grand axe &gt; 4 cm.
+
+• T4 : tumeur extensive (muscle, os, peau, ...).
+
+2) Classification T pour l’hypopharynx :
+
+• T1 : tumeur limitée à une région de l'hypopharynx.
+
+• T2 : tumeur envahissant plus d'une région de l'hypopharynx ou une
+
+région voisine sans fixation de l'hémi-larynx.
+
+• T3 : tumeur envahissant plus d'une région de l'hypopharynx ou une
+
+région voisine avec fixation de l'hémi-larynx.
+
+• T4 : tumeur étendue aux cartilages ou aux parties molles.
+
+3) Classification T pour le larynx :
+
+• T1 : T limitée à la glotte (a : une corde vocale, b : deux cordes
+
+vocales), à la sus-glotte ou à la sous-glotte, sans trouble de la
+
+mobilité.
+
+• T2 :
+
+o Glotte : T limitée à la glotte avec diminution de la mobilité et/ou
+
+extension à la sus glotte et/ou à la sous glotte ;
+
+o Sus-glotte : T étendue à plus d'un site ou à un site adjacent sans
+
+fixation de la corde ;
+
+o Sous-glotte : T étendue à l'étage glottique.
+
+• T3 :
+
+o Glotte : T avec corde fixée et/ou extension à l'espace
+
+para-glottique et/ou érosion du cartilage thyroïde ;
+
+o Sus-glotte : T avec corde fixée et/ou extension à l'espace
+
+para-glottique ou pré-épiglottique et/ou érosion du cartilage
+
+thyroïde ;
+
+o Sous-glotte : T avec corde fixée.
+
+• T4 : glotte, sus-glotte, sous-glotte : T avec extension à travers
+
+le cartilage thyroïde, aux organes de voisinage.
+
+4) Classification T pour le rhinopharynx :
+
+• T1 : tumeur limitée au rhinopharynx.
+
+• T2 : tumeur étendue aux tissus mous de l'oropharynx ou des fosses
+
+nasales.
+
+• T3 : tumeur envahissant les structures osseuses ou les cavités
+
+aériennes de la face (T4 avant TNM 1997).
+
+• T4 : tumeur avec extension intracrânienne, atteinte des nerfs
+
+crâniens, envahissement de la fosse infra-temporale, de l'orbite ou
+
+de l'hypopharynx.
+
+5) Classification N et M :
+
+Pour les adénopathies régionales :
+
+• N0 : absence de ganglion cliniquement ou radiologiquement
+
+métastatique.
+
+• N1 : adénopathie homolatérale unique de diamètre inférieur à 3 cm.
+
+• N2 a : adénopathie homolatérale unique de diamètre entre 3 et 6 cm.
+
+• N2b : adénopathies homolatérales de moins de 6 cm de diamètre.
+
+• N2c : adénopathies bi ou controlatérales de diamètre de moins de 6
+
+cm.
+
+• N3 : adénopathies de diamètre de plus de 6 cm.
+
+• Nx : conditions minimales non requises pour classer les ganglions
+
+régionaux.
+
+Pour les localisations à distance :
+
+• Mo : pas de signes de métastases à distance.
+
+• M1 : présence de métastases à distance.
+
+• Mx : conditions minimales non requises pour apprécier la présence
+
+de métastases.
+
+VI. Actualités sur les principes thérapeutiques :
+
+1) Chimiothérapie :
+
+La chimiothérapie est utilisée de façon néo-adjuvante, concomitante
+
+(à la radiothérapie) ou bien dans le cadre de traitement palliatif.
+
+L’association sels de platine/5Fluoro-uracile (5FU) est considérée
+
+comme le protocole de référence. A elle seule, la chimiothérapie ne
+
+constitue pas une thérapeutique pour les cancers des VADS. En
+
+fonction de son efficacité, elle va permettre dans le cadre d’un
+
+traitement néo-adjuvant, de sélectionner les tumeurs potentiellement
+
+répondeuses à la radiothérapie (fonte &gt; 80 %). Elle évite dans
+
+bon nombre de cas une sanction chirurgicale lourde, mais n’améliore
+
+pas le pronostic global.
+
+Deux études randomisées, l'une aux États-Unis portant sur 332
+
+patients porteurs de tumeurs du larynx [16] et l'autre en Europe
+
+dans le cadre de l'European Organisation for Research and Treatment
+
+of Cancer (EORTC) sur 202 patients atteints de cancers de
+
+l'hypopharynx ou de la margelle laryngée [17], confortent ce concept
+
+de préservation fonctionnelle et confirment que dans
+
+approximativement deux tiers des cas, et cela à 3 à 5 ans chez les
+
+patients en vie, un larynx en place peut être conservé.
+
+De nouvelles molécules appartenant à la famille des inhibiteurs de la
+
+thymidilate synthétase (comme le 5FU) sont en cours d’étude, de même
+
+que l’oxaliplatine qui optimise, par rapport au cisplatine, la
+
+potentialisation du 5FU ou bien l’association avec les taxanes.
+
+2) Radiothérapie :
+
+La radiothérapie est un des deux traitements de référence en
+
+cancérologie ORL avec la chirurgie. Elle peut être réalisée
+
+directement au contact de la tumeur (Curiethérapie interstitielle)
+
+ou par voie externe (transcutanée).
+
+2-a Résultats de la radiothérapie externe :
+
+La radiothérapie externe a pour but le contrôle local avec
+
+préservation fonctionnelle. Si elle est généralement
+
+monofractionnée, la recherche constante d’une amélioration de la
+
+performance tend vers la mise au point de protocoles
+
+thérapeutiques variant le fractionnement et/ou l’étalement [18].
+
+Un avantage significatif en terme de contrôle local et de survie
+
+sans récidive a été démontré par des essais randomisés [19, 20,
+
+21, 22] comparant une radiothérapie hyperfractionnée et/ou
+
+accélérée à une irradiation conventionnelle.
+
+L'essai 22851 de l'EORTC [23] qui a comparé, sur 511 patients
+
+porteurs de cancers de la sphère ORL (hypopharynx exclu), un
+
+schéma accéléré à une irradiation conventionnelle a montré un
+
+taux de contrôle loco-régional de 15 % plus important dans le
+
+bras accéléré (p=0,015). Il n'a pas été mis en évidence
+
+d'avantage pour l'un des bras en termes de survie spécifique
+
+(p=0,006).
+
+Récemment, l'essai du Radiation Therapy Oncology Group (RTOG)
+
+[24], qui comparait une irradiation standard, un schéma de
+
+radiothérapie hyperfractionnée et deux traitements accélérés
+
+dont l'un avec « surimpression » concomitante, a mis en évidence
+
+un avantage sur le taux de contrôle loco-régional à 2 ans (54 %
+
+contre 45 %) en faveur du bras radiothérapie accélérée avec «
+
+surdosage » concomitant par rapport au traitement étalé
+
+classique, cependant sans augmentation significative de la
+
+survie globale.
+
+Les conclusions sont plus difficiles à donner pour les résultats
+
+en fonction du statut ganglionnaire. Les cancers N0 ou N1
+
+traités par irradiation exclusive présentent un taux actuariel
+
+de survie à 5 ans de l'ordre de 80 à 90 %, et cela quel que soit
+
+le site de l'adénopathie envahie [25]. Il existe une relation
+
+dose/contrôle tumoral pour les adénopathies de plus de 3 cm [26,
+
+27]. En effet, des doses de l'ordre de 75 à 80 Gy sont
+
+nécessaires pour obtenir un contrôle local satisfaisant de
+
+ganglions de plus de 3 cm.
+
+En pratique, en présence d'adénopathies volumineuses ou de
+
+progression rapide, la surimpression doit être délivrée selon le
+
+principe du « surdosage » concomitant [28] et de préférence
+
+selon un schéma fractionné accéléré [23, 29]. La persistance
+
+d'un ganglion résiduel non fixé après une dose de 50 Gy oriente
+
+vers un curage cervical fonctionnel. La mobilité ganglionnaire
+
+initiale influence également le contrôle local.
+
+2-b Résultats de la chimio-radiothérapie :
+
+L'association chimiothérapie-radiothérapie, dans des protocoles
+
+alternés ou concomitants, apparaît plus prometteuse sur le plan
+
+du contrôle loco-régional que la chimiothérapie première suivie
+
+de radiothérapie [30]. L’objectif de cette association est de
+
+bénéficier des effets anti-tumoraux des deux types de traitement
+
+en essayant de ne pas augmenter la toxicité.
+
+Les associations de chimiothérapie et de radiothérapie ont permis
+
+une amélioration des taux de contrôle local et de survie globale
+
+dans les cancers solides. Cela a été démontré par de nombreux
+
+essais réalisés ces dix dernières années dans plusieurs
+
+localisations, notamment les tumeurs des voies aéro-digestives
+
+supérieures [31, 32] et des bronches [33]. Le gain en terme de
+
+survie globale par rapport à la radiothérapie exclusive est de 8
+
+à 13 % à 5 ans [32, 34- 37].
+
+Des méta-analyses, comme celle de Pignon et al. [36], ou des
+
+revues exhaustives critiques de la littérature, ont permis
+
+d'élaborer des principes de conduite à tenir [34-37]. Cependant,
+
+les protocoles d'association, les doses, et le fractionnement
+
+sont encore à l’étude [38].
+
+Indépendamment des taux de contrôle local et de survie globale,
+
+les associations thérapeutiques peuvent trouver leur intérêt
+
+dans la préservation d'organe comme le larynx [39].
+
+Pour ce qui est de l’association chimiothérapie-radiothérapie
+
+hyperfractionnée, les résultats sont discordants. Plusieurs
+
+études ont montré que l'addition d'une chimiothérapie à une
+
+irradiation hyperfractionnée et/ou accélérée dans les cancers de
+
+la tête et du cou était associée à une augmentation des taux de
+
+réponse et de survie [402, 41]. Les mêmes résultats ont été
+
+obtenus dans les cancers bronchiques [42]. Cependant, un essai
+
+du RTOG dans les cancers du poumon et une étude allemande dans
+
+les cancers de la tête et du cou n'ont pas montré l'intérêt
+
+d'associer une chimiothérapie à une radiothérapie
+
+hyperfractionnée [43, 44].
+
+2-c Nouvelles perspectives :
+
+Une récente innovation technologique, la radiothérapie
+
+conformationnelle, basée sur des concepts d’intensité de dose et
+
+de précision balistique, permettra probablement une amélioration
+
+significative du contrôle local. Cette technique permet en effet
+
+l’augmentation de la dose totale équivalente sur la tumeur sans
+
+effet sur la dose totale équivalente sur les structures saines à
+
+renouvellement lent. Elle permet alors le traitement de tumeurs
+
+radio-curables qu’à fortes doses cumulées, ou bien, les
+
+protocoles de ré-irradiation.
+
+Des essais en cours cherchent à établir les meilleurs protocoles
+
+d’association de chimio-radiothérapie en vu d’augmenter leurs
+
+index thérapeutiques. Les nouvelles perspectives dans ce domaine
+
+passent par une plus grande spécificité de la toxicité des
+
+drogues sur les cellules tumorales, par la minimisation du
+
+volume irradié et par l’augmentation des doses totales
+
+d’irradiation sur les tumeurs. Enfin, le développement actuel
+
+d’agents radioprotecteurs pour les tissus sains (gemcitabine) et
+
+d’agents radiosensibilisants pour les tumeurs (inhibiteurs de
+
+l’epidermal growth factor receptor ou EGFR) permettront une
+
+potentialisation des traitements par chimio-radiothérapie.
+
+3) Chirurgie :
+
+L’évolution de la chirurgie durant ces vingt dernières années ne
+
+s’est pas fait tellement sur les techniques opératoires. En effet,
+
+l’essentiel des progrès réalisés tiennent à la meilleure prise en
+
+charge pré- et post-opératoire (en particulier sur le plan
+
+nutritionnel) et sur la diminution des séquelles fonctionnelles et
+
+esthétiques (par les techniques de reconstruction). Par exemple, le
+
+nombre de laryngectomies totales réalisées dans les services d’ORL
+
+est en constante diminution, ce, au profit de la radiothérapie d’une
+
+part mais également au profit de chirurgies partielles comme la
+
+crico-hyoïdopexie ou bien la crico-hyoïdo-épiglottopexie.
+
+Ces techniques permettent une approche plus conservatrice, sans
+
+trachéostome, avec une phonation et une déglutition correcte. De
+
+même en chirurgie de l’oropharynx et de la cavité buccale, où les
+
+techniques de reconstruction par remplacement osseux à partir de
+
+lambeaux libres se sont développées. La prise en charge chirurgicale
+
+tend maintenant à répondre aux exigences carcinologiques,
+
+fonctionnelles et esthétiques.
+
+Etude des facteurs pronostiques
+
+La connaissance des facteurs pronostiques, bons ou mauvais, permet d’orienter
+
+les décisions thérapeutiques et le suivi des patients. Leur étude ne peut se
+
+faire qu’en terme de sous-population (de site, de stade T et N, ou de
+
+critères histologiques). Mais au niveau de chaque patient, on ne saurait
+
+donner, à partir de savants calculs, un pronostic en terme de survie. Ces
+
+critères pronostiques doivent donner la tonalité du mode évolutif tumoral et
+
+guider ainsi sa conduite thérapeutique.
+
+I. Facteurs cliniques :
+
+1) Terrain :
+
+L’âge et le sexe ne semble pas influencer la survie [45], en revanche
+
+plusieurs études montrent que l’index de performance de Karnovsky
+
+est corrélé au taux de survie global [20, 23]. L’hypoxémie chronique
+
+du fait de l’anémie ou d’une broncho-pneumopathie chronique est
+
+également un facteur prédictif de mauvaise réponse au traitement, en
+
+particulier à la radiothérapie [46].
+
+Enfin, la poursuite du tabagisme, surtout pendant et après la
+
+radiothérapie, majore le risque de récidives locales et influence
+
+négativement la survie [47].
+
+2) Siège de la tumeur :
+
+Les différents sites anatomiques ont des pronostics différents. Ainsi
+
+pour tous les stades et toutes les sous-localisations confondus on
+
+retrouve [48, 49] :
+
+- larynx : 50 à 60 % de survie à 5 ans ;
+
+- oropharynx : 25 à 35 % de survie à 5 ans ;
+
+- hypopharynx : 15 à 25 % de survie à 5 ans ;
+
+- cavum : 25 à 40 % de survie à 5 ans.
+
+Dans une même localisation, certaines sous-localisations anatomiques
+
+peuvent avoir un pronostic différent. Ainsi, pour le larynx, le
+
+pronostic à 5 ans des cancers de l’étage glottique se situent autour
+
+de 60 % [50] alors que pour l’étage sus-glottique il se situe entre
+
+35 et 40 % [48]. Dans les cancers de l’oropharynx, les localisations
+
+amygdalo-vélaires ont un pronostic à 5 ans 10 % supérieur à ceux de
+
+la base de langue [51, 52].
+
+3) Taille et extension de la tumeur :
+
+Ce sont des facteurs pronostiques primordiaux, très fortement
+
+corrélés avec la survie mais également avec le taux d’échec après
+
+traitement [44, 45]. Cette constatation est valable pour toutes les
+
+localisations anatomiques en ORL [44, 53, 54].
+
+4) Aspect macroscopique de la tumeur :
+
+Les tumeurs bourgeonnantes, comparées aux tumeurs
+
+ulcéro-infiltrantes, présentent une meilleure réponse à
+
+l’irradiation, un meilleur taux de contrôle local et un meilleur
+
+pronostic global [53, 55]. Par exemple, pour les cancers de la base
+
+de la langue [55], les lésions ulcérées ont un taux de contrôle
+
+local 25 % inférieur aux lésions bourgeonnantes, et la survie
+
+globale à 5 ans est également inférieure de 35 % environ.
+
+5) Extension ganglionnaire clinique :
+
+Le risque d’envahissement ganglionnaire est corrélé directement au
+
+siège de la tumeur et sa taille. Il est maximum pour les tumeurs de
+
+localisation hypopharyngées et minimum pour les tumeurs
+
+endolaryngées. Selon le siège initial et l’extension de la tumeur,
+
+on retrouve au diagnostic 25 à 80 % de patient présentant une
+
+adénopathie.
+
+Le volume ou la fixité des adénopathies représentent des variables
+
+indépendantes de la tumeur initiale, car celle-ci, une fois envahie,
+
+évolue pour son propre compte. Ces caractéristiques sont corrélées
+
+au taux d’échecs de contrôle ganglionnaire (15 % pour une
+
+adénopathie mobile contre 45 % pour une adénopathie fixée) [56].
+
+La localisation anatomique d’une adénopathie par rapport au site
+
+tumoral initial est un facteur pronostique indépendant en terme de
+
+survie : l’envahissement des ganglions à distance du premier relais
+
+ganglionnaire est un facteur péjoratif [45].
+
+II. Facteurs histologiques :
+
+1) Epaisseur de la tumeur :
+
+La valeur prédictive de l’épaisseur tumorale a été étudiée surtout
+
+dans les localisations oropharyngées [57, 58]. Elle est corrélée
+
+positivement à l’extension lymphatique, et donc à la survie à
+
+travers le risque de récidive, d’extension régionale et
+
+générale.
+
+2) Extension de la tumeur :
+
+La présence d’angio-invasion (artériel ou lymphatique) ou
+
+d’engainement périnerveux est un facteur pronostique péjoratif sur
+
+le contrôle loco-régional. Ils sont associés à une résurgence
+
+locale, ganglionnaire et métastatique significativement plus élevée
+
+[59, 60].
+
+3) Différenciation tumorale :
+
+Les carcinomes épidermoïdes peu différenciés ont toujours eu la
+
+réputation d’avoir un pronostic plus péjoratif que les carcinomes
+
+bien différenciés, or aucune étude clinique ayant étudié ce critère
+
+spécifiquement n’a argumenté cette affirmation.
+
+Au contraire, Bataini et al.[45] a clairement démontré que les
+
+tumeurs indifférenciées étaient plus souvent contrôlées (p=0,01) que
+
+les tumeurs bien différenciées dans les localisations oropharyngées,
+
+mêmes constatations pour Lusinchi et al. [61]. Des observations
+
+similaires ont pu être faites pour l'atteinte ganglionnaire : dans
+
+une série de plus de mille patients traités à l'institut Curie, le
+
+taux d'échecs ganglionnaires est identique, que les lésions soient
+
+bien ou peu différenciées [25].
+
+4) Le carcinome basaloïde squameux :
+
+Le pronostic du carcinome basaloïde squameux fait l’objet de cette
+
+étude et il est aujourd’hui encore discuté. Nous ne tranchons pas
+
+ici en faveur de l’une ou l’autre des hypothèses, mais donnons un
+
+aperçu critique des données de la littérature sur ce sujet.
+
+Waine et al. [1] en 1986, évoque d’emblée la possibilité d’un
+
+pronostic inférieur aux carcinomes épidermoïdes sans pouvoir
+
+conclure en raison du faible effectif de patient (n=10).
+
+Depuis, pour le pharynx, le larynx et la cavité buccale, 200 cas
+
+environ ont été décrits à ce jour dans une quarantaine d’études
+
+cliniques et de case-reports. Le nombre de patients par publication
+
+est de 1 à 40, avec une médiane de 5 cas par étude clinique. Les
+
+études ont donc toutes de faibles effectifs et ne peuvent que
+
+présumer du caractère péjoratif ou non du carcinome basaloïde
+
+squameux.
+
+Pour le poumon, peu d’études ont comparé les BSCC aux carcinomes
+
+épidermoïdes. L’étude de Moro et al. [62], en 1994 retrouvait une
+
+différence de survie (p=0,004) pour les tumeurs de stade précoce,
+
+entre une population de carcinomes épidermoïdes peu différenciés
+
+(n=40) et une population de carcinomes basaloïdes squameux (n=37).
+
+Pour les cancers des VADS, aucune étude appareillée sur les BSCC ne
+
+s’est faite sur plus de 23 de cas.
+
+D’après les données de la littérature, la présentation clinique se
+
+fait souvent à un stade avancé de la maladie [63-65], des
+
+adénopathies cliniques sont retrouvées dans 40 à 70 % des cas au
+
+moment du diagnostic [3, 64-68]. Pour beaucoup d’auteurs, le
+
+carcinome basaloïde squameux est associé à un taux élevé de
+
+métastase (jusqu’à 75 %) ou de récidive loco-régionale [1, 3, 64,
+
+65, 67, 69].
+
+Si la plupart sont d’accord pour dire que le carcinome basaloïde
+
+squameux a un comportement plus agressif et un pronostic moins bon
+
+que le carcinome épidermoïde [1, 5, 65, 67, 69, 71, 72], d’autres
+
+pensent que le pronostic n’est pas différent [63, 68, 73, 74].
+
+Seules quatre études ont comparé la survie des BSCC avec celle des
+
+épidermoïdes :
+
+- Winzenburg et al. [69] en 1998, a comparé 23 carcinomes basaloïdes
+
+avec 23 carcinomes peu différenciés. La survie à 2 ans était
+
+significativement moins bonne pour le premier groupe (23.5 % contre
+
+53 % dans le deuxième), et le taux de métastase était respectivement
+
+de 52 % contre 13 %.
+
+- Erdamar et al. [75] en 2000, a comparé 10 carcinomes basaloïdes
+
+avec 44 carcinomes épidermoïdes différenciés. Ils retrouvaient une
+
+survie à 3 ans de 50 % pour le groupe basaloïde contre 72 % pour le
+
+groupe épidermoïde. Ils ont trouvé seulement une différence
+
+statistique dans l’apparition de récidive locale mais pas en terme
+
+d’apparition de métastase.
+
+- Luna et al. [68] en 1990 a publié une série de 6 carcinomes
+
+basaloïdes, comparés à 47 carcinomes épidermoïdes différenciés. Ils
+
+ne retrouvent aucune différence en terme de survie ou de rechute
+
+loco-régionale
+
+- De Sampio Goes et al. [74] en 2004, a comparé 17 carcinomes
+
+basaloïdes à 27 carcinomes épidermoïdes peu différenciés et 27
+
+carcinomes épidermoïdes différenciés. Ils ne retrouvent aucune
+
+différence de survie entre la population basaloïde et les deux
+
+populations d’épidermoïdes.
+
+Plusieurs critiques peuvent être faites à la lecture de ces articles.
+
+D’une part les faibles effectifs de cas, en particulier pour l’étude
+
+de Luna et al. [68], d’autre part la méthodologie. En effet, De
+
+Sampio Goes et al. [74], a admis comme critères d’exclusion : les
+
+patients ayant eu un premier traitement (chirurgie ou
+
+radiothérapie), les tumeurs inopérables, les patients ayant des
+
+métastases au moment du diagnostic. Il a ni plus ni moins éliminé
+
+les populations de malades présentant des critères de mauvais
+
+pronostique.
+
+En conclusion, les études cliniques sont très limitées par leurs
+
+faibles effectifs et sont pour la plupart rétrospectives. Les seules
+
+études cas-témoins publiées à ce jour ne permettent pas de conclure
+
+sur le caractère péjoratif du pronostic et sur l’évolution clinique.
+
+Dans l’ensemble, une majorité d’auteurs s’accordent à dire que le
+
+carcinome basaloïde est un critère pronostique histologique
+
+péjoratif associé à un taux de métastase supérieur à ceux que l’on
+
+peut rencontrer dans les populations de carcinomes épidermoïdes.
+
+5) Rupture capsulaire :
+
+La présence d’une rupture capsulaire est corrélée à la taille de
+
+l’adénopathie. Elle est considérée comme présente lorsque
+
+l’adénopathie dépasse les 3 cm.
+
+Son existence est corrélée aux taux d’échecs cervicaux et à la
+
+survie. Dans la série de Johnson et al. [76] on retrouve
+
+respectivement :
+
+- pour les adénopathies sans rupture capsulaire : 61 % de contrôles
+
+cervicaux et 75 % de survie ;
+
+- pour les adénopathies avec rupture capsulaire : 31 % de contrôles
+
+et 47 % de survie.
+
+Lorsque les patients sont irradiés en post-opératoire en raison d’un
+
+envahissement ganglionnaire, la présence d’une rupture capsulaire
+
+sur les adénopathies du curage ne constitue plus une valeur
+
+pronostique indépendante [77, 78].
+
+6) Territoires ganglionnaires envahis :
+
+L’envahissement ganglionnaire au-delà du ganglion de premier relais
+
+est corrélé positivement à l’apparition de métastase [79].
+
+7) Nombre de sites ganglionnaires envahis :
+
+L’étude de O’Brien et al. [80] sur les facteurs pronostiques après
+
+chirurgie ganglionnaire confirme que le nombre de ganglions
+
+histologiquements envahis est inversement corrélé à la survie. Elle
+
+passe de 75 % à 3 ans pour un ganglion envahi, à 55 % pour deux à
+
+quatre ganglions positifs et à 25 % pour plus de quatre ganglions
+
+envahis ou bilatéraux.
+
+III. Facteurs liés au traitement :
+
+1) Traitement chirurgical :
+
+Le risque de rechute locale est fonction de la qualité d’exérèse. En
+
+effet le risque augmente lorsque les marges d’exérèses sont
+
+atteintes ou bien limites (inférieures à 5 mm) [81, 82].
+
+2) Radiothérapie :
+
+La dose totale cumulée et la durée du traitement ont une influence
+
+sur le contrôle loco-régional et donc sur la survie. Bataini et
+
+al.[27] et Horiot et al.[23] ont démontré que l’allongement de la
+
+durée du traitement au-delà de 5 semaines entraînait une perte de
+
+contrôle local de 20 à 25 % supplémentaire par prolongation de 10
+
+jours. On constate inversement de meilleurs résultats en terme de
+
+contrôle local, dans les protocoles de radiothérapies
+
+hyperfractionnées (essai 22851 de l’EORTC [23]).
+
+D’autres études comme celle de Fowler et al. [83] ont montré que
+
+l’allongement de la durée du traitement ou l’interruption de
+
+celui-ci étaient corrélés à un taux d’échec local et à une
+
+diminution de la survie.
+
+L’évaluation de la réponse tumorale à 2 semaines lors de la
+
+radiothérapie semble constituer un facteur pronostique indépendant
+
+[84].
+
+IV. Facteurs en cours d’évaluation :
+
+1) Facteurs histologiques :
+
+Des facteurs histologiques ou cellulaires sont en cours d’évaluation
+
+dans de nombreuses études :
+
+- architecture histologique et mode d’invasion de la tumeur ;
+
+- étude de la cinétique cellulaire comme l’index de marquage, la
+
+durée de la phase S, le temps de doublement potentiel (Tpop) [23],
+
+ou le temps de doublement des cellules cancéreuses clonogéniques ;
+
+- contenu de la tumeur en ADN mesuré par cytométrie en flux ;
+
+- volume du noyau cellulaire ;
+
+2) Facteurs génétiques :
+
+L’étude des mutations du gène p53 (impliqué dans la transcription des
+
+gènes, le cycle cellulaire, l’apoptose, la synthèse et la réparation
+
+de l’ADN), pourrait permettre d’identifier des patients à risque de
+
+récidive, ce, malgré des marges d’exérèse saines ou bien l’absence
+
+d’envahissement ganglionnaire [85], mais aucune étude n’a à ce jour
+
+démontré l’intérêt pronostique de la protéine p53.
+
+L’étude de l’expression de la p63 (impliqué dans le développement
+
+embryonnaire et la différenciation des épithéliums stratifiés), des
+
+ribonucléoprotéines hTERT (facteur limitant l’activité de la
+
+télomérase) ou de l’activité de la télomérase sont également à
+
+l’étude comme possibles facteurs pronostiques, de même pour l’étude
+
+de l’expression tumorale du récepteur à l’EGF (epidermal growth
+
+factor receptor), qui pourrait être un facteur pronostique
+
+indépendant [86], ou des marqueurs tumoraux tels que le SCC, le Ki
+
+67 ou l’expression du PCNA (proliferating cell nuclear antigen).
+
+D’autres travaux en cours sur la néo-angiogénèse [87], les récepteurs
+
+à l’acide rétinoïque, comme le RAR bêta [88] ; pourraient éclairer
+
+les mécanismes de transformation néoplasique de la muqueuse normale
+
+et peut-être sur les probabilités de récidive.
+
+Ces différents marqueurs histo-biochimiques pourraient à terme donner
+
+une meilleure prédiction de l’évolution vis-à-vis des rechutes
+
+locales et des réponses aux traitements par chirurgie ou
+
+radiothérapie.
+
+Mais leur utilisation en pratique courante ne saurait se faire
+
+qu’après validation de traitements préventifs efficaces contre des
+
+risques identifiés.
+
+ETUDE CLINIQUE
+
+Matériels et méthodes
+
+I. Objectifs de l’étude :
+
+Nous avons effectué une étude d’observation cas-témoins afin d’étudier la
+
+survie des patients atteints de carcinome basaloïde squameux (BSCC). Ces
+
+patients ont été comparés avec une population témoin ayant été traitée
+
+pour un carcinome épidermoïde moyennement à bien différencié (squamous
+
+cell carcinoma ou SCC).
+
+Nous avons tenté de déterminer si le BSCC est un facteur histologique
+
+pronostique à part entière.
+
+Cette étude a également tenté de savoir si le taux de contingent
+
+basaloïde dans la tumeur est corrélé au pronostic, si le traitement
+
+initial modifie ou non ce pronostic, et quel est le mode évolutif
+
+clinique des patients porteurs d’un carcinome basaloïde squameux.
+
+A partir des possibilités de réponse de cette étude, nous avons essayé de
+
+discuter les modalités de la prise en charge thérapeutique et de la
+
+surveillance.
+
+II. Populations étudiés
+
+1) Critères d’inclusion
+
+1-a Patients cas :
+
+Notre étude a inclus 49 cas traités dans le service d’ORL au CHU
+
+de Grenoble, pour un cancer du pharynx, du larynx ou de la
+
+cavité buccale, dont l’anatomo-pathologie de la tumeur était un
+
+carcinome basaloïde squameux (BSCC). Tous les patients ont été
+
+traités sur 14 ans, de septembre 1988 à septembre 2002. Un recul
+
+de 2 ans minimum était requis pour l’inclusion des patients.
+
+Les analyses histologiques des tumeurs ont été réalisées pour
+
+tous les patients au CHU de Grenoble dans le service de
+
+Pathologie Cellulaire du Pr Brambilla, sur les pièces
+
+opératoires ou bien sur les biopsies lorsque le schéma
+
+thérapeutique ne comportait pas de traitement chirurgical (3
+
+patients au total). Pour l’inclusion des cas, toutes les pièces
+
+histologiques ont bénéficié d’une relecture des lames pour la
+
+confirmation du diagnostic. Un contingent basaloïde minimum de
+
+10 % au sein de la tumeur était nécessaire pour l’inclusion du
+
+patient.
+
+1-b Patients témoins :
+
+Chaque cas a été apparié avec un patient témoin qui présentait un
+
+cancer identique en localisation et en stade, mais de type
+
+carcinome épidermoïde moyennement à bien différencié. Cela nous
+
+a permis d’obtenir une autre population de 49 patients
+
+comparable avec la population étudiée.
+
+Nous avons défini des critères majeurs et des critères mineurs
+
+d’appariement pour la sélection des patients témoins.
+
+Tous les critères majeurs devaient être respectés pour inclure un
+
+patient témoin :
+
+- lésion tumorale de même région anatomique ;
+
+- stade tumoral clinique TNM identique au moment du diagnostic ou
+
+de la rechute si le patient est inclus à ce moment ;
+
+- histologie de la tumeur de type carcinome épidermoïde moyennent
+
+à bien différencié (SCC) ;
+
+- séquence thérapeutique initiale identique (chirurgie ou
+
+radiothérapie précédée ou non de chimiothérapie).
+
+Les critères mineurs étaient respectés autant que possible dans
+
+le choix des témoins :
+
+- âge au moment du diagnostic proche ;
+
+- sexe identique (respecté dans 100 % des cas);
+
+- année de prise en charge proche ;
+
+- aspect macroscopique des tumeurs identique (respecté dans 83 %
+
+des cas).
+
+Lorsque plusieurs patients répondaient aux critères majeurs et
+
+mineurs d’appariement, un seul était tiré au sort, cela fût le
+
+cas pour 19 témoins.
+
+Pour ce qui est du respect de la séquence thérapeutique entre les
+
+cas et les témoins, plusieurs points méritent d’être précisés :
+
+- Lorsque le diagnostic de carcinome basaloïde était porté
+
+seulement lors d’une récidive, le patient témoin était inclus
+
+également à sa date de récidive, tous deux ayant eu le même
+
+traitement auparavant, pour la même tumeur initiale. Le
+
+traitement proposé pour la récidive demeure toujours le même
+
+pour les deux populations.
+
+- Les patients témoins sont inclus avec la même décision
+
+thérapeutique (chirurgie ou radiothérapie plus ou moins précédée
+
+de chimiothérapie), mais chaque population peut évoluer
+
+différemment après ce premier traitement. Certains traitements
+
+de seconde ligne sont donc différents pour les cas et les
+
+témoins (pour ce qui est de la radiothérapie post-opératoire ou
+
+bien de la chirurgie de rattrapage).
+
+- Les patients-cas ayant bénéficié de chimiothérapie avant le
+
+traitement ont reçu les mêmes molécules (5FU et cisplatine) que
+
+les protocoles de chimiothérapie des patients-témoins, mais les
+
+protocoles peuvent être différents (6 cures de 24 heures ou 3
+
+cures de 5 jours), aucun protocole n’ayant montré sa supériorité
+
+par rapport à l’autre.
+
+- Si les traitements chirurgicaux ne concernent pas la tumeur
+
+(curage ganglionnaire uniquement) il en sera de même pour les
+
+patients témoins.
+
+- Les protocoles de radiothérapie restent également les mêmes
+
+entre les deux populations. Un seul patient a bénéficié d’une
+
+chimio-radiothérapie, dans un contexte post-opératoire, et son
+
+homologue témoin a reçu seulement une radiothérapie
+
+post-opératoire.
+
+2) Critères d’exclusion
+
+Pour les patients cas, 13 patients n’ont pas été inclus en raison
+
+d’un recul non suffisant (- 2 ans) et 14 patients ont été exclus
+
+après relecture des lames histologiques où le diagnostic de
+
+carcinome basaloïde a été soit douteux, soit infirmé.
+
+Pour les patients témoins, le non-respect d’un seul critère majeur
+
+constituait un motif de non-inclusion. Pour les critères mineurs,
+
+une trop grande différence avec le patient-cas constituait un
+
+critère d’exclusion. Ces motifs d’exclusion ont été défini comme
+
+suit :
+
+- différence d’âge entre cas et témoin supérieure à 30 ans ;
+
+- différence d’année de prise en charge supérieure à 10 ans.
+
+III. Définition histopathologique du carcinome basaloïde squameux :
+
+Pour l’étude, les caractéristiques histologiques des tumeurs
+
+remplissaient les critères diagnostics des BSCC de la classification OMS
+
+des tumeurs de la tête et du cou (1991) [4], qui reprennent ceux de
+
+Waine et al. [1]. Ces critères ont été décrits dans la première partie.
+
+Nous avons classé les tumeurs en trois catégories, selon le pourcentage
+
+de contingent basaloïde au sein de la tumeur :
+
+- groupe 1 : un tiers de contingent basaloïde (10 à 39 %) ;
+
+- groupe 2 : deux tiers de contingent basaloïde (40 à 79 %);
+
+- groupe 3 : carcinome basaloïde pur (plus de 80 % de contingent
+
+basaloïde).
+
+Toutes les pièces ont bénéficié d’analyses immuno-histochimiques par
+
+l’étude des marqueurs neuro-endocrines pour le diagnostic différentiel
+
+(N-CAM, synaptophysine ou chromogranine A). Ces marqueurs étaient
+
+négatifs pour tous les BSCC sauf 2 qui exprimaient une positivité
+
+inférieure à 20 % pour un seul marqueur neuro-endocrine (N-CAM ou
+
+chromogranine A).
+
+Les patients en situation de récidive (n=15), ont été inclus à la date de
+
+la chirurgie de rattrapage car c’est à cette date que le diagnostic de
+
+carcinome basaloïde squameux a été porté. Lorsque l’on étudie les
+
+premiers diagnostics anatomo-pathologiques des tumeurs traités
+
+initialement par radiothérapie, on retrouve sur ces 15 patients :
+
+- 11 carcinomes malpighiens moyennement à bien différenciés (dont 7
+
+diagnostics non faits au CHU)
+
+- 1 carcinome malpighien peu différencié (diagnostic non fait au CHU)
+
+- 1 carcinome adénoïde kystique (diagnostic non fait au CHU)
+
+- 2 non précisés
+
+Il est possible que le carcinome malpighien peu différencié et le
+
+carcinome adénoïde kystique aient été des carcinomes basaloïdes squameux
+
+non diagnostiqués initialement, car comme nous l’avons vu précédemment,
+
+ils font partie des diagnostics différentiels possibles.
+
+IV. Recensement des données :
+
+1) Recensement des patients cas :
+
+Une première étude rétrospective menée dans le service il y a 8 ans,
+
+avait recensé vingt-trois patients atteints de carcinome basaloïde.
+
+Une recherche effectuée à partir de la base de donnée du service
+
+d’ORL et du service de Pathologie cellulaire, nous a permis
+
+d’inclure vingt-huit patients supplémentaires. Une dernière
+
+recherche de cas a été effectuée sur la base de données de l’Unité
+
+de Concertation, à partir du code SNOMED (Systematized Nomenclature
+
+of Medicine) des carcinomes basaloïdes squameux, et des codes de
+
+localisations anatomiques CIMO (Classification Internationale des
+
+Maladies Oncologiques). Cette dernière a complété la série avec
+
+dix-huit patients supplémentaires.
+
+L’étude des cas s’est faite sur les dossiers cliniques et à partir
+
+des informations données par les médecins traitants (généralistes ou
+
+ORL). Sur l’ensemble des dossiers étudiés, seuls 49 sur 69
+
+répondaient aux critères d’inclusion.
+
+2) Recensement des patients témoins :
+
+La recherche a été effectuée également à partir des bases de données
+
+du service d’ORL et de l’Unité de Concertation.
+
+Les bases de données pour la recherche de témoins comportaient
+
+approximativement pour chaque localisation :
+
+- 620 patients pour l’oropharynx et la cavité buccale
+
+- 580 patients pour l’hypopharynx
+
+- 530 patients pour le larynx
+
+Pour la recherche de témoins ayant été traités pour une adénopathie
+
+maligne en apparence primitive (AMAP) ou pour un cavum, une
+
+recherche multicritères a été effectuée directement sur la base
+
+Access? de l’Unité de Concertation (TNM + code CIMO + code
+
+SNOMED).
+
+3) Grilles de recueil des données :
+
+Nous avons recensé pour chaque patient cas et témoins :
+
+- l’âge, le sexe, les antécédents, la quantification de
+
+l’intoxication alcoolo-tabagique ;
+
+- la date de prise en charge, la date des début et fin de traitement,
+
+la date de dernière consultation ;
+
+- la localisation tumorale, le stade TNM, l’aspect macroscopique ;
+
+- pour les traitements par chimiothérapie, le type de protocole et la
+
+réponse au traitement ;
+
+- le type d’intervention chirurgicale, les suites opératoires ;
+
+- l’analyse histopathologique avec le pourcentage de contingent
+
+basaloïde de la pièce opératoire pour les cas, la présence de
+
+ganglions métastatiques, de rupture capsulaire, d’emboles
+
+vasculaires ou d’engainements péri-nerveux, et si les marges de
+
+résection chirurgicales étaient saines ou non ;
+
+- le type de radiothérapie, la dose délivrée sur la tumeur et les
+
+axes ganglionnaires, la tolérance au traitement ;
+
+- à la date de dernière consultation, nous avons noté si le patient
+
+présentait une récidive (loco-régionale ou à distance) ou une
+
+éventuelle deuxième localisation, et leur date d’apparition ;
+
+- si le patient était décédé, la date et la cause du décès.
+
+V. Analyse des données :
+
+Pour les deux populations, nous avons calculé le suivi (toujours à partir
+
+de la date de prise en charge initiale), la survie sans rechute, la
+
+survie spécifique (décès imputé à la maladie initiale), et la survie
+
+globale. Les taux de survie ont été calculés pour les deux populations à
+
+partir de la date de la fin du traitement jusqu’à la date de dernière
+
+consultation (ou bien de décès).
+
+Nous avons ainsi établi pour chaque groupe :
+
+- la survie des populations cas et témoins ;
+
+- la survie en fonction de la localisation anatomique (oropharynx +
+
+cavité buccale, hypopharynx et larynx) ;
+
+- la survie en fonction du stade T (T1-T2 et T3-T4) ;
+
+- la survie en fonction du stade N (présence d’adénopathie(s) au moment
+
+du diagnostic ou non, N1 à 3 et N0) ;
+
+- la survie en fonction des antécédents d’irradiation (patients en
+
+rechute post-radique et patients de première main)
+
+- la survie en fonction de l’aspect macroscopique de la tumeur ;
+
+- la survie en fonction de la présence ou non de marge d’exérèse
+
+chirurgicale limite ou atteinte ;
+
+- la survie en fonction de la présence ou non d’embole sur la pièce
+
+opératoire ;
+
+- pour les cas, la survie en fonction du pourcentage de contingent
+
+basaloïde dans la tumeur.
+
+Les courbes de survie ont été calculées par la méthode non paramétrique
+
+de Kaplan-Meier et les comparaisons entres elles effectuées en analyse
+
+univariée par le test de Log-rank.
+
+Résultats
+
+I. Caractéristiques des populations :
+
+La population de BSCC regroupe 49 patients de 59,5 ans d’âge médian au
+
+diagnostic contre une médiane d’âge de 56,5 ans pour les témoins.
+
+Le sex ratio est identique pour les 2 populations à 23 : 1, le critère
+
+mineur d’appariement « sexe » a donc été respecté dans 100 % des cas.
+
+La différence médiane d’âge entre chaque cas et chaque témoin est de 6
+
+ans.
+
+Dans le groupe BSCC, 96 % des patients étaient fumeurs avec une
+
+consommation moyenne de 45 paquets-années (PA) et 80 % des patients
+
+consommaient plus de 30 g d’alcool par jour (consommation moyenne de 80
+
+g/j). Dans le groupe témoin, 94 % des patients étaient fumeurs avec une
+
+consommation moyenne de 45 PA et 78 % des patients consommaient plus de
+
+30 g d’alcool par jour (consommation moyenne de 80 g/j).
+
+Dans la population de BSCC, 2 patients avaient un antécédent de première
+
+localisation traitée par radiothérapie exclusive, 3 et 7 ans avant
+
+l’inclusion (les patients témoins correspondants ont été également
+
+irradiés pour une première localisation).
+
+La répartition des antécédents de la population cas est donnée dans la
+
+figure 4, seuls 19 patients ne présentaient aucun antécédent particulier
+
+(soit 39 %). La répartition des antécédents de la population témoin
+
+change peu.
+
+II. Caractéristiques des lésions tumorales :
+
+La répartition anatomique des tumeurs et leurs stades TNM est strictement
+
+identique pour les cas et les témoins par définition. Les localisations
+
+les plus fréquentes du carcinome basaloïde squameux pour notre étude
+
+sont l’hypopharynx et l’oropharynx. Sur 49 localisations, il y avait 18
+
+oropharynx ou cavités buccales, 20 hypopharynx, 8 larynx, 2 adénopathies
+
+malignes en apparence primitives (AMAP) et 1 cavum (figure 5).
+
+Plus d’un 1 patient sur 2 (55 %) est diagnostiqué à un stade T3 ou T4.
+
+Les stades T1 et T2 représentent 41 % de la répartition (figure 6).
+
+Figure 4 : Antécédents de la population cas.
+
+Figure 5 : Répartition anatomique des lésions tumorales
+
+(n=49).
+
+Figure 6 : Répartition des tumeurs en fonction du stade T
+
+(n=49).
+
+Lors du diagnostic, 57 % des patients présentaient une adénopathie
+
+clinique ou radiologique, 43 % étaient N0 (figure 7).
+
+Ces répartitions sont différentes en fonction des sites anatomiques. Pour
+
+l’oropharynx, 50 % des patients sont diagnostiqués à un stade T3 ou T4
+
+et seulement 72 % des patients ont une adénopathie au moment du
+
+diagnostic (figure 8).
+
+Dans les localisations hypopharyngées, 70 % des patients sont classés T3
+
+ou T4 au diagnostic et 55 % des patients présentent une adénopathie lors
+
+du diagnostic (figure 9).
+
+Pour le larynx, 88 % des patients sont N0 au moment du diagnostic (figure
+
+10).
+
+Les 2 patients dont le diagnostic a été posé sur une adénopathie maligne
+
+en apparence primitive (AMAP) étaient N3. Le patient ayant une
+
+localisation au niveau du cavum avait une lésion classée T2N2.
+
+Le critère mineur d’appariement « aspect macroscopique de la tumeur
+
+identique » a été respecté dans 83 % des cas.
+
+Les détails des répartitions par localisation sont donnés en annexe.
+
+Figure 7 : Répartition des tumeurs en fonction du stade N
+
+(n=49).
+
+Figure 8 : Tumeurs de l'oropharynx et cavité buccale, répartition
+
+en fonction du stade T (n=18).
+
+Figure 9 : Tumeurs de l'hypopharynx, répartition en fonction du
+
+stade T (n=20).
+
+Figure 10 : Tumeurs du larynx, répartition en fonction du stade T
+
+(n=8).
+
+III. Caractéristiques des prises en charges thérapeutiques :
+
+Sur 49 patients, 8 ont bénéficié d’une chimiothérapie première avec 5
+
+bonnes réponses et 3 réponses partielles (- 80 % de fonte tumorale). Les
+
+5 patients bons répondeurs ont été traités par radiothérapie (dont un a
+
+eu un curage suivi de radiothérapie), les autres ont été traités par
+
+chirurgie puis radiothérapie. Ces prises en charges sont identiques chez
+
+les cas et leurs témoins, pour les mêmes localisations et les mêmes
+
+stades.
+
+Le traitement par chirurgie première (patients dits « de première main »)
+
+plus ou moins suivie de radiothérapie concerne 31 patients (63 %). Le
+
+traitement par radiothérapie exclusive concerne 18 patients (37 %) dont
+
+15 sont diagnostiqués en situation de rattrapage (soit 31 %). Il
+
+n’existe que 3 patients traités par radiothérapie première dont le
+
+diagnostic de carcinome basaloïde a été fait initialement. Ces chiffres
+
+sont valables pour les deux populations.
+
+1) Oropharynx et cavité buccale :
+
+Sur les 18 patients, 13 ont eu une chirurgie première (dont 10
+
+buccopharyngectomie-transmandibulaires ou BPTM, 1
+
+glosso-pelvisymphysectomie ou GPSI, 1 pull-through et glossectomie
+
+totale), 3 ont eu une chirurgie de rattrapage (3 BPTM) et 2 patients
+
+n’ont eu aucun traitement chirurgical. Tous les patients opérés ont
+
+eu un curage homolatéral, 2 patients ont eu un curage bilatéral. Les
+
+suites locales et générales ont été simples pour 94 % des patients.
+
+Sur les 13 chirurgies premières, 12 ont bénéficié d’une
+
+radiothérapie post-opératoire.
+
+2) Hypopharynx :
+
+Sur les 20 patients, 10 sont en situation d’échec de la radiothérapie
+
+et ils bénéficieront tous d’une pharyngo-laryngectomie totale (ou
+
+PLT). 9 patients sont traités par chirurgie première (3 PLT, 3
+
+chirurgies partielles, 3 curages). Ces 9 patients ont tous été
+
+traités par radiothérapie post-opératoire. 1 patient a été traité
+
+par radiothérapie exclusive seulement.
+
+La répartition pour les témoins est la même, hormis un patient traité
+
+par chirurgie première (pharyngectomie partielle) qui n’a pas eu de
+
+radiothérapie post-opératoire.
+
+Tous les patients opérés ont eu 1 curage homolatéral, 7 ont eu un
+
+curage controlatéral.
+
+Les suites opératoires générales ont été simples pour 95 % des cas,
+
+mais d’un point de vue local nous retrouvons 47 % de complications
+
+(majoritairement le pharyngostome). Ceci est expliqué par
+
+l’importance du nombre de patients opérés en situation de
+
+rattrapage.
+
+3) Larynx :
+
+Sur les 8 patients, 7 font l’objet d’un traitement chirurgical
+
+premier (dont 5 chirurgies partielles laryngées et 2 laryngectomies
+
+totales ou LT) et 1 patient est opéré d’une LT après un traitement
+
+par radiothérapie première. La répartition pour les témoins est la
+
+même.
+
+Sur les 8 patients, 6 ont bénéficié d’un curage homolatéral, et 5
+
+d’un curage controlatéral.
+
+Les suites opératoires locales et générales ont été simples pour tous
+
+les patients.
+
+4) Autres localisations :
+
+Deux patients ont présenté une adénopathie maligne en apparence
+
+primitive (AMAP) et ont été traités par chirurgie première, 1 seul a
+
+bénéficié d’une radiothérapie post-opératoire, le deuxième patient
+
+étant en poursuite évolutive après la chirurgie. Chez les témoins,
+
+les 2 patients ont eu une radiothérapie post-opératoire.
+
+Le patient ayant un BSCC diagnostiqué au niveau du cavum a été traité
+
+par chimiothérapie puis radiothérapie et curage de rattrapage. Il en
+
+est de même pour son homologue témoin.
+
+IV. Résultats de l’évolution et de la survie des populations :
+
+1) Evolution et survie des populations cas et témoins :
+
+La médiane de suivi pour la population des carcinomes basaloïdes
+
+squameux (BSCC) est de 27,5 mois contre 60 mois pour la population
+
+témoin, et, la médiane d’apparition des décès de 20 mois contre 29
+
+mois pour les témoins.
+
+Si le nombre de décès dans les deux populations, est proche (33 chez
+
+les cas contre 27 pour les témoins), leur répartition et leurs dates
+
+d’apparition sont différentes.
+
+En effet, 55 % des décès sont dus à la maladie initiale (décès
+
+spécifique), contre 35 % chez les témoins. Le taux de contrôle est
+
+de 24 % pour la population cas contre 37 % pour les témoins.
+
+Les taux de récidives loco-régionales sont identiques pour les deux
+
+populations (33 % et 35 %), mais leurs implications dans les causes
+
+de décès sont différentes. Seuls 15 % des décès pour la population
+
+de BSCC sont dus à une récidive loco-régionale, contre 40 % pour les
+
+témoins.
+
+L’apparition de métastases est constaté chez 45 % de l’ensemble de la
+
+population cas (contre 6 % pour les témoins) et 64 % des causes de
+
+décès leurs sont imputés (contre 11% pour les témoins). La médiane
+
+d’apparition des métastases est de 12 mois.
+
+Les évolutions cliniques et les causes de décès sont résumées dans
+
+les figures 11 et 12.
+
+1-a Survie globale :
+
+La médiane de survie globale pour les patients BSCC est de 25
+
+mois contre 65 pour les témoins. La survie à 3 ans est de 41 %
+
+contre 65 % pour les témoins. A 5 ans, on obtient respectivement
+
+32 et 53 % (tableau 1). La comparaison de la survie globale des
+
+deux populations (figure 13) retrouve une différence statistique
+
+(p - 0.05).
+
+Tableau 1 : Survie des populations cas et témoins.
+
+Figure 11 : Comparaison de l’évolution des populations cas
+
+et témoins.
+
+Figure 12 : Comparaison des causes de décès des
+
+populations cas et témoins.
+
+1-b Survie spécifique :
+
+La médiane de survie spécifique est de 35 mois alors qu’elle est
+
+supérieure à 10 ans pour les témoins. A 3 ans la survie
+
+spécifique est de 49 % pour les BSCC et de 72 % pour les témoins
+
+; à 5 ans elle est de 38 % contre 67 % (tableau 1). La
+
+comparaison de la survie spécifique des deux populations (figure
+
+14), retrouve une différence statistique (p - 0.01).
+
+1-c Survie sans rechute :
+
+La médiane de survie sans rechute est de 24 mois dans la
+
+population de BSCC contre 54 mois dans la population témoin. A 3
+
+ans on retrouve 42 % de rémission contre 66 % chez les témoins
+
+et à 5 ans, 37 % contre 50 % (tableau 1).
+
+La comparaison des taux de survie sans rechute (figure 15),
+
+retrouve une différence statistique (p - 0.05) au profit de la
+
+population témoin. La médiane d’apparition des métastases est de
+
+12 mois. La survie médiane après diagnostic des métastases est
+
+de 7 mois.
+
+Figure 13 : Comparaison de la survie globale des
+
+populations cas et témoins.
+
+Figure 14 : Comparaison de la survie spécifique des
+
+populations cas et témoins.
+
+Figure 15 : Comparaison de la survie sans rechute des
+
+populations cas et témoins.
+
+Dans notre série de BSCC :
+
+- Les métastases représentent la première des causes de décès (64
+
+%), leurs médianes d’apparition sont de 12 mois ;
+
+- Les récidives loco-régionales ne sont pas plus fréquentes que
+
+dans la population témoin ;
+
+- La médiane de survie globale est de 25 mois, soit 2.5 fois
+
+inférieure à celle de la population témoin ;
+
+- Le pronostic global, la survie spécifique et la survie sans
+
+récidive sont plus péjoratifs que la population témoin (p -
+
+0,05).
+
+2) Evolution et survie des populations en fonction de la
+
+localisation anatomique :
+
+2-a Oropharynx et cavité buccale :
+
+Il existe 36 patients dont 18 cas dans cette population.
+
+Le taux de contrôle local est de 28 % pour les patients BSCC
+
+contre 50 % pour les témoins et le taux de décès spécifique de
+
+50 %, contre 28 % chez les témoins. Dans cette localisation, le
+
+taux d’apparition de métastase est presque 5 fois supérieur à
+
+celui de la population témoin (28 % contre 6 %) (figure 16).
+
+La médiane de survie globale pour les patients BSCC est de 25
+
+mois contre 70 mois chez les témoins. La survie globale à 3 ans
+
+est de 47 % contre 72 % pour les témoins, et à 5 ans de 33 %
+
+contre 67 % pour les témoins (tableau 2).
+
+La comparaison de la survie de ces populations montre une
+
+différence non significative statistiquement (p=0.1) pour la
+
+survie globale, et une différence limite significative (figure
+
+19) pour la survie spécifique (p=0.058). Il n’y a aucune
+
+différence de survie sans rechute entre les deux populations
+
+(p=0.25).
+
+2-b Hypopharynx :
+
+Cette population regroupe 40 patients dont la moitié de patients
+
+cas.
+
+Le taux de contrôle local dans cette localisation, est de 15 %
+
+pour les patients BSCC contre 33 % pour les témoins. Le taux de
+
+décès spécifique est de 60 % pour les cas, contre 50 % chez les
+
+témoins. En revanche, le taux d’apparition de métastase est 10
+
+fois supérieur à celui de la population témoin (50 % contre 5 %)
+
+(figure 17).
+
+La médiane de survie globale est de 20 mois pour les patients
+
+BSCC contre 48 pour les témoins. Les taux de survie globaux
+
+obtenus à 3 ans sont de 30 % et 55 % pour les témoins, à 5 ans
+
+elles sont de 25 % et 39 % (tableau 2).
+
+La comparaison de la survie de ces populations montre une
+
+différence non significative statistiquement pour la survie
+
+globale (p=0.12) (figure 20). Il n’y a aucune différence de
+
+survie spécifique et sans rechute entre les deux populations
+
+(p=0.26 et p=0.16).
+
+2-c Larynx :
+
+Il existe 16 patients dans cette population dont 8 cas.
+
+Le taux de contrôle local pour les localisations laryngées est de
+
+50 % pour les patients BSCC contre 37 % pour les témoins et le
+
+taux de décès spécifique de 50 %, contre 0 % chez les témoins.
+
+Dans cette localisation, le taux d’apparition de métastases est
+
+de 50 %, alors que l’on n’en retrouve pas dans la population
+
+témoin (figure 18).
+
+La médiane de survie est de 40 mois contre 69 pour les témoins.
+
+Les taux de survie globaux à 3 ans sont respectivement de 63 %
+
+et 75 % , à 5 ans de 50 % pour les cas et les témoins (tableau
+
+2).
+
+La comparaison des taux de survie ne montre aucune différence
+
+(p=0.9) pour la survie globale, en revanche il existe une
+
+différence significative (figure 21) pour la survie spécifique
+
+(p - 0.05). Il n’y a aucune différence de survie sans rechute
+
+entre les deux populations (p=0.59).
+
+2-d Survie comparée par localisation anatomique :
+
+Lorsque l’on compare la survie globale, spécifique et sans
+
+rechute, en fonction des sites anatomiques pour la population
+
+cas (figure 22), on ne trouve aucune différence de survie
+
+(p=0.33, p=0.65, p=0.48).
+
+En revanche, la comparaison de la survie en fonction des
+
+localisations chez les témoins (figure 23) retrouve une
+
+différence statistique (p - 0.05) de survie spécifique (larynx
+
+&gt; oropharynx &gt; hypopharynx).
+
+Tableau 2 : Survie globale par localisation anatomique.
+
+Figure 16 : Comparaison de l’évolution des localisations
+
+oropharyngées.
+
+Figure 17 : Comparaison de l’évolution des localisations
+
+hypopharyngées.
+
+Figure 18 : Comparaison de l’évolution des localisations
+
+laryngées.
+
+Figure 19 : Comparaison de la survie spécifique des
+
+localisations oropharyngées et cavités buccales,
+
+cas/témoins.
+
+Figure 20 : Comparaison de la survie globale des
+
+localisations hypopharyngées, cas/témoins.
+
+Figure 21 : Comparaison de la survie spécifique des
+
+localisations laryngées, cas/témoins.
+
+Figure 22 : Comparaison de la survie spécifique des BSCC
+
+par localisation anatomique.
+
+Figure 23 : Comparaison de la survie spécifique des SCC
+
+par localisation anatomique.
+
+Dans notre série de BSCC :
+
+- Il n’y a aucune différence de survie entre les sites
+
+anatomiques atteints. En revanche, dans la population témoin,
+
+ces différences existent pour la survie spécifique (p - 0,05).
+
+- Toutes les localisations sont associées à un fort taux de décès
+
+spécifique et d’apparition de métastases.
+
+3) Evolution et survie des populations en fonction du stade T :
+
+3-a Evolution et survie des populations T1 et T2 :
+
+Les populations de T1-T2 regroupent 40 patients dont 20 cas. Le
+
+taux de contrôle local pour les stades T1-T2, est de 25 % pour
+
+les patients BSCC contre 45 % pour les témoins. Le taux de décès
+
+spécifique est de 60 % pour les cas, contre 35 % chez les
+
+témoins. Le taux de récidive loco-régionale est de 50 % (contre
+
+35 % chez les témoins) et le taux d’apparition de métastase est
+
+10 fois supérieur à celui de la population témoin (50 % contre 5
+
+%) (figure 24).
+
+La médiane de survie globale pour les BSCC est de 26 mois contre
+
+70 mois pour les SCC. Les taux de survie globaux à 3 ans sont de
+
+43 % contre 70 % pour les témoins, et à 5 ans de 37 % contre 60
+
+% pour les témoins (tableau 3).
+
+La comparaison de la survie des populations T1-T2 ne retrouve pas
+
+de différence significative pour la survie globale (p=0.23) et
+
+une différence non significative pour la survie spécifique
+
+(p=0.094). En revanche il existe une différence statistique
+
+entre la survie sans rechute des deux populations (p - 0.05). En
+
+effet, le taux de rechute loco-régionale ou à distance à 2 ans
+
+est proche de 50 % (48,5 %), alors que pour la population témoin
+
+il n’est que de 16,5 % (figure 26). Dans notre série, la
+
+population témoin T1-T2 n’arrive pas, même à 10 ans de suivi, à
+
+un taux de rechute de 50 %.
+
+3-b Evolution et survie des populations T3-T4 :
+
+Les populations de T3-T4 représentent 54 patients dont la moitié
+
+de BSCC.
+
+Le taux de contrôle local pour les stades T3-T4, est de 26 % pour
+
+les patients BSCC contre 33 % pour les témoins. Le taux de décès
+
+spécifique est de 48 % pour les cas, contre 33 % chez les
+
+témoins. Le taux de récidive loco-régionale est de 22 % (contre
+
+33 % chez les témoins) et le taux d’apparition de métastase est
+
+presque 10 fois supérieur à celui de la population témoin (37 %
+
+contre 4 %) (figure 25).
+
+La médiane de survie pour cette population est également de 26
+
+mois contre 56 mois dans la population témoin. Les taux de
+
+survie globaux à 3 ans sont respectivement de 43 % et 63 % et à
+
+5 ans, de 31 % et 48 % (tableau 3).
+
+La comparaison des taux de survie ne retrouve pas de différence
+
+significative entre les cas et les témoins pour la survie
+
+globale et sans rechute. Il existe une différence non
+
+significative pour la survie spécifique (p=0.11) des populations
+
+T3-T4 (figure 27).
+
+3-c Survie comparée des T1-T2 et T3-T4 :
+
+Il n’existe aucune différence statistique au sein de la
+
+population cas, entre les T1-T2 et les T3-T4 pour la survie
+
+globale, spécifique et sans rechute.
+
+Les mêmes constatations sont faites pour la population témoins.
+
+Figure 24 : Comparaison de l’évolution des populations
+
+T1-T2.
+
+Figure 25 : Comparaison de l’évolution des populations
+
+T3-T4.
+
+Tableau 3 : Survie globale en fonction du stade T.
+
+Figure 26 : Comparaison de la survie sans rechute des
+
+T1-T2, cas/témoins.
+
+Figure 27 : Comparaison de la survie spécifique des T3-T4,
+
+cas/témoins.
+
+Dans notre série de BSCC :
+
+- Il n’y a aucune différence de survie entre les stades T1-T2 et
+
+les stades T3-T4, mais ces constatations sont valables pour la
+
+population témoin.
+
+- Tous les stades sont associés à un faible taux de contrôle
+
+local, un fort taux de métastase et de décès liés à la maladie,
+
+et une faible médiane de survie (26 mois).
+
+- Pour les stades T1-T2, la survie sans récidive est plus
+
+péjorative que pour la population témoin (p - 0,05).
+
+4) Evolution et survie des populations en fonction du stade N :
+
+4-a Evolution et survie des populations N0 :
+
+Les populations de N0 regroupent 42 patients, dont 21 cas.
+
+Les taux de contrôle local pour les patients N0, sont de 33 %
+
+pour les deux populations. Le taux de décès spécifique est de 48
+
+% pour les cas, contre 33 % chez les témoins. Le taux de
+
+récidive loco-régionale est de 38 % (contre 33 % chez les
+
+témoins) et le taux d’apparition de métastase est plus de 6 fois
+
+supérieur à celui de la population témoin (33 % contre 5 %)
+
+(figure 28).
+
+La médiane de survie globale de la population cas est de 38 mois
+
+contre 59 pour la population témoin. Les taux de survie globaux
+
+à 3 ans sont de 52 % contre 67 % pour les témoins, et à 5 ans,
+
+de 43 % contre 46 % pour les témoins (tableau 4).
+
+La comparaison des taux de survie ne retrouve aucune différence
+
+entres les populations N0 cas et témoins pour la survie globale
+
+(p=0,72), la survie spécifique (p=0,43) et la survie sans
+
+rechute (p = 0, 47).
+
+4-b Evolution et survie des populations N1 à N3 :
+
+Les populations de N1-N3 regroupent 56 patients dont la moitié de
+
+cas.
+
+Les taux de contrôle local pour les patients présentant une
+
+adénopathie initiale, sont de 24 % pour les patients BSCC,
+
+contre 39 % pour les témoins. Le taux de décès spécifique est de
+
+61 % pour les cas, contre 36 % chez les témoins. Le taux de
+
+récidive loco-régionale est de 29 % (contre 36 % chez les
+
+témoins) et le taux d’apparition de métastase est presque 8 fois
+
+supérieur à celui de la population témoin (54 % contre 7 %)
+
+(figure 29).
+
+La médiane de survie pour la population BSCC se situe à 21 mois
+
+contre 69 pour les témoins. Les taux de survie globaux à 3 ans
+
+sont de 32 % contre 64 % pour les témoins, et à 5 ans, de 23 %
+
+contre 57 % pour les témoins (tableau 4).
+
+La comparaison des taux de survie entre les cas et les témoins
+
+retrouve une différence statistique de survie globale (p=0,01),
+
+de survie spécifique (p - 0,01) (figure 30) et de survie sans
+
+récidive (p - 0,05).
+
+4-c Survie comparée des populations N0 et N1-N3 :
+
+La comparaison des taux de survie des populations N0 et N1-N3
+
+chez les cas, retrouve une différence non significative pour la
+
+survie globale (p=0,09), une différence limite significative
+
+pour la survie spécifique (p=0,054) et aucune différence pour la
+
+survie sans récidive (p=0,17).
+
+Chez les populations N0 et N1-N3 témoins, la comparaison des taux
+
+de survie globale, spécifique et sans rechute ne retrouve pas de
+
+différence statistique.
+
+Figure 28 : Comparaison de l’évolution des populations
+
+N0.
+
+Figure 29 : Comparaison de l’évolution des populations N1
+
+à N3.
+
+Figure 30 : Comparaison de la survie spécifique des
+
+populations N1-N3, cas/témoins.
+
+Tableau 4 : Survie globale en fonction du stade N.
+
+Dans notre série de BSCC :
+
+- Tous les stades N sont associés à un fort taux de métastase et
+
+de décès liés à la maladie.
+
+- Pour la population N1 à N3, le pronostic global est plus
+
+péjoratif que pour la population témoin (p - 0,05). Il existe
+
+une différence significative de survie spécifique et sans
+
+rechute (p - 0.05).
+
+5) Evolution et survie des populations opérées en rechute ou en
+
+première intention :
+
+Deux populations non comparables entres elles s’opposent dans la
+
+population des carcinomes basaloïdes squameux. D’un coté, 15
+
+patients ayant été traités pour une première localisation et opérés
+
+en rechute (le diagnostic et donc l’inclusion ayant été fait à ce
+
+moment), et de l’autre, 31 patients opérés en première intention.
+
+Il n’existe que 3 patients traités par radiothérapie exclusive, pour
+
+qui le carcinome basaloïde squameux a été diagnostiqué d’emblée. Il
+
+n’y a aucun patient chez qui le diagnostic a été fait lors d’une
+
+rechute après traitement chirurgical premier. Sur les 3 patients
+
+traités par radiothérapie exclusive, un est décédé de métastase à 27
+
+mois et les deux autres de causes médicales (dont un était en
+
+poursuite évolutive).
+
+5-a Evolution et survie des populations opérées en rechute :
+
+Il existe dans notre série 15 patients pour lesquels le carcinome
+
+basaloïde a été diagnostiqué lors d’une rechute après un premier
+
+traitement par radiothérapie externe. Le délai moyen de rechute
+
+était de 23 mois (contre 33 mois pour les témoins). Tous ont été
+
+opérés.
+
+Le taux de contrôle local, pour cette population, est de 7 % pour
+
+les patients BSCC, contre 27 % pour les témoins. Le taux de
+
+décès spécifique est de 67 % pour les cas, contre 60 % chez les
+
+témoins. Le taux de récidive loco-régionale est le même pour les
+
+deux populations (27 %) et le taux d’apparition de métastase est
+
+presque 8 fois supérieur à celui de la population témoin (53 %
+
+contre 7 %) (figure 31).
+
+La médiane de survie globale pour cette population est de 22 mois
+
+contre 54 mois chez les témoins. Les taux de survie globaux à 3
+
+ans sont de 33 % contre 56 % chez les témoins, et à 5 ans, de 20
+
+% contre 43 % chez les témoins (tableau 5).
+
+La comparaison des différents taux de survie montre qu’il existe
+
+une différence de survie globale non significative (p=0,1)
+
+(figure 33). Il n’existe pas de différence entre les cas et les
+
+témoins en ce qui concerne la survie spécifique et la survie
+
+sans rechute.
+
+5-b Evolution et survie des populations traitées par chirurgie
+
+première :
+
+Dans cette population il existe 62 patients dont 31 cas.
+
+Le taux de contrôle local est de 34 % pour les BSCC contre 42 %
+
+pour les témoins. Le taux de décès spécifique est de 52 % pour
+
+les cas, contre 19 % chez les témoins. Le taux de récidive
+
+loco-régionale est de 26 % (contre 23 % chez les témoins) et le
+
+taux d’apparition de métastase est 7 fois supérieur à celui de
+
+la population témoin (42 % contre 6 %) (figure 32).
+
+Dans les deux populations, 24 patients ont bénéficié d’une
+
+radiothérapie post-opératoire. Les taux de rechute
+
+loco-régionale et à distance, dans ce cas, sont de 54 % pour les
+
+BSCC contre 25 % chez les témoins, avec un délai moyen
+
+d’apparition de 12 mois (contre 19 chez les témoins).
+
+La médiane de survie est de 25 mois pour les cas contre 54 mois
+
+pour les témoins. Les taux de survie globaux à 3 ans sont de 47
+
+% contre 67 % pour les témoins, et à 5 ans, de 38 % contre 58 %
+
+pour les témoins (tableau 5).
+
+La comparaison des taux de survie de cette population entre les
+
+cas et les témoins, ne retrouve pas de différence pour la survie
+
+globale et la survie sans rechute. En revanche, il existe une
+
+différence statistique pour la survie spécifique (p=0,02) des
+
+cas et des témoins dans cette population (figure 34).
+
+5-c Survie comparée des patients opérés en rechute et des
+
+patients traités par chirurgie première :
+
+La comparaison, chez les cas, des taux de survie des patients en
+
+récidive (initialement traités par radiothérapie) et des
+
+patients opérés en première main (traités par chirurgie +/-
+
+radiothérapie post-opératoire) ne retrouve aucune différence
+
+pour la survie globale, spécifique (figure 35) et sans récidive.
+
+En revanche, les mêmes comparaisons chez les patients témoins
+
+retrouvent une différence significative en terme de survie
+
+spécifique (p - 0.05) (figure 36).
+
+Figure 31 : Comparaison de l’évolution des populations
+
+opérées en rechute post-radique.
+
+Figure 32 : Comparaison de l’évolution des populations
+
+traitées par chirurgie première.
+
+Figure 33 : Comparaison de la survie globale des patients
+
+opérés en situation de rechute après radiothérapie,
+
+cas/témoins.
+
+Figure 34 : Comparaison de la survie spécifique des
+
+patients traités par chirurgie première, cas/témoins.
+
+Figure 35 : Comparaison de la survie spécifique des
+
+patients opérés en première intention et des patients opérés
+
+en situation de rechute, chez les cas.
+
+Figure 36 : Comparaison de la survie spécifique des
+
+patients opérés en première intention et des patients opérés
+
+en situation de rechute, chez les témoins.
+
+Tableau 5 : Survie globale des patients en rechute et des
+
+patients opérés en première intention.
+
+Dans notre série de BSCC :
+
+- Il n’y a pas de différence de survie entre le groupe de
+
+patients opérés en première intention et le groupe de patients
+
+opérés en situation de rattrapage, les médianes de survie pour
+
+ces deux groupes sont inférieures ou égales à 25 mois.
+
+- En revanche, il existe une différence de survie spécifique
+
+entre les deux populations équivalentes chez les témoins (p -
+
+0,05).
+
+- Le groupe de patients opérés en situation de rattrapage
+
+présente un taux de contrôle local de 7 % seulement.
+
+- Le groupe de patients opérés en première main présente une
+
+survie spécifique significativement moins bonne que celle du
+
+groupe témoin (p - 0,05).
+
+- Les deux groupes sont associés à un taux d’apparition de
+
+métastase 7 à 8 fois supérieur à celui de la population
+
+témoin.
+
+6) Evolution et survie des populations en fonction des critères
+
+pronostiques anatomo-pathologiques :
+
+6-a Survie selon le caractère macroscopique de la tumeur :
+
+La comparaison des taux de survie des patients cas ayant une
+
+tumeur bourgeonnante (n=16) avec ceux des patients ayant une
+
+tumeur ulcérante (n=26) ne retrouve aucune différence pour la
+
+survie globale, spécifique et sans rechute.
+
+6-b Evolution et survie des populations en fonction de
+
+l’exérèse chirurgicale carcinologique :
+
+Dans la population cas, 16 patients avaient une exérèse
+
+chirurgicale carcinologique limite ou non satisfaisante (contre
+
+8 dans la population témoin) et 30 patients une exérèse
+
+satisfaisante.
+
+La qualité des limites chirurgicales ne modifie pas les taux de
+
+contrôle local, de récidive locale ou d’apparition de métastase
+
+(tableau 6).
+
+On ne retrouve pas, entre ces deux groupes, de différence de
+
+survie globale (p=0,58), de survie spécifique (p=0,94) et de
+
+survie sans rechute (p=0,90).
+
+La comparaison des taux de survie des patients cas et témoins
+
+ayant une exérèse carcinologique non satisfaisante ne retrouve
+
+pas non plus de différence significative.
+
+Tableau 6 : Evolution des patients en fonction de
+
+l'exérèse carcinologique.
+
+6-c Survie des populations en fonction de la présence
+
+d’emboles tumoraux sur la pièce opératoire :
+
+Dans la population cas, 10 patients présentaient des emboles
+
+tumoraux sur les pièces opératoires contre 9 chez les patients
+
+témoins.
+
+Chez les BSCC, la présence d’embole(s) sur la pièce opératoire
+
+est associée à un taux de contrôle local nul (alors qu’il reste
+
+à 18 % chez les témoins) et un taux de métastase de 24 % (contre
+
+0 % pour les témoins). Pour ce groupe, la survie globale à 3 ans
+
+est de 20 % (contre 67 % chez les témoins), et, à 5 ans elle est
+
+de 0 % (contre 56 % pour les témoins).
+
+La comparaison des taux de survie des patients cas et témoins
+
+présentant des emboles sur la pièce opératoire, retrouve une
+
+différence significative pour la survie globale (p - 0,05), la
+
+survie spécifique (p - 0,05) (figure 37) et la survie sans
+
+récidive (p - 0,05).
+
+Figure 37 : Comparaison de la survie spécifique des
+
+patients ayant une tumeur avec embole(s),
+
+cas/témoins.
+
+7) Evolution et survie des populations en fonction du contingent
+
+de carcinome basaloïde dans la tumeur :
+
+Nous avons établi trois groupes de patients en fonction du
+
+pourcentage de contingent basaloïde dans la tumeur. Le premier
+
+groupe, de 13 patients, regroupe les patients ayant des tumeurs
+
+contenant 1/3 de contingent basaloïde. Le deuxième groupe contient
+
+également 13 patients, il regroupe les patients ayant une tumeur
+
+contenant 2/3 de contingent basaloïde. Le troisième groupe, de 23
+
+patients, représente les patients ayant une tumeur contenant plus de
+
+80 % de contingent basaloïde.
+
+La comparaison des taux de survie entre les trois groupes (figure 38)
+
+ne fait apparaître aucune différence pour la survie globale
+
+(p=0,66), spécifique (p=0,90) (figure 28) et sans récidive (p=0,84).
+
+Figure 38 : Comparaison de la survie spécifique en fonction du
+
+contingent basaloïde de la tumeur.
+
+Dans notre série de BSCC :
+
+- Le pourcentage de contingent basaloïde dans la tumeur ne modifie
+
+pas la survie.
+
+- Le caractère macroscopique n’influence pas la survie.
+
+- A qualité d’exérèse carcinologique égale, la survie et l’évolution
+
+entres cas et témoins ne présentent pas de différence significative.
+
+- La présence d’emboles sur la pièce opératoire est un facteur
+
+pronostique péjoratif supplémentaire par rapport à la population
+
+témoin.
+
+V. Etude des facteurs pronostiques dans la population de BSCC
+
+survivants :
+
+Dans notre étude, 28 % des patients sont vivants à 5 ans, soit 13
+
+patients. L’étude rétrospective des facteurs pronostiques dans ce groupe
+
+retrouve :
+
+- 4 localisations laryngées (la moitié de notre effectif) ;
+
+- 62 % de patients N0 (contre 36 % pour les patients décédés) ;
+
+- 15 % de patients en situation de rattrapage (contre 39 % pour les
+
+patients décédés) ;
+
+- 15 % de patients présentant une rupture capsulaire sur les adénopathies
+
+du curage (contre 44 % pour les patients décédés) ;
+
+- aucun patient ne présentait d’embole sur la pièce opératoire (contre 27
+
+% chez les patients décédés).
+
+- Tous les patients vivants à 5 ans ne présentaient pas d’embole sur la
+
+pièce opératoire, alors que tous les patients présentant des emboles sur
+
+pièce sont décédés à 5 ans.
+
+- L’ensemble des patients vivants à 5 ans a de meilleurs facteurs
+
+pronostiques cliniques et histopathologiques que le groupe de patient
+
+décédés.
+
+Discussion
+
+I. Intérêts et implications des résultats :
+
+Nous voulions savoir si les patients présentant un BSCC avaient un
+
+pronostic plus défavorable que les patients présentant un SCC, et si
+
+leurs modes évolutifs étaient différents.
+
+Or, nous avions d’emblée un effectif de 49 patients qui présentaient déjà
+
+beaucoup de critères pronostiques péjoratifs :
+
+- une majorité de localisation hypopharyngée (41 %) ;
+
+- une majorité de stade T avancés (55 % de T3-T4) ;
+
+- une majorité de patients présentant des adénopathies cervicales au
+
+moment du diagnostic (57 %) ;
+
+- une majorité de tumeur ulcérantes (53 %) ;
+
+- un effectif important de patient en situation de rattrapage (31 %).
+
+Cette population, très hétérogène sur le plan des localisations, des
+
+stades cliniques et des traitements réalisés, nécessitait donc de
+
+pouvoir être comparée à une population en tous points identiques.
+
+Chaque patient s’est donc vu attribué un véritable « jumeau clinique »
+
+pour lequel le stade, la localisation, les traitements effectués
+
+demeuraient le mêmes.
+
+1) Le pronostic des BSCC :
+
+La comparaison de la survie entre ces deux populations fait
+
+clairement apparaître une différence statistique pour la survie
+
+globale (p - 0,05), la survie spécifique (p - 0,05) et la survie
+
+sans rechute (p - 0,05), au bénéfice de la population témoin alors
+
+qu’elle présentait initialement tous les mêmes critères pronostiques
+
+péjoratifs.
+
+Dans notre étude, la survie de la population de BSCC n’est pas
+
+modifiée par :
+
+- la localisation anatomique initiale ;
+
+- le stade T ;
+
+- l’aspect macroscopique de la tumeur ;
+
+- le statut de rechute post-radique ou de première main ;
+
+- l’importance du contingent basaloïde au sein de la tumeur ;
+
+- la qualité de l’exérèse chirurgicale carcinologique ;
+
+- la présence d’emboles sur la pièce opératoire.
+
+Le statut N initial semble modifier la survie, la comparaison de la
+
+survie spécifique entre la population de BSCC N0 et la population de
+
+BSCC N1 à N3 retrouve une différence statistique limite (p=0,054),
+
+ce qui ne nous permet pas de conclure véritablement.
+
+En revanche, la survie spécifique de la population SCC est modifiée
+
+par :
+
+- la localisation anatomique initiale (larynx &gt; oropharynx &gt;
+
+hypopharynx) ;
+
+- le stade N (N0 &gt; N1-N3) ;
+
+- le statut de rechute post-radique ou de première main (1ère main
+
+&gt; rechute).
+
+La comparaison de la survie entre les populations cas et les
+
+populations témoins retrouve des différences statistiques entre :
+
+- les taux de survie spécifique des patients opérés en première main
+
+(SCC &gt; BSCC) ;
+
+- les taux de survie globale, spécifique et sans rechute des patients
+
+présentant une adénopathie clinique initiale (N1-3 SCC &gt; N1-3
+
+BSCC) ;
+
+- les taux de survie sans rechute des patients au stade T1 et T2
+
+(T1-T2 SCC &gt; T1-T2 BSCC) ;
+
+- les taux de survie spécifique des localisations laryngées (BSCC
+
+&gt; SCC) ;
+
+- les taux de survie globale, spécifique et sans rechute des patients
+
+présentant des emboles sur pièce opératoire (E+ SCC &gt; E+ BSCC).
+
+Il apparaît donc que le BSCC est un facteur histopathologique
+
+pronostique défavorable, indépendant de la localisation, du stade T,
+
+du statut de rechute ou non, des critères pronostiques
+
+anatomo-pathologiques, et enfin, du contingent de basaloïde dans la
+
+tumeur.
+
+De plus, une population de patients BSCC en rechute ou à un stade N
+
+avancé ou bien présentant des emboles sur la pièce opératoire, a un
+
+pronostic encore plus défavorable qu’une population de SCC
+
+comparable.
+
+Cela revient à dire que le critère pronostique péjoratif du BSCC se
+
+surajoute aux critères pronostiques de la situation de rechute, du
+
+stade N avancé ou de la présence d’emboles dans la tumeur.
+
+Ces constatations sont valables quel que soit le taux de contigent
+
+basaloïde au sein de la tumeur.
+
+2) Evolution des BSCC :
+
+Si les patients porteurs d’un BSCC ont un pronostic plus défavorable
+
+que les témoins, l’évolution de la maladie est également différente.
+
+Dans notre série, les rechutes loco-régionales ne sont pas plus
+
+fréquentes que dans la population témoin, mais nous obtenons un taux
+
+de décès par métastase presque 6 fois supérieur à celui de la
+
+population témoin (p - 0,001). Un patient sur deux a développé une
+
+ou des métastase(s), et presque 2/3 des décès leurs sont imputés. La
+
+médiane d’apparition des métastases est de 12 mois seulement.
+
+Aucun patient n’a développé de deuxième localisation, très
+
+probablement en raison de la très courte médiane de survie globale
+
+(25 mois).
+
+Le taux de contrôle local de la maladie est supérieur pour la
+
+population témoin (mais non spécifique), et le taux de décès
+
+spécifique supérieur pour la population témoin.
+
+Ainsi, la population de BSCC a vu son pronostic grevé par une
+
+évolution générale très rapide, indépendamment des critères
+
+pronostiques jusque-là connus.
+
+3) Les survivants :
+
+Les taux de décès globaux entre les deux populations restent assez
+
+proche (67 % contre 55 % pour les témoins). Nous avons donc pour 1/3
+
+de la population de BSCC, un recul supérieur à 5 ans. Or l’étude
+
+rétrospective des critères pronostiques ne nous permet pas de savoir
+
+quel est ou quels sont les éléments prédictifs d’une bonne réponse
+
+au traitement. Sur les 13 survivants, 2 étaient en situation de
+
+rattrapage, 8 étaient T3-T4, 5 présentaient des adénopathies au
+
+moment du diagnostic et 5 avaient un carcinome basaloïde pur (&gt;
+
+80 %).
+
+Le seul critère de bon pronostique pouvant être discuté dans la
+
+population BSCC est l’absence d’embole sur les pièces opératoires.
+
+Chez les patients survivants, 100 % (13/13) ne présentaient pas
+
+d’embole sur la pièce opératoire. Même si le faible effectif ne nous
+
+permet pas de conclure, il n’en demeure pas moins une forte
+
+présomption que l’absence d’embole sur la pièce opératoire est un
+
+critère prédictif majeur, de bon pronostique, pour cette population.
+
+L’inverse est démontré dans notre étude : la présence d’embole(s)
+
+sur la pièce opératoire aggrave significativement le pronostic des
+
+patients porteurs d’un BSCC.
+
+4) Les modalités thérapeutiques :
+
+Dans notre population de BSCC, nous n’avions pas la possibilité de
+
+montrer si tel ou tel schéma thérapeutique était supérieur à un
+
+autre. Tout d’abord, nous n’avions qu’un très faible effectif de
+
+patients dont le diagnostic de BSCC a été porté avant un traitement
+
+par radiothérapie première (3 au total). Sur ces 3 patients, un est
+
+décédé de métastase, et les deux autres de cause médicale (dont un
+
+était en situation de poursuite évolutive). Nous ne pouvons donc ni
+
+discuter, ni supposer ici de l’efficacité de la radiothérapie
+
+première.
+
+A priori, dans notre série, le traitement le plus efficace reste la
+
+chirurgie première suivie de radiothérapie puisque sur les 24
+
+patients qui ont bénéficié de cette séquence thérapeutique, 11 n’ont
+
+pas récidivé, soit 46 % (sur ces 11 patients 9 ont un recul &gt; 5
+
+ans).
+
+L’analyse rétrospective des critères de mauvais pronostiques chez ces
+
+24 patients montre que les patients n’ayant pas récidivé étaient
+
+tous indemnes d’embole sur la pièce opératoire, et seulement 2
+
+patients présentaient une rupture capsulaire sur les adénopathies du
+
+curage. Les 13 patients ayant récidivé après la séquence
+
+thérapeutique chirurgie + radiothérapie, présentaient des critères
+
+de mauvais pronostiques anatomo-pathologiques : 4 avaient des
+
+emboles sur pièce opératoire et 10 présentaient une rupture
+
+capsulaire sur les adénopathies du curage. Entre ces deux groupes,
+
+les répartitions en localisation et en stade TNM sont pratiquement
+
+les mêmes. Même si ces constatations sont faites de façons
+
+rétrospectives, sans pouvoir effectuer de comparaison statistique,
+
+il apparaît que la présence d’embole(s) et/ou de rupture capsulaire
+
+soit un facteur favorisant la récidive.
+
+Les résultats de la chirurgie de rattrapage sont très décevants et
+
+nous n’obtenons pas de différence de survie significative entre les
+
+cas et les témoins dans cette sous-population. Mais la médiane de
+
+survie pour les BSCC est de 22 mois contre 54 pour les témoins dans
+
+ce groupe.
+
+La chirurgie première suivie de radiothérapie semble donc être un
+
+traitement efficace en l’absence de critère de mauvais pronostique
+
+surajouté, mais cette constatation tient de l’évidence pour toutes
+
+les tumeurs épidermoïdes en général.
+
+Nous ne pouvons pas discuter dans notre étude des résultats de la
+
+radiothérapie exclusive pour les BSCC en raison du faible effectif
+
+de patients. Mais cette thérapeutique doit garder toute sa place
+
+dans le traitement des BSCC, son indication étant dictée par la
+
+localisation, le stade TNM et l’aspect macroscopique de la tumeur.
+
+Son intérêt et ses limites pour le BSCC pourront être précisés par
+
+des études contenant un plus grand effectif de patient.
+
+II. Critiques de l’étude :
+
+Nous avons réalisé une étude cas-témoin avec des critères d’appariements
+
+stricts dans le but d’obtenir deux populations comparables entres elles.
+
+L’étude des taux de survie nous a donné des résultats statistiquement
+
+significatifs mais notre travail reste une étude rétrospective avec un
+
+faible effectif de patient (49 x2). Plusieurs inconvénients sont
+
+inhérents à notre étude :
+
+- L’analyse rétrospective des dossiers ne permet pas toujours une
+
+uniformité du recueil des données, certaines ont pu être manquantes.
+
+- Les patients perdus de vue qui sont considérés comme décédés à la date
+
+de dernière consultation, mais notre étude ne comporte qu’un perdu de
+
+vue pour les cas et un perdu de vue pour les témoins.
+
+- Les biais de sélection : le principal biais de sélection de notre étude
+
+serait le biais de recrutement des patients témoins. Tous les patients
+
+témoins devaient répondre aux critères d’inclusion majeurs, et, dans la
+
+mesure du possible aux critères mineurs. Or, la multiplicité des
+
+critères d’inclusion diminuait d’autant le nombre de patients témoins
+
+possibles pour l’appariement. Dans la plupart des cas (61 %), plusieurs
+
+patients répondaient aux critères majeurs et aucun ne répondaient à
+
+l’ensemble des critères mineurs. Nous avons donc procédé dans ce cas,
+
+pour chaque appariement, au choix du patient qui présentait le plus de
+
+critères mineurs. Dans le reste des cas (39 %), plusieurs patients
+
+répondaient aux critères et un seul était tiré au sort.
+
+- Le choix de la population témoin : l’étude a comparé une population de
+
+carcinome basaloïde squameux à une population de carcinome épidermoïde
+
+moyennement à bien différencié. Nous ne pouvons donc tirer aucune
+
+conclusion vis-à-vis du pronostic comparé aux carcinomes peu
+
+différenciés qui ont été d’emblée exclus de l’étude afin d’uniformiser
+
+la population témoin. Dans l’idéal, un troisième bras de comparaison
+
+contenant une population témoin de carcinome épidermoïde peu différencié
+
+devrait compléter l’étude.
+
+- Le nombre de témoins appariés par cas : pour augmenter la puissance de
+
+l’étude, il aurait fallu disposer de 2 voire 3 patients témoins par cas.
+
+Mais nous l’avons vu, le plus souvent un seul patient répondait aux
+
+critères d’inclusion avec un certain compromis sur les critères mineurs.
+
+Pour ce type d’étude, c’est bien la recherche et la sélection des
+
+patients témoins qui demande le plus de travail et de rigueur et ici,
+
+l’augmentation du nombre de témoins par cas était donc difficile.
+
+- La comparaison des sous-populations de cas et de témoins diminue
+
+également la puissance statistique des résultats par les faibles
+
+effectifs recueillis. Par exemple, la comparaison de la survie des
+
+patients présentant une lésion de l’oropharynx ne se faisait plus que
+
+sur l’effectif des 18 patients cas et des 18 patients témoins, ce qui ne
+
+permet pas de dégager un intervalle de confiance suffisant.
+
+Malgré notre faible effectif d’un point de vue statistique, notre étude
+
+comporte le plus grand nombre de carcinomes basaloïdes squameux
+
+jusqu’alors décrit dans la littérature. Les résultats statistiques
+
+obtenus ne constitue pas une preuve absolue, mais sont des arguments
+
+très sérieux pour affirmer le caractère péjoratif du pronostic des BSCC
+
+et son indépendance vis-à-vis des autres critères pronostiques.
+
+III. Comparaison de nos résultats avec ceux de la littérature :
+
+La plus grande série de BSCC publiée est celle de Banks et al.[63] en
+
+1992. Elle contenait 40 cas en étude rétrospective clinique et
+
+immuno-histochimique. Cette étude a apporté des résultats novateurs sur
+
+les analyses immuno-histochimiques pour le diagnostic différentiel des
+
+BSCC (versus le carcinome adénoïde kystique ou le carcinome
+
+indifférencié). Sur ces 40 patients, 15 ont développé des métastases
+
+(37,5 %) et la médiane de survie était de 18 mois. Même si cette
+
+population de BSCC n’avait pas été appariée, Banks et al. a avancé que «
+
+stade par stade, le comportement des BSCC était identique au SCC
+
+conventionnels ». Mais cet argument pronostique ne tenait que de
+
+l’hypothèse, en l’absence d’arguments statistiques.
+
+La plus grande série de BSCC appariée à une population témoin, nous
+
+l’avons vu, est celle de Winzenburg et al. [69] en 1998. Elle comparait
+
+23 carcinomes basaloïdes squameux avec 23 carcinomes peu différenciés
+
+(PDSC). Une différence statistique entre la survie des deux populations
+
+était retrouvée avec une survie à 2 ans de 23,5 % pour les BSCC contre
+
+53 % pour les PDSC.
+
+Même si notre étude ne comporte pas de comparaison avec une population de
+
+carcinome épidermoïdes peu différenciés, nous disposons de 3 arguments
+
+pour dire que le BSCC a un pronostic plus péjoratif que les SCC quel que
+
+soient leurs degrés de différenciation :
+
+- tout d’abord les résultats de notre étude, qui montre que les BSCC ont
+
+un pronostic plus péjoratif que les SCC moyennement à bien différenciés
+
+;
+
+- les études de Winzenburg et al.[69] et de Moro et al.[62] pour le
+
+poumon en 1994, qui montrent que les BSCC ont un pronostic plus
+
+péjoratif que les SCC peu différenciés ;
+
+- les études de la survie des SCC en fonction du degré de différenciation
+
+de Bataini et al.[45] et de Lusinchi et al.[61] qui démontrent, nous
+
+l’avons vu, que le degré de différenciation tumorale n’était pas corrélé
+
+positivement à la survie.
+
+Notre étude ne nous permet pas affirmer que le BSCC a un pronostic plus
+
+péjoratif que tous les SCC (cela tiendrait du syllogisme), mais nous
+
+pouvons dire que la présomption est forte.
+
+Les autres études comparatives n’ont montré aucune différence statistique
+
+significative de survie mais elles souffrent toutes du manque d’effectif
+
+(10 BSCC pour Erdamar et al.[75], 6 BSCC pour Luna et al.[68] et 17 BSCC
+
+pour De Sampio Goes et al.[74]), et parfois d’une méthodologie non
+
+adaptée.
+
+En effet, De Sampio Goes et al. voulait comparer la survie des BSCC avec
+
+celle des SCC peu différenciés et des SCC moyennement à bien
+
+différenciés mais il n’a pas inclus :
+
+- les patients ayant un BSCC en rechute post-radique ;
+
+- les patients présentant une tumeur inopérable ;
+
+- les patients ayant des métastases.
+
+Il est donc difficile dans ces conditions de montrer la valeur réelle du
+
+pronostic des BSCC.
+
+Un autre argument de discussion important qu’apporte notre étude, repose
+
+sur le pronostic des BSCC en fonction de l’importance du contingent
+
+basaloïde dans la tumeur. En effet, pour Winzenburg et al.[69], les
+
+carcinomes basaloïdes purs ont un meilleur pronostic que les carcinomes
+
+basaloïdes non purs. Or, dans notre série, nous montrons que la survie
+
+n’est pas modifié en fonction de la teneur en carcinome basaloïde de la
+
+tumeur. D’autres auteurs, comme Erisen et al.[94] retrouvent des
+
+résultats identiques mais sur une très petite série.
+
+Dans l’ensemble, nos résultats sur le pronostic péjoratif des BSCC des
+
+VADS et sur les taux anormalement élevés de décès par métastases vont
+
+dans le sens de la majorité des auteurs [1, 5, 65, 67, 69, 71, 72].
+
+Notre étude, de par son effectif et sa méthodologie, apporte donc les
+
+premiers arguments sérieux à la discussion sur le pronostic et
+
+l’évolution des BSCC.
+
+IV. Hypothèses physiopathologiques :
+
+1) Hypothèses sur la carcinogenèse des BSCC :
+
+L’histogenèse des carcinomes basaloïdes squameux est inconnue et fait
+
+l’objet de plusieurs hypothèses. Tout d’abord, l’ensemble des
+
+auteurs est d’accord pour dire que le BSCC est avant tout lié
+
+épidémiologiquement à l’alcool et au tabac. Mais ce risque n’est pas
+
+forcément lié au caractère basaloïde de la tumeur, il est
+
+probablement lié d’abord au caractère carcinomateux. En effet, les
+
+auteurs retrouvent dans les populations de BSCC et de SCC les mêmes
+
+proportions de non-fumeurs et de non-buveurs, notre étude va
+
+également dans ce sens (95 % de fumeurs et 80 % de buveurs excessifs
+
+réguliers dans chaque groupe).
+
+Dès la première description des BSCC par Waine et al. [1] en 1986,
+
+l’auteur évoquait une hypothèse selon laquelle une cellule primitive
+
+totipotente pourrait être à l’origine des carcinomes basaloïdes
+
+comme des carcinomes épidermoïdes ou des adénocarcinomes. Brambilla
+
+et al.[4] en 1992 affirmait que le carcinome basaloïde présentait
+
+les mêmes caractéristiques morphologiques, immunophénotypiques et
+
+ultrastructurelles que des cellules totipotentes de réserve ou des
+
+cellules basales, qui ont la possibilité de se différencier sur les
+
+différentes lignées épidermoïde, glandulaire ou neuro-endocrine.
+
+Kleist et al. [89] en 2004, a étudié les prévalences de l’human
+
+papillomavirus (HPV) et de l’herpes simplex virus (HSV) dans des
+
+populations de BSCC et de SCC. L’auteur retrouve un lien
+
+épidémiologique entre le BSCC et la présence d’ADN viral HPV et
+
+HPV+HSV. Aucun lien n’est retrouvé entre la présence de ces ADN
+
+viraux et la consommation d’alcool et de tabac.
+
+On sait depuis les travaux de Werness et al. [90] et de Dyson et al.
+
+[91], qu’il existe une association entre les oncoprotéines de l’HPV
+
+(E6 et E7) et les protéines de régulation de la croissance
+
+cellulaire des cellules hôtes (p53 et Rb). L’auteur [89] évoque
+
+alors la possibilité pour le HSV d’être un cofacteur d’intégration
+
+de l’ADN viral de l’HPV dans la cellule hôte. Le HPV et le HSV
+
+seraient alors des facteurs cocarcinogènes. Il développe ainsi
+
+l’hypothèse que le SCC serait induit par des facteurs chimiques
+
+(tabac +/- alcool) et le carcinome basaloïde serait développé à
+
+partir de facteurs biologiques par la co-infestation de l’HPV et du
+
+HSV.
+
+Mais plusieurs études [92, 93] ont déjà montré que la séropositivité
+
+à l’HSV1 ou à l’HPV (surtout pour le sérotype 16) étaient des
+
+facteurs de risque d’apparition de SCC. Le tabac serait alors un
+
+risque surajouté.
+
+Les relations entre carcinogenèse du BSCC et co-infestation par l’HPV
+
+et l’HSV restent donc de simples liens épidémiologiques. La
+
+carcinogenèse des BSCC demeure encore inconnue.
+
+2) Radiothérapie et BSCC :
+
+Vis-à-vis de la radiothérapie, nous ne disposons que de deux
+
+effectifs : les patients en rechute après traitement par
+
+radiothérapie, et les patients irradiés en post-opératoire.
+
+2-a Pourquoi le faible effectif de patients traité par
+
+radiothérapie exclusive ?
+
+La première hypothèse que l’on peut formuler serait que certaines
+
+tumeurs traitées par radiothérapie exclusive pouvaient être des
+
+BSCC passés inaperçus. En effet, le diagnostic étant réalisé sur
+
+des biopsies de 2 à 5 mm, un contingent basaloïde peut échapper
+
+à l’analyse histologique. Dans ces cas, le carcinome basaloïde
+
+serait stérilisé par la radiothérapie. Il est donc impossible de
+
+vérifier cette hypothèse en l’absence de diagnostic initial.
+
+La deuxième hypothèse consiste à dire que le BSCC est
+
+diagnostiqué plus souvent à un stade T et N élevé, et son
+
+traitement relève donc plus de la chirurgie. Cette hypothèse est
+
+dans une certaine mesure valable pour notre étude comme nous
+
+l’avons déjà vu et la majorité des auteurs va dans ce sens [3,
+
+64-68]. Mais en l’absence de résultats sur le traitement par
+
+radiothérapie exclusive « d’éventuels » BSCC, il est impossible
+
+de répondre à cette question.
+
+2-b Pourquoi les patients en rechute après traitement par
+
+radiothérapie représentent-ils un effectif aussi important dans
+
+l’étude ?
+
+Cette sous-population représente en effet pratiquement 1/3 de
+
+notre effectif de BSCC.
+
+La première possibilité serait que, là aussi, le diagnostic de
+
+BSCC n’a pas été fait en raison de la simple biopsie. Mais à ce
+
+moment là, les BSCC seraient au contraire plus « radiorésistants
+
+» et les risques de récidives loco-régionales plus élevés. Cette
+
+hypothèse ne peut absolument pas être vérifiée ici. De plus, on
+
+s’attendrait dans ces cas là, à avoir une sur-représentation de
+
+BSCC purs, ce qui n’est pas le cas puisque 80 % des rechutes se
+
+font sous la forme de BSCC contenant 1/3 à 2/3 de contigent
+
+basaloïde.
+
+La deuxième possibilité serait l’implication d’une radiothérapie
+
+première dans le développement du BSCC. Deux auteurs ont exprimé
+
+cette hypothèse [92, 93] mais à partir de case-reports
+
+seulement. Dans notre série, les patients ont rechuté après une
+
+médiane de 14 mois seulement après la radiothérapie contre 24
+
+mois pour les témoins. On ne peut raisonnablement pas penser que
+
+la radiothérapie a induit les BSCC, en revanche on peut se
+
+demander si le terrain irradié ne facilite pas, lors d’une
+
+récidive, le développement d’un BSCC. Les phénomènes physiques
+
+tels que l’inflammation chronique pourraient jouer un rôle.
+
+Il nous est impossible de tirer des conclusions sur l’association
+
+BSCC et terrain irradié. Nous avons déjà montré que la
+
+radiothérapie post-opératoire permettait dans certaines
+
+conditions un contrôle de la maladie. La radiothérapie doit donc
+
+garder sa place privilégiée dans le traitement des BSCC, que ce
+
+soit en première intention dans les petites tumeurs ou en
+
+complément de la chirurgie pour les lésions évoluées. Ces
+
+modalités seront discutées plus loin.
+
+3) BSCC et métastases :
+
+Nous l’avons vu, les patients traités pour un BSCC présentaient un
+
+risque 6 fois plus élevé de développer une ou des métastases. Ce
+
+risque semble être lié directement au caractère basaloïde de la
+
+tumeur. En effet, l’analyse de toutes les sous-populations de cas
+
+(en T et N, en localisation, et en traitement) montre que le risque
+
+reste toujours supérieur à celui de la population témoin de SCC.
+
+D’un point de vue histopathologique, certaines caractéristiques du
+
+BSCC peuvent permettre d’élaborer quelques hypothèses sur la
+
+propension de ces tumeurs aux métastases. Tout d’abord, l’index
+
+mitotique élevé par rapport aux SCC témoigne d’une certaine
+
+agressivité. Ensuite l’aspect monomorphe des cellules, petites, et
+
+surtout sans ponts d’union, à proximité d’un stroma inflammatoire,
+
+laisse prédire que ces cellules peuvent plus facilement passer dans
+
+un réseau vasculaire lymphatique ou sanguin proche. Ensuite des
+
+études immuno-histochimiques peuvent témoigner d’une certaine
+
+agressivité de la tumeur comme l’index de prolifération cellulaire
+
+Ki67, qui semble surexprimé pour le BSCC [65, 94].
+
+Les travaux réalisés par Koide et al. [95] montrent que les BSCC
+
+expriment significativement plus de vascular endothelial growth
+
+factor (VEGF) et de thymidine phosphorylase (dThdPase) que les SCC.
+
+Ces facteurs sont considérés comme étant inducteurs d’angiogenèse
+
+par les tumeurs. Le VEGF augmente la perméabilité des microvaisseaux
+
+et stimule spécifiquement la prolifération des cellules
+
+endothéliales de ces vaisseaux. La surexpression du VEGF pourrait
+
+donc être associée à un taux élevé de métastases.
+
+V. Discussion sur la prise en charge des BSCC:
+
+1) Prise en charge diagnostique :
+
+Le plus souvent le BSCC a été diagnostiqué sur la pièce opératoire.
+
+Chez moins d’un tiers des patients opérés en première intention nous
+
+disposions du diagnostic anatomo-pathologique de BSCC avant
+
+l’intervention. Il est donc difficile sur cet effectif de discuter
+
+un bilan spécifique chez les patients porteurs d’un BSCC pour qui
+
+une intervention chirurgicale est programmée.
+
+Nous avons vu que la présence d’une adénopathie clinique au moment du
+
+diagnostic pouvait aggraver la survie spécifique (p limite =0.054)
+
+mais le taux de métastase chez les patients N0 opérés en première
+
+main est tout de même de 25 % (contre 0 % dans la population
+
+témoin). Les patients sont d’emblée exposés à un risque de
+
+dissémination systémique, d’autant plus s’ils présentent une
+
+adénopathie clinique ou radiologique au moment du diagnostic. Nous
+
+proposons donc de réaliser en plus du bilan clinique et paraclinique
+
+habituel, lorsque le diagnostic de BSCC est établi, une TEP-FDG pour
+
+les patients devant bénéficier d’un traitement à visée curative
+
+(chirurgie à visée carcinologique ou radiothérapie exclusive) afin
+
+d’éliminer toute localisation secondaire infra-clinique.
+
+Ceci est justifié par le caractère anormalement métastasant de la
+
+tumeur et par la sensibilité de l’examen pour dépister les lésions
+
+secondaires.
+
+2) Prise en charge thérapeutique :
+
+2-a Les indications de chirurgie première :
+
+Dans notre série, presque tous les survivants (11 sur 13) étaient
+
+des patients opérés en première main, et 8 ont bénéficié d’une
+
+radiothérapie post-opératoire. Ces patients présentaient tous un
+
+critère de bon pronostique commun : l’absence d’embole sur pièce
+
+opératoire. Il est donc important que la chirurgie soit associée
+
+à un curage ganglionnaire uni- ou bilatéral pour pouvoir
+
+bénéficier du statut ganglionnaire réel et des caractéristiques
+
+de l’éventuel envahissement, comme la présence d’embole(s).
+
+Pour ce qui est du traitement complémentaire, la majorité des
+
+auteurs considère que le traitement d’un BSCC des VADS doit
+
+comporter une radiothérapie post-opératoire [65, 66, 68, 70,72,
+
+75, 96].
+
+Nous n’avons aucun recul sur la chimio-radiothérapie
+
+post-opératoire puisqu’un seul patient en a bénéficié. Même si
+
+celui-ci est vivant, nous ne pouvons pas tirer de conclusion sur
+
+les résultats de la chimio-radiothérapie post-opératoire. Mais,
+
+nous avons montré que d’une manière générale, le seul critère
+
+BSCC était associé à un taux élevé de métastase et un pronostic
+
+plus sombre que les SCC. Plusieurs auteurs considèrent également
+
+qu’il faut proposer une chimiothérapie concomittante ou
+
+adjuvante au traitement par radiothérapie [65, 66, 68, 75, 96]
+
+en raison du caractère agressif de la tumeur.
+
+L’étude de l’EORTC 22931 menée par Barnier et al.[32], montre que
+
+la chimio-radiothérapie post-opératoire est plus efficace que la
+
+radiothérapie post-opératoire dans les stades avancés des
+
+tumeurs des VADS. Les auteurs rappellent que Peters et al.[97] a
+
+clairement démontré que les patients présentant un risque élevé
+
+de rechute loco-régionale ou de métastase doivent être traités
+
+en post-opératoire de manière plus agressive. Les auteurs
+
+proposent que soient traités par chimio-radiothérapie
+
+post-opératoire, les patients présentant les facteurs de mauvais
+
+pronostiques suivant :
+
+- Stade T et/ou N élevé ;
+
+- Envahissement ganglionnaire à distance des premiers relais ;
+
+- Exérèse carcinologique non satisfaisante ;
+
+- Rupture capsulaire sur les adénopathies du curage ;
+
+- Envahissement périnerveux ;
+
+- Présence d’emboles vasculaires.
+
+Au vu des résultats de notre étude, nous recommandons que le
+
+critère BSCC soit considéré comme un facteur de mauvais
+
+pronostique histopathologique à part entière. Les patients
+
+opérés pour un carcinome basaloïde squameux des VADS doivent
+
+pouvoir bénéficier d’une chimio-radiothérapie post-opératoire
+
+systématique et ce, quelles que soient la localisation initiale,
+
+le stade TNM et les critères pronostiques histopathologiques
+
+retrouvés.
+
+2-b Les indications de radiothérapie première :
+
+Notre étude ne comporte pas un effectif suffisant (n=3) de
+
+patients traités par radiothérapie exclusive pour un BSCC
+
+diagnostiqué d’emblée, pour pouvoir discuter des résultats. Deux
+
+des trois patients sont décédés de façon précoce de causes
+
+médicales, et le troisième est décédé de métastase.
+
+Nous avons montré que la survie des patients traités pour un BSCC
+
+ne dépendait pas du stade T. Il existe même une différence
+
+statistique significative de la survie sans rechute entre les
+
+populations T1-T2 cas et témoins, au bénéfice de la population
+
+témoin.
+
+Sur ces arguments pronostiques, nous proposons que soit réalisée,
+
+lorsqu’une irradiation exclusive est proposée en traitement de
+
+première intention, une chimio-radiothérapie. Ceci dans le but
+
+d’obtenir un meilleur contrôle local et un éventuel gain en
+
+terme de survie globale.
+
+Le caractère basaloïde d’un carcinome épidermoïde ne doit pas
+
+changer les indications princeps du traitement des cancers des
+
+VADS, qui dépendent avant tout de la localisation, du stade TNM,
+
+de l’aspect macroscopique de la tumeur, et de la situation de
+
+rechute ou non. Mais ce traitement lorsqu’il est chirurgical,
+
+doit pouvoir être consolidé par une chimio-radiothérapie
+
+post-opératoire systématique, et lorsqu’une irradiation
+
+exclusive est indiquée, qu’elle soit associée à une
+
+chimiothérapie concomitante.
+
+Nous proposons que ces données soient intégrées au référentiel
+
+2005 des pratiques professionnelles du traitement des cancers de
+
+la tête et du cou dans le cadre du réseau de cancérologie de
+
+l’Arc Alpin. Les résultats obtenus devront être comparés dans
+
+l’avenir avec les résultats de cette série de patients afin
+
+d’évaluer les bénéfices en terme de survie et de contrôle
+
+loco-régional.
+
+3) Bilan et surveillance des BSCC :
+
+Le suivi des patients traités pour un cancer des VADS en général ne
+
+fait l’objet d’aucune recommandation sur les modalités de
+
+surveillance clinique et para-clinique. Habituellement, nous
+
+pratiquons une surveillance clinique tous les 3 mois après
+
+traitement pendant 1 an pour espacer progressivement le rythme de
+
+surveillance à 1 fois par an à 5 ans. Nous faisons réaliser
+
+également une radiographie pulmonaire tous les ans.
+
+Mais nous savons que la population de patients traités pour un BSCC
+
+est exposée à un risque important de développer des métastases, et
+
+ce, précocement. Certains auteurs ont discuté de l’intérêt d’une
+
+surveillance clinico-radiologique rapprochée par la réalisation de
+
+TDM cervico-faciales et thoraciques ou de TEP-FDG systématiques
+
+[98], et ont montré qu’un certain nombre de lésions secondaires
+
+infra-cliniques était ainsi dépisté.
+
+Dans notre série, la plupart des patients qui ont développé des
+
+métastases a été diagnostiqué à l’occasion d’une complication
+
+médicale en rapport avec ces lésions secondaires. Les principales
+
+complications médicales étaient l’altération de l’état général, les
+
+pleurésies, les pneumopathies et les douleurs osseuses. Seuls 3
+
+patients ont vu leurs lésions secondaires diagnostiquées sur le
+
+suivi systématique.
+
+Or, sur les 22 patients qui ont développé des métastases, seule une
+
+dizaine a bénéficié d’une surveillance stricte tous les 3 mois avec
+
+radiologie pulmonaire systématique. Les autres patients ont été
+
+suivis mais de façon plus irrégulière. Certains patients n’ayant été
+
+vus qu’une seule fois après la fin du traitement, ont été revus
+
+plusieurs mois après, à l’occasion d’une complication médicale.
+
+Tous les patients en situation de récidive loco-régionale et générale
+
+dans notre série, ont été traités par chimiothérapie et/ou
+
+radiothérapie palliative. Aucun patient ne s’est vu proposer un
+
+traitement à visée curative et aucun n’a survécu à la récidive.
+
+Il nous semble donc inapproprié de demander des examens d’imagerie
+
+tels que la TDM ou la TEP-FDG de façon systématique en l’absence de
+
+projet thérapeutique curatif à la clé.
+
+En revanche, ceux-ci peuvent être prescrits, s’il peuvent aider à
+
+établir le diagnostic de lésion(s) secondaire(s) lorsque
+
+l’interrogatoire, l’examen clinique ou une complication médicale
+
+font évoquer une rechute loco-régionale ou à distance. Ces examens
+
+doivent toujours s’intégrer dans une démarche diagnostique logique,
+
+lorsque les examens complémentaires de première intention
+
+(radiographie pulmonaire ou échographie abdominale par exemple) ne
+
+peuvent pas apporter d’arguments suffisants pour le diagnostic.
+
+La surveillance des patients traités pour un BSCC des VADS doit donc
+
+répondre à une démarche logique clinicienne. Nous recommandons
+
+simplement d’insister sur la nécessité d’un suivi régulier clinique,
+
+tous les 3 mois, et radiologique par un cliché thoracique
+
+systématique tous les 6 mois, pendant les deux premières années,
+
+pour espacer ensuite les contrôles. Les autres examens
+
+para-cliniques devront être demandés et orientés sur des arguments
+
+cliniques.
+
+La découverte d’une récidive pourra alors être prise en charge de
+
+façon adaptée (traitement médical, chimiothérapie, radiothérapie à
+
+visée antalgique) mais pratiquement toujours dans une optique de
+
+confort et d’accompagnement.
+
+CONCLUSIONS
+
+LE CARCINOME BASALOÏDE SQUAMEUX DES VOIES AERO-DIGESTIVES SUPERIEURES :
+
+EVOLUTION ET PRONOSTIC.
+
+Thèse soutenue publiquement par Edouard SORIANO
+
+le 17 décembre 2004.
+
+CONCLUSIONS
+
+Il y a moins de vingt ans, Waine et al., décrivait une forme atypique de
+
+carcinome touchant la muqueuse des VADS, le carcinome basaloïde squameux
+
+(basaloïd squamous cell carcinoma en anglais, ou BSCC). D’emblée cette
+
+nouvelle entité histologique semblait avoir un mode évolutif différent
+
+avec des taux de métastases élevés, une difficulté de contrôle
+
+loco-régional et un pronostic moins favorable que les carcinomes
+
+épidermoïdes. De nombreuses études sont venues confirmer ces hypothèses
+
+et d’autres remettent en question le caractère péjoratif du pronostic
+
+des BSCC. Mais les études cliniques sont très limitées par leurs faibles
+
+effectifs et sont toutes rétrospectives.
+
+D’un point de vue histopathologique, la tumeur se présente sous la forme
+
+de massifs pleins à contours arrondis ou polycycliques faits de petites
+
+cellules monomorphes disposées en palissade à la périphérie des lobules.
+
+Les cellules présentent un rapport nucléo-cytoplasmique élevé et des
+
+noyaux hyperchromatiques non nucléolés. De nombreuses figures mitotiques
+
+sont présentes. On ne met pas en évidence de ponts d’union entre les
+
+cellules. Ces lobules peuvent être centrés par des foyers de nécrose de
+
+type comédonienne. Au sein de la tumeur cohabitent des plages de
+
+carcinome basaloïde et de carcinome épidermoïde plus ou moins bien
+
+différencié, en pourcentage variable. Les analyses immuno-histochimiques
+
+sont utiles pour éliminer un carcinome neuro-endocrine mais pas un
+
+carcinome adénoïde kystique. Le diagnostic de BSCC repose sur un
+
+faisceau d’arguments cliniques, histopathologiques et
+
+immuno-histochimiques.
+
+Pour étudier le pronostic et l’évolution des patients atteints de
+
+carcinome basaloïde squameux (BSCC), nous avons effectué une étude
+
+d’observation cas-témoins à partir d’une population de 49 patients
+
+traité au CHU de Grenoble pour un BSCC. Ces patients ont été comparés
+
+avec une population témoin ayant reçu le même traitement pour un
+
+carcinome épidermoïde moyennement à bien différencié (SCC) de même
+
+localisation et de même stade. Nous avons tenté de déterminer si le BSCC
+
+est un facteur histologique pronostique à part entière, et quelle était
+
+l’évolution clinique de ces patients.
+
+La comparaison de la survie entre ces deux populations montre qu’il
+
+existe une différence statistique de survie globale, de survie
+
+spécifique et de survie sans rechute, au bénéfice de la population
+
+témoin (p - 0.05), alors qu’elle présentait initialement les mêmes
+
+critères pronostiques péjoratifs. La médiane de survie globale est de 25
+
+mois, contre 65 pour la population témoin.
+
+Dans notre série, les rechutes loco-régionales ne sont pas plus
+
+fréquentes que dans la population témoin, mais nous obtenons un taux de
+
+décès par métastase 6 fois supérieur à celui de la population témoin (p
+
+- 0,001). Un patient sur deux a développé une ou des métastase(s), et
+
+presque deux-tiers des décès leur sont imputés. La médiane d’apparition
+
+des métastases est de 12 mois seulement.
+
+Il apparaît dans notre étude que le BSCC est un facteur histopathologique
+
+pronostique défavorable, indépendant de la localisation, du stade T, du
+
+statut de rechute ou non, des critères pronostiques
+
+anatomo-pathologiques, et enfin, de l’importance du contingent basaloïde
+
+de la tumeur.
+
+Au vu de ces résultats, nous recommandons que le BSCC soit considéré
+
+comme un facteur histopathologique de mauvais pronostique à part
+
+entière.
+
+Lorsque le diagnostic de BSCC est établi à l’occasion du bilan initial,
+
+nous proposons de compléter le bilan par une TEP-FDG avant tout
+
+traitement à visée curative, afin d’éliminer la possibilité de lésions
+
+métastatiques infra-cliniques.
+
+Si le critère basaloïde de la tumeur ne change pas les indications
+
+princeps du traitement des cancers des VADS, il doit être en revanche un
+
+argument suffisant pour la réalisation d’une chimio-radiothérapie
+
+systématique post-opératoire. Lorsqu’une indication de radiothérapie
+
+exclusive est posée, nous proposons qu’elle soit associée à une
+
+chimiothérapie concomitante.
+
+Enfin, le suivi des patients devra être régulier, basé sur l’examen
+
+clinique et la radiographie pulmonaire systématique. La surveillance
+
+paraclinique de ces patients à risque doit s’intégrer dans une démarche
+
+logique sans multiplier les examens d’imageries (TDM ou TEP-FDG) en
+
+l’absence d’arguments cliniques ou radiologiques, car malheureusement,
+
+le diagnostic de récidive sur le mode métastatique, aussi précoce
+
+soit-il, conduit exceptionnellement à un traitement curatif.
+
+Vu et permis d’imprimer, Grenoble, le 15 novembre 2004.
+
+Le Doyen,
+
+J.L. DEBRU
+
+Le Président de thèse,
+
+Professeur E. REYT
+
+BIBLIOGRAPHIE
+
+1. Wain SL, Kier R, Vollmer RT, Bossen EH. Basaloid-squamous carcinoma of
+
+the tongue, hypopharynx, and larynx: report of 10 cases. Hum Pathol 1986 Nov
+
+; 17(11) : 1158-66.
+
+2. François D. Actualités en cancérologie des voies aéro-digestives
+
+supérieures. Bulletin du Cancer Vol 85, Numéro 1, 48-9, Janv 98.
+
+3. Klijanienko J, el-Naggar A, Ponzio-Prion A et al. Basaloid squamous
+
+carcinoma of the head and neck. Immunohistochemical comparison with adenoid
+
+cystic carcinoma and squamous cell carcinoma. Arch Otolaryngol Head Neck
+
+Surg 1993 Aug ; 119(8) : 887-90.
+
+4. Brambilla E, Moro D, Veale D, Brichon PY, Stoebner P, Paramelle B,
+
+Brambilla C. Basal cell (basaloid) carcinoma of the lung: a new morphologic
+
+and phenotypic entity with separate prognostic significance. Hum Pathol 1992
+
+Sep ; 23(9) : 993-1003.
+
+5. Abe K, Sasano H, Itakura Y, Nishihira T, Mori S, Nagura H.
+
+Basaloid-squamous carcinoma of the esophagus. A clinicopathologic, DNA
+
+ploidy, and immunohistochemical study of seven cases. Am J Surg Pathol 1996
+
+Apr ; 20(4) : 453-61.
+
+6. Ellis GL. Subdural hematoma in the elderly. Emerg Med Clin North Am
+
+1990 May ; 8(2) : 281-94.
+
+7. Coletta RD, Cotrim P, Almeida OP, Alves VA, Wakamatsu A, Vargas PA.
+
+Basaloid squamous carcinoma of oral cavity: a histologic and
+
+immunohistochemical study. Oral Oncol 2002 Oct ; 38(7) : 723-9.
+
+8. Tsang WY, Chan JK, Lee KC, Leung AK, Fu YT. Basaloid-squamous carcinoma
+
+of the upper aerodigestive tract and so-called adenoid cystic carcinoma of
+
+the oesophagus: the same tumour type? Histopathology 1991 Jul ; 19(1) :
+
+35-46.
+
+9. Morice WG, Ferreiro JA. Distinction of basaloid squamous cell carcinoma
+
+from adenoid cystic and small cell undifferentiated carcinoma by
+
+immunohistochemistry. Hum Pathol 1998 Jun ; 29(6) : 609-12.
+
+10. Tamler B, Kligerman M. Diagnostic imaging aides to head and neck
+
+radiation oncology. Radiol Clin North Am 1996 ; 6 : 515-30.
+
+11. Bourguet P. Mise à jour Recommandations pour la pratique clinique :
+
+Standards, Options et Recommandations 2003 pour l'utilisation de la
+
+tomographie par émission de positons au [ 18F]- FDG (TEP FDG) en
+
+cancérologie (rapport abrégé). Fédération nationale des centres de lutte
+
+contre le cancer.
+
+12. Talbot JN et al., Comité de pilotage du centre TEP AP-HP. Impact de la
+
+TEP au [18F]-FDG sur la décision médicale en cancérologie : évaluation par
+
+les prescripteurs durant la première année de fonctionnement. Bulletin du
+
+Cancer. Volume 89, Numéro 3, 313-21, Mars 2002.
+
+13. Seltzer MA, Valk PE, Wong S, Ariannejad M, Gambhir S, Phelps ME,
+
+Czernin J. Prospective survey of referring physicians to determine the
+
+impact of whole body FDG-PET on management of cancer patients. J Nucl Med
+
+2000 ; 41(suppl. 5) : 108 (abstr. 428).
+
+14. Gambhir S, Czernin J, Schwimmer J, Silverman DHS, Coleman RE, Phelps
+
+ME. A tabulated summary of the FDG PET literature. J Nucl Med 2001 ;
+
+42(suppl. 5) : 1S-93S.
+
+15. UICC (International Union Against Cancer) TNM classification of
+
+malignant turmors. 5th ed. P. Hermanek, et al. ed. Springer-Verlag, Berlin
+
+1997.
+
+16. Spaulding MB, Fischer SG, Wolf GT. Tumor response, toxicity and
+
+survival after neoadjuvant organ preserving chemotherapy for advanced
+
+laryngeal carcinoma. J Clin Oncol 1994 ; 12 : 1592-9.
+
+17. Lefebvre JL, Chevalier D, Luboinski B, et al. Larynx preservation in
+
+pyriform sinus cancer : preliminary results of a European Organization for
+
+Research and Treatment of Cancer phase III Trial. J Natl Cancer Inst 1996 ;
+
+88 : 890-9.
+
+18. Dische S, Sanders M, Barrett A, Harvey A, Gibson D, Parmar M. A
+
+randomised multicentre trial of Chart versus conventional radiotherapy in
+
+head and neck cancer. Radiother Oncol 1997 ; 44 : 123-36.
+
+19. Horiot JC, et al. Hyperfractionation versus conventional fractionation
+
+in oropharyngeal carcinoma : final analysis of a randomized trial of the
+
+EORTC cooperative group of radiotherapy. Radiother Oncol 1993.
+
+20. Pinto LH, Canary PC, Araujo CM, Bacelar SC, Souhami L. Prospective
+
+randomized trial comparing hyperfractionated versus conventional
+
+radiotherapy in stage III and IV oropharyngeal carcinoma. Int J Radiat Oncol
+
+Biol Phys 1991 ; 21 : 557-62.
+
+21. Saunders M, Dische S, Barrett A, Parmar MK, Harvey A, Gibson D.
+
+Randomized multicentre trial of Chart vs conventionnal radiotherapy in head
+
+and neck and non small cell lung cancer : an interim report. Br J Cancer
+
+1996 ; 73 : 1455-62.
+
+22. Horiot JC. Controlled clinical trials of hyperfractioated and
+
+accelerated radiotherapy in otolaryngologic cancer. Bull Acad Natl Med 1998
+
+; 182 : 1247-60 ; discussion 1261.
+
+23. Horiot JC, Bontemps P, van den Bogaert W, Le Fur R, van den Weijngaert
+
+D, Bolla M, et al. Accelerated fractionation compared to conventional
+
+fractionation improves loco-regional control in the radiotherapy of advanced
+
+head and neck cancers : results of the EORTC 22851 randomized trial.
+
+Radiother Oncol 1997 ; 44 : 111-21.
+
+24. Fu KK, Pajak TF, Trotti A, Spencer SA, Jones CU, Phillips TL, et al. A
+
+radiation therapy oncology group (RTOG) phase III randomized study to
+
+compare hyperfractionation and two variants of accelerated fractionation to
+
+standard fractionation radiotherapy for head and neck squamous cell
+
+carcinomas : preliminary results of RTOG 9003 (abstract). Int J Radiat Oncol
+
+Biol Phys 1999 ; 45 (suppl.) : 145.
+
+25. Fletcher GH. Oral cavity and oropharynx. In : Textbook of radiotherapy
+
+(3rd ed), Lea and Febiger, Philadelphia. 1980 ; 286-329.
+
+26. Bernier J, Bataini JP. Regional outcome in oropharyngeal and
+
+pharyngolaryngeal cancer treated with high dose per fraction radiotherapy :
+
+analysis of neck disease response in 1 646 cases. Radiother Oncol 1986 ; 6 :
+
+87-103.
+
+27. Bataini JP, Bernier J, Asselein B, Lave C, Jaulerry C, Brunin F, et
+
+al. Primary radiotherapy of squamous cell carcinoma of the oropharynx and
+
+pharyngolarynx : tentative multivariate modelling system to predict the
+
+radiocurability of neck nodes. Int J Radiat Oncol-Biol-Physics 1988 ; 14 :
+
+635-42.
+
+28. Peters LJ, et al. Accelerated fractionation in the radiation treatment
+
+of head and neck cancer. Acta Oncologica 1988 ; 27 : 185-94.
+
+29. Reboul F et al. Actualités en chimioradiothérapie concomitante.
+
+Bulletin du Cancer 2003 ; 86(1) : 77-83.
+
+30. Noël G, Mazeron JJ, Favaudon V. La chimioradiothérapie des tumeurs
+
+solides de l'adulte : actualité et perspectives. Bulletin du Cancer 2003 ;
+
+90(1) : 85-92.
+
+31. Calais G, Alfonsi M, Bardet E, Sire C, Germain T, Bergerot P, et al.
+
+Randomized trial of radiation therapy versus concomitant chemotherapy and
+
+radiation therapy for advanced-stage oropharynx carcinoma. J Natl Cancer
+
+Inst 1999 ; 91 : 2081-86.
+
+32. Bernier J, Domenge C, Ozsahin M et al., EORTC Trial 22931.
+
+Postoperative Irradiation with or without Concomitant Chemotherapy for
+
+Locally Advanced Head and Neck Cancer. N Engl J Med 2004 ; 350 : 1945-1952,
+
+May 6, 2004.
+
+33. Schaake-Koning C, van den BW, Dalesio O, Festen J, Hoogenhout J, van
+
+Houtte P, et al. Effects of concomitant cisplatin and radiotherapy on
+
+inoperable non- small-cell lung cancer. N Engl J Med 1992 ; 326 :
+
+524-30.
+
+34. Green JA, Kirwan JM, Tierney JF, Symonds P, Fresco L, Collingwood M,
+
+et al. Survival and recurrence after concomitant chemotherapy and
+
+radiotherapy for cancer of the uterine cervix : a systematic review and
+
+meta-analysis. Lancet 2001 ; 358 : 781-6.
+
+35. Geh JI. The use of chemoradiotherapy in oesophageal cancer. Eur J
+
+Cancer 2002 ; 38 : 300-13.
+
+36. Pignon JP, Bourhis J, Domenge C, Designe L. Chemotherapy added to
+
+loco-regional treatment for head and neck squamous- cell carcinoma : three
+
+meta-analyses of updated individual data. MACH-NC Collaborative Group.
+
+Meta-Analysis of Chemotherapy on Head and Neck Cancer. Lancet 2000 ; 355 :
+
+949-55.
+
+37. Tannock IF.
+
+Treatment of cancer with radiation and drugs. J Clin Oncol 1996 ; 14 :
+
+3156-74.
+
+38. Glynne-Jones R, Sebag-Montefiore D.
+
+Chemoradiation schedules : what radiotherapy ? Eur J Cancer 2002 ; 38 :
+
+258-69.
+
+39. Hillman RE, Walsh MJ, Wolf GT, Fisher SG, Hong WK. Functional outcomes
+
+following treatment for advanced larygeal cancer. Part I : Voice
+
+preservation in avanced laryngeal cancer. Part II : Laryngectomy
+
+rahabilitation : the state of the art in the VA System. research
+
+Speech-Language Pathologists. Department of Veterans Affairs Laryngeal
+
+Cancer Study Group. Ann Otol Rhinol Laryngol 1998 ; 172 (suppl.) :
+
+1-27.
+
+40. Dobrowsky W, Naude J. Continuous hyperfractionated accelerated
+
+radiotherapy with/without mitomycin C in head and neck cancers. Radiother
+
+Oncol 2000 ; 57 : 119-24.
+
+41. Wendt TG, Grabenbauer GG, Rodel CM, Thiel HJ, Aydin H, Rohloff R, et
+
+al. Simultaneous radiochemotherapy versus radiotherapy alone in advanced
+
+head and neck cancer : a randomized multicenter study. J Clin Oncol 1998 ;
+
+16 : 1318-24.
+
+42. Turrisi AT, III, Kim K, Blum R, Sause WT, Livingston RB, Komaki R, et
+
+al. Twice-daily compared with once-daily thoracic radiotherapy in limited
+
+small-cell lung cancer treated concurrently with cisplatin and etoposide. N
+
+Engl J Med 1999 ; 340 : 265-71.
+
+43. Curran W, Scott C, Langer C. Phase II comparison of sequential vs
+
+concurrent chemoradiation for patients with unresected stage III non-small
+
+cell lung cancer (NSCLC) : report of Radiation Therapy Oncology Group (RTOG)
+
+9410. Lung Cancer 2000 ; 29 (abstr 303) : 93.
+
+44. Staar S, Rudat V, Stuetzer H, Dietz A, Volling P, Schroeder M, et al.
+
+Intensified hyperfractionated accelerated radiotherapy limits the additional
+
+benefit of simultaneous chemotherapy--results of a multicentric randomized
+
+German trial in advanced head-and-neck cancer. Int J Radiat Oncol Biol Phys
+
+2001 ; 50 : 1161-71.
+
+45. Dreyfuss AI, Clark JR. Analysis of prognostic factors in squamous cell
+
+carcinomas of the head and neck. Hematol Oncol Clin North Am 1991 Aug ; 5(4)
+
+: 701-12.
+
+46. Th.G. Wendt, P. Bank. Prognostic Factors in Squamous Cell Carcinoma of
+
+the Head and Neck. Abteilung Strahlentherapie, Klinik für Radiologie,
+
+Friedrich-Schiller-Universität Jena.
+
+47. Browman GP, Wong G, Hodson I, Sathya J, Russell R, McAlpine L,
+
+Skingley P, Levine MN. Influence of cigarette smoking on the efficacy of
+
+radiation therapy in head and neck cancer. N Engl J Med 1993 Jan 21 ; 328(3)
+
+: 159-63.
+
+48. Brugère J. Cancers des voies aéro-digestives supérieures. Encyclopédie
+
+des cancers, Paris : Flammarion Médecine-Sciences, 1987 ; 491 p.
+
+49. Marandas P, Julievois M, Sigal R, Wibault P. Cancers du sinus
+
+piriforme. Encycl Med Chir, oto-rhino-laryngologie, 20-605-A-10, 1996, 14
+
+p.
+
+50. Till JE et al. A preliminary analysis of end results for cancer of the
+
+larynx. Laryngoscope 1975 ; 85 : 259-75.
+
+51. Iidstad ST, Bigelow ME, Remensnyder JP. Squamous cell carcinoma of the
+
+tongue : a comparison of the anterior two thirds of the tongue with its
+
+base. Am J Surg 1983 ; 146 : 456-61.
+
+52. Marks JE, Smith PG, Sessions DG. Pharyngeal wall cancer. A reappraisal
+
+after comparison of treatment methods. Arch Otolaryngol 1985 ; 111 :
+
+79-85.
+
+53. Bataini JP, Asselain B, Jaulerry C, Brunin F, Bernier J, Pontvert D,
+
+Lave C. A multivariate primary tumour control analysis in 465 patients
+
+treated by radical radiotherapy for cancer of the tonsillar region: clinical
+
+and treatment parameters as prognostic factors. Radiother Oncol 1989 Apr ;
+
+14(4) : 265-77.
+
+54. Pera E, Moreno A, Galindo L. Prognostic factors in laryngeal
+
+carcinoma. A multifactorial study of 416 cases. Cancer 1986 Aug 15 ; 58(4) :
+
+928-34.
+
+55. Weber RS, Gidley P, Morrison WH, Peters LJ, Hankins P, Wolf P, et al.
+
+Treatment selection for carcinoma of the base of the tongue. Am J Surg 1990
+
+; 160 : 415-9.
+
+56. Mendenhall WM, Parsons JT, Cassisi NJ, Million RR. Squamous cell
+
+carcinoma of the tonsillar area treated with radical irradiation. Radiother
+
+Oncol 1987 ; 10 : 23-30.
+
+57. Baredes S, Leeman DJ, Chen TS, Mohit Tabatabai MA. Significance of
+
+tumor thickness in soft palate carcinoma. Laryngoscope 1993 ; 103 :
+
+389-93.
+
+58. O'Brien CJ, Lauer CS, Fredricks S, Clifford AR, McNeil EB, Bagia JS,
+
+Koulmandas C. Tumor thickness influences prognosis of T1 and T2 oral cavity
+
+cancer--but what thickness? Head Neck 2003 Nov ; 25(11) : 937-45.
+
+59. Vural E, Hutcheson J, Korourian S, Kechelava S, Hanna E. Correlation
+
+of neural cell adhesion molecules with perineural spread of squamous cell
+
+carcinoma of the head and neck. Otolaryngol Head Neck Surg 2000 May ; 122(5)
+
+: 717-20.
+
+60. Magnano M, De Stefani A, Lerda W, Usai A, Ragona R, Bussi M, Cortesina
+
+G. Prognostic factors of cervical lymph node metastasis in head and neck
+
+squamous cell carcinoma. Tumori 1997 Nov-Dec ; 83(6) : 922-6.
+
+61. Lusinchi A, Wibault P, Marandas P, Kunkler I, Eschwege F. Exclusive
+
+radiation therapy: the treatment of early tonsillar tumors. Int J Radiat
+
+Oncol Biol Phys 1989 Aug ; 17(2) : 273-7.
+
+62. Moro D, Brichon PY, Brambilla E, Veale D, Labat F, Brambilla C.
+
+Basaloid bronchial carcinoma. A histologic group with a poor prognosis.
+
+Cancer 1994 Jun ; 73(11) : 2734-9.
+
+63. Banks ER, Frierson HF Jr, Mills SE, George E, Zarbo RJ, Swanson PE.
+
+Basaloid squamous cell carcinoma of the head and neck. A clinicopathologic
+
+and immunohistochemical study of 40 cases. Am J Surg Pathol 1992 Oct ;
+
+16(10) : 939-46.
+
+64. Ereno C, Lopez JI, Sanchez JM, Toledo JD. Basaloid-squamous cell
+
+carcinoma of the larynx and hypopharynx. A clinicopathologic study of 7
+
+cases. Pathol Res Pract 1994 Feb ; 190(2) : 186-93.
+
+65. Ferlito A, Altavilla G, Rinaldo A, Doglioni C. Basaloid squamous cell
+
+carcinoma of the larynx and hypopharynx. Ann Otol Rhinol Laryngol. 1997 Dec
+
+; 106(12) : 1024-35.
+
+66. Raslan WF, Barnes L, Krause JR, Contis L, Killeen R, Kapadia SB.
+
+Basaloid squamous cell carcinoma of the head and neck: a clinicopathologic
+
+and flow cytometric study of 10 new cases with review of the English
+
+literature. Am J Otolaryngol 1994 May-Jun ; 15(3) : 204-11.
+
+67. Bahar G, Feinmesser R, Popovtzer A, Ulanovsky D, Nageris B, Marshak G,
+
+Feinmesser M. Basaloid squamous carcinoma of the larynx. Am J Otolaryngol.
+
+2003 May-Jun ; 24(3) : 204-8.
+
+68. Luna MA, el Naggar A, Parichatikanond P, Weber RS, Batsakis JG.
+
+Basaloid squamous carcinoma of the upper aerodigestive tract.
+
+Clinicopathologic and DNA flow cytometric analysis. Cancer 1990 Aug 1 ;
+
+66(3) : 537-42.
+
+69. Winzenburg SM, Niehans GA, George E, Daly K, Adams GL. Basaloid
+
+squamous carcinoma: a clinical comparison of two histologic types with
+
+poorly differentiated squamous cell carcinoma. Otolaryngol Head Neck Surg
+
+1998 Nov ; 119(5) : 471-5.
+
+70. Paulino AF, Singh B, Shah JP, Huvos AG. Basaloid squamous cell
+
+carcinoma of the head and neck. Laryngoscope. 2000 Sep ; 110(9) :
+
+1479-82.
+
+71. Coppola D, Catalano E, Tang CK, Elfenbein IB, Harwick R, Mohr R.
+
+Basaloid squamous cell carcinoma of floor of mouth. Cancer. 1993 Oct 15 ;
+
+72(8) : 2299-305.
+
+72. Larner JM, Malcolm RH, Mills SE, Frierson HF Jr, Banks ER, Levine PA.
+
+Radiotherapy for basaloid squamous cell carcinoma of the head and neck. Head
+
+Neck 1993 May-Jun ; 15(3) : 249-52.
+
+73. Bracero F, Gamiz MJ, Soldado L, Conde JM, Redondo M, Gonzalez MA et
+
+al. Hypopharynx and larynx basaloid squamous carcinoma: our experience with
+
+6 cases. Acta Otorrinolaringol Esp 2001 Apr ; 52(3) : 229-36.
+
+74. de Sampaio Goes FC, Oliveira DT, Dorta RG, Nishimoto IN, Landman G,
+
+Kowalski LP. Prognoses of oral basaloid squamous cell carcinoma and squamous
+
+cell carcinoma: a comparison. Arch Otolaryngol Head Neck Surg 2004 Jan ;
+
+130(1) : 83-6.
+
+75. Erdamar B, Suoglu Y, Sirin M, Karatay C, Katircioglu S, Kiyak E.
+
+Basaloid squamous cell carcinoma of the supraglottic larynx. Eur Arch
+
+Otorhinol 2000 ; 257(3) : 154-7.
+
+76. Johnson JT, Myers EN, Bedetti CD, Barnes EL, Schramm VL, Thearle PB.
+
+Cervical lymph node metastases. Incidence and implications of extracapsular
+
+carcinoma. Arch Otolaryngol 1985 ; 111 : 534-7.
+
+77. Mamelle G, Pampurik J, Luboinski B, Lancar R, Lusinchi A, Bosq J.
+
+Lymph node prognostic factors in head and neck squamous cell carcinomas. Am
+
+J Surg 1994 ; 168 : 494-8.
+
+78. Pinsolle J, Pinsolle V, Majoufre C, Duroux S, Demeaux H, Siberchicot
+
+F. Prognostic value of histologic findings in neck dissections for squamous
+
+cell carcinoma. Arch Otolaryngol Head Neck Surg 1997 ; 123 : 145-8.
+
+79. Meoz-Mendez RT, Fletcher GH, Guillamondegui OM, Peters LJ. Analysis of
+
+the results of irradiation in the treatment of squamous cell carcinomas of
+
+the pharyngeal walls. Int J Radiat Oncol Biol Phys 1978 ; 4 : 579-85.
+
+80. O'Brien CJ, Smith JW, Soong SJ, Urist MM, Maddox WA. Neck dissection
+
+with and without radiotherapy : prognostic factors, patterns of recurrence,
+
+and survival. Am J Surg 1986 ; 152 : 456-63.
+
+81. Jones AS, Hanafi ZB, Nadapalan V, Roland NJ, Kinsella A, Helliwell TR.
+
+Do positive resection margins after ablative surgery for head and neck
+
+cancer adversely affect prognosis ? A study of 352 patients with recurrent
+
+carcinoma following radiotherapy treated by salvage surgery. Br J Cancer
+
+1996 ; 74 : 128-32.
+
+82. Vanes RJJ, Amerongen NV, Slootweg PJ, Egyedi P. Resection margin as a
+
+predictor of recurrence at the primary site for T1 and T2 oral cancers :
+
+evaluation of histopathologic variables. Arch Otolaryngol Head Neck Surg
+
+1996 ; 122 : 521-5.
+
+83. Fowler JF, Lindstrom MJ. Loss of local control with prolongation in
+
+radiotherapy. Int J Radiat Oncol Biol Phys 1992 ; 23 : 457-67.
+
+84. Jaulerry C, Dubray B, Brunin F, Rodriguez J, Point D, Blaszka B, et
+
+al. Prognostic value of tumor regression during radiotherapy for head and
+
+neck cancer : a prospective study. Int J Radiat Oncol Biol Phys 1995 ; 33 :
+
+271-9.
+
+85. Brennan JA, Mao L, Hruban RH, Boyle JO, Eby YJ, Koch WM, et al.
+
+Molecular assessment of histopathological staging in squamous-cell carcinoma
+
+of the head and neck. N Engl J Med 1995 ; 16 : 332 : 429-35.
+
+86. Maurizi M, Almadori G, Ferrandina G, et al. Prognostic significance of
+
+epidermal growth factor in laryngeal squamous cell carcinoma. Br J Cancer
+
+1996 ; 74 : 1253-7.
+
+87. Dray TG, Hardin NJ, Sofferman RA. Angiogenesis as a pronostic marker
+
+in early head and neck cancer. Ann Otol Rhinol Laryngol 1995 ; 104 :
+
+724-9.
+
+88. Xu XC, Lippman SM, Lee JJ, et al. Antiretinoic acid (RA) antibody
+
+binding to human premalignant oral lesions, which occurs less frequently
+
+than binding to normal tissue, increase after 13 cis RA treatment in vivo
+
+and is related to RA receptor beta expression. Cancer Research 1995 ; 55 :
+
+5507-11.
+
+89. Kleist B, Bankau A, Lorenz G, Jager B, Poetsch M. Different risk
+
+factors in basaloid and common squamous head and neck cancer. Laryngoscope
+
+2004 Jun ; 114(6) : 1063-8.
+
+90. Werness BA, Levine AJ, Howley PM. Association of human papillomavirus
+
+types 16 and 18 E6 proteins with p53. Science 1990 Apr 6 ; 248(4951) :
+
+76-9.
+
+91. Dyson N, Howley PM, Munger K, Harlow E. The human papilloma virus-16
+
+E7 oncoprotein is able to bind to the retinoblastoma gene product. Science
+
+1989 Feb 17 ; 243(4893) : 934-7.
+
+92. Campman SC, Gandour-Edwards RF, Sykes JM. Basaloid squamous carcinoma
+
+of the head and neck. Report of a case occurring in the anterior floor of
+
+the mouth. Arch Pathol Lab Med 1994 Dec ; 118(12) : 1229-32.
+
+93. Wan SK, Chan JK, Tse KC. Basaloid-squamous carcinoma of the nasal
+
+cavity. J Laryngol Otol 1992 Apr ; 106(4) : 370-1.
+
+94. Zbaren P, Nuyens M, Stauffer E. Basaloid squamous cell carcinoma of
+
+the hypopharynx. ORL J Otorhinolaryngol Relat Spec 2003 Nov-Dec ; 65(6) :
+
+332-40.
+
+95. Koide N, Nishio A, Kono T, Hiraguri M, Watanabe H, Igarashi J,
+
+Hanazaki K, Adachi W, Amano J. Histochemical study of angiogenesis in
+
+basaloid squamous carcinoma of the esophagus. Dis Esophagus 2000 ; 13(2) :
+
+142-7.
+
+96. Barnes L, Ferlito A, Altavilla G, MacMillan C, Rinaldo A, Doglioni C.
+
+Basaloid squamous cell carcinoma of the head and neck: clinicopathological
+
+features and differential diagnosis. Ann Otol Rhinol Laryngol 1996 Jan ;
+
+105(1) : 75-82.
+
+97. Peters LJ, Goepfert H, Ang KK, Byers RM, Maor MH, Guillamondegui O,
+
+Morrison WH, Weber RS, Garden AS, Frankenthaler RA. Evaluation of the dose
+
+for postoperative radiation therapy of head and neck cancer: first report of
+
+a prospective randomized trial. Int J Radiat Oncol Biol Phys 1993 Apr 30 ;
+
+26(1) : 3-11.
+
+98. Kunkel M, Helisch A, Reichert TE, Bartenstein P, Wagner W.
+
+Surveillance of basaloid oral squamous cell carcinoma: the value of
+
+[18F]FDG-PET. Oral Oncol 2004 Jan ; 40(1) : 56-62.
+
+ANNEXES
+
+Annexe 1 : Population cas de BSCC
+
+Annexe 2 : Population témoin de SCC
+
+Annexe 3 : Localisations TNM et traitements des BSCC
+
+Annexe 4 : Evolutions et causes de décès des sous-populations de BSCC
+
+Annexe 5 : Classification OMS des tumeurs des VADS
+
+Histological typing of tumors of the upper respiratory tract and ear (WHO, K.
+
+Shanmugaratnam).
+
+Larynx, Hypopharynx and trachea
+
+1. Epithelial Tumours and Precancerous Lesions
+
+a. Benign
+
+i.Papilloma
+
+ii.Papillomatosis
+
+iii.Pleomorphic adenoma
+
+iv.Basal cell adenoma
+
+b. Dysplasia and Carcinoma In Situ
+
+i.Squamous cell dysplasia
+
+ii.Mild dysplasia
+
+iii.Moderate dysplasia
+
+iv.Severe dysplasia
+
+v.Carcinoma in situ
+
+c. Malignant
+
+i.Squamous cell carcinoma
+
+ii.Verrucous squamous cell carcinoma
+
+iii.Spindle cell carcinoma
+
+iv.Adenoid squamous cell carcinoma
+
+v.Basaloid squamous cell carcinoma
+
+vi.Adenocarcinoma
+
+vii.Acinic cell carcinoma
+
+viii.Mucoepidermoid carcinoma
+
+ix.Adenoid cystic carcinoma
+
+x.Carcinoma in pleomorphic adenoma
+
+xi.Epithelial-myoepithelial carcinoma
+
+xii.Clear cell carcinoma
+
+xiii.Adenosquamous carcinoma
+
+xiv.Giant cell carcinoma
+
+xv.Salivary duct carcinoma
+
+xvi.Carcinoid tumour
+
+xvii.Atypical carcinoid tumour
+
+xviii.Small cell carcinoma
+
+xix.Lymphoepithelial carcinoma
+
+2. Soft Tissue Tumours
+
+a. Benign
+
+i.Aggressive fibromatosis
+
+ii.Myxoma
+
+iii.Fibrous histiocytoma
+
+iv.Lipoma
+
+v.Leiomyoma
+
+vi.Rhabdomyoma
+
+vii.Haemangioma
+
+viii.Haemangiopericytoma
+
+ix.Lymphangioma
+
+x.Neurolemmoma
+
+xi.Neurofibroma
+
+xii.Granular cell tumour
+
+xiii.Paraganglioma
+
+b. Malignant
+
+i.Fibrosarcoma
+
+ii.Malignant fibrous histiocytoma
+
+iii.Liposarcoma
+
+iv.Leiomyosarcoma
+
+v.Rhabdomyosarcoma
+
+vi.Angiosarcoma
+
+vii.Kaposi sarcoma
+
+viii.Malignant haemangiopericytoma
+
+ix.Malignant nerve sheath tumour
+
+x.Alveolar soft part sarcoma
+
+xi.Synovial sarcoma
+
+xii.Ewing sarcoma
+
+3. Tumors of Bones and Cartilages
+
+a. Begnin
+
+i.Chondroma
+
+b. Malignant
+
+i.Chondrosarcoma
+
+ii.Osteosarcoma
+
+4. Malignant Lymphomas
+
+5. Miscellaneous Tumours
+
+a. Begnin
+
+i.Mature teratoma
+
+b. Malignant
+
+i.Malignant melanoma
+
+ii.Malignant germ cell tumours
+
+6. Secondary Tumours
+
+7. Unclassified Tumours
+
+8. Tumour-like Lesions
+
+a. Cysts
+
+b. Hamartoma
+
+c. Heterotopic thyroid tissue
+
+d. Vocal cord nodule and polype
+
+e. Fibro-inflammatory pseudotumour
+
+f. Infective granulomas
+
+g. Wegener granulomatosis
+
+h. Pseudoepitheliomatous hyperplasia
+
+i. Squamous cell hyperplasia
+
+j. Keratosis
+
+k. Necrotizing sialometaplasia
+
+l. Oncocytic metaplasia and hyperplasia
+
+m. Granuloma pyogenicum
+
+n. Intubation granuloma and Contact ulcer
+
+o. Elastic cartilage metaplasia
+
+p. Tracheopathia osteochondroplastica
+
+q. Relapsing polychondritis
+
+r. Aneurysmal bone cyst
+
+s. Lymphoid hyperplasia
+
+t. Plasma cell granuloma
+
+u. Malakoplakia
+
+v. Langherans cell histiocytosis
+
+w. Rosai-Dorfman disease
+
+x. Amyloid deposits
+
+y. Gouty tophi
+
+z. Lipoid proteinosis
+
+Annexe 6 : De l’intérêt d’informer le public.
+
+TABLE DES MATIERES
+
+SOMMAIRE
+
+LISTE DES ABREVIATIONS
+
+LISTE DES TABLEAUX
+
+LISTE DES FIGURES
+
+INTRODUCTION
+
+DONNEES BIBLIOGRAPHIQUES
+
+ACTUALITES SUR LES TUMEURS DES VOIES AERO-DIGESTIVES SUPERIEURES
+
+I. Epidémiologie
+
+1) Fréquence :
+
+2) Facteurs de risque :
+
+3) Les lésions précancéreuses :
+
+II. Modalités d’extension des cancers des VADS
+
+1) Histoire naturelle des cancers des VADS
+
+2) L’oropharynx :
+
+3) L’hypopharynx :
+
+4) Le rhinopharynx (ou cavum) :
+
+5) Le larynx :
+
+III. Anatomo-pathologie
+
+1) Les tumeurs malignes épithéliales :
+
+1-a Le carcinome in situ :
+
+1-b Le carcinome épidermoïde (ou malpighien) :
+
+1-c Le carcinome adénoïde kystique :
+
+1-d Le carcinome basaloïde squameux :
+
+1-e Les autres tumeurs malignes épithéliales :
+
+2) Les tumeurs malignes non épithéliales :
+
+IV. Diagnostic
+
+1) Circonstances de découverte :
+
+2) Diagnostic positif :
+
+2-a Bilan clinique :
+
+2-b Bilan endoscopique :
+
+2-c Bilan d’imagerie :
+
+2-d Place de la TEP-FDG :
+
+2-e Autres examens :
+
+V. Classifications TNM
+
+1) Classification T pour l’oropharynx et la cavité buccale :
+
+2) Classification T pour l’hypopharynx :
+
+3) Classification T pour le larynx :
+
+4) Classification T pour le rhinopharynx :
+
+5) Classification N et M :
+
+VI. Actualités sur les principes thérapeutiques :
+
+1) Chimiothérapie :
+
+2) Radiothérapie :
+
+2-a Résultats de la radiothérapie externe :
+
+2-b Résultats de la chimio-radiothérapie :
+
+2-c Nouvelles perspectives :
+
+3) Chirurgie :
+
+ETUDE DES FACTEURS PRONOSTIQUES
+
+I. Facteurs cliniques :
+
+1) Terrain :
+
+2) Siège de la tumeur :
+
+3) Taille et extension de la tumeur :
+
+4) Aspect macroscopique de la tumeur :
+
+5) Extension ganglionnaire clinique :
+
+II. Facteurs histologiques :
+
+1) Epaisseur de la tumeur :
+
+2) Extension de la tumeur :
+
+3) Différenciation tumorale :
+
+4) Le carcinome basaloïde squameux :
+
+5) Rupture capsulaire :
+
+6) Territoires ganglionnaires envahis :
+
+7) Nombre de sites ganglionnaires envahis :
+
+III. Facteurs liés au traitement :
+
+1) Traitement chirurgical :
+
+2) Radiothérapie :
+
+IV. Facteurs en cours d’évaluation :
+
+1) Facteurs histologiques :
+
+2) Facteurs génétiques :
+
+ETUDE CLINIQUE
+
+MATERIELS ET METHODES
+
+I. Objectifs de l’étude :
+
+II. Populations étudiés
+
+1) Critères d’inclusion
+
+1-a Patients cas :
+
+1-b Patients témoins :
+
+2) Critères d’exclusion
+
+III. Définition histopathologique du carcinome basaloïde squameux :
+
+IV. Recensement des données :
+
+1) Recensement des patients cas :
+
+2) Recensement des patients témoins :
+
+3) Grilles de recueil des données :
+
+V. Analyse des données :
+
+RESULTATS
+
+I. Caractéristiques des populations :
+
+II. Caractéristiques des lésions tumorales :
+
+III. Caractéristiques des prises en charges thérapeutiques :
+
+1) Oropharynx et cavité buccale :
+
+2) Hypopharynx :
+
+3) Larynx :
+
+4) Autres localisations :
+
+IV. Résultats de l’évolution et de la survie des populations :
+
+1) Evolution et survie des populations cas et témoins :
+
+1-a Survie globale :
+
+1-b Survie spécifique :
+
+1-c Survie sans rechute :
+
+2) Evolution et survie des populations en fonction de la localisation anatomique
+
+:
+
+2-a Oropharynx et cavité buccale :
+
+2-b Hypopharynx :
+
+2-c Larynx :
+
+2-d Survie comparée par localisation anatomique :
+
+3) Evolution et survie des populations en fonction du stade T :
+
+3-a Evolution et survie des populations T1 et T2 :
+
+3-b Evolution et survie des populations T3-T4 :
+
+3-c Survie comparée des T1-T2 et T3-T4 :
+
+4) Evolution et survie des populations en fonction du stade N :
+
+4-a Evolution et survie des populations N0 :
+
+4-b Evolution et survie des populations N1 à N3 :
+
+4-c Survie comparée des populations N0 et N1-N3 :
+
+5) Evolution et survie des populations opérées en rechute ou en première
+
+intention :
+
+5-a Evolution et survie des populations opérées en rechute :
+
+5-b Evolution et survie des populations traitées par chirurgie première :
+
+5-c Survie comparée des patients opérés en rechute et des patients traités par
+
+chirurgie première :
+
+6) Evolution et survie des populations en fonction des critères pronostiques
+
+anatomo-pathologiques :
+
+6-a Survie selon le caractère macroscopique de la tumeur :
+
+6-b Evolution et survie des populations en fonction de l’exérèse chirurgicale
+
+carcinologique :
+
+6-c Survie des populations en fonction de la présence d’emboles tumoraux sur la
+
+pièce opératoire :
+
+7) Evolution et survie des populations en fonction du contingent de carcinome
+
+basaloïde dans la tumeur :
+
+V. Etude des facteurs pronostiques dans la population de BSCC survivants :
+
+DISCUSSION
+
+I. Intérêts et implications des résultats :
+
+1) Le pronostic des BSCC :
+
+2) Evolution des BSCC :
+
+3) Les survivants :
+
+4) Les modalités thérapeutiques :
+
+II. Critiques de l’étude :
+
+III. Comparaison de nos résultats avec ceux de la littérature :
+
+IV. Hypothèses physiopathologiques :
+
+1) Hypothèses sur la carcinogenèse des BSCC :
+
+2) Radiothérapie et BSCC :
+
+2-a Pourquoi le faible effectif de patients traité par radiothérapie exclusive ?
+
+2-b Pourquoi les patients en rechute après traitement par radiothérapie
+
+représentent-ils un effectif aussi important dans l’étude ?
+
+3) BSCC et métastases :
+
+V. Discussion sur la prise en charge des BSCC :
+
+1) Prise en charge diagnostique :
+
+2) Prise en charge thérapeutique :
+
+2-a Les indications de chirurgie première :
+
+2-b Les indications de radiothérapie première :
+
+3) Bilan et surveillance des BSCC :
+
+CONCLUSIONS
+
+BIBLIOGRAPHIE
+
+ANNEXES
+
+TABLE DES MATIERES
+
+SERMENT D'HIPPOCRATE
+
+En présence des Maîtres de cette Faculté, de mes chers condisciples et devant
+
+l'effigie d'HIPPOCRATE, je promets et je jure d'être fidèle aux lois de
+
+l'honneur et de la probité dans l'exercice de la médecine. Je donnerai mes soins
+
+gratuitement à l'indigent et n'exigerai jamais un salaire au-dessus de mon
+
+travail. Je ne participerai à aucun partage clandestin d'honoraires. Admis dans
+
+l'intimité des maisons, mes yeux n'y verront point ce qui s'y passe ; ma langue
+
+taira les secrets qui me seront confiés et mon état ne servira pas à corrompre
+
+les mœurs, ni à favoriser le crime. Je ne permettrai pas que des considérations
+
+de religion, de nation, de race, de parti ou de classe sociale viennent
+
+s'interposer entre mon devoir et mon patient. Je garderai le respect absolu de
+
+la vie humaine. Même sous la menace, je n'admettrai pas de faire usage de mes
+
+connaissances médicales contre les lois de l'humanité. Respectueux et
+
+reconnaissant envers mes Maîtres, je rendrai à leurs enfants l'instruction que
+
+j'ai reçue de leurs pères. Que les hommes m'accordent leur estime si je suis
+
+fidèle à mes promesses. Que je sois couvert d'opprobre et méprisé de mes
+
+confrères si j'y manque.
+
+
+

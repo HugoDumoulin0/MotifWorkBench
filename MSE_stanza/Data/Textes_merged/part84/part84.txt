@@ -1,0 +1,884 @@
+
+
+La liste des emplois contextuels du présent de l’indicatif (PR) est longue :
+
+historique, déictique, omnitemporel, atemporel, futural, hypothétique, etc. Ces
+
+emplois ont été expliqués traditionnellement selon trois angles d’étude : la théorie
+
+temporelle, dans laquelle on considère que les emplois contextuels du PR ne seraient
+
+que « déviants » par rapport à sa valeur première déictique ; la théorie
+
+aspectuelle, dans laquelle le PR est envisagé essentiellement comme une forme
+
+sécante ; la théorie de « zéro morphème » ou de tiroir neutre : le PR ne permettrait
+
+pas d’attribuer une couleur temporelle au procès dénoté et serait alors la catégorie
+
+non marquée du système verbal. Le signifié commun de tous les emplois du PR ne
+
+saurait être temporel, puisque l’effectivité de la référence n’est pas toujours
+
+pertinente (voir Gerbe, 2006) ; serait-il alors « modal » ? Existe-t-il des
+
+contextes singuliers où le PR relève d’une certaine modalisation ? Dans certaines
+
+occurrences en effet, le PR semble résister à la référence temporelle et à
+
+l’actualisation (passage d’un concept en une représentation particulière de sujets
+
+parlants). Les analyses traditionnelles du PR ne seront par exemple d’aucun secours
+
+pour les énoncés français, à caractère modal, qui nous occupent : trois types
+
+d’énoncés écrits (exemples philosophiques, scénarios narratifs et textes de loi) et
+
+deux types d’énoncés oraux (discours procédural et histoire drôle), tous
+
+caractérisés par une formulation systématique au PR et par l’effacement du
+
+producteur de l’énoncé [27]. Il faudra envisager une
+
+autre problématique, qui permettrait d’attribuer au PR non seulement une valeur
+
+d’assertion (d’un point de vue du mode), mais aussi une valeur de mise en attente
+
+(d’un point de vue de la modalité). On résumera la problématique ainsi : le PR peut
+
+dénoter un évènement qui n’a pas d’ancrage et qui représente un prototype
+
+d’évènement [28].
+
+Si l’étendue des corpus peut paraître insolite, elle est néanmoins maîtrisée :
+
+l’analyse modale du PR dépasse strictement le cadre du texte et des indices
+
+convergents (tant du côté du contexte que du cotexte) permettent de rapprocher des
+
+énoncés si divers. Ce qui nous importe est la façon dont le PR interagit avec les
+
+autres éléments pour former cette modalisation prototypante. Les phénomènes
+
+énonciatifs seront à étudier, puisqu’ils sont liés au fait que lecteur et scripteur
+
+ne sont pas clairement désignés dans nos exemples ; le contexte aura une place
+
+prépondérante lors de la réception, notamment pour les valeurs illocutoires
+
+(injonctive ou prévisionnelle) qui viennent s’ajouter à la prototypie (référence non
+
+actualisée et visée non unique du référent).
+
+1. Modalisation et référence
+
+Les énoncés que nous allons présenter et analyser ne sont pas les seuls à avoir
+
+une teneur modale. Outre les énoncés oraux avec du PR modal (comme dans « On
+
+boit un coup ? »), il y a quelques énoncés écrits qui dépassent le simple aspect
+
+itératif [29]. Ainsi, Mellet relève, dans un récit
+
+fictionnel avec contexte passé, un PR qui offre l’image d’une journée
+
+prototypique (2001 : 30) ; dans le passage cité, l’évènement décrit peut être la
+
+quintessence de l’ensemble des évènements possibles. Parce que le PR opère un
+
+lissage de la mise en perspective (il ne permet pas de différencier le premier
+
+plan de l’arrière-plan) et un aplatissement de la chronologie, il est utilisé
+
+pour transformer les évènements en des « images prototypiques » (2001 : 34).
+
+Avec le PR de narration donc, l’effet de prototypie peut apparaître. C’est ce
+
+que Rebotier a également noté, en repérant un autre exemple de PR de narration
+
+prototypant : il s’agit d’une séquence fictionnelle, dans laquelle est décrite
+
+l’entrée type d’un professeur dans une classe, rédigée au Präsens allemand (2005
+
+: 218). Le tiroir fait alors vivre la scène décrite comme si elle était un
+
+prototype de toutes les scènes semblables (2005 : 426). Le Präsens allemand peut
+
+donc – comme le PR français – décrire un évènement représentant un pur schéma
+
+abstrait, un patron d’évènement. Il nous faut préciser que le PR de narration a
+
+rarement cette valeur prototypante ; dans nos exemples, le PR, de par son
+
+interaction avec les présentatifs et les marques génériques notamment, est
+
+toujours prototypant.
+
+1.1. La notion de « prototype d’évènement » : il y a prototype et
+
+prototype
+
+La problématique décrite ici est différente de la sémantique du prototype,
+
+dans laquelle le prototype est le meilleur exemplaire d’une catégorie en
+
+tant qu’exemplaire le plus fréquemment donné comme tel (Kleiber, 1990 : 72).
+
+Illustrons cette différence par un syntagme verbal donné par Kleiber
+
+lui-même : « le scénario aller au restaurant
+
+rassemble des instances constituées d’une suite d’actions jugées
+
+prototypiques et d’autres qui comprennent des éléments inhabituels, non
+
+attendus. » (1990 : 103-104). Dans la sémantique du prototype, « prendre un
+
+taxi, se rendre dans un restaurant gastronomique et commander un menu » par
+
+exemple est le prototype d’aller au restaurant, alors
+
+que « partir à Londres pour manger dans un Fish and
+
+Chips » n’est pas prototypique ; dans notre approche, aller au restaurant est un prototype d’évènement, qui peut se
+
+réaliser par une multitude de procès (dont ceux précédemment cités). Dans un
+
+scénario romanesque (voir plus bas), ce phénomène est particulièrement
+
+évident : si l’auteur écrit « Julien va au restaurant. », le texte définitif
+
+pourra ressembler à « Julien quitta son modeste appartement de la rue des
+
+Martyrs et se dirigea vers Le Café de Paris, où il avait ses petites
+
+habitudes. ». C’est principalement le PR qui provoque cette prototypie : il
+
+ne sert pas à décrire un état de fait, anecdotique ou imaginaire, mais à
+
+décrire un évènement susceptible de se produire ou de s’être produit, dans
+
+des circonstances spatio-temporelles à spécifier.
+
+1.2. Localisation spatio-temporelle ?
+
+Nous parlions plus haut de la non-pertinence de l’angle temporel pour
+
+analyser certains PR. En effet, dans nos énoncés, les indications spatiales
+
+ou temporelles sont soit absentes soit très vagues : les phénomènes
+
+d’actualisation et d’ancrage sont effacés. Par opposition au PR de narration
+
+par exemple, qui nécessite un contexte passé évident et une référence
+
+spécifique (à un fait du monde réel ou virtuel), le PR ne peut s’appuyer sur
+
+le cotexte pour référer spatio-temporellement. C’est du côté de la théorie
+
+praxématique que nous devons regarder : le PR a la capacité de saisir
+
+l’évènement au niveau émergent de l’actualisation (dernier niveau selon
+
+Barbéris, 2004 : 207-208). Il peut par conséquent dépasser l’actualisation
+
+pure et référer à un évènement qui n’est pas complètement actualisé, et qui
+
+par ailleurs n’est pas ancré dans le temps (ni dans la situation
+
+d’énonciation, ni dans une autre époque temporelle). Dans un certain
+
+contexte, le recours au PR provoque l’effacement de la temporalité, en
+
+référant à une situation imaginaire « pseudo-déictique », et laisse libre
+
+l’actualisation de l’évènement dans le monde réel. L’auteur décrit une scène
+
+qui a des qualités intrinsèques (qui permettent donc au lecteur de la
+
+visualiser) et qui représente pourtant l’exemplarité, que l’on repère
+
+principalement par le manque d’ancrage spatio-temporel. Cette lecture ne
+
+peut être évidente qu’après l’étude détaillée des corpus ; c’est l’ensemble
+
+du passage et du contexte de production et de réception qui doit être
+
+envisagé.
+
+2. Le PR et les autres marques de prototypie
+
+Trois éléments sont fondamentaux dans la modalisation prototypante : le contexte
+
+d’apparition, le cotexte et la formulation au PR. La notion d’« appareil formel
+
+» [30] pourra nous être utile pour montrer que le PR
+
+est l’élément central dans ce système.
+
+2.1. Le contexte d’apparition
+
+Les cinq genres d’énoncés que nous rapprochons ont au moins deux
+
+caractéristiques énonciatives identiques : le contexte extralinguistique
+
+permet d’une part l’effacement de la relation énonciateur / destinataire et
+
+d’autre part la mise en place d’une valeur illocutoire.
+
+۰ Les exemples philosophiques : valeur prototypante du PR
+
+Ce premier corpus pourra nous servir de « guide », puisque que le PR y a une
+
+valeur prototypante absolue, sans autre valeur pragmatique :
+
+1. Je lance une pierre. Elle traverse mon jardin. Elle devient pour un moment un bolide confus et redevient pierre en tombant sur le sol à quelque distance.
+
+(Merleau-Ponty, Maurice, Phénoménologie de la
+
+perception, 1945, Paris : Gallimard, p. 310)
+
+2. J’ai rendez-vous avec Pierre à quatre heures. J’arrive en retard d’un quart d’heure […] Je regarde la salle, les consommateurs et je dis : « Il n’est pas là. » (Sartre,
+
+Jean-Paul, L’Être et le Néant, 1943, Paris :
+
+Gallimard, p. 43-44)
+
+Dans les exemples philosophiques, une convention sera établie : formellement,
+
+les marques non spécifiques (du type une pierre et
+
+Pierre) laissent en attente la validation du
+
+procès et les indices de fictionnalité (du type voici
+
+et supposons) vont introduire des séquences en
+
+décalage avec les séquences théoriques discursives ; pragmatiquement, le
+
+lecteur perçoit que l’intérêt n’est pas de référer à une anecdote
+
+personnelle – avec un je embrayeur – mais de référer
+
+à un évènement susceptible de se produire.
+
+۰ Les scénarios narratifs : valeur prototypante et prévisionnelle du PR
+
+Ce second corpus contient des procès au PR référant à des évènements
+
+prototypiques, eux-mêmes en instance de réécriture :
+
+3. Mathô les observe, Narr’Havas les fait s’arrêter, s’avance seul, fait signe qu’il veut parler à une sentinelle, remet sa lance et son cheval et s’avance seul à pied.
+
+(Flaubert, Gustave, scénario de Salammbô, repris dans
+
+Gagnebin, Bernard, Flaubert et « Salammbô » : genèse d’un
+
+texte, 1992, Paris : Presses Universitaires de France, p. 67) [31]
+
+C’est alors qu’en sortant des bâtiments par les escaliers noirs, il rencontre les Maheu et les Levaque qui arrivent.
+
+(Zola, Emile, scénario de Germinal, repris dans
+
+Becker, Colette, Zola : le saut dans les étoiles,
+
+2002, Paris : Presses de la Sorbonne Nouvelle, p. 323) [32]
+
+Les scénarios sont des écrits éminemment privés, à rapprocher des écrits
+
+d’archive : « leur réception se fait sur le mode de la "consultation" et non
+
+de la "communication" » (Philippe, 2002 : 26). Le PR participe à la
+
+construction de l’histoire, à la construction du roman, qui va devenir,
+
+après plusieurs étapes de réécritures, un récit dans lequel le destinataire
+
+peut être déterminé. Plusieurs opérations marqueront la transformation de
+
+l’« avant-texte » en texte :
+
+- le passage de groupes nominaux sans déterminant, qui relèvent d’un renvoi à
+
+une notion, à des groupes nominaux instanciés [33], avec une détermination précise ;
+
+- le passage de nombreux substantifs déverbaux, de participes présents et de
+
+verbes au PR à des verbes plus précis et des tiroirs permettant de
+
+différencier deux niveaux d’énonciation, l’un marqué par l’imparfait
+
+(arrière-plan), l’autre par le passé simple (premier plan) ;
+
+- le passage d’une quasi absence de circonstant spatio-temporel à une
+
+émergence de connecteurs, de circonstants de lieu, de circonstants de temps…
+
+Etant donné que l’écrivain sait que personne ne lira sa production, que ce ne
+
+sont que des « brouillons » au plein sens du terme, il peut se permettre
+
+d’employer une syntaxe purement notationnelle, en omettant par exemple les
+
+déterminants et les sujets des verbes. Ce style épuré coordonné à l’usage du
+
+PR sera un indice supplémentaire pour l’analyse prototypante des scénarios :
+
+l’écrivain « réfère » à une histoire embryonnaire.
+
+۰ Les textes de loi : valeur prototypante et injonctive du PR
+
+Ce troisième corpus est lié aux notions de généricité et d’exemplarité, qui
+
+s’accommodent avec la prototypie évènementielle :
+
+5. Les époux s’obligent mutuellement à une communauté de vie. / La résidence de la famille est un lieu qu’ils choisissent d’un commun accord.
+
+(article 215 du Code civil
+
+2006, Paris : Dalloz)
+
+6. Le divorce peut être demandé conjointement par les époux lorsqu’ils s’entendent sur la rupture du mariage et ses effets en soumettant à l’approbation du juge une convention réglant les conséquences du divorce.
+
+(article 230 du Code civil
+
+2006, Paris : Dalloz) [34]
+
+Dans les textes de loi, la visée non communicationnelle peut aussi être
+
+convoquée : il y a une « distance » importante entre les deux acteurs du
+
+message. L’effacement énonciatif (on fait comme si
+
+l’énoncé n’avait pas été écrit par quelqu’un et pour quelqu’un) n’est
+
+possible que parce qu’il existe un « pacte de lecture » : le lecteur, qu’il
+
+soit juriste ou non, sait que la loi est prescriptive ; l’auteur n’est pas
+
+obligé de marquer explicitement son discours pour le doter de visée
+
+illocutoire. C’est ce qui expliquerait l’absence du mode verbal impératif et
+
+l’absence de mention d’un destinataire direct dans ce genre d’écrit.
+
+Les deux valeurs attribuées au PR (prototypant et injonctif) relèvent
+
+également du cotexte, et en particulier des pronoms indéfinis et des
+
+structures verbales. La plupart des articles de loi est effectivement
+
+rédigée avec un sujet « indéterminé » singulier et notamment un pronom
+
+indéfini. De plus, les rédacteurs varient le type de structure verbale,
+
+selon que l’injonction est plus ou moins présente. Trois grands types de
+
+constructions se manifestent : les auxiliaires modaux ou assimilés (pouvoir, devoir, être tenu de, avoir la faculté /
+
+possibilité de…), les formes impersonnelles (il
+
+faut que, il est permis de, il convient de…)
+
+et les formes passives (il est demandé, telle chose se fait…). Avec la forme passive, très
+
+courante, « l’essentiel se reporte sur l’objet » et « les opérateurs
+
+importent moins que l’opération » (Cornu, 2000 : 328). Il convient de faire
+
+parler la loi plutôt que le législateur, la troisième personne plutôt que la
+
+première, voire de taire le nom de celui qui parle, laissant ainsi la règle
+
+s’imposer d’elle-même, comme émanant de la volonté commune. On rejoint par
+
+conséquent la primauté de l’effacement énonciatif, qui est un corollaire de
+
+l’atténuation de l’injonction par la rédaction au PR, qui remplace depuis le
+
+xxe siècle la rédaction au futur (voir note 8).
+
+۰ Les descriptions procédurales : valeur prototypante du PR ?
+
+Ce quatrième corpus contient des PR qui nous semblent également prototypants
+
+:
+
+7. Vous devez subir certains concours alors vous passez votre concours si vous êtes apte vous rentrez à l’école de gendarmerie […] à la sortie de ces huit mois vous avez donc un classement et vous choisissez une place…
+
+(discours procédural issu des Corpus de français parlé
+
+contemporain établis par les étudiants de maîtrise, 1996, sous la
+
+direction de Marie Savelli, Université Stendhal-Grenoble III)
+
+Dans les descriptions procédurales à l’oral, le PR apparaît en co-occurrence
+
+avec des formules introductives (du type je
+
+t’explique ou ce qu’il faut faire) et des
+
+pronoms de 2e personne « embrayeurs virtuels » (voir
+
+2.2.). L’évènement n’est pas raconté comme fictionnel et historique (ce qui
+
+serait le cas avec le PR de narration, très commun à l’oral) mais devient
+
+prototypique : le schéma d’action est similaire dans tous les cas. Dans ces
+
+énoncés procéduraux, « [l]’énonciateur expose simplement une probabilité,
+
+décrochée totalement du moment de l’énonciation. La validation du procès n’a
+
+aucune importance. » (Delveroudi, 2002 : 20-21). Autrement dit, l’évènement
+
+décrit reste en attente de validation, comme dans les énoncés écrits
+
+précédemment cités.
+
+۰ Les histoires drôles : valeur prototypante du PR ?
+
+Ce dernier corpus est d’emblée placé dans un monde virtuel et « désactualisé
+
+» :
+
+8. Un type conduit sur une route de montagne. Dans un virage, il croise une femme dans une superbe Mercedes. La fille ouvre sa vitre et crie « Attention gros porc ! ». Le type ouvre sa vitre à son tour et crie « Petite conne ! ». Et il continue sa route. Un peu plus loin, il percute un cochon qui broute sur le bas-côté, sort de la route, tombe dans le ravin et meurt. Moralité : les hommes feraient bien, de temps en temps, d’écouter ce que les femmes disent. (énoncé relevé par nos soins).
+
+Les histoires drôles, bien que récits fictifs, sont inimaginables au passé
+
+simple ou à l’imparfait : il y a une corrélation exclusive entre le PR et
+
+l’histoire drôle. Le propre de la blague étant de raconter un évènement mais
+
+de ne prétendre en rien que cet évènement se soit passé, le PR est de mise
+
+puisqu’il n’inscrit pas la représentation des évènements en réalité (Bres,
+
+2005 : 31). On se rapproche bien d’une valeur prototypante du PR.
+
+En conséquence, dans nos cinq types d’énoncés, le procès est posé comme non
+
+validé mais validable par n’importe quel sujet, à n’importe quel moment :
+
+« [d’un côté] validable n’implique pas que cette relation sera
+
+nécessairement validée ou, au contraire, non validée (on imagine toutes
+
+les éventualités) ; d’un autre côté, validable signifie "qui peut être
+
+validée, qui est donc validée pourvu qu’il y ait un énonciateur pour
+
+effectuer l’opération". » (Culioli, 1980 : 185).
+
+La notion de « désactualisation » est liée à celle d’atemporalité et de
+
+validation : avec le présent, étant donné qu’il invalide les repères, la
+
+relation sera posée comme validable à la fois pour T0,
+
+pour T-1, pour T+1, etc. Le procès
+
+peut être présenté d’une manière réaliste ; ce qui importe est son
+
+exemplarité même et la mise en attente de son actualisation. Cette mise en
+
+attente revêt, en particulier à travers un contexte précis, d’une teneur
+
+prévisionnelle – dans le cas où l’énoncé est un outil pour construire un
+
+énoncé plus standard – ou d’une teneur injonctive – dans le cas où
+
+l’énonciateur est par définition autoritaire.
+
+2.2. Le cotexte : valeurs des pronoms personnels et des « prénoms »
+
+Nous nous limiterons à deux indices qui interagissent avec l’usage du PR,
+
+notre objectif étant de relever des formes faisant faisceau et donnant lieu
+
+à une interprétation similaire (en l’occurrence une lecture non temporelle
+
+et prototypante) : les pronoms personnels embrayeurs et les noms propres de
+
+personne.
+
+۰ Le pronom de 1re personne
+
+Dans les exemples philosophiques, la valeur du pronom de 1re personne est particulièrement intéressante. Le pronom je ne renvoie pas spécifiquement à l’auteur mais
+
+renvoie à une entité virtuelle (voir exemples 1 et 2). Les personnes du
+
+discours utilisées ne proposent pas de prise en charge énonciative franche :
+
+ce sont des je génériques qui appellent sans cesse le
+
+lecteur à une « identification participatrice » (Temmar, 2003 : 167) ;
+
+chaque lecteur va s’identifier à l’acteur de l’évènement dénoté. On
+
+utilisera l’expression d’« embrayeur virtuel » : embrayeur puisque le pronom personnel garde manifestement un certain
+
+effet de « présence », et virtuel puisque le je renvoie à tout être humain susceptible de ramener
+
+son expérience au prototype de l’évènement. La référence du pronom est ainsi
+
+« non spécifiée », tout comme la référence des procès décrits au PR.
+
+Ces exemples n’ont de pleine pertinence philosophique que parce que la
+
+référence des embrayeurs reste purement virtuelle : je ouvre une classe de locuteurs potentiels. Le choix de l’embrayeur
+
+virtuel je est donc lié à une démarche argumentative
+
+et à une volonté d’abstraction et de généralisation. Les philosophes
+
+choisissent de raconter un évènement dans sa singularité, tout en lui
+
+donnant un minimum de précision et un maximum de « pseudo-référence ». Nous
+
+assistons au même phénomène dans les descriptions procédurales : les pronoms
+
+de 2e personne peuvent y être aussi qualifiés
+
+d’embrayeurs virtuels (le tu et le vous ne renvoient pas uniquement à l’interlocuteur).
+
+۰ Les « prénoms »
+
+Théoriquement, le prénom est un nom propre et réfère à un être particulier,
+
+inconfondable avec d’autres, qui existe à travers une identité spécifique.
+
+Ce principe de référence semble absent des exemples de grammaire, de
+
+définition, de philosophie : Pierre, Paul et Marie y sont
+
+couramment utilisés et sont plus proches alors des pronoms indéfinis que des
+
+noms propres, d’où la possible locution « pronoms propres ». Le « pronom
+
+propre » est un usage du prénom qui permet de laisser en suspens la
+
+référence, ce qui est contraire en principe au qualificatif « nom propre ».
+
+La locution « pronom propre » permet de rendre compte que les prénoms
+
+tiennent lieu à la fois de noms propres (chaque renvoi est évident pour le
+
+lecteur) et de pronoms indéfinis (la personne à laquelle ils renvoient n’est
+
+pas spécifique). Par exemple, dans les œuvres philosophiques, Pierre (prénom utilisé le plus couramment) a
+
+l’avantage de personnifier le sujet de l’évènement, tout en disant au
+
+lecteur « Pierre n’existe pas ». Les prénoms sont choisis délibérément pour
+
+leur neutralité, leur universalité ; ils bloquent toute inférence sur le
+
+milieu social, l’âge, etc. du référent. Dans les histoires drôles également,
+
+les prénoms sont utilisés pour référer à une personne imaginaire et non
+
+spécifique ; à l’inverse, ils sont souvent connotés : on utilisera Marie-Chantal pour une bourgeoise, Ginette pour une ménagère, Kevin pour un
+
+adolescent [35]. Les « pronoms propres » sont
+
+donc un indice fort de prototypie ; le lecteur perçoit que la saynète n’est
+
+pas actualisée, qu’il ne doit pas chercher la référence exacte de Pierre ou de Ginette.
+
+2.3. Le PR par rapport aux autres tiroirs
+
+Le PR est volontairement choisi dans les énoncés reproduits ici pour ses
+
+valeurs neutralisantes : il permet la « désactualisation », et, partant,
+
+l’exemplarité, de l’évènement.
+
+۰ Le PR à la place du FS (exemples 5 et 6)
+
+Dans les textes de loi, le futur étant trop marqué temporellement et
+
+illocutoirement, le PR a été préféré, pour un droit moins prohibitif et plus
+
+proche d’une description que d’une prescription. Ainsi, pour le Code pénal,
+
+qui a longtemps gardé les futurs simples, la structure des articles est
+
+maintenant quasiment identique : « le fait de faire
+
+ceci est puni de cela » (au lieu de « Celui qui fera
+
+ceci sera puni de cela »). En partant du principe que si les dispositions
+
+sont écrites comme une narration d’évènements fictifs, elles éviteront le
+
+problème de la gestion du temps, les rédacteurs rédigent les Codes au PR. Le
+
+PR est alors destiné à suggérer la vérité permanente des principes invoqués,
+
+en mettant ceux-ci à l’abri de tout contexte historique. En plus de sa
+
+simplicité morphologique, qui est un atout supplémentaire pour la lisibilité
+
+des textes de loi, le PR a également l’avantage de renvoyer à des actes
+
+coupés de toute temporalité, de toute chronologie ; il est dans un mouvement
+
+perpétuel qui « colle » à une société mouvante, tout en respectant le
+
+caractère intrinsèquement abstrait des dispositions juridiques.
+
+۰ Le PR, seul tiroir « prototypant » ?
+
+Le PR est probablement le seul tiroir qui accepte une valeur prototypante.
+
+Les autres tiroirs présentent le procès comme actualisé dans le passé (qu’il
+
+soit réel ou virtuel) ou dans le futur (hypothétique) : l’évènement est
+
+alors envisagé comme unique et spécifique. Pour qu’un énoncé acquière cette
+
+valeur prototypante, il faut que la rédaction soit entièrement au PR. A
+
+l’oral par exemple, une histoire qui commence par des verbes au PR sera
+
+ordinairement analysée comme une histoire drôle ; si le blagueur utilise les
+
+tiroirs du passé, les destinataires pourront interpréter le message comme
+
+une histoire vraie. Il suffit d’introduire dans ce type de narration un seul
+
+passé composé pour que la réception de l’interlocuteur soit perturbée et
+
+qu’il se demande si « c’est du lard ou du cochon » (Bres, 1998 : 132). Avec
+
+le PR, le narrateur n’attribue pas clairement à l’évènement risible une
+
+singularité.
+
+3. Conclusion
+
+Les phénomènes d’effacement énonciatif, de non-ancrage et de modalisation sont
+
+liés à l’appareil formel, dont le PR est ici pivot. Le PR dans les énoncés «
+
+désactualisés » est « textualisant » (c’est-à-dire qu’il ne reçoit cette valeur
+
+que dans le cas d’une série de procès ; un énoncé isolé n’a aucune chance d’être
+
+interprété comme opérant un changement modal) et « non actualisant » (il suspend
+
+l’effectivité de la prédication) (Philippe, 2005 : 83). Le PR permet de
+
+maintenir la séquence dans une narration d’évènements, en rendant ces mêmes
+
+évènements extérieurs à toute référence temporelle et à toute réalité.
+
+Fonctionnant avec des embrayeurs virtuels, des « prénoms » à valeur de pronoms
+
+indéfinis, le PR opère un décrochage modal et le lecteur perçoit l’évènement
+
+comme non ancré dans l’histoire. Le PR prototypant renvoie à un évènement
+
+susceptible de se (re)produire dans un univers réel :
+
+« Le présent, par lui-même, n’inscrit pas la représentation des évènements en
+
+réalité temporelle, pas plus dans le passé que dans une autre époque, et donc
+
+tout simplement ne l’inscrit pas en réalité : la représentation n’est pas à
+
+rapporter à un référent. » (Bres, 2005 : 31).
+
+Le PR explicite le fait que la référence du procès dénoté ne soit pas la
+
+principale volonté de l’énonciateur. Le repérage de l’évènement peut être à
+
+chaque lecture différente ; c’est ce qu’on entend par « non validé mais
+
+validable » (voir plus haut). Dans les exemples cités, le PR donne lieu à un
+
+décrochage modal – dû au statut ambigu de certaines marques (par exemple des
+
+pronoms personnels) – et à la transformation d’un procès fictif en un procès
+
+prototypique. C’est cette transformation qui est souhaitée par l’auteur, qui
+
+veut faire participer le lecteur par une appropriation de l’univers créé. Non
+
+seulement il va s’approprier le je utilisé, mais aussi le
+
+PR, qui n’a pas la stricte valeur déictique qu’on veut lui attribuer. Notre
+
+travail se situe donc à la jonction entre une étude formelle et une étude
+
+discursive, voire pragmatique. La valeur prototypante est l’effet d’interactions
+
+avec d’autres éléments cotextuels : elle est le résultat d’un jeu subtil entre
+
+plusieurs facteurs contextuels, qui sont à rassembler sous la notion d’appareil
+
+formel, le facteur principal étant le recours au PR.
+
+Références
+
+Barbéris, Jeanne-Marie (2004). Coénonciation et actualisation : la
+
+textualisation en idem, in L’analyse du discours dans les études littéraires, Amossy, Ruth
+
+&amp; Maingueneau, Dominique (Eds). Toulouse : Presses Universitaires du
+
+Mirail, 201-212.
+
+Bres, Jacques (1998). De l’alternance temporelle passé composé / présent
+
+en récit oral conversationnel, in Variations sur la
+
+référence verbale, Borillo, Andrée, Vetters, Carl &amp; Vuillaume,
+
+Marcel (Eds). Amsterdam/Atlanta : Rodopi B.V. (Cahier Chronos 3), 125-136.
+
+Bres, Jacques (2005). Le présent de l’indicatif en français : de quelques
+
+problèmes, et peut-être de quelques solutions, in Du
+
+présent de l’indicatif, Despierres, Claire &amp; Krazem, Mustapha
+
+(Eds). Dijon : Université de Bourgogne, 27-51.
+
+Cornu, Gérard (2000). Linguistique juridique. Paris
+
+: Montchrestien-E.J.A.
+
+Culioli, Antoine (1980). Valeurs aspectuelles et opérations énonciatives :
+
+l’aoristique, in La notion d’aspect, David, Jacques
+
+&amp; Martin, Robert (Eds). Metz/Paris : Centre d’analyse
+
+syntaxique-Klincksieck, 181-193.
+
+Delveroudi, Rhéa (2002). A propos d’une des valeurs du présent de
+
+l’indicatif français : la valeur injonctive, Revue de
+
+sémantique et pragmatique, 11 : 7-25.
+
+Gerbe, Rose-Marie (2006). Le présent prototypant :
+
+contribution à l’étude des appareils formels du français écrit,
+
+thèse de doctorat sous la direction de Gilles Philippe. Grenoble :
+
+Université Stendhal-Grenoble III.
+
+Kleiber, Georges (1990). La sémantique du prototype :
+
+catégories et sens lexical. Paris : Presses Universitaires de
+
+France.
+
+Mellet, Sylvie (2001). Valeur aspectuelle du présent : un problème de
+
+frontière, in Le présent en français, Le Goffic,
+
+Pierre (Ed). Amsterdam/Atlanta : Rodopi B.V. (Cahier Chronos 7),
+
+27-39.
+
+Philippe, Gilles (2002). L’appareil formel de l’effacement énonciatif et
+
+la pragmatique des textes sans locuteur, in Pragmatique et
+
+analyse des textes, Amossy, Ruth (Ed). Tel Aviv : French
+
+Department, 17-34.
+
+Philippe, Gilles (2005). Existe-t-il un appareil formel de la fiction ?,
+
+Le français moderne, LXXIII, 1 : 75-88.
+
+Rebotier, Aude (2005). Les Temps verbaux en allemand et
+
+en français et les phénomènes aspectuels : comparaison de deux
+
+systèmes, thèse de doctorat sous la direction de Jean-François
+
+Marillier. Grenoble : Université Stendhal-Grenoble III.
+
+Temmar, Malika (2003). Effets de présence et ostension : une approche
+
+discursive, Studia Phænomenologica, III, 3/4 : 163-184.
+
+[27] Nous avons relevé parmi de nombreuses
+
+occurrences les énoncés symptomatiques des phénomènes remarqués (voir les
+
+exemples 1 à 8), pour ne traiter ici que de l’essentiel.
+
+[28] Précisons que le prototype d’évènement (en tant que procès
+
+décrit par le verbe conjugué) est l’exemplaire d’une classe ; il admet un
+
+ensemble de réalisations en saisie paradigmatique.
+
+[29] Ce sera la seule mention de l’aspect dans cet article ; il est
+
+clair que l’aspect inaccompli du PR a un lien avec notre valeur prototypante,
+
+mais nous ne pouvons être exhaustive ici.
+
+[30] L’appareil formel a ici un sens dérivé de la théorie de
+
+Benveniste : un ensemble de traits linguistiques congruents, prévisibles ou
+
+obligatoires, c’est-à-dire les marques formelles surreprésentées (cf. Philippe, 2002 et 2005).
+
+[31] Ce passage sera transformé dans le texte définitif en « Tout à
+
+coup, Narr’Havas marcha résolument vers une sentinelle. Il jeta son épée, sa
+
+lance, ses javelots, et disparut au milieu des Carthaginois. » (Salammbô, 2001, Paris : Flammarion, p. 274).
+
+[32] Ce passage donnera lieu à « le jeune homme […] s’approchait,
+
+lorsqu’il rencontra une nouvelle bande de charbonniers, qui arrivait à la fosse.
+
+» (Germinal, 2000, Paris : Flammarion, p. 74).
+
+[33] L’instanciation désigne, dans la théorie énonciative,
+
+l’opération qui consiste à saturer les positions d’une structure prédicative au
+
+moyen de notions, c’est-à-dire de signifiés lexicaux. Un groupe nominal
+
+instancié sera ainsi un groupe nominal ancré dans un groupe verbal, dans une
+
+prédication.
+
+[34] Cet article remplace l’article 281 du Code
+
+civil de 1804 (repris dans Acollas, Emile, Manuel de
+
+droit civil : commentaire philosophique et critique du Code Napoléon,
+
+1874, Paris : Germer-Baillière, tome I, p. 265), rédigé au futur : « Les époux
+
+se représenteront ensemble, et en personne, devant le président du tribunal
+
+civil de leur arrondissement, ou devant le juge qui en fera les fonctions, et
+
+lui feront la déclaration de leur volonté, en présence de deux notaires amenés
+
+par eux ».
+
+[35] L’équivalent de Pierre des exemples
+
+philosophiques pourrait être Toto dans les histoires
+
+drôles, mais son panel de réalisations nous paraît plus étroit (Toto
+
+s’apparentant souvent à un enfant naïf).
+
+
+

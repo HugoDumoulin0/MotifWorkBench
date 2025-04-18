@@ -1,0 +1,794 @@
+
+
+1. Introduction
+
+La liaison est un cas d’alternance phonologique qui consiste en l’apparition
+
+d’une consonne entre deux mots. Particularité linguistique largement étudiée
+
+depuis les années 1960, elle a servi de validation aux différentes théories
+
+phonologiques qui ont eu cours (phonologie générative, phonologie multilinéaire,
+
+théorie de l’optimalité, théorie des constructions). Toutefois, ce phénomène ne
+
+se limite pas à la phonologie et fait, au contraire, intervenir d’autres niveaux
+
+linguistiques tels que la syntaxe, la morphologie et la pragmatique. Quant à la
+
+question de son acquisition en français, elle est restée longtemps ignorée
+
+jusqu’aux premières recherches systématiques menées par Wauquier-Gravelines
+
+(2002; 2003) et Chevrot et Fayol (2000). Dans cet article, nous nous
+
+intéresserons à un aspect particulier influençant cette acquisition, à savoir le
+
+rôle de la fréquence. En effet, nous soutenons, avec les tenants des théories
+
+basées sur l’usage (Bybee, 2003 [2001]; Langacker, 1987; Tomasello, 2003), que
+
+la fréquence d’apparition d’un élément ou d’une séquence dans l’input, influence
+
+sa disponibilité dans le lexique et par là même les processus en jeu dans son
+
+acquisition.
+
+Nous commencerons par préciser ce que revêt le phénomène de liaison et les
+
+raisons pour lesquelles il constitue une difficulté pour les enfants. Ensuite,
+
+nous présenterons le scénario développemental élaboré à partir des études sur la
+
+liaison. Enfin, nous nous attacherons aux hypothèses, méthodologies et résultats
+
+qui ont guidé cette recherche sur le rôle qu’exerce la fréquence sur
+
+l’acquisition de la liaison.
+
+2. La liaison et les difficultés qu’elle pose aux enfants
+
+La liaison consiste en l’apparition d’une consonne (//, // ou // dans 99.8 %
+
+des cas, Boë et Tubach, 1992) [120] entre deux mots
+
+– un Mot1 et un Mot2 – qui présentent un lien syntaxique fort. En outre, pour
+
+qu’une liaison apparaisse, le Mot2 doit commencer par un son vocalique lorsqu’il
+
+est produit en isolation par un adulte : on trouve, par exemple, une liaison
+
+devant arbre [] dans un arbre,
+
+mais pas devant camion [] dans un camion. Par ailleurs, la consonne de liaison
+
+(désormais CL) n’est pas produite à la fin du Mot1 lorsqu’il se trouve en finale
+
+d’énoncé (j’en prends un prononcé [] sans
+
+consonne finale). Cette CL n’est jamais prononcée par l’adulte à l’initiale du
+
+Mot2 lorsqu’il se trouve en début d’énoncé : par exemple, la liaison en // est
+
+réalisée dans les ânes, en revanche, elle n’apparait pas
+
+dans l’apostrophe âne. Enfin, la nature phonétique de la
+
+CL – /n/, /z/ ou /t/ – dépend du Mot1 : les Mots1 tels que un ou aucun déclenchent une liaison en /n/, les
+
+Mots1 petit, grand, etc. une
+
+liaison en /t/ et les Mots1 gros, très, deux, etc. une liaison en /z/.
+
+La liaison est un phénomène linguistique long à acquérir, essentiellement pour
+
+deux raisons. Tout d’abord, l’apparition de la consonne de liaison devant un
+
+Mot2 à initiale vocalique entraine une resyllabification. Dans la séquence un arbre, le découpage syllabique /./ fait
+
+apparaitre une frontière devant la forme //. En d’autres termes, en
+
+contexte de liaison, les frontières de syllabes et de mots ne sont plus
+
+concordantes, ce qui complexifie la tâche de segmentation pour les enfants. La
+
+seconde difficulté inhérente à ce phénomène est liée à la nature variable de la
+
+CL en fonction du Mot1. En confrontant cette caractéristique à la précédente, on
+
+peut penser que l’enfant récupèrera des formes lexicales différentes en fonction
+
+du contexte dans lequel elles ont été entendues. Par exemple, il récupèrerait
+
+// dans un arbre, // dans les
+
+arbres, // dans grand arbre.
+
+Suite aux premières esquisses de scénario développemental proposées par Morin
+
+(2003 [1998]), qui rendaient compte du lien entre les erreurs en contexte de
+
+liaison et la façon dont les enfants font face aux difficultés de segmentation
+
+et de formation des mots, nous avons étayé cette première version du scénario en
+
+mettant en place plusieurs démarches empiriques permettant d’observer la mise en
+
+place de la liaison et les phénomènes qui lui sont liés (Chevrot  et al., 2005).
+
+3. Scénario développemental de l’acquisition de la liaison
+
+Le scénario développemental dont nous allons faire état a été établi à partir de
+
+l’analyse de productions d’enfants âgés de 2 à 6 ans, en situations naturelle et
+
+expérimentale (Dugua, 2005).
+
+3.1. Ancrage théorique
+
+Nous interpréterons nos données au regard des principes des théories basées
+
+sur l’usage. Dans cette approche, l’usage du langage est la clé pour
+
+comprendre à la fois sa genèse, son fonctionnement et son évolution. Afin de
+
+rendre compte de l’impact de l’usage, les recherches intégrées à ces
+
+approches tentent notamment de mettre à jour le rôle de la fréquence
+
+d’apparition d’un type de séquences particulier dans l’input sur les
+
+productions enfantines précoces (Cameron-Faulkner  et
+
+al., 2003; Lieven et al., 2003).
+
+Par ailleurs, un second principe, emprunté aux grammaires de constructions et
+
+auquel les théories basées sur l’usage font expressément référence, s’appuie
+
+sur l’idée que l’unité de base du traitement linguistique est la
+
+construction. Les constructions sont des paires forme/sens
+
+conventionnalisées (Goldberg, 1995), c’est-à-dire que dans chaque
+
+construction une forme phonologique/syntaxique correspond à une intention
+
+sémantique/pragmatique. En outre, les constructions peuvent être de formes
+
+diverses, elles varient en effet selon deux dimensions principales (Diessel,
+
+2004). D’une part, elles se distinguent en termes de complexité
+
+syntagmatique ; elles peuvent en effet correspondre à un seul mot, à des
+
+séquences telles que déterminant + nom,
+
+clitique + verbe, à des structures syntaxiques telles
+
+que le passif, etc. D’autre part, les constructions varient selon une
+
+échelle de schématisation et d’abstraction. En d’autres termes, on
+
+trouverait dans le lexique des constructions concrètes, de type expressions
+
+idiomatiques, mots, ou fragments d’énoncés récupérés dans l’input et stockés
+
+tels quels (par exemple : tout à coup, mon doudou, caché, etc.) et
+
+des constructions abstraites et schématiques appelées schémas qui peuvent intégrer des catégories grammaticales (groupe
+
+nominal, verbe, etc.) correspondant à des emplacements libres, ou slots (par exemple : j’ai +
+
+Vé). Les schémas abstraits émergeraient à partir
+
+de processus cognitifs (généralisation, schématisation, analogie, voir
+
+Langacker, 1987; Tomasello, 2003) appliqués aux premières constructions
+
+concrètes mémorisées. En ce sens, les constructions concrètes et abstraites
+
+sont liées entre elles puisque les secondes ne peuvent émerger qu’à partir
+
+des premières.
+
+À partir de la présentation de cette unité particulière qu’est la
+
+construction, nous devons souligner que dans cette conception, aucune
+
+distinction nette n’est faite entre lexique et syntaxe. En effet, les
+
+constructions lexicales et les constructions syntaxiques sont de même
+
+structure représentationnelle, seuls les distinguent leur complexité et leur
+
+degré d’abstraction, les constructions syntaxiques demeurant plus complexes
+
+et moins informées phonologiquement, étant donné qu’elles comprennent des
+
+slots.
+
+3.2. Développement des séquences déterminant + nom
+
+Dans le scénario développemental que nous proposons [121], nous nous attachons aux étapes d’acquisition des séquences
+
+déterminant + nom en
+
+contexte de liaison. Pour ce faire, nous reprenons à notre compte
+
+l’organisation des constructions verbales avancée par Tomasello (2003) qui
+
+intègre la construction comme unité de base et applique les principes des
+
+modèles basés sur l’usage.
+
+Dans une étape précoce (vers l’âge d’1 an), l’enfant récupèrerait dans
+
+l’input des séquences lexicales concrètes qu’il mémoriserait dans son
+
+lexique. Elles seraient de formes diverses, plus ou moins longues, mais
+
+toutes concrètes. Des exemples de constructions de cette étape pourraient
+
+être : l’ours, les
+
+ânes, chocolat, etc.,
+
+certaines de ces constructions pouvant contenir une CL. Lors de cette étape,
+
+l’enfant ne commettrait pas d’erreurs de liaison à proprement parler, étant
+
+donné qu’il reproduit les séquences telles qu’il les a entendues. Pour
+
+illustrer cette étape caractéristique des productions des enfants de moins
+
+de 2 ans, nous ne disposons pas de données personnelles. Cependant,
+
+Wauquier-Gravelines, qui soutient également l’hypothèse d’une étape précoce,
+
+mais en défendant d’autres interprétations [122], fournit quelques exemples relevés chez des enfants autour de
+
+1;6 : [:] pour oiseau, [] pour pantalon (Wauquier-Gravelines &amp; Braud, 2005: 58).
+
+Ces deux exemples, dont seul le premier fait intervenir un nom à initiale
+
+vocalique, laissent apparaitre la présence d’un déterminant devant le nom.
+
+Dans ces cas-là, nous proposons que l’enfant a récupéré ces séquences
+
+complètes qu’il reproduit en les adaptant à ces capacités articulatoires.
+
+L’étape suivante se caractériserait par la combinaison de formes lexicales
+
+mémorisées, dans notre cas l’association de déterminants, qui joueraient le
+
+rôle de pivots, à des éléments hétérogènes du lexique. Par rapport à la
+
+première étape concrète, on se situerait ici dans une évolution vers
+
+l’abstraction par l’élaboration de schémas généraux peu spécifiques, appelés
+
+schémas pivots, du type : un + X, deux + X, les + X, etc. Les X correspondent
+
+à des emplacements libres sans aucune précision sur la nature morphologique
+
+des éléments pouvant les remplir. Ces schémas permettent d’ailleurs de
+
+rendre compte d’erreurs fréquemment relevées chez les enfants de 2-4 ans :
+
+les erreurs par remplacement (un zours //, la
+
+forme // intègre le schéma un + X) ou les erreurs
+
+par omission (deux#ours //, la forme //
+
+intègre le schéma deux + X).
+
+La troisième étape (autour de 4-5 ans) correspondrait à la mise en œuvre de
+
+schémas plus spécifiques qui intègreraient une information abstraite de type
+
+morphologique sur la forme du Mot2. Cette information renverrait à la nature
+
+de la CL. Ces schémas seraient alors du type : un +
+
+nX, deux + zX. Généralisables à l’ensemble des formes intégrant
+
+le slot, ces schémas abstraits permettent ainsi de
+
+rendre compte des erreurs par surgénéralisation repérées sur des mots à
+
+consonne initiale fixe comme un nèbre (//) pour
+
+un zèbre, deux zombrils
+
+(//) pour deux nombrils.
+
+Il est essentiel de souligner que les trois étapes présentées ici sont
+
+imbriquées les unes dans les autres puisque chaque étape émerge des
+
+précédentes. De plus, les constructions caractéristiques de chacune d’elles
+
+se superposent comme des strates, les schémas de plus en plus abstraits ne
+
+supplantant pas les constructions concrètes préalables.
+
+4. Hypothèse de travail
+
+À partir du scénario développemental présenté ici, et selon le principe du rôle
+
+central des effets de la fréquence sur l’usage et le développement du langage,
+
+nous pouvons formuler l’hypothèse de notre présente recherche. Nous tenterons
+
+ici de mettre en lumière ces effets de fréquence sur l’acquisition des
+
+constructions déterminant + nom en prenant appui sur
+
+l’orientation majoritaire vers un usage au singulier ou au pluriel de différents
+
+noms.
+
+Nous formulons notre hypothèse comme suit : plus une forme lexicale est fréquente
+
+dans la parole environnant l’enfant (l’input), plus elle sera ancrée dans son
+
+lexique (Langacker, 1987) et plus elle devrait apparaitre dans les erreurs. Par
+
+exemple, si la forme // est plus fréquente dans l’input que la forme //,
+
+on devrait recueillir plus d’erreurs de type deux nours
+
+(//) que d’erreurs de type un zours (//).
+
+Par ailleurs, nous observerons si une évolution apparait au fil du développement.
+
+Au vu des étapes développementales soulignées par notre scénario, nous pensons
+
+que le lien entre forme perçue et forme produite devrait être fort chez les plus
+
+jeunes enfants puis qu’il devrait s’affaiblir dès que les schémas spécifiques
+
+deviennent les plus productifs. Dans les étapes tardives, ce ne serait plus la
+
+fréquence des formes lexicales qui influencerait les productions mais la
+
+productivité des schémas.
+
+5. Méthodologies
+
+Nous avons mis en place une double méthodologie pour apporter des éléments de
+
+réponse à notre hypothèse : la première permettra d’accéder aux fréquences
+
+relatives de séquences déterminant + nom dans la parole
+
+adulte et la seconde de recueillir des productions enfantines sur ces mêmes
+
+séquences.
+
+5.1. Test d’intuition auprès de locuteurs adultes
+
+À notre connaissance, il n’existe pas de corpus oraux de parole adulte
+
+suffisamment importants pour calculer les fréquences déterminant + nom à voyelle initiale dont
+
+nous avons besoin. C’est pourquoi nous avons construit un test de jugement
+
+de fréquence. Soixante-dix étudiants de première année de Sciences du
+
+Langage ont pris part à cette tâche. Nous avons testé 24 Mots2 à initiale
+
+vocalique [123] et 6 à initiale consonantique
+
+servant de distracteurs, et ce suivant deux modalités :
+
+۰ Modalité « définie » : les séquences à juger se présentent sous la forme
+
+l’ + Mot2 vs
+
+les + Mot2, ou l’inverse les +
+
+Mot2 vs
+
+l’ + Mot2
+
+۰ Modalité « indéfinie » : les séquences à juger se présentent sous la forme
+
+un + Mot2 vs
+
+des + Mot2 ou l’inverse des +
+
+Mot2 vs
+
+un + Mot2
+
+Chaque Mot2 a été jugé à deux reprises, une fois dans chaque modalité. Ainsi,
+
+nous disposons de 140 jugements par mot. L’ordre singulier/pluriel des
+
+séquences est contrebalancé avec la modalité : si un mot est présenté dans
+
+l’ordre pluriel vs singulier dans une modalité (par
+
+exemple : les ours vs l’ours),
+
+il sera présenté suivant l’ordre singulier vs pluriel
+
+dans l’autre modalité (par exemple un ours vs des ours).
+
+La passation était collective, chaque participant disposait d’une feuille de
+
+réponses avec toutes les séquences. Les paires de séquences étaient lues par
+
+un expérimentateur et les participants devaient cocher la forme qu’ils
+
+pensaient entendre le plus souvent (en opposition à l’autre).
+
+5.2. Expérimentation de dénomination d’images
+
+Par l’expérimentation de dénomination d’images, nous avons cherché à
+
+recueillir un grand nombre de productions enfantines en contexte déterminant + nom. L’échantillon se compose de 511
+
+enfants âgés de 2;3 à 6;3 et répartis en quatre tranches d’âge, comme suit.
+
+Tableau 1 - Répartition des enfants de l’expérimentation en 4 tranches
+
+d’âge
+
+Ce large échantillon a été obtenu grâce au regroupement de trois
+
+expérimentations basées sur un protocole similaire avec des échantillons
+
+différents (200, 189 et 122 enfants). Au niveau de la procédure, ne
+
+différait que le choix des Mots2. Dans l’expérimentation impliquant 200
+
+enfants, 4 Mots2 étaient utilisés : arbre, écureuil, éléphant, ours (Dugua, 2006) ; dans celle avec 189 enfants, 6
+
+Mots2 : arbre, avion, éléphant, escargot, ordinateur, ours (Nardy, 2003)
+
+; et dans la dernière, avec 122 enfants, 8 Mots2 : les 6 Mots2 de
+
+l’expérimentation précédente ainsi que œil et œuf. Par conséquent, tous les Mots2 n’ont pas été
+
+produits par le même nombre d’enfants ; cependant, pour les analyses, nous
+
+avons globalisé les productions, sans tenir compte de cette donne.
+
+Deux conditions organisent cette expérimentation : l’une où le nom doit être
+
+dénommé dans le contexte un + Mot2 et l’autre dans le
+
+contexte deux + Mot2. Pour ce faire, chaque image
+
+représentant les Mots2 était dessinée en simple et double exemplaires. En
+
+outre, entre chaque image cible, était insérée l’image d’un mot distracteur
+
+à consonne initiale (par exemple, cochon, camion, balai, etc.).
+
+Pour cette recherche, nous avons observé seulement les taux d’erreurs par
+
+remplacement, c’est-à-dire les erreurs dans lesquelles la forme du Mot2
+
+n’est pas celle attendue après un Mot1 donné : par exemple, deux nours (//), un
+
+zavion (//). Deux types d’erreurs seront distingués :
+
+۰ (1) Les erreurs dans lesquelles la forme du Mot2 est en /n/ initial :
+
+//, //, etc. On dira de ces erreurs qu’elles sont typiques du
+
+singulier car la consonne /n/ erronée est celle qu’on trouve après les
+
+déterminants singulier un, mon, etc.
+
+۰ (2) Les erreurs dans lesquelles la forme du Mot2 est en /z/ initial :
+
+//, //, etc. Ces erreurs sont caractéristiques du pluriel, la
+
+consonne /z/ étant celle qui apparait après les déterminants les, deux, des, nos, etc.
+
+Le choix de s’appuyer sur les erreurs par remplacement s’explique en
+
+référence à deux types de schémas présentés lors du scénario développemental
+
+: les schémas généraux de type un + X et les schémas
+
+abstraits tels que un + nX.
+
+Quand un enfant fait une erreur par remplacement, la seule possibilité qui
+
+semble envisageable est qu’il intègre une forme de Mot2 dans le slot d’un schéma général qui ne précise aucune
+
+information sur la nature de la forme à insérer. Dans le cadre des schémas
+
+abstraits, nous ne pouvons pas attendre d’erreurs de ce type étant donné que
+
+ces schémas portent en eux la CL attendue. En revanche, les productions
+
+justes peuvent correspondre à l’application des deux schémas. Ce n’est donc
+
+que par le biais des erreurs par remplacement que l’on a accès aux formes de
+
+Mots2 stockées dans le lexique et non à des formes déjà assimilées par les
+
+schémas.
+
+5.3. Rapports donnant la force du pluriel
+
+À ce premier niveau d’analyse, nous disposons du nombre des deux types
+
+d’erreurs par remplacement dans les productions enfantines pour chaque Mot2
+
+et des scores de jugements adultes vers le pluriel ou vers le singulier pour
+
+chacun des Mots2.
+
+Dans le but de comparer ces deux ensembles de données, nous avons mis en
+
+place un rapport donnant, pour chaque mot, la force du pluriel dans les
+
+jugements adultes et la force des erreurs en /z/ dans les dénominations
+
+enfantines.
+
+۰ Dans le test d’intuition, le rapport est le suivant [124] : [nombre de jugements en faveur du pluriel  (nombre de
+
+jugements en faveur du pluriel + nombre de jugements en faveur du
+
+singulier)]. Si le rapport est proche de 0, le mot a été majoritairement
+
+jugé au singulier. Il s’agit par exemple du cas d’arc-en-ciel qui a un rapport à 0.036. Au contraire, le mot habit, jugé plus souvent pluriel, a un rapport à
+
+0.897.
+
+۰ Dans les dénominations d’images, le rapport donnant la force des erreurs en
+
+/z/ est : [nombre d’erreurs en /z/  (nombre d’erreurs en /z/ + nombre
+
+d’erreurs en /n/)].
+
+Pour chaque Mot2, nous obtenons donc un rapport donnant sa force du pluriel
+
+dans les jugements adultes et un rapport donnant la force de l’erreur en /z/
+
+dans les productions enfantines.
+
+6. Résultats
+
+Nous avons cherché si une corrélation apparaissait entre ces deux rapports,
+
+globalement, dans un premier temps, puis par tranches d’âge.
+
+6.1. Corrélation globale
+
+Le test de corrélation de Pearson fait apparaitre une corrélation positive et
+
+significative entre les rapports de la force du pluriel dans le test
+
+d’intuition et le rapport de la force des erreurs en /z/ dans les
+
+productions enfantines (r = .607, p &lt; .0001). Par conséquent, plus un mot
+
+est considéré par les adultes comme plus souvent utilisé au pluriel dans la
+
+parole environnante, plus l’enfant fait des erreurs impliquant la forme
+
+plurielle du mot (avec un /z/ en son initiale).
+
+6.2. Corrélations par tranches d’âge
+
+L’analyse par tranche d’âge permet d’observer si une évolution apparait au
+
+fil du développement. Le tableau 2 synthétise les résultats de la
+
+corrélation de Pearson par tranche d’âge.
+
+Tableau 2 - Résultats de la corrélation de Pearson par tranche d’âge
+
+La corrélation est significative dans les tranches d’âge 1 et 3, tendancielle
+
+dans la tranche d’âge 2 et non significative dans la dernière.
+
+7. Conclusion et discussion
+
+Les résultats de cette recherche suggèrent que l’orientation singulier/pluriel de
+
+certains noms dans la parole influence les erreurs par remplacement faites par
+
+les enfants en contexte de liaison. Les données par tranches d’âge font
+
+apparaitre que ces effets ne s’observent plus chez les enfants de 5-6 ans.
+
+En termes de schémas de construction, ces résultats suggèrent que la forme
+
+insérée dans les schémas précoces, tels un + X et deux + X, est influencée par sa fréquence dans la parole
+
+environnante. Plus précisément, si un Mot2 est plus souvent employé au pluriel,
+
+la forme lexicale en /z/ initial de celui-ci sera plus fréquemment insérée après
+
+le déterminant un, que la forme en /n/ initial (plus
+
+typique du singulier) après le déterminant deux. Plus
+
+tard, lorsque les schémas se spécifient autour du déterminant, la manifestation
+
+des effets de fréquence n’est plus visible en production. En effet, les schémas
+
+un + nX et deux + zX, qui deviennent les plus productifs,
+
+portent en eux la marque « morphologique » de la consonne de liaison attendue.
+
+Ainsi, ils assimilent les formes lexicales entrantes dans les slots sous la forme déterminée par le schéma. Ce processus rend compte
+
+d’une part, de la disparition des erreurs par remplacement après 5 ans (Dugua,
+
+2005) et d’autre part, de la diminution de l’influence de la fréquence en
+
+production.
+
+Les résultats présentés dans cette recherche apportent des indices probants sur
+
+le fonctionnement et l’évolution parallèles du lexique et de la syntaxe des
+
+jeunes enfants. En effet, ils vont dans le sens de l’hypothèse que nous
+
+soutenons et selon laquelle lexique et syntaxe se situent sur un continuum ; le
+
+lexique étant caractérisé par des procédés concrets, directement influencés par
+
+l’input et la syntaxe par un traitement de plus en plus abstrait des éléments
+
+hétérogènes du lexique. L’image du continuum se traduit alors par l’émergence
+
+des schémas abstraits caractéristiques de la syntaxe à partir des schémas
+
+concrets ou des items stockés dans le lexique. Imbriqués l’un à l’autre, ces
+
+deux niveaux linguistiques suivent une même trajectoire développementale. La
+
+fréquence qui influence clairement l’acquisition du lexique se retrouve, de
+
+fait, également dans le fonctionnement précoce de la syntaxe. L’ensemble de
+
+cette recherche nous encourage à ne pas cloisonner les niveaux linguistiques
+
+dans nos analyses. Comme nous l’avons montré, un phénomène considéré
+
+majoritairement comme phonologique peut apporter un éclairage novateur sur les
+
+niveaux lexicaux et syntaxiques.
+
+Références
+
+Boë, Louis-Jean &amp; Tubach, Jean-Pierre (1992). De A à
+
+Zut: dictionnaire phonétique du français parlé. Grenoble : Ellug.
+
+Bybee, Joan (2003 [2001]). Phonology and language
+
+use. Cambridge : Cambridge University Press.
+
+Cameron-Faulkner, Thea, Lieven, Elena &amp; Tomasello, Michael (2003). A
+
+construction based analysis of child directed speech, Cognitive Science, 27: 843-873.
+
+Chevrot, Jean-Pierre &amp; Fayol, Michel (2000). L'acquisition de la
+
+liaison: enjeux théoriques, premiers résultats, perspectives, Lidil, 22: 11-30.
+
+Chevrot, Jean-Pierre, Dugua, Céline &amp; Fayol, Michel (2005). Liaison et
+
+formation des mots en français: un scénario développemental, Langages, 158: 38-52.
+
+Diessel, Holger (2004). The acquisition of complex
+
+sentences. Cambridge : Cambridge University Press.
+
+Dugua, Céline (2005). De la liaison à la formation du lexique chez les
+
+jeunes enfants francophones, Le Langage et l'Homme,
+
+40: 163-182.
+
+Dugua, Céline (2006). Liaison, segmentation lexicale et schémas
+
+syntaxiques entre 2 et 6 ans. Un modèle développemental basé sur l'usage.
+
+Thèse de doctorat, Université Stendhal Grenoble3, Grenoble.
+
+Goldberg, Adele E. (1995). Constructions: A construction
+
+grammar approach to argument structure. Chicago and London: The
+
+University of Chicago Press.
+
+Langacker, Ronald W. (1987). Foundations of cognitive
+
+grammar. Vol.I. Stanford : Stanford University Press.
+
+Lieven, Elena, Behrens, Heike &amp; Tomasello, Michael (2003). Early
+
+syntactic creativity: a usage-based approach, Journal of
+
+Child Language, 30: 333-370.
+
+Morin, Yves-Charles (2003 [1998]). Remarks on prenominal liaison consonant
+
+in French, in Living on the Edge - 28 Papers in Honour of
+
+Jonathan Kaye, Ploch, Stephan (Eds). Berlin : Mouton de Gruyter,
+
+385-400.
+
+Nardy, Aurélie (2003). Production et jugement d'acceptabilité entre 2 et 6
+
+ans : Aspects psycholinguistiques et sociolinguistiques de l'acquisition des
+
+liaisons. Mémoire de DEA, Grenoble : Université Stendhal.
+
+Tomasello, Michael (2003). Constructing a language: a
+
+usage-based theory of language acquisition. Cambridge
+
+[Massachussetts] : Harvard University Press.
+
+Wauquier-Gravelines, Sophie (2002). Segmentation de la chaîne parlée et
+
+détermination des frontières gauches dans l'acquisition du lexique précoce,
+
+communication au GDR Phonologies. Grenoble :
+
+Université Grenoble.
+
+Wauquier-Gravelines, Sophie (2003). Du réalisme des formalisations
+
+phonologiques contemporaines: que nous apprennent les données
+
+d'acquisition?, in Phonologie: champs et
+
+perspectives, Angoujard, Jean-Pierre &amp; Wauquier-Gravelines, Sophie
+
+(Eds). Paris : Presses de l'Ecole Normale Supérieure de Fontenay-St Cloud,
+
+9-34.
+
+Wauquier-Gravelines, Sophie &amp; Braud, Virginie (2005).
+
+Proto-déterminant et acquisition de la liaison obligatoire en français, Langages, 158: 53-65.
+
+[120] Ce résultat a été obtenu à partir du tableau présenté par Boë
+
+et Tubach (1992 : 169).
+
+[121] Le format de cet article nous oblige à présenter ici seulement
+
+les grandes lignes du scénario développemental, sans l’ensemble des données qui
+
+a permis de le construire (pour plus de précisions, voir Chevrot, Dugua &amp;
+
+Fayol, 2005; Dugua, 2005).
+
+[122] Notamment, l’idée que des processus morphologiques abstraits
+
+interviennent précocement dans le développement.
+
+[123] Dans le cadre de cette recherche, nous utiliserons les
+
+résultats de 8 d’entre eux, ceux qui ont été testés dans des productions
+
+enfantines.
+
+[124] Pour le calcul du rapport donnant la force du pluriel dans les
+
+jugements adultes, nous avons globalisé les deux modalités « définie » et «
+
+indéfinie ».
+
+
+

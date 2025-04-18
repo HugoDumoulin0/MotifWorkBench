@@ -1,0 +1,298 @@
+
+1. Introduction
+Le présent travail s’intègre dans un Projet de Recherche qui est développé par
+le Centre de Linguistique de l’Université Nouvelle de Lisbonne. La problématique
+générale de ce projet s’intéresse aux relations entre « genres textuels et
+organisation de la connaissance » et se situe dans la perspective de la Théorie
+du Texte. Comme domaine de spécialisation dans les sciences du langage, nous
+envisageons la théorie du texte, dans laquelle nous nous situons, comme champ
+d’étude vers lequel convergent différentes perspectives sur les textes et les
+discours, et dans laquelle la notion de genre occupe une place centrale (cf.
+Adam, 1999 ; Bronckart, 1997 ; Maingueneau, 1998 ; Rastier, 2001).
+Étant donné que l’objectif de ce Projet est d’observer les imbrications possibles
+entre les différentes modalités d’organisation de la connaissance et les divers
+genres de textes [36], un instrument d’analyse
+pertinent pour la caractérisation des genres en question est essentiel. Ainsi,
+dans la première étape de la recherche, étape qui est en phase de conclusion,
+nous nous sommes centrés sur la problématique (théorico-méthodologique) de la
+distinction entre deux approches – d’une part, l’analyse textuelle et d’autre
+part, l’analyse de genres textuels. Dans notre travail, nous aborderons ce
+premier aspect de la recherche dans le but de montrer comment nous concevons ces
+deux approches.
+Dans un premier temps, nous présenterons succinctement notre instrument d’analyse
+et les catégories analytiques qui lui sont associées. Puis, nous exemplifierons
+la façon dont cet instrument est utilisé à travers l’analyse d’un des genres
+étudiés pour le projet : l’annonce publicitaire. Pour ce, nous nous proposons
+d’observer un des multiples aspects faisant partie de l’organisation interne des
+textes et des genres : l’articulation entre unités textuelles de nature
+sémiotique différente.
+2. Analyse textuelle et analyse des genres: un problème
+théorico-méthodologique
+Dans le cadre de notre recherche sur la relation entre genres et organisation de
+la connaissance, nous nous sommes fixé comme but la caractérisation de quelques
+genres textuels associés à diverses activités langagières : prises de notes,
+affiches politiques, annonces publicitaires et écriture fragmentaire. La
+première difficulté à laquelle nous avons été confrontés est d’ordre
+théorico-méthodologique : comment décrire les genres ? Avec quels instruments ?
+De fait, les modèles de description proposés par les théoriciens situés dans
+diverses perspectives convergentes, comme Adam, Bronckart et Rastier, sont
+explicitement présentés comme étant des instruments d’analyse de « texte » et
+non pas de « genre ». La question qui se pose est de savoir si ces instruments
+pourraient être utilisés pour la description des genres.
+Pour répondre à cette question, nous assumons comme première hypothèse de travail
+que « analyse de textes » et « analyse de genres » sont deux démarches d’ordre
+différent, qui s’imbriquent mutuellement.
+L’analyse textuelle est une activité qui a une incidence sur les textes
+empiriques, attestés, c’est-à-dire, sur des objets sémiotiques singuliers. Ainsi
+lorsqu’on réalise une analyse textuelle, l’objectif est, au départ, de rendre
+compte des spécificités de ces textes dans ce qu’ils ont d’individuel. En
+contrepartie, l’analyse de genres est une activité qui vise à identifier les
+traits spécifiques d’un genre déterminé. Dans ce sens, il s’agit d’une opération
+qui prétend montrer les caractéristiques qui permettent la reconnaissance de
+l’inscription générique des textes. Pour identifier ces traits ou
+caractéristiques, il faut effectuer une analyse textuelle sur un corpus de
+textes appartenant au même genre. Remarquons que dans ce cas l’analyse de textes
+n’est pas une fin en soi mais bien une étape de distinction des caractéristiques
+singulières et des caractéristiques récurrentes.
+En conséquence de quoi, nous avons voulu vérifier si les instruments développés
+pour une analyse textuelle peuvent se montrer pertinents pour une analyse de
+genres. Ceci nous a amenés à formuler l’hypothèse d’une possible identification
+de deux catégories analytiques, qui nous permettent de rendre compte des
+phénomènes associés à chaque approche : « paramètres génériques » et «
+mécanismes de réalisation textuelle ». Les « paramètres » fonctionnent, dans la
+production textuelle, comme normes pour la construction d’un texte inscrit dans
+le genre en question. Ces « paramètres » sont des données que le chercheur
+obtient de l’analyse de genre. Les « mécanismes » sont des actualisations des
+paramètres et ont trait à la gestion des ressources semio-linguistiques
+concrétisée dans chaque texte empirique. Ces « mécanismes » sont donc obtenus à
+partir de l’« analyse de textes ».
+Dans cette étape de notre travail, nous nous sommes centrés sur la construction
+d’un instrument d’analyse. Nous nous sommes donc basés sur le modèle de
+l’architecture textuelle telle que l’interactionisme socio-discursif (ISD) la
+conçoit (cf. Bronckart, 1997) – tout texte est constitué de trois niveaux
+organisationnels (infrastructure générale, mécanismes de textualisation et
+mécanismes de prise en charge énonciative), qui se superposent les uns aux
+autres et interagissent entre eux.
+Le positionnement épistémologique général de ce modèle et les grandes lignes qui
+le composent n’ont pas été remis en cause. Cependant, après un travail
+d’observation critique et d’application empirique, nous avons proposé
+l’introduction et, éventuellement, la reformulation de certains éléments. Pour
+ce, en plus de notre travail sur les textes, les contributions d’autres
+théoriciens ont été essentielles, notamment, Adam (1999 et 2005), Bernárdez
+(1995), Maingueneau (1998), Rastier (2001).
+A partir de ce qui a été revu dans le modèle de l’ISD, nous avons élaboré un
+instrument d’analyse sous forme de grille. Dans le Tableau 1 (voir ci-dessous),
+nous présentons une version condensée de cet instrument [37]. Comme nous pouvons l’observer, la grille reprend le modèle de
+l’ISD - tel qu’il est présenté dans Bronckart (1997) – et introduit, réorganise
+et reformule quelques éléments, signalés en gras dans la grille. Remarquons
+qu’un des aspects centraux (mais ce n’est pas le seul) de notre proposition a
+trait à la considération d’unités appartenant à d’autres systèmes sémiotiques,
+qui dépassent le linguistique (à titre d’exemple l’iconique). Ceci se justifie
+par le fait que nous travaillons sur des textes qui généralement sont
+plurisémiotiques. Pour cette raison, la relation entre différents systèmes est
+fondamentale pour appréhender l’organisation du texte.
+Du point de vue méthodologique, notre travail a avancé avec l’application de la
+grille aux textes ; ceci nous a permis d’effectuer un travail allant dans deux
+directions complémentaires : d’un côté, nous avons identifié des récurrences
+significatives ou des traits communs dans les exemplaires de textes du même
+genre ; d’un autre côté, nous avons observé les spécificités de réalisation que
+ces traits assument dans chaque exemplaire. Cette étape a permis de déterminer
+quels sont les « paramètres du genre », c’est-à-dire ce que prévoit le genre en
+question et comment il est actualisé dans les textes. Ceci est visible à travers
+ce que nous avons dénommé les « mécanismes de réalisation textuelle ».
+Ainsi, nous défendons l’idée que les « paramètres » permettent d’observer
+l’identité d’un genre et les « mécanismes » l’identité d’un texte empirique
+déterminé.
+Tableau 1 - Un instrument d’analyse
+3. Un exemple d’analyse générique et textuelle
+3.1. Aspects méthodologiques
+Pour exemplifier ce qui est en jeu dans notre proposition, nous prendrons un
+des genres appartenant à l’objet d’étude de notre projet : l’annonce
+publicitaire. Étant donné que notre objectif est l’analyse de genre, un
+corpus de textes appartenant à ce genre a été constitué. Chaque texte de ce
+corpus a été analysé en détail, en utilisant les différentes catégories
+observables dans la grille proposée. Dans cette première analyse ont surgi
+des mécanismes spécifiques à chaque texte. Ensuite, notre travail a résidé
+dans la détection des récurrences et des divergences observables dans les
+textes. Donc, dans cette phase, l’analyse textuelle est un procédé qui rend
+possible la différenciation entre phénomènes singuliers et phénomènes
+récurrents et, simultanément, permet de trouver les traits communs
+sous-jacents aux phénomènes dans les divers textes.
+Il serait impossible d’explorer ici toutes les dimensions semio-linguistiques
+comprises dans l’organisation textuelle et l’organisation générique. Aussi,
+nous avons sélectionné seulement un des phénomènes : l’articulation entre
+unités de différente nature sémiotique, c’est-à-dire, ce qui dans la grille
+est désigné comme « Articulation entre UTs quelconques ». Comme on peut
+l’observer dans la grille, les modes d’articulation entre unités textuelles
+constituent un des aspects qui relèvent de l’infrastructure générale du
+texte. Le choix de cet aspect pour notre exemplification repose sur deux
+raisons : d’un côté, ce choix entend mettre en avant la pertinence de
+considérer les unités textuelles de nature sémiotique non verbale pour
+l’analyse de textes et de genres qui, comme on l’a dit, est un des éléments
+que nous avons introduit dans le modèle du ISD ; d’un autre côté, ce
+phénomène est d’une grande importance dans l’analyse de ce genre en
+particulier.
+L’annonce publicitaire est un genre qui explore de diverses manières les
+relations possibles entre les systèmes sémiotiques différenciés. De fait, la
+présence d’unités verbales et non verbales dans les annonces est un trait
+caractéristique de ce genre – un paramètre, dans notre terminologie – comme
+cela a déjà été souligné par plusieurs chercheurs (cf. à titre d’exemple,
+Adam &amp; Bonhomme, 1997 : 55-70).
+Le bref commentaire que nous ferons ici cherche à démontrer de quelle manière
+un des paramètres relatifs à l’articulation entre unités verbales et non
+verbales est actualisé entre
+deux unités : d’un côté, une unité non verbale que nous appellerons «
+image principale », qui peut apparaître éventuellement dans les textes et
+qui se distingue par la taille et la localisation spatiale ; d’un autre
+côté, une unité verbale qui intervient aussi de manière variable, que nous
+dénommerons « appel » ou « titre », constituée d’une (ou plusieurs)
+phrase(s) mise(s) en évidence (par la typographie et/ou la
+segmentation).
+3.2. Un paramètre, deux mécanismes
+De l’analyse de notre corpus, qui réunit une ample variété d’annonces
+publicitaires portugaises, surgit l’unité « image principale » (photo ou
+dessin de plus grande taille et/ou mise en évidence), qui, quand elle
+existe, peut présenter l’objet du discours (produit, endroit, service…
+divulgué), de manière à ce que ce ne soit pas un simple accessoire ou
+élément illustratif. Un des rôles (ou une des fonctions) que cette unité non
+verbale peut avoir est la « convocation » à la lecture de l’annonce et,
+simultanément, l’introduction (ou instauration) du référent. Pour ce, dans
+l’unité verbale
+que nous dénommons « appel » (ou titre), il est possible d’employer des
+formes référentielles avec valeur anaphorique (pronoms et syntagmes nominaux
+introduits par un démonstratif). De cette manière, l’unité verbale ne peut
+être interprétée que par la présence de l’unité non verbale. Ceci démontre
+l’existence d’une articulation fondamentale dans l’organisation des
+annonces: une relation de dépendance dans laquelle se construit une chaîne
+référentielle. Dans cette chaîne, l’unité non verbale a la fonction
+d’introduction du référent et l’unité verbale constitue un lien de reprise
+référentielle, qui pourra, éventuellement, continuer dans la section
+rédactionnelle dénommée « corps de texte ».
+Cette caractérisation constitue un paramètre du genre de l’annonce
+publicitaire pour ce qui est de l’articulation des différentes unités
+textuelles (verbales ou non verbales). Ceci signifie que les textes sont
+construits en prenant en considération cette possibilité d’articulation
+entre unités. Ce paramètre est actualisé de manière différente dans chaque
+texte. Pour illustrer notre propos, nous allons aborder les mécanismes de
+réalisation textuelle qui actualisent ce paramètre à travers deux
+exemples.
+Figure 1 - Annonce de la voiture Alfa 147 Figure 2 - Annonce de
+l’Océanorium de Lisbonne
+Dans l’exemple 1 (annonce de la voiture Alfa 147), nous voyons l’image de la
+voiture au centre de la page. L’ « appel » (le titre) est distribué en deux
+sections: a) sur fond rouge, présence des possessifs « seu » /votre/ et «
+sua »/votre/ ancrés dans l’image ; b) phrase avec typographie plus grande,
+au centre de la page, sur l’image, emploi du pronom personnel « ele » /il/,
+référent à l’image.
+Dans l’exemple 2 (annonce de l’Océanorium de Lisbonne), l’image principale
+présente le dessin d’une morue. Dans l’ « appel », il y a une anaphore comme
+sujet du verbe « passa » /passe/ et le pronom « o » /le/ qui fait référence
+au poisson dessiné. C’est seulement dans le corps du texte (section
+rédactionnelle) que le terme « bacalhau »/morue/ est explicité.
+Comme nous le voyons, si les deux textes actualisent le même paramètre,
+chacun d’eux emploie des unités différentes (photo vs
+dessin, possessifs et pronom personnel vs anaphore et
+pronom personnel) et des organisations spécifiques (par exemple, la présence
+d’un ou de deux appels, la structure et sa localisation dans la page).
+Tableau 2 - Un exemple
+Nous remarquons à travers cette exemplification que les mécanismes sont
+spécifiques aux textes – voir la différence entre mécanisme de l’exemple 1
+et celui de l’exemple 2 – mais ils actualisent une même caractéristique
+associée au genre dans lequel les textes s’inscrivent. Si nous incluions
+plus d’exemplaires de notre corpus, nous observerions que dans chaque texte
+empirique qui actualise ces paramètres les mécanismes réalisés sont
+différents. Quand nous effectuons l’analyse textuelle de ces exemplaires,
+nous trouvons ce qu’ils ont de plus spécifique et singulier ; quand nous
+réalisons une analyse de genre qui rapproche les deux textes, nous cherchons
+à caractériser ce qu’il y a de commun dans les mécanismes des différents
+textes. Dans ces exemples, les deux textes actualisent le trait commun de
+l’occurrence d’un certain mode d’articulation entre les deux unités
+textuelles.
+3. Conclusion
+La proposition que nous vous avons ici sommairement présentée entend montrer que
+analyse de textes et analyse de genres constituent deux classes d’approches
+différentes des productions langagières. L’analyse textuelle peut être une fin
+en soi ou peut être, comme dans notre recherche, un procédé pour entreprendre
+une analyse de genre.
+L’analyse textuelle cherche à décrire les spécificités d’un texte considéré dans
+son individualité. Dans le processus de production textuelle, tout texte
+actualise des paramètres du genre dans lequel il s’inscrit par des mécanismes de
+réalisation textuelle. Cependant, l’actualisation des paramètres n’est pas une
+simple reproduction, et ce, pour deux raisons : d’un côté, parce que la relation
+entre paramètres génériques et mécanismes de réalisation textuelle n’est pas
+biunivoque (par exemple, un même paramètre peut être actualisé par différents
+mécanismes, comme nous l’avons vu dans les exemples) ; d’un autre côté, dans
+chaque acte de production textuelle, la configuration paramétrique associée au
+genre dont le texte relève est adaptée aux propriétés particulières de la
+situation dans laquelle l’action langagière s’insère. Ainsi, un texte est
+toujours un objet unique, singulier, non répétable. Lorsque nous entreprenons
+une analyse textuelle, nous décrivons l’objet dans cette singularité.
+L’analyse de genres, quant à elle, cherche à identifier ce qui, pour les textes
+singuliers fonctionne comme modèle d’orientation ou guide, dans le processus de
+production et aussi, mais de manière différente, dans le processus de
+compréhension textuelle. Il s’agit d’un relevé d’aspects ou traits récurrents
+dans des textes associés à une même catégorie générique. L’objectif d’une
+analyse de genres est de décrire et d’objectiver ce qui constitue, comme
+représentation sociocognitive, le modèle du genre en question pour les
+producteurs et les récepteurs.
+Si nous avançons que les deux approches peuvent être réalisées en appliquant un
+même instrument d’analyse (représenté schématiquement par une grille dans notre
+proposition), il faut distinguer deux catégories associées à chaque espèce
+d’approche. Ainsi, paramètres et mécanismes sont les résultats des données que
+l’on obtient dans chaque plan d’analyse (générique et textuel).
+La distinction théorico-méthodologique entre « analyse textuelle » et « analyse
+de genres » est pertinente non seulement pour une Théorie Linguistique des
+Textes, mais aussi pour les domaines de la linguistique appliquée, comme
+l’enseignement-apprentissage des langues et la traduction. En effet, assumer la
+différenciation des phénomènes qui sont relatifs au genre de ceux qui sont
+propres au texte lui-même, en tant qu’objet individuel, constitue un espace qui
+nécessairement doit être pris en considération dans l’approche des unités de
+communication linguistique que sont les textes. La raison principale de cette
+affirmation se trouve dans la manière dont nous concevons la relation entre le
+général et le particulier :
+chacun de ces plans s’implique mutuellement, une fois que les textes sont des
+exemplaires de genre et les genres sont des formes textuelles relativement
+stabilisées dans et par l’utilisation du langage. Un travail didactique ou
+empirique (comme la traduction) avec des textes a tout à gagner si on admet la
+singularité de l’objet et, parallèlement, son affiliation générique. Cependant,
+il faut souligner que les instruments élaborés dans le cadre de recherches
+théoriques, comme la nôtre, ne peuvent être transférés sans aucune autre
+réflexion vers les autres domaines ; de fait, et spécialement dans le cas de la
+didactique des langues et de la formation des traducteurs, il faut encore
+développer des instruments spécifiques qui rendent compte des dimensions
+pertinentes pour ces domaines. Dans tous les cas, notre proposition donne
+quelques pistes dans cette voie.
+Références bibliographiques
+Adam, Jean-Michel (1999). Linguistique textuelle. Des
+genres de discours aux textes. Paris : Nathan.
+Adam, Jean-Michel (2005). La linguistique textuelle.
+Introduction à l’analyse textuelle des discours. Paris: Armand
+Colin.
+Adam, Jean-Michel, Bonhomme, Marc (1997). L’argumentation publicitaire. Rhétorique de l’éloge et de la
+persuasion. Paris : Nathan.
+Bernárdez, Enrique (1995). Teoría y epistemología del
+texto. Madrid: Cátedra lingüística.
+Bronckart, Jean-Paul (1997). Activité langagière, textes
+et discours. Pour un interactionisme socio-discursif. Lausanne:
+Delachaux et Niestlé.
+Bronckart, Jean-Paul (2004). Les genres de textes et leur contribution au
+développement psychologique, Langages, 153 :
+98-108.
+Coutinho, Maria Antónia, Alves, Marisa, Gonçalves, Matilde, Miranda,
+Florencia &amp; Pinto, Rosalice (à paraître), Parâmetros
+de géneros e mecanismos de realização textual – aspectos teóricos.
+Maingueneau, Dominique (1998). Analyser les textes de
+communication. Paris : Dunod.
+Rastier, François (2001) Arts et sciences du texte.
+Paris : PUF.
+Publicités
+Texte Alfa 147: Magazine National Geographic (Portugal), Juillet
+2004.
+Texte Oceanário de Lisboa: Magazine Única, Expresso (Portugal),
+Février 2004.
+[36] Le choix du terme « genres de textes » au lieu de « genres du
+discours » fait référence aux discussions sur le sujet faites par des auteurs
+comme Rastier et Bronckart. Cf. à titre d’exemple Bronckart (2004 : 102).
+[37] Dans l’article Coutinho et al. (à
+paraître), nous présentons une version détaillée de notre instrument d’analyse.
+

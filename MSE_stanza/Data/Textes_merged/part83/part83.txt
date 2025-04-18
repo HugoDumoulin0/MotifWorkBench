@@ -1,0 +1,802 @@
+
+
+1. Introduction
+
+On s’attendrait, a priori, à ce que le discours
+
+scientifique soit neutre et sec, sans effets de style ni images métaphoriques.
+
+En réalité, il n’en est rien car, comme le constate à juste titre Rastier (1988
+
+: 55), « l’histoire des sciences pullule de métaphores ». Et ce constat se
+
+vérifie clairement en médecine où la métaphore constitue un puissant outil de
+
+catégorisation, de dénomination et de vulgarisation. Ce dernier aspect (la
+
+vulgarisation) est primordial dans certains domaines médicaux où la métaphore
+
+permet de simplifier des notions complexes et dispose d’un fort potentiel imagé
+
+dans la représentation des concepts. En arabe, le discours de la transplantation
+
+présente un excellent cas d’illustration de cette emprise métaphorique où les
+
+termes imagés sont légion. On y retrouve des métaphores empruntées au domaine
+
+des finances, de la couture, de la propreté, etc.
+
+Mais le principal domaine qui structure les images métaphoriques du discours de
+
+la greffe demeure, sans aucun doute, celui de l’agriculture. La pensée
+
+scientifique est à cet égard « bricoleuse » comme le note Schlanger (1971 : 20)
+
+; elle va « emprunter ses éléments de construction là où elle les trouve, autour
+
+d’elle ». L’agriculture semble avoir, à cet égard, une place de choix dans
+
+l’univers de la vie courante. C’est cette métaphore agricole terminologique qui
+
+nous intéresse dans cet article à travers des exemples puisés dans un corpus de
+
+textes arabes portant sur la transplantation . Sur les 437 termes métaphoriques
+
+retenus suite à un dépouillement manuel , 202 se rapportent, en effet, au
+
+domaine de l’agriculture, soit près de 47% des termes métaphoriques du discours
+
+de la greffe. Nous allons nous pencher, plus précisément, sur les principaux
+
+procédés de métaphorisation, en tant qu’opération de conceptualisation ;
+
+l’objectif étant de mieux comprendre comment les Arabes conceptualisent et
+
+sémiotisent des notions médicales véhiculées par un discours de vulgarisation
+
+tel que celui de la greffe d’organes.
+
+Peu de publications arabes ont traité de la métaphore terminologique, encore
+
+moins dans le domaine de la médecine. Dans une approche interlinguistique, les
+
+études concernant la langue arabe ont notamment portées sur les difficultés de
+
+traduction et le degré de traductibilité des métaphores entre deux langues
+
+culturellement éloignées (surtout l’arabe et l’anglais) . Tout en tenant compte
+
+de l’apport de telles études, nous nous proposons dans cet article de dresser
+
+une typologie des procédés de métaphorisation dans le discours arabe de la
+
+greffe dans une approche à la fois inter et intra linguistique car au-delà de la
+
+langue, il s’agit d’examiner la structuration d’une pensée. Pour ce faire, nous
+
+nous inscrivons dans le cadre des études cognitives qui mettent l’accent sur
+
+l’importance de la métaphore dans la structuration conceptuelle.
+
+Les sciences cognitives ont établi un certain nombre de concepts pour expliquer
+
+les mécanismes de raisonnement, parmi lesquels la « métaphore conceptuelle »
+
+étudiée par Normand (1976), Lakoff &amp; Johnson (1985) et appelée plus tard par
+
+Sinding (1993) « métaphore cognitive ». Pour les sémanticiens cognitivistes, les
+
+structures métaphoriques sont le reflet langagier d’un processus qui se produit
+
+non pas au niveau des mots mais de la pensée. C’est pourquoi, dans le processus
+
+de métaphorisation, l’opération de conceptualisation occupe une place de choix.
+
+Mais avant d’aborder les différents procédés de métaphorisation, qu’en est-il du
+
+rôle de la métaphore agricole dans le domaine médical et de la prégnance de
+
+l’agriculture (domaine-source où les concepts sont familiers) en transplantation
+
+(domaine-cible où les concepts sont inconnus) ?
+
+2. La métaphore agricole en médecine et en
+
+transplantation
+
+2.1. La métaphore agricole en médecine
+
+La métaphore agricole est très prisée dans le domaine médical. De nombreux
+
+termes métaphoriques ou à composante métaphorique proviennent des domaines
+
+de la botanique, de la dendrologie (étude des arbres), de l’agriculture,
+
+etc. : culture bactériologique, implantation dentaire,
+
+tronc cérébral, branche collatérale, rameaux nerveux, flore
+
+intestinale...
+
+Cette métaphore agricole est particulièrement présente dans le domaine de
+
+l’anatomie où elle remplit un rôle de description. En mobilisant notre
+
+faculté visuelle, la métaphore facilite la représentation mentale d’une
+
+réalité observée.
+
+Cette expérience sensorielle s’avère également fondamentale pour la
+
+compréhension de réalités aux contours moins bien délimités. C’est le cas de
+
+la transplantation où il ne s’agit plus de décrire l’aspect ou la forme de
+
+tel ou tel organe mais de rendre compte d’un acte chirurgical divisé en deux
+
+phases principales, le prélèvement et la greffe, ainsi que de ses différents
+
+protagonistes (donneur, receveur, médecin greffeur etc.). L’outil
+
+métaphorique canalise alors plus que nos sens : notre faculté cognitive.
+
+2.2. La métaphore agricole dans le domaine de la
+
+transplantation
+
+Dans le domaine de la transplantation, de nombreux termes sont métaphoriques.
+
+Tout un pan est ainsi directement repris du vocabulaire agricole (greffe, greffon, transplantation, implantation…).
+
+L’émergence de ces métaphores a répondu à deux besoins essentiels : d’une
+
+part, il fallait nommer des réalités jusqu’alors inconnues et d’autre part
+
+il fallait que ces dénominations établissent des ponts entre les
+
+spécialistes et le public profane car la transplantation est un domaine à
+
+fort ancrage social. Mis à part les cas d’autogreffes où le receveur est le
+
+donneur lui-même, la transplantation demeure une pratique qui tire son
+
+essence d’un attachement profond aux valeurs de solidarité, d’altruisme et
+
+d’entraide. Sans donneur, il n’y a point de receveur et donc pas de
+
+transplantation .
+
+C’est dans cette double optique à la fois de dénomination et de vulgarisation
+
+que la terminologie arabe de la transplantation a été créée. La plupart des
+
+publications médicales arabes relèvent, en fait, des ouvrages de
+
+vulgarisation . Ainsi, la terminologie arabe de la greffe est
+
+essentiellement destinée au grand public dans le cadre des campagnes de
+
+sensibilisation au don d’organes. Cette terminologie recourt à la métaphore
+
+pour éveiller l’intérêt du public profane par la vivacité de l’image
+
+associée tout en mettant à sa portée une information complexe qui serait
+
+autrement rébarbative sinon inaccessible.
+
+3. Les procédés de métaphorisation
+
+Si la terminologie de la transplantation s’articule en français autour des verbes
+
+« greffer » et « transplanter », en arabe, il s’agit plutôt de « planter », de «
+
+semer », de « cueillir » et très rarement de « greffer » ou de « transplanter ».
+
+Pourtant, la créativité terminologique en arabe demeure essentiellement, à
+
+l’heure actuelle, une adaptation des termes arabes lors de leur traduction du
+
+français ou de l’anglais. Mais ce transfert linguistique ne se cantonne pas à
+
+des traductions littérales des unités terminologiques, notamment celles formées
+
+par métaphore, mais dépasse le calque pour s’imprégner de la culture arabe et
+
+s’adapter au système référentiel de la langue d’accueil. Les exemples
+
+métaphoriques puisés dans notre corpus, Transplant.1, étayent cette idée et font
+
+ressortir quatre procédés de métaphorisation dont deux sont interlinguistiques
+
+(nous proposons de les désigner par « métaphorisation par calque » et «
+
+métaphorisation par modulation ») et deux intralinguistiques (nous les
+
+appellerons « métaphorisation par extension » et « métaphorisation par
+
+énantiosémie »). Dans ce qui suit, nous tentons d’expliciter ces quatre procédés
+
+tout en soulignant l’importance de chacun d’eux dans la création terminologique
+
+métaphorique en arabe médical.
+
+3.1. La métaphorisation par calque
+
+Longtemps sous influence britannique et française, le monde arabe a vu sa
+
+langue scientifique fortement imprégnée de l’anglais (notamment dans les
+
+pays du Golfe et en Egypte) et du français (notamment dans les pays du
+
+Maghreb et au Liban) à travers des structures calquées et des emprunts.
+
+La métaphorisation par calque consiste à « importer » une image métaphorique
+
+qui frappe l’esprit du locuteur arabophone parce qu’elle correspond à une
+
+image culturelle parlante. Dans ce type de métaphorisation, le terme de «
+
+calque » peut avoir deux implications distinctes. La première renvoie au
+
+transfert de la faculté métaphorique du français ou de l’anglais vers
+
+l’arabe, en utilisant des images qui sont censées effectuer des fonctions
+
+analogues au niveau cognitif dans les deux langues. Cette première
+
+implication correspond à la démarche consistant à créer des termes nouveaux
+
+répondant à des besoins pratiques, des métaphores fonctionnelles en quelque
+
+sorte.
+
+La seconde implication concerne l’effet de cette image dans la langue-culture
+
+cible (ici l’arabe) et les capacités cognitives de méta-représentation dans
+
+les deux langues considérées (le français et l’arabe ou bien l’anglais et
+
+l’arabe). Cette deuxième implication correspond à la démarche consistant à
+
+reconstituer le cheminement mental des utilisateurs de la langue afin de
+
+retrouver les modalités et le processus selon lesquels les termes en usage
+
+ont été forgés et diffusés.
+
+Ces deux démarches sont complémentaires et permettent d’appréhender la
+
+complexité de la terminologie de la transplantation et du processus de
+
+métaphorisation.
+
+De façon plus concrète, la métaphore est transposée
+
+sémantiquement du français ou de l’anglais par le biais du calque. Il y a
+
+transposition quand le sémème tout entier passe
+
+de la langue source à la langue cible. Ainsi, le terme « greffe » est
+
+parfois rendu, par le biais du calque, par l’équivalent arabe /tatcīm/ .
+
+Dans le processus de métaphorisation par calque, on passe d’un domaine cible
+
+dans une langue étrangère (la médecine en français) à un domaine cible dans
+
+une langue d’accueil (la médecine en arabe) en passant par les domaines
+
+sources des deux langues concernées (l’agriculture en français et en arabe).
+
+La circularité du processus se fait de la médecine en français vers
+
+l’agriculture en français (intralangue A) . Ensuite de l’agriculture en
+
+français vers l’agriculture en arabe (inter-langue). Enfin de l’agriculture
+
+en arabe vers la médecine en arabe (intralangue B).
+
+Le passage en intralangue d’un domaine à un autre se fait par la mise en
+
+valeur d’un ou plusieurs sèmes particuliers et « la mise entre parenthèse »
+
+(Le Guern, 1973 : 15) d’autres sèmes constitutifs du lexème employé. C’est
+
+ce que Assal (1994 : 236) appelle le « mécanisme d’abstraction sémique »
+
+dans lequel se réalise un tri sémantique qui occulte les sèmes qui ne
+
+servent pas l’image métaphorique et met en valeur ceux qui, par leur
+
+adéquation, établissent l’analogie et légitiment la métaphore.
+
+Pour illustrer ce phénomène de mise en valeur sémique, prenons tout d’abord
+
+le terme « greffe » dans les deux domaines source et cible. En médecine, la
+
+greffe est : « L’opération qui consiste à insérer  une
+
+portion de l’organisme d’un individu (donneur) sur une autre partie du corps
+
+(autogreffe) ou sur un autre individu (receveur) (allogreffe) » (Petit Robert).
+
+Dans son domaine d’origine, l’agriculture, la greffe signifie : « Opération
+
+par laquelle on implante un greffon (greffon : Partie
+
+d’un végétal dont on veut obtenir de nouveaux spécimens et qu’on greffe sur
+
+un autre végétal (porte-greffe)) » (Petit
+
+Robert).
+
+Pour suivre le chemin du calque métaphorique, il faudrait donc retrouver les
+
+sèmes mis en valeur afin de les réinvestir lors du transfert linguistique à
+
+la langue cible. Dans le cas de la « greffe », il s’agit notamment de ce
+
+mouvement « d’insérer, d’implanter » qu’on retrouve dans la définition arabe
+
+de /tatcīm/ dans le domaine agricole sous la forme du verbe « attacher » : «
+
+Greffer une branche : c’est lui attacher une branche, un bourgeon ou tout
+
+autre partie d’une espèce différente afin qu’elle devienne de cette même
+
+espèce » (Dictionnaire Ar-Ra’id).
+
+C’est ce sème de fixation d’un élément étranger à un autre, cette relation
+
+binaire de deux éléments qui s’incorporent, manifeste dans les définitions
+
+du terme « greffe » en arabe comme en français qui établit l’analogie
+
+métaphorique et permet la transposition par le calque. Ainsi en arabe
+
+médical, on obtient /tatcīm/ « la greffe » mais également son dérivé /tucm/
+
+« le greffon ».
+
+Toutefois, ce terme et ses dérivés sont rarement utilisés dans le domaine
+
+médical arabe de la transplantation et s’appliquent de façon quasi-exclusive
+
+à la greffe de la peau. Les arabophones leur préfèrent de loin un autre
+
+terme et ses dérivés; il s’agit de /zarc/ « action de planter » obtenu par
+
+modulation.
+
+3.2. La métaphorisation par modulation
+
+Les études comparatives entre systèmes linguistiques démontrent que les
+
+termes considérés comme des équivalents ne renvoient pas systématiquement à
+
+des concepts identiques. Comme le rappelle Oliveira (2005 : 284-285) «
+
+l’équivalence terminologique ne présuppose pas forcément l’équivalence
+
+notionnelle ». D’un point de vue traductologique, la modulation est le
+
+procédé privilégié pour l’étude des différences notionnelles entre langues
+
+et des variations conceptuelles entre cultures mises en contact par le biais
+
+de la traduction.
+
+La « modulation » est le terme proposé par Vinay et Darbelnet (1958 : 51)
+
+pour désigner un certain nombre de variations qui deviennent nécessaires
+
+quand le passage de la langue source à la langue cible ne peut se faire
+
+directement. « Moduler » signifie adapter la traduction à des cadres
+
+thématiques et culturels particuliers. En général, elle consiste à
+
+introduire dans la langue cible une variation dans le point de vue afin que
+
+le résultat de la traduction soit conforme aux usages des récepteurs finaux
+
+du message. Vinay et Darbelnet (1958 : 89) précisent que la modulation sert
+
+à agir sur les « catégories de la pensée » et distinguent onze types de
+
+modulation . Parmi ces types nous nous intéressons à la modulation
+
+substitutive dans laquelle une partie est traduite par une autre.
+
+Pour expliciter notre propos, nous prenons l’exemple de /zarc/, le nom verbal
+
+du verbe /zaraca/ qui signifie étymologiquement « semer » mais qui est
+
+utilisé en arabe moderne au sens de « planter ». À l’instar de /tatcīm/ «
+
+greffe », /zarc/ « action de planter », est un acte agricole. Mais chez les
+
+Arabes, /zarc/ est plus prototypique que /tatcīm/ car ce terme est
+
+primordial dans la catégorie des actes agricoles.
+
+De plus, les deux termes sont polysémiques dans le discours médical ; /zarc/
+
+signifie à la fois « greffe » et « culture » et /tatcīm/ signifie « greffe »
+
+et « vaccination ». Toutefois, de par son usage, /tatcīm/ est perçu
+
+davantage comme l’équivalent de « vaccination » (le sens le plus courant)
+
+alors que /zarc/ est perçu avant tout comme l’équivalent de « greffe ».
+
+Ainsi nous retrouvons une prédominance du terme /zarc/ dans la grande
+
+majorité des corpus arabes excepté dans le corpus syrien où il est
+
+concurrencé par un autre terme synonyme /ghars/ qui signifie également «
+
+planter ».
+
+Les spécialistes arabes et français de la transplantation interprètent donc
+
+différemment un même concept en raison de leur bagage culturel. Le calque
+
+devient alors moins fréquent dans des sociétés de cultures éloignées en
+
+raison d’une absence de parallélismes de pensée et de références
+
+métaphoriques semblables et c’est la modulation qui prend la relève.
+
+Une fois transférée par modulation en arabe, la métaphore peut étendre les
+
+catégories existantes en ajoutant de nouveaux termes qui n’étaient pas
+
+métaphoriques dans la langue source. Commence alors un travail
+
+intralinguistique au sein même de l’arabe pour élargir, par proximité
+
+thématique, le champ sémantique d’un terme productif et bien implanté. Ce
+
+type de métaphorisation semble se faire par « extension » comme nous allons
+
+tenter de le montrer ci-après.
+
+3.3. La métaphorisation par extension
+
+La métaphorisation par extension consiste à étendre une image issue d’un
+
+champ sémantique exploité partiellement dans d’autres langues (en
+
+l’occurrence le français ou l’anglais) vers d’autres termes de ce même
+
+champ. Cette opération permet de greffer sur l’information référentielle
+
+initiale des images annexes facilement saisissables. Ainsi, par exemple, les
+
+spécialistes arabes de la greffe vont étendre l’image de /zarc/ « action de
+
+planter » à d’autres termes du domaine comme le montre le tableau
+
+suivant:
+
+La métaphore terminologique est le résultat d’une construction chargée de
+
+valeurs culturelles. En d’autres termes, lorsque des significations et des
+
+associations ont cours dans un cadre culturel, elles risquent de se refléter
+
+dans des images métaphoriques propres à une langue donnée. Autant dire que
+
+la métaphore s’appuie sur des données culturelles familières pour pouvoir
+
+investir de nouveaux champs de connaissances. Ainsi, lorsque le spécialiste
+
+est conscient de l’implantation d’une image métaphorique dans une culture
+
+donnée, il est possible de jouer sur celle-ci pour élargir la portée d’un
+
+concept initial. Dans le domaine de la transplantation arabe, par exemple,
+
+les termes métaphoriques exprimant le prélèvement vont également puiser dans
+
+le domaine de l’agriculture. Ils font appel à l’image évocatrice de la «
+
+cueillette » qui complète le tableau agricole. On « cueille » un organe pour
+
+le « planter » ailleurs. N’est-ce pas le propre du mouvement double de la
+
+transplantation ?
+
+Mais il arrive que la métaphorisation intralinguistique ait recours à des
+
+phénomènes connus traditionnellement en arabe classique, tels que
+
+l’énantiosémie. Celle-ci se retrouve ainsi parmi les principaux procédés de
+
+métaphorisation dans le discours arabe de la greffe.
+
+3.4. La métaphorisation par énantiosémie
+
+La métaphorisation par énantiosémie consiste à utiliser un terme métaphorique
+
+dans deux sens directement opposés l’un à l’autre. L’énantiosémie est un
+
+phénomène linguistique qu’on observe dans toutes les langues sémitiques et
+
+en vertu duquel un mot possède deux sens contraires. Ces mots ayant deux
+
+sens antithétiques sont désignés par les philologues arabes par le terme
+
+/addad/ (s. /did/). L’opinion qui prévaut en linguistique générale est que
+
+l’énantiosémie ne peut être expliquée en fonction d’un principe unique.
+
+Selon l’Encyclopédie de l’Islam (1991 : 191), « les mots ont depuis l’origine une signification établie
+
+; dans le cas de chaque /did/, il faut donc considérer l’un des deux
+
+sens comme primitif et l’autre comme adventice ».
+
+Dans le domaine de la transplantation, une forme en particulier peut avoir
+
+une signification opposée à celle qu’elle a usuellement : il s’agit de
+
+/zāric/. Ce mot possède comme sens primitif celui impliqué par son schème
+
+/fācil/ soit l’agent de l’action, en l’occurrence « celui qui plante quelque
+
+chose, le planteur ». Mais on constate dans les textes de notre corpus un
+
+sens concurrent et antonyme de ce même mot qui est « celui qui subit
+
+l’action de planter » sans avoir toutefois le schème du nom de patient
+
+/mafcūl/. Ce sens adventice (« receveur » pour /zāric/) pourrait s’expliquer
+
+par une focalisation et un changement de point de vue : dans le premier cas
+
+(sens primitif), le point de vue met en relief le médecin greffeur comme
+
+agent de l’action de planter et par conséquent le patient est vu comme
+
+/mazrūc/ « celui qui subit l’action de planter » (sous-entendu par le
+
+médecin). En revanche, dans le deuxième cas (sens adventice), l’agent de
+
+l’action de planter est perçu comme le patient lui-même, présenté comme
+
+actif dans son opération : il est par conséquent le « planteur »
+
+/az-zāric/.
+
+4. Conclusion
+
+Ces différents procédés de métaphorisation aident à mieux comprendre comment les
+
+usages métaphoriques de la greffe sont conceptualisés et sémiotisés en arabe
+
+médical. Il en ressort que la création métaphorique dans le discours de la
+
+transplantation relève d’un double processus interlinguistique et
+
+intralinguistique et tend davantage à l’innovation culturellement acceptable
+
+qu’au calque. La terminologie arabe de la transplantation, en tant que vaste
+
+métaphore filée du domaine agricole, semble être un moyen privilégié pour
+
+capitaliser sur l’importance de l’agriculture, principale source de revenu de
+
+plus de 30% des populations arabes , permettant ainsi d’investir, grâce à la
+
+prégnance des images agricoles, un autre domaine tout aussi vital, la
+
+médecine.
+
+Références bibliographiques
+
+AL-HARASSI Abdulla (2003). Ideological Conceptual Metaphors in
+
+Arabic-English Translation of Political Discourse. International Journal of Arabic-English Studies, 4 :
+
+85-105.
+
+ALI Abdul Sahib Mehdi (2006). On The Translation of Metaphor: Notions and
+
+Pedagogical Implications. International Journal of
+
+Arabic-English Studies, 7 : 121-136.
+
+ASSAL Allal (1994). La métaphorisation terminologique. Terminologie et traduction, 2 : 235-242.
+
+DAVIES Eirlys E. &amp; BENTAHILA Abdelai (1989). Familiar and Less
+
+Familiar Metaphors: An Analysis of Interpretations in Two Languages. Language and Communication, 9 (1) : 49-68.
+
+DEBOVE-REY Josette &amp; REY Alain (2001). Le Nouveau
+
+Petit Robert. Paris : Dictionnaires le Robert.
+
+DUCROT Oswald &amp; SCHAEFFER Jean-Marie (1995). Nouveau
+
+dictionnaire encyclopédique des sciences du langage. Paris :
+
+Edition du Seuil.
+
+GIBB Hamilton Alexander Rosskeen et al. (1991).
+
+Encyclopédie de l’Islam. Leiden : Brill.
+
+GUIDERE, Mathieu (2001). Grammaticalement correct ! Grammaire alphabétique
+
+de l’arabe. Paris : Ellipses.
+
+KLEIBER Georges (1990). La sémantique du prototype.
+
+Paris : Presses Universitaires de France.
+
+LAKOFF George, JOHNSON Mark (1985). Les métaphores dans
+
+la vie quotidienne. Paris : Editions de Minuit.
+
+LE GUERN Michel (1973). La sémantique de la métaphore et
+
+de la métonymie. Paris : Larousse.
+
+MASCUD Jibran (2003). Ar-Ra'id. Beyrouth : Dār
+
+al-cilm lil-malāyīn.
+
+MENACERE Mohammed (1992). Arabic Metaphor and Idiom in Translation. Meta, 37 (3) : 567-572.
+
+NORMAND Claudine (1976). Métaphore et concept.
+
+Bruxelles : Ed. Complexe.
+
+OLIVEIRA, Isabelle (2005). Nature et fonctions de la
+
+métaphore dans la terminologie médicale. Etude comparée du français et
+
+portugais. Thèse. Lyon : Université Lumière Lyon II.
+
+POTTIER Bernard (1974). Linguistique générale. Théorie
+
+et description. Paris : Klincksieck.
+
+POTTIER Bernard (2001). Représentations mentales et
+
+catégorisations linguistiques. Leuven : Peeters.
+
+RASTIER, François (1988). Paradigmes cognitifs et linguistique
+
+universelle. Intellectica, 6 : 43-74.
+
+SCHLANGER, Judith (1971). Les Métaphores de
+
+l’organisme. Paris : Librairie Philosophique J. Vrin.
+
+SINDING Christiane (1993). Les métaphores en biologie – analogies ou
+
+outils de pensée ? Intellectica, 16 : 85-99
+
+VINAY Jean-Pierre &amp; DARBELNET Jean (1958). Stylistique comparée du français et de l’anglais. Paris :
+
+Didier.
+
+WEIL Gustav (1991). Addād. Encyclopédie de l’Islam
+
+: 191-192
+
+Il s’agit du corpus électronique Transplant.1 constitué d’environ 600,000
+
+mots. Ce corpus renferme des documents authentiques provenant de dix pays arabes
+
+(Arabie Saoudite, Koweït, Qatar, Emirats Arabes Unis, Liban, Syrie, Egypte,
+
+Maroc, Tunisie, Libye) et couvrant la période 1976-2005.
+
+Le dépouillement de Transplant.1 a permis de relever 4850 termes, tous types
+
+confondus (termes simples, termes complexes, signes brachygraphiques
+
+etc.).
+
+Nous reprenons ici les termes de Pottier (2001) qui présente une synthèse des
+
+mécanismes supposés du monde mental dans lequel se réalise le passage des
+
+perceptions élaborées (la conceptualisation) vers les choix sémiologiques,
+
+c’est-à-dire les signes linguistiques (la sémiotisation).
+
+Voir à cet égard Davies &amp; Bentahila (1989), Menacere (1992), Al-Harassi
+
+(2003) et ali (2006).
+
+Nous excluons les rares cas de xénotransplantation où le donneur est d’une
+
+espèce différente (dans le cas des greffes humaines, il s’agit de prélever un
+
+organe sur un animal notamment le porc ou le babouin) ainsi que l’implantation
+
+d’organes artificiels délaissés au profit d’une nouvelle technique encore à
+
+l’essai qui consiste à cultiver des cellules (par exemple des cellules
+
+pancréatiques ou de la peau) et bientôt des organes entiers pour les greffer sur
+
+le patient.
+
+La Syrie est le seul pays arabe à avoir entièrement arabisé son enseignement
+
+universitaire ce qui explique la rareté des publications spécialisées en la
+
+matière.
+
+Il ne fait aucun doute que l’essentiel de la recherche scientifique est
+
+effectué aujourd’hui aux Etats-Unis et il incombe à toute personne désireuse
+
+d’approfondir ses recherches dans un domaine scientifique de recourir à une
+
+bibliographie en anglais. Ce phénomène est exacerbé dans le monde arabe où la
+
+grande majorité des facultés de médecine dispensent leurs enseignements en
+
+anglais.
+
+Nous empruntons à Pottier (1974) le terme de « sémèmes » qu’il faudrait
+
+comprendre comme des « paquets de sèmes ». Les linguistes français parlent
+
+souvent, avec Pottier et Greimas, de « sème », celui-ci n’étant ni un signifiant
+
+ni un signifié mais une unité sémantique minimale non décomposable (Ducrot &amp;
+
+Schaeffer, 1995 : 533-534).
+
+Les symboles de transcription utilisés dans cet article sont ceux de
+
+l’Encyclopédie de l’Islam. La transcription de certains caractères de l’arabe
+
+n’étant pas possible avec nos logiciels de traitement de texte, les phonèmes
+
+emphatiques sont mis en gras : d, k et t.
+
+C’est le chemin inverse de la création métaphorique originale qui est partie,
+
+dans ce cas précis, de l’agriculture en français vers la médecine en
+
+français.
+
+C’est nous qui mettons en gras.
+
+Les termes arabes sont glosés en français par nos soins.
+
+Pour une présentation complète des onze types de modulation, voir Vinay et
+
+Darbelnet (1958 : 89-90).
+
+Dans la version standard du prototype, « le prototype est conçu comme étant
+
+le meilleur exemplaire communément associé à une catégorie » (Kleiber, 1990 :
+
+49).
+
+Le schème est le « moule » syllabique qui sert à la formation des mots en
+
+arabe. Selon le schème combiné avec la racine du verbe, nous pouvons obtenir le
+
+nom verbal, le nom d’agent (ou participe actif), le nom de patient (ou participe
+
+passif), le nom de lieu, le nom d’instrument, le nom d’abondance, le nom de
+
+métier etc. Pour plus de détails, voir Guidère (2001).
+
+Selon le rapport pour l’année 2004 de l’Organisation arabe pour le
+
+développement agricole
+
+
+

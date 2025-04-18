@@ -1,0 +1,870 @@
+
+
+1. Préliminaires
+
+Les difficultés empiriques liées à la délimitation/description du domaine
+
+recouvert par la notion d’objet direct sont bien connues : la décision radicale
+
+de M. Gross à ce sujet (Gross, 1969 : 72-73) en donne pleinement la mesure. A
+
+ces difficultés d’ordre descriptif s’ajoutent celles relevant de la naissance
+
+relativement récente de la notion et les divergences terminologiques d’une
+
+langue à l’autre ou d’un modèle théorique à l’autre (Willems, Melis, 1998 :
+
+5-6).
+
+Pour la plupart des linguistes, la nécessité de la notion d’objet l’emporte
+
+cependant sur les difficultés qu’elle soulève, sans qu’aucune solution
+
+définitive ait pu être proposée pour le moment et malgré le nombre
+
+impressionnant d’études consacrées à ce sujet.
+
+Nous proposons dans ce travail une discussion de la notion syntaxique d’objet
+
+direct en français du point de vue des critères utilisés pour la
+
+délimitation/description du domaine qu’elle recouvre, ainsi qu’un bilan des
+
+nombreuses études qui portent sur ce sujet.
+
+Notre travail a comme point de départ deux idées récurrentes dans les études : la
+
+nécessité d’une description multifactorielle de ce phénomène, dont découle
+
+également son caractère scalaire et l’idée que la transitivité n’engage pas
+
+uniquement le verbe, mais l’énoncé dans son ensemble. Notre propre contribution
+
+consistera à proposer une hiérarchisation des critères de la transitivité, selon
+
+le niveau d’incidence de la phrase/énoncé auquel ils s’appliquent.
+
+2. La définition multifactorielle de la transitivité
+
+2.1. Types d’approches
+
+La définition de la transitivité prend en considération une multitude de
+
+critères : on parle à ce sujet de « faisceaux de propriétés différentes
+
+pour définir l’Objet ; le point décisif étant en quelque sorte que
+
+l’Objet soit une composition de propriétés. » (Bortolussi, 1990 :
+
+30), de « scintillement de propriétés associées à cette notion, qui ne
+
+peut être capté qu’à l’aide d’un éventail de traits riche et diversifié.
+
+» (Abeillé, 1997 : 8), ou tout simplement de « théorie
+
+multifactorielle de la transitivité » (François, 1998).
+
+L’inventaire des tests utilisés dans l’approche de l’objet direct est
+
+relativement facile à établir à travers les études qui portent sur ce sujet,
+
+mais non l’organisation du système qu’ils forment, les objectifs des
+
+recherches n’étant que rarement convergents. Généralement, les tests de
+
+l’objet sont envisagés comme des instruments de découverte vérifiés et
+
+donnés d’emblée, dont il n’est plus nécessaire ou utile de discuter la
+
+pertinence. Leur rôle consiste à mesurer des différences/décalages
+
+syntaxiques et sémantiques au niveau du fonctionnement des constructions,
+
+mais on le fait, paradoxalement, sans avoir vérifié préalablement ce que
+
+chacun de ces tests mesure effectivement. Les réponses convergentes par
+
+rapport aux tests de la transitivité ne prouvent pas du tout l’équivalence
+
+des tests eux-mêmes, mais tout simplement l’existence dans la langue de
+
+verbes/constructions qui relèvent de ce que l’on appelle la « transitivité
+
+prototypique » (Desclés, 1998 : 161-180). C’est le cas, par exemple, des 650
+
+verbes sélectionnés par D. Willems (Willems, 1981 : 200-207), qui ne
+
+figurent qu’à l’intérieur de la construction transitive directe, et pour
+
+lesquels les tests classiques de l’objet reconnus par l’auteur
+
+(pronominalisation, transformation passive, emploi absolu) ne présentent pas
+
+de valeur opératoire.
+
+2.2. Inventaire des tests
+
+Les inventaires de tests utilisés dans les études présentent des variations.
+
+La liste la plus complète est celle systématisée par L. Melis (Melis, 2001 :
+
+254-246) : propriétés de codage (l’existence d’indices clitiques – le, la, les, en, la position postverbale comme
+
+position privilégiée, la coalescence étroite avec le verbe) et propriétés de
+
+fonctionnement (la capacité à fonctionner comme sujet dans les
+
+reformulations passives, périphrastiques ou réflexives, la saturation de la
+
+positon d’objet dans la construction factitive, la capacité à servir de
+
+pivot pour l’infinitif construit avec à dans diverses
+
+constructions : GN être Adj. à Vinf, GN (être) à Vinf, il
+
+y a GN à Vinf).
+
+Un autre inventaire assez complet est proposé par L. Pino Serrano (Pino
+
+Serrano, 2000 : 411-417). La distinction entre critères (la construction
+
+directe, la place, le caractère nucléaire) et tests (l’interrogation, la
+
+pronominalisation, la passivation, l’accord du participe passé) proposée par
+
+cet auteur rejoint partiellement celle opérée par L. Melis.
+
+Chez d’autres linguistes, les inventaires de tests sont généralement plus
+
+réduits. Il arrive même que la transitivité des verbes/constructions soit
+
+définie par rapport à un test fonctionnel unique, tel la passivation (à côté
+
+cependant de deux types de phénomènes non-fonctionnels : le glissement
+
+sémantique et les faits d’ordre) (Rousseau, 1998 : 92).
+
+Bien que les critères de la transitivité soient traités comme relevant du
+
+même plan et ayant le même degré de pertinence, ils font cependant dans les
+
+études l’objet d’une hiérarchisation implicite. Trois tests notamment sont
+
+concernés par cette hiérarchisation : la pronominalisation, la
+
+transformation passive et l’emploi absolu.
+
+Nous pensons d’ailleurs que reconnaître la théorie scalaire de la
+
+transitivité (Lazard, 1998 : 55-84, Desclés, 1998 : 161-180) revient en fait
+
+à accepter également la scalarité des tests eux-mêmes, qui eux seuls
+
+permettent de discerner des différences entre les types d’objets. «
+
+L’inévitable et nécessaire hiérarchie des objets » (Rousseau, 1998 : 109) ne
+
+nous paraît nullement possible en l’absence d’une hiérarchisation
+
+complémentaire des tests qui dégagent ces premiers.
+
+3. La transitivité comme propriété de l’énoncé
+
+L’idée que la transitivité ne relève pas du verbe, mais de l’énoncé dans son
+
+ensemble est récurrente dans les études: « […] il n’y a pas grand intérêt à
+
+vouloir à tout prix classer ainsi les verbes français, et il serait plus
+
+important d’expliquer la variété de leurs emplois. » (Creissels, 1995 :
+
+248), « [...] LE VERBE TOMBE DE SON PIEDESTAL ET LES COMPLEMENTS FONT LA LOI.
+
+» (Wilmet, 1997 :479), « […] la transitivité n’est pas une donnée
+
+immédiate du lexème verbal. » (Rousseau, 1998 : 96), « La
+
+transitivité est une propriété non du verbe seul, mais de l’ensemble du
+
+complexe prédicatif. » (Rousseau, 1998 : 104), « Le français
+
+contemporain vit une période de transitivité vacillante ; le manque de
+
+prédisposition actancielle – sa fluctuation – en témoigne. »
+
+(Larjavaara, 1998 : 313), bien que la théorie contraire soit également formulée
+
+: « Un verbe est donc transitif ou intransitif ; la transitivité est une
+
+question de oui ou non. » (Lazard, 1998 : 55).
+
+Dans cette situation, il serait peut-être plus utile de renoncer à éliminer
+
+certains phénomènes et de chercher à envisager tout simplement comment ils se
+
+manifestent et dans quelle mesure ils pourraient s’avérer pertinents dans la
+
+discussion de la transitivité.
+
+3.1. Le niveau du groupe verbal. La relation verbe-objet. La
+
+pronominalisation
+
+Devant l’extrême variété des effets de sens attribuables à la fonction
+
+syntaxique d’objet direct, les études proposent généralement pour cette
+
+notion une définition syntaxique/fonctionnelle : « substituer autant que
+
+possible la notion de fonction à celle de sens » (Rothemberg, 1974 :
+
+19), « […] il nous faut admettre la nécessité d’une notion purement
+
+formelle d’objet direct. » (Gaatone, 1998a : 15)
+
+L’élément commun dans les définitions est le test de la pronominalisation
+
+personnelle dans le cas de la détermination définie, accompagnée ou non de
+
+tests supplémentaires : la dislocation (Blinkenberg, 1960 : 127), la
+
+variabilité du déterminant et l’impossibilité de commutation du substantif
+
+postverbal déterminé avec un adjectif (Rothemberg, 1974 : 17), le de en contexte négatif et le quantitatif en (Creissels, 1995 : 233, 238-239), ou la
+
+pronominalisation adverbiale en en accompagnée de la
+
+possibilité du déterminant de indéfini induit par la
+
+négation (Abeillé, 1997 : 23).
+
+Tous les autres critères sauf celui de la pronominalisation personnelle nous
+
+semblent cependant présenter des limites : soit ils s’appliquent à d’autres
+
+constituants également – le en paraît lié plutôt à la
+
+position qu’à la fonction objet (Lagae, 1998, 103-113), le de négatif concerne aussi le constituant nominal postverbal des
+
+constructions impersonnelles, (Gaatone, 1998a : 15-16) – soit ils présentent
+
+une portée beaucoup plus réduite que celle de la pronominalisation (la
+
+construction causative et la construction « facile à
+
+dire » sont opérationnelles uniquement dans les phrases possédant comme
+
+sujet un constituant humain).
+
+Dans cette situation, deux solutions nous semblent envisageables : considérer
+
+que ces tests présentent tous le même degré de pertinence et délimiter un
+
+domaine extrêmement restreint correspondant à la notion d’objet direct, ou
+
+accepter tout simplement que ces phénomènes ne tiennent pas du même niveau
+
+de l’approche et proposer de les distinguer.
+
+La première solution présente au moins deux inconvénients. D’une part, elle
+
+obligerait à accepter que des constituants ayant le même comportement par
+
+rapport à la pronominalisation personnelle puisse ne pas se rattacher à la
+
+fonction syntaxique d’objet direct, position qui rendrait incohérente toute
+
+tentative de description. Dans un commentaire portant justement sur la
+
+pertinence des deux formes de pronominalisation (personnelle et adverbiale),
+
+D. Gaatone (Gaatone, 1998b : 74) semble préférer la pronominalisation
+
+adverbiale. L’inconvénient de la pronominalisation personnelle consiste pour
+
+lui, justement, dans le fait qu’elle ne permet pas d’éliminer des
+
+constituants tels les compléments de mesure construits directement. Si
+
+l’intérêt de la démarche vise, au contraire, à pouvoir rendre compte des
+
+relations entre les différents types de constituants et non pas à opérer des
+
+distinctions et des éliminations tranchantes, nous pensons que la
+
+pronominalisation personnelle peut prouver pleinement sa pertinence
+
+opérationnelle.
+
+D’autre part, en l’absence de tests formels discriminatoires (puisque tous
+
+les tests apporteraient des réponses convergentes), la description du
+
+domaine par des procédés fonctionnels deviendrait impossible. De plus, ces
+
+tests ne pourraient pas opérer pour les phénomènes non-prototypiques,
+
+écartés dès le début, et dont on aurait nié tout rapport avec la
+
+transitivité et avec les tests de celle-ci. Par conséquent, la solution la
+
+plus convenable pour la cohérence de la description et de plus, la plus
+
+adaptée à la réalité des faits, nous semble la deuxième : les tests formels
+
+n’appartiennent pas au même plan, ils n’interviennent pas au même moment
+
+dans l’approche de l’objet et il s’impose d’opérer une hiérarchisation entre
+
+eux.
+
+La promotion de la pronominalisation au rang de test fondamental dans la
+
+définition de l’objet direct nous apparaît parfaitement juste et elle
+
+correspond d’ailleurs à la plupart des propositions faites dans les études.
+
+Seulement aucun argument n’est fourni dans ce but, ce qui fait que cette
+
+sélection puisse risquer de paraître aléatoire.
+
+L’argument que nous apportons à ce sujet est lié notamment à l’existence de
+
+plusieurs niveaux d’incidence des tests sur la phrase. Ainsi, la
+
+pronominalisation concerne uniquement la relation syntaxique entre le verbe
+
+et l’objet, aucun autre ordre de facteurs ne pouvant la changer. Autrement
+
+dit, une fois qu’un constituant accepte ce test, aucun facteur ne peut
+
+intervenir pour modifier sa réponse, comme c’est le cas pour les autres
+
+tests. La pronominalisation ne concerne que la relation syntaxique entre le
+
+verbe et son objet et elle n’est soumise à aucun facteur extérieur à cette
+
+relation.
+
+3.2. Le niveau phrastique. La relation sujet-objet. La transformation
+
+passive
+
+La phrase/transformation passive a fait l’objet d’un nombre d’études
+
+impressionnant et elle figure dans la plupart des cas parmi les critères
+
+définitoires de l’objet direct. Cependant, il est plutôt rare que la
+
+définition de l’objet direct soit fondée sur ce critère formel exclusivement
+
+(Rousseau, 1998 : 92).
+
+A la différence de la pronominalisation, la problématique de la passivation
+
+concerne la phrase dans son ensemble. Nous ne faisons pas allusion au fait
+
+généralement invoqué (mais vrai seulement partiellement) que la passivation
+
+implique une réorganisation de tous les constituants de la phrase (ou des
+
+constituants relevant de la phrase minimale, au moins), bien que cet aspect
+
+soit important lorsqu’il s’agit de discuter le niveau concerné par la
+
+transformation passive.
+
+Nous nous rapportons à un autre phénomène, signalé et discuté dans plusieurs
+
+travaux, qui concerne le fait que la passivation ne se décide pas au niveau
+
+du mot ou du syntagme, mais au niveau de la phrase entière. Autrement dit,
+
+la distinction entre verbes passivables et verbes non-passivables ne résout
+
+nullement le problème de la transitivité, elle délimite tout simplement la
+
+classe des verbes pour lesquels la discussion de la transformation passive
+
+est pertinente. Une fois cette classe délimitée, il faut procéder ensuite à
+
+cerner les différents facteurs de la passivation, ce qui peut impliquer une
+
+discussion pour chaque cas pris séparément. Nous fondons notre affirmation
+
+sur deux ordres de phénomènes également signalés dans les études. Il s’agit
+
+du rôle que des constituants autres que ceux directement concernés par la
+
+transformation passive peuvent avoir à déterminer la passivabilité d’une
+
+phrase, d’une part, et de l’importance de la relation sujet-objet, telle
+
+qu’elle est constituée via le verbe de la phrase, d’autre part.
+
+Nous illustrons le premier cas par des exemples discutés par D. Gaatone, en
+
+vue de démontrer le rôle des constituants autres que ceux directement
+
+concernés par cette transformation à faire accepter le passif :
+
+?? Une montre a été trouvée par moi.
+
+La montre a été trouvée par moi et non par ma sœur. (Gaatone, 1998b : 262)
+
+Ce qui rend la phrase passive possible, dans l’opinion de l’auteur, c’est la
+
+création d’un cadre contrastif avec le pronom personnel, par la présence
+
+d’un autre constituant (la présence d’un sujet pronom personnel de la
+
+première ou deuxième personne bloquant généralement la construction passive
+
+– Lamiroy, 1993 : 58, Gaatone, 1998b : 262).
+
+Le second exemple que nous choisissons pour illustrer la dimension phrastique
+
+de la transformation passive suppose l’existence d’un «différentiel de
+
+participation » (François, 1998 : 181-201) entre les constituants sujet et
+
+objet et prend en considération notamment le contenu sémantique véhiculé par
+
+la phrase. Nous proposons le cas du verbe rencontrer,
+
+qui a fait l’objet de plusieurs discussions dans les études.
+
+Ainsi, si les deux constituants du verbe rencontrer
+
+sont réalisés par des noms humains, la passivation est bloquée, en raison du
+
+différentiel de participation réduit : *Paul a été
+
+rencontré (fortuitement ou non) par un partenaire. En échange, la
+
+passivation devient possible si le nom objet désigne une autre entité qu’un
+
+humain, ce qui augmente le différentiel de participation : Beaucoup d’obstacles ont été rencontrés dans cette entreprise
+
+(François, 1998 : 193).
+
+La discussion proposée par P. Blumenthal (Blumenthal, 1998 : 59-60) appuie
+
+l’idée que la passivation est fonction de la relation entre le sujet et
+
+l’objet et non pas de la nature de chacun de ces constituants pris
+
+séparément. Ainsi, ses exemples contenant rencontrer
+
+semblent contredire dans un premier temps son hypothèse de travail : plus
+
+l’objet partage les propriétés d’un sujet syntaxique prototypique, plus il a
+
+de chances d’assumer le rôle de sujet logique, donc de faire l’objet d’une
+
+transformation passive. Dans une telle perspective, la passivation des
+
+phrases possédant deux constituants humains devrait aller de soi, mais le
+
+comportement de la phrase avec rencontrer dément
+
+cette hypothèse : *Mon ami a été rencontré hier.
+
+(Blumenthal, 1998 : 59). L’auteur ne discute pas le problème de ce verbe en
+
+termes de contribution au développement du procès/participation, mais du
+
+point de vue de l’existence d’un sujet-source antérieur au procès, qui
+
+fonctionne en tant que cause de celui-ci. L’explication qu’il fournit
+
+rejoint cependant celle de J. François (François, 1998 : 181-201) : il ne
+
+suffit pas que les deux constituants soient de la même nature, il est
+
+surtout nécessaire qu’ils ne soient pas traités de la même façon. Pour
+
+l’exemple en question, cette deuxième condition n’est pas remplie, et c’est
+
+cette particularité qui bloque la passivation.
+
+La passivation n’est donc pas une opération mécanique de permutation, elle
+
+repose sur l’existence de relations syntaxiques et sémantiques complexes
+
+entre les constituants, un changement minime pouvant fonctionner comme un
+
+facteur d’autorisation, ou au contraire, de blocage de la transformation. De
+
+même, elle dépasse le niveau du syntagme verbal et elle engage la phrase
+
+toute entière.
+
+3.3. Le niveau discursif. L’emploi absolu
+
+Bien qu’aucune étude ne fonde la définition de l’objet direct sur l’emploi
+
+absolu, ce test est régulièrement mentionné dans les études et fait
+
+également l’objet de nombreuses discussions. L’emploi absolu découle
+
+directement du caractère obligatoire du constituant objet : l’absence
+
+syntaxique d’un constituant prévu dans la valence du verbe n’entraîne pas
+
+l’élimination au niveau sémantique du participant au procès désigné, mais
+
+signale tout simplement une asymétrie entre les niveaux syntaxique et
+
+sémantique de la phrase.
+
+Les problèmes soulevés par l’emploi absolu sont nombreux, mais nous nous
+
+arrêterons uniquement sur deux points qui nous semblent éclairants pour
+
+notre discussion : le corpus étudié et les facteurs favorisant l’emploi
+
+absolu.
+
+Pour ce qui est du corpus discuté, ce n’est que dans peu de cas que le niveau
+
+phrastique s’avère suffisant à rendre compte de l’emploi absolu, comme dans
+
+le cas des emplois habituels (Noailly, 1998a : 130-143). Dans la plupart des
+
+cas l’observation porte au moins sur des séquences textuelles minimales,
+
+sinon sur de vrais paragraphes. L’approche de l’emploi absolu dépasse
+
+d’ailleurs le niveau purement linguistique, pour se placer au niveau de
+
+l’évaluation des connaissances extralinguistiques des usagers de la langue.
+
+S’il se manifeste au niveau phrastique, plus exactement au niveau du
+
+syntagme verbal, son explication est à chercher au-delà de ce niveau, dans
+
+l’environnement textuel et même au niveau des paramètres extralinguistiques
+
+: « Il faut prendre en compte tout le contexte ; le verbe lui-même et le
+
+genre de procès qu’il décrit – habituel ou non – ne suffisent guère. »
+
+(Larjavaara, 2000 : 133), « Il n’y a pas de restriction lexicale : tout
+
+verbe transitif peut se trouver sans objet dans un emploi générique, si la
+
+situation extralinguistique s’y prête. » (Larjavaara, 2000 : 136).
+
+Pour ce qui est des paramètres de l’emploi absolu, à la limite, si les
+
+conditions pour la bonne identification/récupération du référent non exprimé
+
+linguistiquement sont bien remplies, tous les verbes transitifs du français
+
+sont susceptibles de fonctionner sans objet direct : l’emploi absolu est
+
+premièrement un phénomène discursif, qui relève de la « mémoire discursive »
+
+(Noailly, 1998b : 45).
+
+Dans une telle perspective, l’emploi absolu nous semble pouvoir être exploité
+
+dans un tout autre domaine que celui de la transitivité : si tous les verbes
+
+du français sont susceptibles de présenter ce fonctionnement (dans des
+
+contextes précis, évidemment), alors il ne peut pas servir à rendre compte
+
+de la transitivité des verbes, mais tout simplement de la pertinence du
+
+contexte/co-texte à suppléer l’absence de l’objet et à guider dans
+
+l’identification du référent correspondant au constituant qui manque.
+
+L’emploi absolu n’est plus un test de la transitivité, mais tout simplement
+
+l’une des diverses manifestations discursives de celle-ci.
+
+3.4. Les autres tests de la transitivité
+
+Pour ce qui est des autres tests formels de la transitivité (Gaatone, 1998a :
+
+13-20), ils ne font pas l’objet de discussions particulières, même si D.
+
+Gaatone les considère comme ayant le même degré de pertinence que les tests
+
+déjà discutés. Nous souhaitons faire quelques remarques sur deux de ces
+
+tests uniquement (la construction causative et la construction « facile à dire »), les deux retenus par L. Melis
+
+(Melis, 2001 : 243-257) dans son inventaire.
+
+Tout en souhaitant éviter les généralisations dangereuses, nous croyons que
+
+ces tests concernent uniquement la dimension sémantique de la transitivité :
+
+ils ne portent, à notre avis, que sur les constructions possédant comme
+
+sujet un constituant qui désigne un humain. D’ailleurs, le test avec le
+
+verbe faire est l’un des tests classiques de
+
+l’agentivité, les deux tests discutés nous apparaissant comme de simples
+
+variantes fonctionnelles de ce test. D. Gaatone signale le rapport étroit
+
+entre les constructions du type Nom à Infinitif et
+
+Adjectif à Infinitif et le problème sémantique de
+
+l’agentivité : « […] les constructions en question sont limitées non
+
+seulement aux verbes transitifs directs, mais aussi aux verbes agentifs. »
+
+(Gaatone, 1998b : 104).
+
+Arrivée à ce point de notre discussion, nous croyons pouvoir formuler encore
+
+une remarque concernant les études sur l’objet direct/transitivité. Bien que
+
+les définitions sémantiques de la transitivité proposées dans les grammaires
+
+appelées traditionnelles soient généralement rejetées, de par leur caractère
+
+réducteur et excessivement généralisateur, il semble cependant que la
+
+plupart des approches modernes de ce phénomène continuent à travailler sur
+
+le même genre de corpus, ce qui peut amener, inévitablement, à des
+
+conclusions du même type. Par conséquent, une part importante du domaine de
+
+la transitivité reste malheureusement inabordée pour le moment, les études
+
+portant généralement sur des constructions transitives prototypiques,
+
+caractérisées par un certain sémantisme (transformation/création) et par des
+
+paramètres syntaxiques particuliers (noms humains pour le sujet, noms
+
+concrets pour l’objet). En s’occupant des constructions non-prototypiques
+
+ayant comme objet des noms de procès, A. Celle (Celle, 1997 : 139-172)
+
+explore justement l’une des zones d’ombre de la transitivité.
+
+4. Conclusions
+
+Les tests classiques de la transitivité ne relèvent pas du même plan de
+
+description et ne mesurent pas le même type de paramètres. La hiérarchisation
+
+des tests, correspondant à la hiérarchisation des plans, révèle la nécessité de
+
+plusieurs distinctions à prendre en considération : définition/description,
+
+fonctionnement (paramètre)/ingrédient de la transitivité.
+
+Nous croyons que la définition de l’objet direct doit reposer uniquement sur le
+
+test de la pronominalisation : c’est le seul fonctionnement stable de l’objet,
+
+constant à tous les niveaux et n’ayant pas à être modifié par de possibles
+
+changements intervenus dans la phrase. Une fois le domaine de la transitivité
+
+ainsi délimité, les autres tests servent à en donner la description, avec une
+
+discussion complémentaire obligatoire des paramètres de tout type qui la
+
+déterminent.
+
+Nous ne souhaitons cependant pas affirmer que la transitivité est un phénomène
+
+uniquement discursif, soumis aux variations et aux fluctuations de ce domaine,
+
+au contraire. Si toute variation discursive (et même phrastique peut-être) peut
+
+finalement être réglée par des réductions successives, c’est parce qu’elle est
+
+inscrite et sinon validée au moins autorisée au niveau de la langue. Qu’il
+
+s’agisse du verbe ou des types de noms objet et sujet, le premier niveau à
+
+prendre en considération est celui du mot-même, que nous avons délibérément,
+
+bien qu’injustement, à coup sûr, laissé de côté dans cette discussion,
+
+uniquement pour des raisons liées à l’économie de notre travail et au but précis
+
+et restreint que nous nous y sommes fixé.
+
+Références
+
+Abeille, Anne (1997). Fonction ou Position Objet ? (II et fin), Le gré des langues, 12 : 8-33.
+
+Blinkenberg, Andréas (1960). Le problème de la
+
+transitivité en français moderne : essai syntactico-sémantique.
+
+Copenhague : Det Kongelige Danske Videnskabernes Selskab.
+
+Blumenthal, Peter (1998). Le complément peut-il être sujet logique, in Prédication, assertion, information : Actes du colloque
+
+d’Uppsala en linguistique française, 6-9 juin 1996,
+
+Studia Romanica Upsaliensia 56, Forsgren, Mats,
+
+Jonasson, Kerstin &amp; Kronning, Hans (Eds). Uppsala : Acta Universitatis
+
+Uplsaliensis, 57-66.
+
+Bortolussi, Bernard (1990). Objet d’une théorie, Le gré
+
+des langues, 1 : 26-35.
+
+Celle, Agnès (1997). Quand l’objet est un nom de procès, Cahiers Charles V, 23 : 139-172.
+
+Creissels, Denis (1995). Eléments de syntaxe générale.
+
+Paris : Presses Universitaires de France.
+
+Descles, Jean-Pierre (1998). Transitivité sémantique, transitivité
+
+syntaxique, in La transitivité, Rousseau, André,
+
+(Ed). Villeneuve d’Ascq : Presses Universitaires du Septentrion,
+
+161-180.
+
+Francois, Jacques (1998). Théorie multifactorielle de la transitivité, «
+
+différentiel de participation » et classes aspectuelles et actancielles de
+
+prédication, in La transitivité, Rousseau, André,
+
+(Ed). Villeneuve d’Ascq : Presses Universitaires du Septentrion,
+
+181-201.
+
+Gaatone, David (1998a). L’objet direct comme notion formelle dans la
+
+formulation des règles syntaxiques, in Les objets :
+
+relations grammaticales et rôles sémantiques, Willems, Dominique
+
+&amp; Melis, Ludo (Eds). Bruxelles : De Boeck &amp; Larcier, Département
+
+Duculot, 13-20.
+
+Gaatone, David (1998b). Le passif en français.
+
+Paris : Duculot.
+
+Gross, Maurice (1969). Remarques sur la notion d’objet direct en français,
+
+Langue française, 1 : 63-73.
+
+Lagae, Véronique (1998). En quantitatif : pronom lié à la fonction objet
+
+ou à une position ?, in Les objets : relations
+
+grammaticales et rôles sémantiques, Willems, Dominique &amp; Melis,
+
+Ludo (Eds). Bruxelles : De Boeck &amp; Larcier, Département Duculot,
+
+103-113.
+
+Lamiroy, Béatrice (1993). Pourquoi il y a deux passifs, Langages, 109 : 53-72.
+
+Larjavaara, Meri (1998). Sur les variations de la transitivité en français
+
+contemporain, in Prédication, assertion, information :
+
+Actes du colloque d’Uppsala en linguistique française, 6-9 juin
+
+1996,
+
+Studia Romanica Upsaliensia 56, Forsgren, Mats,
+
+Jonasson, Kerstin &amp; Kronning, Hans (Eds). Uppsala : Acta Universitatis
+
+Uplsaliensis, 307-315.
+
+Larjavaara, Meri (2000). Présence ou absence de l’objet
+
+: limites du possible en français contemporain. Helsinki : Academia
+
+Scientiarum Fennica.
+
+Lazard, Gilbert (1998). De la transitivité restreinte à la transitivité
+
+généralisée, in La transitivité, Rousseau, André,
+
+(Ed). Villeneuve d’Ascq : Presses Universitaires du Septentrion,
+
+55-84.
+
+Melis, Ludo (2001). Les compléments nominaux des verbes de mouvement
+
+intransitifs et la constellation de l’objet, in Par monts
+
+et par vaux, Buridant, Claude, Kleiber, Georges &amp; Pellat,
+
+Jean-Claude (Eds). Paris : Editions Peeters, 243-257.
+
+Noailly, Michèle (1998a). Emploi absolu, anaphore zéro et transitivité, in
+
+La transitivité, Rousseau, André, (Ed).
+
+Villeneuve d’Ascq : Presses Universitaires du Septentrion, 127-144.
+
+Noailly, Michèle (1998b). Les traces de l’actant objet dans l’emploi
+
+absolu, in Les objets : relations grammaticales et rôles
+
+sémantiques, Willems, Dominique &amp; Melis, Ludo (Eds). Bruxelles
+
+: De Boeck &amp; Larcier, Département Duculot, 39-47.
+
+Pino Serrano, Laura (2000). Le complément d’objet direct en français :
+
+problèmes de définition et de représentation, Actes du
+
+XXII-ème Congrès International de Linguistique et Philologie
+
+Romanes, Bruxelles, 1998. Bruxelles : Niemeyer, 411-417.
+
+Rothemberg, Mira (1974). Les verbes à la fois transitifs
+
+et intransitifs en français contemporain.  Paris – The Hague :
+
+Mouton.
+
+Rousseau, André (1998). La double transitivité existe-t-elle ? Réflexions
+
+sur la nature de la transitivité, in La transitivité,
+
+Rousseau, André, (Ed). Villeneuve d’Ascq : Presses Universitaires du
+
+Septentrion, 85-112.
+
+Willems, Dominique (1981). Syntaxe, lexique et
+
+sémantique. Les constructions verbales. Gent : Rijksuniversiteit te
+
+Gent.
+
+Willems, Dominique, melis, Ludo, (1998). Introduction, in Les objets : relations grammaticales et rôles
+
+sémantiques, Willems, Dominique &amp; Melis, Ludo (Eds). Bruxelles : De
+
+Boeck &amp; Larcier, Département Duculot, 5-10.
+
+Wilmet, Marc (1997). Grammaire critique du
+
+Français. Paris : Duculot.
+
+
+

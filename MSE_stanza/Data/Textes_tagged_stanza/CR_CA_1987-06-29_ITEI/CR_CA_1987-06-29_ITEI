@@ -1,0 +1,2346 @@
+# text = Etaient présents :
+# sent_id = 0
+1	Etaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	start_char=0|end_char=7|ner=O
+2	présents	présent	ADJ	_	Gender=Masc|Number=Plur	0	root	_	start_char=8|end_char=16|ner=O
+3	:	:	PUNCT	_	_	2	punct	_	start_char=17|end_char=18|ner=O
+
+# text = Membres délibératifs :
+# sent_id = 1
+1	Membres	membre	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=45|end_char=52|ner=O
+2	délibératifs	délibératif	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	start_char=53|end_char=65|ner=O
+3	:	:	PUNCT	_	_	1	punct	_	start_char=66|end_char=67|ner=O
+
+# text = Collège A Collège B Collège étudiant Collège ATOS-ITA Personnalités extérieures
+# sent_id = 2
+1	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=91|end_char=98|ner=B-LOC
+2	A	à	ADP	_	_	3	case	_	start_char=99|end_char=100|ner=I-LOC
+3	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=101|end_char=108|ner=I-LOC
+4	B	B	PROPN	_	_	3	appos	_	start_char=109|end_char=110|ner=I-LOC
+5	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=111|end_char=118|ner=E-LOC
+6	étudiant	étudiant	ADJ	_	Gender=Masc|Number=Sing	7	amod	_	start_char=119|end_char=127|ner=O
+7	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	5	appos	_	start_char=128|end_char=135|ner=B-LOC
+8	ATOS-ITA	ATOS-ITA	PROPN	_	_	7	appos	_	start_char=136|end_char=144|ner=I-LOC
+9	Personnalités	personnalité	NOUN	_	Gender=Fem|Number=Plur	7	appos	_	start_char=145|end_char=158|ner=I-LOC
+10	extérieures	extérieur	ADJ	_	Gender=Fem|Number=Plur	9	amod	_	start_char=159|end_char=170|ner=E-LOC
+
+# text = Membres consultatifs:
+# sent_id = 3
+1	Membres	membre	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=197|end_char=204|ner=O
+2	consultatifs	consultatif	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	start_char=205|end_char=217|ner=O
+3	:	:	PUNCT	_	_	1	punct	_	start_char=217|end_char=218|ner=O
+
+# text = Procurations en début de séance
+# sent_id = 4
+1	Procurations	procuration	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=242|end_char=254|ner=S-LOC
+2	en	en	ADP	_	_	3	case	_	start_char=255|end_char=257|ner=O
+3	début	début	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=258|end_char=263|ner=O
+4	de	de	ADP	_	_	5	case	_	start_char=264|end_char=266|ner=O
+5	séance	séance	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=267|end_char=273|ner=O
+
+# text = Excusées :
+# sent_id = 5
+1	Excusées	excuser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	start_char=294|end_char=302|ner=O
+2	:	:	PUNCT	_	_	1	punct	_	start_char=304|end_char=305|ner=O
+
+# text = SOMMAIRE
+# sent_id = 6
+1	SOMMAIRE	SOMMAIRE	PROPN	_	_	0	root	_	start_char=323|end_char=331|ner=S-PER
+
+# text = CONVENTIONS (documents distribués en séance)
+# sent_id = 7
+1	CONVENTIONS	CONVENTIONS	PROPN	_	_	0	root	_	start_char=383|end_char=394|ner=S-MISC
+2	(	(	PUNCT	_	_	3	punct	_	start_char=395|end_char=396|ner=O
+3	documents	document	NOUN	_	Gender=Masc|Number=Plur	1	appos	_	start_char=396|end_char=405|ner=O
+4	distribués	distribuer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	3	acl	_	start_char=406|end_char=416|ner=O
+5	en	en	ADP	_	_	6	case	_	start_char=417|end_char=419|ner=O
+6	séance	séance	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	start_char=420|end_char=426|ner=O
+7	)	)	PUNCT	_	_	3	punct	_	start_char=426|end_char=427|ner=O
+
+# text = Convention entre l'Université de Paris X et l'Université de READING présentée par M. HIMY .
+# sent_id = 8
+1	Convention	convention	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=476|end_char=486|ner=O
+2	entre	entre	ADP	_	_	4	case	_	start_char=487|end_char=492|ner=O
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	start_char=493|end_char=495|ner=O
+4	Université	université	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=495|end_char=505|ner=B-ORG
+5	de	de	ADP	_	_	6	case	_	start_char=506|end_char=508|ner=I-ORG
+6	Paris	Paris	PROPN	_	_	4	nmod	_	start_char=509|end_char=514|ner=I-ORG
+7	X	X	NUM	_	Number=Plur	6	nmod	_	start_char=515|end_char=516|ner=E-ORG
+8	et	et	CCONJ	_	_	10	cc	_	start_char=517|end_char=519|ner=O
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=520|end_char=522|ner=O
+10	Université	université	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	start_char=522|end_char=532|ner=B-ORG
+11	de	de	ADP	_	_	12	case	_	start_char=533|end_char=535|ner=I-ORG
+12	READING	READING	PROPN	_	_	10	nmod	_	start_char=560|end_char=567|ner=E-ORG
+13	présentée	présenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	start_char=569|end_char=578|ner=O
+14	par	par	ADP	_	_	15	case	_	start_char=579|end_char=582|ner=O
+15	M.	M.	NOUN	_	Gender=Masc|Number=Sing	13	obl:agent	_	start_char=584|end_char=586|ner=B-PER
+16	HIMY	HIMY	PROPN	_	_	15	flat:name	_	start_char=587|end_char=591|ner=E-PER
+17	.	.	PUNCT	_	_	1	punct	_	start_char=592|end_char=593|ner=O
+
+# text = Convention entre PARIS X et THE POLYTECHNIC, WOLVERHAMPTON présentée par M. HIMY .
+# sent_id = 9
+1	Convention	convention	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=611|end_char=621|ner=O
+2	entre	entre	ADP	_	_	3	case	_	start_char=622|end_char=627|ner=O
+3	PARIS	PARIS	PROPN	_	_	1	nmod	_	start_char=628|end_char=633|ner=B-ORG
+4	X	X	NUM	_	Number=Plur	3	nmod	_	start_char=634|end_char=635|ner=E-ORG
+5	et	et	CCONJ	_	_	6	cc	_	start_char=636|end_char=638|ner=O
+6	THE	THE	PROPN	_	_	3	conj	_	start_char=639|end_char=642|ner=B-ORG
+7	POLYTECHNIC	POLYTECHNIC	PROPN	_	_	6	flat:name	_	start_char=643|end_char=654|ner=E-ORG
+8	,	,	PUNCT	_	_	9	punct	_	start_char=654|end_char=655|ner=O
+9	WOLVERHAMPTON	WOLVERHAMPTON	PROPN	_	_	1	appos	_	start_char=680|end_char=693|ner=S-ORG
+10	présentée	présenter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	start_char=695|end_char=704|ner=O
+11	par	par	ADP	_	_	12	case	_	start_char=705|end_char=708|ner=O
+12	M.	M.	NOUN	_	Gender=Masc|Number=Sing	10	obl:agent	_	start_char=710|end_char=712|ner=B-ORG
+13	HIMY	HIMY	PROPN	_	_	12	flat:name	_	start_char=713|end_char=717|ner=E-ORG
+14	.	.	PUNCT	_	_	1	punct	_	start_char=718|end_char=719|ner=O
+
+# text = Convention entre l'Université de PARIS X et l'Université Complutense de Madrid en vue d'un échange culturel et d'un programme commun de formation en LEA et Sciences Economiques.
+# sent_id = 10
+1	Convention	convention	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=737|end_char=747|ner=O
+2	entre	entre	ADP	_	_	4	case	_	start_char=748|end_char=753|ner=O
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	start_char=754|end_char=756|ner=O
+4	Université	université	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=756|end_char=766|ner=B-ORG
+5	de	de	ADP	_	_	6	case	_	start_char=767|end_char=769|ner=I-ORG
+6	PARIS	PARIS	PROPN	_	_	4	nmod	_	start_char=770|end_char=775|ner=I-ORG
+7	X	X	NUM	_	Number=Plur	6	nmod	_	start_char=776|end_char=777|ner=E-ORG
+8	et	et	CCONJ	_	_	10	cc	_	start_char=778|end_char=780|ner=O
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=781|end_char=783|ner=O
+10	Université	université	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	start_char=783|end_char=793|ner=B-ORG
+11	Complutense	Complutense	PROPN	_	_	10	appos	_	start_char=818|end_char=829|ner=I-ORG
+12	de	de	ADP	_	_	13	case	_	start_char=830|end_char=832|ner=I-ORG
+13	Madrid	Madrid	PROPN	_	_	10	nmod	_	start_char=833|end_char=839|ner=E-ORG
+14	en	en	ADP	_	_	15	case	_	start_char=841|end_char=843|ner=O
+15	vue	vue	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=844|end_char=847|ner=O
+16	d'	de	ADP	_	_	18	case	_	start_char=848|end_char=850|ner=O
+17	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	start_char=850|end_char=852|ner=O
+18	échange	échange	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	start_char=853|end_char=860|ner=O
+19	culturel	culturel	ADJ	_	Gender=Masc|Number=Sing	18	amod	_	start_char=861|end_char=869|ner=O
+20	et	et	CCONJ	_	_	23	cc	_	start_char=870|end_char=872|ner=O
+21	d'	de	ADP	_	_	23	case	_	start_char=873|end_char=875|ner=O
+22	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	start_char=875|end_char=877|ner=O
+23	programme	programme	NOUN	_	Gender=Masc|Number=Sing	18	conj	_	start_char=878|end_char=887|ner=O
+24	commun	commun	ADJ	_	Gender=Masc|Number=Sing	23	amod	_	start_char=908|end_char=914|ner=O
+25	de	de	ADP	_	_	26	case	_	start_char=915|end_char=917|ner=O
+26	formation	formation	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	start_char=918|end_char=927|ner=O
+27	en	en	ADP	_	_	28	case	_	start_char=928|end_char=930|ner=O
+28	LEA	LEA	PROPN	_	_	23	nmod	_	start_char=931|end_char=934|ner=S-ORG
+29	et	et	CCONJ	_	_	30	cc	_	start_char=935|end_char=937|ner=O
+30	Sciences	Sciences	PROPN	_	Gender=Fem|Number=Plur	28	conj	_	start_char=938|end_char=946|ner=B-ORG
+31	Economiques	économique	ADJ	_	Gender=Fem|Number=Plur	30	amod	_	start_char=947|end_char=958|ner=E-ORG
+32	.	.	PUNCT	_	_	1	punct	_	start_char=958|end_char=959|ner=O
+
+# text = Convention entre l'Université de PARIS X et l'Ecole Nationale de Commerce - Lycée Bussières, qui concerne le fonctionnement des études des élèves de l'Ecole Nationale de Commerce préparant le DEUG de DROIT.
+# sent_id = 11
+1	Convention	convention	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=977|end_char=987|ner=O
+2	entre	entre	ADP	_	_	4	case	_	start_char=988|end_char=993|ner=O
+3	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	4	det	_	start_char=994|end_char=996|ner=O
+4	Université	université	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=996|end_char=1006|ner=B-ORG
+5	de	de	ADP	_	_	6	case	_	start_char=1007|end_char=1009|ner=I-ORG
+6	PARIS	PARIS	PROPN	_	_	4	nmod	_	start_char=1010|end_char=1015|ner=I-ORG
+7	X	X	NUM	_	Number=Plur	6	nmod	_	start_char=1016|end_char=1017|ner=E-ORG
+8	et	et	CCONJ	_	_	10	cc	_	start_char=1018|end_char=1020|ner=O
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=1021|end_char=1023|ner=O
+10	Ecole	Ecole	NOUN	_	Gender=Fem|Number=Sing	4	conj	_	start_char=1023|end_char=1028|ner=B-ORG
+11	Nationale	national	ADJ	_	Gender=Fem|Number=Sing	10	amod	_	start_char=1053|end_char=1062|ner=I-ORG
+12	de	de	ADP	_	_	13	case	_	start_char=1063|end_char=1065|ner=I-ORG
+13	Commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	start_char=1066|end_char=1074|ner=E-ORG
+14	-	-	PUNCT	_	_	15	punct	_	start_char=1076|end_char=1077|ner=O
+15	Lycée	lycée	NOUN	_	Gender=Masc|Number=Sing	10	appos	_	start_char=1078|end_char=1083|ner=B-LOC
+16	Bussières	Bussières	PROPN	_	_	15	appos	_	start_char=1084|end_char=1093|ner=E-LOC
+17	,	,	PUNCT	_	_	19	punct	_	start_char=1093|end_char=1094|ner=O
+18	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	start_char=1095|end_char=1098|ner=O
+19	concerne	concerner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	start_char=1099|end_char=1107|ner=O
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	start_char=1108|end_char=1110|ner=O
+21	fonctionnement	fonctionnement	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	start_char=1111|end_char=1125|ner=O
+22-23	des	_	_	_	_	_	_	_	start_char=1146|end_char=1149|ner=O
+22	de	de	ADP	_	_	24	case	_	_
+23	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	24	det	_	_
+24	études	étude	NOUN	_	Gender=Fem|Number=Plur	21	nmod	_	start_char=1150|end_char=1156|ner=O
+25-26	des	_	_	_	_	_	_	_	start_char=1157|end_char=1160|ner=O
+25	de	de	ADP	_	_	27	case	_	_
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_
+27	élèves	élève	NOUN	_	Gender=Masc|Number=Plur	24	nmod	_	start_char=1161|end_char=1167|ner=O
+28	de	de	ADP	_	_	30	case	_	start_char=1168|end_char=1170|ner=O
+29	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	30	det	_	start_char=1171|end_char=1173|ner=O
+30	Ecole	Ecole	NOUN	_	Gender=Fem|Number=Sing	27	nmod	_	start_char=1173|end_char=1178|ner=B-ORG
+31	Nationale	national	ADJ	_	Gender=Fem|Number=Sing	30	amod	_	start_char=1179|end_char=1188|ner=I-ORG
+32	de	de	ADP	_	_	33	case	_	start_char=1189|end_char=1191|ner=I-ORG
+33	Commerce	commerce	NOUN	_	Gender=Masc|Number=Sing	30	nmod	_	start_char=1192|end_char=1200|ner=E-ORG
+34	préparant	préparer	VERB	_	Tense=Pres|VerbForm=Part	30	acl	_	start_char=1201|end_char=1210|ner=O
+35	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	36	det	_	start_char=1211|end_char=1213|ner=O
+36	DEUG	DEUG	PROPN	_	Gender=Masc|Number=Sing	34	obj	_	start_char=1214|end_char=1218|ner=O
+37	de	de	ADP	_	_	38	case	_	start_char=1219|end_char=1221|ner=O
+38	DROIT	DROIT	PROPN	_	_	36	nmod	_	start_char=1242|end_char=1247|ner=S-ORG
+39	.	.	PUNCT	_	_	1	punct	_	start_char=1247|end_char=1248|ner=O
+
+# text = Convention entre PARIS X Nanterre et la Société CH2A : diffusion en vue de l'installation et de la gestion d'un réseau câblé de T.V. sur le campus pour la promotion et la qualité de l'information.
+# sent_id = 12
+1	Convention	convention	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=1266|end_char=1276|ner=O
+2	entre	entre	ADP	_	_	3	case	_	start_char=1277|end_char=1282|ner=O
+3	PARIS	PARIS	PROPN	_	_	1	nmod	_	start_char=1283|end_char=1288|ner=B-ORG
+4	X	X	PROPN	_	_	3	flat:name	_	start_char=1289|end_char=1290|ner=I-ORG
+5	Nanterre	Nanterre	PROPN	_	_	3	flat:name	_	start_char=1291|end_char=1299|ner=E-ORG
+6	et	et	CCONJ	_	_	8	cc	_	start_char=1300|end_char=1302|ner=O
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=1303|end_char=1305|ner=O
+8	Société	société	NOUN	_	Gender=Fem|Number=Sing	3	conj	_	start_char=1306|end_char=1313|ner=B-ORG
+9	CH2A	CH2A	PROPN	_	_	8	appos	_	start_char=1314|end_char=1318|ner=E-ORG
+10	:	:	PUNCT	_	_	11	punct	_	start_char=1320|end_char=1321|ner=O
+11	diffusion	diffusion	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	start_char=1342|end_char=1351|ner=O
+12	en	en	ADP	_	_	11	advmod	_	start_char=1352|end_char=1354|ner=O
+13	vue	vue	NOUN	_	Gender=Fem|Number=Sing	12	fixed	_	start_char=1355|end_char=1358|ner=O
+14	de	de	ADP	_	_	16	case	_	start_char=1359|end_char=1361|ner=O
+15	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	16	det	_	start_char=1362|end_char=1364|ner=O
+16	installation	installation	NOUN	_	Gender=Fem|Number=Sing	12	obl:arg	_	start_char=1364|end_char=1376|ner=O
+17	et	et	CCONJ	_	_	20	cc	_	start_char=1377|end_char=1379|ner=O
+18	de	de	ADP	_	_	20	case	_	start_char=1380|end_char=1382|ner=O
+19	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	20	det	_	start_char=1383|end_char=1385|ner=O
+20	gestion	gestion	NOUN	_	Gender=Fem|Number=Sing	16	conj	_	start_char=1386|end_char=1393|ner=O
+21	d'	de	ADP	_	_	23	case	_	start_char=1394|end_char=1396|ner=O
+22	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	23	det	_	start_char=1396|end_char=1398|ner=O
+23	réseau	réseau	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	start_char=1399|end_char=1405|ner=O
+24	câblé	câbler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	acl	_	start_char=1406|end_char=1411|ner=O
+25	de	de	ADP	_	_	26	case	_	start_char=1412|end_char=1414|ner=O
+26	T.V.	T.V.	PROPN	_	_	23	nmod	_	start_char=1415|end_char=1419|ner=S-MISC
+27	sur	sur	ADP	_	_	29	case	_	start_char=1440|end_char=1443|ner=O
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	start_char=1444|end_char=1446|ner=O
+29	campus	campus	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	start_char=1447|end_char=1453|ner=O
+30	pour	pour	ADP	_	_	32	case	_	start_char=1454|end_char=1458|ner=O
+31	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	32	det	_	start_char=1459|end_char=1461|ner=O
+32	promotion	promotion	NOUN	_	Gender=Fem|Number=Sing	29	nmod	_	start_char=1462|end_char=1471|ner=O
+33	et	et	CCONJ	_	_	35	cc	_	start_char=1472|end_char=1474|ner=O
+34	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	start_char=1475|end_char=1477|ner=O
+35	qualité	qualité	NOUN	_	Gender=Fem|Number=Sing	32	conj	_	start_char=1478|end_char=1485|ner=O
+36	de	de	ADP	_	_	38	case	_	start_char=1486|end_char=1488|ner=O
+37	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	38	det	_	start_char=1489|end_char=1491|ner=O
+38	information	information	NOUN	_	Gender=Fem|Number=Sing	35	nmod	_	start_char=1491|end_char=1502|ner=O
+39	.	.	PUNCT	_	_	1	punct	_	start_char=1502|end_char=1503|ner=O
+
+# text = INFORMATIONS SUR LA CONFERENCE DES PRESIDENTS
+# sent_id = 13
+1	INFORMATIONS	infoimatif	ADJ	_	Gender=Fem|Number=Plur	2	amod	_	start_char=1521|end_char=1533|ner=O
+2	SUR	SUR	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=1534|end_char=1537|ner=O
+3	LA	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=1538|end_char=1540|ner=O
+4	CONFERENCE	CONFERENCE	NOUN	_	Gender=Fem|Number=Plur	2	appos	_	start_char=1541|end_char=1551|ner=B-ORG
+5	DES	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	6	det	_	start_char=1552|end_char=1555|ner=I-ORG
+6	PRESIDENTS	PRESIDENTS	NOUN	_	Gender=Masc|Number=Plur	2	appos	_	start_char=1556|end_char=1566|ner=E-ORG
+
+# text = Sur la publication d'emplois vacants d'enseignement Sur le recrutement à la rentrée 1987 de nouveaux assistants associés : Sur la suppression des postes A.T.O.S. : Sur le programme ERASMUS et autres programmes européens de coopération en matière d'enseignement supérieur et de recherche, la Conférence des Présidents se montre réservée.
+# sent_id = 14
+1	Sur	sur	ADP	_	_	3	case	_	start_char=1581|end_char=1584|ner=O
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=1585|end_char=1587|ner=O
+3	publication	publication	NOUN	_	Gender=Fem|Number=Sing	54	obl:mod	_	start_char=1588|end_char=1599|ner=O
+4	d'	de	ADP	_	_	5	case	_	start_char=1600|end_char=1602|ner=O
+5	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	start_char=1602|end_char=1609|ner=O
+6	vacants	vacant	ADJ	_	Gender=Masc|Number=Plur	5	amod	_	start_char=1610|end_char=1617|ner=O
+7	d'	de	ADP	_	_	8	case	_	start_char=1642|end_char=1644|ner=O
+8	enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=1644|end_char=1656|ner=O
+9	Sur	sur	ADP	_	_	11	case	_	start_char=1657|end_char=1660|ner=O
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=1661|end_char=1663|ner=O
+11	recrutement	recrutement	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=1664|end_char=1675|ner=O
+12	à	à	ADP	_	_	14	case	_	start_char=1676|end_char=1677|ner=O
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	start_char=1678|end_char=1680|ner=O
+14	rentrée	rentrée	NOUN	_	Gender=Fem|Number=Sing	11	nmod	_	start_char=1681|end_char=1688|ner=O
+15	1987	1987	NUM	_	Number=Plur	14	nmod	_	start_char=1689|end_char=1693|ner=O
+16	de	de	ADP	_	_	18	case	_	start_char=1694|end_char=1696|ner=O
+17	nouveaux	nouveau	ADJ	_	Gender=Masc|Number=Plur	18	amod	_	start_char=1697|end_char=1705|ner=O
+18	assistants	assistant	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	start_char=1730|end_char=1740|ner=O
+19	associés	associer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	18	acl	_	start_char=1741|end_char=1749|ner=O
+20	:	:	PUNCT	_	_	54	punct	_	start_char=1750|end_char=1751|ner=O
+21	Sur	sur	ADP	_	_	23	case	_	start_char=1752|end_char=1755|ner=O
+22	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	23	det	_	start_char=1756|end_char=1758|ner=O
+23	suppression	suppression	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=1759|end_char=1770|ner=O
+24-25	des	_	_	_	_	_	_	_	start_char=1771|end_char=1774|ner=O
+24	de	de	ADP	_	_	26	case	_	_
+25	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	26	det	_	_
+26	postes	poste	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	start_char=1775|end_char=1781|ner=O
+27	A.T.O.S.	A.T.O.S.	PROPN	_	_	26	appos	_	start_char=1782|end_char=1790|ner=S-ORG
+28	:	:	PUNCT	_	_	54	punct	_	start_char=1815|end_char=1816|ner=O
+29	Sur	sur	ADP	_	_	31	case	_	start_char=1817|end_char=1820|ner=O
+30	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	31	det	_	start_char=1821|end_char=1823|ner=O
+31	programme	programme	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	start_char=1824|end_char=1833|ner=B-MISC
+32	ERASMUS	ERASMUS	PROPN	_	_	31	appos	_	start_char=1834|end_char=1841|ner=E-MISC
+33	et	et	CCONJ	_	_	35	cc	_	start_char=1842|end_char=1844|ner=O
+34	autres	autre	ADJ	_	Gender=Masc|Number=Plur	35	amod	_	start_char=1845|end_char=1851|ner=O
+35	programmes	programme	NOUN	_	Gender=Masc|Number=Plur	31	conj	_	start_char=1876|end_char=1886|ner=O
+36	européens	européen	ADJ	_	Gender=Masc|Number=Plur	35	amod	_	start_char=1887|end_char=1896|ner=O
+37	de	de	ADP	_	_	38	case	_	start_char=1897|end_char=1899|ner=O
+38	coopération	coopération	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	start_char=1900|end_char=1911|ner=O
+39	en	en	ADP	_	_	40	case	_	start_char=1912|end_char=1914|ner=O
+40	matière	matière	NOUN	_	Gender=Fem|Number=Sing	31	nmod	_	start_char=1915|end_char=1922|ner=O
+41	d'	de	ADP	_	_	42	case	_	start_char=1923|end_char=1925|ner=O
+42	enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	40	nmod	_	start_char=1925|end_char=1937|ner=O
+43	supérieur	supérieur	ADJ	_	Gender=Masc|Number=Sing	42	amod	_	start_char=1938|end_char=1947|ner=O
+44	et	et	CCONJ	_	_	46	cc	_	start_char=1948|end_char=1950|ner=O
+45	de	de	ADP	_	_	46	case	_	start_char=1975|end_char=1977|ner=O
+46	recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	42	conj	_	start_char=1978|end_char=1987|ner=O
+47	,	,	PUNCT	_	_	31	punct	_	start_char=1987|end_char=1988|ner=O
+48	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	49	det	_	start_char=1989|end_char=1991|ner=O
+49	Conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	54	nsubj	_	start_char=1992|end_char=2002|ner=B-ORG
+50-51	des	_	_	_	_	_	_	_	start_char=2003|end_char=2006|ner=I-ORG
+50	de	de	ADP	_	_	52	case	_	_
+51	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	52	det	_	_
+52	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	49	nmod	_	start_char=2007|end_char=2017|ner=E-ORG
+53	se	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	54	expl:pv	_	start_char=2018|end_char=2020|ner=O
+54	montre	montrer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2021|end_char=2027|ner=O
+55	réservée	réserver	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	54	xcomp	_	start_char=2028|end_char=2036|ner=O
+56	.	.	PUNCT	_	_	54	punct	_	start_char=2036|end_char=2037|ner=O
+
+# text = Sur le plan d'intégration d'emplois de vacataires : il n'y a plus d'intégration possible dans le cadre du budget .
+# sent_id = 15
+1	Sur	sur	ADP	_	_	3	case	_	start_char=2038|end_char=2041|ner=O
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=2042|end_char=2044|ner=O
+3	plan	plan	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	start_char=2045|end_char=2049|ner=O
+4	d'	de	ADP	_	_	5	case	_	start_char=2050|end_char=2052|ner=O
+5	intégration	intégration	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=2052|end_char=2063|ner=O
+6	d'	de	ADP	_	_	7	case	_	start_char=2064|end_char=2066|ner=O
+7	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	5	nmod	_	start_char=2066|end_char=2073|ner=O
+8	de	de	ADP	_	_	9	case	_	start_char=2074|end_char=2076|ner=O
+9	vacataires	vacataire	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	start_char=2101|end_char=2111|ner=O
+10	:	:	PUNCT	_	_	14	punct	_	start_char=2112|end_char=2113|ner=O
+11	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	expl:subj	_	start_char=2114|end_char=2116|ner=O
+12	n'	ne	ADV	_	Polarity=Neg	14	advmod	_	start_char=2117|end_char=2119|ner=O
+13	y	y	PRON	_	Person=3|PronType=Prs	14	expl	_	start_char=2119|end_char=2120|ner=O
+14	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2121|end_char=2122|ner=O
+15	plus	plus	ADV	_	Polarity=Neg	14	advmod	_	start_char=2123|end_char=2127|ner=O
+16	d'	un	DET	_	Definite=Ind|Number=Sing|PronType=Art	17	det	_	start_char=2128|end_char=2130|ner=O
+17	intégration	intégration	NOUN	_	Gender=Fem|Number=Sing	14	obj	_	start_char=2130|end_char=2141|ner=O
+18	possible	possible	ADJ	_	Gender=Fem|Number=Sing	17	amod	_	start_char=2142|end_char=2150|ner=O
+19	dans	dans	ADP	_	_	21	case	_	start_char=2151|end_char=2155|ner=O
+20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	21	det	_	start_char=2156|end_char=2158|ner=O
+21	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	14	obl:mod	_	start_char=2159|end_char=2164|ner=O
+22-23	du	_	_	_	_	_	_	_	start_char=2165|end_char=2167|ner=O
+22	de	de	ADP	_	_	24	case	_	_
+23	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	24	det	_	_
+24	budget	budget	NOUN	_	Gender=Masc|Number=Sing	21	nmod	_	start_char=2169|end_char=2175|ner=O
+25	.	.	PUNCT	_	_	14	punct	_	start_char=2176|end_char=2177|ner=O
+
+# text = Procédure et calendrier de la campagne d'habilitation : Thèses :
+# sent_id = 16
+1	Procédure	procédure	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=2178|end_char=2187|ner=O
+2	et	et	CCONJ	_	_	3	cc	_	start_char=2188|end_char=2190|ner=O
+3	calendrier	calendrier	NOUN	_	Gender=Masc|Number=Sing	1	conj	_	start_char=2191|end_char=2201|ner=O
+4	de	de	ADP	_	_	6	case	_	start_char=2202|end_char=2204|ner=O
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=2205|end_char=2207|ner=O
+6	campagne	campagne	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=2208|end_char=2216|ner=O
+7	d'	de	ADP	_	_	8	case	_	start_char=2241|end_char=2243|ner=O
+8	habilitation	habilitation	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	start_char=2243|end_char=2255|ner=O
+9	:	:	PUNCT	_	_	10	punct	_	start_char=2256|end_char=2257|ner=O
+10	Thèses	thèse	NOUN	_	Gender=Fem|Number=Plur	1	appos	_	start_char=2258|end_char=2264|ner=S-MISC
+11	:	:	PUNCT	_	_	10	punct	_	start_char=2265|end_char=2266|ner=O
+
+# text = La réflexion est en cours, l'ouverture se fait vers les jeunes chercheurs.
+# sent_id = 17
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=2267|end_char=2269|ner=O
+2	réflexion	réflexion	NOUN	_	Gender=Fem|Number=Sing	5	nsubj	_	start_char=2270|end_char=2279|ner=O
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	start_char=2280|end_char=2283|ner=O
+4	en	en	ADP	_	_	5	case	_	start_char=2284|end_char=2286|ner=O
+5	cours	cours	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2287|end_char=2292|ner=O
+6	,	,	PUNCT	_	_	10	punct	_	start_char=2292|end_char=2293|ner=O
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	start_char=2318|end_char=2320|ner=O
+8	ouverture	ouverture	NOUN	_	Gender=Fem|Number=Sing	10	nsubj:pass	_	start_char=2320|end_char=2329|ner=O
+9	se	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	10	expl:pass	_	start_char=2330|end_char=2332|ner=O
+10	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	start_char=2333|end_char=2337|ner=O
+11	vers	vers	ADP	_	_	14	case	_	start_char=2338|end_char=2342|ner=O
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	start_char=2343|end_char=2346|ner=O
+13	jeunes	jeune	ADJ	_	Gender=Masc|Number=Plur	14	amod	_	start_char=2347|end_char=2353|ner=O
+14	chercheurs	chercheur	NOUN	_	Gender=Masc|Number=Plur	10	obl:mod	_	start_char=2354|end_char=2364|ner=O
+15	.	.	PUNCT	_	_	5	punct	_	start_char=2364|end_char=2365|ner=O
+
+# text = Maintient du doctorat nouveau régime mais spécialités dans chaque branche.
+# sent_id = 18
+1	Maintient	maintenir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=2366|end_char=2375|ner=O
+2-3	du	_	_	_	_	_	_	_	start_char=2376|end_char=2378|ner=O
+2	de	de	ADP	_	_	4	case	_	_
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	doctorat	doctorat	NOUN	_	Gender=Masc|Number=Sing	1	obj	_	start_char=2379|end_char=2387|ner=O
+5	nouveau	nouveau	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	start_char=2412|end_char=2419|ner=O
+6	régime	régime	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=2420|end_char=2426|ner=O
+7	mais	mais	CCONJ	_	_	8	cc	_	start_char=2427|end_char=2431|ner=O
+8	spécialités	spécialité	NOUN	_	Gender=Fem|Number=Plur	4	conj	_	start_char=2432|end_char=2443|ner=O
+9	dans	dans	ADP	_	_	11	case	_	start_char=2444|end_char=2448|ner=O
+10	chaque	chaque	DET	_	Number=Sing|PronType=Ind	11	det	_	start_char=2449|end_char=2455|ner=O
+11	branche	branche	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	start_char=2456|end_char=2463|ner=O
+12	.	.	PUNCT	_	_	1	punct	_	start_char=2463|end_char=2464|ner=O
+
+# text = Sur les emplois par transformation :
+# sent_id = 19
+1	Sur	sur	ADP	_	_	3	case	_	start_char=2465|end_char=2468|ner=O
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=2469|end_char=2472|ner=O
+3	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=2473|end_char=2480|ner=O
+4	par	par	ADP	_	_	5	case	_	start_char=2481|end_char=2484|ner=O
+5	transformation	transformation	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=2485|end_char=2499|ner=O
+6	:	:	PUNCT	_	_	3	punct	_	start_char=2524|end_char=2525|ner=O
+
+# text = AFFAIRES CULTURELLES
+# sent_id = 20
+1	AFFAIRES	abteur	DET	_	Definite=Def|Number=Plur|PronType=Art	0	root	_	start_char=2543|end_char=2551|ner=B-ORG
+2	CULTURELLES	CULTURELLES	PROPN	_	Number=Plur	1	appos	_	start_char=2552|end_char=2563|ner=E-ORG
+
+# text = QUESTIONS DIVERSES
+# sent_id = 21
+1	QUESTIONS	question	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=2595|end_char=2604|ner=B-ORG
+2	DIVERSES	diverse	ADJ	_	Gender=Fem|Number=Plur	1	amod	_	start_char=2605|end_char=2613|ner=E-ORG
+
+# text = Etaient présents :
+# sent_id = 22
+1	Etaient	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	cop	_	start_char=2645|end_char=2652|ner=O
+2	présents	présent	ADJ	_	Gender=Masc|Number=Plur	0	root	_	start_char=2653|end_char=2661|ner=O
+3	:	:	PUNCT	_	_	2	punct	_	start_char=2662|end_char=2663|ner=O
+
+# text = M. IMBERTY
+# sent_id = 23
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2724|end_char=2726|ner=O
+2	IMBERTY	IMBERTY	PROPN	_	_	1	flat:name	_	start_char=2727|end_char=2734|ner=S-LOC
+
+# text = Membres délibératifs :
+# sent_id = 24
+1	Membres	membre	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=2858|end_char=2865|ner=O
+2	délibératifs	délibératif	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	start_char=2866|end_char=2878|ner=O
+3	:	:	PUNCT	_	_	1	punct	_	start_char=2879|end_char=2880|ner=O
+
+# text = Collège A
+# sent_id = 25
+1	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=2982|end_char=2989|ner=B-LOC
+2	A	A	X	_	_	1	appos	_	start_char=2990|end_char=2991|ner=E-LOC
+
+# text = M. HIMY
+# sent_id = 26
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3053|end_char=3055|ner=O
+2	HIMY	HIMY	PROPN	_	_	1	flat:name	_	start_char=3056|end_char=3060|ner=S-LOC
+
+# text = M. FORESTIER
+# sent_id = 27
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3151|end_char=3153|ner=O
+2	FORESTIER	FORESTIER	PROPN	_	_	1	flat:name	_	start_char=3154|end_char=3163|ner=S-PER
+
+# text = M. PIEJUS
+# sent_id = 28
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3254|end_char=3256|ner=O
+2	PIEJUS	PIEJUS	PROPN	_	_	1	flat:name	_	start_char=3257|end_char=3263|ner=S-LOC
+
+# text = M. LLAU
+# sent_id = 29
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3354|end_char=3356|ner=O
+2	LLAU	LLAU	PROPN	_	_	1	flat:name	_	start_char=3357|end_char=3361|ner=S-LOC
+
+# text = Mme RENVERSEZ
+# sent_id = 30
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	2	nsubj	_	start_char=3452|end_char=3455|ner=B-PER
+2	RENVERSEZ	renverser	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=3456|end_char=3465|ner=E-PER
+
+# text = Melle JULLIEN
+# sent_id = 31
+1	Melle	Melle	PROPN	_	_	0	root	_	start_char=3556|end_char=3561|ner=B-PER
+2	JULLIEN	JULLIEN	PROPN	_	_	1	flat:name	_	start_char=3562|end_char=3569|ner=E-PER
+
+# text = Collège B
+# sent_id = 32
+1	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3726|end_char=3733|ner=B-LOC
+2	B	B	X	_	_	1	appos	_	start_char=3734|end_char=3735|ner=E-LOC
+
+# text = M. SOULAS
+# sent_id = 33
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3797|end_char=3799|ner=O
+2	SOULAS	SOULAS	PROPN	_	_	1	flat:name	_	start_char=3800|end_char=3806|ner=S-PER
+
+# text = M. HERRENSCHMIDT
+# sent_id = 34
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=3897|end_char=3899|ner=O
+2	HERRENSCHMIDT	HERRENSCHMIDT	PROPN	_	_	1	flat:name	_	start_char=3900|end_char=3913|ner=S-PER
+
+# text = Mme WEILL
+# sent_id = 35
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=4004|end_char=4007|ner=B-PER
+2	WEILL	WEILL	PROPN	_	_	1	flat:name	_	start_char=4008|end_char=4013|ner=E-PER
+
+# text = M. ABECASSIS
+# sent_id = 36
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4104|end_char=4106|ner=O
+2	ABECASSIS	ABECASSIS	PROPN	_	_	1	flat:name	_	start_char=4107|end_char=4116|ner=S-ORG
+
+# text = M. GUERIN
+# sent_id = 37
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4207|end_char=4209|ner=O
+2	GUERIN	GUERIN	PROPN	_	_	1	flat:name	_	start_char=4210|end_char=4216|ner=S-PER
+
+# text = Mme ZARKA
+# sent_id = 38
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=4307|end_char=4310|ner=B-PER
+2	ZARKA	ZARKA	PROPN	_	_	1	flat:name	_	start_char=4311|end_char=4316|ner=E-PER
+
+# text = Collège étudiant
+# sent_id = 39
+1	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4473|end_char=4480|ner=O
+2	étudiant	étudiant	ADJ	_	Gender=Masc|Number=Sing	1	amod	_	start_char=4481|end_char=4489|ner=O
+
+# text = M. DE VILLEPIN
+# sent_id = 40
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4551|end_char=4553|ner=O
+2	DE	de	ADP	_	_	1	flat:name	_	start_char=4554|end_char=4556|ner=B-PER
+3	VILLEPIN	VILLEPIN	PROPN	_	_	1	nmod	_	start_char=4557|end_char=4565|ner=E-PER
+
+# text = M. HEITZ
+# sent_id = 41
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4656|end_char=4658|ner=O
+2	HEITZ	HEITZ	PROPN	_	_	1	flat:name	_	start_char=4659|end_char=4664|ner=S-PER
+
+# text = Collège ATOS-ITA
+# sent_id = 42
+1	Collège	collège	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=4821|end_char=4828|ner=O
+2	ATOS-ITA	ATOS-ITA	PROPN	_	_	1	appos	_	start_char=4829|end_char=4837|ner=S-LOC
+
+# text = Melle PEIGNOT
+# sent_id = 43
+1	Melle	Melle	PROPN	_	_	0	root	_	start_char=4899|end_char=4904|ner=B-PER
+2	PEIGNOT	PEIGNOT	PROPN	_	_	1	flat:name	_	start_char=4905|end_char=4912|ner=E-PER
+
+# text = Melle WAINTROP
+# sent_id = 44
+1	Melle	Melle	PROPN	_	_	0	root	_	start_char=5003|end_char=5008|ner=B-PER
+2	WAINTROP	WAINTROP	PROPN	_	_	1	flat:name	_	start_char=5009|end_char=5017|ner=E-PER
+
+# text = M. RODRIGUEZ
+# sent_id = 45
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=5108|end_char=5110|ner=O
+2	RODRIGUEZ	RODRIGUEZ	PROPN	_	_	1	flat:name	_	start_char=5111|end_char=5120|ner=S-PER
+
+# text = Personnalités extérieures
+# sent_id = 46
+1	Personnalités	personnalité	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=5296|end_char=5309|ner=O
+2	extérieures	extérieur	ADJ	_	Gender=Fem|Number=Plur	1	amod	_	start_char=5310|end_char=5321|ner=O
+
+# text = M. PIN , Représentant le Conseil Général des Hauts-de-Seine ,
+# sent_id = 47
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=5371|end_char=5373|ner=O
+2	PIN	PIN	PROPN	_	_	1	flat:name	_	start_char=5374|end_char=5377|ner=O
+3	,	,	PUNCT	_	_	4	punct	_	start_char=5378|end_char=5379|ner=O
+4	Représentant	représentant	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=5381|end_char=5393|ner=O
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=5394|end_char=5396|ner=O
+6	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	4	appos	_	start_char=5397|end_char=5404|ner=B-LOC
+7	Général	général	ADJ	_	Gender=Masc|Number=Sing	6	amod	_	start_char=5441|end_char=5448|ner=I-LOC
+8-9	des	_	_	_	_	_	_	_	start_char=5449|end_char=5452|ner=I-LOC
+8	de	de	ADP	_	_	10	case	_	_
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	_
+10	Hauts-de-Seine	Hauts-de-Seine	PROPN	_	Number=Plur	6	nmod	_	start_char=5453|end_char=5467|ner=E-LOC
+11	,	,	PUNCT	_	_	1	punct	_	start_char=5468|end_char=5469|ner=O
+
+# text = Mme DUPUIS , Représentant de la C.G.P.M.E.
+# sent_id = 48
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=5519|end_char=5522|ner=B-PER
+2	DUPUIS	DUPUIS	PROPN	_	_	1	flat:name	_	start_char=5523|end_char=5529|ner=E-PER
+3	,	,	PUNCT	_	_	4	punct	_	start_char=5530|end_char=5531|ner=O
+4	Représentant	représentant	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=5533|end_char=5545|ner=B-ORG
+5	de	de	ADP	_	_	7	case	_	start_char=5546|end_char=5548|ner=I-ORG
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=5549|end_char=5551|ner=I-ORG
+7	C.G.P.M.E.	C.G.P.M.E.	PROPN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=5588|end_char=5598|ner=E-ORG
+
+# text = Membres consultatifs:
+# sent_id = 49
+1	Membres	membre	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=5745|end_char=5752|ner=O
+2	consultatifs	consultatif	ADJ	_	Gender=Masc|Number=Plur	1	amod	_	start_char=5753|end_char=5765|ner=O
+3	:	:	PUNCT	_	_	1	punct	_	start_char=5765|end_char=5766|ner=O
+
+# text = M. SAUREL , Secrétaire Général
+# sent_id = 50
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=5839|end_char=5841|ner=O
+2	SAUREL	SAUREL	PROPN	_	_	1	flat:name	_	start_char=5842|end_char=5848|ner=S-PER
+3	,	,	PUNCT	_	_	4	punct	_	start_char=5849|end_char=5850|ner=O
+4	Secrétaire	secrétaire	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=5852|end_char=5862|ner=B-PER
+5	Général	général	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=5899|end_char=5906|ner=E-PER
+
+# text = Mme MORTUREUX , Vice-Présidente chargée des Moyens
+# sent_id = 51
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=5979|end_char=5982|ner=B-PER
+2	MORTUREUX	MORTUREUX	PROPN	_	_	1	flat:name	_	start_char=5983|end_char=5992|ner=E-PER
+3	,	,	PUNCT	_	_	4	punct	_	start_char=5993|end_char=5994|ner=O
+4	Vice-Présidente	vice-président	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	start_char=5996|end_char=6011|ner=B-PER
+5	chargée	charger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	start_char=6048|end_char=6055|ner=I-PER
+6-7	des	_	_	_	_	_	_	_	start_char=6056|end_char=6059|ner=I-PER
+6	de	de	ADP	_	_	8	case	_	_
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_
+8	Moyens	Moyens	PROPN	_	Number=Plur	5	obl:arg	_	start_char=6060|end_char=6066|ner=E-PER
+
+# text = Mme BARTHELEMY , Vice-Présidente chargée des Etudes
+# sent_id = 52
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=6139|end_char=6142|ner=B-PER
+2	BARTHELEMY	BARTHELEMY	PROPN	_	_	1	flat:name	_	start_char=6143|end_char=6153|ner=E-PER
+3	,	,	PUNCT	_	_	4	punct	_	start_char=6154|end_char=6155|ner=O
+4	Vice-Présidente	vice-président	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	start_char=6157|end_char=6172|ner=B-PER
+5	chargée	charger	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	start_char=6209|end_char=6216|ner=I-PER
+6-7	des	_	_	_	_	_	_	_	start_char=6217|end_char=6220|ner=I-PER
+6	de	de	ADP	_	_	8	case	_	_
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_
+8	Etudes	Etudes	NOUN	_	Gender=Fem|Number=Plur	5	obl:arg	_	start_char=6221|end_char=6227|ner=E-PER
+
+# text = M. NOCQ , Directeur du S.C.I.S.U.
+# sent_id = 53
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=6300|end_char=6302|ner=O
+2	NOCQ	NOCQ	PROPN	_	_	1	flat:name	_	start_char=6303|end_char=6307|ner=S-PER
+3	,	,	PUNCT	_	_	4	punct	_	start_char=6308|end_char=6309|ner=O
+4	Directeur	directeur	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=6311|end_char=6320|ner=B-ORG
+5-6	du	_	_	_	_	_	_	_	start_char=6321|end_char=6323|ner=I-ORG
+5	de	de	ADP	_	_	7	case	_	_
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+7	S.C.I.S.U.	S.C.I.S.U.	PROPN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=6360|end_char=6370|ner=E-ORG
+
+# text = Mme TEILLET (Invitée) Responsable de l'Information Interne
+# sent_id = 54
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=6443|end_char=6446|ner=B-PER
+2	TEILLET	TEILLET	PROPN	_	_	1	flat:name	_	start_char=6447|end_char=6454|ner=E-PER
+3	(	(	PUNCT	_	_	4	punct	_	start_char=6456|end_char=6457|ner=O
+4	Invitée	inviter	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	start_char=6457|end_char=6464|ner=O
+5	)	)	PUNCT	_	_	4	punct	_	start_char=6464|end_char=6465|ner=O
+6	Responsable	responsable	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	start_char=6467|end_char=6478|ner=B-ORG
+7	de	de	ADP	_	_	9	case	_	start_char=6479|end_char=6481|ner=I-ORG
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	start_char=6518|end_char=6520|ner=I-ORG
+9	Information	information	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	start_char=6520|end_char=6531|ner=I-ORG
+10	Interne	Interne	PROPN	_	_	9	appos	_	start_char=6532|end_char=6539|ner=E-ORG
+
+# text = Procurations en début de séance
+# sent_id = 55
+1	Procurations	procuration	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=6631|end_char=6643|ner=S-LOC
+2	en	en	ADP	_	_	3	case	_	start_char=6644|end_char=6646|ner=O
+3	début	début	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6647|end_char=6652|ner=O
+4	de	de	ADP	_	_	5	case	_	start_char=6653|end_char=6655|ner=O
+5	séance	séance	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=6656|end_char=6662|ner=O
+
+# text = M. SARKOZY à M. IMBERTY
+# sent_id = 56
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=6700|end_char=6702|ner=O
+2	SARKOZY	SARKOZY	PROPN	_	_	1	flat:name	_	start_char=6703|end_char=6710|ner=S-PER
+3	à	à	ADP	_	_	4	case	_	start_char=6712|end_char=6713|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6715|end_char=6717|ner=B-PER
+5	IMBERTY	IMBERTY	PROPN	_	_	4	flat:name	_	start_char=6718|end_char=6725|ner=E-PER
+
+# text = M. VIGIER à Mme RENVERSEZ
+# sent_id = 57
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	5	nsubj	_	start_char=6780|end_char=6782|ner=O
+2	VIGIER	VIGIER	PROPN	_	_	1	flat:name	_	start_char=6783|end_char=6789|ner=S-PER
+3	à	à	ADP	_	_	4	case	_	start_char=6791|end_char=6792|ner=O
+4	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=6794|end_char=6797|ner=B-PER
+5	RENVERSEZ	renverser	VERB	_	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	start_char=6798|end_char=6807|ner=E-PER
+
+# text = Mme BERNAS à M. IMBERTY
+# sent_id = 58
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=6862|end_char=6865|ner=B-PER
+2	BERNAS	BERNAS	PROPN	_	_	1	flat:name	_	start_char=6866|end_char=6872|ner=E-PER
+3	à	à	ADP	_	_	4	case	_	start_char=6874|end_char=6875|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6877|end_char=6879|ner=B-PER
+5	IMBERTY	IMBERTY	PROPN	_	_	4	flat:name	_	start_char=6880|end_char=6887|ner=E-PER
+
+# text = M. GEOUFFRE DE LA PRADELLE à M. LLAU
+# sent_id = 59
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=6942|end_char=6944|ner=O
+2	GEOUFFRE	GEOUFFRE	PROPN	_	_	1	flat:name	_	start_char=6945|end_char=6953|ner=B-PER
+3	DE	de	ADP	_	_	5	case	_	start_char=6954|end_char=6956|ner=I-PER
+4	LA	le	DET	_	Definite=Def|Number=Sing|PronType=Art	1	flat:name	_	start_char=6957|end_char=6959|ner=I-PER
+5	PRADELLE	PRADELLE	PROPN	_	_	1	flat:name	_	start_char=6960|end_char=6968|ner=E-PER
+6	à	à	ADP	_	_	7	case	_	start_char=6970|end_char=6971|ner=O
+7	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=6973|end_char=6975|ner=B-PER
+8	LLAU	LLAU	PROPN	_	_	7	flat:name	_	start_char=7004|end_char=7008|ner=E-PER
+
+# text = M. CHEREAU à M. HIMY
+# sent_id = 60
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7063|end_char=7065|ner=O
+2	CHEREAU	CHEREAU	PROPN	_	_	1	flat:name	_	start_char=7066|end_char=7073|ner=S-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7075|end_char=7076|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=7078|end_char=7080|ner=B-PER
+5	HIMY	HIMY	PROPN	_	_	4	flat:name	_	start_char=7081|end_char=7085|ner=E-PER
+
+# text = M. LANGLOIS à M. LLAU
+# sent_id = 61
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7140|end_char=7142|ner=O
+2	LANGLOIS	LANGLOIS	PROPN	_	_	1	flat:name	_	start_char=7143|end_char=7151|ner=S-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7153|end_char=7154|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=7156|end_char=7158|ner=B-PER
+5	LLAU	LLAU	PROPN	_	_	4	flat:name	_	start_char=7159|end_char=7163|ner=E-PER
+
+# text = Mme FERRERAS à M. SOULAS
+# sent_id = 62
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=7218|end_char=7221|ner=B-PER
+2	FERRERAS	FERRERAS	PROPN	_	_	1	flat:name	_	start_char=7222|end_char=7230|ner=E-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7232|end_char=7233|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=7235|end_char=7237|ner=B-PER
+5	SOULAS	SOULAS	PROPN	_	_	4	flat:name	_	start_char=7238|end_char=7244|ner=E-PER
+
+# text = M. SAMAMA à M. HIMY
+# sent_id = 63
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7299|end_char=7301|ner=O
+2	SAMAMA	SAMAMA	PROPN	_	_	1	flat:name	_	start_char=7302|end_char=7308|ner=S-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7310|end_char=7311|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=7313|end_char=7315|ner=B-PER
+5	HIMY	HIMY	PROPN	_	_	4	flat:name	_	start_char=7316|end_char=7320|ner=E-PER
+
+# text = Melle BARTHOUX à Melle JULLIEN
+# sent_id = 64
+1	Melle	Melle	PROPN	_	_	0	root	_	start_char=7375|end_char=7380|ner=B-PER
+2	BARTHOUX	BARTHOUX	PROPN	_	_	1	flat:name	_	start_char=7381|end_char=7389|ner=E-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7391|end_char=7392|ner=O
+4	Melle	Melle	PROPN	_	_	1	nmod	_	start_char=7394|end_char=7399|ner=B-PER
+5	JULLIEN	JULLIEN	PROPN	_	_	4	flat:name	_	start_char=7400|end_char=7407|ner=E-PER
+
+# text = Mme VIERS à Melle WAINTROP
+# sent_id = 65
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=7462|end_char=7465|ner=B-PER
+2	VIERS	VIERS	PROPN	_	_	1	flat:name	_	start_char=7466|end_char=7471|ner=E-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7473|end_char=7474|ner=O
+4	Melle	Melle	PROPN	_	_	1	nmod	_	start_char=7476|end_char=7481|ner=B-LOC
+5	WAINTROP	WAINTROP	PROPN	_	_	4	flat:name	_	start_char=7482|end_char=7490|ner=E-LOC
+
+# text = M. GUILLON à M. GUERIN
+# sent_id = 66
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7545|end_char=7547|ner=O
+2	GUILLON	GUILLON	PROPN	_	_	1	flat:name	_	start_char=7548|end_char=7555|ner=S-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7557|end_char=7558|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=7560|end_char=7562|ner=B-PER
+5	GUERIN	GUERIN	PROPN	_	_	4	flat:name	_	start_char=7563|end_char=7569|ner=E-PER
+
+# text = M. MARINIER à M. PIEJUS
+# sent_id = 67
+1	M.	M.	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=7624|end_char=7626|ner=O
+2	MARINIER	MARINIER	PROPN	_	_	1	flat:name	_	start_char=7627|end_char=7635|ner=S-PER
+3	à	à	ADP	_	_	4	case	_	start_char=7637|end_char=7638|ner=O
+4	M.	M.	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=7640|end_char=7642|ner=B-PER
+5	PIEJUS	PIEJUS	PROPN	_	_	4	flat:name	_	start_char=7643|end_char=7649|ner=E-PER
+
+# text = Excusées :
+# sent_id = 68
+1	Excusées	excuser	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	start_char=7718|end_char=7726|ner=O
+2	:	:	PUNCT	_	_	1	punct	_	start_char=7728|end_char=7729|ner=O
+
+# text = Mme LESENECHAL
+# sent_id = 69
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=7767|end_char=7770|ner=B-PER
+2	LESENECHAL	LESENECHAL	PROPN	_	_	1	flat:name	_	start_char=7771|end_char=7781|ner=E-PER
+
+# text = Mme DURIANI
+# sent_id = 70
+1	Mme	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=7836|end_char=7839|ner=B-PER
+2	DURIANI	DURIANI	PROPN	_	_	1	flat:name	_	start_char=7840|end_char=7847|ner=E-PER
+
+# text = CONVENTIONS
+# sent_id = 71
+1	CONVENTIONS	CONVENTIONS	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=7896|end_char=7907|ner=S-ORG
+
+# text = entre L'UNIVERSITE DE PARIS X NANTERRE et L'UNIVERSITE DE READING
+# sent_id = 72
+1	entre	entre	ADP	_	_	3	case	_	start_char=7925|end_char=7930|ner=O
+2	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	start_char=7931|end_char=7933|ner=B-ORG
+3	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	0	root	_	start_char=7933|end_char=7943|ner=E-ORG
+4	DE	de	ADP	_	_	5	case	_	start_char=7944|end_char=7946|ner=O
+5	PARIS	PARIS	PROPN	_	_	3	nmod	_	start_char=7947|end_char=7952|ner=B-ORG
+6	X	X	PROPN	_	_	5	flat:name	_	start_char=7953|end_char=7954|ner=I-ORG
+7	NANTERRE	NANTERRE	PROPN	_	_	5	flat:name	_	start_char=7955|end_char=7963|ner=E-ORG
+8	et	et	CCONJ	_	_	10	cc	_	start_char=7964|end_char=7966|ner=O
+9	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=7967|end_char=7969|ner=B-ORG
+10	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	3	conj	_	start_char=7969|end_char=7979|ner=I-ORG
+11	DE	de	ADP	_	_	12	case	_	start_char=7980|end_char=7982|ner=I-ORG
+12	READING	READING	PROPN	_	_	10	nmod	_	start_char=7983|end_char=7990|ner=E-ORG
+
+# text = entre L'UNIVERSITE DE PARIS X NANTERRE et THE POLYTECHNIC, WOLVERHAMPTON
+# sent_id = 73
+1	entre	entre	ADP	_	_	3	case	_	start_char=8008|end_char=8013|ner=O
+2	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	start_char=8014|end_char=8016|ner=B-ORG
+3	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	0	root	_	start_char=8016|end_char=8026|ner=E-ORG
+4	DE	de	ADP	_	_	5	case	_	start_char=8027|end_char=8029|ner=O
+5	PARIS	PARIS	PROPN	_	_	3	nmod	_	start_char=8030|end_char=8035|ner=B-ORG
+6	X	X	PROPN	_	_	5	flat:name	_	start_char=8036|end_char=8037|ner=I-ORG
+7	NANTERRE	NANTERRE	PROPN	_	_	5	flat:name	_	start_char=8038|end_char=8046|ner=E-ORG
+8	et	et	CCONJ	_	_	9	cc	_	start_char=8047|end_char=8049|ner=O
+9	THE	THE	PROPN	_	_	3	conj	_	start_char=8050|end_char=8053|ner=B-ORG
+10	POLYTECHNIC	POLYTECHNIC	PROPN	_	_	9	flat:name	_	start_char=8054|end_char=8065|ner=E-ORG
+11	,	,	PUNCT	_	_	12	punct	_	start_char=8065|end_char=8066|ner=O
+12	WOLVERHAMPTON	WOLVERHAMPTON	PROPN	_	_	3	appos	_	start_char=8091|end_char=8104|ner=S-ORG
+
+# text = entre L'UNIVERSITE DE PAIRS X NANTERRE et L'UNIVERSITE COMPLUTENSE DE MADRID
+# sent_id = 74
+1	entre	entre	ADP	_	_	3	case	_	start_char=8122|end_char=8127|ner=O
+2	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	start_char=8128|end_char=8130|ner=B-ORG
+3	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	0	root	_	start_char=8130|end_char=8140|ner=E-ORG
+4	DE	de	ADP	_	_	5	case	_	start_char=8141|end_char=8143|ner=O
+5	PAIRS	PAIRS	PROPN	_	_	3	nmod	_	start_char=8144|end_char=8149|ner=B-ORG
+6	X	X	NUM	_	Number=Plur	5	nmod	_	start_char=8150|end_char=8151|ner=I-ORG
+7	NANTERRE	NANTERRE	PROPN	_	_	5	flat:name	_	start_char=8152|end_char=8160|ner=E-ORG
+8	et	et	CCONJ	_	_	10	cc	_	start_char=8161|end_char=8163|ner=O
+9	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=8164|end_char=8166|ner=B-ORG
+10	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	3	conj	_	start_char=8166|end_char=8176|ner=I-ORG
+11	COMPLUTENSE	COMPLUTENSE	PROPN	_	_	10	flat:name	_	start_char=8177|end_char=8188|ner=E-ORG
+12	DE	un	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	start_char=8189|end_char=8191|ner=B-ORG
+13	MADRID	MADRID	PROPN	_	_	10	appos	_	start_char=8216|end_char=8222|ner=E-ORG
+
+# text = entre L'UNIVERSITE DE PAIRS X NANTERRE et L'ECOLE NATIONALE DE COMMERCE (Lycée Bessières)
+# sent_id = 75
+1	entre	entre	ADP	_	_	3	case	_	start_char=8240|end_char=8245|ner=O
+2	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	start_char=8246|end_char=8248|ner=B-ORG
+3	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	13	nmod	_	start_char=8248|end_char=8258|ner=E-ORG
+4	DE	de	ADP	_	_	5	case	_	start_char=8259|end_char=8261|ner=O
+5	PAIRS	PAIRS	PROPN	_	_	3	nmod	_	start_char=8262|end_char=8267|ner=B-ORG
+6	X	X	NUM	_	Number=Plur	5	nmod	_	start_char=8268|end_char=8269|ner=I-ORG
+7	NANTERRE	NANTERRE	PROPN	_	_	5	flat:name	_	start_char=8270|end_char=8278|ner=E-ORG
+8	et	et	CCONJ	_	_	10	cc	_	start_char=8279|end_char=8281|ner=O
+9	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=8282|end_char=8284|ner=B-ORG
+10	ECOLE	ECOLE	PROPN	_	Number=Sing	3	conj	_	start_char=8284|end_char=8289|ner=E-ORG
+11	NATIONALE	NATIONALE	PROPN	_	_	10	flat:name	_	start_char=8290|end_char=8299|ner=B-ORG
+12	DE	un	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	start_char=8300|end_char=8302|ner=I-ORG
+13	COMMERCE	COMMERCE	PROPN	_	Number=Plur	0	root	_	start_char=8303|end_char=8311|ner=E-ORG
+14	(	(	PUNCT	_	_	15	punct	_	start_char=8336|end_char=8337|ner=O
+15	Lycée	lycée	NOUN	_	Gender=Masc|Number=Sing	13	appos	_	start_char=8337|end_char=8342|ner=B-LOC
+16	Bessières	Bessières	PROPN	_	_	15	appos	_	start_char=8343|end_char=8352|ner=E-LOC
+17	)	)	PUNCT	_	_	15	punct	_	start_char=8352|end_char=8353|ner=O
+
+# text = entre L'UNIVERSITE DE PAIRS X NANTERRE et LA SOCIETE CH2A.
+# sent_id = 76
+1	entre	entre	ADP	_	_	3	case	_	start_char=8371|end_char=8376|ner=O
+2	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	3	det	_	start_char=8377|end_char=8379|ner=B-ORG
+3	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	0	root	_	start_char=8379|end_char=8389|ner=E-ORG
+4	DE	de	ADP	_	_	5	case	_	start_char=8390|end_char=8392|ner=O
+5	PAIRS	PAIRS	PROPN	_	_	3	nmod	_	start_char=8393|end_char=8398|ner=B-ORG
+6	X	X	NUM	_	Number=Plur	5	nmod	_	start_char=8399|end_char=8400|ner=I-ORG
+7	NANTERRE	NANTERRE	PROPN	_	_	5	flat:name	_	start_char=8401|end_char=8409|ner=E-ORG
+8	et	et	CCONJ	_	_	9	cc	_	start_char=8410|end_char=8412|ner=O
+9	LA	LA	PROPN	_	_	3	conj	_	start_char=8413|end_char=8415|ner=B-ORG
+10	SOCIETE	SOCIETE	PROPN	_	_	9	flat:name	_	start_char=8416|end_char=8423|ner=E-ORG
+11	CH2A	CH2A	X	_	_	9	flat:name	_	start_char=8424|end_char=8428|ner=S-MISC
+12	.	.	PUNCT	_	_	3	punct	_	start_char=8428|end_char=8429|ner=O
+
+# text = INFORMATIONS sur la Conférence des Présidents
+# sent_id = 77
+1	INFORMATIONS	INFORmAT'ON	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=8447|end_char=8459|ner=O
+2	sur	sur	ADP	_	_	4	case	_	start_char=8460|end_char=8463|ner=O
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=8464|end_char=8466|ner=O
+4	Conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=8467|end_char=8477|ner=B-ORG
+5-6	des	_	_	_	_	_	_	_	start_char=8478|end_char=8481|ner=I-ORG
+5	de	de	ADP	_	_	7	case	_	_
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
+7	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	start_char=8482|end_char=8492|ner=E-ORG
+
+# text = AFFAIRES CULTURELLES
+# sent_id = 78
+1	AFFAIRES	abteur	DET	_	Definite=Def|Number=Plur|PronType=Art	0	root	_	start_char=8510|end_char=8518|ner=B-ORG
+2	CULTURELLES	CULTURELLES	PROPN	_	Number=Plur	1	appos	_	start_char=8519|end_char=8530|ner=E-ORG
+
+# text = QUESTIONS DIVERSES
+# sent_id = 79
+1	QUESTIONS	question	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=8548|end_char=8557|ner=B-ORG
+2	DIVERSES	diverse	ADJ	_	Gender=Fem|Number=Plur	1	amod	_	start_char=8558|end_char=8566|ner=E-ORG
+
+# text = Sur la création d'emplois (décret du 6.06.84 modifié):
+# sent_id = 80
+1	Sur	sur	ADP	_	_	3	case	_	start_char=8598|end_char=8601|ner=O
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=8602|end_char=8604|ner=O
+3	création	création	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=8605|end_char=8613|ner=O
+4	d'	de	ADP	_	_	5	case	_	start_char=8614|end_char=8616|ner=O
+5	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	start_char=8616|end_char=8623|ner=O
+6	(	(	PUNCT	_	_	7	punct	_	start_char=8624|end_char=8625|ner=O
+7	décret	décret	NOUN	_	Gender=Masc|Number=Sing	3	appos	_	start_char=8625|end_char=8631|ner=O
+8-9	du	_	_	_	_	_	_	_	start_char=8632|end_char=8634|ner=O
+8	de	de	ADP	_	_	10	case	_	_
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	6.06.84	6.06.84	NUM	_	Number=Sing	7	nmod	_	start_char=8636|end_char=8643|ner=O
+11	modifié	modifier	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	acl	_	start_char=8645|end_char=8652|ner=O
+12	)	)	PUNCT	_	_	7	punct	_	start_char=8652|end_char=8653|ner=O
+13	:	:	PUNCT	_	_	3	punct	_	start_char=8653|end_char=8654|ner=O
+
+# text = la réponse devrait parvenir dans la première quinzaine de juillet.
+# sent_id = 81
+1	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=8672|end_char=8674|ner=O
+2	réponse	réponse	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	start_char=8675|end_char=8682|ner=O
+3	devrait	devoir	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=8683|end_char=8690|ner=O
+4	parvenir	parvenir	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=8691|end_char=8699|ner=O
+5	dans	dans	ADP	_	_	8	case	_	start_char=8700|end_char=8704|ner=O
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=8705|end_char=8707|ner=O
+7	première	premier	ADJ	_	Gender=Fem|Number=Sing	8	amod	_	start_char=8708|end_char=8716|ner=O
+8	quinzaine	quinzaine	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	start_char=8717|end_char=8726|ner=O
+9	de	de	ADP	_	_	10	case	_	start_char=8727|end_char=8729|ner=O
+10	juillet	juillet	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	start_char=8758|end_char=8765|ner=O
+11	.	.	PUNCT	_	_	3	punct	_	start_char=8765|end_char=8766|ner=O
+
+# text = Sur la notification des cours complémentaires l'année 1987-1988 : pour
+# sent_id = 82
+1	Sur	sur	ADP	_	_	3	case	_	start_char=8784|end_char=8787|ner=O
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=8788|end_char=8790|ner=O
+3	notification	notification	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=8791|end_char=8803|ner=O
+4-5	des	_	_	_	_	_	_	_	start_char=8804|end_char=8807|ner=O
+4	de	de	ADP	_	_	6	case	_	_
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	_
+6	cours	cours	NOUN	_	Gender=Masc|Number=Plur	3	nmod	_	start_char=8808|end_char=8813|ner=O
+7	complémentaires	complémentaire	ADJ	_	Gender=Masc|Number=Plur	6	amod	_	start_char=8814|end_char=8829|ner=O
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	start_char=8830|end_char=8832|ner=O
+9	année	année	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=8832|end_char=8837|ner=O
+10	1987-1988	1987-1988	NUM	_	Number=Plur	9	nmod	_	start_char=8838|end_char=8847|ner=O
+11	:	:	PUNCT	_	_	3	punct	_	start_char=8848|end_char=8849|ner=O
+12	pour	pour	ADP	_	_	3	punct	_	start_char=8878|end_char=8882|ner=O
+
+# text = projet de décret prolongeant les mesures en place, mais pas question de prolonger les enseignants en postes.
+# sent_id = 83
+1	projet	projet	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=8914|end_char=8920|ner=O
+2	de	de	ADP	_	_	3	case	_	start_char=8921|end_char=8923|ner=O
+3	décret	décret	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=8924|end_char=8930|ner=O
+4	prolongeant	prolonger	VERB	_	Tense=Pres|VerbForm=Part	1	acl	_	start_char=8931|end_char=8942|ner=O
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=8943|end_char=8946|ner=O
+6	mesures	mesure	NOUN	_	Gender=Fem|Number=Plur	4	obj	_	start_char=8947|end_char=8954|ner=O
+7	en	en	ADP	_	_	8	case	_	start_char=8955|end_char=8957|ner=O
+8	place	place	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	start_char=8958|end_char=8963|ner=O
+9	,	,	PUNCT	_	_	12	punct	_	start_char=8963|end_char=8964|ner=O
+10	mais	mais	CCONJ	_	_	12	cc	_	start_char=8965|end_char=8969|ner=O
+11	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	start_char=8970|end_char=8973|ner=O
+12	question	question	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	start_char=8974|end_char=8982|ner=O
+13	de	de	ADP	_	_	14	mark	_	start_char=9011|end_char=9013|ner=O
+14	prolonger	prolonger	VERB	_	VerbForm=Inf	12	acl	_	start_char=9014|end_char=9023|ner=O
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	start_char=9024|end_char=9027|ner=O
+16	enseignants	enseignant	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	start_char=9028|end_char=9039|ner=O
+17	en	en	ADP	_	_	18	case	_	start_char=9040|end_char=9042|ner=O
+18	postes	poste	NOUN	_	Gender=Fem|Number=Plur	14	obl:mod	_	start_char=9043|end_char=9049|ner=O
+19	.	.	PUNCT	_	_	1	punct	_	start_char=9049|end_char=9050|ner=O
+
+# text = pour les lecteurs et les maîtres de langues étrangères : les textes sont prêts et seront adoptés définitivement après la modification de la loi Lepors.
+# sent_id = 84
+1	pour	pour	ADP	_	_	3	case	_	start_char=9068|end_char=9072|ner=O
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=9073|end_char=9076|ner=O
+3	lecteurs	lecteur	NOUN	_	Gender=Masc|Number=Plur	14	obl:mod	_	start_char=9077|end_char=9085|ner=O
+4	et	et	CCONJ	_	_	6	cc	_	start_char=9086|end_char=9088|ner=O
+5	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	6	det	_	start_char=9089|end_char=9092|ner=O
+6	maîtres	maître	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	start_char=9093|end_char=9100|ner=O
+7	de	de	ADP	_	_	8	case	_	start_char=9101|end_char=9103|ner=O
+8	langues	langue	NOUN	_	Gender=Fem|Number=Plur	6	nmod	_	start_char=9104|end_char=9111|ner=O
+9	étrangères	étranger	ADJ	_	Gender=Fem|Number=Plur	8	amod	_	start_char=9112|end_char=9122|ner=O
+10	:	:	PUNCT	_	_	14	punct	_	start_char=9123|end_char=9124|ner=O
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	12	det	_	start_char=9125|end_char=9128|ner=O
+12	textes	texte	NOUN	_	Gender=Masc|Number=Plur	14	nsubj	_	start_char=9129|end_char=9135|ner=O
+13	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	cop	_	start_char=9164|end_char=9168|ner=O
+14	prêts	prêt	ADJ	_	Gender=Masc|Number=Plur	0	root	_	start_char=9169|end_char=9174|ner=O
+15	et	et	CCONJ	_	_	17	cc	_	start_char=9175|end_char=9177|ner=O
+16	seront	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	17	aux:pass	_	start_char=9178|end_char=9184|ner=O
+17	adoptés	adopter	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	14	conj	_	start_char=9185|end_char=9192|ner=O
+18	définitivement	définitivement	ADV	_	_	17	advmod	_	start_char=9193|end_char=9207|ner=O
+19	après	après	ADP	_	_	21	case	_	start_char=9208|end_char=9213|ner=O
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	start_char=9214|end_char=9216|ner=O
+21	modification	modification	NOUN	_	Gender=Fem|Number=Sing	17	obl:mod	_	start_char=9217|end_char=9229|ner=O
+22	de	de	ADP	_	_	24	case	_	start_char=9230|end_char=9232|ner=O
+23	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	24	det	_	start_char=9233|end_char=9235|ner=O
+24	loi	loi	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	start_char=9264|end_char=9267|ner=B-MISC
+25	Lepors	Lepors	PROPN	_	_	24	appos	_	start_char=9268|end_char=9274|ner=E-MISC
+26	.	.	PUNCT	_	_	14	punct	_	start_char=9274|end_char=9275|ner=O
+
+# text = pour les allocataires d'enseignement et les agents temporaires d'enseignement, les textes sont en préparation.
+# sent_id = 85
+1	pour	pour	ADP	_	_	3	case	_	start_char=9293|end_char=9297|ner=O
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=9298|end_char=9301|ner=O
+3	allocataires	allocataire	NOUN	_	Gender=Masc|Number=Plur	17	obl:mod	_	start_char=9302|end_char=9314|ner=O
+4	d'	de	ADP	_	_	5	case	_	start_char=9315|end_char=9317|ner=O
+5	enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	3	nmod	_	start_char=9317|end_char=9329|ner=O
+6	et	et	CCONJ	_	_	8	cc	_	start_char=9330|end_char=9332|ner=O
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	start_char=9333|end_char=9336|ner=O
+8	agents	agent	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	start_char=9337|end_char=9343|ner=O
+9	temporaires	temporaire	ADJ	_	Gender=Masc|Number=Plur	8	amod	_	start_char=9344|end_char=9355|ner=O
+10	d'	de	ADP	_	_	11	case	_	start_char=9384|end_char=9386|ner=O
+11	enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	start_char=9386|end_char=9398|ner=O
+12	,	,	PUNCT	_	_	3	punct	_	start_char=9398|end_char=9399|ner=O
+13	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	14	det	_	start_char=9400|end_char=9403|ner=O
+14	textes	texte	NOUN	_	Gender=Masc|Number=Plur	17	nsubj	_	start_char=9404|end_char=9410|ner=O
+15	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	start_char=9411|end_char=9415|ner=O
+16	en	en	ADP	_	_	17	case	_	start_char=9416|end_char=9418|ner=O
+17	préparation	préparation	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=9419|end_char=9430|ner=O
+18	.	.	PUNCT	_	_	17	punct	_	start_char=9430|end_char=9431|ner=O
+
+# text = 1 groupe en Droit et Sciences Politiques + 5 sous-groupes
+# sent_id = 86
+1	1	1	NUM	_	Number=Plur	2	nummod	_	start_char=9463|end_char=9464|ner=O
+2	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=9465|end_char=9471|ner=O
+3	en	en	ADP	_	_	4	case	_	start_char=9472|end_char=9474|ner=O
+4	Droit	droit	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=9475|end_char=9480|ner=B-MISC
+5	et	et	CCONJ	_	_	6	cc	_	start_char=9481|end_char=9483|ner=I-MISC
+6	Sciences	Sciences	NOUN	_	Gender=Fem|Number=Plur	2	conj	_	start_char=9484|end_char=9492|ner=I-MISC
+7	Politiques	politique	ADJ	_	Gender=Fem|Number=Plur	6	amod	_	start_char=9493|end_char=9503|ner=E-MISC
+8	+	+	SYM	_	_	10	cc	_	start_char=9504|end_char=9505|ner=O
+9	5	5	NUM	_	Number=Plur	10	nummod	_	start_char=9506|end_char=9507|ner=O
+10	sous-groupes	sous-groupe	NOUN	_	Gender=Masc|Number=Plur	2	conj	_	start_char=9508|end_char=9520|ner=O
+
+# text = 1 en Sciences Economiques + sous-groupes
+# sent_id = 87
+1	1	1	NUM	_	Number=Plur	0	root	_	start_char=9538|end_char=9539|ner=O
+2	en	en	ADP	_	_	3	case	_	start_char=9540|end_char=9542|ner=O
+3	Sciences	Sciences	NOUN	_	Gender=Fem|Number=Plur	1	nmod	_	start_char=9543|end_char=9551|ner=B-ORG
+4	Economiques	économique	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	start_char=9552|end_char=9563|ner=E-ORG
+5	+	+	SYM	_	_	6	cc	_	start_char=9564|end_char=9565|ner=O
+6	sous-groupes	sous-groupe	NOUN	_	Gender=Masc|Number=Plur	3	conj	_	start_char=9566|end_char=9578|ner=O
+
+# text = Lettres et Sciences Humaines : Science et Structure de la Matière - Science et Technologie
+# sent_id = 88
+1	Lettres	lettre	NOUN	_	Gender=Fem|Number=Plur	0	root	_	start_char=9596|end_char=9603|ner=B-MISC
+2	et	et	CCONJ	_	_	3	cc	_	start_char=9604|end_char=9606|ner=I-MISC
+3	Sciences	Sciences	NOUN	_	Gender=Fem|Number=Plur	1	conj	_	start_char=9607|end_char=9615|ner=I-MISC
+4	Humaines	humain	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	start_char=9616|end_char=9624|ner=E-MISC
+5	:	:	PUNCT	_	_	6	punct	_	start_char=9625|end_char=9626|ner=O
+6	Science	science	NOUN	_	Gender=Fem|Number=Sing	1	appos	_	start_char=9627|end_char=9634|ner=B-MISC
+7	et	et	CCONJ	_	_	8	cc	_	start_char=9635|end_char=9637|ner=I-MISC
+8	Structure	structure	NOUN	_	Gender=Fem|Number=Sing	6	conj	_	start_char=9638|end_char=9647|ner=I-MISC
+9	de	de	ADP	_	_	11	case	_	start_char=9648|end_char=9650|ner=I-MISC
+10	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=9651|end_char=9653|ner=I-MISC
+11	Matière	Matière	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	start_char=9654|end_char=9661|ner=E-MISC
+12	-	-	PUNCT	_	_	13	punct	_	start_char=9662|end_char=9663|ner=O
+13	Science	science	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	start_char=9692|end_char=9699|ner=B-ORG
+14	et	et	CCONJ	_	_	15	cc	_	start_char=9700|end_char=9702|ner=I-ORG
+15	Technologie	Technologie	NOUN	_	Gender=Fem|Number=Sing	1	conj	_	start_char=9703|end_char=9714|ner=E-ORG
+
+# text = Opération immobilière : projet de construction d'un bâtiment de la recherche financé par le Ministère (Direction de la Recherche) et le CNRS.
+# sent_id = 89
+1	Opération	opération	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=9766|end_char=9775|ner=O
+2	immobilière	immobilier	ADJ	_	Gender=Fem|Number=Sing	1	amod	_	start_char=9776|end_char=9787|ner=O
+3	:	:	PUNCT	_	_	4	punct	_	start_char=9789|end_char=9790|ner=O
+4	projet	projet	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=9791|end_char=9797|ner=O
+5	de	de	ADP	_	_	6	case	_	start_char=9798|end_char=9800|ner=O
+6	construction	construction	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=9801|end_char=9813|ner=O
+7	d'	de	ADP	_	_	9	case	_	start_char=9838|end_char=9840|ner=O
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	start_char=9840|end_char=9842|ner=O
+9	bâtiment	bâtiment	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=9843|end_char=9851|ner=O
+10	de	de	ADP	_	_	12	case	_	start_char=9852|end_char=9854|ner=O
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	start_char=9855|end_char=9857|ner=O
+12	recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	start_char=9858|end_char=9867|ner=O
+13	financé	financer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	acl	_	start_char=9868|end_char=9875|ner=O
+14	par	par	ADP	_	_	16	case	_	start_char=9876|end_char=9879|ner=O
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	start_char=9880|end_char=9882|ner=O
+16	Ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	13	obl:agent	_	start_char=9883|end_char=9892|ner=S-ORG
+17	(	(	PUNCT	_	_	18	punct	_	start_char=9893|end_char=9894|ner=O
+18	Direction	direction	NOUN	_	Gender=Fem|Number=Sing	16	appos	_	start_char=9894|end_char=9903|ner=B-ORG
+19	de	de	ADP	_	_	21	case	_	start_char=9904|end_char=9906|ner=I-ORG
+20	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	start_char=9907|end_char=9909|ner=I-ORG
+21	Recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	18	nmod	_	start_char=9934|end_char=9943|ner=E-ORG
+22	)	)	PUNCT	_	_	18	punct	_	start_char=9943|end_char=9944|ner=O
+23	et	et	CCONJ	_	_	25	cc	_	start_char=9945|end_char=9947|ner=O
+24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	start_char=9948|end_char=9950|ner=O
+25	CNRS	CNRS	PROPN	_	Gender=Masc|Number=Sing	4	conj	_	start_char=9951|end_char=9955|ner=S-ORG
+26	.	.	PUNCT	_	_	1	punct	_	start_char=9955|end_char=9956|ner=O
+
+# text = Les travaux s'étaleraient sur deux ans et couvriraient une superficie de 600 m2 au sol.
+# sent_id = 90
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	start_char=9957|end_char=9960|ner=S-LOC
+2	travaux	travail	NOUN	_	Gender=Masc|Number=Plur	4	nsubj:pass	_	start_char=9961|end_char=9968|ner=O
+3	s'	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	4	expl:pv	_	start_char=9969|end_char=9971|ner=O
+4	étaleraient	étaler	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=9971|end_char=9982|ner=O
+5	sur	sur	ADP	_	_	7	case	_	start_char=9983|end_char=9986|ner=O
+6	deux	deux	NUM	_	Number=Plur	7	nummod	_	start_char=9987|end_char=9991|ner=O
+7	ans	an	NOUN	_	Gender=Masc|Number=Plur	4	obl:mod	_	start_char=9992|end_char=9995|ner=O
+8	et	et	CCONJ	_	_	9	cc	_	start_char=9996|end_char=9998|ner=O
+9	couvriraient	couvrir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	start_char=10023|end_char=10035|ner=O
+10	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	11	det	_	start_char=10036|end_char=10039|ner=O
+11	superficie	superficie	NOUN	_	Gender=Fem|Number=Sing	9	obj	_	start_char=10040|end_char=10050|ner=O
+12	de	de	ADP	_	_	14	case	_	start_char=10051|end_char=10053|ner=O
+13	600	600	NUM	_	Number=Plur	14	nummod	_	start_char=10054|end_char=10057|ner=O
+14	m2	m2	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	start_char=10058|end_char=10060|ner=O
+15-16	au	_	_	_	_	_	_	_	start_char=10061|end_char=10063|ner=O
+15	à	à	ADP	_	_	17	case	_	_
+16	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	sol	sol	NOUN	_	Gender=Masc|Number=Sing	9	obl:mod	_	start_char=10064|end_char=10067|ner=O
+18	.	.	PUNCT	_	_	4	punct	_	start_char=10067|end_char=10068|ner=O
+
+# text = On y logerait :
+# sent_id = 91
+1	On	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	3	nsubj	_	start_char=10069|end_char=10071|ner=O
+2	y	y	PRON	_	Person=3|PronType=Prs	3	obl:mod	_	start_char=10072|end_char=10073|ner=O
+3	logerait	loger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	start_char=10074|end_char=10082|ner=O
+4	:	:	PUNCT	_	_	3	punct	_	start_char=10083|end_char=10084|ner=O
+
+# text = une partie de l'Institut d'Art et d'Archéologie du CID GALLIA,
+# sent_id = 92
+1	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=10145|end_char=10148|ner=O
+2	partie	partie	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=10149|end_char=10155|ner=O
+3	de	de	ADP	_	_	5	case	_	start_char=10156|end_char=10158|ner=O
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=10159|end_char=10161|ner=O
+5	Institut	institut	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=10161|end_char=10169|ner=B-ORG
+6	d'	de	ADP	_	_	7	case	_	start_char=10170|end_char=10172|ner=I-ORG
+7	Art	art	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=10172|end_char=10175|ner=I-ORG
+8	et	et	CCONJ	_	_	10	cc	_	start_char=10176|end_char=10178|ner=I-ORG
+9	d'	de	ADP	_	_	10	case	_	start_char=10179|end_char=10181|ner=I-ORG
+10	Archéologie	archéologie	NOUN	_	Gender=Fem|Number=Sing	7	conj	_	start_char=10181|end_char=10192|ner=I-ORG
+11-12	du	_	_	_	_	_	_	_	start_char=10193|end_char=10195|ner=I-ORG
+11	de	de	ADP	_	_	13	case	_	_
+12	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	13	det	_	_
+13	CID	CID	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=10196|end_char=10199|ner=I-ORG
+14	GALLIA	GALLIA	PROPN	_	_	13	appos	_	start_char=10232|end_char=10238|ner=E-ORG
+15	,	,	PUNCT	_	_	2	punct	_	start_char=10238|end_char=10239|ner=O
+
+# text = le Centre de Recherche et Documentation Amérique Latine,
+# sent_id = 93
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=10263|end_char=10265|ner=O
+2	Centre	centre	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=10266|end_char=10272|ner=B-ORG
+3	de	de	ADP	_	_	4	case	_	start_char=10273|end_char=10275|ner=I-ORG
+4	Recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=10276|end_char=10285|ner=I-ORG
+5	et	et	CCONJ	_	_	6	cc	_	start_char=10286|end_char=10288|ner=I-ORG
+6	Documentation	documentation	NOUN	_	Gender=Fem|Number=Sing	2	conj	_	start_char=10289|end_char=10302|ner=I-ORG
+7	Amérique	Amérique	PROPN	_	Gender=Fem|Number=Sing	6	appos	_	start_char=10303|end_char=10311|ner=I-ORG
+8	Latine	latin	ADJ	_	Gender=Fem|Number=Sing	7	amod	_	start_char=10312|end_char=10318|ner=E-ORG
+9	,	,	PUNCT	_	_	2	punct	_	start_char=10318|end_char=10319|ner=O
+
+# text = deux laboratoires d'économie Nanterre - CNRS,
+# sent_id = 94
+1	deux	deux	NUM	_	Number=Plur	2	nummod	_	start_char=10343|end_char=10347|ner=O
+2	laboratoires	laboratoire	NOUN	_	Gender=Masc|Number=Plur	0	root	_	start_char=10348|end_char=10360|ner=O
+3	d'	de	ADP	_	_	4	case	_	start_char=10361|end_char=10363|ner=O
+4	économie	économie	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=10363|end_char=10371|ner=O
+5	Nanterre	Nanterre	PROPN	_	_	2	appos	_	start_char=10372|end_char=10380|ner=S-LOC
+6	-	-	PUNCT	_	_	7	punct	_	start_char=10381|end_char=10382|ner=O
+7	CNRS	CNRS	PROPN	_	_	5	conj	_	start_char=10383|end_char=10387|ner=S-ORG
+8	,	,	PUNCT	_	_	2	punct	_	start_char=10387|end_char=10388|ner=O
+
+# text = le laboratoire d'études des Arts du Spectacle (en collaboration avec le théâtre des Amandiers)
+# sent_id = 95
+1	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=10412|end_char=10414|ner=O
+2	laboratoire	laboratoire	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=10415|end_char=10426|ner=O
+3	d'	de	ADP	_	_	4	case	_	start_char=10427|end_char=10429|ner=O
+4	études	étude	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	start_char=10429|end_char=10435|ner=O
+5-6	des	_	_	_	_	_	_	_	start_char=10436|end_char=10439|ner=O
+5	de	de	ADP	_	_	7	case	_	_
+6	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	7	det	_	_
+7	Arts	Arts	PROPN	_	Number=Plur	2	nmod	_	start_char=10440|end_char=10444|ner=B-ORG
+8-9	du	_	_	_	_	_	_	_	start_char=10445|end_char=10447|ner=I-ORG
+8	de	de	ADP	_	_	10	case	_	_
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
+10	Spectacle	spectacle	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=10448|end_char=10457|ner=E-ORG
+11	(	(	PUNCT	_	_	13	punct	_	start_char=10458|end_char=10459|ner=O
+12	en	en	ADP	_	_	13	case	_	start_char=10459|end_char=10461|ner=O
+13	collaboration	collaboration	NOUN	_	Gender=Fem|Number=Sing	2	nmod	_	start_char=10462|end_char=10475|ner=O
+14	avec	avec	ADP	_	_	16	case	_	start_char=10508|end_char=10512|ner=O
+15	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	16	det	_	start_char=10513|end_char=10515|ner=O
+16	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	start_char=10516|end_char=10523|ner=B-LOC
+17-18	des	_	_	_	_	_	_	_	start_char=10524|end_char=10527|ner=I-LOC
+17	de	de	ADP	_	_	19	case	_	_
+18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_
+19	Amandiers	Amandiers	PROPN	_	Number=Plur	16	nmod	_	start_char=10528|end_char=10537|ner=E-LOC
+20	)	)	PUNCT	_	_	13	punct	_	start_char=10537|end_char=10538|ner=O
+
+# text = Mise en place pour 1987/88 d'un forfait-vente des cassettes de soutien oral d'anglais, créées par l'équipe pédagogique des Laboratoires pour la Sonothèque.
+# sent_id = 96
+1	Mise	mise	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=10613|end_char=10617|ner=O
+2	en	en	ADP	_	_	3	case	_	start_char=10618|end_char=10620|ner=O
+3	place	place	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=10621|end_char=10626|ner=O
+4	pour	pour	ADP	_	_	5	case	_	start_char=10627|end_char=10631|ner=O
+5	1987	1987	NUM	_	Number=Plur	1	nmod	_	start_char=10632|end_char=10636|ner=O
+6	/	/	SYM	_	_	7	cc	_	start_char=10636|end_char=10637|ner=O
+7	88	88	NUM	_	Number=Plur	5	conj	_	start_char=10637|end_char=10639|ner=O
+8	d'	de	ADP	_	_	10	case	_	start_char=10641|end_char=10643|ner=O
+9	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=10643|end_char=10645|ner=O
+10	forfait-vente	forfait-vent	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=10646|end_char=10659|ner=O
+11-12	des	_	_	_	_	_	_	_	start_char=10660|end_char=10663|ner=O
+11	de	de	ADP	_	_	13	case	_	_
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_
+13	cassettes	cassette	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	start_char=10688|end_char=10697|ner=O
+14	de	de	ADP	_	_	15	case	_	start_char=10698|end_char=10700|ner=O
+15	soutien	soutien	NOUN	_	Gender=Masc|Number=Sing	13	nmod	_	start_char=10701|end_char=10708|ner=O
+16	oral	oral	ADJ	_	Gender=Masc|Number=Sing	15	amod	_	start_char=10709|end_char=10713|ner=O
+17	d'	de	ADP	_	_	18	case	_	start_char=10714|end_char=10716|ner=O
+18	anglais	anglais	NOUN	_	Gender=Masc|Number=Sing	15	nmod	_	start_char=10716|end_char=10723|ner=O
+19	,	,	PUNCT	_	_	20	punct	_	start_char=10723|end_char=10724|ner=O
+20	créées	créer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	10	acl	_	start_char=10725|end_char=10731|ner=O
+21	par	par	ADP	_	_	23	case	_	start_char=10732|end_char=10735|ner=O
+22	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	23	det	_	start_char=10736|end_char=10738|ner=O
+23	équipe	équipe	NOUN	_	Gender=Fem|Number=Sing	20	obl:agent	_	start_char=10738|end_char=10744|ner=O
+24	pédagogique	pédagogique	ADJ	_	Gender=Fem|Number=Sing	23	amod	_	start_char=10745|end_char=10756|ner=O
+25-26	des	_	_	_	_	_	_	_	start_char=10757|end_char=10760|ner=O
+25	de	de	ADP	_	_	27	case	_	_
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	_
+27	Laboratoires	laboratoire	NOUN	_	Gender=Masc|Number=Plur	23	nmod	_	start_char=10785|end_char=10797|ner=B-ORG
+28	pour	pour	ADP	_	_	30	case	_	start_char=10798|end_char=10802|ner=I-ORG
+29	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	30	det	_	start_char=10803|end_char=10805|ner=I-ORG
+30	Sonothèque	Sonothèque	PROPN	_	Gender=Fem|Number=Sing	23	nmod	_	start_char=10806|end_char=10816|ner=E-ORG
+31	.	.	PUNCT	_	_	1	punct	_	start_char=10816|end_char=10817|ner=O
+
+# text = Le prix en est fixé à 12 F l'unité.
+# sent_id = 97
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=10818|end_char=10820|ner=O
+2	prix	prix	NOUN	_	Gender=Masc|Number=Sing	5	nsubj:pass	_	start_char=10821|end_char=10825|ner=O
+3	en	en	PRON	_	Person=3|PronType=Prs	5	iobj	_	start_char=10826|end_char=10828|ner=O
+4	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:pass	_	start_char=10829|end_char=10832|ner=O
+5	fixé	fixer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=10833|end_char=10837|ner=O
+6	à	à	ADP	_	_	8	case	_	start_char=10838|end_char=10839|ner=O
+7	12	12	NUM	_	Number=Plur	8	nummod	_	start_char=10840|end_char=10842|ner=O
+8	F	F	NOUN	_	Gender=Masc|Number=Plur	5	obl:arg	_	start_char=10843|end_char=10844|ner=S-LOC
+9	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	10	det	_	start_char=10845|end_char=10847|ner=O
+10	unité	unité	NOUN	_	Gender=Fem|Number=Sing	5	obj	_	start_char=10847|end_char=10852|ner=O
+11	.	.	PUNCT	_	_	5	punct	_	start_char=10852|end_char=10853|ner=O
+
+# text = Le Conseil est d'accord à l'unanimité.
+# sent_id = 98
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=10855|end_char=10857|ner=O
+2	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=10858|end_char=10865|ner=S-ORG
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=10866|end_char=10869|ner=O
+4	d'	de	ADP	_	_	0	root	_	start_char=10870|end_char=10872|ner=O
+5	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	fixed	_	start_char=10872|end_char=10878|ner=O
+6	à	à	ADP	_	_	8	case	_	start_char=10879|end_char=10880|ner=O
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	start_char=10881|end_char=10883|ner=O
+8	unanimité	unanimité	NOUN	_	Gender=Fem|Number=Sing	4	obl:arg	_	start_char=10883|end_char=10892|ner=O
+9	.	.	PUNCT	_	_	4	punct	_	start_char=10892|end_char=10893|ner=O
+
+# text = Dépense d'un montant de 6 851,25 F correspondant à 37 heures et demie de cours magistraux assurés par un enseignant de Droit de l'Université d'Orléans intervenant en service statutaire dans l'U.F.R. de Sciences Juridiques de Paris X. Vote Pour à l'unanimité.
+# sent_id = 99
+1	Dépense	dépense	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=10948|end_char=10955|ner=O
+2	d'	de	ADP	_	_	4	case	_	start_char=10957|end_char=10959|ner=O
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=10959|end_char=10961|ner=O
+4	montant	montant	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=10962|end_char=10969|ner=O
+5	de	de	ADP	_	_	7	case	_	start_char=10970|end_char=10972|ner=O
+6	6 851,25	6 851,25	NUM	_	Number=Plur	7	nummod	_	start_char=10973|end_char=10981|ner=O
+7	F	F	NOUN	_	Gender=Masc|Number=Plur	4	nmod	_	start_char=10982|end_char=10983|ner=S-LOC
+8	correspondant	correspondre	VERB	_	Tense=Pres|VerbForm=Part	4	acl	_	start_char=10984|end_char=10997|ner=O
+9	à	à	ADP	_	_	11	case	_	start_char=10998|end_char=10999|ner=O
+10	37	37	NUM	_	Number=Plur	11	nummod	_	start_char=11024|end_char=11026|ner=O
+11	heures	heure	NOUN	_	Gender=Fem|Number=Plur	8	obl:arg	_	start_char=11027|end_char=11033|ner=O
+12	et	et	CCONJ	_	_	13	cc	_	start_char=11034|end_char=11036|ner=O
+13	demie	demie	NOUN	_	Gender=Fem|Number=Sing	11	conj	_	start_char=11037|end_char=11042|ner=O
+14	de	de	ADP	_	_	15	case	_	start_char=11043|end_char=11045|ner=O
+15	cours	cours	NOUN	_	Gender=Masc|Number=Plur	13	nmod	_	start_char=11046|end_char=11051|ner=O
+16	magistraux	magistral	ADJ	_	Gender=Masc|Number=Plur	15	amod	_	start_char=11052|end_char=11062|ner=O
+17	assurés	assurer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	15	acl	_	start_char=11063|end_char=11070|ner=O
+18	par	par	ADP	_	_	20	case	_	start_char=11071|end_char=11074|ner=O
+19	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	20	det	_	start_char=11075|end_char=11077|ner=O
+20	enseignant	enseignant	NOUN	_	Gender=Masc|Number=Sing	17	obl:agent	_	start_char=11078|end_char=11088|ner=O
+21	de	de	ADP	_	_	22	case	_	start_char=11089|end_char=11091|ner=O
+22	Droit	droit	NOUN	_	Gender=Masc|Number=Sing	20	nmod	_	start_char=11092|end_char=11097|ner=S-LOC
+23	de	de	ADP	_	_	25	case	_	start_char=11098|end_char=11100|ner=O
+24	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	25	det	_	start_char=11125|end_char=11127|ner=O
+25	Université	université	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	start_char=11127|end_char=11137|ner=B-LOC
+26	d'	de	ADP	_	_	27	case	_	start_char=11138|end_char=11140|ner=I-LOC
+27	Orléans	Orléans	PROPN	_	_	25	nmod	_	start_char=11140|end_char=11147|ner=E-LOC
+28	intervenant	intervenir	VERB	_	Tense=Pres|VerbForm=Part	20	acl	_	start_char=11148|end_char=11159|ner=O
+29	en	en	ADP	_	_	30	case	_	start_char=11160|end_char=11162|ner=O
+30	service	service	NOUN	_	Gender=Masc|Number=Sing	28	obl:mod	_	start_char=11163|end_char=11170|ner=O
+31	statutaire	statutaire	ADJ	_	Gender=Masc|Number=Sing	30	amod	_	start_char=11171|end_char=11181|ner=O
+32	dans	dans	ADP	_	_	34	case	_	start_char=11182|end_char=11186|ner=O
+33	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	34	det	_	start_char=11187|end_char=11189|ner=O
+34	U.F.R.	U.F.R.	PROPN	_	Number=Sing	28	obl:mod	_	start_char=11189|end_char=11195|ner=B-ORG
+35	de	de	ADP	_	_	36	case	_	start_char=11196|end_char=11198|ner=I-ORG
+36	Sciences	Sciences	PROPN	_	Gender=Fem|Number=Plur	34	nmod	_	start_char=11223|end_char=11231|ner=I-ORG
+37	Juridiques	juridique	ADJ	_	Gender=Fem|Number=Plur	36	amod	_	start_char=11232|end_char=11242|ner=E-ORG
+38	de	de	ADP	_	_	39	case	_	start_char=11243|end_char=11245|ner=O
+39	Paris	Paris	PROPN	_	_	34	nmod	_	start_char=11246|end_char=11251|ner=S-LOC
+40	X.	X.	X	_	_	39	flat:name	_	start_char=11252|end_char=11254|ner=O
+41	Vote	Vote	PROPN	_	_	39	flat:name	_	start_char=11255|end_char=11259|ner=B-ORG
+42	Pour	pour	ADP	_	_	45	case	_	start_char=11260|end_char=11264|ner=E-ORG
+43	à	à	ADP	_	_	45	case	_	start_char=11265|end_char=11266|ner=O
+44	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	45	det	_	start_char=11267|end_char=11269|ner=O
+45	unanimité	unanimité	NOUN	_	Gender=Fem|Number=Sing	28	obl:mod	_	start_char=11269|end_char=11278|ner=O
+46	.	.	PUNCT	_	_	1	punct	_	start_char=11278|end_char=11279|ner=O
+
+# text = En réponse au Ministère de la Recherche et de l'Enseignement, Supérieur,
+# sent_id = 100
+1	En	en	ADP	_	_	2	case	_	start_char=11334|end_char=11336|ner=O
+2	réponse	réponse	NOUN	_	Gender=Fem|Number=Sing	14	nmod	_	start_char=11337|end_char=11344|ner=O
+3-4	au	_	_	_	_	_	_	_	start_char=11345|end_char=11347|ner=O
+3	à	à	ADP	_	_	5	case	_	_
+4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
+5	Ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	2	nmod	_	start_char=11348|end_char=11357|ner=B-LOC
+6	de	de	ADP	_	_	8	case	_	start_char=11358|end_char=11360|ner=I-LOC
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=11361|end_char=11363|ner=I-LOC
+8	Recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	start_char=11364|end_char=11373|ner=I-LOC
+9	et	et	CCONJ	_	_	12	cc	_	start_char=11374|end_char=11376|ner=I-LOC
+10	de	de	ADP	_	_	12	case	_	start_char=11377|end_char=11379|ner=I-LOC
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	start_char=11412|end_char=11414|ner=I-LOC
+12	Enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	start_char=11414|end_char=11426|ner=E-LOC
+13	,	,	PUNCT	_	_	2	punct	_	start_char=11426|end_char=11427|ner=O
+14	Supérieur	supérieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=11428|end_char=11437|ner=S-ORG
+15	,	,	PUNCT	_	_	14	punct	_	start_char=11437|end_char=11438|ner=O
+
+# text = Monsieur TRUFFET , dans le cadre de l'Information-Communication propose une candidature au plan "COMETT", systèmes de formation multimédia et constitution de packages multimédia.
+# sent_id = 101
+1	Monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	10	nsubj	_	start_char=11459|end_char=11467|ner=O
+2	TRUFFET	TRUFFET	PROPN	_	_	1	flat:name	_	start_char=11468|end_char=11475|ner=S-ORG
+3	,	,	PUNCT	_	_	1	punct	_	start_char=11476|end_char=11477|ner=O
+4	dans	dans	ADP	_	_	6	case	_	start_char=11478|end_char=11482|ner=O
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=11483|end_char=11485|ner=O
+6	cadre	cadre	NOUN	_	Gender=Masc|Number=Sing	10	obl:mod	_	start_char=11486|end_char=11491|ner=O
+7	de	de	ADP	_	_	9	case	_	start_char=11492|end_char=11494|ner=O
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	start_char=11523|end_char=11525|ner=O
+9	Information-Communication	information-communication	NOUN	_	Gender=Fem|Number=Sing	6	nmod	_	start_char=11525|end_char=11550|ner=S-ORG
+10	propose	proposer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11551|end_char=11558|ner=O
+11	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	12	det	_	start_char=11559|end_char=11562|ner=O
+12	candidature	candidature	NOUN	_	Gender=Fem|Number=Sing	10	obj	_	start_char=11563|end_char=11574|ner=O
+13-14	au	_	_	_	_	_	_	_	start_char=11575|end_char=11577|ner=O
+13	à	à	ADP	_	_	15	case	_	_
+14	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	15	det	_	_
+15	plan	plan	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	start_char=11578|end_char=11582|ner=O
+16	"	"	PUNCT	_	_	17	punct	_	start_char=11583|end_char=11584|ner=O
+17	COMETT	COMETT	PROPN	_	_	15	appos	_	start_char=11584|end_char=11590|ner=O
+18	"	"	PUNCT	_	_	17	punct	_	start_char=11590|end_char=11591|ner=O
+19	,	,	PUNCT	_	_	20	punct	_	start_char=11591|end_char=11592|ner=O
+20	systèmes	système	NOUN	_	Gender=Masc|Number=Plur	15	appos	_	start_char=11621|end_char=11629|ner=O
+21	de	de	ADP	_	_	22	case	_	start_char=11630|end_char=11632|ner=O
+22	formation	formation	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	start_char=11633|end_char=11642|ner=O
+23	multimédia	multimédia	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	start_char=11643|end_char=11653|ner=O
+24	et	et	CCONJ	_	_	25	cc	_	start_char=11654|end_char=11656|ner=O
+25	constitution	constitution	NOUN	_	Gender=Fem|Number=Sing	20	conj	_	start_char=11657|end_char=11669|ner=O
+26	de	de	ADP	_	_	27	case	_	start_char=11670|end_char=11672|ner=O
+27	packages	package	NOUN	_	Gender=Masc|Number=Plur	25	nmod	_	start_char=11673|end_char=11681|ner=O
+28	multimédia	multimédia	ADJ	_	Gender=Masc|Number=Plur	27	amod	_	start_char=11682|end_char=11692|ner=O
+29	.	.	PUNCT	_	_	10	punct	_	start_char=11692|end_char=11693|ner=O
+
+# text = Ces projets scientifiques à l'intérieur desquels les étudiants pourront bénéficier de stage dans la CEE risquent de ne pas être retenus cette année, mais le Ministère sera informé que nous en avons formulé la demande.
+# sent_id = 102
+1	Ces	ce	DET	_	Number=Plur|PronType=Dem	2	det	_	start_char=11722|end_char=11725|ner=O
+2	projets	projet	NOUN	_	Gender=Masc|Number=Plur	18	nsubj	_	start_char=11726|end_char=11733|ner=O
+3	scientifiques	scientifique	ADJ	_	Gender=Masc|Number=Plur	2	amod	_	start_char=11734|end_char=11747|ner=O
+4	à	à	ADP	_	_	6	case	_	start_char=11748|end_char=11749|ner=O
+5	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	6	det	_	start_char=11750|end_char=11752|ner=O
+6	intérieur	intérieur	NOUN	_	Gender=Masc|Number=Sing	11	obl:mod	_	start_char=11752|end_char=11761|ner=O
+7-8	desquels	_	_	_	_	_	_	_	start_char=11762|end_char=11770|ner=O
+7	de	de	ADP	_	_	8	case	_	_
+8	lesquels	lequel	PRON	_	Gender=Masc|Number=Plur|PronType=Rel	6	nmod	_	_
+9	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	10	det	_	start_char=11771|end_char=11774|ner=O
+10	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	11	nsubj	_	start_char=11775|end_char=11784|ner=O
+11	pourront	pouvoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	2	acl:relcl	_	start_char=11785|end_char=11793|ner=O
+12	bénéficier	bénéficier	VERB	_	VerbForm=Inf	11	xcomp	_	start_char=11822|end_char=11832|ner=O
+13	de	de	ADP	_	_	14	case	_	start_char=11833|end_char=11835|ner=O
+14	stage	stage	NOUN	_	Gender=Masc|Number=Sing	12	obl:arg	_	start_char=11836|end_char=11841|ner=O
+15	dans	dans	ADP	_	_	17	case	_	start_char=11842|end_char=11846|ner=O
+16	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=11847|end_char=11849|ner=O
+17	CEE	CEE	PROPN	_	Gender=Fem|Number=Sing	12	obl:mod	_	start_char=11850|end_char=11853|ner=S-ORG
+18	risquent	risquer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=11854|end_char=11862|ner=O
+19	de	de	ADP	_	_	23	mark	_	start_char=11863|end_char=11865|ner=O
+20	ne	ne	ADV	_	Polarity=Neg	23	advmod	_	start_char=11866|end_char=11868|ner=O
+21	pas	pas	ADV	_	Polarity=Neg	23	advmod	_	start_char=11869|end_char=11872|ner=O
+22	être	être	AUX	_	VerbForm=Inf	23	aux:pass	_	start_char=11873|end_char=11877|ner=O
+23	retenus	retenir	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	18	xcomp	_	start_char=11878|end_char=11885|ner=O
+24	cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	25	det	_	start_char=11886|end_char=11891|ner=O
+25	année	année	NOUN	_	Gender=Fem|Number=Sing	23	obl:mod	_	start_char=11920|end_char=11925|ner=O
+26	,	,	PUNCT	_	_	31	punct	_	start_char=11925|end_char=11926|ner=O
+27	mais	mais	CCONJ	_	_	31	cc	_	start_char=11927|end_char=11931|ner=O
+28	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	29	det	_	start_char=11932|end_char=11934|ner=O
+29	Ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	31	nsubj:pass	_	start_char=11935|end_char=11944|ner=S-LOC
+30	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	31	aux:pass	_	start_char=11945|end_char=11949|ner=O
+31	informé	informer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	18	conj	_	start_char=11950|end_char=11957|ner=O
+32	que	que	SCONJ	_	_	36	mark	_	start_char=11958|end_char=11961|ner=O
+33	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	36	nsubj	_	start_char=11962|end_char=11966|ner=O
+34	en	en	PRON	_	Person=3|PronType=Prs	38	nmod	_	start_char=11967|end_char=11969|ner=O
+35	avons	avoir	AUX	_	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	36	aux:tense	_	start_char=11970|end_char=11975|ner=O
+36	formulé	formuler	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	31	ccomp	_	start_char=11976|end_char=11983|ner=O
+37	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	38	det	_	start_char=11984|end_char=11986|ner=O
+38	demande	demande	NOUN	_	Gender=Fem|Number=Sing	36	obj	_	start_char=12015|end_char=12022|ner=O
+39	.	.	PUNCT	_	_	18	punct	_	start_char=12022|end_char=12023|ner=O
+
+# text = Le Conseil est d'accord.
+# sent_id = 103
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=12025|end_char=12027|ner=O
+2	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=12028|end_char=12035|ner=S-ORG
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	start_char=12036|end_char=12039|ner=O
+4	d'	de	ADP	_	_	0	root	_	start_char=12040|end_char=12042|ner=O
+5	accord	accord	NOUN	_	Gender=Masc|Number=Sing	4	fixed	_	start_char=12042|end_char=12048|ner=O
+6	.	.	PUNCT	_	_	4	punct	_	start_char=12048|end_char=12049|ner=O
+
+# text = This corpus and its research results are licensed under the terms of the Creative Commons Attribution 4.0 International License
+# sent_id = 104
+1	This	This	X	_	Foreign=Yes	0	root	_	start_char=12081|end_char=12085|ner=O
+2	corpus	corpus	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12086|end_char=12092|ner=O
+3	and	and	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12093|end_char=12096|ner=O
+4	its	its	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12097|end_char=12100|ner=O
+5	research	research	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12101|end_char=12109|ner=O
+6	results	results	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12110|end_char=12117|ner=O
+7	are	are	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12118|end_char=12121|ner=O
+8	licensed	licensed	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12122|end_char=12130|ner=O
+9	under	under	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12131|end_char=12136|ner=O
+10	the	the	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12137|end_char=12140|ner=O
+11	terms	terms	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12141|end_char=12146|ner=O
+12	of	of	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12147|end_char=12149|ner=O
+13	the	the	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12150|end_char=12153|ner=O
+14	Creative	Creative	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12154|end_char=12162|ner=B-MISC
+15	Commons	Commons	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12183|end_char=12190|ner=I-MISC
+16	Attribution	Attribution	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12191|end_char=12202|ner=I-MISC
+17	4.0	4.0	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12203|end_char=12206|ner=I-MISC
+18	International	International	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12207|end_char=12220|ner=I-MISC
+19	License	License	X	_	Foreign=Yes	1	flat:foreign	_	start_char=12221|end_char=12228|ner=E-MISC
+
+# text = Université Paris Nanterre
+# sent_id = 105
+1	Université	université	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=12266|end_char=12276|ner=B-ORG
+2	Paris	Paris	PROPN	_	_	1	appos	_	start_char=12277|end_char=12282|ner=I-ORG
+3	Nanterre	Nanterre	PROPN	_	_	2	flat:name	_	start_char=12283|end_char=12291|ner=E-ORG
+
+# text = 1987-06-29
+# sent_id = 106
+1	1987-06-29	1987-06-29	NUM	_	Number=Plur	0	root	_	start_char=12312|end_char=12322|ner=O
+
+# text = 6
+# sent_id = 107
+1	6	6	NUM	_	Number=Plur	0	root	_	start_char=12366|end_char=12367|ner=O
+
+# text = Le projet ArchivU vise à décrire les évolutions de deux genres de discours produits par l'université, les comptes rendus de conseils d'administration (conseils d'universités) et les rapports des unités de recherche, et de corréler ces évolutions aux transformations qui affectent l'université appréhendée comme lieu de formation et de recherche.
+# sent_id = 108
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=12419|end_char=12421|ner=O
+2	projet	projet	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=12422|end_char=12428|ner=O
+3	ArchivU	ArchivU	PROPN	_	_	2	appos	_	start_char=12429|end_char=12436|ner=S-MISC
+4	vise	viser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12437|end_char=12441|ner=O
+5	à	à	ADP	_	_	6	mark	_	start_char=12442|end_char=12443|ner=O
+6	décrire	décrire	VERB	_	VerbForm=Inf	4	ccomp	_	start_char=12444|end_char=12451|ner=O
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	start_char=12452|end_char=12455|ner=O
+8	évolutions	évolution	NOUN	_	Gender=Fem|Number=Plur	6	obj	_	start_char=12456|end_char=12466|ner=O
+9	de	de	ADP	_	_	11	case	_	start_char=12467|end_char=12469|ner=O
+10	deux	deux	NUM	_	Number=Plur	11	nummod	_	start_char=12470|end_char=12474|ner=O
+11	genres	genre	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	start_char=12475|end_char=12481|ner=O
+12	de	de	ADP	_	_	13	case	_	start_char=12482|end_char=12484|ner=O
+13	discours	discours	NOUN	_	Gender=Masc|Number=Plur	11	nmod	_	start_char=12485|end_char=12493|ner=O
+14	produits	produire	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	11	acl	_	start_char=12494|end_char=12502|ner=O
+15	par	par	ADP	_	_	17	case	_	start_char=12519|end_char=12522|ner=O
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	start_char=12523|end_char=12525|ner=O
+17	université	université	NOUN	_	Gender=Fem|Number=Sing	14	obl:agent	_	start_char=12525|end_char=12535|ner=O
+18	,	,	PUNCT	_	_	20	punct	_	start_char=12535|end_char=12536|ner=O
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	start_char=12537|end_char=12540|ner=O
+20	comptes	compte	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	start_char=12541|end_char=12548|ner=O
+21	rendus	rendre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	20	acl	_	start_char=12549|end_char=12555|ner=O
+22	de	de	ADP	_	_	23	case	_	start_char=12556|end_char=12558|ner=O
+23	conseils	conseil	NOUN	_	Gender=Masc|Number=Plur	20	nmod	_	start_char=12559|end_char=12567|ner=O
+24	d'	de	ADP	_	_	25	case	_	start_char=12568|end_char=12570|ner=O
+25	administration	administration	NOUN	_	Gender=Fem|Number=Sing	23	nmod	_	start_char=12570|end_char=12584|ner=O
+26	(	(	PUNCT	_	_	27	punct	_	start_char=12585|end_char=12586|ner=O
+27	conseils	conseil	NOUN	_	Gender=Masc|Number=Plur	20	appos	_	start_char=12586|end_char=12594|ner=O
+28	d'	de	ADP	_	_	29	case	_	start_char=12611|end_char=12613|ner=O
+29	universités	université	NOUN	_	Gender=Fem|Number=Plur	27	nmod	_	start_char=12613|end_char=12624|ner=O
+30	)	)	PUNCT	_	_	27	punct	_	start_char=12624|end_char=12625|ner=O
+31	et	et	CCONJ	_	_	33	cc	_	start_char=12626|end_char=12628|ner=O
+32	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	33	det	_	start_char=12629|end_char=12632|ner=O
+33	rapports	rapport	NOUN	_	Gender=Masc|Number=Plur	8	conj	_	start_char=12633|end_char=12641|ner=O
+34-35	des	_	_	_	_	_	_	_	start_char=12642|end_char=12645|ner=O
+34	de	de	ADP	_	_	36	case	_	_
+35	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	36	det	_	_
+36	unités	unité	NOUN	_	Gender=Fem|Number=Plur	33	nmod	_	start_char=12646|end_char=12652|ner=O
+37	de	de	ADP	_	_	38	case	_	start_char=12653|end_char=12655|ner=O
+38	recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	36	nmod	_	start_char=12656|end_char=12665|ner=O
+39	,	,	PUNCT	_	_	42	punct	_	start_char=12665|end_char=12666|ner=O
+40	et	et	CCONJ	_	_	42	cc	_	start_char=12667|end_char=12669|ner=O
+41	de	de	ADP	_	_	42	mark	_	start_char=12670|end_char=12672|ner=O
+42	corréler	corréler	VERB	_	VerbForm=Inf	6	conj	_	start_char=12673|end_char=12681|ner=O
+43	ces	ce	DET	_	Number=Plur|PronType=Dem	44	det	_	start_char=12682|end_char=12685|ner=O
+44	évolutions	évolution	NOUN	_	Gender=Fem|Number=Plur	42	obj	_	start_char=12702|end_char=12712|ner=O
+45-46	aux	_	_	_	_	_	_	_	start_char=12713|end_char=12716|ner=O
+45	à	à	ADP	_	_	47	case	_	_
+46	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	47	det	_	_
+47	transformations	transformation	NOUN	_	Gender=Fem|Number=Plur	42	obl:arg	_	start_char=12717|end_char=12732|ner=O
+48	qui	qui	PRON	_	PronType=Rel	49	nsubj	_	start_char=12733|end_char=12736|ner=O
+49	affectent	affecter	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	47	acl:relcl	_	start_char=12737|end_char=12746|ner=O
+50	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	51	det	_	start_char=12747|end_char=12749|ner=O
+51	université	université	NOUN	_	Gender=Fem|Number=Sing	49	obj	_	start_char=12749|end_char=12759|ner=O
+52	appréhendée	appréhender	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	51	acl	_	start_char=12760|end_char=12771|ner=O
+53	comme	comme	ADP	_	_	54	case	_	start_char=12772|end_char=12777|ner=O
+54	lieu	lieu	NOUN	_	Gender=Masc|Number=Sing	52	obl:mod	_	start_char=12778|end_char=12782|ner=O
+55	de	de	ADP	_	_	56	case	_	start_char=12783|end_char=12785|ner=O
+56	formation	formation	NOUN	_	Gender=Fem|Number=Sing	54	nmod	_	start_char=12802|end_char=12811|ner=O
+57	et	et	CCONJ	_	_	59	cc	_	start_char=12812|end_char=12814|ner=O
+58	de	de	ADP	_	_	59	case	_	start_char=12815|end_char=12817|ner=O
+59	recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	56	conj	_	start_char=12818|end_char=12827|ner=O
+60	.	.	PUNCT	_	_	4	punct	_	start_char=12827|end_char=12828|ner=O
+
+# text = Les analyses reposent sur la constitution d'un double corpus de comptes rendus et de rapports de 1970 à 2018 provenant de différentes universités, à commencer par Paris Nanterre et UPEC.
+# sent_id = 109
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	start_char=12829|end_char=12832|ner=O
+2	analyses	analyse	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	start_char=12833|end_char=12841|ner=O
+3	reposent	reposer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=12842|end_char=12850|ner=O
+4	sur	sur	ADP	_	_	6	case	_	start_char=12851|end_char=12854|ner=O
+5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	start_char=12855|end_char=12857|ner=O
+6	constitution	constitution	NOUN	_	Gender=Fem|Number=Sing	3	obl:mod	_	start_char=12858|end_char=12870|ner=O
+7	d'	de	ADP	_	_	10	case	_	start_char=12871|end_char=12873|ner=O
+8	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=12873|end_char=12875|ner=O
+9	double	double	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	start_char=12876|end_char=12882|ner=O
+10	corpus	corpus	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=12899|end_char=12905|ner=O
+11	de	de	ADP	_	_	12	case	_	start_char=12906|end_char=12908|ner=O
+12	comptes	compte	NOUN	_	Gender=Masc|Number=Plur	10	nmod	_	start_char=12909|end_char=12916|ner=O
+13	rendus	rendre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	start_char=12917|end_char=12923|ner=O
+14	et	et	CCONJ	_	_	16	cc	_	start_char=12924|end_char=12926|ner=O
+15	de	de	ADP	_	_	16	case	_	start_char=12927|end_char=12929|ner=O
+16	rapports	rapport	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	start_char=12930|end_char=12938|ner=O
+17	de	de	ADP	_	_	18	case	_	start_char=12939|end_char=12941|ner=O
+18	1970	1970	NUM	_	Number=Plur	16	nmod	_	start_char=12942|end_char=12946|ner=O
+19	à	à	ADP	_	_	20	case	_	start_char=12947|end_char=12948|ner=O
+20	2018	2018	NUM	_	Number=Plur	18	nmod	_	start_char=12949|end_char=12953|ner=O
+21	provenant	provenir	VERB	_	Tense=Pres|VerbForm=Part	10	acl	_	start_char=12954|end_char=12963|ner=O
+22	de	de	ADP	_	_	24	case	_	start_char=12964|end_char=12966|ner=O
+23	différentes	différent	DET	_	Gender=Fem|Number=Plur|PronType=Ind	24	det	_	start_char=12967|end_char=12978|ner=O
+24	universités	université	NOUN	_	Gender=Fem|Number=Plur	21	obl:arg	_	start_char=12995|end_char=13006|ner=O
+25	,	,	PUNCT	_	_	27	punct	_	start_char=13006|end_char=13007|ner=O
+26	à	à	ADP	_	_	27	mark	_	start_char=13008|end_char=13009|ner=O
+27	commencer	commencer	VERB	_	VerbForm=Inf	21	xcomp	_	start_char=13010|end_char=13019|ner=O
+28	par	par	ADP	_	_	29	case	_	start_char=13020|end_char=13023|ner=O
+29	Paris	Paris	PROPN	_	_	27	obl:arg	_	start_char=13024|end_char=13029|ner=B-ORG
+30	Nanterre	Nanterre	PROPN	_	_	29	flat:name	_	start_char=13030|end_char=13038|ner=E-ORG
+31	et	et	CCONJ	_	_	32	cc	_	start_char=13039|end_char=13041|ner=O
+32	UPEC	UPEC	PROPN	_	_	29	conj	_	start_char=13042|end_char=13046|ner=S-ORG
+33	.	.	PUNCT	_	_	3	punct	_	start_char=13046|end_char=13047|ner=O
+
+# text = A 16 heures , projection du film réalisé par le C.I.O.U.X.
+# sent_id = 110
+1	A	à	ADP	_	_	3	case	_	start_char=13065|end_char=13066|ner=O
+2	16	16	NUM	_	Number=Plur	3	nummod	_	start_char=13068|end_char=13070|ner=O
+3	heures	heure	NOUN	_	Gender=Fem|Number=Plur	5	nmod	_	start_char=13071|end_char=13077|ner=O
+4	,	,	PUNCT	_	_	3	punct	_	start_char=13078|end_char=13079|ner=O
+5	projection	projection	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=13080|end_char=13090|ner=O
+6-7	du	_	_	_	_	_	_	_	start_char=13091|end_char=13093|ner=O
+6	de	de	ADP	_	_	8	case	_	_
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	film	film	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=13118|end_char=13122|ner=O
+9	réalisé	réaliser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	acl	_	start_char=13123|end_char=13130|ner=O
+10	par	par	ADP	_	_	12	case	_	start_char=13131|end_char=13134|ner=O
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	start_char=13135|end_char=13137|ner=O
+12	C.I.O.U.X	C.I.O.U.X	PROPN	_	Gender=Masc|Number=Sing	9	obl:agent	_	start_char=13138|end_char=13147|ner=S-ORG
+13	.	.	PUNCT	_	_	5	punct	_	start_char=13147|end_char=13148|ner=O
+
+# text = Elle permet de faciliter et de développer l'échange annuel d'enseignants et d'étudiants dans des disciplines communes.
+# sent_id = 111
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=13163|end_char=13167|ner=O
+2	permet	permettre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13168|end_char=13174|ner=O
+3	de	de	ADP	_	_	4	mark	_	start_char=13175|end_char=13177|ner=O
+4	faciliter	faciliter	VERB	_	VerbForm=Inf	2	xcomp	_	start_char=13178|end_char=13187|ner=O
+5	et	et	CCONJ	_	_	7	cc	_	start_char=13188|end_char=13190|ner=O
+6	de	de	ADP	_	_	7	mark	_	start_char=13191|end_char=13193|ner=O
+7	développer	développer	VERB	_	VerbForm=Inf	4	conj	_	start_char=13194|end_char=13204|ner=O
+8	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	9	det	_	start_char=13205|end_char=13207|ner=O
+9	échange	échange	NOUN	_	Gender=Masc|Number=Sing	7	obj	_	start_char=13207|end_char=13214|ner=O
+10	annuel	annuel	ADJ	_	Gender=Masc|Number=Sing	9	amod	_	start_char=13215|end_char=13221|ner=O
+11	d'	de	ADP	_	_	12	case	_	start_char=13222|end_char=13224|ner=O
+12	enseignants	enseignant	NOUN	_	Gender=Masc|Number=Plur	9	nmod	_	start_char=13224|end_char=13235|ner=O
+13	et	et	CCONJ	_	_	15	cc	_	start_char=13236|end_char=13238|ner=O
+14	d'	de	ADP	_	_	15	case	_	start_char=13259|end_char=13261|ner=O
+15	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	12	conj	_	start_char=13261|end_char=13270|ner=O
+16	dans	dans	ADP	_	_	18	case	_	start_char=13271|end_char=13275|ner=O
+17	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	18	det	_	start_char=13276|end_char=13279|ner=O
+18	disciplines	discipline	NOUN	_	Gender=Fem|Number=Plur	7	obl:mod	_	start_char=13280|end_char=13291|ner=O
+19	communes	commun	ADJ	_	Gender=Fem|Number=Plur	18	amod	_	start_char=13292|end_char=13300|ner=O
+20	.	.	PUNCT	_	_	2	punct	_	start_char=13300|end_char=13301|ner=O
+
+# text = Vote POUR à l'unanimité.
+# sent_id = 112
+1	Vote	Vote	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=13319|end_char=13323|ner=O
+2	POUR	POUR	PROPN	_	_	1	appos	_	start_char=13324|end_char=13328|ner=S-LOC
+3	à	à	ADP	_	_	5	case	_	start_char=13329|end_char=13330|ner=O
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=13331|end_char=13333|ner=O
+5	unanimité	unanimité	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=13333|end_char=13342|ner=O
+6	.	.	PUNCT	_	_	1	punct	_	start_char=13342|end_char=13343|ner=O
+
+# text = Elle concerne un programme commun d'études dans le domaine des langues vivantes appliquées à la vie économique et aux échanges internationaux.
+# sent_id = 113
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=13358|end_char=13362|ner=O
+2	concerne	concerner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=13363|end_char=13371|ner=O
+3	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=13372|end_char=13374|ner=O
+4	programme	programme	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=13375|end_char=13384|ner=O
+5	commun	commun	ADJ	_	Gender=Masc|Number=Sing	4	amod	_	start_char=13385|end_char=13391|ner=O
+6	d'	de	ADP	_	_	7	case	_	start_char=13392|end_char=13394|ner=O
+7	études	étude	NOUN	_	Gender=Fem|Number=Plur	4	nmod	_	start_char=13394|end_char=13400|ner=O
+8	dans	dans	ADP	_	_	10	case	_	start_char=13401|end_char=13405|ner=O
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=13406|end_char=13408|ner=O
+10	domaine	domaine	NOUN	_	Gender=Masc|Number=Sing	2	obl:mod	_	start_char=13409|end_char=13416|ner=O
+11-12	des	_	_	_	_	_	_	_	start_char=13417|end_char=13420|ner=O
+11	de	de	ADP	_	_	13	case	_	_
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	_
+13	langues	langue	NOUN	_	Gender=Fem|Number=Plur	10	nmod	_	start_char=13421|end_char=13428|ner=O
+14	vivantes	vivant	ADJ	_	Gender=Fem|Number=Plur	13	amod	_	start_char=13429|end_char=13437|ner=O
+15	appliquées	appliquer	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	4	acl	_	start_char=13458|end_char=13468|ner=O
+16	à	à	ADP	_	_	18	case	_	start_char=13469|end_char=13470|ner=O
+17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	start_char=13471|end_char=13473|ner=O
+18	vie	vie	NOUN	_	Gender=Fem|Number=Sing	15	obl:arg	_	start_char=13474|end_char=13477|ner=O
+19	économique	économique	ADJ	_	Gender=Fem|Number=Sing	18	amod	_	start_char=13478|end_char=13488|ner=O
+20	et	et	CCONJ	_	_	23	cc	_	start_char=13489|end_char=13491|ner=O
+21-22	aux	_	_	_	_	_	_	_	start_char=13492|end_char=13495|ner=O
+21	à	à	ADP	_	_	23	case	_	_
+22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_
+23	échanges	échange	NOUN	_	Gender=Masc|Number=Plur	18	conj	_	start_char=13496|end_char=13504|ner=O
+24	internationaux	international	ADJ	_	Gender=Masc|Number=Plur	23	amod	_	start_char=13505|end_char=13519|ner=O
+25	.	.	PUNCT	_	_	2	punct	_	start_char=13519|end_char=13520|ner=O
+
+# text = Vote POUR à l'unanimité.
+# sent_id = 114
+1	Vote	Vote	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=13538|end_char=13542|ner=O
+2	POUR	POUR	PROPN	_	_	1	appos	_	start_char=13543|end_char=13547|ner=S-LOC
+3	à	à	ADP	_	_	5	case	_	start_char=13548|end_char=13549|ner=O
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=13550|end_char=13552|ner=O
+5	unanimité	unanimité	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=13552|end_char=13561|ner=O
+6	.	.	PUNCT	_	_	1	punct	_	start_char=13561|end_char=13562|ner=O
+
+# text = Vote POUR à l'unanimité.
+# sent_id = 115
+1	Vote	Vote	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=13594|end_char=13598|ner=O
+2	POUR	POUR	PROPN	_	_	1	appos	_	start_char=13599|end_char=13603|ner=S-LOC
+3	à	à	ADP	_	_	5	case	_	start_char=13604|end_char=13605|ner=O
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=13606|end_char=13608|ner=O
+5	unanimité	unanimité	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=13608|end_char=13617|ner=O
+6	.	.	PUNCT	_	_	1	punct	_	start_char=13617|end_char=13618|ner=O
+
+# text = Accord du Conseil.
+# sent_id = 116
+1	Accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=13650|end_char=13656|ner=O
+2-3	du	_	_	_	_	_	_	_	start_char=13657|end_char=13659|ner=O
+2	de	de	ADP	_	_	4	case	_	_
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=13660|end_char=13667|ner=S-ORG
+5	.	.	PUNCT	_	_	1	punct	_	start_char=13667|end_char=13668|ner=O
+
+# text = Accord du Conseil à l'unanimité sous réserve de discussion plus approfondie.
+# sent_id = 117
+1	Accord	accord	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=13700|end_char=13706|ner=O
+2-3	du	_	_	_	_	_	_	_	start_char=13707|end_char=13709|ner=O
+2	de	de	ADP	_	_	4	case	_	_
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	_
+4	Conseil	conseil	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=13710|end_char=13717|ner=S-ORG
+5	à	à	ADP	_	_	7	case	_	start_char=13718|end_char=13719|ner=O
+6	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	7	det	_	start_char=13720|end_char=13722|ner=O
+7	unanimité	unanimité	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=13722|end_char=13731|ner=O
+8	sous	sous	ADP	_	_	9	case	_	start_char=13732|end_char=13736|ner=O
+9	réserve	réserve	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=13737|end_char=13744|ner=O
+10	de	de	ADP	_	_	11	case	_	start_char=13745|end_char=13747|ner=O
+11	discussion	discussion	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	start_char=13748|end_char=13758|ner=O
+12	plus	plus	ADV	_	_	13	advmod	_	start_char=13787|end_char=13791|ner=O
+13	approfondie	approfondir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	11	acl	_	start_char=13792|end_char=13803|ner=O
+14	.	.	PUNCT	_	_	1	punct	_	start_char=13803|end_char=13804|ner=O
+
+# text = La Conférence des Présidents s'est tenue le 18 juin dernier en présence de M. VALADE .
+# sent_id = 118
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=13819|end_char=13821|ner=O
+2	Conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	8	nsubj:pass	_	start_char=13822|end_char=13832|ner=B-ORG
+3-4	des	_	_	_	_	_	_	_	start_char=13833|end_char=13836|ner=I-ORG
+3	de	de	ADP	_	_	5	case	_	_
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_
+5	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	2	nmod	_	start_char=13837|end_char=13847|ner=E-ORG
+6	s'	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	8	expl:pass	_	start_char=13848|end_char=13850|ner=O
+7	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	start_char=13850|end_char=13853|ner=O
+8	tenue	tenir	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=13854|end_char=13859|ner=O
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=13860|end_char=13862|ner=O
+10	18	18	NUM	_	Number=Sing	8	obl:mod	_	start_char=13864|end_char=13866|ner=O
+11	juin	juin	NOUN	_	Gender=Masc|Number=Sing	10	nmod	_	start_char=13895|end_char=13899|ner=O
+12	dernier	dernier	ADJ	_	Gender=Masc|Number=Sing	10	amod	_	start_char=13901|end_char=13908|ner=O
+13	en	en	ADP	_	_	14	case	_	start_char=13909|end_char=13911|ner=O
+14	présence	présence	NOUN	_	Gender=Fem|Number=Sing	8	obl:mod	_	start_char=13912|end_char=13920|ner=O
+15	de	de	ADP	_	_	16	case	_	start_char=13921|end_char=13923|ner=O
+16	M.	M.	NOUN	_	Gender=Masc|Number=Sing	14	nmod	_	start_char=13925|end_char=13927|ner=B-PER
+17	VALADE	VALADE	PROPN	_	_	16	flat:name	_	start_char=13928|end_char=13934|ner=E-PER
+18	.	.	PUNCT	_	_	8	punct	_	start_char=13935|end_char=13936|ner=O
+
+# text = Celui-ci a confirmé l'importance de la Conférence des Présidents.
+# sent_id = 119
+1	Celui-ci	celui-ci	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	3	nsubj	_	start_char=13961|end_char=13969|ner=O
+2	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	start_char=13970|end_char=13971|ner=O
+3	confirmé	confirmer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=13972|end_char=13980|ner=O
+4	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	5	det	_	start_char=13981|end_char=13983|ner=O
+5	importance	importance	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=13983|end_char=13993|ner=O
+6	de	de	ADP	_	_	8	case	_	start_char=13994|end_char=13996|ner=O
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=13997|end_char=13999|ner=O
+8	Conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	start_char=14000|end_char=14010|ner=B-ORG
+9-10	des	_	_	_	_	_	_	_	start_char=14011|end_char=14014|ner=I-ORG
+9	de	de	ADP	_	_	11	case	_	_
+10	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	11	det	_	_
+11	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	start_char=14015|end_char=14025|ner=E-ORG
+12	.	.	PUNCT	_	_	3	punct	_	start_char=14025|end_char=14026|ner=O
+
+# text = Il rappelle les évènements dramatiques de l'année et après le départ de son prédécesseur, souhaite remettre en marche la machine universitaire.
+# sent_id = 120
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=14027|end_char=14029|ner=O
+2	rappelle	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=14054|end_char=14062|ner=O
+3	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=14063|end_char=14066|ner=O
+4	évènements	évènement	NOUN	_	Gender=Masc|Number=Plur	2	obj	_	start_char=14067|end_char=14077|ner=O
+5	dramatiques	dramatique	ADJ	_	Gender=Masc|Number=Plur	4	amod	_	start_char=14078|end_char=14089|ner=O
+6	de	de	ADP	_	_	8	case	_	start_char=14090|end_char=14092|ner=O
+7	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	start_char=14093|end_char=14095|ner=O
+8	année	année	NOUN	_	Gender=Fem|Number=Sing	4	nmod	_	start_char=14095|end_char=14100|ner=O
+9	et	et	CCONJ	_	_	17	cc	_	start_char=14101|end_char=14103|ner=O
+10	après	après	ADP	_	_	12	case	_	start_char=14104|end_char=14109|ner=O
+11	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	12	det	_	start_char=14110|end_char=14112|ner=O
+12	départ	départ	NOUN	_	Gender=Masc|Number=Sing	17	obl:mod	_	start_char=14113|end_char=14119|ner=O
+13	de	de	ADP	_	_	15	case	_	start_char=14120|end_char=14122|ner=O
+14	son	son	DET	_	Number=Sing|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	15	det	_	start_char=14123|end_char=14126|ner=O
+15	prédécesseur	prédécesseur	NOUN	_	Gender=Masc|Number=Sing	12	nmod	_	start_char=14151|end_char=14163|ner=O
+16	,	,	PUNCT	_	_	12	punct	_	start_char=14163|end_char=14164|ner=O
+17	souhaite	souhaiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	start_char=14165|end_char=14173|ner=O
+18	remettre	remettre	VERB	_	VerbForm=Inf	17	xcomp	_	start_char=14174|end_char=14182|ner=O
+19	en	en	ADP	_	_	20	case	_	start_char=14183|end_char=14185|ner=O
+20	marche	marche	NOUN	_	Gender=Fem|Number=Sing	18	obl:mod	_	start_char=14186|end_char=14192|ner=O
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	start_char=14193|end_char=14195|ner=O
+22	machine	machine	NOUN	_	Gender=Fem|Number=Sing	18	obj	_	start_char=14196|end_char=14203|ner=O
+23	universitaire	universitaire	ADJ	_	Gender=Fem|Number=Sing	22	amod	_	start_char=14204|end_char=14217|ner=O
+24	.	.	PUNCT	_	_	2	punct	_	start_char=14217|end_char=14218|ner=O
+
+# text = Il évoque le thème "DEMAIN L'UNIVERSITE" autour duquel le Ministre compose une Commission à laquelle participe la Conférence des Présidents.
+# sent_id = 121
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=14219|end_char=14221|ner=O
+2	évoque	évoquer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=14246|end_char=14252|ner=O
+3	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	4	det	_	start_char=14253|end_char=14255|ner=O
+4	thème	thème	NOUN	_	Gender=Masc|Number=Sing	2	obj	_	start_char=14256|end_char=14261|ner=O
+5	"	"	PUNCT	_	_	6	punct	_	start_char=14262|end_char=14263|ner=O
+6	DEMAIN	DEMAIN	PROPN	_	_	4	appos	_	start_char=14263|end_char=14269|ner=O
+7	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	8	det	_	start_char=14270|end_char=14272|ner=O
+8	UNIVERSITE	UNIVERSITE	PROPN	_	Number=Sing	6	appos	_	start_char=14272|end_char=14282|ner=S-LOC
+9	"	"	PUNCT	_	_	6	punct	_	start_char=14282|end_char=14283|ner=O
+10	autour	autour	ADV	_	_	15	advmod	_	start_char=14284|end_char=14290|ner=O
+11-12	duquel	_	_	_	_	_	_	_	start_char=14291|end_char=14297|ner=O
+11	de	de	ADP	_	_	12	case	_	_
+12	lequel	lequel	PRON	_	Gender=Masc|Number=Sing|PronType=Rel	10	obl:arg	_	_
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	start_char=14298|end_char=14300|ner=O
+14	Ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	15	nsubj	_	start_char=14301|end_char=14309|ner=S-PER
+15	compose	composer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	start_char=14310|end_char=14317|ner=O
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=14318|end_char=14321|ner=O
+17	Commission	commission	NOUN	_	Gender=Fem|Number=Sing	15	obj	_	start_char=14346|end_char=14356|ner=S-ORG
+18	à	à	ADP	_	_	19	case	_	start_char=14357|end_char=14358|ner=O
+19	laquelle	lequel	PRON	_	Gender=Fem|Number=Sing|PronType=Rel	20	obl:arg	_	start_char=14359|end_char=14367|ner=O
+20	participe	participer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	acl:relcl	_	start_char=14368|end_char=14377|ner=O
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	start_char=14378|end_char=14380|ner=O
+22	Conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	20	nsubj	_	start_char=14381|end_char=14391|ner=B-ORG
+23-24	des	_	_	_	_	_	_	_	start_char=14392|end_char=14395|ner=I-ORG
+23	de	de	ADP	_	_	25	case	_	_
+24	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	25	det	_	_
+25	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	22	nmod	_	start_char=14396|end_char=14406|ner=E-ORG
+26	.	.	PUNCT	_	_	2	punct	_	start_char=14406|end_char=14407|ner=O
+
+# text = Cette Commission siègera cet été et rendra ses conclusions en décembre 1987.
+# sent_id = 122
+1	Cette	ce	DET	_	Gender=Fem|Number=Sing|PronType=Dem	2	det	_	start_char=14408|end_char=14413|ner=O
+2	Commission	commission	NOUN	_	Gender=Fem|Number=Sing	3	nsubj	_	start_char=14438|end_char=14448|ner=S-ORG
+3	siègera	siéger	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=14449|end_char=14456|ner=O
+4	cet	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	start_char=14457|end_char=14460|ner=O
+5	été	été	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	start_char=14461|end_char=14464|ner=O
+6	et	et	CCONJ	_	_	7	cc	_	start_char=14465|end_char=14467|ner=O
+7	rendra	rendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	conj	_	start_char=14468|end_char=14474|ner=O
+8	ses	son	DET	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|Poss=Yes|PronType=Prs	9	det	_	start_char=14475|end_char=14478|ner=O
+9	conclusions	conclusion	NOUN	_	Gender=Fem|Number=Plur	7	obj	_	start_char=14479|end_char=14490|ner=O
+10	en	en	ADP	_	_	11	case	_	start_char=14491|end_char=14493|ner=O
+11	décembre	décembre	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	start_char=14494|end_char=14502|ner=O
+12	1987	1987	NUM	_	Number=Plur	11	nmod	_	start_char=14503|end_char=14507|ner=O
+13	.	.	PUNCT	_	_	3	punct	_	start_char=14507|end_char=14508|ner=O
+
+# text = D'autre part, suite à un rapport de l'Inspection générale il est question de supprimer la Direction de la Recherche de l'Enseignement Supérieur.
+# sent_id = 123
+1	D'	de	ADP	_	_	3	case	_	start_char=14509|end_char=14511|ner=O
+2	autre	autre	ADJ	_	Gender=Fem|Number=Sing	3	amod	_	start_char=14511|end_char=14516|ner=O
+3	part	part	NOUN	_	Gender=Fem|Number=Sing	15	obl:mod	_	start_char=14517|end_char=14521|ner=O
+4	,	,	PUNCT	_	_	3	punct	_	start_char=14521|end_char=14522|ner=O
+5	suite	suite	NOUN	_	_	8	case	_	start_char=14523|end_char=14528|ner=O
+6	à	à	ADP	_	_	5	fixed	_	start_char=14529|end_char=14530|ner=O
+7	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	8	det	_	start_char=14531|end_char=14533|ner=O
+8	rapport	rapport	NOUN	_	Gender=Masc|Number=Sing	15	obl:mod	_	start_char=14534|end_char=14541|ner=O
+9	de	de	ADP	_	_	11	case	_	start_char=14542|end_char=14544|ner=O
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	start_char=14545|end_char=14547|ner=O
+11	Inspection	inspection	NOUN	_	Gender=Fem|Number=Sing	8	nmod	_	start_char=14547|end_char=14557|ner=B-ORG
+12	générale	général	ADJ	_	Gender=Fem|Number=Sing	11	amod	_	start_char=14558|end_char=14566|ner=E-ORG
+13	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	15	expl:subj	_	start_char=14567|end_char=14569|ner=O
+14	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	cop	_	start_char=14570|end_char=14573|ner=O
+15	question	question	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=14574|end_char=14582|ner=O
+16	de	de	ADP	_	_	17	mark	_	start_char=14583|end_char=14585|ner=O
+17	supprimer	supprimer	VERB	_	VerbForm=Inf	15	csubj	_	start_char=14610|end_char=14619|ner=O
+18	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	19	det	_	start_char=14620|end_char=14622|ner=O
+19	Direction	direction	NOUN	_	Gender=Fem|Number=Sing	17	obj	_	start_char=14623|end_char=14632|ner=B-LOC
+20	de	de	ADP	_	_	22	case	_	start_char=14633|end_char=14635|ner=I-LOC
+21	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	22	det	_	start_char=14636|end_char=14638|ner=I-LOC
+22	Recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	19	nmod	_	start_char=14639|end_char=14648|ner=I-LOC
+23	de	de	ADP	_	_	25	case	_	start_char=14649|end_char=14651|ner=I-LOC
+24	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	25	det	_	start_char=14652|end_char=14654|ner=I-LOC
+25	Enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	22	nmod	_	start_char=14654|end_char=14666|ner=I-LOC
+26	Supérieur	supérieur	ADJ	_	Gender=Masc|Number=Sing	25	amod	_	start_char=14667|end_char=14676|ner=E-LOC
+27	.	.	PUNCT	_	_	15	punct	_	start_char=14676|end_char=14677|ner=O
+
+# text = Les
+# sent_id = 124
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	0	root	_	start_char=14678|end_char=14681|ner=O
+
+# text = Présidents s'insurgent contre ce projet et
+# sent_id = 125
+1	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	start_char=14711|end_char=14721|ner=O
+2	s'	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	3	expl:pv	_	start_char=14723|end_char=14725|ner=O
+3	insurgent	insurger	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=14725|end_char=14734|ner=O
+4	contre	contre	ADP	_	_	6	case	_	start_char=14735|end_char=14741|ner=O
+5	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	6	det	_	start_char=14742|end_char=14744|ner=O
+6	projet	projet	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	start_char=14745|end_char=14751|ner=O
+7	et	et	CCONJ	_	_	3	cc	_	start_char=14752|end_char=14754|ner=O
+
+# text = Monsieur VALADE à ce sujet insiste sur la collaboration entre l'Enseignement et la Recherche.
+# sent_id = 126
+1	Monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	6	nsubj	_	start_char=14784|end_char=14792|ner=B-PER
+2	VALADE	VALADE	PROPN	_	_	1	flat:name	_	start_char=14793|end_char=14799|ner=E-PER
+3	à	à	ADP	_	_	5	case	_	start_char=14801|end_char=14802|ner=O
+4	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	5	det	_	start_char=14803|end_char=14805|ner=O
+5	sujet	sujet	NOUN	_	Gender=Masc|Number=Sing	1	nmod	_	start_char=14806|end_char=14811|ner=O
+6	insiste	insister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=14812|end_char=14819|ner=O
+7	sur	sur	ADP	_	_	9	case	_	start_char=14820|end_char=14823|ner=O
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	start_char=14824|end_char=14826|ner=O
+9	collaboration	collaboration	NOUN	_	Gender=Fem|Number=Sing	6	obl:mod	_	start_char=14851|end_char=14864|ner=O
+10	entre	entre	ADP	_	_	12	case	_	start_char=14865|end_char=14870|ner=O
+11	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	12	det	_	start_char=14871|end_char=14873|ner=O
+12	Enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	start_char=14873|end_char=14885|ner=B-ORG
+13	et	et	CCONJ	_	_	15	cc	_	start_char=14886|end_char=14888|ner=I-ORG
+14	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	15	det	_	start_char=14889|end_char=14891|ner=I-ORG
+15	Recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	12	conj	_	start_char=14892|end_char=14901|ner=E-ORG
+16	.	.	PUNCT	_	_	6	punct	_	start_char=14901|end_char=14902|ner=O
+
+# text = Enfin, parallèlement au Colloque "2 000 000 d'Etudiants en l'an 2000", une Commission va être constituée qui travaillera sur les conditions des enseignants du supérieur.
+# sent_id = 127
+1	Enfin	enfin	ADV	_	_	19	advmod	_	start_char=14903|end_char=14908|ner=O
+2	,	,	PUNCT	_	_	1	punct	_	start_char=14908|end_char=14909|ner=O
+3	parallèlement	parallèlement	ADV	_	_	19	advmod	_	start_char=14910|end_char=14923|ner=O
+4-5	au	_	_	_	_	_	_	_	start_char=14924|end_char=14926|ner=O
+4	à	à	ADP	_	_	6	case	_	_
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	Colloque	colloque	NOUN	_	Gender=Masc|Number=Sing	19	obl:mod	_	start_char=14927|end_char=14935|ner=B-MISC
+7	"	"	PUNCT	_	_	8	punct	_	start_char=14936|end_char=14937|ner=I-MISC
+8	2 000 000	2 000 000	NUM	_	Number=Plur	6	appos	_	start_char=14937|end_char=14946|ner=I-MISC
+9	d'	de	ADP	_	_	10	case	_	start_char=14947|end_char=14949|ner=I-MISC
+10	Etudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	8	nmod	_	start_char=14949|end_char=14958|ner=E-MISC
+11	en	en	ADP	_	_	13	case	_	start_char=14959|end_char=14961|ner=O
+12	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	13	det	_	start_char=14962|end_char=14964|ner=O
+13	an	an	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	start_char=14964|end_char=14966|ner=O
+14	2000	2000	NUM	_	Number=Plur	13	nmod	_	start_char=14967|end_char=14971|ner=O
+15	"	"	PUNCT	_	_	8	punct	_	start_char=14971|end_char=14972|ner=O
+16	,	,	PUNCT	_	_	6	punct	_	start_char=14972|end_char=14973|ner=O
+17	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	18	det	_	start_char=14974|end_char=14977|ner=O
+18	Commission	commission	NOUN	_	Gender=Fem|Number=Sing	19	nsubj	_	start_char=15002|end_char=15012|ner=S-ORG
+19	va	aller	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15013|end_char=15015|ner=O
+20	être	être	AUX	_	VerbForm=Inf	21	aux:pass	_	start_char=15016|end_char=15020|ner=O
+21	constituée	constituer	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	19	xcomp	_	start_char=15021|end_char=15031|ner=O
+22	qui	qui	PRON	_	PronType=Rel	23	nsubj	_	start_char=15032|end_char=15035|ner=O
+23	travaillera	travailler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	21	conj	_	start_char=15036|end_char=15047|ner=O
+24	sur	sur	ADP	_	_	26	case	_	start_char=15048|end_char=15051|ner=O
+25	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	26	det	_	start_char=15052|end_char=15055|ner=O
+26	conditions	condition	NOUN	_	Gender=Fem|Number=Plur	23	obl:mod	_	start_char=15056|end_char=15066|ner=O
+27-28	des	_	_	_	_	_	_	_	start_char=15067|end_char=15070|ner=O
+27	de	de	ADP	_	_	29	case	_	_
+28	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	29	det	_	_
+29	enseignants	enseignant	NOUN	_	Gender=Masc|Number=Plur	26	nmod	_	start_char=15095|end_char=15106|ner=O
+30-31	du	_	_	_	_	_	_	_	start_char=15107|end_char=15109|ner=O
+30	de	de	ADP	_	_	32	case	_	_
+31	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	32	det	_	_
+32	supérieur	supérieur	NOUN	_	Gender=Masc|Number=Sing	29	nmod	_	start_char=15110|end_char=15119|ner=O
+33	.	.	PUNCT	_	_	19	punct	_	start_char=15119|end_char=15120|ner=O
+
+# text = Monsieur IMBERTY nous informe que dix questions écrites ont été posées par la Conférence des Présidents d'Université à
+# sent_id = 128
+1	Monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	4	nsubj	_	start_char=15138|end_char=15146|ner=B-PER
+2	IMBERTY	IMBERTY	PROPN	_	_	1	flat:name	_	start_char=15147|end_char=15154|ner=E-PER
+3	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	4	nsubj	_	start_char=15156|end_char=15160|ner=O
+4	informe	informe	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15161|end_char=15168|ner=O
+5	que	que	SCONJ	_	_	11	mark	_	start_char=15169|end_char=15172|ner=O
+6	dix	dix	NUM	_	Number=Plur	7	nummod	_	start_char=15173|end_char=15176|ner=O
+7	questions	question	NOUN	_	Gender=Fem|Number=Plur	11	nsubj:pass	_	start_char=15177|end_char=15186|ner=O
+8	écrites	écrire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	7	acl	_	start_char=15187|end_char=15194|ner=O
+9	ont	avoir	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	start_char=15219|end_char=15222|ner=O
+10	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	11	aux:pass	_	start_char=15223|end_char=15226|ner=O
+11	posées	poser	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	4	ccomp	_	start_char=15227|end_char=15233|ner=O
+12	par	par	ADP	_	_	14	case	_	start_char=15234|end_char=15237|ner=O
+13	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	14	det	_	start_char=15238|end_char=15240|ner=O
+14	Conférence	conférence	NOUN	_	Gender=Fem|Number=Sing	11	obl:agent	_	start_char=15241|end_char=15251|ner=B-ORG
+15-16	des	_	_	_	_	_	_	_	start_char=15252|end_char=15255|ner=I-ORG
+15	de	de	ADP	_	_	17	case	_	_
+16	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	17	det	_	_
+17	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	14	nmod	_	start_char=15256|end_char=15266|ner=I-ORG
+18	d'	de	ADP	_	_	19	case	_	start_char=15267|end_char=15269|ner=I-ORG
+19	Université	université	NOUN	_	Gender=Fem|Number=Sing	17	nmod	_	start_char=15269|end_char=15279|ner=E-ORG
+20	à	à	ADP	_	_	4	punct	_	start_char=15280|end_char=15281|ner=O
+
+# text = Monsieur le Ministre Délégué à la Recherche et à l'Enseignement Supérieur .
+# sent_id = 129
+1	Monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=15311|end_char=15319|ner=O
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	start_char=15320|end_char=15322|ner=O
+3	Ministre	ministre	NOUN	_	Gender=Masc|Number=Sing	1	appos	_	start_char=15323|end_char=15331|ner=B-LOC
+4	Délégué	délégué	ADJ	_	Gender=Masc|Number=Sing	3	amod	_	start_char=15332|end_char=15339|ner=I-LOC
+5	à	à	ADP	_	_	7	case	_	start_char=15340|end_char=15341|ner=I-LOC
+6	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	start_char=15342|end_char=15344|ner=I-LOC
+7	Recherche	recherche	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=15345|end_char=15354|ner=I-LOC
+8	et	et	CCONJ	_	_	11	cc	_	start_char=15355|end_char=15357|ner=I-LOC
+9	à	à	ADP	_	_	11	case	_	start_char=15358|end_char=15359|ner=I-LOC
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	start_char=15388|end_char=15390|ner=I-LOC
+11	Enseignement	enseignement	NOUN	_	Gender=Masc|Number=Sing	7	conj	_	start_char=15390|end_char=15402|ner=I-LOC
+12	Supérieur	supérieur	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	start_char=15403|end_char=15412|ner=E-LOC
+13	.	.	PUNCT	_	_	1	punct	_	start_char=15413|end_char=15414|ner=O
+
+# text = Ces questions engagent la rentrée universitaire.
+# sent_id = 130
+1	Ces	ce	DET	_	Number=Plur|PronType=Dem	2	det	_	start_char=15415|end_char=15418|ner=S-LOC
+2	questions	question	NOUN	_	Gender=Fem|Number=Plur	3	nsubj	_	start_char=15419|end_char=15428|ner=O
+3	engagent	engager	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15429|end_char=15437|ner=O
+4	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=15438|end_char=15440|ner=O
+5	rentrée	rentrée	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=15441|end_char=15448|ner=O
+6	universitaire	universitaire	ADJ	_	Gender=Fem|Number=Sing	5	amod	_	start_char=15473|end_char=15486|ner=O
+7	.	.	PUNCT	_	_	3	punct	_	start_char=15486|end_char=15487|ner=O
+
+# text = Parmi ces points chauds, le Président
+# sent_id = 131
+1	Parmi	parmi	ADP	_	_	3	case	_	start_char=15488|end_char=15493|ner=O
+2	ces	ce	DET	_	Number=Plur|PronType=Dem	3	det	_	start_char=15494|end_char=15497|ner=O
+3	points	point	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	start_char=15498|end_char=15504|ner=O
+4	chauds	chaud	ADJ	_	Gender=Masc|Number=Plur	3	amod	_	start_char=15505|end_char=15511|ner=O
+5	,	,	PUNCT	_	_	3	punct	_	start_char=15511|end_char=15512|ner=O
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=15513|end_char=15515|ner=O
+7	Président	président	NOUN	_	Gender=Masc|Number=Sing	0	root	_	start_char=15517|end_char=15526|ner=S-PER
+
+# text = nous donne quelques précisions :
+# sent_id = 132
+1	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	start_char=15552|end_char=15556|ner=O
+2	donne	donner	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15557|end_char=15562|ner=O
+3	quelques	quelque	DET	_	Number=Plur|PronType=Ind	4	det	_	start_char=15563|end_char=15571|ner=O
+4	précisions	précision	NOUN	_	Gender=Fem|Number=Plur	2	obj	_	start_char=15572|end_char=15582|ner=O
+5	:	:	PUNCT	_	_	2	punct	_	start_char=15583|end_char=15584|ner=O
+
+# text = Le classement proposé par ordre de priorité n'a pas été respecté ce qui entraîne une protestations des Présidents .
+# sent_id = 133
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=15585|end_char=15587|ner=O
+2	classement	classement	NOUN	_	Gender=Masc|Number=Sing	12	nsubj:pass	_	start_char=15588|end_char=15598|ner=O
+3	proposé	proposer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	start_char=15599|end_char=15606|ner=O
+4	par	par	ADP	_	_	5	case	_	start_char=15607|end_char=15610|ner=O
+5	ordre	ordre	NOUN	_	Gender=Masc|Number=Sing	3	obl:mod	_	start_char=15611|end_char=15616|ner=O
+6	de	de	ADP	_	_	7	case	_	start_char=15617|end_char=15619|ner=O
+7	priorité	priorité	NOUN	_	Gender=Fem|Number=Sing	5	nmod	_	start_char=15620|end_char=15628|ner=O
+8	n'	ne	ADV	_	Polarity=Neg	12	advmod	_	start_char=15629|end_char=15631|ner=O
+9	a	avoir	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	start_char=15631|end_char=15632|ner=O
+10	pas	pas	ADV	_	Polarity=Neg	12	advmod	_	start_char=15633|end_char=15636|ner=O
+11	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	12	aux:pass	_	start_char=15637|end_char=15640|ner=O
+12	respecté	respecter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=15641|end_char=15649|ner=O
+13	ce	ce	PRON	_	Gender=Masc|Person=3|PronType=Dem	12	obl:mod	_	start_char=15650|end_char=15652|ner=O
+14	qui	qui	PRON	_	PronType=Rel	15	nsubj	_	start_char=15653|end_char=15656|ner=O
+15	entraîne	entraîner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	acl:relcl	_	start_char=15681|end_char=15689|ner=O
+16	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	17	det	_	start_char=15690|end_char=15693|ner=O
+17	protestations	protestation	NOUN	_	Gender=Fem|Number=Plur	15	obj	_	start_char=15694|end_char=15707|ner=O
+18-19	des	_	_	_	_	_	_	_	start_char=15708|end_char=15711|ner=O
+18	de	de	ADP	_	_	20	case	_	_
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
+20	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	start_char=15713|end_char=15723|ner=S-ORG
+21	.	.	PUNCT	_	_	12	punct	_	start_char=15724|end_char=15725|ner=O
+
+# text = Le nécessaire doit être fait rapidement.
+# sent_id = 134
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=15726|end_char=15728|ner=O
+2	nécessaire	nécessaire	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	start_char=15729|end_char=15739|ner=O
+3	doit	devoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=15740|end_char=15744|ner=O
+4	être	être	AUX	_	VerbForm=Inf	5	aux:pass	_	start_char=15745|end_char=15749|ner=O
+5	fait	faire	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	start_char=15750|end_char=15754|ner=O
+6	rapidement	rapidement	ADV	_	_	5	advmod	_	start_char=15755|end_char=15765|ner=O
+7	.	.	PUNCT	_	_	3	punct	_	start_char=15765|end_char=15766|ner=O
+
+# text = Le Ministère exploiterait une enquête menée actuellement par le S.P.A.M. pour les catégories C et D, 600 suppressions sont faites.
+# sent_id = 135
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=15767|end_char=15769|ner=O
+2	Ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	start_char=15770|end_char=15779|ner=S-MISC
+3	exploiterait	exploiter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	start_char=15780|end_char=15792|ner=O
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=15793|end_char=15796|ner=O
+5	enquête	enquête	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=15821|end_char=15828|ner=O
+6	menée	mener	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	start_char=15829|end_char=15834|ner=O
+7	actuellement	actuellement	ADV	_	_	6	advmod	_	start_char=15835|end_char=15847|ner=O
+8	par	par	ADP	_	_	10	case	_	start_char=15848|end_char=15851|ner=O
+9	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	10	det	_	start_char=15852|end_char=15854|ner=O
+10	S.P.A.M.	S.P.A.M.	PROPN	_	Gender=Masc|Number=Sing	6	obl:agent	_	start_char=15855|end_char=15863|ner=S-ORG
+11	pour	pour	ADP	_	_	13	case	_	start_char=15864|end_char=15868|ner=O
+12	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	13	det	_	start_char=15869|end_char=15872|ner=O
+13	catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	6	obl:mod	_	start_char=15873|end_char=15883|ner=O
+14	C	C	X	_	_	13	appos	_	start_char=15884|end_char=15885|ner=S-MISC
+15	et	et	CCONJ	_	_	16	cc	_	start_char=15886|end_char=15888|ner=O
+16	D	D	X	_	_	14	conj	_	start_char=15889|end_char=15890|ner=S-MISC
+17	,	,	PUNCT	_	_	21	punct	_	start_char=15890|end_char=15891|ner=O
+18	600	600	NUM	_	Number=Plur	19	nummod	_	start_char=15892|end_char=15895|ner=O
+19	suppressions	suppression	NOUN	_	Gender=Fem|Number=Plur	21	nsubj:pass	_	start_char=15896|end_char=15908|ner=O
+20	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	21	aux:pass	_	start_char=15909|end_char=15913|ner=O
+21	faites	faire	VERB	_	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	3	conj	_	start_char=15914|end_char=15920|ner=O
+22	.	.	PUNCT	_	_	3	punct	_	start_char=15920|end_char=15921|ner=O
+
+# text = Il n'y en aura pas d'autres.
+# sent_id = 136
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	5	expl:subj	_	start_char=15922|end_char=15924|ner=O
+2	n'	ne	ADV	_	Polarity=Neg	5	advmod	_	start_char=15925|end_char=15927|ner=O
+3	y	y	PRON	_	Person=3|PronType=Prs	5	expl	_	start_char=15927|end_char=15928|ner=O
+4	en	en	PRON	_	Person=3|PronType=Prs	5	expl	_	start_char=15929|end_char=15931|ner=O
+5	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=15932|end_char=15936|ner=O
+6	pas	pas	ADV	_	Polarity=Neg	5	advmod	_	start_char=15937|end_char=15940|ner=O
+7	d'	un	DET	_	Definite=Ind|PronType=Art	8	det	_	start_char=15965|end_char=15967|ner=O
+8	autres	autre	PRON	_	Number=Plur|Person=3|PronType=Ind	5	obj	_	start_char=15967|end_char=15973|ner=O
+9	.	.	PUNCT	_	_	5	punct	_	start_char=15973|end_char=15974|ner=O
+
+# text = pour les autres catégories, il faut encore prévoir 300 suppressions ;
+# sent_id = 137
+1	pour	pour	ADP	_	_	4	case	_	start_char=15975|end_char=15979|ner=O
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	4	det	_	start_char=15980|end_char=15983|ner=O
+3	autres	autre	ADJ	_	Gender=Fem|Number=Plur	4	amod	_	start_char=15984|end_char=15990|ner=O
+4	catégories	catégorie	NOUN	_	Gender=Fem|Number=Plur	7	obl:mod	_	start_char=15991|end_char=16001|ner=O
+5	,	,	PUNCT	_	_	4	punct	_	start_char=16001|end_char=16002|ner=O
+6	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	start_char=16003|end_char=16005|ner=O
+7	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=16006|end_char=16010|ner=O
+8	encore	encore	ADV	_	_	7	advmod	_	start_char=16011|end_char=16017|ner=O
+9	prévoir	prévoir	VERB	_	VerbForm=Inf	7	ccomp	_	start_char=16018|end_char=16025|ner=O
+10	300	300	NUM	_	Number=Plur	11	nummod	_	start_char=16026|end_char=16029|ner=O
+11	suppressions	suppression	NOUN	_	Gender=Fem|Number=Plur	9	obj	_	start_char=16030|end_char=16042|ner=O
+12	;	;	PUNCT	_	_	7	punct	_	start_char=16043|end_char=16044|ner=O
+
+# text = 350 postes ayant été rendus aux Financers.
+# sent_id = 138
+1	350	350	NUM	_	Number=Plur	2	nummod	_	start_char=16045|end_char=16048|ner=O
+2	postes	poste	NOUN	_	Gender=Masc|Number=Plur	5	nsubj:pass	_	start_char=16073|end_char=16079|ner=O
+3	ayant	avoir	AUX	_	Tense=Pres|VerbForm=Part	5	aux:tense	_	start_char=16080|end_char=16085|ner=O
+4	été	être	AUX	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	aux:pass	_	start_char=16086|end_char=16089|ner=O
+5	rendus	rendre	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	root	_	start_char=16090|end_char=16096|ner=O
+6-7	aux	_	_	_	_	_	_	_	start_char=16097|end_char=16100|ner=O
+6	à	à	ADP	_	_	8	case	_	_
+7	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	8	det	_	_
+8	Financers	Financers	PROPN	_	Number=Plur	5	obl:arg	_	start_char=16101|end_char=16110|ner=S-MISC
+9	.	.	PUNCT	_	_	5	punct	_	start_char=16110|end_char=16111|ner=O
+
+# text = Les discussions avec les Finances sont très dures.
+# sent_id = 139
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	start_char=16112|end_char=16115|ner=O
+2	discussions	discussion	NOUN	_	Gender=Fem|Number=Plur	8	nsubj	_	start_char=16116|end_char=16127|ner=O
+3	avec	avec	ADP	_	_	5	case	_	start_char=16128|end_char=16132|ner=O
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	start_char=16133|end_char=16136|ner=O
+5	Finances	Finances	PROPN	_	Number=Plur	2	nmod	_	start_char=16137|end_char=16145|ner=S-ORG
+6	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	start_char=16170|end_char=16174|ner=O
+7	très	très	ADV	_	_	8	advmod	_	start_char=16175|end_char=16179|ner=O
+8	dures	dur	ADJ	_	Gender=Fem|Number=Plur	0	root	_	start_char=16180|end_char=16185|ner=O
+9	.	.	PUNCT	_	_	8	punct	_	start_char=16185|end_char=16186|ner=O
+
+# text = Les Présidents doivent argumenter avec force pour obtenir gain de cause et présenter des exemples de services étranglés par les suppressions d'emplois.
+# sent_id = 140
+1	Les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	2	det	_	start_char=16187|end_char=16190|ner=O
+2	Présidents	président	NOUN	_	Gender=Masc|Number=Plur	3	nsubj	_	start_char=16192|end_char=16202|ner=S-LOC
+3	doivent	devoir	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=16204|end_char=16211|ner=O
+4	argumenter	argumenter	VERB	_	VerbForm=Inf	3	xcomp	_	start_char=16212|end_char=16222|ner=O
+5	avec	avec	ADP	_	_	6	case	_	start_char=16223|end_char=16227|ner=O
+6	force	force	NOUN	_	Gender=Fem|Number=Sing	4	obl:mod	_	start_char=16228|end_char=16233|ner=O
+7	pour	pour	ADP	_	_	8	mark	_	start_char=16234|end_char=16238|ner=O
+8	obtenir	obtenir	VERB	_	VerbForm=Inf	4	advcl	_	start_char=16263|end_char=16270|ner=O
+9	gain	gain	NOUN	_	Gender=Masc|Number=Sing	8	obj:lvc	_	start_char=16271|end_char=16275|ner=O
+10	de	de	ADP	_	_	11	case	_	start_char=16276|end_char=16278|ner=O
+11	cause	cause	NOUN	_	Gender=Fem|Number=Sing	9	obl:arg	_	start_char=16279|end_char=16284|ner=O
+12	et	et	CCONJ	_	_	13	cc	_	start_char=16285|end_char=16287|ner=O
+13	présenter	présenter	VERB	_	VerbForm=Inf	8	conj	_	start_char=16288|end_char=16297|ner=O
+14	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	15	det	_	start_char=16298|end_char=16301|ner=O
+15	exemples	exemple	NOUN	_	Gender=Masc|Number=Plur	13	obj	_	start_char=16302|end_char=16310|ner=O
+16	de	de	ADP	_	_	17	case	_	start_char=16311|end_char=16313|ner=O
+17	services	service	NOUN	_	Gender=Masc|Number=Plur	15	nmod	_	start_char=16314|end_char=16322|ner=O
+18	étranglés	étrangler	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	17	acl	_	start_char=16323|end_char=16332|ner=O
+19	par	par	ADP	_	_	21	case	_	start_char=16333|end_char=16336|ner=O
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	start_char=16361|end_char=16364|ner=O
+21	suppressions	suppression	NOUN	_	Gender=Fem|Number=Plur	18	obl:agent	_	start_char=16365|end_char=16377|ner=O
+22	d'	de	ADP	_	_	23	case	_	start_char=16378|end_char=16380|ner=O
+23	emplois	emploi	NOUN	_	Gender=Masc|Number=Plur	21	nmod	_	start_char=16380|end_char=16387|ner=O
+24	.	.	PUNCT	_	_	3	punct	_	start_char=16387|end_char=16388|ner=O
+
+# text = Monsieur IMBERTY pense qu'il y a une prise de conscience de ce problème majeur au niveau de notre Ministère.
+# sent_id = 141
+1	Monsieur	monsieur	NOUN	_	Gender=Masc|Number=Sing	3	nsubj	_	start_char=16390|end_char=16398|ner=O
+2	IMBERTY	IMBERTY	PROPN	_	_	1	flat:name	_	start_char=16399|end_char=16406|ner=O
+3	pense	penser	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=16408|end_char=16413|ner=O
+4	qu'	que	SCONJ	_	_	7	mark	_	start_char=16438|end_char=16441|ner=O
+5	il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	expl:subj	_	start_char=16441|end_char=16443|ner=O
+6	y	y	PRON	_	Person=3|PronType=Prs	7	expl	_	start_char=16444|end_char=16445|ner=O
+7	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	ccomp	_	start_char=16446|end_char=16447|ner=O
+8	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	9	det	_	start_char=16448|end_char=16451|ner=O
+9	prise	prise	NOUN	_	Gender=Fem|Number=Sing	7	obj	_	start_char=16452|end_char=16457|ner=O
+10	de	de	ADP	_	_	11	case	_	start_char=16458|end_char=16460|ner=O
+11	conscience	conscience	NOUN	_	Gender=Fem|Number=Sing	9	nmod	_	start_char=16461|end_char=16471|ner=O
+12	de	de	ADP	_	_	14	case	_	start_char=16472|end_char=16474|ner=O
+13	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	14	det	_	start_char=16475|end_char=16477|ner=O
+14	problème	problème	NOUN	_	Gender=Masc|Number=Sing	9	nmod	_	start_char=16478|end_char=16486|ner=O
+15	majeur	majeur	ADJ	_	Gender=Masc|Number=Sing	14	amod	_	start_char=16487|end_char=16493|ner=O
+16-17	au	_	_	_	_	_	_	_	start_char=16494|end_char=16496|ner=O
+16	à	à	ADP	_	_	18	case	_	_
+17	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
+18	niveau	niveau	NOUN	_	Gender=Masc|Number=Sing	7	obl:mod	_	start_char=16497|end_char=16503|ner=O
+19	de	de	ADP	_	_	21	case	_	start_char=16504|end_char=16506|ner=O
+20	notre	son	DET	_	Number=Sing|Number[psor]=Plur|Person[psor]=1|Poss=Yes|PronType=Prs	21	det	_	start_char=16507|end_char=16512|ner=O
+21	Ministère	ministère	NOUN	_	Gender=Masc|Number=Sing	18	nmod	_	start_char=16537|end_char=16546|ner=S-MISC
+22	.	.	PUNCT	_	_	3	punct	_	start_char=16546|end_char=16547|ner=O
+
+# text = Une Commission Nationale remplacera le groupe d'experts.
+# sent_id = 142
+1	Une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=16548|end_char=16551|ner=O
+2	Commission	commission	NOUN	_	Gender=Fem|Number=Sing	4	nsubj	_	start_char=16552|end_char=16562|ner=B-ORG
+3	Nationale	national	ADJ	_	Gender=Fem|Number=Sing	2	amod	_	start_char=16563|end_char=16572|ner=E-ORG
+4	remplacera	remplacer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=16573|end_char=16583|ner=O
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	start_char=16584|end_char=16586|ner=O
+6	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	4	obj	_	start_char=16587|end_char=16593|ner=O
+7	d'	de	ADP	_	_	8	case	_	start_char=16594|end_char=16596|ner=O
+8	experts	expert	NOUN	_	Gender=Masc|Number=Plur	6	nmod	_	start_char=16596|end_char=16603|ner=O
+9	.	.	PUNCT	_	_	4	punct	_	start_char=16603|end_char=16604|ner=O
+
+# text = En 87/88 pas de campagne d'habilitations 2ème cycle tous azimuts.
+# sent_id = 143
+1	En	en	ADP	_	_	2	case	_	start_char=16605|end_char=16607|ner=O
+2	87	87	NUM	_	Number=Plur	7	obl:mod	_	start_char=16608|end_char=16610|ner=O
+3	/	/	SYM	_	_	4	cc	_	start_char=16610|end_char=16611|ner=O
+4	88	88	NUM	_	Number=Plur	2	conj	_	start_char=16611|end_char=16613|ner=O
+5	pas	pas	ADV	_	Polarity=Neg	7	advmod	_	start_char=16614|end_char=16617|ner=O
+6	de	de	ADP	_	_	7	case	_	start_char=16618|end_char=16620|ner=O
+7	campagne	campagne	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=16645|end_char=16653|ner=O
+8	d'	de	ADP	_	_	9	case	_	start_char=16654|end_char=16656|ner=O
+9	habilitations	habilitation	NOUN	_	Gender=Fem|Number=Plur	7	nmod	_	start_char=16656|end_char=16669|ner=O
+10	2ème	2ème	ADJ	_	Gender=Masc|Number=Sing	11	amod	_	start_char=16670|end_char=16674|ner=O
+11	cycle	cycle	NOUN	_	Gender=Masc|Number=Sing	7	nmod	_	start_char=16675|end_char=16680|ner=O
+12	tous	tout	DET	_	Gender=Masc|Number=Plur|PronType=Ind	13	det	_	start_char=16681|end_char=16685|ner=O
+13	azimuts	azimut	NOUN	_	Gender=Masc|Number=Plur	7	nmod	_	start_char=16686|end_char=16693|ner=O
+14	.	.	PUNCT	_	_	7	punct	_	start_char=16693|end_char=16694|ner=O
+
+# text = Il y aura une remise à plat dans certaines disciplines.
+# sent_id = 144
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	start_char=16695|end_char=16697|ner=O
+2	y	y	PRON	_	Person=3|PronType=Prs	3	expl	_	start_char=16698|end_char=16699|ner=O
+3	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=16700|end_char=16704|ner=O
+4	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	5	det	_	start_char=16705|end_char=16708|ner=O
+5	remise	remise	NOUN	_	Gender=Fem|Number=Sing	3	obj	_	start_char=16709|end_char=16715|ner=O
+6	à	à	ADP	_	_	7	case	_	start_char=16716|end_char=16717|ner=O
+7	plat	plat	NOUN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=16742|end_char=16746|ner=O
+8	dans	dans	ADP	_	_	10	case	_	start_char=16747|end_char=16751|ner=O
+9	certaines	certain	DET	_	Gender=Fem|Number=Plur|PronType=Ind	10	det	_	start_char=16752|end_char=16761|ner=O
+10	disciplines	discipline	NOUN	_	Gender=Fem|Number=Plur	3	obl:mod	_	start_char=16762|end_char=16773|ner=O
+11	.	.	PUNCT	_	_	3	punct	_	start_char=16773|end_char=16774|ner=O
+
+# text = Composition de la Commission Nationale : En octobre, un groupe de 15 personnes sera constitué : 2/3 d'universitaires - 1/3 de personnalités extérieures.
+# sent_id = 145
+1	Composition	composition	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=16775|end_char=16786|ner=O
+2	de	de	ADP	_	_	4	case	_	start_char=16787|end_char=16789|ner=O
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=16790|end_char=16792|ner=O
+4	Commission	commission	NOUN	_	Gender=Fem|Number=Sing	1	nmod	_	start_char=16793|end_char=16803|ner=B-ORG
+5	Nationale	national	ADJ	_	Gender=Fem|Number=Sing	4	amod	_	start_char=16804|end_char=16813|ner=E-ORG
+6	:	:	PUNCT	_	_	16	punct	_	start_char=16838|end_char=16839|ner=O
+7	En	en	ADP	_	_	8	case	_	start_char=16840|end_char=16842|ner=O
+8	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	16	obl:mod	_	start_char=16843|end_char=16850|ner=O
+9	,	,	PUNCT	_	_	8	punct	_	start_char=16850|end_char=16851|ner=O
+10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=16852|end_char=16854|ner=O
+11	groupe	groupe	NOUN	_	Gender=Masc|Number=Sing	16	nsubj:pass	_	start_char=16855|end_char=16861|ner=O
+12	de	de	ADP	_	_	14	case	_	start_char=16862|end_char=16864|ner=O
+13	15	15	NUM	_	Number=Plur	14	nummod	_	start_char=16865|end_char=16867|ner=O
+14	personnes	personne	NOUN	_	Gender=Fem|Number=Plur	11	nmod	_	start_char=16868|end_char=16877|ner=O
+15	sera	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	16	aux:pass	_	start_char=16878|end_char=16882|ner=O
+16	constitué	constituer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	parataxis	_	start_char=16883|end_char=16892|ner=O
+17	:	:	PUNCT	_	_	18	punct	_	start_char=16893|end_char=16894|ner=O
+18	2	2	NUM	_	Number=Plur	16	parataxis	_	start_char=16895|end_char=16896|ner=O
+19	/	/	SYM	_	_	20	cc	_	start_char=16896|end_char=16897|ner=O
+20	3	3	NUM	_	Number=Plur	18	conj	_	start_char=16897|end_char=16898|ner=O
+21	d'	de	ADP	_	_	22	case	_	start_char=16899|end_char=16901|ner=O
+22	universitaires	universitaire	NOUN	_	Gender=Masc|Number=Plur	18	nmod	_	start_char=16901|end_char=16915|ner=O
+23	-	-	PUNCT	_	_	24	punct	_	start_char=16916|end_char=16917|ner=O
+24	1	1	NUM	_	Number=Plur	22	conj	_	start_char=16942|end_char=16943|ner=O
+25	/	/	SYM	_	_	26	cc	_	start_char=16943|end_char=16944|ner=O
+26	3	3	NUM	_	Number=Plur	24	conj	_	start_char=16944|end_char=16945|ner=O
+27	de	de	ADP	_	_	28	case	_	start_char=16946|end_char=16948|ner=O
+28	personnalités	personnalité	NOUN	_	Gender=Fem|Number=Plur	22	nmod	_	start_char=16949|end_char=16962|ner=O
+29	extérieures	extérieur	ADJ	_	Gender=Fem|Number=Plur	28	amod	_	start_char=16963|end_char=16974|ner=O
+30	.	.	PUNCT	_	_	1	punct	_	start_char=16974|end_char=16975|ner=O
+
+# text = Après la date d'installation du CNU, c'est lui qui examinera les dossiers.
+# sent_id = 146
+1	Après	après	ADP	_	_	3	case	_	start_char=16976|end_char=16981|ner=O
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=16982|end_char=16984|ner=O
+3	date	date	NOUN	_	Gender=Fem|Number=Sing	12	obl:mod	_	start_char=16985|end_char=16989|ner=O
+4	d'	de	ADP	_	_	5	case	_	start_char=16990|end_char=16992|ner=O
+5	installation	installation	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=16992|end_char=17004|ner=O
+6-7	du	_	_	_	_	_	_	_	start_char=17005|end_char=17007|ner=O
+6	de	de	ADP	_	_	8	case	_	_
+7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
+8	CNU	CNU	PROPN	_	Gender=Masc|Number=Sing	5	nmod	_	start_char=17008|end_char=17011|ner=S-ORG
+9	,	,	PUNCT	_	_	3	punct	_	start_char=17011|end_char=17012|ner=O
+10	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	12	expl:subj	_	start_char=17013|end_char=17015|ner=O
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	cop	_	start_char=17015|end_char=17018|ner=O
+12	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	0	root	_	start_char=17019|end_char=17022|ner=O
+13	qui	qui	PRON	_	PronType=Rel	14	nsubj	_	start_char=17023|end_char=17026|ner=O
+14	examinera	examiner	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	12	advcl:cleft	_	start_char=17027|end_char=17036|ner=O
+15	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	16	det	_	start_char=17037|end_char=17040|ner=O
+16	dossiers	dossier	NOUN	_	Gender=Masc|Number=Plur	14	obj	_	start_char=17041|end_char=17049|ner=O
+17	.	.	PUNCT	_	_	12	punct	_	start_char=17049|end_char=17050|ner=O
+
+# text = Il y aura chevauchement avec le CSU momentanément.
+# sent_id = 147
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	expl:subj	_	start_char=17051|end_char=17053|ner=O
+2	y	y	PRON	_	Person=3|PronType=Prs	3	expl	_	start_char=17078|end_char=17079|ner=O
+3	aura	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=17080|end_char=17084|ner=O
+4	chevauchement	chevauchement	NOUN	_	Gender=Masc|Number=Sing	3	obj	_	start_char=17085|end_char=17098|ner=O
+5	avec	avec	ADP	_	_	7	case	_	start_char=17099|end_char=17103|ner=O
+6	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=17104|end_char=17106|ner=O
+7	CSU	CSU	PROPN	_	Gender=Masc|Number=Sing	3	obl:mod	_	start_char=17107|end_char=17110|ner=S-ORG
+8	momentanément	momentanément	ADV	_	_	3	advmod	_	start_char=17111|end_char=17124|ner=O
+9	.	.	PUNCT	_	_	3	punct	_	start_char=17124|end_char=17125|ner=O
+
+# text = Le calendrier des activités culturelles pour 87/88 est présenté par
+# sent_id = 148
+1	Le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	start_char=17126|end_char=17128|ner=O
+2	calendrier	calendrier	NOUN	_	Gender=Masc|Number=Sing	12	nsubj:pass	_	start_char=17129|end_char=17139|ner=O
+3-4	des	_	_	_	_	_	_	_	start_char=17140|end_char=17143|ner=O
+3	de	de	ADP	_	_	5	case	_	_
+4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_
+5	activités	activité	NOUN	_	Gender=Fem|Number=Plur	2	nmod	_	start_char=17144|end_char=17153|ner=O
+6	culturelles	culturel	ADJ	_	Gender=Fem|Number=Plur	5	amod	_	start_char=17154|end_char=17165|ner=O
+7	pour	pour	ADP	_	_	8	case	_	start_char=17166|end_char=17170|ner=O
+8	87	87	NUM	_	Number=Plur	2	nmod	_	start_char=17171|end_char=17173|ner=O
+9	/	/	SYM	_	_	10	cc	_	start_char=17173|end_char=17174|ner=O
+10	88	88	NUM	_	Number=Plur	8	conj	_	start_char=17174|end_char=17176|ner=O
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:pass	_	start_char=17177|end_char=17180|ner=O
+12	présenté	présenter	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=17181|end_char=17189|ner=O
+13	par	par	ADP	_	_	12	punct	_	start_char=17190|end_char=17193|ner=O
+
+# text = Madame FRISON-PRUDHOMME qui rappelle en outre que la mission des affaires culturelles est non seulement de faire des propositions, mais aussi de coordonner les projets qui lui sont proposés, entre autre par les U.F.R.
+# sent_id = 149
+1	Madame	madame	NOUN	_	Gender=Fem|Number=Sing	0	root	_	start_char=17223|end_char=17229|ner=B-PER
+2	FRISON-PRUDHOMME	FRISON-PRUDHOMME	PROPN	_	_	1	flat:name	_	start_char=17230|end_char=17246|ner=E-PER
+3	qui	qui	PRON	_	PronType=Rel	4	nsubj	_	start_char=17248|end_char=17251|ner=O
+4	rappelle	rappeler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	start_char=17252|end_char=17260|ner=O
+5	en	en	ADP	_	_	4	advmod	_	start_char=17261|end_char=17263|ner=O
+6	outre	outre	ADV	_	_	5	fixed	_	start_char=17264|end_char=17269|ner=O
+7	que	que	SCONJ	_	_	14	mark	_	start_char=17270|end_char=17273|ner=O
+8	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	start_char=17298|end_char=17300|ner=O
+9	mission	mission	NOUN	_	Gender=Fem|Number=Sing	14	nsubj	_	start_char=17301|end_char=17308|ner=O
+10-11	des	_	_	_	_	_	_	_	start_char=17309|end_char=17312|ner=O
+10	de	de	ADP	_	_	12	case	_	_
+11	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	12	det	_	_
+12	affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	9	nmod	_	start_char=17313|end_char=17321|ner=O
+13	culturelles	culturel	ADJ	_	Gender=Fem|Number=Plur	12	amod	_	start_char=17322|end_char=17333|ner=O
+14	est	être	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	ccomp	_	start_char=17334|end_char=17337|ner=O
+15	non	non	ADV	_	Polarity=Neg	14	advmod	_	start_char=17338|end_char=17341|ner=O
+16	seulement	seulement	ADV	_	_	15	fixed	_	start_char=17342|end_char=17351|ner=O
+17	de	de	ADP	_	_	18	mark	_	start_char=17352|end_char=17354|ner=O
+18	faire	faire	VERB	_	VerbForm=Inf	14	ccomp	_	start_char=17355|end_char=17360|ner=O
+19	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	20	det	_	start_char=17361|end_char=17364|ner=O
+20	propositions	proposition	NOUN	_	Gender=Fem|Number=Plur	18	obj	_	start_char=17389|end_char=17401|ner=O
+21	,	,	PUNCT	_	_	25	punct	_	start_char=17401|end_char=17402|ner=O
+22	mais	mais	CCONJ	_	_	25	cc	_	start_char=17403|end_char=17407|ner=O
+23	aussi	aussi	ADV	_	_	25	advmod	_	start_char=17408|end_char=17413|ner=O
+24	de	de	ADP	_	_	25	mark	_	start_char=17414|end_char=17416|ner=O
+25	coordonner	coordonner	VERB	_	VerbForm=Inf	18	conj	_	start_char=17417|end_char=17427|ner=O
+26	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	27	det	_	start_char=17428|end_char=17431|ner=O
+27	projets	projet	NOUN	_	Gender=Masc|Number=Plur	25	obj	_	start_char=17432|end_char=17439|ner=O
+28	qui	qui	PRON	_	PronType=Rel	31	nsubj:pass	_	start_char=17440|end_char=17443|ner=O
+29	lui	lui	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	31	iobj	_	start_char=17444|end_char=17447|ner=O
+30	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	31	aux:pass	_	start_char=17448|end_char=17452|ner=O
+31	proposés	proposer	VERB	_	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	27	acl:relcl	_	start_char=17453|end_char=17461|ner=O
+32	,	,	PUNCT	_	_	34	punct	_	start_char=17461|end_char=17462|ner=O
+33	entre	entre	ADP	_	_	34	case	_	start_char=17487|end_char=17492|ner=O
+34	autre	autre	PRON	_	Number=Sing|Person=3|PronType=Ind	31	obl:mod	_	start_char=17493|end_char=17498|ner=O
+35	par	par	ADP	_	_	37	case	_	start_char=17499|end_char=17502|ner=O
+36	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	37	det	_	start_char=17503|end_char=17506|ner=O
+37	U.F.R.	U.F.R.	PROPN	_	Number=Plur	31	obl:agent	_	start_char=17507|end_char=17513|ner=S-MISC
+
+# text = Du 7 au 19 mars 1988 se déroulera la quinzaine "Péninsule Ibérique" et comportera des concerts et des pièces de théâtre ainsi que des colloques.
+# sent_id = 150
+1-2	Du	_	_	_	_	_	_	_	start_char=17514|end_char=17516|ner=O
+1	de	de	ADP	_	_	3	case	_	_
+2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
+3	7	7	NUM	_	Number=Sing	10	obl:mod	_	start_char=17517|end_char=17518|ner=O
+4-5	au	_	_	_	_	_	_	_	start_char=17519|end_char=17521|ner=O
+4	à	à	ADP	_	_	6	case	_	_
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	19	19	NUM	_	Number=Sing	3	nmod	_	start_char=17523|end_char=17525|ner=O
+7	mars	mars	NOUN	_	Gender=Masc|Number=Sing	6	nmod	_	start_char=17526|end_char=17530|ner=O
+8	1988	1988	NUM	_	Number=Plur	7	nmod	_	start_char=17531|end_char=17535|ner=O
+9	se	se	PRON	_	Person=3|PronType=Prs|Reflex=Yes	10	expl:pv	_	start_char=17537|end_char=17539|ner=O
+10	déroulera	dérouler	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	start_char=17540|end_char=17549|ner=O
+11	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	12	det	_	start_char=17550|end_char=17552|ner=O
+12	quinzaine	quinzaine	NOUN	_	Gender=Fem|Number=Sing	10	nsubj	_	start_char=17553|end_char=17562|ner=O
+13	"	"	PUNCT	_	_	14	punct	_	start_char=17587|end_char=17588|ner=O
+14	Péninsule	Péninsule	PROPN	_	Gender=Fem|Number=Sing	12	appos	_	start_char=17588|end_char=17597|ner=B-LOC
+15	Ibérique	ibérique	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	start_char=17598|end_char=17606|ner=E-LOC
+16	"	"	PUNCT	_	_	14	punct	_	start_char=17606|end_char=17607|ner=O
+17	et	et	CCONJ	_	_	18	cc	_	start_char=17608|end_char=17610|ner=O
+18	comportera	comporter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	10	conj	_	start_char=17611|end_char=17621|ner=O
+19	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	20	det	_	start_char=17622|end_char=17625|ner=O
+20	concerts	concert	NOUN	_	Gender=Masc|Number=Plur	18	obj	_	start_char=17626|end_char=17634|ner=O
+21	et	et	CCONJ	_	_	23	cc	_	start_char=17635|end_char=17637|ner=O
+22	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	23	det	_	start_char=17638|end_char=17641|ner=O
+23	pièces	pièce	NOUN	_	Gender=Fem|Number=Plur	20	conj	_	start_char=17642|end_char=17648|ner=O
+24	de	de	ADP	_	_	25	case	_	start_char=17649|end_char=17651|ner=O
+25	théâtre	théâtre	NOUN	_	Gender=Masc|Number=Sing	23	nmod	_	start_char=17652|end_char=17659|ner=O
+26	ainsi	ainsi	ADV	_	_	29	cc	_	start_char=17684|end_char=17689|ner=O
+27	que	que	SCONJ	_	_	26	fixed	_	start_char=17690|end_char=17693|ner=O
+28	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	29	det	_	start_char=17694|end_char=17697|ner=O
+29	colloques	colloque	NOUN	_	Gender=Masc|Number=Plur	20	conj	_	start_char=17698|end_char=17707|ner=O
+30	.	.	PUNCT	_	_	10	punct	_	start_char=17707|end_char=17708|ner=O
+
+# text = Notons la mise en place d'une infrastructure pour le fonctionnement d'un Ciné-Club à Paris X qui présentera un film par quinzaine à partir du 27 octobre prochain.
+# sent_id = 151
+1	Notons	noter	VERB	_	Mood=Imp|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	start_char=17709|end_char=17715|ner=O
+2	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	start_char=17716|end_char=17718|ner=O
+3	mise	mise	NOUN	_	Gender=Fem|Number=Sing	1	obj	_	start_char=17719|end_char=17723|ner=O
+4	en	en	ADP	_	_	5	case	_	start_char=17724|end_char=17726|ner=O
+5	place	place	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=17727|end_char=17732|ner=O
+6	d'	de	ADP	_	_	8	case	_	start_char=17733|end_char=17735|ner=O
+7	une	un	DET	_	Definite=Ind|Gender=Fem|Number=Sing|PronType=Art	8	det	_	start_char=17735|end_char=17738|ner=O
+8	infrastructure	infrastructure	NOUN	_	Gender=Fem|Number=Sing	3	nmod	_	start_char=17739|end_char=17753|ner=O
+9	pour	pour	ADP	_	_	11	case	_	start_char=17754|end_char=17758|ner=O
+10	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	11	det	_	start_char=17759|end_char=17761|ner=O
+11	fonctionnement	fonctionnement	NOUN	_	Gender=Masc|Number=Sing	8	nmod	_	start_char=17762|end_char=17776|ner=O
+12	d'	de	ADP	_	_	14	case	_	start_char=17777|end_char=17779|ner=O
+13	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	14	det	_	start_char=17779|end_char=17781|ner=O
+14	Ciné-Club	ciné-club	NOUN	_	Gender=Masc|Number=Sing	11	nmod	_	start_char=17806|end_char=17815|ner=S-MISC
+15	à	à	ADP	_	_	16	case	_	start_char=17816|end_char=17817|ner=O
+16	Paris	Paris	PROPN	_	_	11	nmod	_	start_char=17818|end_char=17823|ner=B-MISC
+17	X	X	NUM	_	Number=Plur	16	nmod	_	start_char=17824|end_char=17825|ner=E-MISC
+18	qui	qui	PRON	_	PronType=Rel	19	nsubj	_	start_char=17826|end_char=17829|ner=O
+19	présentera	présenter	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	3	acl:relcl	_	start_char=17830|end_char=17840|ner=O
+20	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	21	det	_	start_char=17841|end_char=17843|ner=O
+21	film	film	NOUN	_	Gender=Masc|Number=Sing	19	obj	_	start_char=17844|end_char=17848|ner=O
+22	par	par	ADP	_	_	23	case	_	start_char=17849|end_char=17852|ner=O
+23	quinzaine	quinzaine	NOUN	_	Gender=Fem|Number=Sing	21	nmod	_	start_char=17853|end_char=17862|ner=O
+24	à	à	ADP	_	_	19	advmod	_	start_char=17863|end_char=17864|ner=O
+25	partir	partir	VERB	_	VerbForm=Inf	24	fixed	_	start_char=17865|end_char=17871|ner=O
+26-27	du	_	_	_	_	_	_	_	start_char=17872|end_char=17874|ner=O
+26	de	de	ADP	_	_	28	case	_	_
+27	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	28	det	_	_
+28	27	27	NUM	_	Number=Sing	24	obl:arg	_	start_char=17876|end_char=17878|ner=O
+29	octobre	octobre	NOUN	_	Gender=Masc|Number=Sing	28	nmod	_	start_char=17879|end_char=17886|ner=O
+30	prochain	prochain	ADJ	_	Gender=Masc|Number=Sing	28	amod	_	start_char=17888|end_char=17896|ner=O
+31	.	.	PUNCT	_	_	1	punct	_	start_char=17896|end_char=17897|ner=O
+
+# text = Enfin les Affaires Culturelles nous proposent des concerts, Jazz, classique, musique russe, ainsi que des expositions de peinture, d'affiches ou d'artisanat Touareg.
+# sent_id = 152
+1	Enfin	enfin	ADV	_	_	6	advmod	_	start_char=17898|end_char=17903|ner=O
+2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	start_char=17904|end_char=17907|ner=O
+3	Affaires	affaire	NOUN	_	Gender=Fem|Number=Plur	6	nsubj	_	start_char=17908|end_char=17916|ner=B-ORG
+4	Culturelles	culturel	ADJ	_	Gender=Fem|Number=Plur	3	amod	_	start_char=17917|end_char=17928|ner=E-ORG
+5	nous	il	PRON	_	Number=Plur|Person=1|PronType=Prs	6	nsubj	_	start_char=17929|end_char=17933|ner=O
+6	proposent	proposer	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	start_char=17934|end_char=17943|ner=O
+7	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	8	det	_	start_char=17944|end_char=17947|ner=O
+8	concerts	concert	NOUN	_	Gender=Masc|Number=Plur	6	obj	_	start_char=17948|end_char=17956|ner=O
+9	,	,	PUNCT	_	_	10	punct	_	start_char=17956|end_char=17957|ner=O
+10	Jazz	Jazz	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	start_char=17958|end_char=17962|ner=S-LOC
+11	,	,	PUNCT	_	_	12	punct	_	start_char=17962|end_char=17963|ner=O
+12	classique	classique	NOUN	_	Gender=Masc|Number=Sing	8	conj	_	start_char=17964|end_char=17973|ner=O
+13	,	,	PUNCT	_	_	14	punct	_	start_char=17973|end_char=17974|ner=O
+14	musique	musique	NOUN	_	Gender=Fem|Number=Sing	8	conj	_	start_char=17999|end_char=18006|ner=O
+15	russe	russe	ADJ	_	Gender=Fem|Number=Sing	14	amod	_	start_char=18007|end_char=18012|ner=O
+16	,	,	PUNCT	_	_	20	punct	_	start_char=18012|end_char=18013|ner=O
+17	ainsi	ainsi	ADV	_	_	20	cc	_	start_char=18014|end_char=18019|ner=O
+18	que	que	SCONJ	_	_	17	fixed	_	start_char=18020|end_char=18023|ner=O
+19	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	20	det	_	start_char=18024|end_char=18027|ner=O
+20	expositions	exposition	NOUN	_	Gender=Fem|Number=Plur	8	conj	_	start_char=18028|end_char=18039|ner=O
+21	de	de	ADP	_	_	22	case	_	start_char=18040|end_char=18042|ner=O
+22	peinture	peinture	NOUN	_	Gender=Fem|Number=Sing	20	nmod	_	start_char=18043|end_char=18051|ner=O
+23	,	,	PUNCT	_	_	25	punct	_	start_char=18051|end_char=18052|ner=O
+24	d'	de	ADP	_	_	25	case	_	start_char=18053|end_char=18055|ner=O
+25	affiches	affiche	NOUN	_	Gender=Fem|Number=Plur	22	conj	_	start_char=18055|end_char=18063|ner=O
+26	ou	ou	CCONJ	_	_	28	cc	_	start_char=18064|end_char=18066|ner=O
+27	d'	de	ADP	_	_	28	case	_	start_char=18091|end_char=18093|ner=O
+28	artisanat	artisanat	NOUN	_	Gender=Masc|Number=Sing	22	conj	_	start_char=18093|end_char=18102|ner=O
+29	Touareg	Touareg	PROPN	_	_	28	appos	_	start_char=18103|end_char=18110|ner=S-MISC
+30	.	.	PUNCT	_	_	6	punct	_	start_char=18110|end_char=18111|ner=O
+
+# text = La séance est levée à 16 heures .
+# sent_id = 153
+1	La	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	start_char=18112|end_char=18114|ner=O
+2	séance	séance	NOUN	_	Gender=Fem|Number=Sing	4	nsubj:pass	_	start_char=18115|end_char=18121|ner=O
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:pass	_	start_char=18122|end_char=18125|ner=O
+4	levée	lever	VERB	_	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	start_char=18126|end_char=18131|ner=O
+5	à	à	ADP	_	_	7	case	_	start_char=18132|end_char=18133|ner=O
+6	16	16	NUM	_	Number=Plur	7	nummod	_	start_char=18135|end_char=18137|ner=O
+7	heures	heure	NOUN	_	Gender=Fem|Number=Plur	4	obl:arg	_	start_char=18166|end_char=18172|ner=O
+8	.	.	PUNCT	_	_	4	punct	_	start_char=18173|end_char=18174|ner=O
+
+# text = Elle précédait la projection d'un film réalisé par l'Equipe du CIOUX à l'usage des étudiants arrivant des lycées après le baccalauréat.
+# sent_id = 154
+1	Elle	il	PRON	_	Gender=Fem|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	start_char=18175|end_char=18179|ner=O
+2	précédait	précéder	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	root	_	start_char=18180|end_char=18189|ner=O
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	start_char=18190|end_char=18192|ner=O
+4	projection	projection	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	start_char=18193|end_char=18203|ner=O
+5	d'	de	ADP	_	_	7	case	_	start_char=18204|end_char=18206|ner=O
+6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	7	det	_	start_char=18206|end_char=18208|ner=O
+7	film	film	NOUN	_	Gender=Masc|Number=Sing	4	nmod	_	start_char=18209|end_char=18213|ner=O
+8	réalisé	réaliser	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	start_char=18214|end_char=18221|ner=O
+9	par	par	ADP	_	_	11	case	_	start_char=18222|end_char=18225|ner=O
+10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	start_char=18250|end_char=18252|ner=O
+11	Equipe	équipe	NOUN	_	Gender=Fem|Number=Sing	8	obl:agent	_	start_char=18252|end_char=18258|ner=B-ORG
+12-13	du	_	_	_	_	_	_	_	start_char=18259|end_char=18261|ner=I-ORG
+12	de	de	ADP	_	_	14	case	_	_
+13	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
+14	CIOUX	CIOUX	PROPN	_	Gender=Masc|Number=Sing	11	nmod	_	start_char=18262|end_char=18267|ner=E-ORG
+15	à	à	ADP	_	_	17	case	_	start_char=18268|end_char=18269|ner=O
+16	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	17	det	_	start_char=18270|end_char=18272|ner=O
+17	usage	usage	NOUN	_	Gender=Masc|Number=Sing	8	obl:mod	_	start_char=18272|end_char=18277|ner=O
+18-19	des	_	_	_	_	_	_	_	start_char=18278|end_char=18281|ner=O
+18	de	de	ADP	_	_	20	case	_	_
+19	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	20	det	_	_
+20	étudiants	étudiant	NOUN	_	Gender=Masc|Number=Plur	17	nmod	_	start_char=18282|end_char=18291|ner=O
+21	arrivant	arriver	VERB	_	Tense=Pres|VerbForm=Part	20	acl	_	start_char=18292|end_char=18300|ner=O
+22	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	23	det	_	start_char=18301|end_char=18304|ner=O
+23	lycées	lycée	NOUN	_	Gender=Masc|Number=Plur	21	obj	_	start_char=18305|end_char=18311|ner=O
+24	après	après	ADP	_	_	26	case	_	start_char=18312|end_char=18317|ner=O
+25	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	26	det	_	start_char=18318|end_char=18320|ner=O
+26	baccalauréat	baccalauréat	NOUN	_	Gender=Masc|Number=Sing	21	obl:mod	_	start_char=18345|end_char=18357|ner=O
+27	.	.	PUNCT	_	_	2	punct	_	start_char=18357|end_char=18358|ner=O
+

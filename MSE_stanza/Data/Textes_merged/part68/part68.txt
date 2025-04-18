@@ -1,0 +1,216 @@
+
+
+1. Introduction
+
+La Terminologie possède très peu de ressources pour l’analyse d’unités prédicatives raison pour laquelle les verbes, les adjectifs et les adverbes à sens spécialisé sont à peine mentionnés dans les ouvrages qui tentent de fonder une théorie de la Terminologie. De nos jours, on voit que plusieurs principes de l’approche wüsterienne sont questionnés et qu’un éventail d’approches (Cabré 2000 ; Temmerman 2000 ; Meyer &amp; Mackintosh 2000 ; Kageura 2002) tentent de mettre en évidence surtout la facette linguistique du terme. De ce fait, on commence à parler de plus en plus du sens du terme au lieu du concept du terme. C’est dans cette voie que notre étude s’est lancée : l’analyse du signifié de certains verbes et de certains adjectifs du discours spécialisé, et ce avec les outils de la lexicologie. Pour la réaliser, nous avions besoin d’un cadre théorique dont l’analyse sémantique s’oriente par le processus de synthèse, c’est-à-dire de la primauté du locuteur. La Théorie Sens-Texte - TST (Mel’čuk &amp; Zolkowskij 1970) se présente comme étant la plus adéquate. Nous devons préciser que pour les besoins de cette étude, c’est la Lexicologie explicative et combinatoire (TST) dérivant de la TST qui a fournit les principes, les règles et les critères nécessaires à sa réalisation.
+
+Les discours spécialisés comportent un éventail de lexies1 prédicatives. Certaines lexies sont identifiées sur-le-champ lors d’un dépouillement terminologique comme les verbes printar ‘imprimer’ ou deletar ‘supprimer’, des emprunts assimilés de l’anglais, qui ont un sens spécifique au discours de la micro-informatique. Les verbes abortar ‘avorter’ ou salvar litt. ‘sauver’ ont également un sens particulier dans ce discours ; il s’agit en fait d’emprunts sémantiques de l’anglais : abort et save. D’autres unités lexicales (UL) peuvent donner lieu à un certain doute quant à leur sens spécialisé lors d’un dépouillement terminologique, soulevant la question : ont-elles un sens spécialisé ou il s’agit de sens de la langue commune (LC) ? C’est le cas des verbes remover ‘supprimer’, abrir ‘ouvrir’, ativar ‘activer’ou encore de l’adjectif dedicado ‘dédié’. Selon Mareschal (1989) ces unités manquent de visibilité teminologique. Nous sommes intéressés particulièrement au contenu sémantique de ces prédicats qui ne sont pas immédiatement perçus comme des signifiés spécialisés ou qui soulevent un doute quant à leur spécialisation.
+
+2. Construction d’un signifié spécialisé
+
+Une décomposition sémantique est la seule à expliciter les différentes composantes sémantiques d’une lexie L. Les composantes sémantiques sont des sens faisant partie d’un ensemble de sens constituant le signifié d’une lexie. Ainsi, la décomposition sémantique de L fait paraître nécessairement toutes ses composantes sémantiques et, le cas échéant, la ou les composantes sémantiques spécialisées. Le résultat de la décomposition d’une lexie spécialisée (LE) doit garantir soit l’existence d’une ou plusieurs composantes sémantiques spécialisées soit une reformulation sémantique complète, c’est-à-dire une reformulation métaphorique qui lie nécessairement L au discours spécialisé.
+
+L’analyse d’une lexie du discours de la micro-informatique est faite par rapport à sa lexie d’origine en langue générale. La lexie d’origine (LO) est une lexie qui partage le même signifiant avec la lexie spécialisée et dont le signifié partage le plus de composantes sémantiques importantes (« non triviales ») avec la lexie spécialisée.2 Notons que la lexie d’origine n’est pas nécessairement la lexie de base
+
+3 du vocable, mais peut être une autre lexie du vocable. En accord avec le modèle formel de décomposition que nous utilisons, il doit nécessairement y avoir un pont sémantique entre la lexie d’origine (L1) et la lexie spécialisée (L2). Un pont sémantique, selon la TST, s’établit entre les lexies L1 et L2 à travers « (...) une composante commune caractéristique des signifiés de ces deux lexies » (Mel’čuk, Clas &amp; Polguère, 1995).
+
+La comparaison d’une LE avec sa LO en langue générale permet d’observer et « d’apprivoiser » la remodulation
+
+4 d’un sens par les changements de composantes sémantiques. Notons que nous pouvons observer les changements parce que les composantes du sens d’une lexie sont des entités discrètes, pouvant ainsi être isolées. Les changements nous permettent de constater l’influence du discours spécialisé sur la production d’un sens. Observons, ci-dessous, deux situations discursives différentes où le verbe instalar ‘installer’ est employé. Le premier contexte est issu du discours général; le deuxième, du discours de la micro-informatique :
+
+Ao instalar a antena, certifique-se que os cabos de saída correspondem às entradas UHF e VHF da sua televisão.
+
+5
+
+(X) instala
+
+2
+
+(Y) (em Z) = (X) dispõe (Y) para funcionar (em Z)6
+
+Este programa poderá instalar novos drivers ou deixar os drivers anteriores, dependendo da versão já instalada e da versão que vai ser instalada.
+
+7
+
+I.1. X instala Y em Z = programa X causa que um programa Y faça parte de um sistema informático Z por meio de conexões lógicas de modo que Y funcione em Z.8
+
+La comparaison de ces deux définitions nous permet d’identifier la composante ‘conexões lógicas’ qui s’ajoute aux composantes de instalar
+
+2, la LO de la langue générale, provoquant ainsi l’émergence d’une nouvelle lexie, une lexie spécialisée.
+
+2.1. Moyens de construction d’un signifié spécialisé
+
+D’après nos observations, trois types de remodulations sémantiques donnent lieu à une lexie spécialisée :
+
+1. une ou plusieurs composantes sémantiques périphériques se greffent à la composante sémantique centrale de la lexie.
+
+1. Y trava = programa Y pára de rodar1.9
+
+La décomposition de la lexie travar
+
+1. du vocable travar présentée ci-dessous, montre que la composante périphérique ‘rodar
+
+1.’ ‘tourner1.’ (en pointillé) s’attache à la composante centrale ‘pára’ ‘arrête’ (en souligné), provoquant l’émergence d’une nouvelle lexie :
+
+2. une ou plusieurs composantes périphériques (en double souligné) se greffent aux composantes périphériques (en pointillé) de la lexie d’origine :
+
+I.3. W remove Y de Z por X = usuário W causa voluntariamente que um programa Y seja excluído1. de um sistema informático Z por X de modo que Y não seja mais executado1. por X.10
+
+La décomposition de la lexie ‘remover
+
+I.3.’ du vocable remover révèle que la composante ‘executado
+
+1.’ s’attache à la composante périphérique ‘excluído
+
+1.’.
+
+3. la composante sémantique centrale et les composantes périphériques sont entièrement reformulées :
+
+Les composantes de la lexie abrir
+
+I.1. ‘ouvrir’ du vocable abrir sont complètement remodulées :
+
+I.1. X abre Y em T = programa X1 ou comando de um programa X2 causa que o conteúdo de um componente lógico de armazenagem Y1 ou um menu Y2 ou uma janela Y3 apareça na tela T de um sistema informático [como se X abrisse2. Y].11
+
+La décomposition de la lexie ‘abrir
+
+I.1.’ du vocable abrir montre qu’il a eu une reformulation complète des composantes, vu qu’aucune lexie du vocable abrir ne partage une composante avec ‘abrir
+
+I.1.’. En accord avec le cadre théorique que nous utilisons, une composante formelle [comme si ...]  composante présupositionnelle au transfert métaphorique  doit représenter le lien métaphorique qui s’établit entre LE et LO.
+
+Ces observations nous ont amené à définir le concept de composante spécialisée et, par conséquent, celui de lexie spécialisée (Valente 2002) :
+
+Une composante sémantique spécialisée est un sens faisant partie d’un ensemble de sens constituant le signifié d’une lexie L et qui lie sans équivoque L à un discours spécialisé.
+
+Une lexie spécialisée est une lexie qui diffère par une ou des composantes sémantiques spécialisées de toute autre lexie d’un vocable ou qui diffère par une reformulation sémantique complète [= reformulation métaphorique] de toute autre lexie d’un vocable12.
+
+3. Méthodologie de repérage et de sélection
+
+La sélection des 40 lexies, trente quatre lexies verbales et six lexies adjectivales, soumises à la décomposition sémantique a été faite à travers une méthodologie conçue selon les besoins du sujet de recherche. Tout d’abord, un filtre (corpus d’exclusion) contenant les lexies verbales et adjectivales qui n’allaient pas faire partie de la collecte a été élaboré : verbes auxiliaires, modaux, adjectifs discursifs, de jugement, etc. Ensuite, nous avons formalisé un ensemble de critères pour la sélection des lexies. Notons que la plupart des critères sont connus de la lexicologie (Cruse, 1986). Nous les présentons dans ce qui suit sous forme de liste. Étant donné que des commentaires concernant ces critères ont déjà fait objet de publication antérieure, nous renvoyons le lecteur à Valente 2003 :
+
+Critère 1 : Lien sémantique avec une unité lexicale étrangère13
+
+Si un verbe ou un adjectif est issu d’un emprunt sémantique perceptible, alors il doit être sélectionné.
+
+Critère 2 : Lien syntaxique avec un terme
+
+Si un verbe ou un adjectif est syntaxiquement lié à un terme, alors il doit être sélectionné.
+
+Critère 3a : Lien dérivationnel syntaxique avec un terme
+
+Si un verbe ou un adjectif a un lien dérivationnel syntaxique avec un terme, alors il doit être sélectionné.
+
+Critère 3b : Lien dérivationnel sémantique avec un terme
+
+Si un verbe a un lien dérivationnel sémantique avec un terme ou si un adjectif a un lien dérivationnel sémantique avec un verbe, alors il doit être sélectionné.
+
+Critère 4 : Lien morphosémantique avec une unité lexicale spécialisée
+
+Si un adjectif est lié morphosémantiquement à un verbe spécialisé, alors il doit être sélectionné.
+
+Critère 5 : Lien synonymique ou antonymique avec une unité lexicale spécialisée
+
+Si un verbe ou un adjectif est un synonyme ou un antonyme d’un verbe ou d’un adjectif spécialisé, alors il doit être sélectionné.
+
+Critère 6 : Cooccurrence lexicale restreinte
+
+Si un adjectif est en relation lexicale restreinte avec un nom formant ainsi un semi-phrasème ou un quasi-phrasème, alors il ne doit pas être sélectionné.
+
+3. Analyse sémantique
+
+Une fois les lexies sélectionnées, on commence une pré-analyse sémantique, une analyse ayant pour but déceler les diverses lexies d’un vocable. En plus des critères de la LEC  critère de différence sémantique locale/globale ; critère de dérivation différentielle, critère de cooccurrence différentielle, etc., nous avons formalisé trois autres connus de la lexicologie :
+
+Critère 1 : Relation synonymique ou antonymique d’une unité lexicale
+
+Si une unité lexicale UL1 d’un vocable V a un synonyme S ou un antonyme A dans plusieurs contextes, mais qu’il y a un contexte où S ou A ne sont pas substituables avec UL1, alors il ne s’agit pas de UL1 mais d’une autre ULn de V.
+
+Critère 2 : Le nombre des ASéms d’un prédicat sémantique
+
+Si une unité lexicale UL1 a un certain nombre d’ASém dans un contexte donné et que dans un autre contexte s’observe un nombre d’ASém différent, et que cette différence ne relève pas d’une non-réalisation syntaxique d’un ASém, alors il s’agit d’une autre ULn du même vocable.
+
+Critère 3 : La nature des ASéms d’un prédicat sémantique
+
+Si une unité lexicale UL1 n’a accepte que certains types d’ASéms et que s’observe un certain type d’ASém qui n’est pas usuel, alors il s’agit d’une autre ULn du même vocable.
+
+Ces derniers critères nous ont aidé à déceler trois lexies du vocable abrir ‘ouvrir’, quatre lexies du vocable ativar ‘activer’, trois lexies du vocable criar ‘créer’, trois lexies du vocable excluir ‘exclure’, etc. dans le discours  de la micro-informatique. Ensuite, chaque lexie a été soumise à une décomposition selon les principes de la LEC. La LEC utilise le principe de définition logique aristotelecienne par genre prochain et différence spécifique. Le genre prochain correspond à la composante centrale ou générale14, et la différence spécifique correspond aux composantes périphériques diverses : composante faible, composante présuppositionnelle et composante sous-jacente au transfert métaphorique. Étant donné la contrainte de page du présente article, nous ne pouvons pas faire la démonstration d’une décomposition sémantique. Nous voulons cependant mettre en relief que les décompositions ont montré qu’un vocable peut présenter autant de lexies spécialisées que des lexies de la langue commune dans le discours spécialisé.
+
+4. Conclusions
+
+Cette étude a mis en évidence entre autres que :
+
+i) les lexies prédicatives qui manquent de visibilité terminologique peuvent présenter un signifié spécialisé ;
+
+ii) une lexie spécialisée résulte soit d’un ajout d’une (ou de plusieurs) composante sémantique aux composantes sémantiques (centrale ou périphérique) de sa LO, soit d’une reformulation métaphorique de sa LO ;
+
+iii) un discours spécialisé peut avoir plusieurs lexies d’un même vocable, c’est-à-dire de lexies spécialisées et de lexies de la langue commune ;
+
+iii) une analyse du signifié des lexies peut avoir lieu en terminologie.
+
+Notes de fin
+
+1. Une lexie est, dans le cadre de la TST, soit un lexème, qui est un mot pris dans une acception bien spécifique, soit un phrasème, qui est une locution, prise également dans une acception bien spécifique (Mel’čuk, Clas &amp; Polguère, 1995)
+
+2. Les lexies d’origine ont été repérées au dictionnaire Novo Aurélio Século XXI.
+
+3 ; « La lexie de base d’un vocable est une lexie L telle que les autres lexies du vocable font directement ou indirectement référence à L alors que L ne fait aucune référence aux autres lexies du vocable ” (Mel’čuk, Clas &amp; Polguère, 1995)
+
+4. Une remodulation sémantique est un changement sémantique à l’intérieur d’une lexie L1 qui donne lieu à une lexie L2
+
+5. Lorsque vous installez l’antenne, assurez-vous que les cables de sortie correspondent aux entrées UHF et VHF de votre télé.
+
+6. (X) dispõe (Y) para funcionar (em Z).
+
+7. ‘Ce programme pourra installer des nouveaux pilotes ou laisser les pilotes antérieurs, en fonction de la version déjà installée et de la version qui sera installée’
+
+8. ‘I.1. X installe Y dans Z = programme X cause qu’un programme Y fasse partie d’un système informatique Z
+
+
+
+au moyen de de sorte que
+
+
+
+Y fonctionne en Z’
+
+9. ‘1. Y bloque (gèle) = programme Y arrête de tourner1.’
+
+10. ‘I.3. W supprime Y de Z par X = usager W cause volontairement qu’un programme Y soit exclu1. d’un système informatique Z par X de sorte que Y ne soit plus executé1. par X’
+
+11. ‘I.1. X ouvre Y sur T = programme X1 ou commande d’un programme X2 cause que le contenu d’une composante logique de stockage Y1 ou un menu Y2 ou une fenêtre Y3 apparaît sur l’écran T d’un système informatique [comme si X ouvrait2. Y]’
+
+12. Rappelons que dans la LEC, un vocable est « (…) l’ensemble de lexies dont les signifiants sont identiques et dont les signifiés partagent des composantes sémantiques importantes (« non triviales ») (Milićević, 1997).
+
+13. Lors d’un dépouillement si on soupçonne que le sens d’une lexie donnée s’apparente au sens d’une lexie de l’anglais, vu que la terminologie de l’anglais est sous-jacente au discours de la micro-informatique en portugais brésilien, alors la lexie sera sélectionnée. Nous sommes conscientes que ce critère est issu d’une subjectivité dangeureuse car, contrairement aux autres critères établis sur des faits discursifs observables, il se base sur la perception linguistique du terminologue bilingue.
+
+14. Une composante sémantique centrale ou générale correspond à la paraphrase minimale de la lexie définie. Elle doit être nécessairement plus simple que la lexie définie.
+
+Références
+
+Cabré, M. T. 2000. “ Terminologie et linguistique : la théorie des portes (1) ”. Terminologies Nouvelles, n. 21, pp. 10-15.
+
+Cruse, D. A. 1986. Lexical Semantics, Cambridge, Cambridge University Press.
+
+Ferreira, A. B. H. 1999. Novo Aurélio. Século XXI. O Dicionário da Língua Portuguesa, Dicionário Eletrônico, Editora Nova Fronteira &amp; Lexikon Informática, Rio de Janeiro.
+
+Kageura,
+
+K. 2002. The Dynamics of Terminology. A descriptive Theory of Term Formation and Terminological Growth, Amsterdam/Philadelphia, John Benjamins.
+
+Mareschal, G. 1989. “ Repérage d’unités terminologiques dans le contexte de l’enseignement de la traduction spécialisée ”, Meta, vol. 34, n. 3, Les Presses de l’Université de Montréal, pp. 377-380.
+
+Mel’čuk, I. 1997. Vers une linguistique Sens-Texte, Paris, Collège de France.
+
+Mel’čuk, I., A. Clas &amp; A. Polguère 1995. Introduction à la lexicologie explicative et combinatoire, Coll. Champs linguistiques/Universités francophones, Louvain-la-Neuve/Paris, Éditions Duculot/AUPELF-UREF.
+
+Mel’čuk, I. &amp; A. Zolkovskij 1970. “ Towards a Functioning Meaning-Text Model of Language ”, Linguistics, 57, pp. 10-47.
+
+Meyer, I. et K. Mackintosh 2000. “ “ L’étirement ” du sens terminologique : aperçu du phénomène de la déterminologisation ”, Le sens en terminologie, Béjoint, P. et Thoiron P. (dir.), Presses universitaires de Lyon, pp. 198-217.
+
+Milićević, J. 1997. Étiquettes sémantiques dans un dictionnaire formalisé du type Dictionnaire Explicatif et Combinatoire, Mémoire de maîtrise, Université de Montréal.
+
+Temmerman, R. 2000. Towards New Ways of Terminology Description, The sociocognitive approch, Amsterdam/Philadelphia, John Benjamins.
+
+Valente, R. 2003. “ La lexicologie explicative et combinatoire dans le traitement des unités lexicales spécialisées ”, MTT 2003 Proceedings, Paris, École Normale Supérieure, pp. 21-31.
+
+
+

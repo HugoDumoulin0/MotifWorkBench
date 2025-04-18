@@ -1,0 +1,896 @@
+
+
+1. Cadrage théorique
+
+La psychologie cognitive s'emploie à repérer les différents processus et
+
+connaissances qui entrent en jeu dans l’activité rédactionnelle (Hayes, 1996 ;
+
+Olive &amp; Piolat, 2003). Seules, quelques rares études concernant la maîtrise
+
+de la production écrite prennent en compte les difficultés qu’une partie de la
+
+population estudiantine éprouve. Ces difficultés peuvent aboutir à une
+
+appréhension à écrire, parfois même un blocage, au point d’éviter certains
+
+cursus académiques. Selon Boice (1985), ces difficultés auraient pour origine
+
+des causes de nature cognitivo-émotionnelle comme l’appréhension à écrire, la
+
+procrastination, le perfectionnisme, la dysphorie, l’impatience, la peur de
+
+l’évaluation et le contrôle des règles.
+
+Dans le cadre de la présente recherche, seuls trois de ces facteurs seront pris
+
+en compte: l’appréhension à écrire, la procrastination et le perfectionnisme.
+
+L’objectif est, aussi, d’analyser les écrits de deux populations d’étudiants
+
+ayant des habiletés et des habitudes rédactionnelles contrastées en raison de la
+
+nature des tâches intellectuelles qu’ils développent régulièrement pendant leur
+
+formation universitaire. Mais surtout, il nous semble important, comparativement
+
+aux résultats des études antérieures, d’analyser plus précisément l’usage du
+
+lexique émotionnel fait par ces deux groupes d’étudiants. En effet, outre leurs
+
+habiletés rédactionnelles, ces deux groupes de rédacteurs peuvent avoir des
+
+pratiques lexicales différentes selon leurs caractéristiques de personnalité et
+
+selon l’orientation thématique de l’écrit demandé (description ou non de ses
+
+émotions et de ses sentiments).
+
+1.1. Appréhension à écrire
+
+D’après Daly et Miller (1975b), l’appréhension à écrire qualifie une
+
+réticence à communiquer par écrit. Pour Faigley, Daly et Witte (1981), elle
+
+consisterait à ressentir un haut niveau d’anxiété face à la nécessité de
+
+composer. Elle peut s’étendre à toute forme d’anxiété, peur, angoisse, à
+
+l’idée de rédiger (Daly, 1985). Pour l’étudier, Daly et Miller (1975a) ont
+
+conçu un instrument, permettant de la mesurer, intitulé «Writing
+
+Appréhension Test» (WAT). Daly et Hailey (1984) postulent qu’il existerait
+
+deux formes d’appréhension à écrire, l’une dispositionnelle (Trait) et
+
+l’autre situationnelle (Etat). Ainsi, la forme situationnelle (ETAT) de
+
+l’appréhension à écrire correspondrait aux émotions et sentiments
+
+transitoires très spécifiques à une situation (ou un événement donné). Elle
+
+peut changer en fonction de la tâche et de l'environnement d'écriture. La
+
+forme dispositionnelle (TRAIT) correspondrait aux sentiments et opinions
+
+maintenus de façon relativement stable et cohérente à travers le temps et à
+
+travers les différentes situations d’écriture. C’est cette forme d’anxiété
+
+qui est mesurée par le WAT (pour une revue de question sur les mesures de
+
+l’appréhension à écrire, voir Bannour, 2007). D’après Thompson (1983),
+
+l’appréhension à écrire et l’anxiété générale seraient corrélées. Dans cette
+
+recherche, afin de disposer de mesures diversifiées de l’appréhension et
+
+même de l’anxiété qu’elle soit ETAT ou TRAIT, les deux formats du STAI ont
+
+été exploités (STAI; Bruchon-Schweitzer &amp; Paulhan, 1993).
+
+Plusieurs observations ont été faites à propos du comportement et du vécu
+
+subjectif des rédacteurs appréhensifs (tels que le WAT permet de les
+
+repérer) dans différents contextes. Par exemple, pour Daly et Shamo (1976,
+
+1978), les rédacteurs les plus appréhensifs évitent les études et les
+
+carrières nécessitant une activité d’écriture (ex: études en lettres,
+
+carrières de journalisme…). Pour tenir compte de ce constat, une population
+
+d’étudiants en littérature (en principe plus habiles et motivés pour
+
+l’écriture) et une population d’étudiants en sciences (en principe peu
+
+sollicités dans leurs études à développer leurs pensées par écrit) ont été
+
+retenues pour la recherche présentée ici. À ce jour, nous ne disposons pas
+
+d’étude sur la nature du langage (syntaxique, lexicale, thématique) utilisé
+
+par des rédacteurs appréhensifs français. En revanche, aux Etats-Unis,
+
+Pennebaker et son équipe (Pennebaker, Mehl &amp; Niederhoffer, 2003)
+
+travaillent sur cette question depuis une trentaine d’années et ont analysé
+
+les relations entre le contenu des textes et les caractéristiques
+
+émotionnelles des personnes. Ils ont procédé à de nombreuses analyses de
+
+l’écriture expressive, qui invite les rédacteurs à s’exprimer au sujet de
+
+leurs émotions et sentiments à propos d’un événement, comparativement à
+
+l’analyse d’une écriture non expressive (parler de sujets triviaux sans
+
+références aux émotions). Ils ont constaté que les procédés langagiers ne
+
+sont pas les mêmes en fonction des thématiques de productions, mais surtout
+
+en fonction de variables émotionnelles comme l’anxiété, la dépression ou
+
+l’alexithymie (NB: Ce trouble désigne un mode particulier de gestion de la
+
+vie émotionnelle se traduisant par des difficultés dans l’identification et
+
+l’expression verbale des émotions).
+
+En ce qui concerne plus précisément la peur d’écrire, Faigley, Daly et Witte
+
+(1981) ont montré que les rédacteurs appréhensifs ont plus de difficulté à
+
+rédiger lorsque le thème concerne la description et la narration d’une
+
+expérience personnelle (exemple: ‘Ecrivez à propos d’une expérience
+
+personnelle vécue qui vous a fait changer votre comportement’). En revanche,
+
+ces étudiants éprouvent nettement moins de difficulté lorsqu’ils rédigent
+
+sur un thème argumentatif n’impliquant pas l’évocation d’émotion et de
+
+sentiment (exemple: ‘Argumentez pour ou contre l’idée de l’utilisation de
+
+tests psychologiques afin d’évaluer des candidats pour le diplôme de
+
+master’). Daly et Miller (1975b, 1975c), ont, de plus, montré que le volume
+
+et la qualité des écrits de rédacteurs appréhensifs étaient plus faibles que
+
+celles de rédacteurs moins appréhensifs. Toutefois, Madigan, Linton et
+
+Johnson (1996), font des observations contradictoires. Selon eux, les essais
+
+produits par les deux types de rédacteurs sont équivalents en termes de
+
+temps d’accès au lexique, de qualité de l’écrit et de complexité syntaxique.
+
+Ce sont plutôt les modèles de croyances, le sentiment d’auto-efficacité et
+
+les pensées intérieures bloquantes qui différencieraient ces deux groupes de
+
+rédacteurs. En raison de ces résultats contradictoires et de l’absence de
+
+données sur ces questions en langue française, dans la présente recherche,
+
+les rédacteurs seront incités à rédiger à partir d’une thématique expressive
+
+ou non. Le lexique émotionnel qu’ils auront utilisé sera quantifié et
+
+comparé.
+
+1.2. Procrastination et perfectionnisme
+
+Cette recherche s’intéresse aussi à d’autres dispositions
+
+cognitivo-émotionnelles perturbant l’activité rédactionnelle, notamment la
+
+procrastination et le perfectionnisme.
+
+D'après Boice (1985, 1996) la procrastination traduit chez un rédacteur la
+
+tendance à remettre à plus tard la réalisation d’une tâche d’écriture malgré
+
+son intention initiale de l’effectuer dans les délais prévus. Pour,
+
+Fritzsche, Young et Hickson (2003), cette tendance à procrastiner à propos
+
+de tâches d’écriture serait associée à de l’anxiété. Plus précisément, selon
+
+Chu et Choi (2005), il existerait deux types de procrastinateurs : les
+
+procrastinateurs passifs et les procrastinateurs actifs. Les premiers
+
+seraient bloqués par leurs indécisions à agir et échoueraient par conséquent
+
+pour accomplir les tâches dans les temps. En revanche, les seconds, type
+
+plus «positif», préfèrent travailler sous la pression temporelle, et
+
+choisiraient délibérément de procrastiner pour être contraint par la
+
+nécessité impérieuse d’achever la tâche demandée. Cette distinction cruciale
+
+permet d’envisager la procrastination comme une stratégie alors adaptée à
+
+l’objectif visé. Cette stratégie relèverait d’une gestion du temps
+
+particulière associée à un sentiment d’auto efficacité: faire vite et bien
+
+au dernier moment. Lay (1986) a mis au point une échelle de mesure de la
+
+procrastination intitulée «General Procrastination
+
+Scale» (GPS) qui sera exploitée dans cette étude. Il sera ainsi possible de chercher à repérer les possibles relations
+
+entre appréhension à écrire et procrastination chez les étudiants ayant
+
+rédigé dans le cadre de cette recherche.
+
+Par ailleurs, Boice (1985) définit le perfectionnisme comme l’établissement
+
+par le rédacteur d’exigences excessivement élevées, accompagnées
+
+d’autocritiques récurrentes et d’autoévaluations négatives de son écrit.
+
+Terry-Short, Owens, Slade et Dewey (1995) conçoivent une forme plus positive
+
+du perfectionnisme, et proposent de considérer cette disposition selon la
+
+fonction visée par l’individu. Cette fonction peut s’accompagner d’un
+
+perfectionnisme positif. Les cognitions et comportements de l’individu
+
+visent alors à l'atteinte d'un but associé à des conséquences positives.
+
+Elle peut aussi s’accompagner d’un perfectionnisme négatif. Les cognitions
+
+et comportements de l’individu visent l’évitement de conséquences négatives.
+
+Le perfectionnisme peut aussi être décrit selon sa source.
+
+Il peut, ainsi,
+
+être orienté vers Soi: la personne s'impose constamment des exigences
+
+élevées d'accomplissement. Il peut aussi être socialement prescrit: la
+
+personne croit que les autres ont ou entretiennent envers elle des attentes
+
+et des exigences élevées. Terry-Short et ses collègues (1995) ont développé
+
+un outil de mesure intitulé «Positive and Negative Perfectionism Scale»
+
+(EPPN). Par ailleurs, Onwuegbuzie (2000) a montré que des étudiants
+
+américains en doctorat avaient davantage de mauvais résultats à leurs
+
+examens et des notes moins performantes à leurs essais lorsqu’ils étaient
+
+proscratinateurs et perfectionnistes.
+
+Au total, dans le cadre de la présente recherche, la question est de savoir
+
+si des étudiants de cursus différents (Lettres ou Sciences) présentent des
+
+niveaux de procrastination et de perfectionnisme différents et si ces
+
+niveaux influent sur la façon dont ils exploitent le lexique émotionnel dans
+
+les écrits demandés. Ces différentes observations devraient finalement
+
+permettre de mieux comprendre quelle est la nature de l’appréhension à
+
+écrire ressentie chez certains d’entre eux.
+
+2. Méthode
+
+2.1. Participants
+
+60 étudiants issus d’un cursus Littéraire (lettres modernes et classiques) et
+
+64 étudiants d’un cursus Scientifique (mathématiques, informatique et
+
+physique-chimie), ont passé l'expérience de façon collective, cursus par
+
+cursus. Ces 124 étudiants de l’Université de Provence (Aix-Marseille I)
+
+inscrits en Licence étaient volontaires et ont été répartis de façon
+
+aléatoire en 3 groupes de taille comparable. Chacun d’eux a rédigé sur un
+
+thème impliquant soit l’expression d’émotions positives, soit l’expression
+
+d’émotions négatives, soit l’absence d’expression d’émotions. Cette
+
+thématique a été attribuée de façon aléatoire à chacun des 3 groupes
+
+d’étudiants littéraires et scientifiques.
+
+2.2. Matériel
+
+Évaluation des caractéristiques personnelles des rédacteurs
+
+Afin d’évaluer le caractère anxieux des participants, l'Inventaire d'Anxiété
+
+Trait-État (STAI; Bruchon-Schweitzer &amp; Paulhan, 1993) a été utilisé. Il
+
+permet de quantifier de façon indépendante l'anxiété présente au moment de
+
+la passation (anxiété-état) et le tempérament anxieux habituel de la
+
+personne (anxiété-trait). Dans le cadre de la présente étude, le STAI état
+
+est utilisé comme un indice éventuel d’appréhension à écrire «état». Ces
+
+deux tests comportent 20 items. La personne doit répondre pour chaque item
+
+avec une échelle de Lickert en 4 points. Pour l’anxiété-état, elle évalue
+
+des items du type «Je me sens nerveux, irritable» en répondant 1=NON; 2=
+
+Plutôt NON; 3= Plutôt OUI; 4= OUI et pour l’anxiété-trait, elle évalue des
+
+items du type «J’ai un sentiment d’échec» en répondant
+
+1= Presque jamais; 2= Parfois; 3= Souvent; 4= Presque toujours.
+
+La version étudiante de l’Échelle Générale de Procrastination (GPS; Lay,
+
+1986) a été utilisée. La GPS mesure de la procrastination pour 20 items au
+
+moyen d’une échelle de Lickert en 5 points. La personne indique son degré
+
+d’accord sur l’échelle (1= «Pas du tout caractéristique» à «5= Très
+
+caractéristique»). Cette échelle mesure la tendance à procrastiner lors de
+
+l’exécution de tâche (exemple: «Je ne me contrains pas à faire des tâches
+
+avant que cela me soit imposé»).
+
+L’Echelle de Perfectionnisme Positif et Négatif (EPPN; Seidah, Bouffard &amp;
+
+Vezeau, 2002) a été utilisée. Cette échelle est composée de 40 items
+
+regroupés en 4 sous échelles de 10 items chacune. Deux de ces échelles
+
+mesurent le perfectionnisme positif selon qu’il est personnel (exemple: « Je
+
+ressens de la fierté à faire les choses de façon méticuleuse») ou socialement prescrit (exemple: «J’aime les honneurs que me procurent mes performances
+
+remarquables»), alors que les deux autres
+
+mesurent le perfectionnisme négatif, qu’il soit personnel (exemple: «Quand j’entreprends quelque chose, je suis anxieux(se)
+
+à l’idée que je pourrais échouer»)
+
+ou socialement prescrit (exemple:
+
+«J’essaie à tout prix d’éviter la désapprobation des
+
+autres»). Pour chaque item, les participants
+
+indiquent leur degré d’accord sur une échelle en 7 points (1 = tout à fait
+
+d’accord ; 6 = tout à fait en désaccord ; 7= Ne s’applique pas [réponse
+
+neutre]).
+
+Enfin, dans le but d’identifier le niveau d'appréhension à écrire, le
+
+«Writing Apprehension Test» (WAT) de Daly et Miller (1975a) a été utilisé.
+
+Cette échelle, qui permet de mesurer l’anxiété générale ressentie à propos
+
+du fait d’écrire, est constituée de 26 items, dont 13 sont positifs
+
+(exemple:
+
+«J’aime que mes amis lisent ce que j’ai écrit») et 13 sont négatifs (exemple:
+
+«J’ai peur d’écrire»). La
+
+personne indique son degré d’accord sur une échelle en 5 points (1 =
+
+Fortement d’accord ; 5 = Fortement pas d’accord).
+
+Analyse automatique du contenu
+
+Afin d’étudier le lexique émotionnel intégré par les étudiants dans leur
+
+écrit, le logiciel Tropes-EMOTAIX (Tropes version 6.0; Molette, 2002; pour
+
+le scénario EMOTAIX cf. Bannour, Piolat, &amp; Gombert, sous presse). Ce
+
+logiciel identifie automatiquement dans un texte les éléments étudiés. Plus
+
+de mille termes (qu’ils s’agissent de substantifs, de verbes, d’adjectifs,
+
+d’adverbes) sont repérés. Le lexique émotionnel étudié couvre les émotions
+
+d’arrière-plan (énergie, malaise, excitation, etc.), les émotions primaires
+
+(peur, colère, dégoût, tristesse, etc.), les émotions sociales (sympathie,
+
+embarras, honte, etc.) et les sentiments (amour, haine, etc.). Le logiciel
+
+repère aussi la valence positive (agréable) ou négative (désagréable) de ces
+
+termes.
+
+Les textes produits par les étudiants dans cette recherche comportent en
+
+moyenne 250 mots. Avec le logiciel EMOTAIX nous avons identifié et compté
+
+l’usage des termes émotionnels selon leur valence pour chacun de ces textes.
+
+À titre d’exemple, dans l’extrait ci-après d’un des textes, sont surlignés
+
+les termes de lexique émotionnel avec leur valence mise en exposant :
+
+Positive¹ / Négative² / Bivalent³
+
+Consigne: Exprimez par écrit ce que vous avez ressenti lorsque vous avez
+
+obtenu votre BAC. Détaillez vos émotions, vos sentiments.
+
+Lorsque j’ai obtenu mon bac, j’ai éprouvé³ deux sentiments³. De la joie¹ et du soulagement¹. De la parce que je vois mon travail de l’année récompensé. Et du soulagement¹, parce que j’avais stressé² pendant l’attente des résultats.
+
+La joie¹ que j’ai ressentie³ était grande, je me suis sentie³ très bien, de très bonne humeur¹ . J’avais l’impression³ que plus rien ne pouvait m’atteindre pour briser ce moment de joie¹. J’allais pouvoir passer des vacances tranquilles. J’étais
+
+aussi  heureuse¹ que mes parents car eux aussi avaient stressé² pour moi.
+
+Comptage: Unités de lexique repérées: 8 Positives¹/ 2 Négatives²/ 5
+
+Bivalents³. Les termes bivalents sont, dans la suite de l’analyse, qualifiés
+
+de positifs ou négatifs selon le contexte dans lequel ils sont insérés. Par
+
+exemple : «éprouvé» et «sentiments» ont été comptabilisés ici avec une
+
+valence positive.
+
+2.3. Procédure
+
+Pendant près d’une heure, les participants ont accompli 7 tâches dans l’ordre
+
+ci-après.
+
+(1) Tout d’abord, ils ont répondu au questionnaire du STAI trait; (2) Puis au
+
+questionnaire du STAI état;(3) Ensuite, ils ont découvert leur thème de
+
+production écrit en haut de la page d’écriture (deux pages vierges étaient
+
+disponibles). Ils devaient écrire pendant 25 minutes. Les trois consignes
+
+concernaient les examens. L’une n’incitait pas à l’expression d’émotion :
+
+«Exprimez par écrit comment vous vous êtes préparé à passer le BAC.
+
+Détaillez votre façon de travailler et d’apprendre pendant les 15 jours qui
+
+ont précédé le BAC». Les deux autres, en tant que
+
+consignes d’écriture expressive, incitaient soit à l’expression d’émotions
+
+et sentiments positifs: «Exprimez par écrit ce que vous avez ressenti
+
+lorsque vous avez obtenu votre BAC. Détaillez vos émotions, vos sentiments»,
+
+soit
+
+à l’expression d’émotions et sentiments négatifs : « Exprimez par écrit
+
+ce que vous avez ressenti lorsque vous avez échoué à un examen (BAC ou autre
+
+examen important pour vous). Détaillez vos émotions, vos sentiments » ; (4)
+
+Immédiatement après cette production verbale écrite, les participants ont
+
+repassé le test du STAI état, afin de rendre compte de leur état émotionnel
+
+actuel (post-rédaction);(5) Puis, ils ont répondu au questionnaire du
+
+GPS;(6) Puis, au questionnaire de l’EPPN;(7) Enfin, ils ont répondu au
+
+questionnaire d’appréhension à écrire (WAT).
+
+3. Résultats
+
+Pour repérer l’effet des facteurs de personnalité sur le volume de lexique
+
+émotionnel intégré dans les textes, des analyses de régression linéaire ont été
+
+faites (N.B.: les autres analyses statistiques comme les corrélations et les
+
+Anovas ne sont pas présentées ici). Les régressions permettent de savoir si les
+
+scores des étudiants à un test donné sont (1) corrélés au volume de lexique
+
+émotionnel et si (2) ces scores «expliquent» ce volume (N.B.: Tous les résultats
+
+concernant ces analyses ne peuvent être déclinés ici, seuls les plus
+
+significatifs ont été présentés ci-après).
+
+Il est très important de noter que, quelle que soit la consigne, pour les trois
+
+thèmes rédactionnels, les étudiants introduisent dans leur écrit des termes de
+
+lexique émotionnel de valence positive, comme de valence négative. Dans le cadre
+
+de cette publication, la présentation des résultats ne concerne que l’effet des
+
+scores de personnalité sur l’emploi du lexique émotionnel selon sa valence et
+
+selon le cursus des étudiants.
+
+Étudiants littéraires
+
+En consigne d’expression d’émotions positives (ressenties à l’occasion de
+
+l’obtention du BAC), les résultats sont les suivants: Les scores au
+
+Perfectionnisme Positif Socialement Prescrit et au Perfectionnisme Positif
+
+Orienté vers Soi constituent des prédicteurs significatifs (β= .594, p&lt;.004),
+
+expliquant 40% de la variance totale de l’emploi de lexique émotionnel à valence
+
+positive [F (2,17) = 7,45, p&lt;.004].
+
+En consigne d’expression d’émotions négatives (ressenties à l’occasion de l’échec
+
+à un examen comme le BAC), les résultats sont les suivants: Le score des
+
+étudiants au Perfectionnisme Positif Orienté vers Soi a un effet faiblement
+
+significatif (β= -.413, p&lt;.07), expliquant 12% de la variance totale du
+
+lexique émotionnel à valence négative [F (1,18) = 3,70, p&lt;.07]. De plus, le
+
+score au Perfectionnisme Positif Orienté vers Soi constitue un prédicteur
+
+faiblement significatif (β= .417, p&lt;.06) expliquant 12% de la variance totale
+
+du lexique émotionnel à valence positive [F (1,18) = 3,79, p&lt;.06].
+
+Enfin quand la consigne n’implique pas l’expression d’émotions (décrire la
+
+préparation à un examen), le score de procrastination a un effet significatif (β
+
+= -.436, p&lt;.05) expliquant 14% de la variance totale de l’usage du lexique
+
+émotionnel à valence négative [F (1,18) = 4,24, p&lt;.05].
+
+Il faut noter que le score d’ensemble au WAT n’explique pas significativement le
+
+volume de lexique émotionnel exploité par les étudiants littéraires.
+
+Étudiants scientifiques
+
+En consigne d’expression d’émotions positives (ressenties à l’occasion de
+
+l’obtention du BAC), les résultats sont les suivants : le score au test anxiété
+
+«état», prédicteur significatif (β= .590, p&lt;.006), explique 31% de la
+
+variance totale du lexique émotionnel à valence négative [F (1,18) = 9,63,
+
+p&lt;.006]. Il constitue aussi, un prédicteur significatif (β= -.506, p&lt;.02)
+
+expliquant 21% de la variance totale de l’emploi de lexique émotionnel à valence
+
+positive [F (1,18) = 6,19, p&lt;.02].
+
+En consigne d’expression d’émotions négatives (ressenties à l’occasion de l’échec
+
+à un examen comme le BAC), les résultats sont les suivants: Le score de
+
+l’anxiété état, prédicteur significatif (β= .505, p&lt;.01), explique 22% de la
+
+variance totale du lexique émotionnel à valence positive [F (1,22) = 7,57,
+
+p&lt;.01]. De plus, le score d’appréhension à écrire constitue un prédicteur
+
+significatif (β= -.390, p&lt;.05) expliquant 11% de la variance totale du
+
+lexique émotionnel à valence positive employé [F (1,22) = 5,95, p&lt;.05].
+
+Enfin, lorsque la thématique n’implique pas l’expression d’émotions, le score
+
+d’anxiété état a un effet significatif (β= -.457, p&lt;.01) expliquant 16% de la
+
+variance totale du lexique émotionnel à valence positive [F (1,18) = 4,76,
+
+p&lt;.01].
+
+4. Discussion
+
+Les résultats présentés ci-avant mettent en évidence que, soumis aux mêmes
+
+thématiques rédactionnelles, les étudiants littéraires et scientifiques
+
+n’exploitent pas le lexique émotionnel de façon comparable, et ce en fonction de
+
+leurs caractéristiques de personnalités. Les facteurs dispositionnels de
+
+procrastination et de perfectionnisme sont, en effet, plus influents chez les
+
+étudiants littéraires. Ceux d’anxiété et d’appréhension à écrire le sont pour
+
+les étudiants scientifiques. Ainsi, l’ajustement à une consigne d’écriture de
+
+ces deux groupes d’étudiants relèverait d’une stratégie sans doute dépendante de
+
+leurs pratiques rédactionnelles habituelles, mais aussi de leurs
+
+caractéristiques personnelles.
+
+Plus précisément, les étudiants littéraires ont des niveaux d’appréhension à
+
+écrire et d’anxiété «état» qui ne modulent pas significativement cette
+
+stratégie. En revanche, interviennent leur niveau de gestion du temps
+
+(procrastination), leurs exigences vis-à-vis de l’écriture ainsi que leur
+
+nécessité de sentir une auto efficacité (perfectionnisme). Au moins ils ont
+
+tendance à différer la réalisation de leurs écrits, au plus ils introduisent du
+
+lexique émotionnel dans leur écrit, s’avérant ainsi efficaces comme la consigne
+
+rédactionnelle le leur demande. Plus ils sont perfectionnistes de type positif
+
+(recherche d’une satisfaction personnelle), plus ils introduisent dans leur
+
+texte le lexique émotionnel demandé. Ces résultats sont compatibles avec la
+
+conception de Selon Boice (1985, 1996), pour qui le perfectionnisme et la
+
+procrastination (mais également les autres sources de blocage de l’écriture
+
+évoquées plus haut) sont des composantes affectivo-cognitives d’un «schéma de
+
+pensée». D’après cet auteur, selon sa nature, le monologue interne du rédacteur
+
+– survenant avant, pendant et après une activité d’écriture – peut provoquer
+
+soit un blocage (ruminations dites «bloquantes»), soit une dynamique positive
+
+(ruminations dites «psych-up»). Ainsi, chez les rédacteurs littéraires la bonne
+
+gestion de leur temps et leur rigueur vis-à-vis de la tâche d’écriture
+
+reposeraient sur des pensées et des émotions positives. Pour ces rédacteurs, le
+
+fait d’écriture serait associé à un sentiment d’auto-efficacité, un plaisir à
+
+écrire et une satisfaction affective provoquée par l’accomplissement de la
+
+tâche.
+
+Les étudiants scientifiques gèrent leur activité écrite en fonction de leur
+
+niveau d’appréhension à écrire et de leur anxiété «état». Plus ces étudiants
+
+sont appréhensifs à écrire, plus ils sont anxieux, et plus ils introduisent de
+
+lexique émotionnel dans leur écrit. Tout se passe comme si leurs
+
+caractéristiques de personnalité agissaient sur leur éveil affectif et cognitif
+
+en leur permettant de répondre efficacement à la consigne rédactionnelle.
+
+Autrement dit, leurs dispositions émotionnelles ne les pénalisent pas, comme
+
+certains travaux sur l’appréhension à écrire pouvaient le laisser penser (Daly,
+
+1985). Au contraire, plus ils ont de l’anxiété, plus ils exploitent cette
+
+anxiété pour réaliser la tâche rédactionnelle demandée. Néanmoins, l’engagement
+
+dans l’écriture s’opère sur des bases de nature anxieuses. La difficulté ainsi
+
+ressentie permet certes de stimuler l’éveil cognitif du rédacteur, mais provoque
+
+également un sentiment de malaise lors de la réalisation de produits écrits. Il
+
+en découle, au fil des années, et comme l’ont montré les résultats aux échelles
+
+de mesure des composantes affectivo-émotionnelles, un ressenti d’incompétence et
+
+un dégoût de l’écriture.
+
+En conclusion, cette étude laisse à penser que pour les étudiants qui ont
+
+participé à cette expérience, le processus rédactionnel s’accompagne d’émotions
+
+et de pensées positives pour les étudiants littéraires et d’émotions et de
+
+pensées négatives pour les scientifiques. Ce constat doit être, évidemment,
+
+précisé et confirmé par d’autres recherches. Par ailleurs, afin de mieux
+
+comprendre l’impact des dimensions cognitivo-émotionnelles sur le contenu des
+
+écrits, il faudra aussi travailler sur l’usage du lexique émotionnel dans
+
+d'autres types d’écrits (essais, rapports, poèmes, blogs). Les observations
+
+présentées ici ne constituent qu’une première étape de l’évaluation des usages
+
+lexicaux de rédacteurs adultes en fonction de leur personnalité.
+
+Références bibliographiques
+
+Bannour, Rachid (2007). Outils de mesure des composantes émotionnelles de
+
+l’appréhension à écrire. Sciences Croisées.
+
+]
+
+Bannour, Rachid, Piolat, Annie, &amp; Gombert, Anne (sous presse). Quand
+
+des Lycéens et des étudiants rendent compte de leurs émotions…Effets de leur
+
+niveau d’appréhension à écrire et du thème rédactionnel, in Lexique et production verbale : Vers une meilleure
+
+intégration des apprentissages lexicaux, Grossmann, Francis &amp;
+
+Plane, Sylvie (Eds). Villeneuve d'Ascq, Presses Universitaires du
+
+Septentrion.
+
+Boice, Robert (1985). Cognitive components of blocking. Written Communication, 2: 91-104.
+
+Boice, Robert (1996). Procrastination and blocking: A
+
+novel, practical approach. Praeger Publishers/Greenwood Publishing
+
+Group.
+
+Bruchon-Schweitzer, Marilou, &amp; Paulhan, Isabelle. (1993). Adaptation française de l’Inventaire d’Anxiété Trait-Etat.
+
+Forme Y (STAI Y). Paris: Les Éditions du Centre de Psychologie
+
+Appliquée.
+
+Chu, Angela Hsin Chun, &amp; Choi, Jin Nam (2005). Rethinking
+
+Procrastination: Positive Effects of “Active” Procrastination Behavior on
+
+Attitudes and Performance. The Journal of Social
+
+Psychology, 145(3): 245–264
+
+Daly, John, &amp; Miller, Michael (1975a). The empirical development of an
+
+instruction to measure writing apprehension. Research in
+
+the Teaching of English, 9: 242-249.
+
+Daly, John, &amp; Miller, Michael (1975b). Apprehension of writing as a
+
+predictor of message intensity. Journal of Psychology,
+
+89: 175-177.
+
+Daly, John, &amp; Miller, Michael (1975c). Further attitudes in writing
+
+apprehension: SAT scores, success expectations, willingness to take advanced
+
+courses and sex differences. Research in the Teaching of
+
+English, 9: 250-256.
+
+Daly, John, &amp; Hailey, Joy-Lynn (1984). Putting the situation into
+
+writing research: Situational parameters of writing apprehension as
+
+disposition and state, in New directions in composition
+
+research, Beach, Richard &amp; Bidwell, Lillian (Eds). New York:
+
+Guilford, 259-274.
+
+Daly, John, (1985). Writing apprehension, in When a writer can't write:
+
+Studies in writer's block and other composing process problems, Rose, Mike
+
+(Ed) New York: Guilford, 43-82.
+
+Daly, John, &amp; Shamo, Wayne (1976). Writing apprehension and
+
+occupational choice. Journal of Occupational Psychology,
+
+49: 55-56.
+
+Daly, John, &amp; Shamo, Wayne (1978). Academic decisions as a function of
+
+writing apprehension. Research in the Teaching of English,
+
+12:119-126.
+
+Faigley, Lester., Daly, John, &amp; Witte, Stephen (1981). The role of
+
+writing apprehension in writing performance and writing competence. Journal of Educational Research, 7:, 16-21.
+
+Fritzsche, Barbara, Young, Beth Rapp, &amp; Hickson, Kara (2003).
+
+Individual differences in academic procrastination tendency and writing
+
+success. Personality and individual differences, 35:
+
+1549-1557.
+
+Hayes, John (1996). Un nouveau cadre pour intégrer cognition et affect
+
+dans la rédaction de texte, in La rédaction de
+
+textes, Piolat, Annie &amp; Pélissier, Aline (Eds). Lausanne :
+
+Delachaux et Niestlé, 51-101.
+
+Lay, Clarry (1986) At last, my research on Procrastination. Journal of Research in Personality 20:474-495.
+
+Madigan, Robert, Linton, Patricia &amp; Johnson, Susan (1996). The paradox
+
+of writing apprehension, in The science of writing,
+
+Theories, methods, individual differences, and
+
+applications, Levy, Michael &amp; Ransdell, Sarah (Eds). Mahwah
+
+(New Jersey): Lawrence Erlbaum Associates, 295-307.
+
+Molette, Pierre (2002). Tropes. ACETIC (Action Études Information
+
+Communication). CD ROM.
+
+Olive, Thierry &amp; Piolat, Annie (2003). Activation des processus
+
+rédactionnels et qualité des textes. Le Langage et
+
+l'Homme, 28(2): 191-206.
+
+Onwuegbuzie, Anthony (2000). Academic Procrastinators and Perfectionistic
+
+Tendencies Among Graduate Students (special issues).
+
+Journal of Social Behavior and Personality, 15: 103-110.
+
+Pennebaker, James, Mehl, Matthias, &amp; Niederhoffer, Kate. (2003)
+
+Psychological aspects of natural language use: Our words, our selves. Annual Review of Psychology, 54 : 547–577.
+
+Seidah, Amélie, Bouffard, Thérèse, &amp; Vezeau, Carole (2002). La mesure
+
+du perfectionnisme: Validation canadienne-française du Positive and Negative
+
+Perfectionism Scale. Revue canadienne des sciences du
+
+comportement, 34: 168-171.
+
+Terry-Short, L.A, Owens, Glynn, Slade, Peter, &amp; Dewey, Michael (1995).
+
+Positive and negative perfectionism. Personality and
+
+Individual Differences, 18: 663-668.
+
+Thompson, Merle O’Rourke. (1983). The returning student: Writing anxiety
+
+and general anxiety. Teaching English in the Two-Year
+
+College, 10(1): 35-39.
+
+
+

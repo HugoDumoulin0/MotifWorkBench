@@ -1,0 +1,954 @@
+
+
+Introduction
+
+Les quelques recherches s’étant intéressées à la maitrise du français écrit chez
+
+les étudiants aux ordres supérieurs d’enseignement (par exemple Lefrançois,
+
+2004; Roy, Lafontaine et Legros, 1995) n’ont révélé que peu d’informations sur
+
+leur maitrise lexicale. Ces travaux portant principalement sur l’orthographe
+
+grammaticale, l’aspect vocabulaire y est traité de façon plutôt superficielle.
+
+Malgré ce portrait peu détaillé de la dimension lexicale de l’écrit des
+
+étudiants, ces recherches ont tout de même révélé des informations intéressantes
+
+: 1) les problèmes lexicaux sont présents dans les rédactions d’étudiants, 2) le
+
+lexique est la dimension la moins prise en compte par les étudiants en
+
+révision/rédaction (Roy  et al., 1995) et 3) les erreurs
+
+lexicales sont les moins repérées et les moins souvent résolues correctement
+
+(Lefrançois, 2004). Par contre, d’un point de vue didactique, une description
+
+plus fine des problèmes lexicaux des étudiants s’avère nécessaire, puisqu’elle
+
+constitue une première étape vers des interventions visant à les corriger.
+
+Le manque de descriptions détaillées des erreurs lexicales des étudiants découle
+
+peut-être d’un problème plus profond : l’absence de consensus autour de la
+
+notion même d’erreur lexicale. En effet, nombreux sont les auteurs à souligner
+
+la difficulté de cerner l’erreur lexicale (Lépine, 1995; Patris et Vansnick,
+
+1992; Polguère, 2004); Denance (1999) pointe la difficulté de départager les
+
+erreurs de syntaxe des erreurs de vocabulaire, alors qu’Engber (1995) mentionne
+
+le caractère subjectif des choix lexicaux en rédaction. Il semble que ni la
+
+didactique ni la linguistique n’aient jusqu’à maintenant proposé une
+
+caractérisation claire et complète de ce qu’est une erreur lexicale. Pourtant,
+
+les avancées importantes de la linguistique en ce qui a trait à la description
+
+lexicale et sémantique nous ont fourni tous les éléments conceptuels nécessaires
+
+à une telle caractérisation.
+
+Voici donc les deux objectifs que vise le présent article :
+
+1. Proposer une caractérisation claire et exhaustive de l’erreur lexicale appuyée
+
+par des concepts linguistiques.
+
+2. Décrire, à la lumière de la définition proposée dans le premier objectif, les
+
+problèmes lexicaux d’étudiants universitaires.
+
+2. Le cadre théorique
+
+Il est important que la caractérisation de l’erreur lexicale que nous proposons
+
+s’appuie sur des concepts linguistiques clairs. Le cadre théorique que nous
+
+avons choisi est la Théorie Sens-Texte (TST) (Mel'čuk, 1997), qui place le sens
+
+au cœur de sa modélisation de la langue. Le lexique en étant le principal
+
+élément porteur de sens, la description lexicale occupe une place de choix dans
+
+la TST. En conséquence, la Lexicologie Explicative et Combinatoire (LEC)
+
+(Mel'čuk, Clas et Polguère, 1995), branche lexicologique de la TST, s’est
+
+énormément développée et offre un cadre idéal pour l’élaboration d’une
+
+définition de l’erreur lexicale.
+
+La TST considère les lexies comme des entités à trois dimensions. En plus de la
+
+classique association signifiant-signifié proposée par Saussure (1960), la TST
+
+prend en compte une troisième dimension : celle des propriétés de combinatoire,
+
+qui regroupent l’ensemble des informations que l’on doit connaitre sur un signe
+
+linguistique, en plus de sa forme et de son sens, pour pouvoir l’utiliser
+
+correctement (voir 3.2.3.). Évidemment, une telle conception a une influence sur
+
+l’approche lexicologique de la LEC, qui doit aussi considérer cette troisième
+
+dimension des lexies dans leur description. La LEC vise donc, comme toutes les
+
+approches lexicologiques, à décrire le sens des lexies; c’est sa dimension
+
+explicative (voir 3.2.2.). Par contre, un deuxième axe de description est plus
+
+typique de la LEC : la description des différentes propriétés qui régissent le
+
+comportement syntaxique et lexical des lexies. C’est la dimension combinatoire
+
+de la LEC. En d’autres mots, la LEC vise à fournir un portrait exhaustif de tout
+
+ce que doit savoir un locuteur pour pouvoir utiliser correctement une lexie. Une
+
+connaissance aussi complète des propriétés en jeu dans la maitrise d’une unité
+
+lexicale sera bien sûr très précieuse lorsque viendra le temps de caractériser
+
+la notion d’erreur lexicale.
+
+3. La notion d’erreur lexicale
+
+Cette section vise la caractérisation de la notion d’erreur lexicale. Par la
+
+présentation des diverses normes régissant l’emploi du lexique et l’exploration
+
+des différentes dimensions de l’unité lexicale, nous établirons une typologie
+
+des problèmes lexicaux.
+
+3.1. L’erreur lexicale et la norme
+
+Nous appelons communément « erreur » un usage qui est déviant par rapport à
+
+une norme; il est donc facile de pointer une erreur tant et aussi longtemps
+
+que nous disposons d’une norme bien définie. La grammaire scolaire,
+
+d’ailleurs souvent qualifiée de normative, constitue un bon exemple de norme
+
+bien définie. Par contre, il existe des dimensions du code linguistique pour
+
+lesquelles la norme ne semble pas aussi clairement définie. Le lexique en
+
+est un bon exemple; si certaines dimensions de l’emploi du vocabulaire
+
+semblent soumises à une norme rigide – par exemple l’orthographe lexicale –,
+
+il en existe d’autres pour lesquelles la norme est plus floue – pensons
+
+notamment à la collocation (voir 3.2.3.). Par conséquent, il nous faudra,
+
+pour caractériser la notion d’erreur lexicale, recourir à plusieurs types de
+
+normes.
+
+1. La norme prescriptive : Souvent appelée le « bon
+
+usage », cette norme domine la grammaire scolaire. Il s’agit d’un « ensemble
+
+de recommandations déterminées par une partie de la société et précisant ce
+
+qui doit être retenu parmi les usages d’une langue afin d’obtenir un certain
+
+idéal esthétique ou socioculturel. » (Legendre, 2005: 938) Certains
+
+organismes, comme l’Office québécois de la langue française ou l’Académie
+
+française, ont d’ailleurs pour mission de fixer ce « bon usage ». Si cette
+
+norme vise surtout les aspects grammaticaux, elle exerce aussi son emprise
+
+sur certains aspects du lexique comme l’orthographe d’usage, le régime
+
+verbal (fait pour un verbe d’être transitif direct/indirect ou non), le
+
+genre nominal, l’invariabilité, etc.
+
+2. La norme descriptive : Il n’existe pas beaucoup de «
+
+règles lexicales » aussi rigides que celles régissant les emplois
+
+grammaticaux; par conséquent, la norme prescriptive ne saurait suffire à
+
+caractériser l’ensemble des erreurs lexicales. En effet, certains emplois
+
+lexicaux pourront être perçus comme douteux, non pas en vertu d’une règle
+
+spécifique, mais plutôt parce qu’ils ne correspondent pas à un usage «
+
+normal », c’est-à-dire qui n’est pas marqué par rapport à la façon dont les
+
+locuteurs s’expriment en général. Cette vision de la norme est plutôt
+
+descriptive et constitue le point de vue communément adopté par les
+
+linguistes : la langue est décrite telle qu’elle est réellement utilisée par
+
+les locuteurs et l’usage de la majorité devient la norme. Pour juger de
+
+l’acceptabilité d’un emploi lexical du point de vue descriptif, nous
+
+pourrons avoir recours au jugement de locuteurs natifs ou utiliser des
+
+corpus pour en vérifier la fréquence.
+
+3. La norme fonctionnelle : L’importance de la prise en
+
+compte des dimensions pragmatiques dans la communication est aujourd’hui
+
+généralement admise. Il se peut donc que certains emplois lexicaux soient
+
+perçus comme problématiques parce qu’ils entrent en conflit avec le contexte
+
+de communication (ex. registre de langue inapproprié). Pour diagnostiquer de
+
+tels problèmes, nous aurons recours à une norme fonctionnelle, selon
+
+laquelle « le bon usage est celui qui est adapté aux diverses situations de
+
+communication, aux situations de la vie en société » (Dallaire, 1997: 30).
+
+4. La norme stylistique : La variété et la richesse du
+
+vocabulaire constituent deux points d’évaluation très communs dans les
+
+grilles de correction de textes. Pourtant, rarement des critères précis
+
+servant à les opérationnaliser sont fournis. Par conséquent, l’évaluation en
+
+est la plupart du temps faite de façon plutôt subjective; ces aspects du
+
+vocabulaire sont soumis à une norme floue, que nous pourrions qualifier de «
+
+stylistique ».
+
+3.2. Élaboration d’une typologie des problèmes lexicaux
+
+Voici comment nous pourrions définir une erreur lexicale.
+
+Erreur lexicale : Résultat de la transgression de la norme concernant une
+
+propriété d’une unité lexicale (sens, forme, propriété de combinatoire)
+
+Pour proposer une typologie complète des différents types de problèmes
+
+lexicaux, il faudra donc observer quelles sont les transgressions possibles
+
+pour chacune des propriétés des unités lexicales; il faudra pour ce faire
+
+déterminer quelle norme s’applique à chacune. Les sections suivantes
+
+proposent donc un tour d’horizon des différentes dimensions des lexies et
+
+des erreurs lexicales qui y sont liées.
+
+3.2.1. Le signifiant
+
+Les erreurs lexicales relatives à la forme ayant déjà fait l’objet de
+
+plusieurs travaux (notamment Catach, Gruaz et Duprez, 1986), elles
+
+présentaient pour nous un intérêt moindre. La forme étant certainement
+
+la dimension des unités lexicales la plus fortement soumise à la norme
+
+prescriptive, il est facile d’imaginer de quelle façon cette dimension
+
+peut être transgressée : en ne respectant pas l’orthographe recommandée.
+
+Nous pouvons quand même différencier quelques types d’erreurs relatives
+
+à la forme.
+
+Les erreurs d’orthographe lexicale sont celles qui découlent d’une
+
+mauvaise transposition phonème-graphème, mais sans être perceptibles à
+
+l’oral. Par exemple, * échalotte, aller de *paire (avec) et *quoiqu’il en soit présentent des erreurs d’orthographe
+
+lexicale. Les barbarismes, quant à eux, témoignent d’une méconnaissance
+
+plus profonde du signifiant d’une lexie et sont perceptibles même à
+
+l’oral, comme *assuidité ou une
+
+*bride de conversation. Évidemment,
+
+différents phénomènes sont en jeu (inversion de phonèmes, ajout de
+
+syllabe, etc.) et une caractérisation plus fine des barbarismes serait
+
+possible. Nous pouvons aussi étendre les barbarismes aux locutions
+
+déformées – par exemple dire *l’inverse (
+
+
+
+une chose) et son contraire, à
+
+la *lueur (
+
+
+
+lumière) de ces informations –, puisqu’il s’agit
+
+encore une fois d’une méconnaissance manifeste de la forme d’une lexie.
+
+Finalement, le dernier cas de transgression de la forme est la
+
+production d’une forme inexistante, soit par un emprunt à une autre
+
+langue (ex. *marchandiser
+
+
+
+to merchandise) ou par une mauvaise dérivation
+
+morphologique (ex. un *courseur
+
+automobile).
+
+3.2.2. Le signifié
+
+Pour bien comprendre les types d’erreurs lexicales liées au sens des
+
+unités lexicales, il s’impose d’établir clairement quelles sont les
+
+composantes d’une définition. Pour ce faire, observons la définition du
+
+verbe ramper [Les soldats rampèrent sous la
+
+barrière.] tirée du dictionnaire Antidote (2006), mais qui
+
+correspond aux méthodes de définition de la LEC.
+
+ramper : Progresser lentement ventre contre le sol, en s’aidant de ses quatre membres, en parlant d’animaux, de l’homme.
+
+Une telle définition consiste en une paraphrase, en termes sémantiquement
+
+plus simples, de la lexie décrite. Il s’agit d’une définition de type
+
+analytique, puisqu’elle comporte deux parties : le genre prochain et les
+
+différences spécifiques. Le genre prochain d’une définition en est
+
+l’élément central; il s’agit du noyau sémantique du sens décrit. La
+
+plupart du temps, le genre prochain est un hyperonyme de la lexie
+
+décrite. Par exemple, le genre prochain de ‘ramper’ est ici
+
+‘progresser’. Les différences spécifiques, quant à elles, sont des
+
+composantes sémantiques périphériques qui viennent restreindre, ou
+
+spécifier, le sens du genre prochain de façon à le faire correspondre au
+
+sens décrit et de différencier ce dernier d’autres sens qui
+
+partageraient le même genre prochain. Dans ce cas-ci, les différences
+
+spécifiques sont ‘lentement’, ‘le ventre contre le sol’ et ‘en s’aidant
+
+de ses quatre membres’.
+
+Pour certains types d’unités lexicales, dites prédicatives, il faudra
+
+aussi ajouter des informations d’une autre nature : le typage des
+
+participants sémantiques. Les lexies prédicatives sont celles dont le
+
+sens implique des participants; c’est le cas de tous les verbes (X trébuche, X concède Y à Z), mais aussi des adjectifs (X est séduisant), des adverbes (X se déroule lentement), des prépositions (X sur Y) et de plusieurs noms (X gendre
+
+de Y, assaisonnement de X par Y, guerre entre X et Y). Pour bien maitriser le sens de ces lexies, il faut
+
+connaitre les contraintes sémantiques qui pèsent sur ces participants.
+
+Par exemple, il faut que la lexie qui actualise X auprès de trébucher
+
+dénote un être animé (Ma grand-mère a trébuché,
+
+mais pas *Ma statue a trébuché). Il est donc
+
+important de spécifier ces contraintes dans la définition d’une lexie
+
+prédicative, ce que la LEC appelle typage des actants. La définition de
+
+ramper ci-dessus en rend compte par ‘en parlant d’animaux, de l’homme’.
+
+Évidemment, ces différentes composantes de la définition pourront
+
+entrainer des erreurs lexicales de nature différente. De façon générale,
+
+nous pouvons affirmer que le sens est aussi soumis à la norme
+
+prescriptive, puisque les différents sens associés aux vocables sont
+
+décrits dans les dictionnaires et sont plutôt statiques. Par contre, les
+
+emplois figurés laissent une plus grande latitude au locuteur en ce qui
+
+concerne le sens.
+
+Le cas le plus grave de transgression du sens est le non-respect du genre
+
+prochain, que nous appelons impropriété. Dans ce cas, la lexie utilisée
+
+ne véhicule pas du tout le sens visé par le scripteur. Dans certains
+
+cas, cette mauvaise association entre signifiant et signifié peut
+
+sembler difficilement explicable (ex. frugal pour
+
+exprimer ‘abondant’), alors que dans d’autres cas, la confusion peut
+
+être de nature paronymique (un départ *éminent) ou encore découler de l’emploi
+
+d’anglicismes (Elle est *rude [= ‘impolie’] avec ses collègues.).
+
+Dans d’autres cas, c’est plutôt la méconnaissance de certaines nuances
+
+sémantiques qui entraine une erreur lexicale. Par exemple, l’utilisation
+
+douteuse de l’adjectif routinier dans Il adorait ses
+
+échanges
+
+#
+
+routiniers avec sa grand-mère. s’explique par le
+
+non-respect d’une différence spécifique. Devant ce cas, il y a lieu de
+
+croire que l’étudiant voulait plutôt exprimer le sens ‘quotidien’; les
+
+deux sens sont assez proches, puisqu’ils qualifient tous deux quelque
+
+chose qui appartient à la vie de tous les jours, mais routinier véhicule
+
+en plus le sens de ‘répétitif et monotone’, ce qui ne convient pas
+
+réellement au contexte de la phrase.
+
+Un troisième type d’erreur lexicale relatif au sens est le non-respect du
+
+typage des actants ; la confusion entre les verbes emmener et apporter
+
+en est un cas typique. Dans une phrase comme Lucien a
+
+apporté sa petite sœur Ritha en camping., le typage du
+
+complément du verbe n’est pas respecté, puisque celui-ci doit dénoter un
+
+objet.
+
+Un dernier type de problème sémantique mérite d’être traité, même s’il ne
+
+découle pas nécessairement d’une méconnaissance du sens d’une unité
+
+lexicale, mais naît plutôt de la cooccurrence de deux lexies. Il s’agit
+
+du pléonasme ( Ils cohabitent *ensemble depuis
+
+octobre.), dans lequel un des deux termes reprend une
+
+composante de sens de l’autre.
+
+3.2.3. Les propriétés de combinatoire
+
+Polguère (2003: 37) définit les propriétés de combinatoire d’une unité
+
+lexicale comme « les contraintes propres à ce signe qui limitent sa
+
+capacité à se combiner avec d’autres signes linguistiques et qui ne
+
+peuvent être déduites ni de son signifié ni de son signifiant. » Ces
+
+propriétés s’articulent selon deux axes : la combinatoire grammaticale –
+
+c’est-à-dire les propriétés qui régissent le comportement
+
+morphosyntaxique de la lexie – et la combinatoire lexicale – les liens
+
+privilégiés qu’entretient l’unité lexicale avec les autres lexies.
+
+Les propriétés de combinatoire grammaticale sont nombreuses et variées
+
+et, pour la plupart, elles sont soumises à la norme prescriptive et
+
+apparaissent dans les dictionnaires. Ce sont des informations que l’on
+
+doit connaitre pour maitriser pleinement une lexie et leur transgression
+
+entraine une erreur. Des cas fréquents de ce type de propriétés sont la
+
+partie du discours ( Jessica est *alcoolisme.), le genre nominal (*une écran d’ordinateur), et l’invariabilité (*une obsèque émouvante), mais il peut exister des
+
+propriétés plus rares, comme le fait pour une lexie de conditionner un
+
+mode verbal particulier (bien que + subjonctif) ou encore le fait de ne
+
+s’utiliser qu’en tournure négative (ex. sourciller). Une autre propriété
+
+importante des unités lexicales est le régime, c’est-à-dire le fait
+
+d’avoir ou non des compléments, le caractère obligatoire de ces
+
+compléments et la présence ou l’absence de prépositions pour les
+
+introduire. La notion de régime verbal est bien connue, mais beaucoup de
+
+lexies appartenant à d’autres parties du discours possèdent aussi un
+
+régime (X enclin
+
+à
+
+Y, acquiescement
+
+de
+
+X
+
+à
+
+Y, etc.). Évidemment, le fait de ne pas respecter
+
+le régime entrainera une erreur (ex. Ils faisaient
+
+partie *dans la même équipe.).
+
+Les erreurs découlant d’une violation d’une propriété de combinatoire
+
+grammaticale sont souvent considérées comme des « fautes de grammaire »
+
+par les enseignants. Comme la source des problèmes mentionnés plus haut
+
+est la méconnaissance de propriétés lexicales, nous croyons plus juste
+
+de parler d’erreurs lexicogrammaticales (ou lexicosyntaxiques dans le
+
+cas de problèmes de régime). Bien que ces problèmes se manifestent
+
+syntaxiquement ou morphologiquement, aucune règle générale de la
+
+grammaire du français ne permettra de les expliquer et il faudra
+
+nécessairement avoir recours à une propriété lexicale pour y parvenir.
+
+Par exemple, nous jugeons beaucoup plus pertinent, devant le syntagme *
+
+une violente ouragan, de mentionner à
+
+l’étudiant que le nom ouragan est masculin que de considérer qu’il ne
+
+maitrise pas les règles d’accord du déterminant et de l’adjectif avec le
+
+nom.
+
+Le deuxième axe de combinatoire est la combinatoire lexicale, qui se
+
+manifeste principalement par la collocation, phénomène très fréquent
+
+dans les langues. Il s’agit de la cooccurrence de deux unités lexicales
+
+selon le patron suivant : une lexie, appelée base de la collocation, est
+
+choisie librement pour le sens qu’elle véhicule, alors que l’autre, le
+
+collocatif, est choisie en fonction de la base pour exprimer un sens
+
+particulier auprès d’elle (voir Hausmann (1979)). Par exemple, dans faire un choix, la base choix est choisie
+
+librement alors que le collocatif faire est en quelque sorte imposé par
+
+ce choix (!). En effet, le synonyme décision aurait demandé un
+
+collocatif différent : prendre une décision et
+
+non *faire une décision. La collocation est un
+
+phénomène arbitraire, c’est-à-dire qu’on ne peut anticiper les
+
+collocatifs d’une lexie particulière; c’est l’usage qui « fixe » les
+
+collocations. Par conséquent, il faut connaitre les collocatifs d’une
+
+lexie que l’on désire utiliser, tâche d’autant plus difficile que ce
+
+type d’information n’apparait pas systématiquement dans les
+
+dictionnaires. En effet, seule la consultation de corpus permettra de
+
+statuer sur l’acceptabilité d’une collocation; cette dimension est donc
+
+soumise à la norme descriptive. Évidemment, l’emploi de mauvais
+
+collocatifs est perçu comme problématique, comme dans les exemples
+
+suivants : Elle leur *interroge
+
+plusieurs questions. Un film
+
+?
+
+énormément drôle!
+
+3.2.4. D’autres types de problèmes lexicaux
+
+Nous avons vu, au point 3.1, que certaines contraintes pragmatiques
+
+pouvaient aussi occasionner des erreurs lexicales en vertu de la norme
+
+fonctionnelle. Par exemple, le registre de langue employé doit être en
+
+adéquation avec la situation de communication. Il est aussi important
+
+qu’il y ait une certaine homogénéité dans le registre employé dans un
+
+texte et une cassure par rapport à ce registre sera perçue comme
+
+maladroite.
+
+De plus, certains contextes d’écriture demanderont l’emploi d’un français
+
+international, c’est-à-dire exempt de termes propres à une variété de
+
+français particulière qui pourraient constituer une entrave à la
+
+compréhension pour des lecteurs qui lui sont étrangers. Utiliser des
+
+termes propres au français québécois standard, comme débarbouillette ou
+
+achalandage, pourrait poser problème si le texte s’adresse à un lectorat
+
+international.
+
+Finalement, l’emploi d’un vocabulaire pauvre, imprécis ou peu varié peut
+
+aussi être considéré comme un problème de nature lexicale, puisque cela
+
+témoigne d’un manque de vocabulaire. Par contre, les critères pour juger
+
+de tels problèmes sont plutôt flous et l’appréciation de la qualité ou
+
+la richesse du vocabulaire est souvent très subjective.
+
+4. Description des problèmes lexicaux d’étudiants
+
+Une fois notre typologie des problèmes lexicaux proposée, nous avons réalisé
+
+notre deuxième objectif, qui visait à décrire les problèmes rencontrés dans les
+
+rédactions d’étudiants universitaires. Cette étape a en quelque sorte servi à
+
+valider notre typologie en démontrant son utilité comme outil d’aide au
+
+diagnostic.
+
+4.1. Méthodologie
+
+Pour cette deuxième étape de la recherche, nous avons dépouillé un corpus de
+
+103 textes d’étudiants et en avons extrait tous les problèmes lexicaux.
+
+L’ensemble des textes ont été rédigés, dans le cadre d’un cours de français
+
+écrit pour futurs enseignants, par des étudiants inscrits en première année
+
+de baccalauréat [214] en éducation et qui ont
+
+eu le français comme seule langue de scolarisation depuis le primaire. La
+
+rédaction d’une page environ portait sur un sujet imposé : résumé d’un film,
+
+description d’un endroit ou texte sur la discipline dans les écoles. Le
+
+travail a été réalisé à la maison – le recours aux ouvrages de référence
+
+était donc permis – et remis au professeur en tant qu’évaluation formative.
+
+Tous les problèmes lexicaux ont été codés à l’aide de la typologie présentée
+
+plus haut par l’auteur de la présente recherche. Un peu plus du quart des
+
+problèmes (111) a ensuite fait l’objet d’un contre-codage par une collègue.
+
+Le taux d’accord interjuges était de 86,2 %, ce qui témoigne du caractère
+
+opérationnel de la typologie.
+
+4.2. Résultats et discussion
+
+L’analyse du corpus a révélé un total de 391 problèmes lexicaux –
+
+c’est-à-dire environ 3,8 problèmes par 250 mots – et plus de 99 % des cas
+
+relevés ont pu être associés à l’une ou l’autre des classes d’erreurs de
+
+notre typologie.
+
+Les problèmes relatifs à la combinatoire sont les plus fréquents (30,7 %).
+
+Parmi ceux-ci, 23,5 % concernent la combinatoire grammaticale; il s’agit
+
+surtout de problèmes de régime – notamment avec les verbes (* elle lui informe ses déplacements) – et du
+
+non-respect de l’invariabilité (*Vous êtes amateur d’
+
+actions
+
+?) ou du genre nominal (*un
+
+idole). De telles informations apparaissent pourtant dans les
+
+dictionnaires et ces erreurs auraient pu être évitées en les consultant. Les
+
+problèmes de combinatoire lexicale (collocation), quant à eux, représentent
+
+7,2 % du total; les collocations les plus problématiques semblent être
+
+celles qui ont un nom pour base et un verbe comme collocatif (*Les élèves
+
+appliquent
+
+peu de respect envers les enseignants.). Le désir
+
+d’éviter d’utiliser des verbes qui sont pourtant des collocatifs fréquents
+
+(ex. faire, avoir), mais que les enseignants qualifient souvent de verbes «
+
+pauvres », pourrait peut-être expliquer ces erreurs.
+
+Les problèmes de sens, avec 30,4 % du total, sont aussi très fréquents. Bien
+
+que notre typologie permette de distinguer théoriquement des problèmes de
+
+sens distincts (voir 3.2.2.), nous constatons qu’il est difficile de les
+
+départager lors de l’analyse de cas réels. En effet, le sens étant assez
+
+abstrait, il n’est pas toujours facile de pointer la composante de sens à
+
+l’origine d’une utilisation douteuse. De plus, une seule occurrence
+
+d’utilisation ne témoigne pas de façon très détaillée de la conception du
+
+sens chez le scripteur. Des recherches plus poussées sur le diagnostic de
+
+problèmes de sens permettraient peut-être d’en développer une méthode
+
+d’analyse plus efficace. Néanmoins, il est intéressant de trouver un si
+
+grand nombre de problèmes sémantiques chez des étudiants dont le français
+
+est la langue maternelle.
+
+Sans grande surprise, nous constatons aussi la présence de nombreux problèmes
+
+relatifs à la forme (21 %), dont l’écrasante majorité sont des erreurs
+
+d’orthographe lexicale. Bien que peu surprenante, cette constatation est
+
+tout de même préoccupante si l’on considère que les textes ont été rédigés à
+
+la maison et que le recours aux ouvrages de référence était permis. Ceci
+
+témoigne peut-être d’une certaine négligence de la part des étudiants, qui
+
+se disent sans doute qu’une « simple » faute d’orthographe n’entrave pas la
+
+compréhension.
+
+Les problèmes de registre de langue représentent 9 % des cas et se
+
+manifestent la plupart du temps par l’emploi de termes familiers (cramer, à
+
+cause que, elle angoisse). Pourtant, le dictionnaire
+
+note l’appartenance à des registres de langue particuliers et indique le
+
+terme standard correspondant. Par contre, il se peut que le sujet du texte
+
+ait eu une influence sur le ton plus familier de certaines rédactions.
+
+Les problèmes ayant trait à la richesse et à la variété du vocabulaire
+
+représentent 5,6 % du total et prennent généralement la forme de répétition.
+
+Quant à la richesse du vocabulaire, très peu de cas ont été relevés, faute
+
+de méthode claire pour statuer sur ce type de problèmes.
+
+Deux pour cent des erreurs relevées pouvaient donner lieu à un double codage,
+
+c’est-à-dire qu’elles appartenaient à plus d’un type. En effet, certains
+
+problèmes pouvaient s’expliquer de différentes façons et l’impossibilité
+
+d’avoir accès aux pensées du scripteur nous empêchait d’opter pour une
+
+interprétation. Ceci ne découle pas selon nous de problèmes avec notre
+
+typologie, mais témoigne plutôt de la difficulté d’expliquer une erreur sans
+
+avoir accès aux processus qui ont conduit à la produire. Finalement, 1,3 %
+
+des problèmes relevés ont été considérés plutôt comme des coquilles
+
+attribuables à des erreurs d’inattention.
+
+Conclusion
+
+Différentes conclusions émanent de notre travail. D’un point de vue théorique,
+
+nous croyons avoir démontré qu’une délimitation précise de la notion d’erreur
+
+lexicale est possible et que la TST offre un  cadre théorique favorable à cet
+
+objectif. Malgré le caractère opérationnel de la typologie des problèmes
+
+lexicaux proposée, nous constatons par contre que certains types de problèmes,
+
+notamment ceux liés au sens, demeurent difficiles à diagnostiquer.
+
+D’un point de vue plus didactique, l’analyse des problèmes lexicaux des étudiants
+
+offre certaines pistes. Premièrement, le nombre important d’erreurs concernant
+
+les propriétés de combinatoire devrait nous convaincre de la nécessité
+
+d’accorder plus d’importance à cette dimension des unités lexicales dans
+
+l’enseignement, particulièrement aux notions de régime et de collocation, qui
+
+sont en général peu abordées en classe. La présence élevée de problèmes de sens
+
+nous pousse aussi à nous interroger sur la capacité des étudiants à remettre en
+
+question leur compréhension du sens des lexies qu’ils utilisent. Leur habileté à
+
+bien différencier les registres de langue et à adapter leur écrit au contexte
+
+scolaire est aussi remise en question. Une bonne initiation à l’utilisation de
+
+dictionnaires, par la présentation de leur structure et de la variété des
+
+informations présentées, devrait sensibiliser les étudiants à l’étendue des
+
+connaissances en jeu dans l’utilisation du vocabulaire.
+
+Évidemment, la typologie que nous proposons ne prétend pas être un outil
+
+infaillible qui permettrait de diagnostiquer aisément tout problème lexical. En
+
+revanche, nous croyons que notre travail met en lumière l’importance de
+
+s’intéresser à ce type de problèmes somme toute assez présents dans les
+
+rédactions d’étudiants et très peu étudiés jusqu’à ce jour.
+
+Références
+
+Andidote Prisme, version 6 [logiciel], Montréal,
+
+Druide informatique, 2006.
+
+Catach, Nina, Gruaz, Claude &amp; Duprez, Daniel (1986). L'orthographe
+
+française : traité théorique et pratique avec des travaux d'application et
+
+leurs corrigés. Paris: Nathan.
+
+Dallaire, Édouard (1997). Évolution du discours institutionnel tenu sur la
+
+langue, la norme et la grammaire depuis le Rapport Parent (Mémoire de
+
+maîtrise du 2e cycle non publié), Université du Québec à Montréal, Montréal.
+
+Denance, Michel (1999). L’évaluation des fautes de vocabulaire à
+
+l’évaluation de l’épreuve uniforme, Correspondance, 4, 4.
+
+Engber, Cheryl A. (1995). The Relationship of Lexical Proficiency to the
+
+Quality of ESL Compositions, Journal of Second Language Writing, 4, 2:
+
+139-155.
+
+Hausmann, Franz Josef (1979). Un dictionnaire des collocations est-il
+
+possible ?, Travaux de littérature et de linguistique de l’Université de
+
+Strasbourg, XVII, 1: 187-195.
+
+Lefrançois, Pascale (2004). Les stratégies de résolution de problèmes
+
+orthographiques d’étudiants à l’université, in La littératie : conceptions
+
+théoriques et pratiques de l’enseignement de la lecture-écriture, Barré-De
+
+Miniac, Christine, Brissaud, Catherine &amp; Rispail, Marielle (Eds), Paris:
+
+l’Harmattan, 233-244.
+
+Legendre, Renald (2005). Dictionnaire actuel de l'éducation (3e ed.).
+
+Montréal: Guérin.
+
+Lépine, François (1995). Bilan des tests de français à l’admission aux
+
+universités québécoises (1987-1994), Revue des sciences de l’éducation, 21,
+
+1: 17-36.
+
+Mel'čuk, Igor, Clas, André &amp; Polguère, Alain (1995). Introduction à la
+
+lexicologie explicative et combinatoire. Louvain-la-Neuve: Duculot.
+
+Mel'čuk, Igor (1997). Vers une linguistique sens-texte : leçon inaugurale
+
+faite le vendredi 10 janvier 1997. Paris, Collège de France: Chaire
+
+internationale.
+
+Patris, Jacques &amp; Vansnick, Nicole (1992). Comment aborder les fautes
+
+lexicales en classe, Enjeux, 26: 46-55.
+
+Polguère, Alain (2003). Lexicologie et sémantique lexicale : notions
+
+fondamentales. Montréal: Presses de l'Université de Montréal, Coll.
+
+Paramètres.
+
+Polguère, Alain (2004). Savoir consulter un dictionnaire, c’est bien ;
+
+savoir comment le construire, c’est mieux, Québec français, 134: 68-70.
+
+Roy, Gérard-Raymond, Lafontaine, Louise &amp; Legros, Catherine (1995). Le
+
+Savoir grammatical après treize ans de formation. Sherbrooke: Éditions du
+
+CRP.
+
+Saussure, Ferdinand (de) (1960). Cours de linguistique générale. Paris:
+
+Payot.
+
+[214] Études de premier cycle universitaire au Québec.
+
+
+

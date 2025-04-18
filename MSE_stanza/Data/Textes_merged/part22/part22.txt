@@ -1,0 +1,1192 @@
+
+
+Introduction
+
+La pratique compétitive de la voile dans les séries dites doubles (bateaux à équipages de deux régatiers) comporte deux sortes
+
+d’exigences coopératives. Le barreur et l’équipier doivent continuellement, (a)
+
+coordonner efficacement leurs comportements à bord pour piloter le bateau, et
+
+(b) communiquer et prendre des décisions de trajectoire en fonction de
+
+l’évolution continue des situations de course (Saury et Talon, 1997). Cette
+
+recherche concerne ces dernières activités, qualifiées de « coopération
+
+tactique » dans le vocabulaire des régatiers.
+
+La spécificité des tâches de pilotage du bateau assumées par le barreur et par
+
+l’équipier confère à chacun un accès privilégié à des informations différentes,
+
+de sorte que les équipages experts de voile ont adopté une répartition
+
+préétablie des rôles décisionnels à bord. Celle-ci fixe, pour chaque section du
+
+parcours de régate, les responsabilités respectives du barreur et de l’équipier
+
+dans le recueil et la communication des informations, et dans la décision
+
+tactique. Par exemple, dans la section de louvoyage au près, il revient au
+
+barreur de recueillir les informations dans l’espace proche du bateau ainsi que
+
+les valeurs de cap-compas, et de les communiquer à l’équipier ; et il revient à
+
+l’équipier de recueillir les informations dans l’espace lointain sur le parcours
+
+et de les communiquer au barreur. La responsabilité des décisions tactiques est
+
+du ressort de l’équipier, à l’issue des échanges et délibérations éventuelles
+
+entre les deux partenaires. Une telle spécialisation des rôles décisionnels est
+
+classique en voile et participe aux caractéristiques de l’expertise des
+
+équipages de double (Surmin, 1981).
+
+En dépit de cette organisation a priori de la coopération,
+
+les modalités réelles de coordination des activités au sein des équipages en
+
+compétition sont mal connues (pour diverses raisons : difficulté d’accès,
+
+confidentialité des échanges, masquage des conflits, etc.), tout en étant
+
+considérées par les entraîneurs et athlètes comme des sources possibles
+
+de dysfonctionnements et de dégradation des performances. Ces constats ont
+
+incité les entraîneurs et athlètes de l’équipe de France olympique de voile à
+
+collaborer à un programme d’études visant à analyser la coordination des
+
+activités de barreurs d’équipiers experts dans des situations réelles de
+
+compétition. Il s’agissait, d’une part, de mieux comprendre ces dimensions
+
+collectives de la performance en voile, et d’autre part, d’orienter la
+
+conception d’aides à la coopération et à l’optimisation des performances des
+
+équipages.
+
+Les processus de coordination cognitive, de partage de connaissances ou
+
+d’interprétations des situations dans les activités coopératives ont fait
+
+l’objet d’une attention croissante au cours de ces dernières années dans les
+
+recherches en psychologie du sport (e.g., Eccles &amp; Tenenbaum, 2004 ; Reimer,
+
+Park, &amp; Hinsz, 2006 ; Poizat, 2006). Les spécificités des activités
+
+sportives collectives (finalisation par la réalisation de performances
+
+collectives, hétérogénéité des tâches individuelles, contraintes temporelles
+
+fortes), et le caractère crucial de l’interdépendance des activités
+
+individuelles, ont incité les chercheurs à recourir à des modèles et méthodes
+
+issus de la psychologie du travail et de l’ergonomie cognitive, et conçus pour
+
+approcher les processus d’articulation collective d’activités dans des
+
+situations opératives dynamiques. Les limites de cet article excluent de
+
+présenter les différents cadres exploités ou disponibles dans ce domaine (e.g.,
+
+Cannon-Bowers, Converse &amp; Salas, 1993 ; Cooke, Gorman &amp; Winner, 2007 ;
+
+Hoc, 2003 ; Hutchins, 1995 ; Theureau, 2006). Ceux-ci révèlent cependant deux
+
+points de vue contrastés relatifs à la conception de l’activité collective.
+
+Schématiquement, le premier privilégie l’étude des structures et processus
+
+cognitifs individuels impliqués dans la coopération, et met l’accent sur les
+
+notions de « référentiel commun », de « modèles mentaux partagés » ou de « team situation awareness » (e.g., Hoc, 2003 ; Cooke et
+
+al., 2007). La deuxième aborde l’activité collective en tant qu’unité cognitive
+
+globale, dont les propriétés et caractéristiques doivent s’étudier au niveau de
+
+l’équipe en tant que système cognitif socialement distribué, et non à partir des
+
+activités individuelles (Hutchins, 1995).
+
+La présente étude a été conduite en référence au cadre théorique du « cours
+
+d’action » (Theureau, 2006), qui ouvre une « voie moyenne » entre les
+
+perspectives « individualistes » et « collectivistes » méthodologiques
+
+précédemment évoquées, en cohérence avec les présupposés du paradigme de
+
+l’enaction concernant le « couplage social » (Maturana &amp; Varela, 1994).
+
+L’activité collective y est abordée, d’une part, comme émergeant de
+
+l’articulation des activités individuelles (ce qui fait de l’analyse des
+
+activités individuelles le point de départ de l’analyse de l’activité
+
+collective), et d’autre part, comme produisant un domaine de phénomènes d’ordre
+
+collectif exerçant en retour des effets sur les activités individuelles. Dans
+
+cette étude, l’articulation des activités a fait l’objet d’une analyse en termes
+
+d’articulation des « cours d’expérience », i.e., de la dynamique de l’expérience
+
+« montrable, racontable, commentable » des partenaires au cours de leur activité
+
+collective (Theureau, 2006).
+
+Une première étude exploratoire avec des équipages experts de voile olympique
+
+avait montré que la coordination de leurs activités à bord n’était pas toujours
+
+performante, mais révélait des moments de « fonctionnement optimal » et de
+
+« dysfonctionnements » (jugés selon des critères objectifs de performance et de
+
+vécu subjectif des régatiers) au cours des régates. Les dysfonctionnements
+
+étaient associés à des formes d’activité collective qualifiées de
+
+« non-coopératives », i.e., dans lesquelles l’activité de chacun ne visait pas à
+
+faciliter l’activité de l’autre, voire cherchait à la contrarier (e.g.,
+
+concurrence entre partenaires dans la prise de décision tactique) (Saury,
+
+2001).
+
+La présente étude visait, dans le prolongement de la première, à identifier
+
+les phénomènes sous-jacents aux transitions entre les formes coopératives et
+
+non-coopératives d’activité collective afin de comprendre leur genèse dans le
+
+cours de l’activité des équipages, et de permettre, dans le cadre de
+
+l’entraînement, de prévenir l’apparition de formes d’activités collectives
+
+susceptibles de nuire à la performance sportive.
+
+methode
+
+Participants, situations et conditions contractuelles
+
+Huit régatiers experts masculins d’une moyenne d’âge de 27 ans, membres de
+
+l’Equipe de France de voile olympique et composant quatre équipages, ont été
+
+volontaires pour participer à cette étude. Deux équipages naviguaient en 470 (dériveur classique), un en Tornado (catamaran de sport), et un en Forty
+
+Niner (skiff australien). Ils étaient tous constitués depuis plus
+
+d’une olympiade (entre 5 et 11 ans d’expérience commune), et se situaient
+
+entre le deuxième et le huitième rang mondial de leur catégorie au moment de
+
+l’étude.
+
+L’étude fut conduite lors de quatre championnats du circuit européen de voile
+
+olympique, chacun comprenant entre sept et dix régates (d’une durée moyenne
+
+d’une heure) programmées sur cinq journées de compétition. Ces championnats
+
+ont été choisis en concertation avec les régatiers. Le chercheur, expert en
+
+voile, était intégré à la préparation olympique au double titre de chercheur
+
+et de consultant. Il se déplaçait et logeait avec l’équipe durant les
+
+championnats. Des conditions contractuelles établies avec les régatiers
+
+prévoyaient que le dispositif de recueil des données ne devait en aucun cas
+
+constituer une gêne à leur performance, et qu’ils pouvaient interrompre à
+
+tout moment leur participation à l’étude. Ce contrat de collaboration
+
+engageait également le chercheur à mettre à la disposition des équipages
+
+l’ensemble des enregistrements à des fins d’entraînement, et à ne diffuser
+
+ces données qu’avec leur accord explicite. L’ensemble de ces conditions
+
+visaient à garantir une confiance mutuelle indispensable à une collaboration
+
+de longue durée avec des sportifs de haut niveau, et une pleine
+
+participation de ceux-ci à l’étude (Sève et al., 2006).
+
+Recueil des données
+
+Les comportements et communications du barreur-équipier ont été intégralement
+
+enregistrés au cours des régates
+
+à l’aide d’un système embarqué comprenant une caméra miniature, fixée à
+
+l’arrière du bateau, deux micros HF portés par les régatiers, et d’un
+
+émetteur HF permettant la transmission des signaux vidéo et audio. Ceux-ci
+
+étaient enregistrés en continu grâce à un magnétoscope couplé à un récepteur
+
+HF doté d’une antenne directionnelle, installés dans le bateau de
+
+l’entraîneur.
+
+Des verbalisations rétrospectives ont systématiquement été recueillies à
+
+l’issue des journées de championnat, au cours d’entretiens
+
+d’autoconfrontation d’une durée moyenne d’une heure quinze minutes, conduits
+
+séparément avec le barreur et l’équipier. Chaque régatier était confronté à
+
+l’enregistrement des comportements et communications au cours des régates du
+
+jour, et invité à décrire aussi finement que possible son expérience
+
+(actions, communications, focalisations, interprétations et sentiments
+
+significatifs de son point de vue) au cours du déroulement des régates.
+
+Analyse des données
+
+Les enregistrements des comportements et communications à bord, ainsi que les
+
+enregistrements des entretiens d’autoconfrontation ont été intégralement
+
+transcrits, et synchronisés dans un tableau (Annexe, Tableau 1).
+
+Les cours d’expérience ont ensuite été documentés pour une régate complète
+
+par équipage. Celle-ci fut choisie parmi l’ensemble des régates à partir de
+
+l’avis des régatiers. Il s’agissait de la régate ayant posé, de leurs points
+
+de vue, le plus grand nombre de « problèmes de coopération tactique » au
+
+cours du championnat. La construction des cours d’expérience fut opérée en
+
+référence au modèle du « signe hexadique » (Theureau, 2006), dont les six
+
+composantes furent utilisées comme catégories génériques à documenter à
+
+partir des matériaux empiriques recueillis : (a) l’engagement [E] de
+
+l’acteur dans la situation (ensemble de ses préoccupations à chaque instant
+
+t) ; (b) ses attentes [A] à cet instant ; (c) son
+
+référentiel [S] (éléments de connaissances mobilisés) ; (d) le représentamen
+
+[R] (jugement perceptif, proprioceptif ou mnémonique à l’instant t) ; (e) l’unité de cours d’expérience [U] (action,
+
+communication, focalisation, interprétation ou sentiment significatif pour
+
+l’acteur à cet instant) ; et (f) l’interprétant [I] (connaissances validée,
+
+invalidée ou construite au cours de l’action). Les signes des cours
+
+d’expériences du barreur et de l’équipier lors de la régate furent ainsi
+
+systématiquement documentés, et synchronisés (Annexe, Tableau 2).
+
+Les structures significatives – unités séquentielles ou sérielles de rang
+
+plus élevé que les signes, nommées « séquences » ou « séries » – ont ensuite
+
+été identifiées dans le cours d’expérience de chaque acteur à partir de la
+
+récurrence de leurs préoccupations au cours de la régate. Par exemple, une
+
+séquence pouvait s’organiser chez le barreur ou l’équipier autour de la
+
+préoccupation de « maintenir une interprétation partagée, avec son
+
+partenaire, des évolutions du vent ».
+
+L’analyse parallèle des cours d’expérience a permis de repérer les séquences
+
+coopératives et non-coopératives d’articulation des cours d’expérience.
+
+Celles-ci ont été identifiées en référence aux notions d’interférences
+
+positives vs négatives, et de facilitation (Hoc,
+
+2003). Les séquences coopératives concernaient des moments au cours desquels
+
+l’activité de chacun visait à faciliter l’activité de l’autre, ou à s’y
+
+ajuster de façon congruente ; les séquences non-coopératives concernaient
+
+les moments au cours desquels l’activité de l’un ou des deux partenaires ne
+
+visait ni à faciliter ni à s’ajuster à celle de l’autre, voire cherchait à
+
+la contrarier.
+
+La dernière étape de l’analyse a consisté à thématiser l’organisation locale
+
+(l’enchaînement des signes) et globale (les structures significatives)
+
+correspondant pour chacun des régatiers aux moments de transition entre les
+
+formes coopératives et non-coopératives d’activité collective.
+
+RESULTATS
+
+Trois catégories de séquences archétypes et deux catégories de séries archétypes
+
+caractérisent l’engagement des régatiers dans l’activité collective. Les
+
+séquences archétypes visent à, (a) maintenir (ou s’assurer d’) une
+
+interprétation commune de la situation avec son partenaire, (b) s’accorder sur
+
+une décision tactique, et (c) coordonner ses déplacements et comportements à
+
+bord avec ceux de son partenaire. Les séries archétypes caractérisent les
+
+préoccupations des régatiers visant, (a) à évaluer la fiabilité de l’activité de
+
+son partenaire, et (b) à influencer les jugements et les comportements de son
+
+partenaire. Dans les limites de cet article et au regard de ses objectifs, nous
+
+détaillons exclusivement la présentation de ces deux séries archétypes, qui
+
+spécifiaient l’engagement coopératif ou non-coopératif des régatiers. Un exemple
+
+typique de situation de transition entre une forme coopérative et
+
+non-coopérative d’activité collective est présenté en Annexe. Cette situation
+
+sert d’illustration pour les différents points de résultats développés dans
+
+cette section.
+
+Evaluation de la fiabilité de l’activité du partenaire
+
+Surveillance et évaluation de l’activité du partenaire
+
+Deux modalités de surveillance et d’évaluation de l’activité du
+
+partenaire sont distinguées.
+
+(a) Le contrôle de la congruence entre les informations
+
+transmises par le partenaire et ses propres jugements de la
+
+situation. Les deux partenaires cherchent à maintenir une
+
+interprétation partagée des situations grâce à leurs communications
+
+mutuelles d’informations tout au long des régates. Cependant, ils
+
+exercent périodiquement des contrôles visuels directs des informations
+
+transmises par leur partenaire. Ainsi, ces informations, qui engendrent
+
+chez chacun des attentes perceptives particulières, se révèlent plus ou
+
+moins congruentes avec les jugements qu’ils portent sur la situation
+
+lors de ces contrôles. Dans l’exemple présenté en Annexe, le premier
+
+temps se caractérise par la congruence des interprétations de la
+
+situation entre les deux partenaires. Le barreur interprète la situation
+
+de régate en accord avec les informations que lui communique son
+
+partenaire. Lors d’un deuxième temps, le barreur observe la partie « au vent » du plan d’eau. La position
+
+défavorable de leur équipage par rapport aux bateaux adverses lui
+
+apparaît subitement, contrairement à ses attentes. Ce jugement
+
+transforme l’interprétation de la situation par le barreur (il considère
+
+à cet instant que leur bateau subit une « gêne »
+
+d’un adversaire), et son engagement dans la situation (ses
+
+préoccupations devenant alors « d’influencer
+
+l’équipier pour le pousser à virer »).
+
+(b) L’inférence des informations manifestes et
+
+non-manifestes pour son partenaire. Les régatiers évaluent la
+
+fiabilité des jugements de leur partenaire en inférant les informations
+
+susceptibles d’être effectivement prises en compte par lui à chaque
+
+instant, compte-tenu des contraintes spécifiques de sa tâche (e.g., sa
+
+position dans le bateau). En déterminant quelles informations sont
+
+effectivement accessibles ou non pour leur partenaire, ils apprécient la
+
+fiabilité des informations transmises par ce dernier. Dans
+
+l’illustration présentée en Annexe, l’équipier appréhende par exemple le
+
+jugement porté par le barreur (« Au dessus ils
+
+avancent et en dessous ils avancent ») comme peu fiable, car
+
+ainsi qu’il l’exprime en autoconfrontation, de son point de vue le
+
+barreur « ne voit vraiment que ces bateaux là [les
+
+bateaux sous-le-vent]. Il ne voit pas ceux qu’il a
+
+dans le dos [les bateaux au vent] ».
+
+Cette activité de surveillance et d’évaluation de l’activité du
+
+partenaire génère pour chaque régatier un certain degré de surprise,
+
+ainsi que la perception à chaque instant d’un certain degré d’accord ou
+
+de désaccord avec son partenaire dans l’interprétation de la situation
+
+de régate.
+
+Construction de jugements de confiance à l’égard
+
+de l’activité du partenaire
+
+La perception d’accords ou de désaccords s’accompagne de la construction
+
+continue de jugements de confiance à l’égard du partenaire, qui s’opère
+
+selon deux modalités.
+
+(a) La reconnaissance de comportements typiques du
+
+partenaire. Chaque régatier évalue la fiabilité de l’activité
+
+de son partenaire en relation avec un ensemble de comportements reconnus
+
+comme typiques sur la base des expériences vécues dans des situations
+
+passées (qui constituent une part de leur référentiel mobilisé dans les
+
+situations de régate). Dans l’exemple, le barreur reconnaît dans les
+
+propos de l’équipier (« Ok, c'est bon. On réaligne
+
+ceux d'au dessus, là. On va un peu mieux. Ils sont retombés au
+
+dessus ») une tendance à appréhender la situation d’une façon
+
+optimiste, ainsi qu’il l’a exprimé en autoconfrontation (« Ouais, il ne dira pas trop : ‘Ca refuse’, il dira
+
+deux fois plus ‘Ca adonne’(…) c’est surtout pour rester un peu
+
+optimiste qu’il dit ça… »). Symétriquement, l’équipier
+
+reconnaît dans la déclaration du barreur « Au-dessus
+
+ils avancent et en dessous ils avancent » un comportement
+
+typique, auquel il accorde une fiabilité limitée, ainsi qu’il l’a
+
+commenté (« ouais, mais bon ça je me méfie bien… on
+
+verra après parce que ça il le dit encore… Parce que Gaël il se
+
+retourne, et ceux d'au-dessus ils avancent tout le temps (…) ça
+
+arrive à chaque manche quoi… dès qu'il relève la tête ceux
+
+d'au-dessus, ils avancent, il me dit ‘ils sont décalés’ ».
+
+(b) L’inférence des préoccupations du partenaire dans
+
+la collaboration. Les régatiers explorent les comportements de
+
+leur partenaire afin d’inférer leurs préoccupations et interprétations,
+
+en relation avec l’historique de chaque situation de régate. Dans
+
+l’exemple présenté en Annexe, le barreur interprète les comportements de
+
+l’équipier comme témoignant de la préoccupation de « se conforter dans
+
+son option » (i.e., continuer à gauche du plan d’eau, éviter de virer de
+
+bord).
+
+Les transitions entre les formes coopératives et non-coopératives
+
+d’activité collective s’accompagnent donc de processus de
+
+validation-invalidation de connaissances issues d’expériences passées,
+
+ou de construction de connaissances nouvelles concernant leur
+
+partenaire, en relation étroite avec les situations de régates. Ces
+
+connaissances contribuent à former un jugement de confiance dans
+
+l’activité du partenaire, qui détermine l’engagement de chaque régatier
+
+dans l’activité collective.
+
+Influence de l’activité du partenaire
+
+Dans les formes non-coopératives d’activité collective, les partenaires
+
+manifestaient des préoccupations d’influence de l’activité de l’autre, qui
+
+s’exerçaient selon deux modalités typiques.
+
+(a) Influence des jugements perceptifs et des
+
+interprétations du partenaire. Cette influence s’opère par la
+
+communication d’informations jugées « non
+
+objectives », ou en contradiction avec celles communiquées par leur
+
+partenaire. Dans ce cas, les régatiers rendent délibérément manifestes à
+
+leur partenaire des informations non congruentes avec celles qui sont
+
+communiquées par lui. Dans l’exemple précédent, l’intervention du barreur
+
+« au dessus, ils avancent et en dessous ils
+
+avancent » est en contradiction avec celle de l’équipier, survenue
+
+quelques secondes plus tôt : « Ok, c'est bon. On réaligne
+
+ceux d'au dessus, là. On va un peu mieux. Il sont retombés au
+
+dessus ».
+
+(b) Influence des évaluations de la situation par le
+
+partenaire. Cette influence est recherchée par les régatiers
+
+lorsqu’ils accentuent leurs évaluations (positives ou négatives) de la
+
+situation, réitèrent ces évaluations, ou formulent des évaluations
+
+contradictoires avec celles annoncées par le partenaire. C’est typiquement
+
+le cas de l’intervention du barreur dans l’exemple précédent (
+
+« 
+
+On a pas mal perdu…») qui contredit l’intervention de
+
+l’équipier survenue peu de temps avant (« Ok, c'est bon
+
+(…) On va un peu mieux… »).
+
+Ces deux modalités témoignent à la fois d’un masquage des désaccords et des
+
+divergences d’interprétations perçues par les régatiers, et d’une influence
+
+tacite des décisions devant être assumées par son partenaire. Dans certains
+
+cas, l’articulation des cours d’expérience traduit des relations de
+
+compétition entre les deux, visant à imposer à l’autre une interprétation ou
+
+une décision.
+
+Conditions d’apparition des formes coopératives et non-coopératives
+
+Les formes coopératives et non-coopératives d’activité collective peuvent se
+
+succéder rapidement au cours d’une même régate, traduisant le caractère
+
+dynamique de cette activité collective. L’analyse de leurs conditions
+
+d’apparition permet d’en distinguer de deux sortes :
+
+(a) Les effets de la dynamique de l’activité
+
+collective. Ceux-ci concernent les fluctuations du jugement d’accord ou
+
+de désaccord entre les partenaires, perçus par chacun, résultant de leurs
+
+interactions. Dans l’exemple précédent, à la suite de la tentative du
+
+barreur d’influencer la décision de l’équipier, le premier a perçu les
+
+comportements du second comme révélant son accord avec lui (« pour Thierry aussi, ça devient évident en fait, à ce moment-là.
+
+Quand je lui dis… il se dit : ‘Merde, c'est vrai’. Là, il remet un peu
+
+les pieds sur terre… »). La perception de la congruence des
+
+interprétations des deux partenaires ouvre alors une nouvelle séquence
+
+d’activité coopérative, succédant à une séquence de concurrence entre eux.
+
+(b) Les contraintes situationnelles. Celles-ci
+
+concernent les exigences des tâches de pilotage du bateau, la pression
+
+temporelle, et l’incertitude relative aux évolutions du vent. Les formes
+
+coopératives et non-coopératives apparaissent typiquement en relation avec
+
+certaines de ces conditions. Par exemple, l’évaluation de la fiabilité des
+
+comportements du partenaire n’apparaît que lorsque la tâche ne sollicite pas
+
+le régatier d’une façon exclusive (Barreur : « là, je ne
+
+peux pas me retourner, je suis obligé d'être hyper concentré, de
+
+regarder les autres bateaux. On est dans des vagues, là, c'est vachement
+
+dur à tenir. C'est pour ça que je ne me retourne pas »).
+
+DISCUSSION Et conclusion
+
+Les activités « coopératives » au sein des équipages experts en voile
+
+Les formes d’activité collective au sein d’équipages experts de voile en
+
+compétition ne résultent pas de la seule mise en œuvre de procédures de
+
+coordination des activités préétablies et répétées lors des entraînements.
+
+Elles émergent, de façon partiellement indéterminée, de la dynamique des
+
+interactions entre les partenaires, et des processus de construction de
+
+significations accompagnant leur activité individuelle et l’articulation
+
+collective des activités à bord. Ces processus concernent l’interprétation
+
+continue des situations de régate par chaque régatier, le contrôle du
+
+partage des interprétations, l’influence des interprétations et des
+
+décisions du partenaire, et l’enquête sur la fiabilité de l’activité de son
+
+partenaire. La description de ces activités rejoint les résultats d’une
+
+autre étude, qui a mis en évidence des processus analogues de régulation et
+
+de vérification du partage des informations contextuelles entre partenaires
+
+lors de matchs de double en tennis de table. Les pongistes mettaient en jeu
+
+des processus d’enquête, de surveillance, de mise en visibilité et de
+
+masquage à l’égard de leurs propres partenaires dans le cours de leurs
+
+interactions. Ils cherchaient également constamment à estimer, sur la base
+
+des informations contextuelles auxquelles ils avaient accès, le degré de
+
+confiance pouvant être accordé à leurs propres interprétations et aux
+
+interprétations de leur partenaire (Poizat, 2006 ; Poizat et al., 2007). De
+
+tels processus peuvent également être comparés – moyennant la prise en
+
+compte des limites d’une telle comparaison, concernant des recherches
+
+conduites avec des cadres théoriques et des méthodes différentes – avec
+
+certains phénomènes empiriques mis en évidence dans les recherches de
+
+psychologie ergonomique des activités coopératives. La surveillance et
+
+l’évaluation de l’activité du partenaire que nous avons décrite peuvent
+
+notamment être comparées aux « interférences de contrôle mutuel » au sein
+
+d’équipes de travail (Hoc, 2003). De même, les processus de construction de
+
+connaissances et de jugements de confiance à l’égard du partenaire peuvent
+
+être rapprochés des activités du niveau de la métacoopération dans ces
+
+recherches (Hoc, 2003). Nos résultats nous incitent cependant à souligner
+
+l’originalité de l’activité collective que nous avons décrite. En effet, le
+
+contrôle mutuel recouvre des activités qui sont, dans le domaine du contrôle
+
+aérien par exemple, explicites et encouragées dans la conception des
+
+activités coopératives comme condition d’efficacité et de fiabilité. En
+
+revanche, la surveillance et l’évaluation de l’activité du partenaire au
+
+sein des équipages de voile (ou des équipes de tennis de table) sont souvent
+
+masquées et participent à une activité qui ne vise pas toujours à faciliter
+
+l’activité du partenaire. De même, le niveau de la métacoopération concerne
+
+des activités réflexives décrites comme se développant essentiellement hors
+
+de l’action et à long terme. Or les processus de construction de
+
+connaissances et de jugements de confiance à l’égard du partenaire que nous
+
+avons décrits accompagnent continument l’action en cours, faisant apparaître
+
+un processus permanent de développement de la coopération, y compris en
+
+compétition et pas seulement lors des entraînements.
+
+Coopération : facilitation de l’activité du partenaire ou de la
+
+performance ?
+
+Par définition la coopération est associée à la facilitation de l’activité du
+
+partenaire : elle traduit une « interférence positive » dans l’activité
+
+collective, par opposition aux « interférences négatives », qui
+
+caractérisent les activités compétitives (Hoc, 2003). Or nos résultats,
+
+comme ceux de Poizat (2006), montrent que l’activité « coopérative »
+
+d’experts sportifs est susceptible de s’inscrire temporairement dans des
+
+rapports d’influence mutuelle soit facilitatrice soit antagoniste, tout en
+
+visant, du point de vue de chacun, la réalisation d’une performance
+
+collective élevée. Ce constat nous incite à différencier les notions de facilitation de l’activité du partenaire et de facilitation de la performance collective. Dans
+
+certains cas, au sein des équipages de voile, ces deux visées peuvent être
+
+antinomiques du point de vue des régatiers : prendre la meilleure décision
+
+tactique pour l’équipage suppose dans ce cas de s’opposer temporairement à
+
+son partenaire. Les résultats de Poizat et al. (2007)
+
+renforcent l’idée d’une dualité coopérative/compétitive des activités entre
+
+partenaires en sport. Ils montrent que les mêmes processus de régulation et
+
+de vérification du partage d’informations contextuelles sont mis en jeu dans
+
+les interactions coopératives (partenaires lors de matchs de double), et
+
+compétitives (adversaires lors de matchs de simple), en tennis de table. Ils
+
+montrent également que l’asymétrie du partage des informations contextuelles
+
+est liée au rapport de force dans les situations compétitives, mais qu’elle
+
+est aussi liée à l’efficacité relative des partenaires dans les situations
+
+coopératives, ce que les auteurs qualifient de « statut temporaire » des
+
+joueurs. La notion de rapport de forces, qui caractérise classiquement des
+
+interactions compétitives, pourrait donc également avoir une pertinence pour
+
+caractériser des interactions coopératives entre experts sportifs, sans pour
+
+autant que les moments de « compétition » entre partenaires ne soient
+
+systématiquement associés à des moments de dysfonctionnements ou de
+
+dégradation de la performance collective.
+
+Ces analyses sont de nature à enrichir le questionnement sur la pertinence de
+
+la distinction entre les activités coopératives et compétitives dans les
+
+situations sportives : d’une part celles-ci seraient fondées sur des
+
+mécanismes communs (Hoc, 2003), d’autre part, les interactions sportives
+
+pourraient être fondamentalement marquées par une dualité
+
+coopérative/compétitive, qu’il s’agisse de tâches coopératives ou de les
+
+tâches compétitives.
+
+BIBLIOGRAPHIE
+
+Cannon-Bowers, J.A., Salas, E., &amp; Converse, S. (1993). Shared mental
+
+models in expert team decision making. In N.J. Castellan, Jr. (Ed.), Individual and group decision making (pp. 221-246).
+
+Hillsdale, NJ : LEA.
+
+Cooke, N. J., Gorman, J. C., &amp; Winner, J. L. (2007). Team cognition.
+
+In F. Durso, R. Nickerson, S. Dumais, S. Lewandowsky, and T. Perfect (Eds.),
+
+Handbook of Applied Cognition, 2nd Edition (pp.
+
+239-268). Wiley.
+
+Eccles, D.W., &amp; Tenenbaum, G. (2004). Why an expert team is more than
+
+a team of experts : a social-cognitive conceptualization of team
+
+coordination and communication in sport. Journal of Sport
+
+and Exercise Psychology, 26, 542-560.
+
+Hoc, J-M. (2003). Coopération humaine et systèmes coopératifs. In G. Boyd
+
+(Ed.), Ingénierie cognitive, IHM et cognition (pp.
+
+139-187). Paris : Hermès.
+
+Hutchins, E. (1995). Cognition in the wild.
+
+Cambridge, MA : MIT.
+
+Maturana, H.R., &amp; Varela, F.J. (1994). L’arbre de la
+
+connaissance. Paris : Addison-Wesley.
+
+Poizat, G. (2006). Analyse en ergonomie cognitive de
+
+l’activité collective en tennis de table. Contribution à la connaissance
+
+des interactions humaines. Thèse de doctorat non publiée,
+
+Université de Rouen, Rouen.
+
+Poizat, G., Sève, C., &amp; Saury, J. (2007). Intelligibilité mutuelle et construction de signification dans les
+
+interactions homme-homme : Un exemple en tennis de table. Session
+
+thématique « L’intelligibilité mutuelle dans la coopération homme-homme et
+
+la coopération homme-machine ». EPIQUE’07, Nantes.
+
+Reimer, T., Park, E.S., &amp; Hinsz, V.B. (2006). Shared and coordinated
+
+cognition in competitive and dynamic task environments : an
+
+information-processing perspective. International Journal
+
+of Sport and Exercise Psychology, 4, 376-400.
+
+Saury, J. (2001). Activité collective et décision
+
+tactique en voile. Actes du IXème Congrès International de l’ACAPS.
+
+Valence, France.
+
+Saury, J., &amp; Talon, J-F. (Eds.) (1997). L’entraînement de haut niveau en voile. Paris : Editions FFV.
+
+Sève, C., Poizat, G., Saury, J., &amp; Durand, M (2006). Un programme de
+
+recherche articulant analyse de l’activité en situation et conception
+
+d’aides à la performance : un exemple en entraînement sportif de haut
+
+niveau. @ctivités, 3(2), 46-64.
+
+Surmin, R. (1981). L’équipage en régate, une étude de
+
+relation dyadique coopérative et complémentaire en situation de
+
+régate. Thèse de psychologie sociale expérimentale, Université Paris
+
+VII.
+
+Theureau, J. (2006). Le cours d’action : méthode
+
+développée. Toulouse : Octarès.
+
+ANNExe
+
+Contexte et circonstances de la situationCette
+
+séquence concerne un équipage de 470. Elle s’est déroulée au cours du
+
+premier louvoyage au près, 1’55" après le départ. L’équipage navigue au
+
+près tribord amures, et fait une trajectoire vers
+
+« la gauche du parcours » conformément à sa stratégie initiale.
+
+Comportements et communications en situation
+
+Extraits d’autoconfrontation du barreur (Gaël)
+
+Extraits d’autoconfrontation de l’équipier
+
+(Thierry)
+
+1
+
+er
+
+temps [13’55" – BA : Allez, ça
+
+repart… Ca a bien allongé en dessous déjà… EQ : Ouais, j'ai
+
+vu.BA : allez il y a de l'air qui arrive devant et à gauche.
+
+Allez faut se décaler… pointer un petit peu dans les bouffes
+
+!EQ : Ok, c'est bon. On réaligne ceux d'au dessus, là. On va
+
+un peu mieux. Il sont retombés au dessus, hein.BA : Ouais.
+
+On a jamais eu autant d'à gauche depuis tout à l'heure, là.
+
+Ca a tendance à partir au 60.EQ : Le Russe a renvoyé au
+
+dessus…BA : Attention les vagues.EQ : … 5-6 longueurs. Ca
+
+revient un peu en ado, là, non ?BA : Ouais, léger BA : Maxi
+
+gauche, (Inaudible) gauche.EQ : ok il y en a un qui croise
+
+au vent, on laisse passer. – Temps]
+
+Logiquement, on n'a on n'a pas pris un
+
+départ trop mauvais et les bateaux au-dessus, ils
+
+devraient être alignés de la même façon quoi. C'est ce
+
+que moi j'imaginais dans ma tête, tu vois, avant de
+
+regarder (…) je crois que les autres s'alignent derrière
+
+comme il m'a dit (…) Pour moi, il faut continuer parce
+
+que je pense que les autres bateaux, ils sont alignés
+
+comme nous on est avec ceux de devant, si tu veux quoi
+
+(…). On n'a rien à gagner en virant. Donc de toute
+
+façon, je ne dis rien, parce que je pense que bon la
+
+meilleure solution, c'est de continuer en fait…
+
+2
+
+ème
+
+temps [Temps" – BA : [se retourne et regarde au vent] On a pas mal
+
+perdu, on est peut-être trop gêné làEQ : ok le Russe
+
+re-chope du vent au dessusBA : Au dessus, ils avancent et en
+
+dessous ils avancent. On est dans le clapot là… – 15’20" ]
+
+Et puis, quand je me retourne, je dis :
+
+« Oh putain ! »… (…) Là, je regardais. Tu vois, là… là,
+
+je me suis rendu compte que ben il y avait souci quoi…
+
+Voilà, « Au-dessus, ils avancent, au-dessous, ils
+
+avancent. » (…) Tu vois, il ne me l'a pas dit quoi. En
+
+fait… là, on n'est vraiment pas bien quoi. Donc (…) Ben
+
+ouais, je le pousse à virer, là, c'est clair. Ouais. Là,
+
+je le pousse à virer… Je l'influence pour virer, c'est
+
+sûr (…) on va moins vite que les autres, donc c'est
+
+qu'on est… gênés. Donc il faut faire quelque chose pour
+
+s'en sortir (…) Ouais, c'est lui qui est chargé de la
+
+décision au près quoi. Ouais, c'est un peu ça quoi (…)
+
+Sachant que là, de toute façon, la décision, c'est moi
+
+qui la prend réellement…
+
+CH : Gaël te dit : « Ca a l'air de bien allonger en dessus », je
+
+crois.EQ : Ouais, ouais. Ouais. Parce qu'il y a Benoît
+
+qui doit être là, l'Argentin, les quelques bateaux, tout de suite
+
+après le départ, ils ont avancé quoi (…) ils étaient un peu plus
+
+tendus au Trapèze, peut-être un peu plus de vent. Plus d'intensité
+
+dessous...CH : Alors toi, ta préoccupation là, c'est quoi ? EQ
+
+: Ben là, c'est uniquement de faire marcher... Là,
+
+c'est tenir le plus longtemps possible, avec Thibault… parce qu'on
+
+veut aller à gauche et… c'est vraiment ça quoi, tenir…EQ :
+
+[vidéo : « Le Russe a renvoyé au dessus… 5-6 longueurs] Ca, c'est le repère que je me fixe (…) le Russe qui a
+
+croisé juste devant, hop qui se met en tribord au dessus, donc
+
+c'était un super repère quoi, pour voir l'évolution du vent et
+
+l'évolution des bateaux. En fait, je donne une info à Gaël, mais
+
+c'est en même temps pour que… c'est le repère qu'on a… dans la
+
+flotte quoi. En fait, au dessus de nous, il n'y a plus personne qui
+
+a pris un bon départ et qui continue en tribord. On était les plus
+
+les plus au vent de ceux qui ont pris le départ et qui continuent
+
+(…) Donc le Russe, il devient un super repère, pour nous, pour
+
+l'évolution. Juste à 5-6 longueurs, un petit peu en arrière de notre
+
+travers. (…)
+
+Là, c'est toujours, faire marcher, tenir avec Thibault
+
+au maximum…
+
+Tableau 1 : Extrait de protocole pour l’analyse des cours d’expérience.
+
+Synchronisation temporelle des transcriptions des communications et
+
+comportements in situ, et des entretiens
+
+d’autoconfrontation.
+
+COURS D’EXPERIENCE DU BARREUR
+
+COURS D’EXPERIENCE DE L’EQUIPIER
+
+SIGNE
+
+34 - GAEL
+
+E
+
+Optimiser la vitesse du bateau / se décaler, « pointer » pour éviter
+
+la gène du bateau adverse / « tenir » pour aller à gauche
+
+A
+
+Gain en cap
+
+SIGNE 38 - THERRY
+
+S
+
+Il est possible de « pointer » dans les risées
+
+E
+
+Optimiser la vitesse du bateau / « tenir » le plus longtemps possible
+
+pour aller à gauche / maintenir une interprétation commune de la
+
+situation
+
+R
+
+Les bateaux sous le vent ont « allongé » / risée devant et à gauche
+
+A
+
+Bateaux au vent « alignés »
+
+U
+
+Com : « il faut se décaler, pointer dans les risées » / « de l’air
+
+devant et à gauche »
+
+S
+
+Projet stratégique « gauche »
+
+I
+
+Nd.
+
+R
+
+Bateaux au vent « retombés » / incitation du barreur
+
+SIGNE
+
+35 - GAEL
+
+U
+
+Com : « OK c’est bon on réaligne ceux d’au-dessus, on va un peu
+
+mieux…»
+
+E
+
+Optimiser la vitesse du bateau / continuer à gauche / maintenir une
+
+interprétation commune de la situation
+
+I
+
+Nd.
+
+A
+
+Bateaux au vent alignés
+
+S
+
+Evolution du vent à gauche à aller à gauche
+
+R
+
+Vent maxi gauche / cap compas = 60° / Evaluation positive de
+
+l’équipier
+
+U
+
+Com : « jamais eu autant d’à gauche, tendance à partir au 60 »
+
+I
+
+Nd.
+
+Tableau 2 : Extrait de documentation en parallèle des cours d’expériences du
+
+barreur et de l’équipier.
+
+
+

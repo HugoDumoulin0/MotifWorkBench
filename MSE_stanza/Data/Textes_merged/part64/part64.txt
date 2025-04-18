@@ -1,0 +1,682 @@
+
+
+Dans le cadre d’une thèse consacrée aux langues et parcours d’intégration d’immigrés
+
+maghrébins de France, nous nous sommes intéressé au répertoire verbal de ces
+
+derniers et, notamment, au rapport qui existe entre les variétés dites « haute » et
+
+« basse » dans le concept de diglossie.
+
+1. Bref aperçu de la situation sociolinguistique au Maghreb
+
+Le Maghreb est constitué de trois pays (Tunisie, Maroc, Algérie) dont la langue
+
+officielle est l’arabe. Sur cet ensemble géographique, coexistent plusieurs
+
+familles de « langues », « dialectes » ou « variétés » (pour ne pas prendre
+
+parti puisque « nommer une langue, c’est déjà prendre position »
+
+(Tabouret-Keller, 1982 : 27)) que l’on peut regrouper de manière lapidaire :
+
+l’arabe qui est la langue de la majorité des locuteurs, le berbère qui concerne
+
+un nombre important de locuteurs et le français. Le système linguistique du
+
+Maghreb est ce que l’on appelle, selon la définition de Ferguson (1959), une diglossie que l’on peut définir rapidement comme la
+
+coexistence :
+
+۰ d’une variété haute de langue arabe qualifiée de littéraire, standard ou
+
+classique, apprise à l’école, lue, écrite, parlée exclusivement en contextes
+
+formels (H), qui se trouve également être la langue du Coran, ce qui lui confère
+
+un statut très particulier (Romaine, 1989 : 37 ; Calvet, 1999 : 240), celui de
+
+langue prestigieuse, noble et sacrée,
+
+۰ avec des variétés qualifiées de basses, dialectes, variétés et vernaculaires,
+
+arabes et berbères (B) exclusivement utilisées en contextes informels, dans la
+
+vie courante.
+
+Il est possible de reprocher à cette présentation assez « manichéenne » de ne pas
+
+prendre en compte les espaces intermédiaires ou le continuum entre les variétés
+
+puisque certains auteurs (Laroussi, 1993 ; Taleb Ibrahimi, 1995) attestent de la
+
+présence d’un arabe médian ou moyen entre H et B ainsi que de différences entre
+
+arabe littéraire et classique, tout comme d’autres auteurs attestent de la
+
+présence d’autres variétés de français (Caubet, 1998 ; Abbassi, 1977). Mais il
+
+faut ajouter à cette première répartition diglossique le français, langue de
+
+l’ancien colonisateur, qui est toujours présent dans beaucoup de domaines comme
+
+l’administration ou l’enseignement supérieur par exemple, et qui peut être
+
+considéré comme une seconde variété haute. C’est d’ailleurs cette présence du
+
+français qui fait dire à certains auteurs (Romaine, 1989 : 34 ; Calvet, 1999 :
+
+231) qu’il s’agit d’une triglossie plutôt que d’une diglossie. Cependant, que
+
+l’on parle de di- ou de triglossie, le critère majoritairement retenu par les
+
+chercheurs est la séparation fonctionnelle des variétés : H en contexte formel
+
+et B dans la vie courante. Par ailleurs, si la variété haute est généralement
+
+celle de l’écrit, certaines variétés d’arabe dialectal sont en voie de
+
+standardisation et sont maintenant aussi utilisées à l’écrit pour les lettres et
+
+nouvelles. Il en va de même pour le(s) berbère(s) qui est (sont) également en
+
+voie de standardisation et qui dispose(nt) aussi d’écritures (Ameur &amp;
+
+Boumalk, 2004 ; Chaker, 2002). Enfin, concernant les variétés basses, on peut
+
+selon certains auteurs et locuteurs, opérer des distinctions entre arabe
+
+marocain, algérien et tunisien (Caubet, 1998 ; Laroussi, 1993 ; Benjelloun, 2002
+
+; Embarki, 2004 ; Allal, 2004), différences qui sont, en outre, attestées par
+
+l’existence de cours d’arabe marocain dispensés par l’INALCO (Institut National
+
+des Langues et Civilisations Orientales), par l’épreuve facultative d’arabe
+
+dialectal (5 variétés dialectales au total) proposée au baccalauréat français,
+
+ou encore par les différentes variétés d’arabe proposées dans les ELCO
+
+(Enseignement des Langues et Cultures d’Origine) des écoles primaires
+
+françaises. Nous nous appuierons donc, dans le cadre de cet article, sur les
+
+notions de di- et/ou de triglossie (présence du français en plus en variété
+
+haute) sans tenir compte des réserves précédemment émises quant à la réalité de
+
+la séparation fonctionnelle. En revanche, nous prendrons en compte les
+
+distinctions entre les arabes marocain, tunisien et
+
+algérien ainsi qu’entre les différentes « langues », « dialectes » ou «
+
+variétés » berbères.
+
+2. Le recueil de données
+
+Les données sur lesquelles se fonde cette étude sont le résultat d’entretiens
+
+semi-directifs enregistrés (individuels et très majoritairement en français),
+
+effectués auprès d’un groupe de 105 personnes, toutes originaires du Maghreb,
+
+pour la plupart fraîchement arrivées en France (70% de primo-arrivants, moins de
+
+trois ans en France [critère élargi] et 30% d’ex-primo-arrivants, plus de trois
+
+ans en France), et rencontrées dans 13 organismes de formation de la région
+
+Rhône-Alpes au sein desquels se sont déroulés les entretiens (en « tête-à-tête »
+
+dans un espace isolé). Les trois nationalités maghrébines (algérienne, 60% ;
+
+tunisienne, 15% ; marocaine, 24%) sont représentées tout comme le sont la
+
+plupart des locuteurs des différents parlers berbères (kabyle, tachelhit,
+
+tamazight, tarifit, chaoui), locuteurs qui demeurent cependant minoritaires au
+
+sein du groupe enquêté. Les femmes sont nettement majoritaires (63%) et la
+
+fourchette d’âge s’étend de 16 à 60 ans avec une majorité d’enquêtés âgés de 16
+
+à 30 ans (49%). La plupart des personnes relèvent de l’immigration dite «
+
+familiale », 82% d’entre elles sont sans emploi (majoritairement les femmes),
+
+55% ont été scolarisées, 16% un peu et 29% pas du tout (très majoritairement les
+
+femmes). Il ne s’agit donc pas d’un échantillon représentatif mais plutôt de la
+
+« photo » d’une tranche de population de la région Rhône-Alpes, rencontrée sur
+
+des lieux de formation en 2004. Au cours de ces entretiens, basés sur la
+
+méthodologie d’une enquête précédente (Biichlé, 2003), les personnes ont été
+
+interrogées, entre autres (parcours migratoire, situation sociale, réseau
+
+social, difficultés rencontrées, aides éventuelles, etc.), sur les langues,
+
+dialectes ou variétés qu’elles parlaient ou comprenaient et ce, à l’aide de
+
+questions ouvertes et fermées. Ces questions d’ordre « linguistique » visaient à
+
+mettre en évidence les représentations des personnes sur leur répertoire verbal
+
+et, plus particulièrement, sur leur rapport à la langue du pays d’immigration, «
+
+le » français. Une première distinction, clairement partagée par les enquêtés et
+
+confirmée par nos travaux précédents, a été opérée entre production et réception
+
+(« parler » et « comprendre »), et une seconde, émanant plus directement du
+
+chercheur, a pu être établie entre les questions ouvertes et les questions
+
+fermées ; les résultats obtenus variant très souvent d’un type de questionnement
+
+à l’autre. Dans une précédente étude (Biichlé, 2003), ces écarts ont atteint
+
+parfois 40%… Nous avons, par conséquent, opté pour deux types de questionnement
+
+espacés, questions fermées en début d’entretien vs
+
+questions ouvertes à la fin, au sein desquelles nous avons dissocié la
+
+production de la réception :
+
+۰ Questions fermées (début d’entretien) : Parlez-vous « telle » langue ?
+
+Comprenez-vous « telle » langue ?
+
+۰ Questions ouvertes (fin d’entretien) : Quelles sont les langues que vous parlez
+
+? Quelles sont les langues que vous comprenez ?
+
+۰ Les diverses réponses ont été réparties en trois types : les « oui », les « non
+
+» et les « un peu », dernière catégorie moins précise qui regroupe les « un
+
+petit peu », les « pas beaucoup », les « peu », etc.
+
+2.1. Les questions fermées
+
+Au début de chaque entretien (entre une demi-heure et une heure), il a été
+
+demandé aux enquêtés, sous forme de questions fermées, s’ils comprenaient (réception) chacune des langues, dialectes ou
+
+variétés en présence. Ex : Comprenez-vous le kabyle ?, Comprenez-vous
+
+l’algérien ?, etc. Dans un second temps, il a été également demandé aux
+
+enquêtés s’ils parlaient (production) chacune des
+
+langues, dialectes ou variétés en présence : Ex : Parlez-vous le tarifit ?,
+
+Parlez-vous le tunisien ?, etc. Le tableau suivant rend compte des réponses
+
+faites aux deux questions (réception et production) dans le cadre de
+
+questions fermées.
+
+Tableau 1 - Les questions fermées : différences représentationnelles
+
+entre production et réception
+
+Ce tableau montre les différences entre les représentations que se font les
+
+locuteurs de leurs « compétences » en production et en réception. Il y a par
+
+exemple, dans la partie haute du tableau, un chiffre toujours plus élevé
+
+dans la colonne des « non » en production (parlez-vous) [cf. +] que celui
+
+des « non » en réception (comprenez-vous), ce qui tend à confirmer assez
+
+logiquement, que les enquêtés pensent mieux comprendre que parler
+
+(différence moindre en langues berbères = nombre de locuteurs moindre).
+
+Cependant, on peut voir dans la partie basse du tableau que cette tendance
+
+n’est pas confirmée dans deux cas : l’arabe littéraire et le français. On
+
+peut observer que non seulement les chiffres de la colonne des « non » en
+
+production sont les mêmes que ceux des « non » en réception, mais qu’en
+
+outre, les chiffres de la colonne des « oui » en production sont légèrement
+
+supérieurs à ceux des « oui » en réception… Or, il se trouve que l’arabe
+
+littéraire est précisément la variété haute de la diglossie maghrébine et
+
+que le français, si l’on accepte le concept de triglossie, est également une
+
+variété haute, ou au moins, si l’on refuse le concept, la langue du pays
+
+d’accueil. Sans entrer plus loin dans l’analyse, nous pouvons donc poser
+
+qu’au minimum, ces deux langues sont l’objet de représentations différentes,
+
+et qu’il n’est donc pas illogique de retrouver cette différence de statut
+
+entre H et B dans les représentations que les locuteurs se font de la
+
+production et de la réception.
+
+2.2. Les questions ouvertes
+
+À la fin de chaque entretien, il a été demandé aux enquêtés, sous forme de
+
+questions ouvertes, quelles langues ils comprenaient
+
+(réception). Ex : Quelles sont les langues que vous comprenez ?. Puis, dans
+
+un second temps, il leur a été demandé quelles langues ils parlaient (production). Ex : Quelles sont les langues que vous
+
+parlez ?. Le tableau suivant rend compte des réponses faites aux deux
+
+questions (réception et production) dans le cadre des questions ouvertes.
+
+Tableau 2 - Les questions ouvertes : différences représentationnelles
+
+entre production et réception
+
+Dans ce tableau, on observe à nouveau les différences entre les
+
+représentations que se font les locuteurs de leurs « compétences » en
+
+production et en réception. Il y a par exemple, dans la partie haute du
+
+tableau, un chiffre quasiment toujours plus élevé dans la colonne des « oui
+
+» en réception (comprenez-vous) [cf. +] que celui des « oui » en production
+
+(parlez-vous), ce qui tend à confirmer à nouveau, assez logiquement, que les
+
+enquêtés pensent mieux comprendre que parler (différence moindre en langues
+
+berbères = nombre de locuteurs moindre). Cette tendance est d’ailleurs
+
+également confirmée par la présence de l’anglais qui apparaît ici et qui «
+
+n’échappe pas à la règle ». Le seul cas pour lequel cette tendance n’est pas
+
+confirmée est le tarifit, ce qui s’explique aisément puisque seuls les
+
+locuteurs de cette « langue » s’expriment à ce sujet. En revanche, on peut
+
+une nouvelle fois observer, dans la partie basse du tableau, que la tendance
+
+à considérer que l’on « comprend » mieux que l’on ne « parle » n’est pas
+
+toujours vérifiée, et ce, pour les deux mêmes langues que dans le tableau
+
+n°1 : l’arabe littéraire et le français, langues pour lesquelles les
+
+chiffres des « oui » sont identiques dans la colonne réception
+
+(comprenez-vous) et production (parlez-vous). Ces résultats confirment de
+
+précédentes observations (Biichlé, 2003) dans le sens où les locuteurs font
+
+une distinction assez nette entre production et réception, et ce, qu’il
+
+s’agisse de questions fermées ou de questions ouvertes ; en d’autres mots,
+
+on comprend mieux que l’on ne parle. Cependant, deux langues semblent faire
+
+exception à cette « règle » : l’arabe littéraire et le français.
+
+3. Le contraste entre réalité des pratiques et représentations
+
+Il apparaît donc, que l’arabe littéraire et le français sont l’objet de
+
+représentations différentes des autres langues, dialectes ou variétés du
+
+Maghreb, et même, des langues étrangères, comme l’attestent les résultats de
+
+l’anglais. Cependant, la réalité des pratiques langagières en arabe littéraire
+
+et en français paraît différer sensiblement des représentations sur la
+
+production et la réception telles qu’exprimées dans les deux tableaux.
+
+3.1. L’arabe littéraire
+
+L’arabe littéraire ne s’apprend qu’en contexte institutionnalisé (à l’école)
+
+et cette langue est loin d’être partagée par la totalité de nos enquêtés et
+
+plus généralement, par la population maghrébine. Les taux d’analphabétisme
+
+au Maghreb étaient, en effet, de 48% au Maroc en 1999, 26,5% en Algérie en
+
+2002, 27% en Tunisie en 1999 (sites officiels nationaux). Or, seuls 22,8%
+
+des enquêtés déclarent ne pas comprendre l’arabe littéraire alors que 30%
+
+d’entre eux n’ont pas été scolarisés. Ce dernier point est d’ailleurs
+
+corroboré par des déclarations sur le lien entre scolarité et connaissance
+
+de l’arabe littéraire :
+
+Ex : « La vraie langue arabe, moi j’ai jamais fait à l’école,ni français ni arabe» ; « Un peu parce que je j’ai  oublié, je peux prends (apprendre) lire... et ben comme ça parler arabe ou fran arabe di /fC sha/ (littéraire), je peux pas».
+
+En outre, l’arabe littéraire n’est jamais utilisé dans la vie courante, il
+
+semble donc peu probable de bénéficier des mêmes « compétences » en
+
+production et en réception.
+
+Ex : « C’est difficile, il y a beaucoup de difficultés pour parler ça».
+
+Nous pouvons donc formuler plusieurs hypothèses pour expliquer cette
+
+divergence entre pratiques et représentations. Comme précédemment évoqué, le
+
+prestige de l’arabe littéraire, souvent qualifié d’« arabe vrai » par les
+
+enquêtés, est renforcé par le fait que celui-ci est la langue du Coran
+
+(sourate XXVI, verset 195), plus prestigieuse, considérée comme plus belle,
+
+plus logique, plus à même d’exprimer de hautes pensées, etc. Ne pas
+
+connaître celui-ci peut donc être mal vécu pour toute personne croyante. Les
+
+personnes se trouvent alors, pour la plupart, dans cette « double contrainte
+
+» d’être, en tant qu’Arabe et musulman, censées connaître l’arabe littéraire
+
+(Grandguillaume, 1979 : 6), lequel n’est pas leur langue primaire de
+
+socialisation et qu’elles n’ont pas forcément appris à l’école. Donc,
+
+déclarer ne pas comprendre ou parler l’arabe littéraire peut être vécu comme
+
+un manque de loyauté envers sa religion ou son identité, nous évoquons ici
+
+l’arabité. Il est d’ailleurs possible de relever dans le corpus d’entretiens
+
+de nombreuses déclarations qui vont dans ce sens :
+
+۰ sur la supposée normalité de connaître l’arabe littéraire : « Dans notre religion normalement, on parle l’arabe que on
+
+comprend » ;
+
+۰ sur le lien avec la religion : « Non…[…] un petit peu… ouais, parce que je, je fais ma prière, j’ai
+
+comprendre » ;
+
+۰ sur le prestige : « Pour moi, la plus dure (langue), c’est l’arabe, la vraie arabe » ;
+
+۰ sur l’identité : « Y’a des moments que tu parles avec les
+
+vrais arabes littéraires, on comprend rien
+
+[…]
+
+eux y parlent, c’est vraiment le vrai arabe, les vrais
+
+arabes, c’est pas on dit que c’est pas des vrais, c’est des vrais et
+
+nous
+
+… »
+
+3.2. Le français
+
+On peut observer le même décalage entre pratiques et représentations telles
+
+qu’exprimées dans les tableaux, pour le français. En effet, pendant le
+
+déroulement de l’entretien, les déclarations sont plus nuancées et attestent
+
+la plupart du temps d’une réception supérieure à la production :
+
+۰ « Je comprends un petit peu… je peux pas répondre;
+
+۰ « Je un peu je comprends mais je parler, […]c’est difficile» ;
+
+۰ Chaque fois même compris tout, j’arrive pas à parler, je sais pas».
+
+De plus, notre perception des « compétences » des locuteurs durant ces
+
+entretiens va également dans ce sens. Plusieurs hypothèses peuvent être
+
+formulées pour expliquer cette divergence entre pratiques et
+
+représentations. En effet, le français est la « langue » de l’ancien
+
+colonisateur, il est toujours présent dans l’administration et requis pour
+
+toutes les études supérieures. Il bénéficie donc d’un prestige certain, et
+
+de plus, dans le cas de nos enquêtés, il est la langue du pays d’accueil et
+
+symbolise un certain idéal linguistique (« parler comme il faut ! ») et
+
+au-delà, un enjeu en terme d’intégration à la nouvelle société. Beaucoup de
+
+déclarations des enquêtés vont d’ailleurs dans ce sens :
+
+۰ sur la nécessité de connaître le français : « Ici, on vivre
+
+en France, on parle français » ; «
+
+Le français c’est bien le français, y’a pas de langue
+
+français y’a rien » ;
+
+۰ sur la relation langue/intégration : « Heu d’apprendre le
+
+français et d’intégrer en France
+
+» ;
+
+۰ sur la nécessité de « bien » parler : « Moi je fais toutes
+
+les possibles pour il faut bien parler
+
+» ; « Premièrement on parle bien français, il faut
+
+voilà… et surtout surtout pour la parole quand y parle
+
+[…]
+
+y faut bien parler ».
+
+4. Conclusion
+
+Il est possible de faire plusieurs critiques à ces résultats, notamment :
+
+۰ le manque de significativité statistique de certains écarts. Les écarts entre
+
+les résultats des questions sur la production et sur la réception, sont parfois
+
+ténus, ce qui peut s’expliquer par le nombre de locuteurs de certaines langues
+
+(les langues berbères) qui ne réussissent pas forcément les tests de
+
+significativité (notamment le test du chi2). Nous nous sommes donc fondé, pour
+
+pallier cette éventuelle lacune, sur une déclaration de Labov (1976 : 305-306) à
+
+propos de ses travaux sur l’effacement du [t] et du [d] dans la communauté noire
+
+(VNA), qui estime dans une situation analogue qu’« une telle convergence de tant
+
+d’évènements indépendants suffit à nous porter à un degré de sûreté que la
+
+plupart des recherches sociales ou psychologiques continuent d’ignorer » ;
+
+۰ le mode de questionnement et le profil de l’intervieweur (français) qui peuvent
+
+avoir induit des biais ;
+
+۰ la prise en compte des concepts de di- ou triglossie alors que les enquêtés
+
+vivent en France. Toutefois, Lüdi &amp; Py (1986 : 26) considèrent que dans une
+
+situation analogue (groupe de migrants dans lequel la langue d’origine est
+
+abondamment parlée), un rapprochement pourrait être fait avec « de la diglossie
+
+avec bilinguisme ».
+
+En revanche, le fait de retrouver les mêmes tendances, pour les mêmes langues,
+
+dans les deux modes distincts de questionnement (ouvert/fermé), ne nous paraît
+
+pas fortuit. Ces contradictions entre réalité des pratiques langagières et
+
+déclarations, et entre les déclarations elles-mêmes, confirment le « poids » des
+
+représentations attachées à la « langue » et tout particulièrement, aux variétés
+
+hautes, puisque celles-ci, outre le côté purement communicationnel, sont souvent
+
+associées de manière prégnante à la religion, à l’identité, à l’intégration, à
+
+la réussite, etc. Il est d’ailleurs possible de faire le lien entre ces
+
+résultats et le fait que 60% des enquêtés, tous supposés bilingues, répondent «
+
+non » à la question « parlez-vous plusieurs langues ? ». On peut également voir,
+
+dans ces contradictions, l’expression de la double contrainte qui existe dans
+
+l’articulation entre représentations de référence (sociales et
+
+décontextualisées), et représentations en usage (individuelles et
+
+contextualisées), sachant que la tension entre ces deux entités parvient «
+
+souvent à un point de rupture proche de la contradiction formelle » (Cavalli,
+
+2003 : 260). Nous n’avons ici, ni la volonté ni la prétention d’affirmer que ces
+
+résultats ne puissent être le fruit de quelque biais méthodologique… cependant,
+
+cette multiplication de coïncidences nous semble pour le moins source d’intérêt
+
+et constitue une manière différente de mettre en évidence la séparation
+
+fonctionnelle des variétés qui, si elle est peut-être parfois contestée dans la
+
+réalité des pratiques (moins bonne « compétence » en production, existence de
+
+continuums, de variétés intermédiaires, etc.), semble subsister au niveau
+
+représentationnel.
+
+Références bibliographiques
+
+Abbassi, Abdelaziz (1977). A sociolinguistic analysis of
+
+multilingualism in Morocco, Thèse, University of Texas, Austin.
+
+Allal, Lamia (2004). Vivre à la croisée de deux langues : les
+
+comportements langagiers des enfants issus de l’immigration tunisienne, in
+
+Langues et Contacts de Langues dans l’Aire
+
+méditerranéenne, Boyer, Henri (Ed). Paris : L’Harmattan, 112-129.
+
+Ameur, Meftaha &amp; Boumalk, Abdallah (2004). Standardisation de l’amazighe, Actes du séminaire organisé par le
+
+Centre de l’Aménagement Linguistique à Rabat, 8-9 décembre 2003, Publication
+
+de l’Institut Royal de la Culture Amazighe, Série : Colloques et séminaires
+
+n°3.
+
+Benjelloun, Said (2002). Une double graphie, latine et arabe, pour
+
+enseigner l’arabe marocain, in Codification des langues de
+
+France, Caubet, Dominique, Chaker, Salem &amp; Sibille, Jean (Eds).
+
+Paris : L’Harmattan, 293-305.
+
+Biichle, Luc (2003). Vers un parler maghrébin de france à fonction
+
+véhiculaire et vernaculaire, Mémoire de DEA, Université Stendhal Grenoble3.
+
+Calvet, Louis-Jean (1999). Pour une écologie des langues
+
+du monde. Paris : Plon.
+
+Caubet, Dominique (1998). Alternance de codes au Maghreb : Pourquoi le
+
+français est-il arabisé ?, plurilinguismes, alternance des
+
+langues et apprentissage en contexte plurilingue, CERPL, 14 : 121-142.
+
+Cavalli, Marisa (2003). Langue, bilinguisme et
+
+représentations sociales au Val d’Aoste. Aoste : IRRE-VDA.
+
+Chaker, Salem (2002). Variation dialectale et codification graphique en
+
+berbère. Une notation usuelle pan-berbère est-elle possible ? in Codification des langues de France, Caubet,
+
+Dominique, Chaker, Salem &amp; Sibille, Jean (Eds). Paris : L’Harmattan,
+
+341-354.
+
+Embarki, Mohamed (2004). Les deux niveaux de motivation de la variation
+
+phonétique en situation de contact des langues, in Langues
+
+et contacts de langues dans l’aire méditerranéenne. Paris :
+
+l’Harmattan, 183-196.
+
+Ferguson, Charles (1959/1972). « Diglossia », in Language and Social Context, Giglioli, Pier Paolo (Ed).
+
+Harmondsworth : Penguin, 232-251.
+
+Grandguillaume, Gilbert (1979). Langue, identité et culture nationale au
+
+Maghreb, Peuples méditerranéens, 9 : 3-28.
+
+Labov, William (1976). Sociolinguistique, Kihm,
+
+Alain (trad.). Paris : Minuit.
+
+Laroussi, Foued (1993). Processus de minoration linguistique au Maghreb,
+
+Cahiers de Linguistique Sociale, 22 : 45-56.
+
+Lüdi, Georges &amp; Py, Bernard (1986). Être
+
+Bilingue. Berne : Peter Lang.
+
+Romaine, Suzanne (1989). Bilingualism. Oxford :
+
+Blackwell.
+
+Tabouret-Keller, Andrée (1982). Entre bilinguisme et diglossie, du malaise
+
+des cloisonnements universitaires au malaise social, in La
+
+Linguistique, revue de la société internationale de linguistique
+
+fonctionnelle. Paris : PUF, 17-43.
+
+Taleb Ibrahimi, Khoula (1995). Les Algériens et leur(s) langue(s) :
+
+éléments pour une approche sociolinguistique de la société algérienne. Alger
+
+: El Hikma.
+
+
+

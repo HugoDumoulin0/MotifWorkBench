@@ -1,0 +1,694 @@
+
+
+Introduction
+
+Bien qu’étant au cœur de la plupart de nos activités quotidiennes, les processus
+
+qui président à la construction du sens restent aujourd’hui encore très mal
+
+connus. Comment des mots comme vue , vie ou volant, plus ou moins inertes quand ils
+
+sont isolés, prennent-ils vie au sein d’un slogan comme « Au volant, la vue
+
+c’est la vie » ? Autrement dit, comment se fait l’alchimie subtile qui, d’une
+
+succession de signes au sens plus ou moins précis, donne naissance à un contenu
+
+informatif ou émotionnel fort ? Pourquoi certaines phrases sont-elles ambiguës
+
+et d’autres non ? L’ambiguïté a-t-elle une pertinence cachée ou n’est-elle qu’un
+
+artefact à la vie dure? Toutes ces questions sont à la base du travail présenté
+
+ici. Il s’agit de cerner un peu mieux les processus de construction du sens et
+
+de les modéliser. Or, toute tentative d’approche de la construction du sens se
+
+heurte au fait que la plupart des mots prennent des sens différents, mais
+
+apparentés, selon l’énoncé dans lequel ils sont insérés. Ce phénomène qu’on
+
+appelle polysémie est naturel, et il ne pose aucun problème dans une
+
+conversation courante. De fait, pouvoir jouer sur plusieurs sens constitue bien
+
+plus qu’une source d’amusement et de calembours. Richesse, souplesse,
+
+efficacité, créativité de la langue reposent sur ces glissements de sens
+
+permanents. Le modèle utilisé ici vise donc à rendre compte de la centralité de
+
+la polysémie dans les mécanismes de construction du sens.
+
+1. Modèle
+
+Donner une place centrale à la polysémie dans les processus de constructions du
+
+sens, ne pas la reléguer à un choix a posteriori dans une
+
+liste de sens pré-établie, c’est admettre que la construction du sens est un
+
+processus dynamique : les sens des différentes unités (lexicales, syntaxiques,
+
+grammaticales…) présentes dans la phrase s’influencent mutuellement, se
+
+spécifient progressivement tout en construisant un sens pour l’énoncé global. Le
+
+modèle utilisé ici est celui proposé par Victorri (Victorri &amp; Fuchs, 1996).
+
+Il s’inscrit dans le cadre théorique des systèmes dynamiques. Le principe est le
+
+suivant : on associe à chaque mot polysémique un espace sémantique dans lequel
+
+se déploient ses différents sens. Les autres mots présents dans l’énoncé
+
+définissent une fonction potentielle et ce sont les bassins de cette fonction
+
+potentielle qui permettent de déterminer le sens pris par le mot étudié, dans
+
+l’énoncé considéré.
+
+Figure 1 - Modèle (Victorri &amp; Fuchs)
+
+Le travail présenté ici vise à questionner ce modèle. Pour tester sa validité,
+
+nous l’avons implémenté et utilisé dans une méthode de calcul automatique du
+
+sens d’un adjectif en présence d’un nom donné.
+
+2. Espaces sémantiques
+
+La première étape dans l’implémentation du modèle consiste à associer un espace
+
+sémantique à chaque unité polysémique. Ploux et Victorri (1998) ont mis au point
+
+une méthode de construction automatique de ces espaces sémantiques qui repose
+
+sur l’analyse d’un graphe de synonymie (Dictionnaire Electronique des Synonymes,
+
+DES : www.crisco.unicaen.fr).
+
+Nous illustrons ici cette méthode à l’aide de l’adjectif méchant.
+
+2.1. La sémantique de méchant
+
+On peut distinguer pour m échant les principaux sens
+
+suivants (les exemples sont tirés du TLFI [258]
+
+et du Petit Robert) :
+
+(1)  Qui est de mauvaise qualité : un méchant costume
+
+(2)  sans valeur, sans compétence : un méchant billet, un méchant avocat
+
+(3)  qui ne remplit pas correctement sa fonction : une méchante mémoire
+
+(4)  Dangereux ou désagréable, qui provoque des désagréments : une méchante affaire
+
+(5)  Remarquable, extraordinaire : une méchante voiture
+
+(6)  qui provoque délibérément la souffrance d’autrui : chien méchant, méchante fée
+
+(7)  qui témoigne d’un désir de provoquer la souffrance d’autrui : un regard méchant
+
+On voit donc se dégager dans la sémantique de méchant,
+
+d’une part des sens intensifs (ou désintensifs) très généraux (sens 1 à 5),
+
+c'est-à-dire qu'ils peuvent s'employer avec la plupart des noms,
+
+essentiellement en antéposition, d’autre part des sens plus riches
+
+sémantiquement (sens 6 et 7.) Le sens 6 qualifie plutôt des comportements ou
+
+des actes attestés. Le sens 7, plus psychologique, qualifie des caractères
+
+ou des intentions. On attend de l’espace sémantique que, bien que construit
+
+de façon tout à fait automatique, il rende compte de cette organisation
+
+sémantique.
+
+2.2. Construction de l’espace sémantique
+
+Figure 2 - un extrait du graphe de synonymie de méchant.
+
+Le DES fournit le graphe de synonymie de méchant : les
+
+sommets du graphe sont méchant et tous ses synonymes,
+
+il y a un lien entre deux de ces adjectifs lorsque le DES indique un renvoi
+
+synonymique. La Figure 2 montre un extrait du graphe de synonymie de méchant. Un synonyme ne suffit pas en général pour
+
+définir un sens du mot étudié. On voit sur la Figure 2 par exemple que bas est à la fois synonyme de brutal et de faible, qui correspondent à
+
+deux sens différents de méchant. Ploux et Victorri
+
+ont donc eu l’idée d’utiliser les cliques du graphe. Une clique est un
+
+ensemble de sommets deux à deux synonymes le plus grand possible. Le graphe
+
+de la Figure 2 présente ainsi 3 cliques : &lt;bas ; brutal
+
+; mauvais ; méchant&gt;, &lt;bas ; faible ;
+
+mauvais ; méchant&gt; et &lt;fier ; intraitable ; méchant ; sauvage&gt;. On va
+
+considérer qu’une clique correspond, en première approximation, à une nuance
+
+de sens possible pour le mot considéré. Les cliques seront donc les points
+
+de l’espace sémantique que l’on cherche à construire. Nous ne détaillons pas
+
+ici la technique de construction de l’espace sémantique (cf. Ploux &amp; Victorri, 1998 ou Venant, 2006). Disons simplement
+
+que l’espace sémantique est l’espace euclidien engendré par méchant et tous ses synonymes. A chaque adjectif
+
+correspond un axe de l’espace. A chaque clique du graphe correspond un point
+
+de cet espace dont les coordonnées dépendent des synonymes qu’elle contient.
+
+Cet espace est muni de la distance du chi2 (Bouroche &amp; Saporta, 1980),
+
+de façon à rendre compte des proximités sémantiques réelles entre les
+
+différents sens du mot étudié. On utilise une Analyse en Composantes
+
+Principales pour obtenir une visualisation en deux ou trois dimensions de
+
+cet espace. La Figure 3 présente la visualisation de l’espace sémantique
+
+associé à méchant selon les deux premiers axes de
+
+l’analyse en composantes principales.
+
+Figure 3 - Espace sémantique associé à méchant axes 1 et 2
+
+On voit que l’espace construit automatiquement rend correctement compte de la
+
+sémantique de l’adjectif méchant. En effet, on peut
+
+constater que les sens de méchant se répartissent en
+
+trois zones. Dans la zone 1, en haut à gauche, on trouve les sens intensifs.
+
+La partie droite de l’espace sémantique organise les sens les plus
+
+spécifiques de méchant. Dans la zone 2, en haut à
+
+droite, on trouve les cliques correspondant aux sens s’appliquant surtout à
+
+des personnes et à leurs actes. Dans la zone 3, en bas à droite on trouve
+
+regroupées les cliques correspondant à des sens psychologiques de méchant (sens 7.)
+
+3. Polysémie adjectivale
+
+Nous avons dans un premier temps restreint notre étude aux adjectifs
+
+qualificatifs du français. Ils constituent en effet un champ d’expérimentation
+
+idéal car ils sont abondamment décrits d’un point de vue linguistique (Faucher,
+
+1971 ; Goes, 1999 ; Honeste, 2001) tout en étant encore assez peu explorés d’un
+
+point de vue informatique (Bouillon &amp; Viegas, 1999). Nous avons ainsi pu
+
+nous faire une idée très précise des phénomènes que nous étions susceptibles de
+
+rencontrer au cours de notre étude. La polysémie des adjectifs est ainsi liée
+
+aux deux grandes caractéristiques fondamentales du sémantisme adjectival:
+
+۰ une grande extension, parfois si grande qu’elle provoque ce que Goes appelle la
+
+désémantisation, au point qu’il est courant « d’avoir une
+
+interprétation qui est si largement dépendante du nom qu’il est difficile de
+
+désintriquer ce qui dans la valeur globale obtenue vient de l’adjectif et ce
+
+qui vient du nom. » (Goes, 1999).
+
+۰ le besoin de se rattacher à un nom pour prendre tout leur sens (incomplétude
+
+référentielle chez Guillaume). Le comportement sémantique de l’adjectif est donc
+
+très dépendant de celui du nom qu’il accompagne. Il s’agit en fait d’une
+
+influence mutuelle.
+
+Enfin, une étude du comportement adjectival ne peut ignorer les changements de
+
+sens lors du passage à l’antéposition. Ils sont complexes, non systématiques et
+
+difficiles à expliquer de façon globale. On retiendra que certains auteurs,
+
+comme Goes, proposent des explications à plusieurs facettes. Les facteurs les
+
+plus efficients semblent être l’extension de l’adjectif d’une part, et le
+
+sémantisme du nom d’autre part.
+
+Nous attendons du modèle qu’il soit capable de rendre compte de ces
+
+caractéristiques sémantiques des adjectifs. Avant de lancer une étude à grande
+
+échelle, nous avons voulu étudier la plausibilité du système par une étude en
+
+profondeur des adjectifs sec, curieux et méchant. L’étude de l’adjectif sec (Venant, 2004) nous a permis de vérifier que le
+
+système était capable de prendre en compte l’influence du nom recteur dans le
+
+calcul du sens d’un adjectif. Testé sur les 20 noms les plus fréquemment
+
+employés avec sec dans le corpus Frantext Catégorisé
+
+(20ème siècle hors poésie), le système a déterminé le
+
+sens correct de sec dans 79% des cas. Ces résultats très
+
+prometteurs nous ont incité à continuer. Une première étude menée sur l’adjectif
+
+curieux (François et al., 2002
+
+commenté dans Venant, 2006) avait montré que le système était capable de rendre
+
+compte des changements de sens entre antéposition et postposition. Cette étude
+
+avait d’autre part mis en évidence le rôle de l’extension de l’adjectif dans sa
+
+prédisposition plus ou moins grande à l’antéposition. Nous poursuivons ici
+
+l’investigation de ce phénomène sur l’adjectif méchant
+
+dont le sémantisme en antéposition est plus complexe que celui de curieux. Méchant possède en effet
+
+une très grande extension (il peut s’appliquer à n’importe quoi, de la table au
+
+costume en passant par l’avocat, la fée, ou la pendule). En antéposition, dans
+
+ses emplois intensifs (et désintensifs), il est sujet au phénomène de
+
+désémantisation décrit par Goes. Enfin, les changements de sens entre
+
+antéposition et postposition ne sont pas systématiques. On trouve en effet des
+
+cas où le changement de sens est flagrant et d’autres où le sens de l’adjectif
+
+est le même qu’il soit placé avant ou après le nom. Ainsi s’il est préférable de
+
+ne pas engager un méchant avocat pour se défendre à un
+
+procès, un avocat méchant peut au contraire se montrer
+
+redoutable. En revanche, on redoutera de la même façon de recevoir un coup méchant ou un méchant
+
+coup.
+
+4. Influence du nom recteur
+
+On rend compte ici de l’aspect dynamique de la construction du sens, c’est à dire
+
+le fait que le sens du nom influence celui de l’adjectif en même temps que celui
+
+de l’adjectif influence celui du nom. On va donc procéder à une double
+
+désambiguïsation. La désambiguïsation du nom est réalisée en calculant sa classe
+
+de sélection distributionnelle (CSD) relativement à l’adjectif qui le modifie,
+
+en l’occurrence l’adjectif méchant (pour la définition et
+
+la méthode de construction automatique des CSD voir Jacquet &amp; Venant,
+
+2005). Le principe est le suivant : on cherche dans
+
+un corpus à rapprocher le nom d’autres noms qui influencent de la même manière
+
+le sens de méchant. Pour ce faire, on rapproche les noms
+
+partageant les mêmes contextes lexico-syntaxiques (un contexte lexico-syntaxique
+
+est par exemple « être recteur de méchant en tant
+
+qu’épithète antéposée » ou encore « être complément d’objet du verbe aimer »). Pour obtenir automatiquement ces classes, nous
+
+avons utilisé une technique d'analyse distributionnelle sur un gros corpus
+
+analysé par l'analyseur syntaxique SYNTEX. Le principe du calcul est le suivant.
+
+À chaque unité lexicale on associe sa fiche
+
+distributionnelle, constituée par la fréquence relative de ses différents
+
+contextes syntactico-lexicaux. Pour obtenir les classes de sélection
+
+distributionnelle associées à un nom donné, en tant que recteur d'un adjectif
+
+donné, on établit d'abord la liste des noms qui ont été rencontrés comme recteur
+
+de cet adjectif, puis on construit automatiquement des regroupements au sein de
+
+cette liste, en calculant une distance entre ces noms à partir de leur fiche
+
+distributionnelle. Ce qui nous intéresse particulièrement ici, c'est que la
+
+classe d'un nom varie en fonction de l'adjectif étudié, et c'est cette classe
+
+qui permet ensuite de désambiguïser l'adjectif, et de lui assigner le sens
+
+correct en présence du nom considéré.
+
+Figure 4 - La CSD associée au nom dépend de l'adjectif qui le
+
+modifie
+
+Deux classes distributionnelles [ANTE vs. POST] sont
+
+calculées pour chaque mot, l’une à partir des fréquences en antéposition,
+
+l’autre à partir des fréquences en postposition. On mesure ensuite l’influence
+
+du nom recteur sur la sémantique de méchant en associant
+
+à chacune de ces classes une fonction potentielle définie sur l’espace
+
+sémantique. Rappelons qu’à chaque point de l’espace sémantique correspond une
+
+clique du graphe de synonymie de méchant. La valeur de la
+
+fonction en chaque point dépend des fréquences de cooccurrence (en antéposition
+
+pour une classe [ANTE], en postposition pour une classe [POST]) de chacun des
+
+noms constituant la classe avec chacun des adjectifs constituant la clique (pour
+
+le détail des calculs voir Venant, 2006). La Figure 5 montre les fonctions
+
+potentielles associées aux CSD du nom bête. Les bassins
+
+de ces fonctions indiquent la zone de l’espace sémantique dans lequel le nom
+
+contraint l’adjectif à prendre son sens.
+
+Figure 5 - Fonctions potentielles associées aux classes distributionnelles
+
+de bête en tant que recteur de méchant.
+
+5. Désambiguïsation de l’adjectif
+
+Il s’agit de déterminer le sens que prend l’adjectif méchant en présence d’un nom donné. Par sens, nous entendrons ici la zone
+
+(zone 1 - sens intensifs, zone 2 - sens comportementaux ou zone3 - sens
+
+psychologiques) de l’espace sémantique correspondant au sens de méchant dans le syntagme étudié. Notons que ces zones ont
+
+été définies manuellement. Le système calcule une fonction potentielle pour
+
+chacune des zones. En chaque point, la valeur de la fonction dépend de
+
+l’appartenance ou non de la clique à la zone considérée. (Figure 6)
+
+Figure 6 - Fonctions potentielles associées aux zones de sens de méchant
+
+La méthode de désambiguïsation est la suivante : étant donné un syntagme méchant + N ou N + méchant, le
+
+système détermine la CSD [ANTE] ou la CSD [POST] associée à N en tant que
+
+recteur de méchant, il calcule ensuite la fonction
+
+potentielle associée à cette CSD et la compare à chacune des fonctions
+
+potentielles associées aux zones de sens de l’espace sémantique de méchant. Il calcule ainsi un degré d’affinité entre le
+
+nom N et chacune des zones de sens. Là où les zones obtenant le plus fort degré
+
+d’affinité est sélectionnée pour désambiguïser méchant
+
+dans le syntagme étudié. Les calculs ont été menés pour les 40 noms les plus
+
+fréquemment utilisés comme recteur de méchant dans le
+
+corpus Frantext Catégorisé. Le tableau 1 présente quelques exemples :
+
+Tableau 1 - Exemples de résultats
+
+Les résultats que nous obtenons rendent compte des changements de sens entre
+
+antéposition et postposition. Ce sont les sens intensifs qui obtiennent les
+
+scores les plus élevés dans quasiment tous les cas en antéposition. Cela
+
+illustre l’idée qu’on trouve en antéposition les valeurs de sens qui ont la plus
+
+grande extension. Ici c’est clairement la valeur intensive qui a la plus grande
+
+extension. Elle peut s’appliquer à n’importe quoi alors que les deux autres
+
+valeurs ne s’appliquent qu’à des noms animés ou considérés comme tels (on trouve
+
+dans les contes de fées des bois méchants et autres chemins méchants qui font du mal aux gens qui
+
+s’aventurent en leur sein). Selon Honeste (2001), on peut considérer qu’en
+
+antéposition, l’adjectif est conceptualisé avant le nom. Il présente d’abord un
+
+signifié informe car non encore configuré par le support. Le nom vient dans un
+
+deuxième temps fournir le support attendu et la notion qu’il exprime s’associe
+
+avec celle de l’adjectif sans être modifiée. Si en antéposition les sens
+
+intensifs sont omniprésents, il y a des noms pour lesquels ils ne s’imposent pas
+
+forcément. Cheval, couleur, eau, espèce, farce, matin, mot,
+
+nature, parole, taureau, terre donnent à méchant
+
+en antéposition tantôt une valeur générale, tantôt une valeur comportementale.
+
+Le contexte permet souvent de trancher entre les deux valeurs mais ce n’est pas
+
+toujours très clair. On illustre ici le phénomène sur le nom cheval.
+
+A . Sur une route quelconque, à travers la plaine immense et quelconque, au trot de deux  méchants chevaux, nous allons ». [Barrès M]
+
+B. « Non, non, je veux voir maman; ces méchantschevaux ont emporté maman». [Comtesse de Ségur]
+
+Il est difficile de déterminer avec certitude quelle est la valeur sémantique de
+
+méchant dans ces énoncés. Dans l’énoncé A, la
+
+répétition de quelconque nous fait pencher pour une
+
+valeur générale mais au fond le doute est permis. Dans l’énoncé B, on penche
+
+pour une valeur comportementale, tant l’enfant a l’air triste, mais cette valeur
+
+n’est pas fixée. Selon les noms concernés, il s’agit soit d’une indétermination,
+
+soit d’une ambiguïté, qui de toute façon disparaît au passage à la postposition.
+
+Faucher (1971) propose une explication à ce phénomène : l'adjectif postposé
+
+garde son indépendance sémantique vis à vis du nom, ce qui lui confère une
+
+valeur distinctive. Il restreint l'extension du nom. La propriété convoquée
+
+s’applique alors seulement aux éléments de la classe convoqués dans le discours
+
+et ne peut pas être reprise en fonction attributive pour la classe entière. Nos
+
+résultats montrent que notre système est capable de rendre compte de ce
+
+phénomène. Cheval, couleur, dent, eau,
+
+espèce, farce, maison, mot, nature, parole, part, société, taureau, terre
+
+acceptent aussi bien une valeur générale que comportementale en
+
+antéposition, mais ne sélectionnent que la valeur comportementale ou
+
+psychologique en postposition. Pour les noms bête, bois,
+
+bruit, chemin, chose, corps, rire et voix le
+
+changement de sens est encore plus radical puisqu’en antéposition méchant est exclusivement général alors qu’en
+
+postposition il devient comportemental ou psychologique. Le système est capable
+
+aussi de repérer les noms pour lesquels on ne repère pas de changement de sens
+
+lors du passage de l’antéposition à la postposition. C’est le cas ici de coup, part, regard et vérité.
+
+Afin de mesurer l'apport des classes distributionnelles, et donc de la
+
+désambiguïsation simultanée du nom et de l'adjectif, ces résultats ont été
+
+comparés à ceux obtenus, pour les même noms et sur la même tâche, sans utiliser
+
+les classes distributionnelles, c'est-à-dire en associant une fonction
+
+potentielle au nom seul, selon ses fréquences d'emplois avec les différents
+
+adjectifs. Il s'avère que l’utilisation des classes distributionnelles ne fait
+
+perdre aucun des résultats positifs qui apparaissent avec le nom seul. Elle
+
+apporte au contraire quelques nuances de sens (comme par exemple le fait qu'un
+
+méchant esclave l'est au sens générique, en tant
+
+qu'archétype social, avec la sélection des sens intensifs, mais aussi d'un point
+
+de vue comportemental, son écart au type de l'esclave modèle pouvant se traduire
+
+par un comportement violent). L'utilisation des classes distributionnelles
+
+permet aussi d'obtenir des résultats corrects là où l'utilisation du nom seul
+
+génère une erreur ou ne donne pas de résultat du tout Les erreurs rencontrées
+
+sur des noms comme homme ou enfant
+
+(calcul d’une valeur générale en postposition) ne sont pas le fait de
+
+l'utilisation des CSD. Elles montrent clairement les limites de la synonymie
+
+comme description du sens. Le calcul d’une valeur générale en postposition
+
+repose sur les hautes fréquences de cooccurrences de ces noms avec les adjectifs
+
+maigre, faible, pauvre et
+
+petit. Or la synonymie entre méchant et ces
+
+adjectifs n’est plus valable dans le contexte des noms considérés ici, en
+
+présence desquels méchant se colore plutôt d’une valeur
+
+comportementale ou psychologique. Le calcul d’un sens intensif en postposition
+
+pour cheval montre par ailleurs que ces relations de
+
+synonymie, en plus d’être partielles, ne sont valables qu’en antéposition. Nous
+
+travaillons à une méthode d’exploration du graphe adjectival global, qui
+
+permettra de repérer automatiquement les sens intensifs d’un adjectif, ceux qui
+
+ne sont valables qu’en antéposition.
+
+Conclusion
+
+Les analyses détaillées que nous avons menées montrent que les outils
+
+informatiques développés sont très prometteurs. Ils peuvent déjà être appliqués
+
+tels quels à la désambiguïsation automatique de n’importe quel couple nom +
+
+adjectif. Les différentes étapes dans la réalisation et l’analyse des résultats
+
+obtenus à chaque pas ont mis au jour différents problèmes, que nous devrons
+
+résoudre pour aller plus avant. L’utilisation des cliques du graphe de synonymie
+
+s’est avérée fort judicieuse, tant pour la construction des espaces sémantiques
+
+que pour le calcul du sens proprement dit. Le recouvrement de l’espace
+
+sémantique par les cliques contrebalance le fait que la relation de synonymie
+
+est une relation partielle, non transitive et peut dépendre de la position de
+
+l’adjectif, ce qui cause cependant encore quelques problèmes non résolus. Les
+
+outils réalisés ont prouvé que leur utilité pouvait dépasser le cadre du calcul
+
+automatique du sens et fournir des éléments de réflexion sur des phénomènes
+
+aussi subtils que les changements de sens entre antéposition et postposition. Le
+
+travail décrit ici ne constitue cependant que la première étape dans le
+
+processus de validation du modèle utilisé. Nous devons maintenant mener des
+
+évaluations massives sur un échantillon beaucoup plus large d’adjectifs ambigus,
+
+pour ensuite dépasser le cadre du syntagme, passer à l’énoncé voire au texte
+
+tout entier. Ce travail laisse cependant entrevoir tout l’intérêt de
+
+l’utilisation des mathématiques du continu en linguistique.
+
+Références
+
+Bouillon, Pierrette &amp; Viegas, Evelyne (1999). The description of
+
+adjectives for natural language processing : theoretical and applied
+
+perspectives, in Atelier thématique sur la description des
+
+adjectifs pour les traitements informatiques, Institut d’études
+
+scientifiques de Cargëse.
+
+Bouroche, Jean-Marie &amp; Saporta, Gilbert (1980). L’analyse des données. Paris : Presses Universitaires de
+
+France.
+
+Faucher, Edith (1971). La place de l’adjectif. Critique de la notion
+
+d’épithète, Le Français Moderne, 39, 119-127.
+
+François, Jacques, Victorri, Bernard &amp; Manguin, Jean-Luc (2002).
+
+Polysémie adjectivale et synonymie : l’éventail des sens de curieux, in La polysémie, Soutet, Olivier (Eds). Paris : Presses
+
+Universitaires de l’Université de la Sorbonne.
+
+Goes, Jan (1999). L’adjectif. Entre nom et verbe.
+
+Paris/Bruxelles : Duculot.
+
+Honeste, Marie-Luce (2001). Approche cognitive de la fonction adjectivale,
+
+in L’adjectif en français et à travers les langues,
+
+François, Jacques (Eds). Caen : Presses Universitaires de Caen.
+
+Jacquet, Guillaume &amp; Venant, Fabienne (2005). Construction automatique
+
+de classes de sélection distributionnelles, in Actes du
+
+colloque TALN’05, Dourdan.
+
+Ploux, Sabine &amp; Victorri, Bernard (1998). Construction d’espaces
+
+sémantiques à l’aide de dictionnaires de synonymes, in TAL 39(1)
+
+Venant, Fabienne (2004). Polysémie et calcul du sens, in Le poids des mots, Actes des 7
+
+ème
+
+journées internationales d’Analyse des Données
+
+Textuelles, Louvain la neuve.
+
+Venant, Fabienne (2006). Représentation et calcul
+
+dynamique du sens : exploration du lexique adjectival du français.
+
+Mémoire de doctorat de l’EHESS.
+
+Victorri, Bernard &amp; Fuchs, Catherine (1998). La
+
+polysémie. Construction dynamique du sens. Paris : Hermès.
+
+[258] Trésor de la Langue Française Informatisé ()
+
+
+

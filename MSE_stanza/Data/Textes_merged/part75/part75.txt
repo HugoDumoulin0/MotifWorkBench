@@ -1,0 +1,888 @@
+
+
+1. Introduction
+
+Dans un contexte scientifique faisant la part belle aux Sciences de la Cognition,
+
+l’intérêt pour la question de l’articulation entre langage, cognition et
+
+perception est renouvelé. La confrontation de ce questionnement à une demande
+
+industrielle [111] - comment se
+
+construit le jugement perceptif des usagers à propos d’habitacles
+
+automobiles ? - contribue à inscrire la problématique de la référence
+
+dans une perspective de cognition située. Cet article traitera spécifiquement de
+
+la construction dynamique en discours des couleurs en tant qu’objets cognitifs,
+
+à travers l’étude des relations entre pratiques perceptives, lexicalisations en
+
+discours, et représentations. L’analyse de discours recueillis dans des
+
+situations perceptives variées nous permettra de mettre en évidence la
+
+construction en discours de différentes conceptualisations de la couleur à
+
+travers, notamment, l’identification de fonctionnements syntaxiques, indices de
+
+différents modes de construction de la référence.
+
+2. Problématique
+
+2.1. Cadre théorique
+
+L’étude des pratiques langagières est envisagée comme un moyen d’accès
+
+privilégié pour comprendre les modalités de construction des représentations
+
+sensibles et des connaissances du monde perçu. Si les représentations
+
+sensibles sont spécifiques à chaque locuteur, les connaissances collectives
+
+résultent de facteurs historiques, sociaux, culturels et linguistiques. A
+
+travers l’expression discursive d’un locuteur, les représentations
+
+subjectives et les connaissances partagées par l’ensemble de sa communauté
+
+linguistique sont exprimées et co-construites. Ces hypothèses autorisent à
+
+émettre des inférences à propos des représentations et connaissances, à
+
+partir des analyses linguistiques (Dubois, 2000).
+
+Les méthodes expérimentales classiques largement utilisées en
+
+psychologie cognitive, centrées sur l’étude analytique d’un
+
+processus spécifique, à partir d’une description du monde empruntée aux
+
+sciences de la nature, se placent dans une perspective dite « bottom-up »,
+
+des bas niveaux de traitement aux représentations centrales, qui tendent à
+
+maximiser le rôle des contraintes physiologiques des récepteurs et du même
+
+coup à valider des hypothèses universalistes. En contrepoint, l’approche
+
+holistique de la cognition située qui est à la base de notre réflexion,
+
+prend également en compte les traitements descendants, considérant les
+
+constructions cognitives comme le résultat d’une expérience à la fois
+
+individuelle et partagée, et met davantage en évidence la diversité
+
+culturelle (Rastier, 1991).
+
+En linguistique, la plupart des travaux sont structurés
+
+à partir de catégories linguistiques, telles que les catégories
+
+grammaticales, les formes linguistiques, les processus énonciatifs. Notre
+
+approche nous conduit à une problématique qui prend en compte ces différents
+
+plans linguistiques comme autant de plans de description permettant de
+
+comprendre comment langage et cognition co-construisent dynamiquement en
+
+discours significations et catégories cognitives à partir de l’expérience
+
+sensible et des ressources langagières disponibles chez les locuteurs.
+
+2.2. Les couleurs
+
+2.2.1. Débat entre relativisme et universalisme
+
+La dénomination et la catégorisation des couleurs,
+
+terrain emblématique du débat entre universalisme et relativisme, ont
+
+suscité tant en psychologie qu’en linguistique, de nombreux travaux
+
+(pour une revue voir Taylor, 2002), à la suite de ceux de Berlin et al. (1969). Les théories relativistes
+
+actuelles en linguistique (Lucy, 1997) et en anthropologie (Foley, 1997)
+
+reprenant l’héritage relativiste (cf. par ex. Conklin, 1964), insistent
+
+sur le mode de questionnement utilisé dans les expériences pour la mise
+
+en évidence des concepts de couleur. En effet, dans les travaux issus de
+
+Berlin et al. (1969), les couleurs sont posées
+
+comme étant d’évidence adéquatement représentées par des color chips et par des basic
+
+color terms, le sens lexical s’inscrivant dans une sémantique à
+
+valeur référentielle.
+
+De plus, malgré l’abondance d’études « universalistes » sur la vision des
+
+couleurs en neurosciences, certaines études (cf. Zeki, 2005 par ex.)
+
+mettent l’accent sur le fait que les contraintes physiologiques ne
+
+suffisent pas pour expliquer la vision des couleurs ni la catégorisation
+
+des couleurs. Les couleurs, en tant que concepts, sont des constructions
+
+de l’esprit (mind), et non du cerveau (brain), qui reposent non pas uniquement sur les
+
+propriétés des récepteurs sensoriels mais aussi sur le type d’activité
+
+dans laquelle les individus sont engagés. En psychologie cognitive,
+
+Roberson et al. (2005) apportent également des
+
+arguments empiriques en faveur d’une théorie psychologique relativiste,
+
+remettant en cause l’évidence du concept de couleur. Cependant
+
+l’ensemble de ces travaux posent les couleurs comme concepts
+
+historiquement situés.
+
+2.2.2. Des objets culturels, linguistiques et cognitifs à réévaluer
+
+Nous considérons ici les couleurs comme des objets
+
+culturels situés, à travers leur histoire (Pastoureau, 2000),
+
+la diversité des expériences et des pratiques de la couleur (Goodwin,
+
+1997), ainsi que la façon dont les locuteurs négocient ces expériences
+
+au travers des contraintes linguistiques et des productions discursives.
+
+Les couleurs apparaissent alors comme des concepts au
+
+statut non unifié. Certaines cultures ne possèdent pas dans
+
+leur langue de termes de couleur, n'ayant pas conceptualisé la couleur
+
+comme une construction cognitive unifiant dans une « dimension » la
+
+diversité des expériences des couleurs. D’autres n’ont pas centré leur
+
+attention sur les dimensions de teinte, de saturation et de contraste
+
+qui caractérisent la description scientifique occidentale du « phénomène
+
+coloré », mais sur des propriétés telles que humide/sec, uni/rayé,
+
+naturel/teint (Wierzbicka, 1996).
+
+Les limites du concept de « basic color term » sont également mises en
+
+évidence dans des travaux linguistiques sur les langues romanes. Au
+
+travers d’analyses lexicographiques, ainsi que de leur fonctionnement en
+
+discours, ces termes s’avèrent comme des termes
+
+libres en regard d’autres termes dépendant de leur contexte
+
+d’énonciation (Kristol, 1978). Enfin, l’analyse de la diversité des
+
+modes de dénominations de couleurs fournit des éléments de preuve de la
+
+diversité des représentations cognitives des couleurs : différents
+
+niveaux de catégorisation, couleur comme dimension abstraite ou
+
+rattachée à un objet, etc. (Dubois et al., 2003).
+
+A la lumière de ces différents travaux, les couleurs se révèlent un objet cognitif à réévaluer en discours, à travers
+
+différentes expériences et pratiques perceptives situées.
+
+3. Les couleurs en discours
+
+3.1. Démarche de l’enquête
+
+La démarche globale de la thèse consiste à enregistrer des discours dans des
+
+situations perceptives contrastées. Parmi les différents discours recueillis
+
+auprès de locuteurs français à propos de leur expérience sensorielle et de
+
+leurs pratiques des habitacles automobiles, nous nous intéressons ici à des
+
+discours suscités dans des dispositifs expérimentaux (simulations visuelles
+
+sur un écran plasma® ou dans une salle de réalité virtuelle) et dans des
+
+habitacles réels de voiture. L’enquête a été réalisée avec N. Cavelier
+
+(2003).
+
+3.2. Construction de l’expérience
+
+Les locuteurs décrivent leur ressenti à un enquêteur, face à plusieurs
+
+habitacles variant selon le mode de présentation et selon les propriétés de
+
+couleur, de forme et de matière.
+
+3.2.1. Matériel expérimental
+
+Le premier mode de présentation (dispositif 2D)
+
+est un écran Plasma® proposant aux locuteurs des images statiques
+
+bidimensionnelles représentant l’avant de l’intérieur d’un véhicule. Le
+
+second (dispositif 3D) fait appel aux
+
+technologies de « réalité virtuelle ». Les images sont projetées sur
+
+quatre parois (latérales, frontale, au sol) d’une salle cubique (CAVE®).
+
+Le locuteur, assis dans un siège auto, porte des lunettes
+
+stéréoscopiques munies d’un capteur de mouvement, qui lui permettent de
+
+voir des images tridimensionnelles calculées en temps réel par rapport à
+
+sa position. Le dernier mode de présentation (dispositif REEL) consiste en deux véhicules à l’arrêt.
+
+Les ambiances d’habitacle présentées dans les différents dispositifs
+
+varient selon la forme (deux architectures), la couleur (beige et noir)
+
+et la matière (bois et aluminium).
+
+3.2.2. Locuteurs
+
+15 locuteurs français, 8 femmes et 7 hommes âgés de 23 à 74 ans,
+
+participent à l’étude. Tous sont peu familiers des systèmes de réalité
+
+virtuelle, n’ayant pas de pratique, personnelle ou professionnelle, de
+
+ces technologies.
+
+3.2.3. Guide d’entretien, protocole de recueil, constitution des
+
+corpus
+
+Chaque locuteur est interviewé via la méthode des entretiens
+
+semi-directifs. La construction du guide d’entretien suit les principes
+
+de l’entretien semi-directif (Blanchet, 2003), allant du général au
+
+spécifique et privilégiant les questionnements ouverts (ex. : Qu’est-ce qui, pour vous, est important dans cet
+
+intérieur ?). Les propriétés sensorielles (couleurs, formes …)
+
+ne sont pas mentionnées par l’intervieweur dans ses relances.
+
+Les locuteurs voient successivement deux ambiances dans chaque dispositif
+
+(2D puis 3D puis REEL) et une dernière ambiance dans le dispositif 3D.
+
+Les 15 entretiens sont enregistrés en audio sur Mini Disc et durent 90 à
+
+150 minutes. Ils sont retranscrits intégralement. Trois corpus sont
+
+constitués, correspondant aux trois dispositifs de recueil : corpus 2D,
+
+3D et REEL.
+
+3.3. Analyses et Résultats
+
+3.3.1. Hypothèses et catégories d’analyse
+
+Notre principale hypothèse concerne les constructions cognitives
+
+impliquées dans l’expérience perceptive et résultant de cette
+
+expérience, les indices linguistiques en discours de ces phénomènes
+
+perceptifs et les inférences cognitives qu’ils permettent de réaliser.
+
+Nous faisons l’hypothèse que les modes de présentation des couleurs (des
+
+intérieurs) influencent la perception et le jugement des locuteurs. En
+
+effet, différents types d’expérience sensible sont proposés :
+
+۰ complète (dispositif REEL) versus partielle
+
+(dispositifs 2D et 3D),
+
+۰ partagée par le locuteur et l’intervieweur (2D et REEL) versus individuelle (3D),
+
+۰ familière (2D et REEL) versus non familière
+
+(3D).
+
+Nous postulons que ces modes de présentation suscitent différents modes
+
+de référenciation, et nous proposons d’identifier et de caractériser ces
+
+différents modes de construction dynamique de la référence (cf. Mondada
+
+et al., 1995) à travers la diversité des
+
+formes linguistiques en discours, en repérant des indices linguistiques
+
+pertinents. Au-delà du repérage lexical, notre hypothèse principale
+
+concerne les fonctions syntaxiques des termes de couleur. Il s’agit de
+
+vérifier si différentes conceptualisations de la couleur peuvent être
+
+inférées à partir du type d’inscription syntaxique des termes de couleur
+
+en discours. L’inscription en discours d’un terme de couleur comme
+
+substantif versus comme adjectif, construira et témoignera davantage
+
+d’une couleur respectivement comme entité du monde versus comme
+
+propriété. De plus, un adjectif de couleur, selon qu’il est épithète ou
+
+attribut d’un substantif, constituera soit l’indice d’une propriété
+
+rattachée à un objet de manière identitaire, soit l’indice d’une
+
+construction dynamique en discours de la référence à l’objet désigné par
+
+le substantif
+
+[112]
+
+.
+
+3.3.2. Résultats lexicaux
+
+Une première analyse lexicale du corpus (pris dans sa globalité) permet
+
+de faire l’inventaire des termes de couleur employés et de montrer
+
+l’insuffisance de la seule prise en compte des 11 basic color terms de Berlin et al.,
+
+comme le montre la diversité des termes recueillis (cf. Tableau 1
+
+ci-dessous). Sont distingués dans ce tableau les termes désignant la
+
+couleur de manière générique (couleur, nuancé),
+
+des termes spécifiques de couleur (beige, gris, écru
+
+…).
+
+Tableau 1 - Termes de couleur dans le corpus total
+
+Les termes génériques représentent 42,6% des occurrences totales de
+
+termes de couleur et les termes spécifiques 57,4%. Parmi eux, on
+
+dénombre 10 « termes de base » (361 occ.) représentant 40,6% du lexique.
+
+D’autres termes considérés comme spécifiques d’un champ lexical (beige), issus d’un objet source (ivoire) ou construits sur un autre terme de
+
+couleur [113] (marronâtre) sont également recensés (149 occ. soit 16,7%).
+
+Observant dans ces discours sensibles une diversité des lexicalisations
+
+de la couleur, une analyse de l’inscription en discours de trois termes
+
+spécifiques, les plus cités (36,3% des occ.), est proposée pour
+
+appréhender le statut cognitif et les conceptualisations de la couleur
+
+qu’ils désignent et construisent en discours.
+
+3.3.3. Inscription en discours de beige, gris et noir
+
+Le tableau 2 présente des exemples d’inscription en discours de beige, gris et noir.
+
+Tableau 2 - Exemples extraits du corpus
+
+a. Catégories syntaxiques
+
+Les fonctions syntaxiques occupées par ces 3 termes de couleur en
+
+discours sont présentées dans le tableau 3 à travers la répartition
+
+entre substantif et adjectif, exprimée en pourcentage d’occurrences
+
+pour chacun des trois termes.
+
+Tableau 3 - beige, gris et noir substantifs ou
+
+adjectifs
+
+Les trois termes de couleur n’occupent pas les mêmes fonctions
+
+syntaxiques. Lorsque beige apparaît davantage
+
+comme substantif, noir est très
+
+majoritairement employé comme adjectif et gris apparaît de manière équivalente dans les deux fonctions
+
+syntaxiques.
+
+b. Substantifs
+
+En tant que substantifs, les trois formes ne s’inscrivent pas dans
+
+les mêmes constructions syntaxiques nominales. Ainsi beige apparaît davantage comme forme simple
+
+det+beige (le
+
+beige) que noir ou gris (44,9% des occurrences contre 35,2% et 37,5%). De
+
+plus, noir apparaît rarement inscrit dans une
+
+forme de type det+noir+adj (4,8%) à la
+
+différence de beige et gris (14,5 et 14,8% des occurrences).
+
+Les formes nominales et adjectivales associées diffèrent également
+
+selon la couleur désignée. Si les trois formes sont associées à des
+
+noms désignant des éléments de l’habitacle (le
+
+beige du siège, le gris de la colonne centrale,
+
+le noir du levier), beige est plus régulièrement associé à d’autres noms de
+
+couleur (une gamme de beige marron). Noir et gris sont eux
+
+plus souvent associés à des noms de matière (un
+
+noir sur un tissu, le gris du
+
+plastique). Enfin, gris est souvent
+
+associé à des adjectifs renvoyant aux propriétés d’intensité de la
+
+nuance (un gris très très clair).
+
+c. Adjectifs
+
+En tant qu’adjectifs, les trois termes ont également des modes
+
+d’inscription différents :
+
+Tableau 4 - beige, gris et noir, attributs ou
+
+épithètes
+
+B
+
+eige apparaît principalement comme épithète,
+
+gris comme attribut et noir dans les deux fonctions.
+
+Parmi les formes nominales et adjectivales associées, on repère des
+
+noms désignant des objets que viennent qualifier principalement les
+
+épithètes gris et beige (les sièges beiges, la portière grise). On dénombre également des
+
+noms de matière, soit qualifiés par noir
+
+épithète (tissu noir, un plastique noir
+
+noir), soit spécifiant l’adjectif de couleur (gris métal, gris plastoc, beige imitation cuir). Enfin, si
+
+gris et noir sont
+
+parfois précédés d’adverbes (trop, hyper, plutôt,
+
+presque), aucun adverbe ne vient modaliser l’adjectif beige.
+
+d. Inférences cognitives
+
+Beige, majoritairement employé comme
+
+substantif simple précédé d’un déterminant défini (le beige) ou accompagné d’un adjectif épithète, contribue
+
+à construire la couleur ainsi désignée comme une entité du monde que
+
+les locuteurs peuvent évaluer. Les formes complexes nominales
+
+construites autour du substantif beige
+
+construisent dès lors une entité pouvant être qualifiée (les beige très
+
+clairs) ; spécifiée par un objet (le beige de la
+
+portière), une matière source (le beige […] plutôt
+
+cuir) ; et évaluée (le beige
+
+plutôt luxueux).
+
+Gris employé comme substantif et comme
+
+adjectif attribut renvoie à deux statuts très différents. Sous forme
+
+substantivale, il renvoie au gris comme entité du monde plus (un gris) ou moins autonome (le gris
+
+du plastique). En tant qu’adjectif, il
+
+renvoie à une propriété d’un objet (la
+
+voiture
+
+grise) ou d’une couleur (des tons
+
+gris). Mais, très majoritairement attribut,
+
+il contribue à construire la référence en discours (bah là
+
+la radio c’est
+
+toujours gris).
+
+Noir employé majoritairement comme adjectif
+
+se fait l’indice d’une couleur comme propriété d’une matière ou d’un
+
+élément (
+
+le plastique
+
+noir noir,
+
+un bouton
+
+noir).
+
+Le contraste entre l’adjectif beige presque
+
+toujours épithète et les adjectifs gris et
+
+noir le plus souvent attributs et
+
+modalisés par différents adverbes contribue également à différencier
+
+les statuts cognitifs des couleurs désignées. Alors que beige réfère à une propriété inhérente à
+
+l’objet qualifié, gris et noir renvoient à une dimensionc « quantifiable » (hyper
+
+gris…).
+
+Enfin, on remarque également le contraste entre la couleur comme
+
+propriété de la matière désignée par les constructions de type
+
+Nmatière+Adjcouleur (le
+
+tissu
+
+noir) et la couleur comme indice d’une
+
+matière avec des constructions de type Ncouleur+Nmatière (le gris
+
+métal
+
+, le beige plutôt
+
+cuir) qui concernent davantage gris et beige.
+
+3.3.4. Inscription en discours selon les modes de présentation
+
+a. Répartition des termes de couleur
+
+Considérant l’ensemble des occurrences de termes de couleur relevées
+
+dans les discours produits devant chaque mode de présentation,
+
+quelques différences apparaissent. Les dispositifs 2D, 3D et REEL
+
+ont suscité respectivement 55, 70 et 60% d’occurrences de termes
+
+spécifiques de couleur.
+
+Plus spécifiquement, le Tableau 5 présente la répartition des
+
+occurrences de beige, gris et noir dans les 3 corpus.
+
+Tableau 5 - Occurrences de beige, gris et noir dans
+
+les 3 corpus
+
+Beige présente un nombre quasi identique
+
+d’occurrences dans les trois corpus alors que gris et noir ont des répartitions plus
+
+hétérogènes et nettement opposées. Gris, le
+
+plus cité dans le corpus 2D, y est 3 fois plus présent que noir. A l’inverse, dans le corpus REEL, il
+
+est le moins employé, 3 fois moins que noir,
+
+terme spécifique le plus cité.
+
+Le tableau 6 propose quelques extraits des différents corpus :
+
+Tableau 6 - Exemples extraits des corpus 2D, 3D et REEL
+
+b. Positions syntaxiques
+
+Les positions syntaxiques occupées sont plus ou moins stables. Beige majoritairement substantif dans les
+
+trois corpus, l’est davantage dans le corpus 3D (62,9%). Gris est majoritairement adjectif dans le
+
+corpus 3D (63%), et davantage substantif (55,9%) dans le corpus 2D.
+
+Noir, toujours davantage présent comme
+
+adjectif, l’est majoritairement en 2D et 3D (66,7 et 73,3%).
+
+Observant les positions respectives d’attribut et d’épithète des
+
+adjectifs beige, gris et
+
+noir, des distinctions s’opèrent également. Beige est toujours employé majoritairement
+
+comme épithète, gris toujours comme attribut.
+
+Noir, plus épithète dans les corpus 2D et
+
+REEL est quasi exclusivement attribut dans le corpus 3D (90,9%).
+
+c. Inférences cognitives
+
+Beige, présent dans les trois corpus comme
+
+substantif, renvoie à une couleur stable,
+
+consensuelle que les locuteurs peuvent évaluer. En tant
+
+qu’adjectif, il est presque toujours épithète, rattaché à un nom
+
+qu’il qualifie sans équivoque. En revanche, gris et noir se font l’indice d’une construction problématique de
+
+la couleur en discours notamment dans le corpus 3D (ex :
+
+(…) et euh j(e) vois
+
+gris
+
+j(e) sais pas si c’est
+
+noir
+
+hein). En effet, si les locuteurs emploient
+
+très majoritairement gris dans le corpus 2D,
+
+ils expriment leur incertitude devant les ambiances 3D (c’est noir
+
+ou gris ?) pour ensuite re-qualifier la couleur comme noir dans les véhicules réels. Cette
+
+incertitude est en partie liée à la différence de luminosité des
+
+dispositifs 2D et 3D par rapport aux véhicules réels.
+
+Le corpus 3D suscite également plus d’emplois de beige, noir et gris en tant qu’attributs. Devant un
+
+dispositif non familier, dont en outre ils ne partagent pas
+
+la perception avec leur intervieweur (eux seuls portent les lunettes
+
+3D), les locuteurs doivent construire la
+
+référence et utilisent comme moyen les adjectifs de couleur
+
+qui désignent des propriétés construisant la
+
+matérialité des objets représentés visuellement à partir de
+
+la couleur. A l’inverse, dans le dispositif réel, n’ayant plus
+
+besoin de construire la référence, familière et partagée avec leur
+
+interlocuteur, ils peuvent évaluer les couleurs en
+
+tant qu’entités du monde, ce que nous indiqueraient entre
+
+autres les proportions plus élevées de substantifs pour noir et gris.
+
+4. Conclusions et Perspectives
+
+L’analyse de l’inscription syntaxique en discours de trois termes de couleur nous
+
+permet d’identifier différents plans de construction des couleurs tant dans leur
+
+fonctionnement en discours qu’en cognition et nous confirment l’importance du
+
+rôle des formes linguistiques dans la construction des concepts. Les statuts
+
+cognitifs inférés sont riches et diversifiés : les couleurs sont à la fois
+
+inscrites en discours comme entité du monde (le beige),
+
+comme propriété (plastique noir) ou comme indice d’un
+
+objet, d’une matière (ça fait plus cuir la partie beige que
+
+plastique). Elles contribuent également à la construction de la
+
+référence notamment dans des scènes perceptives visuelles tridimensionnelles en
+
+tant que reproductions partielles et non familières du monde sensible. Le
+
+contraste entre beige, gris et noir met en évidence la non-correspondance de statut
+
+cognitif pour différentes couleurs. Au contraire, les pratiques culturelles qui
+
+sous-tendent chaque couleur et la pratique spécifique mise en place lors du
+
+recueil des données amènent à des couleurs plus ou moins différenciées
+
+cognitivement selon les couleurs et les modes de présentation « expériencés »
+
+par les locuteurs.
+
+La méthodologie mise en œuvre pour étudier les couleurs en discours permet de
+
+faire un inventaire des ressources linguistiques pour ensuite étayer nos
+
+hypothèses sur les relations entre discours, perception et cognition. Cette
+
+approche nous amène à considérer une diversité des constructions cognitives à
+
+propos des phénomènes sensibles. On retrouve ici, au sein de la langue et de la
+
+culture française, la diversité des modes d’inscription des phénomènes colorés
+
+observées dans la diversité des cultures.
+
+Références bibliographiques
+
+Berlin, Brent &amp; Kay, Paul (1969). Basic color terms
+
+: their universality and evolution. Berkeley/Los Angeles : Univ. of
+
+California Press.
+
+Blanchet, Alain (2003). Dire et faire dire :
+
+l’entretien. Paris : Armand Colin.
+
+Cavelier, Noémie (2003). Descriptions d’ambiances
+
+réelles et virtuelles : Analyses linguistique et cognitive de différents
+
+dispositifs de représentation d’un habitacle automobile. DEA de
+
+Sciences du Langage, Université de Paris 3.
+
+Conklin, Harold (1964). Hanunoo color categories, in Language in culture &amp; society : a reader in linguistic and
+
+anthropology, Hymes, Dell (Ed). N.Y : Harper &amp; Row, 189-192.
+
+Dubois, Danièle (2000). Categories as acts of meaning : the case of
+
+categories in olfaction and audition, Cognitive Science
+
+Quaterly, 1: 35-48.
+
+Dubois, Danièle &amp; Grinevald, Colette (2003). En voir de toutes les
+
+couleurs : processus de dénomination des couleurs et constructions
+
+cognitives, in Langues et cognition, Vandeloise, C.
+
+(Ed). Paris : Lavoisier, 79-113.
+
+Foley, William (1997). Anthropological linguistics.
+
+Malden/Blackwell : Cambridge Univ. Press.
+
+Honeste, Marie-Luce (2004). Approche cognitive de la fonction adjectivale,
+
+in L’Adjectif en français et à travers les langues,
+
+François, J. (Dir). Caen : PUC, p.135-150.
+
+Goodwin, Charles (1997). The Blackness of Black: Color Categories as
+
+Situated Practice, in Discourse, Tools and Reasoning:
+
+Essays on Situated Cognition, Resnick, Lauren, Säljö, Roger, et al. (Eds). New York : Springer-Verlag, 111-40.
+
+Kristol, Andres (1978). Color. Les langues romanes
+
+devant le phénomène de la couleur. Berne : Francke.
+
+Lucy, John (1997). The linguistics of "color", in Color Categories in
+
+Thought and Language, Hardin, C.L. &amp; Maffi, L (Eds). Cambridge:
+
+Cambridge Univ., 320-346.
+
+Mondada, Lorenza &amp; Dubois, Danièle (1995). Construction des objets de
+
+discours et catégorisation : une approche des processus de référenciation,
+
+Tranel, Travaux Neuchâtelois de
+
+Linguistique, 23, 273-302.
+
+Pastoureau, Michel (2000). Bleu, histoire d’une
+
+couleur. Paris : Seuil.
+
+Roberson, Debi, Davidoff, Jules, et al. (2005).
+
+Color categories in Himba: Evidence for the cultural relativity hypothesis,
+
+Cognitive Psychology, 50:
+
+378-411.
+
+Rastier, François (1991). Sémantique et recherches
+
+cognitives. Paris : PUF.
+
+Taylor, John (2002). Cognitive grammar. Oxford:
+
+Oxford University Press.
+
+Wierzbicka, Ana (1996). Semantics : primes and
+
+universals. Oxford : Oxford Univ. Press.
+
+Zeki, Semir (2005). The construction of colour in the
+
+brain. Colloque IRIS, Essence et Sens de la Couleur, Nancy
+
+09/11/05.
+
+[111] dans le cadre d’un thèse CIFRE : Collaboration CNRS/PSA Peugeot
+
+Citroën/Univ. Paris 3.
+
+[112]
+
+Sur le statut cognitif de l’adjectif, voir notamment Honeste (2004).
+
+[113]
+
+Ces trois critères (non monolexémie, référence à une source et spécificité
+
+lexicale) excluent, pour Berlin et al., la possibilité de
+
+considérer ces termes
+
+comme basiques.
+
+
+

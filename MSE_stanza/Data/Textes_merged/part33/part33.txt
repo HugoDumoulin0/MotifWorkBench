@@ -1,0 +1,140 @@
+
+
+1. Introduction
+
+Cet article est issu d’une recherche sur les Pratiques Collectives Distribuées d’Apprentissage par Internet (PCDAI)Cette recherche fait suite à l’appel à propositions « usages de l’Internet » (Direction de la Technologie, Ministère de l’enseignement supérieur et de la recherche). Ont été parties prenantes les laboratoires Trigone (Sciences de l’éducation et Informatique, Lille I) et Geriico (Sciences de l’information et de la communication, Lille III) ainsi que des organisations partenaires (Comité central de coordination de l’apprentissage du bâtiment et des travaux publics, Centre national pédagogique des maisons familiales rurales)., une opération interdisciplinaire qui a regroupé pendant trois ans des chercheurs en sciences de l’éducation, de la communication, du langage, de l’informatique mais aussi des praticiens et des ingénieurs spécialistes des environnements numériques.
+
+Nous présentons quelques aspects de la genèse instrumentale des environnements numériques support aux dispositifs pédagogiques, en prenant le point de vue de l’enseignant-chercheur en informatique impliqué dans le projet PCDAI. Nous commençons dans cette introduction par expliciter nos conceptions et les fondements scientifiques que nous avons partagés dans l’équipe pluridisciplinaire du projet. Nous décrivons dans la deuxième partie des aspects de la co-conception qui s’est mise en place au cours du projet.
+
+1.0. L’exigence de malléabilité des artefacts
+
+La participation de l’équipe NOCENouveaux Outils pour la Coopération et l’Education, équipe du laboratoire TRIGONE : http://noce.univ-lille1.fr/cms depuis plus de quinze ans à la recherche sur le TCAOTravail Coopératif Assisté par Ordinateur, appliquée au support des situations d’apprentissage coopératif nous ont convaincu de l’importance de la malléabilité des systèmes informatiques interactifs, pour prendre en compte la nature des activités humaines qu’ils assistent, en particulier des activités d’apprentissage actif. Les résultats d’études du déploiement de systèmes techniques dans des organisations humaines (Kuutti, 1999) rejoignent les conclusions d’études classiques de l’activité et du développement humain qui ont mené à la théorie (pragmatique) de l’activité culturelle et historique (Engeström, 1999) (Vygotsky, 1978) et à la théorie instrumentale (Rabardel, 1994). Ces théories nous montrent que l’activité humaine est fondamentalement réflexive, les artefacts ne deviennent des outils que lorsque les utilisateurs se les approprient en y associant des schèmes d’utilisation, et la conception des outils se poursuit dans l’usage au travers des genèses instrumentales. Au cours de nos recherches sur les EAIH (Hoogstoel, 1995)(Bourguin 2000), nous avons développé plusieurs infrastructures informatiques radicalement malléables au moyen de la réflexivité (Dourish, 1996) en vue de supporter la co-conception des dispositifs de formation.
+
+Comme expliqué dans (Bourguin, Derycke, 2005), nous pensons qu’il est nécessaire d’offrir cette malléabilité aux utilisateurs finaux afin qu’ils l’utilisent quand ils en ressentent le besoin, in situ.
+
+Depuis quelques années, cette exigence de malléabilité est prise en compte dans de nombreux domaines de la science informatique : génie logiciel, interaction homme-machine, architecture logicielle. En conséquence, les applications malléables se multiplient aujourd’hui sur la Toile mondiale et sur les intranets des organisations.
+
+1.1. Les portails et C3MS : des artefacts malléables pour soutenir les communautés
+
+Les applications malléables qui se multiplient sur la Toile mondiale et sur les intranet des organisations permettent à chaque internaute ou chaque membre d’une organisation de participer au développement de communautés virtuelles d’apprentissage, de pratique, ou d’intérêt. Ces applications malléables prennent le plus souvent la forme de portails ou de ce que (Schneider, 2003) appellent les C3MS (Community, Content and Collaboration Management Systems). Il s’agit d’environnements informatiques modulaires permettant d’agréger des logiciels (vus comme des services ou des modules) au sein d’une même interface numérique.
+
+La malléabilité de ces systèmes intervient dans plusieurs aspects et contribue aux différents enjeux du soutien informatique de la coopération identifiés par (Hoogstoel, 1995).
+
+Elle permet de personnaliser l’apparence de l’interface, en choisissant des thèmes graphiques définissant l’aspect et l’organisation générale à l’écran des composants graphiques de base de l’interface. Cette malléabilité permet d’améliorer la motivation individuelle des acteurs par le respect de leurs préférences esthétiques et/ou la cohésion du groupe par la construction d’une identité visuelle.
+
+Du point de vue de l’interaction, il est possible d’offrir à chaque utilisateur les fonctions utiles en fonction de son rôle, de ses tâches. Ceci peut favoriser l’implication des utilisateurs en évitant la surcharge de l’interface, et faciliter la coordination des activités en fournissant la représentation de la division du travail.
+
+Les rôles et les droits d’accès aux fonctions des outils utilisés et aux éléments de l’interface homme-machine peuvent être adaptés dynamiquement. Cette malléabilité de la médiation permet le renforcement des règles de la communauté et de la division du travail. Elle améliore donc la coordination et permet de soutenir l’auto-organisation du groupe.
+
+Les utilisateurs peuvent activer dynamiquement les outils médiateurs des activités de la communauté parmi les nombreux outils de communication de groupe synchrones (babillard, boîte à crier) et asynchrones (forums), de production collective (wiki), d’expression et de réflexion individuelles (blog, journal de bord, portfolio), de coordination (agenda partagées, gestionnaires de projet, outils de vote ou de sondage, workflow), de partage de documents (dépôts de documents, gestionnaire de versions). Ceci offre une liberté d’auto-organisation et d’évolution du dispositif.
+
+Les logiciels libres et les communautés de développement associées soutiennent la poursuite de la conception des outils dans l’usage. En effet, les logiciels libres sont fournis avec leur code source pour permettre à leurs utilisateurs de les adapter. Les logiciels libres offrent donc un niveau de malléabilité supplémentaire permettant de modifier en profondeur le comportement des logiciels. Ce niveau de malléabilité nécessite cependant des compétences en programmation.
+
+1.2. La co-évolution
+
+La malléabilité croissante des applications informatiques devrait permettre aux acteurs d’un dispositif pédagogique exploitant un C3MS de s’approprier l’interface numérique pour l’adapter à leurs intentions pédagogiques. Cependant, ce travail de transformation de l’artefact en un outil traduisant une offre de signification par le concepteur du dispositif pédagogique, et en un outil opérationnel par les tuteurs, voire les apprenants est complexe. En effet, comme le souligne (Bouguin, 2003), « la puissance de la malléabilité croît en même temps que l’effort qui doit être fourni par l’utilisateur pour y accéder »
+
+En effet, les acteurs doivent se construire une représentation des configurations possibles de l’interface numérique compatible avec son fonctionnement pour pouvoir traduire leur intention pédagogique dans la configuration du système. Cette appropriation de l’artefact ne se construit que progressivement en utilisant le système, en testant des configurations. De plus, l’intention pédagogique évolue elle­même au fur et à mesure de la découverte des possibilités d’utilisation ou de transformation de l’artefact..
+
+Il est donc nécessaire d’accompagner, faciliter, favoriser le processus de co­évolution du dispositif et de l’interface numérique au sens de (Bourguin, 2005) :
+
+« La co-évolution traduit tant les ajustements continus, négociés et socialement situés des pratiques de la part des individus, que les ajustements apportés au comportement du système interactif considéré. »
+
+2. L’expérience menée dans PCDAI
+
+Durant les deux ans du projet PCDAI, nous avons mis en place et accompagné plusieurs dispositifs pédagogiques hybrides.
+
+Dans cette partie, nous étudions quelques aspects de la genèse instrumentale des interfaces numériques support aux dispositifs pédagogiques, du point de vue de l’enseignant-chercheur informaticien qui a été amené à jouer le rôle d’ingénieur pour le projet, et que nous désignerons par « l’ECI » (enseignant-chercheur ingénieur).
+
+Les concepteurs et animateurs d’autres dispositifs créés au cours du projet PCDAI ont accepté d’utiliser Postnuke, un C3MS très malléable distribué en logiciel libre. Une étude préalable (Poullier, 2005) avait mené les spécialistes des TICE à recommander l’utilisation de Postnuke pour les dispositifs du projet de recherche-action PCDAI. Postnuke a été choisi pour sa malléabilité et sa capacité à accompagner un apprentissage coopératif ou mutuel. Cette capacité était attestée par l’expérience reconnue du TECFATECFA est une unité active dans le domaine des technologies éducatives, Faculté de Psychologie et des Sciences de l'Education -Université de Genève. http://tecfa.unige.fr (Schneider, 2003). L’ECI a participé à la construction des environnements numériques sur Postnuke.
+
+2.0. Le rejet d’une approche industrielle de l’ingénierie
+
+Dans une première phase, une approche classique industrielle de conception du système informatique est proposée par les ingénieurs impliqués dans le projet (l’ECI et un professeur associé consultant en e-learning). Nous commençons par tenter de faire exprimer leurs besoins aux concepteurs et aux animateurs envisagés des futurs dispositifs pédagogiques. Mais une approche par les scénarios se révèle rapidement impossible. De même, l’utilisation de l’approche utilisée par le TECFA consistant à identifier les types d’activités à soutenir puis les actions génériques (briques de base) pouvant être réalisés par des outils ne convient pas non plus.
+
+Plusieurs raisons semblent expliquer le rejet de ces approches. Les acteurs ne conçoivent pas leur pédagogie et les situations pédagogiques qu’ils veulent créer sous forme de scénarios (de type IMS-LD) mais sous la forme d’espaces potentiels d’actions (des moyens d’agir), dans une logique de dispositif. Ils estiment que les activités pédagogiques ne peuvent pas être planifiées finement et imposées à l’avance aux apprenants dans les dispositifs de formation concernés. Au contraire, ils font habituellement émerger les activités pédagogiques au cours du déroulement de la formation. Les acteurs ne perçoivent pas les possibilités d’utilisation et d’adaptation de l’environnement numérique qu’ils pourraient exploiter pour soutenir le dispositif. Ceci peut être imputé à un manque de maîtrise des TIC et de Postnuke en particulier, et à la complexité de Postnuke. L’extrême malléabilité et le nombre d’artefacts de ce C3MS est telle que la configuration de base proposée à l’installation ne permet pas de donner une idée de ce qu’il serait possible d’obtenir après configuration.
+
+2.1. Vers la co-réalisation
+
+Une autre stratégie de conception participative et moins directive est progressivement mise en œuvre : elle consiste à faire découvrir aux pédagogues l’artefact numérique et les possibilités d’instrumentation et d’instrumentalisationL’instrumentation désigne l’invention des usages d’un artefact. L’instrumentalisation est le processus d’adaptation de l’outil aux usages. (Rabardel, 1994). Les pédagogues expriment ensuite librement leurs intentions sous forme de maquettes identifiant des espaces d’interaction entre les acteurs des dispositifs. L’ECI configure le système informatique en direct en collaboration avec les pédagogues concepteurs. Il commente et explique au fur et à mesure les modifications qu’il apporte à la configuration de l’artefact afin de construire une compréhension commune des choix. L’ECI espère ainsi réaliser un transfert de compétences permettant à l’avenir aux pédagogues de concevoir et réaliser seul les genèses instrumentales.
+
+Cependant la complexité et l’imperfection du système Postnuke et en particulier de ses interfaces de configuration empêchent de rendre rapidement les pédagogues autonomes dans les tâches d’instrumentalisation de l’artefact. Plusieurs caractéristiques de Postnuke sont impliquées. Les fonctions de configuration des artefacts sont nettement séparées des fonctions d’utilisation. Une rupture dans le cours d’action est donc imposée à chaque fois que, au cours de l’utilisation, on désire apporter une modification. Les interfaces de configuration sont difficiles à utiliser pour un non-informaticien (et même parfois pour un informaticien non averti). Elles utilisent entres autres les notions de classes et d’instances propres aux informaticiens. Les pédagogues rencontrent des difficultés à comprendre l’interaction entre les différents niveaux de malléabilité : il est par exemple possible d’afficher une fonction pour un utilisateur, sans lui donner le droit de l’utiliser effectivement : lorsque l’utilisateur tente d’utiliser l’outil proposé par l’interface, le système affiche une erreur, qui perturbe l’utilisateur. La définition des droits utilise des termes génériques qui sont interprétés spécifiquement par chaque outil. Enfin, la documentation des outils est souvent soit absente, soit en langue étrangère soit très mal traduite.
+
+L’ECI doit donc s’investir beaucoup dans le rôle de médiateur des instrumentations et instrumentalisations de Postnuke pour les dispositifs. La situation tend vers une situation de co-réalisation (Hartswood et al, 2002) : l’ECI est impliqué dans les dispositifs et se trouve fréquemment sollicité pour adapter l’environnement numérique au fur et à mesure de sa mise en œuvre par les pédagogues.
+
+Plusieurs moyens sont utilisés pour gérer la collaboration entre les pédagogues, les apprenants et l’ECI. L’ECI se connecte de temps en temps comme administrateur sur les portails des dispositifs pour évaluer l’activité et détecter d’éventuelles difficultés ou besoins. Un outil de l’interface affichant la liste des personnes en ligne signale sa présence et permet aux utilisateurs en ligne d’échanger des messages privés. Un autre outil appelé « boîte à crier », dont nous verrons bientôt l’importance inattendue, permet aux utilisateurs de déposer un cri (un message très court accompagné d’une émoticône) qui reste visible un certain temps sur le portail. Des forums sur les portails sont dédiés aux discussions sur l’utilisation et la construction du portail, par ailleurs l’ECI et le pédagogue concepteur du dispositif utilisent leurs « journaux de bord » sur les portails pour tenir les personnes intéressées informées de l’état de leur réflexion et de leurs actions sur l’adaptation (ou la correction des erreurs) du portail. Un environnement de collaboration sous Accel est aussi utilisé entre les praticiens-chercheurs membres du projet pour piloter le projet. Les pédagogues-concepteurs utilisent aussi le courrier électronique et le téléphone pour solliciter, relancer l’informaticien.
+
+2.2. L’assimilation de l’outil par les pédagogues
+
+Malgré les obstacles, au bout d’un certain temps, du fait du manque de disponibilité de l’ECI, et au prix d’un investissement considérable, les pédagogues chercheurs assimilent une partie de l’interface numérique et parviennent à l’instrumentaliser eux-mêmes, avec une aide réduite de l’informaticien.
+
+L’instrumentalisation de l’artefact Postnuke mènent les animateurs de certains dispositifs à soutenir de plus en plus d’activités par l’instrumentalisation du module wiki de Postnuke, jusqu’à finalement décider d’abandonner Postnuke pour utiliser un wiki instrumentalisé autonome. Cette évolution peut s’expliquer par la complexité de Postnuke qui a incité les pédagogues à concentrer leur activité de genèse instrumental sur un seul module, optimisant ainsi le rapport intérêt/effort. Le Wiki est ressorti également comme le troisième outil préféré (après la boîte à crier et le journal personnel) parmi les nombreux modules proposés avec Postnuke dans une enquête que nous avons menée auprès d’étudiants du TECFA (Poullier, 2005).
+
+2.3. Un exemple de genèse instrumentale : la boîte à crier
+
+La boîte à crier fait l’objet d’une instrumentation et d’une instrumentalisation. Pour l’ECI, cet outil est conçu simplement pour créer une ambiance de groupe en permettant aux personnes qui « passent » de laisser rapidement une petite trace de leur passage sur le portail en y indiquant leur humeur. Ces cris ne restent visibles que peu de temps car ils sont « repoussés » par les nouveaux cris. Seuls les utilisateurs qui se connectent peu après voient ces cris, qui sont donc comme des bouteilles lancés à la mer. Or malgré ses limitations, l’usage de cet artefact évolue rapidement. Il devient rapidement un outil privilégié de communication entre les utilisateurs (Varga, 2005) : les apprenants l’utilisent pour communiquer entre eux, avec le tuteur et parfois avec l’informaticien, les pédagogues l’utilisent pour communiquer avec l’informaticien. Mais le fonctionnement de cet artefact se révèle mal adapté au nouvel usage, en particulier parce qu’il ne notifie pas les utilisateurs connectés quand un nouveau cri est « poussé ». Il est donc demandé à l’informaticien d’ajouter une notification : nous avons donc modifié le code de sorte que les nouveaux cris soient signalés par un texte coloré « nouveau cri » et que tous les utilisateurs connectés entendent un son quand un utilisateur dépose un cri. Cet outil est dès lors aussi utilisé pour pallier au manque de rétroaction des autres outils.
+
+La place prédominante que prend cet outil s’explique par son extrême accessibilité : il est en permanence disponible directement sur l’interface, les utilisateurs doivent juste saisir leur cri dans un champ de saisie toujours disponible et appuyer sur un bouton. Tous les autres outils offerts nécessitent de traverser plusieurs liens avant de pouvoir saisir un contenu. L’intérêt pour cet outil s’explique aussi par le rôle essentiel que les apprenants ont dévolu à l’interface numérique : diminuer leur isolement en tant qu’apprenant dans leur situation professionnelle, soutenir leur motivation par une cohésion du groupe et une relation simple et soutenue avec le tuteur (Ibid). Pour remplir ce rôle, l’interface numérique doit essentiellement offrir un moyen de communication sociale simple, informelle et volatile, bref un moyen de bavardage : la boîte à crier se révèle adaptée.
+
+Il est intéressant de noter aussi que la boîte à crier est elle-même utilisée comme outil de médiation de sa propre genèse instrumentale : le pédagogue et l’ECI l’utilisent pour négocier à distance son usage et sa transformation. Cette expérience nous rappelle la réflexivité de l’activité humaine : la co-évolution est elle-même une activité collaborative qui nécessite elle-même une médiation par des outils qui peuvent être ceux justement qui sont la cible de la co-évolution.
+
+La boîte à crier est aussi utilisée comme outil de communication pour l’assistance à distance quand chaque utilisateur profite de la présence en ligne de l’informaticien pour obtenir qu’il les aide en direct à configurer les nombreux paramètres de sécurité de leur machine personnelle. Mais l’informaticien cherche plutôt -avec beaucoup de difficultés- à dissuader les utilisateurs d’utiliser la boîte à crier pour réaliser cette activité. Car, d’après lui, la boîte à crier présente plusieurs inadéquations à la tâche. L’ECI essaie en vain de convaincre les utilisateurs d’utiliser plutôt un autre outil : le salon de discussion (chat) ou le forum dédié à l’assistance technique. L’ECI finit par utiliser la boîte à crier pour demander le numéro de téléphone des apprenants et les contacte chacun leur tour. Il obtient alors que les apprenants utilisent d’une part le forum pour y copier des informations de configuration et d’autre part l’outil de dépôt de documents pour déposer des copies d’écran. Cette expérience montre l’attachement des utilisateurs aux instruments qu’ils ont investis et adoptés et l’importance que peut prendre le critère de minimisation de l’effort dans le choix d’un outil. Elle indique aussi la difficulté de faire prendre conscience ou de partager une compréhension commune des possibilités d’instrumentation de nombreux artefacts disponibles dans un environnement de travail complexe.
+
+3. Conclusion et perspectives
+
+L’instrumentation et l’instrumentalisation de l’artefact hyper malléable que constitue Postnuke ont nécessité la mise en place d’un processus d’ingénierie de type co-réalisation consistant à impliquer l’informaticien dans le dispositif afin qu’il puisse assister la genèse instrumentale. Bien que certains pédagogues parviennent finalement à assimiler partiellement l’artefact et à en faire un outil adapté à leur dispositif pédagogique, l’exploitation de la malléabilité de Postnuke reste difficile.
+
+Plusieurs pistes ont commencé à être explorées pour faciliter l’exploitation de la malléabilité. La méthode et l’atelier d’ingénierie Bricoles (Caron et al., 2005) permettent aux utilisateurs de se construire une représentation compréhensible des possibilités de l’artefact. Ils permettent aux utilisateurs d’exprimer dans leur propre langage le dispositif pédagogique qu’il veulent mettre en place et les aident à l’opérationnaliser par l’instrumentation ou/et l’instrumentalisation souhaitées de l’artefact. (Bouguin 2000), quant à lui, exploite la réflexivité de DARE et CoolDA pour intégrer aux systèmes informatiques interactifs le support à l’activité coopérative de leur propre co-évolution, les transformant ainsi en systèmes expansifs.
+
+Alors que les différentes disciplines de l’informatique ont commencé à intégrer l’exigence de malléabilité, elles devront à l’avenir permettre aux informaticiens de concevoir des systèmes non seulement malléables mais expansifs (Hoogstoel, 2001). Dès lors, le métier du concepteur informatique devrait évoluer vers un rôle de médiateur de la co-réalisation. Ceci devrait aussi avoir un impact sur le métier des utilisateurs de ces systèmes en les rendant plus explicitement et plus efficacement co-concepteurs de leurs outils. Comme nous l’indiquons dans le rapport final du projet PCDAI :
+
+« L’environnement numérique, même si ce n’est pas sa seule finalité, doit pour nous contribuer au développement d’un espace d’innovation pour l’apprentissage. Mais, et c’est là l’autre visée de notre recherche, il ne peut le faire que sur la base d’une culture et de comportements nouveaux à acquérir de la part des acteurs dans l’organisation (enseignants-chercheurs, informaticiens, étudiants, administratifs …) en termes de co-conception des configurations numériques modulaires liées aux différentes activités de formation qu’elles peuvent « outiller » ».
+
+4. Remerciements
+
+L’auteur remercie la direction de la technologie du ministère de l'éducation nationale et l'agence nationale pour la recherche pour le support financier qu'ils ont affecté au projet de recherche PCDAI. L'auteur remercie la région Nord/Pas-de-Calais, l'Etat français et le FEDER qui ont financé le projet EUCUE du programme TAC du Contrat de Plan Etat-Région.
+
+Bibliographie
+
+Bourguin, G. (2000). Un support informatique à l’activité coopérative fondé sur la Théorie de
+
+l’Activité : le projet DARE. Thèse de doctorat en Informatique, n° 2753, Université des
+
+Sciences et Technologies de Lille, France, 2000, 210 p.
+
+Bourguin G., Derycke A. (2005). Systèmes Interactifs en Co-évolution, Réflexions sur les
+
+apports de la Théorie de l’Activité au support des Pratiques Collectives Distribuées,
+
+Revue d’Intéraction Homme-Machine (RIHM), AFIHM Europia, Juin 2005, 29p.
+
+Caron P.A. et al (2005). Bricolage and Model Driven Approach to design distant course, E learn 2005, world conference on E-learning in corporate Government, Healthcare &amp; higther education, Vancouver, Association for the Advancement of Computing in Education (AACE), 2856- 2864
+
+Dourish P. (1996). Open Implementation and Flexibility in CSCW Toolkits, Ph.D. Thesis, University College London
+
+Engeström,, Y. (1999). Activity theory and individual and social transformation. In Y. Engeström, R. Miettenen &amp; R.L. Punamake (eds), Perspectives on Activity Theory, 19-38, Cambridge University Press, Cambridge.
+
+Hoogstoel F. (1995). Une approche organisationnelle du travail coopératif assisté par ordinateur. Application au projet Co-Learn, thèse de doctorat d’informatique de l’Université des Sciences et Technologies de Lille, numéro d’ordre 1487.
+
+Hoogstoel F. (2001). Chapitre 4 - Les répercussions du travail coopératif assisté par ordinateur sur les systèmes d’information in Environnements évolués et évaluation de l’IHM. Interaction homme-machine pour les SI 2, sous la direction de Christophe Kolski, série « Informatique et Systèmes d’Information » du traité IC2 "Information - Commande
+
+– Communication", publié aux éditions Hermès en mai 2001, ISBN 2-7462-01243-3.
+
+Kuutti, K. (1999) Activity Theory, Transformation of Work and Information Systems Design. Perspectives on Activity Theory, Y. Engeström , R. Miettinen &amp; R. Punamäki, Editors. Cambridge University Press: Cambridge, UK, pp. 360-376.
+
+Rabardel, P. (1994). Elements pour une approche anthropocentrique des techniques dans le système éducatif, in Séminaire de didactique des disciplines technologiques, Cachan, 1993-1994
+
+Varga, R. (2005). Dans quelles mesures l'utilisation d'un environnement numérique peut-elle contribuer à faire évoluer les modes d'accès aux savoirs ? L'exemple du suivi des stages sur une plate-forme pédagogique PostNuke. In Colloque SIF : "Les institutions éducatives face au numérique". Paris, France.
+
+Vygotsky, L. S. (1978). Mind in Society. The Development of Higher Psychological Processes. Harvard University Press, Cambridge MA.
+
+6. Références sur le WEB.
+
+Bourguin, G. (2003). SHS et TCAO: Vers la co-évolution des systèmes informatiques. In Pratiques Collectives Distribuées (AS CNRS) [en ligne] http://www.limsi.fr/Individu/turner/PCD%20-%20France/ (accédé le 31/3/2007)
+
+Poullier J. (2005) : Pratiques Collectives distribuées d’Apprentissage sur Internet, Mémoire professionnel, DESS Ingénierie, Pédagogie, Multimédia, Université de Lille 1. [en ligne] http://trg45.univ-lille1.fr/abc/xyz/erte/docs/doc32-720-m%E9moire%20PCDAI.pdf (accédé le 31/3/2007)
+
+Schneider D. (2003) : Conception et implémentation de scénarios pédagogiques riches avec des portails communautaires, Second colloque de Guéret [en ligne] http://tecfa.unige.ch/proj/seed/catalog/docs/gueret03 (accédé le 31/3/2007)
+
+
+

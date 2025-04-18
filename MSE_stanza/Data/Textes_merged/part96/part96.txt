@@ -1,0 +1,680 @@
+
+
+1. Problématique
+
+Quand le jeune enfant s’intéresse à l’écrit, il n’en soupçonne pas d’emblée la
+
+dimension phonographique. Il n’en traite ainsi que les propriétés à sa portée :
+
+la dimension visuelle (comment c’est écrit ?) et la dimension sémantique
+
+(qu’est-ce qui est écrit ?). Pour lui, l’écriture est un objet qui rend visible
+
+la pensée, mais qui n’est pas encore lisible.
+
+Dans les écritures inventées, les chercheurs ont identifié un certain nombre de
+
+caractéristiques qui évoluent au fur et à mesure des bonds conceptuels que
+
+l’enfant réalise. D’abord, la quantité et la nature des lettres sont aléatoires
+
+et non systématiques, avant de se constituer en routines (Chomsky, 1975 ; Read
+
+1986 ; Ferreiro, 1988 ; Jaffré, 1989, 1995 ; Besse, 1988 et Fijalkow &amp;
+
+Fijalkow, 1991). Puis, l’enfant différencie objectivement ses graphies en
+
+changeant la nature et l’ordre des lettres et fait un traitement sémiographique,
+
+ajustant la quantité de lettres au référent (Ferreiro et Gomez Palaccio, 1988;
+
+Albert, 1996; Besse, 2000). L’étude quantitative de Ferreiro et Gomez Palaccio
+
+(1988) montre également que les enfants produisent une quantité minimale de
+
+lettres: au moins trois, avec une tolérance possible de un (en plus ou en
+
+moins). Autrement dit, pour l’enfant, une seule lettre ne suffit pas pour écrire
+
+un mot. Plus tard, dans son développement, l’enfant juge nécessaire non
+
+seulement un nombre minimum de lettres, mais aussi un nombre maximum (Ferreiro
+
+2000). On observe encore que l’enfant utilise d’abord la forme de son prénom
+
+comme base graphique (Treiman, Kessler et Bourasse, 2001) avant d’étendre son
+
+répertoire à d’autres formes mémorisées.
+
+Cependant, d’autres observations demeurent non expliquées, comme des productions
+
+dont les graphies successives ont tendance à s’allonger, le nombre de lettres
+
+augmentant d’un mot à l’autre.
+
+2. Questionnement
+
+Le courant piagétien (Ferreiro et Gomez Palaccio, 1988) propose une explication
+
+psychogénétique du développement de l’écriture, cependant que d’autres études
+
+explorent l’effet contexte. Par exemple, Zerbato-Poudou (2002) montre qu’en
+
+maternelle, l’enseignement de l’écriture privilégie la copie de modèle,
+
+déconnectée des apprentissages conceptuels. Nous faisons l’hypothèse que la
+
+quantité et la nature des lettres que l’enfant utilise sont en partie
+
+dépendantes du contexte et plus particulièrement du voisinage visuel. Partant du
+
+postulat que les graphies des enfants ne sont pas composées de suites de lettres
+
+totalement aléatoires, nous nous demandons quels peuvent être leurs points
+
+d’appui et les procédés qu’ils mobilisent. En ce qui concerne l’enfant qui fait
+
+un traitement visuel de l’écrit, on peut penser qu’un de ses procédés d’écriture
+
+consiste à s’appuyer uniquement sur l’écrit antérieur qu’il a sous les yeux,
+
+conformément à une démarche reposant sur l’information visuelle.
+
+Cette étude vise donc à observer de quelle manière les enfants marquent la
+
+différence qu’ils perçoivent entre les mots, et s’ils changent de procédé quand
+
+la tâche change. Par exemple, quand l’enfant utilise les mêmes lettres dans un
+
+ordre différent pour écrire deux mots différents (variation interfigurale),
+
+est-ce parce que ce procédé correspond à une étape génétique du développement de
+
+l’écriture ou est-ce parce que les deux mots sont écrits en liste, l’un en
+
+dessous de l’autre, en voisinage visuel?
+
+Nous élaborons donc un plan expérimental pour étudier les relations entre les
+
+procédés visuels et la nature de la tâche, à partir des questions suivantes:
+
+۰ Question 1 - Quand l’enfant peut voir les mots qu’il vient d’écrire, le mot
+
+suivant est-il écrit systématiquement avec des lettres qu’il a déjà écrites?
+
+۰ Question 2 - Quand l’enfant peut voir les mots qu’il vient d’écrire, le mot
+
+suivant est-il écrit systématiquement avec plus ou moins de lettres?
+
+۰ Question 3 - L’axe vertical facilite-t-il le procédé d’autocopie pour la nature
+
+et/ou la quantité des lettres reproduites?
+
+3. Méthodologie
+
+3.1. Echantillon
+
+Cette étude concerne des enfants ayant délaissé le traitement figuratif de
+
+l’écrit pour en faire un traitement visuel. Nous constituons l’échantillon à
+
+l’aide d’un pré-test (écriture inventée de 4 mots) et retenons 117 enfants
+
+de 4 et 5 ans (sur 176), scolarisés en moyenne et grande section de
+
+maternelle (MS et GS), dans trois écoles (en milieu semi-urbain et
+
+urbain).
+
+3.2. La tâche d’écriture inventée
+
+La situation d’écriture inventée consiste à demander à l’enfant d’écrire sous
+
+la dictée quatre noms d’animaux qui ne lui ont pas été enseignés, en faisant
+
+comme s’«il savait écrire». Nous lui demandons d’identifier l’animal
+
+(verbalisation) et d’écrire son nom « Écris lapin».
+
+L’observation de l’enfant en train d’écrire (ses regards, son autolangage et
+
+ses paroles) nous permet de préciser s’il utilise l’autocopie. Un entretien
+
+minimum complète l’observation quand le procédé utilisé par l’enfant n’est
+
+pas clairement identifié, notamment en ce qui concerne la valeur sonore des
+
+lettres. Pour trois enfants, une étude longitudinale de 2 mois est menée,
+
+avec des passations plus nombreuses et des entretiens cliniques enregistrés
+
+(série de questions sur la nature et la quantité des lettres). Ces données
+
+quantitatives sont destinées à expliquer les procédés observés.
+
+3.3. Conditions expérimentales
+
+Trois tâches sont définies: l’écriture sur des feuilles différentes, qui
+
+exclue l’autocopie, l’écriture en liste, supposée favoriser l’autocopie et
+
+l’écriture en ligne, supposée médiane entre les deux tâches précédentes,
+
+n’empêchant pas l’autocopie et ne la facilitant pas non plus. A ces trois
+
+tâches, correspondent trois conditions expérimentales:
+
+L’enfant écrit une série de 4 mots, en liste sur une même feuille
+
+«les uns en dessous des autres».
+
+Il écrit une série de 4 mots, en ligne sur une même feuille «les uns
+
+à côté des autres».
+
+Il écrit une série de 4 mots, avec une feuille différente pour chaque
+
+mot.
+
+Les 117 enfants sont répartis en 3 groupes de 26 GS et 13 MS. Chaque groupe
+
+effectue, à quelques jours d’intervalle, deux des trois tâches suivantes:
+
+écrire 4 mots bi-syllabiques en liste, en ligne et sur des feuilles
+
+différentes (tableau 1). L’ordre de passation des tâches et celui de
+
+l’écriture des mots sont aléatoires. Les passations ont lieu en petits
+
+groupes de 2 à 4 enfants pour favoriser le langage égocentrique (Piaget,
+
+1936 ; Vygotski, 1934) et minorer l’effet adulte (Milgram, 1974).
+
+Nous recherchons la signification des différences de moyenne à l’aide d’une
+
+ANOVA (Statview) à partir des variables suivantes : pour la nature des
+
+lettres, le nombre de lettres pour chaque suite reprise, et pour la quantité
+
+de lettres, d’une part, le nombre de lettres de la graphie et sa longueur
+
+physique, et, d’autre part, les régularités (quantités égales, croissantes
+
+et décroissantes).
+
+4. Résultats
+
+A l’issue du plan expérimental, nous disposons d’un échantillon de 99 enfants de
+
+4 à 6 ans, de MS et GS. L’analyse des productions met en évidence un certain
+
+nombre de procédés d’écriture qui concernent aussi bien la nature et la position
+
+des lettres que leur quantité. Certains de ces procédés visuels relèvent d’un
+
+comportement d’autocopie et sont favorisés par la nature de la tâche. Pour être
+
+autonomes sur la tâche demandée, les enfants se donnent leurs propres règles
+
+d’écriture. Ils exploitent le voisinage visuel, plus spécialement quand ils
+
+écrivent en liste, pour copier leur propre production.
+
+4.1. Question 1
+
+Quand l’enfant peut voir les mots qu’il vient d’écrire, le mot suivant est-il
+
+écrit systématiquement avec des lettres qu’il a déjà écrites?
+
+Pour différencier l’autocopie de la simple reprise de lettres (inhérente à
+
+toute production), nous observons les reprises de suite de lettres. Comme il
+
+est plus facile de mémoriser une suite de 2 lettres qu’une suite de 3, etc.,
+
+nous nous attendons à observer davantage de reprises de 3 lettres que de
+
+reprises de 2 lettres, dans les tâches avec voisinage visuel (liste et
+
+ligne), davantage de reprises de 4 lettres que de reprises de 3 lettres dans
+
+ces mêmes tâches.
+
+Ce qui revient à dire que nous nous attendons à ce que ces tâches avec
+
+voisinage visuel favorisent l’autocopie.
+
+Figure 1 - Nombre de reprises d'au moins 3 lettres
+
+Figure 2 - Nombre de reprise d'au moins 4 lettres
+
+Quel que soit le seuil choisi pour le nombre de lettres reprises, une
+
+tendance générale se dessine en faveur de l’écriture en «liste», suivie de
+
+l’écriture en «ligne»; l’écriture en «isolé » présentant les scores les plus
+
+bas (au -2 lettres, moy.=1,61 liste, =1,46 ligne, =1,44 isolé; au -3
+
+lettres, moy.=1,21 liste, =0,98 ligne, =0,91 isolé; au -4 lettres, moy.=0,50
+
+liste, =0,24 ligne, =0,23 isolé; au -5 lettres, moy.=0,16 liste, =0,079
+
+ligne, =0,078 isolé) (Figures 1 et 2).
+
+Dans les tâches avec voisinage visuel (liste et ligne), l’enfant a tendance à
+
+reprendre plus souvent des suites de lettres déjà écrites que dans la tâche
+
+sans voisinage visuel (isolé). L’enfant s’appuierait donc sur le voisinage
+
+visuel pour copier des suites de lettres déjà utilisées.
+
+On observe de plus que les différences de moyenne entre «ligne» et «liste»
+
+ont tendance à augmenter au fur et à mesure que l’on considère un plus grand
+
+nombre de lettres, jusqu’au seuil de «reprise d’au moins 4 lettres» (au -2
+
+lettres, D=0,15; au -3 lettres, D=0,23; au -4 lettres, D=0,26; au -5
+
+lettres, D = 0,08) et que les différences de moyenne entre «ligne» et
+
+«isolé» ont tendance à diminuer au fur et à mesure que l’on considère un
+
+plus grand nombre de lettres, à partir du seuil d’au -3 lettres (au -2
+
+lettres, D=0,014; au -3 lettres, D=0,07; au -4 lettres, D=0,004; au -5
+
+lettres, D=0,002). Ainsi, plus le nombre de lettres de la suite augmente,
+
+plus le comportement de l’enfant change: plus il se comporte de manière
+
+identique en «ligne» et en «isolé».
+
+On observe enfin une différence significative (F (2, N=4,060); p&lt;,05)
+
+entre l’écriture en liste et les deux autres tâches, à ce même seuil de
+
+«reprise d’au moins 4 lettres», ce qui montre que l’écriture en liste est la
+
+seule tâche des trois qui favorise la reprise d’au moins 4 lettres.
+
+Les reprises de suites de lettres en liste peuvent donc être interprétées
+
+comme un procédé d’autocopie que l’enfant mobilise quand le contexte le lui
+
+permet.
+
+Les productions montrent des procédés différents selon le niveau de
+
+traitement de l’écrit. Par exemple, Cynthia (5,7), qui écrit des lignes
+
+entières de lettres pour un mot, copie dans l’axe vertical des suites de 2 à
+
+6 lettres quand elle écrit en liste (Figure 3); alors que Léna (5,2) nous
+
+présente un procédé plus complexe (Figure 4). Ses graphies ont une quantité
+
+de lettres qui indiquent qu’elle a une représentation plus accomplie de ce
+
+que peut être un mot. Elle profite du voisinage visuel pour fabriquer un mot
+
+uniquement avec des suites de lettres prélevées dans ses graphies
+
+précédentes. On peut voir qu’elle reprend ainsi la suite de lettres QMI de
+
+la 2ème graphie et la suite EMOA de la 3ème pour former la 4ème graphie.
+
+Figures 3 et 4 - Autocopie de suites de lettres
+
+4.2. Question 2
+
+Quand l’enfant peut voir les mots qu’il vient d’écrire, le mot suivant est-il
+
+écrit systématiquement avec plus ou moins de lettres?
+
+Les procédés d’autocopie se rapportant à la quantité de lettres que nous
+
+avons observés sont très variés. Certains enfants font référence au nombre
+
+de lettres et d’autres à la longueur physique de la graphie. De même,
+
+certains enfants expliquent vouloir obtenir la même quantité de lettres, et
+
+d’autres, au contraire «faire plus long» ou «pas pareil». Cette diversité de procédés nous amène
+
+donc à observer des croisements de variables: d’une part, les écarts type du
+
+nombre de lettres et de la longueur de la graphie (+ ou - 0,5 mm); d’autre
+
+part, les régularités suivantes d’un mot à l’autre: quantités égales (ou
+
+quasi-égales), croissantes et décroissantes.
+
+4.2.1. Quantités égales
+
+Quand les graphies présentent une même quantité de lettres (ou presque),
+
+cette quantité peut témoigner d’un traitement de l’oral (les mots
+
+proposés à l’écriture étant des mots bisyllabiques), d’une référence à
+
+une quantité de lettres mémorisée ou d’un comportement d’autocopie. Nous
+
+nous attendons donc à trouver un écart type plus important dans la tâche
+
+sans voisinage visuel (isolé) que dans les tâches avec voisinage visuel
+
+(liste et ligne).
+
+Nous observons que la moyenne des écarts type pour le nombre de lettres
+
+est significativement plus importante quand l’enfant écrit en «isolé»
+
+que quand il écrit en «liste» (moy. θ nb. lett. = 2,40 isolé; = 1,94
+
+ligne ; = 1,47liste) (Figure 5). Cette différence est significative pour
+
+les variables « tâche » (F (2, N=2,761); p&lt;,1), « section » (F (2,
+
+N=4,675); p&lt;,1) et « catégorie âge » (F (2, N=2,631); p&lt;,1), avec
+
+une différenciation moins importante des graphies pour les MS que pour
+
+les GS, et pour les « jeunes » que pour les « vieux ». Notre
+
+interprétation est que l’écriture en liste offre le voisinage visuel des
+
+graphies, et de ce fait, exerce plus d’influence sur l’écriture des plus
+
+jeunes enfants, ce qui se traduit par des graphies qui ont tendance à se
+
+ressembler en termes de nombre de lettres.
+
+4.2.2. Quantités croissantes et décroissantes
+
+Nous relevons le nombre de relations croissantes et décroissantes d’un
+
+mot à l’autre et nous nous attendons à observer une différence selon que
+
+l’enfant est en voisinage visuel (liste et ligne) ou pas (isolé).
+
+Bien que certaines productions laissent penser à des procédés d’autocopie
+
+de ce type, nous n’observons pas de différence statistique significative
+
+entre les trois tâches, quant à une tendance des enfants à allonger ou
+
+diminuer leurs graphies.
+
+Cependant, ces procédés d’autocopie se rencontrent et les entretiens
+
+métagraphiques révèlent que les graphies sont bien écrites en
+
+différenciation de quantité les unes par rapport aux autres.
+
+Figure 8 - Unité de mesure (1)
+
+Par exemple, Océane se donne une règle d’alternance de longueur. Elle a
+
+écrit quatre mots en liste: un court, un long, un plus long et un court
+
+(Figure 6). Elle explique ainsi les différences de longueur:
+
+«Adulte. -Tu as fait exprès de l’écrire plus long ? / Océane. - Oui, parce que sinon on va pas séparer les deux [mots] et il faut pas que les deux petits [mots] ils se touchent» (Océane, 5,10)
+
+Maëlle, elle, use de la métaphore de «Boucle d’Or et les trois ours» pour
+
+expliquer qu’elle différencie ses graphies par leur longueur (Figure 7):
+
+«Adulte -Et celui-là, il est…? / Maëlle- Petit. Parce que moi je fais les toujours le gros, le moyen et le petit. / A. -Tu fais toujours comme ça? / M. - Parce que j’ai envie de continuer l’histoire presque. Parce que ça c’est le papa ours, ça c’est le maman ours et le petit. / A. -Oui, mais moi je vous ai demandé d’écrire cochon, cheval… / M. - Mais je l’ai écrit! En fait j’ai pensé dans ma tête à faire ça, mais j’ai écrit cochon, cheval, lapin et aussi dans ma tête j’ai pensé à une idée que ça ce soit le papa, ça la maman et ça le petit.» (Maëlle, 5,1)
+
+Figure 8 - Unité de mesure (3)
+
+Maëlle est séduite par ce procédé, si bien qu’elle l’utilise encore pour
+
+écrire d’autres mots, une vingtaine de jours plus tard, cette fois, en
+
+ligne (Figure 8). L’entretien nous montre que Maëlle est contrariée par
+
+la nouvelle consigne d’écrire les mots en ligne, elle sent bien qu’il va
+
+lui être difficile de mettre en œuvre son procédé favori. Quand elle a
+
+terminé l’écriture du premier mot, elle annonce:
+
+«M. - J’ai fait très long./ Adulte – Pourquoi? / M. – Parce que j’ai envie de faire gros, gros et tout petit. / A. – Il faut l’écrire à côté de l’autre. / M. – Moi je préfère l’écrire en bas. / A. – Non, moi je veux que tu fasses une ligne avec ces mots. / M. - Alors tant pis ça va être pareil, je vais écrire le gros, ça va être pareil. Je vais écrire le moyen, ça veut dire pas très grand, ça va être pareil.» (Maëlle, 5,1).
+
+Pour conclure, quand l’enfant peut voir les mots qu’il vient d’écrire, le
+
+mot suivant n’est pas écrit systématiquement avec plus ou moins de
+
+lettres. Par contre, quand l’enfant écrit en liste, le mot suivant a
+
+tendance à être écrit avec le même nombre de lettres.
+
+4.3. Question 3
+
+L’axe vertical facilite-t-il le procédé d’autocopie pour la nature et/ou la
+
+quantité des lettres reproduites?
+
+En regard des résultats précédents, l’axe vertical (écriture en liste)
+
+favorise les procédés d’autocopie en ce qui concerne la nature des lettres
+
+utilisées. Quand les mots sont écrits les uns en dessous des autres (en
+
+liste), le mot suivant est bien écrit systématiquement avec des lettres déjà
+
+écrites, mais pas quand ils sont écrits les uns à côté des autres (en
+
+ligne).
+
+5. Conclusion
+
+Ainsi, le voisinage visuel semble bien avoir un effet sur l’écriture inventée des
+
+enfants en ce qui concerne la nature et la quantité des lettres utilisées. Parce
+
+qu’il est dans une tâche donnée, l’enfant organise la réalisation de la tâche en
+
+fonction du contexte. L’écriture en liste favorise les copies de suites de 3 ou
+
+4 lettres et la copie d’un même nombre de lettres, surtout pour les enfants les
+
+plus jeunes. L’écriture en ligne apparaît comme une tâche intermédiaire entre
+
+«isolé» et «liste». Elle favorise certains comportements d’autocopie, mais dans
+
+une moindre mesure que l’écriture en liste.
+
+Très souvent, les procédés d’autocopie se combinent dans les productions. Par
+
+exemple, Steve utilise les mêmes lettres pour écrire les deux premiers mots,
+
+puis tourne avec d’autres lettres pour les deux derniers mots et, bien que les
+
+quatre mots aient le même nombre de lettres, la différence de taille des lettres
+
+crée l’illusion de mots plus longs (Figure 9).
+
+Ces résultats peuvent s’expliquer si l’on considère que le champ visuel d’un
+
+enfant de 4/6 ans est plus réduit que celui de l’adulte, et qu’il prend plus
+
+facilement en compte ce qui se trouve en face de lui, que ce qu’il y a sur le
+
+côté. Hors, c’est précisément quand l’enfant écrit en liste, qu’il conserve dans
+
+son champ visuel ce qu’il a déjà écrit, contrairement aux deux autres tâches.
+
+Quand il écrit chaque mot isolément, sur des feuilles différentes, l’enfant ne
+
+voit plus ses graphies précédentes et quand il écrit en ligne, les graphies
+
+précédentes sortent de son champ de vision à mesure qu’il écrit. De plus, de
+
+nombreux enfants (22 pour 63) tracent des signes si grands et des graphies si
+
+longues qu’ils utilisent un support de deux à quatre feuilles quand ils écrivent
+
+en ligne.
+
+On observe, enfin, que ces procédés d’autocopie accompagnent les changements de
+
+conceptualisation des enfants.
+
+Par exemple, Léonard Cécil (5,6) trace un cadre dans lequel il inscrit exactement
+
+tous les mots, ce qui leur donne la même longueur physique, bien que le nombre
+
+de lettres varie (Figure 10). On observe qu’il commence tout juste à coder
+
+l’oral sur la première lettre de certains mots. Trois mois plus tard, il a
+
+basculé dans un traitement phonémique tout en continuant à tracer un cadre de
+
+référence. On peut voir sur sa production les deux types de traitement (oral et
+
+visuel) se confronter (Figure 11). Léonard Cécil s’autorise parfois à sortir du
+
+cadre, comme pour le E final de «cheval»; et parfois il ne s’y autorise pas,
+
+comme pour le INE de «lapin» qu’il préfère écrire en faisant un retour à la
+
+ligne.
+
+Aurore (5,8) nous montre un autre procédé d’autocopie destiné, sans doute, à
+
+coder l’oral (Figure 12). Elle fait un traitement phonémique au début des mots
+
+(cochon, cheval, poisson, lapin) et termine ses graphies avec des reprises de
+
+suites de lettres : il semble qu’elle reprenne MRE pour coder le même son [õ] et
+
+qu’elle permute PARO en PROA pour signifier l’analogie qu’elle repère entre
+
+|pwa] et [pɛ̃̃].
+
+Ces résultats plaident en premier lieu, en faveur d’un processus cognitif
+
+d’entrée dans l’écrit plus contextuel et individuel qu’étapiste.
+
+De plus, ils permettent de conclure à la nécessité d'une grande prudence
+
+méthodologique dans l’analyse des écritures inventées. Dans une tâche de ce
+
+type, l’écriture de l’enfant s’y déploie dans un mouvement dynamique entre ce
+
+qu’il sait de l’écrit et ce qu’il est en train de produire en contexte et
+
+certains enfants se révèlent, plus que d’autres, dépendants de la nature de la
+
+tâche demandée.
+
+Enfin, que les productions enfantines varient autant quand le contexte varie,
+
+relativise l’explication psychogénétique du développement de l’écriture,
+
+notamment en ce qui concerne les notions de «nombre d’or», de «quantité
+
+minimale» et « maximale». Certains enfants écrivent bien avec un nombre fixe de
+
+lettres, mais ce nombre varie d’une tâche à l’autre et d’une passation à
+
+l’autre. Certains enfants utilisent, en alternance, d’une passation à l’autre,
+
+toute une ligne de lettres pour un mot et un nombre limité de lettres.
+
+L’explication d’un effet plafond n’est pas satisfaisante dans ce cas. L’enfant
+
+peut ne pas montrer d’effet plafond, mais un effet que nous qualifions plutôt de
+
+psychoaffectif: l’enfant trace pour le plaisir et oublie la consigne.
+
+Enfin, la production d’Aurore montre une combinaison de deux types de procédés:
+
+l’un est visuel (l’autocopie), l’autre est oral (traitement phonémique de la
+
+première syllabe) (Figure 12). Nous avons mené une expérimentation didactique en
+
+cours d’analyse qui étudie comment et quand les enfants abandonnent leurs
+
+procédés d’autocopie au profit d’un traitement oral du mot.
+
+Références bibliographiques
+
+Albert, Jacquy (1996). La construction de l’écrit par les enfants
+
+scolarisés en 1ère année du cycle des apprentissages fondamentaux, Psychologie et éducation, 24: 57-73.
+
+Besse, Jean-Marie (1988). L’enfant et la construction de
+
+la langue écrite: une approche génétique. Lyon : Voies livres 9.
+
+Besse, Jean-Marie (2000). Regarde comme j’écris! Ecrits
+
+d’élève, regards d’enseignants. Paris: Magnard.
+
+Chomsky, Carol (1975). Invented spelling in the open classroom, Child Language Today, numéro spécial: 400-518.
+
+Ferreiro, Emilia (2000). L'écriture avant la
+
+lettre. Paris : Hachette éducation.
+
+Ferreiro, Emilia, Gomez Palacio, Margarita (1988). Lire-écrire à l’école comment s’y apprennent-ils ? : Analyse des
+
+perturbations dans les processus d’apprentissage de la lecture et de
+
+l’écriture. Lyon : CRDP.
+
+Fijalkow, Jacques &amp; Fijalkow, Eliane (1991). L’écriture inventée au
+
+cycle des apprentissages, Les Dossiers de
+
+l’éducation, 18: 125-167.
+
+Jaffre, Jean-Pierre (1989). La découverte de l’écriture : aspects
+
+didactiques et psycholinguistiques, Premier contact avec
+
+l’écriture et la lecture. Grèce: Hélidoni.
+
+Jaffre, Jean-Pierre (1995). Le traitement élémentaire de l’orthographe:
+
+les procédures graphiques, Langue française, 95 :
+
+27-48.
+
+Milgram, Stanley (1974). Soumission à l'autorité.
+
+Paris: Calmann-Lévy.
+
+Piaget, Jean (1936). La naissance de l’intelligence chez
+
+l’enfant. Neuchâtel-Paris: Delachaux et Niestlé, 9ème édition 1977.
+
+Read, Charles (1986). Children’s creative spelling.
+
+London: Routeledge and Kegan Paul.
+
+Treiman, Rebecca, Kessler, Brett &amp; Bourassa, Derrick (2001).
+
+Children’s own names influence their spelling, Applied
+
+Psycholinguistics, 22: 555-570.
+
+Vygotski, Lev Semionovitch (1985, 1ère édition 1934).
+
+Pensée et langage. Trad. fr., Paris :
+
+Messidor/Editions Sociales.
+
+Zerbato-Poudou, Marie-Thérèse (2002). A quoi servent les exercices
+
+graphiques? L’écriture et son apprentissage à l’école élémentaire, Repères n°26/27 : 61-71.
+
+
+

@@ -1,0 +1,718 @@
+
+
+1. Introduction
+
+Des recherches consacrées aux compétences pragmatiques ont été réalisées chez des
+
+adultes cérébrolésés. Ces recherches récentes ont montré le rôle important de
+
+l’hémisphère droit (Champagne, Virbel, Nespoulous et Joanette, 2003 ; Joanette,
+
+Goulet et Hannequin, 1990 ; Stemmer et Cohen, 2002) et des lobes frontaux
+
+(Bernicot et Dardier, 2001 ; Dardier, 2001 ; McDonald et Pearce, 1998 ;
+
+Peter-Favre, 1995, 1999) dans le traitement du langage en contexte. Néanmoins,
+
+même si des troubles pragmatiques sont désormais décrits chez des patients
+
+cérébrolésés adultes, il existe encore peu d’études consacrées aux enfants et
+
+aux adolescents cérébrolésés (Dardier, 2004). Or, les troubles pragmatiques
+
+constituent d’importants obstacles en terme d’adaptation et d’intégration
+
+sociale des enfants et des adolescents souffrant de lésions frontales (Dardier,
+
+2004). La compréhension de ces troubles est donc nécessaire tant sur le plan
+
+théorique que clinique, afin de mieux appréhender les troubles des patients et
+
+améliorer leur prise en charge (Peter-Favre, 2002). Enfin, il existe peu de
+
+données et d’outils à disposition des chercheurs et des cliniciens dans le
+
+domaine de l’évaluation des troubles pragmatiques. Il apparaît actuellement
+
+nécessaire de décrire ces troubles et les dissociations éventuelles rencontrées
+
+dans les profils pragmatiques, afin d’envisager, entre autres, la construction
+
+de tels outils. D’où l’intérêt de cette recherche préliminaire qui aborde
+
+l’analyse des compétences pragmatiques auprès d’une population d’enfants et
+
+d’adolescents cérébrolésés.
+
+L’objectif principal de notre travail est d’étudier le fonctionnement des usages
+
+sociaux du langage en situation de communication. Dans cette recherche, nous
+
+analysons les performances d’enfants et d’adolescents cérébrolésés et de sujets
+
+tout-venant dans une épreuve de production narrative. La tâche de production
+
+narrative est intéressante pour plusieurs raisons. D’une part, le récit est un
+
+genre culturellement déterminé (Berman et Slobin, 1994 ; Kern, 1997, 2002).
+
+D’autre part, cette tâche permet l’analyse d’une grande variété de
+
+caractéristiques linguistiques, formelles (phonologie, syntaxe, etc.) et
+
+pragmatiques (Reilly et Wulfeck, 2004). Enfin, le récit est également utilisé
+
+pour étudier d’autres domaines cognitifs, comme l’expression, la compréhension
+
+et l’attribution des émotions (Bellugi, Reilly, Krieter, Doyle et Jones, 2003 ;
+
+Bernicot, Lacroix et Reilly, 2003). Selon nous, compte tenu de l’ensemble de ses
+
+spécificités, la situation de narration est une tâche complexe qui peut donc
+
+constituer une « épreuve frontale » sollicitant les fonctions exécutives (par
+
+exemple, le traitement séquentiel, l’élaboration d’un plan, la flexibilité
+
+mentale, l’inhibition de réponses non pertinentes, le maintien de la stratégie
+
+et la vérification du résultat final) ; cette épreuve peut permettre de mettre
+
+en évidence des difficultés variées dans l’utilisation du langage chez les
+
+patients cérébrolésés.
+
+La littérature relative aux troubles pragmatiques observés chez les patients
+
+cérébrolésés souligne l’existence de dissociations dans les performances des
+
+patients, en particulier des patients lésés frontaux (Dardier, Delaye et
+
+Laurent-Vannier, 2003). Grâce à cette étude, nous verrons si des dissociations
+
+existent dans les résultats des patients à l’épreuve de narration.
+
+Les recherches antérieures réalisées auprès d’adultes et d’enfants cérébrolésés
+
+soulignent leurs difficultés à produire des récits. Dans ce domaine, il n’existe
+
+pas de travaux consacrés spécifiquement aux troubles du récit chez les enfants
+
+et les adolescents. Néanmoins, des études consacrées à l’analyse de leurs
+
+capacités conversationnelles évoquent leurs difficultés dans cette activité (en
+
+ce qui concerne la gestion des thèmes ou la relation à l’interlocuteur) et
+
+soulignent le rôle majeur des fonctions exécutives dans les situations de
+
+communication qui nécessitent l’application de règles d’usages du langage
+
+spécifiques (Bernicot, Dardier, Fayada, Pillon et Dubois, 2001 ; Dardier, 2001,
+
+2004 ; Dardier et Bernicot, 2000 ; Peter-Favre, 1995, 1999). Compte tenu de
+
+l’ensemble de ces recherches, nous faisons l’hypothèse qu’à l’inverse des sujets
+
+contrôles, les patients cérébrolésés vont montrer des difficultés dans une
+
+épreuve de narration qui sollicite des compétences linguistiques et pragmatiques
+
+variées (Reilly et Wulfeck, 2004). Ces difficultés s’observeront notamment sur
+
+le plan de la structuration du récit, car les patients présenteront une
+
+réduction du discours et des troubles de la cohésion. Au niveau pragmatique, ils
+
+auront plus de difficultés que les sujets contrôles à respecter le schéma
+
+canonique et la continuité thématique de l’histoire. Enfin, compte tenu des
+
+troubles du comportement fréquemment décrits chez les patients cérébrolésés, en
+
+particulier chez les patients lésés frontaux, nous faisons l’hypothèse qu’un
+
+trouble dans la gestion des comportements émotionnels sera mis en évidence chez
+
+ces patients par l’analyse des évaluations sociales (intensificateurs, discours
+
+direct, questions et exclamations dirigées vers l’expérimentateur).
+
+2. Méthodologie
+
+2.1. Sujets
+
+La population est composée de deux groupes d’enfants et d’adolescents, de
+
+langue maternelle française : un groupe de patients souffrant de lésions
+
+cérébrales acquises (unilatérales ou bilatérales) et un groupe de sujets
+
+contrôles. Tous étaient volontaires pour participer à cette recherche. Le
+
+groupe expérimental est composé de six enfants et adolescents, suivis au
+
+Centre de Rééducation Fonctionnelle de Kerpape, dans le Morbihan et à
+
+l’hôpital Saint-Maurice, à Paris. Les patients sont âgés de 8 ans 6 mois à
+
+20 ans 2 mois (quatre garçons et deux filles). Ils ne présentent pas de
+
+déficience intellectuelle majeure (le QI total, mesuré à l’aide du WISC-III,
+
+est supérieur à 70), ni de troubles aphasiques ou d’autres troubles
+
+susceptibles de nuire à la passation. Les caractéristiques complètes des
+
+patients se trouvent dans le tableau 1. Le groupe contrôle est composé de
+
+six enfants et adolescents, scolarisés en région Bretagne (non redoublants),
+
+appariés aux patients au niveau du sexe et de l’âge (plus ou moins trois
+
+mois). Les sujets contrôles sont âgés de 8 ans 8 mois à 20 ans 3 mois
+
+(quatre garçons et deux filles).
+
+Tableau 1 - Caractéristiques des sujets du groupe expérimental
+
+2.2. Matériel et procédure
+
+Le matériel est constitué d’un livre intitulé « Frog, where are you ? »
+
+(Mayer, 1969), composé de vingt-quatre images en noir et blanc sans
+
+texte. Ce livre « raconte » l’histoire d’un petit garçon qui, ayant perdu sa
+
+grenouille, part à sa recherche et la retrouve après une série d’aventures.
+
+La figure 1 présente trois images constituant le livre.
+
+Les enfants regardent une première fois les images puis ils doivent raconter
+
+l’histoire en les regardant à nouveau.
+
+Figure 1 - Trois des vingt-quatre images faisant partie de l’épreuve de
+
+production narrative
+
+2.3. Indices utilisés
+
+Pour l’ensemble des indices, le codage est effectué en aveugle par deux juges
+
+et l’accord entre les deux juges est supérieur à 80%. Les indices utilisés
+
+dans cette étude peuvent être regroupés en deux catégories : d’une part, les
+
+indices pragmatiques et d’autre part, les évaluations sociales. Dans le
+
+cadre de l’étude des compétences pragmatiques, nous évaluons la façon dont
+
+les sujets développent et structurent leur récit en analysant le nombre de
+
+propositions, les pourcentages de pronoms ambigus et de phrases complexes.
+
+Nous évaluons également la façon dont les sujets respectent le schéma d’une
+
+histoire culturellement transmis (analyse du score du schéma canonique sur
+
+une échelle en 14 points, d’après Bernicot et al.,
+
+2003) et dont ils développent et maintiennent le thème du récit (analyse du
+
+score de continuité thématique sur une échelle en 5 points, d’après Bernicot
+
+et al., 2003 ; Reilly, Losh, Bellugi et Wulfeck,
+
+2004). Dans le cadre de l’étude des évaluations sociales, nous évaluons la
+
+position plus ou moins subjective du locuteur par rapport à l’auditeur et à
+
+l’histoire (Bernicot et al., 2003 ; Losh, Bellugi,
+
+Reilly et Anderson, 2000 ; Reilly et al., 2004), en
+
+relevant les marques de discours direct (par exemple : « Le petit garçon dit
+
+: "Oh ! La belle grenouille !" »), les questions et exclamations produites
+
+vers l’expérimentateur (par exemple : « Regarde ! Il a des bois le cerf !
+
+»), ainsi que les intensificateurs (par exemple : « Il est trop en colère le
+
+petit garçon. »).
+
+3. Résultats
+
+Les différents résultats ont été traités à l’aide du test non-paramétrique U de
+
+Mann-Whitney. Les différences ont été considérées comme étant significatives à
+
+partir du seuil de .05.
+
+3.1. Aspects pragmatiques
+
+Les figures 2 à 4 présentent les résultats des sujets des deux groupes en ce
+
+qui concerne le nombre de propositions, le pourcentage de pronoms ambigus et
+
+de phrases complexes (par rapport au nombre total de propositions).
+
+Figure 2 - Nombre de propositions constituant les récits des sujets
+
+des deux groupes
+
+Figures 3 et 4 - Pourcentages de pronoms ambigus et de phrases
+
+complexes constituant les récits des sujets des deux groupes
+
+L’effet du groupe n’est pas significatif pour le nombre de propositions et le
+
+pourcentage de phrases complexes. En revanche, le pourcentage de pronoms
+
+ambigus produit par le groupe de patients est significativement plus élevé
+
+que celui du groupe contrôle (U(6;6)=28 ; p&lt;.05).
+
+Les figures 5 et 6 indiquent les scores pour les sujets des deux groupes en
+
+ce qui concerne le schéma canonique et le respect de la continuité
+
+thématique.
+
+Figures 5 et 6 - Scores de respect du schéma canonique et de la continuité
+
+thématique des récits des sujets des deux groupes
+
+Pour l’indice « schéma canonique », l’effet du groupe est significatif
+
+(U(6;6)=8 ; p&lt;.05). Les sujets contrôles respectent mieux le schéma de
+
+l’histoire que les patients cérébrolésés. En revanche, pour l’indice «
+
+continuité thématique », l’effet de groupe n’est pas significatif.
+
+3.2. Aspects émotionnels
+
+Les figures 7, 8 et 9 indiquent les résultats des sujets des deux groupes en
+
+ce qui concerne le pourcentage de production d’évaluations sociales.
+
+Figures 7, 8 et 9 - Pourcentages d'évaluations sociales constituant
+
+les récits des deux groupes
+
+Pour le pourcentage de discours direct, l’effet du groupe est significatif
+
+(U(6;6)=30 ; p&lt;.01). De même, en ce qui concerne la production
+
+d’intensificateurs, l’effet du groupe est significatif (U(6;6)=32 ;
+
+p&lt;.01). Les patients cérébrolésés produisent davantage de discours direct
+
+et d’intensificateurs que les sujets contrôles. En revanche, l’effet du
+
+groupe n’est pas significatif pour le pourcentage de questions et
+
+exclamations envers l’expérimentateur.
+
+4. Discussion
+
+Rappelons tout d’abord que l’objectif de ce travail était d’effectuer une
+
+recherche préliminaire concernant les troubles pragmatiques et émotionnels chez
+
+des enfants et adolescents cérébrolésés. Pour ce faire, nous avons mis en place
+
+un protocole expérimental composé d’une tâche de production de récit. Compte
+
+tenu de la taille restreinte de notre population expérimentale et de son
+
+hétérogénéité en terme d’âge, nous ne pouvons conclure définitivement ici sur
+
+les capacités pragmatiques des patients. Néanmoins, ce premier travail
+
+exploratoire souligne l’existence de difficultés subtiles chez cette population.
+
+Ainsi, la première question posée était de savoir si dans une épreuve de
+
+narration, les patients cérébrolésés non aphasiques avaient des récits
+
+différents des sujets contrôles. Plus précisément, deux niveaux dans la
+
+narration ont été étudiés : un niveau pragmatique (mesure du nombre de
+
+propositions, des pourcentages de phrases complexes et de pronoms ambigus,
+
+mesure du respect du schéma canonique et de la continuité thématique) et un
+
+niveau émotionnel (mesure de la régulation des émotions dans le récit).
+
+Concernant les aspects pragmatiques du récit, les résultats obtenus confirment
+
+partiellement notre hypothèse de départ. En effet, l’analyse du nombre de
+
+propositions ne montre pas de différences entre les récits des enfants et
+
+adolescents cérébrolésés et ceux des sujets contrôles. Ces résultats rejoignent
+
+ceux obtenus auprès d’enfants et d’adolescents cérébrolésés dans une situation
+
+de conversation (Dardier, Reilly, Bates, Delaye et Laurent-Vannier, 2004), mais
+
+vont à l’encontre d’autres travaux qui évoquent une réduction du discours chez
+
+des enfants et adolescents lésés frontaux en situation de récit (Chapman, Levin,
+
+Wanek, Weyrauch et Kufera, 1998 ; Dennis, Jacennik et Barnes, 1994 ; Reilly,
+
+Bates et Marchman, 1998).
+
+L’analyse de la cohésion des récits montre que les productions des enfants et des
+
+adolescents cérébrolésés sont moins organisées que celles des sujets contrôles,
+
+car ils utilisent davantage de pronoms ambigus et explicitent donc moins les
+
+liens existant entre les unités linguistiques et leurs référents. Ces résultats
+
+confirment ceux obtenus par Chapman et al. (1992),
+
+Dardier et al. (2004) et Dennis et
+
+al. (1994) auprès d’enfants et d’adolescents souffrant de lésions
+
+frontales. Dans la mesure où les unités linguistiques ne peuvent être
+
+considérées indépendamment de leur valeur fonctionnelle au sein du récit, les
+
+troubles de la cohésion narrative des enfants et adolescents cérébrolésés
+
+peuvent être mis en lien avec leurs déficits en terme de capacités d’adaptation
+
+à une situation de communication. Dans cette épreuve, c’est bien l’organisation
+
+et la structuration du récit qui apparaît déficitaire chez les patients.
+
+En outre, les récits des patients cérébrolésés montrent aussi des spécificités
+
+par rapport à ceux des sujets contrôles. Ainsi, nos résultats mettent en
+
+évidence des difficultés chez ces patients à respecter une règle fondamentale
+
+lors de la production des récits : le respect du schéma canonique. Sur ce point,
+
+nos données rejoignent les résultats déjà obtenus auprès d’adultes cérébrolésés
+
+dans des situations de récits par Biddle, McCabe et Bliss (1996), Coelho, Liles
+
+et Duffy (1995), Glosser et Deser (1990), Liles, Coelho, Duffy et Zalagens
+
+(1989) ou par Mentis et Prutting (1991) et Peter-Favre (1995 ; 1999 ; 2002) dans
+
+des situations de conversations. En revanche, nos résultats ne sont pas en
+
+accord avec ceux obtenus par ces auteurs en ce qui concerne le respect de la
+
+continuité thématique. Dans le cadre de notre étude, les performances des
+
+patients ne sont pas inférieures à celles des contrôles. Selon nous, il est
+
+possible que cette absence de différence soit liée à l’effet plafond observé
+
+chez les sujets contrôles les plus âgés dans le cadre de l’indice de continuité
+
+thématique. Sur ce point, une première critique peut être effectuée : en effet,
+
+une évaluation plus complexe de cet indice, intégrant davantage d’éléments à
+
+restituer permettrait sans doute dans l’avenir de mieux différencier les récits
+
+des patients de ceux des sujets contrôles.
+
+Selon nous, il est possible de faire un premier lien entre ces troubles
+
+pragmatiques dans la gestion de la structure du récit et des troubles des
+
+fonctions exécutives, dans la mesure où tous nos patients présentent des lésions
+
+cérébrales incluant les régions frontales. En effet, la production d’un récit
+
+peut être considérée comme une tâche complexe sollicitant les fonctions
+
+exécutives, dans la mesure où elle nécessite la mise en œuvre de différentes
+
+étapes pour sa réalisation. Nous rejoignons le point de vue de Mar (2004) pour
+
+lequel les lobes frontaux et par conséquent les fonctions exécutives
+
+sous-jacentes, sont sollicités dans notre épreuve de narration. Parmi ces
+
+fonctions exécutives, nous pouvons notamment citer le traitement séquentiel des
+
+informations pertinentes dans le récit, l’élaboration et l’organisation d’une
+
+trame narrative, l’inhibition des informations non pertinentes. Sur ce point,
+
+des recherches complémentaires incluant une évaluation neuropsychologique
+
+complète des patients sont désormais nécessaires afin d’affiner l’analyse des
+
+traitements inférentiels mis en œuvre dans ces situations de communication et
+
+aussi pour évaluer l’influence dans ce domaine d’autres troubles
+
+neuropsychologiques.
+
+En ce qui concerne les aspects émotionnels des narrations, notre analyse a porté
+
+sur la régulation des émotions du narrateur (par une analyse des
+
+intensificateurs, du discours direct et des questions ou exclamations vers
+
+l’expérimentateur).
+
+Ainsi, notre analyse des évaluations sociales montre que, conformément à notre
+
+hypothèse, les récits des patients cérébrolésés comportent davantage
+
+d’intensificateurs et d’énoncés de discours direct que ceux des sujets
+
+contrôles. Ces résultats sont à mettre en perspective avec les données de la
+
+littérature concernant les déficits du contrôle émotionnel souvent décrits chez
+
+les patients cérébrolésés, en particulier chez les patients porteurs de lésions
+
+frontales (Blumer et Benson, 1975 ; Eslinger, Flaherty-Craig et Benton, 2004).
+
+En effet, selon nous, des déficits dans la régulation des émotions
+
+(désinhibition émotionnelle et comportementale) peuvent avoir des répercussions
+
+sur les narrations des patients cérébrolésés, car la production d’un récit
+
+socialement adapté nécessite un contrôle émotionnel qui apparaît difficile à
+
+maintenir chez ces patients.
+
+Dans le futur, les données recueillies auprès d’une population plus vaste nous
+
+permettront d’envisager de nouvelles possibilités en terme de remédiation.
+
+Enfin, la constitution d’échantillons homogènes (en terme de localisation, d’âge
+
+d’acquisition des lésions et de passation, de latéralisation et d’étendue des
+
+lésions) sera également nécessaire afin de mieux comprendre le rôle des
+
+différentes régions cérébrales impliquées dans le domaine de la pragmatique et
+
+afin d’évaluer d’éventuels phénomènes de plasticité cérébrale.
+
+Références bibliographiques
+
+Bellugi, Ursula, Reilly, Judy, Krieter, Jacqueline, Doyle, Teresa &amp;
+
+Jones, Wendy (2003). Language and non linguistic cognition in children with
+
+Williams syndrome: A complex interaction, Enfance, 3:
+
+237-249.
+
+Berman, Ruth &amp; Slobin, Dan (1994). Relating events
+
+in a narrative. Hillsdale, NJ : Lawrence Erlbaum Associates.
+
+Bernicot, Josie &amp; Dardier, Virginie (2001). Les troubles de la
+
+communication consécutifs aux lésions frontales: l’exemple de la situation
+
+d’interview, Revue de Neuropsychologie, 10: 281-331.
+
+Bernicot, Josie, Dardier, Virginie, Fayada, Catherine, Pillon, Bernard
+
+&amp; Dubois, Bruno (2001). Pragmatique et métapragmatique chez deux
+
+patients souffrant de lésions frontales unilatérales, Psychologie de l’Interaction, 13-14: 141-184.
+
+Bernicot, Josie, Lacroix, Agnès &amp; Reilly, Judy (2003). La narration
+
+chez les enfants atteints du syndrome de Williams : aspects structuraux et
+
+pragmatiques, Enfance, 3: 265-283.
+
+Biddle, Kathleen, McCabe, Allyssa &amp; Bliss, Lynn (1996). Narrative
+
+skills following traumatic brain injury in children and adults, Journal of Communicative Disorders, 29: 447-469.
+
+Blumer, David &amp; Benson, Dietrich (1975). Personality changes with
+
+frontal and temporal lobe lesions, in Psychiatric Aspects
+
+of Neurologic Disease, Benson, David &amp; Blumer Dietrich (Eds).
+
+New-York : Grune &amp; Stratton, 151-170.
+
+Champagne, Maud, Virbel, Jacques, Nespoulous, Jean-Luc &amp; Joanette, Yves (2003). Impact of right hemispheric damage on a
+
+hierarchy of complexity evidenced in young normal subjects, Brain and Cognition, 53: 152-157.
+
+Chapman, Sandra, Levin, Harvey, Wanek, Alicia, Weyrauch, Julie &amp;
+
+Kufera, Joseph (1998). Discourse after closed head injury in young children,
+
+Brain and Language, 61: 420-449.
+
+Coelho, Carl, Liles, Betty &amp; Duffy, Robert (1995). Impairments of
+
+Discourse Abilities and Executive Functions in Traumatically Brain Injured
+
+Adults, Brain Injury, 9: 471-477.
+
+Dardier, Virginie (2001). Pragmatique du langage et de
+
+la communication chez l’adulte et chez l’enfant : une étude de patients
+
+porteurs de lésions frontales. Thèse nouveau régime, Paris,
+
+Université Paris V, manuscrit non publié.
+
+Dardier, Virginie (2004). Pragmatique et pathologies –
+
+Comment étudier les troubles de l’usage du langage. Paris : Bréal.
+
+Dardier, Virginie &amp; Bernicot, Josie (2000). Les troubles de la
+
+communication consécutifs aux lésions frontales : l'exemple de la situation
+
+d'interview, Revue de Neuropsychologie, 10, 2: 281-331.
+
+Dardier, Virginie, Delaye, Corinne &amp; Laurent-Vannier, Anne (2003). La
+
+compréhension des actes de langage par des enfants et des adolescents
+
+porteurs de lésions frontales : l’analyse des demandes, Enfance, 3: 223-236.
+
+Dardier, Virginie, Reilly, Judy, Bates, Elizabeth, Delaye, Corinne &amp;
+
+Laurent-Vannier, Anne (2004). La cohésion du discours chez les enfants et
+
+les adolescents cérébrolésés – Analyse de l’usage des pronoms et des
+
+conjonctions, Cahiers d’Acquisition et de Pathologie du
+
+Langage, 24: 101-114.
+
+Dennis, Maureen, Jacennik, Barbara &amp; Barnes, Marcia (1994).
+
+The content of narrative discourse in children and adolescents after
+
+early-onset hydrocephalus and in normally-developing age peers, Brain and Language, 46: 129-165.
+
+Eslinger, Paul, Flaherty-Craig, Claire &amp; Benton, Arthur (2004).
+
+Developmental outcomes after early prefrontal cortex damage, Brain and Cognition, 55: 84-103.
+
+Glosser, Guila &amp; Deser, Tony (1990). Patterns of discourse production
+
+among neurological patients with fluent language disorders, Brain and Language, 40: 67-88.
+
+Joanette, Yves,
+
+Goulet, Pierre &amp; Hannequin, Didier (1990). Right
+
+hemisphere and verbal communication. New-York : Springer-Verlag.
+
+Kern, Sophie (1997). Comment les enfants jonglent avec
+
+les contraintes communicationnelles, discursives et linguistiques dans
+
+la production d'une narration. Lille : Presses du Septentrion.
+
+Kern, Sophie (2002). Contexte et acquisition du langage : un cas de
+
+narration. French Language Studies, 12, 189 – 209.
+
+Liles, Betty, Coelho, Carl, Duffy, Robert &amp; Zalagens, Mary (1989).
+
+Effects of elicitation procedures on the narratives of normal and
+
+closed-head injured adults, Journal of Speech &amp;
+
+Hearing Research, 54: 356-366.
+
+Losh, Molly, Bellugi, Ursula, Reilly, Judy &amp; Anderson, Diane (2000).
+
+Narratives as a social engagement tool: The excessive use of evaluation in
+
+narratives from children with Williams syndrome, Narrative
+
+Inquiry, 10: 265-290.
+
+McDonald, Skye &amp; Pearce, Samantha (1998). Requests that overcome
+
+listener reluctance: Impairment associated with executive dysfunction in
+
+brain injury, Brain and Language, 61: 88-104.
+
+Mar, Raymond (2004). The neuropsychology of narrative: story
+
+comprehension, story production and their interrelation, Neuropsychologia, 42: 1414-1434.
+
+Mayer, Mercer (1969). Frog, where are you? New-York
+
+: Dial Press.
+
+Mentis, Michele &amp; Prutting, Carol (1991). Analysis of topic as
+
+illustrated in a head-injured and a normal adult, Journal
+
+of Speech and Hearing Research, 34: 583-595.
+
+Peter-Favre, Claire (1995). Conversations avec une patiente souffrant de
+
+lésions traumatiques bifrontales : Ajustements mutuels, Revue de Neuropsychologie, 5: 53-85.
+
+Peter-Favre, Claire (1999). Communication verbale et
+
+pathologie post-traumatique : Interactions conversationnelles avec une
+
+patiente souffrant de lésions bifrontales. Thèse de Doctorat,
+
+Université de Nancy II.
+
+Peter-Favre, Claire (2002). Discours et conversation chez les traumatisés
+
+crânio-cérébraux, in Pragmatique et psychologie,
+
+Bernicot, Josie, Trognon, Alain, Guidetti, Michèle &amp; Musiol, Michel
+
+(Eds). Nancy : Presses Universitaires de Nancy, 281-304.
+
+Reilly, Judy, Bates, Elizabeth &amp; Marchman, Virginia (1998). Narrative
+
+discourse in children with early focal brain injury, Brain
+
+and Language, 61: 335-375.
+
+Reilly, Judy, Losh, Molly, Bellugi, Ursula &amp; Wulfeck, Beverly (2004).
+
+Frog, where are you? Narratives in children with specific language
+
+impairment, early focal brain injury, and Williams syndrome, Brain and Language, 88: 229-248.
+
+Reilly, Judy &amp; Wulfeck, Beverly (2004). Issues in plasticity and
+
+development: Language in atypical children, Brain and
+
+Language, 88: 163-166.
+
+Stemmer, Brigitte &amp; Cohen, Henri (2002). Neuropragmatique et lésions
+
+de l’hémisphère droit, Psychologie de l'Interaction,
+
+13-14: 15-46.
+
+
+

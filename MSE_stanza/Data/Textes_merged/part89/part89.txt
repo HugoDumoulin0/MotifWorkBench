@@ -1,0 +1,882 @@
+
+
+1. Introduction
+
+L'apparition du support électronique transforme notre façon de concevoir et
+
+d'utiliser les dictionnaires. Ceci affecte autant la manière de décrire les
+
+unités lexicales que de naviguer au sein des bases de données lexicales
+
+(Pruvost, 1995, 2000 ; Jacquet-Pfau, 2002 ; De Schryver, 2003 ; Zock &amp;
+
+Carroll, 2003). Le défi lexicographique consiste donc à dompter le support
+
+électronique pour le mettre au profit d'une amélioration de la structuration et
+
+de l'accès à l’information. Les bases de données lexicales sont majoritairement
+
+conçues selon une structure éclatée qui permet une grande liberté dans la
+
+connexion des entités. Comme l’ont montré Steinlin et al.
+
+(2004) pour le DiCo, une fois totalement atomisée, une base de données
+
+peut être accessible par n’importe quel élément et modulable pour multiplier les
+
+types de requêtes à l’infini. Après l’atomisation des données, l'étape suivante
+
+consiste en leur organisation afin d’offrir des moyens de consultation adaptés.
+
+Le mode de présentation des relations lexicales dans une base de données est
+
+très étroitement lié à la théorie qui lui est sous-jacente. Parmi les projets de
+
+grande envergure, on peut noter WordNet (Fellbaum, 1998) qui bénéficie en
+
+arrière-plan d'un certain nombre d'études psycholinguistiques, FrameNet qui
+
+repose sur la sémantique des cadres (Fillmore et al.,
+
+2003), le DAFLES (Selva et al., 2002), inspiré de la
+
+Lexicologie Explicative et Combinatoire ainsi que le DiCo, sur lequel nous
+
+travaillons.
+
+Le DiCo, développé à l’OLST (Université de Montréal) par Polguère et Mel’čuk,
+
+repose sur les principes de la Lexicologie Explicative et Combinatoire (Mel’čuk
+
+et al. , 1995), et se concentre sur la mise en valeur
+
+et l’explicitation des relations sémantiques (collocations et dérivés
+
+sémantiques) entre les unités lexicales. Cette base de données lexicale du
+
+français fournit, pour chaque unité lexicale décrite (environ 1000), une courte
+
+caractérisation sémantique ainsi que l'ensemble de sa combinatoire lexicale. À
+
+la différence de ses modèles concurrents, l’éventail de relations lexicales
+
+couvertes est conséquent, tant sur le plan syntagmatique (collocations) que
+
+paradigmatique (dérivés sémantiques). Cependant, ces relations ne sont pas
+
+organisées suffisamment pour une consultation interactive du DiCo. Par exemple,
+
+sous l'article couteau, on aimerait accéder directement à
+
+tous les verbes dénotant une action impliquant un couteau (aiguiser, émousser, manier, etc.), ou à tous les types de couteau (à beurre, économe, etc). Notre objectif est donc de
+
+proposer une organisation des relations lexicales à partir de laquelle on puisse
+
+dériver des modes de consultation de la base de données et permettre un accès
+
+plus cohérent à l'information.
+
+Pour ce faire, nous utilisons les fonctions lexicales, qui servent à étiqueter
+
+les relations lexicales dans le DiCo. Elles permettent une systématisation dans
+
+la description lexicologique dans le sens où elles recensent, explicitent et
+
+formalisent les relations sémantico-lexicales entre les collocations et les
+
+dérivés sémantiques, grosso modo entre les unités
+
+lexicales constituant un champ sémantique. Elles se présentent sous la forme
+
+d’une formule du type x f y, où
+
+x est le mot-clé et y la
+
+valeur (c’est-à-dire, le collocatif ou dérivé sémantique). Par exemple, la
+
+fonction Magn exprime l’intensité (rire Magn aux éclats), Sloc, l’endroit typique
+
+(abeille Sloc
+
+ruche), CausFunc1, la causation
+
+d’existence ( soupçon
+
+CausFunc1
+
+éveiller), etc. Travailler directement sur l'encodage
+
+nous permettra de traiter globalement les relations qu'entretient toute unité
+
+lexicale avec d'autres. La question est alors de savoir comment, à partir d’un
+
+encodage formel des relations lexicales, on peut réussir à dégager une
+
+classification multidimensionnelle des relations qui permette de les organiser
+
+intuitivement pour la consultation. Nous présenterons dans un premier temps les
+
+fonctions lexicales en tant qu’outil potentiel pour la représentation et la
+
+structuration des relations lexicales, puis nous détaillerons la façon dont on
+
+peut exploiter ce formalisme pour atteindre notre objectif. Pour conclure, nous
+
+expliquerons comment nous utiliserons, dans la suite de nos travaux, cette
+
+structuration des fonctions lexicales pour créer des outils de consultation du
+
+DiCo.
+
+2. Utilisation des fonctions lexicales comme grille de structuration des
+
+relations lexicales
+
+2.1. Présentation des fonctions lexicales
+
+Une soixantaine de fonctions lexicales standard [254] simples sont communément admises dans le cadre de la
+
+Lexicologie Explicative et Combinatoire. Celles-ci peuvent se combiner entre
+
+elles pour représenter des relations plus complexes, par exemple :
+
+*Causer que ~ existe*/
+
+assemblée#2 CausFunc0 convoquer [ART ~][255]
+
+/* [X] préparer ~pour l'utiliser*/
+
+rasoir PreparReal1aiguiser, affiler, affûter [ART ~]
+
+Les fonctions lexicales doivent remplir certaines conditions pour être
+
+considérées standard, elles doivent représenter des relations suffisamment
+
+larges et abstraites pour pouvoir s’appliquer à un grand nombre d’unités
+
+lexicales et donner comme valeur un nombre suffisamment varié d’unités
+
+lexicales. Les fonctions lexicales formalisent plusieurs aspects d’une
+
+relation lexico-sémantique entre deux unités lexicales : le sens de la
+
+relation (sens), la partie du discours de la valeur
+
+(pos), le régime syntaxique de la valeur (reg.), la nature paradigmatique ou syntagmatique de la
+
+relation (rel.). À partir de cet encodage, il est donc
+
+possible de dégager des sortes de fiches d’identité des relations lexicales,
+
+comme l’illustrent les quatre exemples de la figure 1.
+
+S1
+
+ex : vendre#1 S1 vendeur
+
+sens : ‘premier actant du mot-clé’
+
+pos : nom
+
+rel. : paradigmatique
+
+reg. : --
+
+IncepReal1
+
+ex : gare#a IncepReal1 entrer [en ~]
+
+sens : ‘commencer à réaliser l’action typique liée au mot-clé’
+
+pos :verbe
+
+rel. : syntagmatique
+
+reg. : -sujet = premier actant du mot-clé (ici, X = I = train)
+
+-objet le mot-clé lui même (ici, gare ).
+
+Sloc
+
+ex : mouton#I.a Sloc bergerie, enclos
+
+sens : ‘endroit typique où se trouve ~’
+
+pos : nom
+
+rel. : paradigmatique
+
+reg. : --
+
+V0
+
+ex :haine V0 haïr
+
+sens : ‘équivalent verbal du mot-clé’
+
+pos : verbe
+
+rel. : paradigmatique
+
+reg. : possède les mêmes actants sémantico-syntaxiques (X et Y) que le mot-clé
+
+Figure 1 - Illustration de l'extraction d'information à partir des
+
+fonctions lexicales
+
+2.2. Enjeu d'une classification des fonctions lexicales
+
+Comme nous l’avons mentionné dans l’introduction, les fonctions lexicales
+
+dans le DiCo et dans le DiCouèbe, sa version en ligne (Jousse &amp;
+
+Polguère, 2005) ne sont pas organisées intuitivement pour la consultation.
+
+Elles obéissent à un classement hétérogène en fonction des différentes
+
+parties du discours et du type standard ou non des fonctions. Nous pensons
+
+que ce classement est discutable dans la mesure où il ne permet pas une
+
+organisation pertinente des données. Plusieurs classifications des fonctions
+
+lexicales ont été entreprises, on note notamment celles proposées par
+
+Zholkovski et Mel’čuk (1970), Steele et Meyer (1990), Grimes (1990), Alonso
+
+Ramos (1993) et alonso Ramos et Tutin (1996). La
+
+plupart de ces classifications regroupent les fonctions lexicales selon deux
+
+grandes catégories : les fonctions paradigmatiques et les fonctions
+
+syntagmatiques. Les premières représentent des relations d'ordre
+
+paradigmatique qu'on appelle les dérivés sémantiques (par exemple, pour abeille : ruche, essaim, apiculteur), les
+
+secondes, des relations d'ordre syntagmatique ou collocations (par exemple,
+
+pour abeille : piquer, bourdonner).
+
+Nous pensons que les différentes classifications proposées jusqu'ici sont
+
+contestables car elles mélangent sur le même plan plusieurs critères de
+
+classification : parties du discours (par exemple, les prépositions et
+
+verbes), fonctions syntaxiques (par exemple, la modification), forme de
+
+conjugaison (par exemple, les formules impératives), sens (par exemple, les
+
+verbes supports, les verbes de réalisation) et ne sont confinées que dans un
+
+seul axe de classement. Nous attribuons cette hétérogénéité à un manque de
+
+perspective d'application. En effet, une organisation des fonctions
+
+lexicales n’a de sens que si elle vise une utilisation particulière. Pour
+
+mettre à profit les différents types d’information fournie par les fonctions
+
+lexicales sans les entremêler, il faut en faire non pas une classification
+
+unidimensionnelle mais une classification multidimensionnelle. Nous
+
+souhaitons créer une classification des fonctions lexicales qui respecte
+
+davantage la façon dont elles sont utilisées dans le DiCo. Cette
+
+classification se révèlera un meilleur reflet de la façon dont s’organisent
+
+les unités lexicales dans le lexique d'une langue.
+
+3. Organisation des relations lexicales selon différentes perspectives
+
+Afin de déterminer les dimensions de classement des fonctions lexicales, nous
+
+avons analysé les différents types d’information qu’elles modélisent. Chaque
+
+type d’information fera l’objet d’une dimension de classification. Nous en
+
+présentons quatre : sens de la relation, partie du discours de la valeur,
+
+comportement syntaxique du mot-clé et de la valeur, actants concernés par la
+
+relation. Pour élaborer une telle organisation, nous attribuons aux fonctions
+
+lexicales un certain nombre de paramètres descriptifs de plusieurs ordres. Nous
+
+avons compilé l’ensemble des paramètres associés aux fonctions lexicales dans
+
+une grande base de données qu’il sera possible d’interroger, par la suite, au
+
+moyen de requêtes multicritères.
+
+3.1. Perspective « sémantique »
+
+À l’instar des dictionnaires thématiques, nous souhaitons proposer une
+
+organisation onomasiologique des relations entre les unités lexicales. En
+
+d’autres termes, il s’agit de les organiser selon une perspective sémantique
+
+pour permettre l’accès à une unité lexicale à partir de son sens. Par
+
+exemple, dans l’article cheval#I, on pourra atteindre
+
+l’unité lexicale écurie à partir d’une catégorie
+
+générale de type « endroit ». Cependant nous ne voulons pas reproduire les
+
+travers d’une classification linéaire figée, même si elle est thématique,
+
+mais rester dans une optique multidimensionnelle. L'objectif est de
+
+permettre l’accès à une unité lexicale selon ses composantes de sens les
+
+plus saillantes. Par exemple, dans la relation suivante :
+
+/*~ dure trop longtemps*/
+
+conversation#a AntiBonMagn-tempContFunc0  s’éterniser, traîner
+
+en longueur,
+
+on peut dégager deux composantes de sens : ‘long’ et ‘déplaisant’. On
+
+souhaite donc pouvoir accéder à la lexie en partant de grandes catégories de
+
+type « temps » et « caractère négatif ».
+
+Pour mener à bien cette organisation sémantique, nous avons procédé en deux
+
+étapes. La première consiste à regrouper des fonctions lexicales
+
+sémantiquement proches. Par exemple, les fonctions Fact, Real et Labreal,
+
+habituellement catégorisées parmi les « verbes de réalisation », comportent
+
+toutes, pour les lexies désignant un artefact, le sens de réalisation de la
+
+fonction dévolue à l’artefact. Ce qui les différencie est la présence ou
+
+l'absence des actants du mot-clé et leurs positions syntaxiques. Ainsi, pour
+
+la lexie charrette, dont la forme propositionnelle
+
+est :
+
+'charrette : utilisée par l’individu X pour transporter Y et tirée par
+
+l’animal Z',
+
+on trouve les fonctions lexicales suivantes :
+
+Tableau 1 - Ensemble de fonctions lexicales sémantiquement proches
+
+liées à la lexie charrette
+
+L'idée est de pouvoir accéder à toutes ces relations par une catégorie de
+
+type « réalisation/utilisation » qui les rassemble toutes. Dans une seconde
+
+étape, nous attribuerons donc, à chaque fonction lexicale une méta-fonction
+
+qui permettra de regrouper les fonctions lexicales sémantiquement proches
+
+sous une même dénomination et d'y accéder de façon globale. À partir des
+
+regroupements de fonctions lexicales, plusieurs catégories sémantiques ont
+
+pu émerger dont les principales sont : 'réalisation/utilisation',
+
+'équivalence', 'localisation', 'manière', 'aspect/temporalité',
+
+'qualification', 'appréciation', 'nombre', etc.
+
+3.2. Perspective « partie du discours »
+
+La perspective « partie du discours » permet de classer les relations
+
+lexicales en fonction des parties du discours de la valeur. Dans le DiCo, on
+
+envisage les parties du discours non seulement en prenant en compte la
+
+nature de l'unité lexicale mais également son emploi en discours. Par
+
+ailleurs, les valeurs de collocations ne se limitent pas à des unités
+
+lexicales monolexémiques mais sont parfois des locutions. Ainsi, il est
+
+courant de rencontrer des valeurs mêlant adjectifs et syntagmes adjectivaux
+
+à emploi adjectival :
+
+/*[X] qui éprouve ~*/
+
+haine
+
+A
+
+1
+
+haineux,
+
+porté [à la haine],
+
+ou encore, adverbes et syntagme prépositionnel employé comme adverbe :
+
+/*[X faire qqch.] en manifestant ~*/
+
+haine Adv1Sympt1 avec [haine],
+
+haineusement
+
+Cette vision plus large des parties du discours se révèle très pertinente dès
+
+lors que l'on utilise la base de données comme outil d'aide à la
+
+rédaction.
+
+3.3. Perspective « communicationnelle »
+
+La perspective communicationnelle
+
+vise à aider un utilisateur à choisir une unité lexicale par rapport à
+
+la structure d’une phrase à produire. La place relative de l’expression d’un
+
+prédicat et de ses actants dans la phrase contribue à ce que l’on appelle la
+
+structure communicative de l’énoncé — notamment pour ce qui est de la
+
+dichotomie thème/rhème (Mel’čuk, 2001). Par exemple, pour exprimer la
+
+relation entre la lexie flèche et une lexie désignant
+
+la cible atteinte par une flèche, on peut recourir à plusieurs paraphrases.
+
+Si l'on souhaite thématiser, c'est-à-dire, mettre en avant la flèche, on
+
+dira par exemple : la flèche atteint/touche la cible.
+
+La flèche est thème et la cible, rhème. Si, au contraire, on désire mettre
+
+la lexie désignant la cible en thème, on dira, par exemple : la cible reçoit une flèche. Dans le cadre de la
+
+Lexicologie Explicative et Combinatoire, on utilise, pour réaliser ces
+
+manipulations paraphrastiques, des règles de paraphrasage faisant appel au
+
+système des fonctions lexicales (Mel’čuk, 1988 ; Milićević, 2003). Pour
+
+illustrer à nouveau ce phénomène et son intérêt dans le processus de
+
+consultation d'une base de données lexicales, prenons l'exemple de l'unité
+
+lexicale crainte qui a la forme propositionnelle
+
+suivante :
+
+'crainte : de l'individu X causée par Y'.
+
+La perspective communicationnelle présente à l'utilisateur différentes
+
+collocations en fonction de la position syntaxique des éléments dans la
+
+phrase :
+
+• Si X est sujet et
+
+crainte
+
+(et éventuellement Y) est complément, on dira :
+
+X
+
+éprouve/ressent/nourrit de la
+
+crainte
+
+vis-à-vis de
+
+Y
+
+;
+
+X
+
+conçoit/entretient de la
+
+crainte
+
+vis-à-vis de
+
+X
+
+• Si Y est sujet et crainte (et éventuellement X) est
+
+complément, on dira :
+
+Y
+
+cause/engendre/provoque/suscite de la
+
+crainte
+
+chez
+
+X
+
+;
+
+Y
+
+inspire de la
+
+crainte
+
+à
+
+X
+
+• Si
+
+crainte
+
+est sujet du verbe et X est complément, on dira :
+
+La
+
+crainte
+
+dévore/habite/hante/ronge
+
+X
+
+3.4. Perspective « actantielle »
+
+Nous proposons une autre forme d'organisation des relations lexicales propres
+
+à une unité lexicale : la perspective actantielle. Elle permet d’organiser
+
+les relations lexicales en fonction des actants concernés par la relation.
+
+Par exemple, applaudissements# 1 a la forme
+
+propositionnelle suivante :
+
+'applaudissements#1 : de l'individu X destinés à l'individu Y pour son
+
+action Z'.
+
+On cherche à répartir les relations lexicales en fonction des actants
+
+concernés. On distingue ici trois actants sémantiques X, Y et Z en
+
+correspondance avec trois actants syntaxiques 1, 2 et 3 (X=1, Y=2, Z=3), ce
+
+qui nous permet de répartir des relations lexicales en fonction des actants
+
+concernés, par exemple :
+
+Premier actant : X = 1
+
+/*Ensemble de X qui émettent ~*/ QS1
+
+assemblée, audience, foule, public
+
+Deuxième actant :
+
+Y = 2
+
+/*[Y] être visé par ~ */
+
+Oper2
+
+recueillir, se valoir [ART ~]
+
+Troisième actant : Z = 3
+
+/*[Z] être la raison de ~*/
+
+Oper3
+
+provoquer, soulever, susciter [ART ~]
+
+Une telle organisation des relations lexicales selon différentes perspectives
+
+va donner lieu à des outils de consultation de la base de données DiCo et
+
+fournir un cadre de recherche qui facilite et oriente l'accès à
+
+l'information. Nous n'avons pu présenter ici que les principales
+
+perspectives d'organisation envisagées, notons que nous prenons également en
+
+compte dans la structuration des relations lexicales, des éléments comme le
+
+mode d'expression au style direct ou indirect (par exemple, la distinction
+
+entre : « Au lit ! » et envoyer qqn
+
+se coucher), les onomatopées (par exemple, pour la lexie horloge : faire ding-dong ou
+
+carillonner) ainsi que les variations de
+
+registres de langue (par exemple, biffeton en tant
+
+que synonyme de billet sera marqué comme familier).
+
+Ces éléments feront l'objet d'autres perspectives ou sous-perspectives de
+
+classement.
+
+conclusion
+
+Nous avons cherché à réaliser un mode de structuration des relations
+
+lexicales par l'exploitation d'un outil théorique de modélisation, les
+
+fonctions lexicales. Nous avons brièvement discuté les classements
+
+précédents, et proposé d'organiser les fonctions lexicales selon une
+
+approche multidimensionnelle. Ce modèle de structuration a l'avantage de
+
+prendre en compte plusieurs types d'information (partie du discours,
+
+sens, patrons syntaxiques, actants) de façon indépendante. Les
+
+descriptions attribuées à chaque fonction lexicale seront compilées dans
+
+une base de données de fonctions lexicales à partir de laquelle il sera
+
+possible de faire des requêtes générales ou très précises sur les
+
+relations lexicales. Cette base de données ainsi que la classification
+
+selon plusieurs dimensions se révèleront une mine de ressources pour la
+
+création d'applications liées à la consultation du dictionnaire ou à
+
+l'aide à la rédaction. L’organisation des fonctions lexicales va
+
+permettre le développement d’un grand nombre d’applications liées à
+
+l’utilisation du DiCo. Nous avons montré dans Jousse &amp; Tremblay
+
+(2006) et Jousse, Tremblay &amp; Polguère (2006) comment ce genre
+
+d’applications tirées du DiCo ou d'autres bases de données sont utiles
+
+pour l’apprentissage des collocations et la maîtrise du lexique. Nous
+
+développerons, dans la suite de notre travail, un environnement de
+
+consultation du DiCo permettant des requêtes multicritères et
+
+proposerons, à des fins pédagogiques, un certain nombre de requêtes
+
+prédéfinies pour guider les utilisateurs vers des « parcours » typiques
+
+de consulation.
+
+Remerciements
+
+Remerciements : Je tiens à remercier chaleureusement Alain
+
+Polguère, Sylvain Kahane et Lucie Barque pour la relecture de cet article.
+
+Références
+
+Références bibliographiques
+
+Alonso Ramos, Margarita (1993). Las funciones
+
+léxicas en el modelo lexicográfico de I. Mel’čuk, Tesis de
+
+doctorado, Madrid: UNED.
+
+Alonso Ramos, Margarita &amp; Tutin, Agnès (1996). A Classification
+
+and description of the Lexical Functions of the Explanatory
+
+Combinatorial Dictionary for the treatment of LF Combinations, in Lexical Functions in Lexicography and Natural
+
+Language Processing, Wanner, Léo (éd.). Amsterdam: John
+
+Benjamins.
+
+De Schryver, Gilles-Maurice (2003). Lexicographers’Dreams in The
+
+Electronic-Dictionary Age, International Journal of
+
+Lexicography, Vol.16, n°2: 143-199.
+
+Fellbaum, Christiane (Ed) (1998). Wordnet: An
+
+Electronic Lexical Database. Cambridge: MIT Press.
+
+Fillmore, Charles, Johnson, Christopher &amp; Petruck, Myriam (2003).
+
+Background to FrameNet, International Journal of
+
+Lexicography, Vol. 16, n°3: 235-249.
+
+Grimes, Joseph (1990). Inverse Lexical Functions, in
+
+Meaning-text theory: Linguistics, lexicography, and
+
+implications, Steele, James (Ed), Ottawa: University of Ottawa,
+
+350-64.
+
+Jacquet-Pfau, Christine (2002). Les dictionnaires du français sur
+
+CÉDÉROM. International Journal of Lexicography, vol.
+
+15, no. 1: 98-104.
+
+Jousse, Anne-Laure &amp; Polguère, Alain (2005). Le
+
+DiCo et sa version DiCouèbe : Document descriptif et manuel
+
+d’utilisation, Département de linguistique et de traduction,
+
+Université de Montréal.
+
+Jousse, Anne-Laure, Polguère, Alain &amp; Tremblay, Ophélie (2006). Du
+
+dictionnaire au site lexical pour l'enseignement/apprentissage du
+
+vocabulaire. Lexique et production verbale : vers une
+
+meilleure intégration des apprentissages lexicaux, Grossmann,
+
+Francis &amp; Plane, Sylvie (Dir), coll. « Éducation et didactiques »,
+
+Villeneuve d’Ascq, Presses Universitaires du Septentrion.
+
+Jousse, Anne-Laure &amp; Tremblay, Ophélie (2006). Le dictionnaire
+
+électronique : un outil précieux pour enseigner le lexique. Québec Français, 141.
+
+Mel’čuk, Igor (1988). Paraphrase et lexique dans la théorie
+
+linguistique Sens-Texte — Vingt ans après. Revue
+
+internationale de lexicologie et lexicographie, vol. 52/53, pp.
+
+5-50/5-53.
+
+Mel’čuk, Igor (2001). Communicative Organization in Natural Language.
+
+The semantic-communicative structure of sentences, coll. « Studies in
+
+Language Companion Series », Amsterdam/Philadelphia.
+
+Mel’čuk, Igor, Clas, André &amp; Polguère, Alain (1995). Introduction à la Lexicologie Explicative et
+
+Combinatoire. Louvain-la-Neuve (Belgique), Duculot.
+
+Milićević, Jasmina (2003). Étude des aspects sémantiques et
+
+syntaxiques de la paraphrase : application à la génération automatique
+
+des phrases françaises, Thèse de doctorat, Département de linguistique
+
+et de traduction, Université de Montréal.
+
+Pruvost, Jean (Ed) (1995). Les dictionnaires de langue française et
+
+l'informatique. Actes du colloque 1995 La Journée des
+
+dictionnaires, Université de Cergy-Pontoise.
+
+Pruvost, Jean (2000). Dictionnaires et nouvelles
+
+technologies, Paris : Presses universitaires de France.
+
+Selva, Thierry, Verlinde, Serge &amp; Binon, Jean (2002). Le DAFLES,
+
+un nouveau dictionnaire électronique pour apprenants du français, Actes
+
+du 10
+
+congrès international EURALEX’2002,
+
+Copenhagen, Denmark, 13-17 August 2002 : 2 vls,
+
+vol I, 199-208.
+
+Steele, James &amp; Meyer, Ingrid (1990). Lexical Functions in an
+
+Explanatory Combinatorial Dictionary: Kinds and Definitions , in Meaning-text theory: Linguistics, lexicography, and
+
+implications, Steele, James (Ed), Ottawa: University of Ottawa,
+
+41-61.
+
+Steinlin, Jacques et al. (2004). De l'article
+
+lexicographique à la modélisation objet du dictionnaire et des liens
+
+lexicaux, Proceedings of EURALEX' 2004, Lorient (France) : 177-186.
+
+Zholkovsky, Alexander &amp; Mel’čuk, Igor (1970). Towards a
+
+functioning Meaning-Text model of language, Linguistics, 57 :10-47.
+
+Zock, Michaël &amp; Carroll John (2003). Dictionnaires électroniques.
+
+Traitement automatique des langues, 44, n°2 :
+
+7-10.
+
+Références aux sites Internet
+
+Princeton University Cognitive Science Laboratory,
+
+http://wordnet.princeton.edu/, (nd). Consulté en septembre
+
+2006.
+
+International Computer Science Institute of Berkeley,
+
+, dernière mise à jour
+
+: 31 juillet 2006. Consulté en septembre 2006.
+
+GRELEP, Université catholique de Louvain-la-Neuve,
+
+, dernière mise à jour :
+
+09 septembre 2006. Consulté en septembre 2006.
+
+OLST, Université de Montréal,
+
+, dernière mise à
+
+jour : 07 sepmbre 2006. Consulté en septembre 2006.
+
+[254] À chaque fonction lexicale est associée une formule de
+
+vulgarisation appelée « glose ». On utilisera les conventions d’écritures
+
+suivantes : fonctions lexicales et les /*gloses*/. Par exemple :
+
+/*Utiliser ~*/ voiture Real1
+
+rouler
+
+[255] « ART » désigne tout type de déterminant, « ~ » correspond
+
+au mot-clé. On lira donc la relation : «
+
+assemblée#2 CausFunc0
+
+convoquer [ART ~] » de la façon suivante : « convoquer (l’/une/cette) assemblée ».
+
+
+

@@ -1,0 +1,379 @@
+
+Introduction
+Dans le domaine de la sociolinguistique, de nombreuses enquêtes à grande échelle
+ont montré que les usages langagiers des locuteurs étaient socialement
+stratifiés en fonction de différents facteurs extralinguistiques comme le milieu
+social, l’âge, le sexe, etc. Cette tendance macrosociologique a été établie chez
+les locuteurs adultes dès les premières études sociolinguistiques, notamment par
+Labov (1976), et plus récemment chez les enfants (Roberts, 1994, 1997; Chevrot,
+Beaud &amp; Varga, 2000). D’autres études, à un niveau plus microsociologique,
+se sont intéressées au lien entre pratiques linguistiques et relations sociales
+entre les membres d’une même communauté. Ainsi, Milroy (1987) a mis en évidence
+qu’un réseau social dense et multiplexe [173],
+indiquant une forte intégration sociale dans la communauté locale, favorisait
+l’usage des variantes vernaculaires du groupe. Autrement dit, au niveau
+microsociologique, plus un locuteur a de liens sociaux avec les membres de sa
+communauté, plus il utilisera les variantes de son groupe. Russel (1982) a
+d’ailleurs montré que la conversation entre amis entraînait des phénomènes de
+convergence dans les usages linguistiques. Ainsi, alors que les études
+macrosociologiques font ressortir des divergences dans les usages, les études
+microsociologiques soulignent leur convergence.
+A notre connaissance, aucune étude empirique n’a cherché à réunir des résultats
+qui concilieraient ces deux points de vue. Nous aborderons cette question à
+travers une démarche développementale. A partir d’une approche
+macrosociologique, nous verrons à quel âge les usages enfantins divergent. Plus
+précisément, nous observerons à partir de quel âge se mettent en place les
+régularités sociolinguistiques observées chez les adultes. Parallèlement,
+l’approche microsociologique de deux groupes de jeunes enfants nous permettra
+d’observer si des phénomènes de convergence langagière émergent au bout d’une
+année de fréquentation quotidienne. En nous appuyant sur les résultats issus de
+ces différentes enquêtes, nous chercherons à expliquer comment les convergences
+locales et les divergences globales se combinent au cours du développement. Plus
+particulièrement, les phénomènes de convergence et divergence seront examinés à
+travers l’usage enfantin des liaisons facultatives et de son évolution avec
+l’âge. En effet, ce type de liaison est connu pour être un marqueur
+sociolinguistiquement différentiel particulièrement bien décrit chez
+l’adulte.
+1. La liaison
+La liaison consiste en l’apparition d’une consonne entre deux mots (mot1 et mot2)
+qui s’enchaînent à l’oral ; par exemple apparition de /n/ entre un et avion dans []. Pour
+que la consonne de liaison apparaisse, le mot2 doit commencer par un son
+vocalique lorsqu’il est produit en isolation. En revanche, cette consonne n’est
+jamais présente en finale du mot1 lorsqu’il est situé à la fin d’un énoncé, ni à
+l’initiale du mot2 lorsqu’il occupe la première position d’un énoncé (ex : j’en mange un [], avion
+[]). De plus, la nature de la consonne de liaison est déterminée par le
+mot1, par exemple un [] active la consonne de liaison
+/n/, gros [] active /z/ et petit [] active /t/.
+Deux catégories de liaisons existent : les liaisons obligatoires et les liaisons
+facultatives. Dans notre étude, nous nous appuyons sur le classement proposé par
+Booij et De Jong (1987). A partir d’un corpus de 38 locuteurs adultes répartis
+en 3 classes d’âges, 5 classes socio-économiques et avec une répartition
+équivalente d’hommes et de femmes, ils ont établi les contextes dans lesquels
+les liaisons étaient réalisées de manière invariable quels que soient le
+locuteur et/ou ses caractéristiques sociologiques. Ainsi, 4 contextes seulement
+apparaissent comme relevant des liaisons obligatoires (100% de réalisation).
+Quant aux contextes de liaison ne conduisant pas à une réalisation systématique,
+ils ont été classés dans la catégorie des liaisons facultatives ; les auteurs en
+dénombrent 6 (voir Tableau 1).
+Tableau 1 - Classement des contextes de liaisons obligatoires et
+facultatives (Booij &amp; De Jong, 1987)
+Comme nous l’avons évoqué plus haut, les liaisons facultatives sont un lieu de
+variation sociale. En effet, des travaux descriptifs ont montré que leur emploi
+par les locuteurs adultes variait en fonction du milieu social (Delattre, 1966 ;
+Malécot, 1975 ; Ashby, 1981 ; Booij &amp; De Jong, 1987 ; De Jong, 1994), de
+l’âge (Ashby, 1981), du sexe (Ashby, 1981 ; Green &amp; Hintze, 1990 ; De Jong,
+1991) et de la situation de communication (Ågren, 1973 ; Moisset, 2000). Par
+exemple, les locuteurs qui exercent une profession nécessitant un niveau
+d’études élevé réalisent davantage de liaisons facultatives que des locuteurs
+qui ont un niveau d’études plus bas. Les premiers auront tendance à réaliser la
+liaison facultative dans la séquence « ils sont arrivés » et diront donc
+[] alors que les seconds auront plus tendance à ne pas faire la
+liaison et à dire [].
+Nous observerons l’usage enfantin des liaisons facultatives dans deux types
+d’études : une étude transversale à grande échelle que nous appellerons
+macrosociologique et deux suivis longitudinaux de petits groupes d’enfants se
+fréquentant régulièrement que nous qualifierons de microsociologiques.
+2. Étude transversale macrosociologique
+2.1. Échantillon
+L’étude transversale macrosociologique concerne un échantillon de 187 enfants
+âgés de 2 à 6 ans (93 filles et 94 garçons), tous monolingues français, que
+nous avons répartis en quatre tranches d’âge (2-3 ans, 3-4 ans, 4-5 ans et
+5-6 ans) et en deux milieux sociaux nettement contrastés : un milieu dit «
+parents cadres » et un milieu dit « parents ouvriers ». Les enfants ont
+ainsi été choisis a priori en fonction de la
+profession de leurs deux parents, ce qui nous a permis de sélectionner
+seulement les enfants dont le profil social était typique d’un milieu. Afin
+d’établir deux groupes sociaux distincts, nous avons utilisé la nomenclature
+insee de 1982 (Desrosières &amp; Thévenot, 1988). Les enfants dont la
+profession des deux parents, ou la profession d’un seul parent si l’autre
+était sans emploi, s’apparentait au groupe 3 de la nomenclature insee (ex :
+cadres de la fonction publique, professeurs et professions scientifiques,
+cadres administratifs et techniques, ingénieurs, etc.) ont été considérés
+comme faisant partie du groupe « parents cadres ». Pour le groupe « parents
+ouvriers », nous avons choisi des enfants dont la profession des deux
+parents, ou la profession d’un seul si l’autre était sans emploi, faisait
+partie du groupe 6 de la nomenclature insee (tous les types d’ouvriers et
+les chauffeurs). Le tableau 2, ci-dessous, indique la répartition des sujets
+en fonction de la tranche d’âge et du milieu social.
+Tableau 2 - Étude macrosociologique : répartition des enfants en
+fonction de la tranche d’âge et du milieu social
+2.2. Démarche empirique
+Afin de solliciter, auprès d’un grand nombre d’enfants, la production
+extensive de liaisons, nous avons élaboré une tâche expérimentale de
+dénomination d’images. Cette tâche suscitait la production de liaisons
+facultatives en contexte "adjectif + nom", contexte facultatif selon la
+classification de Booij et De Jong (1987). Les mots1 (adjectifs) étaient petit et gros et les mots2
+(noms à initiale vocalique) étaient ours, arbre, avion, éléphant, escargot et ordinateur. Ainsi, chaque animal/objet était
+représenté une fois en un exemplaire de petite taille (pour susciter la
+production de petit + nom) et une autre fois en un
+exemplaire de grande taille (pour susciter la production de gros + nom). Enfin, dans le but de pallier
+d’éventuelles influences entre liaisons produites, chaque présentation
+d’image-cible était suivie d’une image-distracteur conduisant à la
+production de séquences sans liaison de type mot1 (petit, gros) + mot2 à initiale consonantique
+(ballon, lit, cochon, singe, camion, balai). Au
+final, chaque enfant était amené à produire 12 séquences-cibles mot1 + mot2
+en contexte de liaison facultative "adjectif + nom".
+2.3. Résultats
+Dans ce paragraphe, nous présenterons l’évolution des pourcentages de
+liaisons facultatives réalisées conformément à la cible adulte, qui
+correspondent à la réalisation de la consonne de liaison adéquate, par
+exemple quand l’enfant a produit [] ou []. C’est donc la
+capacité normative enfantine que mesurent ces pourcentages.
+Figure 1 - Pourcentages de liaisons facultatives réalisées
+conformément à la cible adulte
+L’observation de la figure 1 montre que, quelle que soit la tranche d’âge,
+les enfants issus du milieu cadre réalisent davantage de liaisons
+facultatives conforment à la cible adulte que les enfants issus du milieu
+ouvrier. Nous notons d’ailleurs un effet significatif du milieu social ( ANOVA
+[176]
+, F
+1,179
+= 11,123, p = 0,001). Nous remarquons également qu’à
+2-3 ans, les différences entre les enfants des deux milieux sont peu
+importantes et qu’elles s’accroissent progressivement durant le
+développement. A 5-6 ans, la différence entre les taux de réalisation de
+liaisons facultatives chez les enfants des 2 milieux (40,70% chez les
+enfants de parents cadres et 21% chez les enfants de parents ouvriers)
+devient significative (Holm-Sidak, p = 0,011).
+Nous avons également considéré l’évolution de la variance des pourcentages de
+liaisons facultatives réalisées conformément à la cible adulte. La variance
+(S²) est une mesure statistique permettant d’évaluer la dispersion des
+scores autour de la moyenne [177]. De 2-3 ans à
+5-6 ans, la variance augmente (voir tableau 3) ; elle passe de 335,76 à 2-3
+ans à 934,93 à 5-6 ans. Le rapport entre la variance à 5-6 ans et la
+variance à 2-3 ans est d’ailleurs significatif comme l’atteste le calcul du
+rapport F (F
+39,47
+= 2,78, p = 0,00070) ; nous pouvons alors considérer
+que ces deux variances sont différentes. Autrement dit, entre 2 et 6 ans,
+les performances des enfants se distinguent de plus en plus, ce qui conduit
+à l’apparition des différences entre les enfants des deux milieux (et sans
+doute à d’autres différences qui ne sont pas observées ici [178]). Par ailleurs, l’écart observé entre les
+deux groupes d’enfants à 5-6 ans laisse présager les différences sociales
+observées chez les locuteurs adultes.
+Tableau 3 - Évolution des pourcentages de liaisons facultatives
+réalisées conformément à la cible adulte et de la variance
+Au niveau macrosociologique, l’enquête transversale menée auprès d’un grand
+nombre de sujets met donc en évidence une divergence des usages des enfants
+des deux milieux entre 2 et 6 ans. La section suivante (section 3)
+s’attachera quant à elle à rendre compte de l’évolution des usages de deux
+groupes d’enfants dans une perspective microsociologique.
+3. Études longitudinales microsociologiques
+3.1. Étude A
+3.1.1. Échantillon et démarche empirique
+La première étude longitudinale que nous présentons ici concerne le suivi
+d’un groupe de 14 enfants (5 filles et 9 garçons) de Moyenne Section de
+Maternelle d’une école de Rennes, âgés en moyenne de 4;6 au premier
+temps d’observation (T1) à 5;2 au deuxième temps d’observation (T2). Ce
+groupe présente une composition sociale hétérogène : 8 enfants de
+parents cadres et 6 enfants de parents ouvriers. Le suivi de cette
+classe a donné lieu au recueil d’un corpus langagier au sein de la
+classe pendant la période d’accueil du matin caractérisée par des jeux
+libres et un contrôle allégé de la maîtresse. Cette période apparaissait
+propice à l’émergence d’échanges verbaux et de comportements sociaux «
+spontanés » entre les enfants (Barbu, 2000). Quinze minutes
+d’enregistrement ont été effectuées pour chaque enfant et pour chaque
+temps d’observation. L’enfant pour lequel on souhaitait recueillir des
+données langagières portait un sac à dos équipé d’un micro sans fil afin
+de le laisser libre de ses mouvements, de minimiser l’effet de
+l’observation et d’obtenir ainsi des énoncés dans une situation la plus
+informelle possible. Notons également qu’une période d’habituation d’un
+mois, avant le recueil de données, a permis aux enfants de se
+familiariser avec l’observateur et ses outils d’enregistrement.
+3.1.2. Résultats
+Comme pour l’étude transversale présentée plus haut, nous avons procédé à
+l’examen de la variance des pourcentages de liaisons facultatives
+réalisées conformément à la cible adulte [179].
+Tableau 4 [180] - Étude A : Évolution
+des pourcentages de liaisons facultatives réalisées conformément à
+la cible adulte
+Comme le montre le tableau 4, nous observons que la variance (S²) diminue
+significativement de T1 à T2 [181] (F
+13,13
+= 4,14, p = 0,00778) tout comme l’écart entre le
+pourcentage minimum et le maximum ([Min-Max]). Les usages des enfants de
+la classe semblent donc converger au bout de huit mois de fréquentation
+quotidienne.
+Les études, transversale et longitudinale, montrent des résultats
+différents. Dans l’étude transversale, au niveau macrosociologique, nous
+avons vu que les pourcentages de réalisation des liaisons facultatives
+tendaient à diverger alors que dans cette étude longitudinale, au niveau
+microsociologique, les pourcentages tendent à converger malgré la
+diversité sociale du groupe.
+Nous présenterons maintenant une deuxième étude longitudinale
+microsociologique menée auprès d’enfants d’âges comparables.
+3.2. Étude B
+3.2.1. Échantillon et démarche empirique
+Le suivi longitudinal de l’étude B concerne un groupe de 11 enfants (5
+filles et 6 garçons), d’origines sociales contrastées (6 enfants de
+parents cadres et 5 enfants de parents ouvriers) de la même classe de
+maternelle de la banlieue grenobloise. Les enfants ont été suivis sur
+une période d’un an, de la fin de la Moyenne Section à la fin de la
+Grande Section de Maternelle. Deux temps d’observation ont été menés ;
+la moyenne d’âge des enfants au T1 était de 4;7 et de 5;7 au T2. Ils ont
+été enregistrés individuellement pendant l’atelier semi-dirigé, moment
+de la journée de classe durant lequel les enfants pratiquent une
+activité dans le groupe de pairs. Cet atelier durait entre 30 et 45
+minutes, soit autant de temps d’enregistrement et de corpus transcrit
+pour chacun des enfants. Enfin, ces derniers ont été enregistrés dans
+les mêmes conditions que dans l’étude A.
+3.2.2. Résultats
+Dans l’étude B, notre intérêt s’est porté sur l’observation conjointe de
+plusieurs variables connues pour être sociolinguistiquement
+différentielles chez l’adulte et l’adolescent : la liaison facultative,
+le // en position post-consonantique finale (Laks, 1977) et le /l/ dans
+les clitiques sujets « il(s) » et « elle(s) » (Laks, 1980). Pour ces 3
+variables, les locuteurs issus d’un milieu « favorisé » auront davantage
+tendance à réaliser le segment consonantique. Par exemple, ces locuteurs
+diront plus souvent [] que [] (devant
+eux), [] que [] (être
+content), [] que [] (il fait
+beau).
+Les résultats que nous présentons ci-après concernent les pourcentages de
+variantes standard produites par les enfants pour ces trois variables.
+Comme pour l’étude A, nous constatons que la variance (S²) diminue de
+manière significative ( F
+10,10
+= 3,11, p = 0,04390) entre les deux temps
+longitudinaux de la même façon que l’écart entre les valeurs minimale et
+maximale (voir tableau 5). Il apparaît alors qu’au sein du même groupe
+d’enfants, d’une année scolaire à l’autre, les usages langagiers
+convergent. Les enfants dont les pourcentages de variantes standard
+étaient élevés ont tendance à les diminuer du premier au second temps
+d’observation et vice-versa.
+Tableau 5 - Évolution des
+pourcentages de variantes standard pour les 3 variables
+Conclusion
+Les résultats que nous avons présentés ont montré deux faits importants.
+Premièrement, au niveau macrosociologique, notre étude a permis de montrer que
+la stratification sociale de l’usage des liaisons facultatives, avérée chez
+l’adulte, se manifeste chez l’enfant vers 5-6 ans. Deuxièmement, les deux suivis
+longitudinaux de groupes d’enfants ont montré que leurs usages de variantes
+sociolinguistiques convergent après un certain temps de fréquentation
+quotidienne. Comment rendre compte alors de ces effets, apparemment
+contradictoires, de divergence globale et de convergence locale ? Nous
+proposerons deux explications.
+La première est d’ordre méthodologique. En effet, les grandes enquêtes sont en
+général menées dans des situations contrôlées tout comme notre étude
+expérimentale macrosociologique. Sachant que le comportement linguistique des
+locuteurs varie en fonction du contexte de l’échange et que cette sensibilité au
+contexte est socialement différenciée, notre démarche méthodologique a peut-être
+pu faire émerger la divergence observée dans les usages. En effet, il a été
+montré qu’en situation formelle, les enfants de milieux favorisés modifient
+davantage leurs productions en utilisant plus de variantes standard que les
+enfants de milieux moins favorisés (Lafontaine, 1986). Notre étude expérimentale
+s’apparentant à une situation formelle, les différences sociales observées
+pourraient être le fait de différences d’adaptation à la situation. Les enquêtes
+microsociologiques permettent au contraire d’appréhender les usages des
+locuteurs dans des situations qui leur sont familières et au sein de leur groupe
+de pairs, comme ce fut le cas dans nos deux études microsociologiques ; ce type
+de situation est alors plus propice à l’émergence d’une convergence dans les
+usages.
+La seconde explication que nous avancerons est d’ordre sociologique. Notre idée
+est que, dans des groupes d’enfants qui se fréquentent quotidiennement pendant
+une année, les usages linguistiques convergent en fonction de la composition
+sociale du groupe et des influences mutuelles des individus entre eux. Les
+différents niveaux de convergence entre les différents groupes conduisent alors
+à des divergences au niveau macrosociologique. Cette hypothèse mériterait que
+l’on s’y attarde en observant différents groupes d’enfants de différentes écoles
+afin de vérifier la concomitance de la stratification macrosociologique et des
+convergences microsociologiques.
+Références
+Ågren, John (1973). Étude sur quelques liaisons
+facultatives dans le français de conversation radiophonique.
+Uppsala : Uppsala University Press.
+Ashby, William (1981). French Liaison as a Sociolinguistic Phenomenon, in
+Linguistics Symposium on Romance Languages (9th),
+Cressey, William W &amp; Napoli, Donna Jo (Eds). Washington, DC : Georgetown
+University Press, 46-57.
+Barbu, Stéphanie (2000). Les relations sociales entre
+enfants à l'école maternelle : bases comportementales et
+langagières. Thèse de doctorat, Université de Rennes 1.
+Booij, Geert &amp; De Jong, Daan (1987). The domain of liaison : theories
+and data, Linguistics, 25, (5): 1005-1025.
+Chevrot, Jean-Pierre, Beaud, Laurence &amp; Varga, Renata (2000).
+Developmental data on a French sociolinguistic variable : the word-final
+post-consonantal /R/. Language Variation and Change,
+12, (3): 295-319.
+De Jong, Daan (1991). La liaison à Orléans (France) et à Montréal
+(Québec). Mimeo of paper presented at the XIIth
+international congress of phonetic sciences. Aix-en-Provence.
+De Jong, Daan (1994). La sociophonologie de la liaison orléanaise, in French Generative Phonology : retrospective and
+perspectives, Lyche, Chantal (Eds). Salford : Association for
+French Language Studies in association with the European Studies Research
+Institute, 95-130
+Delattre, Pierre (1966). Studies in French and
+comparative phonetics: selected papers in French and English. The
+Hague, London, Paris : Mouton.
+Desrosières, Alain &amp; Thévenot, Laurent (1988). Les
+catégories socioprofessionnelles. Paris : La Découverte.
+Green, John N. &amp; Hintze, Marie-Anne (1990). Variation and Change in
+French linking phenomena, in Variation and Change in
+French : essays presented to Rebecca Posner on the occasion of her
+sixtieth birthday, Green John N. &amp; Ayres-Bennet Wendy (Eds).
+London, New York : Routledge, 61-88.
+Labov, William (1976). Sociolinguistique. Paris :
+Editions de Minuit.
+Lafontaine, Dominique (1986). Le Parti pris des
+mots. Bruxelles: Pierre Mardagua.
+Laks, Bernard (1977). Contribution empirique à l'analyse
+socio-différentielle de la chute de /r/ dans les groupes consonantiques
+finals, Langue Française, 34:
+109-125.
+Laks, Bernard (1980). Différenciation linguistique et
+différenciation sociale : quelques problèmes de sociolinguistique
+française. Thèse de 3ème cycle de linguistique, Université de Paris
+VIII - Vincennes.
+Malécot, André (1975). French liaison as a function of grammatical,
+phonetic and paralinguistic variables. Phonetica, 32: 61-179.
+Milroy, Lesley (1987). Language and social
+networks. Oxford : Blackwell.
+Moisset, Christine (2000). Variable liaison in Parisian
+French. PhD thesis, University of Pennsylvania.
+Nardy, Aurélie (en préparation). Acquisition des
+dialectes sociaux et des usages académiques de l’oral entre 2 et 5 ans :
+naissance du sentiment normatif et sociabilité. Thèse de doctorat,
+Université Stendhal-Grenoble 3.
+Roberts, Julie (1994). Acquisition of variable rules :
+(-t,d) deletion and (ing) production in preschool children. Ph.D.
+dissertation, University of Pennsylvania.
+Roberts, Julie (1997). Acquisition of variable rules : a study of (-t, d)
+deletion in preschool children. Journal of Child
+Language, 24: 351-372.
+Russell, Joan (1982). Networks and sociolinguistic variation in an African
+urban setting, in Sociolinguistic variation in speech
+communities, Romaine Suzanne (Eds). London : Edward Arnold, 25-140.
+Sokal, Robert R. &amp; Rohlf, James F. (1981). Biometry
+: the Principles and Practice of Statistics in Biological Research.
+New York : W.H. Freeman and company.
+[173] Un individu appartient à un réseau dense si les membres de son
+réseau se fréquentent aussi entre eux. Son réseau est multiplexe lorsqu’il
+fréquente les mêmes individus dans ses différents cadres de vie (travail,
+loisirs, famille, etc.).
+[174]
+Les "X" représentent, selon les cas, un nom, un adjectif, un déterminant,
+etc. commençant par une voyelle.
+[175] La consonne entre parenthèses indique la consonne de liaison.
+Dans le cas des liaisons facultatives, celle-ci peut être réalisée ou non.
+[176] L’ANOVA à 2 facteurs (âge x milieu social) a été effectuée
+après transformation des données en arc sinus (Sokal et Rohlf, 1981).
+[177] La variance d’une distribution correspond à la moyenne des
+carrés des écarts par rapport à la moyenne. Plus la variance est grande, plus la
+dispersion est grande et inversement.
+[178] Toutefois, d’autres analyses prenant appui sur la variable sexe
+ont déjà montré que ce facteur n’influençait pas la production enfantine des
+liaisons facultatives (Nardy, en préparation).
+[179] Notons que les pourcentages de liaisons facultatives réalisées
+de l’étude A sont inférieurs à ceux relevés dans l’étude précédente (étude
+macrosociologique). En situation expérimentale, seul le contexte adjectif + nom était présent ; de plus il était limité à
+des liaisons après les mots1 petit et gros connus pour favoriser la réalisation de la liaison chez l’adulte.
+Ici, la situation écologique de recueil des données nous a permis de relever
+tous les contextes de liaisons facultatives produits par les enfants.
+[180] Les valeurs des tableaux 4 et 5 sont toutes exprimées en
+pourcentages à l’exception de la colonne S².
+[181]
+Notons toutefois que l’ensemble de la convergence repose uniquement sur Fél dont les pourcentages de liaisons facultatives
+réalisées chutent considérablement de T1 à T2 (23,08% au T1 contre 2,63% au T2).
+L’étude microsociologique B viendra étayer la convergence observée dans l’étude
+A.
+
