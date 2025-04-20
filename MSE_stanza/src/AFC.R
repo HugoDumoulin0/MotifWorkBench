@@ -101,8 +101,8 @@ for (file in matching_files) {
 #---------------------------------
 
 # Compute CA
-AFC = CA(df[,-c(1,2)], graph=F)
-
+#AFC = CA(df[,-c(1,2)], graph=F)
+AFC = CA(df, graph=F)
 # Plot and measures for 2 dims with no contrib threshold
 # source("plots_func.R")
 #print("1")
