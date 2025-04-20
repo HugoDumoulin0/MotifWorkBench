@@ -22,7 +22,7 @@ import enslave_perl
 import cwb
 
 
-def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent):
+def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent, execution_time):
     total_motifs=len(liste_motifs_clos_corpus)
     motif_count = 0
     lexic_int_str = formate_patterns.make_dict_int_to_str()
@@ -42,8 +42,10 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent):
         lignes_table.append(ligne_de_table)
         
     df_k = pd.DataFrame(lignes_table, index=liste_motifs_str)
+    df_k = df_k.fillna(0)
     df_k = df_k.apply(pd.to_numeric)
     df_k.to_csv(f"./Patterns_results/Specifs_noZero/{minsup_percent}_AFC_R_df.tsv", sep="\t")
+    df_k.to_csv(f"./Patterns_results/Specifs_noZero/{minsup_percent}_AFC_R_df_{execution_time}.tsv", sep="\t")
     subprocess.call(["Rscript", "./src/AFC.r"]) #(moved here by analogy)
     return df_k
     
@@ -124,7 +126,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     # if shortcut_association==False:
     #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
     clean_last_AFC()
-    df_k = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent)
+    df_k = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent, execution_time)
     compute_specifs(df_k, minsup_percent, execution_time, specifs)
     
     
