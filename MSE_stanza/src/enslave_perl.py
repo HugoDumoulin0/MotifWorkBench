@@ -16,13 +16,15 @@ def cqp_motifs(motif):
     output=result.stdout
     output_lines = output.splitlines()
     for line in output_lines[5:(len(output_lines)-3)]:
-        part = line.split("\t")
         # print(line)
-        texte = part[0][30:].strip()
-        # print(texte)
-        freq = int(part[1].strip())
-        # print(freq)
-        ligne_de_table[texte]=freq
+        if not line.startswith("#"):
+            part = line.split("\t")
+
+            texte = part[0][30:].strip()
+            # print(texte)
+            freq = int(part[1].strip())
+            # print(freq)
+            ligne_de_table[texte]=freq
         
     return ligne_de_table
 
