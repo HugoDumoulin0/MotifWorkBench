@@ -9,7 +9,8 @@ import formate_patterns
 import tag_WP
 import conll_dmt4
 import compute_emergent_sequential_patterns
-import compute_specifs_noZero
+# import compute_specifs_noZero
+import compute_CQP
 
 import regroupement
 import representants
@@ -332,10 +333,16 @@ if __name__ == "__main__":
                 if not os.path.exists("./Patterns_results/Specifs_noZero/"):
                     os.mkdir("./Patterns_results/Specifs_noZero/")
                 print("-"*75)
-                print("4. Extracting patterns in partition")
+                print("4.4 Extracting patterns in partition")
+                
+                path_stanza="./Data/Textes_tagged_stanza/"
+                path_vrt="./Data/textesVRT/"
+                conllu2vrt.transform(path_stanza, path_vrt)
+                
                 for minsup_percent in list_minsup_percent:
-                    compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-
+                    print(f"Minsup: {minsup_percent}")
+                    # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
+                    compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
