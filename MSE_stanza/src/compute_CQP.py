@@ -48,7 +48,7 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent):
     return df_k
     
 
-def compute_specifs(df_k, minsup_percent, execution_time):
+def compute_specifs(df_k, minsup_percent, execution_time, specifs):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
     dictionnaire_k = df_k.T.to_dict()
     T, dictionnaire_t = enslave_perl.cqp_general()
@@ -67,7 +67,8 @@ def compute_specifs(df_k, minsup_percent, execution_time):
     file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8", index=False)
-    subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
+    if specifs==True:
+        subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
     
 
 
@@ -115,7 +116,7 @@ def clean_last_AFC():
         if fichier.endswith("_AFC_R_df.tsv"):
             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
+def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, specifs):
     execution_time = datetime.datetime.now()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
@@ -124,7 +125,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent):
     #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
     clean_last_AFC()
     df_k = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent)
-    compute_specifs(df_k, minsup_percent, execution_time)
+    compute_specifs(df_k, minsup_percent, execution_time, specifs)
     
     
     
