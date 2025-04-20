@@ -30,7 +30,7 @@ dir.create("./Patterns_results/R")
 for (file in matching_files) {
     base_name <- basename(file)
     input_file <- file
-    df <- read.csv(input_file, sep="\t", row.names = "motifs_str")
+    df <- read.csv(input_file, sep="\t", row.names = 1)
     var_name <- sub("\\.tsv$", "", input_file)
     
     rep_name <- sub("./Patterns_results/Specifs_noZero/", "", var_name)
@@ -103,6 +103,7 @@ for (file in matching_files) {
 # Compute CA
 #AFC = CA(df[,-c(1,2)], graph=F)
 AFC = CA(df, graph=F)
+
 # Plot and measures for 2 dims with no contrib threshold
 # source("plots_func.R")
 #print("1")
