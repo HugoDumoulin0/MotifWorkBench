@@ -11,6 +11,8 @@ from scipy.stats import hypergeom
 import pickle as pk
 import os
 from conllu import parse_incr
+import re
+
 
 def indice_specificite(k,f,t,T):
     rv = hypergeom(T, f, t)
@@ -72,3 +74,49 @@ def concat_preserve_ids(path_input, output_file):
             out_f.write(sentence.serialize())
             out_f.write("\n")
     print("Merging done")
+    
+def count_tokens_in_conll(corpus_path):
+    token_count = 0
+    # Ouvrir le fichier CoNLL et lire ligne par ligne
+    with open(corpus_path, 'r') as file:
+        for line in file:
+            # Ignore les lignes vides et les lignes de commentaire (en général, les lignes commencent par '#')
+            if line.strip() and not line.startswith("#"):
+                # Compte chaque token (chaque mot dans une ligne)
+                token_count += 1
+    return token_count
+    
+def from_pk_corpus_to_list(dmt4_corpus):
+    pk_dmt4_corpus = load_pickles(dmt4_corpus)
+    liste_motifs_clos_corpus = [] 
+    for clef in pk_dmt4_corpus.keys():
+        motif=[]
+        mots = clef.split(" ")
+        for mot in mots:
+            mot = mot.strip("{}")
+            mot = (set(map(int,mot.split(","))))
+            motif.append(mot)
+        liste_motifs_clos_corpus.append(motif)
+    return liste_motifs_clos_corpus
+
+def read_req_CQP(expr):
+    # Remplacer les paires clé_"valeur" ou clé="valeur" dans les accolades par les conditions CQP correspondantes
+    # if not isinstance(expr, str):
+    #     raise ValueError(f"Expected a string, got {type(expr)}")
+    expr = re.sub(r'\{([^}]+)\}', lambda match: convert_to_cqp_condition(match.group(1)), expr)
+    return expr
+
+def convert_to_cqp_condition(group):
+    conditions = []
+    for condition in group.split(","):
+        # Cas avec underscore : lemma_"monsieur" ou pos_"NOUN"
+        if "_" in condition and "=" not in condition:
+            key, value = condition.split("_", 1)
+            value = value.strip('"')
+        else:
+            key, value = condition.split("=", 1)
+            value = value.strip('"')
+        
+        conditions.append(f'{key}="{value}"')
+    
+    return "[" + " & ".join(conditions) + "]"
