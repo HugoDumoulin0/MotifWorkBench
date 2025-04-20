@@ -496,7 +496,7 @@ if __name__ == "__main__":
         end_time = time.time()
         cluster_time = end_time - start_time
     
-    print(f"Temps de tagging : {time_tag/60:.2f } minutes")
+    print(f"Temps de tagging : {time_tag/60:.2f} minutes")
     print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
     print((f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes"))
     if GrowthRate == True:
