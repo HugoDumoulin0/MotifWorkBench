@@ -69,55 +69,7 @@ def compute_specifs(df_k, minsup_percent, execution_time):
     df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8", index=False)
     subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
     
-        
 
-
-    
-# def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t, minsup_percent):
-#     dictionnaire_k = {}
-#     total_textes=len(types_textes)
-#     texte_count = 0
-#     occ_count = 0
-#     formate_patterns.make_dict_int_to_str()
-#     for type_texte in types_textes:
-#         start_time = time.time()
-#         dictionnaire_k[type_texte]={}
-#         taille_texte = dictionnaire_t[type_texte] 
-#         print(type_texte)
-#         file_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
-#         dict_file_motif = count_motifs_orig.count_motif(file_path, liste_motifs_clos_corpus, type_texte)
-#         dictionnaire_k[type_texte]=dict_file_motif
-#         end_time = time.time()
-#         texte_count += 1
-#         occ_count += taille_texte
-#         iteration_time = end_time - start_time
-#         remaining_textes = total_textes - texte_count
-#         remaining_occ = T - occ_count
-#         estimated_time_remaining = (iteration_time * remaining_occ)/taille_texte
-#         print(f"Compte des fréquences par texte : pour minsup {minsup_percent}, temps estimé restant pour {remaining_textes} texte(s) : {estimated_time_remaining/60:.2f} minutes")
-#     return dictionnaire_k
-                       
-# def compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus):
-#     dictionnaire_f = {}
-#     for motif in liste_motifs_clos_corpus:
-#         f = 0
-#         for type_texte in dictionnaire_k.keys():
-#                 f += dictionnaire_k[type_texte][str(motif)]
-#         dictionnaire_f[str(motif)]=f
-#     return dictionnaire_f
-
-# def compute_t_specifs(types_textes):
-#     dictionnaire_t = {}
-#     for type_texte in types_textes:
-#         corpus_path = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
-#         dictionnaire_t[type_texte] = tools.count_tokens_in_conll(corpus_path)
-#     return dictionnaire_t
-    
-# def compute_T_specifs(dictionnaire_t):
-#     T = 0
-#     for type_texte in dictionnaire_t.keys():
-#         T += dictionnaire_t[type_texte]
-#     return T
 
 
 # def add_association_vocab(dict_synth, liste_fichiers, columns):
@@ -155,85 +107,7 @@ def compute_specifs(df_k, minsup_percent, execution_time):
 #         columns.append("association_vocab")
 #     return dict_synth_add_association, columns
         
-# def all_synth_tsv_out(dict_synth, liste_motifs, minsup_percent, execution_time):
-#     dict_out = {}
-#     mins=minsup_percent
-#     lexic_int_str = formate_patterns.make_dict_int_to_str()
-#     liste_fichier = []
-#     for fichier in dict_synth:
-#         liste_fichier.append(fichier)
-#     for motif in liste_motifs:
-#         dict_out[str(motif)]=[motif,
-#                                 formate_patterns.from_int_to_str(motif, lexic_int_str)]
-#         for fichier in liste_fichier:
-#     # for fichier in liste_fichier:
-#         # for motif in dict_synth[fichier]:
-#             dict_out[str(motif)].append(dict_synth[fichier][str(motif)][7])
-#                 # else:
-#                 #     dict_out[motif].append("None")
-#     file_out = "./Patterns_results/Specifs_noZero/{}_synthèse_{}.pk".format(mins, execution_time)
-#     tools.save_pickles_results(dict_out, file_out)
-#     columns = ["motifs_int", "motifs_str"]
-#     columns=columns+liste_fichier
-#     df = pd.DataFrame.from_dict(dict_out, orient="index", columns=columns)
-#     df.to_csv(file_out.replace("pk", "tsv"), sep="\t", encoding="utf-8")
-#     return dict_out
 
-# def df_spec(dict_synth, liste_motifs, minsup_percent,execution_time):
-#     mins = minsup_percent
-#     donnees_spec = []
-#     lexic_int_str = formate_patterns.make_dict_int_to_str()
-#     for fichier in dict_synth.keys():
-#         for motif in liste_motifs:
-#             donnees_spec.append({
-#                     "fichier":fichier,
-#                     "motif":formate_patterns.from_int_to_str(motif, lexic_int_str),
-#                     "k":dict_synth[fichier][str(motif)][2],
-#                     "f":dict_synth[fichier][str(motif)][4],
-#                     "t":dict_synth[fichier][str(motif)][5],
-#                     "T":dict_synth[fichier][str(motif)][6]
-#                     })
-#     df_spec = pd.DataFrame(donnees_spec)
-#     file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
-#     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
-#     df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8", index=False)
-    
-#     subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
-    
-#     return df_spec
-    
-# def df_AFC(dict_synth, liste_motifs, minsup_percent, execution_time):
-#     dict_AFC_out = {}
-#     mins=minsup_percent
-#     lexic_int_str = formate_patterns.make_dict_int_to_str()
-#     liste_fichier=[]
-#     for fichier in dict_synth:
-#         liste_fichier.append(fichier)
-#     for motif in liste_motifs:
-#         # dict_spec_out[str(motif)]=[motif,
-#         #                     formate_patterns.from_int_to_str(motif, lexic_int_str)]
-#         dict_AFC_out[str(motif)]=[motif,
-#                             formate_patterns.from_int_to_str(motif, lexic_int_str)]
-#         for fichier in liste_fichier:
-#             # dict_spec_out[str(motif)] += dict_synth[fichier][str(motif)][2:]
-#             dict_AFC_out[str(motif)] += [dict_synth[fichier][str(motif)][2]]
-#     file_out_AFC = "./Patterns_results/Specifs_noZero/{}_AFC_R_df_{}.pk".format(mins, execution_time)
-#     tools.save_pickles_results(dict_AFC_out, file_out_AFC)
-#     columns_base = ["motifs_int", "motifs_str"]
-#     liste_columns_AFC=[]
-#     for fichier in liste_fichier:
-#         # items = ["k", "M", "f", "t", "T", "indice"]
-#         liste_columns_AFC.append(f"{fichier}")
-#     columns_AFC=columns_base+liste_columns_AFC
-#     df_AFC= pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
-#     df_AFC.to_csv(file_out_AFC.replace("pk", "tsv"), sep="\t", encoding="utf-8")
-    
-#     file_out_AFC_for_calc = "./Patterns_results/Specifs_noZero/{}_AFC_R_df.tsv".format(mins)
-#     df_AFC.to_csv(file_out_AFC_for_calc, sep="\t", encoding="utf-8")
-   
-#     subprocess.call(["Rscript", "./src/AFC.r"]) #(moved here by analogy)
-    
-#     return dict_AFC_out
 
 def clean_last_AFC():
     liste = os.listdir("./Patterns_results/Specifs_noZero")
