@@ -52,6 +52,6 @@ def transform(path_stanza, path_vrt):
                         f_out.write("</s>\n")
                 f_out.write("</text>\n")
     else:
-        print("VRT files already exists")
+        print("VRT file already exists")
 
 
