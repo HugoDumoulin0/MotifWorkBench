@@ -8,10 +8,10 @@ Created on Sat Apr 19 20:41:36 2025
 
 import subprocess
 
-def cqp_motifs(motif):
+def cqp_freq_textes(pattern):
     ligne_de_table = {}
-    query = f'motif = {motif}'
-    cmd = ['perl', './src/cqp_freq_motifs.pl', query]
+    query = f'pattern = {pattern}'
+    cmd = ['perl', './src/cqp_freq_textes.pl', query]
     result = subprocess.run(cmd, capture_output=True, text=True)
     output=result.stdout
     output_lines = output.splitlines()
@@ -25,7 +25,7 @@ def cqp_motifs(motif):
             freq = int(part[1].strip())
             # print(freq)
             ligne_de_table[texte]=freq
-        
+
     return ligne_de_table
 
 def cqp_general():
@@ -44,3 +44,41 @@ def cqp_general():
     # print(dictionnaire_t)
     return T, dictionnaire_t
 
+def cqp_index_lemma():
+    cmd = ['perl', './src/cqp_index_lemma.pl']
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    output=result.stdout
+    output_lines = output.splitlines()
+    # dictionnaire_lemma={}
+    liste_lemma=[]
+    # print(T)
+    for line in output_lines[5:(len(output_lines)-3)]:
+        part = line.split("\t")
+        # print(line)
+        # freq = part[0].strip()
+        lemma = part[1].strip()
+        lemma = lemma.split("  ")[0]
+        # dictionnaire_lemma[lemma]=freq
+        liste_lemma.append(lemma)
+    # print(dictionnaire_t)
+    return  liste_lemma
+
+def cqp_index_pos():
+    cmd = ['perl', './src/cqp_index_pos.pl']
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    output=result.stdout
+    output_lines = output.splitlines()
+    # dictionnaire_pos={}
+    liste_pos=[]
+    # print(T)
+    for line in output_lines[5:(len(output_lines)-3)]:
+        part = line.split("\t")
+        # print(line)
+        freq = part[0].strip()
+        pos = part[1].strip()
+        pos = pos.split("  ")[0]
+
+        # dictionnaire_pos[pos]=freq
+        liste_pos.append(pos)
+    # print(dictionnaire_t)
+    return liste_pos
