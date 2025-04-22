@@ -11,6 +11,7 @@ dictionnaire_specifs.pk
 *.lexicon.idc
 *.corpus
 *.rng
+*.idx
 
 # Ignore common system files
 .DS_Store
