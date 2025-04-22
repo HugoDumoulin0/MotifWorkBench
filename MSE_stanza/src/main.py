@@ -344,8 +344,8 @@ if __name__ == "__main__":
                 for minsup_percent in list_minsup_percent:
                     print(f"Minsup: {minsup_percent}")
                     # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-                    file_out_motifs, file_out_lemma, file_out_pos, path_out_motifs, path_out_lemma, path_out_pos = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
-                    classifiers.main(minsup_percent, file_out_motifs, file_out_lemma, file_out_pos, path_out_motifs, path_out_lemma, path_out_pos)
+                    file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
+                    classifiers.main(minsup_percent, file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos)
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
