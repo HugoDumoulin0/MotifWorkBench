@@ -22,7 +22,7 @@ import enslave_perl
 import cwb
 
 
-def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent, execution_time):
+def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out):
     total_motifs=len(liste_motifs_clos_corpus)
     motif_count = 0
     lexic_int_str = formate_patterns.make_dict_int_to_str()
@@ -38,17 +38,64 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent, exec
     for motif in liste_motifs_str:
         trad_motif = str(tools.read_req_CQP(motif))
         print(trad_motif)
-        ligne_de_table = enslave_perl.cqp_motifs(trad_motif)
+        ligne_de_table = enslave_perl.cqp_freq_textes(trad_motif)
         lignes_table.append(ligne_de_table)
         
     df_k = pd.DataFrame(lignes_table, index=liste_motifs_str)
     df_k = df_k.fillna(0)
-    df_k = df_k.apply(pd.to_numeric)
-    df_k.to_csv(f"./Patterns_results/Specifs_noZero/{minsup_percent}_AFC_R_df.tsv", sep="\t")
-    df_k.to_csv(f"./Patterns_results/Specifs_noZero/{minsup_percent}_AFC_R_df_{execution_time}.tsv", sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.r"]) #(moved here by analogy)
-    return df_k
+    df_k = df_k.apply(pd.to_numeric) 
+    prefixe="motifs/"
+    path_out=path_out+prefixe
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
+    file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
+    df_k.to_csv(file_out, sep="\t")
+    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) #(moved here by analogy)
+    return df_k, total_motifs, file_out, prefixe
     
+def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
+    registry_path = "./Data/cwb-corpus/registry"
+    lignes_table = []
+    print("Computing lemma freq X texte...")
+    liste_lemma = enslave_perl.cqp_index_lemma()
+    print("index done")
+    for lemma in liste_lemma[:seuil]:
+        lemma = f'[lemma="{lemma}"]'
+        ligne_de_table = enslave_perl.cqp_freq_textes(lemma)
+        lignes_table.append(ligne_de_table)
+    df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil])
+    df_lemma = df_lemma.fillna(0)
+    df_lemma = df_lemma.apply(pd.to_numeric)
+    prefixe="lemma/"
+    path_out=path_out+prefixe
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
+    file_out = f"{path_out}{seuil}_lemmaTexte_df_{execution_time}.tsv"
+    df_lemma.to_csv(file_out, sep="\t")
+    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) 
+    return file_out, prefixe
+
+def compute_freq_TextesPos_AFC(execution_time, path_out):
+    registry_path = "./Data/cwb-corpus/registry"
+    lignes_table = []
+    print("Computing pos freq X texte...")
+    liste_pos = enslave_perl.cqp_index_pos()
+    print("index done")
+    for pos in liste_pos:
+        pos = f'[pos="{pos}"]'
+        ligne_de_table = enslave_perl.cqp_freq_textes(pos)
+        lignes_table.append(ligne_de_table)
+    df_pos = pd.DataFrame(lignes_table, index=liste_pos)
+    df_pos = df_pos.fillna(0)
+    df_pos = df_pos.apply(pd.to_numeric)
+    prefixe="pos/"
+    path_out=path_out+prefixe
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
+    file_out= f"{path_out}posTexte_df_{execution_time}.tsv"
+    df_pos.to_csv(file_out, sep="\t")
+    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out])
+    return file_out, prefixe
 
 def compute_specifs(df_k, minsup_percent, execution_time, specifs):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
@@ -112,22 +159,30 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs):
         
 
 
-def clean_last_AFC():
-    liste = os.listdir("./Patterns_results/Specifs_noZero")
-    for fichier in liste:
-        if fichier.endswith("_AFC_R_df.tsv"):
-            os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
+# def clean_last_AFC():
+#     liste = os.listdir("./Patterns_results/Specifs_noZero")
+#     for fichier in liste:
+#         if fichier.endswith("_AFC_R_df.tsv"):
+#             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
 def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, specifs):
     execution_time = datetime.datetime.now()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     cwb.main()
+    path_R="./Patterns_results/R/"
+    if not os.path.exists(path_R):
+        os.mkdir(path_R)
+    path_out = path_R+str(minsup_percent)+"/"
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
+    df_k, total_motifs, file_out_motifs, prefixe_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out)
+    file_out_pos, prefixe_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
+    file_out_lemma, prefixe_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
+    compute_specifs(df_k, minsup_percent, execution_time, specifs)
     # if shortcut_association==False:
     #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
-    clean_last_AFC()
-    df_k = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, minsup_percent, execution_time)
-    compute_specifs(df_k, minsup_percent, execution_time, specifs)
+    return file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos
     
     
     
