@@ -6,6 +6,12 @@ dictionnaire_specifs.pk
 #*.txt
 *.bmp
 
+#Ignore CWB-specific files (makes pushing a nightmare: too many)
+*.lexicon
+*.lexicon.idc
+*.corpus
+*.rng
+
 # Ignore common system files
 .DS_Store
 Thumbs.db
