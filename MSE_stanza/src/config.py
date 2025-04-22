@@ -5,6 +5,7 @@
 only_clustering = False
 shortcut_association = True
 shortcut_specifs = True
+specifs=False
 
 
 GrowthRate = False
