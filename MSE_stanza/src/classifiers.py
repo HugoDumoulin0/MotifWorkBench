@@ -20,7 +20,7 @@ from sklearn.preprocessing import LabelEncoder
 
 
 
-def prepare_dataset(path_data, file_out):
+def prepare_dataset(path_data, rep_out):
     df = pd.read_csv(path_data, sep="\t", index_col=0)
     df= df.T
     
@@ -35,7 +35,7 @@ def prepare_dataset(path_data, file_out):
             df.loc[nom_ligne, "target"] = "CR"
     y_motifs=df.target
     
-    df.to_csv(f"{file_out}_classif.tsv",  sep="\t")
+    df.to_csv(f"{rep_out}data_classif.tsv",  sep="\t")
     
     # Séparation des données
     X_train, X_test, y_train, y_test = train_test_split(X_motifs, y_motifs, test_size=0.3)
@@ -43,7 +43,7 @@ def prepare_dataset(path_data, file_out):
     return X_train, X_test, y_train, y_test, X_motifs, y_motifs, X_features
 
 #-------- SVM --------------
-def svm_train(X_train, X_test, y_train, y_test, file_out):
+def svm_train(X_train, X_test, y_train, y_test, rep_out):
     from sklearn.svm import LinearSVC
         
     # Entraînement du SVM
@@ -51,12 +51,12 @@ def svm_train(X_train, X_test, y_train, y_test, file_out):
     svm.fit(X_train, y_train)
     y_pred = svm.predict(X_test)
     report = classification_report(y_test, y_pred)
-    with open(f"{file_out}_svm_report.txt", "w") as f:
+    with open(f"{rep_out}svm_report.txt", "w") as f:
         f.write(report)
         
     return svm
 
-def svm_plot_decision(svm, X_motifs, y_motifs, file_out):
+def svm_plot_decision(svm, X_motifs, y_motifs, rep_out):
     # Réduction de dimension avec PCA
     pca = PCA(n_components=2)
     X_pca = pca.fit_transform(X_motifs)
@@ -102,11 +102,11 @@ def svm_plot_decision(svm, X_motifs, y_motifs, file_out):
     plt.title('SVM Decision Boundary and Data Points')
     
     # Afficher le graphique
-    plt.savefig(f"{file_out}_svm_plot.png", dpi=300, bbox_inches='tight')
-    plt.show()
+    plt.savefig(f"{rep_out}svm_plot.png", dpi=300, bbox_inches='tight')
+    # plt.show()
 
 #-------- Decision Tree -------
-def decision_tree(X_train, y_train, X_features, file_out):
+def decision_tree(X_train, y_train, X_features, rep_out):
     from sklearn import tree
     
     clf_tree = tree.DecisionTreeClassifier()
@@ -117,32 +117,31 @@ def decision_tree(X_train, y_train, X_features, file_out):
                                     feature_names=X_features,
                                     class_names=clf_tree.classes_) 
     graph = graphviz.Source(dot_data) 
-    graph.render(f"{file_out}_tree") 
+    graph.render(f"{rep_out}tree") 
     
     
-def main(minsup):
-    path_out = "./Patterns_results/Classifieurs/"
-    if not os.path.exists(path_out):
-        os.mkdir(path_out)
-    path_out += minsup+"/"
-    if not os.path.exists(path_out):
-        os.mkdir(path_out)
-        
-    path_rep_data="./Patterns_results/Specifs_noZero/"
-    
-    for filename in os.listdir(path_rep_data):
-        if filename.endswith(f"{minsup}_AFC_R_df.tsv"):
-            path_data=path_rep_data+filename
-            
-    name = path_data.split("Specifs_noZero/")[1][:-4]
-    file_out=path_out+name
-    X_train, X_test, y_train, y_test, X_motifs, y_motifs, X_features = prepare_dataset(path_data, file_out)
-    svm = svm_train(X_train, X_test, y_train, y_test, file_out)
-    svm_plot_decision(svm, X_motifs, y_motifs, file_out)
-    decision_tree(X_train, y_train, X_features, file_out)
+def main(minsup, file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos):
+    path_classif_out = "./Patterns_results/Classifieurs/"
+    if not os.path.exists(path_classif_out):
+        os.mkdir(path_classif_out)
+    path_classif_out += str(minsup)+"/"
+    if not os.path.exists(path_classif_out):
+        os.mkdir(path_classif_out)
+    liste_prefixes = [prefixe_motifs, prefixe_lemma, prefixe_pos]
+    liste_data = [file_out_motifs, file_out_lemma, file_out_pos]
+    for filename, prefixe in zip(liste_data, liste_prefixes):
+        # if not os.path.exists(path_out):
+        #     os.mkdir(path_out)
+        # name = filename[:-4].replace(path_out, "")
+        rep_out = path_classif_out+prefixe
+        if not os.path.exists(rep_out):
+            os.mkdir(rep_out)
+        X_train, X_test, y_train, y_test, X_motifs, y_motifs, X_features = prepare_dataset(filename, rep_out)
+        svm = svm_train(X_train, X_test, y_train, y_test, rep_out)
+        svm_plot_decision(svm, X_motifs, y_motifs, rep_out)
+        decision_tree(X_train, y_train, X_features, rep_out)
     
 
 
-main("10")
 
  
