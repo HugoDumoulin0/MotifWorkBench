@@ -7,7 +7,7 @@ use IPC::Open2;
 my $registry = './Data/cwb-corpus/registry';
 my $corpus   = 'MERGED';
 my $query    = $ARGV[0];
-my $query_text = 'group motif match text_id';
+my $query_text = 'group pattern match text_id';
 
 # Lancement du binaire CQP en mode silencieux (-e)
 my $cmd = "cqp -r '$registry' -e";
