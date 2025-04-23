@@ -1,0 +1,61 @@
+##
+## registry entry for corpus MERGED
+##
+
+# long descriptive name for the corpus
+NAME ""
+# corpus ID (must be lowercase in registry!)
+ID   merged
+# path to binary data files
+HOME "./Data/cwb-corpus/data/merged"
+# optional info file (displayed by "info;" command in CQP)
+INFO "./Data/cwb-corpus/data/merged/.info"
+
+# corpus properties provide additional information about the corpus:
+##:: charset  = "utf8" # character encoding of corpus data
+##:: language = "??"     # insert ISO code for language (de, en, fr, ...)
+
+
+##
+## p-attributes (token annotations)
+##
+
+ATTRIBUTE id
+ATTRIBUTE word
+ATTRIBUTE lemma
+ATTRIBUTE pos
+ATTRIBUTE xpos
+ATTRIBUTE feats
+ATTRIBUTE head
+ATTRIBUTE dep
+ATTRIBUTE deps
+ATTRIBUTE misc
+ATTRIBUTE Gender
+ATTRIBUTE Tense
+ATTRIBUTE Number
+ATTRIBUTE Case
+ATTRIBUTE ner
+ATTRIBUTE Person
+ATTRIBUTE PronType
+ATTRIBUTE Reflex
+ATTRIBUTE VerbForm
+ATTRIBUTE Definite
+ATTRIBUTE Polarity
+
+
+##
+## s-attributes (structural markup)
+##
+
+# <text id=".."> ... </text>
+# (no recursive embedding allowed)
+STRUCTURE text
+STRUCTURE text_id              # [annotations]
+
+# <s id=".."> ... </s>
+# (no recursive embedding allowed)
+STRUCTURE s
+STRUCTURE s_id                 # [annotations]
+
+
+# Yours sincerely, the Encode tool.
