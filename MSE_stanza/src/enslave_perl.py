@@ -33,7 +33,9 @@ def cqp_general():
     result = subprocess.run(cmd, capture_output=True, text=True)
     output=result.stdout
     output_lines = output.splitlines()
-    T = output_lines[4].strip()
+    # T = output_lines[4].strip()
+    for line in output_lines:
+        print(line)
     dictionnaire_t={}
     # print(T)
     for line in output_lines[8:(len(output_lines)-3)]:

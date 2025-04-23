@@ -23,7 +23,7 @@ from config import *
 import subprocess
 import tools
 import conllu2vrt
-import classifiers
+# import classifiers
 
 
 
