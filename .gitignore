@@ -15,6 +15,7 @@ dictionnaire_specifs.pk
 *.cnt
 *.rdx
 *.rev
+*.srt
 
 # Ignore common system files
 .DS_Store
