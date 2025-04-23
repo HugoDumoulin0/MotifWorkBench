@@ -20,20 +20,25 @@ from sklearn.preprocessing import LabelEncoder
 
 
 
-def prepare_dataset(path_data, rep_out):
+def prepare_dataset(path_data, rep_out, path_target):
     df = pd.read_csv(path_data, sep="\t", index_col=0)
     df= df.T
+    
+    df_target = pd.read_csv(path_target, sep="\t", index_col=0)
     
     # X_motifs=df.values()
     X_motifs=df.to_numpy()
     X_features=df.columns.tolist()
     X_features = [s.replace('"', '').replace("'", '') for s in X_features]
-    for nom_ligne in df.index:
-        if nom_ligne.isupper():
-            df.loc[nom_ligne, "target"] = "rapport"
-        else:
-            df.loc[nom_ligne, "target"] = "CR"
-    y_motifs=df.target
+    # for nom_ligne in df.index:
+    #     if nom_ligne.isupper():
+    #         df.loc[nom_ligne, "target"] = "rapport"
+    #     else:
+    #         df.loc[nom_ligne, "target"] = "CR"
+    # y_motifs=df.target
+    
+    y_motifs=df_target.target
+    
     
     df.to_csv(f"{rep_out}data_classif.tsv",  sep="\t")
     
@@ -120,7 +125,7 @@ def decision_tree(X_train, y_train, X_features, rep_out):
     graph.render(f"{rep_out}tree") 
     
     
-def main(minsup, file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos):
+def main(minsup, file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos, path_target):
     path_classif_out = "./Patterns_results/Classifieurs/"
     if not os.path.exists(path_classif_out):
         os.mkdir(path_classif_out)
@@ -136,7 +141,7 @@ def main(minsup, file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, 
         rep_out = path_classif_out+prefixe
         if not os.path.exists(rep_out):
             os.mkdir(rep_out)
-        X_train, X_test, y_train, y_test, X_motifs, y_motifs, X_features = prepare_dataset(filename, rep_out)
+        X_train, X_test, y_train, y_test, X_motifs, y_motifs, X_features = prepare_dataset(filename, rep_out, path_target)
         svm = svm_train(X_train, X_test, y_train, y_test, rep_out)
         svm_plot_decision(svm, X_motifs, y_motifs, rep_out)
         decision_tree(X_train, y_train, X_features, rep_out)
