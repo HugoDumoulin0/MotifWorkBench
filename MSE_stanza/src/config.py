@@ -30,7 +30,7 @@ if méthode=="partition":
 nb_itemset_min = 3 #Tim, 27/02
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25,10,5]
+list_minsup_percent = [25, 10, 5]
 
 
 #-------------------
@@ -44,4 +44,4 @@ Feats=False
 
 #attention avec form=True il y a aura les résultats non contractés
 
-
+path_target = "./Data/df_target_train_classif.tsv"
