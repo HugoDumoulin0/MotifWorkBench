@@ -93,23 +93,24 @@ if __name__ == "__main__":
         
         # if shortcut_underscore_fix==False:
         ##underscore fix 
-        if  os.path.exists("./Data/underscore_fix"):
-            # shutil.rmtree("./Data/underscore_fix")
-            print(f"\t Underscore_fix file already exists. Delete it to perform underscore_fixing again.")
-        else:
+        if  not os.path.exists("./Data/underscore_fix"):
             os.mkdir("./Data/underscore_fix")
-            for filename in os.listdir("./Data/Textes_tagged_stanza/"):
-                if not filename == ".DS_Store":
-                            os.mkdir(f"./Data/underscore_fix/{filename}")
-                            source = f"./Data/Textes_tagged_stanza/{filename}/{filename}"
-                            destination = f"./Data/underscore_fix/{filename}/{filename}"
-                            shutil.copy(source,destination)
-                            print(f"Underscore fix : {filename}")
-                            filename = f'{filename}'
-                            underscore_folder =f"./Data/underscore_fix/{filename}"
-                            file_path = os.path.join(underscore_folder, filename)
-                            output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
-                            replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
+        for type_texte in types_textes:
+            output_folder = "./Data/underscore_fix/{}".format(type_texte)
+            if  os.path.exists(output_folder):
+                # shutil.rmtree("./Data/underscore_fix")
+                print(f"\t Underscore_fix file already exists. Delete it to perform underscore_fixing again.")
+            else:
+                os.mkdir(f"./Data/underscore_fix/{type_texte}")
+                source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
+                destination = f"./Data/underscore_fix/{type_texte}/{type_texte}"
+                shutil.copy(source,destination)
+                print(f"Underscore fix : {type_texte}")
+                filename = f'{type_texte}'
+                underscore_folder =f"./Data/underscore_fix/{type_texte}"
+                file_path = os.path.join(underscore_folder, filename)
+                output_file = os.path.join(underscore_folder, f"{type_texte}") #Define export path from variables
+                replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
                     
 
         if wordpieces == True:
