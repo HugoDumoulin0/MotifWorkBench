@@ -169,7 +169,9 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     execution_time = datetime.datetime.now()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
-    cwb.main()
+    if not os.path.exists("./Data/cwb-corpus"):
+        os.mkdir("./Data/cwb-corpus")
+        cwb.main()
     path_R="./Patterns_results/R/"
     if not os.path.exists(path_R):
         os.mkdir(path_R)
