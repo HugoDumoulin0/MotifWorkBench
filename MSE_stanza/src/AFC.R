@@ -103,6 +103,9 @@ rep_name=path
 # Apply
 #---------------------------------
 
+#cleaning
+df <- df[rowSums(df) != 0, ]
+
 # Compute CA
 #AFC = CA(df[,-c(1,2)], graph=F)
 AFC = CA(df, graph=F)
@@ -219,6 +222,7 @@ print(plot_obj)
 dev.off()
 
 #------hierarchical clustering------#
+#AFC = na.omit(AFC)
 hclust = HCPC(AFC, nb.clust=-1, graph=F)
 hclust_cols = HCPC(AFC, cluster.CA="columns", nb.clust=-1, graph=F)
 
