@@ -23,6 +23,7 @@ def transform(path_stanza, path_vrt):
         output_file = f"{path_vrt}merged.vrt"
         with open(output_file, "w", encoding="utf-8") as f_out:
             for file in os.listdir(path_stanza):
+                print(f"Transforming Conllu to VRT : {file}")
                 if file==".DS_Store": continue
                 f_out.write(f'<text id="{file}">\n')
                 input_file=f"{path_stanza}{file}/{file}"
