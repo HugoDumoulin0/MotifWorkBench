@@ -10,8 +10,8 @@ import os
 
 
 def main():
-    if not os.path.exists("./Data/cwb-corpus"):
-        os.mkdir("./Data/cwb-corpus")
+    # if not os.path.exists("./Data/cwb-corpus"):
+    #     os.mkdir("./Data/cwb-corpus")
     
     if not os.path.exists("./Data/cwb-corpus/registry"):
         os.mkdir("./Data/cwb-corpus/registry")
