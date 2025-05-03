@@ -220,30 +220,37 @@ dev.off()
 
 #------hierarchical clustering------#
 hclust = HCPC(AFC, nb.clust=-1, graph=F)
-hclust_cols = HCPC(AFC, cluster.ca="columns", nb.clust=-1, graph=F)
+hclust_cols = HCPC(AFC, cluster.CA="columns", nb.clust=-1, graph=F)
 
-bmp(filename=paste(rep_name, "hclust_map_rows.bmp"), width=2048, height=2048, res=200)
+bmp(filename=paste(rep_name, "rows_hclust_map.bmp"), width=2048, height=2048, res=200)
 plot.HCPC(hclust, choice="map")
 dev.off()
 
-bmp(filename=paste(rep_name, "hclust_map_cols.bmp"), width=2048, height=2048, res=200)
+bmp(filename=paste(rep_name, "cols_hclust_map.bmp"), width=2048, height=2048, res=200)
 plot.HCPC(hclust_cols, choice="map")
 dev.off()
 
-bmp(filename=paste(rep_name, "hclust_map_rows_light.bmp"), width=2048, height=2048, res=200)
+bmp(filename=paste(rep_name, "rows_hclust_map_light.bmp"), width=2048, height=2048, res=200)
 plot(hclust, choice="map", ind.names = FALSE)
 dev.off()
 
-bmp(filename=paste(rep_name, "hclust_map_cols_light.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust_cols, choice="map")
+bmp(filename=paste(rep_name, "cols_hclust_map_light.bmp"), width=2048, height=2048, res=200)
+plot.HCPC(hclust_cols, choice="map", ind.names = FALSE)
 dev.off()
 
-bmp(filename=paste(rep_name, "hclust_rows_chute.bmp"), width=2048, height=2048, res=200)
+bmp(filename=paste(rep_name, "rows_hclust_chute.bmp"), width=2048, height=2048, res=200)
 plot.HCPC(hclust, choice="bar")
 dev.off()
 
-capture.output(hclust$desc.var, file=paste(rep_name, "hclust_desc_var.txt"))
-capture.output(hclust$desc.ind, file=paste(rep_name, "hclust_desc_ind.txt"))
+bmp(filename=paste(rep_name, "cols_hclust_chute.bmp"), width=2048, height=2048, res=200)
+plot.HCPC(hclust_cols, choice="bar")
+dev.off()
+
+capture.output(hclust$desc.var, file=paste(rep_name, "rows_hclust_desc_var.txt"))
+capture.output(hclust$desc.ind, file=paste(rep_name, "rows_hclust_desc_ind.txt"))
+
+capture.output(hclust_cols$desc.var, file=paste(rep_name, "cols_hclust_desc_var.txt"))
+capture.output(hclust_cols$desc.ind, file=paste(rep_name, "cols_hclust_desc_ind.txt"))
 
 
 #----IMPORTANT ! création du rep "motifs_cluster" dans lequel le script interpret_association_motif.py vient chercher ses motifs----#
@@ -260,15 +267,15 @@ for (cluster in 1:hclust$call$t$nb.clust) {
 
 
 #--force 2 clusters : optionnal--#
-hclust_force2 = HCPC(AFC, nb.clust=2, graph=F)
-bmp(filename=paste(rep_name, "hclust_force2_map.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust_force2, choice="map")
-dev.off()
-bmp(filename=paste(rep_name, "hclust_force2_chute.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust_force2, choice="bar")
-dev.off()
-capture.output(hclust_force2$desc.var, file=paste(rep_name, "hclust_force2_desc_var.txt"))
-capture.output(hclust_force2$desc.ind, file=paste(rep_name, "hclust_force2_desc_ind.txt"))
+#hclust_force2 = HCPC(AFC, nb.clust=2, graph=F)
+#bmp(filename=paste(rep_name, "hclust_force2_map.bmp"), width=2048, height=2048, res=200)
+#plot.HCPC(hclust_force2, choice="map")
+#dev.off()
+#bmp(filename=paste(rep_name, "hclust_force2_chute.bmp"), width=2048, height=2048, res=200)
+#plot.HCPC(hclust_force2, choice="bar")
+#dev.off()
+#capture.output(hclust_force2$desc.var, file=paste(rep_name, "hclust_force2_desc_var.txt"))
+#capture.output(hclust_force2$desc.ind, file=paste(rep_name, "hclust_force2_desc_ind.txt"))
 
 
 
