@@ -220,13 +220,14 @@ dev.off()
 
 #------hierarchical clustering------#
 hclust = HCPC(AFC, nb.clust=-1, graph=F)
+hclust_cols = HCPC(AFC, cluster.ca="columns", nb.clust=-1, graph=F)
 
 bmp(filename=paste(rep_name, "hclust_map_rows.bmp"), width=2048, height=2048, res=200)
 plot.HCPC(hclust, choice="map")
 dev.off()
 
 bmp(filename=paste(rep_name, "hclust_map_cols.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust, choice="map", cluster.ca="columns")
+plot.HCPC(hclust_cols, choice="map")
 dev.off()
 
 bmp(filename=paste(rep_name, "hclust_map_rows_light.bmp"), width=2048, height=2048, res=200)
@@ -234,7 +235,7 @@ plot(hclust, choice="map", ind.names = FALSE)
 dev.off()
 
 bmp(filename=paste(rep_name, "hclust_map_cols_light.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust, choice="map", cluster.ca="columns")
+plot.HCPC(hclust_cols, choice="map")
 dev.off()
 
 bmp(filename=paste(rep_name, "hclust_rows_chute.bmp"), width=2048, height=2048, res=200)
