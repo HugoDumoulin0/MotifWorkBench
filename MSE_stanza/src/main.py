@@ -263,9 +263,9 @@ if __name__ == "__main__":
                 threads = 30
                 for type_texte in liste:
                     print("\t Type_texte:", type_texte)
-                    if os.path.exists(f"./Patterns_results/Freq/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_freq.pk"):
+                    if os.path.exists(f"./Patterns_results/Freq/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_freq.txt"):
                         print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
-                    if os.path.exists(f"./Patterns_results/Closed/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.pk"):
+                    if os.path.exists(f"./Patterns_results/Closed/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.txt"):
                         print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
                     else:
                         print("non existent previous extracted patterns files")
