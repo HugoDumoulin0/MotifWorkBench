@@ -222,7 +222,6 @@ print(plot_obj)
 dev.off()
 
 #------hierarchical clustering------#
-#AFC = na.omit(AFC)
 hclust = HCPC(AFC, nb.clust=-1, graph=F)
 hclust_cols = HCPC(AFC, cluster.CA="columns", nb.clust=-1, graph=F)
 
