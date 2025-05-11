@@ -17,6 +17,8 @@ import re
 # import compute_am_r
 import datetime
 import subprocess
+import enslave_perl
+
 
 def count_tokens_in_conll(corpus_path):
     token_count = 0
@@ -52,7 +54,7 @@ def compute_k_specifs(types_textes, liste_motifs_clos_corpus, T, dictionnaire_t,
         estimated_time_remaining = (iteration_time * remaining_occ)/taille_texte
         print(f"Compte des fréquences par texte : pour minsup {minsup_percent}, temps estimé restant pour {remaining_textes} texte(s) : {estimated_time_remaining/60:.2f} minutes")
     return dictionnaire_k
-
+                       
 def compute_f_specifs(dictionnaire_k, liste_motifs_clos_corpus):
     dictionnaire_f = {}
     for motif in liste_motifs_clos_corpus:

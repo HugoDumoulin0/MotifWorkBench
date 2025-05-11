@@ -108,7 +108,8 @@ def read_req_CQP(expr):
 
 def convert_to_cqp_condition(group):
     conditions = []
-    for condition in group.split(","):
+    items = re.split(r',(?=(?:[^"]*"[^"]*")*[^"]*$)', group)
+    for condition in items:
         # Cas avec underscore : lemma_"monsieur" ou pos_"NOUN"
         if "_" in condition and "=" not in condition:
             key, value = condition.split("_", 1)
@@ -120,3 +121,5 @@ def convert_to_cqp_condition(group):
         conditions.append(f'{key}="{value}"')
     
     return "[" + " & ".join(conditions) + "]"
+
+
