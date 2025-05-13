@@ -51,7 +51,7 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
     df_k.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) #(moved here by analogy)
-    return df_k, total_motifs, file_out, prefixe
+    return df_k, total_motifs, file_out
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     registry_path = "./Data/cwb-corpus/registry"
@@ -73,7 +73,7 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     file_out = f"{path_out}{seuil}_lemmaTexte_df_{execution_time}.tsv"
     df_lemma.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) 
-    return file_out, prefixe
+    return file_out
 
 def compute_freq_TextesPos_AFC(execution_time, path_out):
     registry_path = "./Data/cwb-corpus/registry"
@@ -95,9 +95,9 @@ def compute_freq_TextesPos_AFC(execution_time, path_out):
     file_out= f"{path_out}posTexte_df_{execution_time}.tsv"
     df_pos.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out])
-    return file_out, prefixe
+    return file_out
 
-def compute_specifs(df_k, minsup_percent, execution_time, specifs):
+def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
     dictionnaire_k = df_k.T.to_dict()
     T, dictionnaire_t = enslave_perl.cqp_general()
@@ -113,13 +113,14 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs):
                 "T":T    
                 })
     df_spec = pd.DataFrame(données_specifs)
-    file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
+    prefixe="motifs/"
+    path_out=path_out+prefixe
+    file_out=f"{path_out}SpecifsmotifsTexte_df_{execution_time}.tsv"
+    # file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
-    df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8", index=False)
+    df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     if specifs==True:
-        subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
-    
-
+        subprocess.call(["Rscript", "./src/compute_specifs_noZero.r",file_out, path_out, str(minsup_percent), str(execution_time)]) #Run R!
 
 
 # def add_association_vocab(dict_synth, liste_fichiers, columns):
@@ -178,13 +179,13 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     path_out = path_R+str(minsup_percent)+"/"
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    df_k, total_motifs, file_out_motifs, prefixe_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out)
-    file_out_pos, prefixe_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
-    file_out_lemma, prefixe_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
-    compute_specifs(df_k, minsup_percent, execution_time, specifs)
+    df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out)
+    file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
+    file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
+    compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out)
     # if shortcut_association==False:
     #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
-    return file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos
+    return file_out_motifs, file_out_lemma, file_out_pos
     
     
     

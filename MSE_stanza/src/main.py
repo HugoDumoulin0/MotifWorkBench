@@ -345,8 +345,28 @@ if __name__ == "__main__":
                 for minsup_percent in list_minsup_percent:
                     print(f"Minsup: {minsup_percent}")
                     # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-                    file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
-                    classifiers.main(minsup_percent, file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos, path_target)
+                    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
+                        file_out_motifs, file_out_lemma, file_out_pos = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
+                    else:
+                        path=f"./Patterns_results/R/{minsup_percent}/motifs/"
+                        fichiers_motifs = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                        for f in fichiers_motifs: 
+                            if f.startswith("motifsTexte"):
+                                file_out_motifs=path+f
+                                break
+                        path=f"./Patterns_results/R/{minsup_percent}/lemma/"
+                        fichiers_lemma = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                        for f in fichiers_lemma: 
+                            if "lemmaTexte" in f:
+                                file_out_lemma=path+f
+                                break
+                        path=f"./Patterns_results/R/{minsup_percent}/pos/"
+                        fichiers_pos = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                        for f in fichiers_pos: 
+                                if f.startswith("posTexte"):
+                                    file_out_pos=path+f
+                                    break
+                    classifiers.main(minsup_percent, file_out_motifs, file_out_lemma, file_out_pos, path_target)
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
