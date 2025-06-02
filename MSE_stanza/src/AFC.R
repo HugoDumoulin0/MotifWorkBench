@@ -216,7 +216,7 @@ plot_obj <- fviz_ca_row(AFC, select.row=list(contrib=30),pointsize="contrib", sh
 print(plot_obj)
 dev.off()
 
-bmp(filename=paste(rep_name, "text_contrib30_size.bmp"), width=2048, height=2048, res=200)
+bmp(filename=paste(rep_name, "txt_contrib30_size.bmp"), width=2048, height=2048, res=200)
 plot_obj <- fviz_ca_col(AFC, select.col=list(contrib=30),pointsize="contrib", shape.col=19, repel=T)
 print(plot_obj)
 dev.off()
@@ -267,8 +267,6 @@ for (cluster in 1:hclust$call$t$nb.clust) {
 	write.csv(hclust$desc.ind$dist[cluster], file=dist, row.names=TRUE)
 }
 
-
-
 #--force 2 clusters : optionnal--#
 #hclust_force2 = HCPC(AFC, nb.clust=2, graph=F)
 #bmp(filename=paste(rep_name, "hclust_force2_map.bmp"), width=2048, height=2048, res=200)
@@ -280,10 +278,48 @@ for (cluster in 1:hclust$call$t$nb.clust) {
 #capture.output(hclust_force2$desc.var, file=paste(rep_name, "hclust_force2_desc_var.txt"))
 #capture.output(hclust_force2$desc.ind, file=paste(rep_name, "hclust_force2_desc_ind.txt"))
 
-
-
-
- #ferme l'accolade ouverte ligne 26
+#----plot de HCPC avec uniquement les parangons----#
+parangons <- hclust$desc.ind$para # Extraire les parangons : noms extraits des noms des éléments des vecteurs dans la liste
+parangon.names <- unlist(lapply(parangons, names))
+coords <- AFC$row$coord # Coordonnées des parangons sur les 2 premières dimensions
+coords.parangons <- coords[parangon.names, 1:2]
+clusters <- sapply(parangon.names, function(x) {
+  which(sapply(parangons, function(cl) x %in% names(cl)))
+}) # Clusters des parangons (on récupère l'info cluster en faisant correspondre les noms)
+clusters <- factor(clusters)
+# Data frame final
+df <- data.frame(
+  Dim1 = coords.parangons[,1],
+  Dim2 = coords.parangons[,2],
+  Cluster = clusters,
+  Nom = parangon.names
+)
+# Plot uniquement les parangons avec leur cluster
+p <- ggplot(data = df, aes(x = Dim1, y = Dim2, color = Cluster)) +
+  geom_point(size = 3) +
+  ggrepel::geom_text_repel(data = df, aes(label = Nom), show.legend = FALSE, size = 3) +
+  
+  # Lignes centrales aux axes factoriels
+  geom_hline(yintercept = 0, linetype = "dashed", color = "grey70") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "grey70") +
+  
+  # Theme minimal sans axes (ticks ni lignes sur les bords)
+  theme_minimal() +
+  theme(
+    panel.grid = element_blank(),
+    axis.line = element_blank(),       # supprime les axes sur les côtés
+    axis.ticks = element_blank(),     # supprime les ticks
+    axis.text = element_blank(),      # supprime les labels sur axes
+    axis.title = element_text(color = "grey30")  # on garde les titres d'axes
+  ) +
+  labs(
+    title = "Carte factorielle (CA) - Parangons uniquement",
+    x = "Dimension 1",
+    y = "Dimension 2"
+  )
+print(p)
+filename=paste(rep_name, "rows_hclust_para.bmp")
+ggsave(filename, plot = p, width = 8, height = 6, dpi = 300)
 
 
 
