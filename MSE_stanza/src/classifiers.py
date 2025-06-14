@@ -21,7 +21,10 @@ from matplotlib.colors import Normalize
 from sklearn.metrics import classification_report
 from sklearn.model_selection import RepeatedStratifiedKFold
 from sklearn.svm import LinearSVC, SVC
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, ParameterGrid
+from sklearn.inspection import permutation_importance
+
+import time
 
 
 def prepare_dataset(path_data, rep_out, path_target):
@@ -41,11 +44,15 @@ def prepare_dataset(path_data, rep_out, path_target):
     
     return X_motifs, y_motifs, X_features
 
-def PCA_transform(X_motifs):
+def PCA_transform(X_motifs, nb_comp):
     scaler = StandardScaler()
+    nrow,ncol=X_motifs.shape
+    min_dim=min(nrow,ncol)
+    if nb_comp>min_dim:
+        nb_comp=min_dim
     scaler.fit(X_motifs)
     X_motifs_scaled =scaler.transform(X_motifs)
-    pca = PCA(n_components=2)
+    pca = PCA(n_components=nb_comp)
     X_motifs_scaled_reduced = pca.fit_transform(X_motifs_scaled)
     
     return X_motifs_scaled_reduced
@@ -73,9 +80,9 @@ def cross_val_classification_report(model,X,y,n_splits,n_repeats,random_state = 
     return classification_report(y_true,y_pred,target_names=target_names)
 
 #-------- SVM --------------
-def svm_train(X_motifs_scaled_reduced, y_motifs, rep_out):
+def svm_train(X_motifs_scaled_reduced, y_motifs, rep_out, params):
     X_train, X_test, y_train, y_test, X_motifs_scaled_reduced, y_motifs = split_data(X_motifs_scaled_reduced, y_motifs)
-    svm = LinearSVC()
+    svm = SVC(**params)
     classify = svm.fit(X_train, y_train)
 
     y_pred = svm.predict(X_test)
@@ -84,30 +91,21 @@ def svm_train(X_motifs_scaled_reduced, y_motifs, rep_out):
     with open(f"{rep_out}svm_report.txt", "w") as f:
         f.write(report)
     
-    return svm, classify
+    return svm
 
-def svm_train_mean(X_motifs_scaled_reduced, y_motifs, rep_out):
-    # X_train, X_test, y_train, y_test, X_motifs_scaled_reduced, y_motifs = split_data(X_motifs_scaled_reduced, y_motifs)
-    svm = LinearSVC()
-    # classify = svm.fit(X_motifs_scaled_reduced, y_motifs)
-    report = cross_val_classification_report(
-    model=svm,
-    X=X_motifs_scaled_reduced,
-    y=y_motifs,
-    n_splits=5,
-    n_repeats=10,
-    random_state=50,
-    # target_names=["class1","class2","and so on"]
-)
-    # y_pred = svm.predict(X_test)
-    # report = classification_report(y_test, y_pred)
-    
-    # scores = cross_val_score(svm, X_train, y_train, scoring="f1_weighted", cv=5)
-    # print("%0.2f f1_score with a standard deviation of %0.2f" % (scores.mean(), scores.std()))
-
-
-    with open(f"{rep_out}svm_mean_report.txt", "w") as f:
-        f.write(report)
+# def svm_train_mean(X_motifs_scaled_reduced, y_motifs, rep_out):
+#     svm = LinearSVC()
+#     classify = svm.fit(X_motifs_scaled_reduced, y_motifs)
+#     report = cross_val_classification_report(
+#     model=svm,
+#     X=X_motifs_scaled_reduced,
+#     y=y_motifs,
+#     n_splits=5,
+#     n_repeats=10,
+#     random_state=50,
+# )
+    # with open(f"{rep_out}svm_mean_report.txt", "w") as f:
+    #     f.write(report)
         
 
     # from sklearn.model_selection import GridSearchCV
@@ -119,13 +117,18 @@ def svm_train_mean(X_motifs_scaled_reduced, y_motifs, rep_out):
  #    print ("grid best params: ", create_grid.best_params_) 
     return svm
 
+# def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
 def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
      param_grid=[
    {'C': [1, 10, 100, 1000], 'kernel': ['linear']},
    {'C': [1, 10, 100, 1000], 'gamma': [0.001, 0.0001], 'kernel': ['rbf']},
   ]
+     n_splits=5
+     n_repeats=10
+     cv = RepeatedStratifiedKFold(n_splits=n_splits, n_repeats=n_repeats, random_state=50)
      
-     cv = RepeatedStratifiedKFold(n_splits=5, n_repeats=10, random_state=50)
+     total_combinations = len(list(ParameterGrid(param_grid)))
+     total_fits = total_combinations * n_splits * n_repeats
      
      grid_search = GridSearchCV(SVC(), param_grid, cv=cv, scoring='accuracy', n_jobs=-1, verbose=1)
      grid_search.fit(X_motifs_scaled_reduced, y_motifs)
@@ -145,16 +148,19 @@ def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
      with open(f"{rep_out}svm_best_model_report.txt", "w") as f:
          f.write(report)
     
-     return best_model
+     return best_model, best_params
 
 
-def svm_plot_decision(svm, X_motifs_scaled_reduced, y_motifs, rep_out, classify):
+def svm_mini_plot_decision(svm, X_motifs_scaled_reduced, y_motifs, rep_out): #un plot de la svm mini permettant de visualiser les frontières en 2D 
+    # for i in range(0,X_motifs_scaled_reduced.shape[1]):
     x_min, x_max = X_motifs_scaled_reduced[:, 0].min() - 1, X_motifs_scaled_reduced[:, 0].max() + 1
     y_min, y_max = X_motifs_scaled_reduced[:, 1].min() - 1, X_motifs_scaled_reduced[:, 1].max() + 1
     xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1),
                          np.arange(y_min, y_max, 0.1))
     grid = np.c_[xx.ravel(), yy.ravel()]
+    
     Z = svm.predict(grid)
+    # Z = svm.predict(X_motifs_scaled_reduced)
     
     le = LabelEncoder()
     Z_encoded = le.fit_transform(Z)
@@ -169,15 +175,84 @@ def svm_plot_decision(svm, X_motifs_scaled_reduced, y_motifs, rep_out, classify)
     plt.title('SVM Decision Boundary')
     
     
-    
     handles, labels = scatter.legend_elements()
     
     plt.legend(handles, le.classes_, title="Classes", loc="best")
-    plt.savefig(f"{rep_out}{svm}_plot.png", dpi=300, bbox_inches='tight')
+    plt.savefig(f"{rep_out}{svm}_mini_plot.png", dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    
+def svm_plot_decision_alt(svm, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp):##permet d'avoir une svm entraînée sur un nb_composantes principales > 2 et de plot sa projection sur 2D, par contre on a pas le contourf joli
+     # 1. Créer les plages de valeurs pour chaque dimension (tu peux ajuster `num`)
+    num = 5  # nombre de points par axe
+    dim_ranges = [
+        np.linspace(X_motifs_scaled_reduced[:, i].min() - 1, X_motifs_scaled_reduced[:, i].max() + 1, num=num)
+        for i in range(nb_comp)
+    ]
+    
+    # 2. Générer la grille 5D complète (produit cartésien)
+    mesh = np.meshgrid(*dim_ranges)
+    grid = np.array(mesh).T.reshape(-1, nb_comp)  # shape (n_points, 5)
+    
+    # 3. Prédiction sur la grille 5D
+    Z = svm.predict(grid)
+    # 4. Projeter les deux premières dimensions pour affichage
+    x_plot = grid[:, 0]
+    y_plot = grid[:, 1]
+    
+    # 5. Encoder les classes pour affichage couleur
+    le = LabelEncoder()
+    le.fit(y_motifs)                # apprendre toutes les classes possibles
+    Z_encoded = le.transform(Z)    # transformer les prédictions
+    y_encoded = le.transform(y_motifs)
+    
+    # 6. Visualisation (scatter, car grille non régulière en 2D)
+    plt.figure(figsize=(8, 6))
+    # scatter = plt.scatter(x_plot, y_plot, c=Z_encoded, cmap=plt.cm.coolwarm, alpha=0.6, s=30, edgecolors='k') #dégueu
+    
+    cmap = plt.cm.coolwarm
+    n_classes = len(le.classes_)
+    norm = Normalize(vmin=0, vmax=n_classes - 1)
+    
+    # Ajout des points d'entraînement projetés
+    plt.scatter(X_motifs_scaled_reduced[:, 0], X_motifs_scaled_reduced[:, 1], c=y_encoded, edgecolor='white', cmap=cmap, norm=norm, marker='o', s=40)
+    
+    plt.xlabel('Axe 1')
+    plt.ylabel('Axe 2')
+    plt.title('SVM – frontière de décision (projection 2D des prédictions 5D)')
+    
+    # Légende
+    for i, class_name in enumerate(le.classes_):
+        plt.scatter([], [], color=cmap(norm(i)), label=class_name)
+    plt.legend(title="Classes", loc="best")
+
+    # Sauvegarde
+    plt.savefig(f"{rep_out}{svm}_plot_alt.png", dpi=300, bbox_inches='tight')
     plt.close()
 
-    
-    # plt.show()
+
+def importance(model, X_train, y_train, X_features, rep_out):### annulé car cela met en avant la forte contribution des premiers axes d'une ACP ce qui esttrivial et donc moyennement intéressant
+    result = permutation_importance(model, X_train, y_train, n_repeats=30, random_state=42, n_jobs=-1)
+
+# Les features les plus importantes
+    sorted_idx = result.importances_mean.argsort()[::-1]
+    top_n = min(10, len(X_features))
+    with open(f"{rep_out}svm_best_model_report_features.txt", "w") as f:
+        for i in sorted_idx[:top_n]:
+            # importance = result.importances_mean[i]
+            importance = result.importances[i]
+            print(f"{X_features[i]}: {importance}")
+            f.write(f"{X_features[i]}: {importance}\n")
+    top_features = [X_features[i] for i in sorted_idx[:top_n]]
+    # top_importances = result.importances_mean[sorted_idx[:top_n]]
+    top_importances = result.importances[sorted_idx[:top_n]]
+    plt.figure(figsize=(8, 5))
+    plt.barh(top_features[::-1], top_importances[::-1])  # inverser pour top en haut
+    plt.xlabel("Importance (permutation)")
+    plt.title("Top 10 features")
+    plt.tight_layout()
+    plt.savefig(f"{rep_out}svm_best_model_report_top_10_features.svg", format="svg")
+    print("SVG enregistré sous : top_10_features.svg")
 
 
 #-------- Decision Tree -------
@@ -215,13 +290,22 @@ def main(minsup, file_out_motifs, file_out_lemma, file_out_pos, path_target):
         if not os.path.exists(rep_out):
             os.mkdir(rep_out)
         X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target)
-        X_motifs_scaled_reduced = PCA_transform(X_motifs)
-        svm, classify = svm_train(X_motifs_scaled_reduced, y_motifs, rep_out)
-        svm_plot_decision(svm, X_motifs_scaled_reduced, y_motifs, rep_out, classify)
+        nb_comp=4
+        X_motifs_scaled_reduced = PCA_transform(X_motifs, nb_comp)
         decision_tree(X_motifs, y_motifs, X_features, rep_out)
-        svm = svm_train_mean(X_motifs_scaled_reduced, y_motifs, rep_out)
-        best_model = svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out)
-        svm_plot_decision(best_model, X_motifs_scaled_reduced, y_motifs, rep_out, classify)
+        best_model, best_params = svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out)
+        
+        # if nb_comp < 32:
+        #     svm_plot_decision_alt(best_model, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp)
+        # importance(best_model, X_motifs_scaled_reduced, y_motifs, X_features, rep_out)
+    
+        
+        ###mini svm pour mini plot en 2D###
+        X_motifs_mini = PCA_transform(X_motifs, nb_comp=2) 
+        svm_mini = svm_train(X_motifs_mini, y_motifs, rep_out, best_params)
+        svm_mini_plot_decision(svm_mini, X_motifs_mini, y_motifs, rep_out)# best_model est en 50D il y a un tru c à faire là 
+
+
 
     
 
