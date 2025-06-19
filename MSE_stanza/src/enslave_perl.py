@@ -44,6 +44,26 @@ def cqp_general():
     # print(dictionnaire_t)
     return T, dictionnaire_t
 
+def cqp_index_property(property):
+    script = f"./src/cqp_index_{property}.pl"
+    cmd = ['perl', script]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    output=result.stdout
+    output_lines = output.splitlines()
+    # dictionnaire_lemma={}
+    liste_property=[]
+    # print(T)
+    for line in output_lines[5:(len(output_lines)-3)]:
+        part = line.split("\t")
+        # print(line)
+        # freq = part[0].strip()
+        res = part[1].strip()
+        res = res.split("  ")[0]
+        # dictionnaire_lemma[lemma]=freq
+        liste_property.append(res)
+    # print(dictionnaire_t)
+    return liste_property
+
 def cqp_index_lemma():
     cmd = ['perl', './src/cqp_index_lemma.pl']
     result = subprocess.run(cmd, capture_output=True, text=True)
