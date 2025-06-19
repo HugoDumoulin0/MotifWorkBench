@@ -25,6 +25,7 @@ import cwb
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out):
     total_motifs=len(liste_motifs_clos_corpus)
     motif_count = 0
+    T, dictionnaire_t = enslave_perl.cqp_general()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_motifs_str = []
     
@@ -34,7 +35,8 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = [] 
     
-    print("Computing motif freq X texte...")
+    nombre = len(liste_motifs_str)
+    print(f"Computing {nombre} motifs freq X texte...")
     for motif in liste_motifs_str:
         trad_motif = str(tools.read_req_CQP(motif))
         print(trad_motif)
@@ -51,17 +53,23 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
     df_k.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) #(moved here by analogy)
-    return df_k, total_motifs, file_out
+    return df_k, total_motifs, file_out, dictionnaire_t
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
-    print("Computing lemma freq X texte...")
+    print("indexing lemma")
     liste_lemma = enslave_perl.cqp_index_lemma()
     print("index done")
+    nombre = len(liste_lemma[:seuil])
+    print(f"Computing {nombre} lemma freq X texte...")
+    print("index done")
+    indice=0
     for lemma in liste_lemma[:seuil]:
-        lemma = f'[lemma="{lemma}"]'
-        ligne_de_table = enslave_perl.cqp_freq_textes(lemma)
+        req = f'[lemma="{lemma}"]'
+        indice+=1
+        print(f"(all) : {lemma} {indice}")
+        ligne_de_table = enslave_perl.cqp_freq_textes(req)
         lignes_table.append(ligne_de_table)
     df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil])
     df_lemma = df_lemma.fillna(0)
@@ -75,12 +83,68 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) 
     return file_out
 
+def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R):
+    registry_path = "./Data/cwb-corpus/registry"
+    lignes_table = []
+    seuil = 10000
+    print("indexing bigrams lemma")
+    liste_bigrams_lemma = enslave_perl.cqp_index_property("bigrams_lemma")
+    print("index done")
+    print(f"Computing {seuil} bigrams_lemma freq X texte...")
+    print("index done")
+    indice=0
+    for big in liste_bigrams_lemma[:seuil]:
+        lemma1, lemma2 = big.split(" ")
+        req = f'[lemma="{lemma1}"][lemma="{lemma2}"]'
+        indice+=1
+        print(f"(all) : {req} {indice}")
+        ligne_de_table = enslave_perl.cqp_freq_textes(req)
+        lignes_table.append(ligne_de_table)
+    df_lemma = pd.DataFrame(lignes_table, index=liste_bigrams_lemma[:seuil])
+    df_lemma = df_lemma.fillna(0)
+    df_lemma = df_lemma.apply(pd.to_numeric)
+    prefixe=f"{seuil}bigramslemma/"
+    path_out=path_R+prefixe
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
+    file_out_bigrams = f"{path_out}{seuil}bigramslemmaTexte_df_{execution_time}.tsv"
+    df_lemma.to_csv(file_out_bigrams, sep="\t")
+    return file_out_bigrams, seuil
+
+def compute_freq_Textes20000Lemma_noAFC(execution_time, path_R):
+    registry_path = "./Data/cwb-corpus/registry"
+    lignes_table = []
+    print("indexing 20 000 lemma")
+    liste_lemma = enslave_perl.cqp_index_lemma()
+    print("index done")
+    print("Computing 20 000 lemma freq X texte...")
+    total=20000
+    indice = 0
+    for lemma in liste_lemma[:20000]:
+        indice += 1
+        lemma = f'[lemma="{lemma}"]'
+        print(f"(all) : {lemma} {indice}")
+        ligne_de_table = enslave_perl.cqp_freq_textes(lemma)
+        lignes_table.append(ligne_de_table)
+    df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:20000])
+    df_lemma = df_lemma.fillna(0)
+    df_lemma = df_lemma.apply(pd.to_numeric)
+    prefixe="20000lemma/"
+    path_out=path_R+prefixe
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
+    file_out = f"{path_out}{total}lemmaTexte_df_{execution_time}.tsv"
+    df_lemma.to_csv(file_out, sep="\t")
+    return file_out
+
 def compute_freq_TextesPos_AFC(execution_time, path_out):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
-    print("Computing pos freq X texte...")
+    print("indexing pos")
     liste_pos = enslave_perl.cqp_index_pos()
     print("index done")
+    nombre = len(liste_pos)
+    print(f"Computing {nombre} pos freq X texte...")
     for pos in liste_pos:
         pos = f'[pos="{pos}"]'
         ligne_de_table = enslave_perl.cqp_freq_textes(pos)
@@ -115,13 +179,12 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out):
     df_spec = pd.DataFrame(données_specifs)
     prefixe="motifs/"
     path_out=path_out+prefixe
-    file_out=f"{path_out}SpecifsmotifsTexte_df_{execution_time}.tsv"
+    file_out=f"{path_out}SpecifsMotifsTexte_df_{execution_time}.tsv"
     # file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     if specifs==True:
         subprocess.call(["Rscript", "./src/compute_specifs_noZero.r",file_out, path_out, str(minsup_percent), str(execution_time)]) #Run R!
-
 
 # def add_association_vocab(dict_synth, liste_fichiers, columns):
 #     index_filtered, T = stats_vocab.build_index_filtered(liste_fichiers)
@@ -170,6 +233,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     execution_time = datetime.datetime.now()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
+    
     if not os.path.exists("./Data/cwb-corpus"):
         os.mkdir("./Data/cwb-corpus")
         cwb.main()
@@ -177,15 +241,28 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     if not os.path.exists(path_R):
         os.mkdir(path_R)
     path_out = path_R+str(minsup_percent)+"/"
+    results = {}
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out)
-    file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
-    file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
-    compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out)
+    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/motifs"):
+        df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out)
+        compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out)
+        results["motifs"] = file_out_motifs
+    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/pos"):
+        file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
+        results["pos"] = file_out_pos
+    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/lemma"):
+        file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
+        results["lemma"] = file_out_lemma
+    if not os.path.exists("./Patterns_results/R/20000lemma"):
+        file_out_20000lemma = compute_freq_Textes20000Lemma_noAFC(execution_time, path_R)
+        results["20000lemma"] = file_out_20000lemma
+    if not os.path.exists("./Patterns_results/R/10000bigramslemma"):
+         file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R)
+         results[f"{seuil}bigrams"] = file_out_bigrams
     # if shortcut_association==False:
     #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
-    return file_out_motifs, file_out_lemma, file_out_pos
+    return results
     
     
     
