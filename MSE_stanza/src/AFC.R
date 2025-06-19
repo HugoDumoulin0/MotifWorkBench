@@ -222,38 +222,38 @@ print(plot_obj)
 dev.off()
 
 #------hierarchical clustering------#
-hclust = HCPC(AFC, nb.clust=-1, graph=F)
-hclust_cols = HCPC(AFC, cluster.CA="columns", nb.clust=-1, graph=F)
+hclust_row = HCPC(AFC, nb.clust=-1, graph=F)
+hclust_col = HCPC(AFC, cluster.CA="columns", nb.clust=-1, graph=F)
 
 bmp(filename=paste(rep_name, "rows_hclust_map.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust, choice="map")
+plot.HCPC(hclust_row, choice="map")
 dev.off()
 
 bmp(filename=paste(rep_name, "cols_hclust_map.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust_cols, choice="map")
+plot.HCPC(hclust_col, choice="map")
 dev.off()
 
 bmp(filename=paste(rep_name, "rows_hclust_map_light.bmp"), width=2048, height=2048, res=200)
-plot(hclust, choice="map", ind.names = FALSE)
+plot(hclust_row, choice="map", ind.names = FALSE)
 dev.off()
 
 bmp(filename=paste(rep_name, "cols_hclust_map_light.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust_cols, choice="map", ind.names = FALSE)
+plot.HCPC(hclust_col, choice="map", ind.names = FALSE)
 dev.off()
 
 bmp(filename=paste(rep_name, "rows_hclust_chute.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust, choice="bar")
+plot.HCPC(hclust_row, choice="bar")
 dev.off()
 
 bmp(filename=paste(rep_name, "cols_hclust_chute.bmp"), width=2048, height=2048, res=200)
-plot.HCPC(hclust_cols, choice="bar")
+plot.HCPC(hclust_col, choice="bar")
 dev.off()
 
-capture.output(hclust$desc.var, file=paste(rep_name, "rows_hclust_desc_var.txt"))
-capture.output(hclust$desc.ind, file=paste(rep_name, "rows_hclust_desc_ind.txt"))
+capture.output(hclust_row$desc.var, file=paste(rep_name, "rows_hclust_desc_var.txt"))
+capture.output(hclust_row$desc.ind, file=paste(rep_name, "rows_hclust_desc_ind.txt"))
 
-capture.output(hclust_cols$desc.var, file=paste(rep_name, "cols_hclust_desc_var.txt"))
-capture.output(hclust_cols$desc.ind, file=paste(rep_name, "cols_hclust_desc_ind.txt"))
+capture.output(hclust_col$desc.var, file=paste(rep_name, "cols_hclust_desc_var.txt"))
+capture.output(hclust_col$desc.ind, file=paste(rep_name, "cols_hclust_desc_ind.txt"))
 
 
 #----IMPORTANT ! création du rep "motifs_cluster" dans lequel le script interpret_association_motif.py vient chercher ses motifs----#
@@ -262,9 +262,9 @@ dir.create(glue("{rep_name}motifs_cluster"))
 
 for (cluster in 1:hclust$call$t$nb.clust) {
 	para = glue("{rep_name}motifs_cluster/{cluster}_para.csv")
-	write.csv(hclust$desc.ind$para[cluster], file=para, row.names=TRUE)
+	write.csv(hclust_row$desc.ind$para[cluster], file=para, row.names=TRUE)
 	dist = glue("{rep_name}motifs_cluster/{cluster}_dist.csv")
-	write.csv(hclust$desc.ind$dist[cluster], file=dist, row.names=TRUE)
+	write.csv(hclust_row$desc.ind$dist[cluster], file=dist, row.names=TRUE)
 }
 
 #--force 2 clusters : optionnal--#
@@ -278,55 +278,70 @@ for (cluster in 1:hclust$call$t$nb.clust) {
 #capture.output(hclust_force2$desc.var, file=paste(rep_name, "hclust_force2_desc_var.txt"))
 #capture.output(hclust_force2$desc.ind, file=paste(rep_name, "hclust_force2_desc_ind.txt"))
 
-#----plot de HCPC avec uniquement les parangons----#
-parangons <- hclust$desc.ind$para # Extraire les parangons : noms extraits des noms des éléments des vecteurs dans la liste
-parangon.names <- unlist(lapply(parangons, names))
-coords <- AFC$row$coord # Coordonnées des parangons sur les 2 premières dimensions
-coords.parangons <- coords[parangon.names, 1:2]
-clusters <- sapply(parangon.names, function(x) {
-  which(sapply(parangons, function(cl) x %in% names(cl)))
-}) # Clusters des parangons (on récupère l'info cluster en faisant correspondre les noms)
-clusters <- factor(clusters)
-# Data frame final
-df <- data.frame(
-  Dim1 = coords.parangons[,1],
-  Dim2 = coords.parangons[,2],
-  Cluster = clusters,
-  Nom = parangon.names
-)
-# Plot uniquement les parangons avec leur cluster
-p <- ggplot(data = df, aes(x = Dim1, y = Dim2, color = Cluster)) +
-  geom_point(size = 3) +
-  ggrepel::geom_text_repel(data = df, aes(label = Nom), show.legend = FALSE, size = 3) +
+#----plot de HCPC réduit----#
+
+plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output", custom_colors = NULL) {
+  # Extraire les parangons
+  individus <- hclust_[[data_type]]$desc.ind$[[individus_type]]
+  individus.names <- unlist(lapply(individus, names))
   
-  # Lignes centrales aux axes factoriels
-  geom_hline(yintercept = 0, linetype = "dashed", color = "grey70") +
-  geom_vline(xintercept = 0, linetype = "dashed", color = "grey70") +
+  # Coordonnées des parangons sur les deux premières dimensions
+  coords <- AFC$[[data_type]]$coord
+  coords.individus <- coords[individus.names, 1:2]
   
-  # Theme minimal sans axes (ticks ni lignes sur les bords)
-  theme_minimal() +
-  theme(
-    panel.grid = element_blank(),
-    axis.line = element_blank(),       # supprime les axes sur les côtés
-    axis.ticks = element_blank(),     # supprime les ticks
-    axis.text = element_blank(),      # supprime les labels sur axes
-    axis.title = element_text(color = "grey30")  # on garde les titres d'axes
-  ) +
-  labs(
-    title = "Carte factorielle (CA) - Parangons uniquement",
-    x = "Dimension 1",
-    y = "Dimension 2"
+  # Déterminer à quel cluster appartient chaque parangon
+  clusters <- sapply(individus.names, function(x) {
+    which(sapply(individus, function(cl) x %in% names(cl)))
+  })
+  clusters <- factor(clusters)
+  
+  # Construire le data.frame
+  df <- data.frame(
+    Dim1 = coords.individus[,1],
+    Dim2 = coords.individus[,2],
+    Cluster = clusters,
+    Nom = individus.names
   )
-print(p)
-filename=paste(rep_name, "rows_hclust_para.bmp")
-ggsave(filename, plot = p, width = 8, height = 6, dpi = 300)
+  
+  # Construire le graphique
+  p <- ggplot(data = df, aes(x = Dim1, y = Dim2, color = Cluster)) +
+    geom_point(size = 3) +
+    ggrepel::geom_text_repel(aes(label = Nom), show.legend = FALSE, size = 3) +
+    geom_hline(yintercept = 0, linetype = "dashed", color = "grey70") +
+    geom_vline(xintercept = 0, linetype = "dashed", color = "grey70") +
+    theme_minimal() +
+    theme(
+      panel.grid = element_blank(),
+      axis.line = element_blank(),
+      axis.ticks = element_blank(),
+      axis.text = element_blank(),
+      axis.title = element_text(color = "grey30")
+    ) +
+    labs(
+      title = glue("Carte factorielle (CA) - individus {individus_type} uniquement"),
+      x = "Dimension 1",
+      y = "Dimension 2"
+    )
+  
+  # Palette manuelle (si 3 clusters uniquement ou définie via argument)
+  if (!is.null(custom_colors)) {
+    p <- p + scale_color_manual(values = custom_colors)
+  } else if (hclust_cols$call$t$nb.clust == 3) {
+    p <- p + scale_color_manual(values = c("black", "red", "green"))
+  }
+  
+  # Enregistrer le graphique
+  filename <- paste0(rep_name, glue("{data_type}_hclust_{individus_type}.bmp")
+  ggsave(filename, plot = p, width = 8, height = 6, dpi = 300)
+  
+  return(p)
+}
 
 
-
-
-
-
-
+plot_CA_clusters<- function("col", "para", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters<- function("col", "dist", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters<- function("row", "para", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters<- function("col", "dist", AFC, rep_name, custom_colors = NULL) 
 
 
 
