@@ -24,7 +24,7 @@ import subprocess
 import tools
 import conllu2vrt
 import classifiers
-
+import enslave_perl
 
 
 def get_nbr_seq(dmt4_files):
@@ -341,32 +341,58 @@ if __name__ == "__main__":
                 path_stanza="./Data/Textes_tagged_stanza/"
                 path_vrt="./Data/textesVRT/"
                 conllu2vrt.transform(path_stanza, path_vrt)
-                
+                T, dictionnaire_t = enslave_perl.cqp_general()
+
                 for minsup_percent in list_minsup_percent:
                     print(f"Minsup: {minsup_percent}")
                     # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-                    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
-                        file_out_motifs, file_out_lemma, file_out_pos = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
-                    else:
-                        path=f"./Patterns_results/R/{minsup_percent}/motifs/"
-                        fichiers_motifs = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
-                        for f in fichiers_motifs: 
-                            if f.startswith("motifsTexte"):
-                                file_out_motifs=path+f
-                                break
-                        path=f"./Patterns_results/R/{minsup_percent}/lemma/"
-                        fichiers_lemma = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
-                        for f in fichiers_lemma: 
-                            if "lemmaTexte" in f:
-                                file_out_lemma=path+f
-                                break
-                        path=f"./Patterns_results/R/{minsup_percent}/pos/"
-                        fichiers_pos = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
-                        for f in fichiers_pos: 
-                                if f.startswith("posTexte"):
-                                    file_out_pos=path+f
-                                    break
-                    classifiers.main(minsup_percent, file_out_motifs, file_out_lemma, file_out_pos, path_target)
+                    # if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
+                    results = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
+                    for property_gen in ["20000lemma", "10000bigramslemma"]:
+                        if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
+                            path=f"./Patterns_results/R/{property_gen}/"
+                            if os.path.exists(path):
+                                fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                                for f in fichiers: 
+                                    if f"{property_gen}" in f:
+                                        results[f"{property_gen}"]=path+f
+                                        break
+                    for property in ["motifs", "lemma", "pos"]:
+                        if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
+                            path=f"./Patterns_results/R/{minsup_percent}/{property}/"
+                            if os.path.exists(path):
+                                fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                                for f in fichiers: 
+                                    if f"{property}Texte" in f:
+                                        results[f"{property}"]=path+f
+                                        break
+
+                    # if not os.path.exists("./Patterns_results/Classifieurs/{minsup_percent}/lemma/"):    
+                    #     path=f"./Patterns_results/R/{minsup_percent}/lemma/"
+                    #     fichiers_lemma = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                    #     for f in fichiers_lemma: 
+                    #         if "lemmaTexte" in f:
+                    #             results["lemma"]=path+f
+                    #             break
+                    #     path=f"./Patterns_results/R/{minsup_percent}/pos/"
+                    #     fichiers_pos = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                    #     for f in fichiers_pos: 
+                    #             if f.startswith("posTexte"):
+                    #                 results["pos"]=path+f
+                    #                 break
+                    #     path=f"./Patterns_results/R/20000lemma/"
+                    #     fichiers_lemma_all = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                    #     for f in fichiers_lemma_all: 
+                    #         if "20000lemma" in f:
+                    #             results["20000lemma"]=path+f
+                    #             break
+                    #     path=f"./Patterns_results/R/20000bigrams/"
+                    #     fichiers_lemma_all = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                    #     for f in fichiers_lemma_all: 
+                    #         if "20000bigrams" in f:
+                    #             results["20000bigrams"]=path+f
+                    #             break
+                    classifiers.main(minsup_percent,results,path_target, dictionnaire_t, sampling)
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
