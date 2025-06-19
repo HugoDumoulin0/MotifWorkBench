@@ -27,24 +27,46 @@ from sklearn.inspection import permutation_importance
 import time
 
 
-def prepare_dataset(path_data, rep_out, path_target):
+def equilibrer_classes(df,classe_col='target', random_state=42):
+    # Calcul du nombre minimal d'exemples par classe
+    n = df.groupby(classe_col).size().min()
+    
+    # Échantillonnage aléatoire de n exemples par classe
+    df_equilibre = df.groupby(classe_col).sample(n=n, random_state=random_state)    
+    return df_equilibre
+
+def prepare_dataset(path_data, rep_out, path_target, dictionnaire_t, sample):
+    df_target = pd.read_csv(path_target, sep="\t", index_col=0)
+    if sample:
+        df_target_equi = equilibrer_classes(df_target)
+        y_motifs=df_target_equi.target
+    
     df = pd.read_csv(path_data, sep="\t", index_col=0)
     df= df.T
     
-    df_target = pd.read_csv(path_target, sep="\t", index_col=0)
+    if sample:
+        df=df.loc[df_target_equi.index]
+    
+    # rapporte à la taille de chaque texte
+    
+    # for ligne in df.index:
+    #     for col in df.columns:
+    #         df.loc[ligne, col]=df.loc[ligne, col]/dictionnaire_t[ligne]
+    
+    # mieux est de rapporter à la freq totale de chaque ligne comme en AFC
+    df= df.div(df.sum(axis=1), axis=0)
+    
     
     X_motifs=df.to_numpy()
     X_features=df.columns.tolist()
     X_features = [s.replace('"', '').replace("'", '') for s in X_features]
-    
-    y_motifs=df_target.target
     
     
     df.to_csv(f"{rep_out}data_classif.tsv",  sep="\t")
     
     return X_motifs, y_motifs, X_features
 
-def PCA_transform(X_motifs, nb_comp):
+def PCA_transform(X_motifs, nb_comp, rep_out, X_features):
     scaler = StandardScaler()
     nrow,ncol=X_motifs.shape
     min_dim=min(nrow,ncol)
@@ -54,6 +76,18 @@ def PCA_transform(X_motifs, nb_comp):
     X_motifs_scaled =scaler.transform(X_motifs)
     pca = PCA(n_components=nb_comp)
     X_motifs_scaled_reduced = pca.fit_transform(X_motifs_scaled)
+    
+    loadings = pca.components_.T
+    n_features = X_motifs_scaled_reduced.shape[1]
+    variable_names = X_features
+    df_result = pd.DataFrame(index=variable_names)
+    for i in range(2):  # pour PC1 et PC2
+        coord = loadings[:, i]
+        contrib = 100 * coord**2 / np.sum(coord**2)
+        df_result[f'contrib_PC{i+1}'] = contrib
+        df_result[f'coord_PC{i+1}'] = coord
+    # Sauvegarde en CSV
+    df_result.to_csv(f"{rep_out}pca_contributions_{nb_comp}comps.tsv", sep="\t")
     
     return X_motifs_scaled_reduced
 
@@ -120,8 +154,10 @@ def svm_train(X_motifs_scaled_reduced, y_motifs, rep_out, params):
 # def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
 def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
      param_grid=[
-   {'C': [1, 10, 100, 1000], 'kernel': ['linear']},
-   {'C': [1, 10, 100, 1000], 'gamma': [0.001, 0.0001], 'kernel': ['rbf']},
+    {'C': [1, 10, 100, 1000], 'kernel': ['linear']},
+   # {'C': [10], 'kernel': ['linear']},
+    {'C': [1, 10, 100, 1000], 'gamma': [0.001, 0.0001], 'kernel': ['rbf']},
+   # {'C': [10], 'gamma': [0.001], 'kernel': ['rbf']},
   ]
      n_splits=5
      n_repeats=10
@@ -163,9 +199,12 @@ def svm_mini_plot_decision(svm, X_motifs_scaled_reduced, y_motifs, rep_out): #un
     # Z = svm.predict(X_motifs_scaled_reduced)
     
     le = LabelEncoder()
-    Z_encoded = le.fit_transform(Z)
-    Z_encoded = Z_encoded.reshape(xx.shape)
+    le.fit(y_motifs)
     y_encoded = le.transform(y_motifs)
+    # Z_encoded = le.fit_transform(Z)
+    Z_encoded = le.transform(Z)
+    Z_encoded = Z_encoded.reshape(xx.shape)
+    
     
     plt.figure()
     plt.contourf(xx, yy, Z_encoded.reshape(xx.shape), alpha=0.8, cmap=plt.cm.coolwarm)
@@ -273,39 +312,45 @@ def decision_tree(X_motifs, y_motifs, X_features, rep_out):
     graph.render(f"{rep_out}tree") 
     
     
-def main(minsup, file_out_motifs, file_out_lemma, file_out_pos, path_target):
+def main(minsup, results, path_target, dictionnaire_t, sample):
     path_classif_out = "./Patterns_results/Classifieurs/"
     if not os.path.exists(path_classif_out):
         os.mkdir(path_classif_out)
-    path_classif_out += str(minsup)+"/"
-    if not os.path.exists(path_classif_out):
-        os.mkdir(path_classif_out)
-    liste_prefixes = ["motifs/", "lemma/", "pos/"]
-    liste_data = [file_out_motifs, file_out_lemma, file_out_pos]
-    for filename, prefixe in zip(liste_data, liste_prefixes):
+    path_classif_out_minsup = path_classif_out + str(minsup)+"/"
+    if not os.path.exists(path_classif_out_minsup):
+        os.mkdir(path_classif_out_minsup)
+    for prefixe,filename in results.items():
+    # liste_prefixes = ["motifs/", "lemma/", "pos/", "20000lemma/", "20000bigrams"]
+    # liste_data = [file_out_motifs, file_out_lemma, file_out_pos, file_out_ALLlemma]
+    # for filename, prefixe in zip(liste_data, liste_prefixes):
         # if not os.path.exists(path_out):
         #     os.mkdir(path_out)
         # name = filename[:-4].replace(path_out, "")
-        rep_out = path_classif_out+prefixe
+        if not prefixe in ("20000lemma", "10000bigramslemma"):
+            rep_out = path_classif_out_minsup+prefixe+"/"
+        else:
+            rep_out = path_classif_out+prefixe+"/"
         if not os.path.exists(rep_out):
             os.mkdir(rep_out)
-        X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target)
-        nb_comp=4
-        X_motifs_scaled_reduced = PCA_transform(X_motifs, nb_comp)
-        decision_tree(X_motifs, y_motifs, X_features, rep_out)
-        best_model, best_params = svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out)
+        X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, dictionnaire_t, sample)
+        if len(X_motifs)>0:
+            nb_comp=50
+            X_motifs_scaled_reduced = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
+            decision_tree(X_motifs, y_motifs, X_features, rep_out)
+            best_model, best_params = svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out)
+            
+            # if nb_comp < 32:
+            #     svm_plot_decision_alt(best_model, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp)
+            # importance(best_model, X_motifs_scaled_reduced, y_motifs, X_features, rep_out)
         
-        # if nb_comp < 32:
-        #     svm_plot_decision_alt(best_model, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp)
-        # importance(best_model, X_motifs_scaled_reduced, y_motifs, X_features, rep_out)
+            
+            ###mini svm pour mini plot en 2D###
+            nb_comp=2
+            X_motifs_mini = PCA_transform(X_motifs, nb_comp, rep_out, X_features) 
+            svm_mini = svm_train(X_motifs_mini, y_motifs, rep_out, best_params)
+            svm_mini_plot_decision(svm_mini, X_motifs_mini, y_motifs, rep_out)# best_model est en 50D il y a un tru c à faire là 
     
-        
-        ###mini svm pour mini plot en 2D###
-        X_motifs_mini = PCA_transform(X_motifs, nb_comp=2) 
-        svm_mini = svm_train(X_motifs_mini, y_motifs, rep_out, best_params)
-        svm_mini_plot_decision(svm_mini, X_motifs_mini, y_motifs, rep_out)# best_model est en 50D il y a un tru c à faire là 
-
-
+    
 
     
 
