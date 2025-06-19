@@ -44,4 +44,9 @@ Feats=False
 
 #attention avec form=True il y a aura les résultats non contractés
 
+
+#-------------------
+# Machine learning params
+#-------------------
 path_target = "./Data/df_target_train_classif.tsv"
+sampling=True  #équilibre les classes
