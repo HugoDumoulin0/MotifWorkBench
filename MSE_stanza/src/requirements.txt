@@ -1,0 +1,7 @@
+stanza
+numpy
+datetime
+pandas
+scikit-learn
+matplotlib
+IPython
