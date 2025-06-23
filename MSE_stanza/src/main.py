@@ -258,8 +258,6 @@ if __name__ == "__main__":
 
                 
         for minsup_percent in list_minsup_percent:
-                gap_min = 0
-                gap_max = 0
                 threads = 30
                 for type_texte in liste:
                     print("\t Type_texte:", type_texte)

@@ -28,6 +28,8 @@ if méthode=="partition":
 #-------------------
 #Set param for minimal number of itemsets in a pattern
 nb_itemset_min = 3 #Tim, 27/02
+gap_min = 0
+gap_max = 0
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
 list_minsup_percent = [25, 10, 5]
