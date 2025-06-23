@@ -23,10 +23,8 @@ import cwb
 from config import *
 
 
-def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out):
-    total_motifs=len(liste_motifs_clos_corpus)
+def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs):
     motif_count = 0
-
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_motifs_str = []
     
@@ -234,6 +232,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     execution_time = datetime.datetime.now()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
+    total_motifs=len(liste_motifs_clos_corpus)
     
     if not os.path.exists("./Data/cwb-corpus"):
         os.mkdir("./Data/cwb-corpus")
@@ -246,7 +245,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     if not os.path.exists(path_out):
         os.mkdir(path_out)
     if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/motifs"):
-        df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out)
+        df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
         compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out)
         results["motifs"] = file_out_motifs
     if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/pos"):
