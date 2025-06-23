@@ -25,7 +25,7 @@ import cwb
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out):
     total_motifs=len(liste_motifs_clos_corpus)
     motif_count = 0
-    T, dictionnaire_t = enslave_perl.cqp_general()
+    # T, dictionnaire_t = enslave_perl.cqp_general()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_motifs_str = []
     
@@ -53,7 +53,7 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
     df_k.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) #(moved here by analogy)
-    return df_k, total_motifs, file_out, dictionnaire_t
+    return df_k, total_motifs, file_out
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     registry_path = "./Data/cwb-corpus/registry"
