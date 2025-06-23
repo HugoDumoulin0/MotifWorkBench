@@ -347,15 +347,6 @@ if __name__ == "__main__":
                     # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
                     # if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
                     results = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
-                    for property_gen in ["20000lemma", "10000bigramslemma"]:
-                        if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
-                            path=f"./Patterns_results/R/{property_gen}/"
-                            if os.path.exists(path):
-                                fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
-                                for f in fichiers: 
-                                    if f"{property_gen}" in f:
-                                        results[f"{property_gen}"]=path+f
-                                        break
                     for property in ["motifs", "lemma", "pos"]:
                         if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
                             path=f"./Patterns_results/R/{minsup_percent}/{property}/"
@@ -365,7 +356,16 @@ if __name__ == "__main__":
                                     if f"{property}Texte" in f:
                                         results[f"{property}"]=path+f
                                         break
-
+                    if classification:
+                        for property_gen in ["20000lemma", "10000bigramslemma"]:
+                            if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
+                                path=f"./Patterns_results/R/{property_gen}/"
+                                if os.path.exists(path):
+                                    fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                                    for f in fichiers: 
+                                        if f"{property_gen}" in f:
+                                            results[f"{property_gen}"]=path+f
+                                            break
                     # if not os.path.exists("./Patterns_results/Classifieurs/{minsup_percent}/lemma/"):    
                     #     path=f"./Patterns_results/R/{minsup_percent}/lemma/"
                     #     fichiers_lemma = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
@@ -391,7 +391,8 @@ if __name__ == "__main__":
                     #         if "20000bigrams" in f:
                     #             results["20000bigrams"]=path+f
                     #             break
-                    classifiers.main(minsup_percent,results,path_target, dictionnaire_t, sampling)
+
+                        classifiers.main(minsup_percent,results,path_target, dictionnaire_t, sampling)
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
