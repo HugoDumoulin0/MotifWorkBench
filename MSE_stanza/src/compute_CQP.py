@@ -20,12 +20,13 @@ import datetime
 import subprocess
 import enslave_perl
 import cwb
+import config
 
 
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out):
     total_motifs=len(liste_motifs_clos_corpus)
     motif_count = 0
-    # T, dictionnaire_t = enslave_perl.cqp_general()
+
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_motifs_str = []
     
@@ -254,12 +255,13 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/lemma"):
         file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
         results["lemma"] = file_out_lemma
-    if not os.path.exists("./Patterns_results/R/20000lemma"):
-        file_out_20000lemma = compute_freq_Textes20000Lemma_noAFC(execution_time, path_R)
-        results["20000lemma"] = file_out_20000lemma
-    if not os.path.exists("./Patterns_results/R/10000bigramslemma"):
-         file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R)
-         results[f"{seuil}bigrams"] = file_out_bigrams
+    if classification:
+        if not os.path.exists("./Patterns_results/R/20000lemma"):
+            file_out_20000lemma = compute_freq_Textes20000Lemma_noAFC(execution_time, path_R)
+            results["20000lemma"] = file_out_20000lemma
+        if not os.path.exists("./Patterns_results/R/10000bigramslemma"):
+             file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R)
+             results[f"{seuil}bigrams"] = file_out_bigrams
     # if shortcut_association==False:
     #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
     return results
