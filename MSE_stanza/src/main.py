@@ -341,7 +341,6 @@ if __name__ == "__main__":
                 path_stanza="./Data/Textes_tagged_stanza/"
                 path_vrt="./Data/textesVRT/"
                 conllu2vrt.transform(path_stanza, path_vrt)
-                T, dictionnaire_t = enslave_perl.cqp_general()
 
                 for minsup_percent in list_minsup_percent:
                     print(f"Minsup: {minsup_percent}")
