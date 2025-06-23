@@ -35,7 +35,7 @@ def equilibrer_classes(df,classe_col='target', random_state=42):
     df_equilibre = df.groupby(classe_col).sample(n=n, random_state=random_state)    
     return df_equilibre
 
-def prepare_dataset(path_data, rep_out, path_target, dictionnaire_t, sample):
+def prepare_dataset(path_data, rep_out, path_target, sample):
     df_target = pd.read_csv(path_target, sep="\t", index_col=0)
     if sample:
         df_target_equi = equilibrer_classes(df_target)
@@ -312,7 +312,7 @@ def decision_tree(X_motifs, y_motifs, X_features, rep_out):
     graph.render(f"{rep_out}tree") 
     
     
-def main(minsup, results, path_target, dictionnaire_t, sample):
+def main(minsup, results, path_target, sample):
     path_classif_out = "./Patterns_results/Classifieurs/"
     if not os.path.exists(path_classif_out):
         os.mkdir(path_classif_out)
@@ -332,7 +332,7 @@ def main(minsup, results, path_target, dictionnaire_t, sample):
             rep_out = path_classif_out+prefixe+"/"
         if not os.path.exists(rep_out):
             os.mkdir(rep_out)
-        X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, dictionnaire_t, sample)
+        X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, sample)
         if len(X_motifs)>0:
             nb_comp=50
             X_motifs_scaled_reduced = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
