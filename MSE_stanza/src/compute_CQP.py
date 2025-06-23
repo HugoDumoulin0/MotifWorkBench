@@ -20,7 +20,7 @@ import datetime
 import subprocess
 import enslave_perl
 import cwb
-import config
+from config import *
 
 
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out):
