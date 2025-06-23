@@ -1,3 +1,9 @@
+#-------------------
+# stanza
+#-------------------
+download=False
+
+
 # tagging=True
 # shortcut_underscore_fix=True
 # shortcut_DMT4=True
