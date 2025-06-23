@@ -50,3 +50,4 @@ Feats=False
 #-------------------
 path_target = "./Data/df_target_train_classif.tsv"
 sampling=True  #équilibre les classes
+classification=False
