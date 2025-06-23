@@ -390,7 +390,7 @@ if __name__ == "__main__":
                     #             results["20000bigrams"]=path+f
                     #             break
 
-                        classifiers.main(minsup_percent,results,path_target, dictionnaire_t, sampling)
+                        classifiers.main(minsup_percent,results,path_target, sampling)
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
