@@ -34,6 +34,10 @@ def get_nbr_seq(dmt4_files):
 def get_minsup(minsup, dmt4_files):
     return round((get_nbr_seq(dmt4_files) / 100) * minsup)
 
+def is_model_downloaded(lang='fr'):
+    # Par défaut, Stanza stocke les ressources dans ~/.stanza_resources/lang_model
+    model_dir = os.path.expanduser(f"~/.stanza_resources/{lang}")
+    return os.path.exists(model_dir)
 
 if __name__ == "__main__":
     python = "python3.7"
@@ -62,6 +66,13 @@ if __name__ == "__main__":
 
         #Check if tagged files exists to speed up process
         start_time = time.time()
+    
+        if not is_model_downloaded('fr'):
+            print("Téléchargement du modèle français Stanza...")
+            stanza.download('fr')
+        else:
+            print("Modèle français Stanza déjà présent, pas de téléchargement.")
+            
         nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=False)
         for type_texte in types_textes:
             print("\t Stanza: checking if tagged files already exists")
