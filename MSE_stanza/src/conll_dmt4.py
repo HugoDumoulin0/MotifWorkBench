@@ -26,6 +26,8 @@ def save_dict(dict):
     do : save dict local in pickle format and txt format
     ouput : bool (ok|ko)
     """
+    if not os.path.exists(".Data/Lexiques"):
+        os.mkdir(".Data/Lexiques")
     try:
         pickle.dump(dict, open("Data/Lexiques/dico_str_to_int_all_items.pk", "wb"))
         df = pd.DataFrame.from_dict(dict, orient="index")
