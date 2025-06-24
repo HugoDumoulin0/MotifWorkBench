@@ -335,7 +335,7 @@ plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output",
   }
   
   # Enregistrer le graphique
-  filename <- paste0(rep_name, glue("{data_type}_hclust_{individus_type}.bmp")
+  filename <- paste0(rep_name, glue("{data_type}_hclust_{individus_type}.bmp"))
   ggsave(filename, plot = p, width = 8, height = 6, dpi = 300)
   
   return(p)
