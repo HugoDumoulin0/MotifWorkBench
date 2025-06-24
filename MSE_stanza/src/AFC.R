@@ -222,8 +222,10 @@ print(plot_obj)
 dev.off()
 
 #------hierarchical clustering------#
-hclust_row = HCPC(AFC, nb.clust=-1, graph=F)
-hclust_col = HCPC(AFC, cluster.CA="columns", nb.clust=-1, graph=F)
+hclust_row <- HCPC(AFC, nb.clust=-1, graph=F)
+hclust_col <- HCPC(AFC, cluster.CA="columns", nb.clust=-1, graph=F)
+
+#----------plots---------------------#
 
 bmp(filename=paste(rep_name, "rows_hclust_map.bmp"), width=2048, height=2048, res=200)
 plot.HCPC(hclust_row, choice="map")
@@ -283,12 +285,12 @@ for (cluster in 1:hclust_row$call$t$nb.clust) {
 plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output", custom_colors = NULL) {
   # Extraire les parangons
   individus_full <- paste0("hclust_",data_type,"$desc.ind$", individus_type)
-  individus <- get(individus_full)
+  individus <- geval(parse(text = individus_full))
   individus.names <- unlist(lapply(individus, names))
   
   # Coordonnées des parangons sur les deux premières dimensions
   coords_full <- paste0("AFC$", data_type, "$coord")
-  coords=get(coords_full)
+  coords=eval(parse(text = coords_full))
   coords.individus <- coords[individus.names, 1:2]
   
   # Déterminer à quel cluster appartient chaque parangon
@@ -326,7 +328,7 @@ plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output",
     )
   
   test_full = paste0("hclust_", data_type, "$call$t$nb.clust")
-  test=get(test_full)
+  test=eval(parse(text = test_full))
   # Palette manuelle (si 3 clusters uniquement ou définie via argument)
   if (!is.null(custom_colors)) {
     p <- p + scale_color_manual(values = custom_colors)
@@ -345,7 +347,7 @@ plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output",
 plot_CA_clusters("col", "para", AFC, rep_name, custom_colors = NULL) 
 plot_CA_clusters("col", "dist", AFC, rep_name, custom_colors = NULL) 
 plot_CA_clusters("row", "para", AFC, rep_name, custom_colors = NULL) 
-plot_CA_clusters("col", "dist", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters("row", "dist", AFC, rep_name, custom_colors = NULL) 
 
 
 
