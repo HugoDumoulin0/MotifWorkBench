@@ -51,7 +51,7 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
         os.mkdir(path_out)
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
     df_k.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) #(moved here by analogy)
+    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
     return df_k, total_motifs, file_out
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
@@ -79,7 +79,7 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
         os.mkdir(path_out)
     file_out = f"{path_out}{seuil}_lemmaTexte_df_{execution_time}.tsv"
     df_lemma.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) 
+    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) 
     return file_out
 
 def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R):
@@ -157,7 +157,7 @@ def compute_freq_TextesPos_AFC(execution_time, path_out):
         os.mkdir(path_out)
     file_out= f"{path_out}posTexte_df_{execution_time}.tsv"
     df_pos.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out])
+    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out])
     return file_out
 
 def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out):
