@@ -285,7 +285,7 @@ for (cluster in 1:hclust_row$call$t$nb.clust) {
 plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output", custom_colors = NULL) {
   # Extraire les parangons
   individus_full <- paste0("hclust_",data_type,"$desc.ind$", individus_type)
-  individus <- geval(parse(text = individus_full))
+  individus <- eval(parse(text = individus_full))
   individus.names <- unlist(lapply(individus, names))
   
   # Coordonnées des parangons sur les deux premières dimensions
