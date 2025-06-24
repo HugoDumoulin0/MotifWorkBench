@@ -103,7 +103,6 @@ def read_req_CQP(expr):
     # Remplacer les paires clé_"valeur" ou clé="valeur" dans les accolades par les conditions CQP correspondantes
     # if not isinstance(expr, str):
     #     raise ValueError(f"Expected a string, got {type(expr)}")
-    print(expr)
     expr = re.sub(r'\{([^}]+)\}', lambda match: convert_to_cqp_condition(match.group(1)), expr)
     return expr
 
