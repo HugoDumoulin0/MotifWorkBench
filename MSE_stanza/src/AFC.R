@@ -342,10 +342,10 @@ plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output",
 }
 
 
-plot_CA_clusters<- function("col", "para", AFC, rep_name, custom_colors = NULL) 
-plot_CA_clusters<- function("col", "dist", AFC, rep_name, custom_colors = NULL) 
-plot_CA_clusters<- function("row", "para", AFC, rep_name, custom_colors = NULL) 
-plot_CA_clusters<- function("col", "dist", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters("col", "para", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters("col", "dist", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters("row", "para", AFC, rep_name, custom_colors = NULL) 
+plot_CA_clusters("col", "dist", AFC, rep_name, custom_colors = NULL) 
 
 
 
