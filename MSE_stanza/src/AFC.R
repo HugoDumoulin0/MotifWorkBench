@@ -260,7 +260,7 @@ capture.output(hclust_col$desc.ind, file=paste(rep_name, "cols_hclust_desc_ind.t
 
 dir.create(glue("{rep_name}motifs_cluster"))
 
-for (cluster in 1:hclust$call$t$nb.clust) {
+for (cluster in 1:hclust_row$call$t$nb.clust) {
 	para = glue("{rep_name}motifs_cluster/{cluster}_para.csv")
 	write.csv(hclust_row$desc.ind$para[cluster], file=para, row.names=TRUE)
 	dist = glue("{rep_name}motifs_cluster/{cluster}_dist.csv")
@@ -282,11 +282,13 @@ for (cluster in 1:hclust$call$t$nb.clust) {
 
 plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output", custom_colors = NULL) {
   # Extraire les parangons
-  individus <- hclust_[[data_type]]$desc.ind$[[individus_type]]
+  individus_full <- paste("hclust_",data_type,"$desc.ind$", individus_type)
+  individus <- get(individus_full)
   individus.names <- unlist(lapply(individus, names))
   
   # Coordonnées des parangons sur les deux premières dimensions
-  coords <- AFC$[[data_type]]$coord
+  coords_full <- paste("AFC$", data_type, "$coord")
+  coords=get(coords_full)
   coords.individus <- coords[individus.names, 1:2]
   
   # Déterminer à quel cluster appartient chaque parangon
@@ -323,10 +325,12 @@ plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output",
       y = "Dimension 2"
     )
   
+  test_full = paste("hclust_", data_type, "$call$t$nb.clust")
+  test=get(test_full)
   # Palette manuelle (si 3 clusters uniquement ou définie via argument)
   if (!is.null(custom_colors)) {
     p <- p + scale_color_manual(values = custom_colors)
-  } else if (hclust_cols$call$t$nb.clust == 3) {
+  } else if (test == 3) {
     p <- p + scale_color_manual(values = c("black", "red", "green"))
   }
   
