@@ -282,12 +282,12 @@ for (cluster in 1:hclust_row$call$t$nb.clust) {
 
 plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output", custom_colors = NULL) {
   # Extraire les parangons
-  individus_full <- paste("hclust_",data_type,"$desc.ind$", individus_type)
+  individus_full <- paste0("hclust_",data_type,"$desc.ind$", individus_type)
   individus <- get(individus_full)
   individus.names <- unlist(lapply(individus, names))
   
   # Coordonnées des parangons sur les deux premières dimensions
-  coords_full <- paste("AFC$", data_type, "$coord")
+  coords_full <- paste0("AFC$", data_type, "$coord")
   coords=get(coords_full)
   coords.individus <- coords[individus.names, 1:2]
   
@@ -325,7 +325,7 @@ plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output",
       y = "Dimension 2"
     )
   
-  test_full = paste("hclust_", data_type, "$call$t$nb.clust")
+  test_full = paste0("hclust_", data_type, "$call$t$nb.clust")
   test=get(test_full)
   # Palette manuelle (si 3 clusters uniquement ou définie via argument)
   if (!is.null(custom_colors)) {
