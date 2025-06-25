@@ -62,14 +62,12 @@ if __name__ == "__main__":
 
         #Check if tagged files exists to speed up process
         start_time = time.time()
-        
-    
+            
         if download:
                 print("Téléchargement du modèle français Stanza...")
                 stanza.download('fr')
         else:
             print("Modèle français Stanza déjà présent, pas de téléchargement.")
-            
         nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=False)
         for type_texte in types_textes:
             print("\t Stanza: checking if tagged files already exists")
@@ -348,13 +346,25 @@ if __name__ == "__main__":
                     os.mkdir("./Patterns_results/Specifs_noZero/")
                 print("-"*75)
                 print("4.3 Extracting patterns in partition")
-            
+                
+                #Tim, 2025-06-04
+                # path_stanza="./Data/Textes_tagged_stanza/"
+                if os.path.exists("./Data/underscore_fix/"): 
+                    print("Using underscore_fix folder as source for VRT files")
+                    path_stanza="./Data/underscore_fix/" 
+                else:
+                    print("Using Textes_tagged_stanza folder as source for VRT files")
+                    path_stanza="./Data/Textes_tagged_stanza/"
+                
+                path_vrt="./Data/textesVRT/"
+                conllu2vrt.transform(path_stanza, path_vrt)
 
                 for minsup_percent in list_minsup_percent:
                     print(f"Minsup: {minsup_percent}")
                     # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
                     # if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
                     results = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, gap_min, gap_max, specifs)
+
                     for property in ["motifs", "lemma", "pos"]:
                         if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
                             path=f"./Patterns_results/R/{minsup_percent}/{property}/"
