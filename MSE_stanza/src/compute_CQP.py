@@ -50,8 +50,10 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     if not os.path.exists(path_out):
         os.mkdir(path_out)
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
-    df_k.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
+    df_k["total"] = df.sum(axis=1)
+    df_k = df_k.sort_values(by="total", ascending=False)
+    df_k.to_csv(file_out, sep="\t")
     return df_k, total_motifs, file_out
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
@@ -160,10 +162,10 @@ def compute_freq_TextesPos_AFC(execution_time, path_out):
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out])
     return file_out
 
-def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out):
+
+def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
     dictionnaire_k = df_k.T.to_dict()
-    T, dictionnaire_t = enslave_perl.cqp_general()
     données_specifs = []
     for motif in dictionnaire_k.keys():
         for texte in dictionnaire_k[motif].keys():
@@ -182,8 +184,9 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out):
     # file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
+    default_folder = "./Patterns_results/R"
     if specifs==True:
-        subprocess.call(["Rscript", "./src/compute_specifs_noZero.r",file_out, path_out, str(minsup_percent), str(execution_time)]) #Run R!
+        subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), default_folder, file_out]) #Run R!
 
 # def add_association_vocab(dict_synth, liste_fichiers, columns):
 #     index_filtered, T = stats_vocab.build_index_filtered(liste_fichiers)
@@ -233,10 +236,8 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
     DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
+    T, dictionnaire_t = enslave_perl.cqp_general()
     
-    if not os.path.exists("./Data/cwb-corpus"):
-        os.mkdir("./Data/cwb-corpus")
-        cwb.main()
     path_R="./Patterns_results/R/"
     if not os.path.exists(path_R):
         os.mkdir(path_R)
@@ -246,7 +247,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, s
         os.mkdir(path_out)
     if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/motifs"):
         df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
-        compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out)
+        compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
         results["motifs"] = file_out_motifs
     if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/pos"):
         file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
