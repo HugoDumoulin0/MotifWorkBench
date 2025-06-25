@@ -28,7 +28,7 @@ def main():
     #    	os.system(f"cwb-encode -f ./Data/Textes_tagged_stanza/{type_texte.lower()} -d ./Data/#cwb-corpus/data/{type_texte.lower()}/ -c utf8 -R ./Data/cwb-corpus/registry/{type_texte.lower()} -xsBC9 -N id -L s -P lemma -P upos -P xpos -P feats -P head -P deprel -P un #-P deux")
     
     if not os.path.exists(f"./Data/cwb-corpus/data/merged"):
-        	os.mkdir(f"./Data/cwb-corpus/data/merged")
+        os.mkdir(f"./Data/cwb-corpus/data/merged")
     
     print("CWB encoding of corpus...")
     os.system(f"cwb-encode -f ./Data/textesVRT/merged.vrt \

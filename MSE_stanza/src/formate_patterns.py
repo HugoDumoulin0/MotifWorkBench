@@ -44,7 +44,7 @@ def from_int_to_str(patt, lexic_int_str):
     if type(patt) is list:
         seq_str = ""
         for itemset in patt:
-            itemset_str = "{"+",".join([lexic_int_str.get(item) for item in itemset])+"} "
+            itemset_str = "{"+",".join([lexic_int_str.get(int(item)) for item in itemset])+"} "
             seq_str+=itemset_str
         return seq_str.strip()
    
