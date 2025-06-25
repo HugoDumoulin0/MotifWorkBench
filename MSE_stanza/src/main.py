@@ -354,7 +354,7 @@ if __name__ == "__main__":
                     print(f"Minsup: {minsup_percent}")
                     # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
                     # if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
-                    results = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
+                    results = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent,gap_min, gap_max, specifs)
                     for property in ["motifs", "lemma", "pos"]:
                         if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
                             path=f"./Patterns_results/R/{minsup_percent}/{property}/"
