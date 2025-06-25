@@ -22,6 +22,12 @@ import enslave_perl
 import cwb
 from config import *
 
+def add_total(df):
+    df_total = df.copy()
+    df_total["total"] = df.sum(axis=1)
+    df_total = df_total.sort_values(by="total", ascending=False)
+    return df_total
+   
 
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs):
     motif_count = 0
@@ -50,8 +56,11 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     if not os.path.exists(path_out):
         os.mkdir(path_out)
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
+    file_total =f"{path_out}motifsTexteOrdered_df_{execution_time}.tsv"
     df_k.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
+    df_k_total=add_total(df_k)
+    df_k_total.to_csv(file_total, sep="\t")
     return df_k, total_motifs, file_out
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
@@ -80,6 +89,9 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     file_out = f"{path_out}{seuil}_lemmaTexte_df_{execution_time}.tsv"
     df_lemma.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) 
+    file_total = f"{path_out}{seuil}_lemmaTexteOrdered_df_{execution_time}.tsv"
+    df_lemmal=add_total(df_lemma)
+    df_lemma.to_csv(file_total, sep="\t")
     return file_out
 
 def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R):
@@ -158,6 +170,9 @@ def compute_freq_TextesPos_AFC(execution_time, path_out):
     file_out= f"{path_out}posTexte_df_{execution_time}.tsv"
     df_pos.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out])
+    file_total= f"{path_out}posTexteOrdered_df_{execution_time}.tsv"
+    df_pos=add_total(df_pos)
+    df_pos.to_csv(file_total, sep="\t")
     return file_out
 
 
