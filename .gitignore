@@ -33,3 +33,7 @@ __pycache__/
 
 # Ignore version control directories
 .git/
+
+# Ignore R stuff
+.Rapp.history
+.Rhistory
