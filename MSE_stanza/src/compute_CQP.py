@@ -38,7 +38,7 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     print(f"Computing {nombre} motifs freq X texte...")
     for motif in liste_motifs_str:
         trad_motif = str(tools.read_req_CQP(motif))
-        print(trad_motif)
+        # print(trad_motif)
         ligne_de_table = enslave_perl.cqp_freq_textes(trad_motif)
         lignes_table.append(ligne_de_table)
         
@@ -67,7 +67,7 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     for lemma in liste_lemma[:seuil]:
         req = f'[lemma="{lemma}"]'
         indice+=1
-        print(f"{lemma} {indice}")
+        # print(f"{lemma} {indice}")
         ligne_de_table = enslave_perl.cqp_freq_textes(req)
         lignes_table.append(ligne_de_table)
     df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil])
@@ -96,7 +96,7 @@ def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R):
         lemma1, lemma2 = big.split(" ")
         req = f'[lemma="{lemma1}"][lemma="{lemma2}"]'
         indice+=1
-        print(f"{req} {indice}")
+        # print(f"{req} {indice}")
         ligne_de_table = enslave_perl.cqp_freq_textes(req)
         lignes_table.append(ligne_de_table)
     df_lemma = pd.DataFrame(lignes_table, index=liste_bigrams_lemma[:seuil])
@@ -122,7 +122,7 @@ def compute_freq_Textes20000Lemma_noAFC(execution_time, path_R):
     for lemma in liste_lemma[:20000]:
         indice += 1
         lemma = f'[lemma="{lemma}"]'
-        print(f"{lemma} {indice}")
+        # print(f"{lemma} {indice}")
         ligne_de_table = enslave_perl.cqp_freq_textes(lemma)
         lignes_table.append(ligne_de_table)
     df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:20000])
