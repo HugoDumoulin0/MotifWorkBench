@@ -25,7 +25,6 @@ def transform(path_stanza, path_vrt):
             for file in os.listdir(path_stanza):
                 print(f"Transforming Conllu to VRT : {file}")
                 if file==".DS_Store": continue
-                if file=="._.DS_Store": continue
                 f_out.write(f'<text id="{file}">\n')
                 input_file=f"{path_stanza}{file}/{file}"
                 with open(input_file, "r", encoding="utf-8") as f_in:
@@ -34,7 +33,6 @@ def transform(path_stanza, path_vrt):
                         sentence_id += 1
                         f_out.write(f'<s id="{sentence_id}">\n')
                         for token in tokenlist:
-                            # print(token)
                             # On ignore les multi-word tokens (ID de type tuple)
                             if isinstance(token.get("id", None), tuple):
                                 continue
