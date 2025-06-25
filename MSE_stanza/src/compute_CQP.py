@@ -51,17 +51,7 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
         os.mkdir(path_out)
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
-<<<<<<< HEAD
-<<<<<<< HEAD
-    df_k_total=add_total(df_k)
-    df_k_total.to_csv(file_out, sep="\t")
-=======
-=======
->>>>>>> parent of 9abab02 (generalisation)
-    df_k["total"] = df.sum(axis=1)
-    df_k = df_k.sort_values(by="total", ascending=False)
     df_k.to_csv(file_out, sep="\t")
->>>>>>> parent of 9abab02 (generalisation)
     return df_k, total_motifs, file_out
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
