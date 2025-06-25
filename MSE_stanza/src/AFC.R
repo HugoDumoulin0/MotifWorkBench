@@ -313,7 +313,7 @@ plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output",
     ggrepel::geom_text_repel(aes(label = Nom), show.legend = FALSE, size = 3) +
     geom_hline(yintercept = 0, linetype = "dashed", color = "grey70") +
     geom_vline(xintercept = 0, linetype = "dashed", color = "grey70") +
-    theme_classic() +
+    theme_minimal() +
     theme(
       panel.grid = element_blank(),
       axis.line = element_blank(),
