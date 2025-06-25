@@ -50,8 +50,8 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     if not os.path.exists(path_out):
         os.mkdir(path_out)
     file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
-    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
     df_k.to_csv(file_out, sep="\t")
+    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
     return df_k, total_motifs, file_out
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
@@ -229,9 +229,9 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, 
 #         if fichier.endswith("_AFC_R_df.tsv"):
 #             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, gap_min, gap_max, specifs):    
+def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, specifs):
     execution_time = datetime.datetime.now()
-    DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
+    DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general()

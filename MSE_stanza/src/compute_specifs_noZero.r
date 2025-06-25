@@ -21,18 +21,19 @@ ipak(packages)
 
 # Variables
 # default_folder <- "./Patterns_results/Specifs_noZero"
-  default_folder <- "./Patterns_results/R" #proposition pour organiser l'espace de travail
-  print(default_folder)
 
-    # input_file <- spec_R_temp.tsv
-    df <- read.delim("./Patterns_results/Specifs_noZero/spec_R_temp.tsv", sep="\t")
-    # df <- read.csv(input_file, sep="\t")
+
+
 
   # Inherit minsup_percent and execution_time from python
   args <- commandArgs(trailingOnly=TRUE)
   minsup_percent <- as.numeric(args[1])
   execution_time <- paste(args[2])
+  default_folder <- paste(args[3]) #proposition pour organiser l'espace de travail
+  print(default_folder)
+  path_in <- paste(args[4])
 
+  df <- read.delim(path_in, sep="\t")
 
   output_name_vertical <- paste0(default_folder, "/", minsup_percent, "_specif_", execution_time, ".tsv")
   output_name_pivot <- paste0(default_folder, "/", minsup_percent, "_specif_pivot_", execution_time, ".tsv")
