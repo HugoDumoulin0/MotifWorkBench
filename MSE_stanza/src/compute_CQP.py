@@ -238,9 +238,9 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, 
 #         if fichier.endswith("_AFC_R_df.tsv"):
 #             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, specifs):
+def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, gap_min, gap_max, specifs):
     execution_time = datetime.datetime.now()
-    DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
+    DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general()
