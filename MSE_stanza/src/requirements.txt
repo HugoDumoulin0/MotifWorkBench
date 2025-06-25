@@ -1,3 +1,4 @@
+~~ PYTHON LIBRARIES ~~
 stanza
 numpy
 datetime
@@ -8,3 +9,12 @@ IPython
 transformers
 sentencepiece
 conllu
+
+~~ NON-PYTHON STUFF ~~
+~~~~ Perl CWB::CQP ~~~~ 
+You need an install of CWB to run the pearl CWB::CQP lib needed. First install CWB () and then install CWB package for Perl.
+1. https://cwb.sourceforge.io/install.php#perl
+2. Then run ```cpan install CWB```
+3. Check that it worked: ```perl -MCWB::CQP -e "print 'Perl CWB::CQP is installed and working!'"```
+~~~~ R ~~~~
+You need an install of R to run the specif computation and AFC scripts. R packages are automatically installed if not present, you do not need to install them manually.
