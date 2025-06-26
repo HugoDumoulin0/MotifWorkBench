@@ -25,6 +25,7 @@ import tools
 import conllu2vrt
 import classifiers
 import enslave_perl
+import cwb
 
 
 def get_nbr_seq(dmt4_files):
