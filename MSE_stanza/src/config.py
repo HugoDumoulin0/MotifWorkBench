@@ -35,10 +35,10 @@ if méthode=="partition":
 #Set param for minimal number of itemsets in a pattern
 list_itemset_min = [3, 5, 7] 
 list_gap_min = [0]
-list_gap_max = [0,3]
+list_gap_max = [0,3,5]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [0.5,0.25,0.1]
+list_minsup_percent = [25,10,5,2,1]
 
 
 #-------------------
