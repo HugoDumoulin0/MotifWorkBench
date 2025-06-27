@@ -270,48 +270,51 @@ if __name__ == "__main__":
         else:
             liste=types_textes
 
-                
-        for minsup_percent in list_minsup_percent:
-                threads = 30
-                for type_texte in liste:
-                    print("\t Type_texte:", type_texte)
-                    if os.path.exists(f"./Patterns_results/Freq/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_freq.txt"):
-                        print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
-                    if os.path.exists(f"./Patterns_results/Closed/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.txt"):
-                        print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
-                    else:
-                        print("non existent previous extracted patterns files")
-                        dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
-                        minsup = get_minsup(float(minsup_percent), dmt4_files)
-                        print(f"\t Minsup {minsup_percent}% ")
-
-                
-                        print("\t\t Extracting freq patterns")
-                
-                        file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-                
-                        with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
-                            set_up.write("MINSUP={}\n".format(minsup))
-                            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                            set_up.write("THREAD={}\n".format(threads))
-                            set_up.write("GAPMIN={}\n".format(gap_min))
-                            set_up.write("GAPMAX={}\n".format(gap_max))
-                            set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-                
-                        os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
-                
-                        print("\t\t Extracting closed patterns")
-                
-                        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-                            set_up.write("MINSUP={}\n".format(minsup))
-                            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                            set_up.write("THREAD=1\n")
-                            set_up.write("GAPMIN={}\n".format(0))
-                            set_up.write("GAPMAX={}\n".format(0))
-                            set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-                
-                        os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
-        
+        for nb_itemset_min in list_itemset_min:
+            for gap_min in list_gap_min:
+                for gap_max in list_gap_max:
+                    for minsup_percent in list_minsup_percent:
+                            threads = 30
+                            for type_texte in liste:
+                                print("\t Type_texte:", type_texte)
+                                if os.path.exists(f"./Patterns_results/Freq/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_freq.txt"):
+                                    print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
+                                else:
+                                    print("non existent previous extracted patterns files")
+                                    dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+                                    minsup = get_minsup(float(minsup_percent), dmt4_files)
+                                    print(f"\t nb itemset min {nb_itemset_min} ")
+                                    print(f"\t gap min {gap_min} ")
+                                    print(f"\t gap max {gap_max} ")
+                                    print(f"\t Minsup {minsup_percent}% ")
+            
+                            
+                                    print("\t\t Extracting freq patterns")
+                            
+                                    file_out = "{}_{}_{}{}_{}_freq.txt".format(nb_itemset_min, minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
+                            
+                                    with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
+                                        set_up.write("MINSUP={}\n".format(minsup))
+                                        set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                                        set_up.write("THREAD={}\n".format(threads))
+                                        set_up.write("GAPMIN={}\n".format(gap_min))
+                                        set_up.write("GAPMAX={}\n".format(gap_max))
+                                        set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                            
+                                    os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
+                            
+                                    print("\t\t Extracting closed patterns")
+                            
+                                    with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
+                                        set_up.write("MINSUP={}\n".format(minsup))
+                                        set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                                        set_up.write("THREAD=1\n")
+                                        set_up.write("GAPMIN={}\n".format(0))
+                                        set_up.write("GAPMAX={}\n".format(0))
+                                        set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                            
+                                    os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
+            
         end_time=time.time()
         time_DMT4 = end_time - start_time
         #-------------------------------------------------------------------------------------------------------------------
@@ -341,40 +344,42 @@ if __name__ == "__main__":
                     if type_1 == type_2: continue
                     print("\t{} x {} ".format(type_1, type_2))
                     compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
-    
-        #ajout d'une étape qui lance le calcul de spécificité des supports des motifs dans une partition par rapport au reste ( script compute_specifs.py )
+                    
+                    
+        ### calculs statistiques ###
         if méthode=="partition":
                 start_time = time.time()
-                if not os.path.exists("./Patterns_results/Specifs_noZero/"):
+                if not os.path.exists("./Patterns_results/Specifs_noZero/"):                    #devenu inutile
                     os.mkdir("./Patterns_results/Specifs_noZero/")
                 print("-"*75)
                 print("4.3 Extracting patterns in partition")
-            
-
-                for minsup_percent in list_minsup_percent:
-                    print(f"Minsup: {minsup_percent}")
-                    # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-                    # if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
-                    results = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent,gap_min, gap_max, specifs)
-                    for property in ["motifs", "lemma", "pos"]:
-                        if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
-                            path=f"./Patterns_results/R/{minsup_percent}/{property}/"
-                            if os.path.exists(path):
-                                fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
-                                for f in fichiers: 
-                                    if f"{property}Texte" in f:
-                                        results[f"{property}"]=path+f
-                                        break
-                    if classification:
-                        for property_gen in ["20000lemma", "10000bigramslemma"]:
-                            if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
-                                path=f"./Patterns_results/R/{property_gen}/"
-                                if os.path.exists(path):
-                                    fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
-                                    for f in fichiers: 
-                                        if f"{property_gen}" in f:
-                                            results[f"{property_gen}"]=path+f
-                                            break
+                for nb_itemset_min in list_itemset_min:
+                    for gap_min in list_gap_min:
+                        for gap_max in list_gap_max:
+                            for minsup_percent in list_minsup_percent:
+                                print(f"Minsup: {minsup_percent}")
+                                # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
+                                # if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
+                                results, path_out = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs)
+                                for property in ["motifs", "lemma", "pos"]:
+                                    if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
+                                        path=f"{path_out}{property}/"
+                                        if os.path.exists(path):
+                                            fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                                            for f in fichiers: 
+                                                if f"{property}Texte" in f:
+                                                    results[f"{property}"]=path+f
+                                                    break
+                                if classification:
+                                    for property_gen in ["20000lemma", "10000bigramslemma"]:
+                                        if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
+                                            path=f"{path_out}{property}/"
+                                            if os.path.exists(path):
+                                                fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                                                for f in fichiers: 
+                                                    if f"{property_gen}" in f:
+                                                        results[f"{property_gen}"]=path+f
+                                                        break
                     # if not os.path.exists("./Patterns_results/Classifieurs/{minsup_percent}/lemma/"):    
                     #     path=f"./Patterns_results/R/{minsup_percent}/lemma/"
                     #     fichiers_lemma = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)

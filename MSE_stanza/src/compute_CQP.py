@@ -244,40 +244,55 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, 
 #         if fichier.endswith("_AFC_R_df.tsv"):
 #             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,gap_min, gap_max, specifs):
+def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs):
     execution_time = datetime.datetime.now()
-    DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
+    DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general()
     
-    path_R="./Patterns_results/R/"
+    path_R=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
     if not os.path.exists(path_R):
-        os.mkdir(path_R)
-    path_out = path_R+str(minsup_percent)+"/"
+        path="./Patterns_results/R/"
+        if not os.path.exists(path):
+            os.mkdir(path)
+        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}"
+        if not os.path.exists(path):
+            os.mkdir(path)
+        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+        if not os.path.exists(path):
+            os.mkdir(path)
+        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+        if not os.path.exists(path):
+            os.mkdir(path)
+    path_out = f"{path_R}minsup{str(minsup_percent)}/"
     results = {}
     if not os.path.exists(path_out):
-        os.mkdir(path_out)
-    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/motifs"):
-        df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
-        compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
-        results["motifs"] = file_out_motifs
-    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/pos"):
-        file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
-        results["pos"] = file_out_pos
-    if not os.path.exists(f"./Patterns_results/R/{minsup_percent}/lemma"):
-        file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
-        results["lemma"] = file_out_lemma
-    if classification:
-        if not os.path.exists("./Patterns_results/R/20000lemma"):
-            file_out_20000lemma = compute_freq_Textes20000Lemma_noAFC(execution_time, path_R)
-            results["20000lemma"] = file_out_20000lemma
-        if not os.path.exists("./Patterns_results/R/10000bigramslemma"):
-             file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R)
-             results[f"{seuil}bigrams"] = file_out_bigrams
+            os.mkdir(path_out)
+    if total_motifs>0:
+        if not os.path.exists(f"{path_out}motifs"):
+            df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
+            compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+            results["motifs"] = file_out_motifs
+        if not os.path.exists(f"{path_out}pos"):
+            file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
+            results["pos"] = file_out_pos
+        if not os.path.exists(f"{path_out}lemma"):
+            file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
+            results["lemma"] = file_out_lemma
+        if classification:
+            if not os.path.exists("f{path_out}20000lemma"):
+                file_out_20000lemma = compute_freq_Textes20000Lemma_noAFC(execution_time, path_R)
+                results["20000lemma"] = file_out_20000lemma
+            if not os.path.exists("f{path_out}10000bigramslemma"):
+                 file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R)
+                 results[f"{seuil}bigrams"] = file_out_bigrams
+    else:
+        if not os.path.exists(f"{path_out}zero-motifs"):
+                os.mkdir(f"{path_out}zero-motifs")
     # if shortcut_association==False:
     #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
-    return results
+    return results, path_out
     
     
     
