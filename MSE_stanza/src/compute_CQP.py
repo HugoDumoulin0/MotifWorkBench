@@ -22,12 +22,20 @@ import enslave_perl
 import cwb
 from config import *
 
+
+def textes2metadata(df, df_target, metadata):
+    df_combined = df.T
+    df_combined[metadata] = df_target[metadata]
+    # On groupe par target et on additionne les lemmes
+    df_targetXlemmes = df_combined.groupby(metadata).sum()  
+    return df_targetXlemmes
+
+
 def add_total(df):
     df_total = df.copy()
     df_total["total"] = df.sum(axis=1)
     df_total = df_total.sort_values(by="total", ascending=False)
     return df_total
-   
 
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs):
     motif_count = 0
@@ -57,11 +65,11 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
         os.mkdir(path_out)
     file_out=f"{path_out}{total_motifs}motifsTexte_df_{execution_time}.tsv"
     file_total =f"{path_out}{total_motifs}motifsTexteOrdered_df_{execution_time}.tsv"
-    df_k.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
-    df_k_total=add_total(df_k)
-    df_k_total.to_csv(file_total, sep="\t")
-    return df_k, total_motifs, file_out
+    # df_k.to_csv(file_out, sep="\t")
+    # subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
+    # df_k_total=add_total(df_k)
+    # df_k_total.to_csv(file_total, sep="\t")
+    return df_k, path_out, total_motifs, file_out, file_total
     
 def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     registry_path = "./Data/cwb-corpus/registry"
@@ -87,12 +95,13 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     if not os.path.exists(path_out):
         os.mkdir(path_out)
     file_out = f"{path_out}{seuil}_lemmaTexte_df_{execution_time}.tsv"
-    df_lemma.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) 
     file_total = f"{path_out}{seuil}_lemmaTexteOrdered_df_{execution_time}.tsv"
-    df_lemmal=add_total(df_lemma)
-    df_lemma.to_csv(file_total, sep="\t")
-    return file_out
+
+    # df_lemma.to_csv(file_out, sep="\t")
+    # subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) 
+    # df_lemma=add_total(df_lemma)
+    # df_lemma.to_csv(file_total, sep="\t")
+    return file_out, path_out, df_lemma, file_total
 
 def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R):
     registry_path = "./Data/cwb-corpus/registry"
@@ -168,12 +177,13 @@ def compute_freq_TextesPos_AFC(execution_time, path_out):
     if not os.path.exists(path_out):
         os.mkdir(path_out)
     file_out= f"{path_out}posTexte_df_{execution_time}.tsv"
-    df_pos.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out])
     file_total= f"{path_out}posTexteOrdered_df_{execution_time}.tsv"
-    df_pos=add_total(df_pos)
-    df_pos.to_csv(file_total, sep="\t")
-    return file_out
+
+    # df_pos.to_csv(file_out, sep="\t")
+    # subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out])
+    # df_pos=add_total(df_pos)
+    # df_pos.to_csv(file_total, sep="\t")
+    return file_out, path_out, df_pos, file_total
 
 
 def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t):
@@ -244,35 +254,47 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, 
 #         if fichier.endswith("_AFC_R_df.tsv"):
 #             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs):
+def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata):
     execution_time = datetime.datetime.now()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general()
     
-    path_R=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+    path_R=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
     if not os.path.exists(path_R):
         path="./Patterns_results/R/"
         if not os.path.exists(path):
             os.mkdir(path)
-        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}"
+        path= f"./Patterns_results/R/{metadata}/"
         if not os.path.exists(path):
             os.mkdir(path)
-        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+        path=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}"
         if not os.path.exists(path):
             os.mkdir(path)
-        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+        path=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+        if not os.path.exists(path):
+            os.mkdir(path)
+        path=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
         if not os.path.exists(path):
             os.mkdir(path)
     path_out = f"{path_R}minsup{str(minsup_percent)}/"
     results = {}
     if not os.path.exists(path_out):
             os.mkdir(path_out)
+
     if total_motifs>0:
         if not os.path.exists(f"{path_out}motifs"):
-            df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
-            if specifs:
+            df_k, path_out, total_motifs, file_out, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
+            if not metadata=="id":
+                df_k = textes2metadata(df_k, df_metadata, metadata)
+            df_k.to_csv(file_out, sep="\t")
+            subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
+            df_k_total=add_total(df_k)
+            df_k_total.to_csv(file_total, sep="\t")
+        
+                
+            if specifs:       
                 compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
             results["motifs"] = file_out_motifs
         # if not os.path.exists(f"{path_out}pos"):

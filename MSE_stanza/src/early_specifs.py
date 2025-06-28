@@ -13,6 +13,7 @@ import enslave_perl
 import subprocess
 import os
 import datetime
+import compute_CQP
 
 def compute_early_df_lemmes(seuil):
     T, dictionnaire_t = enslave_perl.cqp_general()
@@ -36,12 +37,12 @@ def compute_early_df_lemmes(seuil):
     df_lemma = df_lemma.apply(pd.to_numeric)
     return df_lemma, T, dictionnaire_t
 
-def textes2target(df, df_target):
-    df_combined = df.T
-    df_combined["target"] = df_target["target"]
-    # On groupe par target et on additionne les lemmes
-    df_targetXlemmes = df_combined.groupby("target").sum()  
-    return df_targetXlemmes
+# def textes2metadata(df, df_target, metadata):
+#     df_combined = df.T
+#     df_combined[metadata] = df_target[metadata]
+#     # On groupe par target et on additionne les lemmes
+#     df_targetXlemmes = df_combined.groupby(metadata).sum()  
+#     return df_targetXlemmes
 
 def dictionnaire_t_target(dictionnaire_t, df_target):
     df_target["taille"]=df_target.index.map(dictionnaire_t)
@@ -87,7 +88,7 @@ def main(seuil, minsup_percent):
     df_target = pd.read_csv("./Data/df_target_train_classif.tsv", sep="\t", index_col=0)
     execution_time = datetime.datetime.now()
     df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
-    df_targetXlemmes = textes2target(df_lemma, df_target)
+    df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, "target")
     dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target)
     compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
     lignes = tri_lemma()
