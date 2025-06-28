@@ -51,7 +51,7 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     df_k = pd.DataFrame(lignes_table, index=liste_motifs_str)
     df_k = df_k.fillna(0)
     df_k = df_k.apply(pd.to_numeric) 
-    prefixe="{total_motifs}motifs/"
+    prefixe=f"{total_motifs}motifs/"
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
@@ -272,7 +272,8 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
     if total_motifs>0:
         if not os.path.exists(f"{path_out}motifs"):
             df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
-            compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+            if specifs:
+                compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
             results["motifs"] = file_out_motifs
         # if not os.path.exists(f"{path_out}pos"):
         #     file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
