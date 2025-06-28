@@ -28,6 +28,7 @@ import enslave_perl
 import cwb
 import datetime
 import early_specifs
+import pandas as pd
 
 
 def get_nbr_seq(dmt4_files):
@@ -279,7 +280,7 @@ if __name__ == "__main__":
                             threads = 30
                             for type_texte in liste:
                                 print("\t Type_texte:", type_texte)
-                                if os.path.exists(f"./Patterns_results/Freq/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_freq.txt"):
+                                if os.path.exists(f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.txt"):
                                     print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
                                 else:
                                     print("non existent previous extracted patterns files")
@@ -359,6 +360,7 @@ if __name__ == "__main__":
                     os.mkdir("./Patterns_results/R")
                 df_metadata = pd.read_csv(path_target, sep="\t", index_col=0)
                 for metadata in list_metadata:
+                    print(metadata)
                     for nb_itemset_min in list_itemset_min:
                         for gap_min in list_gap_min:
                             for gap_max in list_gap_max:
@@ -469,10 +471,10 @@ if __name__ == "__main__":
     print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
     print(f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes")
     execution_time = datetime.datetime.now()
-    with open("./log.txt", "w") as file:
-        f.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
-        f.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
-        f.write(f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes")
+    with open(f"./log_{execution_time}.txt", "w") as file:
+        file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
+        file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
+        file.write(f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes")
     if GrowthRate == True:
         print(f"Temps de clustering : {cluster_time/60:.2f} minutes")
     

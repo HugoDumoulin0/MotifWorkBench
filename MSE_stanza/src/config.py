@@ -35,10 +35,10 @@ if méthode=="partition":
 #Set param for minimal number of itemsets in a pattern
 list_itemset_min = [3] 
 list_gap_min = [0]
-list_gap_max = [0,3]
+list_gap_max = [5]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25,10,5]
+list_minsup_percent = [2]
 
 liste_seuils_lemma=[100,200]
 
@@ -59,7 +59,7 @@ liste_seuil_lemma=[10,50,100,200]
 #-------------------
 path_metadata = "./Data/df_target_train_classif.tsv"
 list_metadata = ["id"
-                 ,"année"
+                 ,"annee"
                  # ,"target"
                  ]
 
