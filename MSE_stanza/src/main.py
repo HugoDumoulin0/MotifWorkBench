@@ -310,8 +310,8 @@ if __name__ == "__main__":
                                         set_up.write("MINSUP={}\n".format(minsup))
                                         set_up.write("CORPUS=../../{}\n".format(dmt4_files))
                                         set_up.write("THREAD=1\n")
-                                        set_up.write("GAPMIN={}\n".format(0))
-                                        set_up.write("GAPMAX={}\n".format(0))
+                                        set_up.write("GAPMIN={}\n".format(gap_min))
+                                        set_up.write("GAPMAX={}\n".format(gap_max))
                                         set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
                             
                                     os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
