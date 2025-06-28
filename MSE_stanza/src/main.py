@@ -27,6 +27,7 @@ import classifiers
 import enslave_perl
 import cwb
 import datetime
+import early_specifs
 
 
 def get_nbr_seq(dmt4_files):
@@ -270,7 +271,7 @@ if __name__ == "__main__":
                 
         else:
             liste=types_textes
-
+            
         for nb_itemset_min in list_itemset_min:
             for gap_min in list_gap_min:
                 for gap_max in list_gap_max:
@@ -356,39 +357,53 @@ if __name__ == "__main__":
                 print("4.3 Extracting patterns in partition")
                 if not os.path.exists("./Patterns_results/R"):
                     os.mkdir("./Patterns_results/R")
-                for nb_itemset_min in list_itemset_min:
-                    for gap_min in list_gap_min:
-                        for gap_max in list_gap_max:
-                            for minsup_percent in list_minsup_percent:
-                                print(f"Minsup: {minsup_percent}")
-                                # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-                                # if not os.path.exists(f"./Patterns_results/R/{minsup_percent}"):
-                                results, path_out = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs)
-                                for property in ["motifs", 
-                                                 # "lemma" 
-                                                 # ,"pos"
-                                                 ]:
-                                    if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
-                                        path=f"{path_out}{property}/"
-                                        if os.path.exists(path):
-                                            fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
-                                            for f in fichiers: 
-                                                if f"{property}Texte" in f:
-                                                    results[f"{property}"]=path+f
-                                                    break
-                                if not os.path.exists("./Patterns_results/R/pos"):
-                                    path_pos = "./Patterns_results/R/"
-                                    execution_time = datetime.datetime.now()
-                                    file_out_pos = compute_CQP.compute_freq_TextesPos_AFC( execution_time, path_pos)
-                                    results["pos"] = file_out_pos
-                
-                                for seuil in liste_seuils_lemma:
-                                    if not os.path.exists(f"./Patterns_results/R/{seuil}lemma"):
-                                        path_lemma = f"./Patterns_results/R/"
+                df_metadata = pd.read_csv(path_target, sep="\t", index_col=0)
+                for metadata in list_metadata:
+                    for nb_itemset_min in list_itemset_min:
+                        for gap_min in list_gap_min:
+                            for gap_max in list_gap_max:
+                                for minsup_percent in list_minsup_percent:
+                                    print(f"Minsup: {minsup_percent}")
+                                    # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
+                                    # if not os.path.exists(f"./Patterns_results/R/{minsups_percent}"):
+                                    results, path_out = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, metadata)
+                                    for property in ["motifs", 
+                                                     # "lemma" 
+                                                     # ,"pos"
+                                                     ]:
+                                        if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
+                                            path=f"{path_out}{property}/"
+                                            if os.path.exists(path):
+                                                fichiers = sorted(os.listdir(path), key=lambda f: os.path.getmtime(os.path.join(path, f)),reverse=True)
+                                                for f in fichiers: 
+                                                    if f"{property}Texte" in f:
+                                                        results[f"{property}"]=path+f
+                                                        break
+                                    if not os.path.exists("./Patterns_results/R/pos"):
+                                        path_pos = "./Patterns_results/R/"
                                         execution_time = datetime.datetime.now()
-
-                                        file_out_lemma = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma)
-                                        results[f"{seuil}lemma"] = file_out_lemma
+                                        file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC( execution_time, path_pos)
+                                        if not metadata=="id":
+                                            df_pos =  textes2metadata(df_pos, df_metadata, metadata)
+                                        df_pos.to_csv(file_out, sep="\t")
+                                        subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
+                                        df_pos=add_total(df_pos)
+                                        df_pos.to_csv(file_total, sep="\t")
+                                        results["pos"] = file_out_pos
+                    
+                                    for seuil in liste_seuils_lemma:
+                                        if not os.path.exists(f"./Patterns_results/R/{seuil}lemma"):
+                                            path_lemma = f"./Patterns_results/R/"
+                                            execution_time = datetime.datetime.now()
+    
+                                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma)
+                                            if not metadata=="id":
+                                                df_lemma =  textes2metadata(df_lemma, df_metadata, metadata)
+                                            df_lemma.to_csv(file_out_lemma, sep="\t")
+                                            subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out]) 
+                                            df_lemma=add_total(df_lemma)
+                                            df_lemma.to_csv(file_total, sep="\t")
+                                            results[f"{seuil}lemma"] = file_out_lemma
                 if classification:
                         for property_gen in ["20000lemma", "10000bigramslemma"]:
                             if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):

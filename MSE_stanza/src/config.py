@@ -55,6 +55,15 @@ Feats=False
 liste_seuil_lemma=[10,50,100,200]
 
 #-------------------
+# Metadata
+#-------------------
+path_metadata = "./Data/df_target_train_classif.tsv"
+list_metadata = ["id"
+                 ,"année"
+                 # ,"target"
+                 ]
+
+#-------------------
 # Machine learning params
 #-------------------
 path_target = "./Data/df_target_train_classif.tsv"
