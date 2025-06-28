@@ -33,13 +33,14 @@ if méthode=="partition":
 # Patterns params
 #-------------------
 #Set param for minimal number of itemsets in a pattern
-list_itemset_min = [3, 5, 7] 
+list_itemset_min = [3] 
 list_gap_min = [0]
-list_gap_max = [0,3,5]
+list_gap_max = [0,3]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25,10,5,2,1]
+list_minsup_percent = [25,10,5]
 
+liste_seuils_lemma=[100,200]
 
 #-------------------
 # Patterns detection params
@@ -51,7 +52,7 @@ Dep=True
 Feats=False
 
 #attention avec form=True il y a aura les résultats non contractés
-
+liste_seuil_lemma=[10,50,100,200]
 
 #-------------------
 # Machine learning params

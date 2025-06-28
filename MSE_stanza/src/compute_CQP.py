@@ -55,8 +55,8 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    file_out=f"{path_out}{total_motifs}motifsTexte_df_{execution_time}.tsv"
-    file_total =f"{path_out}{total_motifs}motifsTexteOrdered_df_{execution_time}.tsv"
+    file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
+    file_total =f"{path_out}motifsTexteOrdered_df_{execution_time}.tsv"
     df_k.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
     df_k_total=add_total(df_k)
@@ -82,7 +82,7 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil])
     df_lemma = df_lemma.fillna(0)
     df_lemma = df_lemma.apply(pd.to_numeric)
-    prefixe="lemma/"
+    prefixe=f"{seuil}lemma/"
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
@@ -252,19 +252,19 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
     T, dictionnaire_t = enslave_perl.cqp_general()
     
     path_R=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-
-    path="./Patterns_results/R/"
-    if not os.path.exists(path):
-        os.mkdir(path)
-    path=f"./Patterns_results/R/itemset_min{nb_itemset_min}"
-    if not os.path.exists(path):
-        os.mkdir(path)
-    path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
-    if not os.path.exists(path):
-        os.mkdir(path)
-    path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-    if not os.path.exists(path):
-        os.mkdir(path)
+    if not os.path.exists(path_R):
+        path="./Patterns_results/R/"
+        if not os.path.exists(path):
+            os.mkdir(path)
+        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}"
+        if not os.path.exists(path):
+            os.mkdir(path)
+        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+        if not os.path.exists(path):
+            os.mkdir(path)
+        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+        if not os.path.exists(path):
+            os.mkdir(path)
     path_out = f"{path_R}minsup{str(minsup_percent)}/"
     results = {}
     if not os.path.exists(path_out):
@@ -274,12 +274,12 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
             df_k, total_motifs, file_out_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
             compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
             results["motifs"] = file_out_motifs
-        if not os.path.exists(f"{path_out}pos"):
-            file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
-            results["pos"] = file_out_pos
-        if not os.path.exists(f"{path_out}lemma"):
-            file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
-            results["lemma"] = file_out_lemma
+        # if not os.path.exists(f"{path_out}pos"):
+        #     file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
+        #     results["pos"] = file_out_pos
+        # if not os.path.exists(f"{path_out}lemma"):
+        #     file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
+        #     results["lemma"] = file_out_lemma
         if classification:
             if not os.path.exists("f{path_out}20000lemma"):
                 file_out_20000lemma = compute_freq_Textes20000Lemma_noAFC(execution_time, path_R)
