@@ -94,5 +94,5 @@ def main(seuil, minsup_percent):
     lignes = tri_lemma()
     print(lignes)
     
-main(20,"")
+# main(20,"")
 ###attention sorties incohérentes

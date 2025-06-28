@@ -285,11 +285,11 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
 
     if total_motifs>0:
         if not os.path.exists(f"{path_out}motifs"):
-            df_k, path_out, total_motifs, file_out, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
+            df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
             if not metadata=="id":
                 df_k = textes2metadata(df_k, df_metadata, metadata)
-            df_k.to_csv(file_out, sep="\t")
-            subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
+            df_k.to_csv(file_out_motifs, sep="\t")
+            subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) #(moved here by analogy)
             df_k_total=add_total(df_k)
             df_k_total.to_csv(file_total, sep="\t")
         
