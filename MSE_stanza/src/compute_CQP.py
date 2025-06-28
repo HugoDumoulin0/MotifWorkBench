@@ -51,12 +51,12 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     df_k = pd.DataFrame(lignes_table, index=liste_motifs_str)
     df_k = df_k.fillna(0)
     df_k = df_k.apply(pd.to_numeric) 
-    prefixe="motifs/"
+    prefixe="{total_motifs}motifs/"
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
-    file_total =f"{path_out}motifsTexteOrdered_df_{execution_time}.tsv"
+    file_out=f"{path_out}{total_motifs}motifsTexte_df_{execution_time}.tsv"
+    file_total =f"{path_out}{total_motifs}motifsTexteOrdered_df_{execution_time}.tsv"
     df_k.to_csv(file_out, sep="\t")
     subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) #(moved here by analogy)
     df_k_total=add_total(df_k)
