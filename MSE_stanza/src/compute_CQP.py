@@ -254,17 +254,17 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
     path_R=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
     if not os.path.exists(path_R):
         path="./Patterns_results/R/"
-        if not os.path.exists(path):
-            os.mkdir(path)
-        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}"
-        if not os.path.exists(path):
-            os.mkdir(path)
-        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
-        if not os.path.exists(path):
-            os.mkdir(path)
-        path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-        if not os.path.exists(path):
-            os.mkdir(path)
+    if not os.path.exists(path):
+        os.mkdir(path)
+    path=f"./Patterns_results/R/itemset_min{nb_itemset_min}"
+    if not os.path.exists(path):
+        os.mkdir(path)
+    path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+    if not os.path.exists(path):
+        os.mkdir(path)
+    path=f"./Patterns_results/R/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+    if not os.path.exists(path):
+        os.mkdir(path)
     path_out = f"{path_R}minsup{str(minsup_percent)}/"
     results = {}
     if not os.path.exists(path_out):
