@@ -381,29 +381,29 @@ if __name__ == "__main__":
                                                     if f"{property}Texte" in f:
                                                         results[f"{property}"]=path+f
                                                         break
-                                    if not os.path.exists("./Patterns_results/R/pos"):
-                                        path_pos = "./Patterns_results/R/"
+                                    if not os.path.exists("./Patterns_results/R/{metadata}/pos"):
+                                        path_pos = f"./Patterns_results/R/{metadata}/"
                                         execution_time = datetime.datetime.now()
                                         file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC( execution_time, path_pos)
                                         if not metadata=="id":
-                                            df_pos =  textes2metadata(df_pos, df_metadata, metadata)
-                                        df_pos.to_csv(file_out, sep="\t")
+                                            df_pos =  compute_CQP.textes2metadata(df_pos, df_metadata, metadata).T
+                                        df_pos.to_csv(file_out_pos, sep="\t")
                                         subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
-                                        df_pos=add_total(df_pos)
+                                        df_pos=compute_CQP.add_total(df_pos)
                                         df_pos.to_csv(file_total, sep="\t")
                                         results["pos"] = file_out_pos
                     
                                     for seuil in liste_seuils_lemma:
-                                        if not os.path.exists(f"./Patterns_results/R/{seuil}lemma"):
-                                            path_lemma = f"./Patterns_results/R/"
+                                        if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}lemma"):
+                                            path_lemma = f"./Patterns_results/R/{metadata}/"
                                             execution_time = datetime.datetime.now()
     
                                             file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma)
                                             if not metadata=="id":
-                                                df_lemma =  textes2metadata(df_lemma, df_metadata, metadata)
+                                                df_lemma =  compute_CQP.textes2metadata(df_lemma, df_metadata, metadata).T
                                             df_lemma.to_csv(file_out_lemma, sep="\t")
                                             subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out]) 
-                                            df_lemma=add_total(df_lemma)
+                                            df_lemma=compute_CQP.add_total(df_lemma)
                                             df_lemma.to_csv(file_total, sep="\t")
                                             results[f"{seuil}lemma"] = file_out_lemma
                 if classification:

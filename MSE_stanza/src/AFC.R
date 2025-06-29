@@ -32,7 +32,7 @@ path = args[2]
 
 base_name <- basename(file)
 input_file <- file
-df <- read.csv(input_file, sep="\t", row.names = 1)
+df <- read.csv(input_file, sep="\t", row.names = 1, header=T, check.names = FALSE)
 #var_name <- sub("\\.tsv$", "", input_file)
 
 rep_name=path
