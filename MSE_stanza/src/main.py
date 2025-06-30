@@ -312,10 +312,10 @@ if __name__ == "__main__":
                             
                                     os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
                                     
-                                    DMT4_clos_corpus = f"./Patterns_results/Freq/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_freq.pk"
-                                    liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
-                                    total_motifs=len(liste_motifs_clos_corpus)
-                                    print("{total_motifs} extracted freq patterns")
+                                    DMT4_freq_corpus = f"./Patterns_results/Freq/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_freq.txt"
+                                    with open(DMT4_freq_corpus, "r") as file:
+                                        lines = file.readlines()
+                                        print(f"{len(lines)} extracted freq patterns")
                             
                                     print("\t\t Extracting closed patterns")
                             
@@ -330,10 +330,10 @@ if __name__ == "__main__":
                                             set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
                             
                                     os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
-                                    DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
-                                    liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
-                                    total_motifs=len(liste_motifs_clos_corpus)
-                                    print("{total_motifs} extracted closed patterns")
+                                    DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.txt"
+                                    with open(DMT4_clos_corpus, "r") as file:
+                                        lines = file.readlines()
+                                        print(f"{len(lines)} extracted closed patterns")
         end_time=time.time()
         time_DMT4 = end_time - start_time
         #-------------------------------------------------------------------------------------------------------------------
