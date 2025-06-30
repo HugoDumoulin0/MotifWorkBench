@@ -42,7 +42,7 @@ seuil_early_specifs=1000
 #Set param for minimal number of itemsets in a pattern
 list_itemset_min = [3,5] 
 list_gap_min = [0]
-list_gap_max = [5]
+list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
 list_minsup_percent = [5,2]
