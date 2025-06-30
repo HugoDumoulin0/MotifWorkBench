@@ -14,6 +14,7 @@ import subprocess
 import os
 import datetime
 import compute_CQP
+import tools
 
 def compute_early_df_lemmes(seuil):
     T, dictionnaire_t = enslave_perl.cqp_general()
@@ -72,27 +73,40 @@ def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, exe
     print("begining computing with R")
     subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out]) #Run R!
     
-def tri_lemma():
+def tri_lemma(execution_time):
     liste = os.listdir("./Data/earlySPECIFS")
-    for f in liste:
-        if "synthesis" in f:
-            df = pd.read_csv(f"./Data/earlySPECIFS/{f}", sep="\t", index_col=0)
+    for file in liste:
+        if f"synthesis_{execution_time}" in file:
+            df = pd.read_csv(f"./Data/earlySPECIFS/{file}", sep="\t", index_col=0, quoting=3)
     df.drop(columns=["std_dev"], inplace=True)
     lignes = df[df.gt(2).any(axis=1)].index.tolist()
     return lignes
+
     
 def main(seuil, minsup_percent):
     if not os.path.exists("./Data/earlySPECIFS"):
         os.mkdir("./Data/earlySPECIFS/")
     path_out = "./Data/earlySPECIFS/"
+    path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
+    lexique = tools.load_pickles(path_lexique)
     df_target = pd.read_csv("./Data/df_target_train_classif.tsv", sep="\t", index_col=0)
-    execution_time = datetime.datetime.now()
+    # execution_time = datetime.datetime.now()
+    execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
     df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
     df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, "target")
     dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target)
     compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
-    lignes = tri_lemma()
+    lignes = tri_lemma(execution_time)
     print(lignes)
+    liste_lemma = []
+    for l in lignes:
+        lemma_preformat = f'lemma_"{l}"'
+        liste_lemma.append(lexique[lemma_preformat])
+    return liste_lemma
+        #aller chercher le dico from str to int de  lexique
+        # mettre sous format de liste à donner aux extracteurs
+
+
     
 # main(20,"")
 ###attention sorties incohérentes

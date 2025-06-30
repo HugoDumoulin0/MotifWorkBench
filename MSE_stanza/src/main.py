@@ -245,7 +245,11 @@ if __name__ == "__main__":
         if not os.path.exists("./Data/cwb-corpus"):
             os.mkdir("./Data/cwb-corpus")
             cwb.main()
-    
+            
+        
+        print("-"*75)
+        print("2.1 Early selection of specific lemma")
+        liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "")
         # #-------------------------------------------------------------------------------------------------------------------
         # # Mining Pattern
         # #-------------------------------------------------------------------------------------------------------------------
@@ -303,6 +307,8 @@ if __name__ == "__main__":
                                         set_up.write("GAPMIN={}\n".format(gap_min))
                                         set_up.write("GAPMAX={}\n".format(gap_max))
                                         set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                                        if earlySpecifs:
+                                            set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
                             
                                     os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
                                     
@@ -320,6 +326,8 @@ if __name__ == "__main__":
                                         set_up.write("GAPMIN={}\n".format(gap_min))
                                         set_up.write("GAPMAX={}\n".format(gap_max))
                                         set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                                        if earlySpecifs:
+                                            set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
                             
                                     os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
                                     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
@@ -368,6 +376,8 @@ if __name__ == "__main__":
                     os.mkdir("./Patterns_results/R")
                 df_metadata = pd.read_csv(path_target, sep="\t", index_col=0)
                 for metadata in list_metadata:
+                    if earlySpecifs:
+                        metadata=f"{seuil_early_specifs}earlySpecifs_{metadata}"
                     print(metadata)
                     for nb_itemset_min in list_itemset_min:
                         for gap_min in list_gap_min:
