@@ -33,20 +33,19 @@ if méthode=="partition":
 # Early specifs mode
 #-------------------
 
-earlySpecifs=True
+earlySpecifs=False
 seuil_early_specifs=1000
 
 #-------------------
 # Patterns params
 #-------------------
 #Set param for minimal number of itemsets in a pattern
-list_itemset_min = [3,5] 
+list_itemset_min = [3] 
 list_gap_min = [0]
 list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [5,2]
-
+list_minsup_percent = [3,2,1,0.5,0.1]
 liste_seuils_lemma=[100,200]
 
 #-------------------

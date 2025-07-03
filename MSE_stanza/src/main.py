@@ -249,7 +249,8 @@ if __name__ == "__main__":
         
         print("-"*75)
         print("2.1 Early selection of specific lemma")
-        liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "")
+        if earlySpecifs:
+            liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "")
         # #-------------------------------------------------------------------------------------------------------------------
         # # Mining Pattern
         # #-------------------------------------------------------------------------------------------------------------------
@@ -300,22 +301,22 @@ if __name__ == "__main__":
                             
                                     file_out = "{}_{}_{}{}_{}_freq.txt".format(nb_itemset_min, minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
                             
-                                    with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
-                                        set_up.write("MINSUP={}\n".format(minsup))
-                                        set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                                        set_up.write("THREAD={}\n".format(threads))
-                                        set_up.write("GAPMIN={}\n".format(gap_min))
-                                        set_up.write("GAPMAX={}\n".format(gap_max))
-                                        set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-                                        if earlySpecifs:
-                                            set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
+                                    # with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
+                                    #     set_up.write("MINSUP={}\n".format(minsup))
+                                    #     set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                                    #     set_up.write("THREAD={}\n".format(threads))
+                                    #     set_up.write("GAPMIN={}\n".format(gap_min))
+                                    #     set_up.write("GAPMAX={}\n".format(gap_max))
+                                    #     set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                                    #     if earlySpecifs:
+                                    #         set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
                             
-                                    os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
+                                    # os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
                                     
-                                    DMT4_freq_corpus = f"./Patterns_results/Freq/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_freq.txt"
-                                    with open(DMT4_freq_corpus, "r") as file:
-                                        lines = file.readlines()
-                                        print(f"{len(lines)} extracted freq patterns")
+                                    # DMT4_freq_corpus = f"./Patterns_results/Freq/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_freq.txt"
+                                    # with open(DMT4_freq_corpus, "r") as file:
+                                    #     lines = file.readlines()
+                                    #     print(f"{len(lines)} extracted freq patterns")
                             
                                     print("\t\t Extracting closed patterns")
                             
