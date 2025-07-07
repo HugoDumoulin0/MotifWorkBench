@@ -280,7 +280,7 @@ for (cluster in 1:hclust_row$call$t$nb.clust) {
 #capture.output(hclust_force2$desc.var, file=paste(rep_name, "hclust_force2_desc_var.txt"))
 #capture.output(hclust_force2$desc.ind, file=paste(rep_name, "hclust_force2_desc_ind.txt"))
 
-#----plot de HCPC réduit----#
+#----plots de HCPC----# Hugo Dumoulin 05-07/2025
 
 plot_CA_clusters<- function(data_type, individus_type, AFC, rep_name = "output", custom_colors = NULL) {
   # Extraire les parangons
@@ -350,8 +350,102 @@ plot_CA_clusters("row", "para", AFC, rep_name, custom_colors = NULL)
 plot_CA_clusters("row", "dist", AFC, rep_name, custom_colors = NULL) 
 
 
+plot_v_test_clust_ind <- function(data_type, AFC, rep_name = "output", custom_colors = NULL) {
+	#modifier nom en fonction de data_type
+	type_array <- paste0("hclust_",data_type,"$desc.var")
+	array_type <- eval(parse(text = type_array))
+	
+	#extraire pour chaque cluster les var où v.test > 0
+	clust <- lapply(array_type, function(mat) {
+  	# Sélectionner uniquement les lignes avec v.test > 0
+  	vars <- rownames(mat)[mat[, "v.test"] > 0]
+  	# Garder au plus 5 variables
+  	head(vars, 5)
+	})
 
+	#clust_clean <- lapply(clust, function(vec) {
+ 	# gsub("\\.", " ", vec)
+	#})
+	clust_clean <- lapply(clust, function(vec) {
+  	# Remplacer uniquement les points entre deux blocs {lemma_"..."} -> {lemma_"..."} {lemma_"..."}
+ 	 gsub("\\}\\.\\{", "} {", vec)
+	})
 
+	ind = unlist(clust_clean)
+	
+	if (data_type=="col"){
+		AFC_type = "row"
+	}
+	
+	if (data_type=="row"){
+		AFC_type = "col"
+	}
+	
+	#récupérer les coordonnées de ces ind
+	coords_full <- paste0("AFC$", AFC_type, "$coord")
+  	coords=eval(parse(text = coords_full))
+  	coords.individus <- coords[ind, 1:2]
+  	
+  	#associer un ind à son cluster
+  	#clusters <- unlist(lapply(names(clust_clean), function(cluster_name) {
+ 	 #individus <- clust_clean[[cluster_name]]
+  	#setNames(rep(cluster_name, length(array_type)), array_type)
+	#})
+	
+	clusters <- unlist(lapply(names(clust_clean), function(cluster_name) {
+  	individus <- clust_clean[[cluster_name]]
+  	setNames(rep(cluster_name, length(individus)), individus)
+	}))
+	clusters <- factor(clusters)
 
+	
+	 # Construire le data.frame
+  df <- data.frame(
+    Dim1 = coords.individus[,1],
+    Dim2 = coords.individus[,2],
+    Cluster = clusters,
+    Nom = ind
+  )
+  
+  # Construire le graphique
+  p <- ggplot(data = df, aes(x = Dim1, y = Dim2, color = Cluster)) +
+    geom_point(size = 3) +
+    ggrepel::geom_text_repel(aes(label = Nom), show.legend = FALSE, size = 3) +
+    geom_hline(yintercept = 0, linetype = "dashed", color = "grey70") +
+    geom_vline(xintercept = 0, linetype = "dashed", color = "grey70") +
+    theme_classic() +
+    theme(
+      panel.grid = element_blank(),
+      axis.line = element_blank(),
+      axis.ticks = element_blank(),
+      axis.text = element_blank(),
+      axis.title = element_text(color = "grey30")
+    ) +
+    labs(
+      title = "Variables associées à chaque cluster par v-test",
+      x = "Dimension 1",
+      y = "Dimension 2"
+    )
+  
+  test_full = paste0("hclust_", data_type, "$call$t$nb.clust")
+  test=eval(parse(text = test_full))
+  # Palette manuelle (si 3 clusters uniquement ou définie via argument)
+  if (!is.null(custom_colors)) {
+    p <- p + scale_color_manual(values = custom_colors)
+  } else if (test == 3) {
+    p <- p + scale_color_manual(values = c("black", "red", "green"))
+  }
+  
+  # Enregistrer le graphique
+  filename <- paste0(rep_name, glue("{data_type}_hclust_v_test.bmp"))
+  ggsave(filename, plot = p, width = 8, height = 6, dpi = 300)
+  
+  return(p)
+	
+
+}
+
+plot_v_test_clust_ind("col", AFC, rep_name, custom_colors = NULL) 
+plot_v_test_clust_ind("row", AFC, rep_name, custom_colors = NULL) 
 
 
