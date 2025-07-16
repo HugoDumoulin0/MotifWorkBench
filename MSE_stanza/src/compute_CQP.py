@@ -269,7 +269,7 @@ def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, 
     
     for cluster_id, lignes_a_fusionner in internal_clusters_str.items():
         # Extraire les lignes du cluster
-        print(lignes_a_fusionner)
+        # print(lignes_a_fusionner)
         df_cluster = df.loc[lignes_a_fusionner]
         # Faire la somme des lignes (en ignorant l'index, en sommant les colonnes numériques)
         df_somme = df_cluster.sum(numeric_only=True).to_frame().T
