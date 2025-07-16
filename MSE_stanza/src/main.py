@@ -372,7 +372,7 @@ if __name__ == "__main__":
 
         def internalClustering(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max):     
                  print("-"*75)
-                 print("5. Clustering emergent patterns")
+                 print("5. Internal clustering pf closed patterns")
 
                  ###
              
