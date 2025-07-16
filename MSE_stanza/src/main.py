@@ -456,6 +456,12 @@ if __name__ == "__main__":
                      tools.save_as_txt(compute_all_centroids_3, title_file_out_centroids_3.replace(".pk", ".txt"))
 
         if internal_clustering==True:
+            if not os.path.exists("./Clustering_results"):
+                os.mkdir("./Clustering_results")
+            if not os.path.exists("./Clustering_results/Clusters"):
+                os.mkdir("./Clustering_results/Clusters")
+            if not os.path.exists("./Clustering_results/Clusters"):
+                os.mkdir("./Clustering_results/Medoids")
             nbr_pool = 10
             for nb_itemset_min in list_itemset_min:
                     for gap_min in list_gap_min:
