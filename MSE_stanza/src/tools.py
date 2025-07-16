@@ -12,6 +12,7 @@ import pickle as pk
 import os
 from conllu import parse_incr
 import re
+import pprint
 
 
 def indice_specificite(k,f,t,T):
@@ -123,4 +124,22 @@ def convert_to_cqp_condition(group):
     
     return "[" + " & ".join(conditions) + "]"
 
+
+def save_as_txt(data, filename):
+            try:
+                with open(filename, "w", encoding="utf-8") as f:
+                    f.write(pprint.pformat(data, indent=4, width=120))
+                print(f"\t Results : saved as {filename}")
+                return True
+            except Exception as e:
+                print(f"\t Error saving {filename}: {e}")
+                return False
+            
+def parse_motif_sequence(seq_str):
+            import re
+            motifs = re.findall(r'\{[^}]+\}', seq_str)
+            return [set(map(int, motif.strip('{}').split(','))) for motif in motifs]
+        
+def parse_liste_motifs(liste):
+            return [parse_motif_sequence(seq) for seq in liste]
 

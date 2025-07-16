@@ -23,31 +23,61 @@ def make_dict_int_to_str(path_input="./Data/Lexiques/dico_str_to_int_all_items.p
     dump_pk(dict_2, ouput_path)
     return load_pk(ouput_path)
 
+#---hdumoulin---#
+def sorted_itemset_str(itemset, lexic_int_str):
+        items_str = [lexic_int_str.get(item) for item in sorted(itemset)]
+        return "{" + ",".join(items_str) + "}"
+#---hdumoulin---#
+
+# def from_int_to_str(patt, lexic_int_str):
+#     if type(patt) is str:
+#         if "[" in patt and "]" in patt:
+#             split_seq = patt.split("}, {")
+#             seq_str = ""
+#             for itemset in split_seq:
+#                 split_itemset = itemset.replace("[{", "").replace("}]","").split(",")
+#                 itemset_str = "{"+",".join([lexic_int_str.get(int(item)) for item in split_itemset])+"} "
+#                 seq_str+=itemset_str
+#             return seq_str.strip()
+#         else:
+#             split_seq = patt.split("} {")
+#             seq_str = ""
+#             for itemset in split_seq:
+#                 split_itemset = itemset.replace("{", "").replace("}","").split(",")
+#                 itemset_str = "{"+",".join([lexic_int_str.get(int(item)) for item in split_itemset])+"} "
+#                 seq_str+=itemset_str
+#             return seq_str.strip()
+#     if type(patt) is list:
+#         seq_str = ""
+#         for itemset in patt:
+#             itemset_str = "{"+",".join([lexic_int_str.get(item) for item in itemset])+"} "
+#             seq_str+=itemset_str
+#         return seq_str.strip()
+
 def from_int_to_str(patt, lexic_int_str):
-    if type(patt) is str:
+    if isinstance(patt, str):
         if "[" in patt and "]" in patt:
             split_seq = patt.split("}, {")
             seq_str = ""
             for itemset in split_seq:
-                split_itemset = itemset.replace("[{", "").replace("}]","").split(",")
-                itemset_str = "{"+",".join([lexic_int_str.get(int(item)) for item in split_itemset])+"} "
-                seq_str+=itemset_str
+                # Nettoyer l'itemset et récupérer les entiers
+                clean = itemset.replace("[{", "").replace("}]", "")
+                split_itemset = [int(x) for x in clean.split(",") if x.strip() != ""]
+                seq_str += sorted_itemset_str(split_itemset, lexic_int_str) + " "
             return seq_str.strip()
         else:
             split_seq = patt.split("} {")
             seq_str = ""
             for itemset in split_seq:
-                split_itemset = itemset.replace("{", "").replace("}","").split(",")
-                itemset_str = "{"+",".join([lexic_int_str.get(int(item)) for item in split_itemset])+"} "
-                seq_str+=itemset_str
+                clean = itemset.replace("{", "").replace("}", "")
+                split_itemset = [int(x) for x in clean.split(",") if x.strip() != ""]
+                seq_str += sorted_itemset_str(split_itemset, lexic_int_str) + " "
             return seq_str.strip()
-    if type(patt) is list:
+    elif isinstance(patt, list):
         seq_str = ""
         for itemset in patt:
-            itemset_str = "{"+",".join([lexic_int_str.get(item) for item in itemset])+"} "
-            seq_str+=itemset_str
+            seq_str += sorted_itemset_str(itemset, lexic_int_str) + " "
         return seq_str.strip()
-   
     
 
 def from_str_to_list(patt):

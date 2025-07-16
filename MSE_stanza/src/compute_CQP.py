@@ -38,9 +38,8 @@ def add_total(df):
     df_total = df_total.sort_values(by="total", ascending=False)
     return df_total
 
-def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs):
+def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str):
     motif_count = 0
-    lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_motifs_str = []
     
     for motif in liste_motifs_clos_corpus:
@@ -255,8 +254,42 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, 
 #         if fichier.endswith("_AFC_R_df.tsv"):
 #             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata):
+
+def fusion_internal_clusters(df, lexic_int_str):
+    internal_clusters = tools.load_pickles("./Clustering_results/Clusters/clustering_3.pk")
+    medoids_clusters = tools.load_pickles("./Clustering_results/Medoids/medoids_3.pk")
+    
+    internal_clusters_str = {}
+    for cluster_id, motifs in internal_clusters.items():
+        internal_clusters_str[cluster_id]=[formate_patterns.from_int_to_str(motif, lexic_int_str) for motif in motifs]
+
+    medoids_clusters_str = {k : formate_patterns.from_int_to_str(valeur[0], lexic_int_str) for k, valeur in medoids_clusters.items()}
+    
+    dfs_fusionnes = []
+    
+    for cluster_id, lignes_a_fusionner in internal_clusters_str.items():
+        # Extraire les lignes du cluster
+        print(lignes_a_fusionner)
+        df_cluster = df.loc[lignes_a_fusionner]
+        # Faire la somme des lignes (en ignorant l'index, en sommant les colonnes numériques)
+        df_somme = df_cluster.sum(numeric_only=True).to_frame().T
+
+        # Récupérer la ligne du médoïde
+        medoid_index = medoids_clusters_str[cluster_id]
+        df_medoid = df.loc[[medoid_index]]
+
+        # Remplacer les colonnes numériques par la somme
+        for col in df_somme.columns:
+            df_medoid[col] = df_somme[col].values[0]    
+            
+        dfs_fusionnes.append(df_medoid)
+
+    df_result = pd.concat(dfs_fusionnes)
+    return df_result
+     
+def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering):
     execution_time = datetime.datetime.now()
+    lexic_int_str = formate_patterns.make_dict_int_to_str()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
@@ -286,11 +319,15 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
 
     if total_motifs>0:
         if not os.path.exists(f"{path_out}motifs"):
-            df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs)
+            df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
             if not metadata=="id":
                 df_k = textes2metadata(df_k, df_metadata, metadata).T
             df_k.to_csv(file_out_motifs, sep="\t")
-            subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) #(moved here by analogy)
+            if internal_clustering==True:
+                df_k = fusion_internal_clusters(df_k, lexic_int_str)
+                file_out_motifs = "FUS_" + file_out_motifs
+                df_k.to_csv(file_out_motifs, sep="\t")
+            subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
             df_k_total=add_total(df_k)
             df_k_total.to_csv(file_total, sep="\t")
         
