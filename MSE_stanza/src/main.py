@@ -460,7 +460,7 @@ if __name__ == "__main__":
                 os.mkdir("./Clustering_results")
             if not os.path.exists("./Clustering_results/Clusters"):
                 os.mkdir("./Clustering_results/Clusters")
-            if not os.path.exists("./Clustering_results/Clusters"):
+            if not os.path.exists("./Clustering_results/Medoids"):
                 os.mkdir("./Clustering_results/Medoids")
             nbr_pool = 10
             for nb_itemset_min in list_itemset_min:
