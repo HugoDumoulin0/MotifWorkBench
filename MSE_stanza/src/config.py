@@ -37,6 +37,11 @@ earlySpecifs=False
 seuil_early_specifs=1000
 
 #-------------------
+# Internal clustering
+#-------------------
+internal_clustering=True
+
+#-------------------
 # Patterns params
 #-------------------
 #Set param for minimal number of itemsets in a pattern
@@ -45,7 +50,7 @@ list_gap_min = [0]
 list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [3,2,1,0.5,0.1]
+list_minsup_percent = [1]
 liste_seuils_lemma=[100,200]
 
 #-------------------
@@ -65,7 +70,7 @@ liste_seuil_lemma=[10,50,100,200]
 #-------------------
 path_metadata = "./Data/df_target_train_classif.tsv"
 list_metadata = ["id"
-                 ,"annee"
+                 #,"annee"
                  # ,"target"
                  ]
 

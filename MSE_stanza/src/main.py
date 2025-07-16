@@ -257,7 +257,6 @@ if __name__ == "__main__":
         print("-"*75)
         print("3. Extracting freq & closed patterns")
         start_time=time.time()
-        # # types_textes = ["1984ca", "2008ca"]
 
         # if shortcut_extract==False:
         path_results = "./Patterns_results"
@@ -323,7 +322,7 @@ if __name__ == "__main__":
                                     with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
                                         set_up.write("MINSUP={}\n".format(minsup))
                                         set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                                        set_up.write("THREAD=1\n")
+                                        set_up.write("THREAD={}\n".format(threads))
                                         set_up.write("GAPMIN={}\n".format(gap_min))
                                         set_up.write("GAPMAX={}\n".format(gap_max))
                                         set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
@@ -366,6 +365,105 @@ if __name__ == "__main__":
                     compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
                     
                     
+            # #-------------------------------------------------------------------------------------------------------------------
+         # # Internal Clustering
+         # #-------------------------------------------------------------------------------------------------------------------
+
+
+        def internalClustering(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max):     
+                 print("-"*75)
+                 print("5. Clustering emergent patterns")
+
+                 ###
+             
+                 closed_patt = formate_patterns.load_pk(f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk")
+                 liste_motifs = list(closed_patt.keys())
+                 index_motifs = tools.parse_liste_motifs(liste_motifs)
+                 
+
+                 print("\t Nbr closed patterns : ", len(index_motifs))
+             
+                 print("5.1. Clustering 1 : 1/6")
+                      
+                 clustering_index_1 = regroupement.regroupement_1(index_motifs)
+                 print("\t Nbr clusters : ", len(clustering_index_1))
+                 
+                 title_file_results_1 = "./Clustering_results/Clusters/clustering_1.pk"
+                 if not os.path.exists(title_file_results_1):
+                     clustering_motifcodes_1 = regroupement.from_index_to_motifcodes(clustering_index_1, index_motifs)
+                     regroupement.save_pickles_results(clustering_motifcodes_1, title_file_results_1)
+                     # regroupement.save_pickles_results(clustering_motifcodes_1, title_file_results_1.replace(".pk", ".txt"))
+                     tools.save_as_txt(clustering_motifcodes_1, title_file_results_1.replace(".pk", ".txt"))
+             
+                 print("5.2. Centroids 1 : 2/6")
+             
+                 title_file_out_centroids_1 = "./Clustering_results/Medoids/medoids_1.pk"
+                 if not os.path.exists(title_file_out_centroids_1):
+                     compute_all_centroids = regroupement.main_compute_medoids(title_file_results_1, nbr_pool)
+                     regroupement.save_pickles_results(compute_all_centroids, title_file_out_centroids_1)
+                     # regroupement.save_pickles_results(compute_all_centroids, title_file_out_centroids_1.replace(".pk", ".txt"))
+                     tools.save_as_txt(compute_all_centroids, title_file_out_centroids_1.replace(".pk", ".txt"))
+
+                 print("5.3. Clustering 2 : 3/6")
+             
+                 clusters_1 = regroupement.load_pickles(title_file_results_1)
+                 centroids_files = regroupement.load_pickles(title_file_out_centroids_1)
+                 print("\t Nbr clusters : ", len(centroids_files))
+             
+                 index_clusters = list(clusters_1.keys())
+                 
+                 title_file_results_2 = "./Clustering_results/Clusters/clustering_2.pk"
+                 if not os.path.exists(title_file_results_2):
+                     clusters_2 = regroupement.clustering_2(index_clusters, clusters_1, centroids_files, nbr_pool)
+                     regroupement.save_pickles_results(clusters_2, title_file_results_2)
+                     # regroupement.save_pickles_results(clusters_2, title_file_results_2.replace(".pk", ".txt"))
+                     tools.save_as_txt(clusters_2, title_file_results_2.replace(".pk", ".txt"))
+
+             
+                 print("5.4. Centroids 2 : 4/6")
+             
+                 title_file_out_centroids_2 = "./Clustering_results/Medoids/medoids_2.pk"
+                 if not os.path.exists(title_file_out_centroids_2):
+                     compute_all_centroids_2 = regroupement.main_compute_medoids(title_file_results_2, nbr_pool)
+                     regroupement.save_pickles_results(compute_all_centroids_2, title_file_out_centroids_2)
+                     # regroupement.save_pickles_results(compute_all_centroids_2, title_file_out_centroids_2.replace(".pk", ".txt"))
+                     tools.save_as_txt(compute_all_centroids_2, title_file_out_centroids_2.replace(".pk", ".txt"))
+
+
+                 print("5.5. Clustering 3 : 5/6")
+             
+                 clusters_2 = regroupement.load_pickles(title_file_results_2)
+                 centroids_files_2 = regroupement.load_pickles(title_file_out_centroids_2)
+             
+                 print("\t Nbr clusters : ", len(centroids_files_2))
+             
+                 title_file_results_3 = "./Clustering_results/Clusters/clustering_3.pk"
+                 if not os.path.exists(title_file_results_3):
+                     index_clusters = list(clusters_2.keys())
+                     clusters_3 = regroupement.clustering_2(index_clusters, clusters_2, centroids_files_2, nbr_pool)
+                     regroupement.save_pickles_results(clusters_3, title_file_results_3)
+                     # regroupement.save_pickles_results(clusters_3, title_file_results_3.replace(".pk",".txt"))
+                     tools.save_as_txt(clusters_3, title_file_results_3.replace(".pk",".txt"))
+
+             
+                 print("5.6. Centroids 3 : 6/6")
+                 
+                 title_file_out_centroids_3 = "./Clustering_results/Medoids/medoids_3.pk"
+                 if not os.path.exists(title_file_out_centroids_3):
+                     compute_all_centroids_3 = regroupement.main_compute_medoids(title_file_results_3, nbr_pool)
+                     regroupement.save_pickles_results(compute_all_centroids_3, title_file_out_centroids_3)
+                     # regroupement.save_pickles_results(compute_all_centroids_3, title_file_out_centroids_3.replace(".pk", ".txt"))
+                     tools.save_as_txt(compute_all_centroids_3, title_file_out_centroids_3.replace(".pk", ".txt"))
+
+        if internal_clustering==True:
+            nbr_pool = 10
+            for nb_itemset_min in list_itemset_min:
+                    for gap_min in list_gap_min:
+                        for gap_max in list_gap_max:
+                            for minsup_percent in list_minsup_percent:
+                                internalClustering(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max)
+                    
+                    
         ### calculs statistiques ###
         if méthode=="partition":
                 start_time = time.time()
@@ -387,7 +485,7 @@ if __name__ == "__main__":
                                     print(f"Minsup: {minsup_percent}")
                                     # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
                                     # if not os.path.exists(f"./Patterns_results/R/{minsups_percent}"):
-                                    results, path_out = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, metadata)
+                                    results, path_out = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, metadata, internal_clustering)
                                     for property in ["motifs", 
                                                      # "lemma" 
                                                      # ,"pos"
@@ -467,6 +565,63 @@ if __name__ == "__main__":
                 time_grew = end_time - start_time
                 # subprocess.call(["Rscript", "./src/AFC.r"])
 
+
+
+     #-------------------------------------------------------------------------------------------------------------------
+     # Extracting Representant Patterns
+     #-------------------------------------------------------------------------------------------------------------------
+    def extracting_representant_patterns(type_1,type_2, nbr_pool):
+         print("-"*75)
+         print("6. Extracting Representant Patterns")
+     
+         print("6.1. Computing Representant Patterns")
+     
+     
+         ###adaptation du script de Jade
+     
+         # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
+         # type_1 = types_textes[0]
+         # type_2 = types_textes[1]
+         # nbr_pool=2
+     
+         ###
+     
+     
+         title_file_clusters = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
+         title_file_centroids = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
+     
+         clusters = formate_patterns.load_pk(title_file_clusters)
+         centroids = formate_patterns.load_pk(title_file_centroids)
+     
+         emergent_patterns = [p
+                             for p
+                             in list(formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1,type_2)).values())
+                             if p[2] >= 1]
+     
+         dict_emergent_patt = dict()
+         for p in emergent_patterns:
+             dict_emergent_patt[str(sorted(p[0]))] = p[3]
+     
+         corpus_dmt4 = formate_patterns.load_pk("./Data/DMT4_files/DMT4_{}_dict_sorted.pk".format(type_1))
+     
+         lexique = formate_patterns.load_lexique()
+     
+         df_all_rep = representants.main_extract_all_representant(type_1,
+                                     type_2,
+                                     clusters,
+                                     centroids,
+                                     dict_emergent_patt,
+                                     corpus_dmt4,
+                                     nbr_pool)
+     
+         print("6.2. Selecting Representant Patterns")
+         if not os.path.exists("./Data/Representants_results/"):
+             os.mkdir("./Representants_results")
+             if not os.path.exists("./Data/Representants_results/Representants_finaux"):
+                 os.mkdir("./Representants_results/Representants_finaux")
+         
+         representants.main_select_representants("./Representants_results/{}_{}_representants.pk".format(type_1,type_2))
+     
     ###adaptation du script de Jade
     if GrowthRate == True:
         # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
@@ -485,6 +640,8 @@ if __name__ == "__main__":
                 extracting_representant_patterns(type_1, type_2, nbr_pool)
         end_time = time.time()
         cluster_time = end_time - start_time
+        
+        
     
     print(f"Temps de tagging : {time_tag/60:.2f} minutes")
     print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
