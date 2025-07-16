@@ -255,9 +255,9 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, 
 #             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
 
 
-def fusion_internal_clusters(df, lexic_int_str):
-    internal_clusters = tools.load_pickles("./Clustering_results/Clusters/clustering_3.pk")
-    medoids_clusters = tools.load_pickles("./Clustering_results/Medoids/medoids_3.pk")
+def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, gap_min, gap_max):
+    internal_clusters = tools.load_pickles(f"./Clustering_results/Clusters/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_clustering_3.pk")
+    medoids_clusters = tools.load_pickles(f"./Clustering_results/Medoids/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_medoids_3.pk")
     
     internal_clusters_str = {}
     for cluster_id, motifs in internal_clusters.items():
@@ -324,7 +324,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
                 df_k = textes2metadata(df_k, df_metadata, metadata).T
             df_k.to_csv(file_out_motifs, sep="\t")
             if internal_clustering==True:
-                df_k = fusion_internal_clusters(df_k, lexic_int_str)
+                df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
                 file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
                 df_k.to_csv(file_out_motifs, sep="\t")
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
