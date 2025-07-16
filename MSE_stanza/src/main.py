@@ -476,7 +476,7 @@ if __name__ == "__main__":
                 if not os.path.exists("./Patterns_results/Specifs_noZero/"):                    #devenu inutile
                     os.mkdir("./Patterns_results/Specifs_noZero/")
                 print("-"*75)
-                print("4.3 Extracting patterns in partition")
+                print("6. Statistical computing of patterns in partition")
                 if not os.path.exists("./Patterns_results/R"):
                     os.mkdir("./Patterns_results/R")
                 df_metadata = pd.read_csv(path_target, sep="\t", index_col=0)
