@@ -325,7 +325,7 @@ def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,ga
             df_k.to_csv(file_out_motifs, sep="\t")
             if internal_clustering==True:
                 df_k = fusion_internal_clusters(df_k, lexic_int_str)
-                file_out_motifs = "FUS_" + file_out_motifs
+                file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
                 df_k.to_csv(file_out_motifs, sep="\t")
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
             df_k_total=add_total(df_k)
