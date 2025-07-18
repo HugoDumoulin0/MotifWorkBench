@@ -48,6 +48,7 @@ liste_earlyspecifs_lemma = ["président", "comité", "formation"]
 #-------------------
 internal_clustering=True
 
+
 #-------------------
 # Patterns params
 #-------------------

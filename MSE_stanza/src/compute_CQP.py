@@ -287,7 +287,7 @@ def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, 
     df_result = pd.concat(dfs_fusionnes)
     return df_result
      
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering):
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering):
     execution_time = datetime.datetime.now()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
