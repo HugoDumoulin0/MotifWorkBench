@@ -59,7 +59,6 @@ list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
 list_minsup_percent = [1]
-liste_seuils_lemma=[100,200]
 
 threads=30
 
@@ -73,8 +72,6 @@ Dep=True
 Feats=False
 
 #attention avec form=True il y a aura les résultats non contractés
-liste_seuil_lemma=[10,50,100,200]
-
 #-------------------
 # Metadata
 #-------------------
@@ -85,10 +82,15 @@ list_metadata = ["id"
                  ]
 
 #-------------------
+# Comparison with lemmas and pos
+#-------------------
+liste_seuils_lemma=[100,200]
+seuil_bigrams_comparaison = 1000
+
+#-------------------
 # Machine learning params
 #-------------------
 path_target = "./Data/metadata.tsv"
 sampling=True  #équilibre les classes
 classification=False
-seuil_lemma_comparaison = 1000
-seuil_bigrams_comparaison = 1000
+# seuil_lemma_comparaison = 1000
