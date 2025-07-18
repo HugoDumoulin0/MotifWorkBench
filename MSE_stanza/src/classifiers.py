@@ -28,7 +28,7 @@ import time
 from config import *
 
 
-def equilibrer_classes(df,classe_col='target', random_state=42):
+def equilibrer_classes(df,classe_col=y_class, random_state=42):
     # Calcul du nombre minimal d'exemples par classe
     n = df.groupby(classe_col).size().min()
     
@@ -36,16 +36,18 @@ def equilibrer_classes(df,classe_col='target', random_state=42):
     df_equilibre = df.groupby(classe_col).sample(n=n, random_state=random_state)    
     return df_equilibre
 
-def prepare_dataset(path_data, rep_out, path_target, sample):
+def prepare_dataset(path_data, rep_out, path_target, sampling):
     df_target = pd.read_csv(path_target, sep="\t", index_col=0)
-    if sample:
+    if sampling:
         df_target_equi = equilibrer_classes(df_target)
-        y_motifs=df_target_equi.target
-    
+        y_motifs=df_target_equi[y_class]
+    else:
+        y_motifs=df_target[y_class]
+        
     df = pd.read_csv(path_data, sep="\t", index_col=0)
     df= df.T
     
-    if sample:
+    if sampling:
         df=df.loc[df_target_equi.index]
     
     # rapporte à la taille de chaque texte
@@ -313,13 +315,10 @@ def decision_tree(X_motifs, y_motifs, X_features, rep_out):
     graph.render(f"{rep_out}tree") 
     
     
-def main(minsup, results, path_target, sample):
+def main(minsup, results, path_target, sampling):
     path_classif_out = "./Patterns_results/Classifieurs/"
     if not os.path.exists(path_classif_out):
         os.mkdir(path_classif_out)
-    path_classif_out_minsup = path_classif_out + str(minsup)+"/"
-    if not os.path.exists(path_classif_out_minsup):
-        os.mkdir(path_classif_out_minsup)
     for prefixe,filename in results.items():
     # liste_prefixes = ["motifs/", "lemma/", "pos/", "20000lemma/", "20000bigrams"]
     # liste_data = [file_out_motifs, file_out_lemma, file_out_pos, file_out_ALLlemma]
@@ -327,13 +326,17 @@ def main(minsup, results, path_target, sample):
         # if not os.path.exists(path_out):
         #     os.mkdir(path_out)
         # name = filename[:-4].replace(path_out, "")
-        if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
-            rep_out = path_classif_out_minsup+prefixe+"/"
+        # if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
+        rep_pref=path_classif_out+prefixe+"/"
+        if not os.path.exists(rep_pref):
+            os.mkdir(rep_pref)
+        if not "lemma" or "pos" or "bigrams" in prefixe:
+            rep_out = rep_pref+f"minsup{str(minsup)}"+"/"
         else:
-            rep_out = path_classif_out+prefixe+"/"
+            rep_out = rep_pref
         if not os.path.exists(rep_out):
             os.mkdir(rep_out)
-        X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, sample)
+        X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, sampling)
         if len(X_motifs)>0:
             nb_comp=50
             X_motifs_scaled_reduced = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
