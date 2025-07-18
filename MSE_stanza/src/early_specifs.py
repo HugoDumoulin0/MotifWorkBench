@@ -73,17 +73,17 @@ def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, exe
     print("begining computing with R")
     subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out]) #Run R!
     
-def tri_lemma(execution_time):
+def tri_lemma(execution_time,seuil_banalité):
     liste = os.listdir("./Data/earlySPECIFS")
     for file in liste:
         if f"synthesis_{execution_time}" in file:
             df = pd.read_csv(f"./Data/earlySPECIFS/{file}", sep="\t", index_col=0, quoting=3)
     df.drop(columns=["std_dev"], inplace=True)
-    lignes = df[df.gt(2).any(axis=1)].index.tolist()
+    lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
     return lignes
 
     
-def main(seuil, minsup_percent, path_metadata, partition_cible):
+def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité):
     if not os.path.exists("./Data/earlySPECIFS"):
         os.mkdir("./Data/earlySPECIFS/")
     path_out = "./Data/earlySPECIFS/"
@@ -96,7 +96,7 @@ def main(seuil, minsup_percent, path_metadata, partition_cible):
     df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
     dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target)
     compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
-    lignes = tri_lemma(execution_time)
+    lignes = tri_lemma(execution_time, seuil_banalité)
     print(lignes)
     liste_lemma = []
     for l in lignes:
