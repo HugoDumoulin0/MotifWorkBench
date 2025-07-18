@@ -103,7 +103,7 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     # df_lemma.to_csv(file_total, sep="\t")
     return file_out, path_out, df_lemma, file_total
 
-def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparaison):
+def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
     print("indexing bigrams lemma")
@@ -344,8 +344,8 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
             # if not os.path.exists("f{path_out}{seuil_lemma_comparaison}lemma"):
             #     file_out_20000lemma = compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison)
             #     results["20000lemma"] = file_out_20000lemma
-            if not os.path.exists("f{path_out}{seuil_bigrams_comparaison}bigramslemma"):
-                 file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparaison)
+            if not os.path.exists("f{path_out}{seuil_bigrams_comparison}bigramslemma"):
+                 file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparison)
                  results[f"{seuil}bigrams"] = file_out_bigrams
     else:
         if not os.path.exists(f"{path_out}zero-motifs"):

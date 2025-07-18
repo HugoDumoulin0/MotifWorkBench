@@ -25,6 +25,7 @@ from sklearn.model_selection import GridSearchCV, ParameterGrid
 from sklearn.inspection import permutation_importance
 
 import time
+from config import *
 
 
 def equilibrer_classes(df,classe_col='target', random_state=42):
@@ -326,7 +327,7 @@ def main(minsup, results, path_target, sample):
         # if not os.path.exists(path_out):
         #     os.mkdir(path_out)
         # name = filename[:-4].replace(path_out, "")
-        if not prefixe in ("20000lemma", "10000bigramslemma"):
+        if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
             rep_out = path_classif_out_minsup+prefixe+"/"
         else:
             rep_out = path_classif_out+prefixe+"/"
