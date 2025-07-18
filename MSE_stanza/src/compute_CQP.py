@@ -286,7 +286,7 @@ def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, 
     df_result = pd.concat(dfs_fusionnes)
     return df_result
      
-def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering, tidy_metadata):
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering, tidy_metadata, results):
     execution_time = datetime.datetime.now()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
@@ -312,7 +312,8 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
         if not os.path.exists(path):
             os.mkdir(path)
     path_out = f"{path_R}minsup{str(minsup_percent)}/"
-    results = {}
+
+    
     if not os.path.exists(path_out):
             os.mkdir(path_out)
 
@@ -325,25 +326,22 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                 
             df_k.to_csv(file_out_motifs, sep="\t")
             
-            if "internal_clustering_" in tidy_metadata:
-                df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
-                file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
-                df_k.to_csv(file_out_motifs, sep="\t")
-                results["internal_clustering_motifs"] = file_out_motifs
-            else:
-                if earlySpecifs:
-                    results["early_specifs_motifs"]=file_out_motifs
+            if metadata=="id":
+                if "internal_clustering_" in tidy_metadata:
+                    df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
+                    file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
+                    df_k.to_csv(file_out_motifs, sep="\t")
+                    results["internal_clustering_motifs"] = file_out_motifs
                 else:
-                    results["motifs"] = file_out_motifs
-            # if not "internal_clustering_" in tidy_metadata:
-            #     results["motifs"] = file_out_motifs
+                    if earlySpecifs:
+                        results["early_specifs_motifs"]=file_out_motifs
+                    else:
+                        results["motifs"] = file_out_motifs
+
         
             if specifs:       
                 compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
 
-            # else:
-            #     if not "internal_clustering_" in tidy_metadata:
-            #         results["motifs"] = file_out_motifs #je ne comprends pas pourquoi il déclenche pas ici
                     
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
             df_k_total=add_total(df_k)

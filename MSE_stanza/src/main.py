@@ -486,6 +486,7 @@ if __name__ == "__main__":
                 if not os.path.exists("./Patterns_results/R"):
                     os.mkdir("./Patterns_results/R")
                 df_metadata = pd.read_csv(path_target, sep="\t", index_col=0)
+                results={}
                 for metadata in list_metadata:
                     sub_tidy_metadata=[metadata]
                     if earlySpecifs:
@@ -502,11 +503,11 @@ if __name__ == "__main__":
                                         print(f"Minsup: {minsup_percent}")
                                         # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
                                         # if not os.path.exists(f"./Patterns_results/R/{minsups_percent}"):
-                                        results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, metadata, internal_clustering, tidy_metadata)
+                                        results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, metadata, internal_clustering, tidy_metadata, results)
                                         for property in ["motifs", 
-                                                         # "lemma" 
-                                                         # ,"pos"
-                                                         ]:
+                                                          # "lemma" 
+                                                          # ,"pos"
+                                                          ]:
                                             if not os.path.exists(f"./Patterns_results/Classifieurs/{minsup_percent}/{property}/"):
                                                 path=f"{path_out}{property}/"
                                                 if os.path.exists(path):
@@ -518,7 +519,7 @@ if __name__ == "__main__":
                     if not os.path.exists("./Patterns_results/R/{metadata}/pos"):
                         path_pos = f"./Patterns_results/R/{metadata}/"
                         execution_time = datetime.datetime.now()
-                        file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC( execution_time, path_pos)
+                        file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
                         if not metadata=="id":
                             df_pos =  compute_CQP.textes2metadata(df_pos, df_metadata, metadata).T
                         df_pos.to_csv(file_out_pos, sep="\t")
@@ -529,11 +530,11 @@ if __name__ == "__main__":
                             # if not os.path.exists("f{path_out}{seuil_lemma_comparaison}lemma"):
                             #     file_out_20000lemma = compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison)
                             #     results["20000lemma"] = file_out_20000lemma
+                    
                     for seuil in liste_seuils_lemma:
                         if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}lemma"):
                             path_lemma = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
-
                             file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma)
                             if not metadata=="id":
                                 df_lemma =  compute_CQP.textes2metadata(df_lemma, df_metadata, metadata).T
@@ -541,13 +542,25 @@ if __name__ == "__main__":
                             subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out]) 
                             df_lemma=compute_CQP.add_total(df_lemma)
                             df_lemma.to_csv(file_total, sep="\t")
-                            results[f"{seuil}lemma"] = file_out_lemma
+                            if metadata=="id":
+                                results[f"{seuil}lemma"] = file_out_lemma
+                        else:
+                            if metadata=="id":
+                                liste=[]
+                                doss =f"./Patterns_results/R/{metadata}/{seuil}lemma/"
+                                for fichier in os.listdir(doss):
+                                    if f"{seuil}_lemmaTexte" in fichier:
+                                        liste.append(doss+fichier)
+                                tri = sorted(liste, key=os.path.getmtime, reverse=True)
+                                results[f"{seuil}lemma"] = tri[0]
+                    
                     if not os.path.exists(f"/Patterns_results/R/{metadata}/{seuil_bigrams_comparison}bigramslemma"):
                         path_big = f"./Patterns_results/R/{metadata}/"
                         execution_time = datetime.datetime.now()
                         file_out_bigrams, seuil, path_out = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil_bigrams_comparison)
                         results[f"{seuil}bigrams"] = file_out_bigrams
                         subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out]) 
+                    
                     for property_gen in [f"{seuil_bigrams_comparison}bigramslemma"]:
                             if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
                                 path=f"./Patterns_results/R/{property}/"
@@ -584,7 +597,7 @@ if __name__ == "__main__":
                     #             break
 
                 classifiers.main(minsup_percent,results,path_target, sampling)
-                print(results)
+
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time
