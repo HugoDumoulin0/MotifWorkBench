@@ -584,6 +584,7 @@ if __name__ == "__main__":
                     #             break
 
                 classifiers.main(minsup_percent,results,path_target, sampling)
+                print(results)
                 # Use R to perform AFC automatically
                 end_time = time.time()
                 time_grew = end_time - start_time

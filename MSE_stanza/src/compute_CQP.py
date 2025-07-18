@@ -330,15 +330,20 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                 file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
                 df_k.to_csv(file_out_motifs, sep="\t")
                 results["internal_clustering_motifs"] = file_out_motifs
-            # else:
+            else:
+                if earlySpecifs:
+                    results["early_specifs_motifs"]=file_out_motifs
+                else:
+                    results["motifs"] = file_out_motifs
+            # if not "internal_clustering_" in tidy_metadata:
             #     results["motifs"] = file_out_motifs
+        
             if specifs:       
                 compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
-            if earlySpecifs:
-                results["early_specifs_motifs"]=file_out_motifs
-            else:
-                if not "internal_clustering_" in tidy_metadata:
-                    results["motifs"] = file_out_motifs #je ne comprends pas pourquoi il déclenche pas ici
+
+            # else:
+            #     if not "internal_clustering_" in tidy_metadata:
+            #         results["motifs"] = file_out_motifs #je ne comprends pas pourquoi il déclenche pas ici
                     
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
             df_k_total=add_total(df_k)
