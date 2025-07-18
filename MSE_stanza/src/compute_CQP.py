@@ -128,7 +128,7 @@ def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil):
         os.mkdir(path_out)
     file_out_bigrams = f"{path_out}{seuil}bigramslemmaTexte_df_{execution_time}.tsv"
     df_lemma.to_csv(file_out_bigrams, sep="\t")
-    return file_out_bigrams, seuil
+    return file_out_bigrams, seuil, path_out
 
 # def compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison):
 #     registry_path = "./Data/cwb-corpus/registry"
@@ -286,7 +286,7 @@ def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, 
     df_result = pd.concat(dfs_fusionnes)
     return df_result
      
-def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering):
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering, tidy_metadata):
     execution_time = datetime.datetime.now()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
@@ -294,21 +294,21 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general()
     
-    path_R=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+    path_R=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
     if not os.path.exists(path_R):
         path="./Patterns_results/R/"
         if not os.path.exists(path):
             os.mkdir(path)
-        path= f"./Patterns_results/R/{metadata}/"
+        path= f"./Patterns_results/R/{tidy_metadata}/"
         if not os.path.exists(path):
             os.mkdir(path)
-        path=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}"
+        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}"
         if not os.path.exists(path):
             os.mkdir(path)
-        path=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
         if not os.path.exists(path):
             os.mkdir(path)
-        path=f"./Patterns_results/R/{metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
         if not os.path.exists(path):
             os.mkdir(path)
     path_out = f"{path_R}minsup{str(minsup_percent)}/"
@@ -319,34 +319,44 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
     if total_motifs>0:
         if not os.path.exists(f"{path_out}motifs"):
             df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+            
             if not metadata=="id":
                 df_k = textes2metadata(df_k, df_metadata, metadata).T
+                
             df_k.to_csv(file_out_motifs, sep="\t")
-            if internal_clustering==True:
+            
+            if "internal_clustering_" in tidy_metadata:
                 df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
                 file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
                 df_k.to_csv(file_out_motifs, sep="\t")
+                results["internal_clustering_motifs"] = file_out_motifs
+            # else:
+            #     results["motifs"] = file_out_motifs
+            if specifs:       
+                compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+            if earlySpecifs:
+                results["early_specifs_motifs"]=file_out_motifs
+            else:
+                if not "internal_clustering_" in tidy_metadata:
+                    results["motifs"] = file_out_motifs #je ne comprends pas pourquoi il déclenche pas ici
+                    
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
             df_k_total=add_total(df_k)
             df_k_total.to_csv(file_total, sep="\t")
-        
-                
-            if specifs:       
-                compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
-            results["motifs"] = file_out_motifs
+            
         # if not os.path.exists(f"{path_out}pos"):
         #     file_out_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
         #     results["pos"] = file_out_pos
         # if not os.path.exists(f"{path_out}lemma"):
         #     file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
         #     results["lemma"] = file_out_lemma
-        if classification:
-            # if not os.path.exists("f{path_out}{seuil_lemma_comparaison}lemma"):
-            #     file_out_20000lemma = compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison)
-            #     results["20000lemma"] = file_out_20000lemma
-            if not os.path.exists("f{path_out}{seuil_bigrams_comparison}bigramslemma"):
-                 file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparison)
-                 results[f"{seuil}bigrams"] = file_out_bigrams
+        # if classification:
+        #     # if not os.path.exists("f{path_out}{seuil_lemma_comparaison}lemma"):
+        #     #     file_out_20000lemma = compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison)
+        #     #     results["20000lemma"] = file_out_20000lemma
+        #     if not os.path.exists("f{path_out}{seuil_bigrams_comparison}bigramslemma"):
+        #          file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparison)
+        #          results[f"{seuil}bigrams"] = file_out_bigrams
     else:
         if not os.path.exists(f"{path_out}zero-motifs"):
                 os.mkdir(f"{path_out}zero-motifs")

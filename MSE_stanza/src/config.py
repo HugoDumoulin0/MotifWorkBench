@@ -90,7 +90,8 @@ seuil_bigrams_comparison = 100
 #-------------------
 # Machine learning params
 #-------------------
+classification=True
 path_target = "./Data/metadata.tsv"
+y_class = "genre"
 sampling=True  #équilibre les classes
-classification=False
-# seuil_lemma_comparaison = 1000
+
