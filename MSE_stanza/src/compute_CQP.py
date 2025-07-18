@@ -103,10 +103,9 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     # df_lemma.to_csv(file_total, sep="\t")
     return file_out, path_out, df_lemma, file_total
 
-def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R):
+def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparaison):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
-    seuil = 10000
     print("indexing bigrams lemma")
     liste_bigrams_lemma = enslave_perl.cqp_index_property("bigrams_lemma")
     print("index done")
@@ -131,22 +130,22 @@ def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R):
     df_lemma.to_csv(file_out_bigrams, sep="\t")
     return file_out_bigrams, seuil
 
-def compute_freq_Textes20000Lemma_noAFC(execution_time, path_R):
+def compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
     print("indexing 20 000 lemma")
     liste_lemma = enslave_perl.cqp_index_lemma()
     print("index done")
     print("Computing 20 000 lemma freq X texte...")
-    total=20000
+    total=seuil_lemma_comparaison
     indice = 0
-    for lemma in liste_lemma[:20000]:
+    for lemma in liste_lemma[:seuil_lemma_comparaison]:
         indice += 1
         lemma = f'[lemma="{lemma}"]'
         print(f"{lemma} {indice}")
         ligne_de_table = enslave_perl.cqp_freq_textes(lemma)
         lignes_table.append(ligne_de_table)
-    df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:20000])
+    df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil_lemma_comparaison])
     df_lemma = df_lemma.fillna(0)
     df_lemma = df_lemma.apply(pd.to_numeric)
     prefixe="20000lemma/"
@@ -342,11 +341,11 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
         #     file_out_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
         #     results["lemma"] = file_out_lemma
         if classification:
-            if not os.path.exists("f{path_out}20000lemma"):
-                file_out_20000lemma = compute_freq_Textes20000Lemma_noAFC(execution_time, path_R)
+            if not os.path.exists("f{path_out}{seuil_lemma_comparaison}lemma"):
+                file_out_20000lemma = compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison)
                 results["20000lemma"] = file_out_20000lemma
-            if not os.path.exists("f{path_out}10000bigramslemma"):
-                 file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R)
+            if not os.path.exists("f{path_out}{seuil_bigrams_comparaison}bigramslemma"):
+                 file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparaison)
                  results[f"{seuil}bigrams"] = file_out_bigrams
     else:
         if not os.path.exists(f"{path_out}zero-motifs"):
