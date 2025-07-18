@@ -281,7 +281,7 @@ if __name__ == "__main__":
             for gap_min in list_gap_min:
                 for gap_max in list_gap_max:
                     for minsup_percent in list_minsup_percent:
-                            threads = 30
+                            # threads = 30
                             for type_texte in liste:
                                 print("\t Type_texte:", type_texte)
                                 if os.path.exists(f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.txt"):
