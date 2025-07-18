@@ -90,3 +90,5 @@ list_metadata = ["id"
 path_target = "./Data/metadata.tsv"
 sampling=True  #équilibre les classes
 classification=False
+seuil_lemma_comparaison = 1000
+seuil_bigrams_comparaison = 1000
