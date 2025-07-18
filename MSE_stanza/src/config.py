@@ -35,6 +35,7 @@ if méthode=="partition":
 
 earlySpecifs=False
 seuil_early_specifs=1000
+partition_cible = "target"
 
 #-------------------
 # Internal clustering
