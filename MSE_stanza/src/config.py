@@ -38,6 +38,11 @@ seuil_early_specifs=1000
 partition_cible = "target"
 seuil_banalité=2
 
+user_input_list=False
+liste_earlyspecifs_lemma = ["président", "comité", "formation"]
+    
+    
+
 #-------------------
 # Internal clustering
 #-------------------
