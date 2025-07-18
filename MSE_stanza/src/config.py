@@ -70,7 +70,7 @@ liste_seuil_lemma=[10,50,100,200]
 #-------------------
 # Metadata
 #-------------------
-path_metadata = "./Data/df_target_train_classif.tsv"
+path_metadata = "./Data/metadata.tsv"
 list_metadata = ["id"
                  #,"annee"
                  # ,"target"
@@ -79,6 +79,6 @@ list_metadata = ["id"
 #-------------------
 # Machine learning params
 #-------------------
-path_target = "./Data/df_target_train_classif.tsv"
+path_target = "./Data/metadata.tsv"
 sampling=True  #équilibre les classes
 classification=False

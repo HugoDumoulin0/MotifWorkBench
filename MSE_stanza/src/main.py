@@ -247,10 +247,12 @@ if __name__ == "__main__":
             cwb.main()
             
         
-        print("-"*75)
-        print("2.1 Early selection of specific lemma")
+        
+
         if earlySpecifs:
-            liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "")
+            print("-"*75)
+            print("2.1 Early selection of specific lemma")
+            liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "", path_metadata)
         # #-------------------------------------------------------------------------------------------------------------------
         # # Mining Pattern
         # #-------------------------------------------------------------------------------------------------------------------
