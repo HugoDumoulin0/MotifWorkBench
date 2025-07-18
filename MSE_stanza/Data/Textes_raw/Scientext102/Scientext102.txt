@@ -1,0 +1,401 @@
+
+L’étude présente avait pour objectif d’analyser la transposition de l’échelle
+moderne de racisme de McConahay (1986) dans un autre contexte culturel et de
+vérifier sa validité auprès d’un échantillon français.
+Une revue de la littérature psychosociale dans le domaine des préjugés et de la
+discrimination ethno-raciale fait apparaître l’existence de deux formes de
+racisme : le racisme dit classique et le racisme qualifié de moderne. La forme
+classique de racisme est fondée sur des arguments de nature biologique, elle
+caractérise les attitudes discriminatoires explicites, l’expression directe des
+préjugés et des sentiments négatifs éprouvés envers les minorités et
+l’opposition au contact intime avec l’exogroupe (pour une revue générale, voir
+Allport, 1958 et Dion, 2003). La justification de ces attitudes se fonde sur la
+tendance à les expliquer par la différence ou par la supériorité/infériorité
+intergroupe et sur une réinterprétation de ces différences en se fondant sur les
+théories darwiniennes. Ce type d’attitude est classiquement référé, soit à un
+mode particulier d’organisation et de structuration de l’environnement social,
+soit à une organisation psychopathologique ou cognitive de la personnalité. Dans
+ce dernier cas, les théories respectives de la personnalité autoritaire (Adorno,
+Frankel-Brunswick, Levinson et Sanford, 1950), de la croyance en un monde juste
+(Lerner, 1980) ou de la congruence des croyances (Rokeach, 1960) permettent de
+mieux comprendre ce qui est en jeu. On peut également invoquer des idéologies
+générales issues du monde des idées et qui ont contribué, de façon séculaire à
+la théorisation de la différence (Taguieff, 1990) ou à son évaluation
+statistique (Lemaine et Matalon, 1985 ; Lemaine, 1997).
+La forme moderne du racisme correspond à la période postérieure au mouvement des
+droits civiques aux Etats-Unis, elle est adossée sur des arguments de nature
+culturelle ou sociale et figure la prise en compte des évolutions normatives et
+institutionnelles et des contraintes qu’elles imposent à l’expression explicite
+des préjugés. En effet, les individus sont alors pris dans un conflit normatif
+entre la loyauté envers les valeurs d’égalité et de justice intergroupe et la
+tendance à la protection de l’identité du groupe d’appartenance. Si l’adhésion
+aux valeurs d’égalité prend sa source dans la conception d’une entité humaine
+supra-ordonnée à laquelle tout le monde émargerait indépendamment de son
+appartenance sociale, le désir d’affirmation identitaire passe, quant à lui, par
+la différenciation intergroupe -avec un exogroupe perçu comme une menace- et la
+comparaison intergroupe en vue de valoriser son groupe d’appartenance.
+L’expression de l’hostilité envers l’exogroupe, adaptée aux contextes sociaux
+dans lesquels se trouvent les individus est alors souvent voilée. Ainsi, si le
+racisme et la discrimination persistent, leur mode d’expression diffère.
+Différents concepts et théorisations tiennent compte de ces évolutions. Katz et
+ses collaborateurs (Katz, Wackenhut et Hass, 1986 ; Katz et Hass, 1988)
+développent par exemple la théorie de l’ambivalence-amplification en référence à
+la contradiction entre l’adhésion concomitante aux valeurs
+d’humanitarisme/égalitarisme et d’individualisme (liberté individuelle,
+discipline, dévouement au travail et réussite individuelle). D’après eux,
+l’ambivalence entre sentiments positifs et négatifs à l’égard de l’exogroupe
+serait source d’inconfort psychologique et d’un sentiment de culpabilité lorsque
+les sujets en prennent conscience. Sears (1988) privilégie quant à lui le terme
+de racisme symbolique en référence à la contestation envers les actes
+institutionnels symboliques d’équité intergroupe. Dans une perspective voisine,
+l’équipe de Monteith s’intéresse au conflit entre les croyances et les actes. Le
+conflit émergerait lorsque les individus sentent que la façon dont ils se
+conduisent est plus discriminatoire que ce qu’autorise une échelle de valeurs
+personnelles. A l’apparition de ce conflit, les gens éprouveraient un état
+d’inconfort psychologique (culpabilité, autocritique, tension psychologique)
+déclenchant un mécanisme autorégulateur de prévention et de réduction des
+conduites discriminatoires futures (Devine, Monteith, Zuwerink et Elliot, 1991 ;
+Monteith, 1993 ; Monteith 1996a ; Monteith 1996b). Enfin, le concept de racisme
+aversif ou antipathique est évoqué par Dovidio et Gaertner (1998) qui insistent
+davantage sur la dimension affectivo-émotionnelle accompagnant l’ambivalence des
+individus. Ces derniers sont en effet détenteurs d’affects négatifs dont ils ne
+sont pas conscients et qu’ils tentent de dissocier de leur attitude positive à
+l’égard des minorités. Selon Dovidio et Gaertner (1998), l’attitude négative ne
+serait pas une marque d’hostilité mais plutôt la traduction d’un malaise général
+vis-à-vis de l’exogroupe. Pour ces auteurs, quatre critères permettent
+d’expliquer le racisme aversif : 1) une adhésion franche aux valeurs d’équité et
+l’égalité de traitement entre les différents groupes sociaux ; 2) malgré la
+conscience d’une meilleure disposition à l’égard des minorités, une permanence
+des affects négatifs à l’égard de l’exogroupe et une tendance consécutive à
+l’évitement des interactions avec les membres de ces groupes minoritaires ; 3)
+lorsque ces interactions sont inévitables, une tendance à s’en abstraire et une
+anxiété relative au conflit entre bienveillance envers la minorité et évitement
+de la minorité ; 4) enfin, en raison du malaise ressenti, la mise en œuvre des
+seules interactions imposées par les usages sociaux élémentaires
+(Gaertner et Dovidio, 1986 ; Dovidio et Gaertner, 1998). Une conception
+voisine fait référence au racisme aversif à l’œuvre dans le contexte européen
+(Pettigrew et Meertens, 1995). Concrètement, ces auteurs décrivent le racisme
+classique comme étant « émotionnel, proche et direct… ». Ce racisme comporte
+deux composantes : a) menace perçue et rejet de l’exogroupe ; b) évitement de
+contacts proches (sexualité et mariage, par exemple). Par contraste, le racisme
+subtil est dit « rationnel, distant et indirect ». Ce dernier type de racisme
+comporte également trois composantes : a) défense des valeurs traditionnelles ;
+b) extrémisation des différences culturelles ; c) refus d’éprouver des
+sentiments positifs envers l’exogroupe.
+Les évolutions dans l’expression des discriminations amènent donc à repenser les
+outils de mesure des attitudes discriminatoires à la lumière de leur degré de
+réactivité. Les évolutions socio-normatives ont notamment comme conséquence la
+sensibilité au vocabulaire et aux opinions relatives aux exogroupe et les items
+des échelles de racisme classiques ne sont donc plus adaptés car leur
+formulation est perçue comme non désirable.
+McConahay (McConahay, Hardee et Batts, 1981 ; McConahay, 1986) propose d’intégrer
+les mutations des législations et des mentalités dans l’explication du racisme
+en développant le concept de racisme moderne. Il considère les racistes dits
+modernes comme ambivalents. En vue de protéger leur image propre, ces derniers
+expriment de la discrimination uniquement dans des contextes où leur conduite
+peut être justifiée sur des bases autres que raciales. Les discriminations
+intergroupes continuent donc bien d’opérer mais sous une forme voilée. Les
+études entreprises par McConahay s’inscrivent dans la continuité de l’étude de
+Sears et Kinder (1971) qui montrait comment les électeurs ayant choisi le
+candidat blanc impopulaire opposé à un candidat noir compétent ne justifiaient
+pas leur choix par des arguments raciaux classiques mais par le conservatisme
+politique et le communautarisme. McConahay entreprend deux études successives.
+La première porte sur la mesure des préjugés envers les noirs et est réalisée
+auprès de 160 séminaristes blancs et plutôt conservateurs. Dans cette recherche,
+l’échelle proposée aux participants comporte des items modernes et classiques,
+avec un taux de refus de réponse concernant des items classiques (comme par
+exemple «les noirs sont moins intelligents que les blancs ») de 39%. McConahay
+met donc en évidence les problèmes de la réactivité des échelles classiques et
+de leur absence de corrélation avec les votes des individus.
+La seconde étude réalisée par McConahay portait sur des résidants d’une banlieue
+de Los Angeles (Clarmont), sollicités lors d’une élection locale relative à la
+désignation de la direction des écoles. L’échelle de mesure des attitudes
+utilisée comportait des items renvoyant aussi bien aux aspects religieux,
+raciaux qu’aux valeurs et au sentiment personnel, à l’exclusion des items
+classiques. L’un des apports de ces recherches consiste à faire porter
+directement l’attention sur les relations entre le racisme symbolique et les
+croyances religieuses (r entre 0,33 et 0,41 selon les études), la sensibilité
+politique (r entre 0,36 à 0,45) et les valeurs traditionnelles (travail,
+individualisme, abstinence sexuelle, patriotisme…), dans la mesure où
+l’appropriation précoce des valeurs traditionnelles séculaires, héritées du
+calvinisme et du méthodisme peut être envisagée comme prédicteur du racisme
+moderne. Ces premiers travaux ont permis de distinguer nettement l’échelle
+classique et l’échelle moderne. Les items de l’échelle de racisme moderne se
+distinguent de ceux des échelles de racisme classique qui sollicitent les
+individus directement sur les préjugés (exemple d’item de l’échelle moderne :
+« la discrimination envers les noirs n’est plus un problème »). McConahay
+propose des items ayant une tonalité morale (par exemple « durant les dernières
+années, les noirs ont réussi à atteindre une meilleure situation
+socio-économique que moi ») ou des items utilisant des expressions codées ou des
+symboles pour qualifier l’exogroupe (par exemple : « les rues sont de moins en
+moins sûres en l’absence de la police »). L’esprit général de l’échelle, c’est
+le choix d’items exprimant des idées morales abstraites. Ces items visent à
+mettre en évidence le fait que la majorité des croyances sont des réactions à
+certaines politiques - telles la discrimination positive - instituées après le
+combat sur les droits civiques qui symbolise aux yeux de la plupart des sujets
+blancs des demandes et des bénéfices, injustement formulées et acquis par les
+noirs et les minorités.
+L’analyse multivariée réalisée par McConahay sur l’échelle classique et l’échelle
+moderne oppose deux facteurs : le premier est expliqué par les items de
+l’échelle moderne, avec tous les coefficients de régression supérieurs à 0,30
+sur ce facteur. Le second facteur est expliqué par les items de l’échelle
+classique, qui sont tous inférieurs à 0,18 sur le premier facteur et supérieurs
+à 0,30 sur le deuxième. Il s’agit cependant d’un travail ancien qui demanderait
+à être confirmé par exemple à l’aide d’équations structurelles. Toutefois,
+l’intérêt principal de cette recherche réside dans la démarche conceptuelle et
+dans la mise en évidence de la persistance du racisme sous de nouvelles formes.
+Les saturations (loading) les plus importantes concernent les items relatifs au
+rôle des médias (0,80) et à la mesure du fait que les noirs méritent leurs
+succès économiques (0,78). Les items retenus sont intercorrélés, ils sont par
+ailleurs non réactifs car ils permettent de fournir des justifications
+racialement neutres au comportement. Les items non retenus sont ceux qui
+paraissent de moins en moins associés à l’image du noir (comme ceux relatifs au
+crime urbain  et à la protection sociale). Dès lors, McConahay considère que le
+préjugé envers les noirs serait influencé par la composante affective de
+l’attitude, ou par le système de croyances et de valeurs ou encore par le
+contexte historique dans lequel s’inscrit la relation entre les groupes en
+présence ; le préjugé envers les noirs semble donc déborder le cadre des
+extrémistes courants pour toucher également des populations d’américains blancs
+imprégnés des valeurs d’égalité interethnique. Le concept de racisme moderne
+présente finalement l’avantage de rendre compte du fait que le racisme ne
+résulte pas nécessairement d’expériences individuelles négatives mais également
+du mode de socialisation.
+En ce qui concerne l’échelle de racisme moderne transposée en contexte français,
+elle mesure non plus l’attitude à l’égard des noirs mais l’attitude à l’égard
+des immigrés. Sur les 11items de l’échelle initiale, quatre ont été éliminés car
+trop spécifiques au contexte américain. L’échelle française comporte sept items
+qui ont fait l’objet d’une double traduction -privilégiant le sens- par des
+experts et dont la clarté a été évaluée dans un pré-test auprès d’un premier
+groupe d’étudiants. Ces items sont relatifs au rôle joué par les institutions et
+par les médias (par exemple : « au cours des dernières années, les gouvernements
+et les médias ont manifesté beaucoup d'indulgence à l'égard des immigrés et de
+l'immigration en général »). D’autres  items portent également sur la question
+de l’insertion socio-économique et du poids culturel (« les immigrés ont une
+influence culturelle plus importante que celle qui devrait leur être
+réservée »).
+Item1 : Médias
+Item2 : Colère
+Item 3 : Discrimination
+RACISME
+Item 4 : Aides
+Item 5 : Culture
+Item 6 : Droits
+Item 7 : Place
+Légende :
+variable latente
+variables manifestes
+Schéma 1 : Modèle des relations entre la variable latente et les variables
+manifestes
+2. METHODE
+2.1 Population
+L’échantillon était constitué de 113 participants
+étudiants de langue et de culture française,
+non issus de l’immigration extra-européenne, d’un âge moyen de 19 ans
+et tous volontaires pour participer à une recherche sur l’opinion à l’égard
+des immigrés en Europe.
+2.2 Procédure
+Dans le cadre d’une passation collective, une opératrice indiquait qu’elle
+réalisait une recherche sur l’opinion des jeunes à l’égard de l’immigration
+en Europe. Elle demandait aux participants de remplir un questionnaire
+anonyme. Il s’agissait de sept items (cf. annexe 1)
+adaptés à l’issue d’une double traduction par deux experts de l’échelle
+moderne de racisme de McConahay (1986). L’échelle de type Likert, allant de
+1 « pas du tout d’accord » à 5 « tout à fait d’accord », mesurait le degré
+d’accord des participants avec chaque item.
+3. RESULTATS
+Dans un premier temps, il importait de vérifier la cohérence interne de
+l’échelle.
+La fiabilité de l’échelle s’est avérée bonne (σ = 0,67 ; ρ = 0,76)
+1
+.
+Dans un second temps, il s’agissait d’évaluer la structure factorielle de
+l’échelle et de tester l’hypothèse de son unidimensionnalité. Une analyse
+factorielle confirmatoire a été effectuée à l’aide du logiciel AMOS 5.1. Elle
+permet d’analyser la matrice de covariance. Un bootstrap a été réalisé avec 300
+réplications. Les indicateurs du modèle LISREL permettent de considérer la
+variable latente construite comme fiable (χ2 = 11,07  p =
+0,68 ; χ2/ddl = 0,79 ; RMSEA = 0 ; GFI = 0,97 ;
+CFI = 1)
+2
+. D’autre part, toutes les saturations (loading) sont significativement
+supérieures à zéro ; la corrélation avec la variable latente est cependant à
+améliorer car un certain nombre d’items ne partagent pas plus de 50% de leur
+variance avec la variable latente.
+Par ailleurs, les participants ne sont pas polarisés et leurs réponses semblent
+illustrer le contrôle de l’expression publique des stéréotypes (Devine, 1989).
+4. DISCUSSION
+L’étude réalisée avait pour objectif d’examiner la transposabilité en contexte
+français de l’échelle de racisme moderne de McConahay. Les premiers résultats
+relatifs à la cohérence interne et à l’unidimensionnalité adaptée au contexte
+sont encourageants ; ils demandent cependant à être consolidés avec un
+échantillon plus important.
+Pour suivre la procédure de validation définitive de l’échelle (Vallerand, 1989),
+il conviendrait cependant de vérifier également la validité de construit de
+cette échelle auprès d’un nouvel échantillon en examinant le lien avec d’autres
+construits. McConahay s’intéressait pour sa part à la corrélation avec la
+sensibilité religieuse ou politique mais ces facteurs comportent une dimension
+culturelle spécifique aux Etats-Unis qui rend la transposition délicate. Il
+faudrait trouver une variable endogène expliquée par la variable de racisme
+exogène Il conviendrait enfin d’examiner la stabilité temporelle de l’échelle en
+ayant recours à un test-retest. Une analyse multigroupes devrait par ailleurs
+permettre de conclure à la transposabilité des items utilisés originellement
+dans un espace socio-culturel légitimant une organisation sociale
+intercommunautaire (les Etats-Unis) à un autre contexte socio-culturel (la
+France), organisé sur un mode non communautaire ; l’exogroupe étant ici
+constitué par la référence à l’immigration. Il peut être enfin nécessaire de
+renforcer les items par des dimensions spécifiques à la culture européenne.
+Malgré les améliorations amenées par McConahay en comparaison des échelles de
+racisme classique, toute utilisation d’échelle ne peut complètement éliminer les
+phénomènes de désirabilité sociale ; il convient alors de compléter l’étude des
+préjugés à l’égard des exogroupes par le recours à d’autres méthodes. La mesure
+implicite des attitudes offre une alternative possible. Parmi ces techniques, on
+peut citer  les mesures physiologiques et non verbales (Cacioppo et Petty,
+1979), l’amorçage (Devine, 1989) ou le test des associations implicites
+(Blaison, Chassard, Kop et Gana, 2006 ; Dambrun, Guimond et Michinov, 2003 ;
+Dambrun et Guimond, 2004 ; Greenwald, McGhee et Schwartz, 1998).
+Dans un autre registre, l’étude du discours constitue également une solution
+intéressante pour mieux appréhender la face cachée des préjugés. Le langage
+permet en effet de représenter le monde ou d’exprimer des pensées de façon
+directe ou indirecte. Dans ce dernier cas, la posture rhétorique est fréquente
+et sa mobilisation prend des formes variées : soit à travers des formules
+exprimant un rapport distancié (« je ne suis pas raciste, mais… »), soit à
+travers des attributions externes (« j’ai entendu cette histoire drôle »), soit
+à travers des formes ludiques dans un contexte où il s’agit de s’amuser ou
+d’attirer l’attention, soit par le recours aux formes antinormatives pour faire
+rire, soit à travers des communications équivoques (par exemple le recours à des
+modalisations de doute telles que « probablement », « peut-être », renvoyant à
+l’origine ethnique), soit enfin à travers l’utilisation d’un langage abstrait
+(Van Dijk, 1983 ; Van Dijk, 1993 ; Myers, 1999 ; Vincent et Perrin, 1999 ;
+Guérin 2003).
+En rendant accessibles les représentations des individus et des groupes,
+c’est-à-dire l’implicite contenu dans le discours à travers notamment sa forme
+rhétorique, le langage peut constituer un instrument de choix pour étudier les
+non-dits des attitudes intergroupes.
+5. BIBLIOGRAPHIE
+Adorno, T. W., Frankel-Brunswik, E., Levinson, D. J., &amp; Sanford, R. N.
+(1950). The authoritarian personality. New York :
+Harper &amp; Row.
+Allport, G. W. (1958). The nature of prejudice. New
+York : Doubleday-Anchor.
+Blaison, C., Chassard, D., Kop, J.L., &amp; Gana, K. (2006). L’IAT
+(Implicit Association Test) ou la mesure des cognitions sociales
+implicites : revue critique de la validité et des fondements théoriques des
+scores qu’il produit. L’Année Psychologique,106(2),
+305-336.
+Cacioppo, J. T., &amp; Petty, R. E. (1979). Attitudes and cognitive
+response : An electrophysilogical approach, Journal of
+Personality and Social Psychology, 37, 2181- 2199.
+Chin, W. W., &amp; Tood, P. A. (1995). On the Use, Usefulness, and Ease of Use of Structural Equation
+Modeling, In MIS Research : a Note of Caution, (pp.237-246).
+MIS Quarterly. .
+Dambrun, M., &amp; Guimond, S. (2004). Les mesures implicites et
+explicites des préjugés et leur relation : développements récents et
+perspectives théoriques. Les Cahiers Internationaux de
+psychologie Sociale, 57, 52-73.
+Dambrun, M., Guimond, S., &amp; Michinov, N. (2003). Les composantes
+automatique et contrôlée des préjugés ethniques. Revue
+Internationale de Psychologie Sociale, 16, 71-96.
+Devine, P. G. (1989). Stereotypes and prejudice : Their automatic and
+controlled components, Journal of Personality and Social
+Psychology, 56, 5-18.
+Devine, P. G., Monteith, M. J., Zuwerink, J. R., &amp; Elliot, A. J.
+(1991). Prejudice with and without compunction, Journal of
+Personality and Social Psychology, 60, 813-830. 
+Dion, K. L. (2003). Prejudice, racism and discrimination, In T. Millon
+&amp; L. M. Lerner, (Eds) Handbook of Psychology Personality
+and Social Psychology, (pp.507-536). New-York, John Wiley Sons.
+Dovidio, J. F., &amp; Gaertner, S. L. (1998). On the nature of
+contemporary prejudice. The causes, consequences and challenges of aversive
+racism. In G. Eberhardt &amp; S. T. Fiske (Eds), Confronting
+racism : the problem and the responses (pp. 3-32). Thousand Oaks :
+Sage Publications.
+Gaertner, S. L &amp; Dovidio, J. F. (1986). The aversive form of racism.
+In J. F. Dovidio &amp; S. L. Gaertner (Eds), Prejudice,
+discrimination and racism, (pp.61- 89). Orlando : Academic
+Press.
+Greenwald A. G., Mc Ghee, D. E., &amp; Schwartz, J. L. K. (1998).
+Measuring individual differences in implicit cognition : The implicit
+association test, Journal of Personality and Social
+Psychology, 74, 1464-1480. 
+Guérin, B. (2003). Combating prejudice and racism : new interventions from
+a functional analysis of racist language, Journal of
+Community and Applied Social Psychology, 13, 29-45.
+Katz, I., Wackenhut, J., &amp; Hass, R. G. (1986). Racial ambivalence,
+value duality and behavior. In J. F. Dovidio &amp; S. L. Gaertner (Eds), Prejudice, discrimination and racism (pp. 35-60). New
+York : Academic Press.
+Katz, I. &amp; Hass, R. G. (1988). Racial ambivalence and american value
+conflict : correlational and priming studies of dual cognitive structures,
+Journal of Personality and Social Psychology, 55,
+893-905.
+Lemaine, G. (1997). Quelques remarques sur le domaine du racisme, Psychologie Française, 44 (2), 131-142.
+Lemaine, G., &amp; Matalon, B. (1985). Hommes supérieurs,
+hommes inférieurs?
+La controverse sur l’hérédité de l’intelligence.
+Paris : Armand Colin.
+Lerner, M. J. (1980). The belief in a just world : A
+fundamental delusion. New-York : Plenum.
+McConahay, J. B., Hardee, B.B., &amp; Batts, V. (1981). Has racism
+declined ? It depends on who is asking and what is asked. Journal of Conflict Resolution, 25, 563-579.
+McConahay, J. B. (1986). Modern racism, ambivalence and the modern racism
+scale. In J. F. Dovidio &amp; S. L. Gaertner (Eds), Prejudice, discrimination and racism (pp. 91-125). New York :
+Academic Press.
+Monteith, M. J. (1993). Self-regulation of prejudiced responses :
+implications for progress in prejudice reduction efforts, Journal of Personality and Social Psychology, 65, 469-485.
+Monteith, M. J. (1996a). Affective reactions to prejudice-related
+discrepant responses : the impact of standard salience. Personality and Social Psychology Bulletin, 22, 48-59.
+Monteith, M. J. (1996b). Contempoirary forms of prejudice-related conflict
+: in search of a nutshell. Personality and Social Psychology
+Bulletin, 22 (5), 471-473.
+Myers, G. (1999). Functions of reported speech in group discussion. Applied Linguistic, 20, 376-401.
+Pettigrew, T. F., &amp; Meertens, R.W. (1995). Subtle and blatent
+prejudice in western Europe. European Journal of Social
+Psychology, 25, 57-75. 
+Rokeach, M. (1960). The open and closed mind.
+New-York : Basic Books.
+Sears, D. O. (1988). Symbolic racism. In P. A. Katz &amp; D. A. Taylor
+(Eds.), Eliminating racism : profiles in conttroversy
+(pp. 53-84). New York : Plenum Press.
+Sears, D.O., &amp; Kinder, D. R. R. (1971). Racial tensions and voting in
+Los Angeles, In W.Z. Hirsch (Ed), Los Angeles : viability
+and prospects for metropolitan
+leadership, (pp.51-88). New-York, Praeger.
+Taguieff, P.A. (1990). La force du préjugé : essai sur le
+racisme et ses doubles. Paris : Gallimard.
+Vallerand, R. J. (1989). Vers une méthodologie de validation
+transculturelle de questionnaires psychologiques : implications pour la
+recherche en langue française. Psychologie Canadienne,
+30, 662-680.
+Van de Vijver, F., &amp; Hambleton, R. K. (1996). Translating tests : Some
+practical guidelines. European Psychologist, 1,
+89-99.
+Van Dijk, T. A. (1983). Cognitive and conversational strategies in the
+expression of ethnic prejudice. Text, 3,
+375-404.
+Van Dijk, T. A. (1993). Stories ans racism. In D. K. Mumby (Ed), Narrative and social control : critical perspective
+(pp. 121-142). London : Sage.
+Vincent, D., &amp; Perrin, L. (1999). On the narrative vs non-narrative
+functions of reported speech : a socio-pragmatic study. Journal of Sociolinguistic, 3, 291-313.
+ANNEXE 1:
+Echelle d’attitude envers les immigrés adaptée de l’échelle de racisme moderne de
+McConahay (1986) :
+1) Au cours des dernières années, les gouvernements et les médias ont manifesté
+beaucoup d'indulgence à l'égard des immigrés et de l'immigration en général.
+2) Il est facile de comprendre la colère et les revendications des immigrés
+vivant en France.
+3) La discrimination envers les immigrés n'est plus un problème majeur en France.
+4) Au cours des dernières années, les aides accordées aux immigrés ont été plus
+importantes qu'elles ne devraient l'être.
+5) Les immigrés ont une influence culturelle plus importante que celle qui
+devrait leur être réservée.
+6) Depuis quelques années, les immigrés deviennent de plus en plus exigeants dans
+la revendication concernant l'égalité des droits.
+7) Les immigrés doivent, de temps en temps, savoir rester à leur place.
+1 L’alpha de Cronbach est un peu faible mais la littérature indique
+que le rho de Jöreskog est préféré à l’alpha car il intègre le terme d’erreur
+(Chin, 1995).
+2 Le Khi carré est non significatif ; la matrice de données semble
+donc bien correspondre à la structure factorielle proposée. GFI est proche de
+1 ; la structure semble donc s’harmoniser aux données. Les résultats pour RMSEA
+(Root Mean Square Error of Aproximation) vont également dans le sens des
+hypothèses.
+

@@ -1,0 +1,342 @@
+
+Notre étude part du constat que les apprenants d’une L2, même très avancés, peinent à
+atteindre le niveau de compétence des locuteurs natifs. Nous postulons que cela est
+lié au fait que les différentes possibilités grammaticales offertes par les langues
+influencent le locuteur d’une langue donnée au moment de la sélection de
+l’information en vue de la verbalisation (Levelt, 1989, Slobin, 2003). Nous nous
+intéressons donc à l’interface entre la perception du monde et la verbalisation. En
+fonction des marqueurs grammaticaux présents dans leur langue, les locuteurs vont
+focaliser leur attention sur tel ou tel élément de la réalité. La verbalisation du
+monde diffère donc en fonction de la langue du locuteur, et des formes linguistiques
+offertes par celle-ci (Slobin, 1996, von Stutterheim, 2003).
+Pour tester cette hypothèse et voir dans quelle mesure les apprenants intègrent les
+moyens offerts par la langue cible, nous avons mis au point un dispositif
+expérimental qui suscite l’expression de l’aspect « en déroulement ».
+Le choix de l’aspect est pertinent pour la comparaison du français et de l’anglais,
+car l’anglais code l’aspect « en déroulement » morphologiquement sur le verbe, alors
+que le français a recours soit au présent simple, soit à la périphrase « en train de
+» pour l’exprimer. Nous supposons que ces divergences grammaticales ont des
+conséquences sur les choix opérés au niveau conceptuel.
+Notre analyse s’insère dans un projet européen sur l’acquisition des langues
+étrangères par des apprenants de niveau avancé (Carroll, Lambert, Natale, Starren,
+von Stutterheim, à paraître). Les mêmes supports expérimentaux sont utilisés à
+Heidelberg (Allemagne) et à Nijmegen (Pays Bas) dans le cadre de ce projet pour
+comparer d’autres paires de langues qui présentent un contraste au niveau du
+marquage aspectuel.
+Nous utilisons deux tâches expérimentales dans notre travail de thèse. Les résultats
+de la première expérience – une tâche de compte-rendu online
+de vidéo clips suscitant l’expression de l’aspect « en déroulement » – nous ont
+montré que « en train de » est employé par les francophones à hauteur de 26% (contre
+91% pour be + V-ing chez les
+anglophones), et que cette périphrase n’est utilisée que pour rendre compte de
+certains types de situations : on ne la trouve jamais pour décrire des situations de
+mouvement ou de déplacement, alors qu’elle est fréquente avec les scènes montrant
+une activité orientée vers un but, ainsi qu’avec les situations de simultanéité.
+Nous souhaitons donc affiner notre analyse de l’utilisation de l’aspect « en
+déroulement » par les francophones apprenants de l’anglais et nous avons mis sur
+pied un nouveau dispositif expérimental, constitué de clips publicitaires suscitant
+l’expression de la simultanéité, ce qui permet de tester les marqueurs adoptés par
+les locuteurs francophones et anglophones natifs, et par les apprenants francophones
+de l’anglais, lorsqu’il s’agit de faire un récit d’événements simultanés. Nous
+posons donc les questions suivantes :
+۰ Quels moyens linguistiques sont employés par les trois groupes de locuteurs (FrL1,
+AngL1, FrL1 AngL2) pour exprimer la simultanéité ?
+۰ Les préférences sont-elles divergentes selon les langues sources ?
+۰ Le marquage aspectuel joue-t-il un rôle structurant pour l’expression de la
+simultanéité ?
+Nous cherchons désormais comment les locuteurs francophones et anglophones et les
+apprenants francophones de l’anglais expriment la simultanéité : à l’aide de
+temporelles (« en même temps que », while…), et/ou à l’aide
+du marquage aspectuel (« en train de », Ving). Ex.: “He is licking off the ketchup, and at the same time, his brother
+walks into the room.” (Locuteur anglophone natif).
+Ainsi on pourra voir dans quelle mesure les formes aspectuelles sont utilisées par
+les locuteurs anglophones et francophones, et par les apprenants avancés
+francophones de l’anglais, pour l’expression de la simultanéité.
+1. Méthodologie
+Nous avons choisi d’avoir recours à une tâche de récit pour l’étude de la
+simultanéité. Dans la tâche de compte-rendu online de
+notre première expérience, les locuteurs n’avaient en effet pas le temps de
+planifier la verbalisation. Avec une tâche de récit au contraire les locuteurs
+peuvent planifier la macrostructure de leur narration : nous souhaitons donc
+voir si le marquage aspectuel joue un rôle de structuration de l’information
+dans le récit.
+1.1. Présentation de la tâche
+Notre tâche de récit est composée de 5 clips vidéo publicitaires, sans
+paroles ou avec un message verbal minimal et non nécessaire à la
+compréhension de la situation. Ces cinq clips sont intitulés Canal +,
+Saumon, Hotdog, Soupe et Supermarché. Les sujets visionnent les publicités
+autant de fois qu’ils le souhaitent, afin de mémoriser la séquence
+d’événements. Après avoir visionné une publicité, le sujet en effectue un
+récit, puis visionne la publicité suivante et ainsi de suite.
+1.2. Corpus
+Pour cette tâche nous disposons de 12 locuteurs francophones natifs, de 20
+locuteurs anglophones natifs, et de 10 apprenants quasi-natifs francophones
+de l’anglais.
+Tous ces locuteurs sont diplômés de l’université, ce qui garantit la
+comparabilité des résultats ; les apprenants quasi-natifs francophones de
+l’anglais sont des enseignants certifiés ou agrégés d’anglais. Les
+enregistrements ont été réalisés chez les sujets dans des conditions
+informelles.
+1.3. La simultanéité : une définition
+Les situations présentées dans les clips du support ont été sélectionnées car
+elles présentent des événements qui se déroulent de manière simultanée.
+Toutes ces situations présentent deux protagonistes ou plus.
+Il y a simultanéité lorsque deux (ou plus) événements prennent place dans le
+même intervalle temporel. La simultanéité est perceptible lorsque ces deux
+événements se déroulent dans un espace commun (au moins aux yeux de
+l’énonciateur). Les événements simultanés peuvent n’avoir aucun lien entre
+eux ou être entremêlés. Nous nous intéressons donc à l’interface entre la
+perception de deux événements simultanés par un locuteur et à la manière
+dont il va représenter verbalement cette situation, en fonction des moyens
+grammaticaux/linguistiques qui sont à sa disposition.
+Les cinq clips de notre étude présentent deux événements (E1, événement
+cadre, et E2) ayant lieu de manière simultanée. Certains événements sont
+itérés : c’est le cas dans les clips Soupe et Saumon. Dans certains clips,
+E1 et E2 sont deux événements qui se déroulent en parallèle, sans que l’un
+ne vienne perturber ou interrompre le déroulement de l’autre. C’est le cas
+pour le clip « Saumon » où l’action du cuisinier qui prépare le repas (E1)
+et celle du chat qui dérobe des tranches de saumons (E2) se déroulent en
+parallèle, sans que E1 n’interrompe E2. Dans ce cas, on n’a pas de rupture
+événementielle.
+Dans d’autres cas, un événement E2 vient interrompre un autre événement E1 :
+soit E2 met un terme à E1, comme c’est le cas dans le clip Hotdog où le
+jeune garçon qui lèche le poster (E1) est interrompu par l’irruption dans la
+chambre de son grand frère (E2), soit les deux événements se déroulent
+ensuite en parallèle, comme dans le clip Canal+ où l’homme continue de
+regarder la télévision (E1) après l’irruption des mécaniciens qui s’activent
+autour de son canapé (E2). On parle, pour ces clips, de rupture
+événementielle. Dans le clip Canal+, E2 est inclus dans E1 : les événements
+sont « emboîtés ». On peut donc résumer les différents traits
+caractéristiques des clips de la manière suivante :
+94. Pas de rupture événementielle : E1 // E2
+95. Rupture événementielle (E2 interrompt E1) ; on peut alors distinguer
+trois cas :
+1. soit E2 met un terme à E1
+2. soit les deux événements continuent à se dérouler de manière parallèle,
+sans que le terme de l’événement ne soit atteint
+3. Inclusion (E2 est inclus dans E1 : les événements sont « emboîtés »)
+96. Itération (E2 est un événement complexe composé d’événements répétés)
+Nous souhaitons évaluer l’impact de ces différents traits sur les choix des
+locuteurs au moment de la verbalisation.
+Tableau 1 - Caractéristiques des clips
+Dans cette analyse, nous nous intéresserons particulièrement au trait «
+rupture événementielle » : nous tenterons de déterminer si ce trait
+déclenche l’utilisation du contraste aspectuel dans les récits des trois
+groupes de locuteurs.
+1.4. Exemples de récits
+۰ Récit oral FrL1, Clip Hotdog, sujet MAA
+Alors on voit un garçon qui rentre de l’école, qui se précipite dans la cuisine et qui va ouvrir son frigidaire, prendre un pot de moutarde et un pot de ketchup, ensuite il se fait un sandwich très rapidement et il monte dans sa chambre en courant et en fait il dévore son sandwich et en fait ça explose sur un poster d’une fille à moitié nue dans sa chambre, et donc en fait après il se met en fait à lécher la moutarde qui a explosé sur le ventre de la fille, et juste à ce moment là en fait il y a un garçon qui doit être sûrement son grand frère qui rentre dans sa chambre, et qui lui fait un clin d’œil.
+۰ Récit oral AngL1,Clip Hotdog, sujetS22
+So a young boy comes home, maybe about fourteen, and he throws his bag on the floor. And then he goes into the kitchen and he finds some hotdogs, some ketchup, some mustard, and he makes a hotdog. He goes upstairs to his bedroom, and while he is eating his hotdog, he squirts some of the mustard and ketchup onto a poster on his bedroom wall. He goes to lick off the ketchup, and the mustard, and while he is doing this, his brother walks into the room and thinks he is licking the poster and starts to tease him.
+۰ Récit oral FrL1 AngL2, Clip Hotdog, sujet ETI
+Ok, so there’s a young boy coming back from school, a young teenager, throws his bag as he goes into the house, goes into the kitchen, takes some ketchup or either mustard or mayonnaise, I can’t remember, and he makes a hotdog, loads of mayonnaise, loads of ketchup, then he goes into his room, starts eating it, bites it, and some of the sauce spurts on some kind of poster of a sexy woman half naked, and then he goes to the poster and starts licking it, to lick the sauce, and as he’s licking the sauce his brother, well, his brother I think comes in and makes fun of him, and he’s all shy, and he didn’t expect that basically.
+1.5. Caractéristiques des récits
+1.5.1. Les adverbiaux temporels
+Tous les récits contiennent des adverbiaux temporels, qui permettent de
+marquer la concomitance à travers la rupture temporelle (« tout d’un
+coup »), l’ouverture d’un cadre temporel au sein duquel prennent place
+une série d’événements (« pendant que »), ou la successivité (« et puis
+»). Dans ce dernier cas, le contexte (notamment le marquage aspectuel)
+nous permet de déduire s’il s’agit de successivité ou de simultanéité.
+Tableau 2 - Les compléments adverbiaux temporels (5 clips)
+Ces chiffres révèlent une nette préférence des anglophones pour
+l’expression de la séquentialité, alors que les francophones
+privilégient l’expression de la rupture temporelle. Quant aux
+apprenants, comme les anglophones, ils emploient majoritairement les
+adverbes exprimant la séquentialité, toutefois ils emploient les
+compléments adverbiaux marquant l’ouverture de deux intervalles
+parallèles (« at the same time », « while ») de manière beaucoup plus
+importante que les deux groupes de locuteurs natifs.
+Nous verrons comment les adverbiaux temporels sont employés en complément
+du marquage aspectuel.
+1.5.2. Temps et aspects
+Dans l’immense majorité des récits recueillis, les verbes sont au
+présent. Toutefois on observe l’emploi de formes aspectuelles à certains
+endroits du récit. On distingue le marquage aspectuel morphologique,
+comme V-ing en anglais, du marquage lexical de
+l’aspect (« en train de ») en français. Dans cette langue, c’est le
+présent simple qui est employé : l’utilisation de « en train de » dans
+un récit peut alors avoir une valeur contrastive. En anglais, le temps
+du récit est, selon les clips, le présent simple (clip Hotdog) ou le
+présent be + V-ing. Ainsi, dans les récits du
+clip Hotdog, au présent, l’emploi de V-ing sera
+interprété comme contrastif. Au contraire, dans les récits du clip
+Supermarché, majoritairement à la forme be +
+V-ing, c’est le présent simple qui recevra une lecture contrastive.
+L’utilisation du contraste aspectuel à des fins de structuration du récit
+a déjà été montrée dans de nombreuses études, comme celles de Hopper
+(1979) sur le russe, de Givón et Bickerton sur les créoles hawaiien et
+guyanais (cités par Wenzell, 1989), de Lambert, Carroll &amp; von
+Stutterheim (2003), de Chuquet (1994), Schmiedtova (2004), etc. On peut
+donc se demander si le contraste aspectuel entre formes non marquées
+(présent simple) et formes aspectuelles ( be +
+V-ing, « en train de ») fonctionne de la même manière en français
+et en anglais pour rendre concomitants les événements E1 et E2.
+L’analyse de notre corpus nous donne les résultats suivants pour le
+contraste aspectuel :
+Tableau 3 - Le contraste aspectuel : résultats
+2. Analyse des résultats
+2.1. Résultats Fr L1
+En français, on relève des formes progressives contrastives à hauteur de 50%
+dans quatre des cinq clips de notre étude. Les récits des francophones sont
+toujours au présent simple, l’emploi de « en train de » est donc
+nécessairement contrastif. Ce chiffre nous semble très élevé : en effet,
+nous avons trouvé dans une première expérience de compte-rendu online de vidéo clips suscitant l’emploi des formes
+progressives, un taux de « en train de » de 26%, contre 91% de formes en V-ing chez les anglophones. Il semble donc que la
+fréquence d’utilisation de cette périphrase soit faible. Le taux de 50%
+relevé dans notre corpus pourrait donc confirmer notre hypothèse de départ
+selon laquelle la simultanéité suscite l’emploi de « en train de ».
+Parmi les quatre clips pour lesquels « en train de » est fortement utilisé,
+on relève trois clips sans rupture événementielle (Saumon, Soupe et
+Supermarché), et un clip avec rupture événementielle (Canal+). Quant au clip
+Hotdog, qui suscite peu l’emploi de « en train de », il comporte le trait
+rupture événementielle.
+Le critère « rupture événementielle » ne semble donc pas être déterminant en
+français pour susciter l’emploi de « en train de ». Par contre, le fait
+d’avoir E1 et E2 superposés, se déroulant en parallèle, comme c’est le cas
+pour Saumon, Soupe, Supermarché et Canal+, semble entraîner l’emploi du
+contraste aspectuel chez les francophones (voir tableau 1).
+On peut néanmoins se demander pourquoi le taux de formes progressives est
+plus faible dans le clip Hotdog. Comme le fait remarquer Chuquet (1994), une
+succession d’événements brefs envisagés dans leur globalité est généralement
+rendue par le présent simple ; les événements présentés dans ce clip étant
+très courts (le jeune garçon a à peine commencé à lécher le poster lorsque
+son grand frère entre dans la chambre), il est donc logique d’employer le
+présent et non le progressif qui envisage les événements sous l’angle de
+leur déroulement. On a vu dans l’analyse du corpus Clips que le critère «
+durée » de la scène influe sur l’utilisation de « en train de ». Ainsi le
+clip Hotdog, qui présente une succession rapide d’événements brefs,
+n’invite-t-il pas à l’utilisation de « en train de ».
+Cela ne semble pas être le cas en anglais : nous verrons dans le paragraphe
+suivant que les anglophones natifs utilisent V-ing de
+manière contrastive à hauteur de 65% dans cette scène.
+Nos résultats confirment ceux trouvés à partir de notre première tâche
+expérimentale de compte-rendu online : « en train de
+» semble largement employé dans les situations de simultanéité, tout
+particulièrement lorsqu’il s’agit d’activités orientées vers un but
+(préparer le repas, remplir le caddy) et d’événements ayant une certaine
+durée. Il s’agit de voir dans quelle mesure la faible utilisation de « en
+train de » pour signaler la rupture événementielle, comme c’est le cas dans
+le clip Hotdog, est compensée par un recours important aux adverbes de
+rupture temporelle.
+2.2. Résultats Ang L1
+Chez les anglophones, tous les récits sont à la forme en V-ing sauf dans Hotdog : en effet, ce clip présente une série
+d’actions rapides se succédant les unes aux autres : le présent simple en
+combinaison avec des verbes à deux états (de type « enter », dont le sémantisme implique à la fois le début et la fin de
+l’événement) est donc préféré. Pour ce clip, V-ing
+est utilisé de manière contrastive à hauteur de 60%. Dans les quatre autres
+clips, on trouve majoritairement le présent progressif, et c’est le présent
+simple qui est employé pour marquer le contraste.
+On observe que les clips qui ne présentent pas de rupture événementielle
+(Supermarché, Saumon, Soupe) ont un contraste aspectuel plus faible
+(respectivement 47, 37 et 55%). Par contre, les clips avec rupture
+événementielle (Canal +, Hotdog) présentent un contraste aspectuel très fort
+(respectivement 72 et 65%).
+Le critère de rupture événementielle semble donc pertinent pour les
+anglophones mais pas pour les francophones. Il s’agit de voir comment les
+adverbes sont employés par ces sujets en combinaison avec le contraste
+aspectuel pour les deux clips avec rupture événementielle.
+2.3. Résultats Fr L1 Ang L2
+Les apprenants suivent de très près le schéma de marquage aspectuel des
+anglophones : dans les clips Saumon et Canal +, on relève des taux de
+contraste aspectuel identiques chez les anglophones et les apprenants. Dans
+les clips Supermarché et Hotdog, ils dépassent même le taux de contraste
+aspectuel relevé chez les anglophones natifs, même si dans le clip Soupe ils
+emploient le contraste aspectuel de manière légèrement inférieure aux taux
+observés chez les deux groupes de locuteurs natifs. Dans tous les cas, les
+apprenants s’écartent largement de la norme des locuteurs francophones
+natifs, et utilisent le contraste aspectuel de manière très similaire aux
+anglophones. Notre groupe d’apprenants quasi-natifs semble non influencé par
+les usages de Fr L1 pour le marquage du progressif.
+2.4. Compléments adverbiaux dans les Clips présentant une rupture
+événementielle (Hotdog, Canal+)
+Nous allons maintenant observer ce qui se passe pour les trois groupes de
+locuteurs en ce qui concerne l’emploi des compléments adverbiaux dans les
+deux clips qui présentent une rupture événementielle : Hotdog et Canal+. On
+a vu que les francophones emploient peu « en train de » avec Hotdog, mais
+qu’ils l’utilisent beaucoup avec le clip Canal+. Il s’agit désormais
+d’analyser l’usage qui est fait des adverbes de rupture temporelle dans les
+récits de ces deux supports.
+Tableau 4 - Compléments adverbiaux, clip Hotdog
+En ce qui concerne le clip Hotdog, on observe que tous les énoncés
+contiennent des adverbiaux temporels ; les francophones privilégient
+l’emploi des adverbes de rupture temporelle (« et là », « à ce moment-là »,
+« tout à coup »…) alors que les anglophones ont plutôt recours à la
+séquentialité (« then »). En revanche, les apprenants francophones de
+l’anglais choisissent également les adverbiaux de rupture temporelle, dans
+les mêmes proportions que les autres francophones (60%/66,5%).
+Tableau 5 - Compléments adverbiaux, clip Canal+
+Dans le clip Canal+, les francophones préfèrent largement (58%) les adverbes
+exprimant la rupture temporelle, tout comme les anglophones (40%), qui
+marquent néanmoins beaucoup plus la séquentialité (30%). Quant aux
+apprenants, ils se détachent des schémas suivis par les deux groupes de
+locuteurs natifs en n’ayant presque jamais recours aux adverbes de rupture
+temporelle, et privilégient l’expression de la séquentialité et des
+intervalles parallèles.
+On observe donc que les francophones, qu’ils aient ou non recours au
+contraste aspectuel pour marquer la rupture événementielle (clips Canal+ et
+Hotdog), emploient très fortement les adverbes de rupture temporelle (Hotdog
+: 66,5%, Canal+ : 58%).
+Les anglophones qui marquent très fortement le contraste aspectuel dans ces
+deux clips, n’ont pas systématiquement recours aux adverbes de rupture
+temporelle (la séquentialité l’emporte avec 40% dans le clip Hotdog). On
+observe en effet que les anglophones privilégient les adverbes exprimant la
+séquentialité, en combinaison avec un contraste aspectuel fort.
+Quant aux apprenants, ils suivent les schémas des locuteurs anglophones pour
+le marquage aspectuel, mais utilisent les adverbes temporels soit comme les
+francophones (Hotdog) soit d’une manière qui leur est propre (Canal+), en
+n’employant pas d’adverbes de rupture temporelle.
+3. Conclusion
+Les anglophones marquent la rupture événementielle avant tout par le contraste
+aspectuel, en combinaison avec des adverbes exprimant la séquentialité. Les
+francophones au contraire emploient les adverbes de rupture temporelle, avec ou
+sans contraste aspectuel. Il semble donc que la forme en V-ing, grammaticalisée, soit bel et bien employée pour structurer les
+récits des anglophones lorsqu’il s’agit de rendre compte d’événements simultanés
+; « en train de » semble aussi jouer un rôle structurant dans ces récits pour
+les situations se déroulant en parallèle, qu’il y ait ou non rupture
+événementielle.
+Les apprenants très avancés francophones de l’anglais se détachent nettement du
+schéma francophone de marquage aspectuel, et tendent à se rapprocher du modèle
+anglophone. Par contre le bilan est plus nuancé en ce qui concerne l’emploi des
+adverbes temporels : les apprenants continuent parfois à les employer de manière
+francophone (clip Hotdog), alors que dans d’autres circonstances (clip Canal+),
+les choix des apprenants divergent de ceux des deux groupes de locuteurs natifs,
+ce qui semble plaider en faveur d’une interlangue des apprenants avancés. Si le
+marquage aspectuel ne leur pose pas de réel problème, les apprenants très
+avancés semblent néanmoins encore influencés par leur langue maternelle en ce
+qui concerne la structuration des récits. Ce domaine semble donc très résistant
+aux remaniements conceptuels opérés par les locuteurs d’une L2, même très
+avancés.
+Références bibliographiques
+Carroll, Mary, Lambert, Monique, Natale, Silvie, Starren, Marianne &amp; von
+Stutterheim, Christiane (à paraître). Being specific: the role of aspect in event
+construal when grounding events in context. A cross-linguistic comparison of
+advanced second language learners (L1 French–L2 English, L1 German–L2 English, L1
+Dutch–L2 French, L1 Italian–L2 German), in Processes and Outcomes.
+Explaining Achievement in Language Learning, Haberzettl, Stephanie (Ed).
+Berlin: de Gruyter.
+Chuquet, Hélène (1994). Le présent de narration en anglais et en
+français. Linguistique contrastive et traduction. Paris : Ophrys.
+Lambert, Monique, Carroll, Mary, von Stutterheim, Christiane (2003). La subordination
+dans les récits d’apprenants avancés francophones et germanophones de l’anglais, AILE 19 Les énoncés complexes et leur développement dans
+l’acquisition des langues, Aile-Encrages, 41-69.
+Levelt, Willem J.M. (1989). Speaking: from intention to
+articulation. Cambridge, Massachussetts: MIT Press.
+Schmiedtova, Barbara (2004). At the same time… The expression of
+simultaneity in learner varieties. Thèse de doctorat. MPI Series in
+Psycholinguistics.
+Slobin, Dan I., (1996). From ‘Thought to Language’ to ‘Thinking for Speaking’ in Rethinking Linguistic Relativity, Gumperz, John &amp;
+Levinson, Stephen (Eds). Cambridge, Cambridge University Press, 70-96.
+Slobin, Dan I. (2003). Language and thought online: Cognitive consequences of
+linguistic relativity, in Language in mind: Advances in the
+investigation of language and thought, Gentner, Dedre &amp; Goldin-Meadow,
+Susan (Eds). Cambridge, Massachussetts: MIT Press, 157-191.
+Von Stutterheim, Christiane (2003). Linguistic Structure and information
+organisation: The case of very advanced learners, in EUROSLA
+Yearbook, vol. 3, Foster-Cohen, Susan &amp; Pekarek Doehler, Simona (Eds).
+Amsterdam: John Benjamins Publishing Company, 183-206.
+Wenzell, Vanessa E. (1989). Transfer of Aspect in the English Oral Narratives of
+Native Russian Speakers, in Transfer in Language Production,
+Chapter 5, Dechert, Hans &amp; Raupach, Manfred (Eds). Norwood, N.J. (New Jersey):
+Ablex Publishing Corporation, 71-97.
+

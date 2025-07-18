@@ -1,0 +1,251 @@
+
+1. Introduction
+Très peu de grammaires du français contemporain font l’économie d’une allusion à
+la phrase canonique (désormais pc) que ce soit
+explicitement ou par l’entremise d’une formulation approchante comme phrase type. Pour peu que l’on confronte les différents
+usages d’un ouvrage à l’autre, on constate que le concept est instable et mal
+délimité, et qu’en outre il prend place dans une procédure descriptive
+incertaine car trop intuitive. Aussi semble-t-il essentiel de proposer une
+définition précise du concept et de sa place dans le métadiscours linguistique,
+en voyant en particulier à quoi rattacher cette « canonicité » dont
+l’acceptation spontanée est suspecte. Cette démarche est susceptible de
+permettre la différenciation des outils épistémologiques que, selon nous, la pc
+recouvre indistinctement.
+2. La phrase canonique dans les grammaires de référence
+À la suite de C. Germain et H. Séguin (1998), on distingue parmi les grammaires
+explicites, c'est-à-dire les tentatives de notation de la compétence, les
+grammaires dites pédagogiques, inscrites dans le processus
+d’enseignement ou d’acquisition d’une langue, et les grammaires linguistiques, qui visent à décrire ou à simuler au mieux cette
+langue. Pour l’essentiel, c’est parmi ces dernières, dans les grammaires descriptives, qu’il est recouru à la notion de pc, ce qui
+invite à voir une corrélation entre les objectifs spécifiques de ce type
+d’ouvrage et l’objet qui nous occupe ici.
+Tableau 1 - Un instrument d’analyse
+Trois références ont nourri notre enquête : la Grammaire
+méthodique du français (Riegel et al., 1994), la
+Grammaire de la phrase française (Le Goffic, 1993) et
+la Grammaire du français (Denis &amp; Sancier-Château,
+1994). Un bref parcours révèle que la pc est systématiquement convoquée pour
+définir la phrase elle-même [23] – autre insaisissable du métalangage. En outre, le fait que chaque
+grammaire l’emploie sous des noms et/ou des formes différentes n’est pas étranger à l’instabilité de
+la notion.
+2.1. Appellations et représentations
+Riegel et al. évoquent successivement une « phrase de
+base », une « phrase prototypique » et la « phrase canonique » ; ils
+proposent en outre une représentation en métalangage syntaxique : (CC) — Sujet — (CC) — Verbe — Complément(s) / Attribut —
+(CC). La Grammaire du français fait état
+d’une « phrase archétypale » apparentée à la phrase verbale simple. Enfin,
+la Grammaire de la phrase française produit une
+occurrence de « phrase type » : Marie chante.
+Bien que leur fonction commune autorise à voir dans ces entités les avatars
+d’un même concept, la diversité des appellations n’est
+pas dénuée de répercussions théoriques : par exemple, parler d’une « phrase
+de base » implique que d’autres formes dérivent d’une même structure, comme
+l’interrogation et la négation dériveraient de l’assertion positive (la
+notion de transformation n’est alors plus très loin). D’autre part, avec
+l’étiquette de « phrase prototypique », le problème semble déserter
+l’objectivité des faits pour une forme de subjectivité propre au jugement
+d’appartenance catégorielle (voir infra).
+Problème crucial posé à toute science dotée d’ambitions théoriques, les représentations ont elles aussi un impact sur le
+concept qu’elles dénotent et sur son articulation au reste du modèle : ainsi
+Riegel et al. ont-ils recours ci-dessus au
+métalangage formel pour proposer une visualisation de la pc. Ils produisent
+en outre une définition en intension de l’objet en listant ses
+caractéristiques [24]. Enfin, le choix de Le
+Goffic est de représenter la pc par l’entremise d’une occurrence de phrase,
+ce qui ressortit d’une définition en extension. Naturellement, ces choix
+théoriques sont autant d’accès différents à un seul et même objet : la
+phrase canonique. La représentation métalinguistique
+se montre en tant que structure syntaxique abstraite,
+tandis que la description métalinguistique
+dit cette même structure et que l’exemple la réalise effectivement, passant du type à l’occurrence.
+Y a-t-il parmi ces options un choix moins pertinent ? Force est d’admettre,
+si l’on suit Riegel et al. qui veulent voir dans la
+pc un modèle, que la description remplit mal un tel
+office, puisqu’elle énonce les propriétés de son objet sans montrer cet
+objet lui-même.
+2.2. Structure de la phrase canonique
+Si l’on laisse de côté ces divergences, il subsiste encore d’importants
+écarts entre les phrases canoniques des grammaires étudiées. À titre
+d’exemple, entre les phrases « Marie chante. » et « Marie chante une chanson. », peut-on déclarer que
+l’une est « plus » canonique que l’autre ?
+On peut tenir pour évident que la pc est avant tout un modèle syntaxique et
+non pas sémantique. C’est pourquoi il importe peu que l’on rencontre « Marie
+chante. » ou « Marie mange. », qui semblent canoniques au même degré. À
+l’inverse, une phrase plus atypique, comme « Marie abat un sapin. », sera
+moins aisément éligible comme pc du fait que son sens dénotatif fait
+obstacle à une lecture canonique [25]. Mais le
+plus important est que, d’une grammaire à l’autre, les critères constitutifs
+du « canon » divergent même d’un point de vue syntaxique : la Grammaire de la phrase française retient une phrase
+comportant un Verbe et un Nom propre sujet (« Marie chante. »), tandis que
+la Grammaire méthodique du français y ajoute, dans la
+représentation citée plus haut, un complément d’objet (ou un attribut) et
+d’éventuels circonstants.
+En fait, on gagne ici à distinguer deux notions qui se côtoient couramment
+dans les grammaires de référence, à savoir la phrase
+canonique et la phrase minimale. La seconde
+constitue non pas un modèle de la catégorie des phrases mais plutôt une
+forme de limite structurelle de cette catégorie, en deçà de laquelle, dans
+une conception très normative, on ne peut plus parler de « phrases ». À
+l’opposé, la structure de Riegel et al. est plus
+complexe et permet de décrire contrastivement d’autres types de phrase de la
+grammaire française ou d’autres langues. Autrement dit, la phrase minimale occupe une frontière de la catégorie et la pc en
+occupe le centre.
+Concernant la forme syntaxique de la pc, il est éloquent que le modèle
+typologique de Greenberg (1966) comporte non pas deux mais trois
+constituants (SVO). Cela invite à voir dans le schéma proposé par Riegel et al. une structure « plus » canonique que celle de
+la phrase à deux termes. En combinant les critères définitoires des
+grammaire évoquées ici et ceux d’autres textes (dont Willems, 2001), on est
+en mesure de proposer une synthèse des propriétés que semble fixer la phrase
+canonique : il s’agirait donc d’une Phrase assertive
+délimitée graphiquement ou prosodiquement, neutre, simple et d’ordre
+SVO.
+3. Définir la canonicité ?
+Les différences terminologiques étant à peu près aplanies, il reste à déterminer
+précisément pourquoi la pc a la structure mentionnée, c'est-à-dire celle d’une
+phrase assertive simple, et non pas celle d’une phrase interro-négative clivée,
+par exemple. Certains auteurs avancent le droit à l’axiome et ne justifient pas
+leur choix ; d’autres, tels Riegel et al., proposent
+quelques éléments d’explication :
+(i) ils avancent tout d’abord que cette forme est la plus immédiate. Puisqu’il semble être question d’une chronologie – dont la
+nature reste à préciser – il faut voir dans la pc une structure primordiale dont
+procèdent les autres types de phrase (interrogatif, exclamatif, clivées, etc.) ;
+dans les premières versions de la grammaire générative, la notion de phrase noyau, obtenue par un nombre minime de
+transformations, s’approchait nettement de cette conception. Selon la nature de
+la chronologie que sous-entend l’immédiateté invoquée, on
+fera tantôt de la pc une structure de base de la grammaire intériorisée, de la
+compétence, tantôt un outil descriptif de linguiste. Dans le premier cas, la pc
+est réputée prégnante dans les processus cognitifs et constitue une réalité
+psychique ; dans l’autre, son antécédence est liée à une formalisation
+particulière et elle reste un artéfact théorique. Quoi qu’il en soit, cette
+hypothèse est difficilement falsifiable ou vérifiable, mais elle est surtout
+très engagée théoriquement.
+(ii) Une deuxième voie d’explication se fonde sur la fréquence relative de la
+structure canonique. L’idée générale est que l’on voit se réaliser plus souvent,
+dans le discours, des phrases assertives simples que, par exemple, des
+interrogatives ou des phrases averbales. Si cela se vérifie pour les pages du
+Monde, comme l’a montré Ulland (2002), c’est plus
+difficile à concevoir pour la langue littéraire ; quant à l’oral, Lambrecht
+(2007) a montré récemment une propension des locuteurs à ne
+pas produire de structures canoniques.
+(iii) La troisième option envisagée par Riegel et al. est
+de considérer la structure de la phrase canonique comme la plus représentative de la catégorie des phrases. Le problème se déplace
+alors du plan des faits linguistiques à celui du métalangage. Dans les deux
+premiers cas, les explications se fondaient sur la configuration supposée de la
+grammaire intériorisée ou sur l’observation des productions de discours. Ici, en
+l’espèce, c’est le rapport d’une représentation mentale à une catégorie de
+métalangage qui entre en ligne de compte et non le système de la langue
+lui-même.
+4. Un modèle de phrase ?
+On convoque souvent la pc comme un modèle de la phrase ;
+or, un tel concept ne semble pas devoir être pris légèrement compte tenu de ses
+répercussions théoriques. En premier lieu, l’acception doxique du « modèle » – «
+chose ou personne servant de référence à l’imitation » (TLFi) – ne correspond pas même de loin à la fonction de la pc dans les
+grammaires de référence [26]. Une définition
+épistémologique semble plus rigoureuse :
+« Système représentant les structures essentielles d’une réalité et capable à
+son niveau d’en expliquer ou d’en reproduire le fonctionnement. »
+(TLFi).
+Mais alors survient un autre problème, relatif à la possibilité de « reproduire
+le fonctionnement » de l’objet. Deux conceptions du « modèle » se trouvent ici
+opposées : une version faible visant la seule
+représentation statique de certaines propriétés structurales, et une version forte qui y ajoute la dimension du fonctionnement. En
+linguistique, le passage d’une acception à l’autre correspond à la transition
+d’un système descriptif, qui représente des phrases, à un
+système génératif, capable de prédire la forme d’autres
+objets plus ou moins complexes, tout en opérant la discrimination des phrases
+bien ou mal formées. Les théories chomskyennes, qui font usage de modèles «
+forts », en sont une illustration, mais on peut voir de cela une version
+simplifiée dans la représentation proposée par Riegel et
+al.
+Qu’en est-il des autres formes de pc ? Comme on l’a dit plus haut, la définition
+en intension, tout d’abord, est incapable de remplir un rôle de modèle –
+puisqu’elle ne représente rien. Quant à l’occurrence de
+pc « Marie chante une chanson. », il s’avère qu’on ne
+peut fabriquer d’autres phrases à partir d’elle (et encore moins en prédire
+l’acceptabilité) sans possession préalable de la grammaire complète de la
+langue.
+En fait, la vocation de cette occurrence n’est pas de démontrer mais de montrer
+un certain nombre de propriétés positives : la phrase « Marie
+chante une chanson. » n’a pour seul rôle que d’incarner un exemplaire
+de phrase assertive neutre d’ordre SVO. Mais elle l’incarne en déployant autour
+d’elle un réseau de ressemblances et d’oppositions qui relie toutes les autres
+structures de phrase possibles de la langue et qui constitue la catégorie
+des phrases.
+Suivant les travaux de Rosch (1973), on est fondé à voir dans cette occurrence de
+phrase un prototype de sa catégorie :
+« Un prototype est une instance typique d’une catégorie […] les autres
+éléments sont assimilés à cette catégorie sur la base de leur ressemblance
+perçue avec le prototype. » Langacker (apud Kleiber, 1990).
+Dans le cadre d’une grammaire de référence, qui vise à décrire et expliquer le
+code, un tel outil a pour fonction de fonder le métalangage non pas sur des
+propriétés réputées inhérentes aux objets, c'est-à-dire sur le système des
+conditions nécessaires et suffisantes, mais sur des représentations mentales
+partagées. C’est du reste cette même phrase prototypique qui est utilisée dans
+la typologie de Greenberg (1966) : pour comparer et classer les langues, on
+confronte des occurrences de phrases éligibles comme instances typiques de la
+catégorie des phrases de chaque langue.
+5. Conclusion
+Un bref parcours à travers quelques grammaires révèle bien une tendance commune à
+utiliser un concept régulateur pour aborder la question de
+la phrase. Ce concept connaît des appellations et des représentations variées :
+la Grammaire de la phrase française propose ainsi un
+outil plus proche de la phrase minimale, tandis que les autres font usage, sans
+distinction explicite, de modélisations (faibles ou fortes) et de prototypes.
+Toutes ces solutions visent à contourner le caractère insaisissable de la notion
+de « phrase ». Comme l’a montré récemment Kleiber (2003), une définition
+aristotélicienne de celle-ci ne permet pas de rendre compte de la diversité des
+configurations rencontrées en discours. Selon le linguiste, c’est par le biais
+d’une redéfinition prototypique que le concept semble pouvoir conserver quelque
+consistance. En un sens, la phrase canonique semble bien avoir anticipé cette
+solution, plus ou moins consciemment. Ce faisant, elle compense par ailleurs un
+problème épistémologique pointé par Culioli (1990) et Milner (1989), à savoir le
+fait que la langue est, pour le linguiste, à la fois un objet d’investigation et
+un outil descriptif.
+Références bibliographiques
+Culioli, Antoine (1990). Pour une linguistique de
+l’énonciation t.I – Opérations et représentations. Paris :
+Ophrys.
+Denis, Delphine &amp; Sancier-Château, Anne (1994). Grammaire du français, Paris : Livre de Poche.
+Gautier, Antoine (2006). Unité et discontinuité : une
+approche épistémologique et systématique de la phrase. Thèse de
+doctorat, Paris IV.
+Germain, Claude &amp; Séguin, Hubert (1998). Le point
+sur la grammaire. Paris : cec, cle international.
+Greenberg, Joseph H. (Ed) (1966). Universals of
+Language, Second edition, Cambridge : The MIT Press.
+Kleiber, Georges (1990). Sémantique du prototype,
+Paris : P.U.F.
+Kleiber, Georges (2003). Faut-il dire « adieu » à la phrase ?, L’Information grammaticale, 98.
+Lambrecht, Knud (à paraître, 2007). Contraintes
+cognitives sur la syntaxe de la phrase en français parlé, in Actes du Colloque Modèles syntaxiques, Bruxelles, 6-8 mars
+2003, Van Raemdonck, Dan (Ed). s.l.n.d.
+Le Goffic, Pierre (1994). Grammaire de la phrase
+française. Paris : Hachette.
+Milner, Jean-Claude (1989). Introduction à une science
+du langage. Paris : Seuil.
+Riegel, Martin, Pellat, Jean-Christophe &amp; Rioul, René (1994). Grammaire méthodique du français. Paris :
+P.U.F.
+Rosch, Eleanor (1973). Natural categories, Cognitive
+psychology, 4, San Diego : Academic press.
+Willems, Dominique (2001). Linéarité et métalangue : de la phrase type aux
+types de phrases, in Métalangage et terminologie
+linguistique, Actes du colloque international de Grenoble (Université
+Stendhal – Grenoble III, 14 16 mai 1998), Colombat, Bernard &amp;
+Savelli, Marie (Eds). Leuven-Paris-Sterling : Peeters.
+Références aux sites Internet
+Ulland, Harald, Les titres rédactionnels phrastiques et leur analyse
+automatique en prédicat et arguments,
+http://www.duo.uio.no/roman/art/rf-16-02-2/fra/ulland.pdf, (2002).
+[23] À titre d’exemple : « Il est avantageux de se doter au départ
+d’une structure (ou forme) canonique de la phrase. […] C’est par rapport à ce
+schéma de référence (ou modèle opératoire) que sont décrites toutes les phrases
+observables. » (Riegel et al., 1994 : 109).
+[24] « Phrase assertive, simple […] et neutre. » (Riegel et al., 1994).
+[25] À cet égard, la sémantique ne semble pas complètement étrangère
+à notre propos. Pour autant, la pc ne saurait être qu’une séquence
+décontextualisée et non un « énoncé » dans la mesure où elle illustre des faits
+de langue et non de parole
+[26] En revanche, elle peut rappeler certaines pédagogies de
+l’enseignement des langues pour lesquelles la maîtrise du code passe par la
+répétition de phrases visant à l’assimilation de structures clés.
+

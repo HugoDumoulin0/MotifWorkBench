@@ -1,0 +1,388 @@
+
+Introduction
+Comment dire oui ? La réponse semble aller de soi, le français possédant un
+certain nombre de marques d’accord, comme oui, d’accord, voilà, tout à fait, etc. qui sont dévolues à cette fonction. Or, quand on
+analyse de près ce que font des apprenants non-natifs de français langue
+étrangère quand ils conversent en français, on s’aperçoit qu’au contraire leur
+utilisation pose un certain nombre de problèmes : on entend un bien sûr là où l’on attendrait plutôt un
+d’accord, un oui là où l’on aurait attendu un
+renchérissement par voilà. Bref, le maniement des marques
+d’accord n’est pas si simple, et il est relativement important dans la mesure où
+il participe à la politesse conversationnelle qui, sous nos latitudes,
+privilégie le consensus et la coopération interactionnelle [217]. Les professionnels du français langue
+étrangère encouragent d’ailleurs à enseigner les stratégies interactives de «
+coopération interpersonnelle » qui permettent de « commencer, soutenir et
+terminer une conversation avec naturel et avec des tours de parole efficaces »
+(Cadre européen commun de référence pour les langues, 2001 : 69-70). Les marques
+d'accord pourraient facilement rentrer dans ce cadre.
+Difficiles à manier, les marques d’accord sont aussi difficiles à cerner sur le
+plan définitionnel. Grammaticalement parlant, il ne s'agit pas d'une catégorie
+homogène : un grand nombre de marques relève de la classe des adverbes en tant
+que « marqueurs des actes illocutoires de l’acquiescement » (Riegel, Rioul &amp;
+Pellat, 2002 : 376), d'autres comme hm hm sont plutôt
+classées dans les interjections. L’expression « marques d'accord » permet de
+dépasser cette hétérogénéité grammaticale et de désigner les mots qui vont de
+l’expression de la régulation à l’expression d’un accord dans un tour de parole
+en bonne et due forme, comme réponse ou enchaînement à toute une série d’actes
+initiatifs tels que la question, l’assertion, la demande de confirmation ou
+l’offre. En analyse interactionnelle, on peut également leur trouver des
+affinités avec ces « petits mots » qui participent au maintien du flux discursif
+par « une activité minimum de gestion assurant la continuité du fil tissé par
+l’interlocuteur » (Bruxelles &amp; Traverso, 2001 : 47). Mais, parmi ces
+derniers, les chercheurs se sont plutôt intéressés à d’autres marques qui
+n’expriment pas directement l’accord comme ben (Bruxelles
+&amp; Traverso, 2001), hein (Delomier, 1999), quoi (Chanet, 2001).
+Les marques d’accord constituent donc un ensemble ouvert et polymorphe que le
+champ de la linguistique (traditionnelle, discursive, interactionnelle) n’a pas
+encore entièrement investi, peut-être parce qu’elles ne posent pas a priori de problème particulier. Ce sont les difficultés
+et hésitations du non-natif qui vont du même coup attirer l’attention du natif
+sur des faits de langue passés inaperçus. L’objectif sera ici à la fois
+linguistique et didactique : il s’agira de proposer quelques explications
+linguistiques et interactionnelles de quelques marques d’accord qui posent
+problème aux apprenants de français langue étrangère, de façon à en faciliter
+l’apprentissage en classe.
+Pour cela, nous partirons de données concrètes tirées du corpus LanCom, corpus
+différentiel natif/non-natif élaboré à partir des années 1990 en Belgique
+néerlandophone par l'Université de Louvain-Leuven. Ce corpus accessible sur
+Internet est composé de deux volets : une partie a été enregistrée dans les
+classes de l’enseignement secondaire en Flandre, où les élèves ont joué sous
+forme de jeux de rôle des situations de la vie quotidienne, l’autre partie est
+composée des mêmes situations jouées ou filmées de manière authentique en
+France. Les données que nous utiliserons ici constituent une sorte de
+sous-corpus de 19 645 mots, formé de cinq transactions dans une agence de voyage
+à Lille (filmées en février 1993 et en juin 2006), avec trois employées
+différentes, et de treize jeux de rôle du même type de transaction joués par
+trois classes du secondaire en Belgique néerlandophone (avril 2006). Le type
+d'interaction qu’induit une agence de voyage est particulièrement intéressant
+pour l’étude des marques d’accord : dans ces interactions relativement
+codifiées, les interlocuteurs qui ont des rôles très spécialisés, celui de
+vendeur et de client, doivent mettre en place tout un système de coopération
+interpersonnelle afin de parvenir au terme de l’échange qui est l’obtention du
+bien ou sa promesse.
+Or la coopération n’est pas exprimée de la même manière chez francophones et
+néerlandophones, c’est ce que nous montrera l’étude comparative de l’ensemble
+des marques mobilisées par les deux groupes. Si le néerlandophone exprime bien
+son accord, il le fait tout autrement, pourquoi ? On se demandera dans un second
+temps s’il ne serait pas influencé dans ses choix par l’input éducationnel,
+c’est-à-dire le discours du professeur et les manuels de français langue
+étrangère. Enfin, on tentera de dégager quelques traits marquants de quelques
+marques d’accord qui posent problème aux non-francophones et que ne détaillent
+pas les manuels.
+1. Etude comparative : deux manières différentes de marquer l’accord
+Comment des apprenants néerlandophones de français langue étrangère (FLE)
+expriment-ils l’accord ? L’hypothèse était que des apprenants de niveau avancé
+se rapprocheraient de l’habileté du natif : en 4e, 5e et 6e  de l’enseignement secondaire en
+Flandre, les apprenants enregistrés ont entre quinze et dix-sept ans, et
+étudient le français depuis l’âge de dix ans, à raison de quatre à cinq heures
+par semaine. On peut donc s’attendre à ce qu'ils maîtrisent plus ou moins bien
+la conversation en français et ses marques d’accord, notamment en classe de 6e. Or, de la 4e à la 6e, il y a bien une évolution au niveau de la maîtrise grammaticale et
+lexicale ainsi que de l’aisance à communiquer, mais pas de changement en ce qui
+concerne les marques d’accord. Toutes les interactions néerlandophones ont donc
+été regroupées et comparées à ce que font les natifs dans la même situation.
+Au niveau méthodologique, on a rangé dans la catégorie marques d’accord les mots
+qui appartiennent en général à la catégorie grammaticale d’adverbe ou
+d’interjection (à part voilà qui est un « présentatif »),
+et on a écarté de notre analyse les expressions d’accord, à part c’est ça, c’est bien et c’est bon,
+parce que leur sens ne semble pas véhiculer plus qu’un simple accord. On a
+comptabilisé les occurrences de chaque marque, sans tenir compte des
+associations possibles et souvent réalisées entre elles, ce qui nécessiterait
+une étude à part entière. Le graphique suivant permet de visualiser et de
+chiffrer les différences qui existent entre la pratique de l’apprenant
+néerlandophone et celle du francophone :
+Figure 1 - Francophones et non-francophones : deux manières différentes
+de marquer l'accord
+Sur 10 000 mots dans le volet néerlandophone, on a comptabilisé 580 marques
+d’accord, contre 450 dans le volet francophone, pour 9 645 mots. Autrement dit,
+le néerlandophone acquiesce légèrement plus que le francophone (5,8 marques
+d’accord pour 100 mots contre 4,6 chez le francophone), mais il le fait d’une
+manière bien différente. Tout d’abord, cette plus forte proportion de marques
+d’accord chez le néerlandophone est due à une forte proportion de oui (75,3% de oui, contre 49,1%
+chez le francophone). Ensuite, par rapport aux francophones, les apprenants
+néerlandophones sous-emploient certaines marques comme voilà (13,6 % chez les francophones, 0,7% chez les apprenants
+néerlandophones), ok (6,4% contre 2,4%), c’est ça (2,9% contre 0,3%). D’autres marques sont
+totalement absentes de leur répertoire, comme tout à fait
+(1,6% chez le francophone) et absolument (0,5%). Enfin,
+les apprenants néerlandophones emploient des marques peu ou pas employées par
+les francophones comme c’est bien (2,9% chez le
+néerlandophone contre 0,4% chez le francophone) et c’est bon
+(0,9% chez le néerlandophone) dans des échanges du type [218] :
+E1- ah je ne sais pas pas pas certainement donc je : je vais faire un coup de téléphone
+E2- ah c’est bon ça (jeu de rôle ; 5e n°2)
+E1- bonjour ici c’est (prénom nom) de : de l’a l’agence de voyage de Diksmuide euh est-ce qu’il y a encore une voiture de type A libre dans la période de trois août au euh du trois août au huit euh au dix août [...]
+E2- euh oui c’est bien nous avons encore une voiture (jeu de rôle ; 5e n°3)
+Ces deux expressions sonnent étrangement à l’oreille du francophone qui aurait
+plutôt employé la locution d’accord. Non attestées en
+français de Belgique (selon une informatrice belge), ces marques sont la
+traduction littérale de l’expression het is goed qui est
+l’équivalent de d’accord en flamand (selon un informateur
+flamand).
+En conclusion, cette étude comparée de la fréquence et du type des marques
+d'accord dans les scènes d'agence de voyage montre que le néerlandophone
+acquiesce, et même plus que le francophone, ce qui va à l'encontre de certaines
+idées reçues selon lesquelles les locuteurs des pays du nord seraient moins
+coopératifs dans les interactions et avant tout orientés vers le but, tandis que
+leurs pairs latins seraient très attentifs à la relation avec leurs
+interlocuteurs (voir par exemple Hall et Hall, 1990 : 49). Il semblerait qu'au
+contraire l'apprenant essaye de marquer à toutes les étapes de l'interaction sa
+volonté de coopération et sa compréhension. Cependant, il ne le fait pas de la
+même manière que le francophone, pourquoi ? On se demandera si ce contraste ne
+serait pas lié à la manière dont sont enseignées les marques d’accord, à la fois
+chez l'enseignant et dans les manuels de FLE.
+2. L’enseignement des marques d'accord : la « malédiction paradigmatique »
+[219]
+2.1. L’enseignant : combler les silences et enrichir le vocabulaire
+Les évaluations réalisées par les enseignants ont été enregistrées à la suite
+de chaque jeu de rôle. Parmi eux, une seule enseignante engage explicitement
+ses élèves à marquer l'accord par des expressions diverses [220] :
+P- oui c’est très bien n’oubliez pas hein de épeler= n’oubliez pas non plus les interjections au téléphone = il y a des groupes qui font ça très très bien quelles sont les interjections au téléphone ? pas tout tout le temps hm hm hm hm qu’est-ce qu’on peut dire d’autre ? = aucune idée ? oui
+E- d’accord
+P- d’accord = oui ? (prénom) ?
+E- bien
+P- bien = autre chose ?
+E- je vois
+P- je vois bien entendu je comprends c’est parfait et cætera hein donc il faut compléter il faut meubler un petit peu les silences […] (4e, évaluation au jeu de rôle)
+L'enseignante attire l'attention sur les interjections qui permettent de
+faire vrai au téléphone et qui sont en réalité des marques ou expressions
+d'accord. Elle a bien saisi que le francophone répugne à laisser des
+silences dans la conversation et qu’il manifeste constamment son engagement
+par des marques d'accord. Cependant, les marques d'accord qu'elle propose ne
+sont pas satisfaisantes : dans les conversations enregistrées, les marques
+comme je vois, bien entendu,
+je comprends, c'est
+parfait, ne sont pas employées, même au téléphone. C'est que l'objectif
+de l'enseignante n’est pas seulement d’enseigner le français parlé : dans un
+cadre didactique, ces interjections participent à l'enrichissement du
+vocabulaire des apprenants, et à la volonté d’enseigner ainsi tout un
+paradigme de synonymes.
+2.2. Les manuels de français langue étrangère : l’effet de liste
+Les manuels de FLE, aussi bien ceux utilisés dans les classes filmées que
+ceux du marché français, cèdent à la même « illusion paradigmatique » : les
+marques d'accord sont souvent présentées sous forme de listes dans
+lesquelles se mêlent expressions rares et mots usuels. On donnera un exemple
+de liste tiré d'un manuel récent du marché français, Forum 2 (2001 : 77) :
+pour « exprimer son accord/approuver », le manuel propose la liste suivante
+: « c'est évident, vous avez raison, évidemment, précisément, en effet,
+absolument, tout à fait, bien entendu ». Dans cette liste se trouvent des
+expressions qui apparaissent dans notre corpus, comme tout
+à fait et absolument, d'autres qui sont d'un
+emploi très rare en français parlé en tant que marques d’accord, comme précisément ou c'est évident
+[221]
+.
+En conclusion, enseignants et manuels tentent bien d'enseigner quelques
+rudiments pour l'emploi des marques d'accord, mais il y a chez les uns et
+les autres un problème en ce qui concerne la sélection des marques (ou
+plutôt son absence), et un manque de réflexion sur leurs fonctions
+potentiellement différentes. Une analyse attentive révèle en effet que, loin
+d’être interchangeables, les marques d’accord possèdent des valeurs propres.
+Nous tenterons ainsi de dégager la valeur de marques d’accord courantes chez
+le natif, qui posent problème aux apprenants et que ne détaillent pas les
+manuels.
+3. Analyse linguistique et interactionnelle de quelques marques d'accord
+Nous avons choisi des marques très courantes chez les francophones [222], voilà, d'accord et ok, d'autres qui le
+sont moins mais qui n'apparaissent pas chez les néerlandophones, comme tout à fait, et enfin bien sûr,
+parce que cette marque pose des problèmes particuliers aux apprenants.
+L'objectif ne sera pas ici de détailler toutes les fonctions en discours de ces
+marques d'accord, mais de mettre en valeur leur différence du point de vue
+pragmatique et interactionnel : leur emploi est fortement lié au rapport de
+place entre les interlocuteurs, à leurs statuts (ici en l’occurrence
+institutionnels) et leurs rôles (vendeur vs client).
+3.1. voilà et d'accord
+C'est un couple intéressant parce qu'il peut avoir des emplois radicalement
+différents qui permettent de cerner en partie leur valeur respective. De
+plus, les néerlandophones ne connaissent pas voilà en
+tant que marque d’accord, mais l’utilisent en tant que « présentatif »
+d’objet ou de personne, conformément à sa définition dans les grammaires
+usuelles et les manuels de FLE.
+Et pourtant, voilà est une marque d'accord très
+employée par les francophones. C'est un instrument de réponse privilégié aux
+demandes de confirmation, avec 24% de ses occurrences consacrées à cet
+emploi. Dans la demande de confirmation, énoncé intermédiaire entre la
+question et l’assertion, l’interlocuteur A affirme quelque chose concernant
+un fait b, et l’interlocuteur B interprétera alors cette affirmation comme
+une requête de confirmation (voir Kerbrat-Orecchioni, 1991 : 93-94). On
+illustrera cette définition par l'exemple suivant tiré du corpus francophone
+[223]:
+C- oui le je oui parce que lui il prend le le vol de un vol quelques heures avant je crois
+E- voilà treize heures quarante cinq
+?? d'accord treize heures quarante-cinq (agence de voyage, « un gentil client »)
+La demande de confirmation prend la forme de l'assertion, mais l'incertitude
+est marquée par l'expression modalisatrice je crois.
+Dans un tel contexte, d'accord est improbable,
+l’employée ne pouvant pas avouer qu’elle ne connaît pas son dossier et son
+client. Autrement dit, le statut et le rôle de l’employé autorisent et même
+nécessitent la réponse en voilà. En revanche, c'est
+voilà qui est incorrect lorsqu'il s'agit de
+ratifier une réponse dans le troisième membre d'un échange que l'on appelle
+évaluatif, « par lequel L1 clôt cet échange qu’il a lui-même ouvert, en
+signalant à L2 qu’il a bien enregistré son intervention réactive, et qu’il
+la juge satisfaisante » (Kerbrat-Orecchioni, 1998 : 236). La marque
+d'accord
+serait donc à ranger dans la catégorie des « accusés de réception » :
+E- au niveau formalités vous avez ce qu’il faut vous avez une carte d’identité ou un passeport ?
+C- oui oui oui
+E- d’accord (agence de voyage, « vacances à Lesbos »)
+Dans l'échange suivant, il est impossible de remplacer d’accord par voilà, en revanche dans le
+cadre de l'enchaînement sur une (vraie) assertion, voilà et d'accord peuvent également apparaître,
+mais avec des valeurs différentes :
+C- monsieur Freignac sera à l’accueil à l’aéroport
+E- voilà il sera là
+E- d’accord il sera là (agence de voyage, « un gentil client »)
+Dans cet échange, l’employée peut répondre à l’assertion du client par voilà,
+et c’est d’ailleurs ce qu’elle choisit : elle est ici habilitée à le
+faire, car elle est censée en savoir autant si ce
+n’est plus que son client sur son dossier de voyage, elle peut donc
+confirmer l’assertion et montrer qu’elle connaît bien son dossier et son
+métier. L’employée peut aussi préférer user d’une marque de ratification
+plus neutre et laisser la supériorité de savoir au locuteur C, considérant
+que l’assertion a été un réel apport d’information enregistré par d’accord.
+Voilà et d’accord sont donc
+pourvus de valeurs différentes, l’un marque la confirmation tandis que
+l’autre effectue une simple ratification. Leur emploi est éminemment lié au
+rapport de places entre les interlocuteurs, à leur statut (ici le rapport
+vendeur-client) et leurs savoirs respectifs, mais également au système de
+préservation des faces [224]: on peut avoir
+intérêt à montrer que l’on sait de quoi parle le locuteur et répondre par
+voilà, ou au contraire feindre l’ignorance et
+ratifier par d’accord. Comme on le constate, on ne se
+place pas dans une logique vériconditionnelle, mais dans un système de
+rapports interpersonnels à l’intérieur duquel les locuteurs ont une certaine
+marge de manœuvre. Quoi qu’il en soit, étant donné la forte proportion de
+voilà et de d’accord dans
+les scènes étudiées, il serait tout à fait pertinent d’en proposer un
+enseignement contrasté, d’autant plus que voilà
+n’apparaît jamais comme marque d’accord dans les manuels de FLE, et que la
+marque d’accord, elle, est toujours uniquement
+présentée comme servant à répondre à une offre ou une proposition dans des
+échanges du type : « vous voulez faire un tennis ?/d’accord ». On peut de
+plus étoffer un peu le contraste entre voilà et d’accord en proposant des rapprochements avec tout à fait et ok.
+3.2. voilà/tout à fait vs d’accord/ok
+Ok est une marque relativement fréquente dans le
+corpus francophone, tout à fait est moins employé,
+mais n’apparaît jamais chez les néerlandophones. C’est une marque qui
+appartient, avec absolument ou exactement, à un sous-groupe de marques d’accord que l’on pourrait
+appeler superlatives. Or voilà peut permuter avec ces
+marques, ce qui n’est pas le cas de d’accord
+lorsqu’il est membre « évaluatif » de l’échange :
+C- là vous attendez une confirmation d’Aquatour ?
+E- voilà
+C- d’accord ok
+E- tout à fait (agence de voyage, « un père organisé »)
+Dans cet échange, tout à fait occupe le même poste
+interactionnel que voilà, il sert à répondre à la
+demande de confirmation, tandis que l’ensemble d’accord
+ok constitue la ratification de la réponse jugée satisfaisante. D’accord peut donc s’associer avec ok ou permuter avec lui, comme dans l’échange suivant :
+C- donc si par exemple il y avait plus de chambres on peut essayer par la Fram
+E- voilà
+C- d’accord
+E- exactement
+C- ok (agence de voyage, « un père organisé »)
+A ce stade de l’analyse, on arrive donc à dessiner de nouveaux paradigmes qui
+rompent quelque peu avec l’effet de liste que cultivent les manuels de FLE :
+voilà et tout à fait, exactement, absolument, seraient à ranger, entre
+autres, dans la catégorie des marques d’accord-confirmation [225], que l’on peut employer lorsqu'il y a un
+présupposé commun, lorsqu'on veut montrer que l’on en sait autant ou plus
+que son interlocuteur. En revanche, d’accord est avec
+ok l’expression d’une ratification plus neutre :
+dans le cas de l’enchaînement sur l’assertion, le locuteur considère qu'elle
+a bien été un « énoncé qui se présente comme ayant pour fonction
+principale d’apporter une information à autrui » (définition de
+Kerbrat-Orecchioni, 1991 : 14). L’emploi de ces marques est donc le reflet
+d’un rapport de faces et de savoirs présupposés. Nous terminerons par bien sûr parce que cette marque cristallise en
+quelque sorte toutes les difficultés que peut trouver le non-francophone
+dans l’emploi des marques d’accord, par rapport aux règles de la politesse
+linguistique.
+3.3. Bien sûr et la politesse linguistique
+Bien sûr est une locution adverbiale ainsi définie
+par le Petit Robert (1992 : 1892) : « c’est évident, cela va de soi ». Cette
+simple définition explique bien pourquoi avec bien
+sûr on touche à un problème de politesse linguistique et de
+préservation des faces : il y a en effet des situations dans lesquelles
+l’expression de l’évidence est impolie. Les apprenants néerlandophones ont
+parfois du mal à cerner les limites d’emploi de cette marque, d’autant plus
+qu’elle est fort appréciée des manuels de FLE qui en parsèment exagérément
+tous leurs dialogues. Cela aboutit à commettre des maladresses du genre
+suivant :
+E1- je vais réserver si vous voulez ?
+E2- oui bien sûr (jeu de rôle ; 6e, n°2)
+Dans cet échange, on attendrait plutôt un d’accord comme réponse à une offre,
+bien sûr ici ne convient pas vraiment et
+constituerait même un FTA (Face Threatening Act) : il est évident que le
+client est venu pour réserver un séjour, et que l’employée est là pour ça,
+mais la politesse linguistique et la politesse tout court exigent qu’on ne
+lui rappelle pas son métier. En revanche, l’employée peut manifester
+justement une grande politesse en répondant aux demandes du client par bien sûr :
+C- vous me faites un contrat ?
+E- bien sûr monsieur (exemple inventé)
+Les difficultés que soulève l’emploi de bien sûr,
+tantôt marque polie tantôt réponse insultante, expliquent peut-être pourquoi
+les francophones, même en interaction commerciale, l’utilisent avec
+parcimonie.
+Conclusion
+L’analyse de ces quelques marques d’accord, par le biais de la comparaison entre
+la pratique du néerlandophone et celle du francophone, permet de dégager
+quelques traits marquants pour l’enseignement du FLE. Elle met notamment en
+valeur le fait que leur emploi est fortement lié au système de place et de
+statut des interlocuteurs, et plus généralement à la politesse linguistique :
+l’évidence, par bien sûr, n’est pas toujours bonne à
+dire, et l’on n’est pas toujours habilité à confirmer par voilà, mais trop de oui ou de d’accord pourraient paraître peu coopératifs. La connaissance de la
+valeur principale de ces différentes marques permettrait ainsi au
+non-francophone de savoir dire oui, d’accord, voilà, tout à
+fait ou bien sûr au bon moment, mais aussi de faire
+l’économie d’un apprentissage fastidieux de nombreuses marques inutilisées en
+français parlé. Dans le cadre d’un premier apprentissage des marques d’accord,
+il serait peut-être opportun d’enseigner les trois marques les plus fréquentes,
+oui, d’accord et voilà,
+pour ensuite enrichir chaque paradigme de marques différentes, même si dans
+tous les cas, s’engager dans la conversation comporte des risques... Encore
+faut-il savoir les mesurer.
+Références bibliographiques
+Baylon, Christian, et al. (2001). Forum 2, Paris : Hachette-FLE.
+Beacco, Jean-Claude (1989). Un rendez-vous manqué ? Théorie du discours et
+grammaire en didactique, Le français dans le monde,
+Recherches et applications : 138-147.
+Brown, Penelope, Levinson, Stephen (1987). Politeness :
+some universals in language use, Cambridge : Cambridge University
+Press.
+Bruxelles, Sylvie, Traverso, Véronique (2001). Ben
+: apport de la description d’un « petit mot » du discours à l’étude des
+polylogues, Marges linguistiques, 2 : 38-55.
+Chanet, Catherine (2001). 1700 occurrences de la particule quoi en français parlé contemporain : approche de la
+« distribution » et des fonctions en discours, Marges
+Linguistiques, 2 : 56-80.
+Conseil de l’europe (2001). Cadre européen commun de
+référence pour les langues, Paris : Didier.
+Delomier, Daniel (1999). Hein : particule
+désémantisée ou indice de consensualité ?, Faits de
+langues, 13 : 137-149.
+Dictionnaire (1992). Le petit Robert, Paris.
+Flament-Boistrancourt, Danièle, Debrock, Mark (1996). Le corpus LANCOM:
+bilan et perspectives, I.T.L. Review of Applied
+Linguistics, 111-112 : 1-36.
+Hall, Edward Twitchell, Hall, Mildred Reed (1990). Guide
+du comportement dans les affaires internationales, Allemagne,
+Etats-Unis, France, Paris : Éditions du Seuil.
+Kerbrat-Orecchioni, Catherine (1994-1998).
+Les Interactions verbales, t.I, t.II, Paris : Armand
+Colin.
+Kerbrat-Orecchioni, Catherine (1991). La Question,
+Lyon : P.U.L.
+Riegel, Martin, Pellat, Jean-Christophe, Rioul, René (2002). Grammaire méthodique du français, Paris : P.U.F.
+Références aux sites Internet
+Département de Linguistique, Faculté des Lettres, Université de Louvain,
+K.U.Leuven, http://bach.arts.kuleuven.ac.be/elicop (2002). Consulté en juin
+2006.
+[217] Voir à ce propos Kerbrat-Orecchioni, 1994.
+[218] Dans les transcriptions, E1 et E2 désignent des élèves.
+[219] Expression due à Beacco, 1989 : 144.
+[220] Dans l’échange retranscrit, P est l’enseignante et E un élève.
+[221] Vérification a été faite à partir de la base de données Elicop.
+[222] Voir les pourcentages du graphique.
+[223] Dans l’échange retranscrit, C : client et
+E : employée.
+[224] Au sens de Brown et Levinson (1987) : l’image qu’un sujet met
+en jeu dans une interaction donnée.
+[225] Même si leur valeur confirmative ou
+ratificatrice apparaît comme primordiale, il est bien entendu que ces marques
+n’ont pas cette unique fonction, mais l’espace imparti à cet article ne nous
+permet pas de faire de plus amples développements.
+

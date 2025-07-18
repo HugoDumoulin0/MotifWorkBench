@@ -1,0 +1,419 @@
+
+1. Cadre théorique
+Depuis quelques années, l’étude du bilinguisme connaît un essor important. Une
+des premières raisons à cela est la prise de conscience que la population
+bilingue représente une grande partie de la population mondiale : en témoigne le
+nombre de langues recensées dans le monde, entre 3000 et 7000. Ainsi, pour
+décrire et expliquer le développement cognitif et langagier, il convient de
+prendre en compte les performances des bilingues autant que celles des
+monolingues.
+Mais la difficulté la plus importante, quand on s'attache à l'étude de cette
+thématique, est de retenir une définition du bilinguisme compte tenu de la
+quantité et de la diversité des définitions présentes dans la littérature. Les
+auteurs proposent des définitions selon leur champ de recherche, mettant en
+avant des caractéristiques linguistiques, psychologiques, culturelles,
+sociologiques, etc. des personnes bilingues. De manière générale, on peut
+représenter cette diversité définitoire sous la forme d’un continuum composé, à
+une extrémité, d’une définition la plus large possible – MacNamara (1967) : une
+personne bilingue est une personne qui possède une compétence minimale dans une
+des quatre habiletés linguistiques (comprendre, parler, lire et écrire) dans une
+langue autre que sa langue maternelle – à l’autre, une définition la plus
+stricte possible – Bloomfield (1933) : le bilinguisme est défini comme la
+possession d’une compétence de locuteur natif dans les deux langues. Une
+multitude de définitions peut être positionnée sur ce continuum selon le degré
+de compétences dans chaque langue.
+Dans notre perspective, plutôt que de reprendre une définition selon des
+caractéristiques psychologiques, culturelles, sociologiques, etc., il nous
+semble plus judicieux de retenir la distinction soutenue par certains auteurs
+(Deshays, 1998) qui définissent le bilinguisme par rapport à la manière dont les
+deux langues sont apprises par l'enfant :
+۰ le bilinguisme simultané : c'est le cas des enfants qui sont en contact avec
+deux langues dès la naissance et les apprennent simultanément sans difficulté,
+par exemple, lorsque les parents sont de langues maternelles différentes et
+utilisent leur langue respective avec l’enfant.
+۰ le bilinguisme consécutif : c’est le cas des enfants qui grandissent dans une
+famille monolingue et découvrent une deuxième langue très rapidement dans la
+petite enfance, par exemple au début de la scolarisation, lorsque la langue de
+l'école est différente de la langue de la maison.
+Parmi toutes les recherches sur le développement langagier, nombreuses sont
+celles qui témoignent de différences plus ou moins marquées entre les enfants
+bilingues (simultanés ou consécutifs) et les enfants monolingues sur le plan
+syntaxique, sémantique, lexical et phonologique (Bialystok, 1991; Perregaux,
+1994; Mann &amp; Wimmer, 2002, etc.). Ces différentes études montrent un certain
+avantage des enfants bilingues par rapport aux enfants monolingues mais qui est
+fonction, d’une part, du niveau de maîtrise des langues et, d’autre part, du
+système d’écriture (phonographique ou logographique). Ces études examinent plus
+particulièrement les compétences linguistiques des enfants lors de
+l’apprentissage de la lecture et de l’écriture. Plus rares sont les études qui
+s’intéressent aux bilinguismes des enfants prélecteurs, donc avant
+l'apprentissage de la lecture. Bruck &amp; Genesee (1995) ou Campbell &amp; Sais
+(1995), par exemple, montrent que des enfants bilingues consécutifs
+(anglais/français et anglais/italien respectivement) âgés de 4-5 ans ont des
+performances en analyse segmentale de la parole supérieures aux enfants
+monolingues. Les auteurs font état d’un avantage métalinguistique non
+négligeable à des tâches de conscience phonologique en faveur des enfants
+bilingues.
+Or, il ressort d’autres recherches (Gombert, 1990, Gombert &amp; Colé, 2000) que
+dans ce type de compétences métalinguistiques, les capacités métaphonologiques
+(capacité à prendre en compte, à identifier les unités phonologiques et à les
+manipuler de façon délibérée, Gombert, 1990) se développent en interaction avec
+l’apprentissage de la lecture. En effet, les capacités métaphonologiques,
+mesurées au moyen de tâches de suppression de phonème par exemple, se
+développent dans le contexte de la lecture ou bien dans le contexte
+d’entraînements spécifiques. Les enfants prélecteurs ont d’ordinaire des
+performances très faibles quand il s’agit de supprimer le phonème initial
+d’items monosyllabiques comparativement aux enfants qui apprennent à lire et à
+écrire (Content, Kolinsky, Morais &amp; Bertelson, 1986 ; Martinot &amp;
+Gombert, 1996).
+2. Problématique
+Sur la base des études précitées, il semble intéressant de s’interroger sur la
+nature des capacités phonologiques des enfants possédant un bilinguisme précoce
+simultané. En effet, si les enfants bilingues consécutifs font preuve de
+capacités métaphonologiques avant d’apprendre à lire et à écrire (Bruck &amp;
+Genesee, 1995; Campbell &amp; Sais, 1995), il est possible que les enfants
+bilingues précoces simultanés soient aussi dotés de ces capacités avant
+l’apprentissage de la lecture.
+Dès 1934, Vygotsky suggère que l’utilisation de deux langues peut faciliter
+l’accès à la conscience linguistique. Il affirme que l’apprentissage d’une
+deuxième langue peut jouer un rôle dans l’élaboration d’une distanciation
+précoce entre le signifiant et le signifié. Selon lui, l’enfant prend plus
+rapidement conscience des formes linguistiques, de l’existence de deux formes
+(au moins) pour exprimer un même concept et utilise plus consciemment le mot en
+tant qu’instrument de pensée et expression de concept. On retrouve cette idée
+chez plusieurs auteurs, notamment Bialystok (1991) qui reprend le terme de «
+conscience de l’arbitraire ».
+Partant de ces différents arguments, nous avons mené une recherche auprès
+d’enfants bilingues français/anglais pour tester les hypothèses suivantes. Tout
+d'abord, les enfants bilingues ont un développement métaphonologique plus
+précoce que leurs pairs monolingues, c’est-à-dire un développement
+métaphonologique en dehors du contexte de l’apprentissage de la lecture. Ainsi,
+nous postulons que les enfants bilingues feront preuve de capacités
+métaphonologiques avant d'apprendre à lire. De plus, du fait de l’interaction
+entre les deux langues acquises, les enfants bilingues ne témoigneront pas du
+même type de préférence pour les unités subsyllabiques que les enfants
+monolingues. Nous supposons qu'ils ne feront pas preuve de la même sensibilité
+phonologique que leurs pairs monolingues. L'objectif est donc de déterminer la
+nature des capacités phonologiques des enfants bilingues, comparativement à des
+enfants monolingues. En d'autres termes, l'acquisition précoce d'une deuxième
+langue nous semble susceptible d'avoir une incidence sur le développement
+phonologique.
+3. Méthodologie
+3.1. Population
+L'échantillon est constitué de 50 enfants, 30 monolingues français (15 filles
+et 15 garçons) et 20 enfants bilingues français/anglais (9 filles et 11
+garçons). Nous entendons par enfant monolingue un enfant qui utilise et
+entend uniquement la langue française, dans le contexte familial et
+scolaire. Au contraire, l'enfant bilingue est en contact avec deux langues :
+le français et l'anglais, et, en référence à la définition du bilinguisme
+précoce simultané, utilise les deux langues à la maison, "le principe ‘une
+personne - une langue’" étant respecté. Suite à des entretiens auprès des
+parents des enfants bilingues, il apparaît que ces derniers utilisent de
+manière équivalente les deux langues à la maison. Tous les enfants sont
+scolarisés en classes de grande section de maternelle, dans des écoles
+traditionnelles de la région toulousaine. La classe de grande section a été
+choisie car elle précède la classe de cours préparatoire, moment où les
+capacités métaphonologiques sont nécessaires pour appréhender
+l'apprentissage de la lecture. Par conséquent, les enfants sont
+pré-lecteurs, c’est-à-dire qu’ils n'ont pas encore commencé l'apprentissage
+formel de la lecture et de l'écriture. L'âge moyen du groupe monolingue est
+de 5 ans et 10 mois (de 5 ans et 5 mois à 6 ans et 4 mois) et l'âge moyen du
+groupe bilingue est 5 ans et 11 mois (de 5 ans et 6 mois à 6 ans et 4 mois).
+La plupart des parents des enfants bilingues travaillant dans l’industrie
+aéronautique de Toulouse, le niveau socio-économique des parents des enfants
+monolingues a été apparié à celui des parents des enfants bilingues. Enfin,
+des entretiens avec les enseignants ont permis de vérifier qu'aucun enfant
+n'avait de retard scolaire ou langagier particulier.
+3.2. Matériel
+Les enfants des deux groupes ont été testés au moyen de deux tâches. Tout
+d’abord, une tâche de segmentation contrainte a été proposée. Il s'agit de
+supprimer le phonème initial d’items monosyllabiques et de restituer
+oralement le segment restant ("Si je te dis car, tu
+me dis ar"). Cette tâche comporte 40 items du type
+consonne-voyelle-consonne dont 20 mots et 20 pseudo-mots, c’est-à-dire des
+mots inventés par l’expérimentateur. Cette tâche a été initialement utilisée
+par Rosner &amp; Simon (1971) et est très souvent reprise afin de mesurer le
+niveau de développement des capacités métaphonologiques. Après avoir recensé
+les tâches métaphonologiques utilisées dans la littérature, Yopp (1988)
+classe la tâche de segmentation contrainte comme étant la plus difficile.
+L’ordre de présentation des items est aléatoire, les mots sont mélangés aux
+pseudo-mots. Dans un deuxième temps, les enfants ont été testés au moyen
+d’une tâche de préférence, tirée des travaux de Martinot &amp; Gombert
+(1998). Cette tâche évalue la sensibilité des enfants aux segments
+subsyllabiques (attaque, début, voyelle, rime et coda) et ne nécessite pas
+le même niveau d'exigence cognitive que la précédente. Elle consiste à
+choisir, entre deux items proposés oralement, celui qui est le plus proche
+phonologiquement de l’item cible énoncé en premier ("Qu'est-ce qui ressemble plus à
+mine
+? Est-ce f
+ine
+ou
+mi
+lle?"). Il s’agit donc d’identifier une ressemblance
+acoustique entre plusieurs stimuli. Il y a 40 triplets d’items dont 20
+triplets de mots et 20 triplets de pseudo-mots, chaque triplet étant composé
+de 3 items monosyllabiques. Toutes les possibilités d'appariement ont été
+manipulées (cf. tableau 1). L’ordre de présentation des triplets d’items est
+aléatoire, les triplets de mots sont mélangés aux triplets de pseudo-mots.
+Enfin, l’ordre de présentation des deux tâches est aléatoire.
+Tableau 1 - Possibilités d'appariement des segments subsyllabiques
+3.3. Procédure
+Chaque participant a été rencontré individuellement lors d’une session de 20
+minutes environ. Les passations se sont déroulées dans l’enceinte de
+l’école, dans une salle proche de la salle de classe afin que les enfants
+puissent réaliser les tâches dans le calme.
+4. Résultats
+4.1. Tâche de segmentation contrainte
+Les résultats ont été soumis à une analyse de variance selon le plan 2
+(Langue : monolingue vs bilingue) X 2 (Lexicalité :
+mots vs pseudo-mots) avec des mesures répétées sur le
+dernier facteur et les sujets comme facteur aléatoire.
+Tableau 2 - Performances moyennes sur 40 (et écart-types) pour chaque
+groupe d'enfants.
+Au regard du tableau 2 et comme il ressort de la littérature (Rosner &amp;
+Simon, 1971; Content et al., 1986; Martinot &amp;
+Gombert, 1996), les enfants ont très peu réussi cette tâche, avec cependant
+une variation interindividuelle importante pour les deux groupes (cf.
+écart-types ci-dessus) qui mérite d’être soulignée. La comparaison des
+performances moyennes ne permet pas de mettre en évidence de différence
+entre les groupes, même si les enfants bilingues obtiennent une moyenne de
+réponses correctes très légèrement supérieure à celle des enfants
+monolingues. Aucun effet de la lexicalité n’a été observé, donc, quel que
+soit le groupe, il n’y a pas de différence entre les mots et les
+pseudo-mots. En d'autres termes, les enfants bilingues ne se distinguent pas
+des enfants monolingues lors de la résolution de cette tâche.
+Cependant, l’examen des réponses erronées a permis de mettre en évidence une
+différence entre les deux groupes. En effet, là où les enfants monolingues
+restituent généralement le début des items, les enfants bilingues restituent
+le coda. Ainsi, ils extraient de façon non négligeable le début des items
+alors que les enfants monolingues extraient le coda. Par exemple, lorsque le
+mot " bol" est proposé, les enfants monolingues
+répondent "bo", et les enfants bilingues répondent
+"l". L’effet est significatif (F (1,48) = 22.685;
+p =.000).
+Tableau 3 - Performances moyennes sur 40 (et écart-types) des réponses
+"Coda" (--C) pour chaque groupe d'enfants.
+Il semble donc que les enfants bilingues n’aient pas de facilité particulière
+pour résoudre cette tâche, néanmoins ils font preuve d’une segmentation des
+monosyllabes bien spécifique. Cette segmentation particulière ne se retrouve
+pas chez les enfants monolingues français et n’a pas été mise en évidence, à
+notre connaissance, dans les études chez les enfants monolingues
+anglais.
+4.2. Tâche de préférence
+Les résultats ont été soumis à une analyse de variance selon le plan 2
+(Langue : monolingue vs bilingue) X 2 (Choix : item 1
+vs item 2) avec des mesures répétées pour chaque
+appariement. Ce traitement statistique nous a permis d’étudier la
+sensibilité des enfants aux différentes unités subsyllabiques. Les deux
+tableaux concernant la tâche de préférence doivent être lus de la façon
+suivante : chaque pourcentage correspond au taux du choix du segment de la
+ligne sur le segment de la colonne. Par exemple, la rime est "préférée" au
+début à 57.5% par les enfants monolingues et à 48.75% par les enfants
+bilingues. Apparaissent également les probabilités associées après analyse
+statistique.
+Tableau 4 - Pourcentages des segments "préférés" pour chaque
+possibilité d’appariement pour le groupe des enfants monolingues.
+Comme il ressort du tableau 4, la rime est le segment phonologique le plus
+saillant comparativement au début, à l’attaque, à la voyelle et au coda pour
+les enfants monolingues. Ceci signifie que lorsqu’on propose à un enfant
+monolingue de choisir entre deux segments partageant, avec l’item cible,
+soit la rime soit le début, l’enfant monolingue répond préférentiellement
+l’item partageant la rime avec l’item cible. Par exemple, le choix de
+l’enfant monolingue se porte sur fine lorsqu’il faut
+le comparer à mille et trouver celui qui ressemble le
+plus à mine. Les enfants monolingues sont sensibles,
+dans une moindre mesure, au début. Par conséquent, résumer les données
+obtenues reviendrait à établir, de façon extrapolée et sans fondement
+statistique, une hiérarchie des préférences dans laquelle la rime occuperait
+la position du segment le plus saillant, suivie du début, de la voyelle, de
+l’attaque et du coda.
+Tableau 5 - Pourcentages des segments "préférés" pour chaque
+possibilité d’appariement pour le groupe des enfants bilingues.
+Au regard du tableau 5, on constate que, chez les enfants bilingues, le début
+est légèrement plus saillant lorsqu’il est comparé aux autres segments
+phonologiques un à un. Lorsqu’il s’agit de sélectionner entre deux items
+partageant le début et la rime avec l’item cible, ces derniers choisissent
+plutôt l’item partageant le début avec l’item cible. Par exemple, entre les
+deux items fine et mille,
+l’enfant bilingue choisit mille comme item
+ressemblant le plus à mine. Après une préférence
+marquée pour le début, les enfants bilingues sont sensibles, dans une
+moindre mesure, à la rime. On pourrait donc résumer ces préférences sous une
+forme hiérarchique, dans laquelle le début serait le segment phonologique le
+plus saillant, suivi de la rime, puis de l’attaque et de la voyelle choisies
+dans une même proportion et enfin du coda.
+De manière générale, il semble donc que tous les enfants sont plus sensibles
+aux grandes unités phonologiques (rime ou début) qu’aux petites unités
+(coda, attaque ou voyelle).
+5. Discussion - Conclusion
+L’objectif de cette recherche réside dans l’analyse des effets du bilinguisme sur
+le développement des capacités phonologiques des enfants pré-lecteurs. Les
+capacités phonologiques ont été étudiées au moyen d'une tâche de segmentation
+contrainte et d'une tâche de préférence. Les résultats obtenus vont
+partiellement dans le sens de nos hypothèses. La première hypothèse concernait
+l’avantage bilingue lors de la résolution de la tâche de segmentation
+contrainte. Cette tâche, qui nécessite de réelles capacités métaphonologiques
+pour être résolue, n’a pas été réussie par les enfants indépendamment de leur
+appartenance au groupe bilingue. Par conséquent, le bilinguisme ne permet pas
+d’avancer l’idée d’un avantage ou d’un désavantage métaphonologique. En
+revanche, un facteur intéressant est ressorti lors du traitement des résultats :
+le pourcentage d’extraction du coda, groupe consonantique final, par les enfants
+bilingues. Plus d’un tiers des enfants de ce groupe segmentent les items en deux
+parties : début/coda, alors que les enfants monolingues n’effectuent pas ce type
+de segmentation. Certes, le coda est une réponse erronée mais qui est plus
+proche de la réponses correcte, car il en fait partie intégrante, que le début,
+réponse donnée par les enfants monolingues. Ce résultat peut être expliqué par
+deux facteurs. Le premier facteur explicatif concerne la consigne donnée aux
+enfants, consigne constituée d’une brève explication contenant une précision sur
+l'objectif de la tâche et d’un exemple. L’expérimentateur indiquait aux enfants
+qu’il fallait restituer les sons de la fin des mots. Il est possible que les
+enfants bilingues se soient appuyés sur cette remarque pour personnaliser la
+tâche. Même si l’objectif n’a pas été atteint, ils ont essayé de résoudre la
+tâche d’une certaine manière, ce que n’ont pas fait les enfants monolingues. On
+peut se demander si un tel comportement ne reflèterait pas leurs capacités
+métaphonologiques. Au regard de la définition du concept, les enfants bilingues
+semblent opérer un travail intentionnel et réfléchi sur les items en les
+segmentant en deux unités, le début et le coda, et en restituant le deuxième
+segment à l’expérimentateur. Les enfants monolingues, pour leur part, opèrent un
+travail davantage automatique en donnant le début comme réponse. Extraire la
+partie finale d’un item et restituer la partie initiale est plus aisé
+qu’extraire la partie initiale et restituer la partie finale. Le second facteur
+explicatif de ce résultat réside dans une stratégie particulière mise en
+évidence par Fijalkow (1989) : l’auto-langage. L’auto-langage est défini comme
+un phénomène qui "consiste en vocalisations à mi-voix, murmures, voire simples
+mouvements des lèvres". C’est un langage "pour le sujet lui-même à des fins
+réflexives" qui se "manifeste quand il rencontre des difficultés cognitives"
+(p.84-85). Il est assimilable à une activité d’auto-répétition dans le sens où
+son but est de conserver l’information en mémoire mais en diffère car
+l’information n’est pas transférée en mémoire à long terme, mais plutôt
+réutilisée lors d'un travail réflexif immédiat. Au cours de cette tâche, nous
+avons observé que certains enfants bilingues recouraient à cette stratégie : ils
+répétaient l’item proposé plusieurs fois et donnaient leur réponse à la fin des
+répétitions. Même si l’auto-langage n’est pas spécifique aux enfants bilingues,
+il n’a pas été observé chez les enfants monolingues durant la passation. Compte
+tenu de la difficulté de la tâche, il est possible que l’auto-langage ait permis
+aux enfants de retenir l’information en mémoire afin d'y réfléchir.
+L’auto-langage constitue, à notre sens, une manifestation observable des
+capacités de type métaphonologique car l’enfant fait preuve de flexibilité
+cognitive en mobilisant pleinement et intentionnellement son savoir langagier
+pour résoudre la tâche.
+La seconde hypothèse concernait la sensibilité des enfants aux segments
+phonologiques subsyllabiques, examinée au moyen de la tâche de préférence. Les
+enfants des deux groupes ne se sont pas comportés de façon analogue, ils
+manifestent une sensibilité légèrement différente pour certains segments
+phonologiques. Toutefois une tendance générale ressort de ces résultats : tous
+les enfants ont une préférence plus marquée pour les grandes unités
+phonologiques (appelées aussi unités larges) que pour les petites. Les grandes
+unités, groupes phonémiques composés de deux phonèmes dans la présente étude,
+sont la rime (-VC) et le début (CV-). Au contraire, les petites unités,
+composées d’un seul phonème, sont l’attaque (C--), la voyelle (-V-) et le coda
+(--C). Cette préférence peut être expliquée par la recherche de Liberman,
+Cooper, Shankweiler &amp; Studdert-Kennedy (1967). En effet, ces auteurs
+soulignent que les unités larges correspondent à des segments consonantiques
+discrets du courant acoustique et sont donc des unités d’articulation perçues
+naturellement par l’auditeur de langue française. En revanche, les petites
+unités constituent des bruits qui n’évoquent pas la parole. C’est probablement à
+cause de cette difficulté de perception phonémique que tous les enfants montrent
+une plus grande sensibilité à la rime et au début. Cependant, les résultats des
+enfants monolingues divergent de ceux des enfants bilingues quant à l'unité
+subsyllabique la plus saillante. Effectivement, les enfants monolingues sont
+plus sensibles à la rime alors que les enfants bilingues sont légèrement plus
+sensibles au début. D’après Bryant, MacLean, Bradley &amp; Crossland (1990), qui
+utilisent du matériel anglais, la rime est une unité subsyllabique saillante
+comparativement aux autres segments phonologiques pour les enfants pré-lecteurs
+anglais. Martinot &amp; Gombert (soumis) confirment l'importance de la rime avec
+du matériel français. Par conséquent, la rime est un segment subsyllabique
+saillant pour les enfants pré-lecteurs français et anglais. Bryant &amp; coll.
+(1990) rapportent également une sensibilité importante pour l'attaque. On
+s'attendait d'ailleurs à retrouver cette sensibilité chez les enfants bilingues.
+Or ce n'est pas le cas. Au contraire, les enfants bilingues montrent une plus
+grande préférence pour le début des items. Cette préférence peut être expliquée
+par les mêmes facteurs que la rime : le début, composé de deux phonèmes, est une
+unité subsyllabique large, qui contient une pointe acoustique et correspond à un
+signal audible. Sa composition en consonne et voyelle permet à l'enfant de le
+prononcer facilement. Ensuite, d'un point de vue purement linguistique, la
+prosodie et l'accentuation de chaque langue doivent être prises en compte.
+L'accent en français porte généralement sur la dernière syllabe d’un mot ou d’un groupe de mots. Au contraire,
+la place de l'accent en langue anglaise est plus difficilement prévisible mais
+peut se trouver sur la première syllabe. Dans le cas de mots monosyllabiques,
+l'accent est porté sur les phonèmes finaux en langue française et sur les
+phonèmes initiaux en langue anglaise. De cette façon, étant donné que les
+enfants monolingues ont une préférence pour la rime et les enfants bilingues
+pour le début, les résultats peuvent être interprétés comme si du matériel
+français avait été proposé aux enfants monolingues, ce qui est le cas; mais
+également comme si du matériel anglais avait été proposé aux enfants bilingues
+puisqu'ils se comportent comme s'ils étaient face à des items anglais, alors que
+tous les items sont en langue française. Ces résultats mériteraient donc de plus
+amples investigations.
+6. Perspective
+Ce travail, à visée purement exploratoire, nécessite d’être étendu. D’une part il
+serait intéressant de comparer expérimentalement ce type de résultat avec des
+enfants monolingues anglais et des enfants bilingues sur du matériel anglais
+(même si les pseudo-mots sont là pour parer ce type de comparaison). Si les
+enfants bilingues ont un traitement phonologique spécifique, on devrait
+retrouver le même type de résultat indépendamment du matériel. En revanche, si
+tout relève de l’influence linguistique de l’anglais et/ou du français, on
+devrait trouver des résultats différents en fonction du matériel. Il est donc
+indispensable de faire la part des choses entre ce qui relève des capacités
+métaphonologiques strictes, ce qui relève des contraintes linguistiques pures et
+enfin ce qui relève de l’interaction entre les deux. D’autre part, il apparaît
+pertinent de s’interroger sur les capacités métalinguistiques des enfants
+bilingues issus d’un enseignement bilingue immersif. Trop peu de travaux ont
+trait à l’enseignement bilingue en France alors que ce dernier existe depuis
+plus d'une dizaine d’années. Il nous semble donc particulièrement judicieux de
+nous pencher sur cette population bilingue "disponible" dans notre
+environnement.
+Références bibliographiques
+Bialystok, Ellen (1991). Language processing in
+bilingual children. London : Cambridge University Press.
+Bloomfield, Leonard (1933). Language. London: Allen
+and Unwin.
+Bruck, Maggie &amp; Genesee, Fred (1995). Phonological awareness in young
+second language learners, Journal of Child Language,
+22: 307-324.
+Bryant, Peter, Maclean, Morag, Bradley, Lynette &amp; Crossland, James
+(1990). Rhyme and Alliteration, Phoneme Detection and Learning to Read, Developmental Psychology, 26: 429-438.
+Campbell, Ruth &amp; Sais, Efisia (1995). Accelerated metalinguistic
+(phonological) awareness in bilingual children, British
+Journal of Developmental Psychology, 13: 61-68.
+Content, Alain, Kolinsky, Régine, Morais, José &amp; Bertelson, Paul
+(1986). Phonetic segmentation in pre-readers: Effects of corrective
+information, Journal of Experimental Child Psychology,
+42: 49-72.
+Deshays, Elisabeth (1998). L’enfant bilingue. Parler
+deux langues : une chance pour votre enfant. Paris : Robert
+Laffont.
+Fijalkow, Jacques (1989). Auto-langage et apprentissage de la lecture, Enfance, 42 (1-2): 83-90.
+Gombert, Jean-Emile (1990). Le développement
+métalinguistique. Paris: PUF.
+Gombert, Jean-Emile &amp; Cole, Pascale (2000). Activités
+métalinguistiques, lecture et illettrisme, in L'acquisition du Langage. Le langage en développement au-delà de trois
+ans, Kail, Michèle &amp; Fayol, Michel (Eds). Paris: PUF, 117-150.
+Liberman, Alvin, Cooper, Franklin, Shankweiler, Donald &amp;
+Studdert-Kennedy, Michael (1967). Perception of speech code, Psychological Review, 74:  431-461.
+Macnamara, John (1967). The bilingual's performance: A psychological
+overview, Journal of Social Issues, 23: 58-77.
+Mann, Virginia &amp; Wimmer, Heinz (2002). Phoneme awareness and pathways
+into literacy: A comparison of German and American children, Reading and Writing: An Interdisciplinary Journal,
+15: 653-682.
+Martinot, Clara &amp; Gombert, Jean-Emile (1996). Le développement et le
+contrôle des connaissances phonologiques chez les enfants pré-lecteurs, Revue Française de Neuropsychologie, 6: 251-270.
+Martinot, Clara &amp; Gombert, Jean-Emile (1998). Les unités
+phonologiques. Communication orale dans le cadre d'un Symposium organisé par
+le Pr Michel Fayol pour le XXVI Congrès Européen de
+Psychologie du Développement, Rennes.
+Martinot, Clara &amp; Gombert, Jean-Emile (soumis). Implicit onset/rime
+knowledge in prereaders and beginning readers, European
+Journal of Developmental Psychology.
+Perregaux, Christiane (1994). Les enfants à deux voix:
+Des effets du bilinguisme sur l'apprentissage de la lecture.
+Berlin: Peter Lang.
+Rosner, Jerome &amp; Simon, Dorothea (1971). The auditory analysis test:
+an initial report, Journal of learning disabilities,
+4:
+40-48.
+Vygotsky, Lev Semenovitch (1934, 1985). Pensée et
+langage. Paris: Messidor.
+Yopp, Hallie Kay (1988). The validity and reliability of phonemic
+awareness tests. Reading Research Quarterly, 23:
+160-177.
+
