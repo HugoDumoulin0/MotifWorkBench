@@ -461,17 +461,20 @@ if __name__ == "__main__":
         if internal_clustering==True:
             if not os.path.exists("./Clustering_results"):
                 os.mkdir("./Clustering_results")
-            if not os.path.exists("./Clustering_results/Clusters"):
-                os.mkdir("./Clustering_results/Clusters")
-            if not os.path.exists("./Clustering_results/Medoids"):
-                os.mkdir("./Clustering_results/Medoids")
-            nbr_pool = 10
-            for nb_itemset_min in list_itemset_min:
-                    for gap_min in list_gap_min:
-                        for gap_max in list_gap_max:
-                            for minsup_percent in list_minsup_percent:
-                                internalClustering(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max)
-                    
+                if not os.path.exists("./Clustering_results/Clusters"):
+                    os.mkdir("./Clustering_results/Clusters")
+                if not os.path.exists("./Clustering_results/Medoids"):
+                    os.mkdir("./Clustering_results/Medoids")
+                nbr_pool = 10
+                for nb_itemset_min in list_itemset_min:
+                        for gap_min in list_gap_min:
+                            for gap_max in list_gap_max:
+                                for minsup_percent in list_minsup_percent:
+                                    internalClustering(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max)
+            else:
+                print("-"*75)
+                print("5. Internal clustering of closed patterns")
+                print("Clustering results already exists : delete it to perform internal clustering again")
                     
         ### calculs statistiques ###
         if méthode=="partition":
@@ -533,7 +536,7 @@ if __name__ == "__main__":
                             df_lemma.to_csv(file_total, sep="\t")
                             results[f"{seuil}lemma"] = file_out_lemma
                 if classification:
-                        for property_gen in ["20000lemma", "10000bigramslemma"]:
+                        for property_gen in [f"{seuil_bigrams_comparaison}bigramslemma"]:
                             if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
                                 path=f"./Patterns_results/R/{property}/"
                                 if os.path.exists(path):
