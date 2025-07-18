@@ -58,8 +58,9 @@ list_gap_min = [0]
 list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [3]
-liste_seuils_lemma=[100,200]
+list_minsup_percent = [1]
+
+threads=30
 
 #-------------------
 # Patterns detection params

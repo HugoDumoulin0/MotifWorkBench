@@ -12,6 +12,7 @@ Todo liste générale du projet, cocher les cases quand c'est fait. Se substitue
     - [ ] Rétablir l'extension ```.conllu```
     - [ ] Supprimer la structure avec un dossier par fichier
         - (ce qui, d'ailleurs, lèverait le problème des extensions, qui avaient été supprimée pour avoir correspondance exacte entre nom de dossier et nom de fichier)
+- [ ] Tester le multiprocessing (Tim)
 - [X] Requirements :
     - [X] scipy ?
     - [X] torch ?
