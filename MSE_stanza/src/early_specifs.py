@@ -83,7 +83,7 @@ def tri_lemma(execution_time):
     return lignes
 
     
-def main(seuil, minsup_percent, path_metadata):
+def main(seuil, minsup_percent, path_metadata, partition_cible):
     if not os.path.exists("./Data/earlySPECIFS"):
         os.mkdir("./Data/earlySPECIFS/")
     path_out = "./Data/earlySPECIFS/"
@@ -93,7 +93,7 @@ def main(seuil, minsup_percent, path_metadata):
     # execution_time = datetime.datetime.now()
     execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
     df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
-    df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, "target")
+    df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
     dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target)
     compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
     lignes = tri_lemma(execution_time)

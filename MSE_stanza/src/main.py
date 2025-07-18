@@ -252,7 +252,7 @@ if __name__ == "__main__":
         if earlySpecifs:
             print("-"*75)
             print("2.1 Early selection of specific lemma")
-            liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "", path_metadata)
+            liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "", path_metadata, partition_cible)
         # #-------------------------------------------------------------------------------------------------------------------
         # # Mining Pattern
         # #-------------------------------------------------------------------------------------------------------------------
