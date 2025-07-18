@@ -81,7 +81,6 @@ def tri_lemma(execution_time,seuil_banalité):
     df.drop(columns=["std_dev"], inplace=True)
     lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
     return lignes
-
     
 def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité):
     if not os.path.exists("./Data/earlySPECIFS"):
