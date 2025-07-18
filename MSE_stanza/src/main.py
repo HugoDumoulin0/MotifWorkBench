@@ -240,8 +240,9 @@ if __name__ == "__main__":
                 #This creates the missing dict_sorted.pk files. For some reason,
                 #the function wasn't called in the original script.
         path_stanza="./Data/Textes_tagged_stanza/"
+        path_underscore="./Data/underscore_fix/" #Tim
         path_vrt="./Data/textesVRT/"
-        conllu2vrt.transform(path_stanza, path_vrt)
+        conllu2vrt.transform(path_underscore, path_vrt) #Tim
         if not os.path.exists("./Data/cwb-corpus"):
             os.mkdir("./Data/cwb-corpus")
             cwb.main()
