@@ -83,13 +83,13 @@ def tri_lemma(execution_time):
     return lignes
 
     
-def main(seuil, minsup_percent):
+def main(seuil, minsup_percent, path_metadata):
     if not os.path.exists("./Data/earlySPECIFS"):
         os.mkdir("./Data/earlySPECIFS/")
     path_out = "./Data/earlySPECIFS/"
     path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
     lexique = tools.load_pickles(path_lexique)
-    df_target = pd.read_csv("./Data/df_target_train_classif.tsv", sep="\t", index_col=0)
+    df_target = pd.read_csv(path_metadata, sep="\t", index_col=0)
     # execution_time = datetime.datetime.now()
     execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
     df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
