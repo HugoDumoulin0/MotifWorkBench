@@ -536,7 +536,7 @@ if __name__ == "__main__":
                             df_lemma.to_csv(file_total, sep="\t")
                             results[f"{seuil}lemma"] = file_out_lemma
                 if classification:
-                        for property_gen in [f"{seuil_bigrams_comparaison}bigramslemma"]:
+                        for property_gen in [f"{seuil_bigrams_comparison}bigramslemma"]:
                             if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
                                 path=f"./Patterns_results/R/{property}/"
                                 if os.path.exists(path):

@@ -85,7 +85,7 @@ list_metadata = ["id"
 # Comparison with lemmas and pos
 #-------------------
 liste_seuils_lemma=[100,200]
-seuil_bigrams_comparaison = 1000
+seuil_bigrams_comparison = 100
 
 #-------------------
 # Machine learning params
