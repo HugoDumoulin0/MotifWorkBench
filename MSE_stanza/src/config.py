@@ -53,6 +53,8 @@ list_gap_max = [0]
 list_minsup_percent = [1]
 liste_seuils_lemma=[100,200]
 
+threads=30
+
 #-------------------
 # Patterns detection params
 #-------------------
