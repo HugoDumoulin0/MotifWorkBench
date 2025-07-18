@@ -8,10 +8,5 @@ IPython
 transformers
 sentencepiece
 conllu
-
-#Tim:
-scipy #(sauf si installé par une autre lib. et que j'ai pas fait les choses dans le bon ordre)
-
-# torch? Or Flask or TensorFlow... J'ai installé torch.
-# one of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers,
-# configuration and file/data utilities can be used.
+spicy
+torch
