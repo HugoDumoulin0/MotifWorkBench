@@ -1,11 +1,10 @@
-# T. Premat, H. Dumoulin and S. Diwersy
-# 2025-04-16
-
-# Due to limitations in Python causing too many '-inf' and 'inf' values for specificity,
-# we use R to compute these values. This is what this script does.
+# T. Premat and H. Dumoulin
+# 2025-09-10
+# Based on textometry package (R)
+# https://cran.r-project.org/web/packages/textometry/index.html
 
 # Packages
-  # This allows auto installing AND loading packages listed below
+  # This allows auto-installing AND loading packages listed below.
   ipak <- function(pkg){
     new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
     if (length(new.pkg))
@@ -16,29 +15,107 @@
 packages <- c('dplyr',
 	'textometry',
 	'data.table',
-  'tidyr')
+  'tidyr',
+  'tidyverse')
 ipak(packages)
 
-# Variables
-# default_folder <- "./Patterns_results/Specifs_noZero"
+#----------------------------------------------
+# Inherit from Python
+#----------------------------------------------
+args <- commandArgs(trailingOnly=TRUE)
+minsup_percent <- as.numeric(args[1])
+execution_time <- paste(args[2])
+default_folder <- paste(args[3]) #proposition pour organiser l'espace de travail
+print(default_folder)
+path_in <- paste(args[4])
 
+output_name_vertical <- paste0(default_folder, "/", minsup_percent, "_specif_", execution_time, ".tsv")
+# output_name_pivot <- paste0(default_folder, "/", minsup_percent, "_specif_pivot_", execution_time, ".tsv")
+# output_name_pivot_minimal <- paste0(default_folder, "/", minsup_percent, "_synthesis_", execution_time, ".tsv")
 
+#----------------------------------------------
+# Rewriting of textometry functions
+#----------------------------------------------
+custom_probabilities_specif <- function (df) {
+    rowMargin <- rowSums(df) #compute F (sum freq. per motif)
+    t <- df["others", ]
+    t <- as.numeric(df["others", ]) # Note : replace colMargin by "others" (t comes directly from df)
+    T <- sum(df["others", ]) #Define T as the sum of words ('others' row in pseudo-lexical table). Called F in textometry implementation (but not in their other func).
+    specif <- matrix(0, nrow = nrow(df), ncol = ncol(df))
+    for (i in 1:ncol(df)) {
+        specif[, i] <- specificities.probabilities.vector(df[, i],
+            rowMargin, T, t[i])
+    }
+    colnames(specif) <- colnames(df)
+    rownames(specif) <- rownames(df)
+    return(specif)
+}
 
+custom_specif <- function (df) {
+    spe <- custom_probabilities_specif(df)
+    spelog <- matrix(0, nrow = nrow(spe), ncol = ncol(spe)) #Create matrix filled with zeros
+    spelog[spe < 0] <- log10(-spe[spe < 0]) #log10 of absolute value of negative values
+    spelog[spe > 0] <- abs(log10(spe[spe > 0])) #log10 of positive values
+    spelog[spe == 10] <- +Inf
+    spelog[spe == -10] <- -Inf
+    spelog <- round(spelog, digits = 4)
+    rownames(spelog) <- rownames(spe)
+    colnames(spelog) <- colnames(spe)
+    return(spelog)
+}
 
-  # Inherit minsup_percent and execution_time from python
-  args <- commandArgs(trailingOnly=TRUE)
-  minsup_percent <- as.numeric(args[1])
-  execution_time <- paste(args[2])
-  default_folder <- paste(args[3]) #proposition pour organiser l'espace de travail
-  print(default_folder)
-  path_in <- paste(args[4])
+#----------------------------------------------
+# Load and treat data
+#----------------------------------------------
 
-  df <- read.delim(path_in, sep="\t")
+df <- read.delim(path_in, sep="\t")
 
-  output_name_vertical <- paste0(default_folder, "/", minsup_percent, "_specif_", execution_time, ".tsv")
-  output_name_pivot <- paste0(default_folder, "/", minsup_percent, "_specif_pivot_", execution_time, ".tsv")
-  output_name_pivot_minimal <- paste0(default_folder, "/", minsup_percent, "_synthesis_", execution_time, ".tsv")
+# Shape pseudo-lexical table (≠ lex.tab. because last row is t and not REST)
+df2 <- df %>%
+    rename(F = f) %>%
+    rename(f = k) %>%
+    rename(part = fichier)
 
+df_wide <- df2 %>%
+  select(-F) %>%   # remove the F column (F is restituted by sum of f)
+  select(-T) %>%   # remove the T column (T is restituted by sum of t)
+  select(-t) %>%   # remove the t column (reintroduced later, if not prevent merging lines)
+  pivot_wider(
+    names_from = part,   # the values that become column names (A, B)
+    values_from = f  # the values to fill in the table
+  )
+
+# Reintroduce t values
+## Step 1+2: extract first t per part and reshape to a row
+t_row <- df2 %>%
+  group_by(part) %>%      # group by part (contrastive subset of corpus)
+  summarise(t_first = first(t),         # keep only the first value of t
+            .groups = "drop") %>%
+  pivot_wider(
+    names_from = part,      # make part values the column names
+    values_from = t_first   # fill with the extracted t_first
+  ) %>%
+  mutate(motif = "others") %>%    # add a label "t" so we know this is special
+  select(motif, everything())     # reorder: col2 first, then A, B, …
+
+## Step 3: bind the new row at the bottom of df_wide
+df_final <- bind_rows(df_wide, t_row) %>%
+  column_to_rownames("motif")  # make 'motif' the row names col.
+
+specif_table <- custom_specif(df_final)
+
+# Save it!
+write.table(specif_table,
+            file = output_name_vertical,
+            sep = "\t",
+            row.names = TRUE,
+            col.names = NA,
+            quote = FALSE)
+
+#---------------------------------------
+# Old Script/archived code
+#---------------------------------------
+# Defined but not ran
 # Functions
 calc_specif_hyper <- function(x, F, t, T){
   
@@ -114,74 +191,76 @@ calc_specif <- function(df, scores=c("am.specif.hyper"))
 # Here starts the fun
 #=======================================
 
-df2 <- df %>%
-  rename(unit = motif) %>%
-  rename(part = fichier) %>%
-  rename(F = f) %>%
-  rename(f = k) %>%
-  relocate(unit, .before=part)
+# Needed to run old function:
+# df2 <- df %>%
+#   rename(unit = motif) %>%
+#   rename(part = fichier) %>%
+#   rename(F = f) %>%
+#   rename(f = k) %>%
+#   relocate(unit, .before=part)
 
-df_spec <- calc_specif(df2)
+# df_spec <- calc_specif(df2)
 
-df_wide <- df_spec %>%
-  rename(indice = am.specif.hyper) %>%
-  select(!E11) %>%
-  pivot_wider(
-    id_cols = unit,
-    names_from = part,
-    values_from = c(f, F, t, T, mode.val, indice),
-    names_glue = "{part}_{.value}"
-  ) %>%
-  # Reorder columns to group by part prefix
-  select(
-    unit,
-    # All other columns grouped by part prefix
-    order(colnames(.)[-1])
-  )
 
-# Get the column names (excluding unit)
-col_order <- df_wide %>%
-  select(-unit) %>%
-  colnames()
+# df_wide <- df_spec %>%
+#   rename(indice = am.specif.hyper) %>%
+#   select(!E11) %>%
+#   pivot_wider(
+#     id_cols = unit,
+#     names_from = part,
+#     values_from = c(f, F, t, T, mode.val, indice),
+#     names_glue = "{part}_{.value}"
+#   ) %>%
+#   # Reorder columns to group by part prefix
+#   select(
+#     unit,
+#     # All other columns grouped by part prefix
+#     order(colnames(.)[-1])
+#   )
 
-# Extract prefix
-prefixes <- gsub("_(.*)", "", col_order)
+# # Get the column names (excluding unit)
+# col_order <- df_wide %>%
+#   select(-unit) %>%
+#   colnames()
 
-# Group by prefix and preserve order
-ordered_cols <- col_order[order(prefixes)]
+# # Extract prefix
+# prefixes <- gsub("_(.*)", "", col_order)
 
-# Final dataframe with grouped columns
-df_wide <- df_wide %>%
-  select(unit, all_of(ordered_cols))
+# # Group by prefix and preserve order
+# ordered_cols <- col_order[order(prefixes)]
 
-df_minimal <- df_spec %>%
-  select(unit, part, f, am.specif.hyper) %>%
-  rename(indice = am.specif.hyper)
+# # Final dataframe with grouped columns
+# df_wide <- df_wide %>%
+#   select(unit, all_of(ordered_cols))
 
-df_pivot_minimal <- df_minimal %>%
-  pivot_wider(
-    id_cols = unit,
-    names_from = part,
-    values_from = c(indice)
-  ) %>%
-  rowwise() %>%
-  mutate(std_dev = sd(c_across(-1))) %>%
-  ungroup() %>%
-  arrange(desc(std_dev))
+# df_minimal <- df_spec %>%
+#   select(unit, part, f, am.specif.hyper) %>%
+#   rename(indice = am.specif.hyper)
 
-# Save it!
-write.table(df_spec,
-            file = output_name_vertical,
-            sep = "\t",
-            row.names = FALSE,
-            quote = FALSE)
-write.table(df_wide,
-            file = output_name_pivot,
-            sep = "\t",
-            row.names = FALSE,
-            quote = FALSE)
-write.table(df_pivot_minimal,
-            file = output_name_pivot_minimal,
-            sep = "\t",
-            row.names = FALSE,
-            quote = FALSE)
+# df_pivot_minimal <- df_minimal %>%
+#   pivot_wider(
+#     id_cols = unit,
+#     names_from = part,
+#     values_from = c(indice)
+#   ) %>%
+#   rowwise() %>%
+#   mutate(std_dev = sd(c_across(-1))) %>%
+#   ungroup() %>%
+#   arrange(desc(std_dev))
+
+# # Save it!
+# write.table(df_spec,
+#             file = output_name_vertical,
+#             sep = "\t",
+#             row.names = FALSE,
+#             quote = FALSE)
+# write.table(df_wide,
+#             file = output_name_pivot,
+#             sep = "\t",
+#             row.names = FALSE,
+#             quote = FALSE)
+# write.table(df_pivot_minimal,
+#             file = output_name_pivot_minimal,
+#             sep = "\t",
+#             row.names = FALSE,
+#             quote = FALSE)
