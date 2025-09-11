@@ -45,9 +45,9 @@ def compute_early_df_lemmes(seuil):
 #     df_targetXlemmes = df_combined.groupby(metadata).sum()  
 #     return df_targetXlemmes
 
-def dictionnaire_t_target(dictionnaire_t, df_target):
+def dictionnaire_t_target(dictionnaire_t, df_target,partition_cible):
     df_target["taille"]=df_target.index.map(dictionnaire_t)
-    dictionnaire_t_result = df_target.groupby("target")["taille"].sum().to_dict()
+    dictionnaire_t_result = df_target.groupby(partition_cible)["taille"].sum().to_dict()
     return dictionnaire_t_result
 
 def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, execution_time):
@@ -76,9 +76,9 @@ def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, exe
 def tri_lemma(execution_time,seuil_banalité):
     liste = os.listdir("./Data/earlySPECIFS")
     for file in liste:
-        if f"synthesis_{execution_time}" in file:
+        if f"specif_{execution_time}" in file:
             df = pd.read_csv(f"./Data/earlySPECIFS/{file}", sep="\t", index_col=0, quoting=3)
-    df.drop(columns=["std_dev"], inplace=True)
+    # df.drop(columns=["std_dev"], inplace=True)
     lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
     return lignes
     
@@ -93,7 +93,7 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité)
     execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
     df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
     df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
-    dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target)
+    dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
     compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
     lignes = tri_lemma(execution_time, seuil_banalité)
     print(lignes)
