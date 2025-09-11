@@ -37,3 +37,6 @@ __pycache__/
 # Ignore R stuff
 .Rapp.history
 .Rhistory
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini
