@@ -33,9 +33,9 @@ if méthode=="partition":
 # Early specifs mode
 #-------------------
 
-earlySpecifs=False
-seuil_early_specifs=1000
-partition_cible = "target"
+earlySpecifs=True
+seuil_early_specifs=200
+partition_cible = "genre"
 seuil_banalité=2
 
 user_input_list=False
