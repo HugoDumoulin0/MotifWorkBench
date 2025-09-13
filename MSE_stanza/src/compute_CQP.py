@@ -94,8 +94,8 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    file_out = f"{path_out}{seuil}_lemmaTexte_df_{execution_time}.tsv"
-    file_total = f"{path_out}{seuil}_lemmaTexteOrdered_df_{execution_time}.tsv"
+    file_out = f"{path_out}{seuil}lemmaTexte_df_{execution_time}.tsv"
+    file_total = f"{path_out}{seuil}lemmaTexteOrdered_df_{execution_time}.tsv"
 
     # df_lemma.to_csv(file_out, sep="\t")
     # subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) 
@@ -286,7 +286,7 @@ def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, 
     df_result = pd.concat(dfs_fusionnes)
     return df_result
      
-def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering, tidy_metadata, results):
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering, tidy_metadata, results, path_out):
     execution_time = datetime.datetime.now()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
@@ -294,31 +294,31 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general()
     
-    path_R=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-    if not os.path.exists(path_R):
-        path="./Patterns_results/R/"
-        if not os.path.exists(path):
-            os.mkdir(path)
-        path= f"./Patterns_results/R/{tidy_metadata}/"
-        if not os.path.exists(path):
-            os.mkdir(path)
-        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}"
-        if not os.path.exists(path):
-            os.mkdir(path)
-        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
-        if not os.path.exists(path):
-            os.mkdir(path)
-        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-        if not os.path.exists(path):
-            os.mkdir(path)
-    path_out = f"{path_R}minsup{str(minsup_percent)}/"
+    # path_R=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+    # if not os.path.exists(path_R):
+    #     path="./Patterns_results/R/"
+        # if not os.path.exists(path):
+        #     os.mkdir(path)
+        # path= f"./Patterns_results/R/{tidy_metadata}/"
+        # if not os.path.exists(path):
+        #     os.mkdir(path)
+        # path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}"
+        # if not os.path.exists(path):
+        #     os.mkdir(path)
+        # path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+        # if not os.path.exists(path):
+        #     os.mkdir(path)
+        # path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+        # if not os.path.exists(path):
+        #     os.mkdir(path)
+    # path_out = f"{path_R}minsup{str(minsup_percent)}/"
 
     
-    if not os.path.exists(path_out):
-            os.mkdir(path_out)
+    # if not os.path.exists(path_out):
+    #         os.mkdir(path_out)
 
     if total_motifs>0:
-        if not os.path.exists(f"{path_out}motifs"):
+        if not os.path.exists(f"{path_out}"):
             df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
             
             if not metadata=="id":
@@ -331,12 +331,12 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                     df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
                     file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
                     df_k.to_csv(file_out_motifs, sep="\t")
-                    results["internal_clustering_motifs"] = file_out_motifs
+                    results[f"internal_clustering_motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
                 else:
                     if earlySpecifs:
-                        results["early_specifs_motifs"]=file_out_motifs
+                        results[f"early_specifs_motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=file_out_motifs
                     else:
-                        results["motifs"] = file_out_motifs
+                        results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
 
         
             if specifs:       
