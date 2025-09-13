@@ -327,13 +327,20 @@ def main(minsup, results, path_target, sampling):
         #     os.mkdir(path_out)
         # name = filename[:-4].replace(path_out, "")
         # if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
-        rep_pref=path_classif_out+prefixe+"/"
-        if not os.path.exists(rep_pref):
-            os.mkdir(rep_pref)
-        if not "lemma" or "pos" or "bigrams" in prefixe:
-            rep_out = rep_pref+f"minsup{str(minsup)}"+"/"
+        print(prefixe+"---"+filename)
+        if not ("lemma" in prefixe or "pos" in prefixe or "bigrams" in prefixe):
+            print("lemma pos bigrams not in " + prefixe)
+            rep_pref=path_classif_out+"motifs/"
+            if not os.path.exists(rep_pref):
+                os.mkdir(rep_pref)
+            name = prefixe.split("motifs_")[1]
+            rep_out = rep_pref+"minsup"+name+"/"
         else:
+            rep_pref=path_classif_out+prefixe+"/"
+            if not os.path.exists(rep_pref):
+                os.mkdir(rep_pref)
             rep_out = rep_pref
+            
         if not os.path.exists(rep_out):
             os.mkdir(rep_out)
         X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, sampling)
