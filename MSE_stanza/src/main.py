@@ -538,8 +538,8 @@ if __name__ == "__main__":
                                         else:
                                             results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, metadata, internal_clustering, tidy_metadata, results, path_out)
                     
+                    print("pos")
                     if not os.path.exists(f"./Patterns_results/R/{metadata}/pos"):
-                        print(f"./Patterns_results/R/{metadata}/pos")
                         path_pos = f"./Patterns_results/R/{metadata}/"
                         execution_time = datetime.datetime.now()
                         file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
@@ -552,6 +552,7 @@ if __name__ == "__main__":
                         if not os.path.exists(f"./Patterns_results/Classifieurs/pos"):
                             results["pos"] = file_out_pos
                     else:
+                        print(f"already computed pos")
                         doss =f"./Patterns_results/R/{metadata}/pos/"
                         liste=[]
                         for fichier in os.listdir(doss):
@@ -565,6 +566,7 @@ if __name__ == "__main__":
                             #     results["20000lemma"] = file_out_20000lemma
                     
                     for seuil in liste_seuils_lemma:
+                        print(str(seuil) + "lemma")
                         if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}lemma"):
                             path_lemma = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
@@ -579,37 +581,41 @@ if __name__ == "__main__":
                                 if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma"):
                                     results[f"{seuil}lemma"] = file_out_lemma
                         else:
+                            print(f"already computed {seuil}lemma")
                             if metadata=="id":
                                 liste=[]
                                 doss =f"./Patterns_results/R/{metadata}/{seuil}lemma/"
                                 for fichier in os.listdir(doss):
-                                    if f"{seuil}_lemmaTexte_" in fichier:
+                                    if f"{seuil}lemmaTexte_" in fichier:
                                         liste.append(doss+fichier)
                                 tri = sorted(liste, key=os.path.getmtime, reverse=True)
                                 if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma"):
                                     results[f"{seuil}lemma"] = tri[0]
-                    
-                    if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil_bigrams_comparison}bigramslemma"):
-                        path_big = f"./Patterns_results/R/{metadata}/"
-                        execution_time = datetime.datetime.now()
-                        file_out_bigrams, seuil, path_out = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil_bigrams_comparison)
-                        subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out])
-                        if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil_bigrams_comparison}bigramslemma"):
-                            results[f"{seuil}bigramslemma"] = file_out_bigrams
-                    else:
-                        doss =f"./Patterns_results/R/{metadata}/{seuil_bigrams_comparison}bigramslemma/"
-                        liste=[]
-                        for fichier in os.listdir(doss):
-                            if f"bigramslemmaTexte_" in fichier:
-                                liste.append(doss+fichier)
-                        tri = sorted(liste, key=os.path.getmtime, reverse=True)
-                        if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil_bigrams_comparison}bigramslemma"):
-                            results[f"{seuil_bigrams_comparison}bigramslemma"] = tri[0]
-                    
+                                    
+                    for seuil in liste_seuils_bigrams:
+                        print(str(seuil) + "bigrams")
+                        if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma"):
+                            path_big = f"./Patterns_results/R/{metadata}/"
+                            execution_time = datetime.datetime.now()
+                            file_out_bigrams, seuil, path_out = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil)
+                            subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out])
+                            if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
+                                results[f"{seuil}bigramslemma"] = file_out_bigrams
+                        else:
+                            print(f"already computed {seuil}bigrams")
+                            doss =f"./Patterns_results/R/{metadata}/{seuil}bigramslemma/"
+                            liste=[]
+                            for fichier in os.listdir(doss):
+                                if f"bigramslemmaTexte_" in fichier:
+                                    liste.append(doss+fichier)
+                            tri = sorted(liste, key=os.path.getmtime, reverse=True)
+                            if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
+                                results[f"{seuil}bigramslemma"] = tri[0]
+                        
                     
                     #qu'est-ce que ça fait cela en dessous ?
                     
-                    # for property_gen in [f"{seuil_bigrams_comparison}bigramslemma"]:
+                    # for property_gen in [f"{seuil}bigramslemma"]:
                     #         if not os.path.exists(f"./Patterns_results/Classifieurs/{property_gen}/"):
                     #             path=f"./Patterns_results/R/{property}/"
                     #             if os.path.exists(path):
