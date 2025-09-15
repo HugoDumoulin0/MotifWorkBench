@@ -33,7 +33,7 @@ if méthode=="partition":
 # Early specifs mode
 #-------------------
 
-earlySpecifs=True
+earlySpecifs=False
 seuil_early_specifs=200
 partition_cible = "genre"
 seuil_banalité=2
@@ -46,7 +46,7 @@ liste_earlyspecifs_lemma = ["président", "comité", "formation"]
 #-------------------
 # Internal clustering
 #-------------------
-internal_clustering=True
+internal_clustering=False
 
 
 #-------------------
@@ -58,7 +58,7 @@ list_gap_min = [0]
 list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [1]
+list_minsup_percent = [25]
 
 threads=30
 
@@ -85,7 +85,7 @@ list_metadata = ["id"
 # Comparison with lemmas and pos
 #-------------------
 liste_seuils_lemma=[100,200]
-seuil_bigrams_comparison = 100
+liste_seuils_bigrams = [100]
 
 #-------------------
 # Machine learning params
