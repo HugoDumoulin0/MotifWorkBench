@@ -327,9 +327,8 @@ def main(minsup, results, path_target, sampling):
         #     os.mkdir(path_out)
         # name = filename[:-4].replace(path_out, "")
         # if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
-        print(prefixe+"---"+filename)
+        print("classification : "+prefixe+"/n"+filename)
         if not ("lemma" in prefixe or "pos" in prefixe or "bigrams" in prefixe):
-            print("lemma pos bigrams not in " + prefixe)
             rep_pref=path_classif_out+"motifs/"
             if not os.path.exists(rep_pref):
                 os.mkdir(rep_pref)
