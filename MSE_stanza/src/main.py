@@ -459,8 +459,8 @@ if __name__ == "__main__":
                  tools.save_as_txt(compute_all_centroids_3, title_file_out_centroids_3.replace(".pk", ".txt"))
 
         if internal_clustering==True:
-            if not os.path.exists("./Clustering_results"):
-                os.mkdir("./Clustering_results")
+                if not os.path.exists("./Clustering_results"):
+                    os.mkdir("./Clustering_results")
                 if not os.path.exists("./Clustering_results/Clusters"):
                     os.mkdir("./Clustering_results/Clusters")
                 if not os.path.exists("./Clustering_results/Medoids"):
@@ -470,12 +470,13 @@ if __name__ == "__main__":
                         for gap_min in list_gap_min:
                             for gap_max in list_gap_max:
                                 for minsup_percent in list_minsup_percent:
-                                    internalClustering(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max)
-            else:
-                print("-"*75)
-                print("4.4. Internal clustering of closed patterns")
-                print("Clustering results already exists : delete it to perform internal clustering again")
-                    
+                                    if not os.path.exists(f"./Clustering_results/Clusters/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_clustering_3.pk"):
+                                        internalClustering(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max)
+                else:
+                    print("-"*75)
+                    print("4.4. Internal clustering of closed patterns")
+                    print("Clustering results already exists : delete it to perform internal clustering again")
+                        
         ### calculs statistiques ###
         if méthode=="partition":
                 start_time = time.time()
@@ -487,15 +488,27 @@ if __name__ == "__main__":
                     os.mkdir("./Patterns_results/R")
                 df_metadata = pd.read_csv(path_target, sep="\t", index_col=0)
                 results={}
-                for metadata in list_metadata:
-                    sub_tidy_metadata=[metadata]
-                    if earlySpecifs:
-                        metadata_early=f"{seuil_early_specifs}earlySpecifs_{metadata}"
-                        sub_tidy_metadata.append(metadata_early)
-                    if internal_clustering:
-                        metadata_internal_clust = f"internal_clustering_{metadata}"
-                        sub_tidy_metadata.append(metadata_internal_clust)
-                    for tidy_metadata in sub_tidy_metadata:
+ 
+                # for metadata in list_metadata:
+                #     sub_tidy_metadata=[metadata]
+                #     if earlySpecifs:
+                #         metadata_early=f"{seuil_early_specifs}earlySpecifs_{metadata}"
+                #         sub_tidy_metadata.append(metadata_early)
+                #     if internal_clustering:
+                #         metadata_internal_clust = f"internal_clustering_{metadata}"
+                #         sub_tidy_metadata.append(metadata_internal_clust)
+
+                ##computing patterns###
+
+                modif1=""
+                modif2=""
+                if earlySpecifs:
+                    modif1=f"{seuil_early_specifs}earlySpecifs_"
+                if internal_clustering:
+                    modif2= f"internal_clustering_"
+                sub_tidy_metadata = [modif1+modif2+metadata for metadata in list_metadata]
+                
+                for tidy_metadata in sub_tidy_metadata:
                         for nb_itemset_min in list_itemset_min:
                             for gap_min in list_gap_min:
                                 for gap_max in list_gap_max:
@@ -530,14 +543,31 @@ if __name__ == "__main__":
                                                         print(path_out)
                                                         print(f"already computed {dir}")
                                                         fichiers = sorted(os.listdir(path_out+dir), key=lambda f: os.path.getmtime(os.path.join(path_out+dir, f)),reverse=True)
-                                                        if not os.path.exists(f"./Patterns_results/Classifieurs/motifs/minsup{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"):
+                                                        if not os.path.exists(f"./Patterns_results/Classifieurs/motifs/{tidy_metadata}/minsup{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"):
+                                                            print("classifier results does not exist yet")
                                                             for f in fichiers: 
-                                                                    if f"motifsTexte_" in f:
-                                                                        results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
+                                                                    if "motifsTexte_" in f:
+                                                                        if internal_clustering:
+                                                                            if "_FUS" in f:
+                                                                                results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
+                                                                            else:
+                                                                                df_k=pd.read_csv(path_out+dir+"/"+f, sep="\t", index_col=0)
+                                                                                lexic_int_str = formate_patterns.make_dict_int_to_str()
+                                                                                df_k = compute_CQP.fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
+                                                                                f = f[:-4]+"_FUS.tsv"
+                                                                                df_k.to_csv(path_out+dir+"/"+f, sep="\t")
+                                                                                results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = f
+                                                                        else:
+                                                                            results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
                                                                         break
-                                        else:
-                                            results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, metadata, internal_clustering, tidy_metadata, results, path_out)
-                    
+                                        else:    
+                                            print("computing statistics from scratch")
+                                            results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, tidy_metadata, internal_clustering, results, path_out)
+                
+                ##comparison with other features###
+                
+                for metadata in list_metadata:
+                    print(metadata)
                     print("pos")
                     if not os.path.exists(f"./Patterns_results/R/{metadata}/pos"):
                         path_pos = f"./Patterns_results/R/{metadata}/"
@@ -612,7 +642,7 @@ if __name__ == "__main__":
                             if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
                                 results[f"{seuil}bigramslemma"] = tri[0]
                         
-                    
+                    print(results)
                     #qu'est-ce que ça fait cela en dessous ?
                     
                     # for property_gen in [f"{seuil}bigramslemma"]:
@@ -687,7 +717,7 @@ if __name__ == "__main__":
                 #                     for minsup_percent in list_minsup_percent:
                 #                         print(f"Minsup: {minsup_percent}")
                 #                         path_out = f"{path_class}minsup{str(minsup_percent)}/"
-                classifiers.main(minsup_percent,results,path_target, sampling)
+                classifiers.main(minsup_percent,results,path_target, sampling, tidy_metadata)
 
                 # Use R to perform AFC automatically
                 end_time = time.time()
@@ -699,6 +729,23 @@ if __name__ == "__main__":
     print(f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes")
     execution_time = datetime.datetime.now()
     with open(f"./log_{execution_time}.txt", "w") as file:
+        file.write(f"earlySpecifs={earlySpecifs}\n")
+        file.write(f"internal_clustering={internal_clustering}\n")
+        file.write(f"list_itemset_min={list_itemset_min}\n")
+        file.write(f"list_gap_min={list_gap_min}\n")
+        file.write(f"list_gap_max={list_gap_max}\n")
+        file.write(f"list_minsup_percent={list_minsup_percent}\n")
+        file.write(f"Patterns_param_form={Form}\n")
+        file.write(f"Patterns_param_lemma={Lemma}\n")
+        file.write(f"Patterns_param_pos={Pos}\n")
+        file.write(f"Patterns_param_dep={Dep}\n")
+        file.write(f"Patterns_param_feats={Feats}\n")
+        file.write(f"List_metadata={list_metadata}\n")
+        file.write(f"List_seuils_lemma={liste_seuils_lemma}\n")
+        file.write(f"List_seuils_bigrams={liste_seuils_bigrams}\n")
+        file.write(f"classification={classification}\n")
+        file.write(f"y_class={y_class}\n")
+        file.write(f"sampling={sampling}\n")
         file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
         file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
         file.write(f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes")
