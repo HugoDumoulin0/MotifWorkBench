@@ -329,6 +329,7 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                     fichiers = sorted(os.listdir(path_id+dir), key=lambda f: os.path.getmtime(os.path.join(path_id+dir, f)),reverse=True)
                     for f in fichiers: 
                             if "motifsTexte_" in f:
+                                print("re-using : " + f)
                                 file_id=path_id+dir+"/"+f
                                 df_k=pd.read_csv(file_id, sep="\t", index_col=0)
                                 break
