@@ -459,7 +459,7 @@ if __name__ == "__main__":
                  tools.save_as_txt(compute_all_centroids_3, title_file_out_centroids_3.replace(".pk", ".txt"))
 
         if internal_clustering==True:
-                start_time=time.time
+                start_time=time.time()
                 if not os.path.exists("./Clustering_results"):
                     os.mkdir("./Clustering_results")
                 if not os.path.exists("./Clustering_results/Clusters"):
@@ -478,7 +478,7 @@ if __name__ == "__main__":
                     print("4.4. Internal clustering of closed patterns")
                     print("Clustering results already exists : delete it to perform internal clustering again")
                 end_time=time.time()
-                time_clustering=end_time-start_time
+                time_clustering = end_time - start_time
                 
                 
                 
