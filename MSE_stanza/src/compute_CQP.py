@@ -386,6 +386,8 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
         #          file_out_bigrams, seuil = compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil_bigrams_comparison)
         #          results[f"{seuil}bigrams"] = file_out_bigrams
     else:
+        if not os.path.exists(path_out):
+            os.mkdir(path_out)
         if not os.path.exists(f"{path_out}zero-motifs"):
                 os.mkdir(f"{path_out}zero-motifs")
     # if shortcut_association==False:
