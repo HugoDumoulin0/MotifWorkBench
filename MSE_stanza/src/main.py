@@ -459,6 +459,7 @@ if __name__ == "__main__":
                  tools.save_as_txt(compute_all_centroids_3, title_file_out_centroids_3.replace(".pk", ".txt"))
 
         if internal_clustering==True:
+                start_time=time.time
                 if not os.path.exists("./Clustering_results"):
                     os.mkdir("./Clustering_results")
                 if not os.path.exists("./Clustering_results/Clusters"):
@@ -476,7 +477,11 @@ if __name__ == "__main__":
                     print("-"*75)
                     print("4.4. Internal clustering of closed patterns")
                     print("Clustering results already exists : delete it to perform internal clustering again")
-                        
+                end_time=time.time()
+                time_clustering=end_time-start_time
+                
+                
+                
         ### calculs statistiques ###
         if méthode=="partition":
                 start_time = time.time()
@@ -568,8 +573,11 @@ if __name__ == "__main__":
                 
                 for metadata in list_metadata:
                     print(metadata)
+                    if not os.path.exists(f"./Patterns_results/R/{metadata}"):
+                        os.mkdir(f"./Patterns_results/R/{metadata}")
                     print("pos")
                     if not os.path.exists(f"./Patterns_results/R/{metadata}/pos"):
+                        os.mkdir(f"./Patterns_results/R/{metadata}/pos")
                         path_pos = f"./Patterns_results/R/{metadata}/"
                         execution_time = datetime.datetime.now()
                         file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
@@ -598,6 +606,7 @@ if __name__ == "__main__":
                     for seuil in liste_seuils_lemma:
                         print(str(seuil) + "lemma")
                         if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}lemma"):
+                            os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}lemma")
                             path_lemma = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
                             file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma)
@@ -625,6 +634,7 @@ if __name__ == "__main__":
                     for seuil in liste_seuils_bigrams:
                         print(str(seuil) + "bigrams")
                         if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma"):
+                            os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma")
                             path_big = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
                             file_out_bigrams, seuil, path_out = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil)
@@ -643,6 +653,9 @@ if __name__ == "__main__":
                                 results[f"{seuil}bigramslemma"] = tri[0]
                         
                     print(results)
+                    
+                    end_time = time.time()
+                    time_stats = end_time - start_time
                     #qu'est-ce que ça fait cela en dessous ?
                     
                     # for property_gen in [f"{seuil}bigramslemma"]:
@@ -682,51 +695,23 @@ if __name__ == "__main__":
                     #         if "20000bigrams" in f:
                     #             results["20000bigrams"]=path+f
                     #             break
-                print("-"*75)
-                print("6. Classification task")
-                
-                # for metadata in list_metadata:
-                #     sub_tidy_metadata=[metadata]
-                #     if earlySpecifs:
-                #         metadata_early=f"{seuil_early_specifs}earlySpecifs_{metadata}"
-                #         sub_tidy_metadata.append(metadata_early)
-                #     if internal_clustering:
-                #         metadata_internal_clust = f"internal_clustering_{metadata}"
-                #         sub_tidy_metadata.append(metadata_internal_clust)
-                #     for tidy_metadata in sub_tidy_metadata:
-                #         for nb_itemset_min in list_itemset_min:
-                #             for gap_min in list_gap_min:
-                #                 for gap_max in list_gap_max:
-                #                     path_class=f"./Patterns_results/Classifieurs/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-                #                     if not os.path.exists(path_class):
-                #                         path="./Patterns_results/Classifieurs/"
-                #                         if not os.path.exists(path):
-                #                             os.mkdir(path)
-                #                         path= f"./Patterns_results/Classifieurs/{tidy_metadata}/"
-                #                         if not os.path.exists(path):
-                #                             os.mkdir(path)
-                #                         path=f"./Patterns_results/Classifieurs/{tidy_metadata}/itemset_min{nb_itemset_min}"
-                #                         if not os.path.exists(path):
-                #                             os.mkdir(path)
-                #                         path=f"./Patterns_results/Classifieurs/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
-                #                         if not os.path.exists(path):
-                #                             os.mkdir(path)
-                #                         path=f"./Patterns_results/Classifieurs/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-                #                         if not os.path.exists(path):
-                #                             os.mkdir(path)
-                #                     for minsup_percent in list_minsup_percent:
-                #                         print(f"Minsup: {minsup_percent}")
-                #                         path_out = f"{path_class}minsup{str(minsup_percent)}/"
-                classifiers.main(minsup_percent,results,path_target, sampling, tidy_metadata)
+                if classification:
+                    print("-"*75)
+                    print("6. Classification task")
+                    start_time=time.time()
+                    classifiers.main(minsup_percent,results,path_target, sampling, tidy_metadata)
+                    end_time=time.time()
+                    time_class=end_time - start_time
 
                 # Use R to perform AFC automatically
-                end_time = time.time()
-                time_grew = end_time - start_time
                 # subprocess.call(["Rscript", "./src/AFC.r"])
 
     print(f"Temps de tagging : {time_tag/60:.2f} minutes")
     print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
-    print(f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes")
+    print(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes")
+    print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
+    print(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes")
+    
     execution_time = datetime.datetime.now()
     with open(f"./log_{execution_time}.txt", "w") as file:
         file.write(f"earlySpecifs={earlySpecifs}\n")
@@ -746,11 +731,16 @@ if __name__ == "__main__":
         file.write(f"classification={classification}\n")
         file.write(f"y_class={y_class}\n")
         file.write(f"sampling={sampling}\n")
+        file.write("-"*75)
         file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
         file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
-        file.write(f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes")
-    if GrowthRate == True:
-        print(f"Temps de clustering : {cluster_time/60:.2f} minutes")
+        file.write(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes\n")
+        file.write(f"Temps de calcul statistique  : {time_stats/60:2f} minutes\n")
+        file.write(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes\n")
+        file.write("-"*75)
+        
+    # if GrowthRate == True:
+    #     print(f"Temps de clustering : {cluster_time/60:.2f} minutes")
     
     # #-------------------------------------------------------------------------------------------------------------------
     # # Random Forest
