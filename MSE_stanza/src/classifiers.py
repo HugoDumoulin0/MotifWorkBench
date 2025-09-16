@@ -64,8 +64,9 @@ def prepare_dataset(path_data, rep_out, path_target, sampling):
     X_features=df.columns.tolist()
     X_features = [s.replace('"', '').replace("'", '') for s in X_features]
     
+    nb_col = df.shape[1]
     
-    df.to_csv(f"{rep_out}data_classif.tsv",  sep="\t")
+    df.to_csv(f"{rep_out}{nb_col}motifs_data_classif.tsv",  sep="\t")
     
     return X_motifs, y_motifs, X_features
 
@@ -315,7 +316,7 @@ def decision_tree(X_motifs, y_motifs, X_features, rep_out):
     graph.render(f"{rep_out}tree") 
     
     
-def main(minsup, results, path_target, sampling):
+def main(minsup, results, path_target, sampling,tidy_metadata):
     path_classif_out = "./Patterns_results/Classifieurs/"
     if not os.path.exists(path_classif_out):
         os.mkdir(path_classif_out)
@@ -329,7 +330,9 @@ def main(minsup, results, path_target, sampling):
         # if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
         print("classification : "+prefixe+"/n"+filename)
         if not ("lemma" in prefixe or "pos" in prefixe or "bigrams" in prefixe):
-            rep_pref=path_classif_out+"motifs/"
+            if not os.path.exists(path_classif_out+"motifs/"):
+                os.mkdir(path_classif_out+"motifs/")
+            rep_pref=path_classif_out+f"motifs/{tidy_metadata}/"
             if not os.path.exists(rep_pref):
                 os.mkdir(rep_pref)
             name = prefixe.split("motifs_")[1]
