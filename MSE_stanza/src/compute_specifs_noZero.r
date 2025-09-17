@@ -28,8 +28,9 @@ execution_time <- paste(args[2])
 default_folder <- paste(args[3]) #proposition pour organiser l'espace de travail
 print(default_folder)
 path_in <- paste(args[4])
+seuil <-paste(args[5])
 
-output_name_vertical <- paste0(default_folder, "/", minsup_percent, "_specif_", execution_time, ".tsv")
+output_name_vertical <- paste0(default_folder, "/", minsup_percent, "_specif_", seuil, execution_time, ".tsv")
 # output_name_pivot <- paste0(default_folder, "/", minsup_percent, "_specif_pivot_", execution_time, ".tsv")
 # output_name_pivot_minimal <- paste0(default_folder, "/", minsup_percent, "_synthesis_", execution_time, ".tsv")
 
