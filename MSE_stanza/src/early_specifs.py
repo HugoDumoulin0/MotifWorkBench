@@ -71,12 +71,14 @@ def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, exe
     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     print("begining computing with R")
-    subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out]) #Run R!
+    subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil)]) #Run R!
     
-def tri_lemma(execution_time,seuil_banalité):
+def tri_lemma(execution_time,seuil_banalité,seuil):
     liste = os.listdir("./Data/earlySPECIFS")
-    for file in liste:
-        if f"specif_{execution_time}" in file:
+    fichiers = sorted(liste, key=lambda f: os.path.getmtime(os.path.join("./Data/earlySPECIFS", f)),reverse=True)
+    for file in fichiers:
+        if f"specif_{seuil}" in file:
+        # if f"specif_{execution_time}" in file:
             df = pd.read_csv(f"./Data/earlySPECIFS/{file}", sep="\t", index_col=0, quoting=3)
     # df.drop(columns=["std_dev"], inplace=True)
     lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
@@ -85,17 +87,23 @@ def tri_lemma(execution_time,seuil_banalité):
 def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité):
     if not os.path.exists("./Data/earlySPECIFS"):
         os.mkdir("./Data/earlySPECIFS/")
+    execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
     path_out = "./Data/earlySPECIFS/"
     path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
     lexique = tools.load_pickles(path_lexique)
-    df_target = pd.read_csv(path_metadata, sep="\t", index_col=0)
-    # execution_time = datetime.datetime.now()
-    execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
-    df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
-    df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
-    dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
-    compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
-    lignes = tri_lemma(execution_time, seuil_banalité)
+
+    for file in os.listdir("./Data/earlySPECIFS"):
+        if f"specif_{seuil}" in file:
+            print(f"EarlySpecifs computing already exists with {file} \n delete it if you want to compute from scratch")
+            break
+    else:
+        df_target = pd.read_csv(path_metadata, sep="\t", index_col=0)
+        df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
+        df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
+        dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
+        compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
+        
+    lignes = tri_lemma(execution_time, seuil_banalité,seuil)
     print(lignes)
     liste_lemma = []
     for l in lignes:
