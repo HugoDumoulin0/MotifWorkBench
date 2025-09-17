@@ -163,7 +163,9 @@ def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
     {'C': [1, 10, 100, 1000], 'gamma': [0.001, 0.0001], 'kernel': ['rbf']},
    # {'C': [10], 'gamma': [0.001], 'kernel': ['rbf']},
   ]
-     n_splits=5
+     class_counts = pd.Series(y_motifs).value_counts()
+     min_class_size = class_counts.min()
+     n_splits=n_splits = min(5, min_class_size)
      n_repeats=10
      cv = RepeatedStratifiedKFold(n_splits=n_splits, n_repeats=n_repeats, random_state=50)
      
@@ -180,7 +182,7 @@ def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
         model=best_model,
         X=X_motifs_scaled_reduced,
         y=y_motifs,
-        n_splits=5,
+        n_splits= min(5, min_class_size),
         n_repeats=10,
         random_state=50
     )
