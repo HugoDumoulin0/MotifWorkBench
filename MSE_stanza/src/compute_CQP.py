@@ -342,12 +342,12 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
             else:
                 print("computing from scratch")
                 df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
-            
+                df_k.to_csv(file_out_motifs, sep="\t")
             ## cas de annee, genre, etc.##
             if not metadata.split('_')[-1]=="id":
                 df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
                 df_k.to_csv(file_out_motifs, sep="\t")
-            
+
             ##cas de id gérer clustering et earlyspecifs###
             else:
                 if internal_clustering:
