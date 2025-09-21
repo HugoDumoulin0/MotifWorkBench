@@ -321,34 +321,39 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
         if not os.path.exists(path_out):
             os.mkdir(path_out)
             
-            #shortcut pour récupérer un df_k déjà produit par précédente instanciation du script avec la metadata "id"
-            path_id = f"./Patterns_results/R/id/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/minsup{str(minsup_percent)}/"
-            if os.path.exists(path_id):
-                print("re-using computing data from 'id' metadata instanciation of script")
-                for dir in os.listdir(path_id):
-                    fichiers = sorted(os.listdir(path_id+dir), key=lambda f: os.path.getmtime(os.path.join(path_id+dir, f)),reverse=True)
-                    for f in fichiers: 
-                            if "motifsTexte_" in f:
-                                print("re-using : " + f)
-                                file_id=path_id+dir+"/"+f
-                                df_k=pd.read_csv(file_id, sep="\t", index_col=0)
-                                break
-                    file_out_motifs=path_out+dir+"/"+f
-                    chaine=path_out+dir+"/"+f
-                    file_total=chaine.replace("motifsTexte","motifsTexteOrdered",1)
-                    path_out=path_out+dir+"/"
-                    os.mkdir(path_out)
-
-            else:
-                print("computing from scratch")
-                df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
-                df_k.to_csv(file_out_motifs, sep="\t")
+            
+            if internal_clustering:
+                #shortcut pour récupérer un df_k déjà produit par précédente instanciation du script avec la metadata "id"
+                path_id = f"./Patterns_results/R/id/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/minsup{str(minsup_percent)}/"
+                if os.path.exists(path_id):
+                    print("re-using computing data from 'id' metadata instanciation of script")
+                    for dir in os.listdir(path_id):
+                        fichiers = sorted(os.listdir(path_id+dir), key=lambda f: os.path.getmtime(os.path.join(path_id+dir, f)),reverse=True)
+                        for f in fichiers: 
+                                if "motifsTexte_" in f:
+                                    print("re-using : " + f)
+                                    file_id=path_id+dir+"/"+f
+                                    df_k=pd.read_csv(file_id, sep="\t", index_col=0)
+                                    break
+                        file_out_motifs=path_out+dir+"/"+f
+                        chaine=path_out+dir+"/"+f
+                        file_total=chaine.replace("motifsTexte","motifsTexteOrdered",1)
+                        path_out=path_out+dir+"/"
+                        os.mkdir(path_out)
+    
+                else:
+                    print("computing from scratch")
+                    df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+                    df_k.to_csv(file_out_motifs, sep="\t")
+            
+            
+            
             ## cas de annee, genre, etc.##
             if not metadata.split('_')[-1]=="id":
                 df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
                 df_k.to_csv(file_out_motifs, sep="\t")
 
-            ##cas de id gérer clustering et earlyspecifs###
+            ##cas de id : gérer clustering et earlyspecifs###
             else:
                 if internal_clustering:
                     lexic_int_str = formate_patterns.make_dict_int_to_str()
@@ -362,6 +367,8 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                     if earlySpecifs:
                         results[f"early_specifs_motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=file_out_motifs
                     else:
+                        df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+                        df_k.to_csv(file_out_motifs, sep="\t")
                         results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
 
         
