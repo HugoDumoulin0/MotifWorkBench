@@ -734,9 +734,11 @@ if __name__ == "__main__":
         file.write("-"*75)
         file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
         file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
-        file.write(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes\n")
+        if internal_clustering:
+            file.write(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes\n")
         file.write(f"Temps de calcul statistique  : {time_stats/60:2f} minutes\n")
-        file.write(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes\n")
+        if classification:
+            file.write(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes\n")
         file.write("-"*75)
         
     # if GrowthRate == True:
