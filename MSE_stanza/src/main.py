@@ -708,8 +708,10 @@ if __name__ == "__main__":
 
     print(f"Temps de tagging : {time_tag/60:.2f} minutes")
     print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
-    print(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes")
-    print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
+    if internal_clustering:
+        print(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes")
+    if classification:
+        print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
     print(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes")
     
     execution_time = datetime.datetime.now()
