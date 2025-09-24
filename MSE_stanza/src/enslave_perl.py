@@ -16,7 +16,8 @@ def cqp_freq_textes(pattern):
     output=result.stdout
     output_lines = output.splitlines()
     for line in output_lines[5:(len(output_lines)-3)]:
-        # print(line)
+        #est -ce que 5 est bien ok ici ??##
+        print(line)
         if not line.startswith("#"):
             part = line.split("\t")
 
