@@ -91,9 +91,9 @@ def cqp_index_pos():
     # dictionnaire_pos={}
     liste_pos=[]
     # print(T)
-    for line in output_lines[5:(len(output_lines)-3)]:
+    for line in output_lines[4:(len(output_lines)-3)]:
         part = line.split("\t")
-        # print(line)
+        print(line)
         freq = part[0].strip()
         pos = part[1].strip()
         pos = pos.split("  ")[0]
