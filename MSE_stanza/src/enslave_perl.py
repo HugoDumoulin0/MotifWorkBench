@@ -63,8 +63,9 @@ def cqp_index_property(property):
     # print(dictionnaire_t)
     return liste_property
 
-def cqp_index_lemma():
-    cmd = ['perl', './src/cqp_index_lemma.pl']
+def cqp_index_lemma(pos):
+    query = f'A = [lemma=".*" & pos="{pos}"]'
+    cmd = ['perl', './src/cqp_index_lemma.pl', query]
     result = subprocess.run(cmd, capture_output=True, text=True)
     output=result.stdout
     output_lines = output.splitlines()
@@ -73,7 +74,6 @@ def cqp_index_lemma():
     # print(T)
     for line in output_lines[4:(len(output_lines)-3)]:
         part = line.split("\t")
-        # print(line)
         # freq = part[0].strip()
         lemma = part[1].strip()
         lemma = lemma.split("  ")[0]

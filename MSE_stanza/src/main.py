@@ -253,7 +253,7 @@ if __name__ == "__main__":
             print("-"*75)
             print("2.1 Early selection of specific lemma")
             if user_input_list==False:
-                liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "", path_metadata, partition_cible, seuil_banalité)
+                liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma)
         # #-------------------------------------------------------------------------------------------------------------------
         # # Mining Pattern
         # #-------------------------------------------------------------------------------------------------------------------
@@ -604,12 +604,12 @@ if __name__ == "__main__":
                             #     results["20000lemma"] = file_out_20000lemma
                     
                     for seuil in liste_seuils_lemma:
-                        print(str(seuil) + "lemma")
-                        if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}lemma"):
-                            os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}lemma")
+                        print(str(seuil) + "lemma" + downhill_pos4lemma)
+                        if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}"):
+                            os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}")
                             path_lemma = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
-                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma)
+                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma,downhill_pos4lemma)
                             if not metadata=="id":
                                 df_lemma =  compute_CQP.textes2metadata(df_lemma, df_metadata, metadata).T
                             df_lemma.to_csv(file_out_lemma, sep="\t")
@@ -617,19 +617,19 @@ if __name__ == "__main__":
                             df_lemma=compute_CQP.add_total(df_lemma)
                             df_lemma.to_csv(file_total, sep="\t")
                             if metadata=="id":
-                                if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma"):
-                                    results[f"{seuil}lemma"] = file_out_lemma
+                                if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma{downhill_pos4lemma}"):
+                                    results[f"{seuil}lemma{downhill_pos4lemma}"] = file_out_lemma
                         else:
-                            print(f"already computed {seuil}lemma")
+                            print(f"already computed {seuil}lemma {downhill_pos4lemma}")
                             if metadata=="id":
                                 liste=[]
-                                doss =f"./Patterns_results/R/{metadata}/{seuil}lemma/"
+                                doss =f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}/"
                                 for fichier in os.listdir(doss):
-                                    if f"{seuil}lemmaTexte_" in fichier:
+                                    if f"{seuil}{downhill_pos4lemma}lemmaTexte_" in fichier:
                                         liste.append(doss+fichier)
                                 tri = sorted(liste, key=os.path.getmtime, reverse=True)
-                                if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma"):
-                                    results[f"{seuil}lemma"] = tri[0]
+                                if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma{downhill_pos4lemma}"):
+                                    results[f"{seuil}lemma{downhill_pos4lemma}"] = tri[0]
                                     
                     for seuil in liste_seuils_bigrams:
                         print(str(seuil) + "bigrams")

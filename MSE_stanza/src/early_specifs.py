@@ -16,12 +16,12 @@ import datetime
 import compute_CQP
 import tools
 
-def compute_early_df_lemmes(seuil):
+def compute_early_df_lemmes(seuil, early_pos4lemma):
     T, dictionnaire_t = enslave_perl.cqp_general()
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
     print("indexing lemma")
-    liste_lemma = enslave_perl.cqp_index_lemma()
+    liste_lemma = enslave_perl.cqp_index_lemma(early_pos4lemma)
     print("index done")
     nombre = len(liste_lemma[:seuil])
     print(f"Computing {nombre} lemma freq X texte...")
@@ -30,7 +30,7 @@ def compute_early_df_lemmes(seuil):
     for lemma in liste_lemma[:seuil]:
         req = f'[lemma="{lemma}"]'
         indice+=1
-        print(f"{lemma} {indice}")
+        print(f"{indice} {lemma}")
         ligne_de_table = enslave_perl.cqp_freq_textes(req)
         lignes_table.append(ligne_de_table)
     df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil])
@@ -50,10 +50,12 @@ def dictionnaire_t_target(dictionnaire_t, df_target,partition_cible):
     dictionnaire_t_result = df_target.groupby(partition_cible)["taille"].sum().to_dict()
     return dictionnaire_t_result
 
-def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, execution_time):
+def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, execution_time,early_pos4lemma):
     dictionnaire_f = df_k.T.sum(axis=1).to_dict()
     dictionnaire_k = df_k.to_dict()
     données_specifs = []
+    if early_pos4lemma==".*":
+        early_pos4lemma="allPos"
     for motif in dictionnaire_k.keys():
         for texte in dictionnaire_k[motif].keys():
             données_specifs.append({
@@ -65,26 +67,28 @@ def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, exe
                 "T":T    
                 })
     df_spec = pd.DataFrame(données_specifs)
-    file_out=f"{path_out}{seuil}SpecifsLemma.tsv"
+    file_out=f"{path_out}{seuil}{early_pos4lemma}SpecifsLemma.tsv"
     print("file specif out !")
     # file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
     # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     print("begining computing with R")
-    subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil)]) #Run R!
+    subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil), str(early_pos4lemma)]) #Run R!
     
-def tri_lemma(execution_time,seuil_banalité,seuil):
+def tri_lemma(execution_time,seuil_banalité,seuil,early_pos4lemma):
     liste = os.listdir("./Data/earlySPECIFS")
     fichiers = sorted(liste, key=lambda f: os.path.getmtime(os.path.join("./Data/earlySPECIFS", f)),reverse=True)
+    if early_pos4lemma==".*":
+        early_pos4lemma="allPos"
     for file in fichiers:
-        if f"specif_{seuil}" in file:
+        if f"specif_{seuil}{early_pos4lemma}" in file:
         # if f"specif_{execution_time}" in file:
             df = pd.read_csv(f"./Data/earlySPECIFS/{file}", sep="\t", index_col=0, quoting=3)
     # df.drop(columns=["std_dev"], inplace=True)
     lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
     return lignes
     
-def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité):
+def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,early_pos4lemma):
     if not os.path.exists("./Data/earlySPECIFS"):
         os.mkdir("./Data/earlySPECIFS/")
     execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
@@ -98,12 +102,12 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité)
             break
     else:
         df_target = pd.read_csv(path_metadata, sep="\t", index_col=0)
-        df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil)
+        df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil, early_pos4lemma)
         df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
         dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
-        compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time)
+        compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time,early_pos4lemma)
         
-    lignes = tri_lemma(execution_time, seuil_banalité,seuil)
+    lignes = tri_lemma(execution_time, seuil_banalité,seuil,early_pos4lemma)
     print(lignes)
     liste_lemma = []
     for l in lignes:
