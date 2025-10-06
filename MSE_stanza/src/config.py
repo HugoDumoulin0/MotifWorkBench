@@ -33,10 +33,12 @@ if méthode=="partition":
 # Early specifs mode
 #-------------------
 
-earlySpecifs=False
+earlySpecifs=True
 seuil_early_specifs=200
 partition_cible = "genre"
 seuil_banalité=2
+#early_pos4lemma=".*"  #toutes les pos possibles
+early_pos4lemma = "ADJ|NOUN|VERB" #restriction aux mots lexicaux
 
 user_input_list=False
 liste_earlyspecifs_lemma = ["président", "comité", "formation"]
@@ -85,6 +87,8 @@ list_metadata = ["id"
 # Comparison with lemmas and pos
 #-------------------
 liste_seuils_lemma=[100,200]
+#downhill_pos4lemma = ".*" #restriction pos 
+downhill_pos4lemma="ADJ|ADV|NOUN|VERB" #restriction des lemma aux seuls mots_lexicaux
 liste_seuils_bigrams = [100]
 
 #-------------------
