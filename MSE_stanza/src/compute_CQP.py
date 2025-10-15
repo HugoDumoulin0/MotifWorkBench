@@ -71,11 +71,11 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     # df_k_total.to_csv(file_total, sep="\t")
     return df_k, path_out, total_motifs, file_out, file_total
     
-def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
+def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out, downhill_pos4lemma):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
     print("indexing lemma")
-    liste_lemma = enslave_perl.cqp_index_lemma()
+    liste_lemma = enslave_perl.cqp_index_lemma(downhill_pos4lemma)
     print("index done")
     nombre = len(liste_lemma[:seuil])
     print(f"Computing {nombre} lemma freq X texte...")
@@ -84,18 +84,20 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
     for lemma in liste_lemma[:seuil]:
         req = f'[lemma="{lemma}"]'
         indice+=1
-        print(f"{lemma} {indice}")
+        print(f"{indice} {lemma}")
         ligne_de_table = enslave_perl.cqp_freq_textes(req)
         lignes_table.append(ligne_de_table)
     df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil])
     df_lemma = df_lemma.fillna(0)
     df_lemma = df_lemma.apply(pd.to_numeric)
-    prefixe=f"{seuil}lemma/"
+    prefixe=f"{seuil}lemma{downhill_pos4lemma}/"
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    file_out = f"{path_out}{seuil}lemmaTexte_df_{execution_time}.tsv"
-    file_total = f"{path_out}{seuil}lemmaTexteOrdered_df_{execution_time}.tsv"
+    if downhill_pos4lemma==".*":
+        downhill_pos4lemma="allPos"
+    file_out = f"{path_out}{seuil}{downhill_pos4lemma}lemmaTexte_df_{execution_time}.tsv"
+    file_total = f"{path_out}{seuil}{downhill_pos4lemma}lemmaTexteOrdered_df_{execution_time}.tsv"
 
     # df_lemma.to_csv(file_out, sep="\t")
     # subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) 
