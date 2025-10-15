@@ -609,7 +609,7 @@ if __name__ == "__main__":
                             os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}")
                             path_lemma = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
-                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma,downhill_pos4lemma)
+                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
                             if not metadata=="id":
                                 df_lemma =  compute_CQP.textes2metadata(df_lemma, df_metadata, metadata).T
                             df_lemma.to_csv(file_out_lemma, sep="\t")
