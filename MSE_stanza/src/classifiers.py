@@ -120,14 +120,14 @@ def cross_val_classification_report(model,X,y,n_splits,n_repeats,random_state = 
 #-------- SVM --------------
 def svm_train(X_motifs_scaled_reduced, y_motifs, rep_out, params):
     X_train, X_test, y_train, y_test, X_motifs_scaled_reduced, y_motifs = split_data(X_motifs_scaled_reduced, y_motifs)
-    svm = SVC(**params)
+    svm = SVC(**params,class_weight='balanced')
     classify = svm.fit(X_train, y_train)
 
     y_pred = svm.predict(X_test)
     report = classification_report(y_test, y_pred)
 
-    with open(f"{rep_out}svm_report.txt", "w") as f:
-        f.write(report)
+    # with open(f"{rep_out}svm_report.txt", "w") as f:
+    #     f.write(report)
     
     return svm
 
@@ -172,7 +172,7 @@ def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
      total_combinations = len(list(ParameterGrid(param_grid)))
      total_fits = total_combinations * n_splits * n_repeats
      
-     grid_search = GridSearchCV(SVC(), param_grid, cv=cv, scoring='accuracy', n_jobs=-1, verbose=1)
+     grid_search = GridSearchCV(SVC(class_weight='balanced'), param_grid, cv=cv, scoring='f1_macro', n_jobs=-1, verbose=1)
      grid_search.fit(X_motifs_scaled_reduced, y_motifs)
      
      best_model = grid_search.best_estimator_
@@ -192,7 +192,7 @@ def svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out):
     
      return best_model, best_params
 
-
+#à débrancher##
 def svm_mini_plot_decision(svm, X_motifs_scaled_reduced, y_motifs, rep_out): #un plot de la svm mini permettant de visualiser les frontières en 2D 
     # for i in range(0,X_motifs_scaled_reduced.shape[1]):
     x_min, x_max = X_motifs_scaled_reduced[:, 0].min() - 1, X_motifs_scaled_reduced[:, 0].max() + 1
@@ -223,10 +223,11 @@ def svm_mini_plot_decision(svm, X_motifs_scaled_reduced, y_motifs, rep_out): #un
     handles, labels = scatter.legend_elements()
     
     plt.legend(handles, le.classes_, title="Classes", loc="best")
-    plt.savefig(f"{rep_out}{svm}_mini_plot.png", dpi=300, bbox_inches='tight')
+    plt.savefig(f"{rep_out}mini{svm}_plot.png", dpi=300, bbox_inches='tight')
     plt.close()
     
-    
+
+#débranché###
 def svm_plot_decision_alt(svm, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp):##permet d'avoir une svm entraînée sur un nb_composantes principales > 2 et de plot sa projection sur 2D, par contre on a pas le contourf joli
      # 1. Créer les plages de valeurs pour chaque dimension (tu peux ajuster `num`)
     num = 5  # nombre de points par axe
@@ -275,7 +276,45 @@ def svm_plot_decision_alt(svm, X_motifs_scaled_reduced, y_motifs, rep_out, nb_co
     plt.savefig(f"{rep_out}{svm}_plot_alt.png", dpi=300, bbox_inches='tight')
     plt.close()
 
+#mieux
+def cut_plot_decision(svm, X_scaled_reduced, y_motifs, rep_out):
+    X_2D = X_scaled_reduced[:, :2]
 
+    x_min, x_max = X_2D[:, 0].min() - 1, X_2D[:, 0].max() + 1
+    y_min, y_max = X_2D[:, 1].min() - 1, X_2D[:, 1].max() + 1
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1),
+                         np.arange(y_min, y_max, 0.1))
+    grid_2D = np.c_[xx.ravel(), yy.ravel()]
+
+    #Extension de la grille à 50 dimensions (avec zéros pour les composantes >2)
+    n_comp = X_scaled_reduced.shape[1]
+    grid_full = np.zeros((grid_2D.shape[0], n_comp))
+    grid_full[:, :2] = grid_2D  # seules les 2 premières dimensions varient
+
+    Z = svm.predict(grid_full)
+
+    le = LabelEncoder()
+    y_encoded = le.fit_transform(y_motifs)
+    Z_encoded = le.transform(Z)
+    Z_encoded = Z_encoded.reshape(xx.shape)
+
+    plt.figure(figsize=(8, 6))
+    plt.contourf(xx, yy, Z_encoded, alpha=0.8, cmap=plt.cm.coolwarm)
+
+    scatter = plt.scatter(X_2D[:, 0], X_2D[:, 1], c=y_encoded,
+                          cmap=plt.cm.coolwarm, edgecolors='k', s=40)
+
+    plt.xlabel('Composante 1')
+    plt.ylabel('Composante 2')
+    plt.title('Frontière de décision SVM (projection 2D)')
+    handles, _ = scatter.legend_elements()
+    plt.legend(handles, le.classes_, title="Classes", loc="best")
+
+    # 7. Sauvegarde
+    plt.savefig(f"{rep_out}/{svm}svm_cut_plot.png", dpi=300, bbox_inches='tight')
+    plt.close()
+
+#inutile vu que PCA
 def importance(model, X_train, y_train, X_features, rep_out):### annulé car cela met en avant la forte contribution des premiers axes d'une ACP ce qui esttrivial et donc moyennement intéressant
     result = permutation_importance(model, X_train, y_train, n_repeats=30, random_state=42, n_jobs=-1)
 
@@ -318,6 +357,9 @@ def decision_tree(X_motifs, y_motifs, X_features, rep_out):
     graph.render(f"{rep_out}tree") 
     
     
+    
+    
+    
 def main(minsup, results, path_target, sampling,tidy_metadata):
     path_classif_out = "./Patterns_results/Classifieurs/"
     if not os.path.exists(path_classif_out):
@@ -358,14 +400,21 @@ def main(minsup, results, path_target, sampling,tidy_metadata):
             #     svm_plot_decision_alt(best_model, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp)
             # importance(best_model, X_motifs_scaled_reduced, y_motifs, X_features, rep_out)
         
+            cut_plot_decision(best_model, X_motifs_scaled_reduced, y_motifs, rep_out)
             
             ###mini svm pour mini plot en 2D###
             nb_comp=2
-            X_motifs_mini = PCA_transform(X_motifs, nb_comp, rep_out, X_features) 
+            X_motifs_mini = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
             svm_mini = svm_train(X_motifs_mini, y_motifs, rep_out, best_params)
+            y_pred = svm_mini.predict(X_motifs_mini)
+            report = classification_report(y_motifs, y_pred)
+            with open(f"{rep_out}mini_svm_report.txt", "w") as f:
+                f.write(report)
             svm_mini_plot_decision(svm_mini, X_motifs_mini, y_motifs, rep_out)# best_model est en 50D il y a un tru c à faire là 
     
     
+
+
 
     
 
