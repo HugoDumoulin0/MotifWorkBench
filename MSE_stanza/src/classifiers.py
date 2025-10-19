@@ -99,7 +99,7 @@ def split_data(X, y):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
     return X_train, X_test, y_train, y_test, X, y
 
-
+##débranché-----
 def cross_val_classification_report(model,X,y,n_splits,n_repeats,random_state = 42, target_names = None):
     cv = RepeatedStratifiedKFold(n_splits=n_splits, n_repeats=n_repeats, random_state=random_state)
     y_true = []
@@ -356,9 +356,18 @@ def decision_tree(X_motifs, y_motifs, X_features, rep_out):
     graph = graphviz.Source(dot_data) 
     graph.render(f"{rep_out}tree") 
     
-    
-    
-    
+
+#----- Dummy -------
+from sklearn.dummy import DummyClassifier
+
+def dummy(X_motifs, y_motifs,rep_out):
+    X_train, X_test, y_train, y_test, X_motifs, y_motifs = split_data(X_motifs, y_motifs)
+    dummy = DummyClassifier(strategy='stratified')
+    dummy.fit(X_train, y_train)
+    y_pred_dummy = dummy.predict(X_test)
+    report = classification_report(y_test, y_pred_dummy)
+    with open(f"{rep_out}dummy.txt", "w") as f:
+            f.write(report)
     
 def main(minsup, results, path_target, sampling,tidy_metadata):
     path_classif_out = "./Patterns_results/Classifieurs/"
@@ -412,8 +421,7 @@ def main(minsup, results, path_target, sampling,tidy_metadata):
                 f.write(report)
             svm_mini_plot_decision(svm_mini, X_motifs_mini, y_motifs, rep_out)# best_model est en 50D il y a un tru c à faire là 
     
-    
-
+            dummy(X_motifs, y_motifs, rep_out)
 
 
     
