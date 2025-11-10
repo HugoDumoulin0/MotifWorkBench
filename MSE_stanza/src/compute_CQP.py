@@ -96,8 +96,8 @@ def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out, downhill_pos4l
         os.mkdir(path_out)
     if downhill_pos4lemma==".*":
         downhill_pos4lemma="allPos"
-    file_out = f"{path_out}{seuil}{downhill_pos4lemma}lemmaTexte_df_{execution_time}.tsv"
-    file_total = f"{path_out}{seuil}{downhill_pos4lemma}lemmaTexteOrdered_df_{execution_time}.tsv"
+    file_out = f"{path_out}{seuil}lemma{downhill_pos4lemma}Texte_df_{execution_time}.tsv"
+    file_total = f"{path_out}{seuil}lemma{downhill_pos4lemma}TexteOrdered_df_{execution_time}.tsv"
 
     # df_lemma.to_csv(file_out, sep="\t")
     # subprocess.call(["Rscript", "./src/AFC.R", file_out, path_out]) 
@@ -287,8 +287,41 @@ def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, 
 
     df_result = pd.concat(dfs_fusionnes)
     return df_result
+
+def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_out,modif):
+    print("re-using computing data from 'id' metadata instanciation of script")
+    if forme=="motifs":
+        for file in os.listdir(path_id):
+            path_id=path_id+file
+            path_out=path_out+file
+    else:
+        path_out=path_out+forme
+    fichiers = sorted(os.listdir(path_id), key=lambda f: os.path.getmtime(os.path.join(path_id, f)),reverse=True)
+    for f in fichiers: 
+        if f"{forme}Texte_" in f:
+            if modif=="internal_clustering_":
+                if "_FUS" in f:
+                    print("re-using : " + f)
+                    file_id=path_id+"/"+f
+                    df_k=pd.read_csv(file_id, sep="\t", index_col=0)
+                    break
+                else:
+                    print("Error : internal_clustering_id is missing")
+            else:
+                print("re-using : " + f)
+                file_id=path_id+"/"+f
+                df_k=pd.read_csv(file_id, sep="\t", index_col=0)
+            break
+        file_out=path_out+"/"+f
+        chaine=path_out+"/"+f
+        file_total=chaine.replace(f"{forme}Texte",f"{forme}TexteOrdered",1)
+        path_out=path_out+"/"
+        if not os.path.exists(path_out):
+            os.mkdir(path_out)
+    return file_out, file_total, path_out, df_k
+    
      
-def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, metadata, internal_clustering, results, path_out):
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out):
     execution_time = datetime.datetime.now()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
     DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
@@ -324,56 +357,60 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
             os.mkdir(path_out)
             
             #shortcut pour récupérer un df_k déjà produit par précédente instanciation du script avec la metadata "id"
-        path_id = f"./Patterns_results/R/id/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/minsup{str(minsup_percent)}/"
-        if path_id!=path_out:
-                print("yes")
-                if os.path.exists(path_id):
-                        print("re-using computing data from 'id' metadata instanciation of script")
-                        for dir in os.listdir(path_id):
-                            fichiers = sorted(os.listdir(path_id+dir), key=lambda f: os.path.getmtime(os.path.join(path_id+dir, f)),reverse=True)
-                            for f in fichiers: 
-                                    if "motifsTexte_" in f:
-                                        print("re-using : " + f)
-                                        file_id=path_id+dir+"/"+f
-                                        df_k=pd.read_csv(file_id, sep="\t", index_col=0)
-                                        break
-                            file_out_motifs=path_out+dir+"/"+f
-                            chaine=path_out+dir+"/"+f
-                            file_total=chaine.replace("motifsTexte","motifsTexteOrdered",1)
-                            path_out=path_out+dir+"/"
-                            os.mkdir(path_out)
+        # if path_id!=path_out:
+        #         print("yes")
+
+
+        if metadata!="id":## cas de annee, genre, etc.##
+            print(metadata)
+            path_id = f"./Patterns_results/R/id/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/minsup{str(minsup_percent)}/"
+            if os.path.exists(path_id):
+                file_out_motifs, file_total, path_out, df_k = get_already_computed_df_id("motifs", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id,path_out,modif)
+                        # for dir in os.listdir(path_id):
+                        #     fichiers = sorted(os.listdir(path_id+dir), key=lambda f: os.path.getmtime(os.path.join(path_id+dir, f)),reverse=True)
+                        #     for f in fichiers: 
+                        #             if "motifsTexte_" in f:
+                        #                 print("re-using : " + f)
+                        #                 file_id=path_id+dir+"/"+f
+                        #                 df_k=pd.read_csv(file_id, sep="\t", index_col=0)
+                        #                 break
+                        #     file_out_motifs=path_out+dir+"/"+f
+                        #     chaine=path_out+dir+"/"+f
+                        #     file_total=chaine.replace("motifsTexte","motifsTexteOrdered",1)
+                        #     path_out=path_out+dir+"/"
+                        #     os.mkdir(path_out)
     
-                else:
-                    print("computing from scratch")
-                    df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
-            
-            ## cas de annee, genre, etc.##
-        if not metadata.split('_')[-1]=="id":
-                df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
+                # else:
+                #     print("computing from scratch")
+                #     df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+                #     df_k.to_csv(file_out_motifs, sep="\t")
+            else:
+                print("computing from scratch")
+                df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+                df_k.to_csv(file_out_motifs, sep="\t")
+            df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
+            df_k.to_csv(file_out_motifs, sep="\t")
+        
+        else:
+            print(metadata)
+            df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+            df_k.to_csv(file_out_motifs, sep="\t")
+                
+            if internal_clustering:
+                lexic_int_str = formate_patterns.make_dict_int_to_str()
+                df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
+                file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
+                print(file_out_motifs)
                 df_k.to_csv(file_out_motifs, sep="\t")
             
-            ##cas de id gérer clustering et earlyspecifs###
-        else:
-                if internal_clustering:
-                    lexic_int_str = formate_patterns.make_dict_int_to_str()
-                    df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
-                    file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
-                    print(file_out_motifs)
-                    
-                    df_k.to_csv(file_out_motifs, sep="\t")
-                    results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
-                else:
-                    if earlySpecifs:
-                        results[f"early_specifs_motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=file_out_motifs
-                    else:
-                        results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
+        results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
 
         
         if specifs:       
                 compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
 
-                    
-        subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
+        if mode=="server":
+            subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
         df_k_total=add_total(df_k)
         df_k_total.to_csv(file_total, sep="\t")
             
