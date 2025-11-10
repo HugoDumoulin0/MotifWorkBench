@@ -369,59 +369,69 @@ def dummy(X_motifs, y_motifs,rep_out):
     with open(f"{rep_out}dummy.txt", "w") as f:
             f.write(report)
     
-def main(minsup, results, path_target, sampling,tidy_metadata):
+def main(minsup, results, path_target, sampling, sub_tidy_metadata, list_metadata):
     path_classif_out = "./Patterns_results/Classifieurs/"
     if not os.path.exists(path_classif_out):
         os.mkdir(path_classif_out)
-    for prefixe,filename in results.items():
-    # liste_prefixes = ["motifs/", "lemma/", "pos/", "20000lemma/", "20000bigrams"]
-    # liste_data = [file_out_motifs, file_out_lemma, file_out_pos, file_out_ALLlemma]
-    # for filename, prefixe in zip(liste_data, liste_prefixes):
-        # if not os.path.exists(path_out):
-        #     os.mkdir(path_out)
-        # name = filename[:-4].replace(path_out, "")
-        # if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
-        print("classification : "+prefixe+"/n"+filename)
-        if not ("lemma" in prefixe or "pos" in prefixe or "bigrams" in prefixe):
-            if not os.path.exists(path_classif_out+"motifs/"):
-                os.mkdir(path_classif_out+"motifs/")
-            rep_pref=path_classif_out+f"motifs/{tidy_metadata}/"
-            if not os.path.exists(rep_pref):
-                os.mkdir(rep_pref)
-            name = prefixe.split("motifs_")[1]
-            rep_out = rep_pref+"minsup"+name+"/"
-        else:
-            rep_pref=path_classif_out+prefixe+"/"
-            if not os.path.exists(rep_pref):
-                os.mkdir(rep_pref)
-            rep_out = rep_pref
+    for metadata in list_metadata:
+        path_classif_out=path_classif_out+metadata+"/"
+        if not os.path.exists(path_classif_out):
+            os.mkdir(path_classif_out)
+        for prefixe,filename in results.items():
+        # liste_prefixes = ["motifs/", "lemma/", "pos/", "20000lemma/", "20000bigrams"]
+        # liste_data = [file_out_motifs, file_out_lemma, file_out_pos, file_out_ALLlemma]
+        # for filename, prefixe in zip(liste_data, liste_prefixes):
+            # if not os.path.exists(path_out):
+            #     os.mkdir(path_out)
+            # name = filename[:-4].replace(path_out, "")
+            # if not prefixe in (f"{seuil_bigrams_comparison}bigramslemma"):
+            print("classification : \n"+prefixe+"\n"+filename)
+            if metadata in prefixe:
+                if not ("lemma" in prefixe or "pos" in prefixe or "bigrams" in prefixe):
+                        if not os.path.exists(path_classif_out+"motifs/"):
+                            os.mkdir(path_classif_out+"motifs/")
+                        rep_pref=path_classif_out+"motifs/"
+                        if not os.path.exists(rep_pref):
+                            os.mkdir(rep_pref)
+                        for tidy_metadata in sub_tidy_metadata:
+                            if metadata in tidy_metadata:
+                                if tidy_metadata in prefixe:
+                                    rep_pref=rep_pref+tidy_metadata+"/"
+                                    if not os.path.exists(rep_pref):
+                                        os.mkdir(rep_pref)
+                                    name = prefixe.split("motifs_")[1]
+                                    rep_out = rep_pref+"minsup"+name+"/"
+                else:
+                    name = prefixe.replace(f"{metadata}_","")
+                    rep_pref=path_classif_out+name+"/"
+                    rep_out = rep_pref
+                
+            if not os.path.exists(rep_out):
+                os.mkdir(rep_out)
+                X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, sampling)
+                if len(X_motifs)>0:
+                    nb_comp=50
+                    X_motifs_scaled_reduced = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
+                    decision_tree(X_motifs, y_motifs, X_features, rep_out)
+                    best_model, best_params = svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out)
+                    
+                    # if nb_comp < 32:
+                    #     svm_plot_decision_alt(best_model, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp)
+                    # importance(best_model, X_motifs_scaled_reduced, y_motifs, X_features, rep_out)
+                
+                    cut_plot_decision(best_model, X_motifs_scaled_reduced, y_motifs, rep_out)
+                    
+                    ###mini svm pour mini plot en 2D###
+                    nb_comp=2
+                    X_motifs_mini = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
+                    svm_mini = svm_train(X_motifs_mini, y_motifs, rep_out, best_params)
+                    y_pred = svm_mini.predict(X_motifs_mini)
+                    report = classification_report(y_motifs, y_pred)
+                    with open(f"{rep_out}mini_svm_report.txt", "w") as f:
+                        f.write(report)
+                    svm_mini_plot_decision(svm_mini, X_motifs_mini, y_motifs, rep_out)# best_model est en 50D il y a un tru c à faire là 
             
-        if not os.path.exists(rep_out):
-            os.mkdir(rep_out)
-        X_motifs, y_motifs, X_features= prepare_dataset(filename, rep_out, path_target, sampling)
-        if len(X_motifs)>0:
-            nb_comp=50
-            X_motifs_scaled_reduced = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
-            decision_tree(X_motifs, y_motifs, X_features, rep_out)
-            best_model, best_params = svm_grid_search(X_motifs_scaled_reduced, y_motifs, rep_out)
-            
-            # if nb_comp < 32:
-            #     svm_plot_decision_alt(best_model, X_motifs_scaled_reduced, y_motifs, rep_out, nb_comp)
-            # importance(best_model, X_motifs_scaled_reduced, y_motifs, X_features, rep_out)
-        
-            cut_plot_decision(best_model, X_motifs_scaled_reduced, y_motifs, rep_out)
-            
-            ###mini svm pour mini plot en 2D###
-            nb_comp=2
-            X_motifs_mini = PCA_transform(X_motifs, nb_comp, rep_out, X_features)
-            svm_mini = svm_train(X_motifs_mini, y_motifs, rep_out, best_params)
-            y_pred = svm_mini.predict(X_motifs_mini)
-            report = classification_report(y_motifs, y_pred)
-            with open(f"{rep_out}mini_svm_report.txt", "w") as f:
-                f.write(report)
-            svm_mini_plot_decision(svm_mini, X_motifs_mini, y_motifs, rep_out)# best_model est en 50D il y a un tru c à faire là 
-    
-            dummy(X_motifs, y_motifs, rep_out)
+                    dummy(X_motifs, y_motifs, rep_out)
 
 
     

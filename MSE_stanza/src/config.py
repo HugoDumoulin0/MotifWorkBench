@@ -30,10 +30,17 @@ if méthode=="partition":
     GrowthRate = False
 
 #-------------------
+# Mode
+#-------------------
+mode="server"
+# mode="interface"
+
+
+#-------------------
 # Early specifs mode
 #-------------------
 
-earlySpecifs=True
+earlySpecifs=False
 seuil_early_specifs=200
 partition_cible = "genre"
 seuil_banalité=2
@@ -48,8 +55,7 @@ liste_earlyspecifs_lemma = ["président", "comité", "formation"]
 #-------------------
 # Internal clustering
 #-------------------
-internal_clustering=False
-
+internal_clustering=True
 
 #-------------------
 # Patterns params
@@ -79,6 +85,7 @@ Feats=False
 #-------------------
 path_metadata = "./Data/metadata.tsv"
 list_metadata = ["id"
+		,"genre"
                  #,"annee"
                  # ,"target"
                  ]
@@ -97,5 +104,5 @@ liste_seuils_bigrams = [100]
 classification=True
 path_target = "./Data/metadata.tsv"
 y_class = "genre"
-sampling=True  #équilibre les classes
+sampling=False  #équilibre les classes à l'échantillonnage 
 

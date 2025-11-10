@@ -505,70 +505,74 @@ if __name__ == "__main__":
 
                 ##computing patterns###
 
-                modif1=""
-                modif2=""
+                modif=""
                 if earlySpecifs:
-                    modif1=f"{seuil_early_specifs}earlySpecifs_"
+                    modif=f"{seuil_early_specifs}earlySpecifs_"
                 if internal_clustering:
-                    modif2= f"internal_clustering_"
-                sub_tidy_metadata = [modif1+modif2+metadata for metadata in list_metadata]
+                    modif= modif+"internal_clustering_"
+                # sub_tidy_metadata = [modif+metadata for metadata in list_metadata]
                 
-                for tidy_metadata in sub_tidy_metadata:
+                # for tidy_metadata in sub_tidy_metadata:
+                for metadata in list_metadata:
+                        # if metadata in tidy_metadata:
                         for nb_itemset_min in list_itemset_min:
-                            for gap_min in list_gap_min:
-                                for gap_max in list_gap_max:
-                                    path_R=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-                                    if not os.path.exists(path_R):
-                                        path="./Patterns_results/R/"
-                                        if not os.path.exists(path):
-                                            os.mkdir(path)
-                                        path= f"./Patterns_results/R/{tidy_metadata}/"
-                                        if not os.path.exists(path):
-                                            os.mkdir(path)
-                                        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}"
-                                        if not os.path.exists(path):
-                                            os.mkdir(path)
-                                        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
-                                        if not os.path.exists(path):
-                                            os.mkdir(path)
-                                        path=f"./Patterns_results/R/{tidy_metadata}/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
-                                        if not os.path.exists(path):
-                                            os.mkdir(path)
-                                    for minsup_percent in list_minsup_percent:
-                                        print(f"Minsup: {minsup_percent}")
-                                        path_out = f"{path_R}minsup{str(minsup_percent)}/"
-                                        # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-                                        # if not os.path.exists(f"./Patterns_results/R/{minsups_percent}"):
-                                        # liste_properties = [f"{seuil}lemma" for seuil in liste_seuils_lemma]
-                                        # liste_properties += ["motifs", "pos"]
-                                        # for property in liste_properties:
-                                            # path=f"{path_out}{property}/"
-                                        if os.path.exists(path_out):
-                                                    for dir in os.listdir(path_out):
-                                                        print(path_out)
-                                                        print(f"already computed {dir}")
-                                                        fichiers = sorted(os.listdir(path_out+dir), key=lambda f: os.path.getmtime(os.path.join(path_out+dir, f)),reverse=True)
-                                                        if not os.path.exists(f"./Patterns_results/Classifieurs/motifs/{tidy_metadata}/minsup{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"):
-                                                            print("classifier results does not exist yet")
-                                                            for f in fichiers: 
-                                                                    if "motifsTexte_" in f:
-                                                                        if internal_clustering:
-                                                                            if "_FUS" in f:
-                                                                                results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
+                                for gap_min in list_gap_min:
+                                    for gap_max in list_gap_max:
+                                        path_R=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+                                        if not os.path.exists(path_R):
+                                            path="./Patterns_results/R/"
+                                            if not os.path.exists(path):
+                                                os.mkdir(path)
+                                            path= f"./Patterns_results/R/{metadata}/"
+                                            if not os.path.exists(path):
+                                                os.mkdir(path)
+                                            path= f"./Patterns_results/R/{metadata}/{modif}motifs/"
+                                            if not os.path.exists(path):
+                                                os.mkdir(path)
+                                            path=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}"
+                                            if not os.path.exists(path):
+                                                os.mkdir(path)
+                                            path=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+                                            if not os.path.exists(path):
+                                                os.mkdir(path)
+                                            path=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+                                            if not os.path.exists(path):
+                                                os.mkdir(path)
+                                        for minsup_percent in list_minsup_percent:
+                                            print(f"Minsup: {minsup_percent}")
+                                            path_out = f"{path_R}minsup{str(minsup_percent)}/"
+                                            # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
+                                            # if not os.path.exists(f"./Patterns_results/R/{minsups_percent}"):
+                                            # liste_properties = [f"{seuil}lemma" for seuil in liste_seuils_lemma]
+                                            # liste_properties += ["motifs", "pos"]
+                                            # for property in liste_properties:
+                                                # path=f"{path_out}{property}/"
+                                            if os.path.exists(path_out):
+                                                        for dir in os.listdir(path_out):
+                                                            print(path_out)
+                                                            print(f"already computed {dir}")
+                                                            fichiers = sorted(os.listdir(path_out+dir), key=lambda f: os.path.getmtime(os.path.join(path_out+dir, f)),reverse=True)
+                                                            if not os.path.exists(f"./Patterns_results/Classifieurs/{metadata}/{modif}motifs/minsup{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"):
+                                                                print("classifier results does not exist yet")
+                                                                for f in fichiers: 
+                                                                        if "motifsTexte_" in f:
+                                                                            if internal_clustering:
+                                                                                if "_FUS" in f:
+                                                                                    results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
+                                                                                else:
+                                                                                    df_k=pd.read_csv(path_out+dir+"/"+f, sep="\t", index_col=0)
+                                                                                    lexic_int_str = formate_patterns.make_dict_int_to_str()
+                                                                                    df_k = compute_CQP.fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
+                                                                                    f = f[:-4]+"_FUS.tsv"
+                                                                                    df_k.to_csv(path_out+dir+"/"+f, sep="\t")
+                                                                                    results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = f
                                                                             else:
-                                                                                df_k=pd.read_csv(path_out+dir+"/"+f, sep="\t", index_col=0)
-                                                                                lexic_int_str = formate_patterns.make_dict_int_to_str()
-                                                                                df_k = compute_CQP.fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
-                                                                                f = f[:-4]+"_FUS.tsv"
-                                                                                df_k.to_csv(path_out+dir+"/"+f, sep="\t")
-                                                                                results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = f
-                                                                        else:
-                                                                            results[f"motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
-                                                                        break
-                                        else:    
-                                            print("computing statistics from scratch")
-                                            results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, tidy_metadata, internal_clustering, results, path_out)
-                
+                                                                                results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
+                                                                            break
+                                            else:    
+                                                print("computing statistics from scratch")
+                                                results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, modif,metadata, internal_clustering, results, path_out)
+                    
                 ##comparison with other features###
                 
                 for metadata in list_metadata:
@@ -580,15 +584,26 @@ if __name__ == "__main__":
                         os.mkdir(f"./Patterns_results/R/{metadata}/pos")
                         path_pos = f"./Patterns_results/R/{metadata}/"
                         execution_time = datetime.datetime.now()
-                        file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
+                        # file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
                         if not metadata=="id":
+                            path_id = f"./Patterns_results/R/id/pos/"
+                            # if path_id!=path_out:
+                            #         print("yes")
+                            modif=""
+                            if os.path.exists(path_id):
+                                file_out_pos, file_total, path_out, df_pos = compute_CQP.get_already_computed_df_id("pos", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_pos, modif)
+                            else:
+                                file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
                             df_pos =  compute_CQP.textes2metadata(df_pos, df_metadata, metadata).T
+                        else:
+                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
                         df_pos.to_csv(file_out_pos, sep="\t")
-                        subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
+                        if mode=="server":
+                            subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
                         df_pos=compute_CQP.add_total(df_pos)
                         df_pos.to_csv(file_total, sep="\t")
                         if not os.path.exists(f"./Patterns_results/Classifieurs/pos"):
-                            results["pos"] = file_out_pos
+                            results[f"{metadata}_pos"] = file_out_pos
                     else:
                         print(f"already computed pos")
                         doss =f"./Patterns_results/R/{metadata}/pos/"
@@ -598,7 +613,7 @@ if __name__ == "__main__":
                                 liste.append(doss+fichier)
                         tri = sorted(liste, key=os.path.getmtime, reverse=True)
                         if not os.path.exists(f"./Patterns_results/Classifieurs/pos"):
-                            results["pos"] = tri[0]
+                            results[f"{metadata}_pos"] = tri[0]
                             # if not os.path.exists("f{path_out}{seuil_lemma_comparaison}lemma"):
                             #     file_out_20000lemma = compute_freq_TextesCompLemma_noAFC(execution_time, path_R, seuil_lemma_comparaison)
                             #     results["20000lemma"] = file_out_20000lemma
@@ -609,38 +624,61 @@ if __name__ == "__main__":
                             os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}")
                             path_lemma = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
-                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
                             if not metadata=="id":
+                                path_id = f"./Patterns_results/R/id/{seuil}lemma{downhill_pos4lemma}/"
+                                # if path_id!=path_out:
+                                #         print("yes")
+                                modif=""
+                                if os.path.exists(path_id):
+                                    file_out_lemma, file_total, path_out, df_lemma = compute_CQP.get_already_computed_df_id(f"{seuil}lemma{downhill_pos4lemma}", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id,path_lemma,modif)
+                                else:
+                                    file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
                                 df_lemma =  compute_CQP.textes2metadata(df_lemma, df_metadata, metadata).T
+                            else:
+                                file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
                             df_lemma.to_csv(file_out_lemma, sep="\t")
-                            subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out]) 
+                            if mode=="server":
+                                subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out]) 
                             df_lemma=compute_CQP.add_total(df_lemma)
                             df_lemma.to_csv(file_total, sep="\t")
-                            if metadata=="id":
-                                if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma{downhill_pos4lemma}"):
-                                    results[f"{seuil}lemma{downhill_pos4lemma}"] = file_out_lemma
+                            # if metadata=="id": 
+                                # if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma{downhill_pos4lemma}"): ### on reporte ce test dans classifieurs##
+                            results[f"{metadata}_{seuil}lemma{downhill_pos4lemma}"] = file_out_lemma
                         else:
-                            print(f"already computed {seuil}lemma {downhill_pos4lemma}")
-                            if metadata=="id":
-                                liste=[]
-                                doss =f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}/"
-                                for fichier in os.listdir(doss):
-                                    if f"{seuil}{downhill_pos4lemma}lemmaTexte_" in fichier:
-                                        liste.append(doss+fichier)
-                                tri = sorted(liste, key=os.path.getmtime, reverse=True)
-                                if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma{downhill_pos4lemma}"):
-                                    results[f"{seuil}lemma{downhill_pos4lemma}"] = tri[0]
-                                    
+                            print(f"already computed {seuil}lemma{downhill_pos4lemma}")
+                            # if metadata=="id": ##on met ça en comment car ça pourra poser problème
+                            liste=[]
+                            doss =f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}/"
+                            for fichier in os.listdir(doss):
+                                if f"{seuil}lemma{downhill_pos4lemma}Texte_" in fichier:
+                                    liste.append(doss+fichier)
+                            tri = sorted(liste, key=os.path.getmtime, reverse=True)
+                            # if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}lemma{downhill_pos4lemma}"):
+                            results[f"{metadata}_{seuil}lemma{downhill_pos4lemma}"] = tri[0]
+                                
                     for seuil in liste_seuils_bigrams:
                         print(str(seuil) + "bigrams")
                         if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma"):
                             os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma")
                             path_big = f"./Patterns_results/R/{metadata}/"
                             execution_time = datetime.datetime.now()
-                            file_out_bigrams, seuil, path_out = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil)
-                            subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out])
-                            if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
-                                results[f"{seuil}bigramslemma"] = file_out_bigrams
+                            if not metadata=="id":
+                                path_id = f"./Patterns_results/R/id/{seuil}bigramslemma/"
+                                # if path_id!=path_out:
+                                #         print("yes")
+                                modif=""
+                                if os.path.exists(path_id):
+                                    file_out_bigrams, file_total, path_out, df_big = compute_CQP.get_already_computed_df_id(f"{seuil}bigramslemma", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_big,modif)
+                                else:
+                                    file_out_bigrams, path_out, df_big, file_total = compute_CQP.compute_freq_TextesBigramsLemma_noAFC(execution_time, path_big, seuil)
+                                df_big =  compute_CQP.textes2metadata(df_big, df_metadata, metadata).T
+                            else:
+                                file_out_bigrams, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesBigramsLemma_noAFC(execution_time, path_big, seuil)
+                            df_big.to_csv(file_out_bigrams, sep="\t")
+                            if mode=="server":
+                                subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out])
+                            # if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
+                            results[f"{metadata}_{seuil}bigramslemma"] = file_out_bigrams
                         else:
                             print(f"already computed {seuil}bigrams")
                             doss =f"./Patterns_results/R/{metadata}/{seuil}bigramslemma/"
@@ -649,8 +687,8 @@ if __name__ == "__main__":
                                 if f"bigramslemmaTexte_" in fichier:
                                     liste.append(doss+fichier)
                             tri = sorted(liste, key=os.path.getmtime, reverse=True)
-                            if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
-                                results[f"{seuil}bigramslemma"] = tri[0]
+                            # if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
+                            results[f"{metadata}_{seuil}bigramslemma"] = tri[0]
                         
                     print(results)
                     
@@ -695,53 +733,65 @@ if __name__ == "__main__":
                     #         if "20000bigrams" in f:
                     #             results["20000bigrams"]=path+f
                     #             break
-                if classification:
-                    print("-"*75)
-                    print("6. Classification task")
-                    start_time=time.time()
-                    classifiers.main(minsup_percent,results,path_target, sampling, tidy_metadata)
-                    end_time=time.time()
-                    time_class=end_time - start_time
-
-                # Use R to perform AFC automatically
-                # subprocess.call(["Rscript", "./src/AFC.r"])
-
-    print(f"Temps de tagging : {time_tag/60:.2f} minutes")
-    print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
-    if internal_clustering:
-        print(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes")
-    if classification:
-        print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
-    print(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes")
+                
+                if mode=="server":
+                    if classification:
+                            print("-"*75)
+                            print("6. Classification task")
+                            start_time=time.time()
+                            classifiers.main(minsup_percent,results,path_target, sampling,sub_tidy_metadata,list_metadata)
+                            end_time=time.time()
+                            time_class=end_time - start_time
     
-    execution_time = datetime.datetime.now()
-    with open(f"./log_{execution_time}.txt", "w") as file:
-        file.write(f"earlySpecifs={earlySpecifs}\n")
-        file.write(f"internal_clustering={internal_clustering}\n")
-        file.write(f"list_itemset_min={list_itemset_min}\n")
-        file.write(f"list_gap_min={list_gap_min}\n")
-        file.write(f"list_gap_max={list_gap_max}\n")
-        file.write(f"list_minsup_percent={list_minsup_percent}\n")
-        file.write(f"Patterns_param_form={Form}\n")
-        file.write(f"Patterns_param_lemma={Lemma}\n")
-        file.write(f"Patterns_param_pos={Pos}\n")
-        file.write(f"Patterns_param_dep={Dep}\n")
-        file.write(f"Patterns_param_feats={Feats}\n")
-        file.write(f"List_metadata={list_metadata}\n")
-        file.write(f"List_seuils_lemma={liste_seuils_lemma}\n")
-        file.write(f"List_seuils_bigrams={liste_seuils_bigrams}\n")
-        file.write(f"classification={classification}\n")
-        file.write(f"y_class={y_class}\n")
-        file.write(f"sampling={sampling}\n")
-        file.write("-"*75)
-        file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
-        file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
+    if mode=="server":
+        print(f"Temps de tagging : {time_tag/60:.2f} minutes")
+        print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
         if internal_clustering:
-            file.write(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes\n")
-        file.write(f"Temps de calcul statistique  : {time_stats/60:2f} minutes\n")
+            print(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes")
         if classification:
-            file.write(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes\n")
-        file.write("-"*75)
+            print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
+        print(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes")
+        
+        execution_time = datetime.datetime.now()
+        with open(f"./log_{execution_time}.txt", "w") as file:
+            file.write(f"earlySpecifs={earlySpecifs}\n")
+            file.write(f"internal_clustering={internal_clustering}\n")
+            file.write(f"list_itemset_min={list_itemset_min}\n")
+            file.write(f"list_gap_min={list_gap_min}\n")
+            file.write(f"list_gap_max={list_gap_max}\n")
+            file.write(f"list_minsup_percent={list_minsup_percent}\n")
+            file.write(f"Patterns_param_form={Form}\n")
+            file.write(f"Patterns_param_lemma={Lemma}\n")
+            file.write(f"Patterns_param_pos={Pos}\n")
+            file.write(f"Patterns_param_dep={Dep}\n")
+            file.write(f"Patterns_param_feats={Feats}\n")
+            file.write(f"List_metadata={list_metadata}\n")
+            file.write(f"List_seuils_lemma={liste_seuils_lemma}\n")
+            file.write(f"List_seuils_bigrams={liste_seuils_bigrams}\n")
+            file.write(f"classification={classification}\n")
+            file.write(f"y_class={y_class}\n")
+            file.write(f"sampling={sampling}\n")
+            file.write("-"*75)
+            file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
+            file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
+            if internal_clustering:
+                file.write(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes\n")
+            file.write(f"Temps de calcul statistique  : {time_stats/60:2f} minutes\n")
+            if classification:
+                file.write(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes\n")
+            file.write("-"*75)
+        
+    # if mode=="interface":
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     # if GrowthRate == True:
     #     print(f"Temps de clustering : {cluster_time/60:.2f} minutes")
