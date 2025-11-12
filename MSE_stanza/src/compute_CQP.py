@@ -311,13 +311,13 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
                 print("re-using : " + f)
                 file_id=path_id+"/"+f
                 df_k=pd.read_csv(file_id, sep="\t", index_col=0)
-            break
-        file_out=path_out+"/"+f
-        chaine=path_out+"/"+f
-        file_total=chaine.replace(f"{forme}Texte",f"{forme}TexteOrdered",1)
-        path_out=path_out+"/"
-        if not os.path.exists(path_out):
-            os.mkdir(path_out)
+                break
+    file_out=path_out+"/"+f
+    chaine=path_out+"/"+f
+    file_total=chaine.replace(f"{forme}Texte",f"{forme}TexteOrdered",1)
+    path_out=path_out+"/"
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
     return file_out, file_total, path_out, df_k
     
      

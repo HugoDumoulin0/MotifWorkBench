@@ -598,6 +598,7 @@ if __name__ == "__main__":
                         else:
                             file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
                         df_pos.to_csv(file_out_pos, sep="\t")
+                        print(f"file_out_pos : {file_out_pos}")
                         if mode=="server":
                             subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
                         df_pos=compute_CQP.add_total(df_pos)
@@ -660,7 +661,7 @@ if __name__ == "__main__":
                         print(str(seuil) + "bigrams")
                         if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma"):
                             os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma")
-                            path_big = f"./Patterns_results/R/{metadata}/"
+                            path_big = f"./Patterns_results/R/{metadata}"
                             execution_time = datetime.datetime.now()
                             if not metadata=="id":
                                 path_id = f"./Patterns_results/R/id/{seuil}bigramslemma/"
@@ -690,10 +691,10 @@ if __name__ == "__main__":
                             # if not os.path.exists(f"./Patterns_results/Classifieurs/{seuil}bigramslemma"):
                             results[f"{metadata}_{seuil}bigramslemma"] = tri[0]
                         
-                    print(results)
+                print(results)
                     
-                    end_time = time.time()
-                    time_stats = end_time - start_time
+                end_time = time.time()
+                time_stats = end_time - start_time
                     #qu'est-ce que ça fait cela en dessous ?
                     
                     # for property_gen in [f"{seuil}bigramslemma"]:
