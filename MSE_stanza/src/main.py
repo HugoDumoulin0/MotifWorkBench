@@ -6,7 +6,6 @@ import sys
 from pprint import pprint
 import numpy as np
 import formate_patterns
-import tag_WP
 import conll_dmt4
 import compute_emergent_sequential_patterns
 import compute_CQP
