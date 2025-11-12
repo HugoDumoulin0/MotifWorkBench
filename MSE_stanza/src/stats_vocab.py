@@ -93,29 +93,3 @@ def association_req_vocab_specific(req, index_filtered, cible, T):
             t += 1
     indice_association, M = tools.indice_specificite(k, f, t, T)
     return indice_association
-
-
-    
-
-# path = "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MSE_stanza_specifs_rapports_Specifs/Data/Textes_tagged_stanza/CDPC/CDPC.conllu"
-# req = "{feats_Gender=Masc} {feats_Gender=Masc} {feats_Gender=Fem}"
-# sortie = grew.read_req(req)
-# indexx = grew.index(path, sortie, "form")
-# for i in indexx:
-#     print(i)
-    
-# liste_fichiers = ["MODYCO", "ISP"]
-# cible = "ISP"
-
-
-# # req = Request('pattern { X1 [upos=DET]; X2 [upos=ADJ]; X3 [upos=NOUN]; X1 < X2; X2 < X3}')
-# req = Request('pattern { X1 [upos=PRON, Person="3", PronType=Prs] ; X2 [Person="3"]; X1 < X2}')
-
-# print(indice)
-
-# for fichier in liste_fichiers:
-#     compteur = extraire_frequence_lemmes(fichier)
-
-# Afficher les lemmes et leurs fréquences
-# for lemme, freq in frequences.most_common():
-#     print(f"{lemme}: {freq}")

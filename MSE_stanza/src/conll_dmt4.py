@@ -93,7 +93,6 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
                 element = el.split(" ")
                 item = int(element[1])
                 index = int(element[0])
-                # print(index, item)
                 if index not in dico_ephemere :
                     dico_ephemere[index] = [item]
                 else :
@@ -102,7 +101,6 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
             for itemset in dico_ephemere :
                 file = [file_out.write(str(itemset)+" "+str(el)+"\n") for el in dico_ephemere.get(itemset)]
             index_seq += 1
-    # print("{} : Sorted".format(DMT4_file[:-4]))
     return "{} : Sorted".format(DMT4_file[:-4])
 
 
@@ -239,14 +237,3 @@ def make_DMT4_file(type_texte):
     return dict_dmt4
 
 
-
-
-if __name__ == "__main__":
-
-    # types_textes = ["1984ca", "2008ca"]
-    types_textes = [sys.argv[1], sys.argv[2]]
-    
-    instancier_dict("./Data/Textes_tagged_WP/")
-    for type_texte in types_textes:
-            transform_data("./Data/Textes_tagged_WP/", type_texte)
-    sort_dmtfiles()

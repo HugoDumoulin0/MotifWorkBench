@@ -3,31 +3,7 @@
 #-------------------
 download=False
 
-
-# tagging=True
-# shortcut_underscore_fix=True
-# shortcut_DMT4=True
-# shortcut_extract = True
-only_clustering = False
-shortcut_association = True
-shortcut_specifs = True
 specifs=False
-
-
-GrowthRate = False
-wordpieces = False
-#-------------------
-# Computation method
-#-------------------
-méthode = "partition"
-# Two possible values:
-    # - "partition", i.e. specificty computation for each partition of a corpus
-    # - "corpus", i.e. growth rate computation for each corpus of a set of corpora
-    # This sets the switch between two parallel paths in the script.
-
-if méthode=="partition":
-    wordpieces=False
-    GrowthRate = False
 
 #-------------------
 # Mode
@@ -85,7 +61,8 @@ Feats=False
 #-------------------
 path_metadata = "./Data/metadata.tsv"
 list_metadata = ["id"
-		,"genre"
+                 ,"test"
+# 		,"genre"
                  #,"annee"
                  # ,"target"
                  ]
@@ -101,7 +78,7 @@ liste_seuils_bigrams = [100]
 #-------------------
 # Machine learning params
 #-------------------
-classification=True
+classification=False
 path_target = "./Data/metadata.tsv"
 y_class = "genre"
 sampling=False  #équilibre les classes à l'échantillonnage 

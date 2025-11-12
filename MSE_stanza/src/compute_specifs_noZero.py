@@ -14,7 +14,6 @@ import os
 import pandas as pd
 import stats_vocab
 import re
-# import compute_am_r
 import datetime
 import subprocess
 import enslave_perl
@@ -91,15 +90,6 @@ def fichier_synth(dictionnaire_f, dictionnaire_k, dictionnaire_t, T, liste_motif
             f = dictionnaire_f[str(motif)]
             t = dictionnaire_t[fichier]
             k = dictionnaire_k[fichier][str(motif)]
-            # if k==None:
-            #     indice=None
-            #     M=None
-            # else:
-            # if k==None:
-            #     if motif in dictionnaire_specifs[fichier]["dict_frequents"]:
-            #         k = dictionnaire_specifs[fichier]["dict_frequents"][motif]
-            #     else:
-            #         k=0
             if shortcut_specifs==True:
                 indice = 0
                 M=0
@@ -228,19 +218,16 @@ def df_AFC(dict_synth, liste_motifs, minsup_percent, execution_time):
     for fichier in dict_synth:
         liste_fichier.append(fichier)
     for motif in liste_motifs:
-        # dict_spec_out[str(motif)]=[motif,
-        #                     formate_patterns.from_int_to_str(motif, lexic_int_str)]
+
         dict_AFC_out[str(motif)]=[motif,
                             formate_patterns.from_int_to_str(motif, lexic_int_str)]
         for fichier in liste_fichier:
-            # dict_spec_out[str(motif)] += dict_synth[fichier][str(motif)][2:]
             dict_AFC_out[str(motif)] += [dict_synth[fichier][str(motif)][2]]
     file_out_AFC = "./Patterns_results/Specifs_noZero/{}_AFC_R_df_{}.pk".format(mins, execution_time)
     tools.save_pickles_results(dict_AFC_out, file_out_AFC)
     columns_base = ["motifs_int", "motifs_str"]
     liste_columns_AFC=[]
     for fichier in liste_fichier:
-        # items = ["k", "M", "f", "t", "T", "indice"]
         liste_columns_AFC.append(f"{fichier}")
     columns_AFC=columns_base+liste_columns_AFC
     df_AFC= pd.DataFrame.from_dict(dict_AFC_out, orient="index", columns=columns_AFC)
