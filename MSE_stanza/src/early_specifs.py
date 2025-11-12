@@ -38,13 +38,6 @@ def compute_early_df_lemmes(seuil, early_pos4lemma):
     df_lemma = df_lemma.apply(pd.to_numeric)
     return df_lemma, T, dictionnaire_t
 
-# def textes2metadata(df, df_target, metadata):
-#     df_combined = df.T
-#     df_combined[metadata] = df_target[metadata]
-#     # On groupe par target et on additionne les lemmes
-#     df_targetXlemmes = df_combined.groupby(metadata).sum()  
-#     return df_targetXlemmes
-
 def dictionnaire_t_target(dictionnaire_t, df_target,partition_cible):
     df_target["taille"]=df_target.index.map(dictionnaire_t)
     dictionnaire_t_result = df_target.groupby(partition_cible)["taille"].sum().to_dict()
@@ -69,8 +62,6 @@ def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, exe
     df_spec = pd.DataFrame(données_specifs)
     file_out=f"{path_out}{seuil}{early_pos4lemma}SpecifsLemma.tsv"
     print("file specif out !")
-    # file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
-    # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     print("begining computing with R")
     subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil), str(early_pos4lemma)]) #Run R!
@@ -82,9 +73,7 @@ def tri_lemma(execution_time,seuil_banalité,seuil,early_pos4lemma):
         early_pos4lemma="allPos"
     for file in fichiers:
         if f"specif_{seuil}{early_pos4lemma}" in file:
-        # if f"specif_{execution_time}" in file:
             df = pd.read_csv(f"./Data/earlySPECIFS/{file}", sep="\t", index_col=0, quoting=3)
-    # df.drop(columns=["std_dev"], inplace=True)
     lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
     return lignes
     
@@ -95,7 +84,6 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
     path_out = "./Data/earlySPECIFS/"
     path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
     lexique = tools.load_pickles(path_lexique)
-
     for file in os.listdir("./Data/earlySPECIFS"):
         if f"specif_{seuil}" in file:
             print(f"EarlySpecifs computing already exists with {file} \n delete it if you want to compute from scratch")
@@ -114,10 +102,4 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
         lemma_preformat = f'lemma_"{l}"'
         liste_lemma.append(lexique[lemma_preformat])
     return liste_lemma
-        #aller chercher le dico from str to int de  lexique
-        # mettre sous format de liste à donner aux extracteurs
 
-
-    
-# main(20,"")
-###attention sorties incohérentes

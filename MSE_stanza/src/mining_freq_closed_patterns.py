@@ -31,7 +31,6 @@ if __name__ == '__main__':
 
     dmt4_files = sys.argv[1]
     minsup = sys.argv[2]
-    # minsup = get_minsup(float(sys.argv[2]), dmt4_files)
     gap_min = sys.argv[3]
     gap_max = sys.argv[4]
     threads = sys.argv[5]

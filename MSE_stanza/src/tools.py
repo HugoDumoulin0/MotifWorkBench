@@ -3,7 +3,7 @@
 """
 Created on Tue Feb 25 14:44:41 2025
 
-@author: hugodumoulin
+@author: jademekki + hugodumoulin
 """
 
 import numpy as np
@@ -14,6 +14,9 @@ from conllu import parse_incr
 import re
 import pprint
 
+
+def get_minsup(minsup, dmt4_files):
+    return round((get_nbr_seq(dmt4_files) / 100) * minsup)
 
 def indice_specificite(k,f,t,T):
     rv = hypergeom(T, f, t)
@@ -102,14 +105,11 @@ def from_pk_corpus_to_list(dmt4_corpus):
 
 def read_req_CQP(expr):
     # Remplacer les paires clé_"valeur" ou clé="valeur" dans les accolades par les conditions CQP correspondantes
-    # if not isinstance(expr, str):
-    #     raise ValueError(f"Expected a string, got {type(expr)}")
     expr = re.sub(r'\{([^}]+)\}', lambda match: convert_to_cqp_condition(match.group(1)), expr)
     return expr
 
 def convert_to_cqp_condition(group):
     conditions = []
-    # items = re.split(r',(?=(?:[^"]*"[^"]*")*[^"]*$)', group) #problème de lemma_,
     items = re.split(r'(?<!_)' r',(?=(?:[^"]*"[^"]*")*[^"]*$)', group)
     for condition in items:
         # Cas avec underscore : lemma_"monsieur" ou pos_"NOUN"
@@ -123,7 +123,6 @@ def convert_to_cqp_condition(group):
         conditions.append(f'{key}="{value}"')
     
     return "[" + " & ".join(conditions) + "]"
-
 
 def save_as_txt(data, filename):
             try:
