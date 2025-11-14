@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # coding: utf8
 """
+@author: Mekki 2022
+"""
+
+"""
 input : 1. nbr_items [1-9]
             ex : 4 pour token, lemme, pos, syntaxe
         2. len_slice

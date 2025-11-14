@@ -43,7 +43,7 @@ def dictionnaire_t_target(dictionnaire_t, df_target,partition_cible):
     dictionnaire_t_result = df_target.groupby(partition_cible)["taille"].sum().to_dict()
     return dictionnaire_t_result
 
-def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, execution_time,early_pos4lemma):
+def compute_specifs_function(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, execution_time,early_pos4lemma):
     dictionnaire_f = df_k.T.sum(axis=1).to_dict()
     dictionnaire_k = df_k.to_dict()
     données_specifs = []
@@ -64,7 +64,7 @@ def compute_specifs(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, exe
     print("file specif out !")
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     print("begining computing with R")
-    subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil), str(early_pos4lemma)]) #Run R!
+    subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil), str(early_pos4lemma)]) #Run R!
     
 def tri_lemma(execution_time,seuil_banalité,seuil,early_pos4lemma):
     liste = os.listdir("./Data/earlySPECIFS")
@@ -93,7 +93,7 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
         df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil, early_pos4lemma)
         df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
         dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
-        compute_specifs(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time,early_pos4lemma)
+        compute_specifs_function(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time,early_pos4lemma)
         
     lignes = tri_lemma(execution_time, seuil_banalité,seuil,early_pos4lemma)
     print(lignes)

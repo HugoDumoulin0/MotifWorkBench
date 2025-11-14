@@ -15,14 +15,9 @@ packages <- c('FactoMineR',
 	'factoextra', "glue")
 ipak(packages)
 
-default_folder <- "./Patterns_results/Specifs_noZero"
+default_folder <- "./Patterns_results/Specifs"
 print(default_folder)
-
-#input_suffix <- "_AFC_R_df"
-
-#files <- list.files(default_folder, full.name = TRUE)
-#matching_files <- files[grep(paste0(input_suffix, ".tsv", "$"), files)]
-#print(matching_files)
+s)
 
 args <- commandArgs(trailingOnly = TRUE)
 file = args[1]
@@ -33,90 +28,16 @@ path = args[2]
 base_name <- basename(file)
 input_file <- file
 df <- read.csv(input_file, sep="\t", row.names = 1, header=T, check.names = FALSE)
-#var_name <- sub("\\.tsv$", "", input_file)
-
 rep_name=path
-#rep_name <- sub("./Patterns_results/Specifs_noZero/", "", var_name)
-#rep_name <- sub("_df", "", rep_name)
-#dir.create(glue("./Patterns_results/R/{rep_name}"))
-
-#var_name <- glue("./Patterns_results/R/{rep_name}/")
-	#var_name <- sub("./Patterns_results/Specifs_noZero/25_AFC_R_df", glue("./Patterns_results/R/{rep_name}/"), var_name)
-#print(var_name)
 
 
-
-
-# input_file <- paste0(default_folder, "/10_AFC_R_df.tsv")
-# df <- read.csv(input_file, sep="\t")
-
-
-# var_name <- "random"
-#---------------------------------
-# Define functions
-#---------------------------------
-#General plot
-# <- function(AFC){
- # filename <- paste(var_name, "AFC.bmp", sep = "")
-  #bmp(filename = filename, width = 2048, height = 2048, res = 200)
-  #plot_obj <- fviz_ca_col(AFC,
-   #                       shape.col = 16,
-    #                      labelsize = 4,
-     #                     repel = TRUE,
-      #                    col.col = "red") +
-       #       theme_classic()
-  #print(plot_obj)
-  #dev.off()
-#}
-
-#General plot with cos2 representing contribution
-	#the value of the cos2 is between 0 and 1. A cos2 closed to 1 corresponds
-	#to a column/row variables that are well represented on the factor map.
-#AFC_plot_cos2 <- function(AFC){
-#  filename <- paste(var_name, "AFC_cos2.bmp", sep = "")
-#  bmp(filename = filename, width = 2048, height = 2048, res = 200)
-#  plot_obj <- fviz_ca_col(AFC,
- # 	col.col = "cos2",
-  #	shape.col=16,
-  #	labelsize=4,
-  #	repel=T,
-  #	gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")) +
-  #	theme_classic() +
-  #	guides(colour = guide_colourbar(position = "inside")) +
-  #	theme(legend.margin = margin(0, 0, 0, 0),
-  #		legend.position.inside = c(0.01, 1),
-  #		legend.justification.top = "left",
-  #		legend.justification.left = "top",
-  #		legend.justification.bottom = "left",
-  #		legend.justification.inside = c(0, 1),
-  #		legend.location = "plot")
-  #print(plot_obj)
-  #dev.off()
-#}
-
-#-----------------------------------
-# Functions to filter according to treshold
-#-----------------------------------
-
-
-#---------------------------------
-# Apply
-#---------------------------------
 
 #cleaning
 df <- df[rowSums(df) != 0, ]
 
 # Compute CA
-#AFC = CA(df[,-c(1,2)], graph=F)
 AFC = CA(df, graph=F)
 
-# Plot and measures for 2 dims with no contrib threshold
-# source("plots_func.R")
-#print("1")
-#AFC_plot(AFC)
-#print("2")
-#AFC_plot_cos2(AFC)
-#print("3")
 #-----------------------------------
 # Check accuracy/explanatory power
 #-----------------------------------
@@ -170,13 +91,6 @@ dev.off()
 	print(plot_obj)
 	dev.off()
 
-
-# # Plot and measures for 2 dims with contrib threshold
-# # source("plots_threshold.R")
-
-# # Plot and measures for accuracy/explanatory power
-# source("accuracy.R")
-# # var_per_axis(AFC)
 
 bmp(filename=paste(rep_name, "txt_contrib10.bmp"),
     width=2048, height=2048, res=200)
@@ -385,12 +299,7 @@ plot_v_test_clust_ind <- function(data_type, AFC, rep_name = "output", custom_co
 	coords_full <- paste0("AFC$", AFC_type, "$coord")
   	coords=eval(parse(text = coords_full))
   	coords.individus <- coords[ind, 1:2]
-  	
-  	#associer un ind à son cluster
-  	#clusters <- unlist(lapply(names(clust_clean), function(cluster_name) {
- 	 #individus <- clust_clean[[cluster_name]]
-  	#setNames(rep(cluster_name, length(array_type)), array_type)
-	#})
+
 	
 	clusters <- unlist(lapply(names(clust_clean), function(cluster_name) {
   	individus <- clust_clean[[cluster_name]]

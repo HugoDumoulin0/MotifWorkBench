@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-@author: jademekki
+@author: Mekki 2022
 """
 
 import formate_patterns

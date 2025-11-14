@@ -1,4 +1,6 @@
-
+"""
+@author: Timothée Premat 
+"""
 import pandas as pd
 import random
 
