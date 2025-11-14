@@ -67,13 +67,11 @@ if __name__ == "__main__":
     for type_texte in types_textes:
         print("\t Stanza: checking if tagged files already exists")
         output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-        # print(output_folder)
 
         if os.path.exists(output_folder):  # Check if the file exists
             print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
         else:
             print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
-        # for type_texte in types_textes: 
             output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
             rep = "./Data/Textes_raw/{}".format(type_texte)
             os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
@@ -110,7 +108,10 @@ if __name__ == "__main__":
             output_file = os.path.join(underscore_folder, f"{type_texte}") #Define export path from variables
             replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
 
-	#### Copyright © - Mekki 2022 ###
+
+
+	#### Copyright © - Mekki 2022 ### (slightly adaptated)
+    
     #-------------------------------------------------------------------------------------------------------------------
     # DMT4 files
     #-------------------------------------------------------------------------------------------------------------------
@@ -125,7 +126,6 @@ if __name__ == "__main__":
         os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
         for type_texte in types_textes:
             destination = "./Data/Textes_tagged_stanza_for_dmt4/"
-            # source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
             source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
             if os.path.exists(source):
                 shutil.copy(source,destination)
@@ -142,17 +142,18 @@ if __name__ == "__main__":
         print("\t DMT4: creating DMT4_file.")
         conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
         file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
-        # print(file_list)
         path = "./Data/Textes_tagged_stanza_for_dmt4/"
         tools.concat_multiple_conll(path, file_list, "merged")
-        # print(f'liste dir dans ttaggedfordmt4 : {os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")}')
         for type_texte in liste_textes:
-            # print("transform data début")
             conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
-            # print(f"transform_data done : {type_texte}")
         conll_dmt4.sort_dmtfiles()
         for type_texte in liste_textes:
             conll_dmt4.make_DMT4_file(type_texte)
+            
+   	#### END Copyright © - Mekki 2022 ### (slightly adaptated)
+
+
+
 
     path_stanza="./Data/Textes_tagged_stanza/"
     path_vrt="./Data/textesVRT/"
@@ -161,14 +162,18 @@ if __name__ == "__main__":
         os.mkdir("./Data/cwb-corpus")
         cwb.main()
         
-
     if earlySpecifs:
         print("-"*75)
         print("2.1 Early selection of specific lemma")
         if user_input_list==False:
             liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma)
+
             
-            
+
+
+
+   #### Copyright © - Mekki 2022 ###
+   
     # #-------------------------------------------------------------------------------------------------------------------
     # # Mining Patterns
     # #-------------------------------------------------------------------------------------------------------------------
@@ -190,7 +195,6 @@ if __name__ == "__main__":
         for gap_min in list_gap_min:
             for gap_max in list_gap_max:
                 for minsup_percent in list_minsup_percent:
-                        # threads = 30
                         for type_texte in liste:
                             print("\t Type_texte:", type_texte)
                             if os.path.exists(f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.txt"):
@@ -204,7 +208,7 @@ if __name__ == "__main__":
                                 print(f"\t gap max {gap_max} ")
                                 print(f"\t Minsup {minsup_percent}% ")
 
-                                file_out = "{}_{}_{}{}_{}_freq.txt".format(nb_itemset_min, minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
+                                file_out = "{}_{}_{}{}_{}_closed.txt".format(nb_itemset_min, minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
 
                                 print("\t\t Extracting closed patterns")
                         
@@ -218,7 +222,7 @@ if __name__ == "__main__":
                                     if earlySpecifs:
                                         set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
                         
-                                os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
+                                os.system("bash src/execute_closed_pattern.sh {}".format(file_out))
                                 DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.txt"
                                 with open(DMT4_clos_corpus, "r") as file:
                                     lines = file.readlines()
@@ -267,12 +271,18 @@ if __name__ == "__main__":
         end_time=time.time()
         time_clustering = end_time - start_time                
                 
+        
    	#### END Copyright © - Mekki 2022 ###
+       
+       
+       
+       
+       
     # #-------------------------------------------------------------------------------------------------------------------
     # # Statistical computing
     # #-------------------------------------------------------------------------------------------------------------------
     start_time = time.time()
-    if not os.path.exists("./Patterns_results/Specifs/"):                    #devenu inutile
+    if not os.path.exists("./Patterns_results/Specifs/"):
         os.mkdir("./Patterns_results/Specifs/")
     print("-"*75)
     print("5. Statistical computing of patterns in partition")
