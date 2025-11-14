@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
-# input : registre_1, registre_2
+
+"""
+@author: Mekki 2022
+"""
 
 
 import os

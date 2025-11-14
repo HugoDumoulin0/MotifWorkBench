@@ -147,7 +147,7 @@ def compute_freq_TextesPos_AFC(execution_time, path_out):
     return file_out, path_out, df_pos, file_total
 
 
-def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t):
+def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
     dictionnaire_k = df_k.T.to_dict()
     données_specifs = []
@@ -165,7 +165,7 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, 
     file_out=f"{path_out}SpecifsMotifsTexte_df_{execution_time}.tsv"
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     if specifs==True:
-        subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time), path_out, file_out]) #Run R!
+        subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), str(execution_time), path_out, file_out]) #Run R!
 
 def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, gap_min, gap_max):
     internal_clusters = tools.load_pickles(f"./Clustering_results/Clusters/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_clustering_3.pk")
@@ -265,7 +265,7 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
 
         
         if specifs:       
-                compute_specifs(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+                compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
 
         if mode=="server":
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 

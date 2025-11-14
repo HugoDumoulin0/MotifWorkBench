@@ -109,7 +109,8 @@ if __name__ == "__main__":
             file_path = os.path.join(underscore_folder, filename)
             output_file = os.path.join(underscore_folder, f"{type_texte}") #Define export path from variables
             replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
- 
+
+	#### Copyright © - Mekki 2022 ###
     #-------------------------------------------------------------------------------------------------------------------
     # DMT4 files
     #-------------------------------------------------------------------------------------------------------------------
@@ -266,13 +267,13 @@ if __name__ == "__main__":
         end_time=time.time()
         time_clustering = end_time - start_time                
                 
-                
+   	#### END Copyright © - Mekki 2022 ###
     # #-------------------------------------------------------------------------------------------------------------------
     # # Statistical computing
     # #-------------------------------------------------------------------------------------------------------------------
     start_time = time.time()
-    if not os.path.exists("./Patterns_results/Specifs_noZero/"):                    #devenu inutile
-        os.mkdir("./Patterns_results/Specifs_noZero/")
+    if not os.path.exists("./Patterns_results/Specifs/"):                    #devenu inutile
+        os.mkdir("./Patterns_results/Specifs/")
     print("-"*75)
     print("5. Statistical computing of patterns in partition")
     if not os.path.exists("./Patterns_results/R"):
