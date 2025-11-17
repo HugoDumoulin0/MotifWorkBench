@@ -67,35 +67,39 @@ def compute_specifs_function(df_k, path_out, T, dictionnaire_t, seuil,minsup_per
     subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil), str(early_pos4lemma)]) #Run R!
     
 def tri_lemma(execution_time,seuil_banalité,seuil,early_pos4lemma):
-    liste = os.listdir("./Data/earlySPECIFS")
-    fichiers = sorted(liste, key=lambda f: os.path.getmtime(os.path.join("./Data/earlySPECIFS", f)),reverse=True)
+    liste = os.listdir("./Data/earlySelection")
+    fichiers = sorted(liste, key=lambda f: os.path.getmtime(os.path.join("./Data/earlySelection", f)),reverse=True)
     if early_pos4lemma==".*":
         early_pos4lemma="allPos"
     for file in fichiers:
-        if f"specif_{seuil}{early_pos4lemma}" in file:
-            df = pd.read_csv(f"./Data/earlySPECIFS/{file}", sep="\t", index_col=0, quoting=3)
+        if file.startswith(f"specif_{seuil}{early_pos4lemma}"):
+            df = pd.read_csv(f"./Data/earlySelection/{file}", sep="\t", index_col=0, quoting=3)
     lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
     return lignes
     
-def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,early_pos4lemma):
-    if not os.path.exists("./Data/earlySPECIFS"):
-        os.mkdir("./Data/earlySPECIFS/")
+def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,early_pos4lemma, filter_specifs):
+    if not os.path.exists("./Data/earlySelection"):
+        os.mkdir("./Data/earlySelection/")
     execution_time  = datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mmin%Ss")
-    path_out = "./Data/earlySPECIFS/"
+    path_out = "./Data/earlySelection/"
     path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
     lexique = tools.load_pickles(path_lexique)
-    for file in os.listdir("./Data/earlySPECIFS"):
-        if f"specif_{seuil}" in file:
+    for file in os.listdir("./Data/earlySelection"):
+        if file.startswith(f"specif_{seuil}"):
             print(f"EarlySpecifs computing already exists with {file} \n delete it if you want to compute from scratch")
             break
     else:
         df_target = pd.read_csv(path_metadata, sep="\t", index_col=0)
         df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil, early_pos4lemma)
+        print(df_lemma)
         df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
-        dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
-        compute_specifs_function(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time,early_pos4lemma)
-        
-    lignes = tri_lemma(execution_time, seuil_banalité,seuil,early_pos4lemma)
+        if filter_specifs==True:
+            dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
+            compute_specifs_function(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time,early_pos4lemma)
+            lignes = tri_lemma(execution_time, seuil_banalité,seuil,early_pos4lemma)
+        else:
+            df_lemma.to_csv(f"./Data/earlySelection/noSpecif_{seuil}{early_pos4lemma}.csv")
+            lignes = df_lemma.index.tolist()
     print(lignes)
     liste_lemma = []
     for l in lignes:
