@@ -22,7 +22,7 @@ import stanza
 from stanza.utils.conll import CoNLL
 import time
 import shutil
-from config import *
+
 import subprocess
 import tools
 import conllu2vrt
@@ -33,6 +33,8 @@ import early_specifs
 import pandas as pd
 import execute_internal_clustering
 import json
+import sys
+import types
 
 
 
@@ -44,7 +46,23 @@ if __name__ == "__main__":
     if ".DS_Store" in types_textes:
         types_textes.remove(".DS_Store")
         
-        
+    mode = sys.argv[1] if len(sys.argv) > 1 else ""
+    if mode=="auto":
+        from config import *
+    else:
+        result = subprocess.run(["Rscript", "./src/config.R"],
+                                capture_output=True,
+                                text=True 
+                                )
+        errors = result.stderr
+        if errors:
+            print("Erreurs R :")
+            print(errors)
+            
+        json_text = result.stdout.strip()
+        data = json.loads(json_text)
+        obj = types.SimpleNamespace(**data)
+
         
     #-------------------------------------------------------------------------------------------------------------------
     # Annotation des données
@@ -294,7 +312,7 @@ if __name__ == "__main__":
     print("5. Statistical computing of patterns in partition")
     if not os.path.exists("./Patterns_results/R"):
         os.mkdir("./Patterns_results/R")
-    df_metadata = pd.read_csv(path_target, sep="\t", index_col=0)
+    df_metadata = pd.read_csv(path_metadata, sep="\t", index_col=0)
     results={}
  
     ##computing patterns###
@@ -489,8 +507,6 @@ if __name__ == "__main__":
             file.write(f"List_metadata={list_metadata}\n")
             file.write(f"List_seuils_lemma={liste_seuils_lemma}\n")
             file.write(f"List_seuils_bigrams={liste_seuils_bigrams}\n")
-            file.write(f"y_class={y_class}\n")
-            file.write(f"sampling={sampling}\n")
             file.write("-"*75)
             file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
             file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
