@@ -17,7 +17,7 @@ ipak(packages)
 
 default_folder <- "./Patterns_results/Specifs"
 print(default_folder)
-s)
+
 
 args <- commandArgs(trailingOnly = TRUE)
 file = args[1]
