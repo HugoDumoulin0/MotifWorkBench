@@ -26,7 +26,6 @@ from config import *
 import subprocess
 import tools
 import conllu2vrt
-import classifiers
 import enslave_perl
 import cwb
 import datetime
@@ -338,9 +337,7 @@ if __name__ == "__main__":
                                                 print(path_out)
                                                 print(f"already computed {dir}")
                                                 fichiers = sorted(os.listdir(path_out+dir), key=lambda f: os.path.getmtime(os.path.join(path_out+dir, f)),reverse=True)
-                                                if not os.path.exists(f"./Patterns_results/Classifieurs/{metadata}/{modif}motifs/minsup{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"):
-                                                    print("classifier results does not exist yet")
-                                                    for f in fichiers: 
+                                                for f in fichiers: 
                                                             if "motifsTexte_" in f:
                                                                 if internal_clustering:
                                                                     if "_FUS" in f:
@@ -389,8 +386,7 @@ if __name__ == "__main__":
                 subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
             df_pos=compute_CQP.add_total(df_pos)
             df_pos.to_csv(file_total, sep="\t")
-            if not os.path.exists(f"./Patterns_results/Classifieurs/pos"):
-                results[f"{metadata}_pos"] = file_out_pos
+            results[f"{metadata}_pos"] = file_out_pos
         else:
             print(f"already computed pos")
             doss =f"./Patterns_results/R/{metadata}/pos/"
@@ -399,8 +395,7 @@ if __name__ == "__main__":
                 if f"posTexte_" in fichier:
                     liste.append(doss+fichier)
             tri = sorted(liste, key=os.path.getmtime, reverse=True)
-            if not os.path.exists(f"./Patterns_results/Classifieurs/pos"):
-                results[f"{metadata}_pos"] = tri[0]
+            results[f"{metadata}_pos"] = tri[0]
         
         #lemma#
         for seuil in liste_seuils_lemma:
@@ -472,22 +467,11 @@ if __name__ == "__main__":
     time_stats = end_time - start_time
             
     if mode=="server":
-        if classification:
-            print("-"*75)
-            print("6. Classification task")
-            start_time=time.time()
-            classifiers.main(minsup_percent,results,path_target, sampling,sub_tidy_metadata,list_metadata)
-            end_time=time.time()
-            time_class=end_time - start_time
-
-    if mode=="server":
         print(f"Temps de tagging : {time_tag/60:.2f} minutes")
         print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
         print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
         if internal_clustering:
             print(f"Temps de calcul des clusters internal : {time_clustering/60:2f} minutes")
-        if classification:
-            print(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes")
         
         execution_time = datetime.datetime.now()
         with open(f"./log_{execution_time}.txt", "w") as file:
@@ -505,7 +489,6 @@ if __name__ == "__main__":
             file.write(f"List_metadata={list_metadata}\n")
             file.write(f"List_seuils_lemma={liste_seuils_lemma}\n")
             file.write(f"List_seuils_bigrams={liste_seuils_bigrams}\n")
-            file.write(f"classification={classification}\n")
             file.write(f"y_class={y_class}\n")
             file.write(f"sampling={sampling}\n")
             file.write("-"*75)
@@ -514,8 +497,6 @@ if __name__ == "__main__":
             if internal_clustering:
                 file.write(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes\n")
             file.write(f"Temps de calcul statistique  : {time_stats/60:2f} minutes\n")
-            if classification:
-                file.write(f"Temps de calcul des classifieurs  : {time_class/60:2f} minutes\n")
             file.write("-"*75)
         
     if mode=="interface":
