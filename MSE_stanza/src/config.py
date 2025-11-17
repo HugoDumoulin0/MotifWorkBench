@@ -8,10 +8,10 @@ use_gpu=True
 # Early selection mode
 #-------------------
 
-earlySelection=True
+earlySelection=False
 seuil_early_selection=200
 
-filter_specifs=True
+filter_specifs=False
 partition_cible = "test"
 seuil_banalité=2
 #early_pos4lemma=".*"  #toutes les pos possibles
