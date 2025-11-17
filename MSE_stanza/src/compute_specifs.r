@@ -23,7 +23,6 @@ ipak(packages)
 # Inherit from Python
 #----------------------------------------------
 args <- commandArgs(trailingOnly=TRUE)
-minsup_percent <- as.numeric(args[1])
 execution_time <- paste(args[2])
 default_folder <- paste(args[3])
 print(default_folder)
@@ -31,7 +30,7 @@ path_in <- paste(args[4])
 seuil <-paste(args[5])
 pos <- paste(args[6])
 
-output_name_vertical <- paste0(default_folder, "/", minsup_percent, "_specif_", seuil, pos, execution_time, ".tsv")
+output_name_vertical <- paste0(default_folder, "/","specif_", seuil, pos, execution_time, ".tsv")
 
 #----------------------------------------------
 # Rewriting of textometry functions

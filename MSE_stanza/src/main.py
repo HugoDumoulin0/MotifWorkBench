@@ -29,7 +29,7 @@ import conllu2vrt
 import enslave_perl
 import cwb
 import datetime
-import early_specifs
+import early_selection
 import pandas as pd
 import execute_internal_clustering
 import json
@@ -105,7 +105,7 @@ if __name__ == "__main__":
             tagging_list.append(file_path)
             tag=True
     if tag==True:
-        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=False)
+        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=use_gpu)
         for file_path in tagging_list:
             with open(file_path, "r", encoding="utf-8") as f:
                         text = f.read()
@@ -182,11 +182,11 @@ if __name__ == "__main__":
         os.mkdir("./Data/cwb-corpus")
         cwb.main()
         
-    if earlySpecifs:
+    if earlySelection:
         print("-"*75)
-        print("2.1 Early selection of specific lemma")
+        print("2.1 Early selection of lemma for mining")
         if user_input_list==False:
-            liste_earlyspecifs_lemma = early_specifs.main(seuil_early_specifs, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma)
+            liste_earlyselection_lemma = early_selection.main(seuil_early_selection, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma, filter_specifs)
 
             
 
@@ -237,7 +237,7 @@ if __name__ == "__main__":
                                     set_up.write("GAPMIN={}\n".format(gap_min))
                                     set_up.write("GAPMAX={}\n".format(gap_max))
                                     set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-                                    if earlySpecifs:
+                                    if earlySelection:
                                         set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
                         
                                 os.system("bash src/execute_closed_pattern.sh {}".format(file_out))
@@ -311,8 +311,8 @@ if __name__ == "__main__":
  
     ##computing patterns###
     modif=""
-    if earlySpecifs:
-        modif=f"{seuil_early_specifs}earlySpecifs_"
+    if earlySelection:
+        modif=f"{seuil_early_selection}earlySelection_"
     if internal_clustering:
         modif= modif+"internal_clustering_"
     
@@ -487,7 +487,7 @@ if __name__ == "__main__":
         
         execution_time = datetime.datetime.now()
         with open(f"./log_{execution_time}.txt", "w") as file:
-            file.write(f"earlySpecifs={earlySpecifs}\n")
+            file.write(f"earlySelection={earlySelection}\n")
             file.write(f"internal_clustering={internal_clustering}\n")
             file.write(f"list_itemset_min={list_itemset_min}\n")
             file.write(f"list_gap_min={list_gap_min}\n")

@@ -2,8 +2,8 @@
 # stanza
 #-------------------
 download=False
+use_gpu=True
 
-specifs=False
 
 #-------------------
 # Mode
@@ -13,19 +13,20 @@ mode="server"
 
 
 #-------------------
-# Early specifs mode
+# Early selection mode
 #-------------------
 
-earlySpecifs=False
-seuil_early_specifs=200
-partition_cible = "genre"
+earlySelection=True
+seuil_early_selection=200
+
+filter_specifs=True
+partition_cible = "test"
 seuil_banalité=2
 #early_pos4lemma=".*"  #toutes les pos possibles
 early_pos4lemma = "ADJ|NOUN|VERB" #restriction aux mots lexicaux
 
 user_input_list=False
-liste_earlyspecifs_lemma = ["président", "comité", "formation"]
-    
+liste_earlyselection_lemma = ["président", "comité", "formation"]
     
 
 #-------------------
@@ -54,8 +55,8 @@ Lemma=True
 Pos=True
 Dep=True
 Feats=False
-
 #attention avec form=True il y a aura les résultats non contractés
+
 #-------------------
 # Metadata
 #-------------------
@@ -66,6 +67,11 @@ list_metadata = ["id"
                  #,"annee"
                  # ,"target"
                  ]
+
+#-------------------
+# Statistics in the end
+#-------------------
+specifs=False
 
 #-------------------
 # Comparison with lemmas and pos
