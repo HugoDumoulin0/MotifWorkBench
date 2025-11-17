@@ -167,9 +167,9 @@ def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path
     if specifs==True:
         subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), str(execution_time), path_out, file_out]) #Run R!
 
-def fusion_internal_clusters(df, lexic_int_str, nb_itemset_min, minsup_percent, gap_min, gap_max):
-    internal_clusters = tools.load_pickles(f"./Clustering_results/Clusters/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_clustering_3.pk")
-    medoids_clusters = tools.load_pickles(f"./Clustering_results/Medoids/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_medoids_3.pk")
+def fusion_internal_clusters(df, lexic_int_str, args):
+    internal_clusters = tools.load_pickles(f"./Clustering_results/Clusters/{args}_clustering_3.pk")
+    medoids_clusters = tools.load_pickles(f"./Clustering_results/Medoids/{args}_medoids_3.pk")
     
     internal_clusters_str = {}
     for cluster_id, motifs in internal_clusters.items():
@@ -225,10 +225,10 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
         os.mkdir(path_out)
     return file_out, file_total, path_out, df_k
      
-def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out):
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out, mode, args):
     execution_time = datetime.datetime.now()
     lexic_int_str = formate_patterns.make_dict_int_to_str()
-    DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.pk"
+    DMT4_clos_corpus = f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general()
@@ -256,7 +256,7 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                 
             if internal_clustering:
                 lexic_int_str = formate_patterns.make_dict_int_to_str()
-                df_k = fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
+                df_k = fusion_internal_clusters(df_k, lexic_int_str,args)
                 file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
                 print(file_out_motifs)
                 df_k.to_csv(file_out_motifs, sep="\t")
@@ -267,7 +267,7 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
         if specifs:       
                 compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
 
-        if mode=="server":
+        if mode=="auto":
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
         df_k_total=add_total(df_k)
         df_k_total.to_csv(file_total, sep="\t")
