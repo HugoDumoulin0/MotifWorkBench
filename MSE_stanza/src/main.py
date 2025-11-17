@@ -478,7 +478,7 @@ if __name__ == "__main__":
     end_time = time.time()
     time_stats = end_time - start_time
             
-    if mode=="server":
+    if mode=="auto":
         print(f"Temps de tagging : {time_tag/60:.2f} minutes")
         print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
         print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
@@ -509,7 +509,7 @@ if __name__ == "__main__":
             file.write(f"Temps de calcul statistique  : {time_stats/60:2f} minutes\n")
             file.write("-"*75)
         
-    if mode=="interface":
+    else:
         json_results = json.dumps(results)
         json_file = "./temp_input.json"
     
