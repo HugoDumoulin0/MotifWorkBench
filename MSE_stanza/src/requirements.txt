@@ -2,11 +2,7 @@ stanza
 numpy
 datetime
 pandas
-scikit-learn
 matplotlib
-IPython
 transformers
-sentencepiece
 conllu
-spicy
 torch
