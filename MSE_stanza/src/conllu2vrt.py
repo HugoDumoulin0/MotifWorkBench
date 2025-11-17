@@ -26,7 +26,7 @@ def transform(path_stanza, path_vrt):
                 print(f"Transforming Conllu to VRT : {file}")
                 if file==".DS_Store": continue
                 f_out.write(f'<text id="{file}">\n')
-                input_file=f"{path_stanza}{file}/{file}"
+                input_file=f"{path_stanza}{file}"
                 with open(input_file, "r", encoding="utf-8") as f_in:
                     sentence_id = 0            
                     for tokenlist in parse_incr(f_in):

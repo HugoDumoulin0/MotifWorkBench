@@ -40,11 +40,7 @@ import types
 
 if __name__ == "__main__":
     python = "python3.7"
-    
-    
-    types_textes = os.listdir("./Data/Textes_raw")
-    if ".DS_Store" in types_textes:
-        types_textes.remove(".DS_Store")
+
         
     mode = sys.argv[1] if len(sys.argv) > 1 else ""
     if mode=="auto":
@@ -71,6 +67,12 @@ if __name__ == "__main__":
     print("1. Tagging data")
 
     print("1.1. Tagging data with Stanza: POS, lemma, UD")
+    
+    textes = os.listdir("./Data/Textes_raw")
+    if ".DS_Store" in textes:
+        textes.remove(".DS_Store")
+    textes = [item[:-4] for item in textes]
+        
         #Set language model for stanza and download models on first run only
     from stanza.pipeline.core import DownloadMethod
 
@@ -87,49 +89,44 @@ if __name__ == "__main__":
     else:
         print("Modèle français Stanza déjà présent, pas de téléchargement.")
         
-    nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=False)
-    for type_texte in types_textes:
+    if not os.path.exists("./Data/Textes_tagged_stanza"):
+        os.mkdir("./Data/Textes_tagged_stanza")
+        
+    tagging_list=[]
+    tag=False
+    for texte in textes:
         print("\t Stanza: checking if tagged files already exists")
-        output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-
-        if os.path.exists(output_folder):  # Check if the file exists
-            print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
+        output_file = "./Data/Textes_tagged_stanza/{}.conllu".format(texte)
+        if os.path.exists(output_file):  # Check if the file exists
+            print(f"\t Stanza: file {output_file} already exists. Delete it to perform tagging again.")
         else:
-            print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
-            output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-            rep = "./Data/Textes_raw/{}".format(type_texte)
-            os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
-
-            for file in os.listdir(rep):                        #loop for each file in dir
-                if file[0] == ".": continue                     #ignore hidden UNIX files
-                file_path = os.path.join(rep, file)             #get the full path of each file
-
-                with open(file_path, "r", encoding="utf-8") as f:
+            print(f"\t Stanza: file {output_file} does not exist. Proceeds with tagging.")
+            file_path = "./Data/Textes_raw/{}.txt".format(texte)
+            tagging_list.append(file_path)
+            tag=True
+    if tag==True:
+        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=False)
+        for file_path in tagging_list:
+            with open(file_path, "r", encoding="utf-8") as f:
                         text = f.read()
                         output = nlp(text)                          #Define output as the object created by stanza
-                        output_file = os.path.join(output_folder, "{}".format(type_texte, file.split('.')[0])) #Define export path from variables
                         CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
-                        print("\t", type_texte, "has been tagged and saved:", output_file)
+                        print("\t", texte, "has been tagged and saved:", output_file)
     end_time=time.time()
     time_tag = end_time - start_time 
     
     ##underscore fix 
     if  not os.path.exists("./Data/underscore_fix"):
         os.mkdir("./Data/underscore_fix")
-    for type_texte in types_textes:
-        output_folder = "./Data/underscore_fix/{}".format(type_texte)
-        if  os.path.exists(output_folder):
+    for texte in textes:
+        output_file = "./Data/underscore_fix/{}.conllu".format(texte)
+        if  os.path.exists(output_file):
             print(f"\t Underscore_fix file already exists. Delete it to perform underscore_fixing again.")
         else:
-            os.mkdir(f"./Data/underscore_fix/{type_texte}")
-            source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
-            destination = f"./Data/underscore_fix/{type_texte}/{type_texte}"
+            print(f"Underscore fix : {texte}")
+            destination = "./Data/underscore_fix/"
+            source = f"./Data/Textes_tagged_stanza/{texte}.conllu"
             shutil.copy(source,destination)
-            print(f"Underscore fix : {type_texte}")
-            filename = f'{type_texte}'
-            underscore_folder =f"./Data/underscore_fix/{type_texte}"
-            file_path = os.path.join(underscore_folder, filename)
-            output_file = os.path.join(underscore_folder, f"{type_texte}") #Define export path from variables
             replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
 
 
@@ -148,13 +145,12 @@ if __name__ == "__main__":
     else:
         print(f"\t DMT4: file does not exist. Proceeds with transform.")
         os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
-        for type_texte in types_textes:
+        for texte in textes:
             destination = "./Data/Textes_tagged_stanza_for_dmt4/"
-            source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
+            source = f"./Data/underscore_fix/{texte}.conllu"
             if os.path.exists(source):
                 shutil.copy(source,destination)
             else:
-                source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
                 shutil.copy(source,destination)
                 
     liste_textes = ["merged"]
@@ -168,11 +164,11 @@ if __name__ == "__main__":
         file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
         path = "./Data/Textes_tagged_stanza_for_dmt4/"
         tools.concat_multiple_conll(path, file_list, "merged")
-        for type_texte in liste_textes:
-            conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
+        for texte in liste_textes:
+            conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", texte, Form, Lemma, Pos, Dep, Feats)
         conll_dmt4.sort_dmtfiles()
-        for type_texte in liste_textes:
-            conll_dmt4.make_DMT4_file(type_texte)
+        for texte in liste_textes:
+            conll_dmt4.make_DMT4_file(texte)
             
    	#### END - Mekki 2022 ### (slightly adaptated)
 
@@ -219,13 +215,11 @@ if __name__ == "__main__":
         for gap_min in list_gap_min:
             for gap_max in list_gap_max:
                 for minsup_percent in list_minsup_percent:
-                        for type_texte in liste:
-                            print("\t Type_texte:", type_texte)
-                            if os.path.exists(f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.txt"):
+                            if os.path.exists(f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.txt"):
                                 print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
                             else:
                                 print("non existent previous extracted patterns files")
-                                dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
+                                dmt4_files = "./Data/DMT4_files/DMT4_merged_files_sorted.txt"
                                 minsup = tools.get_minsup(float(minsup_percent), dmt4_files)
                                 print(f"\t nb itemset min {nb_itemset_min} ")
                                 print(f"\t gap min {gap_min} ")
@@ -374,7 +368,7 @@ if __name__ == "__main__":
                                                                 break
                                 else:    
                                     print("computing statistics from scratch")
-                                    results, path_out = compute_CQP.main(types_textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, modif,metadata, internal_clustering, results, path_out)
+                                    results, path_out = compute_CQP.main(textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, modif,metadata, internal_clustering, results, path_out)
         
     ##comparison with other features###
     for metadata in list_metadata:
