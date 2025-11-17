@@ -1,5 +1,12 @@
-#!/usr/bin/python3
-# -*- coding:utf-8 -*-
+"""
+Last updated on XXX
+
+@author: Dumoulin, H & Premat, T.
+Based on scripts by Jade Mekki 2022
+
+"""
+
+
 import os
 import re
 import sys
@@ -110,7 +117,7 @@ if __name__ == "__main__":
 
 
 
-	#### Copyright © - Mekki 2022 ### (slightly adaptated)
+	#### Mekki 2022 ### (slightly adaptated)
     
     #-------------------------------------------------------------------------------------------------------------------
     # DMT4 files
@@ -150,7 +157,7 @@ if __name__ == "__main__":
         for type_texte in liste_textes:
             conll_dmt4.make_DMT4_file(type_texte)
             
-   	#### END Copyright © - Mekki 2022 ### (slightly adaptated)
+   	#### END - Mekki 2022 ### (slightly adaptated)
 
 
 
@@ -172,7 +179,7 @@ if __name__ == "__main__":
 
 
 
-   #### Copyright © - Mekki 2022 ###
+   #### Mekki 2022 ### (slightly adapted)
    
     # #-------------------------------------------------------------------------------------------------------------------
     # # Mining Patterns
@@ -272,7 +279,7 @@ if __name__ == "__main__":
         time_clustering = end_time - start_time                
                 
         
-   	#### END Copyright © - Mekki 2022 ###
+   	#### END - Mekki 2022 ### (slightly adaptated)
        
        
        
