@@ -4,14 +4,6 @@
 download=False
 use_gpu=True
 
-
-#-------------------
-# Mode
-#-------------------
-mode="server"
-# mode="interface"
-
-
 #-------------------
 # Early selection mode
 #-------------------
