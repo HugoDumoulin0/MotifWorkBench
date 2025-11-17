@@ -215,36 +215,39 @@ if __name__ == "__main__":
         for gap_min in list_gap_min:
             for gap_max in list_gap_max:
                 for minsup_percent in list_minsup_percent:
-                            if os.path.exists(f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.txt"):
-                                print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
-                            else:
-                                print("non existent previous extracted patterns files")
-                                dmt4_files = "./Data/DMT4_files/DMT4_merged_files_sorted.txt"
-                                minsup = tools.get_minsup(float(minsup_percent), dmt4_files)
-                                print(f"\t nb itemset min {nb_itemset_min} ")
-                                print(f"\t gap min {gap_min} ")
-                                print(f"\t gap max {gap_max} ")
-                                print(f"\t Minsup {minsup_percent}% ")
-
-                                file_out = "{}_{}_{}{}_{}_closed.txt".format(nb_itemset_min, minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-
-                                print("\t\t Extracting closed patterns")
+                    args=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                    args = args.replace("|","-")
+                    if os.path.exists(f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"):
+                        print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
+                    else:
+                        print("non existent previous extracted patterns files")
+                        dmt4_files = "./Data/DMT4_files/DMT4_merged_files_sorted.txt"
+                        minsup = tools.get_minsup(float(minsup_percent), dmt4_files)
+                        print(f"\t nb itemset min {nb_itemset_min} ")
+                        print(f"\t gap min {gap_min} ")
+                        print(f"\t gap max {gap_max} ")
+                        print(f"\t Minsup {minsup_percent}% ")
                         
-                                with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-                                    set_up.write("MINSUP={}\n".format(minsup))
-                                    set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                                    set_up.write("THREAD={}\n".format(threads))
-                                    set_up.write("GAPMIN={}\n".format(gap_min))
-                                    set_up.write("GAPMAX={}\n".format(gap_max))
-                                    set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-                                    if earlySelection:
-                                        set_up.write("OR={}\n".format(str(liste_earlyspecifs_lemma)[1:-1]))
-                        
-                                os.system("bash src/execute_closed_pattern.sh {}".format(file_out))
-                                DMT4_clos_corpus = f"./Patterns_results/Closed/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_DMT4_merged_files_sorted_closed.txt"
-                                with open(DMT4_clos_corpus, "r") as file:
-                                    lines = file.readlines()
-                                    print(f"{len(lines)} extracted closed patterns")
+                        file_out = f"{args}_DMT4_merged_files_sorted_closed.txt"
+                        # file_out = "{}_{}_{}{}_{}_closed.txt".format(nb_itemset_min, minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
+
+                        print("\t\t Extracting closed patterns")
+                
+                        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
+                            set_up.write("MINSUP={}\n".format(minsup))
+                            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
+                            set_up.write("THREAD={}\n".format(threads))
+                            set_up.write("GAPMIN={}\n".format(gap_min))
+                            set_up.write("GAPMAX={}\n".format(gap_max))
+                            set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                            if earlySelection:
+                                set_up.write("OR={}\n".format(str(liste_earlyselection_lemma)[1:-1]))
+                
+                        os.system("bash src/execute_closed_pattern.sh {}".format(file_out))
+                        DMT4_clos_corpus = f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"
+                        with open(DMT4_clos_corpus, "r") as file:
+                            lines = file.readlines()
+                            print(f"{len(lines)} extracted closed patterns")
         end_time=time.time()
         time_DMT4 = end_time - start_time
         
@@ -280,8 +283,10 @@ if __name__ == "__main__":
                 for gap_min in list_gap_min:
                     for gap_max in list_gap_max:
                         for minsup_percent in list_minsup_percent:
-                            if not os.path.exists(f"./Clustering_results/Clusters/{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}_clustering_3.pk"):
-                                execute_internal_clustering.main(nbr_pool, minsup_percent, nb_itemset_min, gap_min, gap_max)
+                            args=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                            args = args.replace("|","-")
+                            if not os.path.exists(f"./Clustering_results/Clusters/{args}_clustering_3.pk"):
+                                execute_internal_clustering.main(nbr_pool, args)
                             else:
                                 print("-"*75)
                                 print("4.bis Internal clustering of closed patterns")
@@ -312,7 +317,7 @@ if __name__ == "__main__":
     ##computing patterns###
     modif=""
     if earlySelection:
-        modif=f"{seuil_early_selection}earlySelection_"
+        modif=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
     if internal_clustering:
         modif= modif+"internal_clustering_"
     
@@ -343,6 +348,8 @@ if __name__ == "__main__":
                                     os.mkdir(path)
                             for minsup_percent in list_minsup_percent:
                                 print(f"Minsup: {minsup_percent}")
+                                args=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                                args = args.replace("|","-")
                                 path_out = f"{path_R}minsup{str(minsup_percent)}/"
                                 if os.path.exists(path_out):
                                             for dir in os.listdir(path_out):
@@ -359,7 +366,7 @@ if __name__ == "__main__":
                                                                         df_k.to_csv(path_out+dir+"/"+f, sep="\t")
                                                                         results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = f
                                                                         lexic_int_str = formate_patterns.make_dict_int_to_str()
-                                                                        df_k = compute_CQP.fusion_internal_clusters(df_k, lexic_int_str,nb_itemset_min, minsup_percent, gap_min, gap_max)
+                                                                        df_k = compute_CQP.fusion_internal_clusters(df_k, lexic_int_str, args)
                                                                         f_fus = f[:-4]+"_FUS.tsv"
                                                                         df_k.to_csv(path_out+dir+"/"+f_fus, sep="\t")
                                                                         results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = f_fus
@@ -368,7 +375,7 @@ if __name__ == "__main__":
                                                                 break
                                 else:    
                                     print("computing statistics from scratch")
-                                    results, path_out = compute_CQP.main(textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, modif,metadata, internal_clustering, results, path_out)
+                                    results, path_out = compute_CQP.main(textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, modif,metadata, internal_clustering, results, path_out, mode, args)
         
     ##comparison with other features###
     for metadata in list_metadata:
@@ -394,7 +401,7 @@ if __name__ == "__main__":
                 file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
             df_pos.to_csv(file_out_pos, sep="\t")
             print(f"file_out_pos : {file_out_pos}")
-            if mode=="server":
+            if mode=="auto":
                 subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
             df_pos=compute_CQP.add_total(df_pos)
             df_pos.to_csv(file_total, sep="\t")
@@ -427,7 +434,7 @@ if __name__ == "__main__":
                 else:
                     file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
                 df_lemma.to_csv(file_out_lemma, sep="\t")
-                if mode=="server":
+                if mode=="auto":
                     subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out]) 
                 df_lemma=compute_CQP.add_total(df_lemma)
                 df_lemma.to_csv(file_total, sep="\t")
@@ -460,7 +467,7 @@ if __name__ == "__main__":
                 else:
                     file_out_bigrams, path_out, df_big  = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil)
                 df_big.to_csv(file_out_bigrams, sep="\t")
-                if mode=="server":
+                if mode=="auto":
                     subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out])
                 results[f"{metadata}_{seuil}bigramslemma"] = file_out_bigrams
             else:
