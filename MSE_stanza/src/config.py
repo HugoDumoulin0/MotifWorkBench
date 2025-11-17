@@ -75,11 +75,5 @@ liste_seuils_lemma=[100,200]
 downhill_pos4lemma="ADJ|ADV|NOUN|VERB" #restriction des lemma aux seuls mots_lexicaux
 liste_seuils_bigrams = [100]
 
-#-------------------
-# Machine learning params
-#-------------------
-classification=False
-path_target = "./Data/metadata.tsv"
-y_class = "genre"
-sampling=False  #équilibre les classes à l'échantillonnage 
+
 
