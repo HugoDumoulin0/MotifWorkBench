@@ -87,11 +87,11 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
     for file in os.listdir("./Data/earlySelection"):
         if file.startswith(f"specif_{seuil}"):
             print(f"EarlySpecifs computing already exists with {file} \n delete it if you want to compute from scratch")
+            lignes = tri_lemma(execution_time, seuil_banalité,seuil,early_pos4lemma)
             break
     else:
         df_target = pd.read_csv(path_metadata, sep="\t", index_col=0)
         df_lemma, T, dictionnaire_t= compute_early_df_lemmes(seuil, early_pos4lemma)
-        print(df_lemma)
         df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
         if filter_specifs==True:
             dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
