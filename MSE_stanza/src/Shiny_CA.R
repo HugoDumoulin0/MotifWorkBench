@@ -23,7 +23,6 @@ rep_name=path
 
 #Load/install packages, input file and set variables
 ipak <- function(pkg){
-options(repos = c(CRAN = "https://cloud.r-project.org"))
 new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
 if (length(new.pkg))
     install.packages(new.pkg, dependencies = TRUE)
@@ -45,7 +44,10 @@ packages <- c('FactoMineR',
               "viridis",
               "scales",
               "fastcluster",
-              "jsonlite"
+              "jsonlite",
+              "bslib",
+              "shinyBS",
+              "bsicons"
               )
 ipak(packages)
 
@@ -53,58 +55,134 @@ ipak(packages)
 args <- commandArgs(trailingOnly = TRUE)
 json_input <- args[1]
 
+
+# Load JSON from python
 datasets <- fromJSON(paste(json_input, collapse = ""))
-# names(datasets)[1] <- sub("internal_clustering_", "internal-clustering-", names(datasets)[1])
+    # FOR TESTING, DELETE LATER!!! ---------==========--------========---------==========--------========---------==========--------========
+    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_genre_pos"]] <- "./Patterns_results/R/genre/pos/posTexte_df_2025-11-10 15:01:25.942720.tsv"
+    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_id_pos"]] <- "./Patterns_results/R/id/pos/posTexte_df_2025-11-10 15:01:25.942720.tsv"
+    # 200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_genre_internal_clustering_motifs
 # print(datasets)
 
-metadata_name <- sub("_.*", "", names(datasets))
-metadata_name <- unique(metadata_name)
-# print(metadata_name)
-pattern_representation <- sapply(strsplit(names(datasets), "_"), `[`, 2)
+# For parsing input names, replace _ by - between words belonging to the same param
+names(datasets) <- sub("internal_clustering_", "internal-clustering-", names(datasets)) 
+# names(datasets) <- sub(
+#     "^([0-9]+)_((?:earlyTrue|earlyFalse))_(.+?)_((?:specifsTrue|specifsFalse))",
+#     "\\1-\\2-\\3-\\4",
+#     names(datasets)
+#   )
+
+names(datasets) <- ifelse(
+  grepl("early", names(datasets), ignore.case = TRUE),
+  sub(
+    "^([0-9]+)_earlyTrue_([^_]+)_specifsTrue_(.+)$",
+    "EARLY:\\1.\\2_\\3",
+    names(datasets)
+  ),
+  names(datasets)  # leave other names unchanged
+)
+
+# print(names(datasets))
+
+
+# Subset lines that have "specifs" in data name
+has_specifs <- grepl("EARLY", names(datasets), ignore.case = TRUE)
+early_names <- names(datasets)[has_specifs]
+early_list <- sub("_.*", "", early_names)
+
+datasets_early <- datasets[startsWith(names(datasets), "EARLY")]
+datasets_non_early <- datasets[!grepl("EARLY", names(datasets), ignore.case = TRUE)]
+
+# Metadata
+# early_metadata_name <- unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets_early)))
+# non_early_metadata_name <- unique(sub("_.*", "", names(datasets_non_early)))
+
+specif_parsed_metadata <- ifelse(
+  has_specifs,
+  #For names with "specifs"
+  metadata_name <- unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets))),
+  #For names without "specifs"
+  sub("_.*", "", names(datasets))     
+)
+metadata_name <- unique(specif_parsed_metadata)
+
+# early_pattern_representation <- unique(sub("^[^_]*_[^_]*_([^_]+).*", "\\1", names(datasets_early)))
+# non_early_pattern_representation <- unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets_non_early)))  
+
+# Type of representation (motif, POS, lemma)
+specif_parsed_representation <- ifelse(
+  has_specifs,
+  #For names with "specifs"
+  pattern_representation <- unique(sub("^[^_]*_[^_]*_([^_]+).*", "\\1", names(datasets))),
+  #For names without "specifs"
+  unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets)))  
+)
+pattern_representation <- unique(specif_parsed_representation)
+
+# Minsup
 minsup_display <- ifelse(
   grepl("motifs_\\d+", names(datasets)),
   sub(".*motifs_(\\d+)_.*", "\\1", names(datasets)),
   NA
 )
-  minsup_display <- unique(minsup_display[!is.na(minsup_display)])
+minsup_display <- unique(minsup_display[!is.na(minsup_display)])
 
+# Gapmin
 gapmin_display <- ifelse(
   grepl(".*motifs_\\d+_\\d+", names(datasets)),
   sub(".*motifs_\\d+_(\\d+)_.*", "\\1", names(datasets)),
   NA
 )
-  gapmin_display <- unique(gapmin_display[!is.na(gapmin_display)])
+gapmin_display <- unique(gapmin_display[!is.na(gapmin_display)])
 
+# Gapmax
 gapmax_display <- ifelse(
   grepl(".*motifs_\\d+_\\d+_\\d+", names(datasets)),
   sub(".*motifs_\\d+_\\d+_(\\d+)_.*", "\\1", names(datasets)),
   NA
 )
-  gapmax_display <- unique(gapmax_display[!is.na(gapmax_display)])
+gapmax_display <- unique(gapmax_display[!is.na(gapmax_display)])
 
+# Itemsetmin
 itemsetmin_display <- ifelse(
   grepl(".*motifs_\\d+_\\d+_\\d+_\\d+", names(datasets)),
   sub(".*motifs_\\d+_\\d+_\\d+_(\\d+)", "\\1", names(datasets)),
   NA
 )
-  itemsetmin_display <- unique(itemsetmin_display[!is.na(itemsetmin_display)])
-
-
-default_folder <- "./Patterns_results/Specifs"
+itemsetmin_display <- unique(itemsetmin_display[!is.na(itemsetmin_display)])
 
 #--------------------------------------------------------------
 # SERVER
 #--------------------------------------------------------------
 server <- function(input, output, session){
 
-  # Deal with input file selection
-  data1 <- reactive({
-    req(input$dataset_select)   # wait until the user has selected something
-    path <- datasets[[input$dataset_select]]   # extract path
+  # Prepare var for conditional panel
+  output$has_specifs_df <- renderText({
+    any(grepl("EARLY", names(datasets), ignore.case = TRUE))
+  })
+  outputOptions(output, "has_specifs_df", suspendWhenHidden = FALSE)
+
+  # Deal with input selection
+  input_selection <- reactive({
+    dataset_select <- req(input$dataset_select)           # selecting df all in one
+    df_select_concatenated <- req(df_select_concatenated(), cancelOutput = FALSE)   # selecting df by separate categories
+
+     if (input$input_sel_method == FALSE) {
+      df <- df_select_concatenated
+     } else { 
+      df <- dataset_select
+     }
+    path <- datasets[[df]]   # extract path
     # Ensure it's a single string
     if(!is.character(path) || length(path) != 1){
       stop("Selected dataset is not a valid file path")
     }
+    path
+  })
+
+  # Load selected data
+  data1 <- reactive({
+    path <- req(input_selection())
     data <- read.csv(path, sep="\t", row.names = 1, header=T, check.names = FALSE)
   })
 
@@ -113,11 +191,6 @@ server <- function(input, output, session){
     rownames(data) <- gsub(" ", "_", rownames(data))
     data <- data[rowSums(data) != 0, ]
   })
-
-  # Create metadata names: take text before the first underscore
-  # metadata_name <- sub("_.*", "", names(datasets))
-  # dataset_choices <- setNames(names(datasets), metadata_name)
-
 
 
   # Reactive value to hold CA result and an error message for display
@@ -271,48 +344,39 @@ server <- function(input, output, session){
       }
 
       # Conditionnaly add points and/or labels
+      strenght <- input$jitter_strength
       if (show_col_labels) {                                                      # If labels of rows are showed   
-        if (input$deactivate_jitter) {                                                   # If label size == contrib and no jitter
-          ca_plot <- ca_plot +
-          geom_text(data = cols_df,
-                aes(x = `Dim 1`, y = `Dim 2`, label = label,
-                size = contrib_var),
-                color = "red", vjust = -0.5) #+
-                # guides(size="none")       
-        } else if (label_size) {                                                    # If label size == contrib and jitter
+        if (label_size) {                                                    # If label size == contrib
           ca_plot <- ca_plot +
           geom_text_repel(data = cols_df,
                 aes(x = `Dim 1`, y = `Dim 2`, label = label,
                 size = contrib_var),
-                color = "red", vjust = -0.5) #+
+                color = "red", vjust = -0.5,
+                force=strenght) #+
                 # guides(size="none")
-        } else {                                                                    # If not, label size is fixed
+        } else {                                                               # If not, label size is fixed
           ca_plot <- ca_plot +
           geom_text_repel(data = cols_df,
                 aes(x = `Dim 1`, y = `Dim 2`, label = label),
-                color = "red", vjust = -0.5)
+                color = "red", vjust = -0.5,
+                force=strenght)
         }
       }
       if (show_row_labels) {                                                      # If labels of rows are showed
-        if (input$deactivate_jitter) {                                                   # If label size == contrib and no jitter
-          ca_plot <- ca_plot +
-          geom_text(data = rows_df,
-                aes(x = `Dim 1`, y = `Dim 2`, label = label,
-                size = contrib_var),
-                color = "blue", vjust = -0.5) #+
-                # guides(size="none")       
-        } else if (label_size) {                                                    # If label size == contrib and jitter                                                      # If label size == contrib
+        if (label_size) {                                                    # If label size == contrib and jitter                                                      # If label size == contrib
           ca_plot <- ca_plot +
           geom_text_repel(data = rows_df,
                 aes(x = `Dim 1`, y = `Dim 2`, label = label,
                 size = contrib_var),
-                color = "blue", vjust = -0.5) #+
+                color = "blue", vjust = -0.5,
+                force=strenght) #+
                 # guides(size="none")
         } else {
                 ca_plot <- ca_plot +
           geom_text_repel(data = rows_df,
                 aes(x = `Dim 1`, y = `Dim 2`, label = label),
-                color = "blue", vjust = -0.5)
+                color = "blue", vjust = -0.5,
+                force=strenght)
         }
       }
       if (show_col_points) {                                                      # If points of columns are showed
@@ -352,10 +416,10 @@ server <- function(input, output, session){
         ca_plot <- ca_plot + guides(size = guide_legend(
           title = paste("Contrib.\non axis ", axis_num, sep=""),
           override.aes = list(label = "")))
-      } else if (points_size & input$deactivate_jitter & !label_size) {
-        ca_plot <- ca_plot + guides(size = guide_legend(
-          title = paste("Contrib.\non axis ", axis_num, sep=""),
-          override.aes = list(label = "")))
+      # } else if (points_size & input$deactivate_jitter & !label_size) {
+      #   ca_plot <- ca_plot + guides(size = guide_legend(
+      #     title = paste("Contrib.\non axis ", axis_num, sep=""),
+      #     override.aes = list(label = "")))
       } else {
         ca_plot <- ca_plot
       }
@@ -399,6 +463,12 @@ server <- function(input, output, session){
         choice = user_choice,
         axes = user_axes)
       plot_obj      
+    }
+
+    if (input$scree_hide_labels) {
+      plot_obj <- plot_obj +
+        theme(axis.text.x = element_blank(),
+              axis.ticks.x = element_blank())
     }
 
     plot_obj <- plot_obj +
@@ -509,15 +579,15 @@ server <- function(input, output, session){
 
   # Diable scaled jittering if no scaling labels on CA
   # disable("deactivate_jitter")
-  observeEvent(input$size, {
-    # label_size <- "Label size" %in% input$size
-    if ("Label size" %in% input$size) {
-      enable("deactivate_jitter")
-    } else {
-      disable("deactivate_jitter")
-      updateCheckboxInput(session, "deactivate_jitter", value = FALSE)
-    }
-  }, ignoreNULL = FALSE)
+  # observeEvent(input$size, {
+  #   # label_size <- "Label size" %in% input$size
+  #   if ("Label size" %in% input$size) {
+  #     enable("deactivate_jitter")
+  #   } else {
+  #     disable("deactivate_jitter")
+  #     updateCheckboxInput(session, "deactivate_jitter", value = FALSE)
+  #   }
+  # }, ignoreNULL = FALSE)
 
   # ------------- Parangons, dist, v-test -------------
 
@@ -696,9 +766,10 @@ server <- function(input, output, session){
     }
   })
 
-df_test <- reactive({
+df_select_concatenated <- reactive({
   metadata_select <- req(input$dataset_select_metadata)
   representation_select <- req(input$dataset_select_representation)
+  dataset_select_early <- req(input$dataset_select_early)
 
   if (input$dataset_select_representation == "internal-clustering-motifs") {
     minsup_select <- as.character(input$dataset_select_minsup)
@@ -716,284 +787,452 @@ df_test <- reactive({
       df <- paste(metadata_select, representation_select, sep = "_")
     }
 
+if (!is.null(input$dataset_select_early) &&
+    input$dataset_select_early != "No (all tokens)") {
+
+  df <- paste0(input$dataset_select_early, "_", df)
+
+}
+
+  # df <- gsub("internal-clustering-motifs", 
+  #   "internal_clustering_motifs", 
+  #   df, fixed = TRUE)
+
   df
 })
 
 observe({
   # print("test:")
-  print(df_test())
+  print("Concatenated:")
+  print(df_select_concatenated())
+  print("Single string:")
+  print(input$dataset_select)
+  # print(datasets)
 })
+
 }
 
 
 #--------------------------------------------------------------
 # UI
 #--------------------------------------------------------------
-ui <- fluidPage(
-  useShinyjs(),
-  titlePanel("MWB: Motif Work Bench"),
-  tags$div(style = "text-align: left; color: #888; font-size: 18px; margin-bottom: 10px;",
-    "User interface for Correspondence Analysis and clustering"
-  ),
-  tags$div(style = "text-align: left; color: #888; font-size: 12px; margin-bottom: 10px;",
-    "Timothée Premat and Hugo Dumoulin, ArchivU project, 2025"
-  ),
+ui <- page_navbar(
+  tags$head(
+    tags$style(HTML("
+      /* Make dropdown options wrap long words */
+      .selectize-dropdown .option {
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-all !important;
+      }
 
-  sidebarLayout(
-    sidebarPanel(
-      selectInput(
-        inputId = "dataset_select",          # ID for server to access
-        label = "Dataset:",
-        choices = names(datasets),            # populate dropdown with keys
-        selected = names(datasets)[1]
-      ),
-      selectInput(
-        inputId = "dataset_select_metadata",
-        label = "Metadata",
-        choices = metadata_name,            # populate dropdown with keys
-        selected = metadata_name[1]
-      ),
-      selectInput(
-        inputId = "dataset_select_representation",
-        label = "Level of representation",
-        choices = pattern_representation,            # populate dropdown with keys
-        selected = pattern_representation[1]
-      ),
-      conditionalPanel(condition = "input.dataset_select_representation == 'motifs' || input.dataset_select_representation == 'internal-clustering-motifs'",
-        selectInput(
-          inputId = "dataset_select_minsup",
-          label = "Minsup",
-          choices = minsup_display,            # populate dropdown with keys
-          selected = minsup_display[1]
+      /* Wrap the selected item inside input */
+      .selectize-input > div {
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-all !important;
+      }
+
+      /* Let the dropdown expand wider */
+      .selectize-dropdown {
+        width: auto !important;
+        min-width: 400px;
+        max-width: 800px;
+      }
+    "))
+  ),
+  useShinyjs(),
+  title = "MWB: Motif Work Bench",
+  id = "tabselected",
+  # tags$div(style = "text-align: left; color: #888; font-size: 18px; margin-bottom: 10px;",
+  #   "User interface for Correspondence Analysis and clustering"
+  # ),
+  # tags$div(style = "text-align: left; color: #888; font-size: 12px; margin-bottom: 10px;",
+  #   "Timothée Premat and Hugo Dumoulin, ArchivU project, 2025"
+  # ),
+
+  sidebar = accordion(
+    id = "accordions",
+    open = "Plot settings",
+        accordion_panel(
+          title = "Motifs settings ",
+          id = "data_settings_accordion",
+          conditionalPanel(
+            condition = "input.input_sel_method == true",
+              selectInput(
+                inputId = "dataset_select",          # ID for server to access
+                label = tooltip(
+                    trigger = list(
+                      "Dataset",
+                      bs_icon("info-circle")
+                    ),
+                    HTML("DATASET SELECTION<br/>
+                    Depending on your settings, MWB produced several datasets. Select the one to be plotted.")
+                  ),
+                choices = names(datasets),            # populate dropdown with keys
+                selected = names(datasets)[1]
+              ),
+          ),
+          conditionalPanel(
+            condition = "input.input_sel_method == false",
+              selectInput(
+                inputId = "dataset_select_metadata",
+                label = tooltip(
+                    trigger = list(
+                      "Metadata",
+                      bs_icon("info-circle")
+                    ),
+                    HTML("DATASET SELECTION<br/>
+                    Depending on your settings, MWB produced several datasets. Select the contrastive metadata.")
+                  ),
+                choices = metadata_name,            # populate dropdown with keys
+                selected = metadata_name[1]
+              ),
+              conditionalPanel(
+                condition = "output.has_specifs_df == 'TRUE'",
+                selectInput(
+                  inputId = "dataset_select_early",
+                  label = tooltip(
+                      trigger = list(
+                        "Specificity filter",
+                        bs_icon("info-circle")
+                      ),
+                      HTML("Depending on your settings, MWB produced datasets by:
+                        <div style='text-align: left;'>
+                          <ul>
+                            <li>only mining specific tokens, or</li>
+                            <li>mining all tokens.</li>
+                          </ul>
+                        </div>
+                        Argument 'No (all tokens)' refers to the second choice.")
+                    ),
+                  choices = c("No (all tokens)", early_list),            # populate dropdown with keys
+                  selected = "No (all tokens)",
+                  selectize = TRUE
+                ),
+              ),
+              selectInput(
+                inputId = "dataset_select_representation",
+                label = tooltip(
+                    trigger = list(
+                      "Level of representation",
+                      bs_icon("info-circle")
+                    ),
+                    "Select the level of representation used to define linguistic units."
+                  ),
+                choices = pattern_representation,            # populate dropdown with keys
+                selected = pattern_representation[1]
+              ),
+              conditionalPanel(condition = "input.dataset_select_representation == 'motifs' || input.dataset_select_representation == 'internal-clustering-motifs'",
+                selectInput(
+                  inputId = "dataset_select_minsup",
+                  label = tooltip(
+                    trigger = list(
+                      "Minsup",
+                      bs_icon("info-circle")
+                    ),
+                    "Select the minimal support frequency for motifs."
+                  ),
+                  choices = minsup_display,            # populate dropdown with keys
+                  selected = minsup_display[1]
+                ),
+                selectInput(
+                  inputId = "dataset_select_gapmin",
+                  label = tooltip(
+                    trigger = list(
+                      "Gapmin",
+                      bs_icon("info-circle")
+                    ),
+                    "Select the gap requirement for motifs."
+                  ),
+                  choices = gapmin_display,            # populate dropdown with keys
+                  selected = gapmin_display[1]
+                ),
+                selectInput(
+                  inputId = "dataset_select_gapmax",
+                  label = tooltip(
+                    trigger = list(
+                      "Gapmax",
+                      bs_icon("info-circle")
+                    ),
+                    "Select gap tolerance for motifs."
+                  ),
+                  choices = gapmax_display,            # populate dropdown with keys
+                  selected = gapmax_display[1]
+                ),
+                selectInput(
+                  inputId = "dataset_select_itemsetmin",
+                  label = tooltip(
+                    trigger = list(
+                      "Itemset min size",
+                      bs_icon("info-circle")
+                    ),
+                    "Select the minimal size of motifs (nbr of itemsets)."
+                  ),
+                  choices = itemsetmin_display,            # populate dropdown with keys
+                  selected = itemsetmin_display[1]
+                ),
+              ),
+            ),
+          checkboxInput("input_sel_method", " Use single name", value=FALSE)
         ),
-        selectInput(
-          inputId = "dataset_select_gapmin",
-          label = "Gap min",
-          choices = gapmin_display,            # populate dropdown with keys
-          selected = gapmin_display[1]
-        ),
-        selectInput(
-          inputId = "dataset_select_gapmax",
-          label = "Gap max",
-          choices = gapmax_display,            # populate dropdown with keys
-          selected = gapmax_display[1]
-        ),
-        selectInput(
-          inputId = "dataset_select_itemsetmin",
-          label = "Itemset min size",
-          choices = itemsetmin_display,            # populate dropdown with keys
-          selected = itemsetmin_display[1]
-        ),
-      ),
-      hr(),
-      conditionalPanel(condition="input.tabselected == 'CA'",
-        checkboxInput("contrib_threshold", "Apply minimal contrib. threshold", value=FALSE),
-        numericInput(
-          "contrib_vars", 
-          label = HTML("<i>N</i>-th most contributing cols"), 
-          value = 10, 
-          min = 1, 
-          step = 1
-        ),
-        numericInput(
-          "contrib_rows", 
-          label = HTML("<i>N</i>-th most contributing rows"), 
-          value = 10, 
-          min = 1, 
-          step = 1
-        ),
-        checkboxGroupInput(
-          inputId = "show_items",
-          label = "Show:",
-          choices = c("Columns points", "Columns labels", "Rows points", "Rows labels"),
-          selected = c("Columns points", "Columns labels", "Rows points", "Rows labels")
-        ),
-        checkboxGroupInput(
-          inputId = "size",
-          label = "Show contribution as:",
-          choices = c("Points size", "Label size")#,
-          # selected = "none")
-        ),
-        selectInput(
-          "selected_axis",
-          "Axis for contribution",
-          choices = NULL,  # initially empty
-          selected = 1
-        ),
-        p(HTML("<i>Scaling labels often results in lesser constributive labels disapearing. You might need to deactivate jittering if lines are displayed with no labels:</i>")),
-        checkboxInput("deactivate_jitter", HTML("Deactivate jittering <i>(only available with 'Label size' checked)</i>"), value=FALSE),
-        textInput("plot_title_CA", "Plot Title:", value = "CA - Biplot"),
-        actionButton(
-              inputId = "save_CA_plot",
-              label = "Save plot",
-              icon = icon("download"), # FontAwesome icon before text, as in downloadButton
-              class = "btn-primary", # Optional: Bootstrap color styling
-              style = "width: 100%;"
-            )
-      ),
-      conditionalPanel(
-        condition="input.tabselected == 'scree'",
-          textInput("plot_title_scree", "Plot title", value = "Scree plot"),
-          textInput("plot_ylab_scree", "Y axis title", value = "Percentage of explained variances"),
-          textInput("plot_xlab_scree", "X axis title:", value = "Dimensions"),
-          actionButton(
-            inputId = "save_scree_plot",
-            label = "Save plot",
-            icon = icon("download"), # FontAwesome icon before text, as in downloadButton
-            class = "btn-primary", # Optional: Bootstrap color styling
-            style = "width: 100%;"
+        accordion_panel("Plot settings",
+          id = "plot_settings_accordion",
+          conditionalPanel(condition = "input.tabselected == 'CA'",
+            checkboxInput("contrib_threshold", "Apply minimal contrib. threshold", value=FALSE),
+              conditionalPanel(
+                condition = "input.contrib_threshold == true",
+                sliderInput(
+                  "contrib_vars",
+                  label = HTML("<i>N</i>-th most contributing cols"),
+                  min = 1,
+                  max = 100,
+                  value = 10,
+                  step = 5
+                ),
+                sliderInput(
+                  "contrib_rows",
+                  label = HTML("<i>N</i>-th most contributing rows"),
+                  min = 1,
+                  max = 100,
+                  value = 10,
+                  step = 5
+                ),
+              ),
+            # numericInput(
+            #   "contrib_vars", 
+            #   label = HTML("<i>N</i>-th most contributing cols"), 
+            #   value = 10, 
+            #   min = 1, 
+            #   step = 1
+            # ),
+            # numericInput(
+            #   "contrib_rows", 
+            #   label = HTML("<i>N</i>-th most contributing rows"), 
+            #   value = 10, 
+            #   min = 1, 
+            #   step = 1
+            # ),
+            checkboxGroupInput(
+              inputId = "show_items",
+              label = "Show:",
+              choices = c("Columns points", "Columns labels", "Rows points", "Rows labels"),
+              selected = c("Columns points", "Columns labels", "Rows points", "Rows labels")
+            ),
+            checkboxGroupInput(
+              inputId = "size",
+              label = "Show contribution as:",
+              choices = c("Points size", "Label size")#,
+              # selected = "none")
+            ),
+            selectInput(
+              "selected_axis",
+              "Axis for contribution",
+              choices = NULL,  # initially empty
+              selected = 1
+            ),
+            sliderInput(
+              "jitter_strength",
+              "Strenght of label repelling:",
+              min = 0,
+              max = 1,
+              value = 0.5,
+              step = 0.05
+            ),
+            # p(HTML("<i>Scaling labels often results in lesser constributive labels disapearing. You might need to deactivate jittering if lines are displayed with no labels:</i>")),
+            # checkboxInput("deactivate_jitter", HTML("Deactivate jittering <i>(only available with 'Label size' checked)</i>"), value=FALSE),
+            textInput("plot_title_CA", "Plot Title:", value = "CA - Biplot"),
+            actionButton(
+                  inputId = "save_CA_plot",
+                  label = "Save plot",
+                  icon = icon("download"), # FontAwesome icon before text, as in downloadButton
+                  class = "btn-primary", # Optional: Bootstrap color styling
+                  style = "width: 100%;"
+                )
           ),
-      ),
-      conditionalPanel(
-        condition="input.tabselected == 'contrib'",
-          selectInput(
-            "contrib_choice",
-            "Select dimension:",
-            choices = c("row", "col"),
-            selected = "col"
+          conditionalPanel(
+            condition="input.tabselected == 'scree'",
+              textInput("plot_title_scree", "Plot title", value = "Scree plot"),
+              textInput("plot_ylab_scree", "Y axis title", value = "Percentage of explained variances"),
+              textInput("plot_xlab_scree", "X axis title:", value = "Dimensions"),
+              actionButton(
+                inputId = "save_scree_plot",
+                label = "Save plot",
+                icon = icon("download"), # FontAwesome icon before text, as in downloadButton
+                class = "btn-primary", # Optional: Bootstrap color styling
+                style = "width: 100%;"
+              ),
           ),
-          numericInput(
-            "contrib_axes",
-            "Select axis:",
-            value = 1,
-            min = 1,
-            max = 5
+          conditionalPanel(
+            condition="input.tabselected == 'contrib'",
+              selectInput(
+                "contrib_choice",
+                "Select dimension:",
+                choices = c("row", "col"),
+                selected = "col"
+              ),
+              numericInput(
+                "contrib_axes",
+                "Select axis:",
+                value = 1,
+                min = 1,
+                max = 5
+              ),
+              checkboxInput("contrib_custom_title", "Use custom title?", value=FALSE),
+                conditionalPanel(
+                  condition = "input.contrib_custom_title == true",
+                  textInput("plot_title_contrib", "Plot Title:", value = "Contribution of XX to Dim-XX"),
+                ),              
+              textInput("plot_ylab_contrib", "Y axis title", value = "Contributions (%)"),
+              checkboxInput("scree_hide_labels", "Hide labels", value=FALSE),
+              actionButton(
+                inputId = "save_contrib_plot",
+                label = "Save plot",
+                icon = icon("download"), # FontAwesome icon before text, as in downloadButton
+                class = "btn-primary", # Optional: Bootstrap color styling
+                style = "width: 100%;"
+              )
           ),
-          checkboxInput("contrib_custom_title", "Use custom title?", value=FALSE),
-          textInput("plot_title_contrib", "Plot Title:", value = "Contribution of XX to Dim-XX"),
-          textInput("plot_ylab_contrib", "Y axis title", value = "Contributions (%)"),
-          actionButton(
-            inputId = "save_contrib_plot",
-            label = "Save plot",
-            icon = icon("download"), # FontAwesome icon before text, as in downloadButton
-            class = "btn-primary", # Optional: Bootstrap color styling
-            style = "width: 100%;"
-          )
-      ),
-      conditionalPanel(
-        condition="input.tabselected == 'clustering' || input.tabselected == 'parang_panel'",
-          checkboxInput(
-            "enable_num_clusters",
-            "Use custom number of clusters",
-            value = FALSE
+          conditionalPanel(
+            condition="input.tabselected == 'clustering' || input.tabselected == 'parang_panel'",
+              checkboxInput(
+                "enable_num_clusters",
+                "Use custom number of clusters",
+                value = FALSE
+              ),
+              numericInput(
+                "nb_clusters",
+                "Custom number of clusters:",
+                min = 2,
+                value = 2
+              ),
+              selectInput(
+                "cluster_row_or_col",
+                "Select dimension:",
+                choices = c("rows", "columns"),
+                selected = "columns"
+              ),
+              hr()
           ),
-          numericInput(
-            "nb_clusters",
-            "Custom number of clusters:",
-            min = 2,
-            value = 2
+          conditionalPanel(
+            condition="input.tabselected == 'clustering'",
+              selectInput(
+                "type_of_plot",
+                "Type of graph",
+                choices = c("tree", "bar", "map", "3D.map"),
+                selected = "map"
+              ),
+              checkboxInput("bool_consol_tree",
+              label = tooltip(
+                    trigger = list(
+                      "Apply consolidation to classes",
+                      bs_icon("info-circle")
+                    ),
+                    "By default, k-mean consolidation is applied to classes, resulting in 
+                inconsistencies between tree and clusters."
+                  ),
+              # "Apply consolidation to classes",
+              value=TRUE),
+              # helpText(HTML("By default, k-mean consolidation is applied to classes, resulting in 
+                # inconsistencies between tree and clusters.")),
+              checkboxInput(
+                "ind_name",
+                "Hide individuals name",
+                value = FALSE
+              ),
+              checkboxInput(
+                "bool_draw_tree",
+                "Draw tree (for map only)",
+                value = TRUE
+              ),
+              downloadButton(
+                outputId = "download_clusters",
+                label = "Save plot",
+                icon = icon("download"), # FontAwesome icon before text, as in downloadButton
+                class = "btn btn-primary btn-block", # Optional: Bootstrap color styling
+                style = "width: 100%;"
+              )
           ),
-          selectInput(
-            "cluster_row_or_col",
-            "Select dimension:",
-            choices = c("rows", "columns"),
-            selected = "columns"
+          conditionalPanel(
+            condition="input.tabselected == 'parang_panel'",
+              # selectInput(
+              #   "parang_colORrow",
+              #   "Dimension to plot",
+              #   choices = c("columns", "rows"),
+              #   selected = "columns"
+              # ),
+              selectInput(
+                "parang_paraORdist",
+                "Select representatives:",
+                choices = c("closest to the center (medoids)", "farthest from other clusters", "variable associated by v-test"),
+                selected = "closest to the center (medoids)"
+              ),
+              textInput("plot_title_parang", "Plot title", value = ""),
+              textInput("plot_xlab_parang", "X axis title:", value = "Dimension 1"),
+              textInput("plot_ylab_parang", "Y axis title", value = "Dimension 2"),
+              actionButton(
+                inputId = "save_cluster_v_test_post",
+                label = "Save plot",
+                icon = icon("download"), # FontAwesome icon before text, as in downloadButton
+                class = "btn-primary", # Optional: Bootstrap color styling
+                style = "width: 100%;"
+              )
+              # helpText(HTML("Representative options:<ul><li>closest to the center (medoids): points</li><li></li><li></li><</ul>"))
+              # p(HTML("<b>Renommer les items dans l'UI!!!</b>"))
           ),
-          hr()
-      ),
-      conditionalPanel(
-        condition="input.tabselected == 'clustering'",
-          selectInput(
-            "type_of_plot",
-            "Type of graph",
-            choices = c("tree", "bar", "map", "3D.map"),
-            selected = "map"
-          ),
-          checkboxInput("bool_consol_tree", "Apply consolidation to classes", value=TRUE),
-          helpText("By default, k-mean consolidation is applied to classes, resulting in 
-            inconsistencies between tree and clusters."),
-          checkboxInput(
-            "ind_name",
-            "Hide individuals name",
-            value = FALSE
-          ),
-          checkboxInput(
-            "bool_draw_tree",
-            "Draw tree (for map only)",
-            value = TRUE
-          ),
-          downloadButton(
-            outputId = "download_clusters",
-            label = "Save plot",
-            icon = icon("download"), # FontAwesome icon before text, as in downloadButton
-            class = "btn btn-primary btn-block", # Optional: Bootstrap color styling
-            style = "width: 100%;"
-          )
-      ),
-      conditionalPanel(
-        condition="input.tabselected == 'parang_panel'",
-          # selectInput(
-          #   "parang_colORrow",
-          #   "Dimension to plot",
-          #   choices = c("columns", "rows"),
-          #   selected = "columns"
-          # ),
-          selectInput(
-            "parang_paraORdist",
-            "Select representatives:",
-            choices = c("closest to the center (medoids)", "farthest from other clusters", "variable associated by v-test"),
-            selected = "closest to the center (medoids)"
-          ),
-          textInput("plot_title_parang", "Plot title", value = ""),
-          textInput("plot_xlab_parang", "X axis title:", value = "Dimension 1"),
-          textInput("plot_ylab_parang", "Y axis title", value = "Dimension 2"),
-          actionButton(
-            inputId = "save_cluster_v_test_post",
-            label = "Save plot",
-            icon = icon("download"), # FontAwesome icon before text, as in downloadButton
-            class = "btn-primary", # Optional: Bootstrap color styling
-            style = "width: 100%;"
-          )
-          # helpText(HTML("Representative options:<ul><li>closest to the center (medoids): points</li><li></li><li></li><</ul>"))
-          # p(HTML("<b>Renommer les items dans l'UI!!!</b>"))
-      )
+
+            ),
+      # )
     ),
-    mainPanel(
-      tabsetPanel(id = "tabselected",
-        tabPanel(
+    
+    # navset_pill(
+    #   id = "tabselected",
+        nav_panel(
           "CA",
           value = 'CA',
-          plotOutput("CAplot", height = "700px")
+          # p("text"),
+          card(plotOutput("CAplot", height = "700px"))
         ),
-        tabPanel(
+        nav_panel(
           "CA Scree Plot",
           value = "scree",
-          plotOutput("screePlot"),
-          # actionButton("save_scree_plot", "Save plot")
+          card(plotOutput("screePlot"))
         ),
-        tabPanel(
+        nav_panel(
           "Contrib. plot",
           value = 'contrib',
-          plotOutput("contribPlot"),
-          # actionButton("save_contrib_plot", "Save plot")
+          card(plotOutput("contribPlot"))
         ),
-        tabPanel(
+        nav_panel(
           "Clustering",
           value = "clustering",
-          plotOutput("clusters_plot"),
-          # downloadButton("download_clusters", "Save plot")
+          card(plotOutput("clusters_plot"))
         ),
-        tabPanel(
+        nav_panel(
           "Clusters representatives",
           value = "parang_panel",
-          plotOutput("CA_clusters_plot")
+          card(
+            plotOutput("CA_clusters_plot"),
+            card_footer("Depending on data size, clusters' representatives computation may take some time.")
+          )
         ),
-        tabPanel(
+        nav_panel(
           "Data",
             fluidRow(
-              h4("Contingency table"),
-              column(
-                width = 12,
-                DTOutput("data_table")
-              )
+              card(
+                h4("Contingency table"),
+                column(
+                  width = 12,
+                  DTOutput("data_table")
+                ))
             )
-        )
-      )
+        ),
+      # ),
+
+      theme = bslib::bs_theme(),
+
     )
-  )
 
-
-)
 
 #-------------------------------
 # RUN SHINY APP
