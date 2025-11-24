@@ -43,21 +43,22 @@ if __name__ == "__main__":
 
         
     mode = sys.argv[1] if len(sys.argv) > 1 else ""
+    from config import *
     if mode=="auto":
         from config import *
-    else:
-        result = subprocess.run(["Rscript", "./src/config.R"],
-                                capture_output=True,
-                                text=True 
-                                )
-        errors = result.stderr
-        if errors:
-            print("Erreurs R :")
-            print(errors)
+    # else:
+    #     result = subprocess.run(["Rscript", "./src/config.R"],
+    #                             capture_output=True,
+    #                             text=True 
+    #                             )
+    #     errors = result.stderr
+    #     if errors:
+    #         print("Erreurs R :")
+    #         print(errors)
             
-        json_text = result.stdout.strip()
-        data = json.loads(json_text)
-        obj = types.SimpleNamespace(**data)
+    #     json_text = result.stdout.strip()
+    #     data = json.loads(json_text)
+    #     obj = types.SimpleNamespace(**data)
 
         
     #-------------------------------------------------------------------------------------------------------------------
@@ -215,7 +216,10 @@ if __name__ == "__main__":
         for gap_min in list_gap_min:
             for gap_max in list_gap_max:
                 for minsup_percent in list_minsup_percent:
-                    args=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                    if earlySelection:
+                        args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                    else:
+                        args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"                    
                     args = args.replace("|","-")
                     if os.path.exists(f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"):
                         print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
@@ -283,7 +287,10 @@ if __name__ == "__main__":
                 for gap_min in list_gap_min:
                     for gap_max in list_gap_max:
                         for minsup_percent in list_minsup_percent:
-                            args=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                            if earlySelection:
+                                args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                            else:
+                                args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                             args = args.replace("|","-")
                             if not os.path.exists(f"./Clustering_results/Clusters/{args}_clustering_3.pk"):
                                 execute_internal_clustering.main(nbr_pool, args)
@@ -317,7 +324,7 @@ if __name__ == "__main__":
     ##computing patterns###
     modif=""
     if earlySelection:
-        modif=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
+        modif=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
     if internal_clustering:
         modif= modif+"internal_clustering_"
     
@@ -348,7 +355,10 @@ if __name__ == "__main__":
                                     os.mkdir(path)
                             for minsup_percent in list_minsup_percent:
                                 print(f"Minsup: {minsup_percent}")
-                                args=f"{seuil_early_selection}early{earlySelection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                                if earlySelection:
+                                    args = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                                else:
+                                    args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                                 args = args.replace("|","-")
                                 path_out = f"{path_R}minsup{str(minsup_percent)}/"
                                 if os.path.exists(path_out):
