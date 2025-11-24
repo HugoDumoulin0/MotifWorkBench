@@ -23,6 +23,7 @@ rep_name=path
 
 #Load/install packages, input file and set variables
 ipak <- function(pkg){
+options(repos = c(CRAN = "https://cloud.r-project.org"))
 new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
 if (length(new.pkg))
     install.packages(new.pkg, dependencies = TRUE)
