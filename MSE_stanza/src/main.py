@@ -103,11 +103,11 @@ if __name__ == "__main__":
         else:
             print(f"\t Stanza: file {output_file} does not exist. Proceeds with tagging.")
             file_path = "./Data/Textes_raw/{}.txt".format(texte)
-            tagging_list[texte]=file_path
+            tagging_list[texte]=(file_path,output_file)
             tag=True
     if tag==True:
         nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=use_gpu)
-        for texte,file_path in tagging_list.items():
+        for texte,(file_path,output_file) in tagging_list.items():
             with open(file_path, "r", encoding="utf-8") as f:
                         text = f.read()
                         output = nlp(text)                          #Define output as the object created by stanza
