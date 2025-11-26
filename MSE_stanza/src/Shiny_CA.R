@@ -654,7 +654,7 @@ server <- function(input, output, session){
         # Sélectionner uniquement les lignes avec v.test > 0
         vars <- rownames(mat)[mat[, "v.test"] > 0]
         # Garder au plus 5 variables
-        head(vars, 5)
+        head(vars, input$nb_modalites_vtest)
       })
 
       clust_clean <- lapply(clust, function(vec) {
@@ -1168,6 +1168,17 @@ ui <- page_navbar(
                 choices = c("closest to the center (medoids)", "farthest from other clusters", "variable associated by v-test"),
                 selected = "closest to the center (medoids)"
               ),
+                      conditionalPanel(
+              		condition="input.parang_paraORdist == 'variable associated by v-test'", 
+                   	sliderInput(
+  				inputId = "nb_modalites_vtest",
+  				label = "Nombre de modalités représentées pour le v-test :",
+ 				min = 1,
+  				max = 50,   
+  				value = 5,
+  				step = 1)
+            ),
+
               textInput("plot_title_parang", "Plot title", value = ""),
               textInput("plot_xlab_parang", "X axis title:", value = "Dimension 1"),
               textInput("plot_ylab_parang", "Y axis title", value = "Dimension 2"),
@@ -1180,8 +1191,7 @@ ui <- page_navbar(
               )
               # helpText(HTML("Representative options:<ul><li>closest to the center (medoids): points</li><li></li><li></li><</ul>"))
               # p(HTML("<b>Renommer les items dans l'UI!!!</b>"))
-          ),
-
+          ),  
             ),
       # )
     ),
