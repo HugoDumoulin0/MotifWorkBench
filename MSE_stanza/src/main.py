@@ -107,7 +107,7 @@ if __name__ == "__main__":
             tag=True
     if tag==True:
         nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=use_gpu)
-        for texte.file_path in tagging_list.items():
+        for texte,file_path in tagging_list.items():
             with open(file_path, "r", encoding="utf-8") as f:
                         text = f.read()
                         output = nlp(text)                          #Define output as the object created by stanza
