@@ -1037,11 +1037,14 @@ ui <- page_navbar(
               choices = c("Points size", "Label size")#,
               # selected = "none")
             ),
-            selectInput(
-              "selected_axis",
-              "Axis for contribution",
-              choices = NULL,  # initially empty
-              selected = 1
+            conditionalPanel(
+              condition = "input.size == 'Points size' || input.size == 'Label size'",
+              selectInput(
+                "selected_axis",
+                "Axis for contribution",
+                choices = NULL,  # initially empty
+                selected = 1
+              ),
             ),
             sliderInput(
               "jitter_strength",
@@ -1152,10 +1155,13 @@ ui <- page_navbar(
                 "Hide individuals name",
                 value = FALSE
               ),
-              checkboxInput(
-                "bool_draw_tree",
-                "Draw tree (for map only)",
-                value = TRUE
+              conditionalPanel(
+                condition = "input.type_of_plot == 'map'",
+                checkboxInput(
+                  "bool_draw_tree",
+                  "Draw tree",
+                  value = TRUE
+                ),
               ),
               downloadButton(
                 outputId = "download_clusters",
