@@ -1,4 +1,4 @@
-# Timothée Premat and Hugo Dumoulin
+# Timothée Premat and Hugo Dumoulin vTim
 # 28/03/2025
 
 #--------------------------------------------------------------
@@ -60,8 +60,9 @@ json_input <- args[1]
 # Load JSON from python
 datasets <- fromJSON(paste(json_input, collapse = ""))
     # FOR TESTING, DELETE LATER!!! ---------==========--------========---------==========--------========---------==========--------========
-    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_genre_pos"]] <- "./Patterns_results/R/genre/pos/posTexte_df_2025-11-10 15:01:25.942720.tsv"
-    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_id_pos"]] <- "./Patterns_results/R/id/pos/posTexte_df_2025-11-10 15:01:25.942720.tsv"
+    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_genre_pos"]] <- "./Patterns_results/R/test/pos/posTexte_df_2025-11-24 12:00:51.830897.tsv"
+    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_id_pos"]] <- "./Patterns_results/R/test/pos/posTexte_df_2025-11-24 12:00:51.830897.tsv"
+    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsFalse_id_pos"]] <- "./Patterns_results/R/test/pos/posTexte_df_2025-11-24 12:00:51.830897.tsv"
     # 200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_genre_internal_clustering_motifs
 # print(datasets)
 
@@ -73,17 +74,41 @@ names(datasets) <- sub("internal_clustering_", "internal-clustering-", names(dat
 #     names(datasets)
 #   )
 
+# specifsTrue_partitioncible_
+
 names(datasets) <- ifelse(
   grepl("early", names(datasets), ignore.case = TRUE),
   sub(
-    "^([0-9]+)_earlyTrue_([^_]+)_specifsTrue_(.+)$",
-    "EARLY:\\1.\\2_\\3",
+    "^([0-9]+)_earlyTrue_([^_]+)$",
+    "EARLY:\\1.\\2",
     names(datasets)
   ),
   names(datasets)  # leave other names unchanged
 )
 
-# print(names(datasets))
+# Rename specifsTrue args to parse them
+names(datasets) <- ifelse(
+  grepl("specifsTrue", names(datasets), ignore.case = TRUE),
+  sub(
+    "_specifsTrue_([^_]+_)",
+    "!specifsTrue:\\1",
+    names(datasets)
+  ),
+  names(datasets)  # leave other names unchanged
+)
+
+# Rename specifsFalse arg to parse it
+names(datasets) <- ifelse(
+  grepl("specifsTrue", names(datasets), ignore.case = TRUE),
+  sub(
+    "_specifsFalse",
+    "!specifsFalse",
+    names(datasets)
+  ),
+  names(datasets)  # leave other names unchanged
+)
+
+print(names(datasets))
 
 
 # Subset lines that have "specifs" in data name
@@ -618,8 +643,8 @@ server <- function(input, output, session){
 
     # Recreate HCPC df
     # hclust <- HCPC(AFC, nb.clust = nb_clusters, graph = FALSE, cluster.CA = input$cluster_row_or_col)
-    hclust_row <- HCPC(AFC, nb.clust = nb_clusters, graph=F)
-    hclust_col <- HCPC(AFC, cluster.CA="columns", nb.clust = nb_clusters, graph=F)
+    hclust_row <- HCPC(AFC, nb.clust = nb_clusters, graph=F, nb.par = input$nb_modalites_vtest)
+    hclust_col <- HCPC(AFC, cluster.CA="columns", nb.clust = nb_clusters, graph=F, nb.par = input$nb_modalites_vtest)
     
     # Extraire les parangons
     individus_full <- paste0("hclust_",data_type,"$desc.ind$", individus_type)
@@ -980,7 +1005,7 @@ ui <- page_navbar(
         accordion_panel("Plot settings",
           id = "plot_settings_accordion",
           conditionalPanel(condition = "input.tabselected == 'CA'",
-            checkboxInput("contrib_threshold", "Apply minimal contrib. threshold", value=FALSE),
+            checkboxInput("contrib_threshold", "Apply minimal contrib. threshold", value=TRUE),
               conditionalPanel(
                 condition = "input.contrib_threshold == true",
                 sliderInput(
@@ -1000,20 +1025,6 @@ ui <- page_navbar(
                   step = 5
                 ),
               ),
-            # numericInput(
-            #   "contrib_vars", 
-            #   label = HTML("<i>N</i>-th most contributing cols"), 
-            #   value = 10, 
-            #   min = 1, 
-            #   step = 1
-            # ),
-            # numericInput(
-            #   "contrib_rows", 
-            #   label = HTML("<i>N</i>-th most contributing rows"), 
-            #   value = 10, 
-            #   min = 1, 
-            #   step = 1
-            # ),
             checkboxGroupInput(
               inputId = "show_items",
               label = "Show:",
@@ -1156,29 +1167,20 @@ ui <- page_navbar(
           ),
           conditionalPanel(
             condition="input.tabselected == 'parang_panel'",
-              # selectInput(
-              #   "parang_colORrow",
-              #   "Dimension to plot",
-              #   choices = c("columns", "rows"),
-              #   selected = "columns"
-              # ),
               selectInput(
                 "parang_paraORdist",
                 "Select representatives:",
-                choices = c("closest to the center (medoids)", "farthest from other clusters", "variable associated by v-test"),
+                choices = c(HTML("closest to the center (medoids)"), HTML("farthest from other clusters"), HTML("variable associated by v-test")),
                 selected = "closest to the center (medoids)"
               ),
-                      conditionalPanel(
-              		condition="input.parang_paraORdist == 'variable associated by v-test'", 
-                   	sliderInput(
-  				inputId = "nb_modalites_vtest",
-  				label = "Nombre de modalités représentées pour le v-test :",
- 				min = 1,
-  				max = 50,   
-  				value = 5,
-  				step = 1)
-            ),
-
+              sliderInput(
+                inputId = "nb_modalites_vtest",
+                label = "Max. number of representatives",
+                min = 1,
+                max = 50,   
+                value = 5,
+                step = 1
+              ),
               textInput("plot_title_parang", "Plot title", value = ""),
               textInput("plot_xlab_parang", "X axis title:", value = "Dimension 1"),
               textInput("plot_ylab_parang", "Y axis title", value = "Dimension 2"),
@@ -1189,10 +1191,8 @@ ui <- page_navbar(
                 class = "btn-primary", # Optional: Bootstrap color styling
                 style = "width: 100%;"
               )
-              # helpText(HTML("Representative options:<ul><li>closest to the center (medoids): points</li><li></li><li></li><</ul>"))
-              # p(HTML("<b>Renommer les items dans l'UI!!!</b>"))
-          ),  
-            ),
+          ),
+        ),
       # )
     ),
     
