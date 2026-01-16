@@ -396,7 +396,7 @@ server <- function(input, output, session){
         if (label_size) {                                                    # If label size == contrib and jitter                                                      # If label size == contrib
           ca_plot <- ca_plot +
           geom_text_repel(data = rows_df,
-                aes(x = `Dim 1`, y = `Dim 2`, label = label,
+                aes(x = `Dim 1`, y = `Dim 2`, label = gsub("dep_|lemma_|pos_|feats_", "", label),
                 size = contrib_var),
                 color = "blue", vjust = -0.5,
                 force=strenght) #+
@@ -404,7 +404,7 @@ server <- function(input, output, session){
         } else {
                 ca_plot <- ca_plot +
           geom_text_repel(data = rows_df,
-                aes(x = `Dim 1`, y = `Dim 2`, label = label),
+                aes(x = `Dim 1`, y = `Dim 2`, label = gsub("dep_|lemma_|pos_|feats_", "", label)),
                 color = "blue", vjust = -0.5,
                 force=strenght)
         }
