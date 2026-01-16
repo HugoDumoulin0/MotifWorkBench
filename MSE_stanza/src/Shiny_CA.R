@@ -368,7 +368,8 @@ server <- function(input, output, session){
       } else {
         ca_plot <- factoextra::fviz_ca_biplot(res, repel = TRUE, geom = "none", ggtheme = ggplot2::theme_minimal())
       }
-
+		ca_plot <- ca_plot +
+  scale_size_continuous(range = c(2, 10))									#minimal size for readability (HugoDumoulin)
       # Conditionnaly add points and/or labels
       strenght <- input$jitter_strength
       if (show_col_labels) {                                                      # If labels of rows are showed   
