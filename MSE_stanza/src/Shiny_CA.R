@@ -354,8 +354,11 @@ server <- function(input, output, session){
           axis_num <- input$selected_axis
           # Prefix the value
           contrib_var <- paste0("Contrib_Dim_", axis_num)
-          cols_df$contrib_var <- cols_df[[contrib_var]]
-          rows_df$contrib_var <- rows_df[[contrib_var]]
+       #   cols_df$contrib_var <- cols_df[[contrib_var]]
+         # rows_df$contrib_var <- rows_df[[contrib_var]]
+         cols_df$contrib_var <- rowSums(cols_df[, grep("^Contrib_Dim_", names(cols_df))]) 	#computing contrib on all axis
+		rows_df$contrib_var <- rowSums(rows_df[, grep("^Contrib_Dim_", names(rows_df))])
+
 
       if (input$contrib_threshold) {
         ca_plot <- factoextra::fviz_ca_biplot(res,
@@ -369,7 +372,7 @@ server <- function(input, output, session){
         ca_plot <- factoextra::fviz_ca_biplot(res, repel = TRUE, geom = "none", ggtheme = ggplot2::theme_minimal())
       }
 		ca_plot <- ca_plot +
-  scale_size_continuous(range = c(2, 8))									#minimal size for readability (HugoDumoulin)
+  scale_size_continuous(range = c(2, 6))									#minimal size for readability (HugoDumoulin)
       # Conditionnaly add points and/or labels
       strenght <- input$jitter_strength
       if (show_col_labels) {                                                      # If labels of rows are showed   
@@ -1038,15 +1041,15 @@ ui <- page_navbar(
               choices = c("Points size", "Label size")#,
               # selected = "none")
             ),
-            conditionalPanel(
-              condition = "input.size == 'Points size' || input.size == 'Label size'",
-              selectInput(
-                "selected_axis",
-                "Axis for contribution",
-                choices = NULL,  # initially empty
-                selected = 1
-              ),
-            ),
+            #conditionalPanel(
+             # condition = "input.size == 'Points size' || input.size == 'Label size'",
+             # selectInput(
+             #   "selected_axis",
+             #   "Axis for contribution",
+             #   choices = NULL,  # initially empty
+             #  selected = 1
+             # ),
+         	#   ),
             sliderInput(
               "jitter_strength",
               "Strenght of label repelling:",
