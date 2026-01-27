@@ -101,6 +101,8 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
             df_lemma.to_csv(f"./Data/earlySelection/{filter_specifs}_specif_{seuil}{early_pos4lemma}.csv", sep="\t")
             lignes = df_lemma.index.tolist()
     print(lignes)
+    with open(f"./Data/earlySelection/{filter_specifs}_specif_{seuil}{early_pos4lemma}.txt", "w") as f:
+        f.write(str(lignes))
     liste_lemma = []
     for l in lignes:
         lemma_preformat = f'lemma_"{l}"'
