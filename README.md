@@ -1,8 +1,8 @@
-# MSE_ArchivU
+# MotifWorkBench
 
 > This is a provisional README. It should be changed in the future.
 
-MSE_ArchivU is part of the [ArchivU](https://archivu.hypotheses.org) project. The python script is based on scripts by Jade Mekki (2022).
+MotifWorkBench is part of the [ArchivU](https://archivu.hypotheses.org) project. The python script is based on scripts by Jade Mekki (2022).
 
 POs, lemma and dependency tagging is provided by Stanza (Qi _et al._, 2020)
 
@@ -19,11 +19,10 @@ A simple run such as the one before goes through the following operations:
 - 1. Tagging
 	- 1.1. through Stanza (except if ```.conllu``` files from previous run or already present) — this is time consuming, brace yourself with big corpora [1].
 - 2. Extracting itemsets into DMT4 files
-- 3. Pattern mining
-- 4. Extracting patterns based on emergence or specificity [2]
-- 5. [optional] Clustering emergent patterns
-- 6. [optional] Extracting represent patterns
-- 7. [optional] RandomForest : evaluate pattern quality as features as learning descriptors
+- 3. Closed pattern mining with the CloSPEC / BideSpanTree algorithm
+- 4. [optional] Clustering patterns
+- 5. Computing multidimensional statistics with CQP and R
+– 6.  Visualizing with shiny
 
 Outputs of step (4) can be processed by the R script for CA analysis.
 
@@ -50,7 +49,13 @@ Variables ```GAPMIN``` and ```GAPMAX``` define the necessity/possibility of gaps
 Other parameters are detailed in ```src/Prefixconstraint/README.txt```. These have not been tested with our implementation.
 
 ## References
-- Lafon, Pierre (1980). "[Sur la variabilité de la fréquence des formes dans un corpus](https://doi.org/10.3406/mots.1980.1008)". In: _Mots_, (1), p. 127‑165.
-- Martin, Louis, Benjamin Muller, Pedro Javier Ortiz Suárez, Yoann Dupont & Laurent Romary, Éric Villemonte de la Clergerie, Djamé Seddah, Benoît Sagot (2020). "[CamemBERT: a Tasty French Language Model](https://arxiv.org/pdf/1911.03894)". In: _Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, July 2020_.
-- Mekki, Jade (2022). _Caractérisation de registres de langue par extraction de motifs séquentiels émergent._ PhD Thesis, Rennes 1 University.
-- Qi Peng, Yuhao Zhang, Yuhui Zhang, Jason Bolton & Christopher D. Manning (2020). "[Stanza: A Python Natural Language Processing Toolkit for Many Human Languages.](https://nlp.stanford.edu/pubs/qi2020stanza.pdf)" In: _Association for Computational Linguistics (ACL) System Demonstrations 2020_.
+–Béchet, N., Cellier, P., Charnois, T. & Crémilleux, B. (2015). Sequence mining under multiple constraints. In: Proceedings of the 30th Annual ACM Symposium on Applied Computing, 908-914. 
+–Béchet, N., Cellier, P., Charnois, Th., Crémilleux, B. & Quiniou, S. (2013). « SDMC : un outil en ligne d'extraction de motifs séquentiels pour la fouille de textes ». Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC'13), Jan 2013, Toulouse, France.
+–Evert, Stefan and Hardie, Andrew (2011). Twenty-first century Corpus Workbench: Updating a query architecture for the new millennium. In Proceedings of the Corpus Linguistics 2011 conference, University of Birmingham, UK. 
+–Kassambara Alboukadel, Mundt Fabian, «Factoextra – Extract and Visualize the Results of Multivariate Data Analyses», R package documentation, 2020.
+–Lê Sébastien, Josse Julie, Husson François, "FactoMineR: an R package for multivariate analysis", Journal of statistical software 25, 2008, p.1-18.
+–Lebart, L., & Salem, A. (1988). Analyse statistique des données textuelles. Dunod.
+–Longrée, D. & Vanni, L. « Identification des motifs textuels. Entre statistique et deep learning », Corpus [En ligne], 27 | 2025, mis en ligne le 13 mai 2025, consulté le 16 mai 2025. URL : http://journals.openedition.org/corpus/10326 ; DOI : https://doi.org/10.4000/13woj 
+–Mekki, J. (2022). Caractérisation de registres de langue par extraction de motifs séquentiels émergents. Thèse de doctorat, Université de Rennes. 
+–Mellet, S. et Longrée, D. (2012). Légitimité d'une unité textométrique : le motif. In A. Dister, D. Longrée, G. Purnelle (éds.), Actes des Journée d'analyse des données textuelles 2012, 715-728. 
+
