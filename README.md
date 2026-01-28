@@ -17,13 +17,21 @@ The script will work on all texts located into ```Data/textes_raw```. Texts must
 
 ## Requirements
 Python requirements are listed in ```src/requirements.txt```. 
+
 But you'll need some additional Rlibs automatically downloaded when launching ```src/AFC.R```
+
 On Mac, you need Docker to launch the linux binary BideSpanTree as you can see in ```execute_closed_pattern.sh```
-Last but not least : you'll need Perl, CWB and some CWB librairies. On mac :
-```brew install cwb```
+
+Last but not least : you'll need Perl, CWB and some CWB librairies. 
+On mac :
+```
+brew install cwb
+```
 then
-```cpan
-install CWB::CQP```
+```
+cpan
+install CWB::CQP
+```
 
 
 ## What does it do?
