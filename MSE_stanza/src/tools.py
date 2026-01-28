@@ -3,7 +3,7 @@
 """
 Created on Tue Feb 25 14:44:41 2025
 
-@author: hugodumoulin
+@author: jademekki + hugodumoulin
 """
 
 import numpy as np
@@ -12,17 +12,12 @@ import pickle as pk
 import os
 from conllu import parse_incr
 import re
+import pprint
 
 
-def indice_specificite(k,f,t,T):
-    rv = hypergeom(T, f, t)
-    x = np.arange(0, f+1)
-    M = np.argmax(rv.pmf(x)) #valeur modale
-    if k > np.argmax(rv.pmf(x)):  
-        indice = -np.log10(1-rv.cdf(k))
-    else:
-        indice = np.log10(rv.cdf(k))
-    return indice, M
+#### Copyright © - Mekki 2022 ###
+def get_minsup(minsup, dmt4_files):
+    return round((get_nbr_seq(dmt4_files) / 100) * minsup)
 
 def save_pickles_results(to_save, title_file):
     """
@@ -45,8 +40,28 @@ def load_pickles(title_file):
 def get_nbr_seq(dmt4_files):
         with open("{}".format(dmt4_files), 'r', encoding="utf-8") as dmt4 :
             return len([line for line in dmt4.readlines() if "seqId" in line])
+        
+def save_as_txt(data, filename):
+            try:
+                with open(filename, "w", encoding="utf-8") as f:
+                    f.write(pprint.pformat(data, indent=4, width=120))
+                print(f"\t Results : saved as {filename}")
+                return True
+            except Exception as e:
+                print(f"\t Error saving {filename}: {e}")
+                return False
+#### END Copyright © - Mekki 2022 ###
 
-                    
+def indice_specificite(k,f,t,T):
+    rv = hypergeom(T, f, t)
+    x = np.arange(0, f+1)
+    M = np.argmax(rv.pmf(x)) #valeur modale
+    if k > np.argmax(rv.pmf(x)):  
+        indice = -np.log10(1-rv.cdf(k))
+    else:
+        indice = np.log10(rv.cdf(k))
+    return indice, M
+
 def concat_multiple_conll(path, files_list, output_file):
     with open(f'{path}{output_file}', 'w', encoding='utf-8') as out:
         for file in files_list:
@@ -101,14 +116,13 @@ def from_pk_corpus_to_list(dmt4_corpus):
 
 def read_req_CQP(expr):
     # Remplacer les paires clé_"valeur" ou clé="valeur" dans les accolades par les conditions CQP correspondantes
-    # if not isinstance(expr, str):
-    #     raise ValueError(f"Expected a string, got {type(expr)}")
     expr = re.sub(r'\{([^}]+)\}', lambda match: convert_to_cqp_condition(match.group(1)), expr)
     return expr
 
 def convert_to_cqp_condition(group):
     conditions = []
-    for condition in group.split(","):
+    items = re.split(r'(?<!_)' r',(?=(?:[^"]*"[^"]*")*[^"]*$)', group)
+    for condition in items:
         # Cas avec underscore : lemma_"monsieur" ou pos_"NOUN"
         if "_" in condition and "=" not in condition:
             key, value = condition.split("_", 1)
@@ -120,3 +134,12 @@ def convert_to_cqp_condition(group):
         conditions.append(f'{key}="{value}"')
     
     return "[" + " & ".join(conditions) + "]"
+            
+def parse_motif_sequence(seq_str):
+            import re
+            motifs = re.findall(r'\{[^}]+\}', seq_str)
+            return [set(map(int, motif.strip('{}').split(','))) for motif in motifs]
+        
+def parse_liste_motifs(liste):
+            return [parse_motif_sequence(seq) for seq in liste]
+

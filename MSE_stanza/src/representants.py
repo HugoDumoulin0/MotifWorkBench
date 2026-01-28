@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
-# input : registre_1, registre_2
+
+"""
+@author: Mekki 2022
+"""
 
 
 import os
@@ -37,25 +40,6 @@ def compute_index_freq(c1, obj):
                     key_seq = str(item)
                     index_freq[key_seq] = index_freq.get(key_seq, 0) + 1 / len(c1)
     return index_freq
-
-
-#def get_GR(patt_index, emergent_patterns):
-#    """
-#    input: 1. list(set(patt_index)) ex : [{263681, 27, 263692, 263758}, {43}]
-#           2. df(emergent_patterns)
-#    ouput: float(GR)
-#    do: find the patt_index's GR
-#    """
-#    return [p[2] for p in emergent_patterns if p[0] == patt_index][0]
-
-def get_GR(patt_index, dict_emergent_patt):
-    """
-    input: 1. list(set(patt_index)) ex : [{263681, 27, 263692, 263758}, {43}]
-           2. df(emergent_patterns)
-    ouput: float(GR)
-    do: find the patt_index's GR
-    """
-    return dict_emergent_patt.get(str(sorted(patt_index)), 0)
    
 
 def match_patt(patt_to_find, seq):
@@ -346,40 +330,6 @@ def main_select_representants(representants_pk_path):
     formate_patterns.dump_pk(df_out, "./Representants_results/Representants_finaux/20_{}".format(os.path.basename(representants_pk_path)))
     return df_out
 
-
-if __name__ == "__main__":
-
-    registre_1 = sys.argv[1]
-    registre_2 = sys.argv[2]
-    nbr_pool = 6
-
-
-    title_file_clusters = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(registre_1, registre_2)
-    title_file_centroids = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(registre_1, registre_2)
-
-
-    clusters = formate_patterns.load_pk(title_file_clusters)
-    centroids = formate_patterns.load_pk(title_file_centroids)
-
-    emergent_patterns = [p 
-                        for p 
-                        in list(formate_patterns.load_pk("./Patterns_results/Emergent/1_00_{}_{}.pk".format(registre_1,registre_2)).values()) 
-                        if p[2] >= 1]
-
-    dict_emergent_patt = dict()
-    for p in emergent_patterns:
-        dict_emergent_patt[str(sorted(p[0]))] = p[3]
-    
-
-    corpus_dmt4 = formate_patterns.load_pk("./Data/DMT4_files/DMT4_{}_dict_sorted.pk".format(registre_1))
-
-    lexique = formate_patterns.load_lexique()
-    
-    df_all_rep = main_extract_all_representant(clusters, 
-                                centroids, 
-                                dict_emergent_patt,
-                                corpus_dmt4,
-                                nbr_pool)
 
 
 

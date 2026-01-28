@@ -10,7 +10,7 @@ use IPC::Open2;
 # Chemin vers le registre
 my $registry = './Data/cwb-corpus/registry';
 my $corpus   = 'MERGED';
-my $query_0    = $ARGV[0];
+my $query_0 = 'A = [lemma=".*"][lemma=".*"]';
 my $query_1 = 'count A by lemma';
 
 # Lancement du binaire CQP en mode silencieux (-e)

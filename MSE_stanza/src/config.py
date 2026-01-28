@@ -1,37 +1,43 @@
-# tagging=True
-# shortcut_underscore_fix=True
-# shortcut_DMT4=True
-# shortcut_extract = True
-only_clustering = False
-shortcut_association = True
-shortcut_specifs = True
-specifs=False
-
-
-GrowthRate = False
-wordpieces = False
 #-------------------
-# Computation method
+# stanza
 #-------------------
-méthode = "partition"
-# Two possible values:
-    # - "partition", i.e. specificty computation for each partition of a corpus
-    # - "corpus", i.e. growth rate computation for each corpus of a set of corpora
-    # This sets the switch between two parallel paths in the script.
+download=False
+use_gpu=True
 
-if méthode=="partition":
-    wordpieces=False
-    GrowthRate = False
+#-------------------
+# Early selection mode
+#-------------------
+
+earlySelection=False
+seuil_early_selection=200
+
+filter_specifs=False
+partition_cible = "test"
+seuil_banalité=2
+#early_pos4lemma=".*"  #toutes les pos possibles
+early_pos4lemma = "ADJ|NOUN|VERB" #restriction aux mots lexicaux
+
+user_input_list=False
+liste_earlyselection_lemma = ["président", "comité", "formation"]
+    
+
+#-------------------
+# Internal clustering
+#-------------------
+internal_clustering=True
 
 #-------------------
 # Patterns params
 #-------------------
 #Set param for minimal number of itemsets in a pattern
-nb_itemset_min = 3 #Tim, 27/02
+list_itemset_min = [3] 
+list_gap_min = [0]
+list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25,10,5]
+list_minsup_percent = [25]
 
+threads=30
 
 #-------------------
 # Patterns detection params
@@ -41,7 +47,31 @@ Lemma=True
 Pos=True
 Dep=True
 Feats=False
-
 #attention avec form=True il y a aura les résultats non contractés
+
+#-------------------
+# Metadata
+#-------------------
+path_metadata = "./Data/metadata.tsv"
+list_metadata = ["id"
+                 ,"test"
+# 		,"genre"
+                 #,"annee"
+                 # ,"target"
+                 ]
+
+#-------------------
+# Statistics in the end
+#-------------------
+specifs=False
+
+#-------------------
+# Comparison with lemmas and pos
+#-------------------
+liste_seuils_lemma=[100,200]
+#downhill_pos4lemma = ".*" #restriction pos 
+downhill_pos4lemma="ADJ|ADV|NOUN|VERB" #restriction des lemma aux seuls mots_lexicaux
+liste_seuils_bigrams = [100]
+
 
 
