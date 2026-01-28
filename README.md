@@ -2,9 +2,13 @@
 
 > This is a provisional README. It should be changed in the future.
 
-MotifWorkBench is part of the [ArchivU](https://archivu.hypotheses.org) project. The python script is based on scripts by Jade Mekki (2022).
+Motif Work Bench is a textual data analysis software designed for the analysis of discursive routines using textual corpora. Situated within the field of discourse analysis, the design approach relies on the notion of motif, defined as a statistically significant linguistic sequence capable of carrying a discursive function characteristic of a particular genre. MWB aims to fill a gap in the state of the art: the lack of a tool bridging corpus-driven (Longrée & Vanni 2025) methods for the automatic extraction of sequential motifs with a multidimensional statistical framework (Lebart & Salem 1998) enabling their discursive interpretation.
 
-POs, lemma and dependency tagging is provided by Stanza (Qi _et al._, 2020)
+Unlike corpus-based approaches that rely on pivot forms, MWB extracts all motifs that meet formal constraints (frequency, length, gap) among multidimensional sequential motifs (Mellet & Longrée 2012) comprising itemsets describing linguistic units (lemmas, morphosyntactic categories, dependency relations). This abstraction allows the grouping of formally diverse realizations, at the cost of sometimes reduced readability, which MWB accepts by considering any statistically relevant motif as valid from a contrastive perspective.
+
+The pipeline relies on linguistic annotation using Stanza (Qi et al. 2020), motif extraction with the CloSPEC algorithm (Béchet et al. 2015) – also found in the SDMC software (Béchet et al. 2013) –, internal clustering aimed at reducing redundancy (Mekki 2022), and CWB indexing (Evert & Hardie 2011) to produce contingency tables that can be analyzed in R using statistical packages such as FactoMineR (Lê, Josse & Husson 2008) through a Shiny graphic user interface.
+
+The CloSPEC algorithm (Béchet et al. 2015) can be find in the form of the binary file BideSpanTree. Some of the initial annotation, extraction and internal clustering scripts are based on the work of Mekki 2022.
 
 ## How to use?
 If all goes well, ```python src/main.py``` should be enough. 
