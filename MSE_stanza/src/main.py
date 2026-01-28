@@ -1,548 +1,553 @@
-#!/usr/bin/python3
-# -*- coding:utf-8 -*-
+"""
+Last updated on XXX
+
+@author: Dumoulin, H & Premat, T.
+Based on scripts by Jade Mekki 2022
+
+"""
+
+
 import os
 import re
 import sys
 from pprint import pprint
 import numpy as np
 import formate_patterns
-import tag_WP
 import conll_dmt4
 import compute_emergent_sequential_patterns
-# import compute_specifs_noZero
 import compute_CQP
-
 import regroupement
 import representants
-import extract_features
 import stanza
 from stanza.utils.conll import CoNLL
 import time
 import shutil
-from config import *
+
 import subprocess
 import tools
 import conllu2vrt
-# import classifiers
+import enslave_perl
+import cwb
+import datetime
+import early_selection
+import pandas as pd
+import execute_internal_clustering
+import json
+import sys
+import types
 
-
-
-def get_nbr_seq(dmt4_files):
-    with open("{}".format(dmt4_files), 'r', encoding="utf-8") as dmt4 :
-        return len([line for line in dmt4.readlines() if "seqId" in line])
-
-def get_minsup(minsup, dmt4_files):
-    return round((get_nbr_seq(dmt4_files) / 100) * minsup)
 
 
 if __name__ == "__main__":
     python = "python3.7"
-    
-    
-    types_textes = os.listdir("./Data/Textes_raw")
-    if ".DS_Store" in types_textes:
-        types_textes.remove(".DS_Store")
+
         
+    mode = sys.argv[1] if len(sys.argv) > 1 else ""
+    from config import *
+    if mode=="auto":
+        from config import *
+    # else:
+    #     result = subprocess.run(["Rscript", "./src/config.R"],
+    #                             capture_output=True,
+    #                             text=True 
+    #                             )
+    #     errors = result.stderr
+    #     if errors:
+    #         print("Erreurs R :")
+    #         print(errors)
+            
+    #     json_text = result.stdout.strip()
+    #     data = json.loads(json_text)
+    #     obj = types.SimpleNamespace(**data)
+
         
-        
-    if only_clustering==False:
     #-------------------------------------------------------------------------------------------------------------------
     # Annotation des données
     #-------------------------------------------------------------------------------------------------------------------
-        print("-"*75)
-        print("1. Tagging data")
+    print("-"*75)
+    print("1. Tagging data")
 
-        print("1.1. Tagging data with Stanza: POS, lemma, UD")
-            #Set language model for stanza and download models on first run only
-        from stanza.pipeline.core import DownloadMethod
-
-        #----- RUN STANZA ON FILES -----
-
-        from replace_underscore import replace_underscore_in_conllu #Import function to replace underscores
-
-        #Check if tagged files exists to speed up process
-        start_time = time.time()
-        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=False)
-        for type_texte in types_textes:
-            print("\t Stanza: checking if tagged files already exists")
-            output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-            # print(output_folder)
+    print("1.1. Tagging data with Stanza: POS, lemma, UD")
     
-            if os.path.exists(output_folder):  # Check if the file exists
-                print(f"\t Stanza: file {output_folder} already exists. Delete it to perform tagging again.")
-            else:
-                print(f"\t Stanza: file {output_folder} does not exist. Proceeds with tagging.")
-            # for type_texte in types_textes: 
-                output_folder = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-                rep = "./Data/Textes_raw/{}".format(type_texte)
-                os.makedirs(output_folder, exist_ok=True)  # Create output folder if it doesn't exist
-    
-                for file in os.listdir(rep):                        #loop for each file in dir
-                    if file[0] == ".": continue                     #ignore hidden UNIX files
-                    file_path = os.path.join(rep, file)             #get the full path of each file
-    
-                    with open(file_path, "r", encoding="utf-8") as f:
-                            text = f.read()
-                            output = nlp(text)                          #Define output as the object created by stanza
-                            # output_file = os.path.join(output_folder, "{}.conllu".format(type_texte, file.split('.')[0])) #Define export path from variables
-                            output_file = os.path.join(output_folder, "{}".format(type_texte, file.split('.')[0])) #Define export path from variables
-                            CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
-                            print("\t", type_texte, "has been tagged and saved:", output_file)
-        end_time=time.time()
-        time_tag = end_time - start_time 
+    textes = os.listdir("./Data/Textes_raw")
+    if ".DS_Store" in textes:
+        textes.remove(".DS_Store")
+    textes = [item[:-4] for item in textes]
         
-        # if shortcut_underscore_fix==False:
-        ##underscore fix 
-        if  os.path.exists("./Data/underscore_fix"):
-            # shutil.rmtree("./Data/underscore_fix")
+        #Set language model for stanza and download models on first run only
+    from stanza.pipeline.core import DownloadMethod
+
+    #----- RUN STANZA ON FILES -----
+
+    from replace_underscore import replace_underscore_in_conllu #Import function to replace underscores
+
+    #Check if tagged files exists to speed up process
+    start_time = time.time()
+    
+    if download:
+            print("Téléchargement du modèle français Stanza...")
+            stanza.download('fr')
+    else:
+        print("Modèle français Stanza déjà présent, pas de téléchargement.")
+        
+    if not os.path.exists("./Data/Textes_tagged_stanza"):
+        os.mkdir("./Data/Textes_tagged_stanza")
+        
+    tagging_list={}
+    tag=False
+    for texte in textes:
+        print("\t Stanza: checking if tagged files already exists")
+        output_file = "./Data/Textes_tagged_stanza/{}.conllu".format(texte)
+        if os.path.exists(output_file):  # Check if the file exists
+            print(f"\t Stanza: file {output_file} already exists. Delete it to perform tagging again.")
+        else:
+            print(f"\t Stanza: file {output_file} does not exist. Proceeds with tagging.")
+            file_path = "./Data/Textes_raw/{}.txt".format(texte)
+            tagging_list[texte]=(file_path,output_file)
+            tag=True
+    if tag==True:
+        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=use_gpu)
+        for texte,(file_path,output_file) in tagging_list.items():
+            with open(file_path, "r", encoding="utf-8") as f:
+                        text = f.read()
+                        output = nlp(text)                          #Define output as the object created by stanza
+                        CoNLL.write_doc2conll(output, output_file)  #Make stanza export each text in conllu format
+                        print("\t", texte, "has been tagged and saved:", output_file)
+    end_time=time.time()
+    time_tag = end_time - start_time 
+    
+    ##underscore fix 
+    if  not os.path.exists("./Data/underscore_fix"):
+        os.mkdir("./Data/underscore_fix")
+    for texte in textes:
+        output_file = "./Data/underscore_fix/{}.conllu".format(texte)
+        if  os.path.exists(output_file):
             print(f"\t Underscore_fix file already exists. Delete it to perform underscore_fixing again.")
         else:
-            os.mkdir("./Data/underscore_fix")
-            for filename in os.listdir("./Data/Textes_tagged_stanza/"):
-                if not filename == ".DS_Store":
-                            os.mkdir(f"./Data/underscore_fix/{filename}")
-                            source = f"./Data/Textes_tagged_stanza/{filename}/{filename}"
-                            destination = f"./Data/underscore_fix/{filename}/{filename}"
-                            shutil.copy(source,destination)
-                            print(f"Underscore fix : {filename}")
-                            filename = f'{filename}'
-                            underscore_folder =f"./Data/underscore_fix/{filename}"
-                            file_path = os.path.join(underscore_folder, filename)
-                            output_file = os.path.join(underscore_folder, f"{filename}") #Define export path from variables
-                            replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
-                    
+            print(f"Underscore fix : {texte}")
+            destination = "./Data/underscore_fix/"
+            source = f"./Data/Textes_tagged_stanza/{texte}.conllu"
+            shutil.copy(source,destination)
+            replace_underscore_in_conllu(output_file)   #Replace '_' in .conllu by randomint
 
-        if wordpieces == True:
-            for type_texte in types_textes:
-                print("\t CamamBERT/WP: Checking if tagged files already exists")
-                # output_file = "./Data/Textes_tagged_WP/{0}_{0}.conllu".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
-                output_file = "./Data/Textes_tagged_WP/{0}_{0}".format(type_texte) #For some reason, files have twice type_text in name (Jade's script). I keep it.
-                # print(output_file)
+
+
+	#### Mekki 2022 ### (slightly adaptated)
     
-                if os.path.exists(output_file):  # Check if the file exists
-                    print(f"\t CamamBERT/WP: file {output_folder} already exists. Delete it to perform WP tokenization again.")
-                else:
-                    print(f"\t CamamBERT/WP: file {output_folder} does not exist. Proceeds with WP tokenization.")
-                    rep = "./Data/Textes_tagged_stanza/{}".format(type_texte)
-                    output_file = os.path.join(output_folder, "{}.conllu".format(type_texte)) #Define export path from variables; only used for printing.
-                    # output_file = os.path.join(output_folder, "{}.conllu".format(type_texte)) #Define export path from variables; only used for printing.
-                    for file in os.listdir(rep):
-                        if file[0] == ".": continue
-                        tag_WP.parse_conll(os.path.join(rep,file), type_texte)
-                        print("\t", type_texte, "has been WP-tokenized and saved:", output_file)
-
- 
-        #-------------------------------------------------------------------------------------------------------------------
-        # DMT4 files
-        #-------------------------------------------------------------------------------------------------------------------
-        print("-"*75)
-        print("2. Creating DMT4 files")
-        # if shortcut_DMT4==False: #automatisé
+    #-------------------------------------------------------------------------------------------------------------------
+    # DMT4 files
+    #-------------------------------------------------------------------------------------------------------------------
+    print("-"*75)
+    print("2. Creating DMT4 files")
             
 
-            # # types_textes = ["1984ca", "2008ca"]
-            
-            #Avoid generating sorted_sorted file names and file not found error.
-        if méthode=="corpus":
-                
-            if  os.path.exists("./Data/DMT4_files/"):
-                    # shutil.rmtree("./Data/DMT4_files/")
-                    print(f"\t DMT4_file already exists. Delete it to perform DMT4_transform again.")
-                    # os.mkdir("./Data/DMT4_files/")
+    if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
+        print(f"\t DMT4: textes_fixed files already exists. Delete it to perform DMT4-underscore_fix again.")
+    else:
+        print(f"\t DMT4: file does not exist. Proceeds with transform.")
+        os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
+        for texte in textes:
+            destination = "./Data/Textes_tagged_stanza_for_dmt4/"
+            source = f"./Data/underscore_fix/{texte}.conllu"
+            if os.path.exists(source):
+                shutil.copy(source,destination)
             else:
-                os.mkdir("./Data/DMT4_files/")
-                print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
-                # for type_texte in types_textes:
-                #     print("\t Checking if DMT4 files already exists")
-                #     target = "./Data/DMT4_files/DMT4_{0}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
-                #     print(target)
-                #     if os.path.exists(target):  # Check if the file exists
-                #         os.remove(target)       # delete existing files
-                #         print("\t DMT4: Previous DMT4 files with same corpus have been deleted.")
-                    
-            if wordpieces==True:
-                conll_dmt4.instancier_dict("./Data/Textes_tagged_WP/")
-                for type_texte in types_textes:
-                        conll_dmt4.transform_data("./Data/Textes_tagged_WP/", type_texte, Form, Lemma, Pos, Dep, Feats)
-                conll_dmt4.sort_dmtfiles()
-            
-                for type_texte in types_textes:
-                    conll_dmt4.make_DMT4_file(type_texte)
-                #This creates the missing dict_sorted.pk files. For some reason,
-                #the function wasn't called in the original script.
+                shutil.copy(source,destination)
                 
-        if wordpieces==False:
-                if  os.path.exists("./Data/Textes_tagged_stanza_for_dmt4/"):
-                    print(f"\t DMT4: textes_fixed files already exists. Delete it to perform DMT4-underscore_fix again.")
-                else:
-                    print(f"\t DMT4: file does not exist. Proceeds with transform.")
-                    os.mkdir("./Data/Textes_tagged_stanza_for_dmt4/")
-                    for type_texte in types_textes:
-                        destination = "./Data/Textes_tagged_stanza_for_dmt4/"
-                        # source = f"./Data/Textes_tagged_stanza/{type_texte}/{type_texte}"
-                        source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
-                        if os.path.exists(source):
-                            shutil.copy(source,destination)
-                        else:
-                            source = f"./Data/underscore_fix/{type_texte}/{type_texte}"
-                            shutil.copy(source,destination)
-                    
-                ### opérations spécifiques à faire dans le cas d'une méthode de partitionnement
-                if méthode=="partition":
-                    liste_textes = ["merged"]
-                    print("\t DMT4: checking if DMT4 file already exists")
-                    if  os.path.exists("./Data/DMT4_files/"):
-                        print(f"\t DMT4: file already exists. Delete it to perform DMT4-transform again.")
-                    else:
-                        os.mkdir("./Data/DMT4_files/")
-                        print("\t DMT4: creating DMT4_file.")
-    
-                    # for type_texte in liste_textes:
-                    #     print("\t Checking if DMT4 files already exists")
-                    #     target = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #For some reason, files have type_text twice in name (Jade's script). I kept it (did I?).
-                    #     print(target)
-                    #     if os.path.exists(target):  # Check if the file exists
-                    #         os.remove(target)       # delete existing files
-                        conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
-                        file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
-                        # print(file_list)
-                        path = "./Data/Textes_tagged_stanza_for_dmt4/"
-                        tools.concat_multiple_conll(path, file_list, "merged")
-                        # print(f'liste dir dans ttaggedfordmt4 : {os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")}')
-                        for type_texte in liste_textes:
-                            # print("transform data début")
-                            conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
-                            # print(f"transform_data done : {type_texte}")
-                        conll_dmt4.sort_dmtfiles()
-                        for type_texte in liste_textes:
-                            conll_dmt4.make_DMT4_file(type_texte)
-                        
-                else:
-                    conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
-                    for type_texte in types_textes:
-                        conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", type_texte, Form, Lemma, Pos, Dep, Feats)
-                    conll_dmt4.sort_dmtfiles()
-                    for type_texte in types_textes:
-                        conll_dmt4.make_DMT4_file(type_texte)
-                #This creates the missing dict_sorted.pk files. For some reason,
-                #the function wasn't called in the original script.
-    
-    
-        # #-------------------------------------------------------------------------------------------------------------------
-        # # Mining Pattern
-        # #-------------------------------------------------------------------------------------------------------------------
+    liste_textes = ["merged"]
+    print("\t DMT4: checking if DMT4 file already exists")
+    if  os.path.exists("./Data/DMT4_files/"):
+        print(f"\t DMT4: file already exists. Delete it to perform DMT4-transform again.")
+    else:
+        os.mkdir("./Data/DMT4_files/")
+        print("\t DMT4: creating DMT4_file.")
+        conll_dmt4.instancier_dict("./Data/Textes_tagged_stanza_for_dmt4/")
+        file_list = os.listdir("./Data/Textes_tagged_stanza_for_dmt4/")
+        path = "./Data/Textes_tagged_stanza_for_dmt4/"
+        tools.concat_multiple_conll(path, file_list, "merged")
+        for texte in liste_textes:
+            conll_dmt4.transform_data("./Data/Textes_tagged_stanza_for_dmt4/", texte, Form, Lemma, Pos, Dep, Feats)
+        conll_dmt4.sort_dmtfiles()
+        for texte in liste_textes:
+            conll_dmt4.make_DMT4_file(texte)
+            
+   	#### END - Mekki 2022 ### (slightly adaptated)
+
+
+
+
+    path_stanza="./Data/Textes_tagged_stanza/"
+    path_vrt="./Data/textesVRT/"
+    conllu2vrt.transform(path_stanza, path_vrt)
+    if not os.path.exists("./Data/cwb-corpus"):
+        os.mkdir("./Data/cwb-corpus")
+        cwb.main()
+        
+    if earlySelection:
         print("-"*75)
-        print("3. Extracting freq & closed patterns")
-        start_time=time.time()
-        # # types_textes = ["1984ca", "2008ca"]
+        print("2.1 Early selection of lemma for mining")
+        if user_input_list==False:
+            liste_earlyselection_lemma = early_selection.main(seuil_early_selection, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma, filter_specifs)
 
-        # if shortcut_extract==False:
-        path_results = "./Patterns_results"
-        if not os.path.exists(path_results):
-                os.mkdir(path_results)
-                
-        path_file_closed = "./Patterns_results/Closed"
-        if not os.path.exists(path_file_closed):
-                os.mkdir(path_file_closed)
             
-        path_file_freq = "./Patterns_results/Freq"
-        if not os.path.exists(path_file_freq):
-                os.mkdir(path_file_freq)
-            
-        if méthode=="partition":
-            liste = ["merged"]
-                
-        else:
-            liste=types_textes
 
-                
-        for minsup_percent in list_minsup_percent:
-                gap_min = 0
-                gap_max = 0
-                threads = 30
-                for type_texte in liste:
-                    print("\t Type_texte:", type_texte)
-                    if os.path.exists(f"./Patterns_results/Freq/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_freq.pk"):
-                        print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
-                    if os.path.exists(f"./Patterns_results/Closed/{minsup_percent}_{gap_min}{gap_max}_DMT4_{type_texte}_files_sorted_closed.pk"):
+
+
+   #### Mekki 2022 ### (slightly adapted)
+   
+    # #-------------------------------------------------------------------------------------------------------------------
+    # # Mining Patterns
+    # #-------------------------------------------------------------------------------------------------------------------
+    print("-"*75)
+    print("3. Extracting freq & closed patterns")
+    start_time=time.time()
+
+    path_results = "./Patterns_results"
+    if not os.path.exists(path_results):
+            os.mkdir(path_results)
+            
+    path_file_closed = "./Patterns_results/Closed"
+    if not os.path.exists(path_file_closed):
+            os.mkdir(path_file_closed)
+
+    liste = ["merged"]
+        
+    for nb_itemset_min in list_itemset_min:
+        for gap_min in list_gap_min:
+            for gap_max in list_gap_max:
+                for minsup_percent in list_minsup_percent:
+                    if earlySelection:
+                        args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                    else:
+                        args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"                    
+                    args = args.replace("|","-")
+                    if os.path.exists(f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"):
                         print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
                     else:
                         print("non existent previous extracted patterns files")
-                        dmt4_files = "./Data/DMT4_files/DMT4_{}_files_sorted.txt".format(type_texte) #sys.argv[1]
-                        minsup = get_minsup(float(minsup_percent), dmt4_files)
+                        dmt4_files = "./Data/DMT4_files/DMT4_merged_files_sorted.txt"
+                        minsup = tools.get_minsup(float(minsup_percent), dmt4_files)
+                        print(f"\t nb itemset min {nb_itemset_min} ")
+                        print(f"\t gap min {gap_min} ")
+                        print(f"\t gap max {gap_max} ")
                         print(f"\t Minsup {minsup_percent}% ")
+                        
+                        file_out = f"{args}_DMT4_merged_files_sorted_closed.txt"
+                        # file_out = "{}_{}_{}{}_{}_closed.txt".format(nb_itemset_min, minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
 
+                        print("\t\t Extracting closed patterns")
                 
-                        print("\t\t Extracting freq patterns")
-                
-                        file_out = "{}_{}{}_{}_freq.txt".format(minsup_percent, gap_min, gap_max,dmt4_files.split("/")[-1][:-4])
-                
-                        with open("Prefixscontraint/config/Load.ini", "w", encoding="utf8") as set_up:
+                        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
                             set_up.write("MINSUP={}\n".format(minsup))
                             set_up.write("CORPUS=../../{}\n".format(dmt4_files))
                             set_up.write("THREAD={}\n".format(threads))
                             set_up.write("GAPMIN={}\n".format(gap_min))
                             set_up.write("GAPMAX={}\n".format(gap_max))
                             set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                            if earlySelection:
+                                set_up.write("OR={}\n".format(str(liste_earlyselection_lemma)[1:-1]))
                 
-                        os.system("bash src/execute_freq_pattern.sh {}".format(file_out))
-                
-                        print("\t\t Extracting closed patterns")
-                
-                        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-                            set_up.write("MINSUP={}\n".format(minsup))
-                            set_up.write("CORPUS=../../{}\n".format(dmt4_files))
-                            set_up.write("THREAD=1\n")
-                            set_up.write("GAPMIN={}\n".format(0))
-                            set_up.write("GAPMAX={}\n".format(0))
-                            set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
-                
-                        os.system("bash src/execute_closed_pattern.sh {}".format(file_out.replace("freq", "closed")))
-        
+                        os.system("bash src/execute_closed_pattern.sh {}".format(file_out))
+                        DMT4_clos_corpus = f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"
+                        with open(DMT4_clos_corpus, "r") as file:
+                            lines = file.readlines()
+                            print(f"{len(lines)} extracted closed patterns")
         end_time=time.time()
         time_DMT4 = end_time - start_time
-        #-------------------------------------------------------------------------------------------------------------------
-        # Compute Patterns
-        #-------------------------------------------------------------------------------------------------------------------
         
-        print("-"*75)
-        print("4. Extracting caracteristic patterns")
-        
-        rep_freq = "./Patterns_results/Freq/"
-        rep_clos = "./Patterns_results/Closed/"
-        
-        print("4.1. Transform freq patterns")
-        for f_freq in os.listdir(rep_freq):
-            if "txt" not in f_freq: continue
-            compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_freq,f_freq))
-        
-        print("4.2. Transform closed patterns")
-        for f_clos in os.listdir(rep_clos):
-            if "txt" not in f_clos: continue
-            compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos,f_clos))
-                
-        if méthode=="corpus":
-            print("4.3. Computing sequentiel emergent patterns")
-            for type_1 in types_textes:
-                for type_2 in types_textes:
-                    if type_1 == type_2: continue
-                    print("\t{} x {} ".format(type_1, type_2))
-                    compute_emergent_sequential_patterns.compute_GR(type_1, type_2)
-    
-        #ajout d'une étape qui lance le calcul de spécificité des supports des motifs dans une partition par rapport au reste ( script compute_specifs.py )
-        if méthode=="partition":
-                start_time = time.time()
-                if not os.path.exists("./Patterns_results/Specifs_noZero/"):
-                    os.mkdir("./Patterns_results/Specifs_noZero/")
-                print("-"*75)
-                print("4.3 Extracting patterns in partition")
-                
-                path_stanza="./Data/Textes_tagged_stanza/"
-                path_vrt="./Data/textesVRT/"
-                conllu2vrt.transform(path_stanza, path_vrt)
-                
-                for minsup_percent in list_minsup_percent:
-                    print(f"Minsup: {minsup_percent}")
-                    # compute_specifs_noZero.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent)
-                    file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos = compute_CQP.main(types_textes,shortcut_association, shortcut_specifs,minsup_percent, specifs)
-                    # classifiers.main(minsup_percent, file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos)
-                # Use R to perform AFC automatically
-                end_time = time.time()
-                time_grew = end_time - start_time
-                # subprocess.call(["Rscript", "./src/AFC.r"])
-
-    # #-------------------------------------------------------------------------------------------------------------------
-    # # Clustering Emergent Pattern
-    # #-------------------------------------------------------------------------------------------------------------------
-                
-
-    def clustering_emergent_patterns(type_1, type_2,nbr_pool, minsup_percent):     
-        print("-"*75)
-        print("5. Clustering emergent patterns")
-
-        ###
-    
-        emergent_patt = formate_patterns.load_pk("./Patterns_results/Emergent/{}_00_{}_{}.pk".format(minsup_percent, type_1, type_2))
-        index_motifs = [patt_info[0] for patt_info in list(emergent_patt.values()) if patt_info[2] >=1]
-    
-        print("\t Type texte 1 :", type_1)
-        print("\t Type texte 2 :", type_2)
-        print("\t Nbr emergent patterns : ", len(index_motifs))
-    
-        print("5.1. Clustering 1 : 1/6")
-    
-        clustering_index_1 = regroupement.regroupement_1(index_motifs)
-        print("\t Nbr clusters : ", len(clustering_index_1))
-    
-        clustering_motifcodes_1 = regroupement.from_index_to_motifcodes(clustering_index_1, index_motifs)
-        title_file_results_1 = "./Clustering_results/Clusters/{}_{}_clustering_1.pk".format(type_1, type_2)
-    
-        regroupement.save_pickles_results(clustering_motifcodes_1, title_file_results_1)
-    
-        print("5.2. Centroids 1 : 2/6")
-    
-        compute_all_centroids = regroupement.main_compute_medoids(title_file_results_1, nbr_pool)
-        title_file_out_centroids_1 = "./Clustering_results/Medoids/{}_{}_medoids_1.pk".format(type_1, type_2)
-        regroupement.save_pickles_results(compute_all_centroids, title_file_out_centroids_1)
-    
-        print("5.3. Clustering 2 : 3/6")
-    
-        clusters_1 = regroupement.load_pickles(title_file_results_1)
-        centroids_files = regroupement.load_pickles(title_file_out_centroids_1)
-        print("\t Nbr clusters : ", len(centroids_files))
-    
-        index_clusters = list(clusters_1.keys())
-        clusters_2 = regroupement.clustering_2(index_clusters, clusters_1, centroids_files, nbr_pool)
-    
-        title_file_results_2 = "./Clustering_results/Clusters/{}_{}_clustering_2.pk".format(type_1, type_2)
-        regroupement.save_pickles_results(clusters_2, title_file_results_2)
-    
-        print("5.4. Centroids 2 : 4/6")
-    
-        compute_all_centroids_2 = regroupement.main_compute_medoids(title_file_results_2, nbr_pool)
-        title_file_out_centroids_2 = "./Clustering_results/Medoids/{}_{}_medoids_2.pk".format(type_1, type_2)
-        regroupement.save_pickles_results(compute_all_centroids_2, title_file_out_centroids_2)
-    
-        print("5.5. Clustering 3 : 5/6")
-    
-        clusters_2 = regroupement.load_pickles(title_file_results_2)
-        centroids_files_2 = regroupement.load_pickles(title_file_out_centroids_2)
-    
-        print("\t Nbr clusters : ", len(centroids_files_2))
-    
-        index_clusters = list(clusters_2.keys())
-        clusters_3 = regroupement.clustering_2(index_clusters, clusters_2, centroids_files_2, nbr_pool)
-    
-        title_file_results_3 = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
-        regroupement.save_pickles_results(clusters_3, title_file_results_3)
-    
-        print("5.6. Centroids 3 : 6/6")
-    
-        compute_all_centroids_3 = regroupement.main_compute_medoids(title_file_results_3, nbr_pool)
-    
-        title_file_out_centroids_3 = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
-        regroupement.save_pickles_results(compute_all_centroids_3, title_file_out_centroids_3)
-
     #-------------------------------------------------------------------------------------------------------------------
-    # Extracting Representant Patterns
+    # Compute Patterns
     #-------------------------------------------------------------------------------------------------------------------
-    def extracting_representant_patterns(type_1,type_2, nbr_pool):
-        print("-"*75)
-        print("6. Extracting Representant Patterns")
     
-        print("6.1. Computing Representant Patterns")
+    print("-"*75)
+    print("4. Extracting caracteristic patterns")
     
-    
-        ###adaptation du script de Jade
-    
-        # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
-        # type_1 = types_textes[0]
-        # type_2 = types_textes[1]
-        # nbr_pool=2
-    
-        ###
-    
-    
-        title_file_clusters = "./Clustering_results/Clusters/{}_{}_clustering_3.pk".format(type_1, type_2)
-        title_file_centroids = "./Clustering_results/Medoids/{}_{}_medoids_3.pk".format(type_1, type_2)
-    
-        clusters = formate_patterns.load_pk(title_file_clusters)
-        centroids = formate_patterns.load_pk(title_file_centroids)
-    
-        emergent_patterns = [p
-                            for p
-                            in list(formate_patterns.load_pk("./Patterns_results/Emergent/25_00_{}_{}.pk".format(type_1,type_2)).values())
-                            if p[2] >= 1]
-    
-        dict_emergent_patt = dict()
-        for p in emergent_patterns:
-            dict_emergent_patt[str(sorted(p[0]))] = p[3]
-    
-        corpus_dmt4 = formate_patterns.load_pk("./Data/DMT4_files/DMT4_{}_dict_sorted.pk".format(type_1))
-    
-        lexique = formate_patterns.load_lexique()
-    
-        df_all_rep = representants.main_extract_all_representant(type_1,
-                                    type_2,
-                                    clusters,
-                                    centroids,
-                                    dict_emergent_patt,
-                                    corpus_dmt4,
-                                    nbr_pool)
-    
-        print("6.2. Selecting Representant Patterns")
-        if not os.path.exists("./Data/Representants_results/"):
-            os.mkdir("./Representants_results")
-            if not os.path.exists("./Data/Representants_results/Representants_finaux"):
-                os.mkdir("./Representants_results/Representants_finaux")
+    rep_clos = "./Patterns_results/Closed/"
+
+    print("Transform closed patterns")
+    for f_clos in os.listdir(rep_clos):
+        if "txt" not in f_clos: continue
+        compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos,f_clos))
+            
+                
+     # #-------------------------------------------------------------------------------------------------------------------
+     # # Internal Clustering
+     # #-------------------------------------------------------------------------------------------------------------------
+
+    if internal_clustering==True:
+        start_time=time.time()
+        if not os.path.exists("./Clustering_results"):
+            os.mkdir("./Clustering_results")
+        if not os.path.exists("./Clustering_results/Clusters"):
+            os.mkdir("./Clustering_results/Clusters")
+        if not os.path.exists("./Clustering_results/Medoids"):
+            os.mkdir("./Clustering_results/Medoids")
+        nbr_pool = 10
+        for nb_itemset_min in list_itemset_min:
+                for gap_min in list_gap_min:
+                    for gap_max in list_gap_max:
+                        for minsup_percent in list_minsup_percent:
+                            if earlySelection:
+                                args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                            else:
+                                args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                            args = args.replace("|","-")
+                            if not os.path.exists(f"./Clustering_results/Clusters/{args}_clustering_3.pk"):
+                                execute_internal_clustering.main(nbr_pool, args)
+                            else:
+                                print("-"*75)
+                                print("4.bis Internal clustering of closed patterns")
+                                print("Clustering results already exists : delete it to perform internal clustering again")
+        end_time=time.time()
+        time_clustering = end_time - start_time                
+                
         
-        representants.main_select_representants("./Representants_results/{}_{}_representants.pk".format(type_1,type_2))
-    
-    
-    ###adaptation du script de Jade
-    if GrowthRate == True:
-        # type_1, type_2, nbr_pool = sys.argv[1], sys.argv[2], int(sys.argv[3])
-        nbr_pool=len(types_textes)
-        liste_couples =[]
-        for i in types_textes:
-            for j in types_textes:
-                if i!=j:
-                    liste_couples.append((i,j))
-        start_time = time.time()
-        for minsup_percent in list_minsup_percent:
-            for couple in liste_couples:
-                type_1 = couple[0]
-                type_2 = couple[1]
-                clustering_emergent_patterns(type_1,type_2, nbr_pool, minsup_percent)
-                extracting_representant_patterns(type_1, type_2, nbr_pool)
-        end_time = time.time()
-        cluster_time = end_time - start_time
-    
-    print(f"Temps de tagging : {time_tag/60:.2f} minutes")
-    print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
-    print((f"Temps de calcul des fréquences  : {time_grew/60:2f} minutes"))
-    if GrowthRate == True:
-        print(f"Temps de clustering : {cluster_time/60:.2f} minutes")
-    
+   	#### END - Mekki 2022 ### (slightly adaptated)
+       
+       
+       
+       
+       
     # #-------------------------------------------------------------------------------------------------------------------
-    # # Random Forest
+    # # Statistical computing
     # #-------------------------------------------------------------------------------------------------------------------
+    start_time = time.time()
+    if not os.path.exists("./Patterns_results/Specifs/"):
+        os.mkdir("./Patterns_results/Specifs/")
+    print("-"*75)
+    print("5. Statistical computing of patterns in partition")
+    if not os.path.exists("./Patterns_results/R"):
+        os.mkdir("./Patterns_results/R")
+    df_metadata = pd.read_csv(path_metadata, sep="\t", index_col=0)
+    results={}
+ 
+    ##computing patterns###
+    modif=""
+    if earlySelection:
+        modif=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
+    if internal_clustering:
+        modif= modif+"internal_clustering_"
+    
 
-    # # print("-"*75)
-    # # print("7. RandomForest : evaluate pattern quality as features as learning descriptors")
-
-
-
-    # # type_1, type_2 = sys.argv[1], sys.argv[2]
-
-    # # types_paires = [("journalistique", "encyclopedique"),
-    # #                 ("fiction", "journalistique"),
-    # #                 ("encyclopedique", "fiction")]
-
-    # # list_representants = ["medoids",
-    # #                     "itemset",
-    # #                     "item",
-    # #                     "itemset*GR",
-    # #                     "item*GR",
-    # #                     "itemset*recouvrement",
-    # #                     "item*recouvrement"]
-
-    # # print("7.1 : Extracting features from Representant Patterns")
-
-    # # for ip, paire in enumerate(types_paires):
-    # #     type_1, type_2 = paire[0], paire[1]
-    # #     if type_1 != "fiction":continue
-    # #     if type_2 != "journalistique": continue
-    # #     print("7.1.{} : {} vs. {}".format(ip, type_1, type_2))
-    # #     for i, representant in enumerate(list_representants):
-    # #         print("\t Representant : {}".format(representant))
-    # #         patt_search, GR, type_tag, DMT4_1, DMT4_2, all_texts = extract_features.select_data(type_1, type_2, representant)
-    # #         matrice_features = extract_features.main_extract_features(patt_search, GR, type_tag, DMT4_1, DMT4_2, all_texts)
-    # #         extract_features.save_matrice_features(matrice_features, "./Data/Features/{}_{}_{}/features_{}_{}_{}".format(type_1,
-    # #                                                                                                                     type_2,
-    # #                                                                                                                     representant,
-    # #                                                                                                                     type_1,
-    # #                                                                                                                     type_2,
-    # #                                                                                                                     representant))
-
-    # # print("7.2 : RandomForest all features from Representant Patterns")
+    for metadata in list_metadata:
+            for nb_itemset_min in list_itemset_min:
+                    for gap_min in list_gap_min:
+                        for gap_max in list_gap_max:
+                            path_R=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+                            if not os.path.exists(path_R):
+                                path="./Patterns_results/R/"
+                                if not os.path.exists(path):
+                                    os.mkdir(path)
+                                path= f"./Patterns_results/R/{metadata}/"
+                                if not os.path.exists(path):
+                                    os.mkdir(path)
+                                path= f"./Patterns_results/R/{metadata}/{modif}motifs/"
+                                if not os.path.exists(path):
+                                    os.mkdir(path)
+                                path=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}"
+                                if not os.path.exists(path):
+                                    os.mkdir(path)
+                                path=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/"
+                                if not os.path.exists(path):
+                                    os.mkdir(path)
+                                path=f"./Patterns_results/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/"
+                                if not os.path.exists(path):
+                                    os.mkdir(path)
+                            for minsup_percent in list_minsup_percent:
+                                print(f"Minsup: {minsup_percent}")
+                                if earlySelection:
+                                    args = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                                else:
+                                    args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                                args = args.replace("|","-")
+                                path_out = f"{path_R}minsup{str(minsup_percent)}/"
+                                if os.path.exists(path_out):
+                                            for dir in os.listdir(path_out):
+                                                print(path_out)
+                                                print(f"already computed {dir}")
+                                                fichiers = sorted(os.listdir(path_out+dir), key=lambda f: os.path.getmtime(os.path.join(path_out+dir, f)),reverse=True)
+                                                for f in fichiers: 
+                                                            if "motifsTexte_" in f:
+                                                                if internal_clustering:
+                                                                    if "_FUS" in f:
+                                                                        results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
+                                                                    else:
+                                                                        df_k=pd.read_csv(path_out+dir+"/"+f, sep="\t", index_col=0)
+                                                                        df_k.to_csv(path_out+dir+"/"+f, sep="\t")
+                                                                        results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = f
+                                                                        lexic_int_str = formate_patterns.make_dict_int_to_str()
+                                                                        df_k = compute_CQP.fusion_internal_clusters(df_k, lexic_int_str, args)
+                                                                        f_fus = f[:-4]+"_FUS.tsv"
+                                                                        df_k.to_csv(path_out+dir+"/"+f_fus, sep="\t")
+                                                                        results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = f_fus
+                                                                else:
+                                                                    results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"]=path_out+dir+"/"+f
+                                                                break
+                                else:    
+                                    print("computing statistics from scratch")
+                                    results, path_out = compute_CQP.main(textes,minsup_percent,gap_min, gap_max, nb_itemset_min,specifs,df_metadata, modif,metadata, internal_clustering, results, path_out, mode, args)
+        
+    ##comparison with other features###
+    for metadata in list_metadata:
+        print(metadata)
+        if not os.path.exists(f"./Patterns_results/R/{metadata}"):
+            os.mkdir(f"./Patterns_results/R/{metadata}")
+            
+        #pos#
+        print("pos")
+        if not os.path.exists(f"./Patterns_results/R/{metadata}/pos"):
+            os.mkdir(f"./Patterns_results/R/{metadata}/pos")
+            path_pos = f"./Patterns_results/R/{metadata}/"
+            execution_time = datetime.datetime.now()
+            if not metadata=="id":
+                path_id = f"./Patterns_results/R/id/pos/"
+                modif=""
+                if os.path.exists(path_id):
+                    file_out_pos, file_total, path_out, df_pos = compute_CQP.get_already_computed_df_id("pos", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_pos, modif)
+                else:
+                    file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
+                df_pos =  compute_CQP.textes2metadata(df_pos, df_metadata, metadata).T
+            else:
+                file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos)
+            df_pos.to_csv(file_out_pos, sep="\t")
+            print(f"file_out_pos : {file_out_pos}")
+            if mode=="auto":
+                subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
+            df_pos=compute_CQP.add_total(df_pos)
+            df_pos.to_csv(file_total, sep="\t")
+            results[f"{metadata}_pos"] = file_out_pos
+        else:
+            print(f"already computed pos")
+            doss =f"./Patterns_results/R/{metadata}/pos/"
+            liste=[]
+            for fichier in os.listdir(doss):
+                if f"posTexte_" in fichier:
+                    liste.append(doss+fichier)
+            tri = sorted(liste, key=os.path.getmtime, reverse=True)
+            results[f"{metadata}_pos"] = tri[0]
+        
+        #lemma#
+        for seuil in liste_seuils_lemma:
+            print(str(seuil) + "lemma" + downhill_pos4lemma)
+            if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}"):
+                os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}")
+                path_lemma = f"./Patterns_results/R/{metadata}/"
+                execution_time = datetime.datetime.now()
+                if not metadata=="id":
+                    path_id = f"./Patterns_results/R/id/{seuil}lemma{downhill_pos4lemma}/"
+                    modif=""
+                    if os.path.exists(path_id):
+                        file_out_lemma, file_total, path_out, df_lemma = compute_CQP.get_already_computed_df_id(f"{seuil}lemma{downhill_pos4lemma}", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id,path_lemma,modif)
+                    else:
+                        file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
+                    df_lemma =  compute_CQP.textes2metadata(df_lemma, df_metadata, metadata).T
+                else:
+                    file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma)
+                df_lemma.to_csv(file_out_lemma, sep="\t")
+                if mode=="auto":
+                    subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out]) 
+                df_lemma=compute_CQP.add_total(df_lemma)
+                df_lemma.to_csv(file_total, sep="\t")
+                results[f"{metadata}_{seuil}lemma{downhill_pos4lemma}"] = file_out_lemma
+            else:
+                print(f"already computed {seuil}lemma{downhill_pos4lemma}")
+                liste=[]
+                doss =f"./Patterns_results/R/{metadata}/{seuil}lemma{downhill_pos4lemma}/"
+                for fichier in os.listdir(doss):
+                    if f"{seuil}lemma{downhill_pos4lemma}Texte_" in fichier:
+                        liste.append(doss+fichier)
+                tri = sorted(liste, key=os.path.getmtime, reverse=True)
+                results[f"{metadata}_{seuil}lemma{downhill_pos4lemma}"] = tri[0]
+              
+        #bigrams#
+        for seuil in liste_seuils_bigrams:
+            print(str(seuil) + "bigrams")
+            if not os.path.exists(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma"):
+                os.mkdir(f"./Patterns_results/R/{metadata}/{seuil}bigramslemma")
+                path_big = f"./Patterns_results/R/{metadata}/"
+                execution_time = datetime.datetime.now()
+                if not metadata=="id":
+                    path_id = f"./Patterns_results/R/id/{seuil}bigramslemma/"
+                    modif=""
+                    if os.path.exists(path_id):
+                        file_out_bigrams, file_total, path_out, df_big = compute_CQP.get_already_computed_df_id(f"{seuil}bigramslemma", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_big,modif)
+                    else:
+                        file_out_bigrams, path_out, df_big = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil)
+                    df_big =  compute_CQP.textes2metadata(df_big, df_metadata, metadata).T
+                else:
+                    file_out_bigrams, path_out, df_big  = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil)
+                df_big.to_csv(file_out_bigrams, sep="\t")
+                if mode=="auto":
+                    subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out])
+                results[f"{metadata}_{seuil}bigramslemma"] = file_out_bigrams
+            else:
+                print(f"already computed {seuil}bigrams")
+                doss =f"./Patterns_results/R/{metadata}/{seuil}bigramslemma/"
+                liste=[]
+                for fichier in os.listdir(doss):
+                    if f"bigramslemmaTexte_" in fichier:
+                        liste.append(doss+fichier)
+                tri = sorted(liste, key=os.path.getmtime, reverse=True)
+                results[f"{metadata}_{seuil}bigramslemma"] = tri[0]
+            
+    print(results)
+        
+    end_time = time.time()
+    time_stats = end_time - start_time
+            
+    if mode=="auto":
+        print(f"Temps de tagging : {time_tag/60:.2f} minutes")
+        print(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes")
+        print(f"Temps de calcul statistique  : {time_stats/60:2f} minutes")
+        if internal_clustering:
+            print(f"Temps de calcul des clusters internal : {time_clustering/60:2f} minutes")
+        
+        execution_time = datetime.datetime.now()
+        with open(f"./log_{execution_time}.txt", "w") as file:
+            file.write(f"earlySelection={earlySelection}\n")
+            file.write(f"internal_clustering={internal_clustering}\n")
+            file.write(f"list_itemset_min={list_itemset_min}\n")
+            file.write(f"list_gap_min={list_gap_min}\n")
+            file.write(f"list_gap_max={list_gap_max}\n")
+            file.write(f"list_minsup_percent={list_minsup_percent}\n")
+            file.write(f"Patterns_param_form={Form}\n")
+            file.write(f"Patterns_param_lemma={Lemma}\n")
+            file.write(f"Patterns_param_pos={Pos}\n")
+            file.write(f"Patterns_param_dep={Dep}\n")
+            file.write(f"Patterns_param_feats={Feats}\n")
+            file.write(f"List_metadata={list_metadata}\n")
+            file.write(f"List_seuils_lemma={liste_seuils_lemma}\n")
+            file.write(f"List_seuils_bigrams={liste_seuils_bigrams}\n")
+            file.write("-"*75)
+            file.write(f"Temps de tagging : {time_tag/60:.2f} minutes\n")
+            file.write(f"Temps d'extraction des motifs : {time_DMT4/60:.2f} minutes\n")
+            if internal_clustering:
+                file.write(f"Temps de calcul des clusters  : {time_clustering/60:2f} minutes\n")
+            file.write(f"Temps de calcul statistique  : {time_stats/60:2f} minutes\n")
+            file.write("-"*75)
+        
+    else:
+        json_results = json.dumps(results)
+        json_file = "./temp_input.json"
+    
+        # Save JSON to a temporary file for the Shiny app to read
+        with open(json_file, "w") as f:
+            f.write(json_results)
+    
+        shiny_app = "./src/Shiny_CA.R"
+    
+        output_dir = "./Patterns_results/R/25/motifs"
+        shiny_app = "./src/Shiny_CA.R"
+    
+        # Launch Shiny app as a detached process (do not wait)
+        p = subprocess.Popen(
+            ["Rscript", shiny_app, json_file],
+            stdout=None,  # allow Shiny to print to terminal
+            stderr=None,
+            stdin=None
+        )
+        
+        
+        
+        
+        

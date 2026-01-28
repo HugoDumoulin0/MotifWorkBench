@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
-# input : registre_1, registre_2
+
+"""
+@author: Mekki 2022
+"""
 
 
 import os
@@ -59,6 +62,9 @@ def regroupement_1(index_motifs):
             if i == ii : continue
             if ii in processed_data: continue
             score_sim = main_simDegree(patt_1, patt_2)
+            # print("Exemple motif 1 :", patt_1)
+            # print("Exemple motif 2 :", patt_2)
+            # print(f"Sim({i}, {ii}) = {score_sim:.4f}")  # Affiche le score avec 4 décimales
             if score_sim > 0.50:
                 rg.add(ii)
                 processed_data.add(ii)

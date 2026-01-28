@@ -13,19 +13,31 @@ import time
 import tools
 import os
 import pandas as pd
-# import stats_vocab
 import re
-# import compute_am_r
 import datetime
 import subprocess
 import enslave_perl
 import cwb
+from config import *
 
 
-def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out):
-    total_motifs=len(liste_motifs_clos_corpus)
+def textes2metadata(df, df_target, metadata):
+    df_combined = df.T
+    df_target = df_target.astype(str)
+    df_combined[metadata] = df_target[metadata]
+    # On groupe par target et on additionne les lemmes
+    df_targetXlemmes = df_combined.groupby(metadata).sum()  
+    return df_targetXlemmes
+
+
+def add_total(df):
+    df_total = df.copy()
+    df_total["total"] = df.sum(axis=1)
+    df_total = df_total.sort_values(by="total", ascending=False)
+    return df_total
+
+def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str):
     motif_count = 0
-    lexic_int_str = formate_patterns.make_dict_int_to_str()
     liste_motifs_str = []
     
     for motif in liste_motifs_clos_corpus:
@@ -34,7 +46,8 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = [] 
     
-    print("Computing motif freq X texte...")
+    nombre = len(liste_motifs_str)
+    print(f"Computing {nombre} motifs freq X texte...")
     for motif in liste_motifs_str:
         trad_motif = str(tools.read_req_CQP(motif))
         print(trad_motif)
@@ -44,43 +57,79 @@ def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path
     df_k = pd.DataFrame(lignes_table, index=liste_motifs_str)
     df_k = df_k.fillna(0)
     df_k = df_k.apply(pd.to_numeric) 
-    prefixe="motifs/"
+    prefixe=f"{total_motifs}motifs/"
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    file_out=f"{path_out}motifsTexte_df_{execution_time}.tsv"
-    df_k.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) #(moved here by analogy)
-    return df_k, total_motifs, file_out, prefixe
+    file_out=f"{path_out}{total_motifs}motifsTexte_df_{execution_time}.tsv"
+    file_total =f"{path_out}{total_motifs}motifsTexteOrdered_df_{execution_time}.tsv"
+
+    return df_k, path_out, total_motifs, file_out, file_total
     
-def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out):
+def compute_freq_TextesLemma_AFC(seuil, execution_time, path_out, downhill_pos4lemma):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
-    print("Computing lemma freq X texte...")
-    liste_lemma = enslave_perl.cqp_index_lemma()
+    print("indexing lemma")
+    liste_lemma = enslave_perl.cqp_index_lemma(downhill_pos4lemma)
     print("index done")
+    nombre = len(liste_lemma[:seuil])
+    print(f"Computing {nombre} lemma freq X texte...")
+    print("index done")
+    indice=0
     for lemma in liste_lemma[:seuil]:
-        lemma = f'[lemma="{lemma}"]'
-        ligne_de_table = enslave_perl.cqp_freq_textes(lemma)
+        req = f'[lemma="{lemma}"]'
+        indice+=1
+        print(f"{indice} {lemma}")
+        ligne_de_table = enslave_perl.cqp_freq_textes(req)
         lignes_table.append(ligne_de_table)
     df_lemma = pd.DataFrame(lignes_table, index=liste_lemma[:seuil])
     df_lemma = df_lemma.fillna(0)
     df_lemma = df_lemma.apply(pd.to_numeric)
-    prefixe="lemma/"
+    prefixe=f"{seuil}lemma{downhill_pos4lemma}/"
     path_out=path_out+prefixe
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    file_out = f"{path_out}{seuil}_lemmaTexte_df_{execution_time}.tsv"
-    df_lemma.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out]) 
-    return file_out, prefixe
+    if downhill_pos4lemma==".*":
+        downhill_pos4lemma="allPos"
+    file_out = f"{path_out}{seuil}lemma{downhill_pos4lemma}Texte_df_{execution_time}.tsv"
+    file_total = f"{path_out}{seuil}lemma{downhill_pos4lemma}TexteOrdered_df_{execution_time}.tsv"
+
+    return file_out, path_out, df_lemma, file_total
+
+def compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_R, seuil):
+    registry_path = "./Data/cwb-corpus/registry"
+    lignes_table = []
+    print("indexing bigrams lemma")
+    liste_bigrams_lemma = enslave_perl.cqp_index_property("bigrams_lemma")
+    print("index done")
+    print(f"Computing {seuil} bigrams_lemma freq X texte...")
+    print("index done")
+    indice=0
+    for big in liste_bigrams_lemma[:seuil]:
+        lemma1, lemma2 = big.split(" ")
+        req = f'[lemma="{lemma1}"][lemma="{lemma2}"]'
+        indice+=1
+        print(f"{indice} {req}")
+        ligne_de_table = enslave_perl.cqp_freq_textes(req)
+        lignes_table.append(ligne_de_table)
+    df_big = pd.DataFrame(lignes_table, index=liste_bigrams_lemma[:seuil])
+    df_big = df_big.fillna(0)
+    df_big = df_big.apply(pd.to_numeric)
+    prefixe=f"{seuil}bigramslemma/"
+    path_out=path_R+prefixe
+    if not os.path.exists(path_out):
+        os.mkdir(path_out)
+    file_out_bigrams = f"{path_out}{seuil}bigramslemmaTexte_df_{execution_time}.tsv"
+    return file_out_bigrams, path_out, df_big
 
 def compute_freq_TextesPos_AFC(execution_time, path_out):
     registry_path = "./Data/cwb-corpus/registry"
     lignes_table = []
-    print("Computing pos freq X texte...")
+    print("indexing pos")
     liste_pos = enslave_perl.cqp_index_pos()
     print("index done")
+    nombre = len(liste_pos)
+    print(f"Computing {nombre} pos freq X texte...")
     for pos in liste_pos:
         pos = f'[pos="{pos}"]'
         ligne_de_table = enslave_perl.cqp_freq_textes(pos)
@@ -93,14 +142,14 @@ def compute_freq_TextesPos_AFC(execution_time, path_out):
     if not os.path.exists(path_out):
         os.mkdir(path_out)
     file_out= f"{path_out}posTexte_df_{execution_time}.tsv"
-    df_pos.to_csv(file_out, sep="\t")
-    subprocess.call(["Rscript", "./src/AFC.r", file_out, path_out])
-    return file_out, prefixe
+    file_total= f"{path_out}posTexteOrdered_df_{execution_time}.tsv"
 
-def compute_specifs(df_k, minsup_percent, execution_time, specifs):
+    return file_out, path_out, df_pos, file_total
+
+
+def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
     dictionnaire_k = df_k.T.to_dict()
-    T, dictionnaire_t = enslave_perl.cqp_general()
     données_specifs = []
     for motif in dictionnaire_k.keys():
         for texte in dictionnaire_k[motif].keys():
@@ -113,76 +162,122 @@ def compute_specifs(df_k, minsup_percent, execution_time, specifs):
                 "T":T    
                 })
     df_spec = pd.DataFrame(données_specifs)
-    file_out_spec = "./Patterns_results/Specifs_noZero/spec_R_temp.tsv" #Store data under temp file to give to R with fixed name
-    # file_out_spec = "./Patterns_results/Specifs_noZero/{}_spec_R_df_{}.tsv".format(mins,execution_time)
-    df_spec.to_csv(file_out_spec, sep="\t", encoding="utf-8", index=False)
+    file_out=f"{path_out}SpecifsMotifsTexte_df_{execution_time}.tsv"
+    df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     if specifs==True:
-        subprocess.call(["Rscript", "./src/compute_specifs_noZero.r", str(minsup_percent), str(execution_time)]) #Run R!
+        subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), str(execution_time), path_out, file_out]) #Run R!
+
+def fusion_internal_clusters(df, lexic_int_str, args):
+    internal_clusters = tools.load_pickles(f"./Clustering_results/Clusters/{args}_clustering_3.pk")
+    medoids_clusters = tools.load_pickles(f"./Clustering_results/Medoids/{args}_medoids_3.pk")
     
+    internal_clusters_str = {}
+    for cluster_id, motifs in internal_clusters.items():
+        internal_clusters_str[cluster_id]=[formate_patterns.from_int_to_str(motif, lexic_int_str) for motif in motifs]
 
+    medoids_clusters_str = {k : formate_patterns.from_int_to_str(valeur[0], lexic_int_str) for k, valeur in medoids_clusters.items()}
+    
+    dfs_fusionnes = []
+    
+    for cluster_id, lignes_a_fusionner in internal_clusters_str.items():
+        df_cluster = df.loc[lignes_a_fusionner]
+        df_somme = df_cluster.sum(numeric_only=True).to_frame().T
+        medoid_index = medoids_clusters_str[cluster_id]
+        df_medoid = df.loc[[medoid_index]]
 
+        for col in df_somme.columns:
+            df_medoid[col] = df_somme[col].values[0]    
+            
+        dfs_fusionnes.append(df_medoid)
 
-# def add_association_vocab(dict_synth, liste_fichiers, columns):
-#     index_filtered, T = stats_vocab.build_index_filtered(liste_fichiers)
-#     for fichier in liste_fichiers:
-#         print(fichier)
-#         count_total = 0
-#         for motif in dict_synth[fichier]:
-#             if dict_synth[fichier][str(motif)][7]==None or dict_synth[fichier][str(motif)][7]=="inf" or dict_synth[fichier][str(motif)][7]>2:
-#                 count_total += 1
-#         total_motifs=count_total
-#         motif_count = 0
-#         for motif in dict_synth[fichier]:                
-#             if dict_synth[fichier][str(motif)][7]==None or dict_synth[fichier][str(motif)][7]=="inf" or dict_synth[fichier][str(motif)][7]>2:
-#                 print(motif)
-#                 forme = dict_synth[fichier][str(motif)][1]
-#                 start_time_iter = time.time()
-#                 motif_count += 1
-#                 if re.search("wp_", forme):
-#                     indice_association=""
-#                 else:
-#                     req=stats_vocab.read_req(forme)
-#                     print(req)
-#                     indice_association = stats_vocab.association_req_vocab_specific(req, index_filtered, fichier, T)
-#                     print(indice_association)
-#                 end_time_iter = time.time()
-#                 iteration_time = end_time_iter - start_time_iter
-#                 remaining_motifs = total_motifs - motif_count
-#                 estimated_time_remaining = iteration_time * remaining_motifs
-#                 print(f"Dans {fichier}, temps estimé restant pour {remaining_motifs} fichier(s) : {estimated_time_remaining/60:.2f} minutes")
-#             else:
-#                 indice_association=""
-#             dict_synth[fichier][str(motif)].append(indice_association)
-#         dict_synth_add_association = dict_synth
-#         columns.append("association_vocab")
-#     return dict_synth_add_association, columns
-        
+    df_result = pd.concat(dfs_fusionnes)
+    return df_result
 
-
-# def clean_last_AFC():
-#     liste = os.listdir("./Patterns_results/Specifs_noZero")
-#     for fichier in liste:
-#         if fichier.endswith("_AFC_R_df.tsv"):
-#             os.remove(f"./Patterns_results/Specifs_noZero/{fichier}")
-
-def main(types_textes, shortcut_specifs, shortcut_association, minsup_percent, specifs):
-    execution_time = datetime.datetime.now()
-    DMT4_clos_corpus = f"./Patterns_results/Closed/{minsup_percent}_00_DMT4_merged_files_sorted_closed.pk"
-    liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
-    cwb.main()
-    path_R="./Patterns_results/R/"
-    if not os.path.exists(path_R):
-        os.mkdir(path_R)
-    path_out = path_R+str(minsup_percent)+"/"
+def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_out,modif):
+    print("re-using computing data from 'id' metadata instanciation of script")
+    if forme=="motifs":
+        for file in os.listdir(path_id):
+            path_id=path_id+file
+            path_out=path_out+file
+    else:
+        path_out=path_out+forme
+    fichiers = sorted(os.listdir(path_id), key=lambda f: os.path.getmtime(os.path.join(path_id, f)),reverse=True)
+    for f in fichiers: 
+        if f"{forme}Texte_" in f:
+            if modif=="internal_clustering_":
+                if "_FUS" in f:
+                    print("re-using : " + f)
+                    file_id=path_id+"/"+f
+                    df_k=pd.read_csv(file_id, sep="\t", index_col=0)
+                    break
+                else:
+                    print("Error : internal_clustering_id is missing")
+            else:
+                print("re-using : " + f)
+                file_id=path_id+"/"+f
+                df_k=pd.read_csv(file_id, sep="\t", index_col=0)
+                break
+    file_out=path_out+"/"+f
+    chaine=path_out+"/"+f
+    file_total=chaine.replace(f"{forme}Texte",f"{forme}TexteOrdered",1)
+    path_out=path_out+"/"
     if not os.path.exists(path_out):
         os.mkdir(path_out)
-    df_k, total_motifs, file_out_motifs, prefixe_motifs = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out)
-    file_out_pos, prefixe_pos = compute_freq_TextesPos_AFC( execution_time, path_out)
-    file_out_lemma, prefixe_lemma = compute_freq_TextesLemma_AFC(total_motifs, execution_time, path_out)
-    compute_specifs(df_k, minsup_percent, execution_time, specifs)
-    # if shortcut_association==False:
-    #     dict_synth_add_association, columns = add_association_vocab(dict_synth, types_textes, columns)
-    return file_out_motifs, file_out_lemma, file_out_pos, prefixe_motifs, prefixe_lemma, prefixe_pos
+    return file_out, file_total, path_out, df_k
+     
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out, mode, args):
+    execution_time = datetime.datetime.now()
+    lexic_int_str = formate_patterns.make_dict_int_to_str()
+    DMT4_clos_corpus = f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.pk"
+    liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
+    total_motifs=len(liste_motifs_clos_corpus)
+    T, dictionnaire_t = enslave_perl.cqp_general()
+    
+    if total_motifs>0:
+        if not os.path.exists(path_out):
+            os.mkdir(path_out)
+            
+        if metadata!="id":## cas de annee, genre, etc.##
+            print(metadata)
+            path_id = f"./Patterns_results/R/id/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/minsup{str(minsup_percent)}/"
+            if os.path.exists(path_id):
+                file_out_motifs, file_total, path_out, df_k = get_already_computed_df_id("motifs", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id,path_out,modif)
+            else:
+                print("computing from scratch")
+                df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+                df_k.to_csv(file_out_motifs, sep="\t")
+            df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
+            df_k.to_csv(file_out_motifs, sep="\t")
+        
+        else:
+            print(metadata)
+            df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str)
+            df_k.to_csv(file_out_motifs, sep="\t")
+                
+            if internal_clustering:
+                lexic_int_str = formate_patterns.make_dict_int_to_str()
+                df_k = fusion_internal_clusters(df_k, lexic_int_str,args)
+                file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
+                print(file_out_motifs)
+                df_k.to_csv(file_out_motifs, sep="\t")
+            
+        results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
+
+        
+        if specifs:       
+                compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+
+        if mode=="auto":
+            subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 
+        df_k_total=add_total(df_k)
+        df_k_total.to_csv(file_total, sep="\t")
+        
+    else:
+        if not os.path.exists(path_out):
+            os.mkdir(path_out)
+        if not os.path.exists(f"{path_out}zero-motifs"):
+                os.mkdir(f"{path_out}zero-motifs")
+    return results, path_out
     
     
     

@@ -12,6 +12,12 @@ dictionnaire_specifs.pk
 *.corpus
 *.rng
 *.idx
+*.cnt
+*.rdx
+*.rev
+*.srt
+*.avs
+*.avx
 
 # Ignore common system files
 .DS_Store
@@ -27,3 +33,24 @@ __pycache__/
 
 # Ignore version control directories
 .git/
+
+# Ignore R stuff
+.Rapp.history
+.Rhistory
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini
+.spyproject/config/workspace.ini
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini
+.spyproject/config/backups/workspace.ini.bak
+.spyproject/config/workspace.ini

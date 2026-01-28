@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # coding: utf8
 """
+@author: Mekki 2022
+"""
+
+"""
 input : 1. nbr_items [1-9]
             ex : 4 pour token, lemme, pos, syntaxe
         2. len_slice
@@ -26,6 +30,8 @@ def save_dict(dict):
     do : save dict local in pickle format and txt format
     ouput : bool (ok|ko)
     """
+    if not os.path.exists("./Data/Lexiques"):
+        os.mkdir("./Data/Lexiques")
     try:
         pickle.dump(dict, open("Data/Lexiques/dico_str_to_int_all_items.pk", "wb"))
         df = pd.DataFrame.from_dict(dict, orient="index")
@@ -91,7 +97,6 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
                 element = el.split(" ")
                 item = int(element[1])
                 index = int(element[0])
-                # print(index, item)
                 if index not in dico_ephemere :
                     dico_ephemere[index] = [item]
                 else :
@@ -100,7 +105,6 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
             for itemset in dico_ephemere :
                 file = [file_out.write(str(itemset)+" "+str(el)+"\n") for el in dico_ephemere.get(itemset)]
             index_seq += 1
-    # print("{} : Sorted".format(DMT4_file[:-4]))
     return "{} : Sorted".format(DMT4_file[:-4])
 
 
@@ -237,14 +241,3 @@ def make_DMT4_file(type_texte):
     return dict_dmt4
 
 
-
-
-if __name__ == "__main__":
-
-    # types_textes = ["1984ca", "2008ca"]
-    types_textes = [sys.argv[1], sys.argv[2]]
-    
-    instancier_dict("./Data/Textes_tagged_WP/")
-    for type_texte in types_textes:
-            transform_data("./Data/Textes_tagged_WP/", type_texte)
-    sort_dmtfiles()
