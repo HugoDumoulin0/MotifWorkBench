@@ -25,9 +25,13 @@ On Mac, you need Docker to launch the linux binary BideSpanTree as you can see i
 Last but not least : you'll need Perl, CWB and some CWB librairies. 
 On mac :
 ```
-brew install cwb
+curl -L https://xrl.us/installperlosx | bash
 ```
 then
+```
+brew install cwb
+```
+and finally
 ```
 cpan
 install CWB::CQP
