@@ -81,7 +81,7 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
         early_pos4lemma="allPos"
     make_again=True
     for file in os.listdir("./Data/earlySelection"):
-        if file.startswith(f"{filter_specifs}_specif_{seuil}{early_pos4lemma}"):
+        if file.startswith(f"{filter_specifs}_specif_{seuil}{early_pos4lemma}") and file.endswith(".csv"):
                 make_again=False
                 print(f"EarlySelection computing already exists with {file} \n delete it if you want to compute from scratch")
                 df = pd.read_csv(f"./Data/earlySelection/{file}", sep="\t", index_col=0, quoting=3)
