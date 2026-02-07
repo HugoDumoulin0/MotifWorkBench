@@ -293,11 +293,15 @@ server <- function(input, output, session){
 
     # Subset n-rows for displaying points and labels
     if (input$contrib_threshold) {
-      contrib_n_rows <- head(res$row$contrib, input$contrib_rows)
-      contrib_n_cols <- head(res$col$contrib, input$contrib_vars)
-      rows_df <- filter(rows_df, label %in% row.names(contrib_n_rows))
-      cols_df <- filter(cols_df, label %in% row.names(contrib_n_cols))
-    }
+  total_contrib_rows <- rowSums(res$row$contrib)
+  top_rows <- names(sort(total_contrib_rows, decreasing = TRUE))[1:input$contrib_rows]
+
+  total_contrib_cols <- rowSums(res$col$contrib)
+  top_cols <- names(sort(total_contrib_cols, decreasing = TRUE))[1:input$contrib_vars]
+
+  rows_df <- rows_df[rows_df$label %in% top_rows, ]
+  cols_df <- cols_df[cols_df$label %in% top_cols, ]
+}
 
     # Also include the raw CA object and contributions if other outputs need them
     list(
