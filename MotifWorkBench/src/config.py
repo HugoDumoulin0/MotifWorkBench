@@ -3,6 +3,7 @@
 #-------------------
 download=False
 use_gpu=True
+language="fr"
 
 #-------------------
 # Early selection mode
