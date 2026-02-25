@@ -106,7 +106,7 @@ if __name__ == "__main__":
             tagging_list[texte]=(file_path,output_file)
             tag=True
     if tag==True:
-        nlp = stanza.Pipeline('fr', download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=use_gpu)
+        nlp = stanza.Pipeline(language, download_method=DownloadMethod.REUSE_RESOURCES, use_gpu=use_gpu)
         for texte,(file_path,output_file) in tagging_list.items():
             with open(file_path, "r", encoding="utf-8") as f:
                         text = f.read()
@@ -186,10 +186,20 @@ if __name__ == "__main__":
     if earlySelection:
         print("-"*75)
         print("2.1 Early selection of lemma for mining")
-        if user_input_list==False:
-            liste_earlyselection_lemma = early_selection.main(seuil_early_selection, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma, filter_specifs)
+        liste_earlyselection_lemma = early_selection.main(seuil_early_selection, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma, filter_specifs)
+    if user_input_list:
+        path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
+        lexique = tools.load_pickles(path_lexique)
+        liste_lemma = []
+        nom=""
+        for i in liste_earlyselection_lemma:
+            nom+=i+"-"
+        lignes = liste_earlyselection_lemma
+        print(lignes)
+        for l in lignes:
+            lemma_preformat = f'lemma_"{l}"'
+            liste_lemma.append(lexique[lemma_preformat])
 
-            
 
 
 
@@ -216,10 +226,11 @@ if __name__ == "__main__":
         for gap_min in list_gap_min:
             for gap_max in list_gap_max:
                 for minsup_percent in list_minsup_percent:
+                    args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                    if user_input_list:
+                        args=f"user_input_list_{nom}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                     if earlySelection:
                         args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    else:
-                        args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"                    
                     args = args.replace("|","-")
                     if os.path.exists(f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"):
                         print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
@@ -244,6 +255,8 @@ if __name__ == "__main__":
                             set_up.write("GAPMIN={}\n".format(gap_min))
                             set_up.write("GAPMAX={}\n".format(gap_max))
                             set_up.write("NB_ITEMSET_MIN=={}\n".format(nb_itemset_min))
+                            if user_input_list:
+                                set_up.write("OR={}\n".format(str(liste_lemma)[1:-1]))
                             if earlySelection:
                                 set_up.write("OR={}\n".format(str(liste_earlyselection_lemma)[1:-1]))
                 
@@ -287,11 +300,6 @@ if __name__ == "__main__":
                 for gap_min in list_gap_min:
                     for gap_max in list_gap_max:
                         for minsup_percent in list_minsup_percent:
-                            if earlySelection:
-                                args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                            else:
-                                args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                            args = args.replace("|","-")
                             if not os.path.exists(f"./Clustering_results/Clusters/{args}_clustering_3.pk"):
                                 execute_internal_clustering.main(nbr_pool, args)
                             else:
@@ -323,6 +331,8 @@ if __name__ == "__main__":
  
     ##computing patterns###
     modif=""
+    if user_input_list:
+        modif=f"user_input_list_{nom}_"
     if earlySelection:
         modif=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
     if internal_clustering:
@@ -355,11 +365,6 @@ if __name__ == "__main__":
                                     os.mkdir(path)
                             for minsup_percent in list_minsup_percent:
                                 print(f"Minsup: {minsup_percent}")
-                                if earlySelection:
-                                    args = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                                else:
-                                    args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                                args = args.replace("|","-")
                                 path_out = f"{path_R}minsup{str(minsup_percent)}/"
                                 if os.path.exists(path_out):
                                             for dir in os.listdir(path_out):
