@@ -11,56 +11,59 @@ The pipeline relies on linguistic annotation using Stanza (Qi et al. 2020), moti
 The CloSPEC algorithm (Béchet et al. 2015) can be find in the form of the binary file BideSpanTree. Some of the initial annotation, extraction and internal clustering scripts are based on the work of Mekki 2022.
 
 ## How to use?
-If all goes well, ```python src/main.py``` should be enough. 
+Run: 
+```bash
+python src/main.py
+```
 
-The script will work on all texts located into ```Data/textes_raw```. Texts must be in .txt formate, with one folder for each text.
+The script will process all `.txt` files located into ```Data/textes_raw```.
 
 ## Requirements
-Python requirements are listed in ```src/requirements.txt```. 
+MWB needs Python, R, Perl, CWB and bash. On Mac OS, Docker is needed to run the Linux binaries of BideSpanTree motif extractor (see ```execute_closed_pattern.sh```).
+- Python requirements are listed in ```src/requirements.txt```
+- R packages are automatically downloaded if not installed, and loaded
+- [CWB download page](https://cwb.sourceforge.io/install.php)
+- [Perl download page](https://www.perl.org/get.html)
 
-But you'll need some additional Rlibs automatically downloaded when launching ```src/AFC.R```
-
-On Mac, you need Docker to launch the linux binary BideSpanTree as you can see in ```execute_closed_pattern.sh```
-
-Last but not least : you'll need Perl, CWB and some CWB librairies. 
-On mac :
-```
+On Mac OS, the following should work:
+```bash
+# Install Perl
 curl -L https://xrl.us/installperlosx | bash
-```
-then
-```
+
+# Install base CWB (with brew)
 brew install cwb
-```
-and finally
-```
+
+# Install Perl CQP command from CWB (with cpan)
 cpan
 install CWB::CQP
 ```
 
-
 ## What does it do?
 A simple run such as the one before goes through the following operations:
-- 0. Merging files (if one of the args is a directory containing more than one file)
-- 1. Tagging
-	- 1.1. through Stanza (except if ```.conllu``` files from previous run or already present) — this is time consuming, brace yourself with big corpora [1].
-- 2. Extracting itemsets into DMT4 files
-- 3. Closed pattern mining with the CloSPEC / BideSpanTree algorithm
-- 4. [optional] Clustering patterns
-- 5. Computing multidimensional statistics with CQP and R
-- 6.  Visualizing with shiny
 
-> [1] Stanza-produced .conllu files are modified so that they do not contain underscore. This is normal for a .conllu file (N/A value), but is not OK for mining pattern. As cols can't be empty, we chose to replace underscores by random integers.
+1. Tagging and processing text files
+	- MWB runs Stanza (except if ```.conllu``` files from previous run or already present) — this is time consuming, brace yourself with big corpora [^1].
+2. Extracting itemsets into DMT4 files
+3. Closed pattern mining with the CloSPEC / BideSpanTree algorithm
+4. [optional] Clustering patterns
+5. Computing multidimensional statistics with CQP and R
+6. Visualizing with shiny
+
+[^1]: Stanza-produced `.conllu` files are modified so that they do not contain underscore (this is what MWB calls `underscore-fixing`). While it is normal for `.conllu` files to contains underscores, this is not suitable for pattern mining. As cols can't be empty, we chose to replace underscores by random integers.
 
 ## Parameters
 ### Vocabulary
 - itemset: a token of the pattern mining; in most cases, an itemset is a word.
 - item: properties attached to an itemset, such as POS, lemma, etc.
-- a pattern is therefore comprised of one or several itemsets.
+- a motif contains one or several itemsets, each containing one or several items.
+
+Basic parameters are accessible in `config.py` and through a Shiny graphic interface. Most notable pattern mining parameters used in MWB are:
+- `itemset_min`: the minimal number of itemsets (tokens) required to form a motif.
+- `minsup`: the frequency threshold for a string to be considered a motif.
+	- On small corpora, if no motifs are produced, try lowering the `minsup`
 
 ### Number of itemsets in a pattern
-By default, there is no minimum to the number of itemsets (tokens) that constitutes a pattern. In this case, a pattern could be one itemset (token), and it is the combination of its properties (items) that would be relevant for it to be an emergent or specific pattern. This, however, does not necessarily match the linguistic definition of a pattern.
-
-The minimal number of itemsets required to form a pattern is defined by ```NB_ITEMSET_MIN```, instantiated as ```nb_itemset_min``` in ```main.py```. It can be edited in ```main.py```. Similarly, there is a possible limitation on the maximum number of itemsets, ```nb_itemset_max```; however this variable is not currently implemented (though it should not be too hard to implement it).
+The minimal number of itemsets (tokens) required to form a motif is defined by the ```itemset_min``` variable. It can be edited in ```main.py```. Similarly, there is a possible limitation on the maximum number of itemsets, ```nb_itemset_max```; however this variable is not currently implemented (though it should not be too hard to implement it).
 
 ### Minsup
 The variable called ```minsup``` defines the minimal frequency needed for a string of tokens to be recurrent enough in a text to be considered a pattern. It is measured by the absolute frequency of its support (number of sentences comprising this string of tokens). Our temporary default is ```25```.
