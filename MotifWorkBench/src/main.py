@@ -190,10 +190,12 @@ if __name__ == "__main__":
     if user_input_list:
         path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
         lexique = tools.load_pickles(path_lexique)
+        nom=f"user_input_{time.time()}"
+        with open(f"./Data/earlySelection/{nom}.txt", "w") as f:
+            f.write(str(liste_earlyselection_lemma))
         liste_lemma = []
-        nom=""
-        for i in liste_earlyselection_lemma:
-            nom+=i+"-"
+        # for i in liste_earlyselection_lemma:
+        #     nom+=i+"-"
         lignes = liste_earlyselection_lemma
         print(lignes)
         for l in lignes:
