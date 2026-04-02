@@ -81,7 +81,7 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
         early_pos4lemma="allPos"
     make_again=True
     for file in os.listdir("./Data/earlySelection"):
-        if file.startswith(f"{filter_specifs}_specif_{seuil}{early_pos4lemma}") and file.endswith(".tsv"):
+        if file.startswith(f"{filter_specifs}_specif{seuil_banalité}_{seuil}{early_pos4lemma}") and file.endswith(".tsv"):
                 make_again=False
                 print(f"EarlySelection computing already exists with {file} \n delete it if you want to compute from scratch")
                 df = pd.read_csv(f"./Data/earlySelection/{file}", sep="\t", index_col=0, quoting=3)
@@ -97,11 +97,11 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
             dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
             compute_specifs_function(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time,early_pos4lemma)
             lignes = tri_lemma(df_lemma, seuil_banalité)
-            df_lemma.to_csv(f"./Data/earlySelection/{filter_specifs}_specif_{seuil}{early_pos4lemma}.tsv", sep="\t")
+            df_lemma.to_csv(f"./Data/earlySelection/{filter_specifs}_specif{seuil_banalité}_{seuil}{early_pos4lemma}.tsv", sep="\t")
         else:
             lignes = df_lemma.index.tolist()
     print(lignes)
-    with open(f"./Data/earlySelection/List_{filter_specifs}_specif_{seuil}{early_pos4lemma}.txt", "w") as f:
+    with open(f"./Data/earlySelection/List_{filter_specifs}_specif{seuil_banalité}_{seuil}{early_pos4lemma}.txt", "w") as f:
         f.write(str(lignes))
     liste_lemma = []
     for l in lignes:
