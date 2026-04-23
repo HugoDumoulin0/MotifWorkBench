@@ -1,5 +1,4 @@
 # Ignore .tsv, .conllu, and .pk files
-*.tsv
 #*.conllu
 *.pk
 dictionnaire_specifs.pk
