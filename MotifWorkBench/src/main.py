@@ -187,6 +187,10 @@ if __name__ == "__main__":
         print("-"*75)
         print("2.1 Early selection of lemma for mining")
         liste_earlyselection_lemma = early_selection.main(seuil_early_selection, "", path_metadata, partition_cible, seuil_banalité, early_pos4lemma, filter_specifs)
+    else:
+        seuil_early_selection="False"
+        early_pos4lemma="False"
+        partition_cible="False"
     if user_input_list:
         path_lexique = "./Data/Lexiques/dico_str_to_int_all_items.pk"
         lexique = tools.load_pickles(path_lexique)
@@ -201,6 +205,8 @@ if __name__ == "__main__":
         for l in lignes:
             lemma_preformat = f'lemma_"{l}"'
             liste_lemma.append(lexique[lemma_preformat])
+    else:
+            nom="False"
 
 
 
@@ -229,10 +235,11 @@ if __name__ == "__main__":
             for gap_max in list_gap_max:
                 for minsup_percent in list_minsup_percent:
                     args=f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    if user_input_list:
-                        args=f"user_input_list_{nom}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    if earlySelection:
-                        args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                   # if user_input_list:
+                   #     args=f"user_input_list_{nom}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                   # if earlySelection:
+                   #     args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
+                    args=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_itemsetmin{nb_itemset_min}_minsup_percent{minsup_percent}_gapmin{gap_min}_gapmax{gap_max}"
                     args = args.replace("|","-")
                     if os.path.exists(f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"):
                         print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
