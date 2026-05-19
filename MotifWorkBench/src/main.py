@@ -339,14 +339,13 @@ if __name__ == "__main__":
     results={}
  
     ##computing patterns###
-    # modif=""
+    modif=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}early_pos4lemma{early_pos4lemma}_specifs{filter_specifs}{partition_cible}"
     # if user_input_list:
     #     modif=f"user_input_list_{nom}_"
     # if earlySelection:
     #     modif=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
     if internal_clustering:
         modif= modif+"internal_clustering_"
-    modif=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}early_pos4lemma{early_pos4lemma}_specifs{filter_specifs}{partition_cible}"
     
 
     for metadata in list_metadata:
