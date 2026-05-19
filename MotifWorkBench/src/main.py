@@ -239,7 +239,7 @@ if __name__ == "__main__":
                    #     args=f"user_input_list_{nom}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                    # if earlySelection:
                    #     args=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    args=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_itemsetmin{nb_itemset_min}_minsup_percent{minsup_percent}_gapmin{gap_min}_gapmax{gap_max}"
+                    args=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}{{early_pos4lemma}}_specifs{filter_specifs}{partition_cible}_itemsetmin{nb_itemset_min}_minsup_percent{minsup_percent}_gapmin{gap_min}_gapmax{gap_max}"
                     args = args.replace("|","-")
                     if os.path.exists(f"./Patterns_results/Closed/{args}_DMT4_merged_files_sorted_closed.txt"):
                         print(f"\t Closed patterns file already exists. Delete it to perform extraction again.")
@@ -344,9 +344,9 @@ if __name__ == "__main__":
     #     modif=f"user_input_list_{nom}_"
     # if earlySelection:
     #     modif=f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
-    # if internal_clustering:
-    #     modif= modif+"internal_clustering_"
-    modif=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}{early_pos4lemma}_specifs{filter_specifs}{partition_cible}"
+    if internal_clustering:
+        modif= modif+"internal_clustering_"
+    modif=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}{{early_pos4lemma}}_specifs{filter_specifs}{partition_cible}"
     
 
     for metadata in list_metadata:
