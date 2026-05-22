@@ -13,6 +13,7 @@ path = args[1]
 
 # head(input_file)
 
+dir.create("./Patterns_results/CA_plots", recursive = TRUE, showWarnings = FALSE)
 
 
 rep_name=path
@@ -59,132 +60,119 @@ json_input <- args[1]
 
 # Load JSON from python
 datasets <- fromJSON(paste(json_input, collapse = ""))
-    # FOR TESTING, DELETE LATER!!! ---------==========--------========---------==========--------========---------==========--------========
-    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_genre_pos"]] <- "./Patterns_results/R/test/pos/posTexte_df_2025-11-24 12:00:51.830897.tsv"
-    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_id_pos"]] <- "./Patterns_results/R/test/pos/posTexte_df_2025-11-24 12:00:51.830897.tsv"
-    # datasets[["200_earlyTrue_ADJ|NOUN|VERB_specifsFalse_id_pos"]] <- "./Patterns_results/R/test/pos/posTexte_df_2025-11-24 12:00:51.830897.tsv"
-    # 200_earlyTrue_ADJ|NOUN|VERB_specifsTrue_genre_internal_clustering_motifs
-# print(datasets)
 
-# For parsing input names, replace _ by - between words belonging to the same param
-names(datasets) <- sub("internal_clustering_", "internal-clustering-", names(datasets)) 
-# names(datasets) <- sub(
-#     "^([0-9]+)_((?:earlyTrue|earlyFalse))_(.+?)_((?:specifsTrue|specifsFalse))",
-#     "\\1-\\2-\\3-\\4",
-#     names(datasets)
-#   )
+print(datasets)
 
-# specifsTrue_partitioncible_
+metadata_name <- unique(sub("_.*", "", names(datasets)))
+print("Metadata name:")
+print(metadata_name)
 
-names(datasets) <- ifelse(
-  grepl("early", names(datasets), ignore.case = TRUE),
-  sub(
-    "^([0-9]+)_earlyTrue_([^_]+)$",
-    "EARLY:\\1.\\2",
-    names(datasets)
-  ),
-  names(datasets)  # leave other names unchanged
-)
+has_user_input_list <- grepl("user_input_listTrue", names(datasets))
+print("Has user input list:")
+print(has_user_input_list)
 
-# Rename specifsTrue args to parse them
-names(datasets) <- ifelse(
-  grepl("specifsTrue", names(datasets), ignore.case = TRUE),
-  sub(
-    "_specifsTrue_([^_]+_)",
-    "!specifsTrue:\\1",
-    names(datasets)
-  ),
-  names(datasets)  # leave other names unchanged
-)
+name_user_input <- names(datasets)[grepl("user_input_listTrue", names(datasets))]
+user_input_value <- sub(".*user_input_listTrue([^_]+).*", "\\1", name_user_input)
+print("User input value:")
+print(user_input_value)
 
-# Rename specifsFalse arg to parse it
-names(datasets) <- ifelse(
-  grepl("specifsTrue", names(datasets), ignore.case = TRUE),
-  sub(
-    "_specifsFalse",
-    "!specifsFalse",
-    names(datasets)
-  ),
-  names(datasets)  # leave other names unchanged
-)
+has_early_sel <- ifelse(any(grepl("earlySelectionTrue", names(datasets))), TRUE, FALSE)
+print("Has early selection:")
+print(has_early_sel)
 
-print(names(datasets))
+name_early_sel <- names(datasets)[grepl("earlySelectionTrue", names(datasets))]
+early_sel_num <- sub(".*earlySelectionTrue([0-9]+).*", "\\1", name_early_sel)
+print("Early selection num:")
+print(early_sel_num)
+
+early_pos4lemma <- sub(".*early_pos4lemma([^_]+).*", "\\1", name_early_sel)
+print("Early pos4lemma")
+print(early_pos4lemma)
+
+has_specifs <- ifelse(any(grepl("specifsTrue", names(datasets))), TRUE, FALSE)
+print("Has specifs:")
+print(has_specifs)
+
+specif_part <- sub(".*specifsTrue([^_][^motif]+).*", "\\1", name_early_sel)
+print("Specif part:")
+print(specif_part)
+
+name_motifs <- names(datasets)[grepl("motif", names(datasets), ignore.case = TRUE)]
+has_motifs <- name_motifs
+print("Has motifs:")
+print(has_motifs)
+
+minsup <- unique(sub(".*_([^_]+)_[^_]+_[^_]+_[^_]+$", "\\1", name_motifs))
+print("Minsup:")
+print(minsup)
+
+gapmin <- unique(sub(".*_[^_]+_([^_]+)_[^_]+_[^_]+$", "\\1", name_motifs))
+print("Gapmin:")
+print(gapmin)
+
+gapmax <- unique(sub(".*_[^_]+_[^_]+_([^_]+)_[^_]+$", "\\1", name_motifs))
+print("Gapmax:")
+print(gapmax)
+
+itemsetmin <- unique(sub(".*_[^_]+_[^_]+_[^_]+_([^_]+)$", "\\1", name_motifs))
+print("Itemsetmin:")
+print(itemsetmin)
+
+pattern_representations <- unique(ifelse(
+  grepl("motif", names(datasets), ignore.case = TRUE),
+  "motif",
+  sub(".*_([^_]+)$", "\\1", names(datasets))
+))
 
 
-# Subset lines that have "specifs" in data name
-has_specifs <- grepl("EARLY", names(datasets), ignore.case = TRUE)
-early_names <- names(datasets)[has_specifs]
-early_list <- sub("_.*", "", early_names)
+early_list <- early_sel_num
+pattern_representation <- pattern_representations
+minsup_display <- minsup
+gapmin_display <- gapmin
+gapmax_display <- gapmax
+itemsetmin_display <- itemsetmin
 
-datasets_early <- datasets[startsWith(names(datasets), "EARLY")]
-datasets_non_early <- datasets[!grepl("EARLY", names(datasets), ignore.case = TRUE)]
+#--------------------------------------------------------------
+# HELPERS FOR CASCADING DROPDOWNS
+#--------------------------------------------------------------
 
-# Metadata
-# early_metadata_name <- unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets_early)))
-# non_early_metadata_name <- unique(sub("_.*", "", names(datasets_non_early)))
+get_candidates <- function(meta=NULL, rep=NULL, early=NULL, minsup=NULL, gapmin=NULL, gapmax=NULL) {
+  cands <- names(datasets)
+  if (!is.null(meta))
+    cands <- cands[startsWith(cands, paste0(meta, "_"))]
+  if (!is.null(rep)) {
+    if (grepl("motif", rep, ignore.case=TRUE))
+      cands <- cands[grepl("motif", cands, ignore.case=TRUE)]
+    else
+      cands <- cands[endsWith(cands, paste0("_", rep))]
+  }
+  if (!is.null(early) && early != "No (all tokens)")
+    cands <- cands[grepl(paste0("earlySelectionTrue", early), cands, fixed=TRUE)]
+  if (!is.null(minsup))
+    cands <- cands[grepl(paste0("_", minsup, "_[^_]+_[^_]+_[^_]+$"), cands, perl=TRUE)]
+  if (!is.null(gapmin))
+    cands <- cands[grepl(paste0("_[^_]+_", gapmin, "_[^_]+_[^_]+$"), cands, perl=TRUE)]
+  if (!is.null(gapmax))
+    cands <- cands[grepl(paste0("_[^_]+_[^_]+_", gapmax, "_[^_]+$"), cands, perl=TRUE)]
+  cands
+}
 
-specif_parsed_metadata <- ifelse(
-  has_specifs,
-  #For names with "specifs"
-  metadata_name <- unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets))),
-  #For names without "specifs"
-  sub("_.*", "", names(datasets))     
-)
-metadata_name <- unique(specif_parsed_metadata)
-
-# early_pattern_representation <- unique(sub("^[^_]*_[^_]*_([^_]+).*", "\\1", names(datasets_early)))
-# non_early_pattern_representation <- unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets_non_early)))  
-
-# Type of representation (motif, POS, lemma)
-specif_parsed_representation <- ifelse(
-  has_specifs,
-  #For names with "specifs"
-  pattern_representation <- unique(sub("^[^_]*_[^_]*_([^_]+).*", "\\1", names(datasets))),
-  #For names without "specifs"
-  unique(sub("^[^_]*_([^_]+).*", "\\1", names(datasets)))  
-)
-pattern_representation <- unique(specif_parsed_representation)
-
-# Minsup
-minsup_display <- ifelse(
-  grepl("motifs_\\d+", names(datasets)),
-  sub(".*motifs_(\\d+)_.*", "\\1", names(datasets)),
-  NA
-)
-minsup_display <- unique(minsup_display[!is.na(minsup_display)])
-
-# Gapmin
-gapmin_display <- ifelse(
-  grepl(".*motifs_\\d+_\\d+", names(datasets)),
-  sub(".*motifs_\\d+_(\\d+)_.*", "\\1", names(datasets)),
-  NA
-)
-gapmin_display <- unique(gapmin_display[!is.na(gapmin_display)])
-
-# Gapmax
-gapmax_display <- ifelse(
-  grepl(".*motifs_\\d+_\\d+_\\d+", names(datasets)),
-  sub(".*motifs_\\d+_\\d+_(\\d+)_.*", "\\1", names(datasets)),
-  NA
-)
-gapmax_display <- unique(gapmax_display[!is.na(gapmax_display)])
-
-# Itemsetmin
-itemsetmin_display <- ifelse(
-  grepl(".*motifs_\\d+_\\d+_\\d+_\\d+", names(datasets)),
-  sub(".*motifs_\\d+_\\d+_\\d+_(\\d+)", "\\1", names(datasets)),
-  NA
-)
-itemsetmin_display <- unique(itemsetmin_display[!is.na(itemsetmin_display)])
+extract_reps      <- function(cands) unique(ifelse(grepl("motif", cands, ignore.case=TRUE), "motif", sub(".*_([^_]+)$", "\\1", cands)))
+extract_early     <- function(cands) unique(sub(".*earlySelectionTrue([0-9]+).*", "\\1", cands[grepl("earlySelectionTrue", cands)]))
+extract_minsup    <- function(cands) unique(sub(".*_([^_]+)_[^_]+_[^_]+_[^_]+$", "\\1", cands))
+extract_gapmin    <- function(cands) unique(sub(".*_[^_]+_([^_]+)_[^_]+_[^_]+$", "\\1", cands))
+extract_gapmax    <- function(cands) unique(sub(".*_[^_]+_[^_]+_([^_]+)_[^_]+$", "\\1", cands))
+extract_itemsetmin <- function(cands) unique(sub(".*_[^_]+_[^_]+_[^_]+_([^_]+)$", "\\1", cands))
 
 #--------------------------------------------------------------
 # SERVER
 #--------------------------------------------------------------
 server <- function(input, output, session){
 
-  # Prepare var for conditional panel
+  # Show specificity filter only when the current metadata+representation has early options
   output$has_specifs_df <- renderText({
-    any(grepl("EARLY", names(datasets), ignore.case = TRUE))
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation)
+    as.character(length(extract_early(cands)) > 0)
   })
   outputOptions(output, "has_specifs_df", suspendWhenHidden = FALSE)
 
@@ -222,6 +210,10 @@ server <- function(input, output, session){
   # Reactive value to hold CA result and an error message for display
   ca_res <- reactiveVal(NULL)
   ca_error <- reactiveVal(NULL)
+  cluster_error_msg <- reactiveVal(NULL)
+
+  output$cluster_error_msg_hcpc  <- renderText({ cluster_error_msg() })
+  output$cluster_error_msg_parang <- renderText({ cluster_error_msg() })
 
   # Compute CA automatically when preprocessing result is ready
   observeEvent(data(), {
@@ -266,10 +258,10 @@ server <- function(input, output, session){
   # Download handler
   observeEvent(input$save_scree_plot, {
       base_dir <- getwd()
-      file_name <- paste("Patterns_results/CA_plots/ScreePlot_", Sys.Date(), ".png", sep="")
+      file_name <- paste("Patterns_results/CA_plots/ScreePlot_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
       full_path <- file.path(base_dir, file_name)
       ggsave(full_path, plot = scree_plot(), width = 8, height = 6, dpi = 300)
-      showNotification(paste("Plot saved to:", path), type = "message")
+      showNotification(paste("Plot saved to:", full_path), type = "message")
     }
   )
 
@@ -473,10 +465,10 @@ server <- function(input, output, session){
     # Download handler
     observeEvent(input$save_CA_plot, {
         base_dir <- getwd()
-        file_name <- paste("Patterns_results/CA_plots/CA_", Sys.Date(), ".png", sep="")
+        file_name <- paste("Patterns_results/CA_plots/CA_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
         full_path <- file.path(base_dir, file_name)
         ggsave(full_path, plot = CA__plot(), width = 12, height = 9, dpi = 300)
-        showNotification(paste("Plot saved to:", path), type = "message")
+        showNotification(paste("Plot saved to:", full_path), type = "message")
       }
     )
 
@@ -517,10 +509,10 @@ server <- function(input, output, session){
   # Download handler
   observeEvent(input$save_contrib_plot, {
       base_dir <- getwd()
-      file_name <- paste("Patterns_results/CA_plots/Contrib_", Sys.Date(), ".png", sep="")
+      file_name <- paste("Patterns_results/CA_plots/Contrib_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
       full_path <- file.path(base_dir, file_name)
       ggsave(full_path, plot = contrib_plot(), width = 8, height = 6, dpi = 300)
-      showNotification(paste("Plot saved to:", path), type = "message")
+      showNotification(paste("Plot saved to:", full_path), type = "message")
     }
   )
 
@@ -543,63 +535,51 @@ server <- function(input, output, session){
     ind_name <- if (isTRUE(input$ind_name)) "FALSE" else "TRUE"
     draw_tree <- if (isTRUE(input$bool_draw_tree)) "TRUE" else "FALSE"
 
-    hclust <- FactoMineR::HCPC(AFC,
+    tryCatch({
+      hclust <- FactoMineR::HCPC(AFC,
+        nb.clust = nb_clusters,
+        consol = input$bool_consol_tree,
+        graph = FALSE,
+        cluster.CA = input$cluster_row_or_col)
+
+      nb_clusters_after_HCPC <- length(unique(hclust$data.clust$clust))
+      palette(scales::hue_pal()(nb_clusters_after_HCPC))
+
+      plot.HCPC(hclust,
+        choice = type,
+        ind.names = ind_name,
+        draw.tree = draw_tree)
+    }, error = function(e) {
+      if (grepl("arguments must have same length", conditionMessage(e), fixed = TRUE))
+        cluster_error_msg("Clustering failed: the number of items is incompatible with the requested number of clusters. Try changing the number of clusters or the row/column setting.")
+      stop(e)
+    })
+  }, res = 96)
+
+  #Download handler
+  observeEvent(input$download_clusters, {
+    req(input$nb_clusters, input$cluster_row_or_col, !is.null(input$type_of_plot), !is.null(input$ind_name))
+    AFC <- req(res_ca())
+    nb_clusters <- ifelse(input$enable_num_clusters, input$nb_clusters, -1)
+    type <- input$type_of_plot
+    ind_name <- if (isTRUE(input$ind_name)) "FALSE" else "TRUE"
+    hclust <- HCPC(AFC,
       nb.clust = nb_clusters,
       consol = input$bool_consol_tree,
       graph = FALSE,
       cluster.CA = input$cluster_row_or_col)
 
-      #Retrieve number fo clusters (chosen by HCPC or user input) to set color palette
-      nb_clusters_after_HCPC <- length(unique(hclust$data.clust$clust))
-      # Set pal to match that of ggplot
-      palette(scales::hue_pal()(nb_clusters_after_HCPC))  
+    base_dir <- getwd()
+    full_dir <- file.path(base_dir, "Patterns_results/CA_plots")
+    if (!dir.exists(full_dir)) dir.create(full_dir, recursive = TRUE)
+    full_path <- file.path(full_dir, paste0("Clusters_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png"))
 
-    plot.HCPC(hclust,
-      choice = type,
-      ind.names = ind_name,
-      draw.tree = draw_tree)
-  }, res = 96)
+    png(full_path, width = 12, height = 9, units="in", res=300)
+    plot.HCPC(hclust, choice = type, ind.names = ind_name)
+    dev.off()
 
-  #Download handler
-  output$download_clusters <- downloadHandler(
-    filename = function() {
-      paste0("Clusters_", Sys.Date(), ".png")  # Name shown to the browser
-    },
-    content = function(file) {
-      req(input$nb_clusters, input$cluster_row_or_col, !is.null(input$type_of_plot), !is.null(input$ind_name))
-      AFC <- req(res_ca())
-      nb_clusters <- ifelse(input$enable_num_clusters, input$nb_clusters, -1)
-      type <- input$type_of_plot
-      ind_name <- if (isTRUE(input$ind_name)) "FALSE" else "TRUE"
-      hclust <- HCPC(AFC,
-        nb.clust = nb_clusters,
-        consol = input$bool_consol_tree,
-        graph = FALSE,
-        cluster.CA = input$cluster_row_or_col)
-      
-      # --- Define your permanent path using getwd() ---
-      base_dir <- getwd()
-      subfolder <- "Patterns_results/CA_plots"
-      full_dir <- file.path(base_dir, subfolder)
-      
-      # Create the folder if it doesn’t exist (safe)
-      if (!dir.exists(full_dir)) dir.create(full_dir, recursive = TRUE)
-      
-      # Build the full file path under getwd()
-      full_path <- file.path(full_dir, paste0("Clusters_", Sys.Date(), ".png"))
-      
-      # --- Save the HCPC plot to your permanent folder ---
-      png(full_path, width = 12, height = 9, units="in", res=300)
-      plot.HCPC(hclust, choice = type, ind.names = ind_name)
-      dev.off()
-      
-      # Also copy it to Shiny’s temp file for download
-      file.copy(full_path, file, overwrite = TRUE)
-      
-      # Optional: Show a notification inside the app
-      showNotification(paste("Plot saved to:", full_path), type = "message")
-      }
-    )
+    showNotification(paste("Plot saved to:", full_path), type = "message")
+  })
 
   # Disable cluster numbering and activate on checkbox
   disable("nb_clusters")
@@ -627,6 +607,8 @@ server <- function(input, output, session){
 
   plot_CA_clusters <- reactive({
     req(input$parang_paraORdist, input$nb_clusters, input$cluster_row_or_col)
+    tryCatch({
+    cluster_error_msg(NULL)
     data_type <- input$cluster_row_or_col
       if (data_type == "columns") {
         data_type <- "col"
@@ -770,6 +752,11 @@ server <- function(input, output, session){
     }
     
     return(p)
+    }, error = function(e) {
+      if (grepl("arguments must have same length", conditionMessage(e), fixed = TRUE))
+        cluster_error_msg("Clustering failed: the number of items is incompatible with the requested number of clusters. Try changing the number of clusters or the row/column setting.")
+      stop(e)
+    })
   })
 
     # Display it
@@ -781,10 +768,10 @@ server <- function(input, output, session){
     # Download handler
     observeEvent(input$save_cluster_v_test_post, {
         base_dir <- getwd()
-        file_name <- paste("Patterns_results/CA_plots/Cluster_by_points", Sys.Date(), ".png", sep="")
+        file_name <- paste("Patterns_results/CA_plots/Cluster_by_points", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
         full_path <- file.path(base_dir, file_name)
         ggsave(full_path, plot = plot_CA_clusters(), width = 12, height = 9, dpi = 300)
-        showNotification(paste("Plot saved to:", path), type = "message")
+        showNotification(paste("Plot saved to:", full_path), type = "message")
       }
     )
 
@@ -800,37 +787,83 @@ server <- function(input, output, session){
     }
   })
 
+# ------------- Cascading dropdown updates -------------
+
+  observeEvent(input$dataset_select_metadata, {
+    cands <- get_candidates(meta=input$dataset_select_metadata)
+    reps <- extract_reps(cands)
+    updateSelectInput(session, "dataset_select_representation", choices=reps, selected=reps[1])
+  }, ignoreInit=TRUE)
+
+  observeEvent(input$dataset_select_representation, {
+    meta <- input$dataset_select_metadata
+    rep  <- input$dataset_select_representation
+    cands <- get_candidates(meta=meta, rep=rep)
+    early_opts <- extract_early(cands)
+    updateSelectInput(session, "dataset_select_early",
+      choices = c("No (all tokens)", early_opts),
+      selected = "No (all tokens)"
+    )
+    if (grepl("motif", rep, ignore.case=TRUE)) {
+      cands_ne <- get_candidates(meta=meta, rep=rep, early="No (all tokens)")
+      vals <- extract_minsup(cands_ne)
+      updateSelectInput(session, "dataset_select_minsup", choices=vals, selected=vals[1])
+    }
+  }, ignoreInit=TRUE)
+
+  observeEvent(input$dataset_select_early, {
+    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early)
+    vals <- extract_minsup(cands)
+    updateSelectInput(session, "dataset_select_minsup", choices=vals, selected=vals[1])
+  }, ignoreInit=TRUE)
+
+  observeEvent(input$dataset_select_minsup, {
+    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early, minsup=input$dataset_select_minsup)
+    vals <- extract_gapmin(cands)
+    updateSelectInput(session, "dataset_select_gapmin", choices=vals, selected=vals[1])
+  }, ignoreInit=TRUE)
+
+  observeEvent(input$dataset_select_gapmin, {
+    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin)
+    vals <- extract_gapmax(cands)
+    updateSelectInput(session, "dataset_select_gapmax", choices=vals, selected=vals[1])
+  }, ignoreInit=TRUE)
+
+  observeEvent(input$dataset_select_gapmax, {
+    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin, gapmax=input$dataset_select_gapmax)
+    vals <- extract_itemsetmin(cands)
+    updateSelectInput(session, "dataset_select_itemsetmin", choices=vals, selected=vals[1])
+  }, ignoreInit=TRUE)
+
 df_select_concatenated <- reactive({
   metadata_select <- req(input$dataset_select_metadata)
   representation_select <- req(input$dataset_select_representation)
-  dataset_select_early <- req(input$dataset_select_early)
 
-  if (input$dataset_select_representation == "internal-clustering-motifs") {
-    minsup_select <- as.character(input$dataset_select_minsup)
-    gapmin_select <- as.character(input$dataset_select_gapmin)
-    gapmax_select <- as.character(input$dataset_select_gapmax)
-    itemsetmin_select <- as.character(input$dataset_select_itemsetmin)
-    df <- paste(metadata_select,
-      representation_select,
-      minsup_select,
-      gapmin_select,
-      gapmax_select,
-      itemsetmin_select,
-      sep = "_")
-    } else {
-      df <- paste(metadata_select, representation_select, sep = "_")
-    }
+  if (grepl("motif", representation_select, ignore.case = TRUE)) {
+    minsup_select        <- as.character(req(input$dataset_select_minsup))
+    gapmin_select        <- as.character(req(input$dataset_select_gapmin))
+    gapmax_select        <- as.character(req(input$dataset_select_gapmax))
+    itemsetmin_select    <- as.character(req(input$dataset_select_itemsetmin))
+    early_select         <- input$dataset_select_early
 
-if (!is.null(input$dataset_select_early) &&
-    input$dataset_select_early != "No (all tokens)") {
+    suffix <- paste(minsup_select, gapmin_select, gapmax_select, itemsetmin_select, sep = "_")
 
-  df <- paste0(input$dataset_select_early, "_", df)
+    candidates <- names(datasets)
+    candidates <- candidates[startsWith(candidates, paste0(metadata_select, "_"))]
+    candidates <- candidates[grepl("motif", candidates, ignore.case = TRUE)]
+    candidates <- candidates[endsWith(candidates, suffix)]
 
-}
+    if (!is.null(early_select) && early_select != "No (all tokens)")
+      candidates <- candidates[grepl(paste0("earlySelectionTrue", early_select), candidates, fixed = TRUE)]
 
-  # df <- gsub("internal-clustering-motifs", 
-  #   "internal_clustering_motifs", 
-  #   df, fixed = TRUE)
+    df <- candidates[1]
+  } else {
+    df <- paste(metadata_select, representation_select, sep = "_")
+  }
 
   df
 })
@@ -872,6 +905,17 @@ ui <- page_navbar(
         width: auto !important;
         min-width: 400px;
         max-width: 800px;
+      }
+
+      /* Notifications wide enough for full file paths */
+      #shiny-notification-panel {
+        max-width: calc(100vw - 20px);
+        right: 10px;
+        width: 600px;
+      }
+      .shiny-notification {
+        width: 100%;
+        word-break: break-all;
       }
     "))
   ),
@@ -922,6 +966,18 @@ ui <- page_navbar(
                 choices = metadata_name,            # populate dropdown with keys
                 selected = metadata_name[1]
               ),
+              selectInput(
+                inputId = "dataset_select_representation",
+                label = tooltip(
+                    trigger = list(
+                      "Level of representation",
+                      bs_icon("info-circle")
+                    ),
+                    "Select the level of representation used to define linguistic units."
+                  ),
+                choices = pattern_representation,            # populate dropdown with keys
+                selected = pattern_representation[1]
+              ),
               conditionalPanel(
                 condition = "output.has_specifs_df == 'TRUE'",
                 selectInput(
@@ -945,19 +1001,7 @@ ui <- page_navbar(
                   selectize = TRUE
                 ),
               ),
-              selectInput(
-                inputId = "dataset_select_representation",
-                label = tooltip(
-                    trigger = list(
-                      "Level of representation",
-                      bs_icon("info-circle")
-                    ),
-                    "Select the level of representation used to define linguistic units."
-                  ),
-                choices = pattern_representation,            # populate dropdown with keys
-                selected = pattern_representation[1]
-              ),
-              conditionalPanel(condition = "input.dataset_select_representation == 'motifs' || input.dataset_select_representation == 'internal-clustering-motifs'",
+              conditionalPanel(condition = "input.dataset_select_representation == 'motif' || input.dataset_select_representation == 'motifs' || input.dataset_select_representation == 'internal-clustering-motifs'",
                 selectInput(
                   inputId = "dataset_select_minsup",
                   label = tooltip(
@@ -1092,7 +1136,7 @@ ui <- page_navbar(
                 "contrib_choice",
                 "Select dimension:",
                 choices = c("row", "col"),
-                selected = "col"
+                selected = "row"
               ),
               numericInput(
                 "contrib_axes",
@@ -1133,7 +1177,7 @@ ui <- page_navbar(
                 "cluster_row_or_col",
                 "Select dimension:",
                 choices = c("rows", "columns"),
-                selected = "columns"
+                selected = "rows"
               ),
               hr()
           ),
@@ -1143,7 +1187,7 @@ ui <- page_navbar(
                 "type_of_plot",
                 "Type of graph",
                 choices = c("tree", "bar", "map", "3D.map"),
-                selected = "map"
+                selected = "tree"
               ),
               checkboxInput("bool_consol_tree",
               label = tooltip(
@@ -1171,11 +1215,11 @@ ui <- page_navbar(
                   value = TRUE
                 ),
               ),
-              downloadButton(
-                outputId = "download_clusters",
+              actionButton(
+                inputId = "download_clusters",
                 label = "Save plot",
-                icon = icon("download"), # FontAwesome icon before text, as in downloadButton
-                class = "btn btn-primary btn-block", # Optional: Bootstrap color styling
+                icon = icon("download"),
+                class = "btn-primary",
                 style = "width: 100%;"
               )
           ),
@@ -1231,13 +1275,17 @@ ui <- page_navbar(
         nav_panel(
           "Clustering",
           value = "clustering",
-          card(plotOutput("clusters_plot"))
+          card(
+            plotOutput("clusters_plot"),
+            textOutput("cluster_error_msg_hcpc")
+          )
         ),
         nav_panel(
           "Clusters representatives",
           value = "parang_panel",
           card(
             plotOutput("CA_clusters_plot"),
+            textOutput("cluster_error_msg_parang"),
             card_footer("Depending on data size, clusters' representatives computation may take some time.")
           )
         ),
@@ -1264,5 +1312,5 @@ ui <- page_navbar(
 #-------------------------------
 # At the bottom of Shiny_CA.R
 shiny::runApp(list(ui = ui, server = server),
-              launch.browser = TRUE)
+              launch.browser = TRUE, host = getOption("shiny.host", "127.0.0.1"))
 
