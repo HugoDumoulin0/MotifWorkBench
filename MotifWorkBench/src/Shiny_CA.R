@@ -1,20 +1,13 @@
-# Timothée Premat and Hugo Dumoulin vTim
-# 28/03/2025
+# Timothée Premat and Hugo Dumoulin
+# 24/05/2026
 
 #--------------------------------------------------------------
 # Python/R interface
 #--------------------------------------------------------------
 args <- commandArgs(trailingOnly = TRUE)
-# file = args[1]
 path = args[1]
 
-# input_file <- file
-# base_name <- basename(input_file)
-
-# head(input_file)
-
 dir.create("./Patterns_results/CA_plots", recursive = TRUE, showWarnings = FALSE)
-
 
 rep_name=path
 
@@ -76,26 +69,10 @@ user_input_value <- sub(".*user_input_listTrue([^_]+).*", "\\1", name_user_input
 print("User input value:")
 print(user_input_value)
 
-has_early_sel <- ifelse(any(grepl("earlySelectionTrue", names(datasets))), TRUE, FALSE)
-print("Has early selection:")
-print(has_early_sel)
-
-name_early_sel <- names(datasets)[grepl("earlySelectionTrue", names(datasets))]
-early_sel_num <- sub(".*earlySelectionTrue([0-9]+).*", "\\1", name_early_sel)
-print("Early selection num:")
-print(early_sel_num)
-
-early_pos4lemma <- sub(".*early_pos4lemma([^_]+).*", "\\1", name_early_sel)
-print("Early pos4lemma")
-print(early_pos4lemma)
 
 has_specifs <- ifelse(any(grepl("specifsTrue", names(datasets))), TRUE, FALSE)
 print("Has specifs:")
 print(has_specifs)
-
-specif_part <- sub(".*specifsTrue([^_][^motif]+).*", "\\1", name_early_sel)
-print("Specif part:")
-print(specif_part)
 
 name_motifs <- names(datasets)[grepl("motif", names(datasets), ignore.case = TRUE)]
 has_motifs <- name_motifs
@@ -125,7 +102,6 @@ pattern_representations <- unique(ifelse(
 ))
 
 
-early_list <- early_sel_num
 pattern_representation <- pattern_representations
 minsup_display <- minsup
 gapmin_display <- gapmin
@@ -136,7 +112,7 @@ itemsetmin_display <- itemsetmin
 # HELPERS FOR CASCADING DROPDOWNS
 #--------------------------------------------------------------
 
-get_candidates <- function(meta=NULL, rep=NULL, early=NULL, minsup=NULL, gapmin=NULL, gapmax=NULL) {
+get_candidates <- function(meta=NULL, rep=NULL, minsup=NULL, gapmin=NULL, gapmax=NULL) {
   cands <- names(datasets)
   if (!is.null(meta))
     cands <- cands[startsWith(cands, paste0(meta, "_"))]
@@ -146,8 +122,6 @@ get_candidates <- function(meta=NULL, rep=NULL, early=NULL, minsup=NULL, gapmin=
     else
       cands <- cands[endsWith(cands, paste0("_", rep))]
   }
-  if (!is.null(early) && early != "No (all tokens)")
-    cands <- cands[grepl(paste0("earlySelectionTrue", early), cands, fixed=TRUE)]
   if (!is.null(minsup))
     cands <- cands[grepl(paste0("_", minsup, "_[^_]+_[^_]+_[^_]+$"), cands, perl=TRUE)]
   if (!is.null(gapmin))
@@ -158,7 +132,6 @@ get_candidates <- function(meta=NULL, rep=NULL, early=NULL, minsup=NULL, gapmin=
 }
 
 extract_reps      <- function(cands) unique(ifelse(grepl("motif", cands, ignore.case=TRUE), "motif", sub(".*_([^_]+)$", "\\1", cands)))
-extract_early     <- function(cands) unique(sub(".*earlySelectionTrue([0-9]+).*", "\\1", cands[grepl("earlySelectionTrue", cands)]))
 extract_minsup    <- function(cands) unique(sub(".*_([^_]+)_[^_]+_[^_]+_[^_]+$", "\\1", cands))
 extract_gapmin    <- function(cands) unique(sub(".*_[^_]+_([^_]+)_[^_]+_[^_]+$", "\\1", cands))
 extract_gapmax    <- function(cands) unique(sub(".*_[^_]+_[^_]+_([^_]+)_[^_]+$", "\\1", cands))
@@ -169,14 +142,7 @@ extract_itemsetmin <- function(cands) unique(sub(".*_[^_]+_[^_]+_[^_]+_([^_]+)$"
 #--------------------------------------------------------------
 server <- function(input, output, session){
 
-  # Show specificity filter only when the current metadata+representation has early options
-  output$has_specifs_df <- renderText({
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation)
-    as.character(length(extract_early(cands)) > 0)
-  })
-  outputOptions(output, "has_specifs_df", suspendWhenHidden = FALSE)
-
-  # Deal with input selection
+# Deal with input selection
   input_selection <- reactive({
     dataset_select <- req(input$dataset_select)           # selecting df all in one
     df_select_concatenated <- req(df_select_concatenated(), cancelOutput = FALSE)   # selecting df by separate categories
@@ -798,43 +764,29 @@ server <- function(input, output, session){
   observeEvent(input$dataset_select_representation, {
     meta <- input$dataset_select_metadata
     rep  <- input$dataset_select_representation
-    cands <- get_candidates(meta=meta, rep=rep)
-    early_opts <- extract_early(cands)
-    updateSelectInput(session, "dataset_select_early",
-      choices = c("No (all tokens)", early_opts),
-      selected = "No (all tokens)"
-    )
     if (grepl("motif", rep, ignore.case=TRUE)) {
-      cands_ne <- get_candidates(meta=meta, rep=rep, early="No (all tokens)")
-      vals <- extract_minsup(cands_ne)
+      vals <- extract_minsup(get_candidates(meta=meta, rep=rep))
       updateSelectInput(session, "dataset_select_minsup", choices=vals, selected=vals[1])
     }
   }, ignoreInit=TRUE)
 
-  observeEvent(input$dataset_select_early, {
-    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early)
-    vals <- extract_minsup(cands)
-    updateSelectInput(session, "dataset_select_minsup", choices=vals, selected=vals[1])
-  }, ignoreInit=TRUE)
-
   observeEvent(input$dataset_select_minsup, {
     if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early, minsup=input$dataset_select_minsup)
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, minsup=input$dataset_select_minsup)
     vals <- extract_gapmin(cands)
     updateSelectInput(session, "dataset_select_gapmin", choices=vals, selected=vals[1])
   }, ignoreInit=TRUE)
 
   observeEvent(input$dataset_select_gapmin, {
     if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin)
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin)
     vals <- extract_gapmax(cands)
     updateSelectInput(session, "dataset_select_gapmax", choices=vals, selected=vals[1])
   }, ignoreInit=TRUE)
 
   observeEvent(input$dataset_select_gapmax, {
     if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, early=input$dataset_select_early, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin, gapmax=input$dataset_select_gapmax)
+    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin, gapmax=input$dataset_select_gapmax)
     vals <- extract_itemsetmin(cands)
     updateSelectInput(session, "dataset_select_itemsetmin", choices=vals, selected=vals[1])
   }, ignoreInit=TRUE)
@@ -848,7 +800,6 @@ df_select_concatenated <- reactive({
     gapmin_select        <- as.character(req(input$dataset_select_gapmin))
     gapmax_select        <- as.character(req(input$dataset_select_gapmax))
     itemsetmin_select    <- as.character(req(input$dataset_select_itemsetmin))
-    early_select         <- input$dataset_select_early
 
     suffix <- paste(minsup_select, gapmin_select, gapmax_select, itemsetmin_select, sep = "_")
 
@@ -856,9 +807,6 @@ df_select_concatenated <- reactive({
     candidates <- candidates[startsWith(candidates, paste0(metadata_select, "_"))]
     candidates <- candidates[grepl("motif", candidates, ignore.case = TRUE)]
     candidates <- candidates[endsWith(candidates, suffix)]
-
-    if (!is.null(early_select) && early_select != "No (all tokens)")
-      candidates <- candidates[grepl(paste0("earlySelectionTrue", early_select), candidates, fixed = TRUE)]
 
     df <- candidates[1]
   } else {
@@ -977,29 +925,6 @@ ui <- page_navbar(
                   ),
                 choices = pattern_representation,            # populate dropdown with keys
                 selected = pattern_representation[1]
-              ),
-              conditionalPanel(
-                condition = "output.has_specifs_df == 'TRUE'",
-                selectInput(
-                  inputId = "dataset_select_early",
-                  label = tooltip(
-                      trigger = list(
-                        "Specificity filter",
-                        bs_icon("info-circle")
-                      ),
-                      HTML("Depending on your settings, MWB produced datasets by:
-                        <div style='text-align: left;'>
-                          <ul>
-                            <li>only mining specific tokens, or</li>
-                            <li>mining all tokens.</li>
-                          </ul>
-                        </div>
-                        Argument 'No (all tokens)' refers to the second choice.")
-                    ),
-                  choices = c("No (all tokens)", early_list),            # populate dropdown with keys
-                  selected = "No (all tokens)",
-                  selectize = TRUE
-                ),
               ),
               conditionalPanel(condition = "input.dataset_select_representation == 'motif' || input.dataset_select_representation == 'motifs' || input.dataset_select_representation == 'internal-clustering-motifs'",
                 selectInput(
