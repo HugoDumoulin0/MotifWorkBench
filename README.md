@@ -16,6 +16,8 @@ python src/main.py
 
 The script will process all `.txt` files located into ```Data/textes_raw```. The textometric part of MWB needs a `metadata.tsv` file relating to its corpus texts (see textometric settings below).
 
+Here, MotifWorkBench is distributed with the nltk version of the Brown corpus (Kučera & Francis 1964)
+
 ## How to cite?
 If you like (or really hate) this work, please use the following citation:
 > Dumoulin, Hugo and Premat, Timothée (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026. Scripts at: [https://github.com/HugoDumoulin0/MotifWorkBench](https://github.com/HugoDumoulin0/MotifWorkBench)
