@@ -31,12 +31,12 @@ internal_clustering=True
 # Patterns params
 #-------------------
 #Set param for minimal number of itemsets in a pattern
-list_itemset_min = [3] 
+list_itemset_min = [3,5] 
 list_gap_min = [0]
 list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25]
+list_minsup_percent = [25,10,5]
 
 threads=30
 
