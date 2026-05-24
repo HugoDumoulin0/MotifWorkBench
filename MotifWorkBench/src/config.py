@@ -13,7 +13,7 @@ earlySelection=False
 seuil_early_selection=200
 
 filter_specifs=False
-partition_cible = "test"
+partition_cible = "genre"
 seuil_banalité=2
 #early_pos4lemma=".*"  #toutes les pos possibles
 early_pos4lemma = "ADJ|NOUN|VERB" #restriction aux mots lexicaux
@@ -55,8 +55,8 @@ Feats=False
 #-------------------
 path_metadata = "./Data/metadata.tsv"
 list_metadata = ["id"
-                 ,"test"
-# 		,"genre"
+                # ,"test"
+ 		,"genre"
                  #,"annee"
                  # ,"target"
                  ]
