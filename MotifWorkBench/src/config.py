@@ -36,7 +36,7 @@ list_gap_min = [0]
 list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25,10,5]
+list_minsup_percent = [25,10]
 
 threads=30
 
