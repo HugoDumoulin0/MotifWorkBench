@@ -54,3 +54,7 @@ __pycache__/
 .spyproject/config/backups/workspace.ini.bak
 .spyproject/config/workspace.ini
 /.spyproject
+/MotifWorkBench/Clustering_results
+/MotifWorkBench/Patterns_results
+MotifWorkBench/BideSpanTree/bin/Load.ini
+MotifWorkBench/temp_input.json
