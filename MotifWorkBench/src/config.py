@@ -9,14 +9,15 @@ language="fr"
 # Early selection mode
 #-------------------
 
-earlySelection=False
+earlySelection=True
 seuil_early_selection=200
+
+#early_pos4lemma=".*"  #toutes les pos possibles
+early_pos4lemma = "NOUN|VERB|ADJ" #restriction aux mots lexicaux
 
 filter_specifs=False
 partition_cible = "genre"
 seuil_banalité=2
-#early_pos4lemma=".*"  #toutes les pos possibles
-early_pos4lemma = "ADJ|NOUN|VERB" #restriction aux mots lexicaux
 
 user_input_list=False
 liste_earlyselection_lemma = ["président", "comité", "formation"]
@@ -36,7 +37,7 @@ list_gap_min = [0]
 list_gap_max = [0]
 
 #Set minimal frequency/ies for a pattern to be reccurrenxt
-list_minsup_percent = [25,10]
+list_minsup_percent = [1,0.5]
 
 threads=30
 
