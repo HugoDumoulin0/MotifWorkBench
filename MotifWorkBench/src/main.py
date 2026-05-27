@@ -309,6 +309,8 @@ if __name__ == "__main__":
                 for gap_min in list_gap_min:
                     for gap_max in list_gap_max:
                         for minsup_percent in list_minsup_percent:
+                            args=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}early_pos4lemma{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_itemsetmin{nb_itemset_min}_minsup_percent{minsup_percent}_gapmin{gap_min}_gapmax{gap_max}"
+                            args = args.replace("|","-")
                             if not os.path.exists(f"./Clustering_results/Clusters/{args}_clustering_3.pk"):
                                 execute_internal_clustering.main(nbr_pool, args)
                             else:
@@ -373,6 +375,8 @@ if __name__ == "__main__":
                                 if not os.path.exists(path):
                                     os.mkdir(path)
                             for minsup_percent in list_minsup_percent:
+                                args=f"user_input_list{user_input_list}{nom}_earlySelection{earlySelection}{seuil_early_selection}early_pos4lemma{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_itemsetmin{nb_itemset_min}_minsup_percent{minsup_percent}_gapmin{gap_min}_gapmax{gap_max}"
+                                args = args.replace("|","-")
                                 print(f"Minsup: {minsup_percent}")
                                 path_out = f"{path_R}minsup{str(minsup_percent)}/"
                                 if os.path.exists(path_out):
