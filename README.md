@@ -23,6 +23,8 @@ If you like (or really hate) this work, please use the following citation:
 > Dumoulin, Hugo and Premat, Timothée (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026. Scripts at: [https://github.com/HugoDumoulin0/MotifWorkBench](https://github.com/HugoDumoulin0/MotifWorkBench)
 
 ## Requirements
+This version works on Mac OS. A Windows and Linux implementation is coming.
+
 MWB needs Python, R, Perl, CWB and bash. On Mac OS, Docker is needed to run the Linux binaries of BideSpanTree motif extractor (see ```execute_closed_pattern.sh```).
 - Python requirements are listed in ```src/requirements.txt```
 - R packages are automatically downloaded if not installed, and loaded
@@ -79,7 +81,7 @@ The above parameters takes one or several numerical values.
  - `Pos` _idem_
  - `Dep` _idem_
  - `Feats` _idem_
- - `ìnternal_clustering`: if `TRUE`, MWB peforms a clustering of motifs before sending them to the textometrical analysis (makes CA computation way faster)
+ - `ìnternal_clustering`: if `TRUE`, MWB peforms a clustering of motifs before sending them to the textometrical analysis (makes CA computation way faster). Nota bene : when internal_clustering is enabled, the motifs displayed by CA and other statistical tools are the centroids of a cluster of similar motifs, not the exact motifs contained in the data.
 
 ### Textometric settings
 - `early_specifs`: if `TRUE`, MWB performs a prefiltering of motifs based on specific vocabulary (Lafon 1980). In this case, only motifs comprising at least one specific token will be mined. Early specificity filtering requires the following arguments:
