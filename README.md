@@ -92,14 +92,15 @@ The above parameters takes one or several numerical values.
 Finally, the textometric and visualisation approach rely on a metadata file: `metadata.tsv`. Its address can be changed by changing the value of `path_metadata == "./Data/metadata.tsv"`. The columns to use for spliting the data in contrastive subcorpora is `list_metadata`. Classically, the metadata file have a first column `id` containing the name of each texts, and additional columns containing various qualification of the texts. If your texts does not match the file `metadata.tsv` and/or the values passed to `list_metadata`, the textometric approach will not work.
 
 ## References
-- Béchet, N., Cellier, P., Charnois, T. & Crémilleux, B. (2015). Sequence mining under multiple constraints. In: Proceedings of the 30th Annual ACM Symposium on Applied Computing, 908-914. 
-- Béchet, N., Cellier, P., Charnois, Th., Crémilleux, B. & Quiniou, S. (2013). « SDMC : un outil en ligne d'extraction de motifs séquentiels pour la fouille de textes ». Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC'13), Jan 2013, Toulouse, France.
-- Dumoulin, Hugo and Premat, Timothée (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026.
-- Evert, Stefan and Hardie, Andrew (2011). Twenty-first century Corpus Workbench: Updating a query architecture for the new millennium. In Proceedings of the Corpus Linguistics 2011 conference, University of Birmingham, UK. 
-- Kassambara Alboukadel, Mundt Fabian, «Factoextra – Extract and Visualize the Results of Multivariate Data Analyses», R package documentation, 2020.
-- Lê Sébastien, Josse Julie, Husson François, "FactoMineR: an R package for multivariate analysis", Journal of statistical software 25, 2008, p.1-18.
-- Lebart, L., & Salem, A. (1988). Analyse statistique des données textuelles. Dunod.
-- Longrée, D. & Vanni, L. « Identification des motifs textuels. Entre statistique et deep learning », Corpus [En ligne], 27 | 2025, mis en ligne le 13 mai 2025, consulté le 16 mai 2025. URL : http://journals.openedition.org/corpus/10326 ; DOI : https://doi.org/10.4000/13woj 
-- Mekki, J. (2022). Caractérisation de registres de langue par extraction de motifs séquentiels émergents. Thèse de doctorat, Université de Rennes. 
-- Mellet, S. et Longrée, D. (2012). Légitimité d'une unité textométrique : le motif. In A. Dister, D. Longrée, G. Purnelle (éds.), Actes des Journée d'analyse des données textuelles 2012, 715-728. 
+- Béchet, N., Cellier, P., Charnois, T. and Crémilleux, B. (2015). Sequence mining under multiple constraints. In: Proceedings of the 30th Annual ACM Symposium on Applied Computing, 908-914. 
+- Béchet, N., Cellier, P., Charnois, Th., Crémilleux, B. and Quiniou, S. (2013). SDMC : un outil en ligne d'extraction de motifs séquentiels pour la fouille de textes. Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC'13), Jan 2013, Toulouse, France.
+- Dumoulin, H. and Premat, T. (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026.
+- Evert, S. and Hardie, A. (2011). Twenty-first century Corpus Workbench: Updating a query architecture for the new millennium. In Proceedings of the Corpus Linguistics 2011 conference, University of Birmingham, UK. 
+- Kassambara A., Mundt, F., Factoextra – Extract and Visualize the Results of Multivariate Data Analyses, R package documentation, 2020.
+- Lê, S., Josse, J., Husson, F., FactoMineR: an R package for multivariate analysis", Journal of statistical software 25, 2008, p.1-18.
+- Lebart, L., and Salem, A. (1988). Analyse statistique des données textuelles. Dunod.
+- Longrée, D. and Vanni, L. Identification des motifs textuels. Entre statistique et deep learning, Corpus [En ligne], 27 | 2025. URL : http://journals.openedition.org/corpus/10326 ; DOI : https://doi.org/10.4000/13woj 
+- Mekki, J. (2022). Caractérisation de registres de langue par extraction de motifs séquentiels émergents. PhD thesis, Université de Rennes. 
+- Mellet, S. and Longrée, D. (2012). Légitimité d'une unité textométrique : le motif. In A. Dister, D. Longrée, G. Purnelle (éds.), Actes des Journée d'analyse des données textuelles 2012, 715-728.
+- Qi P., Zhang Yuhao, Zhang Yuhui, Bolton J. and Manning Ch. D. (2020). Stanza: A Python Natural Language Processing Toolkit for Many Human Languages. In Association for Computational Linguistics (ACL) System Demonstrations.
 
