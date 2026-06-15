@@ -1,0 +1,2631 @@
+1	In	In	X	X	_	9	obl:mod	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	same	same	X	X	_	1	flat:foreign	_	_
+4	period	period	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+5	,	,	PUNCT	PUNCT	_	9	punct	_	_
+6	431	431	NUM	NUM	NumType=Card	7	nummod	_	_
+7	presentations	presentation	NOUN	NOUN	Gender=Fem|Number=Plur	9	dep	_	_
+8	by	by	X	X	_	9	dep	_	_
+9	members	members	X	X	_	0	ROOT	_	_
+10	of	of	X	X	_	12	dep	_	_
+11	the	the	X	X	_	10	fixed	_	_
+12	staff	staff	NOUN	NOUN	Gender=Masc|Number=Sing	9	nmod	_	_
+13	were	were	X	X	_	12	dep	_	_
+14	made	made	X	X	_	12	dep	_	_
+15	to	to	X	X	_	9	punct	_	_
+16	local	local	ADJ	ADJ	Gender=Masc|Number=Sing	9	nmod	_	_
+17	,	,	PUNCT	PUNCT	_	16	punct	_	_
+18	national	national	ADJ	ADJ	Gender=Masc|Number=Sing	16	amod	_	_
+19	,	,	PUNCT	PUNCT	_	16	punct	_	_
+20	and	and	X	X	_	16	appos	_	_
+21	international	international	ADJ	ADJ	Gender=Masc|Number=Sing	20	flat:foreign	_	_
+22	medical	medical	X	X	_	20	flat:foreign	_	_
+23	groups	group	X	X	_	20	flat:foreign	_	_
+24	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	3	3	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Education	education	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	A	a	NOUN	NOUN	_	1	nmod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	10	nsubj	_	_
+2	education	education	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	function	function	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+4	of	of	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	Institute	Institute	X	X	_	1	flat:foreign	_	_
+7	is	is	X	X	_	1	dep	_	_
+8	carried	carried	X	X	_	1	flat:foreign	_	_
+9	on	on	PRON	PRON	Number=Sing|Person=3	10	nsubj	_	_
+10	by	by	X	X	_	11	dep	_	_
+11	the	the	X	X	_	12	dep	_	_
+12	staff	staff	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+13	in	in	X	X	_	12	dep	_	_
+14	the	the	X	X	_	12	dep	_	_
+15	departments	departments	X	X	_	12	nmod	_	_
+16	of	of	X	X	_	17	case	_	_
+17	pathology	pathology	NOUN	NOUN	Gender=Fem|Number=Sing	12	nmod	_	_
+18	and	and	X	X	_	17	amod	_	_
+19	its	its	X	X	_	20	det	_	_
+20	consultants	consultant	NOUN	NOUN	Gender=Masc|Number=Plur	12	nmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	During	During	X	X	_	2	advmod	_	_
+2	fiscal	fiscal	ADJ	ADJ	Gender=Masc	9	advcl	_	_
+3	year	year	NOUN	NOUN	_	2	obj	_	_
+4	1959	1959	NUM	NUM	NumType=Card	3	nummod	_	_
+5	,	,	PUNCT	PUNCT	_	9	punct	_	_
+6	six	six	NUM	NUM	NumType=Card	7	nummod	_	_
+7	courses	course	NOUN	NOUN	Gender=Fem|Number=Plur	9	nsubj	_	_
+8	were	wer	ADJ	ADJ	Number=Plur	7	amod	_	_
+9	conducted	conducted	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+10	:	:	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Forensic	Forensic	X	X	_	0	ROOT	_	_
+
+1	Pathology	Pathology	X	X	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Application	application	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	1	amod	_	_
+3	Histochemistry	Histochemistry	X	X	_	1	dep	_	_
+4	to	to	X	X	_	1	amod	_	_
+
+1	Pathology	Pathology	X	X	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	Pathology	Pathology	X	X	_	1	dep	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	Diseases	disease	NOUN	NOUN	Gender=Fem|Number=Plur	3	dep	_	_
+6	of	of	X	X	_	7	case	_	_
+7	Laboratory	Laboratory	X	X	_	3	dep	_	_
+8	Animals	Animals	PROPN	PROPN	_	7	flat:name	_	_
+9	,	,	PUNCT	PUNCT	_	10	punct	_	_
+10	Ophthalmic	Ophthalmic	PROPN	PROPN	_	3	conj	_	_
+11	Pathology	Pathology	X	X	_	3	flat:foreign	_	_
+12	,	,	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Pathology	Pathology	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	Oral	oral	NOUN	NOUN	_	1	flat:foreign	_	_
+5	Regions	region	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	and	and	X	X	_	1	dep	_	_
+8	a	avoir	X	X	_	7	fixed	_	_
+9	Cardiovasculatory	Cardiovasculatory	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+10	Pathology	Pathology	X	X	_	1	flat:foreign	_	_
+11	Seminar	Seminar	X	X	_	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	dep	_	_
+
+1	During	During	X	X	_	2	advmod	_	_
+2	fiscal	fiscal	ADJ	ADJ	Gender=Masc|Number=Sing	7	amod	_	_
+3	year	year	NOUN	NOUN	_	2	obj	_	_
+4	1960	1960	NUM	NUM	NumType=Card	3	nummod	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	_
+6	seven	seven	NOUN	NOUN	Gender=Masc|Number=Sing	7	amod	_	_
+7	courses	course	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+8	were	wer	ADJ	ADJ	Number=Plur	7	amod	_	_
+
+1	conducted	conducted	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Application	application	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	1	amod	_	_
+3	Histochemistry	Histochemistry	X	X	_	1	dep	_	_
+4	to	to	X	X	_	1	amod	_	_
+5	Pathology	Pathology	X	X	_	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	Forensic	forensic	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	Pathology	Pathology	X	X	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Pathology	Pathology	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	3	dep	_	_
+3	Diseases	disease	NOUN	NOUN	Gender=Fem|Number=Plur	1	dep	_	_
+4	of	of	X	X	_	5	case	_	_
+5	Laboratory	Laboratory	X	X	_	1	dep	_	_
+6	Animals	Animals	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	Pathology	Pathology	X	X	_	1	dep	_	_
+9	of	of	X	X	_	8	flat:foreign	_	_
+10	the	the	X	X	_	8	dep	_	_
+11	Oral	oral	NOUN	NOUN	_	8	flat:foreign	_	_
+12	Regions	region	NOUN	NOUN	Gender=Fem|Number=Plur	8	flat:foreign	_	_
+13	,	,	PUNCT	PUNCT	_	14	punct	_	_
+14	Ophthalmic	Ophthalmic	PROPN	PROPN	_	1	conj	_	_
+15	Pathology	Pathology	X	X	_	1	flat:foreign	_	_
+16	,	,	PUNCT	PUNCT	_	1	punct	_	_
+17	Forensic	forensic	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+18	Sciences	Sciences	X	X	_	1	flat:foreign	_	_
+19	Symposium	symposium	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+20	,	,	PUNCT	PUNCT	_	1	punct	_	_
+21	and	and	X	X	_	1	dep	_	_
+22	Orthopedic	Orthopedic	PROPN	PROPN	_	21	flat:foreign	_	_
+23	Pathology	Pathology	PROPN	PROPN	_	21	flat:foreign	_	_
+24	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	From	from	NOUN	NOUN	_	13	obl:mod	_	_
+2	1	1	NUM	NUM	NumType=Card	3	nummod	_	_
+3	July	july	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	1960	1960	NUM	NUM	NumType=Card	3	nummod	_	_
+5	through	through	X	X	_	1	obl:mod	_	_
+6	31	31	NUM	NUM	NumType=Card	5	nummod	_	_
+7	January	january	NOUN	NOUN	_	5	nmod	_	_
+8	1961	1961	NUM	NUM	NumType=Card	7	nummod	_	_
+9	,	,	PUNCT	PUNCT	_	13	punct	_	_
+10	six	six	NUM	NUM	NumType=Card	11	nummod	_	_
+11	courses	course	NOUN	NOUN	Gender=Fem|Number=Plur	13	nsubj	_	_
+12	were	wer	ADJ	ADJ	Number=Plur	11	amod	_	_
+13	conducted	conducted	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+14	:	:	PUNCT	PUNCT	_	13	punct	_	_
+15	Workshop	Workshop	X	X	_	13	dep	_	_
+16	in	in	X	X	_	17	case	_	_
+17	Resident	Resident	PROPN	PROPN	_	15	nmod	_	_
+18	Training	Training	X	X	_	15	flat:foreign	_	_
+19	in	in	X	X	_	15	amod	_	_
+20	Pathology	Pathology	X	X	_	15	flat:foreign	_	_
+21	,	,	PUNCT	PUNCT	_	15	punct	_	_
+22	Pathology	Pathology	X	X	_	15	appos	_	_
+23	of	of	X	X	_	24	dep	_	_
+24	Diseases	disease	NOUN	NOUN	Gender=Fem|Number=Plur	22	dep	_	_
+25	of	of	X	X	_	26	case	_	_
+26	Laboratory	Laboratory	X	X	_	22	dep	_	_
+27	Animals	Animals	PROPN	PROPN	_	26	flat:name	_	_
+28	,	,	PUNCT	PUNCT	_	29	punct	_	_
+29	Application	application	NOUN	NOUN	Gender=Fem|Number=Sing	15	conj	_	_
+30	of	of	X	X	_	29	amod	_	_
+31	Histochemistry	histochemistry	NOUN	NOUN	Gender=Fem|Number=Plur	29	nmod	_	_
+32	of	of	X	X	_	33	case	_	_
+33	Pathology	pathology	NOUN	NOUN	Gender=Fem|Number=Sing	29	nmod	_	_
+34	,	,	PUNCT	PUNCT	_	15	punct	_	_
+35	Orthopedic	Orthopedic	PROPN	PROPN	_	15	appos	_	_
+36	Pathology	Pathology	PROPN	PROPN	_	15	flat:foreign	_	_
+37	,	,	PUNCT	PUNCT	_	13	punct	_	_
+38	Forensic	forensic	NOUN	NOUN	Gender=Fem|Number=Sing	13	dep	_	_
+39	Sciences	Sciences	X	X	_	38	amod	_	_
+
+1	Symposium	symposium	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	and	and	X	X	_	0	ROOT	_	_
+3	Forensic	Forensic	X	X	_	2	flat:foreign	_	_
+4	Pathology	Pathology	X	X	_	2	flat:foreign	_	_
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	B	b	NOUN	NOUN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	During	During	X	X	_	2	advmod	_	_
+2	fiscal	fiscal	ADJ	ADJ	Gender=Masc	8	amod	_	_
+3	years	year	NOUN	NOUN	_	2	obj	_	_
+4	1959	1959	NUM	NUM	NumType=Card	2	punct	_	_
+5	and	and	X	X	_	2	parataxis	_	_
+6	1960	1960	NUM	NUM	NumType=Card	5	nummod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	there	there	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	were	were	X	X	_	8	nmod	_	_
+10	139	139	NUM	NUM	NumType=Card	8	nmod	_	_
+
+1	military	military	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	civilian	civilian	X	X	_	2	dep	_	_
+4	students	student	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
+5	who	who	X	X	_	1	punct	_	_
+6	came	came	X	X	_	5	flat:name	_	_
+7	to	to	X	X	_	5	dep	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	Institute	Institute	X	X	_	1	flat:name	_	_
+10	for	for	X	X	_	11	case	_	_
+11	varying	varying	X	X	_	1	nmod	_	_
+
+1	periods	period	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	4	case	_	_
+3	special	special	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
+4	instruction	instruction	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	4	4	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Research	Research	X	X	_	6	nsubj	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	The	The	X	X	_	6	dep	_	_
+4	Institute	Institute	PROPN	PROPN	_	3	flat:foreign	_	_
+5	is	is	X	X	_	3	flat:foreign	_	_
+6	engaged	engaged	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+7	in	in	X	X	_	8	case	_	_
+8	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	6	obj	_	_
+9	extensive	extensif	ADJ	ADJ	Gender=Fem|Number=Sing	10	amod	_	_
+10	program	program	NOUN	NOUN	Gender=Masc|Number=Plur	6	obj	_	_
+11	of	of	X	X	_	12	dep	_	_
+12	medico-military	medico-military	PROPN	PROPN	_	6	dep	_	_
+13	scientific	scientific	X	X	_	6	obj	_	_
+14	research	research	X	X	_	13	nsubj	_	_
+15	in	in	X	X	_	16	case	_	_
+16	both	both	NOUN	NOUN	Gender=Masc|Number=Plur	6	obl:mod	_	_
+17	morphological	morphological	X	X	_	6	dep	_	_
+18	and	and	X	X	_	17	advmod	_	_
+19	experimental	experimental	X	X	_	17	amod	_	_
+20	pathology	pathology	X	X	_	17	xcomp	_	_
+21	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Among	Among	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	6	nmod	_	_
+3	specific	specific	X	X	_	2	flat:foreign	_	_
+4	areas	areas	X	X	_	6	nmod	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	concentration	concentration	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+7	in	in	X	X	_	8	case	_	_
+8	which	which	X	X	_	6	nmod	_	_
+9	the	the	X	X	_	6	dep	_	_
+10	staff	staff	NOUN	NOUN	Gender=Masc|Number=Sing	6	nmod	_	_
+11	is	is	X	X	_	10	dep	_	_
+12	engaged	engaged	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	acl	_	_
+13	,	,	PUNCT	PUNCT	_	12	punct	_	_
+14	are	are	X	X	_	18	case	_	_
+15	such	such	X	X	_	14	fixed	_	_
+16	projects	project	ADJ	ADJ	Gender=Masc|Number=Plur	15	flat:foreign	_	_
+17	as	as	X	X	_	18	aux:tense	_	_
+18	biological	biological	X	X	_	12	obl:mod	_	_
+19	and	and	X	X	_	18	advmod	_	_
+20	biochemical	biochemical	X	X	_	6	nmod	_	_
+21	studies	studies	X	X	_	1	flat:foreign	_	_
+22	of	of	X	X	_	1	flat:foreign	_	_
+23	the	the	X	X	_	1	dep	_	_
+24	effects	effects	X	X	_	1	flat:foreign	_	_
+25	of	of	X	X	_	26	case	_	_
+26	microwaves	microwave	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+27	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	study	study	X	X	_	4	amod	_	_
+2	of	of	X	X	_	4	dep	_	_
+3	motor	motor	X	X	_	2	fixed	_	_
+4	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	plates	plat	ADJ	ADJ	Gender=Fem|Number=Plur	4	amod	_	_
+6	in	in	X	X	_	4	advmod	_	_
+7	man	man	X	X	_	6	flat:foreign	_	_
+8	and	and	X	X	_	6	dep	_	_
+9	animals	animals	X	X	_	6	flat:foreign	_	_
+10	;	;	PUNCT	PUNCT	_	4	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	investigation	investigation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	respiratory	respiratory	ADJ	ADJ	Gender=Masc|Number=Plur	1	nmod	_	_
+4	diseases	diseases	X	X	_	6	cc	_	_
+5	of	of	X	X	_	6	case	_	_
+6	laboratory	laboratory	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	3	obl:mod	_	_
+7	animals	animals	X	X	_	6	amod	_	_
+8	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	metabolic	metabolic	PROPN	PROPN	_	0	ROOT	_	_
+2	responses	response	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+3	to	to	X	X	_	4	case	_	_
+4	reduced	reduced	X	X	_	1	nmod	_	_
+5	oxygen	oxygen	X	X	_	4	amod	_	_
+6	tension	tension	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:name	_	_
+7	;	;	PUNCT	PUNCT	_	1	punct	_	_
+8	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	neuropathology	neuropathology	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	nuclear	nuclear	X	X	_	1	dep	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	cosmic	cosmic	X	X	_	6	nsubj	_	_
+6	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+7	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	carcinoma	carcinoma	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	of	of	ADP	ADP	_	3	case	_	_
+3	prostate	prostat	ADJ	ADJ	Number=Sing	1	nmod	_	_
+4	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	evaluation	evaluation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	histochemical	histochemical	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	techniques	technique	ADJ	ADJ	Number=Plur	3	amod	_	_
+5	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+2	and	and	X	X	_	1	punct	_	_
+3	hip	hip	X	X	_	2	flat:foreign	_	_
+4	dysplasia	dysplasia	PROPN	PROPN	_	2	nsubj	_	_
+5	in	in	X	X	_	6	case	_	_
+6	dogs	dog	NOUN	NOUN	Gender=Masc|Number=Plur	2	obl:mod	_	_
+7	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	has	has	X	X	_	4	case	_	_
+3	been	been	X	X	_	2	dep	_	_
+4	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	increase	increase	X	X	_	1	dep	_	_
+6	in	in	X	X	_	1	flat:foreign	_	_
+7	cooperative	cooperativ	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
+8	research	research	X	X	_	1	flat:foreign	_	_
+9	with	with	X	X	_	8	dep	_	_
+10	other	other	X	X	_	8	dep	_	_
+11	Federal	Federal	X	X	_	8	dep	_	_
+12	agencies	agencies	X	X	_	8	flat:foreign	_	_
+13	and	and	X	X	_	8	dep	_	_
+14	civilian	civilian	X	X	_	8	dep	_	_
+15	institutions	institution	NOUN	NOUN	Gender=Fem|Number=Plur	8	nmod	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	During	During	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	5	dep	_	_
+2	period	period	X	X	_	1	flat:foreign	_	_
+3	from	from	X	X	_	1	flat:foreign	_	_
+4	1	1	NUM	NUM	NumType=Card	5	nummod	_	_
+5	July	july	NOUN	NOUN	_	53	dep	_	_
+6	1960	1960	NUM	NUM	NumType=Card	5	nummod	_	_
+7	through	through	X	X	_	5	nmod	_	_
+8	31	31	NUM	NUM	NumType=Card	7	nummod	_	_
+9	January	january	NOUN	NOUN	_	7	nmod	_	_
+10	1961	1961	NUM	NUM	NumType=Card	7	nummod	_	_
+11	,	,	PUNCT	PUNCT	_	53	punct	_	_
+12	additional	additional	ADJ	ADJ	Gender=Masc|Number=Sing	53	dep	_	_
+13	research	research	X	X	_	12	flat:foreign	_	_
+14	affiliations	affiliation	NOUN	NOUN	Gender=Fem|Number=Plur	13	flat:name	_	_
+15	were	were	X	X	_	13	flat:foreign	_	_
+16	effected	effected	X	X	_	13	flat:name	_	_
+17	with	with	X	X	_	13	flat:name	_	_
+18	the	the	X	X	_	12	flat:foreign	_	_
+19	U.	U.	X	X	_	12	flat:foreign	_	_
+20	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	12	appos	_	_
+21	Army	Army	X	X	_	12	flat:foreign	_	_
+22	Medical	Medical	X	X	_	12	flat:foreign	_	_
+23	Research	Research	X	X	_	12	flat:foreign	_	_
+24	and	and	X	X	_	12	dep	_	_
+25	Development	Development	X	X	_	12	flat:foreign	_	_
+26	Command	Command	X	X	_	12	flat:foreign	_	_
+27	to	to	X	X	_	12	dep	_	_
+28	conduct	conduct	X	X	_	12	dep	_	_
+29	research	research	X	X	_	12	flat:foreign	_	_
+30	in	in	X	X	_	12	dep	_	_
+31	procedures	procedure	NOUN	NOUN	Gender=Fem|Number=Plur	12	flat:foreign	_	_
+32	for	for	X	X	_	12	dep	_	_
+33	quantitative	quantitatif	ADJ	ADJ	Gender=Fem|Number=Sing	12	punct	_	_
+34	electron	electron	X	X	_	12	appos	_	_
+35	microscopy	microscopy	PROPN	PROPN	_	34	flat:name	_	_
+36	,	,	PUNCT	PUNCT	_	12	punct	_	_
+37	and	and	X	X	_	12	dep	_	_
+38	for	for	X	X	_	37	flat:foreign	_	_
+39	the	the	X	X	_	37	flat:foreign	_	_
+40	study	study	X	X	_	37	flat:foreign	_	_
+41	of	of	X	X	_	42	dep	_	_
+42	biophysical	biophysical	NOUN	NOUN	Gender=Fem|Number=Sing	37	dep	_	_
+43	and	and	X	X	_	37	flat:foreign	_	_
+44	biological	biological	X	X	_	37	flat:foreign	_	_
+45	studies	studies	X	X	_	37	flat:foreign	_	_
+46	of	of	X	X	_	37	flat:foreign	_	_
+47	the	the	X	X	_	37	dep	_	_
+48	structure	structure	NOUN	NOUN	Gender=Fem|Number=Sing	37	flat:foreign	_	_
+49	and	and	X	X	_	37	flat:foreign	_	_
+50	function	function	NOUN	NOUN	Gender=Fem|Number=Sing	37	flat:foreign	_	_
+51	of	of	X	X	_	37	amod	_	_
+52	ocular	ocular	ADJ	ADJ	Number=Sing	37	flat:foreign	_	_
+53	tissue	tissue	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+54	.	.	PUNCT	PUNCT	_	53	punct	_	_
+
+1	Also	Also	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	the	the	X	X	_	1	punct	_	_
+4	Defense	Defense	X	X	_	3	flat:foreign	_	_
+5	Atomic	Atomic	PROPN	PROPN	_	3	flat:foreign	_	_
+
+1	Support	Support	X	X	_	0	ROOT	_	_
+
+1	Agency	Agency	X	X	_	2	amod	_	_
+2	sponsored	sponsored	NOUN	NOUN	Gender=Masc|Number=Plur	3	dep	_	_
+3	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_
+4	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	3	advmod	_	SpaceAfter=No
+5	-	-	PROPN	PROPN	Number=Sing	3	punct	_	SpaceAfter=No
+6	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	advmod	_	_
+7	study	study	X	X	_	6	advmod	_	_
+8	at	at	X	X	_	9	case	_	_
+9	this	this	X	X	_	6	obl:mod	_	_
+10	Institute	Institute	PROPN	PROPN	_	9	flat:foreign	_	_
+11	on	on	PRON	PRON	Number=Sing|Person=3	12	nsubj	_	_
+12	the	the	X	X	_	13	dep	_	_
+13	response	response	X	X	_	0	ROOT	_	_
+14	of	of	X	X	_	16	case	_	_
+15	massive	massif	ADJ	ADJ	Gender=Fem|Number=Sing	16	amod	_	_
+16	suspension	suspension	NOUN	NOUN	Gender=Fem|Number=Sing	13	nmod	_	_
+17	cultures	culture	ADJ	ADJ	Number=Plur	16	amod	_	_
+18	of	of	X	X	_	16	amod	_	_
+19	mammalian	mammalian	X	X	_	18	dep	_	_
+20	cells	cells	X	X	_	13	dep	_	_
+21	to	to	X	X	_	13	dep	_	_
+22	acute	acute	NOUN	NOUN	Gender=Fem|Number=Sing	13	nmod	_	_
+23	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	13	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Other	Other	X	X	_	0	ROOT	_	_
+
+1	scientific	scientific	X	X	_	0	ROOT	_	_
+2	agencies	agencies	X	X	_	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	both	both	PROPN	PROPN	_	1	dep	_	_
+5	Federal	Federal	X	X	_	4	flat:foreign	_	_
+6	and	and	X	X	_	4	dep	_	_
+7	civilian	civilian	X	X	_	4	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	supported	supported	X	X	_	1	parataxis	_	_
+10	studies	studies	X	X	_	9	advmod	_	_
+11	in	in	X	X	_	9	advmod	_	_
+12	quantitative	quantitatif	ADJ	ADJ	Gender=Fem|Number=Sing	9	advmod	_	_
+13	electron	electron	X	X	_	9	nsubj	_	_
+14	microscopical	microscopical	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	parataxis	_	_
+15	approach	approach	X	X	_	14	dep	_	_
+16	to	to	X	X	_	14	dep	_	_
+17	microchemistry	microchemistry	X	X	_	14	dep	_	_
+18	and	and	X	X	_	14	dep	_	_
+19	microcytochemistry	microcytochemistry	X	X	_	14	amod	_	_
+20	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	investigation	investigation	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	of	of	X	X	_	5	case	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	relationship	relationship	X	X	_	1	flat:foreign	_	_
+6	of	of	X	X	_	7	case	_	_
+7	diphosphopyridine	diphosphopyridine	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl:mod	_	_
+8	nucleotide	nucleotid	ADJ	ADJ	Number=Sing	7	amod	_	_
+9	synthesizine	synthesizin	ADJ	ADJ	Number=Sing	7	acl	_	_
+10	enzyme	enzyme	PROPN	PROPN	_	7	nmod	_	_
+11	to	to	X	X	_	12	case	_	_
+12	tumor	tumor	X	X	_	7	conj	_	_
+13	growth	growth	PROPN	PROPN	_	12	amod	_	_
+14	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	morphological	morphological	X	X	_	0	ROOT	_	_
+2	study	study	X	X	_	1	amod	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	classification	classification	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	of	of	X	X	_	6	case	_	_
+6	leukemia	leukemia	PROPN	PROPN	_	4	nmod	_	_
+7	and	and	X	X	_	4	dep	_	_
+8	lymphoma	lymphoma	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+9	cases	case	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+10	in	in	X	X	_	1	dep	_	_
+11	animals	animals	X	X	_	1	dep	_	_
+12	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	2	punct	_	_
+2	and	and	X	X	_	0	ROOT	_	_
+3	the	the	X	X	_	2	flat:foreign	_	_
+4	study	study	X	X	_	3	flat:foreign	_	_
+5	of	of	X	X	_	7	nmod	_	_
+6	structural	structural	ADJ	ADJ	Gender=Masc|Number=Sing	5	fixed	_	_
+7	changes	change	X	X	_	3	dep	_	_
+8	in	in	X	X	_	9	case	_	_
+9	M.	m.	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:arg	_	_
+10	leprae	lepra	ADJ	ADJ	_	9	acl	_	_
+11	and	and	X	X	_	3	flat:foreign	_	_
+12	other	other	X	X	_	3	flat:foreign	_	_
+13	mycobacteria	mycobacterier	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Medical	Medical	X	X	_	0	ROOT	_	_
+
+1	Illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	1	1	NUM	NUM	NumType=Card	2	nummod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	4	nmod	_	_
+2	Medical	Medical	X	X	_	1	flat:foreign	_	_
+3	Illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+4	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	is	is	X	X	_	4	dep	_	_
+6	responsible	responsible	X	X	_	4	dep	_	_
+7	for	for	X	X	_	4	dep	_	_
+8	the	the	X	X	_	4	dep	_	_
+9	collection	collection	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+10	,	,	PUNCT	PUNCT	_	4	punct	_	_
+11	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+12	,	,	PUNCT	PUNCT	_	13	punct	_	_
+13	exhibition	exhibition	NOUN	NOUN	Gender=Fem|Number=Sing	4	conj	_	_
+14	,	,	PUNCT	PUNCT	_	4	punct	_	_
+15	and	and	X	X	_	4	dep	_	_
+16	file	file	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	flat:foreign	_	_
+17	of	of	X	X	_	18	case	_	_
+18	medical	medical	NOUN	NOUN	Gender=Masc|Number=Sing	16	obj	_	_
+19	illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	15	flat:foreign	_	_
+20	material	material	X	X	_	15	flat:foreign	_	_
+
+1	of	of	X	X	_	2	dep	_	_
+2	medico-military	medico-military	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	importance	importance	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	Armed	Armed	X	X	_	1	flat:foreign	_	_
+4	Forces	Forces	PROPN	PROPN	_	1	flat:foreign	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	addition	addition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	maintaining	maintaining	X	X	_	3	flat:foreign	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	punct	_	_
+6	permanent	permanent	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+7	central	central	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+8	file	file	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	of	of	X	X	_	10	case	_	_
+10	illustrations	illustration	NOUN	NOUN	Gender=Fem|Number=Plur	8	nmod	_	_
+11	of	of	X	X	_	12	dep	_	_
+12	diseases	disease	NOUN	NOUN	Gender=Fem|Number=Plur	1	dep	_	_
+13	,	,	PUNCT	PUNCT	_	14	punct	_	_
+14	wounds	wounds	PROPN	PROPN	_	1	dep	_	_
+15	,	,	PUNCT	PUNCT	_	1	punct	_	_
+16	and	and	X	X	_	1	flat:foreign	_	_
+17	injuries	injurie	NOUN	NOUN	Gender=Fem|Number=Plur	16	flat:foreign	_	_
+18	of	of	ADP	ADP	_	19	mark	_	_
+19	military	military	NOUN	NOUN	Gender=Fem|Number=Sing	17	obl:arg	_	_
+20	importance	importance	NOUN	NOUN	Gender=Fem|Number=Sing	19	amod	_	_
+
+1	,	,	PUNCT	PUNCT	_	0	ROOT	_	_
+2	it	it	X	X	_	1	dep	_	_
+3	provides	provide	NOUN	NOUN	Number=Plur	2	flat:foreign	_	_
+4	facilities	facilities	X	X	_	2	flat:foreign	_	_
+5	for	for	X	X	_	2	flat:foreign	_	_
+6	clinical	clinical	X	X	_	2	flat:foreign	_	_
+7	photography	photography	X	X	_	2	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	2	punct	_	_
+9	photomicrography	photomicrography	VERB	VERB	Mood=Ind|VerbForm=Fin	2	flat:foreign	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	and	and	X	X	_	9	dep	_	_
+3	medical	medical	X	X	_	2	flat:foreign	_	_
+4	arts	art	NOUN	NOUN	Gender=Masc|Number=Plur	3	amod	_	_
+5	,	,	PUNCT	PUNCT	_	9	punct	_	_
+6	and	and	X	X	_	9	dep	_	_
+7	operates	operates	X	X	_	6	flat:foreign	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	printing	printing	X	X	_	16	dep	_	_
+10	plant	pler	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	9	xcomp	_	_
+11	,	,	PUNCT	PUNCT	_	9	punct	_	_
+12	by	by	X	X	_	13	iobj	_	_
+13	permission	permission	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	obl:mod	_	_
+14	of	of	X	X	_	16	case	_	_
+15	Congressional	Congressional	X	X	_	16	amod	_	_
+16	Committee	Committee	PROPN	PROPN	_	0	ROOT	_	_
+17	,	,	PUNCT	PUNCT	_	16	punct	_	_
+18	for	for	X	X	_	19	case	_	_
+19	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	16	obl:mod	_	_
+20	of	of	X	X	_	21	case	_	_
+21	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	19	nmod	_	_
+22	`	`	ADP	ADP	_	19	nummod	_	SpaceAfter=No
+
+1	`	`	X	X	_	2	nummod	_	_
+2	Atlas	atlas	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	of	of	X	X	_	4	case	_	_
+4	Tumor	tumor	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+5	Pathology	Pathology	X	X	_	4	flat:foreign	_	_
+
+1	''	''	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	It	It	X	X	_	27	nsubj	_	_
+2	also	also	X	X	_	1	flat:foreign	_	_
+3	maintains	maintains	X	X	_	1	flat:foreign	_	_
+4	shops	shops	X	X	_	1	flat:foreign	_	_
+5	for	for	X	X	_	4	dep	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	design	design	X	X	_	1	flat:foreign	_	_
+8	and	and	X	X	_	1	dep	_	_
+9	fabrication	fabrication	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+10	of	of	X	X	_	11	case	_	_
+11	exhibits	exhibit	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+12	,	,	PUNCT	PUNCT	_	1	punct	_	_
+13	training	training	X	X	_	1	flat:foreign	_	_
+14	aids	aids	X	X	_	13	flat:foreign	_	_
+15	and	and	X	X	_	13	flat:foreign	_	_
+16	instruments	instrument	NOUN	NOUN	Gender=Masc|Number=Plur	13	flat:foreign	_	_
+17	and	and	X	X	_	13	flat:foreign	_	_
+18	libraries	libraries	X	X	_	13	flat:foreign	_	_
+19	for	for	X	X	_	13	dep	_	_
+20	the	the	X	X	_	13	flat:foreign	_	_
+21	loan	loan	X	X	_	13	flat:foreign	_	_
+22	of	of	X	X	_	23	case	_	_
+23	films	film	NOUN	NOUN	Gender=Masc|Number=Plur	13	nmod	_	_
+24	and	and	X	X	_	13	flat:foreign	_	_
+25	teaching	teaching	X	X	_	24	fixed	_	_
+26	lantern	lantern	X	X	_	13	nmod	_	_
+27	slide	slide	X	X	_	28	dep	_	_
+28	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+29	.	.	PUNCT	PUNCT	_	28	punct	_	_
+
+1	2	2	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	During	During	X	X	_	11	advmod	_	_
+2	this	this	X	X	_	1	flat:foreign	_	_
+3	period	period	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	11	punct	_	_
+5	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+6	total	total	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	fixed	_	_
+7	of	of	PRON	PRON	Person=3|Reflex=Yes	9	dep	_	_
+8	762	762	NUM	NUM	NumType=Card	9	nummod	_	_
+9	exhibits	exhibit	NOUN	NOUN	Gender=Masc|Number=Plur	5	obl:arg	_	_
+10	were	were	X	X	_	9	dep	_	_
+11	presented	presented	X	X	_	0	ROOT	_	_
+12	at	at	X	X	_	11	advmod	_	_
+13	442	442	NUM	NUM	NumType=Card	14	nummod	_	_
+14	medical	medical	NOUN	NOUN	Gender=Masc|Number=Plur	11	obj	_	_
+15	and	and	X	X	_	11	advmod	_	_
+16	scientific	scientific	X	X	_	11	obj	_	_
+17	meetings	meeting	X	X	_	16	flat:name	_	_
+18	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Of	Of	X	X	_	8	iobj	_	_
+2	these	these	X	X	_	1	flat:foreign	_	_
+3	exhibits	exhibits	X	X	_	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	154	154	NUM	NUM	NumType=Card	6	nummod	_	_
+6	were	were	NOUN	NOUN	Number=Plur	2	appos	_	_
+7	newly	newly	X	X	_	2	flat:foreign	_	_
+8	constructed	constructed	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Twenty	Twenty	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	-	-	DET	DET	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	2	punct	_	SpaceAfter=No
+2	nine	nine	X	X	_	0	ROOT	_	_
+3	exhibits	exhibits	X	X	_	2	flat:foreign	_	_
+
+1	received	received	X	X	_	0	ROOT	_	_
+
+1	awards	awards	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	3	3	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Visual	Visual	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	operable	operabl	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+4	training	training	X	X	_	3	advmod	_	_
+5	aids	aids	X	X	_	3	obl:mod	_	_
+6	developed	developed	X	X	_	3	dep	_	_
+7	by	by	X	X	_	6	flat:name	_	_
+8	the	the	X	X	_	3	dep	_	_
+9	Medical	Medical	X	X	_	3	dep	_	_
+
+1	Illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	were	were	X	X	_	1	nmod	_	_
+5	used	used	X	X	_	4	flat:foreign	_	_
+6	in	in	X	X	_	7	case	_	_
+7	support	support	NOUN	NOUN	Gender=Masc|Number=Sing	4	nmod	_	_
+8	of	of	X	X	_	7	dep	_	_
+9	Army	Army	X	X	_	4	flat:foreign	_	_
+10	Medical	Medical	X	X	_	4	dep	_	_
+11	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+12	mass	mas	NOUN	NOUN	_	11	nmod	_	_
+13	casualty	casualty	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	exercises	exercise	ADJ	ADJ	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Members	member	NOUN	NOUN	Gender=Masc|Number=Plur	2	nsubj	_	_
+2	of	of	X	X	_	0	ROOT	_	_
+3	the	the	X	X	_	2	fixed	_	_
+4	Medical	Medical	X	X	_	2	dep	_	_
+
+1	Illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	lectured	lectured	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	and	and	X	X	_	1	dep	_	_
+
+1	conducted	conducted	X	X	_	0	ROOT	_	_
+2	demonstrations	demonstration	NOUN	NOUN	Gender=Fem|Number=Plur	1	xcomp	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	use	user	X	X	_	2	dep	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	training	training	X	X	_	2	obj	_	_
+6	aids	aids	X	X	_	2	obj	_	_
+7	to	to	X	X	_	8	dep	_	_
+8	military	military	X	X	_	2	obl:arg	_	_
+9	personnel	personnel	ADJ	ADJ	Gender=Masc|Number=Sing	8	amod	_	_
+10	and	and	X	X	_	8	dep	_	_
+11	various	various	X	X	_	8	dep	_	_
+12	civilian	civilian	X	X	_	8	dep	_	_
+
+1	medical	medical	X	X	_	0	ROOT	_	_
+
+1	organizations	organization	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Demonstrations	demonstration	NOUN	NOUN	Gender=Fem|Number=Plur	9	nsubj	_	_
+2	of	of	X	X	_	9	iobj	_	_
+3	new	new	X	X	_	2	punct	_	_
+4	and	and	X	X	_	2	dep	_	_
+5	projected	projected	X	X	_	2	flat:foreign	_	_
+6	training	training	X	X	_	2	flat:foreign	_	_
+7	aids	aids	X	X	_	2	flat:foreign	_	_
+8	were	were	X	X	_	2	dep	_	_
+9	conducted	conducted	X	X	_	16	dep	_	_
+10	at	at	X	X	_	9	advmod	_	_
+11	the	the	X	X	_	12	case	_	_
+12	Medical	Medical	X	X	_	9	obl:mod	_	_
+13	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	9	obj	_	_
+14	Instructor'	Instructor'	PROPN	PROPN	_	13	nmod	_	SpaceAfter=No
+15	s	s	PRON	PRON	Person=3|Reflex=Yes	16	nsubj	_	_
+16	Conference	Conference	X	X	_	0	ROOT	_	_
+17	,	,	PUNCT	PUNCT	_	16	punct	_	_
+18	Brooke	Brooke	PROPN	PROPN	Gender=Masc|Number=Sing	16	nmod	_	_
+19	Army	Army	X	X	_	20	case	_	_
+20	Medical	Medical	X	X	_	16	obl:mod	_	_
+21	Center	center	VERB	VERB	VerbForm=Inf	16	dep	_	_
+22	,	,	PUNCT	PUNCT	_	16	punct	_	_
+23	Texas	Texas	PROPN	PROPN	Gender=Masc|Number=Sing	16	nmod	_	_
+24	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	4	4	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	2	amod	_	_
+2	support	support	NOUN	NOUN	Gender=Masc|Number=Sing	13	nsubj	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	emphasis	emphasis	X	X	_	2	dep	_	_
+6	placed	placed	X	X	_	2	dep	_	_
+7	by	by	X	X	_	2	dep	_	_
+8	the	the	X	X	_	2	dep	_	_
+9	Department	Department	X	X	_	8	flat:foreign	_	_
+10	of	of	X	X	_	11	case	_	_
+11	Defense	defense	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+12	on	on	PRON	PRON	Number=Sing|Person=3	13	nsubj	_	_
+13	instruction	instruction	NOUN	NOUN	Gender=Fem|Number=Sing	16	dep	_	_
+14	in	in	X	X	_	15	case	_	_
+15	emergency	emergency	X	X	_	13	obl:arg	_	_
+16	medical	medical	X	X	_	35	dep	_	_
+17	care	care	X	X	_	16	flat:name	_	_
+18	,	,	PUNCT	PUNCT	_	16	punct	_	_
+19	the	the	X	X	_	20	case	_	_
+20	Medical	Medical	X	X	_	16	dep	_	_
+21	Illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	20	nmod	_	_
+22	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	16	nmod	_	_
+23	developed	developed	X	X	_	24	case	_	_
+24	casualty	casualty	NOUN	NOUN	Gender=Fem|Number=Sing	16	nmod	_	_
+25	simulation	simulation	NOUN	NOUN	Gender=Fem|Number=Sing	16	flat:foreign	_	_
+26	kits	kit	X	X	_	16	flat:foreign	_	_
+27	and	and	X	X	_	26	dep	_	_
+28	rescue	rescue	X	X	_	16	flat:foreign	_	_
+29	breathing	breathing	X	X	_	28	dep	_	_
+30	manikins	manikins	X	X	_	16	flat:foreign	_	_
+31	which	which	X	X	_	30	amod	_	_
+32	are	are	X	X	_	30	dep	_	_
+33	being	being	X	X	_	16	dep	_	_
+34	field	field	PROPN	PROPN	_	35	nsubj	_	_
+35	tested	tested	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+36	;	;	PUNCT	PUNCT	_	35	punct	_	_
+37	;	;	PUNCT	PUNCT	_	35	punct	_	_
+
+1	and	and	X	X	_	7	dep	_	_
+2	overhead	overhead	X	X	_	1	flat:foreign	_	_
+3	projector	projector	X	X	_	1	flat:foreign	_	_
+4	transparency	transparency	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Fut|VerbForm=Fin	1	flat:foreign	_	_
+5	sets	set	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	dep	_	_
+8	subjects	subjects	X	X	_	7	advmod	_	_
+9	of	of	X	X	_	10	case	_	_
+10	Military	military	NOUN	NOUN	_	8	obl:arg	_	_
+11	Sanitation	sanitation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+12	:	:	PUNCT	PUNCT	_	11	punct	_	_
+13	First	First	X	X	_	11	nmod	_	_
+14	Aid	Aid	X	X	_	13	flat:foreign	_	_
+15	For	For	X	X	_	13	flat:foreign	_	_
+16	Soldiers	Soldiers	PROPN	PROPN	_	11	nmod	_	_
+17	;	;	PUNCT	PUNCT	_	11	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Bandaging	Bandaging	X	X	_	0	ROOT	_	_
+2	And	And	X	X	_	1	flat:foreign	_	_
+3	Splinting	Splinting	X	X	_	1	flat:foreign	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Emergency	Emergency	X	X	_	1	flat:foreign	_	_
+3	Medical	Medical	X	X	_	1	flat:foreign	_	_
+4	Treatment	Treatment	X	X	_	1	flat:foreign	_	_
+5	Unit	Unit	X	X	_	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	Phase	phase	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+8	1	1	NUM	NUM	NumType=Card	7	nummod	_	_
+9	;	;	PUNCT	PUNCT	_	1	punct	_	_
+10	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	and	and	X	X	_	12	dep	_	_
+2	Emergency	Emergency	X	X	_	1	flat:foreign	_	_
+3	War	War	X	X	_	1	flat:foreign	_	_
+4	Surgery	Surgery	PROPN	PROPN	_	3	flat:foreign	_	_
+5	in	in	X	X	_	6	case	_	_
+6	support	support	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+7	of	of	X	X	_	9	dep	_	_
+8	the	the	X	X	_	7	fixed	_	_
+9	North	North	X	X	_	1	dep	_	_
+10	Atlantic	Atlantic	PROPN	PROPN	_	12	dep	_	_
+11	Treaty	Treaty	X	X	_	10	flat:foreign	_	_
+12	Organization	Organization	PROPN	PROPN	_	0	ROOT	_	_
+13	(	(	PUNCT	PUNCT	_	12	punct	_	_
+14	NATO	NATO	PROPN	PROPN	_	12	nmod	_	_
+15	)	)	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Handbook	Handbook	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Fifty	fifty	ADJ	ADJ	NumType=Ord|Number=Sing	3	nsubj	_	_
+2	lantern	lantern	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	slide	slide	X	X	_	0	ROOT	_	_
+4	teaching	teaching	X	X	_	3	advmod	_	_
+5	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	3	dep	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	dep	_	_
+8	subject	subject	X	X	_	7	xcomp	_	_
+9	of	of	X	X	_	12	case	_	_
+10	`	`	PRON	PRON	Person=3|Reflex=Yes	12	nummod	_	SpaceAfter=No
+11	`	`	X	X	_	12	case	_	_
+12	Emergency	Emergency	X	X	_	3	obl:mod	_	_
+13	War	War	X	X	_	3	advcl	_	_
+14	Surgery	Surgery	PROPN	PROPN	_	13	flat:name	_	_
+15	(	(	PUNCT	PUNCT	_	3	punct	_	_
+16	NATO	NATO	PROPN	PROPN	_	3	dep	_	_
+17	)	)	PUNCT	PUNCT	_	3	punct	_	_
+18	''	''	PUNCT	PUNCT	_	3	punct	_	_
+19	were	were	X	X	_	18	flat:foreign	_	_
+20	assembled	assembled	X	X	_	18	flat:foreign	_	_
+21	and	and	X	X	_	18	dep	_	_
+22	distributed	distributed	X	X	_	18	flat:foreign	_	_
+23	to	to	X	X	_	18	flat:foreign	_	_
+24	the	the	X	X	_	3	advmod	_	_
+25	Medical	Medical	X	X	_	3	dep	_	_
+26	Military	Military	X	X	_	3	dep	_	_
+
+1	Services	service	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	of	of	X	X	_	2	case	_	_
+2	foreign	foreign	X	X	_	0	ROOT	_	_
+
+1	Governments	Governments	PROPN	PROPN	_	2	nsubj	_	_
+2	associated	associated	X	X	_	0	ROOT	_	_
+3	with	with	X	X	_	2	dep	_	_
+4	NATO	NATO	X	X	_	2	dep	_	_
+5	and	and	X	X	_	2	dep	_	_
+6	South	South	X	X	_	2	dep	_	SpaceAfter=No
+7	-	-	X	X	_	2	obl:arg	_	SpaceAfter=No
+8	East	East	X	X	_	2	dep	_	_
+9	Asia	Asia	X	X	_	8	flat:foreign	_	_
+10	Treaty	Treaty	X	X	_	8	flat:foreign	_	_
+11	Organization	Organization	PROPN	PROPN	_	2	xcomp	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	11	dep	_	_
+2	British	British	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	1	flat:foreign	_	_
+4	Canadian	Canadian	X	X	_	1	flat:foreign	_	_
+5	Liaison	liaison	NOUN	NOUN	_	1	flat:foreign	_	_
+6	Officers	Officers	X	X	_	1	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	11	punct	_	_
+8	as	as	X	X	_	9	expl:subj	_	_
+9	well	well	PROPN	PROPN	Gender=Masc|Number=Sing	11	nsubj	_	_
+10	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	11	aux:tense	_	_
+11	Office	Office	PROPN	PROPN	Number=Sing	0	ROOT	_	_
+12	of	of	X	X	_	11	dep	_	_
+13	Civil	civil	NOUN	NOUN	Gender=Fem|Number=Sing	11	dep	_	_
+14	and	and	X	X	_	11	dep	_	_
+15	Defense	Defense	X	X	_	11	dep	_	_
+
+1	Mobilization	Mobilization	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	the	the	X	X	_	11	obl:mod	_	_
+2	American	American	X	X	_	1	flat:foreign	_	_
+3	Red	Red	X	X	_	1	flat:foreign	_	_
+4	Cross	Cross	PROPN	PROPN	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	11	punct	_	_
+6	and	and	X	X	_	11	dep	_	_
+7	similar	similar	X	X	_	6	flat:foreign	_	_
+8	interested	interested	X	X	_	6	flat:foreign	_	_
+9	organizations	organization	NOUN	NOUN	Gender=Fem|Number=Plur	6	flat:foreign	_	_
+10	were	were	X	X	_	6	flat:foreign	_	_
+11	informed	informed	X	X	_	17	dep	_	_
+12	from	from	X	X	_	11	dep	_	_
+13	time	time	X	X	_	11	dep	_	_
+14	to	to	X	X	_	15	dep	_	_
+15	time	time	X	X	_	17	obl:mod	_	_
+16	as	as	X	X	_	17	aux:tense	_	_
+17	training	training	X	X	_	0	ROOT	_	_
+18	aids	aids	X	X	_	17	obj	_	_
+19	were	were	X	X	_	18	dep	_	_
+20	developed	developed	X	X	_	17	obj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	5	5	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Nine	nin	ADJ	ADJ	NumType=Ord|Number=Sing	0	ROOT	_	_
+
+1	veterinary	veterinary	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	lantern	lantern	X	X	_	1	advmod	_	_
+3	slide	slide	X	X	_	1	advmod	_	_
+4	teaching	teaching	X	X	_	3	advmod	_	_
+5	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	1	advmod	_	_
+6	were	were	X	X	_	1	dep	_	_
+7	developed	developed	X	X	_	1	dep	_	_
+8	and	and	X	X	_	1	dep	_	_
+9	distributed	distributed	X	X	_	1	amod	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	and	and	X	X	_	18	cc	_	_
+12	lantern	lantern	X	X	_	11	flat:foreign	_	_
+13	slide	slide	X	X	_	11	flat:foreign	_	_
+14	teaching	teaching	X	X	_	11	flat:foreign	_	_
+15	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	11	flat:foreign	_	_
+16	on	on	PRON	PRON	Number=Sing|Person=3	18	advmod	_	_
+17	21	21	NUM	NUM	NumType=Card	18	nummod	_	_
+18	pathology	pathology	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+19	subjects	subjects	X	X	_	18	amod	_	_
+20	were	were	X	X	_	19	dep	_	_
+21	added	added	X	X	_	18	flat:foreign	_	_
+22	to	to	X	X	_	21	dep	_	_
+23	the	the	X	X	_	18	dep	_	_
+24	loan	loan	X	X	_	18	flat:foreign	_	_
+25	library	library	X	X	_	18	flat:foreign	_	_
+26	of	of	X	X	_	28	case	_	_
+27	the	the	X	X	_	26	fixed	_	_
+28	Medical	Medical	X	X	_	18	dep	_	_
+
+1	Illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Illustrations	illustration	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	were	were	X	X	_	1	flat:foreign	_	_
+3	prepared	prepared	X	X	_	1	flat:foreign	_	_
+4	for	for	ADP	ADP	_	1	dep	_	_
+5	11	11	NUM	NUM	NumType=Card	6	nummod	_	_
+6	Department	department	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+7	of	of	X	X	_	1	flat:foreign	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	Army	Army	X	X	_	1	flat:foreign	_	_
+10	manuals	manuals	X	X	_	1	flat:foreign	_	_
+11	and	and	X	X	_	1	flat:foreign	_	_
+12	one	one	X	X	_	1	flat:foreign	_	_
+13	Graphic	Graphic	X	X	_	1	flat:foreign	_	_
+14	Training	Training	X	X	_	1	flat:foreign	_	_
+15	Aid	Aid	X	X	_	1	flat:foreign	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sixteen	Sixteen	PROPN	PROPN	Gender=Masc|Number=Sing	2	det	_	_
+2	lantern	lantern	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:mod	_	_
+3	slide	slide	X	X	_	0	ROOT	_	_
+4	sets	set	X	X	_	3	flat:foreign	_	_
+5	were	were	X	X	_	3	flat:foreign	_	_
+6	loaned	loaned	X	X	_	3	flat:foreign	_	_
+
+1	to	to	X	X	_	10	dep	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	Government	Government	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	India	India	X	X	_	6	obl:mod	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	eight	eight	X	X	_	1	flat:foreign	_	_
+8	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+9	were	were	X	X	_	8	flat:foreign	_	_
+10	forwarded	forwarded	X	X	_	0	ROOT	_	_
+11	to	to	X	X	_	10	dep	_	_
+12	the	the	X	X	_	10	dep	_	_
+13	U.S.	U.S.	X	X	_	10	dep	_	_
+14	Embassy	Embassy	PROPN	PROPN	_	10	dep	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Managua	Managua	PROPN	PROPN	_	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	Nicaragua	Nicaragua	PROPN	PROPN	_	2	nmod	_	_
+5	for	for	X	X	_	4	dep	_	_
+6	the	the	X	X	_	2	dep	_	_
+7	Educational	Educational	X	X	_	2	dep	_	_
+8	Exchange	Exchange	X	X	_	2	dep	_	_
+
+1	Program	Program	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Senate	Senate	X	X	_	1	flat:foreign	_	_
+3	Subcommittee	Subcommittee	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Reorganization	Reorganization	PROPN	PROPN	_	0	ROOT	_	_
+3	and	and	X	X	_	2	dep	_	_
+
+1	International	International	X	X	_	0	ROOT	_	_
+
+1	Organizations	Organizations	X	X	_	0	ROOT	_	_
+2	was	was	X	X	_	1	dep	_	_
+
+1	provided	provided	X	X	_	0	ROOT	_	_
+2	samples	sample	ADJ	ADJ	Number=Plur	1	advmod	_	_
+3	of	of	X	X	_	1	advcl	_	_
+4	visual	visual	X	X	_	1	advmod	_	_
+5	aids	aids	X	X	_	4	obl:agent	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	first	first	X	X	_	4	advcl	_	_
+3	aid	aid	X	X	_	2	nsubj	_	_
+4	and	and	X	X	_	0	ROOT	_	_
+5	personal	personal	X	X	_	4	flat:foreign	_	_
+6	health	health	X	X	_	4	flat:foreign	_	_
+7	produced	produced	X	X	_	4	flat:foreign	_	_
+8	by	by	X	X	_	4	flat:foreign	_	_
+9	the	the	X	X	_	4	flat:foreign	_	_
+10	Medical	Medical	X	X	_	4	dep	_	_
+
+1	Illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Service	service	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	6	6	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Six	Six	NUM	NUM	NumType=Card	2	nummod	_	_
+2	fascicles	fascicle	NOUN	NOUN	Number=Plur	0	ROOT	_	_
+3	(	(	PUNCT	PUNCT	_	2	punct	_	_
+4	10,000	10,000	NUM	NUM	NumType=Card	5	nummod	_	_
+5	copies	copie	NOUN	NOUN	Gender=Fem|Number=Plur	2	appos	_	_
+6	each	each	X	X	_	5	amod	_	_
+7	)	)	PUNCT	PUNCT	_	2	punct	_	_
+8	of	of	X	X	_	2	parataxis	_	_
+9	the	the	X	X	_	8	dep	_	_
+10	`	`	X	X	_	8	dep	_	SpaceAfter=No
+11	`	`	X	X	_	2	punct	_	_
+
+1	Atlas	atlas	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Of	Of	X	X	_	0	ROOT	_	_
+
+1	Tumor	Tumor	X	X	_	11	nsubj	_	_
+2	Pathology	Pathology	X	X	_	1	flat:foreign	_	_
+3	''	''	PUNCT	PUNCT	_	1	punct	_	_
+4	were	were	X	X	_	1	flat:foreign	_	_
+5	completed	completed	X	X	_	1	flat:foreign	_	_
+6	during	during	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	period	period	X	X	_	1	flat:foreign	_	_
+9	of	of	X	X	_	1	flat:foreign	_	_
+10	this	this	X	X	_	1	dep	_	_
+11	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+12	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	American	American	X	X	_	1	flat:foreign	_	_
+3	Registry	Registry	X	X	_	1	flat:foreign	_	_
+4	Of	Of	X	X	_	1	flat:foreign	_	_
+
+1	Pathology	Pathology	X	X	_	0	ROOT	_	_
+2	This	This	X	X	_	1	flat:foreign	_	_
+3	consists	consists	X	X	_	1	dep	_	_
+4	of	of	ADP	ADP	_	6	dep	_	_
+5	25	25	NUM	NUM	NumType=Card	6	nummod	_	_
+6	individual	individual	NOUN	NOUN	Gender=Masc|Number=Plur	3	obj	_	_
+7	registries	registrie	ADJ	ADJ	Number=Plur	6	amod	_	_
+8	,	,	PUNCT	PUNCT	_	3	punct	_	_
+9	two	two	NOUN	NOUN	_	1	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	which	which	X	X	_	12	dep	_	_
+12	were	were	X	X	_	9	dep	_	_
+13	added	added	X	X	_	1	flat:foreign	_	_
+14	during	during	X	X	_	13	advmod	_	_
+15	fiscal	fiscal	ADJ	ADJ	Gender=Masc	13	amod	_	_
+16	years	year	NOUN	NOUN	_	1	dep	_	_
+17	1959	1959	NUM	NUM	NumType=Card	1	nmod	_	SpaceAfter=No
+
+1	-	-	NOUN	NOUN	NumType=Card	4	punct	_	SpaceAfter=No
+2	1960	1960	NOUN	NOUN	NumType=Card	1	nmod	_	_
+3	(	(	PUNCT	PUNCT	_	1	punct	_	_
+4	The	The	X	X	_	0	ROOT	_	_
+5	Registry	Registry	X	X	_	4	flat:foreign	_	_
+
+1	Of	Of	X	X	_	2	amod	_	_
+2	Forensic	Forensic	X	X	_	0	ROOT	_	_
+
+1	Pathology	Pathology	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	The	The	X	X	_	1	flat:foreign	_	_
+4	Testicular	Testicular	X	X	_	1	flat:foreign	_	_
+
+1	Tumor	Tumor	X	X	_	0	ROOT	_	_
+2	Registry	Registry	X	X	_	1	flat:foreign	_	_
+3	)	)	PUNCT	PUNCT	_	1	punct	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	These	These	X	X	_	0	ROOT	_	_
+2	registries	registries	X	X	_	1	amod	_	_
+3	are	are	X	X	_	1	dep	_	_
+4	sponsored	sponsored	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	by	by	NOUN	NOUN	_	1	dep	_	_
+6	18	18	NUM	NUM	NumType=Card	1	nummod	_	_
+7	national	national	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+8	medical	medical	NOUN	NOUN	Gender=Masc|Number=Sing	1	amod	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	dental	dental	ADJ	ADJ	Gender=Masc|Number=Sing	8	amod	_	_
+11	,	,	PUNCT	PUNCT	_	1	punct	_	_
+12	and	and	X	X	_	1	flat:foreign	_	_
+13	veterinary	veterinary	X	X	_	12	flat:foreign	_	_
+14	societies	societies	X	X	_	12	flat:foreign	_	_
+15	and	and	X	X	_	12	flat:foreign	_	_
+16	have	haver	X	X	_	12	flat:foreign	_	_
+17	as	as	X	X	_	12	flat:foreign	_	_
+18	their	their	X	X	_	12	flat:foreign	_	_
+19	mission	mission	X	X	_	12	flat:foreign	_	_
+20	the	the	X	X	_	12	flat:foreign	_	_
+21	assembling	assembling	X	X	_	12	flat:foreign	_	_
+22	of	of	ADP	ADP	_	23	dep	_	_
+23	selected	selected	X	X	_	24	nummod	_	_
+24	cases	case	NOUN	NOUN	Gender=Fem|Number=Plur	12	flat:foreign	_	_
+25	of	of	X	X	_	26	dep	_	_
+26	interest	interest	X	X	_	12	flat:foreign	_	_
+27	to	to	X	X	_	26	advmod	_	_
+28	military	military	X	X	_	26	obj	_	_
+29	medicine	medicine	X	X	_	26	flat:foreign	_	_
+30	and	and	X	X	_	26	dep	_	_
+31	of	of	X	X	_	26	advmod	_	_
+32	establishing	establishing	X	X	_	26	dep	_	_
+33	through	through	X	X	_	26	obj	_	_
+34	the	the	X	X	_	26	flat:foreign	_	_
+35	mechanism	mechanism	X	X	_	26	obj	_	_
+36	of	of	X	X	_	37	case	_	_
+37	follow	follow	X	X	_	26	obl:mod	_	SpaceAfter=No
+38	-	-	PROPN	PROPN	_	26	obj	_	SpaceAfter=No
+39	up	up	X	X	_	26	dep	_	_
+40	of	of	X	X	_	42	amod	_	_
+41	living	living	X	X	_	40	fixed	_	_
+42	patients	patient	NOUN	NOUN	Gender=Masc|Number=Plur	26	obl:mod	_	_
+43	the	the	X	X	_	26	advcl	_	_
+44	natural	natural	ADJ	ADJ	Gender=Masc|Number=Sing	43	fixed	_	_
+45	history	history	X	X	_	43	flat:foreign	_	_
+46	of	of	X	X	_	43	fixed	_	_
+47	various	various	X	X	_	46	dep	_	_
+48	diseases	disease	NOUN	NOUN	Gender=Fem|Number=Plur	46	fixed	_	_
+49	of	of	X	X	_	43	fixed	_	_
+50	military	military	X	X	_	26	obj	_	SpaceAfter=No
+51	-	-	PROPN	PROPN	_	26	obj	_	SpaceAfter=No
+52	medical	medical	X	X	_	26	obj	_	_
+53	importance	importance	NOUN	NOUN	Gender=Fem|Number=Sing	26	obj	_	_
+54	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	10	nsubj	_	_
+2	American	American	X	X	_	1	flat:foreign	_	_
+3	Registry	Registry	X	X	_	1	flat:foreign	_	_
+4	Of	Of	X	X	_	1	flat:foreign	_	_
+5	Pathology	Pathology	X	X	_	8	nsubj	_	_
+6	operates	operates	X	X	_	5	flat:foreign	_	_
+7	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	8	aux:tense	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_
+9	cooperative	cooperativ	ADJ	ADJ	Gender=Fem|Number=Sing	8	obj	_	_
+10	enterprise	enterprise	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+11	in	in	X	X	_	12	case	_	_
+12	medical	medical	X	X	_	10	obl:mod	_	_
+13	research	research	X	X	_	10	dep	_	_
+14	and	and	X	X	_	13	dep	_	_
+15	education	education	X	X	_	13	flat:foreign	_	_
+16	between	between	X	X	_	13	flat:foreign	_	_
+17	the	the	X	X	_	13	flat:foreign	_	_
+18	Armed	Armed	X	X	_	13	flat:foreign	_	_
+19	Forces	Forces	X	X	_	13	flat:foreign	_	_
+20	Institute	Institute	PROPN	PROPN	_	13	flat:name	_	_
+21	of	of	X	X	_	22	case	_	_
+22	Pathology	Pathology	X	X	_	10	obl:arg	_	_
+23	and	and	X	X	_	22	flat:foreign	_	_
+24	the	the	X	X	_	22	flat:foreign	_	_
+25	civilian	civilian	X	X	_	22	flat:foreign	_	_
+
+1	medical	medical	X	X	_	0	ROOT	_	_
+2	profession	profession	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	5	nsubj	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	national	national	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	international	international	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+8	basis	basis	X	X	_	1	flat:foreign	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	under	under	X	X	_	12	case	_	_
+11	such	such	X	X	_	12	dep	_	_
+12	conditions	condition	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+13	as	as	X	X	_	16	aux:tense	_	_
+14	may	may	X	X	_	13	dep	_	_
+15	be	be	X	X	_	14	dep	_	_
+16	agreed	agreed	PROPN	PROPN	Gender=Masc|Number=Sing	12	acl	_	_
+17	upon	upon	X	X	_	18	case	_	_
+18	between	between	X	X	_	16	obl:mod	_	_
+19	the	the	X	X	_	1	flat:foreign	_	_
+20	National	National	X	X	_	1	flat:foreign	_	_
+21	Research	Research	X	X	_	1	flat:foreign	_	_
+22	Council	Council	X	X	_	1	flat:foreign	_	_
+23	and	and	X	X	_	1	flat:foreign	_	_
+24	The	The	X	X	_	1	flat:foreign	_	_
+25	Surgeons	Surgeons	X	X	_	1	flat:foreign	_	_
+26	General	General	PROPN	PROPN	_	25	flat:name	_	_
+27	of	of	X	X	_	28	dep	_	_
+28	the	the	X	X	_	1	dep	_	_
+29	Army	Army	X	X	_	1	flat:foreign	_	_
+30	,	,	PUNCT	PUNCT	_	1	punct	_	_
+31	Navy	Navy	X	X	_	1	dep	_	_
+32	,	,	PUNCT	PUNCT	_	1	punct	_	_
+33	and	and	X	X	_	35	dep	_	_
+34	Air	Air	X	X	_	33	flat:foreign	_	_
+35	Force	force	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+36	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	amod	_	_
+2	staff	staff	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	utilized	utilized	PROPN	PROPN	_	2	nmod	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	collected	collected	X	X	_	4	flat:foreign	_	_
+6	material	material	X	X	_	4	flat:foreign	_	_
+7	in	in	X	X	_	8	case	_	_
+8	these	these	X	X	_	4	flat:foreign	_	_
+9	registries	registries	X	X	_	8	amod	_	_
+10	for	for	X	X	_	8	dep	_	_
+11	numerous	numerou	NOUN	NOUN	Gender=Masc|Number=Plur	4	flat:foreign	_	_
+12	lectures	lecture	ADJ	ADJ	Number=Plur	11	amod	_	_
+13	to	to	X	X	_	2	dep	_	_
+14	national	national	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+15	and	and	X	X	_	2	amod	_	_
+16	international	international	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+17	meetings	meeting	ADJ	ADJ	Gender=Masc|Number=Plur	2	amod	_	_
+18	,	,	PUNCT	PUNCT	_	2	punct	_	_
+19	exhibits	exhibit	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+20	,	,	PUNCT	PUNCT	_	2	punct	_	_
+21	and	and	X	X	_	2	dep	_	_
+22	published	published	X	X	_	21	flat:foreign	_	_
+23	studies	studies	X	X	_	21	flat:foreign	_	_
+24	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	During	During	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	period	period	X	X	_	4	obl:mod	_	_
+3	of	of	X	X	_	4	case	_	_
+4	this	this	X	X	_	9	obl:mod	_	_
+5	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	4	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	9	punct	_	_
+7	37,470	37,470	NUM	NUM	NumType=Card	9	nummod	_	_
+8	new	new	ADJ	ADJ	Gender=Masc|Number=Sing	9	amod	_	_
+9	cases	case	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+10	were	were	X	X	_	9	dep	_	_
+
+1	entered	entered	X	X	_	0	ROOT	_	_
+2	into	into	X	X	_	1	advmod	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	various	various	X	X	_	3	dep	_	_
+5	registries	registries	X	X	_	3	advcl	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	These	These	X	X	_	0	ROOT	_	_
+2	were	were	X	X	_	1	flat:foreign	_	_
+3	selected	selected	X	X	_	1	flat:foreign	_	_
+4	carefully	carefully	X	X	_	1	flat:foreign	_	_
+5	and	and	X	X	_	4	flat:foreign	_	_
+6	included	included	X	X	_	1	parataxis	_	_
+7	not	not	X	X	_	6	dep	_	_
+8	only	only	X	X	_	6	dep	_	_
+9	detailed	detailed	X	X	_	6	advmod	_	_
+10	clinical	clinical	X	X	_	6	obj	_	_
+11	information	information	ADJ	ADJ	Gender=Fem|Number=Sing	6	xcomp	_	_
+
+1	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	adequate	adequat	ADJ	ADJ	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	pathology	pathology	X	X	_	1	amod	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	value	value	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	research	research	X	X	_	0	ROOT	_	_
+3	and	and	X	X	_	2	flat:foreign	_	_
+4	educational	educational	X	X	_	2	flat:foreign	_	_
+
+1	purposes	purpose	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	this	this	X	X	_	1	flat:foreign	_	_
+3	same	same	X	X	_	1	flat:foreign	_	_
+4	period	period	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+5	,	,	PUNCT	PUNCT	_	8	punct	_	_
+6	six	six	NUM	NUM	NumType=Card	8	nummod	_	_
+7	new	new	PROPN	PROPN	Gender=Masc|Number=Sing	8	amod	_	_
+8	fascicles	fascicle	ADJ	ADJ	Number=Plur	1	conj	_	_
+9	of	of	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	Atlas	Atlas	X	X	_	1	flat:foreign	_	_
+
+1	Of	Of	X	X	_	0	ROOT	_	_
+
+1	Tumor	Tumor	X	X	_	0	ROOT	_	_
+2	Pathology	Pathology	X	X	_	1	flat:foreign	_	_
+3	were	were	X	X	_	1	flat:foreign	_	_
+4	published	published	X	X	_	1	flat:foreign	_	_
+5	and	and	X	X	_	1	flat:foreign	_	_
+6	distributed	distributed	X	X	_	1	flat:foreign	_	_
+7	to	to	X	X	_	6	advmod	_	_
+8	medical	medical	X	X	_	1	flat:foreign	_	_
+9	centers	centers	X	X	_	1	flat:foreign	_	_
+10	world	world	X	X	_	1	flat:foreign	_	SpaceAfter=No
+11	-	-	X	X	_	1	flat:foreign	_	SpaceAfter=No
+12	wide	wide	X	X	_	1	amod	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	were	were	X	X	_	1	dep	_	_
+
+1	54,320	54,320	NUM	NUM	NumType=Card	2	nummod	_	_
+2	copies	copie	NOUN	NOUN	Gender=Fem|Number=Plur	6	nsubj	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	fascicles	fascicle	ADJ	ADJ	Gender=Fem|Number=Plur	2	amod	_	_
+5	sold	sold	ADV	ADV	_	2	acl	_	_
+6	and	and	X	X	_	0	ROOT	_	_
+7	642	642	NUM	NUM	NumType=Card	8	nummod	_	_
+8	copies	copie	NOUN	NOUN	Gender=Fem|Number=Plur	6	obj	_	_
+9	distributed	distributed	X	X	_	8	amod	_	_
+10	free	free	X	X	_	8	dep	_	_
+11	during	during	X	X	_	8	dep	_	_
+12	this	this	X	X	_	8	dep	_	_
+13	period	period	X	X	_	6	dep	_	_
+14	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Forty	forty	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
+3	five	five	X	X	_	1	flat:foreign	_	_
+4	new	new	X	X	_	1	flat:foreign	_	_
+5	Clinico	Clinico	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+6	-	-	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+7	pathologic	pathologic	PROPN	PROPN	_	1	nmod	_	_
+
+1	Conferences	Conferences	X	X	_	0	ROOT	_	_
+2	were	were	X	X	_	1	dep	_	_
+3	prepared	prepared	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	bringing	bringing	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	total	total	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+8	to	to	X	X	_	10	dep	_	_
+9	61	61	NUM	NUM	NumType=Card	10	nummod	_	_
+10	available	available	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+
+1	for	for	X	X	_	3	case	_	_
+2	loan	loan	X	X	_	1	dep	_	_
+3	distribution	distribution	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Nine	nin	ADJ	ADJ	NumType=Ord|Number=Sing	0	ROOT	_	_
+2	new	new	X	X	_	1	flat:foreign	_	_
+3	teaching	teaching	X	X	_	2	dep	_	_
+4	Clinico	Clinico	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+5	-	-	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
+6	pathologic	pathologic	PROPN	PROPN	_	1	nmod	_	_
+
+1	Conference	Conference	X	X	_	8	dep	_	_
+2	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+3	were	were	X	X	_	1	flat:foreign	_	_
+4	prepared	prepared	X	X	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	which	which	X	X	_	1	flat:foreign	_	_
+7	makes	makes	X	X	_	6	flat:name	_	_
+8	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	dep	_	_
+9	total	total	ADJ	ADJ	Gender=Masc|Number=Sing	8	obj	_	_
+10	of	of	ADP	ADP	_	12	dep	_	_
+11	70	70	NUM	NUM	NumType=Card	12	nummod	_	_
+12	types	type	NOUN	NOUN	Gender=Masc|Number=Plur	8	obj	_	_
+13	of	of	X	X	_	15	case	_	_
+14	teaching	teaching	X	X	_	13	fixed	_	_
+15	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	12	nmod	_	_
+16	for	for	X	X	_	8	flat:foreign	_	_
+17	loan	loan	X	X	_	0	ROOT	_	_
+18	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	During	During	X	X	_	5	advmod	_	_
+2	this	this	X	X	_	1	flat:foreign	_	_
+3	period	period	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	7,827	7,827	PROPN	PROPN	_	0	ROOT	_	_
+6	teaching	teaching	X	X	_	7	advmod	_	_
+7	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	5	nmod	_	_
+8	were	were	X	X	_	7	amod	_	_
+9	distributed	distributed	X	X	_	7	flat:foreign	_	_
+10	on	on	PRON	PRON	Number=Sing|Person=3	11	nsubj	_	_
+11	loan	loan	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	dep	_	_
+12	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	The	The	X	X	_	11	nsubj	_	_
+2	Clinico	Clinico	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+3	-	-	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+4	pathologic	pathologic	PROPN	PROPN	_	1	flat:foreign	_	_
+5	Conferences	Conferences	X	X	_	1	flat:foreign	_	_
+6	have	haver	X	X	_	8	amod	_	_
+7	been	been	X	X	_	8	amod	_	_
+8	acknowledged	acknowledged	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+9	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	great	great	X	X	_	0	ROOT	_	_
+12	value	valoir	X	X	_	11	dep	_	_
+13	and	and	X	X	_	11	dep	_	_
+14	in	in	X	X	_	17	dep	_	_
+15	consequent	consequer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	fixed	_	_
+16	great	great	X	X	_	14	flat:foreign	_	_
+17	demand	demand	X	X	_	11	dep	_	_
+18	by	by	X	X	_	11	dep	_	_
+19	the	the	X	X	_	11	dep	_	_
+20	small	small	X	X	_	11	flat:foreign	_	_
+21	isolated	isolated	X	X	_	11	dep	_	_
+22	military	military	X	X	_	11	dep	_	_
+23	hospitals	hospitals	PROPN	PROPN	_	22	flat:name	_	_
+24	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	demand	demand	X	X	_	1	flat:foreign	_	_
+3	for	for	X	X	_	2	punct	_	_
+4	teaching	teaching	X	X	_	2	dep	_	_
+5	sets	set	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+6	continues	continu	ADJ	ADJ	Gender=Fem|Number=Plur	5	amod	_	_
+7	unabated	unabated	DET	DET	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+8	since	since	X	X	_	10	dep	_	_
+9	they	they	X	X	_	8	conj	_	_
+10	provide	provide	X	X	_	1	flat:foreign	_	_
+11	the	the	X	X	_	10	dep	_	_
+12	means	means	X	X	_	10	obl:mod	_	_
+13	for	for	X	X	_	10	dep	_	_
+14	the	the	X	X	_	10	dep	_	_
+15	military	military	X	X	_	10	xcomp	_	_
+16	physicians	physicians	X	X	_	15	flat:foreign	_	_
+17	to	to	X	X	_	22	dep	_	_
+18	review	review	X	X	_	17	flat:foreign	_	_
+19	the	the	X	X	_	17	flat:foreign	_	_
+20	pathology	pathology	X	X	_	17	flat:foreign	_	_
+21	of	of	X	X	_	22	dep	_	_
+22	selected	selected	X	X	_	15	obl:mod	_	_
+23	disease	disease	X	X	_	1	flat:foreign	_	_
+24	processes	processe	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+25	or	or	X	X	_	1	flat:foreign	_	_
+26	organ	organ	NOUN	NOUN	Gender=Masc|Number=Sing	25	fixed	_	_
+
+1	systems	systems	X	X	_	0	ROOT	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	review	review	X	X	_	0	ROOT	_	_
+3	of	of	X	X	_	4	case	_	_
+4	basic	basic	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+
+1	sciences	science	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+
+1	correlation	correlation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	of	of	X	X	_	2	case	_	_
+2	clinical	clinical	X	X	_	0	ROOT	_	_
+
+1	physiological	physiological	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	behavior	behavior	X	X	_	1	dep	_	_
+3	with	with	X	X	_	1	amod	_	_
+4	structural	structural	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+5	changes	change	NOUN	NOUN	Gender=Masc|Number=Plur	1	amod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	6	case	_	_
+2	Medical	Medical	X	X	_	1	flat:foreign	_	_
+3	Museum	Museum	X	X	_	2	dep	_	_
+4	In	In	X	X	_	1	flat:foreign	_	_
+5	fiscal	fiscal	ADJ	ADJ	Gender=Masc	1	flat:foreign	_	_
+6	year	year	NOUN	NOUN	_	10	obl:mod	_	_
+7	1959	1959	NUM	NUM	NumType=Card	6	nummod	_	_
+8	,	,	PUNCT	PUNCT	_	10	punct	_	_
+9	the	the	X	X	_	10	case	_	_
+10	Medical	Medical	X	X	_	19	dep	_	_
+11	Museum	Museum	X	X	_	10	dep	_	_
+12	was	was	X	X	_	10	dep	_	_
+13	moved	moved	X	X	_	10	dep	_	_
+14	to	to	X	X	_	10	dep	_	_
+15	Chase	Chase	X	X	_	10	nmod	_	_
+16	Hall	hall	ADJ	ADJ	Gender=Masc|Number=Sing	15	amod	_	_
+17	,	,	PUNCT	PUNCT	_	19	punct	_	_
+18	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_
+19	temporary	temporary	X	X	_	0	ROOT	_	_
+20	building	building	ADV	ADV	_	19	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Independence	Independence	X	X	_	0	ROOT	_	_
+3	Avenue	Avenue	PROPN	PROPN	_	2	obl:mod	_	_
+4	at	at	X	X	_	2	conj	_	_
+5	Ninth	Ninth	X	X	_	2	obj	_	_
+6	Street	Street	PROPN	PROPN	_	2	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	2	punct	_	_
+8	Southwest	Southwest	PROPN	PROPN	_	2	conj	_	_
+9	,	,	PUNCT	PUNCT	_	11	punct	_	_
+10	and	and	X	X	_	11	dep	_	_
+11	continued	continued	X	X	_	2	conj	_	_
+12	to	to	X	X	_	13	dep	_	_
+13	display	display	X	X	_	15	obl:mod	_	_
+14	to	to	X	X	_	13	advmod	_	_
+15	the	the	X	X	_	11	ccomp	_	_
+16	public	public	NOUN	NOUN	Gender=Masc|Number=Sing	11	nsubj	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	achievements	achievements	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	7	dep	_	_
+4	the	the	X	X	_	3	fixed	_	_
+5	Armed	Armed	X	X	_	3	dep	_	_
+6	Forces	Forces	X	X	_	3	flat:foreign	_	_
+7	Medical	Medical	X	X	_	1	flat:foreign	_	_
+8	Services	service	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	During	During	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	4	dep	_	_
+2	period	period	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	1	flat:foreign	_	_
+4	this	this	X	X	_	5	nmod	_	_
+5	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	63	63	NUM	NUM	NumType=Card	3	nummod	_	_
+3	panel	panel	NOUN	NOUN	Gender=Masc|Number=Sing	8	nsubj	_	_
+4	exhibits	exhibits	X	X	_	3	flat:name	_	_
+5	depicting	depicting	X	X	_	4	amod	_	_
+6	the	the	X	X	_	4	dep	_	_
+7	latest	latest	X	X	_	8	amod	_	_
+8	developments	development	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+9	in	in	X	X	_	10	case	_	_
+10	medical	medical	X	X	_	8	nmod	_	_
+
+1	research	research	X	X	_	3	dep	_	_
+2	were	were	X	X	_	1	flat:foreign	_	_
+3	displayed	displayed	X	X	_	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Of	Of	X	X	_	4	case	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	375	375	NUM	NUM	NumType=Card	4	nummod	_	_
+4	exhibits	exhibit	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+5	(	(	PUNCT	PUNCT	_	4	punct	_	_
+6	of	of	X	X	_	8	advmod	_	_
+7	all	all	X	X	_	6	dep	_	_
+8	types	type	NOUN	NOUN	Number=Plur	4	nmod	_	_
+9	)	)	PUNCT	PUNCT	_	4	punct	_	_
+10	shown	shown	NOUN	NOUN	Gender=Masc|Number=Plur	4	nmod	_	_
+11	,	,	PUNCT	PUNCT	_	13	punct	_	_
+12	161	161	NUM	NUM	NumType=Card	13	nummod	_	_
+13	were	were	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	4	conj	_	_
+14	new	new	X	X	_	13	dep	_	_
+15	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	16	cc	_	_
+16	refurbished	refurbished	PROPN	PROPN	Gender=Masc|Number=Sing	13	amod	_	_
+17	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Of	Of	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	5	case	_	_
+3	885	885	NUM	NUM	NumType=Card	2	punct	_	_
+4	specimens	specimen	NOUN	NOUN	Gender=Masc|Number=Plur	5	amod	_	_
+5	newly	newly	X	X	_	11	obl:mod	_	_
+6	mounted	mounted	X	X	_	5	conj	_	_
+7	or	or	X	X	_	8	cc	_	_
+8	refurbished	refurbished	PROPN	PROPN	Gender=Masc|Number=Sing	5	conj	_	_
+9	,	,	PUNCT	PUNCT	_	11	punct	_	_
+10	254	254	NUM	NUM	NumType=Card	11	nummod	_	_
+11	were	were	X	X	_	1	flat:foreign	_	_
+12	prepared	prepared	X	X	_	11	dep	_	_
+13	for	for	X	X	_	11	dep	_	_
+14	other	other	X	X	_	11	dep	_	_
+15	agencies	agencie	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Eighty	eighty	ADV	ADV	_	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	five	five	X	X	_	0	ROOT	_	_
+
+1	specimens	specimens	X	X	_	0	ROOT	_	_
+2	were	were	X	X	_	1	dep	_	_
+3	loaned	loaned	X	X	_	1	dep	_	_
+
+1	for	for	X	X	_	3	dep	_	_
+2	study	study	X	X	_	1	fixed	_	_
+3	purposes	purpose	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	An	an	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	exhibit	exhibit	PROPN	PROPN	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	`	`	PRON	PRON	Person=3|Reflex=Yes	6	case	_	SpaceAfter=No
+5	`	`	ADP	ADP	_	6	case	_	_
+6	Macropathology	macropathology	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+7	--	--	PUNCT	PUNCT	_	6	punct	_	_
+8	An	An	X	X	_	6	dep	_	_
+9	Ancient	Ancient	X	X	_	1	punct	_	_
+
+1	Art	art	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	A	a	NOUN	NOUN	_	1	punct	_	_
+4	New	New	PROPN	PROPN	Gender=Masc|Number=Sing	3	dep	_	_
+
+1	Science	science	NOUN	NOUN	_	5	nsubj	_	_
+2	''	''	PUNCT	PUNCT	_	1	punct	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	was	was	X	X	_	5	expl:comp	_	_
+5	presented	presented	X	X	_	0	ROOT	_	_
+6	at	at	X	X	_	5	advmod	_	_
+7	the	the	X	X	_	5	dep	_	_
+8	annual	annual	X	X	_	5	obj	_	_
+9	meeting	meeting	NOUN	NOUN	Gender=Masc|Number=Sing	5	obj	_	_
+10	of	of	X	X	_	5	advmod	_	_
+11	the	the	X	X	_	10	flat:foreign	_	_
+
+1	American	American	X	X	_	2	amod	_	_
+2	Medical	Medical	X	X	_	0	ROOT	_	_
+3	Association	Association	PROPN	PROPN	_	2	amod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	A	a	NOUN	NOUN	_	0	ROOT	_	_
+2	three	three	X	X	_	1	flat:foreign	_	SpaceAfter=No
+
+1	-	-	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	dimensional	dimensional	X	X	_	0	ROOT	_	_
+2	exhibit	exhibit	X	X	_	1	dep	_	_
+
+1	depicting	depicting	X	X	_	0	ROOT	_	_
+2	`	`	ADP	ADP	_	1	dep	_	SpaceAfter=No
+3	`	`	PRON	PRON	Person=3|Reflex=Yes	1	dep	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	Century	Century	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Of	Of	X	X	_	0	ROOT	_	_
+
+1	Naval	Naval	X	X	_	20	dep	_	_
+2	Medicine	Medicine	X	X	_	1	flat:foreign	_	_
+3	''	''	X	X	_	2	punct	_	_
+4	was	was	X	X	_	2	dep	_	_
+5	formally	formally	X	X	_	4	flat:foreign	_	_
+6	presented	presented	X	X	_	2	dep	_	_
+7	to	to	X	X	_	2	dep	_	_
+8	The	The	X	X	_	1	flat:foreign	_	_
+9	Director	Director	X	X	_	1	flat:foreign	_	_
+10	by	by	X	X	_	11	case	_	_
+11	George	George	PROPN	PROPN	_	1	nmod	_	_
+12	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	11	flat:name	_	_
+13	Squibb	Squibb	PROPN	PROPN	_	12	flat:name	_	_
+14	,	,	PUNCT	PUNCT	_	11	punct	_	_
+15	great	great	X	X	_	11	nmod	_	SpaceAfter=No
+16	-	-	PROPN	PROPN	_	11	nmod	_	SpaceAfter=No
+17	grandson	grandson	PROPN	PROPN	_	11	nmod	_	_
+18	of	of	X	X	_	20	dep	_	_
+19	the	the	X	X	_	18	fixed	_	_
+20	founder	founder	X	X	_	30	dep	_	_
+21	of	of	X	X	_	20	advmod	_	_
+22	E.	e.	NOUN	NOUN	Gender=Fem|Number=Sing	20	obj	_	_
+23	R.	R.	PROPN	PROPN	_	22	flat:name	_	_
+24	Squibb	Squibb	PROPN	PROPN	_	22	flat:name	_	_
+25	and	and	X	X	_	20	advmod	_	_
+26	Sons	son	NOUN	NOUN	Gender=Masc|Number=Plur	20	obj	_	_
+27	,	,	PUNCT	PUNCT	_	26	punct	_	_
+28	for	for	X	X	_	29	obl:mod	_	_
+29	permanent	permanent	ADJ	ADJ	Gender=Masc|Number=Sing	26	advcl	_	_
+30	display	display	X	X	_	0	ROOT	_	_
+31	in	in	X	X	_	30	dep	_	_
+32	the	the	X	X	_	30	dep	_	_
+33	Museum	Museum	X	X	_	30	dep	_	_
+34	.	.	PUNCT	PUNCT	_	30	punct	_	_
+
+1	Space	Space	X	X	_	37	nsubj	_	_
+2	was	was	X	X	_	1	flat:foreign	_	_
+3	provided	provided	X	X	_	1	flat:foreign	_	_
+4	for	for	X	X	_	1	dep	_	_
+5	short	short	X	X	_	1	dep	_	SpaceAfter=No
+6	-	-	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	SpaceAfter=No
+7	time	time	X	X	_	1	flat:foreign	_	_
+8	guest	guest	X	X	_	7	flat:foreign	_	_
+9	medical	medical	X	X	_	1	flat:foreign	_	_
+10	exhibits	exhibits	X	X	_	1	flat:foreign	_	_
+11	,	,	PUNCT	PUNCT	_	1	punct	_	_
+12	and	and	X	X	_	1	dep	_	_
+13	the	the	X	X	_	14	dep	_	_
+14	Museum	Museum	X	X	_	1	flat:foreign	_	_
+15	collected	collected	X	X	_	1	flat:foreign	_	_
+16	new	new	PROPN	PROPN	Gender=Masc|Number=Sing	1	dep	_	_
+17	accessions	accession	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+18	of	of	ADP	ADP	_	19	case	_	_
+19	microscopes	microscope	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+20	,	,	PUNCT	PUNCT	_	1	punct	_	_
+21	medical	medical	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+22	,	,	PUNCT	PUNCT	_	23	punct	_	_
+23	surgical	surgical	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	conj	_	_
+24	,	,	PUNCT	PUNCT	_	1	punct	_	_
+25	and	and	X	X	_	1	dep	_	_
+26	diagnostic	diagnostic	X	X	_	25	flat:foreign	_	_
+27	instruments	instrument	ADJ	ADJ	Gender=Masc|Number=Plur	26	amod	_	_
+28	,	,	PUNCT	PUNCT	_	26	punct	_	_
+29	uniform	uniform	X	X	_	26	advmod	_	_
+30	,	,	PUNCT	PUNCT	_	1	punct	_	_
+31	and	and	X	X	_	35	dep	_	_
+32	similar	similar	X	X	_	33	dep	_	_
+33	items	item	NOUN	NOUN	Gender=Masc|Number=Plur	31	flat:foreign	_	_
+34	of	of	ADP	ADP	_	35	case	_	_
+35	historical	historical	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+36	medico-military	medico-military	ADJ	ADJ	Gender=Masc|Number=Sing	35	amod	_	_
+37	significance	significance	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+38	.	.	PUNCT	PUNCT	_	37	punct	_	_
+
+1	During	During	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	12	dep	_	_
+2	period	period	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	12	punct	_	_
+4	the	the	X	X	_	12	nmod	_	_
+5	laboratory	laboratory	X	X	_	4	flat:foreign	_	_
+6	rendered	rendered	ADJ	ADJ	Gender=Masc|Number=Plur	5	amod	_	_
+7	centralized	centralized	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	flat:foreign	_	_
+8	macropathological	macropathological	ADJ	ADJ	Number=Plur	4	flat:foreign	_	_
+9	service	service	NOUN	NOUN	Gender=Masc|Number=Sing	4	flat:foreign	_	_
+10	to	to	X	X	_	4	flat:foreign	_	_
+11	qualified	qualified	X	X	_	12	amod	_	_
+12	requesters	requester	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+13	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Specimens	Specimens	X	X	_	0	ROOT	_	_
+2	were	were	X	X	_	1	dep	_	_
+3	mounted	mounted	X	X	_	1	flat:foreign	_	_
+4	for	for	X	X	_	1	dep	_	_
+
+1	military	military	X	X	_	0	ROOT	_	_
+2	installations	installation	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	governmental	governmental	X	X	_	3	dep	_	_
+5	agencies	agencie	NOUN	NOUN	Gender=Fem|Number=Plur	2	conj	_	_
+6	,	,	PUNCT	PUNCT	_	2	punct	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	medical	medical	X	X	_	1	flat:foreign	_	_
+3	schools	schools	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Three	Three	X	X	_	0	ROOT	_	_
+2	hundred	hundred	X	X	_	1	flat:foreign	_	_
+3	five	five	X	X	_	2	punct	_	_
+
+1	copies	copie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	of	of	X	X	_	1	advmod	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	Manual	Manual	X	X	_	1	dep	_	_
+
+1	Of	Of	X	X	_	2	dep	_	_
+2	Macropathological	macropathological	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	Techniques	technique	ADJ	ADJ	Number=Plur	2	amod	_	_
+4	were	were	X	X	_	2	amod	_	_
+5	distributed	distributed	X	X	_	2	amod	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Thirty	thirty	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No
+2	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
+3	five	five	X	X	_	1	flat:foreign	_	_
+4	military	military	X	X	_	1	flat:foreign	_	_
+5	and	and	X	X	_	4	dep	_	_
+6	civilian	civilian	X	X	_	5	dep	_	_
+7	students	students	X	X	_	4	dep	_	_
+8	received	received	X	X	_	0	ROOT	_	_
+9	laboratory	laboratory	X	X	_	8	amod	_	_
+10	training	training	ADJ	ADJ	Gender=Masc|Number=Sing	8	dep	_	_
+11	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	During	During	X	X	_	2	advmod	_	_
+2	fiscal	fiscal	ADJ	ADJ	Gender=Masc	8	amod	_	_
+3	years	year	NOUN	NOUN	_	2	obj	_	_
+4	1959	1959	NUM	NUM	NumType=Card	2	punct	_	_
+5	and	and	X	X	_	2	parataxis	_	_
+6	1960	1960	NUM	NUM	NumType=Card	5	nummod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	there	there	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	were	were	X	X	_	8	dep	_	_
+10	795,586	795,586	NOUN	NOUN	Gender=Fem|Number=Sing	8	acl	_	_
+11	visitors	visitors	X	X	_	8	dep	_	_
+12	to	to	X	X	_	11	dep	_	_
+13	the	the	X	X	_	11	obl:arg	_	_
+14	Museum	Museum	X	X	_	11	dep	_	_
+15	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	During	During	X	X	_	4	advmod	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	period	period	X	X	_	4	obl:mod	_	_
+4	from	from	X	X	_	0	ROOT	_	_
+5	1	1	NUM	NUM	NumType=Card	6	nummod	_	_
+6	July	july	NOUN	NOUN	_	4	obj	_	_
+7	1960	1960	NUM	NUM	NumType=Card	6	nummod	_	_
+8	through	through	X	X	_	4	obl:mod	_	_
+9	31	31	NUM	NUM	NumType=Card	8	nummod	_	_
+10	January	january	NOUN	NOUN	_	8	nmod	_	_
+11	1961	1961	NUM	NUM	NumType=Card	8	nummod	_	_
+12	,	,	PUNCT	PUNCT	_	4	punct	_	_
+13	the	the	X	X	_	14	case	_	_
+14	Medical	Medical	X	X	_	4	advcl	_	_
+15	Museum	Museum	X	X	_	14	dep	_	_
+16	was	was	X	X	_	14	dep	_	_
+17	required	required	X	X	_	14	flat:foreign	_	_
+18	to	to	X	X	_	14	dep	_	_
+19	move	move	X	X	_	14	dep	_	_
+20	to	to	X	X	_	14	dep	_	_
+21	Temporary	Temporary	X	X	_	14	flat:foreign	_	_
+22	Building	Building	X	X	_	14	flat:foreign	_	_
+23	`	`	NOUN	NOUN	_	14	dep	_	SpaceAfter=No
+24	`	`	NUM	NUM	NumType=Card	25	nummod	_	_
+25	S	s	NOUN	NOUN	_	14	nmod	_	_
+26	''	''	PUNCT	PUNCT	_	4	punct	_	_
+27	on	on	PRON	PRON	Number=Sing|Person=3	28	nsubj	_	_
+28	the	the	X	X	_	32	dep	_	_
+29	Mall	Mall	PROPN	PROPN	_	28	obj	_	_
+30	from	from	X	X	_	28	dep	_	_
+31	Chase	Chase	X	X	_	28	obj	_	_
+32	Hall	Hall	PROPN	PROPN	Gender=Masc|Number=Sing	4	obl:mod	_	_
+33	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Throughout	Throughout	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	period	period	X	X	_	1	flat:foreign	_	_
+4	and	and	X	X	_	1	flat:foreign	_	_
+5	during	during	X	X	_	4	flat:foreign	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	movement	movement	ADV	ADV	_	1	dep	_	_
+
+1	operation	operation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	the	the	X	X	_	3	iobj	_	_
+2	Museum	Museum	X	X	_	1	dep	_	_
+3	continued	continued	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	its	its	X	X	_	3	dep	_	_
+5	functional	functional	X	X	_	3	dep	_	_
+6	support	support	NOUN	NOUN	Gender=Masc|Number=Sing	3	obj	_	_
+7	of	of	X	X	_	6	dep	_	_
+8	the	the	X	X	_	7	fixed	_	_
+9	Armed	Armed	X	X	_	7	flat:foreign	_	_
+10	Forces	Forces	X	X	_	7	flat:foreign	_	_
+11	Institute	Institute	PROPN	PROPN	_	7	nsubj	_	_
+12	of	of	X	X	_	13	dep	_	_
+13	Pathology	pathology	NOUN	NOUN	Gender=Fem|Number=Sing	7	obl:arg	_	_
+14	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Armed	Armed	X	X	_	0	ROOT	_	_
+2	Forces	Forces	X	X	_	1	flat:foreign	_	_
+3	Medical	Medical	X	X	_	1	flat:foreign	_	_
+
+1	Publication	Publication	X	X	_	0	ROOT	_	_
+
+1	Agency	Agency	X	X	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Armed	Armed	X	X	_	1	flat:foreign	_	_
+3	Forces	Forces	X	X	_	1	flat:foreign	_	_
+4	Medical	Medical	X	X	_	1	flat:foreign	_	_
+
+1	Publication	Publication	X	X	_	0	ROOT	_	_
+
+1	Agency	Agency	X	X	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	established	established	X	X	_	21	nsubj	_	_
+2	in	in	X	X	_	1	dep	_	_
+3	1949	1949	NUM	NUM	NumType=Card	1	nummod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	has	has	X	X	_	6	case	_	_
+6	published	published	PROPN	PROPN	_	1	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	since	since	PROPN	PROPN	_	1	dep	_	_
+9	January	January	PROPN	PROPN	_	8	flat:name	_	_
+10	1950	1950	NUM	NUM	NumType=Card	8	nummod	_	_
+11	,	,	PUNCT	PUNCT	_	1	punct	_	_
+12	The	The	X	X	_	1	flat:foreign	_	_
+13	United	United	X	X	_	12	flat:foreign	_	_
+14	States	States	X	X	_	12	flat:foreign	_	_
+15	Armed	Armed	X	X	_	12	flat:foreign	_	_
+16	Forces	Forces	X	X	_	12	flat:foreign	_	_
+17	Medical	Medical	X	X	_	12	flat:foreign	_	_
+18	Journal	journal	NOUN	NOUN	_	12	flat:foreign	_	_
+19	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_
+20	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_
+21	triservice	triservice	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+22	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	21	obj	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	furnish	furnish	X	X	_	1	fixed	_	_
+3	material	material	PROPN	PROPN	_	1	dep	_	_
+4	of	of	X	X	_	5	case	_	_
+5	professional	professional	X	X	_	1	dep	_	_
+
+1	interest	interest	X	X	_	0	ROOT	_	_
+2	to	to	X	X	_	1	advmod	_	_
+3	Medical	Medical	X	X	_	1	obj	_	_
+4	Department	Department	X	X	_	3	flat:foreign	_	_
+5	officers	officers	X	X	_	3	flat:foreign	_	_
+6	of	of	X	X	_	3	flat:foreign	_	_
+7	the	the	X	X	_	6	fixed	_	_
+8	three	three	X	X	_	1	dep	_	_
+9	military	military	X	X	_	1	obj	_	_
+10	services	service	ADJ	ADJ	Gender=Masc|Number=Plur	1	obj	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Its	its	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+2	supplement	supplement	ADV	ADV	_	1	advmod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	The	The	X	X	_	7	nmod	_	_
+5	Medical	Medical	X	X	_	4	flat:foreign	_	_
+6	Technicians	Technicians	X	X	_	4	flat:foreign	_	_
+7	Bulletin	bulletin	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	supplied	supplied	NOUN	NOUN	Gender=Fem|Number=Sing	7	conj	_	_
+10	similar	similar	X	X	_	9	flat:foreign	_	_
+11	material	material	X	X	_	9	flat:foreign	_	_
+12	to	to	X	X	_	9	dep	_	_
+13	enlisted	enlisted	X	X	_	9	dep	_	_
+14	medical	medical	NOUN	NOUN	Gender=Masc|Number=Sing	9	flat:foreign	_	_
+15	personnel	personnel	ADJ	ADJ	Gender=Masc|Number=Sing	14	amod	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	These	These	X	X	_	0	ROOT	_	_
+
+1	publications	publication	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	replaced	replaced	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	U.	U.	X	X	_	1	dep	_	_
+
+1	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Naval	Naval	PROPN	PROPN	_	1	flat:name	_	_
+
+1	Medical	Medical	X	X	_	8	nsubj	_	_
+2	Bulletin	bulletin	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	published	published	X	X	_	8	nsubj	_	_
+5	continuously	continuously	X	X	_	4	flat:foreign	_	_
+6	from	from	X	X	_	4	flat:foreign	_	_
+7	1907	1907	NUM	NUM	NumType=Card	4	dep	_	_
+8	through	through	X	X	_	11	obl:mod	_	_
+9	1959	1959	NUM	NUM	NumType=Card	8	nummod	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	as	as	X	X	_	18	aux:tense	_	_
+12	well	well	PROPN	PROPN	Gender=Masc|Number=Sing	11	flat:foreign	_	_
+13	as	as	X	X	_	11	flat:foreign	_	_
+14	the	the	X	X	_	11	dep	_	_
+15	Navy'	navy'	NOUN	NOUN	Gender=Fem|Number=Sing	11	nsubj	_	SpaceAfter=No
+16	s	s	X	X	_	11	dep	_	_
+17	Hospital	Hospital	X	X	_	11	flat:foreign	_	_
+18	Corps	corps	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+19	Quarterly	Quarterly	X	X	_	18	amod	_	_
+20	and	and	X	X	_	19	dep	_	_
+21	the	the	X	X	_	19	dep	_	_
+22	Bulletin	bulletin	NOUN	NOUN	Gender=Masc|Number=Sing	18	nmod	_	_
+23	of	of	X	X	_	22	amod	_	_
+24	the	the	X	X	_	22	dep	_	_
+25	U.	U.	X	X	_	18	flat:foreign	_	_
+
+1	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Army	Army	X	X	_	2	case	_	_
+2	Medical	Medical	X	X	_	0	ROOT	_	_
+3	Department	Department	PROPN	PROPN	_	2	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	published	published	X	X	_	2	dep	_	_
+6	from	from	X	X	_	5	dep	_	_
+7	1922	1922	NUM	NUM	NumType=Card	2	punct	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	1949	1949	NUM	NUM	NumType=Card	1	nummod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	In	In	X	X	_	2	amod	_	_
+2	addition	addition	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl:mod	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	their	their	X	X	_	5	nsubj	_	_
+5	establishment	establishment	X	X	_	0	ROOT	_	_
+6	made	made	X	X	_	5	dep	_	_
+7	it	it	X	X	_	5	dep	_	_
+8	unnecessary	unnecessary	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	dep	_	_
+9	to	to	X	X	_	5	dep	_	_
+10	begin	begin	X	X	_	9	flat:foreign	_	_
+11	publication	publication	NOUN	NOUN	Gender=Fem|Number=Plur	5	dep	_	_
+12	of	of	X	X	_	5	amod	_	_
+13	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	punct	_	_
+14	contemplated	contemplated	X	X	_	13	advmod	_	_
+15	Air	Air	X	X	_	5	dep	_	_
+
+1	Force	Force	X	X	_	0	ROOT	_	_
+2	medical	medical	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	bulletin	bulletin	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Estimated	Estimated	X	X	_	13	nsubj	_	_
+2	annual	annual	X	X	_	1	flat:foreign	_	_
+3	savings	savings	X	X	_	2	flat:foreign	_	_
+4	resulting	resulting	X	X	_	2	flat:foreign	_	_
+5	from	from	X	X	_	2	dep	_	_
+6	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+7	of	of	X	X	_	11	case	_	_
+8	the	the	X	X	_	7	dep	_	_
+9	Journal	journal	NOUN	NOUN	_	7	dep	_	_
+10	and	and	X	X	_	11	case	_	_
+11	Bulletin	bulletin	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+12	on	on	PRON	PRON	Number=Sing|Person=3	13	nsubj	_	_
+13	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	dep	_	_
+14	triservice	triservice	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	xcomp	_	_
+15	basis	basi	NOUN	NOUN	_	14	obj	_	_
+16	,	,	PUNCT	PUNCT	_	18	punct	_	_
+17	as	as	X	X	_	18	expl:subj	_	_
+18	compared	compared	X	X	_	0	ROOT	_	_
+19	with	with	X	X	_	18	nsubj	_	_
+20	the	the	X	X	_	18	dep	_	_
+21	cost	cost	X	X	_	18	nsubj	_	_
+22	of	of	X	X	_	23	dep	_	_
+23	producing	producing	X	X	_	24	obl:mod	_	_
+24	separate	separate	X	X	_	18	obl:mod	_	_
+25	periodicals	periodicals	X	X	_	24	flat:name	_	_
+26	for	for	X	X	_	24	dep	_	_
+27	each	each	X	X	_	24	dep	_	_
+28	service	service	NOUN	NOUN	Gender=Masc|Number=Sing	24	nmod	_	_
+29	,	,	PUNCT	PUNCT	_	18	punct	_	_
+30	were	were	X	X	_	32	case	_	_
+31	between	between	X	X	_	30	flat:foreign	_	_
+32	$	dollar	NOUN	NOUN	_	34	dep	_	SpaceAfter=No
+33	65,000	65,000	NUM	NUM	NumType=Card	34	nummod	_	_
+34	and	and	X	X	_	18	dep	_	_
+35	$	dollar	NOUN	NOUN	Gender=Masc	18	dep	_	SpaceAfter=No
+36	70,000	70,000	NOUN	NOUN	_	18	obj	_	_
+37	.	.	PUNCT	PUNCT	_	18	punct	_	_
+
+1	Additionally	Additionally	PROPN	PROPN	_	4	obl:mod	_	_
+2	,	,	PUNCT	PUNCT	_	4	punct	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	4	nsubj	_	_
+4	the	the	X	X	_	7	dep	_	_
+5	many	many	X	X	_	4	advmod	_	_
+6	ships	ships	X	X	_	4	flat:foreign	_	_
+7	at	at	X	X	_	12	advmod	_	_
+8	sea	sea	X	X	_	7	flat:foreign	_	_
+9	and	and	X	X	_	7	flat:foreign	_	_
+10	in	in	X	X	_	7	flat:foreign	_	_
+11	the	the	X	X	_	7	dep	_	_
+12	smaller	smaller	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+13	naval	naval	ADJ	ADJ	Gender=Masc|Number=Sing	12	obj	_	_
+14	stations	station	NOUN	NOUN	Gender=Fem|Number=Plur	12	obj	_	_
+15	,	,	PUNCT	PUNCT	_	12	punct	_	_
+16	the	the	X	X	_	29	case	_	_
+17	availability	availability	X	X	_	16	flat:foreign	_	_
+18	of	of	X	X	_	16	flat:foreign	_	_
+19	the	the	X	X	_	16	flat:foreign	_	_
+20	Journal	journal	NOUN	NOUN	_	16	flat:foreign	_	_
+21	removed	removed	X	X	_	16	flat:foreign	_	_
+22	the	the	X	X	_	16	flat:foreign	_	_
+23	necessity	necessity	PROPN	PROPN	_	16	flat:foreign	_	_
+24	of	of	X	X	_	25	dep	_	_
+25	subscribing	subscribing	X	X	_	16	flat:foreign	_	_
+26	to	to	X	X	_	16	flat:foreign	_	_
+27	several	several	X	X	_	26	fixed	_	_
+28	additional	additional	X	X	_	29	amod	_	_
+29	journals	journals	X	X	_	12	obl:mod	_	_
+30	of	of	X	X	_	32	dep	_	_
+31	civilian	civilian	X	X	_	30	dep	_	_
+32	origin	origin	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	29	acl:relcl	_	_
+33	over	over	X	X	_	32	flat:foreign	_	_
+34	and	and	X	X	_	29	dep	_	_
+35	above	above	X	X	_	29	flat:foreign	_	_
+36	the	the	X	X	_	37	case	_	_
+37	quantity	quantity	X	X	_	38	obl:mod	_	_
+38	now	now	X	X	_	29	dep	_	_
+39	authorized	authorized	X	X	_	29	flat:foreign	_	_
+40	,	,	PUNCT	PUNCT	_	12	punct	_	_
+41	in	in	X	X	_	44	cc	_	_
+42	order	order	VERB	VERB	VerbForm=Inf	41	fixed	_	_
+43	to	to	X	X	_	41	dep	_	_
+44	provide	provide	X	X	_	12	advcl	_	_
+45	any	any	X	X	_	44	dep	_	_
+46	reasonably	reasonably	NOUN	NOUN	Gender=Masc|Number=Plur	44	obj	_	_
+47	comparable	comparable	ADJ	ADJ	Number=Sing	48	case	_	_
+48	coverage	coverage	NOUN	NOUN	Gender=Masc|Number=Sing	44	nmod	_	_
+49	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	From	from	NOUN	NOUN	_	0	ROOT	_	_
+2	1	1	NUM	NUM	NumType=Card	3	nummod	_	_
+3	July	july	NOUN	NOUN	_	1	nmod	_	_
+4	1958	1958	NUM	NUM	NumType=Card	3	nummod	_	_
+
+1	to	to	X	X	_	3	case	_	_
+2	30	30	NUM	NUM	NumType=Card	3	nummod	_	_
+3	June	june	NOUN	NOUN	_	0	ROOT	_	_
+4	1960	1960	NUM	NUM	NumType=Card	3	nummod	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	_
+6	24	24	NUM	NUM	NumType=Card	7	nummod	_	_
+7	numbers	number	NOUN	NOUN	Gender=Masc|Number=Plur	8	nsubj	_	_
+8	of	of	X	X	_	9	dep	_	_
+9	the	the	X	X	_	3	dep	_	_
+10	Journal	journal	NOUN	NOUN	_	3	flat:foreign	_	_
+11	and	and	X	X	_	3	dep	_	_
+12	nine	nine	X	X	_	3	flat:foreign	_	_
+13	of	of	X	X	_	15	case	_	_
+14	the	the	X	X	_	15	dep	_	_
+15	Bulletin	bulletin	NOUN	NOUN	Gender=Masc|Number=Sing	3	nmod	_	_
+16	were	were	X	X	_	15	nmod	_	_
+17	published	published	X	X	_	15	nmod	_	_
+18	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Each	Each	X	X	_	9	nsubj	_	_
+2	Journal	journal	NOUN	NOUN	_	1	flat:foreign	_	_
+3	contained	contained	X	X	_	1	flat:foreign	_	_
+4	articles	article	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+5	of	of	X	X	_	6	case	_	_
+6	professional	professional	X	X	_	1	nmod	_	_
+7	and	and	X	X	_	1	flat:foreign	_	_
+8	clinical	clinical	X	X	_	7	flat:foreign	_	_
+9	interest	interest	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+10	,	,	PUNCT	PUNCT	_	9	punct	_	_
+11	and	and	X	X	_	28	dep	_	_
+12	departments	department	NOUN	NOUN	Gender=Masc|Number=Plur	11	flat:foreign	_	_
+13	devoted	devoted	X	X	_	11	flat:foreign	_	_
+14	to	to	X	X	_	11	flat:foreign	_	_
+15	military	military	X	X	_	11	flat:foreign	_	_
+16	medical	medical	X	X	_	11	flat:foreign	_	_
+17	news	news	X	X	_	11	flat:foreign	_	_
+18	,	,	PUNCT	PUNCT	_	11	punct	_	_
+19	reviews	reviews	PROPN	PROPN	_	11	appos	_	_
+20	of	of	X	X	_	11	fixed	_	_
+21	new	new	X	X	_	11	flat:foreign	_	_
+22	books	book	X	X	_	11	flat:foreign	_	_
+23	,	,	PUNCT	PUNCT	_	11	punct	_	_
+24	and	and	X	X	_	28	dep	_	_
+25	other	other	X	X	_	24	flat:foreign	_	_
+26	features	feature	NOUN	NOUN	Gender=Fem|Number=Plur	24	flat:foreign	_	_
+27	of	of	X	X	_	28	dep	_	_
+28	interest	interest	X	X	_	9	dep	_	_
+29	to	to	X	X	_	28	advmod	_	_
+30	officers	officers	X	X	_	28	obj	_	_
+31	of	of	X	X	_	33	case	_	_
+32	the	the	X	X	_	31	fixed	_	_
+33	medical	medical	X	X	_	28	obj	_	_
+34	services	service	NOUN	NOUN	Gender=Masc|Number=Plur	33	amod	_	_
+35	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Council	Council	X	X	_	1	flat:foreign	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	1	flat:foreign	_	_
+4	National	national	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	Defense	defense	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+6	of	of	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	6	fixed	_	_
+8	American	American	X	X	_	1	flat:foreign	_	_
+9	Medical	Medical	X	X	_	1	flat:foreign	_	_
+
+1	Association	Association	PROPN	PROPN	_	5	nsubj	_	_
+2	contributed	contributed	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+4	brief	brief	NOUN	NOUN	Gender=Masc|Number=Sing	5	amod	_	_
+5	article	article	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	each	each	X	X	_	1	dep	_	_
+3	issue	issue	X	X	_	1	flat:foreign	_	_
+4	entitled	entitled	X	X	_	1	dep	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	`	`	ADP	ADP	_	8	nummod	_	SpaceAfter=No
+7	`	`	X	X	_	8	case	_	_
+8	This	This	X	X	_	1	dep	_	_
+9	Is	Is	X	X	_	1	dep	_	_
+10	Your	Your	X	X	_	11	dep	_	_
+11	A.M.A.	A.M.A.	PROPN	PROPN	_	1	flat:foreign	_	_
+12	''	''	PUNCT	PUNCT	_	1	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Beginning	Beginning	X	X	_	0	ROOT	_	_
+2	with	with	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	October	October	X	X	_	1	flat:foreign	_	_
+5	1959	1959	NUM	NUM	NumType=Card	4	nummod	_	_
+
+1	issue	issue	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	1	fixed	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	Journal	journal	NOUN	NOUN	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	the	the	X	X	_	7	dep	_	_
+7	method	method	X	X	_	16	nsubj	_	_
+8	of	of	X	X	_	9	dep	_	_
+9	production	production	NOUN	NOUN	Gender=Fem|Number=Sing	7	nmod	_	_
+10	of	of	X	X	_	11	case	_	_
+11	copy	copy	X	X	_	7	nmod	_	_
+12	for	for	X	X	_	7	dep	_	_
+13	photo-offset	photo-offset	PROPN	PROPN	_	7	punct	_	_
+14	reproduction	reproduction	NOUN	NOUN	Gender=Fem|Number=Sing	7	appos	_	_
+15	was	was	X	X	_	16	iobj	_	_
+16	changed	changed	VERB	VERB	VerbForm=Inf	1	acl:relcl	_	_
+17	from	from	X	X	_	16	dep	_	_
+18	varityping	varityping	X	X	_	16	dep	_	_
+19	to	to	X	X	_	16	dep	_	_
+20	hot	hot	X	X	_	19	flat:foreign	_	_
+21	typesetting	typesetting	X	X	_	19	flat:foreign	_	_
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	This	This	X	X	_	14	nsubj	_	_
+2	resulted	resulted	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	4	case	_	_
+4	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+5	improved	improved	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
+6	appearance	appearance	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+9	was	was	X	X	_	8	dep	_	_
+10	followed	followed	X	X	_	8	nmod	_	_
+11	by	by	X	X	_	12	case	_	_
+12	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	8	nmod	_	_
+13	increase	increase	X	X	_	8	dep	_	_
+14	in	in	X	X	_	20	case	_	_
+15	printing	printing	X	X	_	14	dep	_	_
+16	cost	cost	X	X	_	14	flat:foreign	_	_
+17	that	that	X	X	_	14	dep	_	_
+18	necessitated	necessitated	X	X	_	14	flat:foreign	_	_
+19	the	the	X	X	_	14	dep	_	_
+20	institution	institution	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+21	of	of	X	X	_	22	case	_	_
+22	major	major	PROPN	PROPN	Gender=Masc|Number=Sing	20	nmod	_	_
+23	economies	economies	X	X	_	22	amod	_	_
+24	to	to	X	X	_	22	dep	_	_
+25	keep	keep	X	X	_	22	flat:name	_	_
+
+1	within	within	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	5	dep	_	_
+2	total	total	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	of	of	X	X	_	4	case	_	_
+4	allocated	allocated	X	X	_	1	dep	_	_
+5	funds	fund	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	21	advmod	_	_
+2	use	user	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_
+3	of	of	ADP	ADP	_	5	dep	_	_
+4	100	100	NUM	NUM	NumType=Card	5	nummod	_	_
+5	instead	instead	NOUN	NOUN	Gender=Masc|Number=Plur	2	obl:arg	_	_
+6	of	of	ADP	ADP	_	8	case	_	_
+7	140	140	NUM	NUM	NumType=Card	8	nummod	_	_
+8	substance	substance	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+9	paper	paper	VERB	VERB	VerbForm=Inf	8	acl	_	_
+10	plus	plus	ADV	ADV	_	9	advmod	_	_
+11	the	the	X	X	_	12	amod	_	_
+12	adoption	adoption	NOUN	NOUN	Gender=Fem|Number=Sing	8	nmod	_	_
+13	of	of	X	X	_	12	advmod	_	_
+14	side	side	X	X	_	12	conj	_	_
+15	stapling	stapling	X	X	_	14	amod	_	_
+16	beginning	beginning	X	X	_	12	dep	_	_
+17	with	with	X	X	_	12	flat:foreign	_	_
+18	the	the	X	X	_	12	dep	_	_
+19	May	May	X	X	_	8	nmod	_	_
+20	1960	1960	NUM	NUM	NumType=Card	8	nummod	_	_
+21	issue	issue	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+22	reduced	reduced	X	X	_	21	nmod	_	_
+23	costs	costs	X	X	_	22	flat:foreign	_	_
+24	sufficiently	sufficiently	X	X	_	21	dep	_	_
+25	to	to	X	X	_	31	case	_	_
+26	allow	allow	X	X	_	25	dep	_	_
+27	completion	completion	NOUN	NOUN	Gender=Fem|Number=Sing	26	obj	_	_
+28	of	of	X	X	_	31	case	_	_
+29	the	the	X	X	_	28	fixed	_	_
+30	fiscal	fiscal	ADJ	ADJ	Gender=Masc	28	fixed	_	_
+31	year	year	X	X	_	21	nmod	_	_
+32	with	with	X	X	_	31	flat:name	_	_
+33	nearly	nearly	X	X	_	21	dep	_	_
+34	$	dollar	NOUN	NOUN	_	21	dep	_	SpaceAfter=No
+35	4,000	4,000	X	X	_	34	dep	_	_
+36	in	in	X	X	_	34	amod	_	_
+37	unexpended	unexpended	X	X	_	21	acl	_	_
+38	funds	fund	ADJ	ADJ	Gender=Masc|Number=Plur	21	flat:foreign	_	_
+39	.	.	PUNCT	PUNCT	_	21	punct	_	_
+
+1	Two	Two	X	X	_	0	ROOT	_	_
+2	special	special	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	issues	issu	ADJ	ADJ	Gender=Fem|Number=Plur	2	amod	_	_
+4	were	were	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+5	published	published	X	X	_	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	one	one	X	X	_	1	dep	_	_
+8	for	for	X	X	_	9	case	_	_
+9	November	November	PROPN	PROPN	_	1	obl:mod	_	_
+10	1959	1959	NUM	NUM	NumType=Card	9	nummod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Space	Space	X	X	_	0	ROOT	_	_
+3	Medicine	Medicine	X	X	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	other	other	X	X	_	5	flat:foreign	_	_
+7	the	the	X	X	_	5	flat:foreign	_	_
+8	Tenth	Tenth	X	X	_	5	flat:foreign	_	_
+9	Anniversary	Anniversary	PROPN	PROPN	_	5	flat:foreign	_	_
+10	issue	issue	X	X	_	2	flat:foreign	_	_
+11	for	for	X	X	_	2	flat:foreign	_	_
+12	January	January	PROPN	PROPN	_	2	dep	_	_
+13	1960	1960	NUM	NUM	NumType=Card	2	nummod	_	_
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	February	February	PROPN	PROPN	_	1	flat:foreign	_	_
+3	1960	1960	NUM	NUM	NumType=Card	1	nummod	_	_
+
+1	issue	issue	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	marked	marked	X	X	_	1	amod	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	reinstitution	reinstitution	X	X	_	1	amod	_	_
+5	of	of	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	dep	_	_
+
+1	section	section	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	entitled	entitled	PROPN	PROPN	_	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	`	`	ADP	ADP	_	7	case	_	SpaceAfter=No
+5	`	`	X	X	_	4	fixed	_	_
+6	The	The	X	X	_	4	fixed	_	_
+7	Medical	Medical	X	X	_	1	nmod	_	_
+8	Officer	Officer	X	X	_	7	flat:foreign	_	_
+9	Writes	Writes	PROPN	PROPN	_	1	nmod	_	_
+10	''	''	PUNCT	PUNCT	_	1	punct	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Replacing	Replacing	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	discontinued	discontinued	ADJ	ADJ	Number=Sing	2	advmod	_	_
+4	Medical	Medical	X	X	_	1	nmod	_	_
+5	Technicians	Technicians	X	X	_	1	flat:name	_	_
+6	Bulletin	bulletin	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+9	of	of	X	X	_	10	case	_	_
+10	which	which	X	X	_	8	nmod	_	_
+11	was	was	X	X	_	10	flat:name	_	_
+12	suspended	suspended	X	X	_	8	nmod	_	_
+13	with	with	X	X	_	12	dep	_	_
+14	the	the	X	X	_	12	dep	_	_
+15	November	November	X	X	_	12	dep	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	December	December	PROPN	PROPN	_	0	ROOT	_	_
+
+1	1959	1959	NUM	NUM	NumType=Card	2	nummod	_	_
+2	issue	issue	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl:mod	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	section	section	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+6	called	called	ADJ	ADJ	Gender=Fem|Number=Sing	5	amod	_	_
+7	`	`	ADP	ADP	_	9	case	_	SpaceAfter=No
+8	`	`	ADP	ADP	_	9	case	_	_
+9	Technical	Technical	X	X	_	5	obl:arg	_	_
+
+1	Notes	note	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	''	''	X	X	_	1	punct	_	_
+3	was	was	X	X	_	4	iobj	_	_
+4	inaugurated	inaugurated	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_
+3	bimonthly	bimonthly	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	ROOT	_	_
+4	basis	basis	X	X	_	3	obj	_	_
+5	beginning	beginning	X	X	_	3	dep	_	_
+6	with	with	X	X	_	3	dep	_	_
+7	the	the	X	X	_	3	dep	_	_
+8	April	April	X	X	_	3	obj	_	_
+9	1960	1960	NUM	NUM	NumType=Card	8	nummod	_	_
+10	issue	issue	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Occasional	Occasional	X	X	_	0	ROOT	_	_
+2	features	feature	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+3	were	were	X	X	_	1	flat:foreign	_	_
+4	published	published	X	X	_	1	flat:foreign	_	_
+5	on	on	PRON	PRON	Number=Sing|Person=3	6	nsubj	_	_
+6	historical	historical	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+7	medicine	medicine	X	X	_	6	obj	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	special	special	X	X	_	10	amod	_	_
+10	reports	report	NOUN	NOUN	Gender=Masc|Number=Plur	6	obl:mod	_	_
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	bibliography	bibliography	NOUN	NOUN	Gender=Fem|Number=Sing	6	conj	_	_
+13	,	,	PUNCT	PUNCT	_	12	punct	_	_
+14	and	and	X	X	_	17	dep	_	_
+15	`	`	NOUN	NOUN	_	14	dep	_	SpaceAfter=No
+16	`	`	PRON	PRON	Person=3|Reflex=Yes	17	case	_	_
+17	Collector'	collector'	NOUN	NOUN	Gender=Masc|Number=Plur	12	nmod	_	SpaceAfter=No
+18	s	s	PRON	PRON	Person=3|Reflex=Yes	17	dep	_	_
+19	Items	Items	X	X	_	17	flat:name	_	_
+20	''	''	PUNCT	PUNCT	_	6	punct	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	13	dep	_	_
+2	May	May	PROPN	PROPN	_	1	nsubj	_	_
+3	1960	1960	NUM	NUM	NumType=Card	2	nummod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	Armed	Armed	X	X	_	5	flat:foreign	_	_
+7	Forces	Forces	X	X	_	5	flat:foreign	_	_
+8	Institute	Institute	PROPN	PROPN	_	5	flat:foreign	_	_
+9	of	of	X	X	_	10	dep	_	_
+10	Pathology	Pathology	X	X	_	5	obl:arg	_	_
+11	began	began	X	X	_	10	flat:foreign	_	_
+12	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_
+13	series	serier	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+14	of	of	X	X	_	15	case	_	_
+15	articles	article	NOUN	NOUN	Gender=Masc|Number=Plur	13	obl:arg	_	_
+16	on	on	PRON	PRON	Number=Sing|Person=3	17	nsubj	_	_
+17	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	20	case	_	_
+18	`	`	X	X	_	17	dep	_	SpaceAfter=No
+19	`	`	ADP	ADP	_	20	case	_	_
+20	Medical	Medical	X	X	_	13	obl:mod	_	_
+21	Museum	Museum	PROPN	PROPN	_	20	flat:name	_	_
+22	''	''	PUNCT	PUNCT	_	13	punct	_	_
+23	,	,	PUNCT	PUNCT	_	13	punct	_	_
+24	and	and	X	X	_	13	dep	_	_
+25	in	in	X	X	_	24	flat:foreign	_	_
+26	June	June	X	X	_	24	flat:foreign	_	_
+27	,	,	PUNCT	PUNCT	_	13	punct	_	_
+28	the	the	X	X	_	29	case	_	_
+29	Institute	Institute	X	X	_	13	obl:mod	_	_
+30	started	started	X	X	_	29	flat:foreign	_	_
+31	contributing	contributing	X	X	_	13	parataxis	_	_
+32	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advmod	_	_
+33	regular	regular	X	X	_	13	advmod	_	_
+34	monthly	monthly	X	X	_	13	amod	_	_
+35	`	`	NOUN	NOUN	_	37	case	_	SpaceAfter=No
+36	`	`	PRON	PRON	Person=3|Reflex=Yes	37	nummod	_	_
+37	Case	Case	X	X	_	13	obl:arg	_	_
+38	For	For	X	X	_	37	amod	_	_
+39	Diagnosis	diagnosi	NOUN	NOUN	_	13	dep	_	_
+40	''	''	PUNCT	PUNCT	_	13	punct	_	_
+41	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	The	The	X	X	_	5	dep	_	_
+2	Institute	Institute	X	X	_	1	flat:foreign	_	_
+3	also	also	X	X	_	1	flat:foreign	_	_
+4	planned	planned	X	X	_	1	flat:foreign	_	_
+5	to	to	X	X	_	7	dep	_	_
+6	furnish	furnish	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	5	acl	_	_
+7	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	dep	_	_
+8	regular	regular	X	X	_	0	ROOT	_	_
+
+1	series	serie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+
+1	of	of	X	X	_	2	case	_	_
+2	articles	article	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	0	ROOT	_	_
+2	beginning	beginning	X	X	_	1	fixed	_	_
+3	in	in	X	X	_	2	flat:foreign	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	fall	fall	X	X	_	2	flat:foreign	_	_
+6	of	of	ADP	ADP	_	7	case	_	_
+7	1960	1960	NUM	NUM	NumType=Card	2	nmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	on	on	PRON	PRON	Number=Sing|Person=3	8	nsubj	_	_
+3	its	its	X	X	_	2	dep	_	_
+4	more	more	X	X	_	2	dep	_	_
+5	significant	significant	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+6	Scientific	Scientific	X	X	_	2	flat:name	_	_
+7	Exhibits	Exhibits	PROPN	PROPN	_	6	flat:name	_	_
+8	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Armed	Armed	X	X	_	1	flat:foreign	_	_
+3	Forces	Forces	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	Epidemiological	Epidemiological	PROPN	PROPN	_	8	nsubj	_	_
+2	Board	Board	X	X	_	1	flat:name	_	_
+3	agreed	agreed	X	X	_	1	amod	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	submit	submit	X	X	_	1	flat:foreign	_	_
+6	each	each	X	X	_	1	flat:foreign	_	_
+7	month	month	X	X	_	1	flat:name	_	_
+8	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+10	for	for	X	X	_	15	case	_	_
+11	one	one	X	X	_	10	fixed	_	_
+12	of	of	X	X	_	10	fixed	_	_
+13	its	its	SYM	SYM	_	10	fixed	_	_
+14	12	12	NUM	NUM	NumType=Card	15	nummod	_	_
+15	commissions	commission	NOUN	NOUN	Gender=Fem|Number=Plur	9	nmod	_	_
+16	,	,	PUNCT	PUNCT	_	9	punct	_	_
+17	so	so	X	X	_	16	dep	_	_
+18	that	that	X	X	_	17	flat:foreign	_	_
+19	each	each	X	X	_	17	flat:foreign	_	_
+20	commission	commission	NOUN	NOUN	Gender=Fem|Number=Sing	17	flat:foreign	_	_
+21	will	will	X	X	_	17	flat:foreign	_	_
+22	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	9	nmod	_	_
+23	once	once	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	nmod	_	_
+
+1	a	avoir	X	X	_	0	ROOT	_	_
+2	year	year	X	X	_	1	advmod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	some	some	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	nsubj	_	_
+3	phase	phase	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+4	of	of	X	X	_	11	case	_	_
+5	its	its	X	X	_	4	dep	_	_
+6	work	work	X	X	_	4	dep	_	_
+7	calculated	calculated	X	X	_	4	dep	_	_
+8	to	to	X	X	_	4	dep	_	_
+9	be	be	X	X	_	4	dep	_	_
+10	of	of	ADP	ADP	_	11	dep	_	_
+11	particular	particular	NOUN	NOUN	Gender=Fem|Number=Sing	3	obl:mod	_	_
+
+1	interest	interest	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	value	valoir	X	X	_	1	dep	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	medical	medical	X	X	_	1	obj	_	_
+6	officers	officers	X	X	_	1	dep	_	_
+7	of	of	X	X	_	1	dep	_	_
+8	the	the	X	X	_	7	flat:foreign	_	_
+9	Armed	Armed	X	X	_	7	flat:foreign	_	_
+10	Forces	Forces	PROPN	PROPN	_	7	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	3	case	_	_
+2	first	first	X	X	_	3	amod	_	_
+3	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	8	obl:mod	_	_
+4	in	in	X	X	_	5	case	_	_
+5	this	this	X	X	_	3	nmod	_	_
+6	continuing	continuing	X	X	_	3	dep	_	_
+7	series	serie	NOUN	NOUN	Gender=Fem|Number=Plur	3	amod	_	_
+8	appeared	appeared	X	X	_	0	ROOT	_	_
+9	in	in	X	X	_	11	case	_	_
+10	the	the	X	X	_	9	dep	_	_
+11	September	September	X	X	_	8	obl:arg	_	_
+12	1960	1960	NUM	NUM	NumType=Card	11	nummod	_	_
+13	issue	issue	NOUN	NOUN	Gender=Fem|Number=Sing	8	obj	_	_
+14	of	of	X	X	_	13	fixed	_	_
+15	the	the	X	X	_	13	dep	_	_
+16	Journal	journal	NOUN	NOUN	_	13	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	8	punct	_	SpaceAfter=No

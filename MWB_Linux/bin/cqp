@@ -1,0 +1,3 @@
+#!/bin/bash
+# Wrapper pour CQP via Docker
+exec docker run --rm -i -v "$(pwd):/workspace" -w /workspace motifworkbench-cwb cqp "$@"

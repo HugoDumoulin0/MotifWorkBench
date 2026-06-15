@@ -1,0 +1,2813 @@
+1	`	`	ADP	ADP	_	3	case	_	SpaceAfter=No
+2	`	`	PRON	PRON	Person=3|Reflex=Yes	3	case	_	_
+3	A	a	NOUN	NOUN	_	5	obl:mod	_	_
+4	Night	Night	X	X	_	3	dep	_	_
+5	in	in	X	X	_	6	dep	_	_
+6	New	New	X	X	_	14	dep	_	_
+7	Orleans	Orleans	PROPN	PROPN	_	6	flat:name	_	_
+8	''	''	X	X	_	6	punct	_	_
+9	is	is	X	X	_	10	dep	_	_
+10	the	the	X	X	_	14	dep	_	_
+11	gayety	gayety	ADJ	ADJ	Gender=Fem|Number=Sing	10	amod	_	_
+12	planned	planned	X	X	_	10	flat:foreign	_	_
+13	by	by	X	X	_	14	dep	_	_
+14	members	members	X	X	_	0	ROOT	_	_
+
+1	of	of	X	X	_	2	dep	_	_
+2	the	the	X	X	_	0	ROOT	_	_
+3	Thrift	Thrift	X	X	_	2	flat:foreign	_	_
+4	Shop	Shop	X	X	_	2	flat:foreign	_	_
+5	Committee	Committee	X	X	_	2	flat:foreign	_	_
+6	for	for	X	X	_	2	dep	_	_
+
+1	May	May	PROPN	PROPN	_	4	nsubj	_	_
+2	6	6	NUM	NUM	NumType=Card	3	nummod	_	_
+3	at	at	X	X	_	4	dep	_	_
+4	Philmont	philmont	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	6	dep	_	_
+5	Country	Country	X	X	_	4	obj	_	_
+6	Club	club	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	The	The	X	X	_	5	dep	_	_
+2	women	women	X	X	_	1	flat:foreign	_	_
+3	have	haver	X	X	_	5	nsubj	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	reputation	reputation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+6	for	for	X	X	_	5	dep	_	_
+7	giving	giving	X	X	_	6	fixed	_	_
+
+1	parties	party	NOUN	NOUN	Gender=Fem|Number=Plur	4	nsubj	_	_
+2	that	that	X	X	_	1	amod	_	_
+3	are	are	X	X	_	4	dep	_	_
+4	different	different	X	X	_	0	ROOT	_	_
+5	and	and	X	X	_	4	dep	_	_
+6	are	are	X	X	_	4	dep	_	_
+7	fun	fun	X	X	_	4	dep	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	this	this	X	X	_	1	flat:foreign	_	_
+
+1	year'	year'	PROPN	PROPN	_	3	expl:comp	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	3	expl:comp	_	_
+3	promises	promettre	VERB	VERB	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	0	ROOT	_	_
+4	to	to	X	X	_	3	advmod	_	_
+5	follow	follow	X	X	_	3	obl:mod	_	_
+6	in	in	X	X	_	7	case	_	_
+7	this	this	X	X	_	3	obl:mod	_	_
+
+1	fine	fin	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	_
+2	tradition	tradition	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	H.	h.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	J.	J.	PROPN	PROPN	_	1	flat:name	_	_
+3	Grinsfelder	Grinsfelder	PROPN	PROPN	_	1	flat:name	_	_
+4	is	is	X	X	_	5	case	_	_
+5	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	3	nmod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	5	dep	_	_
+2	Louisiana	Louisiana	X	X	_	1	flat:foreign	_	_
+3	city	city	X	X	_	1	flat:foreign	_	_
+4	is	is	X	X	_	5	dep	_	_
+5	known	known	X	X	_	0	ROOT	_	_
+6	,	,	PUNCT	PUNCT	_	5	punct	_	_
+7	of	of	X	X	_	8	case	_	_
+8	course	course	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl:mod	_	_
+9	,	,	PUNCT	PUNCT	_	5	punct	_	_
+10	for	for	ADP	ADP	_	13	case	_	_
+11	its	its	X	X	_	10	fixed	_	_
+12	fine	fin	ADJ	ADJ	Gender=Fem|Number=Sing	13	amod	_	_
+13	food	food	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl:mod	_	_
+14	,	,	PUNCT	PUNCT	_	5	punct	_	_
+15	good	good	X	X	_	23	nsubj	_	_
+16	music	music	X	X	_	15	flat:foreign	_	_
+17	and	and	X	X	_	15	dep	_	_
+18	its	its	X	X	_	17	dep	_	_
+19	colorful	colorful	X	X	_	15	flat:foreign	_	_
+20	hospitality	hospitality	X	X	_	19	amod	_	_
+21	`	`	ADP	ADP	_	19	dep	_	SpaceAfter=No
+22	`	`	X	X	_	15	punct	_	_
+23	and	and	X	X	_	5	dep	_	_
+24	,	,	PUNCT	PUNCT	_	23	punct	_	_
+25	when	when	X	X	_	26	amod	_	_
+26	guests	guest	NOUN	NOUN	Gender=Masc|Number=Plur	27	nsubj	_	_
+27	arrive	arriver	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	dep	_	_
+28	at	at	X	X	_	29	expl:pass	_	_
+29	Philmont	Philmont	X	X	_	27	advcl	_	_
+30	that	that	X	X	_	29	advmod	_	_
+31	night	night	X	X	_	27	obj	_	_
+32	''	''	PUNCT	PUNCT	_	27	punct	_	_
+33	,	,	PUNCT	PUNCT	_	27	punct	_	_
+34	says	says	X	X	_	27	obj	_	_
+35	Mrs	Mrs	PROPN	PROPN	_	34	flat:name	_	SpaceAfter=No
+36	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Grinsfelder	Grinsfelder	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	`	`	ADP	ADP	_	5	case	_	SpaceAfter=No
+4	`	`	X	X	_	5	case	_	_
+5	that	that	X	X	_	7	dep	_	_
+6	is	is	X	X	_	7	dep	_	_
+7	exactly	exactly	X	X	_	1	obl:mod	_	_
+8	what	what	X	X	_	7	amod	_	_
+9	we	we	X	X	_	7	dep	_	_
+10	expect	expect	NOUN	NOUN	Gender=Masc|Number=Sing	7	dep	_	_
+11	to	to	X	X	_	7	dep	_	_
+12	offer	offer	X	X	_	11	flat:foreign	_	_
+13	them	them	X	X	_	11	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	We'	We'	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+2	ve	ve	X	X	_	1	dep	_	_
+3	been	been	X	X	_	2	dep	_	_
+4	working	working	X	X	_	2	dep	_	_
+5	for	for	X	X	_	2	dep	_	_
+6	weeks	weeks	X	X	_	2	dep	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	prospects	prospects	X	X	_	1	flat:foreign	_	_
+3	look	look	NOUN	NOUN	Gender=Masc|Number=Sing	2	nmod	_	_
+4	great	great	ADJ	ADJ	Gender=Masc|Number=Plur	2	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	We	We	X	X	_	5	nsubj	_	_
+2	are	are	X	X	_	1	flat:foreign	_	_
+3	keeping	keeping	X	X	_	1	flat:foreign	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	dep	_	_
+5	number	number	X	X	_	8	dep	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	surprises	surprise	NOUN	NOUN	Gender=Fem|Number=Plur	5	obl:mod	_	_
+8	under	under	X	X	_	0	ROOT	_	_
+9	our	our	X	X	_	8	dep	_	_
+10	hats	hats	PROPN	PROPN	_	8	obj	_	_
+11	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	we	we	X	X	_	1	dep	_	_
+3	can'	can'	ADP	ADP	_	1	dep	_	SpaceAfter=No
+4	t	t	X	X	_	1	nmod	_	_
+5	tell	tell	X	X	_	1	advmod	_	_
+6	it	it	X	X	_	1	dep	_	_
+7	all	all	X	X	_	6	dep	_	_
+8	now	now	X	X	_	6	dep	_	_
+9	and	and	X	X	_	6	dep	_	_
+10	then	then	X	X	_	6	flat:foreign	_	_
+11	have	haver	X	X	_	1	dep	_	_
+12	no	no	X	X	_	1	dep	_	_
+13	new	new	X	X	_	12	flat:foreign	_	_
+14	excitement	excitement	ADV	ADV	_	1	advmod	_	_
+15	later	later	VERB	VERB	VerbForm=Inf	1	acl	_	_
+16	''	''	PUNCT	PUNCT	_	1	punct	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Basin	Basin	PROPN	PROPN	_	16	nsubj	_	_
+2	Street	Street	X	X	_	1	flat:name	_	_
+3	Beat	Beat	X	X	_	1	flat:foreign	_	_
+4	But	But	PROPN	PROPN	_	1	flat:foreign	_	_
+5	she	she	X	X	_	6	case	_	_
+6	does	does	X	X	_	1	obl:mod	_	_
+7	indicate	indicate	X	X	_	1	flat:foreign	_	_
+8	festivities	festivities	X	X	_	1	flat:foreign	_	_
+9	will	will	X	X	_	1	dep	_	_
+10	start	start	X	X	_	1	flat:foreign	_	_
+11	early	early	X	X	_	1	amod	_	_
+12	,	,	PUNCT	PUNCT	_	16	punct	_	_
+13	that	that	X	X	_	16	nsubj	_	_
+14	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_
+15	jazz	jazz	ADV	ADV	_	16	advmod	_	_
+16	combo	combo	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+17	will	will	X	X	_	16	obj	_	_
+18	`	`	NOUN	NOUN	_	17	dep	_	SpaceAfter=No
+19	`	`	ADP	ADP	_	20	case	_	_
+20	give	give	X	X	_	17	nmod	_	_
+21	with	with	X	X	_	17	dep	_	_
+22	the	the	X	X	_	17	dep	_	_
+23	Basin	Basin	X	X	_	17	dep	_	_
+24	Street	Street	X	X	_	16	dep	_	_
+25	beat	beat	X	X	_	16	dep	_	_
+26	''	''	X	X	_	16	punct	_	_
+27	during	during	X	X	_	16	dep	_	_
+28	the	the	X	X	_	16	dep	_	_
+29	cocktail	cocktail	NOUN	NOUN	Gender=Masc|Number=Sing	28	flat:foreign	_	_
+30	and	and	X	X	_	16	dep	_	_
+31	dinner	dinner	X	X	_	30	fixed	_	_
+32	hours	hours	X	X	_	30	flat:foreign	_	_
+33	and	and	X	X	_	32	flat:foreign	_	_
+34	that	that	X	X	_	32	flat:foreign	_	_
+35	Lester	Lester	PROPN	PROPN	_	16	obj	_	_
+36	Lanin'	Lanin'	PROPN	PROPN	_	35	flat:name	_	SpaceAfter=No
+37	s	s	PRON	PRON	Person=3|Reflex=Yes	39	det	_	_
+38	orchestra	orchestrer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	39	dep	_	_
+39	will	will	X	X	_	16	obj	_	_
+40	take	take	X	X	_	39	dep	_	_
+41	over	over	X	X	_	39	dep	_	_
+42	during	during	X	X	_	39	dep	_	_
+43	the	the	X	X	_	39	dep	_	_
+44	dancing	dancing	X	X	_	39	dep	_	_
+45	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	As	as	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	for	for	X	X	_	1	flat:foreign	_	_
+3	food	food	NOUN	NOUN	Gender=Fem|Number=Sing	2	fixed	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	11	nsubj	_	_
+2	Louchheim	Louchheim	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	this	this	X	X	_	4	nmod	_	_
+7	phase	phase	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+8	,	,	PUNCT	PUNCT	_	11	punct	_	_
+9	is	is	X	X	_	11	cc	_	_
+10	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+11	globetrotter	globetrotter	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+12	who	who	X	X	_	11	dep	_	_
+13	knows	knows	X	X	_	12	dep	_	_
+14	good	good	X	X	_	12	dep	_	_
+15	food	food	NOUN	NOUN	Gender=Fem|Number=Sing	11	advmod	_	_
+16	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	`	`	PRON	PRON	Person=3|Reflex=Yes	3	case	_	SpaceAfter=No
+2	`	`	X	X	_	3	case	_	_
+3	New	New	X	X	_	0	ROOT	_	_
+4	Orleans	Orleans	PROPN	PROPN	_	3	flat:name	_	_
+5	''	''	PUNCT	PUNCT	_	3	punct	_	_
+6	?	?	PUNCT	PUNCT	_	3	punct	_	_
+7	?	?	PUNCT	PUNCT	_	3	punct	_	_
+
+1	She	She	X	X	_	0	ROOT	_	_
+2	says	says	X	X	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	`	`	ADP	ADP	_	7	case	_	SpaceAfter=No
+5	`	`	PRON	PRON	Person=3|Reflex=Yes	7	det	_	_
+6	of	of	ADP	ADP	_	7	amod	_	_
+7	course	course	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+8	I'	i'	DET	DET	Definite=Def|Number=Sing|PronType=Art	7	nummod	_	SpaceAfter=No
+9	ve	ve	X	X	_	8	dep	_	_
+10	had	had	X	X	_	9	dep	_	_
+11	the	the	X	X	_	8	dep	_	_
+12	best	best	X	X	_	8	dep	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	It	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	just	just	X	X	_	1	flat:foreign	_	_
+4	bad	bad	X	X	_	1	flat:foreign	_	_
+
+1	luck	luck	X	X	_	0	ROOT	_	_
+
+1	that	that	X	X	_	0	ROOT	_	_
+
+1	we	we	X	X	_	0	ROOT	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	having	having	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	party	party	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	1	fixed	_	_
+
+1	a	avoir	X	X	_	2	aux:tense	_	_
+2	month	month	X	X	_	0	ROOT	_	_
+3	with	with	X	X	_	2	dep	_	_
+4	no	no	X	X	_	5	mark	_	_
+5	R's	r'	NOUN	NOUN	_	2	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	9	punct	_	_
+7	so	so	X	X	_	9	cc	_	_
+8	no	no	X	X	_	9	dep	_	_
+9	oysters	oysters	X	X	_	5	conj	_	_
+10	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	we	we	X	X	_	1	nmod	_	_
+3	have	hav	ADJ	ADJ	Gender=Masc|Number=Plur	4	nummod	_	_
+4	lots	lot	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	of	of	X	X	_	6	case	_	_
+6	other	other	X	X	_	4	nmod	_	_
+7	New	New	X	X	_	4	nmod	_	_
+8	Orleans	Orleans	PROPN	PROPN	_	1	flat:name	_	_
+9	specialties	specialtie	ADJ	ADJ	Gender=Fem|Number=Plur	1	amod	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	I	i	NOUN	NOUN	_	0	ROOT	_	_
+2	know	know	X	X	_	1	flat:foreign	_	_
+3	they	they	X	X	_	4	nsubj	_	_
+4	will	will	X	X	_	1	parataxis	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	good	good	X	X	_	4	obj	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	We'	We'	NUM	NUM	NumType=Card	3	nummod	_	SpaceAfter=No
+2	ve	ve	NOUN	NOUN	_	3	det	_	_
+3	tried	tried	X	X	_	4	obl:mod	_	_
+4	them	them	X	X	_	0	ROOT	_	_
+5	out	out	X	X	_	4	advmod	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	26	dep	_	_
+8	club	club	NOUN	NOUN	Gender=Masc|Number=Sing	7	obj	_	_
+9	chef	chef	NOUN	NOUN	Number=Sing	8	amod	_	_
+10	--	--	ADJ	ADJ	Gender=Masc	8	amod	_	_
+11	or	or	CCONJ	CCONJ	_	8	parataxis	_	_
+12	say	say	PROPN	PROPN	_	11	flat:name	_	_
+13	,	,	PUNCT	PUNCT	_	8	punct	_	_
+14	he	he	X	X	_	16	case	_	_
+15	has	has	PROPN	PROPN	_	14	dep	_	_
+16	tried	tried	PROPN	PROPN	_	8	conj	_	_
+17	them	them	X	X	_	8	flat:foreign	_	_
+18	out	out	X	X	_	8	flat:foreign	_	_
+19	on	on	PRON	PRON	Number=Sing|Person=3	21	nsubj	_	_
+20	us	us	X	X	_	21	expl:comp	_	_
+21	and	and	X	X	_	8	acl:relcl	_	_
+22	we	we	X	X	_	8	dep	_	_
+23	have	haver	X	X	_	7	conj	_	_
+24	selected	selected	X	X	_	7	flat:foreign	_	_
+25	the	the	X	X	_	26	dep	_	_
+26	best	best	X	X	_	4	flat:foreign	_	_
+27	''	''	PUNCT	PUNCT	_	4	punct	_	_
+28	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Scenic	scenic	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	effects	effects	X	X	_	1	dep	_	_
+3	Guests	Guests	X	X	_	11	dep	_	_
+4	will	will	X	X	_	3	flat:foreign	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	treated	treated	X	X	_	4	dep	_	_
+7	to	to	X	X	_	3	flat:foreign	_	_
+8	Gulf	Gulf	X	X	_	3	flat:foreign	_	_
+9	Coast	Coast	X	X	_	3	flat:foreign	_	_
+10	scenic	scenic	X	X	_	3	nmod	_	_
+11	effects	effects	X	X	_	1	dep	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	There	There	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	masses	masse	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	flowers	flower	NOUN	NOUN	Gender=Masc|Number=Plur	4	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	reproductions	reproduction	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+9	of	of	X	X	_	11	case	_	_
+10	the	the	X	X	_	9	dep	_	_
+11	handsome	handsome	NOUN	NOUN	Gender=Masc|Number=Sing	8	nmod	_	_
+12	old	old	ADJ	ADJ	Gender=Masc|Number=Sing	8	amod	_	_
+13	buildings	building	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+14	with	with	X	X	_	13	flat:foreign	_	_
+15	their	their	X	X	_	13	flat:foreign	_	_
+16	grillwork	grillwork	ADJ	ADJ	Number=Plur	15	amod	_	_
+17	and	and	X	X	_	15	dep	_	_
+18	other	other	X	X	_	15	flat:foreign	_	_
+19	things	things	X	X	_	13	flat:foreign	_	_
+20	that	that	X	X	_	13	flat:foreign	_	_
+21	are	are	X	X	_	20	dep	_	_
+22	typical	typical	X	X	_	13	flat:foreign	_	_
+23	of	of	X	X	_	22	amod	_	_
+24	New	New	X	X	_	22	dep	_	_
+25	Orleans	Orleans	PROPN	PROPN	_	13	flat:name	_	_
+26	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Harry	Harry	PROPN	PROPN	Gender=Fem|Number=Sing	2	nummod	_	_
+2	K.	K.	PROPN	PROPN	_	15	nsubj	_	_
+3	Cohen	Cohen	PROPN	PROPN	_	2	flat:name	_	_
+4	is	is	X	X	_	5	case	_	_
+5	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	2	nmod	_	_
+6	of	of	ADP	ADP	_	7	case	_	_
+7	this	this	X	X	_	5	nmod	_	_
+8	phase	phase	X	X	_	5	nmod	_	_
+9	and	and	X	X	_	2	dep	_	_
+10	she	she	X	X	_	9	flat:foreign	_	_
+11	is	is	X	X	_	9	dep	_	_
+12	getting	getting	X	X	_	9	dep	_	_
+13	an	an	PROPN	PROPN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+14	artistic	artistic	X	X	_	13	flat:foreign	_	_
+15	assist	assist	X	X	_	0	ROOT	_	_
+16	from	from	X	X	_	15	dep	_	_
+17	A.	A.	PROPN	PROPN	Gender=Masc|Number=Sing	15	obj	_	_
+18	Van	Van	X	X	_	17	dep	_	_
+19	Hollander	Hollander	PROPN	PROPN	_	17	flat:name	_	_
+20	,	,	PUNCT	PUNCT	_	15	punct	_	_
+21	display	display	X	X	_	15	advcl	_	_
+22	director	director	X	X	_	21	flat:foreign	_	_
+23	of	of	X	X	_	24	case	_	_
+24	Gimbel	Gimbel	PROPN	PROPN	_	21	nmod	_	_
+25	Brothers	Brothers	PROPN	PROPN	Gender=Masc|Number=Sing	21	flat:foreign	_	_
+26	.	.	PUNCT	PUNCT	_	15	punct	_	_
+
+1	The	The	X	X	_	23	dep	_	_
+2	gala	gala	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	Thrift	Thrift	X	X	_	1	flat:foreign	_	_
+6	Shop'	Shop'	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+7	s	s	PRON	PRON	Person=3|Reflex=Yes	9	expl:comp	_	_
+8	annual	annual	X	X	_	9	dep	_	_
+9	bundle	bundl	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+10	party	party	X	X	_	1	flat:foreign	_	_
+11	and	and	X	X	_	1	flat:foreign	_	_
+12	,	,	PUNCT	PUNCT	_	1	punct	_	_
+13	as	as	X	X	_	23	dep	_	_
+14	all	all	X	X	_	13	flat:foreign	_	_
+15	Thrift	Thrift	X	X	_	13	flat:foreign	_	_
+16	Shop	Shop	X	X	_	13	flat:foreign	_	_
+17	friends	friends	X	X	_	16	flat:name	_	_
+18	know	know	X	X	_	13	flat:foreign	_	_
+19	,	,	PUNCT	PUNCT	_	13	punct	_	_
+20	that	that	X	X	_	13	advcl	_	_
+21	means	means	X	X	_	20	flat:foreign	_	_
+22	the	the	X	X	_	23	dep	_	_
+23	admission	admission	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+24	is	is	X	X	_	23	dep	_	_
+25	a	avoir	X	X	_	26	aux:tense	_	_
+26	bundle	bundle	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	parataxis	_	_
+27	of	of	X	X	_	28	case	_	_
+28	used	used	X	X	_	23	dep	_	_
+29	clothing	clothing	X	X	_	23	dep	_	_
+30	in	in	X	X	_	29	fixed	_	_
+31	good	good	X	X	_	29	flat:foreign	_	_
+32	condition	condition	NOUN	NOUN	Gender=Fem|Number=Sing	23	punct	_	_
+33	,	,	PUNCT	PUNCT	_	23	punct	_	_
+34	contributions	contribution	NOUN	NOUN	Gender=Fem|Number=Plur	23	nmod	_	_
+35	of	of	X	X	_	34	amod	_	_
+36	household	household	X	X	_	34	dep	_	_
+37	equipment	equipment	X	X	_	34	amod	_	_
+38	,	,	PUNCT	PUNCT	_	34	punct	_	_
+39	bric	bric	NOUN	NOUN	Gender=Masc|Number=Sing	34	appos	_	SpaceAfter=No
+40	-	-	PROPN	PROPN	_	34	nmod	_	SpaceAfter=No
+41	a	avoir	PROPN	PROPN	_	34	nmod	_	SpaceAfter=No
+42	-	-	PUNCT	PUNCT	_	23	punct	_	SpaceAfter=No
+43	brac	brac	NOUN	NOUN	Gender=Masc|Number=Sing	23	nmod	_	_
+44	and	and	X	X	_	23	dep	_	_
+45	such	such	X	X	_	44	fixed	_	_
+46	to	to	X	X	_	23	dep	_	_
+47	stock	stock	PROPN	PROPN	_	23	dep	_	_
+48	the	the	X	X	_	23	dep	_	_
+49	shelves	shelves	X	X	_	48	flat:foreign	_	_
+50	at	at	X	X	_	52	case	_	_
+51	the	the	X	X	_	50	fixed	_	_
+52	shop'	shop'	PROPN	PROPN	_	23	obl:mod	_	SpaceAfter=No
+53	s	s	PRON	PRON	Person=3|Reflex=Yes	54	nummod	_	_
+54	headquarters	headquarter	NOUN	NOUN	Gender=Masc|Number=Plur	23	dep	_	_
+55	at	at	X	X	_	57	case	_	_
+56	1213	1213	NUM	NUM	NumType=Card	57	nummod	_	_
+57	Walnut	Walnut	PROPN	PROPN	_	23	obl:mod	_	_
+58	St.	st.	ADJ	ADJ	Gender=Masc|Number=Plur	23	amod	_	_
+59	.	.	PUNCT	PUNCT	_	23	punct	_	_
+
+1	Bundle	bundle	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	centers	centers	X	X	_	1	flat:foreign	_	_
+3	For	For	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	convenience	convenience	X	X	_	1	flat:foreign	_	_
+6	of	of	ADP	ADP	_	7	case	_	_
+7	guests	guest	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+8	bundle	bundl	ADJ	ADJ	Gender=Masc|Number=Sing	7	amod	_	_
+9	centers	centers	X	X	_	7	amod	_	_
+10	have	haver	X	X	_	12	case	_	_
+11	been	been	X	X	_	10	dep	_	_
+12	established	established	X	X	_	7	nmod	_	_
+13	throughout	throughout	X	X	_	12	dep	_	_
+14	the	the	X	X	_	7	dep	_	_
+15	city	city	X	X	_	7	flat:foreign	_	_
+16	and	and	X	X	_	7	amod	_	_
+17	suburbs	suburbs	X	X	_	7	amod	_	_
+18	where	where	X	X	_	1	flat:foreign	_	_
+19	the	the	X	X	_	1	flat:foreign	_	_
+20	donations	donation	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+21	may	may	X	X	_	1	flat:foreign	_	_
+22	be	be	X	X	_	21	dep	_	_
+23	deposited	deposited	X	X	_	1	flat:foreign	_	_
+24	between	between	X	X	_	1	flat:foreign	_	_
+25	now	now	X	X	_	1	dep	_	_
+26	and	and	X	X	_	1	dep	_	_
+27	the	the	X	X	_	1	dep	_	_
+28	date	date	X	X	_	1	flat:foreign	_	_
+29	of	of	X	X	_	1	flat:foreign	_	_
+30	the	the	X	X	_	1	dep	_	_
+31	big	big	X	X	_	1	flat:foreign	_	_
+32	event	ever	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+33	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	addition	addition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	to	to	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	bundles	bundles	X	X	_	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	10	punct	_	_
+7	guests	guest	NOUN	NOUN	Gender=Masc|Number=Plur	10	dep	_	_
+8	pay	pay	X	X	_	7	nmod	_	_
+9	the	the	X	X	_	10	dep	_	_
+10	cost	cost	X	X	_	1	flat:foreign	_	_
+11	of	of	ADP	ADP	_	12	dep	_	_
+12	their	their	X	X	_	1	dep	_	_
+13	dinners	dinners	X	X	_	1	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Members	member	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	of	of	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	young	young	X	X	_	1	flat:foreign	_	_
+5	set	set	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	who	who	X	X	_	5	dep	_	_
+7	would	would	X	X	_	6	dep	_	_
+8	like	like	X	X	_	1	flat:foreign	_	_
+9	to	to	X	X	_	10	case	_	_
+10	come	come	X	X	_	1	obl:mod	_	_
+11	to	to	X	X	_	1	dep	_	_
+12	the	the	X	X	_	1	dep	_	_
+13	party	party	X	X	_	1	flat:foreign	_	_
+14	only	only	X	X	_	1	flat:foreign	_	_
+15	during	during	X	X	_	1	flat:foreign	_	_
+16	the	the	X	X	_	1	flat:foreign	_	_
+17	dancing	dancing	X	X	_	16	flat:foreign	_	_
+18	time	time	X	X	_	1	flat:foreign	_	_
+19	are	are	X	X	_	20	case	_	_
+20	welcomed	welcomed	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Thrift	Thrift	X	X	_	1	flat:foreign	_	_
+3	Shop	Shop	PROPN	PROPN	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	with	with	X	X	_	6	case	_	_
+6	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Bernhard	Bernhard	PROPN	PROPN	Gender=Masc|Number=Sing	5	nsubj	_	_
+2	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+3	Blumenthal	Blumenthal	PROPN	PROPN	_	2	flat:name	_	_
+4	as	as	X	X	_	5	aux:tense	_	_
+5	president	president	PROPN	PROPN	_	0	ROOT	_	_
+6	,	,	PUNCT	PUNCT	_	5	punct	_	_
+7	is	is	X	X	_	5	dep	_	_
+8	one	one	X	X	_	7	flat:foreign	_	_
+9	of	of	X	X	_	7	flat:foreign	_	_
+10	the	the	X	X	_	7	flat:foreign	_	_
+11	city'	city'	PROPN	PROPN	_	7	flat:foreign	_	SpaceAfter=No
+12	s	s	PRON	PRON	Person=3|Reflex=Yes	7	dep	_	_
+13	most	most	X	X	_	7	flat:foreign	_	_
+14	successful	successful	X	X	_	13	flat:foreign	_	_
+15	fund	fund	X	X	_	13	flat:foreign	_	SpaceAfter=No
+16	-	-	PROPN	PROPN	_	13	flat:foreign	_	SpaceAfter=No
+17	raisers	raisers	PROPN	PROPN	_	13	dep	_	_
+18	for	for	X	X	_	13	flat:foreign	_	_
+19	the	the	X	X	_	13	dep	_	_
+20	Federation	Federation	X	X	_	13	flat:foreign	_	_
+21	of	of	X	X	_	13	fixed	_	_
+22	Jewish	Jewish	X	X	_	13	dep	_	_
+23	Agencies	agencie	NOUN	NOUN	Gender=Fem|Number=Plur	7	flat:foreign	_	_
+24	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Some	Some	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	idea	idea	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	competence	competence	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+6	of	of	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	women	women	X	X	_	1	flat:foreign	_	_
+9	is	is	X	X	_	1	dep	_	_
+10	indicated	indicated	X	X	_	1	flat:foreign	_	_
+11	in	in	X	X	_	1	flat:foreign	_	_
+12	the	the	X	X	_	1	dep	_	_
+13	contribution	contribution	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+14	made	made	X	X	_	1	flat:foreign	_	_
+15	by	by	X	X	_	16	expl:comp	_	_
+16	them	them	X	X	_	1	flat:foreign	_	_
+17	during	during	X	X	_	1	flat:foreign	_	_
+18	the	the	X	X	_	1	dep	_	_
+19	past	past	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+20	25	25	NUM	NUM	NumType=Card	21	nummod	_	_
+21	years	year	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+22	that	that	X	X	_	1	flat:foreign	_	_
+23	totals	total	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+24	$	dollar	NOUN	NOUN	Gender=Masc	1	nmod	_	SpaceAfter=No
+25	840,000	840,000	NUM	NUM	NumType=Card	1	nmod	_	_
+26	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It'	It'	X	X	_	19	advmod	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	1	dep	_	_
+3	big	big	X	X	_	1	dep	_	_
+4	business	business	X	X	_	1	flat:foreign	_	_
+5	`	`	X	X	_	1	dep	_	SpaceAfter=No
+6	`	`	AUX	AUX	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	case	_	_
+7	Big	Big	PROPN	PROPN	Gender=Masc|Number=Sing	1	acl:relcl	_	_
+8	business	business	X	X	_	7	flat:name	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	this	this	X	X	_	1	dep	_	_
+11	little	little	X	X	_	10	flat:name	_	_
+12	Thrift	Thrift	X	X	_	10	flat:foreign	_	_
+13	Shop	Shop	PROPN	PROPN	_	1	flat:foreign	_	_
+14	business	business	X	X	_	1	flat:foreign	_	_
+15	''	''	PUNCT	PUNCT	_	1	punct	_	_
+16	,	,	PUNCT	PUNCT	_	19	punct	_	_
+17	say	say	X	X	_	19	advmod	_	_
+18	the	the	X	X	_	19	dep	_	_
+19	members	members	X	X	_	0	ROOT	_	_
+20	.	.	PUNCT	PUNCT	_	19	punct	_	_
+
+1	For	For	X	X	_	5	case	_	_
+2	most	most	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	1	flat:foreign	_	_
+4	the	the	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+5	25	25	NUM	NUM	NumType=Card	6	nummod	_	_
+6	years	year	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	operation	operation	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	was	was	X	X	_	1	flat:foreign	_	_
+4	under	under	X	X	_	1	flat:foreign	_	_
+5	feminine	feminin	ADJ	ADJ	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+6	direction	direction	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	12	dep	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	past	past	X	X	_	1	flat:foreign	_	_
+4	few	few	X	X	_	1	flat:foreign	_	_
+5	years	years	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	men	men	X	X	_	1	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	mostly	mostly	X	X	_	1	dep	_	_
+10	husbands	husbands	PROPN	PROPN	_	9	flat:name	_	_
+11	of	of	ADP	ADP	_	12	dep	_	_
+12	members	member	NOUN	NOUN	Gender=Masc|Number=Plur	17	dep	_	_
+13	,	,	PUNCT	PUNCT	_	12	punct	_	_
+14	have	haver	X	X	_	16	amod	_	_
+15	taken	taken	PROPN	PROPN	Gender=Masc|Number=Sing	14	dep	_	_
+16	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	12	nmod	_	_
+17	interest	interest	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+18	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	Louis	Louis	PROPN	PROPN	Gender=Masc|Number=Sing	9	nsubj	_	_
+2	Glazer	Glazer	PROPN	PROPN	_	1	flat:name	_	_
+3	is	is	X	X	_	4	case	_	_
+4	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	of	of	X	X	_	7	case	_	_
+6	the	the	X	X	_	7	dep	_	_
+7	men'	men'	X	X	_	4	nmod	_	SpaceAfter=No
+8	s	s	PRON	PRON	Number=Plur|Person=1|Reflex=Yes	9	expl:pass	_	_
+9	committee	committee	X	X	_	0	ROOT	_	_
+10	that	that	X	X	_	9	advmod	_	_
+11	,	,	PUNCT	PUNCT	_	9	punct	_	_
+12	among	among	X	X	_	9	advmod	_	_
+13	other	other	X	X	_	12	flat:foreign	_	_
+14	jobs	job	X	X	_	13	flat:foreign	_	_
+15	,	,	PUNCT	PUNCT	_	9	punct	_	_
+16	takes	takes	X	X	_	9	advcl	_	_
+17	over	over	X	X	_	16	amod	_	_
+18	part	part	NOUN	NOUN	Number=Sing	16	nsubj	_	_
+19	of	of	X	X	_	20	mark	_	_
+20	the	the	X	X	_	16	obl:arg	_	_
+21	responsibility	responsibility	X	X	_	16	flat:foreign	_	_
+22	for	for	X	X	_	23	case	_	_
+23	staffing	staffing	X	X	_	16	nmod	_	_
+24	the	the	X	X	_	16	flat:foreign	_	_
+25	shop	shop	X	X	_	16	flat:foreign	_	_
+26	during	during	X	X	_	25	dep	_	_
+27	its	its	X	X	_	28	dep	_	_
+28	evening	evening	X	X	_	25	dep	_	_
+29	hours	hours	X	X	_	16	flat:foreign	_	_
+30	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Theodore	theodore	ADV	ADV	PronType=Int	8	nsubj	_	_
+2	Kapnek	Kapnek	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	is	is	X	X	_	4	case	_	_
+4	vice	vice	NOUN	NOUN	Gender=Masc|Number=Sing	8	obl:mod	_	_
+5	chairman	chairman	ADJ	ADJ	Gender=Masc|Number=Sing	4	nmod	_	_
+6	of	of	X	X	_	8	mark	_	_
+7	the	the	X	X	_	8	dep	_	_
+8	committee	committee	X	X	_	0	ROOT	_	_
+9	for	for	X	X	_	8	dep	_	_
+10	the	the	X	X	_	8	dep	_	_
+11	gala	gala	NOUN	NOUN	Gender=Masc|Number=Sing	8	nsubj	_	_
+12	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Richard	Richard	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Newburger	Newburger	PROPN	PROPN	_	0	ROOT	_	_
+2	is	is	X	X	_	3	amod	_	_
+3	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	of	of	X	X	_	5	case	_	_
+5	hostesses	hostesse	NOUN	NOUN	Gender=Fem|Number=Plur	3	nmod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Arthur	Arthur	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Loeb	Loeb	PROPN	PROPN	_	1	flat:name	_	_
+3	is	is	X	X	_	5	case	_	_
+4	making	making	X	X	_	3	flat:foreign	_	_
+5	arrangements	arrangement	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+6	for	for	X	X	_	8	case	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	dep	_	_
+8	reception	reception	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+9	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Joan	Joan	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Lichtenstein	Lichtenstein	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	for	for	X	X	_	1	dep	_	_
+5	publicity	publicity	PROPN	PROPN	_	4	flat:foreign	_	_
+6	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Harry	Harry	PROPN	PROPN	Gender=Masc|Number=Sing	2	case	_	_
+2	M.	m.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	Rose	Rose	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	Jr	Jr	PROPN	PROPN	_	2	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	for	for	X	X	_	3	case	_	_
+3	secretarial	secretarial	PROPN	PROPN	_	0	ROOT	_	_
+4	duties	dutie	ADJ	ADJ	Gender=Fem|Number=Plur	3	amod	_	_
+5	;	;	PUNCT	PUNCT	_	3	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Ralph	Ralph	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Taussig	Taussig	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	for	for	X	X	_	5	case	_	_
+5	junior	junior	X	X	_	1	nmod	_	_
+6	aides	aide	NOUN	NOUN	Number=Plur	5	amod	_	_
+7	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	B.	b.	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Lewis	Lewis	PROPN	PROPN	_	1	flat:name	_	_
+3	Kaufnabb	Kaufnabb	PROPN	PROPN	_	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	for	for	X	X	_	6	case	_	_
+6	senior	senior	X	X	_	3	nmod	_	_
+7	aides	aide	ADJ	ADJ	Gender=Masc|Number=Plur	6	amod	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	and	and	X	X	_	10	dep	_	_
+10	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Samuel	Samuel	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	P.	P.	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Weinberg	Weinberg	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	for	for	X	X	_	1	dep	_	_
+6	the	the	X	X	_	5	flat:foreign	_	_
+7	bundles	bundles	X	X	_	5	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	addition	addition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+5	and	and	X	X	_	4	flat:foreign	_	_
+6	Mrs	Mrs	PROPN	PROPN	_	4	flat:name	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Allan	Allan	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Goodman	Goodman	PROPN	PROPN	_	1	flat:name	_	_
+3	are	are	X	X	_	4	case	_	_
+4	controllers	controller	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Paul	Paul	PROPN	PROPN	Gender=Masc|Number=Sing	4	nsubj	_	_
+2	Stone	Stone	PROPN	PROPN	_	1	flat:name	_	_
+3	is	is	X	X	_	4	mark	_	_
+4	treasurer	treasurer	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+5	and	and	X	X	_	4	dep	_	_
+6	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Albert	Albert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Quell	Quell	PROPN	PROPN	_	1	flat:name	_	_
+3	is	is	X	X	_	5	case	_	_
+4	in	in	X	X	_	5	amod	_	_
+5	charge	charge	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+6	of	of	ADP	ADP	_	7	case	_	_
+7	admittance	admittance	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+8	for	for	X	X	_	1	dep	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	dancing	dancing	X	X	_	1	dep	_	_
+11	at	at	X	X	_	13	case	_	_
+12	9	9	NUM	NUM	NumType=Card	13	nummod	_	_
+13	P.m	P.m	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Besides	beside	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	bundle	bundle	X	X	_	1	flat:foreign	_	_
+4	centers	centers	X	X	_	1	flat:foreign	_	_
+
+1	where	where	X	X	_	0	ROOT	_	_
+2	contributions	contribution	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+3	may	may	X	X	_	1	dep	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	made	made	X	X	_	1	flat:foreign	_	_
+6	there	there	X	X	_	1	nmod	_	_
+7	will	will	X	X	_	6	dep	_	_
+8	be	be	X	X	_	6	dep	_	_
+9	facilities	facilitier	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_
+10	at	at	X	X	_	11	mark	_	_
+11	Philmont	philmont	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	1	acl	_	_
+
+1	Country	Country	X	X	_	0	ROOT	_	_
+
+1	Club	club	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	for	for	ADP	ADP	_	2	case	_	_
+2	those	those	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	who	who	X	X	_	2	dep	_	_
+4	would	would	X	X	_	3	dep	_	_
+5	like	like	X	X	_	3	flat:foreign	_	_
+6	to	to	X	X	_	2	dep	_	_
+7	bring	bring	X	X	_	6	flat:foreign	_	_
+8	the	the	X	X	_	6	flat:foreign	_	_
+9	bundles	bundles	X	X	_	6	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	night	night	X	X	_	5	dep	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	party	party	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	4	advmod	_	_
+2	women'	women'	X	X	_	4	nsubj	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	4	expl:comp	_	_
+4	committee	committee	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	ROOT	_	_
+5	of	of	X	X	_	6	mark	_	_
+6	St.	saint	X	X	_	4	xcomp	_	_
+7	David'	David'	PROPN	PROPN	Gender=Masc|Number=Sing	4	nsubj	_	SpaceAfter=No
+8	s	s	PRON	PRON	Person=3|Reflex=Yes	9	iobj	_	_
+9	Church	Church	X	X	_	4	obl:mod	_	_
+10	will	will	X	X	_	4	obl:mod	_	_
+11	hold	hold	NOUN	NOUN	Gender=Masc|Number=Sing	10	nmod	_	_
+12	its	its	X	X	_	10	dep	_	_
+13	annual	annual	X	X	_	10	flat:foreign	_	_
+14	pre	pre	X	X	_	10	flat:foreign	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	Fair	Fair	X	X	_	7	nsubj	_	_
+3	pink	pink	X	X	_	2	amod	_	_
+4	parade	parade	NOUN	NOUN	Gender=Fem|Number=Sing	2	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	dessert	desservir	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+8	bridge	bridg	ADJ	ADJ	Gender=Masc|Number=Sing	7	amod	_	_
+9	and	and	X	X	_	7	advmod	_	_
+10	fashion	fashion	X	X	_	9	flat:foreign	_	_
+11	show	show	NOUN	NOUN	Gender=Masc|Number=Sing	7	obl:mod	_	_
+12	at	at	X	X	_	7	parataxis	_	_
+13	1	1	NUM	NUM	NumType=Card	14	nummod	_	_
+14	p.m	p.m	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	7	obj	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	det	_	_
+2	Monday	monday	NOUN	NOUN	Gender=Masc|Number=Sing	7	dep	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	April	april	NOUN	NOUN	Gender=Fem|Number=Sing	2	conj	_	_
+5	17	17	NUM	NUM	NumType=Card	4	nummod	_	_
+6	,	,	PUNCT	PUNCT	_	4	punct	_	_
+7	in	in	X	X	_	0	ROOT	_	_
+8	the	the	X	X	_	7	flat:foreign	_	_
+9	chapel	chapel	X	X	_	7	flat:foreign	_	_
+10	assembly	assembly	X	X	_	7	flat:foreign	_	_
+11	room	room	X	X	_	7	flat:foreign	_	_
+12	,	,	PUNCT	PUNCT	_	13	punct	_	_
+13	Wayne	Wayne	PROPN	PROPN	_	7	nsubj	_	_
+14	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	8	nsubj	_	_
+2	O.	O.	PROPN	PROPN	_	1	flat:name	_	_
+3	Spurdle	Spurdle	PROPN	PROPN	_	2	flat:name	_	_
+4	is	is	X	X	_	5	case	_	_
+5	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	of	of	X	X	_	8	case	_	_
+7	the	the	X	X	_	6	fixed	_	_
+8	committee	committee	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	which	which	X	X	_	11	nsubj	_	_
+11	includes	includes	X	X	_	8	advcl	_	_
+12	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	11	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	James	James	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	A.	A.	PROPN	PROPN	_	1	flat:name	_	_
+3	Moody	Moody	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Frank	Frank	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	C.	C.	PROPN	PROPN	_	1	flat:name	_	_
+3	Wilkinson	Wilkinson	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Ethel	Ethel	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Coles	Coles	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Harold	Harold	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	G.	G.	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Lacy	Lacy	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Albert	Albert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	W.	W.	PROPN	PROPN	_	1	flat:name	_	_
+3	Terry	Terry	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	M.	m.	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Chance	Chance	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	2d	2d	PROPN	PROPN	_	1	conj	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	O.	O.	PROPN	PROPN	_	1	flat:name	_	_
+3	Spurdle	Spurdle	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	Jr	Jr	PROPN	PROPN	_	1	appos	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Harcourt	Harcourt	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	N.	N.	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Trimble	trimbl	ADJ	ADJ	Number=Sing	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	Jr	Jr	PROPN	PROPN	_	1	appos	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	A.	A.	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Moller	Moller	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Zeising	Zeising	X	X	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	William	William	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	G.	G.	PROPN	PROPN	_	0	ROOT	_	_
+2	Kilhour	Kilhour	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Hughes	Hughes	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Cauffman	Cauffman	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	L.	L.	PROPN	PROPN	_	1	flat:name	_	_
+3	Baringer	Baringer	PROPN	PROPN	_	1	flat:name	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Clyde	Clyde	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Newman	Newman	PROPN	PROPN	_	1	flat:name	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	6	advmod	_	_
+2	fashion	fashion	X	X	_	1	flat:foreign	_	_
+3	show	show	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	by	by	X	X	_	6	case	_	_
+6	Natalie	Natalie	PROPN	PROPN	Gender=Fem|Number=Sing	8	nmod	_	_
+7	Collett	Collett	PROPN	PROPN	Gender=Masc|Number=Sing	6	flat:name	_	_
+8	will	will	X	X	_	0	ROOT	_	_
+
+1	have	haver	X	X	_	2	amod	_	_
+2	Mrs	Mrs	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	4	nsubj	_	_
+2	Newbold	Newbold	PROPN	PROPN	_	1	flat:name	_	_
+3	as	as	X	X	_	4	aux:tense	_	_
+4	commentator	commentator	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Models	Models	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Samuel	Samuel	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	B.	B.	PROPN	PROPN	_	1	flat:name	_	_
+3	D.	D.	PROPN	PROPN	_	1	flat:name	_	_
+4	Baird	Baird	PROPN	PROPN	_	3	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	William	William	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	H.	H.	PROPN	PROPN	_	1	flat:name	_	_
+3	Meyle	Meyle	PROPN	PROPN	_	2	flat:name	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Jr	Jr	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Richard	Richard	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	W.	W.	PROPN	PROPN	_	1	flat:name	_	_
+3	Hole	Hole	PROPN	PROPN	_	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	William	William	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	F.	F.	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Harrity	Harrity	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	O.	O.	PROPN	PROPN	_	1	flat:name	_	_
+3	Spurdle	Spurdle	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	E.	e.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	H.	H.	PROPN	PROPN	_	1	flat:name	_	_
+3	Kloman	Kloman	PROPN	PROPN	_	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	W.	W.	PROPN	PROPN	_	1	flat:name	_	_
+3	Wolcott	Wolcott	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	Jr	Jr	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Frederick	Frederick	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	C.	C.	PROPN	PROPN	_	1	flat:name	_	_
+3	Wheeler	Wheeler	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	Jr	Jr	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	William	William	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	A	à	ADP	ADP	_	1	nmod	_	_
+3	Boyd	Boyd	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	_
+6	F.	F.	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+7	Vernon	Vernon	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+8	Putt	putt	ADJ	ADJ	Gender=Masc|Number=Sing	7	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Col	Col	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Clifton	Clifton	PROPN	PROPN	_	0	ROOT	_	_
+2	Lisle	Lisle	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	of	of	ADP	ADP	_	5	dep	_	_
+5	Chester	chester	VERB	VERB	VerbForm=Inf	1	nmod	_	_
+6	Springs	Springs	PROPN	PROPN	_	5	advmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	who	who	X	X	_	3	det	_	_
+3	headed	headed	X	X	_	6	nsubj	_	_
+4	the	the	X	X	_	3	dep	_	_
+5	Troop	Troop	X	X	_	3	dep	_	_
+6	Committee	Committee	X	X	_	20	dep	_	_
+7	for	for	X	X	_	6	dep	_	_
+8	much	much	X	X	_	6	dep	_	_
+9	of	of	X	X	_	6	dep	_	_
+10	its	its	X	X	_	9	fixed	_	_
+11	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	9	fixed	_	_
+12	and	and	X	X	_	6	dep	_	_
+13	third	third	X	X	_	6	flat:foreign	_	_
+14	decades	decade	ADJ	ADJ	Number=Plur	6	obj	_	_
+15	,	,	PUNCT	PUNCT	_	6	punct	_	_
+16	is	is	X	X	_	18	case	_	_
+17	now	now	X	X	_	16	fixed	_	_
+18	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	6	obl:mod	_	_
+19	honorary	honorary	X	X	_	6	dep	_	_
+20	member	member	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+21	.	.	PUNCT	PUNCT	_	20	punct	_	_
+
+1	Each	Each	X	X	_	4	nsubj	_	_
+2	year	year	X	X	_	1	flat:foreign	_	_
+3	he	he	X	X	_	4	cc	_	_
+4	invites	inviter	X	X	_	0	ROOT	_	_
+5	the	the	X	X	_	4	dep	_	_
+6	boys	boy	X	X	_	5	flat:foreign	_	_
+7	to	to	X	X	_	8	case	_	_
+8	camp	camp	NOUN	NOUN	Gender=Masc|Number=Sing	4	obl:mod	_	_
+9	out	out	ADJ	ADJ	Gender=Masc|Number=Sing	8	amod	_	_
+10	on	on	PRON	PRON	Number=Sing|Person=3	11	nsubj	_	_
+11	his	his	X	X	_	4	parataxis	_	_
+12	estate	estate	X	X	_	11	advmod	_	_
+13	for	for	X	X	_	11	advmod	_	_
+14	one	one	X	X	_	11	advmod	_	_
+15	of	of	X	X	_	16	case	_	_
+16	their	their	X	X	_	11	obl:arg	_	_
+17	big	big	X	X	_	11	advmod	_	_
+18	week	week	NOUN	NOUN	Gender=Masc|Number=Sing	11	obl:mod	_	_
+19	ends	end	NOUN	NOUN	Gender=Masc|Number=Plur	11	obj	_	_
+20	of	of	X	X	_	11	advmod	_	_
+21	the	the	X	X	_	20	fixed	_	_
+22	year	year	X	X	_	20	flat:foreign	_	_
+23	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	The	The	X	X	_	7	dep	_	_
+2	Troop	Troop	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	1	flat:foreign	_	_
+4	proud	proud	X	X	_	1	flat:foreign	_	_
+5	of	of	X	X	_	7	case	_	_
+6	its	its	X	X	_	5	dep	_	_
+7	camping	camping	NOUN	NOUN	Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	out	out	X	X	_	2	amod	_	_
+2	program	program	X	X	_	0	ROOT	_	_
+
+1	--	--	PUNCT	PUNCT	_	0	ROOT	_	_
+2	on	on	X	X	_	1	dep	_	_
+3	year	year	ADJ	ADJ	Number=Sing	2	punct	_	SpaceAfter=No
+
+1	-	-	ADJ	ADJ	Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	round	round	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	schedule	schedule	X	X	_	1	dep	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	was	was	X	X	_	1	dep	_	_
+
+1	continued	continued	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+2	even	even	ADV	ADV	_	1	advmod	_	_
+3	when	when	ADJ	ADJ	Number=Sing	1	xcomp	_	_
+4	sub-zero	sub-zero	PROPN	PROPN	_	1	obj	_	_
+
+1	temperatures	temperature	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	were	were	X	X	_	1	amod	_	_
+3	registered	registered	X	X	_	1	flat:foreign	_	_
+4	during	during	X	X	_	1	flat:foreign	_	_
+
+1	the	the	X	X	_	3	dep	_	_
+2	past	past	X	X	_	1	dep	_	_
+3	winter	winter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	`	`	PRON	PRON	Person=3|Reflex=Yes	3	case	_	SpaceAfter=No
+2	`	`	X	X	_	3	case	_	_
+3	We	We	X	X	_	7	obl:mod	_	_
+4	worry	worry	PROPN	PROPN	_	3	amod	_	_
+5	''	''	PUNCT	PUNCT	_	3	punct	_	_
+6	,	,	PUNCT	PUNCT	_	3	punct	_	_
+7	say	say	X	X	_	8	dep	_	_
+8	the	the	X	X	_	9	dep	_	_
+9	mothers	mothers	X	X	_	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	`	`	PRON	PRON	Person=3|Reflex=Yes	3	case	_	SpaceAfter=No
+2	`	`	PRON	PRON	Person=3|Reflex=Yes	3	case	_	_
+3	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	there	there	X	X	_	3	flat:foreign	_	_
+5	never	never	X	X	_	3	flat:foreign	_	_
+6	is	is	X	X	_	3	dep	_	_
+7	any	any	X	X	_	3	dep	_	_
+8	need	need	X	X	_	3	amod	_	_
+9	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	boys	boy	X	X	_	1	flat:foreign	_	_
+3	love	lover	X	X	_	1	flat:foreign	_	_
+4	it	it	X	X	_	1	flat:foreign	_	_
+5	''	''	PUNCT	PUNCT	_	1	punct	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Charles	Charles	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Cotty	Cotty	PROPN	PROPN	_	1	flat:name	_	_
+4	is	is	X	X	_	5	case	_	_
+5	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	of	of	X	X	_	7	case	_	_
+7	publicity	publicity	PROPN	PROPN	_	5	nmod	_	_
+8	for	for	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	2	advmod	_	_
+2	country	country	X	X	_	0	ROOT	_	_
+3	fair	fair	VERB	VERB	VerbForm=Inf	2	xcomp	_	_
+4	and	and	X	X	_	3	obj	_	_
+5	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Francis	Francis	PROPN	PROPN	Number=Sing	0	ROOT	_	_
+2	G.	G.	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Felske	Felske	PROPN	PROPN	_	2	flat:name	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	Mrs	Mrs	PROPN	PROPN	_	1	nsubj	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Francis	Francis	PROPN	PROPN	Number=Sing	0	ROOT	_	_
+2	Smythe	Smythe	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	of	of	X	X	_	5	case	_	_
+5	posters	poster	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	They	They	X	X	_	0	ROOT	_	_
+2	all	all	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	1	dep	_	_
+4	of	of	X	X	_	1	punct	_	_
+5	Wayne	Wayne	PROPN	PROPN	_	1	flat:name	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	`	`	PRON	PRON	Person=3|Reflex=Yes	3	case	_	SpaceAfter=No
+2	`	`	X	X	_	3	case	_	_
+3	Meet	Meet	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	Artist	Artist	X	X	_	14	nmod	_	_
+3	''	''	PUNCT	PUNCT	_	2	punct	_	_
+4	is	is	X	X	_	2	dep	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	invitation	invitation	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+7	issued	issued	X	X	_	2	acl	_	_
+8	by	by	X	X	_	9	case	_	_
+9	members	members	X	X	_	7	obl:arg	_	_
+10	of	of	X	X	_	2	dep	_	_
+11	the	the	X	X	_	10	fixed	_	_
+12	Greater	greater	VERB	VERB	VerbForm=Inf	2	dep	_	_
+13	Philadelphia	Philadelphia	X	X	_	2	flat:foreign	_	_
+14	Section	section	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+15	of	of	X	X	_	14	dep	_	_
+16	the	the	X	X	_	14	dep	_	_
+17	National	National	X	X	_	14	dep	_	_
+
+1	Council	Council	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	1	advmod	_	_
+
+1	Jewish	Jewish	X	X	_	0	ROOT	_	_
+2	Women	Women	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	as	as	X	X	_	3	aux:tense	_	_
+2	they	they	PRON	PRON	Gender=Masc|Number=Plur|Person=3	3	nsubj	_	_
+3	arrange	arranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	advcl	_	_
+4	for	for	ADP	ADP	_	5	case	_	_
+5	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:mod	_	_
+6	annual	annual	X	X	_	3	obj	_	_
+7	exhibit	exhibit	X	X	_	3	dep	_	_
+8	and	and	X	X	_	3	advmod	_	_
+9	sale	sale	ADJ	ADJ	Gender=Fem|Number=Sing	3	xcomp	_	_
+10	of	of	X	X	_	11	case	_	_
+11	paintings	paintings	X	X	_	9	obl:arg	_	_
+12	and	and	X	X	_	9	dep	_	_
+13	sculpture	sculpture	X	X	_	3	obj	_	_
+14	at	at	X	X	_	3	advmod	_	_
+15	the	the	X	X	_	3	advmod	_	_
+16	Philmont	Philmont	X	X	_	18	dep	_	_
+17	Country	Country	X	X	_	16	obj	_	_
+18	Club	club	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	April	april	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	8	8	NUM	NUM	NumType=Card	2	nummod	_	_
+4	and	and	X	X	_	2	parataxis	_	_
+5	9	9	NUM	NUM	NumType=Card	2	nummod	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	preview	preview	X	X	_	8	dep	_	_
+3	party	party	X	X	_	2	dep	_	_
+4	for	for	X	X	_	2	dep	_	_
+5	sponsors	sponsor	NOUN	NOUN	Gender=Masc|Number=Plur	2	dep	_	_
+6	of	of	X	X	_	8	dep	_	_
+7	the	the	X	X	_	6	fixed	_	_
+8	event	event	X	X	_	9	dep	_	_
+9	and	and	X	X	_	0	ROOT	_	_
+10	for	for	X	X	_	9	dep	_	_
+11	the	the	X	X	_	9	dep	_	_
+12	artists	artists	X	X	_	9	dep	_	_
+13	is	is	X	X	_	14	dep	_	_
+14	set	set	NOUN	NOUN	Gender=Masc|Number=Sing	9	obl:mod	_	_
+15	for	for	X	X	_	14	dep	_	_
+16	April	April	X	X	_	9	dep	_	_
+17	8	8	NUM	NUM	NumType=Card	16	nummod	_	_
+18	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	0	ROOT	_	_
+2	event	event	X	X	_	1	flat:foreign	_	_
+3	will	will	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	open	open	X	X	_	1	flat:foreign	_	_
+6	to	to	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	public	public	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	the	the	X	X	_	1	flat:foreign	_	_
+10	following	following	X	X	_	1	flat:foreign	_	_
+11	day	day	X	X	_	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Proceeds	proceed	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	will	will	X	X	_	0	ROOT	_	_
+2	be	be	X	X	_	1	dep	_	_
+3	used	used	X	X	_	1	dep	_	_
+4	by	by	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	section	section	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	to	to	X	X	_	2	dep	_	_
+4	further	further	X	X	_	2	nmod	_	_
+5	its	its	X	X	_	6	case	_	_
+6	program	program	X	X	_	2	nmod	_	_
+7	in	in	X	X	_	8	case	_	_
+8	science	science	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	2	punct	_	_
+10	education	education	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+11	and	and	X	X	_	2	dep	_	_
+
+1	social	social	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	action	action	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	local	local	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	national	national	ADJ	ADJ	Gender=Masc|Number=Sing	2	appos	_	_
+5	and	and	X	X	_	2	conj	_	_
+6	international	international	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+7	levels	level	ADJ	ADJ	Gender=Masc|Number=Sing	2	xcomp	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Noted	Noted	PROPN	PROPN	_	0	ROOT	_	_
+
+1	artist	artist	X	X	_	0	ROOT	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Monte	Monte	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Tyson	Tyson	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	chairman	chairman	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	says	says	X	X	_	4	nmod	_	_
+7	the	the	X	X	_	6	flat:foreign	_	_
+8	work	work	X	X	_	6	flat:foreign	_	_
+9	of	of	X	X	_	11	case	_	_
+10	100	100	NUM	NUM	NumType=Card	11	nummod	_	_
+11	artists	artists	X	X	_	4	nmod	_	_
+12	well	well	X	X	_	21	nsubj	_	_
+13	known	known	X	X	_	12	flat:foreign	_	_
+14	in	in	X	X	_	12	flat:foreign	_	_
+15	the	the	X	X	_	12	dep	_	_
+16	Delaware	Delaware	X	X	_	12	flat:foreign	_	_
+17	Valley	Valley	X	X	_	12	flat:foreign	_	_
+18	area	area	X	X	_	12	flat:foreign	_	_
+19	will	will	X	X	_	12	flat:foreign	_	_
+20	be	be	X	X	_	12	dep	_	_
+21	included	included	X	X	_	4	acl:relcl	_	_
+22	in	in	X	X	_	21	advmod	_	_
+23	the	the	X	X	_	21	dep	_	_
+24	exhibition	exhibition	X	X	_	23	flat:foreign	_	_
+25	and	and	X	X	_	23	flat:foreign	_	_
+26	sale	sale	ADJ	ADJ	Gender=Fem|Number=Sing	21	xcomp	_	_
+27	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Among	Among	X	X	_	5	amod	_	_
+2	them	them	X	X	_	1	flat:foreign	_	_
+3	will	will	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	Marc	Marc	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+6	Shoettle	Shoettle	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	5	punct	_	_
+8	Ben	Ben	PROPN	PROPN	_	5	nmod	_	_
+9	Shahn	Shahn	PROPN	PROPN	_	8	flat:name	_	_
+10	,	,	PUNCT	PUNCT	_	5	punct	_	_
+11	Nicholas	Nicholas	PROPN	PROPN	Gender=Masc|Number=Sing	5	appos	_	_
+12	Marsicano	Marsicano	PROPN	PROPN	_	11	flat:name	_	_
+13	,	,	PUNCT	PUNCT	_	14	punct	_	_
+14	Alfred	Alfred	PROPN	PROPN	Gender=Masc|Number=Sing	5	conj	_	_
+15	Van	Van	X	X	_	14	dep	_	_
+16	Loen	Loen	PROPN	PROPN	_	14	flat:name	_	_
+17	and	and	X	X	_	5	dep	_	_
+18	Milton	Milton	X	X	_	17	flat:foreign	_	_
+19	Avery	Avery	PROPN	PROPN	_	17	flat:foreign	_	_
+20	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	7	nsubj	_	_
+2	Shoettle	Shoettle	PROPN	PROPN	_	1	flat:name	_	_
+3	has	has	X	X	_	1	dep	_	_
+4	agreed	agreed	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+5	to	to	X	X	_	4	dep	_	_
+6	do	do	PRON	PRON	Gender=Fem|Number=Sing|Person=3	4	nmod	_	_
+7	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	portrait	portrer	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	obj	_	_
+9	of	of	X	X	_	11	case	_	_
+10	the	the	X	X	_	9	fixed	_	_
+11	family	family	X	X	_	7	obj	_	_
+12	of	of	X	X	_	7	advmod	_	_
+13	the	the	X	X	_	15	obl:mod	_	_
+14	person	person	X	X	_	13	flat:foreign	_	_
+15	who	who	X	X	_	7	dep	_	_
+16	wins	wins	X	X	_	15	flat:name	_	_
+17	the	the	X	X	_	15	flat:foreign	_	_
+18	door	door	X	X	_	15	flat:foreign	_	_
+19	prize	prize	X	X	_	15	flat:name	_	_
+20	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	event	event	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	sixth	sixth	X	X	_	1	flat:foreign	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	annual	annual	X	X	_	1	flat:foreign	_	_
+9	calendar	calendar	X	X	_	1	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	the	the	X	X	_	13	dep	_	_
+12	local	local	ADJ	ADJ	Gender=Masc|Number=Sing	13	amod	_	_
+13	members	members	X	X	_	1	flat:foreign	_	_
+14	of	of	X	X	_	15	dep	_	_
+15	the	the	X	X	_	1	dep	_	_
+16	National	National	X	X	_	1	flat:foreign	_	_
+17	Council	Council	X	X	_	1	flat:foreign	_	_
+18	of	of	X	X	_	19	dep	_	_
+19	Jewish	Jewish	X	X	_	1	flat:foreign	_	_
+20	Women	Women	PROPN	PROPN	_	1	flat:foreign	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	it	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	originated	originated	X	X	_	1	flat:foreign	_	_
+3	with	with	X	X	_	2	dep	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	Wissahickon	Wissahickon	PROPN	PROPN	_	1	flat:foreign	_	_
+6	Section	section	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	When	When	X	X	_	0	ROOT	_	_
+2	this	this	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	1	flat:foreign	_	_
+4	other	other	X	X	_	1	flat:foreign	_	_
+5	units	units	X	X	_	1	flat:foreign	_	_
+6	combined	combined	X	X	_	1	flat:foreign	_	_
+7	to	to	X	X	_	1	dep	_	_
+8	form	form	X	X	_	1	flat:foreign	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	present	present	X	X	_	1	flat:foreign	_	_
+11	group	group	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+12	,	,	PUNCT	PUNCT	_	1	punct	_	_
+13	it	it	X	X	_	19	dep	_	_
+14	was	was	X	X	_	15	dep	_	_
+15	taken	taken	PROPN	PROPN	Gender=Masc|Number=Sing	13	flat:foreign	_	_
+16	on	on	PRON	PRON	Number=Sing|Person=3	19	nsubj	_	_
+17	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_
+18	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	dep	_	_
+19	continuing	continuing	X	X	_	1	advcl	_	_
+20	fund	fund	PROPN	PROPN	Gender=Masc|Number=Sing	19	advmod	_	SpaceAfter=No
+
+1	-	-	PRON	PRON	Person=3|Reflex=Yes	0	ROOT	_	SpaceAfter=No
+2	raiser	raiser	VERB	VERB	VerbForm=Inf	1	fixed	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	Others	other	NOUN	NOUN	Gender=Masc|Number=Plur	1	punct	_	_
+3	assisting	assisting	X	X	_	2	flat:foreign	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Masc|Number=Sing	3	obl:mod	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Jerome	Jerome	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Blum	Blum	PROPN	PROPN	_	1	flat:name	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Meyer	Meyer	PROPN	PROPN	_	0	ROOT	_	_
+2	Schultz	Schultz	PROPN	PROPN	_	1	flat:name	_	_
+3	are	are	X	X	_	4	case	_	_
+4	co-chairmen	co-chairmen	X	X	_	1	nmod	_	_
+5	this	this	X	X	_	4	flat:name	_	_
+6	year	year	X	X	_	4	amod	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Assisting	Assisting	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	as	as	X	X	_	8	dep	_	_
+3	chairmen	chairmen	PROPN	PROPN	_	2	obj	_	_
+4	of	of	X	X	_	6	case	_	_
+5	various	various	X	X	_	6	amod	_	_
+6	committees	committee	NOUN	NOUN	Gender=Masc|Number=Sing	2	obj	_	_
+7	are	are	ADP	ADP	_	8	case	_	_
+8	Mrs	mr	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Alvin	alvin	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Blum	Blum	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Leonard	Leonard	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Malmud	Malmud	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Edward	Edward	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Fernberger	Fernberger	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Cushman	Cushman	PROPN	PROPN	_	1	flat:name	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Also	Also	X	X	_	0	ROOT	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Berton	Berton	PROPN	PROPN	_	0	ROOT	_	_
+2	Korman	Korman	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Morton	Morton	PROPN	PROPN	_	0	ROOT	_	_
+2	Rosen	Rosen	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Jacques	Jacques	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Zinman	Zinman	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Evelyn	Evelyn	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Rosen	Rosen	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Schultz	Schultz	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mr.	monsieur	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+5	and	and	X	X	_	4	fixed	_	_
+6	Mrs	Mrs	PROPN	PROPN	_	4	flat:name	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	I.	i.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	S.	s.	NOUN	NOUN	_	0	ROOT	_	_
+2	Kamens	Kamens	PROPN	PROPN	_	1	flat:name	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Jack	Jack	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Langsdorf	Langsdorf	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Leonard	Leonard	PROPN	PROPN	_	0	ROOT	_	_
+2	Liss	Liss	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Gordon	gordon	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Blumberg	Blumberg	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Oscar	oscar	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Bregman	Bregman	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Alfred	Alfred	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Kershbaum	Kershbaum	PROPN	PROPN	_	1	flat:name	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	nsubj	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Edward	Edward	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Sabol	Sabol	PROPN	PROPN	_	1	flat:name	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Dr.	dr.	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	and	and	X	X	_	3	dep	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	N.	n.	NOUN	NOUN	Gender=Masc|Number=Sing	6	nsubj	_	_
+2	Volney	Volney	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+3	Ludwick	Ludwick	PROPN	PROPN	_	2	flat:name	_	_
+4	have	haver	X	X	_	2	amod	_	_
+5	had	had	X	X	_	2	flat:name	_	_
+6	as	as	X	X	_	0	ROOT	_	_
+7	guests	guest	NOUN	NOUN	Gender=Masc|Number=Plur	6	obj	_	_
+8	Mr.	monsieur	X	X	_	6	advmod	_	_
+9	and	and	X	X	_	8	fixed	_	_
+10	Mrs	Mrs	PROPN	PROPN	_	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	J.	J.	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Evans	Evans	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	Jr	Jr	PROPN	PROPN	_	1	appos	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	5	punct	_	_
+2	of	of	ADP	ADP	_	5	amod	_	_
+3	`	`	PROPN	PROPN	Gender=Fem|Number=Sing	2	punct	_	SpaceAfter=No
+4	`	`	ADP	ADP	_	5	case	_	_
+5	Kimbolton	Kimbolton	PROPN	PROPN	_	0	ROOT	_	_
+6	House	House	PROPN	PROPN	_	5	flat:name	_	_
+7	''	''	PUNCT	PUNCT	_	5	punct	_	_
+8	,	,	PUNCT	PUNCT	_	5	punct	_	_
+9	Rockhall	rockhall	NOUN	NOUN	Gender=Masc|Number=Sing	5	nmod	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	Md	md	NOUN	NOUN	_	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Edward	Edward	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	App	App	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	entertain	entertain	ADV	ADV	_	1	flat:foreign	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	members	members	X	X	_	1	flat:foreign	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	her	her	X	X	_	5	obl:mod	_	_
+8	Book	Book	X	X	_	5	dep	_	_
+9	Club	club	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Tuesday	Tuesday	X	X	_	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A.	a.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Voorhees	Voorhees	PROPN	PROPN	_	1	flat:name	_	_
+
+1	Anderson	Anderson	PROPN	PROPN	_	4	nsubj	_	_
+2	entertained	entertained	X	X	_	1	amod	_	_
+3	at	at	X	X	_	1	dep	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	luncheon	luncheon	PROPN	PROPN	_	0	ROOT	_	_
+
+1	at	at	X	X	_	6	dep	_	_
+2	her	her	X	X	_	1	fixed	_	_
+3	home	home	X	X	_	1	fixed	_	_
+4	,	,	PUNCT	PUNCT	_	6	punct	_	_
+5	on	on	PRON	PRON	Gender=Masc|Number=Plur|Person=3	6	nsubj	_	_
+6	Monday	monday	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Anderson	Anderson	PROPN	PROPN	_	7	nsubj	_	_
+2	were	were	X	X	_	1	dep	_	_
+3	entertained	entertained	X	X	_	1	flat:foreign	_	_
+4	at	at	X	X	_	5	case	_	_
+5	dinner	dinner	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	Sunday	Sunday	X	X	_	0	ROOT	_	_
+8	by	by	X	X	_	9	dep	_	_
+9	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	7	obl:mod	_	_
+10	and	and	X	X	_	9	flat:name	_	_
+11	Mrs	Mrs	PROPN	PROPN	_	9	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Frank	Frank	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Coulson	Coulson	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	of	of	X	X	_	5	case	_	_
+5	Fairless	Fairless	PROPN	PROPN	_	1	conj	_	_
+6	Hills	Hills	PROPN	PROPN	_	5	flat:name	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Major	Major	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Morris	Morris	PROPN	PROPN	_	0	ROOT	_	_
+
+1	and	and	X	X	_	9	advmod	_	_
+2	their	their	X	X	_	1	flat:foreign	_	_
+3	son	son	DET	DET	Number=Sing|Poss=Yes	1	flat:foreign	_	SpaceAfter=No
+4	-	-	PROPN	PROPN	Number=Sing	1	flat:foreign	_	SpaceAfter=No
+5	in	in	X	X	_	1	flat:foreign	_	SpaceAfter=No
+6	-	-	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+7	law	law	X	X	_	1	dep	_	_
+8	and	and	X	X	_	1	flat:foreign	_	_
+9	daughter	daughter	X	X	_	0	ROOT	_	_
+10	,	,	PUNCT	PUNCT	_	9	punct	_	_
+11	Mr.	monsieur	PROPN	PROPN	Gender=Masc|Number=Sing	9	dep	_	_
+12	and	and	X	X	_	11	flat:name	_	_
+13	Mrs	Mrs	PROPN	PROPN	_	11	flat:name	_	SpaceAfter=No
+14	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Thomas	Thomas	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Glennon	Glennon	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	their	their	X	X	_	4	flat:foreign	_	_
+6	children	children	X	X	_	4	flat:foreign	_	_
+7	will	will	X	X	_	4	flat:foreign	_	_
+8	spend	spend	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	flat:foreign	_	_
+9	several	several	X	X	_	8	advmod	_	_
+10	days	days	X	X	_	8	obj	_	_
+11	in	in	X	X	_	8	dep	_	_
+12	Brigantine	brigantine	NOUN	NOUN	Gender=Fem|Number=Sing	8	obj	_	_
+13	,	,	PUNCT	PUNCT	_	4	punct	_	_
+14	N.	n.	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+15	J.	J.	PROPN	PROPN	_	14	flat:name	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	James	James	PROPN	PROPN	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	Janssen	Janssen	PROPN	PROPN	_	1	flat:name	_	_
+3	announce	announce	X	X	_	4	dep	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	birth	birth	X	X	_	8	dep	_	_
+6	of	of	X	X	_	8	dep	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+8	daughter	daughter	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	Patricia	Patricia	PROPN	PROPN	_	8	obl:mod	_	_
+
+1	Lynn	Lynn	PROPN	PROPN	_	0	ROOT	_	_
+2	Janssen	Janssen	PROPN	PROPN	_	1	flat:name	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+3	March	March	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	2	2	NUM	NUM	NumType=Card	3	nummod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Charles	Charles	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Marella	Marella	PROPN	PROPN	_	1	flat:name	_	_
+3	announce	announce	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	engagement	engagement	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	of	of	ADP	ADP	_	7	case	_	_
+7	their	their	X	X	_	1	nmod	_	_
+8	daughter	daughter	ADJ	ADJ	Gender=Masc|Number=Plur	7	amod	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	Miss	Miss	PROPN	PROPN	_	1	appos	_	_
+11	Mary	Mary	X	X	_	10	flat:name	_	_
+12	Ann	Ann	PROPN	PROPN	Gender=Fem|Number=Sing	1	nmod	_	_
+13	Marella	Marella	PROPN	PROPN	_	12	flat:name	_	_
+14	,	,	PUNCT	PUNCT	_	1	punct	_	_
+15	to	to	X	X	_	16	case	_	_
+16	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+17	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	16	flat:name	_	_
+18	L.	L.	PROPN	PROPN	_	16	flat:name	_	_
+19	Orcutt	Orcutt	PROPN	PROPN	_	16	flat:name	_	_
+20	,	,	PUNCT	PUNCT	_	23	punct	_	_
+21	son	son	DET	DET	Number=Sing|Poss=Yes	23	det	_	_
+22	of	of	X	X	_	23	amod	_	_
+23	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+24	and	and	X	X	_	23	flat:name	_	_
+25	Mrs	Mrs	PROPN	PROPN	_	23	flat:name	_	SpaceAfter=No
+26	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Donald	Donald	PROPN	PROPN	Number=Sing	0	ROOT	_	_
+
+1	R.	R.	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Orcutt	Orcutt	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	Drexel	Drexel	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	_
+6	Hill	Hill	PROPN	PROPN	_	5	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Miss	Miss	X	X	_	0	ROOT	_	_
+2	Eileen	Eileen	PROPN	PROPN	Gender=Masc|Number=Sing	1	nsubj	_	_
+3	Grant	Grant	X	X	_	1	flat:name	_	_
+4	is	is	X	X	_	3	dep	_	_
+5	spending	spending	X	X	_	3	dep	_	_
+6	several	several	X	X	_	3	advmod	_	_
+7	weeks	weeks	X	X	_	3	dep	_	_
+8	visiting	visiting	X	X	_	3	dep	_	_
+9	in	in	X	X	_	3	dep	_	_
+10	Florida	Florida	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Frederick	Frederick	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Heinze	Heinze	PROPN	PROPN	_	1	flat:name	_	_
+3	are	are	X	X	_	1	dep	_	_
+4	entertaining	entertaining	X	X	_	1	dep	_	_
+5	Mr.	monsieur	X	X	_	1	nsubj	_	_
+6	Walter	Walter	PROPN	PROPN	_	5	flat:name	_	_
+7	Lehner	Lehner	PROPN	PROPN	_	6	flat:name	_	_
+8	,	,	PUNCT	PUNCT	_	10	punct	_	_
+9	of	of	X	X	_	10	case	_	_
+10	Vienna	Vienna	PROPN	PROPN	_	1	nmod	_	_
+11	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Ingo	Ingo	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Dussa	Dussa	PROPN	PROPN	_	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	of	of	X	X	_	6	case	_	_
+6	Dusseldorf	Dusseldorf	PROPN	PROPN	Gender=Fem|Number=Sing	3	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	Germany	Germany	PROPN	PROPN	_	1	conj	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	and	and	X	X	_	11	cc	_	_
+11	Mr.	monsieur	X	X	_	1	appos	_	_
+12	Bietnar	Bietnar	PROPN	PROPN	_	11	flat:name	_	_
+13	Haaek	Haaek	PROPN	PROPN	_	11	flat:name	_	_
+14	,	,	PUNCT	PUNCT	_	16	punct	_	_
+15	of	of	X	X	_	16	dep	_	_
+16	Brelin	Brelin	PROPN	PROPN	_	1	conj	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Harry	Harry	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	D.	D.	PROPN	PROPN	_	1	flat:name	_	_
+3	Hoaps	Hoaps	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	Jr	Jr	PROPN	PROPN	_	1	appos	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	have	haver	X	X	_	0	ROOT	_	_
+2	returned	returned	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	their	their	X	X	_	1	flat:foreign	_	_
+5	home	home	X	X	_	1	flat:foreign	_	_
+6	in	in	X	X	_	7	dep	_	_
+7	Drexel	Drexel	X	X	_	1	flat:foreign	_	_
+8	Park	Park	X	X	_	7	flat:name	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	after	after	X	X	_	1	flat:foreign	_	_
+11	spending	spending	X	X	_	10	amod	_	_
+12	some	some	X	X	_	10	dep	_	_
+13	time	time	X	X	_	10	dep	_	_
+14	in	in	X	X	_	1	flat:foreign	_	_
+15	Delray	Delray	X	X	_	1	flat:foreign	_	_
+16	Beach	Beach	PROPN	PROPN	_	15	amod	_	_
+17	Fla	Fla	X	X	_	15	amod	_	SpaceAfter=No
+18	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	James	James	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	F.	F.	PROPN	PROPN	_	1	flat:name	_	_
+3	Mitchell	Mitchell	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	with	with	X	X	_	4	dep	_	_
+6	their	their	X	X	_	1	dep	_	_
+7	daughter	daughter	ADJ	ADJ	Gender=Masc|Number=Plur	6	amod	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	Anne	Anne	PROPN	PROPN	Gender=Fem|Number=Sing	6	appos	_	_
+10	,	,	PUNCT	PUNCT	_	6	punct	_	_
+11	and	and	X	X	_	6	appos	_	_
+12	son	son	DET	DET	Number=Sing|Poss=Yes	1	appos	_	_
+13	,	,	PUNCT	PUNCT	_	14	punct	_	_
+14	James	James	PROPN	PROPN	Gender=Masc|Number=Sing	12	conj	_	_
+15	,	,	PUNCT	PUNCT	_	14	punct	_	_
+16	Jr	Jr	PROPN	PROPN	_	14	dep	_	SpaceAfter=No
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	are	are	X	X	_	0	ROOT	_	_
+2	spending	spending	X	X	_	1	flat:foreign	_	_
+3	several	several	X	X	_	1	flat:foreign	_	_
+4	weeks	weeks	X	X	_	1	flat:foreign	_	_
+5	in	in	X	X	_	1	dep	_	_
+6	Florida	Florida	PROPN	PROPN	_	1	dep	_	_
+7	,	,	PUNCT	PUNCT	_	9	punct	_	_
+8	and	and	X	X	_	9	dep	_	_
+9	will	will	X	X	_	10	dep	_	_
+10	visit	visit	X	X	_	1	dep	_	_
+11	in	in	X	X	_	1	dep	_	_
+12	Clearwater	Clearwater	PROPN	PROPN	_	1	dep	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Cmdr	Cmdr	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Warren	Warren	PROPN	PROPN	_	0	ROOT	_	_
+2	Taylor	Taylor	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	USN	USN	PROPN	PROPN	_	2	appos	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	and	and	X	X	_	3	dep	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Taylor	Taylor	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	of	of	X	X	_	4	case	_	_
+4	E.	E.	PROPN	PROPN	_	1	nmod	_	_
+5	Greenwich	Greenwich	PROPN	PROPN	Gender=Masc|Number=Sing	4	flat:name	_	_
+6	,	,	PUNCT	PUNCT	_	4	punct	_	_
+7	R.	r.	NOUN	NOUN	Gender=Masc|Number=Sing	4	appos	_	_
+8	I.	I.	PROPN	PROPN	_	7	flat:name	_	_
+9	,	,	PUNCT	PUNCT	_	4	punct	_	_
+10	will	will	X	X	_	1	nmod	_	_
+11	have	haver	X	X	_	10	nmod	_	_
+12	with	with	X	X	_	10	flat:foreign	_	_
+13	them	them	X	X	_	10	flat:foreign	_	_
+14	for	for	X	X	_	10	dep	_	_
+15	the	the	X	X	_	10	dep	_	_
+16	Easter	Easter	X	X	_	10	flat:foreign	_	_
+17	holidays	holidays	X	X	_	10	flat:foreign	_	_
+18	the	the	X	X	_	10	flat:foreign	_	_
+19	latter'	latter'	X	X	_	21	dep	_	SpaceAfter=No
+20	s	s	PRON	PRON	Person=3|Reflex=Yes	21	nummod	_	_
+21	parents	parent	NOUN	NOUN	Gender=Masc|Number=Plur	10	nmod	_	_
+22	,	,	PUNCT	PUNCT	_	1	punct	_	_
+23	Mr.	monsieur	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+24	and	and	X	X	_	23	flat:foreign	_	_
+25	Mrs	Mrs	PROPN	PROPN	_	23	flat:name	_	SpaceAfter=No
+26	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	B.	B.	PROPN	PROPN	_	1	flat:name	_	_
+3	Walbridge	Walbridge	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	6	punct	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	Drexel	Drexel	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	_
+7	Hill	Hill	PROPN	PROPN	_	6	flat:name	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	L.	l.	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	DeForest	DeForest	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	Emmert	Emmert	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	formerly	formerly	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	Drexel	Drexel	PROPN	PROPN	Gender=Fem|Number=Sing	1	obl:arg	_	_
+4	Hill	Hill	PROPN	PROPN	_	3	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	3	punct	_	_
+6	and	and	X	X	_	9	dep	_	_
+7	now	now	X	X	_	6	flat:foreign	_	_
+8	of	of	X	X	_	9	dep	_	_
+9	Newtown	Newtown	PROPN	PROPN	Gender=Masc|Number=Sing	1	obl:mod	_	_
+10	Square	Square	PROPN	PROPN	_	9	amod	_	_
+11	,	,	PUNCT	PUNCT	_	9	punct	_	_
+12	are	are	X	X	_	13	case	_	_
+13	entertaining	entertaining	X	X	_	9	advcl	_	_
+14	Mr.	monsieur	X	X	_	13	nsubj	_	_
+15	and	and	X	X	_	14	flat:name	_	_
+16	Mrs	Mrs	PROPN	PROPN	_	14	flat:name	_	SpaceAfter=No
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Ashman	Ashman	PROPN	PROPN	_	0	ROOT	_	_
+
+1	E.	E.	PROPN	PROPN	_	0	ROOT	_	_
+2	Emmert	Emmert	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	of	of	X	X	_	5	amod	_	_
+5	Temple	temple	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	Pa	Pa	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	William	William	PROPN	PROPN	Gender=Masc|Number=Sing	15	nsubj	_	_
+2	H.	H.	PROPN	PROPN	_	1	flat:name	_	_
+3	Merner	Merner	PROPN	PROPN	_	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	11	punct	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	Drexel	Drexel	PROPN	PROPN	Gender=Fem|Number=Sing	11	nsubj	_	_
+7	Park	Park	X	X	_	6	flat:name	_	_
+8	,	,	PUNCT	PUNCT	_	6	punct	_	_
+9	entertained	entertained	X	X	_	6	amod	_	_
+10	at	at	X	X	_	6	dep	_	_
+11	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	dep	_	_
+12	luncheon	luncheon	PROPN	PROPN	_	11	obj	_	_
+13	at	at	X	X	_	15	case	_	_
+14	her	her	X	X	_	13	fixed	_	_
+15	home	home	PROPN	PROPN	Number=Sing	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Wednesday	Wednesday	PROPN	PROPN	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Robert	Robert	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Brown	Brown	PROPN	PROPN	_	1	flat:name	_	_
+3	will	will	X	X	_	1	dep	_	_
+4	return	return	X	X	_	3	flat:foreign	_	_
+5	next	next	X	X	_	3	flat:foreign	_	_
+6	week	week	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+7	from	from	X	X	_	6	dep	_	_
+8	Bermuda	Bermuda	X	X	_	6	nmod	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	H.	h.	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	E.	E.	PROPN	PROPN	_	0	ROOT	_	_
+2	Godwin	Godwin	PROPN	PROPN	_	1	flat:name	_	_
+
+1	will	will	X	X	_	0	ROOT	_	_
+2	entertain	entertain	ADV	ADV	_	1	flat:foreign	_	_
+3	the	the	X	X	_	4	dep	_	_
+4	members	members	X	X	_	1	dep	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	her	her	X	X	_	4	dep	_	_
+7	Book	Book	X	X	_	4	dep	_	_
+8	Club	club	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	at	at	X	X	_	11	case	_	_
+10	her	her	X	X	_	11	det	_	_
+11	home	home	PROPN	PROPN	Number=Sing	1	advcl	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Tuesday	tuesday	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Dr.	dr.	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	and	and	X	X	_	3	dep	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Richard	Richard	PROPN	PROPN	Gender=Masc|Number=Sing	4	nsubj	_	_
+2	Peter	Peter	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Vieth	Vieth	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+4	announce	announce	X	X	_	0	ROOT	_	_
+5	the	the	X	X	_	6	case	_	_
+6	engagement	engagement	NOUN	NOUN	Gender=Masc|Number=Sing	4	obl:mod	_	_
+7	of	of	ADP	ADP	_	8	case	_	_
+8	their	their	X	X	_	6	nmod	_	_
+9	daughter	daughter	ADJ	ADJ	Gender=Masc|Number=Plur	8	amod	_	_
+10	,	,	PUNCT	PUNCT	_	4	punct	_	_
+11	Miss	Miss	PROPN	PROPN	_	4	parataxis	_	_
+12	Susan	Susan	PROPN	PROPN	_	11	flat:name	_	_
+13	Ann	Ann	PROPN	PROPN	Gender=Masc|Number=Sing	11	flat:name	_	_
+14	Vieth	Vieth	PROPN	PROPN	Gender=Masc|Number=Sing	13	flat:name	_	_
+15	,	,	PUNCT	PUNCT	_	11	punct	_	_
+16	to	to	X	X	_	17	case	_	_
+17	Mr.	monsieur	PROPN	PROPN	Gender=Masc|Number=Sing	11	appos	_	_
+18	Conrad	Conrad	PROPN	PROPN	_	17	flat:name	_	_
+19	Wall	Wall	PROPN	PROPN	_	17	flat:name	_	_
+20	3	3	NUM	NUM	NumType=Card	17	nummod	_	_
+21	,	,	PUNCT	PUNCT	_	11	punct	_	_
+22	,	,	PUNCT	PUNCT	_	4	punct	_	_
+23	son	son	DET	DET	Number=Sing|Poss=Yes	25	det	_	_
+24	of	of	PRON	PRON	Person=3	25	amod	_	_
+25	Dr.	dr.	NOUN	NOUN	Gender=Masc|Number=Sing	22	fixed	_	_
+26	Conrad	Conrad	PROPN	PROPN	Gender=Masc|Number=Sing	25	flat:name	_	_
+27	Wall	Wall	PROPN	PROPN	_	25	flat:name	_	_
+28	2	2	NUM	NUM	NumType=Card	27	nummod	_	_
+29	,	,	PUNCT	PUNCT	_	25	punct	_	_
+30	,	,	PUNCT	PUNCT	_	4	punct	_	_
+31	and	and	X	X	_	4	advcl	_	_
+32	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	31	nsubj	_	SpaceAfter=No
+33	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Nell	Nell	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Kennedy	Kennedy	PROPN	PROPN	_	1	flat:name	_	_
+3	Wall	Wall	PROPN	PROPN	_	1	flat:name	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	marriage	marriage	X	X	_	1	flat:foreign	_	_
+3	will	will	X	X	_	2	dep	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	quietly	quietly	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	celebrated	celebrated	X	X	_	1	flat:foreign	_	_
+7	in	in	X	X	_	1	flat:foreign	_	_
+8	early	early	X	X	_	1	flat:foreign	_	_
+9	February	February	PROPN	PROPN	_	1	flat:foreign	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Miss	Miss	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Vieth	Vieth	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	was	was	X	X	_	2	dep	_	_
+4	graduated	graduated	X	X	_	2	dep	_	_
+5	from	from	X	X	_	2	dep	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	Louise	Louise	PROPN	PROPN	_	1	nsubj	_	_
+8	S.	S.	PROPN	PROPN	_	7	flat:name	_	_
+9	McGehee	McGehee	PROPN	PROPN	_	8	flat:name	_	_
+
+1	school	school	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	attending	attending	X	X	_	1	dep	_	_
+5	Wellesley	Wellesley	X	X	_	4	obj	_	_
+6	College	College	X	X	_	4	obj	_	_
+7	in	in	X	X	_	4	dep	_	_
+8	Wellesley	Wellesley	PROPN	PROPN	_	4	obj	_	_
+9	,	,	PUNCT	PUNCT	_	4	punct	_	_
+10	Mass	Mass	PROPN	PROPN	_	4	obj	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Her	Her	X	X	_	0	ROOT	_	_
+2	mother	mother	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	former	former	VERB	VERB	VerbForm=Inf	1	acl	_	_
+6	Miss	miss	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+7	Stella	Stella	PROPN	PROPN	Gender=Fem|Number=Sing	6	flat:name	_	_
+8	Hayward	Hayward	PROPN	PROPN	_	7	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	_
+2	Wall	Wall	PROPN	PROPN	_	1	flat:name	_	_
+3	is	is	X	X	_	5	nsubj	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	student	studer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	at	at	X	X	_	5	advmod	_	_
+7	Tulane	Tulane	PROPN	PROPN	_	5	obj	_	_
+8	university	university	X	X	_	5	obj	_	_
+9	,	,	PUNCT	PUNCT	_	5	punct	_	_
+10	where	where	PROPN	PROPN	_	5	dep	_	_
+11	he	he	X	X	_	10	dep	_	_
+12	is	is	X	X	_	11	fixed	_	_
+13	a	avoir	X	X	_	14	aux:tense	_	_
+14	member	member	PROPN	PROPN	Gender=Masc|Number=Sing	10	nmod	_	_
+15	of	of	X	X	_	16	case	_	_
+16	Delta	Delta	PROPN	PROPN	_	5	obl:mod	_	_
+17	Kappa	Kappa	PROPN	PROPN	_	5	obj	_	_
+18	Epsilon	Epsilon	PROPN	PROPN	_	17	flat:name	_	_
+19	fraternity	fraternity	PROPN	PROPN	_	18	flat:name	_	_
+20	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Their	their	ADV	ADV	PronType=Int	16	advmod	_	_
+2	Majesties	majestie	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	The	The	X	X	_	12	dep	_	_
+5	Queen	Queen	X	X	_	4	flat:foreign	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	Carnival	Carnival	PROPN	PROPN	_	4	flat:foreign	_	_
+8	and	and	X	X	_	7	dep	_	_
+9	The	The	X	X	_	12	dep	_	_
+10	Queen	Queen	X	X	_	9	flat:foreign	_	_
+11	of	of	X	X	_	12	dep	_	_
+12	Comus	Comus	PROPN	PROPN	_	1	dep	_	_
+13	,	,	PUNCT	PUNCT	_	12	punct	_	_
+14	have	haver	X	X	_	15	nmod	_	_
+15	jointly	jointly	NOUN	NOUN	Gender=Masc|Number=Sing	12	obl:mod	_	_
+16	issued	issued	X	X	_	0	ROOT	_	_
+17	invitations	invitation	NOUN	NOUN	Gender=Fem|Number=Plur	16	obl:arg	_	_
+18	for	for	X	X	_	19	case	_	_
+19	Shrove	Shrove	PROPN	PROPN	_	16	obl:mod	_	_
+20	Tuesday	Tuesday	X	X	_	23	advmod	_	_
+21	evening	evening	X	X	_	20	flat:foreign	_	_
+22	at	at	X	X	_	20	dep	_	_
+23	midnight	midnight	X	X	_	33	case	_	_
+24	at	at	X	X	_	23	dep	_	_
+25	which	which	X	X	_	24	fixed	_	_
+26	time	time	X	X	_	24	fixed	_	_
+27	they	they	X	X	_	28	det	_	_
+28	will	will	X	X	_	24	acl:relcl	_	_
+29	entertain	entertain	ADV	ADV	_	28	advmod	_	_
+30	in	in	X	X	_	28	dep	_	_
+31	the	the	X	X	_	23	dep	_	_
+32	grand	grand	ADJ	ADJ	Gender=Masc|Number=Sing	33	amod	_	_
+33	ballroom	ballroom	NOUN	NOUN	Gender=Masc|Number=Sing	16	obl:mod	_	_
+34	of	of	X	X	_	36	dep	_	_
+35	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	36	aux:tense	_	_
+36	downtown	downtown	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	16	advcl	_	_
+37	hotel	hotel	NOUN	NOUN	Gender=Masc|Number=Sing	36	advmod	_	_
+38	following	following	X	X	_	36	flat:name	_	_
+39	the	the	X	X	_	36	dep	_	_
+40	balls	balls	X	X	_	36	dep	_	_
+41	of	of	ADP	ADP	_	42	case	_	_
+42	Rex	re	NOUN	NOUN	Gender=Masc|Number=Sing	36	obl:mod	_	_
+43	and	and	X	X	_	36	advmod	_	_
+44	Comus	Comus	PROPN	PROPN	_	36	nsubj	_	_
+45	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	Mr.	mr.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Richard	Richard	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	B.	B.	PROPN	PROPN	_	1	flat:name	_	_
+3	McConnell	McConnell	X	X	_	2	flat:name	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	their	their	X	X	_	4	flat:foreign	_	_
+6	son	son	DET	DET	Number=Sing|Poss=Yes	1	nmod	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	Number=Sing	2	punct	_	SpaceAfter=No
+2	in	in	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	4	punct	_	SpaceAfter=No
+2	law	law	X	X	_	1	dep	_	_
+3	and	and	X	X	_	4	advmod	_	_
+4	daughter	daughter	X	X	_	0	ROOT	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Mr.	monsieur	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	fixed	_	_
+3	Mrs	Mrs	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Raymond	Raymond	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	B.	B.	PROPN	PROPN	_	1	flat:name	_	_
+3	Walker	Walker	PROPN	PROPN	_	2	flat:name	_	_
+4	will	will	X	X	_	1	dep	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	hosts	host	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:name	_	_
+7	this	this	X	X	_	6	flat:foreign	_	_
+8	Tuesday	Tuesday	X	X	_	1	dep	_	_
+9	evening	evening	X	X	_	8	flat:foreign	_	_
+10	at	at	X	X	_	1	dep	_	_
+11	dinner	dinner	X	X	_	1	dep	_	_
+12	at	at	X	X	_	14	cc	_	_
+13	the	the	X	X	_	14	dep	_	_
+14	State	State	X	X	_	1	nmod	_	_
+15	St.	saint	X	X	_	14	amod	_	_
+16	home	home	X	X	_	14	nmod	_	_
+17	of	of	X	X	_	18	dep	_	_
+18	the	the	X	X	_	14	dep	_	_
+19	Walkers	Walkers	X	X	_	14	nmod	_	_
+20	honoring	honoring	ADJ	ADJ	Gender=Masc|Number=Sing	19	amod	_	_
+21	Mrs	Mrs	PROPN	PROPN	_	14	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	McConnell'	McConnell'	X	X	_	3	advmod	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	3	expl:pass	_	_
+3	debutante	debutant	ADJ	ADJ	Gender=Fem|Number=Sing	4	amod	_	_
+4	niece	niece	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	Miss	Miss	PROPN	PROPN	_	4	appos	_	_
+7	Barbara	Barbara	PROPN	PROPN	_	6	flat:name	_	_
+8	Williams	Williams	PROPN	PROPN	_	7	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Debutante	Debutante	PROPN	PROPN	_	2	amod	_	_
+2	Miss	Miss	X	X	_	12	dep	_	_
+3	Lady	Lady	PROPN	PROPN	_	2	flat:name	_	_
+4	Helen	Helen	PROPN	PROPN	Gender=Fem|Number=Sing	2	appos	_	_
+5	Hardy	Hardy	PROPN	PROPN	_	4	flat:name	_	_
+6	will	will	X	X	_	4	flat:foreign	_	_
+7	be	be	X	X	_	8	dep	_	_
+8	feted	feted	X	X	_	4	flat:foreign	_	_
+9	at	at	X	X	_	2	dep	_	_
+10	luncheon	luncheon	PROPN	PROPN	_	2	flat:name	_	_
+11	this	this	X	X	_	2	flat:foreign	_	_
+12	Tuesday	Tuesday	X	X	_	0	ROOT	_	_
+13	at	at	X	X	_	12	dep	_	_
+14	which	which	X	X	_	12	dep	_	_
+15	the	the	X	X	_	12	flat:foreign	_	_
+16	hostess	hostess	X	X	_	12	flat:foreign	_	_
+17	will	will	X	X	_	12	dep	_	_
+18	be	be	X	X	_	17	dep	_	_
+19	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	12	dep	_	SpaceAfter=No
+20	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Edwin	Edwin	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Socola	Socola	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	of	of	X	X	_	4	case	_	_
+4	Waveland	Waveland	PROPN	PROPN	_	2	nmod	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	Miss	Miss	PROPN	PROPN	_	1	conj	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	She	She	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	entertain	entertain	ADJ	ADJ	Gender=Masc|Number=Sing	2	advmod	_	_
+4	at	at	X	X	_	1	fixed	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+6	Vieux	Vieux	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+7	Carre	Carre	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+8	restaurant	restaurer	VERB	VERB	Tense=Pres|VerbForm=Part	1	acl	_	_
+9	at	at	ADP	ADP	_	8	dep	_	_
+10	1	1	NUM	NUM	NumType=Card	8	obl:mod	_	_
+11	o'	o'	DET	DET	_	13	expl:comp	_	SpaceAfter=No
+12	clock	clock	PROPN	PROPN	Gender=Masc|Number=Sing	11	dep	_	_
+13	in	in	X	X	_	1	flat:foreign	_	_
+14	the	the	X	X	_	1	flat:foreign	_	_
+15	early	early	X	X	_	1	flat:foreign	_	_
+16	afternoon	afternoon	X	X	_	1	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Another	Another	PROPN	PROPN	_	0	ROOT	_	_
+2	debutante	debutant	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	Miss	Miss	PROPN	PROPN	_	1	appos	_	_
+5	Virginia	Virginia	PROPN	PROPN	_	4	flat:name	_	_
+6	Richmond	Richmond	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	will	will	X	X	_	4	conj	_	_
+9	also	also	X	X	_	8	flat:name	_	_
+10	be	be	X	X	_	8	dep	_	_
+11	the	the	X	X	_	8	dep	_	_
+12	honoree	honoree	X	X	_	8	amod	_	_
+13	this	this	X	X	_	8	dep	_	_
+14	Wednesday	Wednesday	X	X	_	8	flat:name	_	_
+15	at	at	X	X	_	1	flat:foreign	_	_
+16	luncheon	luncheon	PROPN	PROPN	_	15	flat:foreign	_	_
+
+1	at	at	X	X	_	2	case	_	_
+2	which	which	X	X	_	0	ROOT	_	_
+3	Mrs	Mrs	PROPN	PROPN	_	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	10	nsubj	_	_
+2	Dane	Dane	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	will	will	X	X	_	1	conj	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	hostess	hostess	X	X	_	4	nmod	_	_
+7	entertaining	entertaining	X	X	_	4	dep	_	_
+8	at	at	X	X	_	10	dep	_	_
+9	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_
+10	downtown	downtown	VERB	VERB	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+11	hotel	hotel	ADV	ADV	_	10	advmod	_	_
+12	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Miss	Miss	X	X	_	2	det	_	_
+2	Katherine	Katherine	PROPN	PROPN	_	6	nsubj	_	_
+3	Vickery	Vickery	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	6	punct	_	_
+5	who	who	X	X	_	6	nsubj	_	_
+6	attends	attendre	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+7	Sweet	Sweet	X	X	_	6	obj	_	_
+
+1	Briar	Briar	PROPN	PROPN	_	7	nsubj	_	_
+2	College	College	X	X	_	1	flat:name	_	_
+3	in	in	X	X	_	1	dep	_	_
+4	Virginia	Virginia	PROPN	PROPN	_	1	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	_
+6	will	will	X	X	_	7	nsubj	_	_
+7	rejoin	rejoin	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	her	her	X	X	_	7	obj	_	_
+9	father	father	X	X	_	7	advmod	_	_
+10	,	,	PUNCT	PUNCT	_	7	punct	_	_
+11	Dr.	dr.	NOUN	NOUN	Gender=Masc|Number=Sing	7	parataxis	_	_
+12	Eugene	Eugene	PROPN	PROPN	_	11	flat:name	_	_
+13	Vickery	Vickery	PROPN	PROPN	_	11	flat:name	_	_
+14	,	,	PUNCT	PUNCT	_	7	punct	_	_
+15	at	at	X	X	_	20	case	_	_
+16	the	the	X	X	_	15	fixed	_	_
+17	family	family	X	X	_	15	flat:foreign	_	_
+18	home	home	X	X	_	15	flat:foreign	_	_
+19	in	in	X	X	_	20	dep	_	_
+20	Richmond	Richmond	PROPN	PROPN	_	7	obl:mod	_	_
+21	pl	pl	PROPN	PROPN	_	20	flat:name	_	SpaceAfter=No
+22	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Wednesday	Wednesday	X	X	_	0	ROOT	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	part	part	NOUN	NOUN	Number=Sing	4	obl:mod	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	the	the	X	X	_	0	ROOT	_	_
+
+1	Carnival	Carnival	X	X	_	0	ROOT	_	_
+
+1	festivities	festivitie	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	When	When	X	X	_	20	advmod	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	Achaeans	Achaeans	X	X	_	1	flat:foreign	_	_
+4	entertained	entertained	X	X	_	1	flat:foreign	_	_
+5	Wednesday	Wednesday	PROPN	PROPN	_	1	flat:foreign	_	_
+6	last	last	X	X	_	1	flat:foreign	_	_
+7	at	at	X	X	_	9	case	_	_
+8	their	their	X	X	_	7	fixed	_	_
+9	annual	annual	X	X	_	1	obl:mod	_	_
+10	Carnival	Carnival	PROPN	PROPN	_	1	flat:foreign	_	_
+11	masquerade	masquerade	X	X	_	1	amod	_	_
+12	ball	ball	NOUN	NOUN	_	1	amod	_	_
+13	,	,	PUNCT	PUNCT	_	1	punct	_	_
+14	Miss	Miss	PROPN	PROPN	_	20	nsubj	_	_
+15	Margaret	Margaret	PROPN	PROPN	Gender=Fem|Number=Sing	14	flat:name	_	_
+16	Pierson	Pierson	PROPN	PROPN	_	15	flat:name	_	_
+17	was	was	X	X	_	15	flat:name	_	_
+18	chosen	chosen	X	X	_	15	flat:name	_	_
+19	to	to	X	X	_	20	dep	_	_
+20	rule	rule	X	X	_	0	ROOT	_	_
+21	over	over	X	X	_	20	flat:foreign	_	_
+
+1	the	the	X	X	_	2	advmod	_	_
+2	festivities	festivities	X	X	_	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+
+1	presented	presented	X	X	_	0	ROOT	_	_
+2	at	at	X	X	_	1	fixed	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	Muncipal	Muncipal	X	X	_	1	flat:foreign	_	_
+
+1	Auditorium	auditorium	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	and	and	X	X	_	4	dep	_	_
+3	chosen	chosen	X	X	_	2	flat:foreign	_	_
+4	as	as	X	X	_	0	ROOT	_	_
+5	her	her	X	X	_	4	obj	_	_
+6	ladies	lady	NOUN	NOUN	Gender=Fem|Number=Plur	4	obj	_	_
+7	in	in	X	X	_	4	advmod	_	_
+8	waiting	waiting	X	X	_	7	dep	_	_
+9	were	were	X	X	_	4	dep	_	_
+10	Misses	Misses	PROPN	PROPN	_	4	obj	_	_
+11	Clayton	Clayton	PROPN	PROPN	_	10	flat:name	_	_
+
+1	Nairne	Nairne	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	Eleanor	Eleanor	PROPN	PROPN	_	1	obl:agent	_	_
+
+1	Eustis	Eustis	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	Lynn	Lynn	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+4	Chapman	Chapman	PROPN	PROPN	_	3	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	Irwin	Irwin	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+7	Leatherman	Leatherman	PROPN	PROPN	_	6	flat:name	_	_
+8	of	of	X	X	_	9	case	_	_
+9	Robinsonville	Robinsonville	PROPN	PROPN	_	6	nmod	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	Miss	Miss	PROPN	PROPN	_	1	conj	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	and	and	X	X	_	2	dep	_	_
+2	Helene	Helene	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	Rowley	Rowley	PROPN	PROPN	_	2	flat:name	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	4	nmod	_	_
+2	large	large	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+3	municipal	municipal	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+4	hall	hall	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	was	was	X	X	_	4	dep	_	_
+6	ablaze	ablaze	PROPN	PROPN	_	4	nmod	_	_
+7	with	with	X	X	_	4	dep	_	_
+8	color	color	X	X	_	4	dep	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	which	which	X	X	_	22	dep	_	_
+11	shown	shown	X	X	_	10	flat:foreign	_	_
+12	out	out	X	X	_	11	dep	_	_
+13	from	from	X	X	_	11	dep	_	_
+14	the	the	X	X	_	10	flat:foreign	_	_
+15	bright	bright	X	X	_	10	flat:foreign	_	_
+16	array	array	X	X	_	10	flat:foreign	_	_
+17	of	of	X	X	_	19	case	_	_
+18	chic	chic	X	X	_	19	amod	_	_
+19	ballgowns	ballgown	NOUN	NOUN	Gender=Masc|Number=Plur	10	nmod	_	_
+20	worn	worn	PROPN	PROPN	_	10	flat:foreign	_	_
+21	by	by	X	X	_	22	case	_	_
+22	those	those	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+23	participating	participating	X	X	_	22	dep	_	_
+24	in	in	X	X	_	22	dep	_	_
+25	the	the	X	X	_	22	dep	_	_
+26	`	`	X	X	_	28	case	_	SpaceAfter=No
+27	`	`	ADP	ADP	_	28	case	_	_
+28	maskers	maskers	PROPN	PROPN	Gender=Fem|Number=Sing	22	nmod	_	SpaceAfter=No
+29	'	'	PUNCT	PUNCT	_	22	punct	_	_
+30	dances	dance	NOUN	NOUN	Gender=Fem|Number=Plur	22	nmod	_	_
+31	''	''	PUNCT	PUNCT	_	4	punct	_	_
+32	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	The	The	X	X	_	4	dep	_	_
+2	mother	mother	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	4	case	_	_
+4	young	young	X	X	_	0	ROOT	_	_
+5	queen	queen	ADV	ADV	_	4	advmod	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	4	dep	_	SpaceAfter=No
+8	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	G.	g.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Pierson	Pierson	PROPN	PROPN	_	2	flat:name	_	_
+4	Jr	Jr	PROPN	PROPN	_	2	flat:name	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	chose	chose	NOUN	NOUN	Gender=Fem|Number=Sing	2	nsubj	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	white	white	NOUN	NOUN	Gender=Fem|Number=Sing	2	advmod	_	_
+4	brocade	brocade	NOUN	NOUN	Gender=Fem|Number=Plur	2	advcl	_	_
+5	gown	gown	VERB	VERB	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	2	advcl	_	_
+6	made	made	X	X	_	5	parataxis	_	_
+7	on	on	PRON	PRON	Number=Sing|Person=3	8	advmod	_	_
+8	slim	slim	X	X	_	5	xcomp	_	_
+9	lines	line	ADJ	ADJ	Gender=Fem|Number=Plur	8	flat:foreign	_	_
+10	with	with	X	X	_	8	dep	_	_
+11	panels	panel	ADJ	ADJ	Gender=Masc|Number=Plur	8	flat:foreign	_	_
+12	of	of	X	X	_	13	case	_	_
+13	tomato	tomato	PROPN	PROPN	_	8	dep	_	SpaceAfter=No
+14	-	-	PROPN	PROPN	_	8	nmod	_	SpaceAfter=No
+15	red	red	X	X	_	8	conj	_	_
+16	and	and	X	X	_	8	dep	_	_
+17	bright	bright	X	X	_	8	amod	_	_
+18	green	green	X	X	_	8	flat:foreign	_	_
+19	satin	satin	X	X	_	8	amod	_	_
+20	extending	extending	X	X	_	19	fixed	_	_
+21	down	down	X	X	_	8	flat:foreign	_	_
+22	the	the	X	X	_	23	dep	_	_
+23	back	back	X	X	_	21	obl:mod	_	_
+24	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thomas	Thomas	PROPN	PROPN	Gender=Masc|Number=Sing	5	nsubj	_	_
+2	Jordan	Jordan	PROPN	PROPN	_	1	flat:name	_	_
+3	selected	selected	X	X	_	1	flat:name	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	black	black	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+6	taffeta	taffeta	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+7	frock	frock	X	X	_	6	amod	_	_
+8	made	made	X	X	_	5	conj	_	_
+9	with	with	X	X	_	8	flat:name	_	_
+10	a	avoir	X	X	_	13	aux:tense	_	_
+11	skirt	skirt	X	X	_	10	obj	_	_
+12	of	of	X	X	_	13	dep	_	_
+13	fringed	fringed	ADV	ADV	_	5	advmod	_	_
+14	tiers	tiers	DET	DET	Gender=Masc|Number=Sing	13	amod	_	_
+15	and	and	X	X	_	13	dep	_	_
+16	worn	worn	X	X	_	15	flat:foreign	_	_
+17	with	with	X	X	_	15	dep	_	_
+18	crimson	crimson	NOUN	NOUN	_	15	flat:foreign	_	_
+19	silk	silk	ADJ	ADJ	Gender=Fem|Number=Sing	15	flat:foreign	_	_
+20	slippers	slipper	NOUN	NOUN	Gender=Masc|Number=Plur	5	obj	_	_
+21	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Clayton	Clayton	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Nairne	Nairne	PROPN	PROPN	_	13	nsubj	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	whose	whose	NOUN	NOUN	Gender=Fem|Number=Sing	1	conj	_	_
+4	daughter	daughter	ADJ	ADJ	Number=Sing	3	amod	_	_
+5	,	,	PUNCT	PUNCT	_	3	punct	_	_
+6	was	was	X	X	_	3	dep	_	_
+7	among	among	X	X	_	6	fixed	_	_
+8	the	the	X	X	_	6	fixed	_	_
+9	court	court	ADJ	ADJ	Gender=Masc|Number=Sing	6	fixed	_	_
+10	maids	maid	NOUN	NOUN	Gender=Masc|Number=Sing	3	nmod	_	_
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	chose	chose	NOUN	NOUN	Gender=Fem|Number=Sing	13	nsubj	_	_
+13	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+14	deep	deep	ADV	ADV	_	13	advmod	_	_
+15	greenish	greenish	PROPN	PROPN	_	13	obj	_	_
+16	blue	blu	ADJ	ADJ	Gender=Fem|Number=Sing	13	xcomp	_	_
+17	lace	lace	NOUN	NOUN	Gender=Fem|Number=Sing	16	nsubj	_	_
+18	gown	gown	ADJ	ADJ	Gender=Fem|Number=Sing	16	xcomp	_	_
+19	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Fenwick	Fenwick	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Eustis	Eustis	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	whose	whose	NOUN	NOUN	Gender=Fem|Number=Sing	1	conj	_	_
+5	daughter	daughter	ADJ	ADJ	Number=Sing	4	amod	_	_
+6	was	was	X	X	_	5	dep	_	_
+7	also	also	X	X	_	6	flat:name	_	_
+8	a	avoir	X	X	_	9	aux:tense	_	_
+9	maid	maid	X	X	_	10	dep	_	_
+10	to	to	X	X	_	4	dep	_	_
+11	the	the	X	X	_	10	flat:foreign	_	_
+12	queen	queen	ADV	ADV	_	10	fixed	_	_
+13	,	,	PUNCT	PUNCT	_	10	punct	_	_
+
+1	wore	wore	NOUN	NOUN	Number=Sing	8	nsubj	_	_
+2	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	fixed	_	_
+3	ashes	asher	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+4	of	of	ADP	ADP	_	5	case	_	_
+5	roses	rose	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+6	slipper	slipper	VERB	VERB	VerbForm=Inf	5	advmod	_	_
+7	satin	satin	NOUN	NOUN	Gender=Masc|Number=Sing	5	amod	_	_
+8	gown	gown	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Peter	Peter	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	Feringa	feringer	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	Jr	jr	ADV	ADV	Polarity=Neg	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	13	punct	_	_
+2	last	last	X	X	_	13	nsubj	_	_
+3	year'	year'	PROPN	PROPN	Gender=Fem|Number=Sing	13	nsubj	_	SpaceAfter=No
+4	s	s	PRON	PRON	Person=3|Reflex=Yes	3	dep	_	_
+5	Achaeans	Achaeans	PROPN	PROPN	Gender=Fem|Number=Sing	3	flat:name	_	SpaceAfter=No
+6	'	'	PUNCT	PUNCT	_	3	punct	_	_
+7	queen	queen	ADV	ADV	_	3	fixed	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	chose	chose	NOUN	NOUN	Gender=Fem|Number=Sing	3	appos	_	_
+10	an	an	PROPN	PROPN	Gender=Masc|Number=Sing	9	nmod	_	_
+11	eggshell	eggshell	ADJ	ADJ	Number=Plur	10	amod	_	_
+12	white	whit	ADJ	ADJ	Gender=Fem|Number=Sing	13	mark	_	_
+13	filmy	filmy	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+14	lace	lace	NOUN	NOUN	Gender=Fem|Number=Sing	13	obj	_	_
+15	short	short	X	X	_	13	obj	_	_
+16	dress	dress	X	X	_	15	flat:name	_	_
+17	made	made	X	X	_	15	dep	_	_
+18	with	with	X	X	_	15	flat:name	_	_
+19	a	avoir	X	X	_	13	advmod	_	_
+20	wide	wide	X	X	_	13	obj	_	_
+21	decolletage	decolletage	NOUN	NOUN	Gender=Masc|Number=Sing	13	obj	_	_
+22	trimmed	trimmed	ADJ	ADJ	Gender=Masc|Number=Sing	25	nsubj	_	_
+23	with	with	X	X	_	22	flat:name	_	_
+24	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	22	appos	_	_
+25	edging	edging	PROPN	PROPN	_	13	obj	_	_
+26	of	of	X	X	_	27	case	_	_
+27	tulle	tulle	NOUN	NOUN	Gender=Fem|Number=Sing	25	nmod	_	_
+28	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	Mrs	Mrs	PROPN	PROPN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Eustis	eusti	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	Reily'	reily'	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	mark	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	4	expl:pass	_	_
+4	olive	olive	ADJ	ADJ	Gender=Fem|NumType=Ord|Number=Sing	16	dep	_	SpaceAfter=No
+5	-	-	PROPN	PROPN	Gender=Masc|Number=Sing	4	obj	_	SpaceAfter=No
+6	green	green	PROPN	PROPN	Gender=Masc|Number=Sing	4	obl:arg	_	_
+7	street	street	X	X	_	4	conj	_	_
+8	length	length	X	X	_	7	flat:foreign	_	_
+9	silk	silk	X	X	_	7	amod	_	_
+10	taffeta	taffeter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	dep	_	_
+11	dress	dress	X	X	_	10	dep	_	_
+12	was	was	X	X	_	10	dep	_	_
+13	embroidered	embroidered	X	X	_	10	amod	_	_
+14	on	on	PRON	PRON	Number=Sing|Person=3	16	nsubj	_	_
+15	the	the	X	X	_	16	dep	_	_
+16	bodice	bodice	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+17	with	with	X	X	_	16	dep	_	_
+18	gold	gold	X	X	_	16	obj	_	_
+19	threads	threads	X	X	_	16	obj	_	_
+20	and	and	X	X	_	16	dep	_	_
+21	golden	golden	X	X	_	16	dep	_	_
+22	sequins	sequin	X	X	_	16	dep	_	_
+23	and	and	X	X	_	16	dep	_	_
+24	beads	beads	X	X	_	16	advmod	_	_
+25	.	.	PUNCT	PUNCT	_	16	punct	_	SpaceAfter=No

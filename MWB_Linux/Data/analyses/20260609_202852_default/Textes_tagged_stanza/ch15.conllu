@@ -1,0 +1,2643 @@
+1	At	At	X	X	_	3	advmod	_	_
+2	the	the	X	X	_	3	amod	_	_
+3	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	side	side	X	X	_	3	amod	_	_
+5	of	of	X	X	_	7	mark	_	_
+6	the	the	X	X	_	5	dep	_	_
+7	shelter	shelter	X	X	_	3	dep	_	_
+8	,	,	PUNCT	PUNCT	_	3	punct	_	_
+9	each	each	X	X	_	3	dep	_	_
+10	roof	roof	X	X	_	9	flat:foreign	_	_
+11	beam	beam	ADV	ADV	_	9	flat:foreign	_	_
+12	is	is	X	X	_	13	aux:tense	_	_
+13	rested	rested	ADJ	ADJ	Gender=Masc|Number=Sing	9	advcl	_	_
+14	on	on	PRON	PRON	Number=Sing|Person=3	9	flat:foreign	_	_
+15	the	the	X	X	_	16	dep	_	_
+16	inside	insid	ADJ	ADJ	Number=Sing	9	flat:foreign	_	_
+17	4	4	NUM	NUM	NumType=Card	18	nummod	_	_
+18	inches	inch	NOUN	NOUN	Number=Plur	9	flat:foreign	_	_
+
+1	of	of	X	X	_	3	dep	_	_
+2	the	the	X	X	_	1	fixed	_	_
+3	block	block	X	X	_	0	ROOT	_	_
+4	wall	wall	PROPN	PROPN	_	3	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	11	dep	_	_
+2	outside	outside	X	X	_	1	flat:foreign	_	_
+3	4-inch	4-inch	X	X	_	2	punct	_	_
+4	space	space	X	X	_	2	punct	_	_
+5	is	is	X	X	_	2	dep	_	_
+6	filled	filled	X	X	_	2	dep	_	_
+7	by	by	X	X	_	2	obl:mod	_	_
+8	mortaring	mortaring	X	X	_	2	punct	_	_
+9	blocks	block	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+10	on	on	PRON	PRON	Number=Sing|Person=3	11	nsubj	_	_
+11	edge	edge	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+12	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	wooden	wooden	X	X	_	1	flat:foreign	_	_
+3	bracing	bracing	X	X	_	1	flat:foreign	_	_
+4	between	between	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	roof	roof	X	X	_	1	flat:foreign	_	_
+7	beams	beams	ADV	ADV	_	1	flat:foreign	_	_
+8	is	is	X	X	_	9	case	_	_
+9	placed	placed	X	X	_	1	nmod	_	_
+10	flush	flush	X	X	_	1	flat:foreign	_	_
+11	with	with	X	X	_	1	flat:foreign	_	_
+12	the	the	X	X	_	1	flat:foreign	_	_
+13	inside	inside	X	X	_	1	flat:foreign	_	_
+14	of	of	X	X	_	1	flat:foreign	_	_
+15	the	the	X	X	_	1	flat:foreign	_	_
+16	wall	wall	PROPN	PROPN	_	1	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Mortar	Mortar	PROPN	PROPN	_	10	nummod	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	poured	poured	X	X	_	1	flat:foreign	_	_
+4	between	between	X	X	_	1	flat:foreign	_	_
+5	this	this	X	X	_	1	flat:foreign	_	_
+6	bracing	bracing	X	X	_	1	flat:foreign	_	_
+7	and	and	X	X	_	1	dep	_	_
+8	the	the	X	X	_	1	flat:foreign	_	_
+9	4-inch	4-inch	X	X	_	10	nummod	_	_
+10	blocks	block	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+11	on	on	PRON	PRON	Number=Sing|Person=3	12	nsubj	_	_
+12	edge	edge	X	X	_	10	parataxis	_	_
+13	to	to	X	X	_	10	dep	_	_
+14	complete	complete	X	X	_	13	flat:foreign	_	_
+15	the	the	X	X	_	13	flat:foreign	_	_
+16	wall	wall	X	X	_	13	flat:foreign	_	_
+17	thickness	thickness	X	X	_	13	flat:foreign	_	_
+
+1	for	for	ADP	ADP	_	2	case	_	_
+2	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	shielding	shielding	VERB	VERB	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	amod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	(	(	PUNCT	PUNCT	_	7	punct	_	_
+2	For	For	X	X	_	7	case	_	_
+3	details	details	X	X	_	2	flat:foreign	_	_
+4	see	see	X	X	_	2	flat:foreign	_	_
+5	inset	inset	PROPN	PROPN	_	2	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	fig	fig	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	5	5	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	)	)	PUNCT	PUNCT	_	2	punct	_	_
+2	The	The	X	X	_	18	iobj	_	_
+3	first	first	X	X	_	2	flat:foreign	_	_
+4	one	one	X	X	_	2	flat:foreign	_	_
+5	or	or	CCONJ	CCONJ	_	8	cc	_	_
+6	two	two	X	X	_	5	fixed	_	_
+7	roof	roof	X	X	_	5	flat:foreign	_	_
+8	boards	board	ADJ	ADJ	Gender=Masc|Number=Plur	2	flat:foreign	_	_
+9	(	(	PUNCT	PUNCT	_	8	punct	_	_
+10	marked	marked	NOUN	NOUN	_	8	appos	_	_
+11	`	`	NOUN	NOUN	_	13	case	_	SpaceAfter=No
+12	`	`	ADP	ADP	_	13	case	_	_
+13	E	e	NOUN	NOUN	_	8	nmod	_	_
+14	''	''	PUNCT	PUNCT	_	8	punct	_	_
+15	in	in	ADP	ADP	_	16	case	_	_
+16	fig	fig	NOUN	NOUN	_	8	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	PUNCT	_	2	punct	_	_
+18	6	6	NUM	NUM	NumType=Card	23	nummod	_	_
+19	)	)	PUNCT	PUNCT	_	18	punct	_	_
+20	are	are	X	X	_	18	amod	_	_
+21	slipped	slipped	X	X	_	18	nmod	_	_
+22	into	into	X	X	_	18	amod	_	_
+23	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+24	across	across	X	X	_	23	dep	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	roof	roof	X	X	_	0	ROOT	_	_
+3	beams	beams	ADV	ADV	_	2	advmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	6	punct	_	_
+2	from	from	X	X	_	1	dep	_	_
+3	outside	outside	X	X	_	2	flat:foreign	_	_
+4	the	the	X	X	_	2	flat:foreign	_	_
+5	shelter	shelter	X	X	_	2	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	These	These	X	X	_	0	ROOT	_	_
+2	boards	boards	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	2	amod	_	_
+4	nailed	nailed	X	X	_	2	nmod	_	_
+5	to	to	X	X	_	2	dep	_	_
+6	the	the	X	X	_	7	dep	_	_
+7	roof	roof	X	X	_	1	flat:foreign	_	_
+
+1	beams	beams	ADV	ADV	_	16	advmod	_	_
+2	by	by	X	X	_	1	dep	_	_
+3	reaching	reaching	X	X	_	2	dep	_	_
+4	up	up	X	X	_	2	dep	_	_
+5	through	through	X	X	_	2	dep	_	_
+6	the	the	X	X	_	2	flat:foreign	_	_
+7	open	open	X	X	_	2	dep	_	_
+8	space	space	X	X	_	1	dep	_	_
+9	between	between	X	X	_	1	dep	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	beams	beams	ADV	ADV	_	10	amod	_	_
+12	,	,	PUNCT	PUNCT	_	16	punct	_	_
+13	from	from	X	X	_	12	fixed	_	_
+14	inside	inside	X	X	_	13	flat:foreign	_	_
+15	the	the	X	X	_	13	flat:foreign	_	_
+16	shelter	shelter	X	X	_	0	ROOT	_	_
+17	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	Concrete	Concrete	X	X	_	0	ROOT	_	_
+2	blocks	block	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	2	dep	_	_
+4	passed	passed	X	X	_	1	flat:foreign	_	_
+5	between	between	X	X	_	4	flat:foreign	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	beams	beams	X	X	_	1	flat:foreign	_	_
+8	and	and	X	X	_	1	flat:foreign	_	_
+9	put	pouvoir	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	1	flat:foreign	_	_
+10	on	on	PRON	PRON	Number=Sing|Person=3	11	nsubj	_	_
+11	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+12	boards	boards	X	X	_	11	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	13	punct	_	_
+2	roof	roof	X	X	_	1	flat:foreign	_	_
+3	blocks	block	X	X	_	1	flat:foreign	_	_
+4	are	are	X	X	_	1	flat:foreign	_	_
+5	in	in	X	X	_	1	dep	_	_
+6	two	two	X	X	_	1	flat:foreign	_	_
+7	layers	layers	X	X	_	1	flat:foreign	_	_
+8	and	and	X	X	_	1	flat:foreign	_	_
+9	are	are	X	X	_	11	case	_	_
+10	not	not	X	X	_	9	dep	_	_
+11	mortared	mortared	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+12	together	together	ADJ	ADJ	Gender=Masc|Number=Plur	11	amod	_	_
+13	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Work	Work	PROPN	PROPN	_	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+2	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	dep	_	_
+3	roof	roof	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	continues	continu	ADJ	ADJ	Gender=Fem|Number=Plur	3	amod	_	_
+
+1	in	in	X	X	_	2	case	_	_
+2	this	this	X	X	_	0	ROOT	_	_
+
+1	way	way	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	last	last	X	X	_	1	flat:foreign	_	_
+3	roof	roof	X	X	_	1	flat:foreign	_	_
+4	boards	boards	X	X	_	1	flat:foreign	_	_
+5	are	are	X	X	_	6	case	_	_
+6	covered	covered	X	X	_	1	obl:mod	_	_
+7	with	with	X	X	_	6	dep	_	_
+8	blocks	block	X	X	_	6	dep	_	_
+9	from	from	X	X	_	6	dep	_	_
+10	outside	outside	X	X	_	1	flat:foreign	_	_
+11	the	the	X	X	_	1	flat:foreign	_	_
+12	shelter	shelter	X	X	_	1	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	When	When	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	roof	roof	X	X	_	1	flat:foreign	_	_
+4	blocks	block	X	X	_	1	flat:foreign	_	_
+5	are	are	X	X	_	1	flat:foreign	_	_
+6	all	all	X	X	_	5	dep	_	_
+7	in	in	X	X	_	8	case	_	_
+8	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	the	the	X	X	_	1	advcl	_	_
+
+1	final	final	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+2	rows	rows	X	X	_	0	ROOT	_	_
+3	of	of	X	X	_	4	case	_	_
+4	wall	wall	PROPN	PROPN	_	2	parataxis	_	_
+5	blocks	block	X	X	_	4	flat:name	_	_
+6	are	are	X	X	_	7	case	_	_
+7	mortared	mortared	NOUN	NOUN	Gender=Masc|Number=Plur	4	nmod	_	_
+8	into	into	X	X	_	2	dep	_	_
+
+1	position	position	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	advmod	_	_
+2	structure	structure	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	complete	complet	ADJ	ADJ	Number=Sing	2	amod	_	_
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	3	punct	_	_
+2	See	See	X	X	_	3	case	_	_
+3	fig	fig	NOUN	NOUN	_	0	ROOT	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	7	7	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	)	)	PUNCT	PUNCT	_	6	punct	_	_
+2	Building	Building	X	X	_	6	dep	_	_
+3	plans	plan	NOUN	NOUN	Gender=Masc|Number=Plur	2	flat:foreign	_	_
+4	are	are	X	X	_	2	flat:foreign	_	_
+5	on	on	PRON	PRON	Number=Sing|Person=3	6	nsubj:pass	_	_
+6	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+7	21	21	NUM	NUM	NumType=Card	6	nummod	_	_
+8	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Solid	Solid	X	X	_	0	ROOT	_	_
+2	concrete	concrete	X	X	_	1	flat:foreign	_	_
+3	blocks	block	X	X	_	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	relatively	relatively	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+6	heavy	heavy	ADV	ADV	_	5	amod	_	_
+7	and	and	X	X	_	5	dep	_	_
+8	dense	dense	ADJ	ADJ	Number=Sing	5	amod	_	_
+9	,	,	PUNCT	PUNCT	_	5	punct	_	_
+10	are	are	X	X	_	11	case	_	_
+11	used	used	X	X	_	5	obl:mod	_	_
+12	for	for	X	X	_	13	case	_	_
+13	this	this	X	X	_	5	obl:mod	_	_
+14	shelter	shelter	X	X	_	5	amod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	These	These	X	X	_	15	nsubj	_	_
+2	blocks	block	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	1	punct	_	_
+4	sold	sold	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+5	in	in	X	X	_	7	case	_	_
+6	various	various	X	X	_	5	dep	_	_
+7	sizes	sizes	X	X	_	1	nmod	_	_
+8	so	so	X	X	_	1	dep	_	_
+9	it	it	X	X	_	1	dep	_	_
+10	seldom	seldom	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	9	acl	_	_
+11	is	is	X	X	_	1	dep	_	_
+12	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	1	dep	_	_
+13	to	to	X	X	_	1	dep	_	_
+14	cut	cut	X	X	_	13	flat:foreign	_	_
+15	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	dep	_	_
+16	block	block	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	15	obj	_	_
+17	to	to	X	X	_	18	dep	_	_
+18	fit	faire	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	ROOT	_	_
+19	.	.	PUNCT	PUNCT	_	18	punct	_	_
+
+1	Solid	Solid	X	X	_	4	nsubj	_	_
+2	blocks	block	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	2	punct	_	_
+4	recommended	recommended	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	because	because	NOUN	NOUN	Gender=Masc|Number=Plur	4	obj	_	_
+6	hollow	hollow	X	X	_	4	obj	_	_
+7	blocks	block	X	X	_	4	xcomp	_	_
+8	would	would	X	X	_	4	obj	_	_
+9	have	haver	X	X	_	12	case	_	_
+10	to	to	X	X	_	9	fixed	_	_
+11	be	be	X	X	_	10	dep	_	_
+12	filled	filled	X	X	_	4	obl:mod	_	_
+13	with	with	X	X	_	12	dep	_	_
+14	concrete	concrete	X	X	_	12	flat:foreign	_	_
+15	to	to	X	X	_	16	dep	_	_
+16	give	give	X	X	_	4	obl:mod	_	_
+17	effective	effectif	ADJ	ADJ	Gender=Fem|Number=Sing	16	amod	_	_
+18	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+19	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Bricks	Bricks	PROPN	PROPN	_	0	ROOT	_	_
+2	are	are	X	X	_	3	case	_	_
+3	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	alternative	alternatif	ADJ	ADJ	Gender=Fem|Number=Sing	3	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	X	X	_	10	advmod	_	_
+2	they	they	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	4	case	_	_
+4	used	used	X	X	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	10	punct	_	_
+6	the	the	X	X	_	10	obl:mod	_	_
+7	walls	walls	X	X	_	6	flat:foreign	_	_
+8	and	and	X	X	_	9	dep	_	_
+9	roof	roof	X	X	_	6	flat:foreign	_	_
+10	should	should	X	X	_	0	ROOT	_	_
+11	be	be	X	X	_	10	dep	_	_
+12	10	10	NUM	NUM	NumType=Card	13	nummod	_	_
+13	inches	inch	NOUN	NOUN	Number=Plur	10	obj	_	_
+14	thick	thick	X	X	_	13	amod	_	_
+15	to	to	X	X	_	10	dep	_	_
+16	give	give	X	X	_	15	flat:foreign	_	_
+17	the	the	X	X	_	15	flat:foreign	_	_
+18	same	same	X	X	_	15	flat:foreign	_	_
+19	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	10	obj	_	_
+
+1	as	as	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	8-inch	8-inch	X	X	_	1	flat:foreign	_	_
+4	solid	solid	X	X	_	1	flat:foreign	_	_
+5	concrete	concrete	X	X	_	1	flat:foreign	_	_
+6	blocks	block	X	X	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	illustrations	illustration	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+3	in	in	X	X	_	4	case	_	_
+4	fig	fig	NOUN	NOUN	_	1	obl:mod	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	8	8	NUM	NUM	NumType=Card	2	nummod	_	_
+2	show	show	NOUN	NOUN	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	how	how	X	X	_	2	nmod	_	_
+4	to	to	X	X	_	3	fixed	_	_
+5	lay	lay	X	X	_	4	flat:foreign	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+7	concrete	concrete	X	X	_	6	obj	_	_
+8	block	block	X	X	_	6	obj	_	_
+9	wall	wall	PROPN	PROPN	_	6	obj	_	_
+10	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	More	More	X	X	_	0	ROOT	_	_
+2	detailed	detailed	X	X	_	1	flat:foreign	_	_
+3	instructions	instruction	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+4	may	may	X	X	_	1	flat:foreign	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	obtained	obtained	X	X	_	1	flat:foreign	_	_
+7	from	from	X	X	_	6	dep	_	_
+8	your	your	X	X	_	1	flat:foreign	_	_
+9	local	local	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+10	building	building	ADV	ADV	_	9	advmod	_	_
+11	supply	supply	X	X	_	9	nmod	_	_
+12	houses	house	ADJ	ADJ	Number=Plur	9	punct	_	_
+
+1	and	and	X	X	_	2	dep	_	_
+2	craftsmen	craftsmen	X	X	_	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Other	Other	X	X	_	2	amod	_	_
+2	sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	of	of	ADP	ADP	_	4	case	_	_
+4	information	information	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+5	include	include	X	X	_	2	flat:foreign	_	_
+6	the	the	X	X	_	2	flat:foreign	_	_
+7	National	National	X	X	_	2	flat:foreign	_	_
+
+1	Concrete	Concrete	X	X	_	0	ROOT	_	_
+2	Masonry	Masonry	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	Association	Association	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	38	38	NUM	NUM	NumType=Card	4	nummod	_	_
+4	South	South	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+5	Dearborn	Dearborn	PROPN	PROPN	_	4	flat:name	_	_
+6	Street	Street	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	4	punct	_	_
+8	Chicago	Chicago	PROPN	PROPN	Gender=Masc|Number=Sing	4	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	4	punct	_	_
+10	Ill	Ill	PROPN	PROPN	_	4	appos	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	4	punct	_	_
+2	the	the	X	X	_	4	case	_	_
+3	Portland	Portland	X	X	_	4	amod	_	_
+4	Cement	cement	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	Association	Association	PROPN	PROPN	_	4	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	4	punct	_	_
+7	33	33	NUM	NUM	NumType=Card	8	nummod	_	_
+8	West	West	X	X	_	10	nmod	_	_
+9	Grand	grand	ADJ	ADJ	Gender=Masc|Number=Sing	10	amod	_	_
+10	Avenue	avenue	NOUN	NOUN	Number=Sing	4	nmod	_	_
+11	,	,	PUNCT	PUNCT	_	4	punct	_	_
+12	Chicago	Chicago	PROPN	PROPN	Gender=Masc|Number=Sing	4	nmod	_	_
+13	,	,	PUNCT	PUNCT	_	4	punct	_	_
+14	Ill	Ill	PROPN	PROPN	_	4	appos	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	the	the	X	X	_	2	flat:foreign	_	_
+4	Structural	Structural	X	X	_	2	flat:foreign	_	_
+
+1	Clay	Clay	X	X	_	0	ROOT	_	_
+2	Products	Products	X	X	_	1	flat:name	_	_
+
+1	Association	Association	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	Washington	Washington	PROPN	PROPN	_	1	conj	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	D.C.	D.C.	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Aboveground	Aboveground	PROPN	PROPN	_	3	nsubj	_	_
+2	double-wall	double-wall	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	shelter	shelter	X	X	_	0	ROOT	_	_
+4	An	An	X	X	_	3	dep	_	_
+5	outdoor	outdoor	X	X	_	4	amod	_	_
+6	,	,	PUNCT	PUNCT	_	3	punct	_	_
+7	aboveground	aboveground	NOUN	NOUN	Gender=Fem|Number=Plur	3	obj	_	_
+8	fallout	fallout	X	X	_	7	amod	_	_
+9	shelter	shelter	VERB	VERB	VerbForm=Inf	7	nmod	_	_
+10	also	also	X	X	_	9	dep	_	_
+11	may	may	X	X	_	9	dep	_	_
+12	be	be	X	X	_	11	dep	_	_
+13	built	built	X	X	_	11	dep	_	_
+14	with	with	X	X	_	11	dep	_	_
+15	concrete	concrete	X	X	_	7	amod	_	_
+16	blocks	block	X	X	_	7	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	See	See	X	X	_	2	case	_	_
+2	fig	fig	NOUN	NOUN	_	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	9	9	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	double-wall	double-wall	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+4	shelter	shelter	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	)	)	PUNCT	PUNCT	_	2	punct	_	_
+2	Most	Most	X	X	_	0	ROOT	_	_
+3	people	people	X	X	_	2	flat:name	_	_
+4	would	would	X	X	_	2	flat:foreign	_	_
+5	have	haver	X	X	_	2	dep	_	_
+6	to	to	X	X	_	2	dep	_	_
+7	hire	hire	X	X	_	2	flat:foreign	_	_
+8	a	avoir	X	X	_	2	dep	_	_
+9	contractor	contractor	X	X	_	2	dep	_	_
+10	to	to	X	X	_	2	dep	_	_
+11	build	build	X	X	_	10	flat:foreign	_	_
+12	this	this	X	X	_	2	dep	_	_
+13	shelter	shelter	X	X	_	2	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Plans	plan	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	are	ar	ADJ	ADJ	Gender=Masc|Number=Plur	1	punct	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	4	nsubj	_	_
+4	pages	page	NOUN	NOUN	Number=Plur	1	parataxis	_	_
+5	22	22	NUM	NUM	NumType=Card	4	nummod	_	_
+6	and	and	X	X	_	7	dep	_	_
+7	23	23	NUM	NUM	NumType=Card	4	obl:mod	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	This	This	X	X	_	20	nsubj	_	_
+2	shelter	shelter	X	X	_	1	flat:foreign	_	_
+3	could	could	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	built	built	X	X	_	3	dep	_	_
+6	in	in	X	X	_	7	dep	_	_
+7	regions	regions	X	X	_	1	flat:foreign	_	_
+8	where	where	X	X	_	1	nmod	_	_
+9	water	water	X	X	_	8	amod	_	_
+10	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	13	cc	_	_
+11	rock	rock	ADV	ADV	_	10	flat:foreign	_	_
+12	is	is	X	X	_	10	dep	_	_
+13	close	close	NOUN	NOUN	Gender=Fem|Number=Sing	1	conj	_	_
+14	to	to	X	X	_	1	flat:foreign	_	_
+15	the	the	X	X	_	1	dep	_	_
+16	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+17	,	,	PUNCT	PUNCT	_	18	punct	_	_
+18	making	making	X	X	_	1	conj	_	_
+19	it	it	X	X	_	18	dep	_	_
+20	impractical	impractical	ADJ	ADJ	Gender=Masc	25	dep	_	_
+21	to	to	X	X	_	20	advmod	_	_
+22	build	build	X	X	_	20	dep	_	_
+23	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	20	obj	_	_
+24	underground	underground	NOUN	NOUN	_	20	advmod	_	_
+25	shelter	shelter	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+26	.	.	PUNCT	PUNCT	_	25	punct	_	_
+
+1	Two	Two	X	X	_	11	advmod	_	_
+2	walls	walls	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	concrete	concrete	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	blocks	block	X	X	_	4	flat:foreign	_	_
+6	are	are	X	X	_	4	flat:foreign	_	_
+7	constructed	constructed	X	X	_	1	flat:foreign	_	_
+8	at	at	X	X	_	1	flat:foreign	_	_
+9	least	least	ADV	ADV	_	1	advmod	_	_
+10	20	20	NUM	NUM	NumType=Card	11	nummod	_	_
+11	inches	inch	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+12	apart	apart	NOUN	NOUN	Gender=Masc|Number=Plur	11	flat:name	_	_
+13	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	space	space	X	X	_	1	flat:foreign	_	_
+3	between	between	X	X	_	1	flat:foreign	_	_
+4	them	them	X	X	_	1	flat:foreign	_	_
+5	is	is	X	X	_	4	dep	_	_
+6	filled	filled	X	X	_	1	flat:foreign	_	_
+7	with	with	X	X	_	1	flat:foreign	_	_
+8	pit	pit	PROPN	PROPN	_	1	dep	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	2	punct	_	SpaceAfter=No
+2	run	run	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	gravel	gravel	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	or	or	CCONJ	CCONJ	_	2	amod	_	_
+5	earth	earth	X	X	_	4	flat:name	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	18	nsubj	_	_
+2	walls	walls	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	1	flat:foreign	_	_
+4	held	held	X	X	_	1	flat:foreign	_	_
+5	together	together	X	X	_	1	flat:foreign	_	_
+6	with	with	X	X	_	1	flat:foreign	_	_
+7	metal	metal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+8	ties	tie	ADJ	ADJ	Gender=Fem|Number=Plur	9	amod	_	_
+9	placed	placed	X	X	_	1	flat:foreign	_	_
+10	in	in	X	X	_	1	flat:foreign	_	_
+11	the	the	X	X	_	1	flat:foreign	_	_
+12	wet	wet	X	X	_	1	flat:foreign	_	_
+13	mortar	mortar	PROPN	PROPN	_	1	flat:foreign	_	_
+14	as	as	X	X	_	18	aux:tense	_	_
+15	the	the	X	X	_	14	flat:foreign	_	_
+16	walls	walls	X	X	_	14	flat:foreign	_	_
+17	are	are	X	X	_	14	punct	_	_
+18	built	built	X	X	_	0	ROOT	_	_
+19	.	.	PUNCT	PUNCT	_	18	punct	_	_
+
+1	The	The	X	X	_	8	iobj	_	_
+2	roof	roof	X	X	_	1	flat:foreign	_	_
+3	shown	shown	X	X	_	1	flat:foreign	_	_
+4	here	here	X	X	_	1	flat:foreign	_	_
+5	(	(	PUNCT	PUNCT	_	1	punct	_	_
+6	fig	fig	NOUN	NOUN	_	1	appos	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+8	9	9	NUM	NUM	NumType=Card	12	nummod	_	_
+9	)	)	PUNCT	PUNCT	_	8	punct	_	_
+10	is	is	X	X	_	12	nsubj	_	_
+11	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	dep	_	_
+12	6-inch	6-inch	X	X	_	0	ROOT	_	_
+13	slab	slab	ADJ	ADJ	Gender=Fem|Number=Sing	12	amod	_	_
+14	of	of	X	X	_	15	case	_	_
+15	reinforced	reinforced	PROPN	PROPN	_	13	obl:arg	_	_
+16	concrete	concrete	NOUN	NOUN	Gender=Fem|Number=Sing	12	amod	_	_
+17	,	,	PUNCT	PUNCT	_	18	punct	_	_
+18	covered	covered	X	X	_	16	conj	_	_
+19	with	with	X	X	_	18	dep	_	_
+20	at	at	X	X	_	18	dep	_	_
+21	least	least	ADV	ADV	_	20	fixed	_	_
+22	20	20	NUM	NUM	NumType=Card	23	nummod	_	_
+23	inches	inch	NOUN	NOUN	Number=Plur	18	nmod	_	_
+24	of	of	X	X	_	25	case	_	_
+25	pit	pit	ADV	ADV	_	18	nmod	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	run	run	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	gravel	gravel	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	An	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	alternate	alternate	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	roof	roof	NOUN	NOUN	Gender=Fem|Number=Sing	2	dep	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	perhaps	perhaps	X	X	_	2	dep	_	_
+6	more	more	X	X	_	5	flat:foreign	_	_
+7	within	within	X	X	_	5	flat:foreign	_	_
+8	do	do	X	X	_	5	nmod	_	SpaceAfter=No
+9	-	-	PROPN	PROPN	_	5	nmod	_	SpaceAfter=No
+10	it	it	PROPN	PROPN	_	5	nmod	_	SpaceAfter=No
+11	-	-	PROPN	PROPN	_	2	punct	_	SpaceAfter=No
+12	yourself	yourself	PROPN	PROPN	_	2	obl:mod	_	_
+13	reach	reach	X	X	_	12	flat:name	_	_
+14	,	,	PUNCT	PUNCT	_	15	punct	_	_
+15	could	could	X	X	_	2	conj	_	_
+16	be	be	X	X	_	15	flat:name	_	_
+17	constructed	constructed	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_
+18	of	of	ADP	ADP	_	20	dep	_	_
+19	heavy	heavy	ADV	ADV	_	20	advmod	_	_
+20	wooden	wooden	X	X	_	15	flat:name	_	_
+21	roof	roof	X	X	_	15	dep	_	_
+22	beams	beams	ADV	ADV	_	15	xcomp	_	_
+23	,	,	PUNCT	PUNCT	_	24	punct	_	_
+24	overlaid	overlaid	NOUN	NOUN	Gender=Masc|Number=Sing	2	conj	_	_
+25	with	with	X	X	_	24	dep	_	_
+26	boards	boards	X	X	_	24	nmod	_	_
+27	and	and	X	X	_	24	dep	_	_
+28	waterproofing	waterproofing	ADJ	ADJ	Gender=Masc|Number=Sing	24	amod	_	_
+29	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	It	It	X	X	_	0	ROOT	_	_
+2	would	would	X	X	_	1	flat:foreign	_	_
+3	have	haver	X	X	_	1	flat:foreign	_	_
+4	to	to	X	X	_	1	flat:foreign	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	covered	covered	X	X	_	1	flat:foreign	_	_
+7	with	with	X	X	_	6	flat:foreign	_	_
+8	at	at	X	X	_	1	flat:foreign	_	_
+9	least	least	ADV	ADV	_	11	advmod	_	_
+10	28	28	NUM	NUM	NumType=Card	11	nummod	_	_
+11	inches	inch	NOUN	NOUN	Number=Plur	1	nmod	_	_
+12	of	of	X	X	_	13	case	_	_
+13	pit	pit	ADV	ADV	_	1	nmod	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	run	run	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	gravel	gravel	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	5	dep	_	_
+2	materials	materials	X	X	_	1	flat:foreign	_	_
+3	for	for	X	X	_	1	flat:foreign	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	dep	_	_
+5	double-wall	double-wall	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+6	shelter	shelter	X	X	_	5	dep	_	_
+7	would	would	X	X	_	6	dep	_	_
+
+1	cost	cost	X	X	_	0	ROOT	_	_
+2	about	about	ADJ	ADJ	Gender=Masc|Number=Plur	1	dep	_	_
+3	$	dollar	NOUN	NOUN	Gender=Masc	1	dep	_	SpaceAfter=No
+4	700	700	NUM	NUM	NumType=Card	1	nummod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Contractors	contractors	ADV	ADV	_	0	ROOT	_	SpaceAfter=No
+2	'	'	PUNCT	PUNCT	_	3	punct	_	_
+3	charges	charge	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	would	would	X	X	_	3	nmod	_	_
+5	be	be	X	X	_	1	dep	_	_
+6	additional	additional	ADJ	ADJ	Gender=Masc|Number=Sing	1	dep	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	shelter	shelter	X	X	_	1	flat:foreign	_	_
+3	would	would	X	X	_	2	obj	_	_
+4	provide	provide	X	X	_	1	flat:foreign	_	_
+5	almost	almost	X	X	_	1	flat:foreign	_	_
+6	absolute	absolute	X	X	_	1	flat:foreign	_	_
+7	fallout	fallout	ADJ	ADJ	Gender=Fem|NumType=Ord|Number=Sing	1	punct	_	_
+
+1	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Pre	pre	NOUN	NOUN	Gender=Masc|Number=Sing	2	punct	_	SpaceAfter=No
+2	-	-	X	X	_	0	ROOT	_	SpaceAfter=No
+3	shaped	shaped	ADJ	ADJ	Number=Sing	2	amod	_	_
+
+1	metal	metal	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	shelter	shelter	X	X	_	0	ROOT	_	_
+2	Pre	Pre	X	X	_	1	obj	_	SpaceAfter=No
+3	-	-	PROPN	PROPN	_	1	obj	_	SpaceAfter=No
+4	shaped	shaped	X	X	_	1	obj	_	_
+5	corrugated	corrugated	X	X	_	1	amod	_	_
+6	metal	metal	ADJ	ADJ	Gender=Masc|Number=Sing	1	advmod	_	_
+7	sections	section	NOUN	NOUN	Gender=Fem|Number=Plur	1	obj	_	_
+8	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	9	case	_	_
+9	pre	pre	NOUN	NOUN	Number=Sing	7	nmod	_	SpaceAfter=No
+
+1	-	-	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	cast	cast	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	concrete	concrete	X	X	_	0	ROOT	_	_
+2	can	can	X	X	_	1	dep	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	used	used	X	X	_	1	dep	_	_
+
+1	for	for	X	X	_	0	ROOT	_	_
+2	shelters	shelters	X	X	_	1	flat:foreign	_	_
+3	either	either	X	X	_	1	flat:foreign	_	_
+4	above	above	X	X	_	1	flat:foreign	_	_
+5	or	or	X	X	_	1	flat:foreign	_	_
+6	below	below	X	X	_	1	flat:foreign	_	_
+7	ground	ground	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	These	These	X	X	_	0	ROOT	_	_
+2	are	are	X	X	_	3	case	_	_
+3	particularly	particularly	X	X	_	1	nmod	_	_
+4	suitable	suitabl	ADJ	ADJ	Number=Sing	1	amod	_	_
+5	for	for	X	X	_	6	case	_	_
+6	regions	regions	X	X	_	1	flat:foreign	_	_
+7	where	where	X	X	_	1	flat:foreign	_	_
+8	water	water	X	X	_	7	amod	_	_
+9	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	12	cc	_	_
+10	rock	rock	ADV	ADV	_	9	flat:foreign	_	_
+11	is	is	X	X	_	9	dep	_	_
+12	close	close	NOUN	NOUN	Gender=Fem|Number=Sing	1	conj	_	_
+13	to	to	X	X	_	12	dep	_	_
+14	the	the	X	X	_	12	dep	_	_
+15	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	They	They	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	form	form	X	X	_	13	dep	_	_
+3	effective	effectif	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	_
+4	fallout	fallout	ADP	ADP	_	2	advmod	_	_
+5	shelters	shelter	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+6	when	when	X	X	_	5	amod	_	_
+7	mounded	mounded	X	X	_	2	obj	_	_
+8	over	over	X	X	_	7	dep	_	_
+9	with	with	X	X	_	7	dep	_	_
+10	earth	earth	X	X	_	7	dep	_	_
+11	,	,	PUNCT	PUNCT	_	13	punct	_	_
+12	as	as	X	X	_	13	case	_	_
+13	shown	shown	X	X	_	0	ROOT	_	_
+14	in	in	X	X	_	15	dep	_	_
+15	figure	figurer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	parataxis	_	_
+16	10	10	NUM	NUM	NumType=Card	15	obj	_	_
+17	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	Materials	Materials	X	X	_	0	ROOT	_	_
+2	for	for	X	X	_	3	case	_	_
+3	this	this	X	X	_	1	flat:foreign	_	_
+4	shelter	shelter	X	X	_	1	flat:foreign	_	_
+5	would	would	X	X	_	1	flat:foreign	_	_
+6	cost	cost	X	X	_	1	flat:foreign	_	_
+7	about	about	ADJ	ADJ	Gender=Masc|Number=Plur	6	dep	_	_
+8	$	dollar	NOUN	NOUN	Gender=Masc	6	obl:mod	_	SpaceAfter=No
+9	700	700	NUM	NUM	NumType=Card	6	nummod	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	a	NOUN	NOUN	_	2	case	_	_
+2	contractor	contractor	NOUN	NOUN	Gender=Masc|Number=Plur	8	dep	_	_
+3	probably	probably	X	X	_	2	amod	_	_
+4	would	would	X	X	_	3	dep	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	required	required	X	X	_	3	dep	_	_
+7	to	to	X	X	_	8	dep	_	_
+8	help	help	X	X	_	0	ROOT	_	_
+9	build	build	X	X	_	8	dep	_	_
+10	it	it	X	X	_	8	dep	_	_
+11	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	His	His	X	X	_	0	ROOT	_	_
+2	charges	charge	X	X	_	1	flat:foreign	_	_
+3	would	would	X	X	_	2	nmod	_	_
+4	be	be	X	X	_	5	advmod	_	_
+5	added	added	X	X	_	1	flat:foreign	_	_
+6	to	to	X	X	_	5	dep	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	cost	cost	X	X	_	1	flat:foreign	_	_
+9	of	of	X	X	_	10	case	_	_
+10	materials	materials	PROPN	PROPN	_	1	dep	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	This	This	X	X	_	2	nsubj	_	_
+2	shelter	shelter	X	X	_	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	as	as	X	X	_	5	case	_	_
+5	shown	shown	X	X	_	2	ccomp	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	24	24	NUM	NUM	NumType=Card	2	nummod	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	would	would	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+
+1	provide	provide	X	X	_	2	amod	_	_
+2	almost	almost	X	X	_	0	ROOT	_	_
+3	absolute	absolute	X	X	_	2	flat:foreign	_	_
+
+1	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	from	from	X	X	_	1	dep	_	_
+3	fallout	fallout	ADJ	ADJ	Number=Sing	4	amod	_	_
+4	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	An	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	expl:subj	_	_
+2	alternate	alternate	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+
+1	hatchway	hatchway	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	1	obj	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	shown	shown	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+5	on	on	PRON	PRON	Number=Sing|Person=3	6	nsubj	_	_
+6	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+7	25	25	NUM	NUM	NumType=Card	6	nummod	_	_
+8	,	,	PUNCT	PUNCT	_	6	punct	_	_
+9	would	would	NOUN	NOUN	Gender=Masc|Number=Plur	6	obj	_	_
+10	reduce	reduce	X	X	_	9	flat:foreign	_	_
+11	the	the	X	X	_	10	dep	_	_
+12	cost	cost	X	X	_	10	nsubj	_	_
+13	of	of	X	X	_	14	case	_	_
+14	materials	materials	X	X	_	9	nmod	_	_
+15	$	dollar	NOUN	NOUN	_	17	dep	_	SpaceAfter=No
+16	50	50	NUM	NUM	NumType=Card	17	nummod	_	_
+17	to	to	X	X	_	18	case	_	_
+18	$	dollar	NOUN	NOUN	Gender=Masc	9	nmod	_	SpaceAfter=No
+19	100	100	NUM	NUM	NumType=Card	9	nmod	_	_
+20	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	National	National	X	X	_	1	flat:foreign	_	_
+3	Lumber	Lumber	X	X	_	1	flat:foreign	_	_
+4	Manufacturers	Manufacturers	X	X	_	3	flat:name	_	_
+
+1	Association	Association	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	Washington	Washington	PROPN	PROPN	_	1	conj	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	D.	D.	PROPN	PROPN	_	1	appos	_	_
+6	C.	C.	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	5	punct	_	_
+8	is	is	X	X	_	12	case	_	_
+9	developing	developing	X	X	_	8	flat:foreign	_	_
+10	plans	plan	NOUN	NOUN	Gender=Masc|Number=Plur	8	flat:foreign	_	_
+11	to	to	X	X	_	8	dep	_	_
+12	utilize	utilize	X	X	_	1	parataxis	_	_
+13	specially	specially	X	X	_	12	dep	_	_
+14	treated	treated	X	X	_	12	dep	_	_
+15	lumber	lumber	X	X	_	12	flat:name	_	_
+16	for	for	X	X	_	1	dep	_	_
+17	underground	underground	X	X	_	1	nmod	_	_
+
+1	shelter	shelter	X	X	_	0	ROOT	_	_
+2	construction	construction	NOUN	NOUN	Gender=Fem|Number=Sing	1	obj	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Structural	structural	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+
+1	Clay	Clay	X	X	_	12	nsubj	_	_
+2	Products	Products	X	X	_	1	flat:name	_	_
+3	Institute	Institute	PROPN	PROPN	_	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Washington	Washington	PROPN	PROPN	_	1	conj	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	D.C.	D.C.	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+8	,	,	PUNCT	PUNCT	_	12	punct	_	_
+9	is	is	X	X	_	12	dep	_	_
+10	working	working	X	X	_	9	flat:foreign	_	_
+11	to	to	X	X	_	9	dep	_	_
+12	develop	develop	X	X	_	0	ROOT	_	_
+13	brick	brick	X	X	_	12	nsubj	_	_
+14	and	and	X	X	_	12	dep	_	_
+15	clay	clay	X	X	_	12	obj	_	_
+16	products	products	X	X	_	15	flat:name	_	_
+17	suitable	suitabl	ADJ	ADJ	Number=Sing	15	amod	_	_
+18	for	for	X	X	_	12	dep	_	_
+19	shelter	shelter	X	X	_	12	dep	_	_
+20	construction	construction	NOUN	NOUN	Gender=Fem|Number=Sing	12	obj	_	_
+21	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Underground	underground	NOUN	NOUN	_	0	ROOT	_	_
+
+1	concrete	concrete	X	X	_	2	nsubj	_	_
+2	shelter	shelter	X	X	_	0	ROOT	_	_
+3	An	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	obj	_	_
+4	underground	underground	NOUN	NOUN	_	2	obj	_	_
+5	reinforced	reinforced	X	X	_	2	obj	_	_
+6	concrete	concrete	X	X	_	2	obj	_	_
+7	shelter	shelter	X	X	_	2	parataxis	_	_
+8	can	can	X	X	_	7	obj	_	_
+9	be	be	X	X	_	8	dep	_	_
+10	built	built	X	X	_	7	obj	_	_
+11	by	by	X	X	_	7	dep	_	_
+
+1	a	avoir	X	X	_	2	dep	_	_
+2	contractor	contractor	X	X	_	0	ROOT	_	_
+3	for	for	X	X	_	5	case	_	_
+4	about	about	X	X	_	3	fixed	_	_
+5	$	dollar	NOUN	NOUN	Gender=Masc	2	obl:mod	_	SpaceAfter=No
+6	1,000	1,000	NUM	NUM	NumType=Card	5	nummod	_	_
+7	to	to	X	X	_	8	case	_	_
+8	$	dollar	NOUN	NOUN	Gender=Masc	5	nmod	_	SpaceAfter=No
+9	1,500	1,500	NUM	NUM	NumType=Card	8	nmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	depending	depending	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	on	on	PRON	PRON	Number=Sing|Person=3	4	expl:subj	_	_
+3	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	case	_	_
+4	type	type	NOUN	NOUN	Gender=Masc|Number=Sing	1	nsubj	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	shelter	shelter	X	X	_	1	flat:foreign	_	_
+3	shown	shown	X	X	_	2	obj	_	_
+4	would	would	X	X	_	2	obj	_	_
+
+1	provide	provide	X	X	_	0	ROOT	_	_
+2	almost	almost	X	X	_	1	nsubj	_	_
+3	absolute	absolute	X	X	_	2	amod	_	_
+
+1	fallout	fallout	ADJ	ADJ	Gender=Fem|NumType=Ord|Number=Sing	2	case	_	_
+2	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	2	punct	_	_
+2	illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	(	(	PUNCT	PUNCT	_	2	punct	_	_
+4	fig	fig	NOUN	NOUN	_	2	appos	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	11	11	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	shows	show	NOUN	NOUN	Gender=Masc|Number=Plur	3	nsubj	_	_
+2	this	this	X	X	_	1	dep	_	_
+3	shelter	shelter	X	X	_	0	ROOT	_	_
+4	with	with	X	X	_	3	dep	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	roof	roof	X	X	_	5	flat:foreign	_	_
+7	at	at	X	X	_	8	case	_	_
+8	ground	ground	X	X	_	3	obl:arg	_	_
+9	level	level	X	X	_	3	obj	_	_
+10	and	and	X	X	_	3	dep	_	_
+11	mounded	mounded	X	X	_	3	obj	_	_
+12	over	over	X	X	_	11	dep	_	_
+13	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	same	same	X	X	_	1	flat:foreign	_	_
+3	shelter	shelter	X	X	_	1	flat:foreign	_	_
+4	could	could	X	X	_	1	flat:foreign	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	built	built	X	X	_	1	flat:foreign	_	_
+7	into	into	X	X	_	1	flat:foreign	_	_
+8	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	embankment	embankment	ADV	ADV	_	8	advmod	_	_
+10	or	or	NOUN	NOUN	Gender=Masc|Number=Plur	11	cc	_	_
+11	below	below	X	X	_	8	conj	_	_
+12	ground	ground	X	X	_	8	amod	_	_
+13	level	level	ADJ	ADJ	Gender=Masc|Number=Sing	8	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Plans	plan	NOUN	NOUN	Gender=Masc|Number=Plur	9	nsubj	_	_
+2	for	for	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	shelter	shelter	X	X	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	with	with	X	X	_	9	nsubj	_	_
+7	either	either	X	X	_	6	flat:foreign	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	stairway	stairway	VERB	VERB	Gender=Masc|Tense=Past|VerbForm=Part	0	ROOT	_	_
+10	or	or	CCONJ	CCONJ	_	12	cc	_	_
+11	hatchway	hatchway	ADJ	ADJ	Gender=Masc|Number=Sing	12	amod	_	_
+12	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	9	obj	_	_
+13	,	,	PUNCT	PUNCT	_	9	punct	_	_
+14	are	are	X	X	_	15	case	_	_
+15	shown	shown	NOUN	NOUN	Gender=Masc|Number=Plur	9	obl:mod	_	_
+16	on	on	PRON	PRON	Number=Sing|Person=3	17	nsubj	_	_
+17	pages	page	NOUN	NOUN	Number=Plur	15	parataxis	_	_
+18	26	26	NUM	NUM	NumType=Card	20	nummod	_	_
+19	and	and	X	X	_	18	dep	_	_
+20	27	27	NUM	NUM	NumType=Card	17	obl:mod	_	_
+21	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Another	Another	X	X	_	2	amod	_	_
+2	type	type	NOUN	NOUN	Gender=Masc|Number=Sing	4	nsubj	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	shelter	shelter	X	X	_	0	ROOT	_	_
+5	which	which	X	X	_	4	obj	_	_
+6	gives	give	ADJ	ADJ	Number=Plur	5	flat:foreign	_	_
+7	excellent	excellent	ADJ	ADJ	Gender=Masc|Number=Sing	5	amod	_	_
+8	fallout	fallout	ADJ	ADJ	Gender=Fem|Number=Plur	4	advmod	_	_
+9	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+
+1	can	can	X	X	_	0	ROOT	_	_
+2	be	be	X	X	_	1	dep	_	_
+3	built	built	X	X	_	1	dep	_	_
+4	as	as	X	X	_	1	dep	_	_
+5	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	4	obj	_	_
+6	added	added	X	X	_	4	obj	_	_
+7	room	room	X	X	_	4	dep	_	_
+8	to	to	X	X	_	1	dep	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+11	of	of	PRON	PRON	Person=3	12	expl:comp	_	_
+12	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+13	home	home	X	X	_	1	dep	_	_
+14	under	under	X	X	_	1	dep	_	_
+15	construction	construction	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	It	X	X	_	0	ROOT	_	_
+2	would	would	X	X	_	1	flat:foreign	_	_
+
+1	add	add	X	X	_	2	advmod	_	_
+2	about	about	X	X	_	3	case	_	_
+3	$	dollar	NOUN	NOUN	_	5	obl:mod	_	SpaceAfter=No
+4	500	500	DET	DET	_	5	nummod	_	_
+5	to	to	X	X	_	0	ROOT	_	_
+6	the	the	X	X	_	5	fixed	_	_
+7	total	total	ADJ	ADJ	Gender=Masc|Number=Sing	5	punct	_	_
+
+1	cost	cost	X	X	_	2	nsubj	_	_
+2	of	of	X	X	_	3	dep	_	_
+3	the	the	X	X	_	4	dep	_	_
+4	home	home	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	5	nsubj	_	_
+2	shelter	shelter	X	X	_	1	flat:foreign	_	_
+3	illustrated	illustrated	X	X	_	1	flat:foreign	_	_
+4	in	in	X	X	_	1	flat:foreign	_	_
+5	figure	figurer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	12	12	NUM	NUM	NumType=Card	8	nummod	_	_
+7	is	is	X	X	_	6	advmod	_	_
+8	based	based	X	X	_	5	obj	_	_
+9	on	on	PRON	PRON	Number=Sing|Person=3	10	nsubj	_	_
+10	such	such	X	X	_	11	dep	_	_
+11	a	avoir	X	X	_	5	ccomp	_	_
+12	room	room	X	X	_	11	dep	_	_
+13	built	built	X	X	_	14	dep	_	_
+14	in	in	X	X	_	15	dep	_	_
+15	a	avoir	X	X	_	5	xcomp	_	_
+16	new	new	X	X	_	5	dep	_	_
+17	home	home	X	X	_	5	obj	_	_
+18	in	in	X	X	_	5	dep	_	_
+19	the	the	X	X	_	18	flat:foreign	_	_
+20	Washington	Washington	PROPN	PROPN	_	18	dep	_	_
+21	,	,	PUNCT	PUNCT	_	23	punct	_	_
+22	D.C.	D.C.	PROPN	PROPN	Gender=Masc|Number=Sing	23	nmod	_	_
+23	area	area	X	X	_	5	obl:mod	_	_
+24	in	in	X	X	_	23	dep	_	_
+25	the	the	X	X	_	23	dep	_	_
+26	Spring	Spring	X	X	_	23	dep	_	_
+27	of	of	X	X	_	28	dep	_	_
+28	1959	1959	NUM	NUM	NumType=Card	5	obl:mod	_	_
+29	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Important	important	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+2	considerations	consideration	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	common	common	X	X	_	2	dep	_	_
+4	to	to	X	X	_	2	dep	_	_
+5	each	each	X	X	_	2	dep	_	_
+6	type	type	NOUN	NOUN	Gender=Masc|Number=Sing	2	amod	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	shelter	shelter	VERB	VERB	VerbForm=Inf	2	nmod	_	_
+9	are	are	X	X	_	8	dep	_	_
+10	:	:	PUNCT	PUNCT	_	2	punct	_	_
+11	1	1	NUM	NUM	NumType=Card	2	nummod	_	_
+12	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Arrangement	arrangement	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	4	case	_	_
+3	the	the	X	X	_	4	dep	_	_
+4	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	2	2	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Ventilation	ventilation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	3	3	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Radio	radio	NOUN	NOUN	Gender=Fem|Number=Sing	2	punct	_	_
+2	reception	reception	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	4	4	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Lighting	Lighting	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	case	_	_
+2	entrance	entrance	X	X	_	0	ROOT	_	_
+3	must	must	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	have	haver	X	X	_	2	conj	_	_
+5	at	at	X	X	_	2	dep	_	_
+6	least	least	ADV	ADV	_	5	fixed	_	_
+7	one	one	X	X	_	5	flat:foreign	_	_
+8	right	right	X	X	_	5	dep	_	SpaceAfter=No
+9	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+10	angle	angle	NOUN	NOUN	Gender=Masc|Number=Sing	2	conj	_	_
+11	turn	turn	ADV	ADV	_	10	amod	_	_
+12	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	scatters	scatters	X	X	_	1	amod	_	_
+
+1	somewhat	somewhat	X	X	_	0	ROOT	_	_
+2	like	like	X	X	_	1	dep	_	_
+
+1	light	light	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Some	Some	X	X	_	6	nsubj	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	go	go	X	X	_	1	flat:foreign	_	_
+4	around	around	X	X	_	1	flat:foreign	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_
+6	corner	corner	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	The	The	X	X	_	7	dep	_	_
+2	rest	rest	X	X	_	1	flat:foreign	_	_
+3	continues	continu	ADJ	ADJ	Gender=Fem|Number=Plur	2	amod	_	_
+4	in	in	X	X	_	2	amod	_	_
+5	a	avoir	X	X	_	1	flat:foreign	_	_
+6	straight	straight	X	X	_	1	flat:foreign	_	_
+7	line	line	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Therefore	Therefore	PROPN	PROPN	_	5	nsubj	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	sharp	sharp	X	X	_	4	amod	_	_
+4	turns	turns	X	X	_	5	dep	_	_
+5	in	in	X	X	_	7	dep	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	shelter	shelter	X	X	_	0	ROOT	_	_
+8	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	7	obj	_	_
+9	will	will	X	X	_	7	obj	_	_
+
+1	reduce	reduce	X	X	_	5	obl:mod	_	_
+2	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	1	nsubj	_	_
+3	intensity	intensity	X	X	_	1	amod	_	_
+4	inside	insid	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+5	the	the	X	X	_	6	advmod	_	_
+6	shelter	shelter	X	X	_	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Ventilation	ventilation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	provided	provided	X	X	_	1	flat:foreign	_	_
+4	in	in	X	X	_	1	amod	_	_
+5	a	avoir	X	X	_	1	dep	_	_
+6	concrete	concrete	X	X	_	1	amod	_	_
+
+1	block	block	X	X	_	0	ROOT	_	_
+
+1	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	shelter	shelter	X	X	_	0	ROOT	_	_
+2	by	by	X	X	_	3	case	_	_
+3	vents	vent	NOUN	NOUN	Gender=Masc|Number=Plur	1	obl:mod	_	_
+4	in	in	X	X	_	3	amod	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	wall	wall	X	X	_	3	nmod	_	_
+7	and	and	X	X	_	3	dep	_	_
+8	by	by	X	X	_	7	flat:foreign	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	open	open	X	X	_	11	amod	_	_
+11	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	a	NOUN	NOUN	_	2	case	_	_
+2	blower	blower	X	X	_	8	dep	_	_
+3	may	may	X	X	_	2	dep	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	installed	installed	X	X	_	2	dep	_	_
+6	to	to	X	X	_	7	case	_	_
+7	increase	increase	X	X	_	5	obl:mod	_	_
+8	comfort	comfort	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	A	a	NOUN	NOUN	_	2	nummod	_	_
+2	blower	blower	X	X	_	0	ROOT	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	essential	essential	X	X	_	2	dep	_	_
+5	for	for	X	X	_	7	case	_	_
+6	the	the	X	X	_	7	dep	_	_
+7	double-wall	double-wall	PROPN	PROPN	Gender=Masc|Number=Sing	2	nmod	_	_
+8	shelter	shelter	X	X	_	2	dep	_	_
+9	and	and	X	X	_	8	dep	_	_
+10	for	for	X	X	_	8	dep	_	_
+11	the	the	X	X	_	8	dep	_	_
+12	underground	underground	X	X	_	2	dep	_	_
+13	shelters	shelter	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	It	it	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	should	should	X	X	_	1	flat:foreign	_	_
+3	provide	provide	X	X	_	1	flat:foreign	_	_
+4	not	not	X	X	_	1	flat:foreign	_	_
+5	less	less	X	X	_	1	flat:foreign	_	_
+6	than	than	X	X	_	1	flat:foreign	_	_
+7	5	5	NUM	NUM	NumType=Card	8	nummod	_	_
+8	cubic	cubic	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	feet	feet	ADV	ADV	_	1	flat:foreign	_	_
+10	per	per	ADP	ADP	_	11	case	_	_
+11	minute	minute	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+12	of	of	ADP	ADP	_	13	case	_	_
+13	air	air	NOUN	NOUN	Gender=Masc|Number=Sing	11	nmod	_	_
+14	per	per	ADP	ADP	_	15	case	_	_
+15	person	person	PROPN	PROPN	_	1	nmod	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Vent	vent	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	_
+2	pipes	pipe	X	X	_	1	flat:foreign	_	_
+3	also	also	X	X	_	1	flat:foreign	_	_
+4	are	are	X	X	_	1	dep	_	_
+5	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+6	(	(	PUNCT	PUNCT	_	5	punct	_	_
+7	as	as	X	X	_	8	aux:tense	_	_
+8	shown	shown	X	X	_	5	parataxis	_	_
+9	in	in	X	X	_	10	case	_	_
+10	figs	fig	NOUN	NOUN	Gender=Fem|Number=Plur	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	9	9	NUM	NUM	NumType=Card	5	nummod	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	10	10	NUM	NUM	NumType=Card	1	conj	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	and	and	X	X	_	9	nmod	_	_
+6	11	11	NUM	NUM	NumType=Card	5	nummod	_	_
+7	)	)	PUNCT	PUNCT	_	5	punct	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+10	filters	filters	X	X	_	9	nmod	_	_
+11	are	are	X	X	_	9	dep	_	_
+12	not	not	X	X	_	9	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Radio	radio	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	reception	reception	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	cut	cut	X	X	_	2	dep	_	_
+5	down	down	X	X	_	1	parataxis	_	_
+6	by	by	X	X	_	5	dep	_	_
+7	the	the	X	X	_	5	dep	_	_
+8	shielding	shielding	X	X	_	5	advmod	_	_
+9	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	5	advmod	_	_
+10	to	to	X	X	_	11	case	_	_
+11	keep	keep	X	X	_	1	obl:mod	_	_
+12	out	out	X	X	_	1	dep	_	_
+
+1	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	As	as	NOUN	NOUN	Gender=Masc|Number=Plur	5	nsubj	_	_
+2	soon	soon	ADJ	ADJ	Number=Plur	1	amod	_	_
+3	as	as	X	X	_	5	aux:tense	_	_
+4	the	the	X	X	_	3	dep	_	_
+5	shelter	shelter	X	X	_	0	ROOT	_	_
+6	is	is	X	X	_	5	advmod	_	_
+7	completed	completed	ADJ	ADJ	Gender=Masc|Number=Sing	6	fixed	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	radio	radio	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	5	parataxis	_	_
+10	reception	reception	NOUN	NOUN	Gender=Fem|Number=Sing	9	obj	_	_
+11	check	check	X	X	_	9	obj	_	_
+12	must	must	ADJ	ADJ	Gender=Masc|Number=Sing	11	flat:name	_	_
+13	be	be	X	X	_	11	dep	_	_
+14	made	made	X	X	_	9	xcomp	_	_
+15	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	It	It	X	X	_	9	advmod	_	_
+2	probably	probably	X	X	_	1	flat:foreign	_	_
+3	will	will	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	3	dep	_	_
+6	to	to	X	X	_	7	expl:comp	_	_
+7	install	install	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+8	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	7	obj	_	_
+9	outside	outsid	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+10	antenna	antenna	X	X	_	9	advmod	_	_
+11	,	,	PUNCT	PUNCT	_	9	punct	_	_
+12	particularly	particularly	X	X	_	9	dep	_	_
+13	to	to	X	X	_	9	dep	_	_
+14	receive	receive	X	X	_	13	flat:foreign	_	_
+15	CONELRAD	conelrad	VERB	VERB	VerbForm=Inf	9	xcomp	_	_
+16	broadcasts	broadcast	NOUN	NOUN	Gender=Masc|Number=Plur	15	obj	_	_
+17	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Lighting	Lighting	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	fixed	_	_
+4	important	important	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+
+1	consideration	consideration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Continuous	Continuous	X	X	_	15	nsubj	_	_
+2	low	low	PRON	PRON	_	1	amod	_	SpaceAfter=No
+3	-	-	ADJ	ADJ	Number=Sing	1	amod	_	SpaceAfter=No
+4	level	level	X	X	_	1	flat:foreign	_	_
+5	lighting	lighting	X	X	_	1	dep	_	_
+6	may	may	X	X	_	1	flat:foreign	_	_
+7	be	be	X	X	_	6	dep	_	_
+8	provided	provided	X	X	_	1	flat:foreign	_	_
+9	in	in	X	X	_	1	dep	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	shelter	shelter	X	X	_	1	dep	_	_
+12	by	by	X	X	_	13	case	_	_
+13	means	means	X	X	_	11	obl:mod	_	_
+14	of	of	X	X	_	1	dep	_	_
+15	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	dep	_	_
+16	4-cell	4-cell	NUM	NUM	NumType=Card	17	nummod	_	_
+17	hot	hot	X	X	_	15	obj	_	SpaceAfter=No
+18	-	-	X	X	_	15	obj	_	SpaceAfter=No
+19	shot	shot	X	X	_	15	dep	_	_
+20	battery	battery	X	X	_	15	dep	_	_
+21	to	to	X	X	_	20	flat:foreign	_	_
+22	which	which	X	X	_	20	flat:foreign	_	_
+23	is	is	X	X	_	20	dep	_	_
+24	wired	wired	X	X	_	20	flat:foreign	_	_
+25	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+26	150-milliampere	150-milliampere	PROPN	PROPN	_	27	det	_	_
+27	flashlight	flashlight	NOUN	NOUN	Gender=Masc|Number=Sing	25	obj	_	SpaceAfter=No
+28	-	-	NOUN	NOUN	Gender=Masc|Number=Sing	25	obj	_	SpaceAfter=No
+29	type	type	NOUN	NOUN	Gender=Masc|Number=Sing	25	obj	_	_
+30	bulb	bulb	NOUN	NOUN	Gender=Masc|Number=Sing	25	obj	_	_
+31	.	.	PUNCT	PUNCT	_	25	punct	_	_
+
+1	Tests	test	NOUN	NOUN	Gender=Masc|Number=Plur	7	nsubj	_	_
+2	have	hav	ADJ	ADJ	Gender=Masc|Number=Plur	3	amod	_	_
+3	shown	shown	X	X	_	1	nmod	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+5	such	such	X	X	_	1	dep	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	device	device	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	with	with	X	X	_	7	dep	_	_
+10	a	avoir	X	X	_	7	dep	_	_
+11	fresh	fresh	X	X	_	10	advmod	_	_
+12	battery	battery	X	X	_	7	dep	_	_
+13	,	,	PUNCT	PUNCT	_	12	punct	_	_
+14	will	will	X	X	_	17	nsubj	_	_
+15	furnish	furnish	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	14	acl	_	_
+16	light	light	X	X	_	14	amod	_	_
+17	continuously	continuously	X	X	_	7	dep	_	_
+18	for	for	X	X	_	17	dep	_	_
+19	at	at	X	X	_	17	dep	_	_
+20	least	least	ADV	ADV	_	17	advmod	_	_
+21	10	10	NUM	NUM	NumType=Card	22	nummod	_	_
+22	days	day	NOUN	NOUN	Gender=Masc|Number=Plur	17	obj	_	_
+23	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	With	With	X	X	_	3	nsubj	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_
+3	spare	spare	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	dep	_	_
+4	battery	battery	NOUN	NOUN	Gender=Masc|Number=Plur	3	advmod	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	dep	_	_
+7	source	source	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+8	of	of	X	X	_	7	advmod	_	_
+9	light	light	X	X	_	7	dep	_	_
+10	for	for	ADP	ADP	_	12	case	_	_
+11	2	2	NUM	NUM	NumType=Card	12	nummod	_	_
+12	weeks	week	NOUN	NOUN	Gender=Masc|Number=Plur	7	dep	_	_
+13	or	or	X	X	_	7	dep	_	_
+14	more	more	X	X	_	13	flat:foreign	_	_
+15	would	would	X	X	_	13	flat:foreign	_	_
+16	be	be	X	X	_	17	dep	_	_
+17	assured	assured	NOUN	NOUN	Gender=Masc|Number=Plur	13	acl:relcl	_	_
+18	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	A	à	ADP	ADP	_	7	dep	_	_
+2	flashlight	flashlight	NOUN	NOUN	Gender=Fem|Number=Sing	1	amod	_	_
+3	or	or	CCONJ	CCONJ	_	5	cc	_	_
+4	electric	electric	ADJ	ADJ	Gender=Fem|Number=Sing	3	fixed	_	_
+5	lantern	lantern	PROPN	PROPN	_	2	nmod	_	_
+6	also	also	X	X	_	2	dep	_	_
+7	should	should	X	X	_	12	dep	_	_
+8	be	be	X	X	_	7	dep	_	_
+9	available	available	X	X	_	7	dep	_	_
+10	for	for	X	X	_	7	dep	_	_
+11	those	those	X	X	_	7	obj	_	_
+12	periods	periods	X	X	_	15	obl:mod	_	_
+13	when	when	ADJ	ADJ	Number=Plur	12	dep	_	_
+14	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_
+15	brighter	brighter	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+16	light	light	X	X	_	15	advmod	_	_
+17	is	is	X	X	_	18	case	_	_
+18	needed	needed	X	X	_	15	obl:mod	_	_
+19	.	.	PUNCT	PUNCT	_	15	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	should	should	X	X	_	14	expl:pass	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	dep	_	_
+5	regular	regular	X	X	_	2	dep	_	_
+6	electrical	electrical	X	X	_	2	dep	_	_
+7	outlet	outlet	X	X	_	2	dep	_	_
+8	in	in	X	X	_	2	dep	_	_
+9	the	the	X	X	_	2	dep	_	_
+10	shelter	shelter	X	X	_	2	xcomp	_	_
+11	as	as	X	X	_	2	dep	_	_
+12	power	power	X	X	_	11	advmod	_	_
+13	may	may	X	X	_	11	flat:foreign	_	_
+14	continue	continuer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+15	in	in	X	X	_	14	advmod	_	_
+16	many	many	X	X	_	15	flat:foreign	_	_
+17	areas	areas	X	X	_	14	obj	_	_
+18	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Other	Other	X	X	_	2	amod	_	_
+2	considerations	consideration	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	If	If	X	X	_	15	nsubj	_	_
+3	there	there	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	dep	_	_
+4	are	are	X	X	_	5	case	_	_
+5	outside	outsid	ADJ	ADJ	Number=Sing	2	nmod	_	_
+6	windows	windows	PROPN	PROPN	Gender=Masc|Number=Sing	5	nmod	_	_
+7	in	in	X	X	_	5	nmod	_	_
+8	the	the	X	X	_	2	dep	_	_
+9	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	2	dep	_	_
+10	corner	corner	NOUN	NOUN	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+11	where	where	X	X	_	2	flat:foreign	_	_
+12	you	you	X	X	_	2	flat:foreign	_	_
+13	build	build	X	X	_	2	dep	_	_
+14	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_
+15	shelter	shelter	VERB	VERB	VerbForm=Inf	18	advcl	_	_
+16	,	,	PUNCT	PUNCT	_	18	punct	_	_
+17	they	they	PRON	PRON	Gender=Masc|Number=Plur|Person=3	18	nsubj	_	_
+18	should	should	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+19	be	be	X	X	_	18	dep	_	_
+20	shielded	shielded	ADJ	ADJ	Gender=Masc|Number=Plur	18	dep	_	_
+21	as	as	X	X	_	22	aux:tense	_	_
+22	shown	shown	X	X	_	18	obl:mod	_	_
+23	in	in	X	X	_	18	dep	_	_
+24	the	the	X	X	_	18	dep	_	_
+25	Appendix	Appendix	PROPN	PROPN	_	18	dep	_	_
+26	,	,	PUNCT	PUNCT	_	25	punct	_	_
+27	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	25	nmod	_	_
+28	29	29	NUM	NUM	NumType=Card	27	nummod	_	_
+29	.	.	PUNCT	PUNCT	_	18	punct	_	_
+
+1	Other	Other	X	X	_	2	amod	_	_
+2	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	4	obl:mod	_	_
+3	windows	window	NOUN	NOUN	Gender=Masc|Number=Sing	2	nmod	_	_
+4	should	should	X	X	_	0	ROOT	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	blocked	blocked	NOUN	NOUN	Gender=Masc|Number=Sing	4	dep	_	_
+7	when	when	ADJ	ADJ	Gender=Masc|Number=Plur	6	amod	_	_
+8	an	an	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	4	dep	_	_
+9	emergency	emergency	X	X	_	8	amod	_	_
+10	threatens	threaten	ADJ	ADJ	Gender=Masc|Number=Plur	8	amod	_	_
+11	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	walls	walls	X	X	_	1	dep	_	_
+
+1	that	that	X	X	_	0	ROOT	_	_
+2	project	project	X	X	_	1	flat:foreign	_	_
+3	above	above	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	7	dep	_	_
+2	ground	ground	X	X	_	1	flat:foreign	_	_
+3	should	should	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	shielded	shielded	ADJ	ADJ	Gender=Masc|Number=Plur	3	advcl	_	_
+6	as	as	X	X	_	7	dep	_	_
+7	shown	shown	X	X	_	0	ROOT	_	_
+8	in	in	X	X	_	7	dep	_	_
+9	the	the	X	X	_	8	fixed	_	_
+
+1	Appendix	Appendix	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	29	29	NUM	NUM	NumType=Card	3	nummod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	these	these	X	X	_	1	flat:foreign	_	_
+3	shelters	shelters	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	entrance	entrance	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+6	should	should	X	X	_	1	flat:foreign	_	_
+7	be	be	X	X	_	6	dep	_	_
+8	not	not	X	X	_	6	dep	_	_
+9	more	more	X	X	_	6	dep	_	_
+10	than	than	X	X	_	1	flat:foreign	_	_
+11	2	2	NUM	NUM	NumType=Card	12	nummod	_	_
+12	feet	feet	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+13	wide	wid	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Bunks	Bunks	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	or	or	X	X	_	13	advmod	_	_
+4	materials	materials	PROPN	PROPN	_	3	flat:name	_	_
+5	to	to	X	X	_	3	dep	_	_
+6	build	build	X	X	_	3	flat:foreign	_	_
+7	them	them	ADJ	ADJ	Gender=Masc|Number=Plur	3	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	13	punct	_	_
+9	may	may	X	X	_	13	nsubj	_	_
+10	have	haver	X	X	_	9	flat:foreign	_	_
+11	to	to	X	X	_	9	dep	_	_
+12	be	be	X	X	_	9	fixed	_	_
+13	put	pouvoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	acl:relcl	_	_
+14	inside	insid	ADJ	ADJ	Number=Sing	13	xcomp	_	_
+15	the	the	X	X	_	13	advmod	_	_
+16	enclosure	enclosure	X	X	_	15	flat:foreign	_	_
+17	before	before	X	X	_	15	flat:foreign	_	_
+18	the	the	X	X	_	15	dep	_	_
+19	shelter	shelter	X	X	_	15	flat:foreign	_	_
+20	walls	walls	X	X	_	15	flat:foreign	_	_
+21	are	are	X	X	_	15	dep	_	_
+22	completed	completed	X	X	_	15	flat:foreign	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	4	cc	_	_
+4	belowground	belowground	X	X	_	2	nmod	_	_
+
+1	shelters	shelter	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	also	also	X	X	_	3	nsubj	_	_
+2	will	will	X	X	_	1	dep	_	_
+3	serve	servir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	for	for	ADP	ADP	_	5	case	_	_
+5	tornado	tornado	X	X	_	3	obl:arg	_	_
+6	or	or	CCONJ	CCONJ	_	7	case	_	_
+7	hurricane	hurricane	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	_
+8	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	7	amod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	3	3	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Living	Living	X	X	_	2	nsubj	_	_
+2	in	in	X	X	_	4	dep	_	_
+3	a	avoir	X	X	_	4	aux:tense	_	_
+4	shelter	shelter	X	X	_	0	ROOT	_	_
+5	The	The	X	X	_	4	obj	_	_
+6	radioactivity	radioactivity	PROPN	PROPN	_	5	flat:name	_	_
+7	of	of	X	X	_	9	dep	_	_
+8	fallout	fallout	X	X	_	7	fixed	_	_
+9	decays	decay	NOUN	NOUN	Gender=Masc|Number=Plur	5	dep	_	_
+10	rapidly	rapidly	ADJ	ADJ	Number=Plur	5	amod	_	_
+11	at	at	X	X	_	12	dep	_	_
+12	first	first	X	X	_	5	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Forty	forty	NOUN	NOUN	Gender=Masc|Number=Sing	3	advmod	_	SpaceAfter=No
+2	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
+3	nine	nine	X	X	_	6	amod	_	_
+4	hours	hours	X	X	_	3	flat:foreign	_	_
+5	after	after	X	X	_	3	dep	_	_
+6	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	atomic	atomic	X	X	_	6	flat:foreign	_	_
+8	burst	burst	X	X	_	6	flat:foreign	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	intensity	intensity	X	X	_	2	amod	_	_
+
+1	is	is	X	X	_	3	nsubj	_	_
+2	only	only	X	X	_	1	flat:foreign	_	_
+3	about	about	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	5	dep	_	_
+4	1	1	NUM	NUM	NumType=Card	5	nummod	_	_
+5	percent	percer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	what	what	X	X	_	5	dep	_	_
+8	it	it	X	X	_	5	dep	_	_
+9	was	was	X	X	_	8	fixed	_	_
+10	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	8	fixed	_	_
+11	hour	hour	X	X	_	5	dep	_	_
+12	after	after	X	X	_	5	flat:foreign	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	explosion	explosion	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	the	the	X	X	_	2	amod	_	_
+2	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	may	may	X	X	_	0	ROOT	_	_
+2	be	be	X	X	_	1	dep	_	_
+3	so	so	X	X	_	1	dep	_	_
+4	intense	intense	ADJ	ADJ	Gender=Fem|Number=Sing	3	flat:foreign	_	_
+
+1	at	at	X	X	_	6	mark	_	_
+2	the	the	X	X	_	1	fixed	_	_
+3	start	start	X	X	_	1	flat:foreign	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+5	one	one	X	X	_	6	dep	_	_
+6	percent	percer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+7	may	may	X	X	_	6	dep	_	_
+8	be	be	X	X	_	10	advmod	_	_
+9	extremely	extremely	X	X	_	10	dep	_	_
+10	dangerous	dangerous	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	amod	_	_
+11	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Therefore	Therefore	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	civil	civil	NOUN	NOUN	Gender=Fem|Number=Sing	4	nummod	_	_
+4	defense	defense	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	instructions	instruction	NOUN	NOUN	Gender=Fem|Number=Plur	4	amod	_	_
+
+1	received	received	X	X	_	0	ROOT	_	_
+2	over	over	X	X	_	1	dep	_	_
+
+1	CONELRAD	conelrad	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	6	cc	_	_
+3	by	by	X	X	_	2	dep	_	_
+4	other	other	X	X	_	3	flat:foreign	_	_
+5	means	means	X	X	_	3	flat:foreign	_	_
+6	should	should	X	X	_	1	conj	_	_
+7	be	be	X	X	_	6	advmod	_	_
+8	followed	followed	PROPN	PROPN	_	6	obj	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	battery	battery	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	-	-	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	powered	powered	X	X	_	0	ROOT	_	_
+
+1	radio	radio	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	essential	essential	PROPN	PROPN	_	1	obj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	instruments	instrument	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
+3	suitable	suitabl	ADJ	ADJ	Number=Sing	2	amod	_	_
+4	for	for	X	X	_	5	case	_	_
+5	home	home	X	X	_	3	advcl	_	_
+6	use	user	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	amod	_	_
+7	are	are	X	X	_	6	dep	_	_
+8	available	availabl	ADJ	ADJ	Number=Sing	1	amod	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	and	and	X	X	_	8	dep	_	_
+11	would	would	X	X	_	10	flat:foreign	_	_
+12	be	be	X	X	_	14	dep	_	_
+13	of	of	ADP	ADP	_	14	dep	_	_
+14	value	value	NOUN	NOUN	Gender=Fem|Number=Sing	10	dep	_	_
+15	in	in	X	X	_	10	flat:foreign	_	_
+16	locating	locating	ADV	ADV	_	10	fixed	_	_
+17	that	that	X	X	_	10	dep	_	_
+18	portion	portion	NOUN	NOUN	Gender=Fem|Number=Sing	10	flat:foreign	_	_
+19	of	of	X	X	_	10	fixed	_	_
+20	the	the	X	X	_	10	dep	_	_
+21	home	home	X	X	_	10	flat:foreign	_	_
+22	which	which	X	X	_	10	flat:foreign	_	_
+23	offers	offers	X	X	_	10	flat:foreign	_	_
+24	the	the	X	X	_	10	flat:foreign	_	_
+25	best	best	X	X	_	10	dep	_	_
+26	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	10	flat:foreign	_	_
+27	against	against	X	X	_	10	flat:foreign	_	_
+28	fallout	fallout	ADP	ADP	_	27	fixed	_	_
+29	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	8	obj	_	_
+30	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	a	avoir	X	X	_	1	dep	_	_
+4	possibility	possibility	X	X	_	1	dep	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	battery	battery	X	X	_	1	dep	_	SpaceAfter=No
+7	-	-	X	X	_	1	flat:foreign	_	SpaceAfter=No
+8	powered	powered	X	X	_	1	nmod	_	_
+9	radios	radio	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+10	with	with	X	X	_	9	dep	_	_
+11	built	built	X	X	_	9	dep	_	SpaceAfter=No
+12	-	-	X	X	_	1	dep	_	SpaceAfter=No
+13	in	in	X	X	_	14	case	_	_
+14	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+15	meters	meters	X	X	_	14	nmod	_	_
+
+1	may	may	X	X	_	2	dep	_	_
+2	become	become	X	X	_	0	ROOT	_	_
+3	available	availabl	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	One	one	ADV	ADV	_	3	advmod	_	_
+2	instrument	instrument	NOUN	NOUN	Gender=Masc|Number=Sing	1	fixed	_	_
+3	thus	thus	X	X	_	5	nsubj	_	_
+4	would	would	X	X	_	3	flat:name	_	_
+5	serve	servir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	both	both	ADV	ADV	_	5	obj	_	_
+7	purposes	purpose	ADJ	ADJ	Number=Plur	5	obj	_	_
+8	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Your	Your	X	X	_	8	dep	_	_
+2	local	local	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	civil	civil	ADJ	ADJ	Number=Sing	2	punct	_	_
+4	defense	defense	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+5	will	will	X	X	_	4	nmod	_	_
+6	gather	gather	X	X	_	4	nmod	_	_
+7	its	its	X	X	_	2	punct	_	_
+8	own	own	X	X	_	9	dep	_	_
+9	information	information	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+10	and	and	X	X	_	9	dep	_	_
+11	will	will	X	X	_	10	flat:foreign	_	_
+12	receive	receive	X	X	_	10	flat:foreign	_	_
+13	broad	broad	X	X	_	10	flat:foreign	_	_
+14	information	information	NOUN	NOUN	Gender=Fem|Number=Sing	10	flat:foreign	_	_
+15	from	from	X	X	_	10	flat:foreign	_	_
+16	State	State	X	X	_	10	flat:foreign	_	_
+17	and	and	X	X	_	10	flat:foreign	_	_
+18	Federal	Federal	X	X	_	10	flat:foreign	_	_
+
+1	sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	it	NOUN	NOUN	Gender=Masc|Number=Sing	16	punct	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	tell	tell	X	X	_	1	flat:foreign	_	_
+4	you	you	X	X	_	1	flat:foreign	_	_
+5	as	as	X	X	_	1	flat:foreign	_	_
+6	soon	soon	X	X	_	5	obj	_	_
+7	as	as	X	X	_	1	flat:foreign	_	_
+8	possible	possible	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+9	:	:	PUNCT	PUNCT	_	1	punct	_	_
+10	How	How	X	X	_	16	nsubj	_	_
+11	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	10	amod	_	_
+12	to	to	X	X	_	16	iobj	_	_
+13	stay	stay	X	X	_	12	flat:foreign	_	_
+14	in	in	X	X	_	15	dep	_	_
+15	your	your	X	X	_	16	dep	_	_
+16	shelter	shelter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+17	;	;	PUNCT	PUNCT	_	16	punct	_	_
+18	;	;	PUNCT	PUNCT	_	16	punct	_	_
+
+1	How	How	X	X	_	0	ROOT	_	_
+2	soon	soon	X	X	_	1	flat:foreign	_	_
+3	you	you	X	X	_	1	flat:foreign	_	_
+4	may	may	X	X	_	1	flat:foreign	_	_
+5	go	go	X	X	_	1	flat:foreign	_	_
+6	outdoors	outdoors	PROPN	PROPN	_	1	flat:foreign	_	_
+7	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	How	How	X	X	_	6	nsubj	_	_
+2	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	you	you	X	X	_	1	dep	_	_
+4	may	may	X	X	_	1	flat:foreign	_	_
+5	stay	stay	X	X	_	1	flat:foreign	_	_
+6	outside	outsid	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	You	You	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	should	should	X	X	_	0	ROOT	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	prepared	prepared	X	X	_	2	dep	_	_
+5	to	to	X	X	_	2	dep	_	_
+6	stay	stay	X	X	_	5	flat:foreign	_	_
+7	in	in	X	X	_	2	dep	_	_
+8	your	your	X	X	_	2	dep	_	_
+9	shelter	shelter	X	X	_	2	dep	_	_
+10	full	full	X	X	_	2	dep	_	_
+11	time	time	X	X	_	2	dep	_	_
+12	for	for	X	X	_	2	dep	_	_
+13	at	at	X	X	_	12	fixed	_	_
+14	least	least	ADV	ADV	_	12	flat:foreign	_	_
+15	several	several	X	X	_	12	flat:foreign	_	_
+16	days	days	X	X	_	12	flat:foreign	_	_
+17	and	and	X	X	_	12	flat:foreign	_	_
+18	to	to	X	X	_	12	dep	_	_
+19	make	make	X	X	_	12	flat:foreign	_	_
+20	it	it	X	X	_	12	flat:foreign	_	_
+21	your	your	X	X	_	2	dep	_	_
+22	home	home	X	X	_	2	dep	_	_
+23	for	for	X	X	_	2	dep	_	_
+24	14	14	NUM	NUM	NumType=Card	25	nummod	_	_
+25	days	day	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+26	or	or	CCONJ	CCONJ	_	27	mark	_	_
+27	longer	longer	VERB	VERB	VerbForm=Inf	2	conj	_	_
+28	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	checklist	checklist	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	in	in	X	X	_	2	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	Appendix	Appendix	PROPN	PROPN	_	2	amod	_	_
+6	(	(	PUNCT	PUNCT	_	5	punct	_	_
+7	(	(	PUNCT	PUNCT	_	5	punct	_	_
+8	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	5	appos	_	_
+9	30	30	NUM	NUM	NumType=Card	8	nummod	_	_
+10	)	)	PUNCT	PUNCT	_	5	punct	_	_
+
+1	tells	tells	X	X	_	0	ROOT	_	_
+2	what	what	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	needed	needed	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Families	Families	X	X	_	0	ROOT	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	children	children	X	X	_	1	flat:foreign	_	_
+4	will	will	X	X	_	1	dep	_	_
+
+1	have	haver	X	X	_	0	ROOT	_	_
+2	particular	particular	X	X	_	1	advmod	_	_
+3	problems	problems	X	X	_	1	advmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	They	they	NOUN	NOUN	Gender=Masc|Number=Plur	1	punct	_	_
+3	should	should	X	X	_	2	amod	_	_
+4	provide	provide	X	X	_	2	flat:foreign	_	_
+5	for	for	ADP	ADP	_	2	dep	_	_
+6	simple	simple	ADJ	ADJ	Number=Sing	7	amod	_	_
+7	recreation	recreation	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	should	should	X	X	_	11	dep	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	task	task	X	X	_	2	dep	_	_
+6	for	for	X	X	_	2	dep	_	_
+7	everyone	everyone	X	X	_	2	dep	_	_
+8	and	and	X	X	_	7	dep	_	_
+9	these	these	X	X	_	8	flat:foreign	_	_
+10	tasks	tasks	X	X	_	7	dep	_	_
+11	should	should	X	X	_	0	ROOT	_	_
+12	be	be	X	X	_	11	punct	_	_
+13	rotated	rotated	NOUN	NOUN	Gender=Fem|Number=Sing	11	obj	_	_
+14	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Part	Part	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	1	fixed	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	family	family	X	X	_	1	flat:foreign	_	_
+5	should	should	X	X	_	1	flat:foreign	_	_
+6	be	be	X	X	_	5	advmod	_	_
+7	sleeping	sleeping	X	X	_	1	flat:foreign	_	_
+8	while	while	X	X	_	1	flat:foreign	_	_
+9	the	the	X	X	_	1	flat:foreign	_	_
+10	rest	rest	X	X	_	1	flat:foreign	_	_
+11	is	is	X	X	_	1	dep	_	_
+12	awake	awake	X	X	_	1	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	To	To	X	X	_	10	nsubj	_	_
+2	break	break	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	monotony	monotony	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+5	it	it	X	X	_	1	flat:foreign	_	_
+6	may	may	X	X	_	1	flat:foreign	_	_
+7	be	be	X	X	_	1	dep	_	_
+8	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	to	to	X	X	_	10	aux:tense	_	_
+10	invent	inver	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+11	tasks	tasks	X	X	_	10	nsubj	_	_
+12	that	that	X	X	_	10	advmod	_	_
+13	will	will	X	X	_	12	flat:foreign	_	_
+14	keep	keep	X	X	_	12	flat:foreign	_	_
+15	the	the	X	X	_	12	flat:foreign	_	_
+16	family	family	X	X	_	12	flat:foreign	_	_
+17	busy	busy	ADJ	ADJ	Number=Plur	12	flat:foreign	_	_
+18	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Records	Records	PROPN	PROPN	_	4	nsubj	_	_
+2	such	such	X	X	_	1	dep	_	_
+3	as	as	X	X	_	4	aux:tense	_	_
+4	diaries	diarie	ADJ	ADJ	Gender=Fem|Number=Plur	0	ROOT	_	_
+5	can	can	X	X	_	4	dep	_	_
+6	be	be	X	X	_	4	advmod	_	_
+7	kept	kept	X	X	_	4	advmod	_	_
+8	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	survival	survival	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+3	of	of	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	family	family	X	X	_	1	flat:foreign	_	_
+6	will	will	X	X	_	1	flat:foreign	_	_
+7	depend	depend	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+8	largely	largely	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	information	information	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	received	received	X	X	_	2	xcomp	_	_
+4	by	by	X	X	_	3	obl:mod	_	_
+5	radio	radio	NOUN	NOUN	Gender=Fem|Number=Sing	2	punct	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	A	à	ADP	ADP	_	2	expl:subj	_	_
+2	record	record	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:mod	_	_
+3	should	should	X	X	_	0	ROOT	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	kept	kept	X	X	_	3	dep	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	the	the	X	X	_	8	dep	_	_
+8	information	information	X	X	_	3	dep	_	_
+9	and	and	X	X	_	3	dep	_	_
+10	instructions	instruction	NOUN	NOUN	Gender=Fem|Number=Plur	3	obj	_	_
+11	,	,	PUNCT	PUNCT	_	3	punct	_	_
+12	including	including	X	X	_	3	dep	_	_
+13	the	the	X	X	_	16	dep	_	_
+14	time	time	X	X	_	13	flat:foreign	_	_
+15	and	and	X	X	_	13	dep	_	_
+16	date	date	X	X	_	3	obj	_	_
+17	of	of	X	X	_	18	mark	_	_
+18	broadcast	broadcast	VERB	VERB	VerbForm=Inf	3	dep	_	_
+19	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Family	family	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	rationing	rationing	X	X	_	2	advmod	_	_
+2	probably	probably	X	X	_	3	amod	_	_
+3	will	will	X	X	_	0	ROOT	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	3	dep	_	_
+6	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Blowers	Blowers	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	should	should	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	9	dep	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	operated	operated	X	X	_	2	dep	_	_
+5	periodically	periodically	PROPN	PROPN	_	2	dep	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	dep	_	_
+8	regular	regular	X	X	_	7	obj	_	_
+9	schedule	schedule	X	X	_	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	There	There	X	X	_	0	ROOT	_	_
+
+1	will	will	X	X	_	3	nsubj	_	_
+2	come	come	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	a	avoir	X	X	_	4	dep	_	_
+4	time	time	X	X	_	5	dep	_	_
+5	in	in	X	X	_	8	dep	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+7	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	6	obj	_	_
+8	shelter	shelter	X	X	_	0	ROOT	_	_
+9	when	when	X	X	_	8	xcomp	_	_
+10	the	the	X	X	_	8	dep	_	_
+
+1	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	has	has	X	X	_	1	punct	_	_
+
+1	decayed	decayed	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	enough	enough	X	X	_	1	dep	_	_
+3	to	to	X	X	_	4	dep	_	_
+4	allow	allow	X	X	_	1	nmod	_	_
+5	use	user	X	X	_	4	advmod	_	_
+6	of	of	X	X	_	4	advmod	_	_
+7	the	the	X	X	_	6	fixed	_	_
+8	whole	whole	X	X	_	6	dep	_	_
+9	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	6	flat:foreign	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	However	However	PROPN	PROPN	_	8	nsubj	_	_
+2	,	,	PUNCT	PUNCT	_	8	punct	_	_
+3	as	as	X	X	_	8	aux:tense	_	_
+4	much	much	X	X	_	3	fixed	_	_
+5	time	time	X	X	_	3	flat:foreign	_	_
+6	as	as	X	X	_	8	aux:tense	_	_
+7	possible	possible	ADJ	ADJ	Number=Sing	6	fixed	_	_
+8	should	should	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	be	be	X	X	_	8	dep	_	_
+10	spent	sper	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	8	dep	_	_
+11	within	within	X	X	_	8	dep	_	_
+12	the	the	X	X	_	8	dep	_	_
+13	shelter	shelter	X	X	_	8	dep	_	_
+14	to	to	X	X	_	15	case	_	_
+15	hold	hold	NOUN	NOUN	Gender=Masc|Number=Sing	8	obl:mod	_	_
+16	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	8	obj	_	_
+17	exposure	exposur	ADJ	ADJ	Gender=Fem|Number=Sing	16	amod	_	_
+18	to	to	X	X	_	8	punct	_	_
+19	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	aux:tense	_	_
+20	minimum	minimum	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	dep	_	_
+21	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	2	nsubj	_	_
+2	housekeeping	housekeeping	X	X	_	8	nsubj	_	_
+3	problems	problems	X	X	_	2	obj	_	_
+4	of	of	X	X	_	5	case	_	_
+5	living	living	X	X	_	2	obl:mod	_	_
+6	in	in	X	X	_	2	dep	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+8	shelter	shelter	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+9	will	will	X	X	_	8	obj	_	_
+10	begin	begin	X	X	_	9	amod	_	_
+11	as	as	X	X	_	8	conj	_	_
+12	soon	soon	X	X	_	11	obj	_	_
+13	as	as	X	X	_	15	aux:tense	_	_
+14	the	the	X	X	_	13	dep	_	_
+15	shelter	shelter	X	X	_	8	advcl	_	_
+16	is	is	X	X	_	15	punct	_	_
+17	occupied	occupied	X	X	_	15	obj	_	_
+18	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Food	food	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	medical	medical	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+
+1	supplies	supplie	NOUN	NOUN	Gender=Fem|Number=Plur	3	advmod	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	utensils	utensil	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	and	and	X	X	_	3	dep	_	_
+6	equipment	equipment	X	X	_	5	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	5	punct	_	_
+8	if	if	X	X	_	5	dep	_	_
+9	not	not	X	X	_	8	flat:foreign	_	_
+10	already	already	X	X	_	8	flat:foreign	_	_
+11	stored	stored	X	X	_	8	flat:foreign	_	_
+12	in	in	X	X	_	8	flat:foreign	_	_
+13	the	the	X	X	_	8	flat:foreign	_	_
+14	shelter	shelter	X	X	_	8	flat:foreign	_	_
+15	,	,	PUNCT	PUNCT	_	5	punct	_	_
+16	must	must	NOUN	NOUN	Gender=Masc|Number=Sing	5	flat:foreign	_	_
+17	be	be	X	X	_	16	dep	_	_
+18	quickly	quickly	X	X	_	16	flat:foreign	_	_
+19	gathered	gathered	X	X	_	16	flat:name	_	_
+20	up	up	X	X	_	16	dep	_	_
+21	and	and	X	X	_	16	dep	_	_
+22	carried	carried	X	X	_	16	flat:foreign	_	_
+23	into	into	X	X	_	5	flat:foreign	_	_
+24	it	it	X	X	_	5	flat:foreign	_	_
+25	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	After	After	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	family	family	X	X	_	2	flat:foreign	_	_
+4	has	has	X	X	_	2	flat:foreign	_	_
+5	settled	settled	PROPN	PROPN	_	2	flat:foreign	_	_
+6	in	in	X	X	_	2	flat:foreign	_	_
+7	the	the	X	X	_	2	flat:foreign	_	_
+8	shelter	shelter	X	X	_	2	flat:foreign	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	the	the	X	X	_	11	dep	_	_
+11	housekeeping	housekeeping	X	X	_	1	dep	_	_
+12	rules	rule	NOUN	NOUN	Gender=Fem|Number=Plur	11	nmod	_	_
+13	should	should	X	X	_	11	amod	_	_
+14	be	be	X	X	_	13	dep	_	_
+15	spelled	spelled	NOUN	NOUN	Gender=Fem|Number=Sing	13	dep	_	_
+16	out	out	X	X	_	13	dep	_	_
+17	by	by	X	X	_	11	dep	_	_
+18	the	the	X	X	_	19	dep	_	_
+19	adult	adult	X	X	_	11	obl:mod	_	_
+20	in	in	X	X	_	21	case	_	_
+21	charge	charge	NOUN	NOUN	Gender=Fem|Number=Sing	19	nmod	_	_
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sanitation	sanitation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	in	in	X	X	_	1	amod	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	confines	confiner	X	X	_	1	amod	_	_
+5	of	of	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	family	family	X	X	_	1	dep	_	_
+8	shelter	shelter	X	X	_	1	flat:foreign	_	_
+9	will	will	X	X	_	1	dep	_	_
+
+1	require	require	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	much	much	X	X	_	1	advmod	_	_
+
+1	thought	thought	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	planning	planning	X	X	_	1	obj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Provision	provision	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	emergency	emergency	X	X	_	3	obl:mod	_	_
+3	toilet	toilet	X	X	_	0	ROOT	_	_
+
+1	facilities	facilities	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	advmod	_	_
+
+1	disposal	disposal	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	human	human	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:arg	_	_
+4	wastes	wastes	PROPN	PROPN	_	3	punct	_	_
+5	will	will	X	X	_	3	dep	_	_
+6	be	be	X	X	_	5	dep	_	_
+7	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	5	acl:relcl	_	_
+8	unfamiliar	unfamiliar	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+
+1	problem	problem	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	covered	covered	X	X	_	6	dep	_	_
+3	container	container	X	X	_	2	acl	_	_
+4	such	such	X	X	_	2	dep	_	_
+5	as	as	PRON	PRON	Gender=Masc|Number=Sing|Person=3	6	aux:tense	_	_
+6	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	dep	_	_
+7	kitchen	kitchen	PROPN	PROPN	Gender=Masc|Number=Sing	6	obj	_	_
+8	garbage	garbage	NOUN	NOUN	Gender=Masc|Number=Sing	6	obj	_	_
+9	pail	pail	NOUN	NOUN	Gender=Masc|Number=Plur	6	obj	_	_
+10	might	might	ADJ	ADJ	Gender=Masc|Number=Plur	9	amod	_	_
+11	do	do	PRON	PRON	PronType=Rel	13	obj	_	_
+12	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	13	aux:tense	_	_
+13	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+14	toilet	toilet	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	13	obj	_	_
+15	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	A	a	NOUN	NOUN	_	2	punct	_	_
+2	10-gallon	10-gallon	NUM	NUM	NumType=Card	7	nsubj	_	_
+3	garbage	garbage	PROPN	PROPN	_	2	nmod	_	_
+4	can	can	ADJ	ADJ	_	2	amod	_	_
+5	,	,	PUNCT	PUNCT	_	2	punct	_	_
+6	with	with	X	X	_	2	dep	_	_
+7	a	avoir	X	X	_	10	dep	_	_
+8	tightly	tightly	X	X	_	7	obj	_	_
+9	fitting	fitting	X	X	_	7	flat:foreign	_	_
+10	cover	cover	X	X	_	26	dep	_	_
+11	,	,	PUNCT	PUNCT	_	10	punct	_	_
+12	could	could	X	X	_	10	dep	_	_
+13	be	be	X	X	_	12	dep	_	_
+14	used	used	X	X	_	12	dep	_	_
+15	to	to	X	X	_	12	dep	_	_
+16	keep	keep	X	X	_	15	flat:foreign	_	_
+17	the	the	X	X	_	15	flat:foreign	_	_
+18	wastes	wastes	PROPN	PROPN	_	15	flat:foreign	_	_
+19	until	until	X	X	_	15	flat:foreign	_	_
+20	it	it	X	X	_	15	flat:foreign	_	_
+21	is	is	X	X	_	15	dep	_	_
+22	safe	safe	X	X	_	15	flat:foreign	_	_
+23	to	to	X	X	_	24	dep	_	_
+24	leave	leave	X	X	_	15	flat:foreign	_	_
+25	the	the	X	X	_	15	flat:foreign	_	_
+26	shelter	shelter	X	X	_	0	ROOT	_	_
+27	.	.	PUNCT	PUNCT	_	26	punct	_	_
+
+1	Water	Water	X	X	_	0	ROOT	_	_
+2	rationing	rationing	X	X	_	1	fixed	_	_
+
+1	will	will	X	X	_	8	dep	_	_
+2	be	be	X	X	_	1	dep	_	_
+3	difficult	difficult	X	X	_	1	dep	_	_
+4	and	and	X	X	_	3	dep	_	_
+5	should	should	X	X	_	1	parataxis	_	_
+6	be	be	X	X	_	5	advmod	_	_
+7	planned	planned	X	X	_	5	dep	_	_
+8	carefully	carefully	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	portable	portable	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	electric	electric	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	_
+4	heater	heater	X	X	_	2	dep	_	_
+5	is	is	X	X	_	6	dep	_	_
+6	advisable	advisable	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+7	for	for	X	X	_	4	dep	_	_
+8	shelters	shelter	NOUN	NOUN	Gender=Masc|Number=Plur	4	obl:arg	_	_
+9	in	in	X	X	_	2	dep	_	_
+10	cold	cold	X	X	_	2	conj	_	_
+11	climates	climate	ADJ	ADJ	Gender=Fem|Number=Plur	10	flat:name	_	_
+12	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	It	It	X	X	_	0	ROOT	_	_
+2	would	would	X	X	_	1	flat:foreign	_	_
+3	take	take	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	chill	chill	X	X	_	1	flat:foreign	_	_
+6	from	from	X	X	_	5	dep	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	shelter	shelter	X	X	_	1	flat:foreign	_	_
+9	in	in	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	flat:foreign	_	_
+11	beginning	beginning	X	X	_	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Even	Even	PROPN	PROPN	_	0	ROOT	_	_
+2	if	if	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	electric	electric	X	X	_	1	flat:foreign	_	_
+5	power	power	X	X	_	1	flat:foreign	_	_
+6	fails	fails	X	X	_	5	flat:foreign	_	_
+7	after	after	X	X	_	1	dep	_	_
+8	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+9	attack	attack	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	any	any	X	X	_	1	dep	_	_
+12	time	time	X	X	_	1	flat:foreign	_	_
+13	that	that	X	X	_	1	dep	_	_
+14	the	the	X	X	_	1	dep	_	_
+15	heater	heater	X	X	_	1	dep	_	_
+16	has	has	X	X	_	1	dep	_	_
+17	been	been	X	X	_	1	dep	_	_
+18	used	used	X	X	_	1	flat:foreign	_	_
+19	will	will	X	X	_	1	flat:foreign	_	_
+20	make	make	X	X	_	19	flat:foreign	_	_
+21	the	the	X	X	_	19	dep	_	_
+22	shelter	shelter	X	X	_	19	flat:foreign	_	_
+23	that	that	X	X	_	1	flat:foreign	_	_
+24	much	much	X	X	_	1	flat:foreign	_	_
+25	more	more	X	X	_	1	flat:foreign	_	_
+
+1	comfortable	comfortabl	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Body	Body	X	X	_	0	ROOT	_	_
+2	heat	heat	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	close	clore	X	X	_	1	flat:foreign	_	_
+6	quarters	quarters	X	X	_	1	flat:foreign	_	_
+7	will	will	X	X	_	1	flat:foreign	_	_
+8	help	help	X	X	_	1	flat:foreign	_	_
+9	keep	keep	PROPN	PROPN	_	1	flat:foreign	_	_
+10	up	up	X	X	_	1	flat:foreign	_	_
+11	the	the	X	X	_	1	flat:foreign	_	_
+12	temperature	temperature	X	X	_	1	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Warm	Warm	X	X	_	0	ROOT	_	_
+2	clothing	clothing	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	2	dep	_	_
+4	bedding	bedding	X	X	_	2	dep	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	_
+6	of	of	X	X	_	7	case	_	_
+7	course	course	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	are	are	X	X	_	10	case	_	_
+10	essential	essential	PROPN	PROPN	_	1	nmod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Open	Open	X	X	_	9	nsubj	_	SpaceAfter=No
+2	-	-	PUNCT	PUNCT	_	9	nsubj	_	SpaceAfter=No
+3	flame	flame	X	X	_	2	fixed	_	_
+4	heating	heating	X	X	_	3	dep	_	_
+5	or	or	X	X	_	3	dep	_	_
+6	cooking	cooking	X	X	_	5	flat:foreign	_	_
+7	should	should	X	X	_	3	amod	_	_
+8	be	be	X	X	_	7	dep	_	_
+9	avoided	avoided	PROPN	PROPN	_	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	flame	flame	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	would	would	X	X	_	2	amod	_	_
+4	use	user	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	_	_
+5	up	up	X	X	_	2	dep	_	_
+6	air	air	NOUN	NOUN	Gender=Masc|Number=Sing	2	obj	_	_
+7	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Some	Some	PROPN	PROPN	Gender=Masc|Number=Sing	5	nsubj	_	_
+2	families	families	X	X	_	1	flat:foreign	_	_
+3	already	already	X	X	_	1	flat:foreign	_	_
+4	have	haver	X	X	_	1	flat:foreign	_	_
+5	held	held	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	dep	_	_
+6	weekend	weekend	NOUN	NOUN	Gender=Masc|Number=Sing	5	obj	_	_
+7	rehearsals	rehearsals	X	X	_	5	obj	_	_
+8	in	in	X	X	_	9	case	_	_
+9	their	their	X	X	_	5	obl:mod	_	_
+10	home	home	X	X	_	5	dep	_	_
+11	shelters	shelters	X	X	_	5	dep	_	_
+12	to	to	X	X	_	5	dep	_	_
+13	learn	learn	X	X	_	12	flat:foreign	_	_
+14	the	the	X	X	_	12	flat:foreign	_	_
+15	problems	problems	X	X	_	12	flat:foreign	_	_
+16	and	and	X	X	_	12	flat:foreign	_	_
+17	to	to	X	X	_	12	dep	_	_
+18	determine	determine	X	X	_	5	dep	_	_
+19	for	for	X	X	_	20	case	_	_
+20	themselves	themselves	X	X	_	5	obl:mod	_	_
+21	what	what	X	X	_	5	dep	_	_
+22	supplies	supplier	X	X	_	23	dep	_	_
+23	they	they	X	X	_	25	nsubj	_	_
+24	would	would	X	X	_	23	nsubj	_	_
+25	need	need	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	4	4	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	X	X	_	2	case	_	_
+2	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	7	dep	_	_
+3	attack	attack	X	X	_	2	dep	_	_
+4	finds	finds	X	X	_	3	dep	_	_
+5	you	you	X	X	_	3	dep	_	_
+6	without	without	X	X	_	2	dep	_	_
+7	a	avoir	X	X	_	8	dep	_	_
+8	prepared	prepared	X	X	_	0	ROOT	_	_
+
+1	shelter	shelter	X	X	_	0	ROOT	_	_
+
+1	Few	Few	X	X	_	0	ROOT	_	_
+2	areas	areas	X	X	_	1	fixed	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	if	if	X	X	_	3	dep	_	_
+5	any	any	PROPN	PROPN	_	4	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	4	punct	_	_
+7	are	are	X	X	_	4	dep	_	_
+8	as	as	X	X	_	7	flat:foreign	_	_
+9	good	good	X	X	_	8	flat:foreign	_	_
+10	as	as	X	X	_	7	flat:foreign	_	_
+11	prepared	prepared	X	X	_	7	flat:foreign	_	_
+12	shelters	shelters	X	X	_	7	flat:foreign	_	_
+13	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	7	flat:foreign	_	_
+14	they	they	ADJ	ADJ	Gender=Masc|Number=Plur	7	flat:foreign	_	_
+15	are	are	X	X	_	7	flat:foreign	_	_
+16	worth	worth	X	X	_	7	flat:foreign	_	_
+17	knowing	knowing	X	X	_	7	flat:foreign	_	_
+18	about	about	ADJ	ADJ	Gender=Masc|Number=Plur	7	flat:foreign	_	_
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	family	family	X	X	_	0	ROOT	_	_
+3	dwelling	dwelling	X	X	_	2	amod	_	_
+4	without	without	X	X	_	2	amod	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	punct	_	_
+6	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	5	obj	_	_
+7	provides	provide	ADJ	ADJ	Gender=Masc|Number=Plur	5	obj	_	_
+8	some	some	X	X	_	7	flat:name	_	_
+9	natural	natural	ADJ	ADJ	Gender=Masc|Number=Sing	7	amod	_	_
+10	shielding	shielding	X	X	_	11	dep	_	_
+11	from	from	X	X	_	7	dep	_	_
+12	fallout	fallout	ADJ	ADJ	Gender=Fem|NumType=Ord|Number=Sing	13	amod	_	_
+13	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	On	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	the	the	X	X	_	14	dep	_	_
+3	ground	ground	X	X	_	2	obj	_	_
+4	floor	floor	X	X	_	2	flat:foreign	_	_
+5	the	the	X	X	_	6	aux:tense	_	_
+6	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	2	obl:mod	_	_
+7	would	would	X	X	_	6	nmod	_	_
+8	be	be	X	X	_	6	dep	_	_
+9	about	about	X	X	_	10	amod	_	_
+10	half	half	X	X	_	6	nmod	_	_
+11	what	what	X	X	_	6	amod	_	_
+12	it	it	X	X	_	6	dep	_	_
+13	is	is	X	X	_	14	dep	_	_
+14	outside	outsid	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+15	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	best	best	X	X	_	1	flat:foreign	_	_
+3	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+4	would	would	X	X	_	1	flat:foreign	_	_
+5	be	be	X	X	_	1	flat:foreign	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	ground	ground	X	X	_	1	flat:foreign	_	_
+9	floor	floor	X	X	_	1	flat:foreign	_	_
+10	in	in	X	X	_	1	flat:foreign	_	_
+11	the	the	X	X	_	1	flat:foreign	_	_
+12	central	central	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+13	part	part	NOUN	NOUN	Number=Sing	1	flat:foreign	_	_
+14	of	of	X	X	_	15	dep	_	_
+15	the	the	X	X	_	1	dep	_	_
+16	house	house	X	X	_	1	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	a	NOUN	NOUN	_	0	ROOT	_	_
+2	belowground	belowground	X	X	_	1	flat:foreign	_	_
+
+1	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	can	can	ADJ	ADJ	_	5	case	_	_
+2	cut	cut	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	fallout	fallout	X	X	_	3	fixed	_	_
+5	radiation	radiation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	one	one	X	X	_	1	dep	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	2	nsubj	_	SpaceAfter=No
+2	tenth	tenth	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	of	of	X	X	_	2	advmod	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	outside	outside	X	X	_	2	xcomp	_	_
+6	level	level	ADJ	ADJ	Gender=Masc|Number=Sing	5	obj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	7	nsubj	_	_
+2	safest	safest	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+3	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+4	is	is	X	X	_	3	dep	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+7	corner	corner	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+8	least	least	ADV	ADV	_	7	advmod	_	_
+9	exposed	exposed	X	X	_	7	dep	_	_
+10	to	to	X	X	_	11	case	_	_
+11	windows	windows	PROPN	PROPN	Gender=Masc|Number=Sing	7	obl:mod	_	_
+12	and	and	X	X	_	7	dep	_	_
+13	deepest	deepest	X	X	_	7	dep	_	_
+14	below	below	X	X	_	13	obj	_	_
+15	ground	ground	X	X	_	13	obj	_	_
+16	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	If	If	X	X	_	12	nsubj	_	_
+2	there	there	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+3	is	is	X	X	_	4	case	_	_
+4	time	time	X	X	_	2	obl:mod	_	_
+5	after	after	X	X	_	2	dep	_	_
+6	the	the	X	X	_	2	dep	_	_
+7	warning	warning	X	X	_	2	advmod	_	_
+8	,	,	PUNCT	PUNCT	_	12	punct	_	_
+9	the	the	X	X	_	12	dep	_	_
+10	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	12	nsubj	_	_
+11	shielding	shielding	X	X	_	10	amod	_	_
+12	could	could	X	X	_	0	ROOT	_	_
+13	be	be	X	X	_	12	dep	_	_
+14	improved	improved	X	X	_	15	amod	_	_
+15	substantially	substantially	NOUN	NOUN	Gender=Masc|Number=Sing	12	obl:mod	_	_
+16	by	by	X	X	_	12	dep	_	_
+17	blocking	blocking	X	X	_	16	fixed	_	_
+18	windows	window	NOUN	NOUN	Gender=Masc|Number=Sing	12	obj	_	_
+19	with	with	X	X	_	18	dep	_	_
+20	bricks	brick	PROPN	PROPN	_	12	dep	_	_
+21	,	,	PUNCT	PUNCT	_	12	punct	_	_
+22	dirt	dirt	NOUN	NOUN	Gender=Fem|Number=Sing	12	advmod	_	_
+23	,	,	PUNCT	PUNCT	_	24	punct	_	_
+24	books	book	NOUN	NOUN	Gender=Masc|Number=Plur	22	conj	_	_
+25	,	,	PUNCT	PUNCT	_	26	punct	_	_
+26	magazines	magazine	NOUN	NOUN	Gender=Fem|Number=Plur	22	conj	_	_
+27	,	,	PUNCT	PUNCT	_	26	punct	_	_
+28	or	or	CCONJ	CCONJ	_	29	cc	_	_
+29	other	other	X	X	_	22	conj	_	_
+30	heavy	heavy	ADV	ADV	_	29	advmod	_	_
+31	material	material	ADJ	ADJ	Gender=Masc|Number=Sing	22	conj	_	_
+32	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	5	5	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Shelter	Shelter	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	in	in	X	X	_	3	case	_	_
+3	apartment	apartment	ADV	ADV	_	4	advmod	_	_
+4	buildings	building	X	X	_	0	ROOT	_	_
+
+1	Large	large	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+
+1	apartment	apartment	ADV	ADV	_	2	advmod	_	_
+2	buildings	building	ADJ	ADJ	Gender=Masc|Number=Plur	4	obl:mod	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	masonry	masonry	X	X	_	0	ROOT	_	_
+5	or	or	CCONJ	CCONJ	_	4	dep	_	_
+6	concrete	concrete	X	X	_	4	amod	_	_
+7	provide	provide	X	X	_	4	dep	_	_
+8	better	better	VERB	VERB	VerbForm=Inf	7	xcomp	_	_
+9	natural	natural	ADJ	ADJ	Gender=Masc|Number=Sing	7	advmod	_	_
+10	shelter	shelter	X	X	_	4	dep	_	_
+11	than	than	X	X	_	4	flat:foreign	_	_
+
+1	the	the	X	X	_	4	mark	_	_
+2	usual	usual	X	X	_	3	amod	_	_
+3	family	family	X	X	_	4	obl:mod	_	_
+4	dwellings	dwellings	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	general	general	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	such	such	X	X	_	1	dep	_	_
+5	apartments	apartment	NOUN	NOUN	Gender=Masc|Number=Plur	4	flat:foreign	_	_
+6	afford	afford	PROPN	PROPN	Gender=Masc|Number=Sing	4	flat:foreign	_	_
+7	more	more	X	X	_	4	flat:foreign	_	_
+8	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+9	than	than	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+
+1	smaller	smaller	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	buildings	building	X	X	_	1	obj	_	_
+
+1	because	because	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	their	their	X	X	_	1	flat:foreign	_	_
+3	walls	walls	X	X	_	1	flat:foreign	_	_
+4	are	are	X	X	_	1	dep	_	_
+5	thick	thick	X	X	_	1	flat:foreign	_	_
+6	and	and	X	X	_	1	dep	_	_
+7	there	there	X	X	_	1	flat:foreign	_	_
+8	is	is	X	X	_	1	dep	_	_
+9	more	more	X	X	_	1	dep	_	_
+10	space	space	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	11	nsubj	_	_
+2	central	central	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	area	area	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	ground	ground	X	X	_	1	flat:foreign	_	_
+7	floor	floor	X	X	_	1	flat:foreign	_	_
+8	of	of	PRON	PRON	Person=3	10	dep	_	_
+9	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	dep	_	_
+10	heavily	heavily	PROPN	PROPN	Gender=Fem|Number=Sing	1	dep	_	_
+11	constructed	constructed	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+12	apartment	apartment	ADV	ADV	_	13	advmod	_	_
+13	building	building	ADV	ADV	_	11	advmod	_	_
+14	,	,	PUNCT	PUNCT	_	11	punct	_	_
+15	with	with	X	X	_	11	dep	_	_
+16	concrete	concrete	X	X	_	15	fixed	_	_
+17	floors	floors	ADV	ADV	_	16	advmod	_	_
+18	,	,	PUNCT	PUNCT	_	15	punct	_	_
+19	should	should	X	X	_	11	obj	_	_
+20	provide	provide	X	X	_	19	flat:foreign	_	_
+21	more	more	X	X	_	19	flat:foreign	_	_
+22	fallout	fallout	X	X	_	19	punct	_	_
+23	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	19	obj	_	_
+24	than	than	X	X	_	19	amod	_	_
+25	the	the	X	X	_	26	dep	_	_
+26	ordinary	ordinary	X	X	_	27	amod	_	_
+27	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	19	punct	_	_
+28	of	of	PRON	PRON	Person=3	19	fixed	_	_
+29	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	dep	_	_
+30	family	family	X	X	_	19	obl:mod	_	_
+31	dwelling	dwelling	X	X	_	30	amod	_	_
+32	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	The	The	X	X	_	13	nsubj	_	_
+2	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	of	of	X	X	_	5	dep	_	_
+4	such	such	X	X	_	3	fixed	_	_
+5	an	an	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	2	dep	_	_
+6	apartment	apartment	ADV	ADV	_	1	dep	_	_
+7	building	building	X	X	_	1	flat:foreign	_	_
+8	may	may	X	X	_	1	flat:foreign	_	_
+9	provide	provide	X	X	_	1	flat:foreign	_	_
+10	as	as	X	X	_	13	aux:tense	_	_
+11	much	much	X	X	_	12	advmod	_	_
+12	natural	natural	ADJ	ADJ	Gender=Masc|Number=Sing	13	amod	_	_
+13	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	17	nsubj	_	_
+14	as	as	X	X	_	17	aux:tense	_	_
+15	the	the	X	X	_	14	dep	_	_
+16	specially	specially	X	X	_	14	flat:foreign	_	_
+17	constructed	constructed	X	X	_	0	ROOT	_	_
+
+1	concrete	concrete	X	X	_	0	ROOT	_	_
+
+1	block	block	X	X	_	0	ROOT	_	_
+
+1	shelter	shelter	X	X	_	0	ROOT	_	_
+
+1	recommended	recommended	X	X	_	0	ROOT	_	_
+2	for	for	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	basement	basement	NOUN	NOUN	Gender=Masc|Number=Sing	1	obj	_	_
+5	of	of	PRON	PRON	Person=3	6	expl:comp	_	_
+6	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+7	family	family	X	X	_	6	obj	_	_
+8	dwelling	dwelling	X	X	_	6	flat:foreign	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Federal	Federal	X	X	_	1	flat:foreign	_	_
+3	Government	Government	PROPN	PROPN	_	1	flat:foreign	_	_
+4	is	is	X	X	_	1	flat:foreign	_	_
+5	aiding	aiding	X	X	_	4	flat:foreign	_	_
+6	local	local	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+7	governments	government	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+8	in	in	X	X	_	1	flat:foreign	_	_
+9	several	several	X	X	_	1	flat:foreign	_	_
+10	places	place	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+11	to	to	X	X	_	1	flat:foreign	_	_
+12	survey	survey	X	X	_	1	flat:foreign	_	_
+13	residential	residential	PROPN	PROPN	_	1	flat:foreign	_	_
+14	,	,	PUNCT	PUNCT	_	1	punct	_	_
+15	commercial	commercial	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+16	and	and	X	X	_	1	flat:foreign	_	_
+17	industrial	industrial	X	X	_	1	flat:foreign	_	_
+18	buildings	building	X	X	_	1	flat:foreign	_	_
+19	to	to	X	X	_	18	dep	_	_
+20	determine	determine	X	X	_	18	flat:foreign	_	_
+21	what	what	X	X	_	18	flat:foreign	_	_
+22	fallout	fallout	X	X	_	18	amod	_	_
+23	protection	protection	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+24	they	they	X	X	_	1	flat:foreign	_	_
+25	would	would	X	X	_	1	flat:foreign	_	_
+26	provide	provide	X	X	_	1	flat:foreign	_	_
+27	,	,	PUNCT	PUNCT	_	1	punct	_	_
+28	and	and	X	X	_	1	dep	_	_
+29	for	for	X	X	_	30	dep	_	_
+30	how	how	X	X	_	28	flat:foreign	_	_
+31	many	many	X	X	_	28	flat:foreign	_	_
+32	people	people	X	X	_	28	flat:foreign	_	_
+33	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	problem	problem	X	X	_	1	flat:foreign	_	_
+3	for	for	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	city	city	X	X	_	1	flat:foreign	_	_
+6	apartment	apartment	ADV	ADV	_	7	advmod	_	_
+7	dweller	dweller	ADJ	ADJ	Gender=Masc|Number=Sing	1	acl	_	_
+8	is	is	X	X	_	7	punct	_	_
+9	primarily	primarily	X	X	_	7	obj	_	_
+10	to	to	X	X	_	11	case	_	_
+11	plan	plan	NOUN	NOUN	Gender=Masc|Number=Sing	9	obl:mod	_	_
+12	the	the	X	X	_	1	flat:foreign	_	_
+13	use	user	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+14	of	of	X	X	_	15	dep	_	_
+15	existing	existing	X	X	_	1	dep	_	_
+16	space	space	X	X	_	15	obj	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Such	Such	X	X	_	0	ROOT	_	_
+2	planning	planning	X	X	_	1	flat:foreign	_	_
+3	will	will	X	X	_	1	dep	_	_
+4	require	require	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	cooperation	cooperation	X	X	_	1	flat:foreign	_	_
+7	of	of	X	X	_	9	case	_	_
+8	other	other	X	X	_	9	amod	_	_
+9	occupants	occupant	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+10	and	and	X	X	_	1	dep	_	_
+11	of	of	X	X	_	1	dep	_	_
+12	the	the	X	X	_	1	dep	_	_
+13	apartment	apartment	ADV	ADV	_	14	advmod	_	_
+14	management	management	ADV	ADV	_	1	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No

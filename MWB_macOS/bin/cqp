@@ -1,0 +1,13 @@
+#!/bin/bash
+set -u
+
+for candidate in /opt/homebrew/bin/cqp /usr/local/bin/cqp; do
+	if [[ -x "$candidate" ]]; then
+		if "$candidate" "$@"; then
+			exit 0
+		fi
+		break
+	fi
+done
+
+exec docker run --rm -i -v "$(pwd):/workspace" -w /workspace motifworkbench-cwb cqp "$@"
