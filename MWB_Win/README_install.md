@@ -19,3 +19,7 @@
 6. Installer les dépendances (pip install -r "requirements.txt") [vous installe obligatoirement Torch CPU]
 7. Lancer dans le terminal (après avoir activé votre environnement virtuel) : `python run_gui.py`
 8. Vous pouvez maintenant utiliser l'outil !
+
+# Pour relancer l'outil après l'avoir fermé
+
+.\.venv\Scripts\python.exe run_gui.py
