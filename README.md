@@ -24,6 +24,7 @@ If you like (or really hate) this work, please use the following citation:
 -> ``MacOS``
 1. Download the ``MWB_macOS`` folder from GitHub.
 2. Open the folder and run ``install_and_run_macos.command``.
+3. To launch MWB after the initial installation, simply double-click the ``launch_mwb_macos.command`` file.
 
 -> ``Linux``
 1. Download the ``MWB_Linux`` folder from GitHub.
