@@ -28,6 +28,8 @@ If you like (or really hate) this work, please use the following citation:
 1. Download the ``MWB_Linux`` folder from GitHub.
 2. Open the folder and run ``install_and_run_linux.sh``
 
+-----------------------
+
 **MWB v.0.1** is also available (folder ``MotifWorkBench (v.0.1)``): 
 
 MWB v.0.1 needs Python, R, Perl, CWB and bash. On Mac OS, Docker is needed to run the Linux binaries of BideSpanTree motif extractor (see ```execute_closed_pattern.sh```).
@@ -48,6 +50,18 @@ brew install cwb
 cpan
 install CWB::CQP
 ```
+
+**How to use?**
+Run: 
+```bash
+python src/main.py
+```
+
+The script will process all `.txt` files located into ```Data/textes_raw```. The textometric part of MWB needs a `metadata.tsv` file relating to its corpus texts (see textometric settings below).
+
+Here, MotifWorkBench is distributed with the nltk version of the Brown corpus (Kučera & Francis 1964)
+
+------------------------
 
 ## What does it do?
 A simple run such as the one before goes through the following operations:
