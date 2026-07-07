@@ -11,7 +11,7 @@ import shutil
 from pathlib import Path
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QScrollArea, QWidget, QComboBox, QSpinBox,
+    QScrollArea, QWidget, QComboBox, QSpinBox, QCheckBox,
     QMessageBox, QListWidget, QAbstractItemView, QDialog
 )
 from PyQt6.QtGui import QFont, QDesktopServices
@@ -455,6 +455,7 @@ class AppSettingsPage(BasePage):
             "auto_check_model_updates": False,
             "analyses_root_path": str(get_default_analyses_root()),
             "closed_motif_concordance_display": "matched_words",
+            "prompt_prepared_archive_on_first_analysis": True,
         }
         
         if self._settings_file.exists():
@@ -838,31 +839,24 @@ class AppSettingsPage(BasePage):
         desc.setStyleSheet(f"color: {TEXT_SECONDARY}; font-size: 10pt;")
         layout.addWidget(desc)
 
-        concordancer_row = QHBoxLayout()
-        concordancer_label = QLabel("Concordancier / motifs clos :")
-        concordancer_label.setStyleSheet(f"color: {TEXT_PRIMARY}; font-size: 10pt;")
-        concordancer_label.setFixedWidth(190)
-        concordancer_row.addWidget(concordancer_label)
-
-        self._closed_motif_display_combo = QComboBox()
-        self._closed_motif_display_combo.addItem("Afficher les mots trouvés", "matched_words")
-        self._closed_motif_display_combo.addItem("Afficher le motif", "motif")
-        current_display = self._settings.get("closed_motif_concordance_display", "matched_words")
-        current_index = self._closed_motif_display_combo.findData(current_display)
-        if current_index >= 0:
-            self._closed_motif_display_combo.setCurrentIndex(current_index)
-        self._closed_motif_display_combo.setMinimumWidth(240)
-        concordancer_row.addWidget(self._closed_motif_display_combo)
-        concordancer_row.addStretch()
-        layout.addLayout(concordancer_row)
-
-        concordancer_hint = QLabel(
-            "Choisit si la colonne centrale du concordancier affiche le motif clos lui-même "
-            "ou les mots qui correspondent à ce motif."
+        prepared_archive_row = QHBoxLayout()
+        self._prepared_archive_prompt_checkbox = QCheckBox(
+            "Proposer une archive préparée après la première analyse complète d'un nouveau corpus"
         )
-        concordancer_hint.setWordWrap(True)
-        concordancer_hint.setStyleSheet(f"color: {TEXT_SECONDARY}; font-size: 9pt;")
-        layout.addWidget(concordancer_hint)
+        self._prepared_archive_prompt_checkbox.setChecked(
+            self._settings.get("prompt_prepared_archive_on_first_analysis", True)
+        )
+        prepared_archive_row.addWidget(self._prepared_archive_prompt_checkbox)
+        prepared_archive_row.addStretch()
+        layout.addLayout(prepared_archive_row)
+
+        prepared_archive_hint = QLabel(
+            "L'archive ZIP contient `textes_tagged` et `underscore_fix` pour une réutilisation "
+            "ou un partage plus simple."
+        )
+        prepared_archive_hint.setWordWrap(True)
+        prepared_archive_hint.setStyleSheet(f"color: {TEXT_SECONDARY}; font-size: 9pt;")
+        layout.addWidget(prepared_archive_hint)
         
         # Boutons
         buttons_layout = QHBoxLayout()
@@ -1298,10 +1292,9 @@ class AppSettingsPage(BasePage):
                 Path(self._settings.get("analyses_root_path", str(get_default_analyses_root()))).expanduser()
             )
             self._analyses_root_label.setText(self._format_display_path(self._analyses_root_path))
-            display_mode = self._settings.get("closed_motif_concordance_display", "matched_words")
-            display_index = self._closed_motif_display_combo.findData(display_mode)
-            if display_index >= 0:
-                self._closed_motif_display_combo.setCurrentIndex(display_index)
+            self._prepared_archive_prompt_checkbox.setChecked(
+                self._settings.get("prompt_prepared_archive_on_first_analysis", True)
+            )
             
             QMessageBox.information(self, "Succès", "Paramètres réinitialisés avec succès.")
     
@@ -1310,7 +1303,7 @@ class AppSettingsPage(BasePage):
         self._settings["log_level"] = self._log_level_combo.currentText()
         self._settings["log_retention_days"] = self._retention_spin.value()
         self._settings["analyses_root_path"] = self._analyses_root_path or str(get_default_analyses_root())
-        self._settings["closed_motif_concordance_display"] = self._closed_motif_display_combo.currentData()
+        self._settings["prompt_prepared_archive_on_first_analysis"] = self._prepared_archive_prompt_checkbox.isChecked()
         
         self._save_settings()
         QMessageBox.information(self, "Succès", "Paramètres enregistrés avec succès.")

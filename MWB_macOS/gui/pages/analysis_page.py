@@ -15,10 +15,10 @@ from pathlib import Path
 
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QScrollArea, QWidget, QProgressBar, QTextEdit, QFileDialog, QMessageBox
+    QScrollArea, QWidget, QProgressBar, QTextEdit, QFileDialog, QMessageBox, QCheckBox
 )
 from PyQt6.QtGui import QFont
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, pyqtSignal
 
 from gui.widgets.base_page import BasePage, TEXT_PRIMARY
 from gui.config.settings import load_profile, list_profiles, DEFAULT_CONFIG
@@ -26,6 +26,12 @@ from gui.core.gpu_detect import detect_gpu
 from gui.core.worker import AnalysisWorker
 from gui.core.run_history import append_run_history, build_run_entry
 from gui.core.shiny_runner import save_results_for_shiny
+from gui.core.app_settings import load_app_settings, save_app_settings
+from gui.core.prepared_archive import (
+    create_prepared_archive,
+    default_archive_path,
+    has_prepared_archive_content,
+)
 
 SRC_DIR = Path(__file__).resolve().parents[2] / "src"
 if str(SRC_DIR) not in sys.path:
@@ -35,6 +41,8 @@ from annotators import get_annotator
 
 class AnalysisPage(BasePage):
     """Page de lancement et suivi de l'analyse."""
+
+    analysis_finished = pyqtSignal(dict)
 
     LOG_LEVEL_LABELS = {
         0: "MIN",
@@ -195,6 +203,14 @@ class AnalysisPage(BasePage):
         logs_group = self.make_group("Logs")
         logs_layout = QVBoxLayout(logs_group)
 
+        logs_header = QHBoxLayout()
+        self._verbosity_label = QLabel("Verbosit\u00e9 : chargement...")
+        self._verbosity_label.setStyleSheet(f"color: {TEXT_PRIMARY}; background-color: transparent;")
+        self._verbosity_label.setFont(QFont("Helvetica Neue", 10, QFont.Weight.Bold))
+        logs_header.addWidget(self._verbosity_label)
+        logs_header.addStretch()
+        logs_layout.addLayout(logs_header)
+
         self._logs_text = QTextEdit()
         self._logs_text.setReadOnly(True)
         self._logs_text.setMinimumHeight(300)
@@ -274,6 +290,7 @@ class AnalysisPage(BasePage):
         self._config_label.setText(self._build_config_summary(config, profile_name))
         self._current_config = config
         self._current_profile_label = profile_name
+        self._refresh_verbosity_label()
         
     def update_config(self, config: dict, profile_label: str = "Configuration appliquée"):
         """
@@ -282,6 +299,27 @@ class AnalysisPage(BasePage):
         self._current_config = config
         self._current_profile_label = profile_label
         self._config_label.setText(self._build_config_summary(config, profile_label))
+        self._refresh_verbosity_label()
+
+    def _get_log_verbosity(self) -> str:
+        try:
+            settings = load_app_settings(self._project_root)
+            return str(settings.get("log_level", "normal")).strip().lower()
+        except Exception:
+            return "normal"
+
+    def _get_log_verbosity_display(self) -> str:
+        labels = {
+            "minimal": "Minimal",
+            "normal": "Normal",
+            "détaillé": "Détaillé",
+            "debug": "Debug",
+        }
+        return labels.get(self._get_log_verbosity(), "Normal")
+
+    def _refresh_verbosity_label(self):
+        if hasattr(self, "_verbosity_label"):
+            self._verbosity_label.setText(f"Verbosit\u00e9 des logs : {self._get_log_verbosity_display()}")
 
     def _resolve_model_name(self, config: dict) -> str:
         actual_model_name = str(config.get("actual_model_name", "")).strip()
@@ -328,6 +366,7 @@ class AnalysisPage(BasePage):
         summary += f"<b>Outil d'annotation :</b> {annotator_display}<br>"
         summary += f"<b>Modèle :</b> {model_name}<br>"
         summary += f"<b>GPU :</b> {'Oui' if config.get('use_gpu', False) else 'Non'}<br>"
+        summary += f"<b>Verbosit\u00e9 des logs :</b> {self._get_log_verbosity_display()}<br>"
         summary += f"<b>Threads :</b> {config.get('threads', 'N/A')}<br>"
         summary += f"<b>Minsup (%):</b> {config.get('list_minsup_percent', [])}<br>"
         summary += f"<b>Itemset min :</b> {config.get('list_itemset_min', [])}<br>"
@@ -450,6 +489,7 @@ class AnalysisPage(BasePage):
         self._progress_bar.setValue(0)
         self._progress_label.setText("Démarrage...")
         self._logs_text.clear()
+        self._refresh_verbosity_label()
         self._stop_requested = False
         self._history_recorded = False
 
@@ -579,9 +619,14 @@ class AnalysisPage(BasePage):
             with open(last_analysis_file, 'w', encoding='utf-8') as f:
                 json.dump(last_analysis_info, f, indent=2, ensure_ascii=False)
 
+        self.analysis_finished.emit(results)
+
         if self._worker is not None:
             self._current_config = dict(self._worker.config)
             self._config_label.setText(self._build_config_summary(self._current_config, self._current_profile_label))
+
+        if self._worker is not None:
+            self._maybe_offer_prepared_archive(self._worker)
 
         duration = 0.0
         if self._run_started_at is not None:
@@ -589,6 +634,80 @@ class AnalysisPage(BasePage):
         
         self._record_history_once("success", duration, "Analyse terminée avec succès.")
         self._worker = None
+
+    def _maybe_offer_prepared_archive(self, worker):
+        try:
+            settings = load_app_settings(self._project_root)
+            if not settings.get("offer_prepared_archive_prompt", True):
+                return
+
+            corpus_name = str(worker.config.get("selected_corpus", "")).strip()
+            if not corpus_name:
+                return
+
+            prompted_corpora = list(settings.get("prepared_archive_prompted_corpora", []))
+            if corpus_name in prompted_corpora:
+                return
+
+            analysis_root = worker.paths.get("root") if worker.paths else None
+            if not analysis_root or not has_prepared_archive_content(analysis_root):
+                prompted_corpora = sorted(set(prompted_corpora + [corpus_name]))
+                settings["prepared_archive_prompted_corpora"] = prompted_corpora
+                save_app_settings(self._project_root, settings)
+                return
+
+            box = QMessageBox(self)
+            box.setWindowTitle("Créer une archive préparée")
+            box.setIcon(QMessageBox.Icon.Question)
+            box.setText("L'analyse est terminée.")
+            box.setInformativeText(
+                "Voulez-vous créer un fichier ZIP contenant `Textes_tagged` et `underscore_fix` pour réutiliser ce corpus plus tard ?"
+            )
+            dont_show_checkbox = QCheckBox("Ne plus revoir ce message")
+            box.setCheckBox(dont_show_checkbox)
+            btn_create = box.addButton("Créer le ZIP", QMessageBox.ButtonRole.AcceptRole)
+            btn_later = box.addButton("Plus tard", QMessageBox.ButtonRole.RejectRole)
+            box.setDefaultButton(btn_create)
+            box.exec()
+
+            prompted_corpora = sorted(set(prompted_corpora + [corpus_name]))
+            settings["prepared_archive_prompted_corpora"] = prompted_corpora
+            if dont_show_checkbox.isChecked():
+                settings["offer_prepared_archive_prompt"] = False
+
+            save_app_settings(self._project_root, settings)
+
+            if box.clickedButton() is not btn_create:
+                return
+
+            default_path = default_archive_path(analysis_root, corpus_name)
+            output_path, _ = QFileDialog.getSaveFileName(
+                self,
+                "Enregistrer l'archive préparée",
+                str(default_path),
+                "Archives ZIP (*.zip)",
+            )
+            if not output_path:
+                return
+
+            result = create_prepared_archive(analysis_root, output_path)
+            self._logs_text.append(
+                f"[ARCHIVE] Archive préparée créée : {result['output_path']} ({result['file_count']} fichier(s))"
+            )
+            QMessageBox.information(
+                self,
+                "Archive créée",
+                "Archive préparée créée avec succès.\n\n"
+                f"Fichier : {result['output_path']}\n"
+                f"Contenu : {', '.join(result['included_roots'])}\n"
+                f"Fichiers ajoutés : {result['file_count']}",
+            )
+        except Exception as exc:
+            QMessageBox.warning(
+                self,
+                "Archive préparée",
+                f"Impossible de proposer ou créer l'archive préparée :\n{exc}",
+            )
 
     def _on_error(self, error_msg: str):
         """Une erreur s'est produite."""

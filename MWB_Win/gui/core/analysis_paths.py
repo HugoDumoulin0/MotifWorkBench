@@ -11,6 +11,17 @@ import hashlib
 import shutil
 
 
+def _format_minsup_token(value) -> str:
+    try:
+        numeric_value = float(value)
+    except (TypeError, ValueError):
+        return str(value)
+
+    if numeric_value.is_integer():
+        return str(int(numeric_value))
+    return f"{numeric_value:.3f}".rstrip("0").rstrip(".")
+
+
 def get_project_root() -> Path:
     """Retourne la racine du projet."""
     return Path(__file__).resolve().parents[2]
@@ -114,7 +125,7 @@ def generate_config_id(config: dict) -> str:
     # 2. Paramètres des motifs (critique)
     minsup = config.get("list_minsup_percent", [25])[0]
     if minsup != 25:
-        parts.append(f"minsup{minsup}")
+        parts.append(f"minsup{_format_minsup_token(minsup)}")
     
     itemset = config.get("list_itemset_min", [3])[0]
     if itemset != 3:

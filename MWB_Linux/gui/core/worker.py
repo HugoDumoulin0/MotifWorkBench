@@ -16,6 +16,7 @@ from gui.core.analysis_paths import (
     create_analysis_structure,
     find_existing_analysis,
     get_analysis_root,
+    get_analysis_group_root,
     resolve_analysis_subdir,
 )
 
@@ -54,6 +55,13 @@ class AnalysisWorker(QThread):
         )
         # Alias temporaire pour compatibilité locale
         self.corpus_name = self.analysis_group_name
+        group_root = get_analysis_group_root(self.analysis_group_name)
+        existing_group_configs = []
+        if group_root.exists():
+            existing_group_configs = [
+                path for path in group_root.iterdir()
+                if path.is_dir() and not path.name.startswith(".") and path.name != "_cache"
+            ]
         
         # Chercher si une analyse avec cette configuration existe déjà
         existing_config_id = find_existing_analysis(self.analysis_group_name, config)
@@ -62,6 +70,7 @@ class AnalysisWorker(QThread):
             # Réutiliser l'analyse existante
             self.config_id = existing_config_id
             self.reusing_existing = True
+            self.is_first_analysis_for_group = False
             # Reconstruire le dictionnaire paths à partir du dossier existant
             root = get_analysis_root(self.analysis_group_name, self.config_id)
             # Calculer path_metadata depuis config["path_corpus"]
@@ -92,6 +101,7 @@ class AnalysisWorker(QThread):
             # Créer une nouvelle analyse
             self.config_id = generate_config_id(config)
             self.reusing_existing = False
+            self.is_first_analysis_for_group = len(existing_group_configs) == 0
             # Créer la structure de dossiers pour cette analyse
             self.paths = create_analysis_structure(self.analysis_group_name, self.config_id, config)
 

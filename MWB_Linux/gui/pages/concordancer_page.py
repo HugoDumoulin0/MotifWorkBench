@@ -5,6 +5,7 @@ Page Concordancier : Analyse et visualisation des concordances.
 
 from pathlib import Path
 import json
+import csv
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
     QScrollArea, QWidget, QLineEdit, QTableWidget, QComboBox,
@@ -56,6 +57,22 @@ class ConcordancerPage(BasePage):
             )
         except Exception:
             self._closed_motif_display_mode = "matched_words"
+
+    def _save_preferences(self):
+        """Sauvegarde les préférences du concordancier dans app_settings.json."""
+        settings_file = self._project_root / "app_settings.json"
+        settings = {}
+
+        if settings_file.exists():
+            try:
+                with open(settings_file, "r", encoding="utf-8") as handle:
+                    settings = json.load(handle)
+            except Exception:
+                settings = {}
+
+        settings["closed_motif_concordance_display"] = self._closed_motif_display_mode
+        with open(settings_file, "w", encoding="utf-8") as handle:
+            json.dump(settings, handle, indent=2, ensure_ascii=False)
     
     def _load_registry_path(self):
         """Charge le chemin du registry CWB depuis la dernière analyse."""
@@ -79,7 +96,13 @@ class ConcordancerPage(BasePage):
         self._registry_path = ""
 
     def _load_closed_motifs(self):
-        """Charge les motifs clos de la dernière analyse pour usage dans le concordancier."""
+        """Charge les motifs à utiliser dans le concordancier.
+
+        Si le clustering interne est activé, on privilégie les motifs fusionnés
+        (_FUS.tsv) déjà utilisés par Shiny/AFC. Sinon, on recharge les motifs
+        standards depuis les TSV de résultats. En dernier recours seulement,
+        on retombe sur les motifs clos bruts.
+        """
         self._closed_motifs = []
         last_analysis_file = self._project_root / "logs" / "last_analysis.json"
         if not last_analysis_file.exists():
@@ -96,29 +119,138 @@ class ConcordancerPage(BasePage):
             return
 
         patterns_root = Path(patterns_results)
+        analysis_root = patterns_root.parent
+        internal_clustering = self._is_internal_clustering_enabled(analysis_root)
+
+        motifs_from_results = self._load_motifs_from_results_tables(patterns_root, internal_clustering)
+        if motifs_from_results:
+            self._closed_motifs = motifs_from_results
+            return
+
+        self._closed_motifs = self._load_closed_motifs_from_pk(patterns_root)
+
+    def _is_internal_clustering_enabled(self, analysis_root: Path) -> bool:
+        """Détermine si l'analyse courante a été lancée avec clustering interne."""
+        analysis_info_path = analysis_root / "analysis_info.json"
+        if not analysis_info_path.exists():
+            return False
+
+        try:
+            with open(analysis_info_path, "r", encoding="utf-8") as handle:
+                analysis_info = json.load(handle)
+            config = analysis_info.get("config", {})
+            return bool(config.get("internal_clustering", False))
+        except Exception:
+            return False
+
+    def _load_motifs_from_results_tables(self, patterns_root: Path, internal_clustering: bool):
+        """Charge les motifs depuis les TSV de résultats utilisés par Shiny/AFC."""
+        candidate_files = self._collect_motif_result_files(patterns_root, internal_clustering)
+        for candidate in candidate_files:
+            motifs = self._read_motif_rows_from_tsv(candidate)
+            if motifs:
+                return motifs
+        return []
+
+    def _collect_motif_result_files(self, patterns_root: Path, internal_clustering: bool) -> list[Path]:
+        """Liste les TSV de motifs pertinents en priorisant ceux de la métadonnée id."""
+        candidates: list[Path] = []
+        results_json_path = self._project_root / "logs" / "last_results_for_shiny.json"
+
+        if results_json_path.exists():
+            try:
+                with open(results_json_path, "r", encoding="utf-8") as handle:
+                    results_map = json.load(handle)
+                for key, value in results_map.items():
+                    if not isinstance(value, str) or "_motifs_" not in key:
+                        continue
+                    path = Path(value)
+                    if patterns_root not in path.parents:
+                        continue
+                    if internal_clustering and not path.name.endswith("_FUS.tsv"):
+                        continue
+                    if not internal_clustering and path.name.endswith("_FUS.tsv"):
+                        continue
+                    if path.exists():
+                        candidates.append(path)
+            except Exception:
+                candidates = []
+
+        if not candidates:
+            for path in patterns_root.glob("R/**/*.tsv"):
+                if "motifsTexte_" not in path.name:
+                    continue
+                if internal_clustering and not path.name.endswith("_FUS.tsv"):
+                    continue
+                if not internal_clustering and path.name.endswith("_FUS.tsv"):
+                    continue
+                candidates.append(path)
+
+        def _sort_key(path: Path):
+            is_id = "/R/id/" in path.as_posix()
+            try:
+                mtime = path.stat().st_mtime
+            except OSError:
+                mtime = 0
+            return (0 if is_id else 1, -mtime, path.as_posix())
+
+        return sorted(candidates, key=_sort_key)
+
+    def _read_motif_rows_from_tsv(self, tsv_path: Path):
+        """Lit la première colonne d'un TSV de motifs et la convertit en requêtes CQP."""
+        motifs = []
+        seen_patterns = set()
+
+        try:
+            with open(tsv_path, "r", encoding="utf-8", newline="") as handle:
+                reader = csv.reader(handle, delimiter="\t")
+                next(reader, None)  # header
+                for row in reader:
+                    if not row:
+                        continue
+                    motif_str = (row[0] or "").strip()
+                    if not motif_str:
+                        continue
+                    cqp_pattern = str(tools.read_req_CQP(motif_str))
+                    if cqp_pattern in seen_patterns:
+                        continue
+                    seen_patterns.add(cqp_pattern)
+                    motifs.append({
+                        "label": cqp_pattern,
+                        "pattern": cqp_pattern,
+                    })
+        except Exception:
+            return []
+
+        return motifs
+
+    def _load_closed_motifs_from_pk(self, patterns_root: Path):
+        """Fallback historique: recharge les motifs clos bruts."""
         closed_dir = patterns_root / "Closed"
         analysis_root = patterns_root.parent
         lexicon_path = analysis_root / "Lexiques" / "dico_str_to_int_all_items.pk"
 
         if not closed_dir.exists() or not lexicon_path.exists():
-            return
+            return []
 
         closed_files = sorted(closed_dir.glob("*_sorted_closed.pk"), key=lambda p: p.stat().st_mtime, reverse=True)
         if not closed_files:
-            return
+            return []
 
         try:
             lexic_int_str = formate_patterns.make_dict_int_to_str(str(lexicon_path))
             motifs = tools.from_pk_corpus_to_list(str(closed_files[0]))
+            loaded_motifs = []
             for motif in motifs:
                 motif_str = formate_patterns.from_int_to_str(motif, lexic_int_str)
                 cqp_pattern = str(tools.read_req_CQP(motif_str))
-                self._closed_motifs.append({
+                loaded_motifs.append({
                     "label": cqp_pattern,
                     "pattern": cqp_pattern,
                 })
+            return loaded_motifs
         except Exception:
-            self._closed_motifs = []
+            return []
 
     def _find_latest_analysis_registry(self):
         """Retourne le registry de l'analyse la plus récente disposant d'un corpus CWB."""
@@ -144,6 +276,10 @@ class ConcordancerPage(BasePage):
     def showEvent(self, event):
         """Recharge le registry_path à chaque affichage de la page."""
         super().showEvent(event)
+        self.refresh_analysis_context()
+
+    def refresh_analysis_context(self, _payload: dict | None = None):
+        """Recharge les informations liées à la dernière analyse terminée."""
         self._load_registry_path()
         self._load_preferences()
         self._load_closed_motifs()
@@ -180,6 +316,16 @@ class ConcordancerPage(BasePage):
         self._closed_motif_display_label.setStyleSheet(
             f"color: {TEXT_SECONDARY}; background-color: transparent; font-size: 9pt; font-style: italic;"
         )
+
+    def _on_closed_motif_display_mode_changed(self):
+        """Met à jour et sauvegarde le mode d'affichage des motifs dans le concordancier."""
+        mode = self._closed_motif_display_combo.currentData()
+        self._closed_motif_display_mode = mode or "matched_words"
+        self._refresh_closed_motif_display_label()
+        try:
+            self._save_preferences()
+        except Exception:
+            pass
     
     # --- Construction UI ---
     
@@ -462,12 +608,48 @@ class ConcordancerPage(BasePage):
         row_motif.addWidget(self._search_motif_btn)
         search_layout.addWidget(self._closed_motif_row)
         self._refresh_closed_motifs_combo()
-        self._update_search_mode_ui()
+
+        display_row = QHBoxLayout()
+        display_row.setSpacing(8)
+
+        self._closed_motif_display_mode_label = QLabel("Affichage :")
+        self._closed_motif_display_mode_label.setStyleSheet(
+            f"color: {TEXT_PRIMARY}; background-color: transparent;"
+        )
+        self._closed_motif_display_mode_label.setFont(QFont("Segoe UI", 10))
+        display_row.addWidget(self._closed_motif_display_mode_label)
+
+        self._closed_motif_display_combo = QComboBox()
+        self._closed_motif_display_combo.addItem("Afficher les mots trouvés", "matched_words")
+        self._closed_motif_display_combo.addItem("Afficher le motif", "motif")
+        current_index = self._closed_motif_display_combo.findData(self._closed_motif_display_mode)
+        if current_index >= 0:
+            self._closed_motif_display_combo.setCurrentIndex(current_index)
+        self._closed_motif_display_combo.currentIndexChanged.connect(
+            self._on_closed_motif_display_mode_changed
+        )
+        self._closed_motif_display_combo.setStyleSheet("""
+            QComboBox {
+                background-color: #ffffff;
+                color: #1f2937;
+                border: 1px solid #d1d5db;
+                border-radius: 6px;
+                padding: 6px 10px;
+                min-width: 220px;
+            }
+            QComboBox::drop-down {
+                border: none;
+            }
+        """)
+        display_row.addWidget(self._closed_motif_display_combo)
+        display_row.addStretch()
+        search_layout.addLayout(display_row)
 
         self._closed_motif_display_label = QLabel()
         self._closed_motif_display_label.setWordWrap(True)
         search_layout.addWidget(self._closed_motif_display_label)
         self._refresh_closed_motif_display_label()
+        self._update_search_mode_ui()
         
         # ÉTAPE 4 : Nouvelle interface de filtrage avec colonnes/valeurs
         row3 = QHBoxLayout()
@@ -719,7 +901,11 @@ class ConcordancerPage(BasePage):
         cqp_mode = self._radio_cqp_mode.isChecked()
         self._free_search_row.setVisible(free_mode or cqp_mode)
         self._free_search_type_row.setVisible(free_mode)
-        self._closed_motif_row.setVisible(self._radio_closed_mode.isChecked())
+        closed_mode = self._radio_closed_mode.isChecked()
+        self._closed_motif_row.setVisible(closed_mode)
+        self._closed_motif_display_mode_label.setVisible(closed_mode)
+        self._closed_motif_display_combo.setVisible(closed_mode)
+        self._closed_motif_display_label.setVisible(closed_mode)
         self._cqp_hint_label.setVisible(cqp_mode)
 
         if cqp_mode:

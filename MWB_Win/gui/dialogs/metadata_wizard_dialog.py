@@ -6,9 +6,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from PyQt6.QtCore import Qt
-from PyQt6.QtGui import QFont
+from PyQt6.QtCore import QEvent, Qt
+from PyQt6.QtGui import QDoubleValidator, QFont, QIntValidator
 from PyQt6.QtWidgets import (
+    QCheckBox,
+    QComboBox,
     QDialog,
     QFileDialog,
     QFormLayout,
@@ -18,9 +20,13 @@ from PyQt6.QtWidgets import (
     QInputDialog,
     QLabel,
     QLineEdit,
+    QMenu,
     QMessageBox,
     QPushButton,
+    QToolButton,
+    QSpinBox,
     QStackedWidget,
+    QStyledItemDelegate,
     QTableWidget,
     QTableWidgetItem,
     QVBoxLayout,
@@ -38,20 +44,79 @@ from gui.core.metadata_tools import (
 )
 
 
+class MetadataColumnDelegate(QStyledItemDelegate):
+    def __init__(self, dialog: "MetadataWizardDialog", header: str, parent=None):
+        super().__init__(parent)
+        self._dialog = dialog
+        self._header = header
+
+    def createEditor(self, parent, option, index):
+        spec = self._dialog._column_specs.get(self._header, {"type": "text"})
+        col_type = spec.get("type", "text")
+
+        if col_type == "closed_list":
+            editor = QComboBox(parent)
+            editor.setEditable(False)
+            editor.addItem("")
+            for choice in spec.get("choices", []):
+                editor.addItem(choice)
+            return editor
+
+        if col_type == "bool":
+            editor = QComboBox(parent)
+            editor.setEditable(False)
+            editor.addItems(["", "true", "false"])
+            return editor
+
+        editor = QLineEdit(parent)
+        if col_type == "int":
+            editor.setValidator(QIntValidator(editor))
+        elif col_type == "float":
+            validator = QDoubleValidator(editor)
+            validator.setNotation(QDoubleValidator.Notation.StandardNotation)
+            editor.setValidator(validator)
+        return editor
+
+    def setEditorData(self, editor, index):
+        value = index.model().data(index, Qt.ItemDataRole.EditRole) or ""
+        if isinstance(editor, QComboBox):
+            pos = editor.findText(str(value))
+            editor.setCurrentIndex(pos if pos >= 0 else 0)
+        elif isinstance(editor, QLineEdit):
+            editor.setText(str(value))
+
+    def setModelData(self, editor, model, index):
+        if isinstance(editor, QComboBox):
+            value = editor.currentText()
+        else:
+            value = editor.text()
+        normalized = self._dialog._normalize_value_for_column(self._header, value)
+        model.setData(index, normalized)
+
+
 class MetadataWizardDialog(QDialog):
     def __init__(self, initial_config: dict, parent=None):
         super().__init__(parent)
         self.setWindowTitle("Assistant metadata")
-        self.setMinimumSize(980, 720)
+        self.setMinimumSize(1080, 760)
 
         self._initial_config = dict(initial_config)
         self._current_step = 0
         self._headers: list[str] = list(BASE_METADATA_COLUMNS)
         self._rows: list[dict[str, object]] = []
         self._corpus_info: dict[str, object] = {}
+        self._column_specs: dict[str, dict[str, object]] = self._default_column_specs()
 
         self._build_ui()
         self._load_initial_state()
+
+    def _default_column_specs(self) -> dict[str, dict[str, object]]:
+        return {
+            "id": {"type": "text"},
+            "word_count": {"type": "int"},
+            "sentence_count": {"type": "int"},
+            "genre": {"type": "text"},
+        }
 
     def _build_ui(self):
         self.setStyleSheet(
@@ -74,7 +139,7 @@ class MetadataWizardDialog(QDialog):
                 left: 12px;
                 padding: 0 4px;
             }
-            QLineEdit {
+            QLineEdit, QComboBox, QSpinBox {
                 background: #ffffff;
                 color: #111827;
                 border: 1px solid #c7ccda;
@@ -194,7 +259,8 @@ class MetadataWizardDialog(QDialog):
 
         info = QLabel(
             "Les colonnes `id`, `word_count` et `sentence_count` sont préremplies automatiquement. "
-            "Les valeurs déjà présentes dans le metadata existant sont conservées quand elles existent."
+            "Vous pouvez définir le type des nouvelles colonnes, remplir une sélection, propager une valeur "
+            "vers le bas ou limiter une colonne à une liste fermée."
         )
         info.setWordWrap(True)
         info.setProperty("muted", True)
@@ -204,8 +270,65 @@ class MetadataWizardDialog(QDialog):
         self._btn_add_column = QPushButton("Ajouter une colonne")
         self._btn_add_column.clicked.connect(self._add_custom_column)
         actions.addWidget(self._btn_add_column)
+
+        self._btn_edit_column = QPushButton("Configurer la colonne")
+        self._btn_edit_column.clicked.connect(self._configure_selected_column)
+        actions.addWidget(self._btn_edit_column)
+
+        self._btn_table_actions = QToolButton()
+        self._btn_table_actions.setText("Actions")
+        self._btn_table_actions.setPopupMode(QToolButton.ToolButtonPopupMode.InstantPopup)
+        self._btn_table_actions.setStyleSheet(
+            """
+            QToolButton {
+                background-color: #3a3a5a;
+                color: #ffffff;
+                border: none;
+                border-radius: 6px;
+                padding: 6px 14px;
+            }
+            QToolButton:hover {
+                background-color: #4a4a6a;
+            }
+            """
+        )
+        actions.addWidget(self._btn_table_actions)
+
         actions.addStretch()
         grp_layout.addLayout(actions)
+
+        batch_group = QGroupBox("Remplissage rapide")
+        batch_layout = QVBoxLayout(batch_group)
+        batch_layout.setSpacing(8)
+
+        top_row = QHBoxLayout()
+        self._fill_column_combo = QComboBox()
+        self._fill_column_combo.setMinimumWidth(180)
+        top_row.addWidget(self._fill_column_combo)
+
+        self._fill_value_edit = QLineEdit()
+        self._fill_value_edit.setPlaceholderText("Valeur à appliquer")
+        top_row.addWidget(self._fill_value_edit, 1)
+
+        self._fill_empty_only = QCheckBox("Cellules vides uniquement")
+        top_row.addWidget(self._fill_empty_only)
+        batch_layout.addLayout(top_row)
+
+        second_row = QHBoxLayout()
+        self._btn_fill_selection = QPushButton("Remplir la sélection")
+        self._btn_fill_selection.clicked.connect(self._fill_selection_for_column)
+        second_row.addWidget(self._btn_fill_selection)
+
+        self._btn_fill_all_rows = QPushButton("Remplir toutes les lignes")
+        self._btn_fill_all_rows.clicked.connect(self._fill_all_rows_for_column)
+        second_row.addWidget(self._btn_fill_all_rows)
+
+        self._btn_copy_above = QPushButton("Copier la ligne du dessus")
+        self._btn_copy_above.clicked.connect(self._copy_value_from_above)
+        second_row.addWidget(self._btn_copy_above)
+
+        second_row.addStretch()
+        batch_layout.addLayout(second_row)
 
         genre_fill = QHBoxLayout()
         self._genre_filter_edit = QLineEdit()
@@ -216,19 +339,34 @@ class MetadataWizardDialog(QDialog):
         self._genre_value_edit.setPlaceholderText("Valeur à appliquer à genre")
         genre_fill.addWidget(self._genre_value_edit, 1)
 
-        self._btn_apply_genre = QPushButton("Appliquer")
+        self._btn_apply_genre = QPushButton("Appliquer à genre")
         self._btn_apply_genre.clicked.connect(self._apply_genre_batch)
         genre_fill.addWidget(self._btn_apply_genre)
-        grp_layout.addLayout(genre_fill)
+        batch_layout.addLayout(genre_fill)
+
+        grp_layout.addWidget(batch_group)
 
         self._table = QTableWidget()
         self._table.horizontalHeader().setStretchLastSection(True)
         self._table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.ResizeToContents)
+        self._table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectItems)
+        self._table.setSelectionMode(QTableWidget.SelectionMode.ExtendedSelection)
+        self._table.setAlternatingRowColors(True)
+        self._table.viewport().setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
+        self._table.viewport().customContextMenuRequested.connect(self._open_table_context_menu)
+        self._table.viewport().installEventFilter(self)
+        self._table.horizontalHeader().sectionDoubleClicked.connect(self._on_header_double_clicked)
         grp_layout.addWidget(self._table, 1)
 
         self._step2_summary = QLabel("Aucune métadonnée chargée.")
         self._step2_summary.setProperty("muted", True)
         grp_layout.addWidget(self._step2_summary)
+
+        shortcuts_hint = QLabel(
+            "Astuce : sélectionnez des cellules puis utilisez le bouton Actions ou les boutons de remplissage."
+        )
+        shortcuts_hint.setProperty("muted", True)
+        grp_layout.addWidget(shortcuts_hint)
 
         layout.addWidget(grp, 1)
         return page
@@ -304,9 +442,18 @@ class MetadataWizardDialog(QDialog):
             headers, imported_rows = [], []
 
         self._headers, self._rows = merge_corpus_and_metadata(corpus_rows, headers, imported_rows)
+        self._merge_column_specs_from_rows()
         self._refresh_table()
         self._refresh_review()
         self._update_navigation()
+
+    def _merge_column_specs_from_rows(self):
+        for header in self._headers:
+            if header not in self._column_specs:
+                inferred = "text"
+                if header in {"word_count", "sentence_count"}:
+                    inferred = "int"
+                self._column_specs[header] = {"type": inferred}
 
     def _refresh_step1_summary(self):
         if not self._corpus_info:
@@ -324,6 +471,17 @@ class MetadataWizardDialog(QDialog):
             f"Dossier prêt.\n{txt_count} fichier(s) .txt détecté(s).\n{metadata_status}."
         )
 
+    def _refresh_fill_column_combo(self):
+        current = self._fill_column_combo.currentText() if hasattr(self, "_fill_column_combo") else ""
+        self._fill_column_combo.blockSignals(True)
+        self._fill_column_combo.clear()
+        self._fill_column_combo.addItems(self._headers)
+        if current:
+            idx = self._fill_column_combo.findText(current)
+            if idx >= 0:
+                self._fill_column_combo.setCurrentIndex(idx)
+        self._fill_column_combo.blockSignals(False)
+
     def _refresh_table(self):
         self._table.clear()
         self._table.setColumnCount(len(self._headers))
@@ -337,10 +495,18 @@ class MetadataWizardDialog(QDialog):
                     item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEditable)
                 self._table.setItem(row_index, col_index, item)
 
+        self._install_column_delegates()
+        self._refresh_actions_menu()
+        self._refresh_fill_column_combo()
+
         self._step2_summary.setText(
             f"{len(self._rows)} ligne(s) et {len(self._headers)} colonne(s). "
-            "Vous pouvez modifier les colonnes utiles comme `genre` et ajouter des colonnes si besoin."
+            "Vous pouvez définir des types, limiter des valeurs et accélérer le remplissage."
         )
+
+    def _install_column_delegates(self):
+        for col_index, header in enumerate(self._headers):
+            self._table.setItemDelegateForColumn(col_index, MetadataColumnDelegate(self, header, self._table))
 
     def _sync_rows_from_table(self):
         rows: list[dict[str, object]] = []
@@ -348,9 +514,78 @@ class MetadataWizardDialog(QDialog):
             row: dict[str, object] = {}
             for col_index, header in enumerate(self._headers):
                 item = self._table.item(row_index, col_index)
-                row[header] = item.text().strip() if item else ""
+                raw_value = item.text().strip() if item else ""
+                row[header] = self._normalize_value_for_column(header, raw_value)
             rows.append(row)
         self._rows = rows
+
+    def _normalize_value_for_column(self, header: str, value: object) -> str:
+        spec = self._column_specs.get(header, {"type": "text"})
+        col_type = spec.get("type", "text")
+        text = str(value).strip() if value is not None else ""
+
+        if text == "":
+            return ""
+
+        if col_type == "bool":
+            lowered = text.lower()
+            return "true" if lowered in {"1", "true", "yes", "oui"} else "false"
+
+        if col_type == "int":
+            try:
+                return str(int(float(text)))
+            except Exception:
+                return ""
+
+        if col_type == "float":
+            try:
+                return str(float(text)).rstrip("0").rstrip(".")
+            except Exception:
+                return ""
+
+        if col_type == "closed_list":
+            choices = [str(c) for c in spec.get("choices", [])]
+            return text if text in choices else ""
+
+        return text
+
+    def _ask_column_type(self, current_type: str = "text") -> tuple[str | None, list[str]]:
+        options = [
+            ("text", "Texte libre"),
+            ("closed_list", "Liste fermée"),
+            ("bool", "Booléen"),
+            ("int", "Numérique entier"),
+            ("float", "Numérique décimal"),
+        ]
+        labels = [label for _, label in options]
+        current_index = next((i for i, (value, _) in enumerate(options) if value == current_type), 0)
+        selected_label, ok = QInputDialog.getItem(
+            self,
+            "Type de colonne",
+            "Choisissez le type de la colonne :",
+            labels,
+            current_index,
+            False,
+        )
+        if not ok:
+            return None, []
+
+        selected_type = next(value for value, label in options if label == selected_label)
+        choices: list[str] = []
+        if selected_type == "closed_list":
+            raw_choices, ok = QInputDialog.getText(
+                self,
+                "Liste fermée",
+                "Valeurs autorisées (séparées par des virgules) :",
+            )
+            if not ok:
+                return None, []
+            choices = [choice.strip() for choice in raw_choices.split(",") if choice.strip()]
+            if not choices:
+                QMessageBox.warning(self, "Liste vide", "Renseignez au moins une valeur autorisée.")
+                return None, []
+
+        return selected_type, choices
 
     def _add_custom_column(self):
         name, ok = QInputDialog.getText(self, "Nouvelle colonne", "Nom de la colonne :")
@@ -362,12 +597,179 @@ class MetadataWizardDialog(QDialog):
             QMessageBox.warning(self, "Colonne existante", "Cette colonne existe déjà.")
             return
 
+        col_type, choices = self._ask_column_type("text")
+        if not col_type:
+            return
+
         self._sync_rows_from_table()
         self._headers.append(column_name)
+        self._column_specs[column_name] = {"type": col_type}
+        if choices:
+            self._column_specs[column_name]["choices"] = choices
         for row in self._rows:
             row[column_name] = ""
         self._refresh_table()
         self._refresh_review()
+
+    def _selected_header(self) -> str | None:
+        column = self._table.currentColumn()
+        if column < 0 or column >= len(self._headers):
+            return None
+        return self._headers[column]
+
+    def _on_header_double_clicked(self, section: int):
+        if 0 <= section < len(self._headers):
+            self._table.setCurrentCell(0 if self._table.rowCount() else -1, section)
+            self._configure_selected_column()
+
+    def _configure_selected_column(self):
+        header = self._selected_header() or self._fill_column_combo.currentText()
+        if not header:
+            QMessageBox.information(self, "Aucune colonne", "Sélectionnez d'abord une colonne à configurer.")
+            return
+
+        if header in {"id", "word_count", "sentence_count"}:
+            QMessageBox.information(self, "Colonne verrouillée", "Cette colonne système ne peut pas être reconfigurée.")
+            return
+
+        current_spec = self._column_specs.get(header, {"type": "text"})
+        col_type, choices = self._ask_column_type(str(current_spec.get("type", "text")))
+        if not col_type:
+            return
+
+        self._column_specs[header] = {"type": col_type}
+        if choices:
+            self._column_specs[header]["choices"] = choices
+
+        self._sync_rows_from_table()
+        for row in self._rows:
+            row[header] = self._normalize_value_for_column(header, row.get(header, ""))
+        self._refresh_table()
+        self._refresh_review()
+
+    def _selected_target_rows(self) -> list[int]:
+        rows = sorted({item.row() for item in self._table.selectedItems()})
+        if rows:
+            return rows
+        current_row = self._table.currentRow()
+        return [current_row] if current_row >= 0 else []
+
+    def _fill_rows_for_column(self, row_indexes: list[int], header: str, value: str):
+        if not row_indexes:
+            QMessageBox.information(self, "Aucune sélection", "Sélectionnez au moins une cellule ou une ligne.")
+            return
+
+        normalized = self._normalize_value_for_column(header, value)
+        spec = self._column_specs.get(header, {"type": "text"})
+        if value.strip() and normalized == "" and spec.get("type") in {"closed_list", "int", "float"}:
+            QMessageBox.warning(self, "Valeur invalide", "La valeur n'est pas compatible avec le type de colonne.")
+            return
+
+        changed = 0
+        col_index = self._headers.index(header)
+        for row_index in row_indexes:
+            item = self._table.item(row_index, col_index)
+            if item is None:
+                item = QTableWidgetItem("")
+                self._table.setItem(row_index, col_index, item)
+            if self._fill_empty_only.isChecked() and item.text().strip():
+                continue
+            item.setText(normalized)
+            changed += 1
+
+        self._sync_rows_from_table()
+        self._refresh_review()
+        QMessageBox.information(self, "Remplissage terminé", f"{changed} cellule(s) mise(s) à jour.")
+
+    def _fill_selection_for_column(self):
+        header = self._fill_column_combo.currentText().strip()
+        if not header:
+            return
+        self._fill_rows_for_column(self._selected_target_rows(), header, self._fill_value_edit.text())
+
+    def _fill_all_rows_for_column(self):
+        header = self._fill_column_combo.currentText().strip()
+        if not header:
+            return
+        self._fill_rows_for_column(list(range(self._table.rowCount())), header, self._fill_value_edit.text())
+
+    def _copy_value_from_above(self):
+        selected_items = self._table.selectedItems()
+        if not selected_items:
+            current_row = self._table.currentRow()
+            current_col = self._table.currentColumn()
+            if current_row <= 0 or current_col < 0:
+                QMessageBox.information(self, "Impossible", "Placez-vous sur une cellule située sous une autre valeur.")
+                return
+            selected_items = [self._table.item(current_row, current_col)]
+
+        changed = 0
+        for item in selected_items:
+            if item is None:
+                continue
+            row = item.row()
+            col = item.column()
+            if row <= 0:
+                continue
+            source = self._table.item(row - 1, col)
+            if source is None:
+                continue
+            if self._fill_empty_only.isChecked() and item.text().strip():
+                continue
+            item.setText(source.text())
+            changed += 1
+
+        self._sync_rows_from_table()
+        self._refresh_review()
+        if changed:
+            QMessageBox.information(self, "Copie terminée", f"{changed} cellule(s) mise(s) à jour.")
+
+    def _open_table_context_menu(self, pos):
+        item = self._table.itemAt(pos)
+        if item is not None:
+            self._table.setCurrentItem(item)
+
+        menu = self._build_table_actions_menu()
+        chosen = menu.exec(self._table.viewport().mapToGlobal(pos))
+
+        self._handle_table_menu_action(chosen)
+
+    def _build_table_actions_menu(self) -> QMenu:
+        menu = QMenu(self)
+        action_copy_above = menu.addAction("Copier la valeur de la ligne du dessus")
+        action_copy_above.setData("copy_above")
+        action_fill_selection = menu.addAction("Remplir la sélection avec la valeur saisie")
+        action_fill_selection.setData("fill_selection")
+        action_fill_all = menu.addAction("Remplir toutes les lignes avec la valeur saisie")
+        action_fill_all.setData("fill_all")
+        menu.addSeparator()
+        action_configure = menu.addAction("Configurer la colonne sélectionnée")
+        action_configure.setData("configure_column")
+        return menu
+
+    def _refresh_actions_menu(self):
+        if hasattr(self, "_btn_table_actions"):
+            self._btn_table_actions.setMenu(self._build_table_actions_menu())
+
+    def _handle_table_menu_action(self, action):
+        if action is None:
+            return
+        action_id = action.data()
+        if action_id == "copy_above":
+            self._copy_value_from_above()
+        elif action_id == "fill_selection":
+            self._fill_selection_for_column()
+        elif action_id == "fill_all":
+            self._fill_all_rows_for_column()
+        elif action_id == "configure_column":
+            self._configure_selected_column()
+
+    def eventFilter(self, obj, event):
+        if obj is self._table.viewport() and event.type() == QEvent.Type.ContextMenu:
+            pos = event.pos()
+            self._open_table_context_menu(pos)
+            return True
+        return super().eventFilter(obj, event)
 
     def _apply_genre_batch(self):
         self._sync_rows_from_table()
@@ -376,13 +778,15 @@ class MetadataWizardDialog(QDialog):
         filter_value = self._genre_filter_edit.text().strip().lower()
 
         if not genre_value:
-            QMessageBox.warning(self, "Valeur manquante", "Renseigne une valeur à appliquer à la colonne genre.")
+            QMessageBox.warning(self, "Valeur manquante", "Renseignez une valeur à appliquer à la colonne genre.")
             return
 
         changed = 0
         for row in self._rows:
             row_id = str(row.get("id", "")).lower()
             if not filter_value or filter_value in row_id:
+                if self._fill_empty_only.isChecked() and str(row.get("genre", "")).strip():
+                    continue
                 row["genre"] = genre_value
                 changed += 1
 
@@ -413,10 +817,18 @@ class MetadataWizardDialog(QDialog):
         metadata_path = Path(corpus_dir) / "metadata.tsv" if corpus_dir else Path("metadata.tsv")
         issues = self._collect_validation_issues() if corpus_dir and self._rows else []
 
+        typed_columns = [
+            f"{header} ({self._column_specs.get(header, {}).get('type', 'text')})"
+            for header in self._headers
+            if self._column_specs.get(header, {}).get("type", "text") != "text"
+        ]
+        typed_columns_text = ", ".join(typed_columns) if typed_columns else "aucun type spécial défini"
+
         self._review_summary.setText(
             f"Dossier corpus : {corpus_dir or 'non défini'}\n"
             f"Fichier metadata : {metadata_path}\n"
-            f"{len(self._rows)} ligne(s), {len(self._headers)} colonne(s)."
+            f"{len(self._rows)} ligne(s), {len(self._headers)} colonne(s).\n"
+            f"Colonnes typées : {typed_columns_text}."
         )
 
         if issues:
@@ -451,7 +863,7 @@ class MetadataWizardDialog(QDialog):
     def _go_next(self):
         if not self._can_go_next_from_step(self._current_step):
             if self._current_step == 0:
-                QMessageBox.warning(self, "Corpus incomplet", "Choisis un dossier contenant au moins un fichier .txt.")
+                QMessageBox.warning(self, "Corpus incomplet", "Choisissez un dossier contenant au moins un fichier .txt.")
             return
 
         if self._current_step == 0:
@@ -480,7 +892,7 @@ class MetadataWizardDialog(QDialog):
     def _save_and_accept(self):
         corpus_dir = self._corpus_dir_edit.text().strip()
         if not corpus_dir:
-            QMessageBox.warning(self, "Corpus manquant", "Choisis d'abord un dossier de corpus.")
+            QMessageBox.warning(self, "Corpus manquant", "Choisissez d'abord un dossier de corpus.")
             return
 
         self._sync_rows_from_table()
@@ -502,4 +914,5 @@ class MetadataWizardDialog(QDialog):
             "path_corpus": corpus_dir,
             "path_metadata": metadata_path,
             "list_metadata": list(self._headers),
+            "metadata_column_specs": dict(self._column_specs),
         }

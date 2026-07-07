@@ -7,7 +7,7 @@ Paramètres avancé: tous les paramètres
 
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout,
-    QFormLayout, QLabel, QLineEdit, QCheckBox, QSpinBox,
+    QFormLayout, QLabel, QLineEdit, QCheckBox, QSpinBox, QDoubleSpinBox,
     QPushButton, QComboBox, QGroupBox,
     QScrollArea, QMessageBox, QInputDialog, QFrame, QDialog, QStyle, QFileDialog
 )
@@ -356,8 +356,10 @@ class ConfigPage(QWidget):
         grp_motifs.setStyleSheet(self._group_style())
         form_motifs = QFormLayout(grp_motifs)
 
-        self._w_minsup = QSpinBox()
-        self._w_minsup.setRange(1, 100)
+        self._w_minsup = QDoubleSpinBox()
+        self._w_minsup.setRange(0.1, 100.0)
+        self._w_minsup.setDecimals(1)
+        self._w_minsup.setSingleStep(0.1)
         self._w_minsup.setSuffix(" %")
         self._w_minsup.setToolTip("Fréquence minimale (en % des séquences) pour qu'un motif soit retenu.")
         form_motifs.addRow(_tooltip_label("Support minimal :", "% de textes dans lesquels un motif doit apparaître."), self._w_minsup)
@@ -435,7 +437,7 @@ class ConfigPage(QWidget):
         form_early.addRow(_tooltip_label("POS pour early sel. :", "Restreindre l'early selection à ces POS."), self._w_early_pos4lemma)
 
         self._w_user_input_list = QCheckBox("Utiliser une liste de lemmes manuelle")
-        self._w_user_input_list.setToolTip("Utiliser une liste de lemmes fournie manuellement au lieu de l'early selection automatique.")
+        self._w_user_input_list.setToolTip("Utiliser une liste de lemmes fournie manuellement, avec ou sans early selection.")
         form_early.addRow("", self._w_user_input_list)
 
         self._w_liste_earlyselection = QLineEdit()
@@ -444,7 +446,9 @@ class ConfigPage(QWidget):
         form_early.addRow(_tooltip_label("Lemmes :", "Liste manuelle de lemmes à cibler."), self._w_liste_earlyselection)
 
         self._w_earlySelection.stateChanged.connect(self._update_early_selection_ui)
+        self._w_user_input_list.stateChanged.connect(self._update_manual_lemma_ui)
         self._update_early_selection_ui()
+        self._update_manual_lemma_ui()
 
         layout.addWidget(grp_early)
 
@@ -552,7 +556,7 @@ class ConfigPage(QWidget):
             use_gpu = cfg.get("use_gpu", True)  # Par défaut GPU si disponible
             self._w_gpu_choice.setCurrentText("GPU" if use_gpu else "CPU")
         # Si pas de GPU disponible, pas besoin de charger la valeur
-        self._w_minsup.setValue(cfg.get("list_minsup_percent", [25])[0])
+        self._w_minsup.setValue(float(cfg.get("list_minsup_percent", [25])[0]))
         self._w_itemset_min.setValue(cfg.get("list_itemset_min", [3])[0])
         self._w_Lemma.setChecked(cfg.get("Lemma", True))
         self._w_Pos.setChecked(cfg.get("Pos", True))
@@ -630,7 +634,7 @@ class ConfigPage(QWidget):
             "language": self._w_language.currentText().strip().lower(),
             "annotator": self._w_annotator.currentData(),  # stanza ou spacy
             "use_gpu": self._w_gpu_choice.currentText() == "GPU" if (self._gpu_available and self._w_gpu_choice) else False,
-            "list_minsup_percent": [self._w_minsup.value()],
+            "list_minsup_percent": [round(float(self._w_minsup.value()), 1)],
             "list_itemset_min": [self._w_itemset_min.value()],
             "Lemma": self._w_Lemma.isChecked(),
             "Pos": self._w_Pos.isChecked(),
@@ -826,10 +830,14 @@ class ConfigPage(QWidget):
             self._w_partition_cible,
             self._w_seuil_banalite,
             self._w_early_pos4lemma,
-            self._w_user_input_list,
-            self._w_liste_earlyselection,
         ):
             widget.setEnabled(enabled)
+        self._update_manual_lemma_ui()
+
+    def _update_manual_lemma_ui(self):
+        """La liste manuelle est pilotée par sa propre case, indépendamment de l'early selection."""
+        self._w_user_input_list.setEnabled(True)
+        self._w_liste_earlyselection.setEnabled(self._w_user_input_list.isChecked())
 
     def get_config(self) -> dict:
         """Retourne la configuration actuellement appliquée."""
@@ -1013,14 +1021,14 @@ class ConfigPage(QWidget):
                 left: 12px;
                 padding: 0 4px;
             }
-            QLineEdit, QSpinBox, QComboBox {
+            QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox {
                 background: #ffffff;
                 color: #111827;
                 border: 1px solid #c7ccda;
                 border-radius: 4px;
                 padding: 4px 8px;
             }
-            QLineEdit:disabled, QSpinBox:disabled, QComboBox:disabled {
+            QLineEdit:disabled, QSpinBox:disabled, QDoubleSpinBox:disabled, QComboBox:disabled {
                 background: #e5e7eb;
                 color: #9ca3af;
                 border: 1px solid #d1d5db;

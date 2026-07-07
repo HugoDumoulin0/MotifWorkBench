@@ -7,8 +7,11 @@ Usage : python run_gui.py
 import os
 import sys
 
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+os.chdir(APP_ROOT)
+
 # Assure que la racine est dans le path
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, APP_ROOT)
 
 from gui.app import main
 

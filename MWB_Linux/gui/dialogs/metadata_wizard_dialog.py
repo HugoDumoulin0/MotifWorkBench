@@ -9,6 +9,8 @@ from pathlib import Path
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont
 from PyQt6.QtWidgets import (
+    QAbstractItemView,
+    QComboBox,
     QDialog,
     QFileDialog,
     QFormLayout,
@@ -21,6 +23,7 @@ from PyQt6.QtWidgets import (
     QMessageBox,
     QPushButton,
     QStackedWidget,
+    QTableWidgetSelectionRange,
     QTableWidget,
     QTableWidgetItem,
     QVBoxLayout,
@@ -49,6 +52,7 @@ class MetadataWizardDialog(QDialog):
         self._headers: list[str] = list(BASE_METADATA_COLUMNS)
         self._rows: list[dict[str, object]] = []
         self._corpus_info: dict[str, object] = {}
+        self._column_specs: dict[str, dict[str, object]] = {}
 
         self._build_ui()
         self._load_initial_state()
@@ -204,26 +208,53 @@ class MetadataWizardDialog(QDialog):
         self._btn_add_column = QPushButton("Ajouter une colonne")
         self._btn_add_column.clicked.connect(self._add_custom_column)
         actions.addWidget(self._btn_add_column)
+
+        self._btn_configure_column = QPushButton("Configurer la colonne")
+        self._btn_configure_column.clicked.connect(self._configure_selected_column)
+        actions.addWidget(self._btn_configure_column)
         actions.addStretch()
         grp_layout.addLayout(actions)
 
-        genre_fill = QHBoxLayout()
-        self._genre_filter_edit = QLineEdit()
-        self._genre_filter_edit.setPlaceholderText("Filtre d'ID (vide = tous)")
-        genre_fill.addWidget(self._genre_filter_edit, 2)
+        batch_fill = QHBoxLayout()
+        self._batch_column_combo = QComboBox()
+        self._batch_column_combo.currentIndexChanged.connect(self._update_batch_value_editor)
+        batch_fill.addWidget(self._batch_column_combo, 1)
 
-        self._genre_value_edit = QLineEdit()
-        self._genre_value_edit.setPlaceholderText("Valeur à appliquer à genre")
-        genre_fill.addWidget(self._genre_value_edit, 1)
+        self._batch_filter_edit = QLineEdit()
+        self._batch_filter_edit.setPlaceholderText("Filtre d'ID (vide = tous)")
+        batch_fill.addWidget(self._batch_filter_edit, 2)
 
-        self._btn_apply_genre = QPushButton("Appliquer")
-        self._btn_apply_genre.clicked.connect(self._apply_genre_batch)
-        genre_fill.addWidget(self._btn_apply_genre)
-        grp_layout.addLayout(genre_fill)
+        self._batch_value_stack = QStackedWidget()
+        self._batch_value_text = QLineEdit()
+        self._batch_value_text.setPlaceholderText("Valeur à appliquer")
+        self._batch_value_stack.addWidget(self._batch_value_text)
+
+        self._batch_value_combo = QComboBox()
+        self._batch_value_stack.addWidget(self._batch_value_combo)
+        batch_fill.addWidget(self._batch_value_stack, 2)
+
+        self._btn_apply_batch = QPushButton("Appliquer au filtre")
+        self._btn_apply_batch.clicked.connect(self._apply_batch_to_filter)
+        batch_fill.addWidget(self._btn_apply_batch)
+        grp_layout.addLayout(batch_fill)
+
+        selection_actions = QHBoxLayout()
+        self._btn_apply_selection = QPushButton("Appliquer à la sélection")
+        self._btn_apply_selection.clicked.connect(self._apply_batch_to_selection)
+        selection_actions.addWidget(self._btn_apply_selection)
+
+        self._btn_copy_above = QPushButton("Copier la ligne du dessus")
+        self._btn_copy_above.clicked.connect(self._copy_value_from_above)
+        selection_actions.addWidget(self._btn_copy_above)
+        selection_actions.addStretch()
+        grp_layout.addLayout(selection_actions)
 
         self._table = QTableWidget()
+        self._table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self._table.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
         self._table.horizontalHeader().setStretchLastSection(True)
         self._table.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.ResizeToContents)
+        self._table.itemSelectionChanged.connect(self._sync_batch_column_with_selection)
         grp_layout.addWidget(self._table, 1)
 
         self._step2_summary = QLabel("Aucune métadonnée chargée.")
@@ -304,6 +335,7 @@ class MetadataWizardDialog(QDialog):
             headers, imported_rows = [], []
 
         self._headers, self._rows = merge_corpus_and_metadata(corpus_rows, headers, imported_rows)
+        self._ensure_column_specs()
         self._refresh_table()
         self._refresh_review()
         self._update_navigation()
@@ -329,17 +361,32 @@ class MetadataWizardDialog(QDialog):
         self._table.setColumnCount(len(self._headers))
         self._table.setHorizontalHeaderLabels(self._headers)
         self._table.setRowCount(len(self._rows))
+        self._refresh_batch_column_choices()
 
         for row_index, row in enumerate(self._rows):
             for col_index, header in enumerate(self._headers):
-                item = QTableWidgetItem(str(row.get(header, "")))
-                if header in {"id", "word_count", "sentence_count"}:
+                spec = self._get_column_spec(header)
+                value = str(row.get(header, ""))
+
+                if spec["type"] in {"boolean", "closed_list"} and not spec.get("read_only", False):
+                    combo = QComboBox()
+                    choices = self._choices_for_column(header, include_current=value)
+                    combo.addItems(choices)
+                    combo.setCurrentText(value if value in choices else "")
+                    self._table.setCellWidget(row_index, col_index, combo)
+                    continue
+
+                item = QTableWidgetItem(value)
+                if spec.get("read_only", False):
                     item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEditable)
+                if spec["type"] in {"integer", "decimal"}:
+                    item.setTextAlignment(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter)
                 self._table.setItem(row_index, col_index, item)
 
         self._step2_summary.setText(
             f"{len(self._rows)} ligne(s) et {len(self._headers)} colonne(s). "
-            "Modifie les colonnes utiles comme `genre` et ajoute des colonnes si besoin."
+            "Vous pouvez typer les colonnes, remplir par lot, appliquer une valeur sur une sélection "
+            "et recopier la valeur de la ligne précédente."
         )
 
     def _sync_rows_from_table(self):
@@ -347,8 +394,7 @@ class MetadataWizardDialog(QDialog):
         for row_index in range(self._table.rowCount()):
             row: dict[str, object] = {}
             for col_index, header in enumerate(self._headers):
-                item = self._table.item(row_index, col_index)
-                row[header] = item.text().strip() if item else ""
+                row[header] = self._read_table_value(row_index, col_index)
             rows.append(row)
         self._rows = rows
 
@@ -364,31 +410,98 @@ class MetadataWizardDialog(QDialog):
 
         self._sync_rows_from_table()
         self._headers.append(column_name)
+        self._column_specs[column_name] = self._prompt_column_spec(column_name)
         for row in self._rows:
             row[column_name] = ""
         self._refresh_table()
         self._refresh_review()
 
-    def _apply_genre_batch(self):
+    def _configure_selected_column(self):
+        header = self._selected_or_current_header()
+        if not header:
+            QMessageBox.information(self, "Colonne", "Sélectionne d'abord une colonne à configurer.")
+            return
+
+        if header in {"id", "word_count", "sentence_count"}:
+            QMessageBox.information(self, "Colonne protégée", "Cette colonne système ne peut pas être retypée.")
+            return
+
         self._sync_rows_from_table()
+        self._column_specs[header] = self._prompt_column_spec(header, self._get_column_spec(header))
+        self._refresh_table()
+        self._refresh_review()
 
-        genre_value = self._genre_value_edit.text().strip()
-        filter_value = self._genre_filter_edit.text().strip().lower()
+    def _apply_batch_to_filter(self):
+        self._sync_rows_from_table()
+        header = self._batch_column_combo.currentText().strip()
+        value = self._current_batch_value()
+        filter_value = self._batch_filter_edit.text().strip().lower()
 
-        if not genre_value:
-            QMessageBox.warning(self, "Valeur manquante", "Renseigne une valeur à appliquer à la colonne genre.")
+        if not header:
+            QMessageBox.warning(self, "Colonne manquante", "Choisis une colonne à remplir.")
+            return
+
+        if value == "":
+            QMessageBox.warning(self, "Valeur manquante", "Renseigne une valeur à appliquer.")
             return
 
         changed = 0
         for row in self._rows:
             row_id = str(row.get("id", "")).lower()
             if not filter_value or filter_value in row_id:
-                row["genre"] = genre_value
+                row[header] = value
                 changed += 1
 
         self._refresh_table()
         self._refresh_review()
-        QMessageBox.information(self, "Genre appliqué", f"{changed} ligne(s) mise(s) à jour.")
+        QMessageBox.information(self, "Valeur appliquée", f"{changed} ligne(s) mise(s) à jour.")
+
+    def _apply_batch_to_selection(self):
+        self._sync_rows_from_table()
+        header = self._batch_column_combo.currentText().strip()
+        value = self._current_batch_value()
+
+        if not header:
+            QMessageBox.warning(self, "Colonne manquante", "Choisis une colonne à remplir.")
+            return
+        if value == "":
+            QMessageBox.warning(self, "Valeur manquante", "Renseigne une valeur à appliquer.")
+            return
+
+        row_indices = self._selected_row_indices()
+        if not row_indices:
+            QMessageBox.information(self, "Sélection vide", "Sélectionne une ou plusieurs lignes dans le tableau.")
+            return
+
+        for row_index in row_indices:
+            self._rows[row_index][header] = value
+
+        self._refresh_table()
+        self._refresh_review()
+
+    def _copy_value_from_above(self):
+        self._sync_rows_from_table()
+        header = self._batch_column_combo.currentText().strip()
+        if not header:
+            QMessageBox.warning(self, "Colonne manquante", "Choisis la colonne à compléter.")
+            return
+
+        row_indices = self._selected_row_indices()
+        if not row_indices:
+            QMessageBox.information(self, "Sélection vide", "Sélectionne une ou plusieurs lignes dans le tableau.")
+            return
+
+        copied = 0
+        for row_index in row_indices:
+            if row_index <= 0:
+                continue
+            self._rows[row_index][header] = self._rows[row_index - 1].get(header, "")
+            copied += 1
+
+        self._refresh_table()
+        self._refresh_review()
+        if copied == 0:
+            QMessageBox.information(self, "Copie impossible", "La première ligne n'a pas de valeur au-dessus.")
 
     def _collect_validation_issues(self) -> list[str]:
         self._sync_rows_from_table()
@@ -406,6 +519,9 @@ class MetadataWizardDialog(QDialog):
             )
         if result["duplicates"]:
             issues.append(f"IDs dupliqués dans le metadata : {len(result['duplicates'])}")
+        type_issues = self._collect_type_issues()
+        if type_issues:
+            issues.extend(type_issues)
         return issues
 
     def _refresh_review(self):
@@ -503,3 +619,182 @@ class MetadataWizardDialog(QDialog):
             "path_metadata": metadata_path,
             "list_metadata": list(self._headers),
         }
+
+    def _ensure_column_specs(self):
+        for header in self._headers:
+            if header not in self._column_specs:
+                self._column_specs[header] = self._default_column_spec(header)
+
+    def _default_column_spec(self, header: str) -> dict[str, object]:
+        if header == "id":
+            return {"type": "text", "choices": [], "read_only": True}
+        if header in {"word_count", "sentence_count"}:
+            return {"type": "integer", "choices": [], "read_only": True}
+        return {"type": "text", "choices": [], "read_only": False}
+
+    def _get_column_spec(self, header: str) -> dict[str, object]:
+        self._ensure_column_specs()
+        return self._column_specs.get(header, self._default_column_spec(header))
+
+    def _prompt_column_spec(self, header: str, current_spec: dict[str, object] | None = None) -> dict[str, object]:
+        current_spec = current_spec or self._default_column_spec(header)
+        type_options = {
+            "text": "Texte libre",
+            "closed_list": "Liste fermée",
+            "boolean": "Booléen",
+            "integer": "Numérique entier",
+            "decimal": "Numérique décimal",
+        }
+        reverse_map = {label: key for key, label in type_options.items()}
+        current_label = type_options.get(str(current_spec.get("type", "text")), "Texte libre")
+
+        selected_label, ok = QInputDialog.getItem(
+            self,
+            "Type de colonne",
+            f"Type de la colonne « {header} » :",
+            list(type_options.values()),
+            list(type_options.values()).index(current_label),
+            False,
+        )
+        if not ok:
+            return current_spec
+
+        selected_type = reverse_map[selected_label]
+        choices: list[str] = list(current_spec.get("choices", []))
+
+        if selected_type == "closed_list":
+            default_text = ", ".join(choices) if choices else ""
+            choices_text, ok = QInputDialog.getText(
+                self,
+                "Liste fermée",
+                f"Valeurs autorisées pour « {header} » (séparées par des virgules) :",
+                text=default_text,
+            )
+            if not ok:
+                return current_spec
+            choices = [value.strip() for value in choices_text.split(",") if value.strip()]
+            if not choices:
+                QMessageBox.warning(self, "Liste vide", "La liste fermée doit contenir au moins une valeur.")
+                return current_spec
+        elif selected_type == "boolean":
+            choices = ["true", "false"]
+        else:
+            choices = []
+
+        return {
+            "type": selected_type,
+            "choices": choices,
+            "read_only": bool(current_spec.get("read_only", False)),
+        }
+
+    def _refresh_batch_column_choices(self):
+        previous = self._batch_column_combo.currentText().strip()
+        self._batch_column_combo.clear()
+        editable_headers = [h for h in self._headers if not self._get_column_spec(h).get("read_only", False)]
+        self._batch_column_combo.addItems(editable_headers)
+        if previous:
+            index = self._batch_column_combo.findText(previous)
+            if index >= 0:
+                self._batch_column_combo.setCurrentIndex(index)
+        self._update_batch_value_editor()
+
+    def _update_batch_value_editor(self):
+        header = self._batch_column_combo.currentText().strip()
+        if not header:
+            self._batch_value_stack.setCurrentWidget(self._batch_value_text)
+            self._batch_value_text.setPlaceholderText("Valeur à appliquer")
+            return
+
+        spec = self._get_column_spec(header)
+        if spec["type"] in {"boolean", "closed_list"}:
+            self._batch_value_combo.clear()
+            self._batch_value_combo.addItem("")
+            for choice in self._choices_for_column(header):
+                if choice != "":
+                    self._batch_value_combo.addItem(choice)
+            self._batch_value_stack.setCurrentWidget(self._batch_value_combo)
+        else:
+            placeholders = {
+                "text": "Valeur à appliquer",
+                "integer": "Ex: 10",
+                "decimal": "Ex: 10.5",
+            }
+            self._batch_value_text.setPlaceholderText(placeholders.get(spec["type"], "Valeur à appliquer"))
+            self._batch_value_stack.setCurrentWidget(self._batch_value_text)
+
+    def _choices_for_column(self, header: str, include_current: str = "") -> list[str]:
+        spec = self._get_column_spec(header)
+        choices = list(spec.get("choices", []))
+        if spec["type"] == "boolean":
+            choices = ["", "true", "false"]
+        elif spec["type"] == "closed_list":
+            choices = [""] + choices
+        if include_current and include_current not in choices:
+            choices.append(include_current)
+        return choices
+
+    def _current_batch_value(self) -> str:
+        if self._batch_value_stack.currentWidget() is self._batch_value_combo:
+            return self._batch_value_combo.currentText().strip()
+        return self._batch_value_text.text().strip()
+
+    def _selected_row_indices(self) -> list[int]:
+        return sorted({index.row() for index in self._table.selectionModel().selectedRows()})
+
+    def _selected_or_current_header(self) -> str:
+        current_column = self._table.currentColumn()
+        if current_column >= 0 and current_column < len(self._headers):
+            return self._headers[current_column]
+        return self._batch_column_combo.currentText().strip()
+
+    def _sync_batch_column_with_selection(self):
+        header = self._selected_or_current_header()
+        if not header:
+            return
+        index = self._batch_column_combo.findText(header)
+        if index >= 0:
+            self._batch_column_combo.setCurrentIndex(index)
+
+    def _read_table_value(self, row_index: int, col_index: int) -> str:
+        cell_widget = self._table.cellWidget(row_index, col_index)
+        if isinstance(cell_widget, QComboBox):
+            return cell_widget.currentText().strip()
+        item = self._table.item(row_index, col_index)
+        return item.text().strip() if item else ""
+
+    def _collect_type_issues(self) -> list[str]:
+        issues: list[str] = []
+        invalid_columns: list[str] = []
+        for header in self._headers:
+            spec = self._get_column_spec(header)
+            type_name = spec.get("type", "text")
+            if type_name == "text":
+                continue
+
+            invalid_count = 0
+            choices = set(str(choice) for choice in spec.get("choices", []))
+            for row in self._rows:
+                value = str(row.get(header, "")).strip()
+                if value == "":
+                    continue
+                if type_name == "boolean" and value not in {"true", "false"}:
+                    invalid_count += 1
+                elif type_name == "closed_list" and value not in choices:
+                    invalid_count += 1
+                elif type_name == "integer":
+                    try:
+                        int(value)
+                    except ValueError:
+                        invalid_count += 1
+                elif type_name == "decimal":
+                    try:
+                        float(value.replace(",", "."))
+                    except ValueError:
+                        invalid_count += 1
+
+            if invalid_count:
+                invalid_columns.append(f"{header} ({invalid_count})")
+
+        if invalid_columns:
+            issues.append("Valeurs incompatibles avec le type de colonne : " + ", ".join(invalid_columns))
+        return issues

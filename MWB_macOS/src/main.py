@@ -666,7 +666,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     # ==================================
     
     _log("-" * 75, level=0)
-    _log("3. Extraction des motifs fréquents et clos", level=0)
+    _log("3. Extraction des motifs clos", level=0)
     _progress("Fouille de motifs (BideSpanTree)", 30)
     start_time = time.time()
     _check_cancel()
@@ -970,6 +970,14 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                                                     results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = path_out + dir + "/" + f_fus
                                             else:
                                                 results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_path
+
+                                            if specifs:
+                                                latest_specif = compute_CQP.find_latest_specif_output(
+                                                    dir_patterns_results,
+                                                    path_out + dir + "/",
+                                                )
+                                                if latest_specif:
+                                                    results[f"{metadata}_specifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = latest_specif
                                             break
                             else:
                                 _log("Calcul en cours...", level=1)

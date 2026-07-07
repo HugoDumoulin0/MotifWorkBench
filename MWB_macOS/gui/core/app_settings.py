@@ -12,6 +12,8 @@ DEFAULT_APP_SETTINGS = {
     "log_level": "normal",
     "log_retention_days": 30,
     "closed_pattern_display_mode": "motif",  # motif | words
+    "offer_prepared_archive_prompt": True,
+    "prepared_archive_prompted_corpora": [],
 }
 
 

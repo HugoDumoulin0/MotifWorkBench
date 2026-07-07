@@ -6,16 +6,17 @@ la progression en direct de cette dernière.
 """
 
 import json
+import zipfile
 from time import perf_counter
 from datetime import datetime
 from pathlib import Path
 
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QScrollArea, QWidget, QProgressBar, QTextEdit, QFileDialog, QMessageBox
+    QScrollArea, QWidget, QProgressBar, QTextEdit, QFileDialog, QMessageBox, QCheckBox
 )
 from PyQt6.QtGui import QFont
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, pyqtSignal
 
 from gui.widgets.base_page import BasePage, TEXT_PRIMARY
 from gui.config.settings import load_profile, list_profiles, DEFAULT_CONFIG
@@ -23,8 +24,10 @@ from gui.core.worker import AnalysisWorker
 from gui.core.run_history import append_run_history, build_run_entry
 from gui.core.shiny_runner import save_results_for_shiny
 
+
 class AnalysisPage(BasePage):
     """Page de lancement et suivi de l'analyse."""
+    analysis_completed = pyqtSignal()
     
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -167,6 +170,12 @@ class AnalysisPage(BasePage):
         logs_group = self.make_group("Logs")
         logs_layout = QVBoxLayout(logs_group)
 
+        self._logs_meta_label = QLabel("Niveau de verbosité des logs : Chargement...")
+        self._logs_meta_label.setStyleSheet(f"color: {TEXT_PRIMARY}; background-color: transparent;")
+        self._logs_meta_label.setFont(QFont("Segoe UI", 10))
+        self._logs_meta_label.setWordWrap(True)
+        logs_layout.addWidget(self._logs_meta_label)
+
         self._logs_text = QTextEdit()
         self._logs_text.setReadOnly(True)
         self._logs_text.setMinimumHeight(300)
@@ -299,11 +308,176 @@ class AnalysisPage(BasePage):
             return f"Pipeline Stanza ({language}, {device})"
         return "N/A"
 
+    def _get_log_level_display(self) -> str:
+        settings_path = self._project_root / "app_settings.json"
+        default_level = "Normal"
+
+        if not settings_path.exists():
+            return default_level
+
+        try:
+            with open(settings_path, "r", encoding="utf-8") as f:
+                settings = json.load(f)
+        except Exception:
+            return default_level
+
+        return settings.get("log_level", default_level)
+
+    def _load_app_settings(self) -> dict:
+        settings_path = self._project_root / "app_settings.json"
+        default_settings = {
+            "prompt_prepared_zip_after_first_analysis": True,
+        }
+        if not settings_path.exists():
+            return default_settings
+        try:
+            with open(settings_path, "r", encoding="utf-8") as f:
+                loaded_settings = json.load(f)
+        except Exception:
+            return default_settings
+        return {**default_settings, **loaded_settings}
+
+    def _save_app_settings(self, settings: dict) -> None:
+        settings_path = self._project_root / "app_settings.json"
+        settings_path.write_text(
+            json.dumps(settings, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+
+    def _should_prompt_prepared_zip(self) -> bool:
+        settings = self._load_app_settings()
+        return bool(settings.get("prompt_prepared_zip_after_first_analysis", True))
+
+    def _refresh_log_level_labels(self) -> str:
+        log_level_display = self._get_log_level_display()
+        if hasattr(self, "_logs_meta_label") and self._logs_meta_label is not None:
+            self._logs_meta_label.setText(f"Niveau de verbosité des logs : {log_level_display}")
+        return log_level_display
+
+    def _create_prepared_corpus_zip(self, worker, destination_path: Path) -> tuple[int, int]:
+        tagged_dir = Path(worker.paths["tagged_stanza"])
+        underscore_dir = Path(worker.paths["underscore_fix"])
+
+        if not tagged_dir.exists():
+            raise FileNotFoundError(f"Dossier introuvable : {tagged_dir}")
+        if not underscore_dir.exists():
+            raise FileNotFoundError(f"Dossier introuvable : {underscore_dir}")
+
+        destination_path.parent.mkdir(parents=True, exist_ok=True)
+
+        tagged_files = [path for path in tagged_dir.rglob("*") if path.is_file()]
+        underscore_files = [path for path in underscore_dir.rglob("*") if path.is_file()]
+
+        if not tagged_files and not underscore_files:
+            raise RuntimeError("Aucun fichier préparé à exporter dans Textes_tagged ou underscore_fix.")
+
+        with zipfile.ZipFile(destination_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+            for file_path in tagged_files:
+                archive.write(file_path, Path("Textes_tagged") / file_path.relative_to(tagged_dir))
+            for file_path in underscore_files:
+                archive.write(file_path, Path("underscore_fix") / file_path.relative_to(underscore_dir))
+
+        return len(tagged_files), len(underscore_files)
+
+    def _prompt_prepared_zip_export(self, worker) -> None:
+        if worker is None or not getattr(worker, "is_first_analysis_for_corpus", False):
+            return
+        if getattr(worker, "reusing_existing", False):
+            return
+        if not self._should_prompt_prepared_zip():
+            return
+
+        corpus_label = worker.analysis_group_name.replace("analyse_", "").strip() or worker.analysis_group_name
+
+        prompt = QMessageBox(self)
+        prompt.setIcon(QMessageBox.Icon.Question)
+        prompt.setWindowTitle("Créer une archive ZIP préparée ?")
+        prompt.setText("Ce corpus vient d’être analysé pour la première fois.")
+        prompt.setInformativeText(
+            "Voulez-vous créer une archive ZIP contenant `Textes_tagged` et `underscore_fix` "
+            "pour réutiliser plus vite ce corpus plus tard ?"
+        )
+        prompt.setStandardButtons(QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
+        prompt.setDefaultButton(QMessageBox.StandardButton.Yes)
+
+        dont_show_checkbox = QCheckBox("Ne plus afficher cette proposition")
+        prompt.setCheckBox(dont_show_checkbox)
+
+        choice = prompt.exec()
+
+        if dont_show_checkbox.isChecked():
+            settings = self._load_app_settings()
+            settings["prompt_prepared_zip_after_first_analysis"] = False
+            try:
+                self._save_app_settings(settings)
+            except Exception as exc:
+                self._logs_text.append(f"[ZIP] Impossible d'enregistrer le paramètre: {exc}")
+
+        if choice != QMessageBox.StandardButton.Yes:
+            self._logs_text.append("[ZIP] Création de l'archive préparée ignorée par l'utilisateur.")
+            return
+
+        default_zip_name = f"{corpus_label or 'corpus'}_prepared_conllu.zip"
+        default_zip_path = Path(worker.paths["root"]) / default_zip_name
+
+        destination_path, _selected_filter = QFileDialog.getSaveFileName(
+            self,
+            "Enregistrer l'archive ZIP préparée",
+            str(default_zip_path),
+            "Archives ZIP (*.zip)"
+        )
+        if not destination_path:
+            self._logs_text.append("[ZIP] Export annulé.")
+            return
+
+        destination = Path(destination_path)
+        if destination.suffix.lower() != ".zip":
+            destination = destination.with_suffix(".zip")
+
+        try:
+            tagged_count, underscore_count = self._create_prepared_corpus_zip(worker, destination)
+            self._logs_text.append(
+                f"[ZIP] Archive créée : {destination} "
+                f"({tagged_count} fichier(s) Textes_tagged, {underscore_count} fichier(s) underscore_fix)"
+            )
+            QMessageBox.information(
+                self,
+                "Archive ZIP créée",
+                "L'archive préparée a été créée avec succès.\n\n"
+                f"Fichier : {destination}\n"
+                f"Textes_tagged : {tagged_count} fichier(s)\n"
+                f"underscore_fix : {underscore_count} fichier(s)"
+            )
+        except Exception as exc:
+            self._logs_text.append(f"[ZIP] Erreur lors de la création de l'archive: {exc}")
+            QMessageBox.warning(
+                self,
+                "Création du ZIP impossible",
+                f"Impossible de créer l'archive préparée :\n{exc}"
+            )
+
+    def _format_minsup_values(self, values) -> str:
+        if not isinstance(values, list):
+            values = [values]
+
+        formatted_values: list[str] = []
+        for value in values:
+            try:
+                numeric_value = float(value)
+            except (TypeError, ValueError):
+                formatted_values.append(str(value))
+                continue
+
+            formatted_values.append(f"{numeric_value:.1f}")
+
+        return ", ".join(formatted_values) if formatted_values else "[]"
+
     def _build_config_summary(self, config: dict, profile_name: str) -> str:
         """Construit le résumé affiché dans le bloc Configuration actuelle."""
         annotator_tool = config.get('annotator_tool', 'spacy')
         annotator_display = self._format_annotator_display(annotator_tool)
         model_display = self._get_annotator_model_display(config)
+        log_level_display = self._refresh_log_level_labels()
 
         summary = f"<b>Profil :</b> {profile_name}<br>"
         summary += f"<b>Langue :</b> {config.get('language', 'N/A')}<br>"
@@ -311,7 +485,8 @@ class AnalysisPage(BasePage):
         summary += f"<b>Modèle NLP :</b> {model_display}<br>"
         summary += f"<b>GPU :</b> {'Oui' if config.get('use_gpu', False) else 'Non'}<br>"
         summary += f"<b>Threads :</b> {config.get('threads', 'N/A')}<br>"
-        summary += f"<b>Minsup (%):</b> {config.get('list_minsup_percent', [])}<br>"
+        summary += f"<b>Verbosité :</b> {log_level_display}<br>"
+        summary += f"<b>Minsup (%):</b> {self._format_minsup_values(config.get('list_minsup_percent', []))}<br>"
         summary += f"<b>Itemset min :</b> {config.get('list_itemset_min', [])}<br>"
         summary += f"<b>Gap min/max :</b> {config.get('list_gap_min', [])} / {config.get('list_gap_max', [])}<br>"
         summary += f"<b>Early selection :</b> {'Oui' if config.get('earlySelection', False) else 'Non'}<br>"
@@ -473,6 +648,11 @@ class AnalysisPage(BasePage):
             with open(last_analysis_file, 'w', encoding='utf-8') as f:
                 json.dump(last_analysis_info, f, indent=2, ensure_ascii=False)
 
+        try:
+            self._prompt_prepared_zip_export(worker)
+        except Exception as exc:
+            self._logs_text.append(f"[ZIP] Erreur lors de la proposition d'export: {exc}")
+
         self._worker = None
 
         duration = 0.0
@@ -487,6 +667,7 @@ class AnalysisPage(BasePage):
                 details="Analyse terminée avec succès."
             )
         )
+        self.analysis_completed.emit()
 
     def _on_error(self, error_msg: str):
         """Une erreur s'est produite."""

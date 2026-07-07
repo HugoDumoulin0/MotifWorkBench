@@ -11,7 +11,7 @@ import shutil
 from pathlib import Path
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QScrollArea, QWidget, QComboBox, QSpinBox,
+    QScrollArea, QWidget, QComboBox, QSpinBox, QCheckBox,
     QMessageBox, QListWidget, QAbstractItemView, QDialog
 )
 from PyQt6.QtGui import QFont, QDesktopServices
@@ -455,6 +455,7 @@ class AppSettingsPage(BasePage):
             "auto_check_model_updates": False,
             "analyses_root_path": str(get_default_analyses_root()),
             "closed_motif_concordance_display": "matched_words",
+            "prompt_prepared_zip_after_first_analysis": True,
         }
         
         if self._settings_file.exists():
@@ -839,7 +840,7 @@ class AppSettingsPage(BasePage):
         layout.addWidget(desc)
 
         concordancer_row = QHBoxLayout()
-        concordancer_label = QLabel("Concordancier / motifs clos :")
+        concordancer_label = QLabel("Représentants / motifs :")
         concordancer_label.setStyleSheet(f"color: {TEXT_PRIMARY}; font-size: 10pt;")
         concordancer_label.setFixedWidth(190)
         concordancer_row.addWidget(concordancer_label)
@@ -857,12 +858,30 @@ class AppSettingsPage(BasePage):
         layout.addLayout(concordancer_row)
 
         concordancer_hint = QLabel(
-            "Choisit si la colonne centrale du concordancier affiche le motif clos lui-même "
+            "Choisit si la colonne centrale du concordancier affiche le motif lui-même "
             "ou les mots qui correspondent à ce motif."
         )
         concordancer_hint.setWordWrap(True)
         concordancer_hint.setStyleSheet(f"color: {TEXT_SECONDARY}; font-size: 9pt;")
         layout.addWidget(concordancer_hint)
+
+        self._prompt_prepared_zip_checkbox = QCheckBox(
+            "Proposer la création d'une archive ZIP des corpus préparés après la première analyse d'un nouveau corpus"
+        )
+        self._prompt_prepared_zip_checkbox.setChecked(
+            bool(self._settings.get("prompt_prepared_zip_after_first_analysis", True))
+        )
+        self._prompt_prepared_zip_checkbox.setStyleSheet(
+            f"color: {TEXT_PRIMARY}; background: transparent;"
+        )
+        layout.addWidget(self._prompt_prepared_zip_checkbox)
+
+        prompt_hint = QLabel(
+            "Cette archive contient `Textes_tagged` et `underscore_fix` pour réutiliser plus vite un corpus déjà préparé."
+        )
+        prompt_hint.setWordWrap(True)
+        prompt_hint.setStyleSheet(f"color: {TEXT_SECONDARY}; font-size: 9pt;")
+        layout.addWidget(prompt_hint)
         
         # Boutons
         buttons_layout = QHBoxLayout()
@@ -1311,6 +1330,9 @@ class AppSettingsPage(BasePage):
         self._settings["log_retention_days"] = self._retention_spin.value()
         self._settings["analyses_root_path"] = self._analyses_root_path or str(get_default_analyses_root())
         self._settings["closed_motif_concordance_display"] = self._closed_motif_display_combo.currentData()
+        self._settings["prompt_prepared_zip_after_first_analysis"] = bool(
+            self._prompt_prepared_zip_checkbox.isChecked()
+        )
         
         self._save_settings()
         QMessageBox.information(self, "Succès", "Paramètres enregistrés avec succès.")

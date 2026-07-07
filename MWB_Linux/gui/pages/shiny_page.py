@@ -235,3 +235,11 @@ class ShinyPage(BasePage):
         except Exception as e:
             self._status.setText("Erreur lors du chargement de Shiny.")
             print(f"Erreur dans load_shiny_url: {e}")
+
+    def handle_analysis_completed(self, _payload: dict | None = None):
+        """Réagit à la fin d'une analyse en rechargeant Shiny si nécessaire."""
+        if is_shiny_running(self._shiny_host, self._shiny_port):
+            self._status.setText("Nouvelle analyse détectée. Rechargement de Shiny...")
+            self._reload_view()
+        else:
+            self._status.setText("Nouvelle analyse disponible. Shiny prêt à être relancé.")

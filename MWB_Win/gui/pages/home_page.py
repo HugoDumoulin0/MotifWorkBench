@@ -66,7 +66,7 @@ class HomePage(BasePage):
         quick_layout = QVBoxLayout(quick)
         quick_layout.setSpacing(8)
         for label, target in [
-            ("Configuration", "Configuration"),
+            ("Configuration", "Réglages"),
             ("Lancer l'analyse", "Analyse"),
             ("Historique", "Historique"),
             ("Concordancier", "Concordancier"),

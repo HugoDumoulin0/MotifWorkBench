@@ -215,7 +215,19 @@ class ShinyPage(BasePage):
             self._status.setText("Shiny en cours d'exécution.")
         else:
             self._status.setText("Shiny non démarré.")
-    
+
+    def refresh_from_latest_analysis(self, _results: dict | None = None):
+        """Met à jour la page Résultats après une nouvelle analyse."""
+        try:
+            if is_shiny_running(self._shiny_host, self._shiny_port):
+                if self._view is not None:
+                    self._view.reload()
+                self._status.setText("Nouveaux résultats détectés. Vue Shiny actualisée.")
+            else:
+                self._status.setText("Nouvelle analyse disponible. Lancez Shiny pour afficher les derniers résultats.")
+        except Exception as exc:
+            self._status.setText(f"Erreur lors de l'actualisation de Shiny : {exc}")
+
     def load_shiny_url(self):
         """Charge automatiquement l'URL Shiny dans la vue embarquée si le serveur est actif."""
         try:

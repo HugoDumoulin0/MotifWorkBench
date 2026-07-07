@@ -8,13 +8,18 @@ from pathlib import Path
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
     QScrollArea, QWidget, QComboBox, QSpinBox, QMessageBox,
-    QFormLayout, QDialog, QListWidget, QListWidgetItem
+    QFormLayout, QDialog, QListWidget, QListWidgetItem, QCheckBox, QFileDialog
 )
 from PyQt6.QtGui import QFont, QDesktopServices
 from PyQt6.QtCore import Qt, QUrl
 
 from gui.widgets.base_page import BasePage, TEXT_PRIMARY, TEXT_SECONDARY, ACCENT
 from gui.core.app_settings import load_app_settings, save_app_settings
+from gui.core.prepared_archive import (
+    create_prepared_archive,
+    default_archive_path,
+    has_prepared_archive_content,
+)
 
 
 class SettingsPage(BasePage):
@@ -684,6 +689,7 @@ class SettingsPage(BasePage):
         self._settings["log_level"] = self._log_level_combo.currentText()
         self._settings["log_retention_days"] = self._log_retention_spin.value()
         self._settings["closed_pattern_display_mode"] = self._closed_pattern_display_combo.currentData()
+        self._settings["offer_prepared_archive_prompt"] = self._prepared_archive_prompt_checkbox.isChecked()
         
         if self._save_settings():
             QMessageBox.information(
@@ -748,7 +754,7 @@ class SettingsPage(BasePage):
         options_layout.setSpacing(12)
 
         self._closed_pattern_display_combo = QComboBox()
-        self._closed_pattern_display_combo.addItem("Afficher le motif clos", "motif")
+        self._closed_pattern_display_combo.addItem("Afficher le motif", "motif")
         self._closed_pattern_display_combo.addItem("Afficher les mots correspondants", "words")
         current_mode = self._settings.get("closed_pattern_display_mode", "motif")
         index = self._closed_pattern_display_combo.findData(current_mode)
@@ -763,11 +769,44 @@ class SettingsPage(BasePage):
             }
         """)
         options_layout.addRow(
-            self._make_bold_label("Concordancier, motifs clos:"),
+            self._make_bold_label("Concordancier, motifs :"),
             self._closed_pattern_display_combo
         )
 
+        self._prepared_archive_prompt_checkbox = QCheckBox(
+            "Proposer la création d'une archive préparée après la première analyse complète d'un corpus"
+        )
+        self._prepared_archive_prompt_checkbox.setChecked(
+            bool(self._settings.get("offer_prepared_archive_prompt", True))
+        )
+        self._prepared_archive_prompt_checkbox.setStyleSheet("background-color: transparent;")
+        options_layout.addRow(
+            self._make_bold_label("Archive préparée :"),
+            self._prepared_archive_prompt_checkbox
+        )
+
         layout.addWidget(options_container)
+
+        archive_actions = QWidget()
+        archive_actions.setStyleSheet("background-color: transparent;")
+        archive_layout = QHBoxLayout(archive_actions)
+        archive_layout.setContentsMargins(8, 0, 8, 0)
+        archive_layout.setSpacing(10)
+
+        archive_help = QLabel(
+            "Vous pouvez aussi créer manuellement un ZIP contenant Textes_tagged et underscore_fix depuis un dossier d'analyse."
+        )
+        archive_help.setWordWrap(True)
+        archive_help.setStyleSheet(f"color: {TEXT_SECONDARY}; background-color: transparent; font-size: 12px;")
+        archive_layout.addWidget(archive_help, 1)
+
+        btn_export_archive = QPushButton("Créer une archive préparée…")
+        btn_export_archive.setFixedHeight(34)
+        btn_export_archive.setStyleSheet(self._button_style("#2f6f5f"))
+        btn_export_archive.clicked.connect(self._export_prepared_archive_from_analysis)
+        archive_layout.addWidget(btn_export_archive)
+
+        layout.addWidget(archive_actions)
         
         # Description
         desc = QLabel(
@@ -858,6 +897,9 @@ class SettingsPage(BasePage):
                 closed_pattern_mode = self._settings.get("closed_pattern_display_mode", "motif")
                 index = self._closed_pattern_display_combo.findData(closed_pattern_mode)
                 self._closed_pattern_display_combo.setCurrentIndex(index if index >= 0 else 0)
+                self._prepared_archive_prompt_checkbox.setChecked(
+                    bool(self._settings.get("offer_prepared_archive_prompt", True))
+                )
                 
                 # Afficher le résultat
                 message = ""
@@ -874,6 +916,55 @@ class SettingsPage(BasePage):
                     "Réinitialisation terminée",
                     message + "\n\nL'application va redémarrer."
                 )
+
+    def _export_prepared_archive_from_analysis(self):
+        analyses_root = self._project_root / "Data" / "analyses"
+        selected_dir = QFileDialog.getExistingDirectory(
+            self,
+            "Choisir le dossier d'analyse source",
+            str(analyses_root if analyses_root.exists() else self._project_root),
+            options=QFileDialog.Option.DontUseNativeDialog,
+        )
+        if not selected_dir:
+            return
+
+        analysis_root = Path(selected_dir)
+        if not has_prepared_archive_content(analysis_root):
+            QMessageBox.warning(
+                self,
+                "Archive impossible",
+                "Le dossier sélectionné ne contient ni Textes_tagged ni underscore_fix.",
+            )
+            return
+
+        selected_corpus = analysis_root.parent.name.replace("analyse_", "", 1) if analysis_root.parent else analysis_root.name
+        default_path = default_archive_path(analysis_root, selected_corpus)
+        output_path, _ = QFileDialog.getSaveFileName(
+            self,
+            "Enregistrer l'archive préparée",
+            str(default_path),
+            "Archives ZIP (*.zip)",
+            options=QFileDialog.Option.DontUseNativeDialog,
+        )
+        if not output_path:
+            return
+
+        try:
+            result = create_prepared_archive(analysis_root, output_path)
+            QMessageBox.information(
+                self,
+                "Archive créée",
+                "Archive préparée créée avec succès.\n\n"
+                f"Fichier : {result['output_path']}\n"
+                f"Contenu : {', '.join(result['included_roots'])}\n"
+                f"Fichiers ajoutés : {result['file_count']}",
+            )
+        except Exception as exc:
+            QMessageBox.critical(
+                self,
+                "Erreur d'export",
+                f"Impossible de créer l'archive préparée :\n{exc}",
+            )
 
 
 class FolderDeletionDialog(QDialog):

@@ -66,6 +66,21 @@ datasets <- fromJSON(paste(json_input, collapse = ""))
 
 print(datasets)
 
+is_specif_dataset_name <- function(name, path) {
+  grepl("_specifs_motifs_", name, fixed = TRUE) ||
+    grepl("/Specifs/", path, fixed = TRUE) ||
+    grepl("SpecifsMotifsTexte", basename(path), fixed = TRUE) ||
+    grepl("^specif_", basename(path))
+}
+
+specif_dataset_names <- names(datasets)[vapply(
+  names(datasets),
+  function(name) is_specif_dataset_name(name, datasets[[name]]),
+  logical(1)
+)]
+
+ca_dataset_candidates <- setdiff(names(datasets), specif_dataset_names)
+
 is_ca_compatible_dataset <- function(path) {
   if (!is.character(path) || length(path) != 1 || !nzchar(path) || !file.exists(path)) {
     return(FALSE)
@@ -81,8 +96,8 @@ is_ca_compatible_dataset <- function(path) {
   isTRUE(out)
 }
 
-valid_dataset_names_ca <- names(datasets)[vapply(datasets, is_ca_compatible_dataset, logical(1))]
-dataset_names_for_ui <- if (length(valid_dataset_names_ca) > 0) valid_dataset_names_ca else names(datasets)
+valid_dataset_names_ca <- ca_dataset_candidates[vapply(datasets[ca_dataset_candidates], is_ca_compatible_dataset, logical(1))]
+dataset_names_for_ui <- if (length(valid_dataset_names_ca) > 0) valid_dataset_names_ca else ca_dataset_candidates
 default_dataset_name <- dataset_names_for_ui[1]
 
 metadata_name <- unique(sub("_.*", "", dataset_names_for_ui))
@@ -102,6 +117,10 @@ print(user_input_value)
 has_specifs <- ifelse(any(grepl("specifsTrue", names(datasets))), TRUE, FALSE)
 print("Has specifs:")
 print(has_specifs)
+
+specif_metadata_names <- unique(sub("_.*", "", specif_dataset_names))
+default_specif_metadata <- if (length(specif_metadata_names) > 0) specif_metadata_names[1] else ""
+default_specif_dataset <- if (length(specif_dataset_names) > 0) specif_dataset_names[1] else ""
 
 name_motifs <- dataset_names_for_ui[grepl("motif", dataset_names_for_ui, ignore.case = TRUE)]
 has_motifs <- name_motifs
@@ -235,6 +254,70 @@ server <- function(input, output, session){
         scrollX = TRUE
       ),
       filter = "top",    # adds per-column filters
+      rownames = TRUE
+    )
+  })
+
+  specif_datasets_for_metadata <- reactive({
+    selected_metadata <- req(input$specif_metadata_select)
+    specif_dataset_names[startsWith(specif_dataset_names, paste0(selected_metadata, "_"))]
+  })
+
+  observeEvent(input$specif_metadata_select, {
+    choices <- specif_datasets_for_metadata()
+    selected_choice <- if (length(choices) > 0) choices[1] else character(0)
+    updateSelectInput(
+      session,
+      "specif_dataset_select",
+      choices = choices,
+      selected = selected_choice
+    )
+  }, ignoreInit = FALSE)
+
+  specif_data <- reactive({
+    dataset_name <- req(input$specif_dataset_select)
+    path <- datasets[[dataset_name]]
+    shiny::validate(
+      shiny::need(
+        is.character(path) && length(path) == 1 && nzchar(path) && file.exists(path),
+        "Fichier de spécificités introuvable."
+      )
+    )
+
+    data_specif <- tryCatch({
+      read.csv(path, sep = "\t", row.names = 1, header = TRUE, check.names = FALSE)
+    }, error = function(e) {
+      read.csv(path, sep = "\t", header = TRUE, check.names = FALSE)
+    })
+
+    row_names <- rownames(data_specif)
+    data_specif <- as.data.frame(lapply(data_specif, function(col) {
+      if (is.numeric(col)) {
+        out <- as.character(col)
+        out[is.infinite(col) & col > 0] <- "Inf"
+        out[is.infinite(col) & col < 0] <- "-Inf"
+        return(out)
+      }
+      col
+    }), check.names = FALSE, stringsAsFactors = FALSE)
+
+    if (!is.null(row_names) && length(row_names) == nrow(data_specif)) {
+      rownames(data_specif) <- row_names
+    }
+
+    data_specif
+  })
+
+  output$specif_table <- renderDT({
+    req(length(specif_dataset_names) > 0)
+    datatable(
+      specif_data(),
+      options = list(
+        pageLength = 15,
+        autoWidth = TRUE,
+        scrollX = TRUE
+      ),
+      filter = "top",
       rownames = TRUE
     )
   })
@@ -1021,6 +1104,21 @@ ui <- page_navbar(
         ),
         accordion_panel("Plot settings",
           id = "plot_settings_accordion",
+          conditionalPanel(
+            condition = "input.tabselected == 'specifs'",
+            selectInput(
+              "specif_metadata_select",
+              "Métadonnée",
+              choices = specif_metadata_names,
+              selected = default_specif_metadata
+            ),
+            selectInput(
+              "specif_dataset_select",
+              "TSV de spécificités",
+              choices = specif_dataset_names,
+              selected = default_specif_dataset
+            )
+          ),
           conditionalPanel(condition = "input.tabselected == 'CA'",
             checkboxInput("contrib_threshold", "Apply minimal contrib. threshold", value=TRUE),
               conditionalPanel(
@@ -1259,11 +1357,32 @@ ui <- page_navbar(
             fluidRow(
               card(
                 h4("Contingency table"),
+                tags$p(
+                  "Eléments étudiés : Motifs",
+                  style = "color: #6b7280; font-style: italic; margin-bottom: 12px;"
+                ),
                 column(
                   width = 12,
                   DTOutput("data_table")
                 ))
             )
+        ),
+        if (length(specif_dataset_names) > 0) nav_panel(
+          "Specifs",
+          value = "specifs",
+          fluidRow(
+            card(
+              h4("Résultats des spécificités"),
+              tags$p(
+                "Eléments étudiés : Motifs",
+                style = "color: #6b7280; font-style: italic; margin-bottom: 12px;"
+              ),
+              column(
+                width = 12,
+                DTOutput("specif_table")
+              )
+            )
+          )
         ),
       # ),
 

@@ -8,20 +8,29 @@ The pipeline relies on linguistic annotation using Stanza (Qi et al. 2020), moti
 
 The CloSPEC algorithm (Béchet et al. 2015) can be found in the form of the binary file BideSpanTree. Some of the initial annotation, extraction and internal clustering scripts are based on the work of Mekki 2022.
 
-## How to use?
-Run: 
-```bash
-python src/main.py
-```
-
-The script will process all `.txt` files located into ```Data/textes_raw```. The textometric part of MWB needs a `metadata.tsv` file relating to its corpus texts (see textometric settings below).
 
 ## How to cite?
 If you like (or really hate) this work, please use the following citation:
 > Dumoulin, Hugo and Premat, Timothée (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026. Scripts at: [https://github.com/HugoDumoulin0/MotifWorkBench](https://github.com/HugoDumoulin0/MotifWorkBench)
 
-## Requirements
-MWB needs Python, R, Perl, CWB and bash. On Mac OS, Docker is needed to run the Linux binaries of BideSpanTree motif extractor (see ```execute_closed_pattern.sh```).
+## Installation
+**MWB v.0.2** is available on three OS (Windows, MacOS, Linux)
+
+-> ``Windows``
+1. Download the ``MWB_Win`` folder from GitHub.
+2. Open the folder and run ``install_and_run_windows.bat``.
+
+-> ``MacOS``
+1. Download the ``MWB_macOS`` folder from GitHub.
+2. Open the folder and run ``install_and_run_macos.command``.
+
+-> ``Linux``
+1. Download the ``MWB_Linux`` folder from GitHub.
+2. Open the folder and run ``install_and_run_linux.sh``
+
+**MWB v.0.1** is also available (folder ``MotifWorkBench (v.0.1)``): 
+
+MWB v.0.1 needs Python, R, Perl, CWB and bash. On Mac OS, Docker is needed to run the Linux binaries of BideSpanTree motif extractor (see ```execute_closed_pattern.sh```).
 - Python requirements are listed in ```src/requirements.txt```
 - R packages are automatically downloaded if not installed, and loaded
 - [CWB download page](https://cwb.sourceforge.io/install.php)
@@ -49,7 +58,7 @@ A simple run such as the one before goes through the following operations:
 3. Closed pattern mining with the CloSPEC / BideSpanTree algorithm
 4. [optional] Clustering patterns
 5. Computing multidimensional statistics with CQP and R
-6. Visualizing with Shiny GUI
+6. Visualizing with Shiny GUI + concordancer
 
 [^1]: Stanza-produced `.conllu` files are modified so that they do not contain underscore (this is what MWB calls `underscore-fixing`). While it is normal for `.conllu` files to contains underscores, this is not suitable for pattern mining. As cols can't be empty, we chose to replace underscores by random integers.
 
@@ -59,7 +68,6 @@ A simple run such as the one before goes through the following operations:
 - item: properties attached to an itemset, such as POS, lemma, etc.
 - a motif contains one or several itemsets, each containing one or several items.
 
-Basic parameters are accessible in `config.py` and through a Shiny graphic interface.
 
 ### Pattern mining settings
 Most notable pattern mining parameters used in MWB are:
@@ -99,3 +107,12 @@ Finally, the textometric and visualisation approach rely on a metadata file: `me
 - Mekki, J. (2022). Caractérisation de registres de langue par extraction de motifs séquentiels émergents. Thèse de doctorat, Université de Rennes. 
 - Mellet, S. et Longrée, D. (2012). Légitimité d'une unité textométrique : le motif. In A. Dister, D. Longrée, G. Purnelle (éds.), Actes des Journée d'analyse des données textuelles 2012, 715-728. 
 
+## Version history
+
+-> ``MWB v.0.2``
+GUI format, concordancer, help page, run history, analysis settings, configuration profiles, built-in visualization interface, available on Linux, Mac, Windows, "installer".
+Made by da Silva Jean-Charles [GitHub : @jcharlesDS](https://github.com/jcharlesDS)
+
+
+-> ``MWB v.0.1``
+Base version, CLI format, available only on Mac and Linux with Docker.

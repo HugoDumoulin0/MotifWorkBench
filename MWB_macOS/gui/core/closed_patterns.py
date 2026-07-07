@@ -26,6 +26,42 @@ def _load_last_analysis(project_root: Path) -> dict:
         return {}
 
 
+def _load_pattern_source(
+    analysis_root: Path,
+    info: dict,
+) -> tuple[list, str]:
+    config = info.get("config", {}) if isinstance(info, dict) else {}
+    use_internal_clustering = bool(config.get("internal_clustering", False))
+
+    if use_internal_clustering:
+        medoids_dir = analysis_root / "Clustering_results" / "Medoids"
+        if medoids_dir.exists():
+            medoid_files = sorted(medoids_dir.glob("*_medoids_3.pk"), key=lambda p: p.stat().st_mtime, reverse=True)
+            for medoid_file in medoid_files:
+                try:
+                    medoids = formate_patterns.load_pk(str(medoid_file))
+                    motifs = [value[0] for value in medoids.values() if value and len(value) > 0]
+                    if motifs:
+                        return motifs, medoid_file.name
+                except Exception:
+                    continue
+
+    closed_dir = analysis_root / "Patterns_results" / "Closed"
+    if not closed_dir.exists():
+        return [], ""
+
+    closed_files = sorted(closed_dir.glob("*_closed.pk"), key=lambda p: p.stat().st_mtime, reverse=True)
+    for closed_file in closed_files:
+        try:
+            motifs = tools.from_pk_corpus_to_list(str(closed_file))
+            if motifs:
+                return motifs, closed_file.name
+        except Exception:
+            continue
+
+    return [], ""
+
+
 def load_closed_patterns_from_last_analysis(project_root: Path) -> list[dict[str, str]]:
     """Charge les motifs clos de la dernière analyse et prépare leur requête CQP."""
     info = _load_last_analysis(project_root)
@@ -36,14 +72,6 @@ def load_closed_patterns_from_last_analysis(project_root: Path) -> list[dict[str
         return []
 
     analysis_root = project_root / "Data" / "analyses" / analysis_group_name / config_id
-    closed_dir = analysis_root / "Patterns_results" / "Closed"
-    if not closed_dir.exists():
-        return []
-
-    closed_files = sorted(closed_dir.glob("*_closed.pk"), key=lambda p: p.stat().st_mtime, reverse=True)
-    if not closed_files:
-        return []
-
     lexic_int_str_path = analysis_root / "Lexiques" / "dico_int_to_str_all_items.pk"
     lexic_str_int_path = analysis_root / "Lexiques" / "dico_str_to_int_all_items.pk"
 
@@ -58,7 +86,9 @@ def load_closed_patterns_from_last_analysis(project_root: Path) -> list[dict[str
         else:
             return []
 
-        motifs = tools.from_pk_corpus_to_list(str(closed_files[0]))
+        motifs, source_name = _load_pattern_source(analysis_root, info)
+        if not motifs:
+            return []
     except Exception:
         return []
 
@@ -72,7 +102,7 @@ def load_closed_patterns_from_last_analysis(project_root: Path) -> list[dict[str
                     "id": str(index),
                     "display": motif_str,
                     "cqp_pattern": cqp_pattern,
-                    "source_file": closed_files[0].name,
+                    "source_file": source_name,
                 }
             )
         except Exception:

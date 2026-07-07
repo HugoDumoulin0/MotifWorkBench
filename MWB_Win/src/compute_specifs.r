@@ -39,8 +39,8 @@ execution_time <- paste(args[2])
 default_folder <- paste(args[3])
 print(default_folder)
 path_in <- paste(args[4])
-seuil <-paste(args[5])
-pos <- paste(args[6])
+seuil <- ifelse(length(args) >= 5, paste(args[5]), "")
+pos <- ifelse(length(args) >= 6, paste(args[6]), "")
 
 output_name_vertical <- paste0(default_folder, "/","specif_", seuil, pos, execution_time, ".tsv")
 
@@ -115,6 +115,7 @@ df_final <- bind_rows(df_wide, t_row) %>%
   column_to_rownames("motif")  # make 'motif' the row names col.
 
 specif_table <- custom_specif(df_final)
+specif_table <- specif_table[rownames(specif_table) != "others", , drop = FALSE]
 
 # Save it!
 write.table(specif_table,

@@ -17,6 +17,7 @@ import datetime
 import subprocess
 import enslave_perl
 import re
+from pathlib import Path
 from config import *
 
 
@@ -43,11 +44,76 @@ def textes2metadata(df, df_target, metadata):
     return df_targetXlemmes
 
 
+def aggregate_t_by_metadata(dictionnaire_t, df_target, metadata):
+    df_target = df_target.copy()
+    df_target[metadata] = df_target[metadata].astype(str)
+    df_target["taille"] = df_target.index.map(dictionnaire_t).fillna(0)
+    return df_target.groupby(metadata)["taille"].sum().to_dict()
+
+
 def add_total(df):
     df_total = df.copy()
     df_total["total"] = df.sum(axis=1)
     df_total = df_total.sort_values(by="total", ascending=False)
     return df_total
+
+
+def _run_specifs_rscript(minsup_percent, execution_time, path_out, file_out, seuil="", pos=""):
+    script_path = Path(__file__).resolve().parent / "compute_specifs.r"
+    cmd = [
+        "Rscript",
+        str(script_path),
+        str(minsup_percent),
+        str(execution_time),
+        str(path_out),
+        str(file_out),
+        str(seuil),
+        str(pos),
+    ]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        details = (result.stderr or result.stdout or "").strip()
+        raise RuntimeError(f"Échec du calcul R des spécificités: {details or 'Rscript a retourné un code non nul.'}")
+
+
+def _uses_internal_clustering(modif):
+    return "internal_clustering_" in (modif or "")
+
+
+def _with_fus_suffix(path):
+    if path.endswith("_FUS.tsv"):
+        return path
+    if path.endswith(".tsv"):
+        return path[:-4] + "_FUS.tsv"
+    return path + "_FUS"
+
+
+def _build_specifs_output_dir(patterns_results_dir, path_out):
+    r_root = os.path.join(patterns_results_dir, "R")
+    spec_root = os.path.join(patterns_results_dir, "Specifs")
+    rel = os.path.relpath(path_out, r_root)
+    target = os.path.join(spec_root, rel)
+    os.makedirs(target, exist_ok=True)
+    return target if target.endswith(os.sep) else target + os.sep
+
+
+def find_latest_specif_output(patterns_results_dir, path_out):
+    """Retourne le dernier TSV de spécificités généré pour un dataset donné."""
+    specifs_dir = _build_specifs_output_dir(patterns_results_dir, path_out)
+    if not os.path.isdir(specifs_dir):
+        return None
+
+    candidates = []
+    for filename in os.listdir(specifs_dir):
+        if not filename.startswith("specif_") or not filename.endswith(".tsv"):
+            continue
+        full_path = os.path.join(specifs_dir, filename)
+        if os.path.isfile(full_path):
+            candidates.append(full_path)
+
+    if not candidates:
+        return None
+    return max(candidates, key=os.path.getmtime)
 
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path=None):
     motif_count = 0
@@ -163,7 +229,7 @@ def compute_freq_TextesPos_AFC(execution_time, path_out, registry_path=None):
     return file_out, path_out, df_pos, file_total
 
 
-def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t):
+def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t, patterns_results_dir):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
     dictionnaire_k = df_k.T.to_dict()
     données_specifs = []
@@ -180,10 +246,14 @@ def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path
     df_spec = pd.DataFrame(données_specifs)
     # Formatter le timestamp sans espaces ni caractères problématiques
     timestamp = execution_time.strftime('%Y%m%d_%H%M%S')
-    file_out=f"{path_out}SpecifsMotifsTexte_df_{timestamp}.tsv"
+    specifs_dir = _build_specifs_output_dir(patterns_results_dir, path_out)
+    file_out=f"{specifs_dir}SpecifsMotifsTexte_df_{timestamp}.tsv"
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
+    final_specif_path = None
     if specifs==True:
-        subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), timestamp, path_out, file_out]) #Run R!
+        _run_specifs_rscript(minsup_percent, timestamp, specifs_dir, file_out)
+        final_specif_path = f"{specifs_dir}specif_{timestamp}.tsv"
+    return file_out, final_specif_path
 
 def fusion_internal_clusters(df, lexic_int_str, args, clustering_results_dir="./Clustering_results"):
     # Charger les fichiers de clustering depuis le bon répertoire
@@ -236,7 +306,7 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
     
     for f_candidate in fichiers: 
         if f"{forme}Texte_" in f_candidate:
-            if modif=="internal_clustering_":
+            if _uses_internal_clustering(modif):
                 if "_FUS" in f_candidate:
                     print("re-using : " + f_candidate)
                     file_id=path_id+"/"+f_candidate
@@ -287,33 +357,48 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                 except (FileNotFoundError, Exception) as e:
                     print("Aucun fichier Motifs valide trouvé, recalcul nécessaire...")
                     df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
-                    df_k.to_csv(file_out_motifs, sep="\t")
             else:
                 print("computing from scratch")
                 df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
-                df_k.to_csv(file_out_motifs, sep="\t")
+
+            if internal_clustering:
+                if "_FUS" not in os.path.basename(file_out_motifs):
+                    df_k = fusion_internal_clusters(df_k, lexic_int_str, args, clustering_results_dir)
+                    file_out_motifs = _with_fus_suffix(file_out_motifs)
+                else:
+                    print("re-using fused motifs matrix for metadata aggregation")
+
             df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
+            dictionnaire_t = aggregate_t_by_metadata(dictionnaire_t, df_metadata, metadata.split('_')[-1])
             df_k.to_csv(file_out_motifs, sep="\t")
         
         else:
             print(metadata)
             df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
-            df_k.to_csv(file_out_motifs, sep="\t")
                 
             if internal_clustering:
-                path_input = f"{lexiques_dir}/dico_str_to_int_all_items.pk"
-                path_output = f"{lexiques_dir}/dico_int_to_str_all_items.pk"
-                lexic_int_str = formate_patterns.make_dict_int_to_str(path_input, path_output)
                 df_k = fusion_internal_clusters(df_k, lexic_int_str, args, clustering_results_dir)
-                file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
+                file_out_motifs = _with_fus_suffix(file_out_motifs)
                 print(file_out_motifs)
-                df_k.to_csv(file_out_motifs, sep="\t")
+
+            df_k.to_csv(file_out_motifs, sep="\t")
             
         results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
 
         
-        if specifs:       
-                compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+        if specifs:
+                _specif_input, final_specif_path = compute_specifs_function(
+                    df_k,
+                    minsup_percent,
+                    execution_time,
+                    specifs,
+                    path_out,
+                    T,
+                    dictionnaire_t,
+                    patterns_results_dir,
+                )
+                if final_specif_path:
+                    results[f"{metadata}_specifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = final_specif_path
 
         if mode=="auto":
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 

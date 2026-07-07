@@ -24,7 +24,7 @@ except ImportError:
     MATPLOTLIB_AVAILABLE = False
 
 from gui.widgets.base_page import BasePage, TEXT_PRIMARY, ACCENT
-from gui.core.app_settings import load_app_settings
+from gui.core.app_settings import load_app_settings, save_app_settings
 from gui.core.closed_patterns import load_closed_patterns_from_last_analysis
 
 import sys
@@ -197,8 +197,39 @@ class ConcordancerPage(BasePage):
         self._load_metadata(show_message=False)
 
     def _closed_pattern_display_mode(self) -> str:
+        if hasattr(self, "_display_mode_combo") and self._display_mode_combo is not None:
+            data = self._display_mode_combo.currentData()
+            if data:
+                return str(data)
         settings = load_app_settings(self._project_root)
         return settings.get("closed_pattern_display_mode", "motif")
+
+    def _closed_pattern_display_label(self, mode: str | None = None) -> str:
+        mode = mode or self._closed_pattern_display_mode()
+        return "Motifs" if mode == "motif" else "Mots correspondants"
+
+    def _update_closed_pattern_display_hint(self) -> None:
+        if not hasattr(self, "_display_mode_hint"):
+            return
+        label = self._closed_pattern_display_label()
+        self._display_mode_hint.setText(
+            f"Affichage utilisé pour les motifs enregistrés : {label}."
+        )
+
+    def _persist_closed_pattern_display_mode(self, mode: str) -> None:
+        settings = load_app_settings(self._project_root)
+        if settings.get("closed_pattern_display_mode") == mode:
+            return
+        settings["closed_pattern_display_mode"] = mode
+        save_app_settings(self._project_root, settings)
+
+    def _on_closed_pattern_display_mode_changed(self) -> None:
+        mode = self._closed_pattern_display_mode()
+        self._persist_closed_pattern_display_mode(mode)
+        self._update_closed_pattern_display_hint()
+
+        if self._search_mode.currentText() == "Motifs enregistrés" and self._pattern_list.currentItem() is not None:
+            self._run_search()
     
     # --- Construction UI ---
     
@@ -261,7 +292,44 @@ class ConcordancerPage(BasePage):
         row0.addWidget(self._search_mode, 1)
         row0.addStretch()
         search_layout.addLayout(row0)
-        
+
+        row0b = QHBoxLayout()
+        row0b.setSpacing(8)
+
+        display_label = QLabel("Affichage :")
+        display_label.setStyleSheet(f"color: {TEXT_PRIMARY}; background-color: transparent;")
+        display_label.setFont(QFont("Helvetica Neue", 11))
+        row0b.addWidget(display_label)
+
+        self._display_mode_combo = QComboBox()
+        self._display_mode_combo.addItem("Motifs", "motif")
+        self._display_mode_combo.addItem("Mots correspondants", "words")
+        current_mode = self._closed_pattern_display_mode()
+        index = self._display_mode_combo.findData(current_mode)
+        self._display_mode_combo.setCurrentIndex(index if index >= 0 else 0)
+        self._display_mode_combo.currentIndexChanged.connect(self._on_closed_pattern_display_mode_changed)
+        self._display_mode_combo.setStyleSheet("""
+            QComboBox {
+                background-color: #ffffff;
+                color: #1f2937;
+                border: 1px solid #d1d5db;
+                border-radius: 6px;
+                padding: 6px 10px;
+                min-height: 28px;
+            }
+        """)
+        row0b.addWidget(self._display_mode_combo)
+        row0b.addStretch()
+        search_layout.addLayout(row0b)
+
+        self._display_mode_hint = QLabel()
+        self._display_mode_hint.setWordWrap(True)
+        self._display_mode_hint.setStyleSheet(
+            "color: #6b7280; background-color: transparent; font-size: 12px; font-style: italic;"
+        )
+        search_layout.addWidget(self._display_mode_hint)
+        self._update_closed_pattern_display_hint()
+
         # Ligne 1: Champ de recherche + Bouton
         row1 = QHBoxLayout()
         row1.setSpacing(8)
@@ -777,6 +845,32 @@ class ConcordancerPage(BasePage):
         self._registry_status_label.setText(
             f"Registry CWB utilisé : <b style='color:{state_color};'>{state_text}</b><br>"
             f"<span style='color:#6b7280;'>{registry_dir}</span>"
+        )
+
+    def refresh_from_latest_analysis(self, _results: dict | None = None):
+        """Recharge les chemins, motifs et métadonnées de la dernière analyse."""
+        self._registry_path = self._guess_registry_path()
+        self._metadata_path_value = self._guess_metadata_path()
+        self._refresh_registry_status()
+        self._load_metadata(show_message=False)
+
+        self._closed_pattern_entries = []
+        self._pattern_list.clear()
+        self._pattern_info_label.setText("Rafraîchissement des motifs de la dernière analyse...")
+
+        if self._search_mode.currentText() == "Motifs enregistrés":
+            self._load_closed_patterns()
+        else:
+            self._pattern_info_label.setText(
+                "Nouvelle analyse détectée. Les motifs seront rechargés en mode 'Motifs enregistrés'."
+            )
+
+        self._raw_results = []
+        self._displayed_results = []
+        self._results_table.setRowCount(0)
+        self._refresh_filter_values()
+        self._stats_label.setText(
+            "Concordancier mis à jour avec les données de la dernière analyse."
         )
 
     def _load_metadata(self, show_message: bool):

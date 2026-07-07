@@ -15,7 +15,8 @@ from gui.core.analysis_paths import (
     generate_config_id, 
     create_analysis_structure,
     find_existing_analysis,
-    get_analysis_root
+    get_analysis_root,
+    get_analyses_root
 )
 
 class AnalysisWorker(QThread):
@@ -53,6 +54,7 @@ class AnalysisWorker(QThread):
         )
         # Alias temporaire pour compatibilité locale
         self.corpus_name = self.analysis_group_name
+        self.is_first_analysis_for_corpus = not (get_analyses_root() / self.analysis_group_name).exists()
         
         # Chercher si une analyse avec cette configuration existe déjà
         existing_config_id = find_existing_analysis(self.analysis_group_name, config)

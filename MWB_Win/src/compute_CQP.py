@@ -17,6 +17,7 @@ import datetime
 import subprocess
 import enslave_perl
 import re
+from pathlib import Path
 from r_runtime import resolve_rscript
 from config import *
 
@@ -49,6 +50,36 @@ def textes2metadata(df, df_target, metadata):
     # On groupe par target et on additionne les lemmes
     df_targetXlemmes = df_combined.groupby(metadata).sum()  
     return df_targetXlemmes
+
+
+def dictionnaire_t_target(dictionnaire_t, df_target, partition_cible):
+    df_target = df_target.copy()
+    df_target["taille"] = df_target.index.map(dictionnaire_t)
+    dictionnaire_t_result = df_target.groupby(partition_cible)["taille"].sum().to_dict()
+    return dictionnaire_t_result
+
+
+def specifs_output_dir(path_out: str) -> str:
+    path = Path(path_out)
+    parts = list(path.parts)
+    try:
+        idx = parts.index("R")
+    except ValueError:
+        output_dir = path
+    else:
+        parts[idx] = "Specifs"
+        output_dir = Path(*parts)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    return str(output_dir)
+
+
+def latest_specif_file(path_out: str) -> str | None:
+    output_dir = Path(specifs_output_dir(path_out))
+    candidates = [path for path in output_dir.glob("specif_*.tsv") if path.is_file()]
+    if not candidates:
+        return None
+    latest = max(candidates, key=lambda path: path.stat().st_mtime)
+    return str(latest)
 
 
 def add_total(df):
@@ -227,7 +258,22 @@ def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path
     file_out=f"{path_out}SpecifsMotifsTexte_df_{timestamp}.tsv"
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     if specifs==True:
-        subprocess.call([resolve_rscript(), "./src/compute_specifs.r", str(minsup_percent), timestamp, path_out, file_out]) #Run R!
+        final_output_dir = specifs_output_dir(path_out)
+        final_output_file = str(Path(final_output_dir) / f"specif_motifs_{timestamp}.tsv")
+        subprocess.call([
+            resolve_rscript(),
+            "./src/compute_specifs.r",
+            str(minsup_percent),
+            timestamp,
+            final_output_dir,
+            file_out,
+            "motifs_",
+            "",
+        ]) #Run R!
+        if os.path.exists(final_output_file):
+            return final_output_file
+        return latest_specif_file(path_out)
+    return None
 
 def fusion_internal_clusters(df, lexic_int_str, args, clustering_results_dir="./Clustering_results"):
     # Charger les fichiers de clustering depuis le bon répertoire
@@ -302,6 +348,15 @@ def fusion_internal_clusters(df, lexic_int_str, args, clustering_results_dir="./
     print(f"[FUSION] Résultat final: {df_result.shape[0]} lignes x {df_result.shape[1]} colonnes")
     return df_result
 
+def fused_output_path(path: str) -> str:
+    """Retourne le chemin TSV suffixe `_FUS`."""
+    if path.endswith("_FUS.tsv"):
+        return path
+    if path.endswith(".tsv"):
+        return path[:-4] + "_FUS.tsv"
+    return path + "_FUS.tsv"
+
+
 def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_out,modif):
     print("re-using computing data from 'id' metadata instanciation of script")
     if forme=="motifs":
@@ -359,6 +414,7 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general(registry_path)
+    dictionnaire_t_specifs = dictionnaire_t
     
     if total_motifs>0:
         if not os.path.exists(path_out):
@@ -378,7 +434,13 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                 print("computing from scratch")
                 df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
                 df_k.to_csv(file_out_motifs, sep="\t")
-            df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
+            if internal_clustering:
+                df_k = fusion_internal_clusters(df_k, lexic_int_str, args, clustering_results_dir)
+                file_out_motifs = fused_output_path(file_out_motifs)
+
+            partition_cible = metadata.split('_')[-1]
+            df_k = textes2metadata(df_k, df_metadata, partition_cible).T
+            dictionnaire_t_specifs = dictionnaire_t_target(dictionnaire_t, df_metadata, partition_cible)
             df_k.to_csv(file_out_motifs, sep="\t")
         
         else:
@@ -387,19 +449,18 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
             df_k.to_csv(file_out_motifs, sep="\t")
                 
             if internal_clustering:
-                lexic_int_str = formate_patterns.make_dict_int_to_str(
-                    f"{lexiques_dir}/dico_str_to_int_all_items.pk"
-                )
                 df_k = fusion_internal_clusters(df_k, lexic_int_str, args, clustering_results_dir)
-                file_out_motifs = file_out_motifs[:-4]+"_FUS.tsv"
+                file_out_motifs = fused_output_path(file_out_motifs)
                 print(file_out_motifs)
                 df_k.to_csv(file_out_motifs, sep="\t")
             
         results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
 
         
-        if specifs:       
-                compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+        if specifs:
+                specif_file = compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t_specifs)
+                if specif_file:
+                    results[f"{metadata}_specif_table_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = specif_file
 
         if mode=="auto":
             subprocess.call([resolve_rscript(), "./src/AFC.R", file_out_motifs, path_out]) 

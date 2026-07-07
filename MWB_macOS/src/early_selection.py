@@ -52,6 +52,11 @@ def dictionnaire_t_target(dictionnaire_t, df_target,partition_cible):
     dictionnaire_t_result = df_target.groupby(partition_cible)["taille"].sum().to_dict()
     return dictionnaire_t_result
 
+
+def _load_specif_rows(specif_output_path, seuil_banalité):
+    df_specif = pd.read_csv(specif_output_path, sep="\t", index_col=0, quoting=3)
+    return df_specif, tri_lemma(df_specif, seuil_banalité)
+
 def compute_specifs_function(df_k, path_out, T, dictionnaire_t, seuil,minsup_percent, execution_time,early_pos4lemma):
     dictionnaire_f = df_k.T.sum(axis=1).to_dict()
     dictionnaire_k = df_k.to_dict()
@@ -73,7 +78,15 @@ def compute_specifs_function(df_k, path_out, T, dictionnaire_t, seuil,minsup_per
     print("file specif out !")
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
     print("begining computing with R")
-    subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), str(execution_time), path_out, file_out, str(seuil), str(early_pos4lemma)]) #Run R!
+    compute_CQP._run_specifs_rscript(
+        minsup_percent,
+        execution_time,
+        path_out,
+        file_out,
+        seuil,
+        early_pos4lemma,
+    )
+    return f"{path_out}specif_{seuil}{early_pos4lemma}{execution_time}.tsv"
     
 def tri_lemma(df,seuil_banalité):
     lignes = df[df.gt(seuil_banalité).any(axis=1)].index.tolist()
@@ -131,9 +144,18 @@ def main(seuil, minsup_percent, path_metadata, partition_cible, seuil_banalité,
         df_targetXlemmes = compute_CQP.textes2metadata(df_lemma, df_target, partition_cible)
         if filter_specifs == True:
             dictionnaire_t_result = dictionnaire_t_target(dictionnaire_t, df_target, partition_cible)
-            compute_specifs_function(df_targetXlemmes, path_out, T, dictionnaire_t_result, seuil, minsup_percent, execution_time, early_pos4lemma)
-            lignes = tri_lemma(df_lemma, seuil_banalité)
-            df_lemma.to_csv(f"{path_out}{filter_specifs}_specif{seuil_banalité}_{seuil}{early_pos4lemma}.tsv", sep="\\t")
+            specif_output_path = compute_specifs_function(
+                df_targetXlemmes,
+                path_out,
+                T,
+                dictionnaire_t_result,
+                seuil,
+                minsup_percent,
+                execution_time,
+                early_pos4lemma,
+            )
+            df_specif, lignes = _load_specif_rows(specif_output_path, seuil_banalité)
+            df_specif.to_csv(f"{path_out}{filter_specifs}_specif{seuil_banalité}_{seuil}{early_pos4lemma}.tsv", sep="\\t")
         else:
             lignes = df_lemma.index.tolist()
     

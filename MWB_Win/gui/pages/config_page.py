@@ -7,11 +7,11 @@ Paramètres avancés: tous les paramètres
 
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout,
-    QFormLayout, QLabel, QLineEdit, QCheckBox, QSpinBox,
+    QFormLayout, QLabel, QLineEdit, QCheckBox, QSpinBox, QDoubleSpinBox,
     QPushButton, QComboBox, QGroupBox,
     QScrollArea, QMessageBox, QInputDialog, QFrame, QDialog, QFileDialog
 )
-from PyQt6.QtCore import Qt, pyqtSignal
+from PyQt6.QtCore import Qt, pyqtSignal, QLocale
 from PyQt6.QtGui import QFont
 from pathlib import Path
 
@@ -79,7 +79,7 @@ class ConfigPage(QWidget):
         root.setSpacing(12)
         
         # Titre
-        title = QLabel("Configuration de l'analyse")
+        title = QLabel("Réglages")
         title.setFont(QFont("Segoe UI", 16, QFont.Weight.Bold))
         title.setStyleSheet("color: #1f2937; background: transparent;")
         root.addWidget(title)
@@ -380,9 +380,13 @@ class ConfigPage(QWidget):
         grp_motifs.setStyleSheet(self._group_style())
         form_motifs = QFormLayout(grp_motifs)
 
-        self._w_minsup = QSpinBox()
-        self._w_minsup.setRange(1, 100)
+        self._w_minsup = QDoubleSpinBox()
+        self._w_minsup.setLocale(QLocale.c())
+        self._w_minsup.setDecimals(1)
+        self._w_minsup.setRange(0.1, 100.0)
+        self._w_minsup.setSingleStep(0.1)
         self._w_minsup.setSuffix(" %")
+        self._w_minsup.setToolTip("Support minimal des motifs en pourcentage. Les valeurs décimales sont autorisées (ex. 0.1).")
         self._w_minsup.setToolTip("Fréquence minimale (en % des séquences) pour qu'un motif soit retenu.")
         form_motifs.addRow(_tooltip_label("Support minimal :", "% de textes dans lesquels un motif doit apparaître."), self._w_minsup)
 
@@ -465,6 +469,7 @@ class ConfigPage(QWidget):
 
         self._w_user_input_list = QCheckBox("Utiliser une liste de lemmes manuelle")
         self._w_user_input_list.setToolTip("Utiliser une liste de lemmes fournie manuellement au lieu de l'early selection automatique.")
+        self._w_user_input_list.toggled.connect(self._update_manual_lemma_list_state)
         form_early.addRow("", self._w_user_input_list)
 
         self._w_liste_earlyselection = QLineEdit()
@@ -830,12 +835,17 @@ class ConfigPage(QWidget):
             self._w_partition_cible,
             self._w_seuil_banalite,
             self._w_early_pos4lemma,
-            self._w_user_input_list,
-            self._w_liste_earlyselection,
         ]
 
         for widget in widgets:
             widget.setEnabled(enabled)
+
+        self._w_user_input_list.setEnabled(True)
+        self._update_manual_lemma_list_state(self._w_user_input_list.isChecked())
+
+    def _update_manual_lemma_list_state(self, enabled: bool):
+        """Active la saisie des lemmes manuels indépendamment de l'early selection."""
+        self._w_liste_earlyselection.setEnabled(enabled)
     
     # ========================================================
     # Chargement et lecture de la configuration dans l'UI
@@ -867,7 +877,7 @@ class ConfigPage(QWidget):
             use_gpu = cfg.get("use_gpu", True)  # Par défaut GPU si disponible
             self._w_gpu_choice.setCurrentText("GPU" if use_gpu else "CPU")
         # Si pas de GPU disponible, pas besoin de charger la valeur
-        self._w_minsup.setValue(cfg.get("list_minsup_percent", [25])[0])
+        self._w_minsup.setValue(self._coerce_minsup_value(cfg.get("list_minsup_percent", [25])))
         self._w_itemset_min.setValue(cfg.get("list_itemset_min", [3])[0])
         self._w_Lemma.setChecked(cfg.get("Lemma", True))
         self._w_Pos.setChecked(cfg.get("Pos", True))
@@ -919,6 +929,7 @@ class ConfigPage(QWidget):
         self._w_user_input_list.setChecked(cfg.get("user_input_list", False))
         self._w_liste_earlyselection.setText(", ".join(cfg.get("liste_earlyselection_lemma", [])))
         self._update_early_selection_state(self._w_earlySelection.isChecked())
+        self._update_manual_lemma_list_state(self._w_user_input_list.isChecked())
         self._w_internal_clustering.setChecked(cfg.get("internal_clustering", True))
         self._w_gap_min.setValue(cfg.get("list_gap_min", [0])[0])
         self._w_gap_max.setValue(cfg.get("list_gap_max", [0])[0])
@@ -948,6 +959,8 @@ class ConfigPage(QWidget):
         else:
             annotator_tool = "spacy"  # Par défaut
 
+        minsup_value = self._normalize_minsup_value(self._w_minsup.value())
+
         return {
             # Simple
             "analysis_group_name": self._build_analysis_name_from_corpus_name(self._w_corpus_selector.currentText().strip()) or "analyse_sans_nom",
@@ -955,7 +968,7 @@ class ConfigPage(QWidget):
             "annotator_tool": annotator_tool,
             "language": self._w_language.currentText().strip() or "fr",
             "use_gpu": self._w_gpu_choice.currentText() == "GPU" if (self._gpu_available and self._w_gpu_choice) else False,
-            "list_minsup_percent": [self._w_minsup.value()],
+            "list_minsup_percent": [minsup_value],
             "list_itemset_min": [self._w_itemset_min.value()],
             "Lemma": self._w_Lemma.isChecked(),
             "Pos": self._w_Pos.isChecked(),
@@ -985,6 +998,21 @@ class ConfigPage(QWidget):
             "liste_seuils_bigrams": parse_int_list(self._w_liste_seuils_bigrams.text()),
             "mode": "",
         }
+
+    def _coerce_minsup_value(self, raw_value) -> float:
+        if isinstance(raw_value, list):
+            raw_value = raw_value[0] if raw_value else 25
+        try:
+            value = float(raw_value)
+        except (TypeError, ValueError):
+            value = 25.0
+        return max(0.1, min(100.0, value))
+
+    def _normalize_minsup_value(self, value: float) -> int | float:
+        rounded_value = round(float(value), 1)
+        if rounded_value.is_integer():
+            return int(rounded_value)
+        return rounded_value
 
     def get_config(self) -> dict:
         """Retourne la configuration actuellement appliquée."""
@@ -1202,7 +1230,7 @@ class ConfigPage(QWidget):
         if self._w_gpu_choice:
             self._w_gpu_choice.currentIndexChanged.connect(self._mark_as_modified)
         
-        # QSpinBox
+        # QSpinBox / QDoubleSpinBox
         for widget_name in ['_w_minsup', '_w_itemset_min', '_w_seuil_early', '_w_seuil_banalite',
                              '_w_gap_min', '_w_gap_max', '_w_threads']:
             widget = getattr(self, widget_name, None)
@@ -1247,14 +1275,14 @@ class ConfigPage(QWidget):
                 left: 12px;
                 padding: 0 4px;
             }}
-            QLineEdit, QSpinBox, QComboBox {{
+            QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox {{
                 background: {input_background};
                 color: {input_color};
                 border: 1px solid {input_border};
                 border-radius: 4px;
                 padding: 4px 8px;
             }}
-            QLineEdit:disabled, QSpinBox:disabled, QComboBox:disabled {{
+            QLineEdit:disabled, QSpinBox:disabled, QDoubleSpinBox:disabled, QComboBox:disabled {{
                 background: #f3f4f6;
                 color: #9ca3af;
                 border: 1px solid #d1d5db;

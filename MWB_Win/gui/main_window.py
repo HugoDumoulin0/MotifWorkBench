@@ -115,7 +115,7 @@ class MainWindow(QMainWindow):
         # Pages
         self._pages_def = [
             ("Accueil", self._make_home_page()),
-            ("Réglages de l'analyse", ConfigPage()),
+            ("Réglages", ConfigPage()),
             ("Analyse", AnalysisPage()),
             ("Résultats", self._make_shiny_page()),
             ("Concordancier", ConcordancerPage()),
@@ -128,12 +128,15 @@ class MainWindow(QMainWindow):
         config_page = self._pages_def[1][1]  # ConfigPage
         analysis_page = self._pages_def[2][1]  # AnalysisPage
         self._shiny_page = self._pages_def[3][1]  # ShinyPage
+        concordancer_page = self._pages_def[4][1]  # ConcordancerPage
         
         # Connecter le signal de configuration à la page d'analyse
         config_page.config_applied.connect(analysis_page.update_config)
         
         # Permettre à AnalysisPage d'accéder à ConfigPage pour obtenir la config actuelle
         analysis_page.set_config_page(config_page)
+        analysis_page.analysis_completed.connect(concordancer_page.reload_latest_analysis)
+        analysis_page.analysis_completed.connect(self._shiny_page.refresh_latest_analysis)
         
         self._stack = QStackedWidget()
         self._nav_buttons = []

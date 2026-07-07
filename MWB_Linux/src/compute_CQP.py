@@ -49,6 +49,29 @@ def add_total(df):
     df_total = df_total.sort_values(by="total", ascending=False)
     return df_total
 
+
+def aggregate_t_by_metadata(dictionnaire_t, df_metadata, metadata):
+    """Agrège les tailles de textes par valeur de métadonnée pour le calcul des spécificités."""
+    if metadata == "id":
+        return dictionnaire_t
+
+    metadata_key = metadata.split('_')[-1]
+    if metadata_key not in df_metadata.columns:
+        raise KeyError(f"Colonne de métadonnée introuvable pour les spécificités : {metadata_key}")
+
+    df_meta = df_metadata.copy()
+    df_meta = df_meta[df_meta.index.isin(dictionnaire_t.keys())].copy()
+    df_meta[metadata_key] = df_meta[metadata_key].astype(str)
+    df_meta["_taille_texte"] = df_meta.index.map(dictionnaire_t)
+
+    aggregated = (
+        df_meta
+        .groupby(metadata_key)["_taille_texte"]
+        .sum()
+        .to_dict()
+    )
+    return aggregated
+
 def compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path=""):
     motif_count = 0
     liste_motifs_str = []
@@ -180,7 +203,7 @@ def compute_freq_TextesPos_AFC(execution_time, path_out, registry_path=""):
     return file_out, path_out, df_pos, file_total
 
 
-def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t):
+def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t, total_motifs=None):
     dictionnaire_f = df_k.sum(axis=1).to_dict()
     dictionnaire_k = df_k.T.to_dict()
     données_specifs = []
@@ -195,12 +218,24 @@ def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path
                 "T":T    
                 })
     df_spec = pd.DataFrame(données_specifs)
+    os.makedirs(path_out, exist_ok=True)
     # Formatter le timestamp sans espaces ni caractères problématiques
     timestamp = execution_time.strftime('%Y%m%d_%H%M%S')
     file_out=f"{path_out}SpecifsMotifsTexte_df_{timestamp}.tsv"
     df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
+    display_file = file_out
     if specifs==True:
-        subprocess.call(["Rscript", "./src/compute_specifs.r", str(minsup_percent), timestamp, path_out, file_out]) #Run R!
+        seuil_arg = str(total_motifs) if total_motifs is not None else "motifs"
+        result = subprocess.call([
+            "Rscript", "./src/compute_specifs.r",
+            str(minsup_percent), timestamp, path_out, file_out, seuil_arg, "motifs"
+        ])
+        r_output_file = os.path.join(path_out, f"specif_{seuil_arg}motifs{timestamp}.tsv")
+        if result == 0 and os.path.exists(r_output_file):
+            display_file = r_output_file
+        if result != 0:
+            print(f"⚠ compute_specifs.r a retourné le code {result} pour {file_out}")
+    return display_file
 
 def fusion_internal_clusters(df, lexic_int_str, args, clustering_results_dir="./Clustering_results"):
     # Charger les fichiers de clustering depuis le bon répertoire
@@ -277,12 +312,28 @@ def fusion_internal_clusters(df, lexic_int_str, args, clustering_results_dir="./
 
 def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_out,modif):
     print("re-using computing data from 'id' metadata instanciation of script")
+    internal_clustering_enabled = "internal_clustering_" in (modif or "")
+
     if forme=="motifs":
-        for file in os.listdir(path_id):
-            path_id=path_id+file
-            path_out=path_out+file
+        subdirs = [
+            file_name
+            for file_name in os.listdir(path_id)
+            if os.path.isdir(os.path.join(path_id, file_name))
+        ]
+        if not subdirs:
+            raise FileNotFoundError(f"Aucun sous-dossier de résultats trouvé dans {path_id}")
+
+        subdirs = sorted(
+            subdirs,
+            key=lambda f: os.path.getmtime(os.path.join(path_id, f)),
+            reverse=True,
+        )
+        selected_subdir = subdirs[0]
+        path_id = os.path.join(path_id, selected_subdir)
+        path_out = os.path.join(path_out, selected_subdir)
     else:
-        path_out=path_out+forme
+        path_out = os.path.join(path_out, forme)
+
     fichiers = sorted(os.listdir(path_id), key=lambda f: os.path.getmtime(os.path.join(path_id, f)),reverse=True)
     # Filtrer pour ne garder que les fichiers avec timestamps valides
     fichiers = [f for f in fichiers if is_valid_timestamp_filename(f)]
@@ -293,10 +344,10 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
     
     for f_candidate in fichiers: 
         if f"{forme}Texte_" in f_candidate:
-            if modif=="internal_clustering_":
+            if internal_clustering_enabled:
                 if "_FUS" in f_candidate:
                     print("re-using : " + f_candidate)
-                    file_id=path_id+"/"+f_candidate
+                    file_id = os.path.join(path_id, f_candidate)
                     df_k=pd.read_csv(file_id, sep="\t", index_col=0)
                     f = f_candidate
                     break
@@ -304,7 +355,7 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
                     print("Error : internal_clustering_id is missing")
             else:
                 print("re-using : " + f_candidate)
-                file_id=path_id+"/"+f_candidate
+                file_id = os.path.join(path_id, f_candidate)
                 df_k=pd.read_csv(file_id, sep="\t", index_col=0)
                 f = f_candidate
                 break
@@ -313,12 +364,11 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
     if f is None or df_k is None:
         raise FileNotFoundError(f"Aucun fichier valide trouvé avec timestamp correct dans {path_id}")
     
-    file_out=path_out+"/"+f
-    chaine=path_out+"/"+f
+    os.makedirs(path_out, exist_ok=True)
+    file_out = os.path.join(path_out, f)
+    chaine = file_out
     file_total=chaine.replace(f"{forme}Texte",f"{forme}TexteOrdered",1)
-    path_out=path_out+"/"
-    if not os.path.exists(path_out):
-        os.mkdir(path_out)
+    path_out = path_out + "/"
     return file_out, file_total, path_out, df_k
      
 def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out, mode, args, clustering_results_dir="./Clustering_results", patterns_results_dir="./Patterns_results", registry_path="", lexiques_dir=""):
@@ -332,6 +382,11 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
     T, dictionnaire_t = enslave_perl.cqp_general(registry_path)
+    path_specifs = (
+        f"{patterns_results_dir}/Specifs/{metadata}/{modif}motifs/"
+        f"itemset_min{nb_itemset_min}/gap_min{gap_min}_gap_max{gap_max}/minsup{str(minsup_percent)}/"
+        f"{total_motifs}motifs/"
+    )
     
     if total_motifs>0:
         if not os.path.exists(path_out):
@@ -339,7 +394,7 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
             
         if metadata!="id":## cas de annee, genre, etc.##
             print(metadata)
-            path_id = f"{patterns_results_dir}/R/id/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/minsup{str(minsup_percent)}/"
+            path_id = f"{patterns_results_dir}/R/id/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}_gap_max{gap_max}/minsup{str(minsup_percent)}/"
             if os.path.exists(path_id):
                 try:
                     file_out_motifs, file_total, path_out, df_k = get_already_computed_df_id("motifs", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id,path_out,modif)
@@ -371,8 +426,19 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
         results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_out_motifs
 
         
-        if specifs:       
-                compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t)
+        if specifs:
+                dictionnaire_t_specifs = aggregate_t_by_metadata(dictionnaire_t, df_metadata, metadata)
+                specifs_file = compute_specifs_function(
+                    df_k,
+                    minsup_percent,
+                    execution_time,
+                    specifs,
+                    path_specifs,
+                    T,
+                    dictionnaire_t_specifs,
+                    total_motifs,
+                )
+                results[f"{metadata}_{modif}specifs_motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = specifs_file
 
         if mode=="auto":
             subprocess.call(["Rscript", "./src/AFC.R", file_out_motifs, path_out]) 

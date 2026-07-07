@@ -36,6 +36,22 @@ class HistoryPage(BasePage):
             hours = int(seconds // 3600)
             minutes = int((seconds % 3600) // 60)
             return f"{hours}h {minutes}min"
+
+    def _format_minsup_values(self, values) -> str:
+        if not isinstance(values, list):
+            values = [values]
+
+        formatted_values: list[str] = []
+        for value in values:
+            try:
+                numeric_value = float(value)
+            except (TypeError, ValueError):
+                formatted_values.append(str(value))
+                continue
+
+            formatted_values.append(f"{numeric_value:.1f}")
+
+        return ", ".join(formatted_values) if formatted_values else "[]"
         
     def _build_ui(self):
         outer = QVBoxLayout(self)
@@ -187,7 +203,7 @@ class HistoryPage(BasePage):
 
             line = (
                 f"{ts} | {status.upper()} | {self._format_duration(duration)} | "
-                f"{lang} | {gpu} | threads={threads} | minsup={minsup}"
+                f"{lang} | {gpu} | threads={threads} | minsup={self._format_minsup_values(minsup)}"
             )
 
             item = QListWidgetItem(line)

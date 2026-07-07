@@ -10,6 +10,7 @@ import numpy as np
 from scipy.stats import hypergeom
 import pickle as pk
 import os
+import math
 from conllu import parse_incr
 import re
 import pprint
@@ -17,7 +18,11 @@ import pprint
 
 #### Copyright © - Mekki 2022 ###
 def get_minsup(minsup, dmt4_files):
-    return round((get_nbr_seq(dmt4_files) / 100) * minsup)
+    nbr_seq = get_nbr_seq(dmt4_files)
+    minsup_occurrences = math.ceil((nbr_seq / 100) * float(minsup))
+    if nbr_seq <= 0 or float(minsup) <= 0:
+        return 0
+    return max(1, minsup_occurrences)
 
 def save_pickles_results(to_save, title_file):
     """

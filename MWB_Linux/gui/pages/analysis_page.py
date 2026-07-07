@@ -6,16 +6,17 @@ la progression en direct de cette dernière.
 """
 
 import json
+import zipfile
 from time import perf_counter
 from datetime import datetime
 from pathlib import Path
 
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
-    QScrollArea, QWidget, QProgressBar, QTextEdit, QFileDialog, QMessageBox
+    QScrollArea, QWidget, QProgressBar, QTextEdit, QFileDialog, QMessageBox, QCheckBox
 )
 from PyQt6.QtGui import QFont
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, pyqtSignal
 
 from gui.widgets.base_page import BasePage, TEXT_PRIMARY
 from gui.config.settings import load_profile, list_profiles, DEFAULT_CONFIG
@@ -25,6 +26,8 @@ from gui.core.shiny_runner import save_results_for_shiny
 
 class AnalysisPage(BasePage):
     """Page de lancement et suivi de l'analyse."""
+
+    analysis_completed = pyqtSignal(dict)
     
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -167,6 +170,11 @@ class AnalysisPage(BasePage):
         logs_group = self.make_group("Logs")
         logs_layout = QVBoxLayout(logs_group)
 
+        self._logs_level_label = QLabel()
+        self._logs_level_label.setStyleSheet("color: #6b7280; background-color: transparent; font-size: 9pt;")
+        self._logs_level_label.setFont(QFont("Segoe UI", 9))
+        logs_layout.addWidget(self._logs_level_label)
+
         self._logs_text = QTextEdit()
         self._logs_text.setReadOnly(True)
         self._logs_text.setMinimumHeight(300)
@@ -244,6 +252,7 @@ class AnalysisPage(BasePage):
             profile_name = "Défaut"
         
         self._config_label.setText(self._build_config_summary(config, profile_name))
+        self._refresh_log_level_label()
         self._current_config = config
         
     def update_config(self, config: dict):
@@ -254,6 +263,7 @@ class AnalysisPage(BasePage):
         
         profile_name = config.get("_display_profile_name", "Configuration appliquée")
         self._config_label.setText(self._build_config_summary(config, profile_name))
+        self._refresh_log_level_label()
 
     def _format_annotator_display(self, annotator_tool: str) -> str:
         return {
@@ -299,17 +309,44 @@ class AnalysisPage(BasePage):
             return f"Pipeline Stanza ({language}, {device})"
         return "N/A"
 
+    def _get_log_level_display(self) -> str:
+        settings = self._load_app_settings()
+        return settings.get("log_level", "Normal")
+
+    def _load_app_settings(self) -> dict:
+        settings_path = self._project_root / "app_settings.json"
+        defaults = {
+            "log_level": "Normal",
+            "prompt_prepared_archive_on_first_analysis": True,
+        }
+        if not settings_path.exists():
+            return defaults.copy()
+
+        try:
+            with open(settings_path, "r", encoding="utf-8") as handle:
+                loaded = json.load(handle)
+            return {**defaults, **loaded}
+        except Exception:
+            return defaults.copy()
+
+    def _save_app_settings(self, settings: dict):
+        settings_path = self._project_root / "app_settings.json"
+        with open(settings_path, "w", encoding="utf-8") as handle:
+            json.dump(settings, handle, indent=2, ensure_ascii=False)
+
     def _build_config_summary(self, config: dict, profile_name: str) -> str:
         """Construit le résumé affiché dans le bloc Configuration actuelle."""
         annotator_tool = config.get('annotator_tool', 'spacy')
         annotator_display = self._format_annotator_display(annotator_tool)
         model_display = self._get_annotator_model_display(config)
+        log_level_display = self._get_log_level_display()
 
         summary = f"<b>Profil :</b> {profile_name}<br>"
         summary += f"<b>Langue :</b> {config.get('language', 'N/A')}<br>"
         summary += f"<b>Outil d'annotation :</b> {annotator_display}<br>"
         summary += f"<b>Modèle NLP :</b> {model_display}<br>"
         summary += f"<b>GPU :</b> {'Oui' if config.get('use_gpu', False) else 'Non'}<br>"
+        summary += f"<b>Verbosité des logs :</b> {log_level_display}<br>"
         summary += f"<b>Threads :</b> {config.get('threads', 'N/A')}<br>"
         summary += f"<b>Minsup (%):</b> {config.get('list_minsup_percent', [])}<br>"
         summary += f"<b>Itemset min :</b> {config.get('list_itemset_min', [])}<br>"
@@ -318,6 +355,10 @@ class AnalysisPage(BasePage):
         summary += f"<b>Clustering interne :</b> {'Oui' if config.get('internal_clustering', False) else 'Non'}<br>"
         summary += f"<b>Métadonnées :</b> {config.get('list_metadata', 'N/A')}"
         return summary
+
+    def _refresh_log_level_label(self):
+        log_level_display = self._get_log_level_display()
+        self._logs_level_label.setText(f"Niveau de verbosité affiché dans les logs : {log_level_display}")
         
     # --- Lancement ---
     def _on_launch(self):
@@ -442,6 +483,7 @@ class AnalysisPage(BasePage):
     def _on_finished(self, results: dict):
         """L'analyse est terminée."""
         worker = self._worker
+        completion_payload = {}
         self._launch_btn.setEnabled(True)
         self._stop_btn.setEnabled(False)
         if self._current_config:
@@ -472,6 +514,8 @@ class AnalysisPage(BasePage):
             last_analysis_file.parent.mkdir(parents=True, exist_ok=True)
             with open(last_analysis_file, 'w', encoding='utf-8') as f:
                 json.dump(last_analysis_info, f, indent=2, ensure_ascii=False)
+            completion_payload = dict(last_analysis_info)
+            completion_payload["results_json"] = str(self._project_root / "logs" / "last_results_for_shiny.json")
 
         self._worker = None
 
@@ -487,6 +531,11 @@ class AnalysisPage(BasePage):
                 details="Analyse terminée avec succès."
             )
         )
+
+        if worker:
+            self._maybe_offer_prepared_archive(worker)
+
+        self.analysis_completed.emit(completion_payload)
 
     def _on_error(self, error_msg: str):
         """Une erreur s'est produite."""
@@ -533,3 +582,88 @@ class AnalysisPage(BasePage):
                 details=message
             )
         )
+
+    def _maybe_offer_prepared_archive(self, worker):
+        """Propose de créer une archive ZIP après la première analyse complète d'un corpus."""
+        settings = self._load_app_settings()
+        if not settings.get("prompt_prepared_archive_on_first_analysis", True):
+            return
+
+        if not getattr(worker, "is_first_analysis_for_group", False):
+            return
+
+        tagged_dir = Path(worker.paths.get("tagged_stanza", ""))
+        underscore_dir = Path(worker.paths.get("underscore_fix", ""))
+        if not tagged_dir.exists():
+            return
+
+        tagged_files = list(tagged_dir.glob("*.conllu"))
+        underscore_files = list(underscore_dir.glob("*.conllu")) if underscore_dir.exists() else []
+        if not tagged_files:
+            return
+
+        msg = QMessageBox(self)
+        msg.setIcon(QMessageBox.Icon.Question)
+        msg.setWindowTitle("Créer une archive préparée ?")
+        msg.setText("La première analyse complète de ce corpus est terminée.")
+        msg.setInformativeText(
+            "Voulez-vous créer une archive ZIP contenant les dossiers "
+            "`textes_tagged` et `underscore_fix` pour faciliter une future réutilisation ?"
+        )
+        msg.setStandardButtons(
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+        )
+        msg.setDefaultButton(QMessageBox.StandardButton.Yes)
+
+        never_ask_checkbox = QCheckBox("Ne plus proposer cette archive automatiquement")
+        msg.setCheckBox(never_ask_checkbox)
+        reply = msg.exec()
+
+        if never_ask_checkbox.isChecked():
+            settings["prompt_prepared_archive_on_first_analysis"] = False
+            try:
+                self._save_app_settings(settings)
+            except Exception as exc:
+                self._logs_text.append(f"[ARCHIVE] Impossible de sauvegarder le paramètre: {exc}")
+
+        if reply != QMessageBox.StandardButton.Yes:
+            return
+
+        try:
+            archive_path = self._create_prepared_archive(worker)
+            self._logs_text.append(
+                "[ARCHIVE] Archive préparée créée : "
+                f"{archive_path}"
+            )
+            QMessageBox.information(
+                self,
+                "Archive créée",
+                "L'archive préparée a bien été créée.\n\n"
+                f"Fichier : {archive_path}"
+            )
+        except Exception as exc:
+            self._logs_text.append(f"[ARCHIVE] Erreur lors de la création de l'archive : {exc}")
+            QMessageBox.warning(
+                self,
+                "Erreur de création",
+                f"Impossible de créer l'archive préparée :\n{exc}"
+            )
+
+    def _create_prepared_archive(self, worker) -> Path:
+        """Crée une archive ZIP avec les sorties réutilisables de l'analyse."""
+        analysis_root = Path(worker.paths["root"])
+        archive_path = analysis_root / "archive_preparee.zip"
+        folders_to_include = [
+            Path(worker.paths["tagged_stanza"]),
+            Path(worker.paths["underscore_fix"]),
+        ]
+
+        with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+            for folder in folders_to_include:
+                if not folder.exists():
+                    continue
+                for file_path in folder.rglob("*"):
+                    if file_path.is_file():
+                        archive.write(file_path, file_path.relative_to(analysis_root))
+
+        return archive_path

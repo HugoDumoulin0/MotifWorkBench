@@ -1138,10 +1138,10 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                                                     if df_k.empty or len(df_k.columns) == 0:
                                                         _log(f"La fusion des clusters a échoué (DataFrame vide)", LOG_WARNING)
                                                         _log(f"   Utilisation du fichier non-FUS à la place", LOG_WARNING)
-                                                        results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_path
+                                                        force_recalcul = True
                                                         break
                                                     
-                                                    f_fus = f[:-4] + "_FUS.tsv"
+                                                    f_fus = compute_CQP.fused_output_path(f)
                                                     fus_path = path_out + dir + "/" + f_fus
                                                     df_k.to_csv(fus_path, sep="\t")
                                                     _log(f"   Fichier FUS généré: {f_fus}", LOG_DEBUG)
@@ -1167,6 +1167,10 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                                                 results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = fus_path
                                             else:
                                                 results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_path
+                                            if specifs:
+                                                specif_file = compute_CQP.latest_specif_file(path_out)
+                                                if specif_file:
+                                                    results[f"{metadata}_specif_table_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = specif_file
                                             break
                                     # Si un fichier corrompu a été détecté, sortir aussi de la boucle externe
                                     if force_recalcul:

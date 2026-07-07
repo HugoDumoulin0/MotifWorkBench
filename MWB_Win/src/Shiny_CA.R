@@ -66,15 +66,19 @@ datasets <- fromJSON(paste(json_input, collapse = ""))
 
 print(datasets)
 
-metadata_name <- unique(sub("_.*", "", names(datasets)))
+analysis_dataset_names <- names(datasets)[!grepl("_specif_", names(datasets), ignore.case = TRUE)]
+specif_dataset_names <- names(datasets)[grepl("_specif_", names(datasets), ignore.case = TRUE)]
+specif_metadata_names <- unique(sub("_specif_.*", "", specif_dataset_names))
+
+metadata_name <- unique(sub("_.*", "", analysis_dataset_names))
 print("Metadata name:")
 print(metadata_name)
 
-has_user_input_list <- grepl("user_input_listTrue", names(datasets))
+has_user_input_list <- grepl("user_input_listTrue", analysis_dataset_names)
 print("Has user input list:")
 print(has_user_input_list)
 
-name_user_input <- names(datasets)[grepl("user_input_listTrue", names(datasets))]
+name_user_input <- analysis_dataset_names[grepl("user_input_listTrue", analysis_dataset_names)]
 user_input_value <- sub(".*user_input_listTrue([^_]+).*", "\\1", name_user_input)
 print("User input value:")
 print(user_input_value)
@@ -84,7 +88,7 @@ has_specifs <- ifelse(any(grepl("specifsTrue", names(datasets))), TRUE, FALSE)
 print("Has specifs:")
 print(has_specifs)
 
-name_motifs <- names(datasets)[grepl("motif", names(datasets), ignore.case = TRUE)]
+name_motifs <- analysis_dataset_names[grepl("motif", analysis_dataset_names, ignore.case = TRUE)]
 has_motifs <- name_motifs
 print("Has motifs:")
 print(has_motifs)
@@ -106,9 +110,9 @@ print("Itemsetmin:")
 print(itemsetmin)
 
 pattern_representations <- unique(ifelse(
-  grepl("motif", names(datasets), ignore.case = TRUE),
+  grepl("motif", analysis_dataset_names, ignore.case = TRUE),
   "motif",
-  sub(".*_([^_]+)$", "\\1", names(datasets))
+  sub(".*_([^_]+)$", "\\1", analysis_dataset_names)
 ))
 
 
@@ -123,7 +127,7 @@ itemsetmin_display <- itemsetmin
 #--------------------------------------------------------------
 
 get_candidates <- function(meta=NULL, rep=NULL, minsup=NULL, gapmin=NULL, gapmax=NULL) {
-  cands <- names(datasets)
+  cands <- analysis_dataset_names
   if (!is.null(meta))
     cands <- cands[startsWith(cands, paste0(meta, "_"))]
   if (!is.null(rep)) {
@@ -139,6 +143,22 @@ get_candidates <- function(meta=NULL, rep=NULL, minsup=NULL, gapmin=NULL, gapmax
   if (!is.null(gapmax))
     cands <- cands[grepl(paste0("_[^_]+_[^_]+_", gapmax, "_[^_]+$"), cands, perl=TRUE)]
   cands
+}
+
+get_specif_candidates <- function(meta=NULL) {
+  cands <- specif_dataset_names
+  if (!is.null(meta) && nzchar(meta))
+    cands <- cands[startsWith(cands, paste0(meta, "_specif_"))]
+  cands
+}
+
+format_specif_choice_label <- function(key) {
+  label <- sub("^[^_]+_specif_table_", "", key)
+  label <- sub("_", " | minsup=", label, fixed = TRUE)
+  label <- sub("_", " | gapmin=", label, fixed = TRUE)
+  label <- sub("_", " | gapmax=", label, fixed = TRUE)
+  label <- sub("_", " | itemset=", label, fixed = TRUE)
+  label
 }
 
 extract_reps      <- function(cands) unique(ifelse(grepl("motif", cands, ignore.case=TRUE), "motif", sub(".*_([^_]+)$", "\\1", cands)))
@@ -205,6 +225,58 @@ server <- function(input, output, session){
         scrollX = TRUE
       ),
       filter = "top",    # adds per-column filters
+      rownames = TRUE
+    )
+  })
+
+  observe({
+    choices <- specif_metadata_names
+    selected_choice <- if (length(choices) > 0) choices[1] else character(0)
+    updateSelectInput(session, "specif_metadata", choices = choices, selected = selected_choice)
+  })
+
+  observe({
+    meta <- input$specif_metadata
+    cands <- get_specif_candidates(meta)
+    labels <- setNames(cands, vapply(cands, format_specif_choice_label, character(1)))
+    selected_choice <- if (length(cands) > 0) cands[1] else character(0)
+    updateSelectInput(session, "specif_dataset", choices = labels, selected = selected_choice)
+  })
+
+  specif_table_data <- reactive({
+    req(input$specif_dataset)
+    path <- datasets[[input$specif_dataset]]
+    req(is.character(path), length(path) == 1)
+    raw_data <- read.delim(path, sep = "\t", row.names = 1, check.names = FALSE)
+    display_data <- raw_data
+
+    for (col_name in names(display_data)) {
+      column <- display_data[[col_name]]
+      if (is.numeric(column)) {
+        display_data[[col_name]] <- vapply(column, function(value) {
+          if (is.na(value)) {
+            return(NA_character_)
+          }
+          if (is.infinite(value)) {
+            return(ifelse(value > 0, "Inf", "-Inf"))
+          }
+          as.character(value)
+        }, character(1))
+      }
+    }
+
+    display_data
+  })
+
+  output$specif_table <- renderDT({
+    datatable(
+      specif_table_data(),
+      options = list(
+        pageLength = 15,
+        autoWidth = TRUE,
+        scrollX = TRUE
+      ),
+      filter = "top",
       rownames = TRUE
     )
   })
@@ -986,7 +1058,7 @@ ui <- page_navbar(
                   selected = itemsetmin_display[1]
                 ),
               ),
-            ),
+          ),
           checkboxInput("input_sel_method", " Use single name", value=FALSE)
         ),
         accordion_panel("Plot settings",
@@ -1185,6 +1257,32 @@ ui <- page_navbar(
                 style = "width: 100%;"
               )
           ),
+          conditionalPanel(
+            condition = "input.tabselected == 'specifs'",
+              selectInput(
+                inputId = "specif_metadata",
+                label = tooltip(
+                  trigger = list(
+                    "Métadonnée",
+                    bs_icon("info-circle")
+                  ),
+                  "Choisissez la métadonnée dont vous voulez afficher la table de spécificités."
+                ),
+                choices = specif_metadata_names,
+                selected = if (length(specif_metadata_names) > 0) specif_metadata_names[1] else NULL
+              ),
+              selectInput(
+                inputId = "specif_dataset",
+                label = tooltip(
+                  trigger = list(
+                    "Table de spécificités",
+                    bs_icon("info-circle")
+                  ),
+                  "Choisissez le TSV de spécificités à afficher pour cette métadonnée."
+                ),
+                choices = NULL
+              )
+          ),
         ),
       # )
     ),
@@ -1225,10 +1323,31 @@ ui <- page_navbar(
           )
         ),
         nav_panel(
+          "Specifs",
+          value = "specifs",
+          fluidRow(
+            card(
+              h4("Tables de spécificités"),
+              tags$p(
+                "Eléments étudiés : Motifs",
+                style = "margin-bottom: 12px; color: #4b5563; font-style: italic;"
+              ),
+              column(
+                width = 12,
+                DTOutput("specif_table")
+              )
+            )
+          )
+        ),
+        nav_panel(
           "Data",
             fluidRow(
               card(
                 h4("Contingency table"),
+                tags$p(
+                  "Eléments étudiés : Motifs",
+                  style = "margin-bottom: 12px; color: #4b5563; font-style: italic;"
+                ),
                 column(
                   width = 12,
                   DTOutput("data_table")

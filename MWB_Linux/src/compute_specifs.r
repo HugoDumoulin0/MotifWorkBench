@@ -115,6 +115,7 @@ df_final <- bind_rows(df_wide, t_row) %>%
   column_to_rownames("motif")  # make 'motif' the row names col.
 
 specif_table <- custom_specif(df_final)
+specif_table <- specif_table[rownames(specif_table) != "others", , drop = FALSE]
 
 # Save it!
 write.table(specif_table,

@@ -178,6 +178,34 @@ class ShinyPage(BasePage):
         except Exception as exc:
             self._status.setText("Erreur lors du lancement de Shiny.")
             QMessageBox.critical(self, "Erreur Shiny", f"Impossible de lancer Shiny:\n{exc}")
+
+    def refresh_latest_analysis(self):
+        """Recharge silencieusement Shiny sur la dernière analyse terminée."""
+        json_path = last_results_json_path()
+        if not json_path.exists():
+            self._status.setText("Aucun résultat Shiny récent détecté.")
+            return
+
+        try:
+            if is_shiny_running(self._shiny_host, self._shiny_port):
+                if self._view is not None:
+                    self._view.setUrl(QUrl(self.shiny_url()))
+                self._status.setText("Shiny mis à jour avec la dernière analyse terminée.")
+                return
+
+            launch_shiny_embedded(json_path, self._shiny_host, self._shiny_port)
+            ready = wait_for_shiny(self._shiny_host, self._shiny_port, timeout_s=12.0)
+
+            if self._view is not None:
+                self._view.setUrl(QUrl(self.shiny_url()))
+
+            if ready:
+                self._status.setText("Shiny mis à jour avec la dernière analyse terminée.")
+            else:
+                self._status.setText("Shiny redémarré, chargement de la vue en cours...")
+        except Exception as exc:
+            self._status.setText("Impossible de mettre Shiny à jour automatiquement.")
+            print(f"Erreur dans refresh_latest_analysis: {exc}")
     
     def _reload_view(self):
         try:

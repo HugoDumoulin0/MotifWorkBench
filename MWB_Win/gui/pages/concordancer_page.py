@@ -5,6 +5,7 @@ Page Concordancier : Analyse et visualisation des concordances.
 
 from pathlib import Path
 import json
+import pandas as pd
 from PyQt6.QtWidgets import (
     QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
     QScrollArea, QWidget, QLineEdit, QTableWidget, QComboBox,
@@ -56,6 +57,26 @@ class ConcordancerPage(BasePage):
             )
         except Exception:
             self._closed_motif_display_mode = "matched_words"
+
+    def _save_closed_motif_display_preference(self):
+        """Persiste le mode d'affichage des motifs dans les paramètres de l'application."""
+        settings_file = self._project_root / "app_settings.json"
+        settings = {}
+
+        if settings_file.exists():
+            try:
+                with open(settings_file, "r", encoding="utf-8") as handle:
+                    settings = json.load(handle)
+            except Exception:
+                settings = {}
+
+        settings["closed_motif_concordance_display"] = self._closed_motif_display_mode
+
+        try:
+            with open(settings_file, "w", encoding="utf-8") as handle:
+                json.dump(settings, handle, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
     
     def _load_registry_path(self):
         """Charge le chemin du registry CWB depuis la dernière analyse."""
@@ -79,8 +100,81 @@ class ConcordancerPage(BasePage):
         self._registry_path = ""
 
     def _load_closed_motifs(self):
-        """Charge les motifs clos de la dernière analyse pour usage dans le concordancier."""
+        """Charge les motifs affichables du dernier jeu de résultats pour usage dans le concordancier."""
         self._closed_motifs = []
+        if self._load_closed_motifs_from_results_manifest():
+            return
+
+        self._load_closed_motifs_from_closed_patterns()
+
+    def _load_closed_motifs_from_results_manifest(self) -> bool:
+        """Charge les motifs depuis les mêmes tableaux TSV que ceux envoyés à Shiny."""
+        results_file = self._project_root / "logs" / "last_results_for_shiny.json"
+        if not results_file.exists():
+            return False
+
+        try:
+            with open(results_file, "r", encoding="utf-8") as handle:
+                results = json.load(handle)
+        except Exception:
+            return False
+
+        result_files: list[tuple[str, Path]] = []
+        for key, raw_path in results.items():
+            try:
+                result_path = Path(raw_path)
+            except TypeError:
+                continue
+            if not result_path.exists():
+                continue
+            if "motifsTexte" not in result_path.name:
+                continue
+            result_files.append((str(key), result_path))
+
+        if not result_files:
+            return False
+
+        seen_patterns: set[str] = set()
+        loaded_motifs: list[dict[str, str]] = []
+
+        def build_entry(result_key: str, row_label: str) -> tuple[str, str] | None:
+            label = row_label.strip()
+            if not label:
+                return None
+
+            key_lower = result_key.lower()
+            if "motif" in key_lower:
+                return label, str(tools.read_req_CQP(label))
+
+            return None
+
+        for result_key, result_file in sorted(result_files, key=lambda item: item[1].stat().st_mtime, reverse=True):
+            try:
+                df = pd.read_csv(result_file, sep="\t", index_col=0)
+            except Exception:
+                continue
+
+            for raw_item in df.index.tolist():
+                entry = build_entry(result_key, str(raw_item))
+                if entry is None:
+                    continue
+                label, cqp_pattern = entry
+                if cqp_pattern in seen_patterns:
+                    continue
+                seen_patterns.add(cqp_pattern)
+                loaded_motifs.append({
+                    "label": label,
+                    "pattern": cqp_pattern,
+                })
+
+        if not loaded_motifs:
+            return False
+
+        self._closed_motifs = loaded_motifs
+        return True
+
+    def _load_closed_motifs_from_closed_patterns(self):
+        """Fallback : charge les motifs clos bruts depuis le dernier fichier `.pk`."""
         last_analysis_file = self._project_root / "logs" / "last_analysis.json"
         if not last_analysis_file.exists():
             return
@@ -144,12 +238,26 @@ class ConcordancerPage(BasePage):
     def showEvent(self, event):
         """Recharge le registry_path à chaque affichage de la page."""
         super().showEvent(event)
+        self.reload_latest_analysis()
+
+    def reload_latest_analysis(self):
+        """Recharge le concordancier à partir de l'analyse la plus récente."""
         self._load_registry_path()
         self._load_preferences()
         self._load_closed_motifs()
         self._refresh_closed_motifs_combo()
         self._refresh_registry_label()
         self._refresh_closed_motif_display_label()
+
+        if hasattr(self, "_stats_label") and self._stats_label is not None:
+            if self._registry_path and Path(self._registry_path).exists():
+                self._stats_label.setText(
+                    "Concordancier mis à jour avec la dernière analyse terminée."
+                )
+            else:
+                self._stats_label.setText(
+                    "Aucune analyse récente exploitable détectée pour le concordancier."
+                )
 
     def _refresh_registry_label(self):
         """Met à jour le libellé visible du registry CWB utilisé."""
@@ -180,6 +288,26 @@ class ConcordancerPage(BasePage):
         self._closed_motif_display_label.setStyleSheet(
             f"color: {TEXT_SECONDARY}; background-color: transparent; font-size: 9pt; font-style: italic;"
         )
+
+        if hasattr(self, "_closed_motif_display_combo"):
+            combo_index = self._closed_motif_display_combo.findData(self._closed_motif_display_mode)
+            if combo_index >= 0 and combo_index != self._closed_motif_display_combo.currentIndex():
+                self._closed_motif_display_combo.blockSignals(True)
+                self._closed_motif_display_combo.setCurrentIndex(combo_index)
+                self._closed_motif_display_combo.blockSignals(False)
+
+    def _on_closed_motif_display_changed(self):
+        """Met à jour le mode d'affichage des motifs depuis le sélecteur local."""
+        if not hasattr(self, "_closed_motif_display_combo"):
+            return
+
+        selected_mode = self._closed_motif_display_combo.currentData()
+        if not selected_mode:
+            return
+
+        self._closed_motif_display_mode = selected_mode
+        self._save_closed_motif_display_preference()
+        self._refresh_closed_motif_display_label()
     
     # --- Construction UI ---
     
@@ -463,6 +591,30 @@ class ConcordancerPage(BasePage):
         search_layout.addWidget(self._closed_motif_row)
         self._refresh_closed_motifs_combo()
         self._update_search_mode_ui()
+
+        closed_motif_display_row = QHBoxLayout()
+        closed_motif_display_row.setSpacing(8)
+
+        closed_motif_display_title = QLabel("Affichage des motifs :")
+        closed_motif_display_title.setStyleSheet(
+            f"color: {TEXT_PRIMARY}; background-color: transparent;"
+        )
+        closed_motif_display_title.setFont(QFont("Segoe UI", 10))
+        closed_motif_display_row.addWidget(closed_motif_display_title)
+
+        self._closed_motif_display_combo = QComboBox()
+        self._closed_motif_display_combo.addItem("Mots trouvés", "matched_words")
+        self._closed_motif_display_combo.addItem("Motif", "motif")
+        display_index = self._closed_motif_display_combo.findData(self._closed_motif_display_mode)
+        if display_index >= 0:
+            self._closed_motif_display_combo.setCurrentIndex(display_index)
+        self._closed_motif_display_combo.setMinimumWidth(220)
+        self._closed_motif_display_combo.currentIndexChanged.connect(
+            self._on_closed_motif_display_changed
+        )
+        closed_motif_display_row.addWidget(self._closed_motif_display_combo)
+        closed_motif_display_row.addStretch()
+        search_layout.addLayout(closed_motif_display_row)
 
         self._closed_motif_display_label = QLabel()
         self._closed_motif_display_label.setWordWrap(True)

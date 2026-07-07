@@ -7,7 +7,7 @@ Paramètres avancés: tous les paramètres
 
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout,
-    QFormLayout, QLabel, QLineEdit, QCheckBox, QSpinBox,
+    QFormLayout, QLabel, QLineEdit, QCheckBox, QSpinBox, QDoubleSpinBox,
     QPushButton, QComboBox, QGroupBox,
     QScrollArea, QMessageBox, QInputDialog, QFrame, QDialog, QFileDialog
 )
@@ -394,8 +394,10 @@ class ConfigPage(QWidget):
         grp_motifs.setStyleSheet(self._group_style())
         form_motifs = QFormLayout(grp_motifs)
 
-        self._w_minsup = QSpinBox()
-        self._w_minsup.setRange(1, 100)
+        self._w_minsup = QDoubleSpinBox()
+        self._w_minsup.setRange(0.1, 100.0)
+        self._w_minsup.setDecimals(1)
+        self._w_minsup.setSingleStep(0.1)
         self._w_minsup.setSuffix(" %")
         self._w_minsup.setToolTip("Fréquence minimale (en % des séquences) pour qu'un motif soit retenu.")
         form_motifs.addRow(_tooltip_label("Support minimal :", "% de textes dans lesquels un motif doit apparaître."), self._w_minsup)
@@ -478,13 +480,19 @@ class ConfigPage(QWidget):
         form_early.addRow(_tooltip_label("POS pour early sel. :", "Restreindre l'early selection à ces POS."), self._w_early_pos4lemma)
 
         self._w_user_input_list = QCheckBox("Utiliser une liste de lemmes manuelle")
-        self._w_user_input_list.setToolTip("Utiliser une liste de lemmes fournie manuellement au lieu de l'early selection automatique.")
+        self._w_user_input_list.setToolTip(
+            "Utiliser une liste de lemmes fournie manuellement. "
+            "Cette option peut être utilisée avec ou sans early selection automatique."
+        )
         self._w_user_input_list.toggled.connect(lambda _checked: self._update_early_selection_state(self._w_earlySelection.isChecked()))
         form_early.addRow("", self._w_user_input_list)
 
         self._w_liste_earlyselection = QLineEdit()
         self._w_liste_earlyselection.setPlaceholderText("président, comité, formation…")
-        self._w_liste_earlyselection.setToolTip("Liste de lemmes à utiliser (séparés par des virgules).")
+        self._w_liste_earlyselection.setToolTip(
+            "Liste de lemmes à utiliser (séparés par des virgules), "
+            "même si l'early selection automatique est désactivée."
+        )
         form_early.addRow(_tooltip_label("Lemmes :", "Liste manuelle de lemmes à cibler."), self._w_liste_earlyselection)
 
         layout.addWidget(self._grp_early)
@@ -736,8 +744,8 @@ class ConfigPage(QWidget):
             sys.path.pop(0)
 
     def _update_early_selection_state(self, enabled: bool):
-        """Met à jour les options d'early selection selon le mode automatique ou manuel."""
-        manual_mode = enabled and self._w_user_input_list.isChecked()
+        """Met à jour les options d'early selection et de liste manuelle."""
+        manual_mode = self._w_user_input_list.isChecked()
 
         automatic_widgets = [
             self._w_seuil_early,
@@ -750,13 +758,13 @@ class ConfigPage(QWidget):
             self._w_liste_earlyselection,
         ]
 
-        self._w_user_input_list.setEnabled(enabled)
+        self._w_user_input_list.setEnabled(True)
 
         for widget in automatic_widgets:
             widget.setEnabled(enabled and not manual_mode)
 
         for widget in manual_widgets:
-            widget.setEnabled(enabled and manual_mode)
+            widget.setEnabled(manual_mode)
 
     def _browse_prepared_conllu_dir(self):
         start_dir = self._w_prepared_conllu_dir.text().strip() or self._get_corpus_path_from_name(self._w_corpus_selector.currentText())
@@ -1201,14 +1209,14 @@ class ConfigPage(QWidget):
                 left: 12px;
                 padding: 0 4px;
             }}
-            QLineEdit, QSpinBox, QComboBox {{
+            QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox {{
                 background: {input_background};
                 color: {input_color};
                 border: 1px solid {input_border};
                 border-radius: 4px;
                 padding: 4px 8px;
             }}
-            QLineEdit:disabled, QSpinBox:disabled, QComboBox:disabled {{
+            QLineEdit:disabled, QSpinBox:disabled, QDoubleSpinBox:disabled, QComboBox:disabled {{
                 background: #f3f4f6;
                 color: #9ca3af;
                 border: 1px solid #d1d5db;

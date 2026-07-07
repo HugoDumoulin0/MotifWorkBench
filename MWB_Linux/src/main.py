@@ -752,7 +752,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     # ==================================
     
     _log("-" * 75, LOG_INFO)
-    _log("3. Extraction des motifs fréquents et clos", LOG_INFO)
+    _log("3. Extraction des motifs clos", LOG_INFO)
     _progress("Fouille de motifs (BideSpanTree)", 30)
     start_time = time.time()
     _check_cancelled()
@@ -1021,6 +1021,11 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                             _check_cancelled()
                             _log(f"Minsup: {minsup_percent}%", LOG_DEBUG)
                             path_out = f"{path_R}minsup{str(minsup_percent)}/"
+                            path_specifs = (
+                                f"{dir_patterns_results}/Specifs/{metadata}/{modif}motifs/"
+                                f"itemset_min{nb_itemset_min}/gap_min{gap_min}_gap_max{gap_max}/"
+                                f"minsup{str(minsup_percent)}/"
+                            )
                             force_recalcul = False  # Flag pour forcer le recalcul si fichier corrompu
                             if os.path.exists(path_out) and not force_recalcul:
                                 for dir in os.listdir(path_out):
@@ -1097,6 +1102,19 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                                     # Si un fichier corrompu a été détecté, sortir aussi de la boucle externe
                                     if force_recalcul:
                                         break
+
+                            if specifs and os.path.exists(path_specifs):
+                                specif_candidates = [
+                                    os.path.join(root, file_name)
+                                    for root, _dirs, files in os.walk(path_specifs)
+                                    for file_name in files
+                                    if file_name.endswith(".tsv") and (
+                                        file_name.startswith("specif_") or "SpecifsMotifsTexte_df_" in file_name
+                                    )
+                                ]
+                                if specif_candidates:
+                                    specif_candidates = sorted(specif_candidates, key=os.path.getmtime, reverse=True)
+                                    results[f"{metadata}_{modif}specifs_motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = specif_candidates[0]
                             
                             if not os.path.exists(path_out) or force_recalcul:
                                 _log("Calcul en cours...", LOG_INFO)
