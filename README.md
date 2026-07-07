@@ -19,6 +19,7 @@ If you like (or really hate) this work, please use the following citation:
 -> ``Windows``
 1. Download the ``MWB_Win`` folder from GitHub.
 2. Open the folder and run ``install_and_run_windows.bat``.
+3. To launch MWB after the initial installation, simply double-click the ``launch_windows.bat`` file.
 
 -> ``MacOS``
 1. Download the ``MWB_macOS`` folder from GitHub.
