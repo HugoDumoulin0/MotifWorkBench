@@ -5,7 +5,7 @@
 1. Récupérer le dossier `MWB_Linux` du Github
 2. Ouvrir le dossier et lancer `install_and_run_linux.sh`
 4. Suivre les instructions et l'application s'ouvrira pour vous.
-5. Pour relancer l'application après première fermeture, lancer `install_and_run_linux.sh`
+5. Après la première installation, vous pouvez lancer directement l'outil avec `launch_motifworkbench.sh`
 
 ## Alternative
 
