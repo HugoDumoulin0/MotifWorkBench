@@ -28,6 +28,7 @@ If you like (or really hate) this work, please use the following citation:
 -> ``Linux``
 1. Download the ``MWB_Linux`` folder from GitHub.
 2. Open the folder and run ``install_and_run_linux.sh``
+3. To launch MWB after the initial installation, simply double-click the ``MotifWorkBench.desktop`` file.
 
 -----------------------
 
