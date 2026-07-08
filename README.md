@@ -17,10 +17,10 @@ If you like (or really hate) this work, please use the following citation:
 
 -> ``MWB v.0.2``
 GUI format, concordancer, help page, run history, analysis settings, configuration profiles, built-in visualization interface, available on Linux, Mac, Windows, "installer".
-Made by da Silva Jean-Charles [GitHub : @jcharlesDS](https://github.com/jcharlesDS)
+Made by da Silva Jean-Charles [GitHub : @jcharlesDS](https://github.com/jcharlesDS) during an internship (04/07/27-07/07/27) at Modyco laboratory (Université Paris Nanterre – CNRS), under Hugo Dumoulin's supervision (project ArchivU-TRIAD).
 
 -> ``MWB v.0.1``
-Base version, CLI format, available only on Mac and Linux with Docker.
+Base version by Hugo Dumoulin & Timothée Premat, CLI format, available only on Mac and Linux with Docker.
 
 
 ## Installation
