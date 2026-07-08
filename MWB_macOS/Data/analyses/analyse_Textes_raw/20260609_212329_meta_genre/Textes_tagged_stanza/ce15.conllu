@@ -1,0 +1,2696 @@
+1	Note	note	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Directions	direction	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+4	are	are	X	X	_	3	punct	_	_
+5	written	written	X	X	_	3	flat:foreign	_	_
+6	for	for	X	X	_	3	dep	_	_
+7	those	those	NOUN	NOUN	Gender=Fem|Number=Sing	3	nmod	_	_
+8	who	who	X	X	_	3	dep	_	_
+9	have	haver	X	X	_	1	amod	_	_
+10	had	had	X	X	_	9	dep	_	_
+11	previous	previou	NOUN	NOUN	Gender=Masc|Number=Sing	12	dep	_	_
+12	experience	experience	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+13	in	in	X	X	_	15	case	_	_
+14	making	making	X	X	_	13	dep	_	_
+15	pottery	pottery	PROPN	PROPN	_	1	nmod	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Instructions	instruction	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	for	for	X	X	_	1	dep	_	_
+3	preparing	preparing	X	X	_	1	flat:foreign	_	_
+4	clay	clay	X	X	_	1	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	drying	drying	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	glazing	glazing	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+9	and	and	X	X	_	1	nmod	_	_
+10	firing	firing	X	X	_	9	flat:foreign	_	_
+11	are	are	X	X	_	13	cc	_	_
+12	not	not	X	X	_	11	flat:foreign	_	_
+13	given	given	PROPN	PROPN	_	1	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Equipment	equipment	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Basic	Basic	X	X	_	1	appos	_	_
+4	pottery	pottery	X	X	_	3	flat:foreign	_	_
+5	studio	studio	ADJ	ADJ	Gender=Masc|Number=Sing	3	amod	_	_
+6	equipment	equipment	ADV	ADV	_	3	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Wooden	Wooden	PROPN	PROPN	_	2	dep	_	_
+2	butter	butter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+3	molds	molds	PROPN	PROPN	_	2	obj	_	_
+
+1	and	and	X	X	_	3	dep	_	_
+2	cookie	cookie	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+3	presses	presse	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Materials	Materials	PROPN	PROPN	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Ceramic	Ceramic	X	X	_	1	dep	_	_
+4	modeling	modeling	X	X	_	3	amod	_	_
+5	clay	clay	X	X	_	3	amod	_	_
+6	:	:	PUNCT	PUNCT	_	3	punct	_	_
+7	red	red	X	X	_	3	amod	_	_
+8	,	,	PUNCT	PUNCT	_	3	punct	_	_
+9	white	white	NOUN	NOUN	Gender=Fem|Number=Sing	10	case	_	_
+10	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	11	nmod	_	_
+11	buff	buff	NOUN	NOUN	Gender=Masc|Number=Sing	3	conj	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Stoneware	Stoneware	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	clay	clay	X	X	_	1	nmod	_	_
+3	for	for	X	X	_	1	dep	_	_
+4	tiles	tile	ADJ	ADJ	Number=Plur	3	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Glazes	Glazes	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	one	one	X	X	_	1	nmod	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	10	nsubj	_	SpaceAfter=No
+2	stroke	stroke	X	X	_	1	flat:name	_	_
+3	ceramic	ceramic	X	X	_	1	flat:name	_	_
+4	colors	colors	X	X	_	10	advmod	_	_
+5	,	,	PUNCT	PUNCT	_	10	punct	_	_
+6	stains	stain	ADJ	ADJ	Gender=Masc|Number=Plur	10	nsubj	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	cones	cone	NOUN	NOUN	Gender=Masc|Number=Plur	6	conj	_	_
+9	as	as	X	X	_	10	aux:tense	_	_
+10	indicated	indicated	X	X	_	0	ROOT	_	_
+
+1	in	in	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	individual	individual	X	X	_	1	dep	_	_
+
+1	instructions	instruction	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	General	General	PROPN	PROPN	_	0	ROOT	_	_
+
+1	directions	direction	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Use	Use	X	X	_	1	appos	_	_
+4	well	well	PROPN	PROPN	Gender=Masc|Number=Sing	3	flat:foreign	_	SpaceAfter=No
+
+1	-	-	ADJ	ADJ	Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	wedged	wedged	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	clay	clay	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	free	free	X	X	_	1	nmod	_	_
+4	of	of	X	X	_	5	case	_	_
+5	air	air	NOUN	NOUN	Gender=Masc|Number=Sing	3	nmod	_	_
+6	bubbles	bubble	ADJ	ADJ	Number=Plur	3	amod	_	_
+7	and	and	X	X	_	1	dep	_	_
+8	pliable	pliable	X	X	_	7	xcomp	_	_
+9	enough	enough	X	X	_	8	dep	_	_
+
+1	to	to	X	X	_	2	amod	_	_
+2	bend	bend	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	without	without	X	X	_	0	ROOT	_	_
+2	cracking	cracking	X	X	_	1	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Clean	Clean	X	X	_	0	ROOT	_	_
+2	wooden	wooden	X	X	_	1	flat:foreign	_	_
+3	molds	molds	X	X	_	1	flat:foreign	_	_
+4	and	and	X	X	_	1	flat:foreign	_	_
+5	presses	presse	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+6	thoroughly	thoroughly	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+7	;	;	PUNCT	PUNCT	_	1	punct	_	_
+8	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	they	they	X	X	_	6	nsubj	_	_
+2	must	must	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	free	free	X	X	_	2	nmod	_	_
+5	of	of	X	X	_	6	case	_	_
+6	oil	oil	ADV	ADV	_	0	ROOT	_	_
+7	,	,	PUNCT	PUNCT	_	6	punct	_	_
+8	wax	wax	ADV	ADV	_	9	advmod	_	_
+9	and	and	X	X	_	6	dep	_	_
+10	dust	dust	X	X	_	9	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Pressing	Pressing	X	X	_	0	ROOT	_	_
+
+1	designs	design	X	X	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	The	The	X	X	_	6	advmod	_	_
+4	size	size	X	X	_	6	advmod	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	wooden	wooden	X	X	_	1	obl:arg	_	_
+7	mold	mold	X	X	_	6	conj	_	_
+8	will	will	X	X	_	6	flat:foreign	_	_
+9	determine	determine	X	X	_	6	flat:foreign	_	_
+10	the	the	X	X	_	6	flat:foreign	_	_
+11	amount	amount	X	X	_	6	flat:foreign	_	_
+12	of	of	X	X	_	13	case	_	_
+13	clay	clay	X	X	_	6	conj	_	_
+14	needed	needed	X	X	_	6	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Roll	Roll	X	X	_	0	ROOT	_	_
+2	clay	clay	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	thickness	thickness	X	X	_	1	flat:foreign	_	_
+5	indicated	indicated	X	X	_	1	flat:foreign	_	_
+6	in	in	X	X	_	1	flat:foreign	_	_
+7	individual	individual	X	X	_	1	dep	_	_
+8	instructions	instruction	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Whenever	Whenever	PROPN	PROPN	_	10	nsubj	_	_
+2	possible	possible	ADJ	ADJ	Number=Sing	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	use	user	X	X	_	1	dep	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	wooden	wooden	X	X	_	1	flat:foreign	_	_
+7	mold	mold	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+8	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_
+9	a	avoir	X	X	_	10	aux:tense	_	_
+10	pattern	pattern	X	X	_	0	ROOT	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	cutting	cutting	X	X	_	0	ROOT	_	_
+
+1	clay	clay	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	When	When	X	X	_	0	ROOT	_	_
+
+1	mold	mold	X	X	_	0	ROOT	_	_
+2	has	has	X	X	_	1	dep	_	_
+3	more	more	X	X	_	1	dep	_	_
+4	than	than	X	X	_	3	amod	_	_
+5	one	one	X	X	_	1	dep	_	_
+6	design	design	X	X	_	5	flat:foreign	_	_
+7	cavity	cavity	X	X	_	6	amod	_	_
+8	,	,	PUNCT	PUNCT	_	5	punct	_	_
+9	make	make	X	X	_	5	dep	_	_
+10	individual	individual	X	X	_	5	flat:foreign	_	_
+
+1	paper	paper	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	patterns	pattern	ADJ	ADJ	Gender=Masc|Number=Plur	1	xcomp	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	mold	mold	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+
+1	or	or	CCONJ	CCONJ	_	2	cc	_	_
+2	paper	paper	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+3	pattern	pattern	ADJ	ADJ	Gender=Masc|Number=Sing	2	obj	_	_
+4	on	on	PRON	PRON	Number=Sing|Person=3	5	advmod	_	_
+5	rolled	rolled	X	X	_	2	ccomp	_	_
+6	clay	clay	X	X	_	5	obj	_	_
+7	and	and	X	X	_	5	dep	_	_
+8	cut	cut	X	X	_	5	obj	_	_
+9	clay	clay	X	X	_	5	obj	_	_
+10	by	by	X	X	_	5	dep	_	_
+11	holding	holding	X	X	_	5	obj	_	_
+12	knife	knife	PROPN	PROPN	_	5	obj	_	_
+13	in	in	X	X	_	15	case	_	_
+14	vertical	vertical	ADJ	ADJ	Gender=Masc|Number=Sing	15	amod	_	_
+15	position	position	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl:arg	_	_
+16	(	(	PUNCT	PUNCT	_	5	punct	_	_
+17	cut	cut	X	X	_	2	obj	_	_
+18	more	more	X	X	_	17	dep	_	_
+19	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	2	obj	_	_
+20	than	than	X	X	_	19	amod	_	_
+21	required	required	X	X	_	2	obj	_	_
+22	for	for	X	X	_	21	dep	_	_
+23	project	project	X	X	_	21	flat:foreign	_	_
+24	to	to	X	X	_	26	cc	_	_
+25	make	make	X	X	_	24	flat:foreign	_	_
+26	allowance	allowance	NOUN	NOUN	Gender=Fem|Number=Sing	2	ccomp	_	_
+27	for	for	ADP	ADP	_	28	case	_	_
+28	defects	defects	X	X	_	26	obl:arg	_	_
+29	;	;	PUNCT	PUNCT	_	2	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	experiment	experiment	X	X	_	0	ROOT	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	defects	defects	X	X	_	1	dep	_	_
+4	for	for	X	X	_	5	case	_	_
+5	decoration	decoration	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+6	techniques	technique	ADJ	ADJ	Number=Plur	5	amod	_	_
+7	of	of	ADP	ADP	_	8	case	_	_
+8	glazes	glaze	NOUN	NOUN	Number=Plur	5	nmod	_	_
+9	and	and	X	X	_	1	dep	_	_
+10	colors	colors	ADV	ADV	_	1	advmod	_	_
+11	)	)	PUNCT	PUNCT	_	1	punct	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	cut	cut	X	X	_	1	flat:foreign	_	_
+4	clay	clay	X	X	_	1	flat:foreign	_	_
+5	piece	piece	X	X	_	1	flat:foreign	_	_
+6	loosely	loosely	X	X	_	1	flat:foreign	_	_
+7	over	over	X	X	_	1	flat:foreign	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	carved	carved	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+10	cavity	cavity	X	X	_	1	flat:foreign	_	_
+11	design	design	ADJ	ADJ	Gender=Masc	1	flat:foreign	_	_
+12	side	side	X	X	_	1	flat:foreign	_	_
+13	of	of	X	X	_	14	case	_	_
+14	wooden	wooden	X	X	_	12	obl:arg	_	_
+15	mold	mold	ADJ	ADJ	Number=Sing	1	amod	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	obtain	obtain	ADJ	ADJ	Gender=Masc	1	amod	_	_
+3	clear	clear	X	X	_	1	flat:foreign	_	_
+4	impression	impression	NOUN	NOUN	Gender=Fem|Number=Sing	3	amod	_	_
+5	of	of	X	X	_	6	case	_	_
+6	mold	mold	PROPN	PROPN	_	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	press	press	X	X	_	1	conj	_	_
+9	clay	clay	X	X	_	8	flat:name	_	_
+10	gently	gently	ADJ	ADJ	Gender=Masc|Number=Plur	9	amod	_	_
+11	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+12	firmly	firmly	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+13	into	into	X	X	_	1	flat:foreign	_	_
+
+1	mold	mold	X	X	_	0	ROOT	_	_
+2	cavity	cavity	X	X	_	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	starting	starting	X	X	_	3	mark	_	_
+2	at	at	X	X	_	3	dep	_	_
+3	center	center	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+4	and	and	X	X	_	3	advmod	_	_
+5	working	working	X	X	_	4	flat:foreign	_	_
+6	to	to	X	X	_	3	dep	_	_
+7	outer	outer	VERB	VERB	VerbForm=Inf	3	xcomp	_	_
+8	edges	edge	NOUN	NOUN	Gender=Masc|Number=Plur	7	obj	_	_
+9	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Trim	trim	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	excess	excess	X	X	_	1	flat:foreign	_	_
+
+1	clay	clay	X	X	_	0	ROOT	_	_
+
+1	away	away	X	X	_	0	ROOT	_	_
+2	from	from	X	X	_	1	dep	_	_
+3	outer	outer	VERB	VERB	VerbForm=Inf	1	xcomp	_	_
+4	edges	edge	NOUN	NOUN	Gender=Masc|Number=Plur	3	obj	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Check	Check	X	X	_	9	nsubj	_	_
+2	thickness	thickness	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	4	case	_	_
+4	clay	clay	X	X	_	1	nmod	_	_
+5	and	and	X	X	_	4	dep	_	_
+6	build	build	X	X	_	4	flat:foreign	_	_
+7	up	up	X	X	_	1	dep	_	_
+8	thin	thin	X	X	_	1	flat:foreign	_	_
+9	areas	areas	X	X	_	14	dep	_	_
+10	by	by	X	X	_	11	case	_	_
+11	moistening	moistening	NOUN	NOUN	Gender=Masc|Number=Sing	9	obl:mod	_	_
+12	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	11	nmod	_	_
+13	with	with	X	X	_	11	dep	_	_
+14	a	avoir	X	X	_	0	ROOT	_	_
+15	little	little	PROPN	PROPN	_	14	obj	_	_
+16	water	water	X	X	_	15	flat:name	_	_
+17	and	and	X	X	_	15	dep	_	_
+18	adding	adding	X	X	_	17	flat:foreign	_	_
+19	small	small	X	X	_	17	flat:foreign	_	_
+20	pieces	pieces	X	X	_	14	obj	_	_
+21	of	of	X	X	_	22	case	_	_
+22	clay	clay	X	X	_	20	nmod	_	_
+23	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Be	Be	X	X	_	0	ROOT	_	_
+2	sure	sur	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	flat:foreign	_	_
+4	press	press	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	additional	additional	X	X	_	1	flat:foreign	_	_
+7	clay	clay	X	X	_	1	flat:foreign	_	_
+8	firmly	firmly	X	X	_	1	flat:foreign	_	_
+9	into	into	X	X	_	1	flat:foreign	_	_
+10	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+11	without	without	X	X	_	1	flat:foreign	_	_
+12	locking	locking	X	X	_	11	dep	_	_
+13	in	in	X	X	_	11	dep	_	_
+14	air	air	NOUN	NOUN	Gender=Masc|Number=Sing	11	dep	_	_
+15	bubbles	bubble	ADJ	ADJ	Number=Plur	11	amod	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Allow	Allow	X	X	_	0	ROOT	_	_
+2	project	project	X	X	_	1	flat:name	_	_
+3	to	to	X	X	_	4	case	_	_
+4	stand	stand	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	for	for	X	X	_	6	mark	_	_
+6	about	about	X	X	_	1	dep	_	_
+7	five	five	X	X	_	6	advmod	_	_
+8	minutes	minute	NOUN	NOUN	Gender=Fem|Number=Plur	6	obj	_	_
+9	(	(	PUNCT	PUNCT	_	1	punct	_	_
+10	if	if	X	X	_	11	case	_	_
+11	wooden	wooden	X	X	_	1	nmod	_	_
+12	press	press	X	X	_	11	flat:foreign	_	_
+13	mold	mold	X	X	_	11	flat:foreign	_	_
+14	is	is	X	X	_	1	dep	_	_
+15	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+16	good	good	X	X	_	15	obj	_	_
+17	antique	antique	ADJ	ADJ	Number=Sing	16	amod	_	_
+18	,	,	PUNCT	PUNCT	_	1	punct	_	_
+19	do	do	PROPN	PROPN	Gender=Fem|Number=Sing	23	nsubj	_	_
+20	not	not	X	X	_	19	dep	_	_
+21	leave	leave	X	X	_	19	flat:foreign	_	_
+22	clay	clay	X	X	_	19	flat:name	_	_
+23	in	in	X	X	_	1	dep	_	_
+24	too	too	ADV	ADV	_	23	advmod	_	_
+25	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	23	amod	_	_
+26	as	as	X	X	_	23	flat:foreign	_	_
+27	the	the	X	X	_	23	flat:foreign	_	_
+28	dampness	dampness	X	X	_	23	flat:foreign	_	_
+29	may	may	X	X	_	1	dep	_	_
+30	cause	cause	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+31	mold	mold	PROPN	PROPN	_	1	amod	_	_
+32	to	to	X	X	_	33	case	_	_
+33	crack	crack	PROPN	PROPN	_	1	nmod	_	_
+34	)	)	PUNCT	PUNCT	_	1	punct	_	_
+35	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	release	release	X	X	_	1	flat:foreign	_	_
+3	clay	clay	X	X	_	1	flat:foreign	_	_
+4	from	from	X	X	_	1	dep	_	_
+5	mold	mold	PROPN	PROPN	_	1	amod	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	1	conj	_	_
+8	hands	hands	X	X	_	7	nmod	_	_
+9	in	in	X	X	_	7	dep	_	_
+10	a	avoir	X	X	_	7	dep	_	_
+11	cupped	cupped	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+12	position	position	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+13	around	around	X	X	_	1	flat:foreign	_	_
+14	project	project	X	X	_	1	flat:foreign	_	_
+15	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	gently	gently	ADJ	ADJ	Gender=Masc|Number=Plur	2	amod	_	_
+2	lift	lift	NOUN	NOUN	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	the	the	X	X	_	2	dep	_	_
+4	edge	edge	X	X	_	3	flat:foreign	_	_
+5	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+6	far	far	NOUN	NOUN	Gender=Masc|Number=Sing	5	fixed	_	_
+7	side	sid	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	then	then	NOUN	NOUN	Gender=Fem|Number=Sing	10	nsubj	_	_
+10	continue	continuer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	_
+11	to	to	X	X	_	12	case	_	_
+12	release	release	X	X	_	10	obl:mod	_	_
+13	edge	edge	X	X	_	12	amod	_	_
+14	completely	completely	X	X	_	12	amod	_	_
+15	around	around	X	X	_	12	obj	_	_
+16	mold	mold	ADJ	ADJ	Number=Plur	12	amod	_	_
+17	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Slight	Slight	X	X	_	5	nsubj	_	_
+2	tapping	tapping	X	X	_	1	flat:foreign	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	5	nsubj	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	underside	undersid	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+6	of	of	X	X	_	7	case	_	_
+7	mold	mold	ADJ	ADJ	Gender=Masc|Number=Sing	5	obj	_	_
+
+1	will	will	X	X	_	0	ROOT	_	_
+
+1	help	help	X	X	_	0	ROOT	_	_
+2	release	release	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	clay	clay	X	X	_	1	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	too	too	ADV	ADV	_	2	advmod	_	_
+2	much	much	X	X	_	3	amod	_	_
+3	agitation	agitation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	will	will	X	X	_	0	ROOT	_	_
+2	cause	cause	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	clay	clay	X	X	_	1	flat:foreign	_	_
+
+1	to	to	X	X	_	2	dep	_	_
+2	become	become	X	X	_	6	nummod	_	_
+3	soft	soft	X	X	_	2	amod	_	_
+4	and	and	X	X	_	2	dep	_	_
+5	will	will	X	X	_	4	flat:foreign	_	_
+6	interfere	interfere	NOUN	NOUN	_	0	ROOT	_	_
+7	with	with	X	X	_	10	case	_	_
+8	removal	removal	ADV	ADV	_	7	dep	_	_
+9	of	of	X	X	_	10	case	_	_
+10	clay	clay	X	X	_	6	nmod	_	_
+11	from	from	X	X	_	10	dep	_	_
+12	mold	mold	PROPN	PROPN	_	10	amod	_	_
+13	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	5	nsubj	_	_
+2	a	avoir	X	X	_	5	aux:tense	_	_
+3	piece	piece	NOUN	NOUN	Gender=Fem|Number=Sing	2	obj	_	_
+4	of	of	X	X	_	5	case	_	_
+5	plaster	plaster	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+6	wall	wall	PROPN	PROPN	Gender=Masc|Number=Sing	5	obj	_	_
+7	board	board	X	X	_	5	dep	_	_
+8	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	10	iobj	_	_
+9	plaster	plaster	PROPN	PROPN	_	8	flat:name	_	_
+10	bat	battre	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	conj	_	_
+11	on	on	PRON	PRON	Number=Sing|Person=3	10	obj	_	_
+12	clay	clay	X	X	_	10	dep	_	_
+13	and	and	X	X	_	14	dep	_	_
+14	reverse	reverser	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	advcl	_	_
+15	bat	battre	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	xcomp	_	_
+16	,	,	PUNCT	PUNCT	_	15	punct	_	_
+17	clay	clay	X	X	_	15	dep	_	_
+18	and	and	X	X	_	17	flat:foreign	_	_
+19	mold	mold	X	X	_	17	flat:foreign	_	_
+20	in	in	X	X	_	22	cc	_	_
+21	one	one	X	X	_	20	fixed	_	_
+22	action	action	NOUN	NOUN	Gender=Fem|Number=Sing	15	obl:mod	_	_
+23	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	prevent	prevent	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	3	dep	_	_
+5	clay	clay	X	X	_	3	flat:foreign	_	_
+6	from	from	X	X	_	3	dep	_	_
+7	twisting	twisting	X	X	_	3	flat:foreign	_	_
+8	or	or	CCONJ	CCONJ	_	9	cc	_	_
+9	bending	bending	NOUN	NOUN	Gender=Masc|Number=Plur	3	conj	_	_
+10	,	,	PUNCT	PUNCT	_	3	punct	_	_
+11	causing	causing	X	X	_	1	flat:foreign	_	_
+12	warping	warping	NOUN	NOUN	Gender=Masc|Number=Sing	11	flat:foreign	_	_
+13	when	when	X	X	_	11	flat:foreign	_	_
+14	fired	fired	X	X	_	11	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	project	project	PROPN	PROPN	_	1	flat:name	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	table	tabl	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+3	and	and	X	X	_	2	dep	_	_
+4	carefully	carefully	X	X	_	2	dep	_	_
+5	lift	lift	X	X	_	4	nsubj	_	_
+6	the	the	X	X	_	4	dep	_	_
+7	mold	mold	X	X	_	4	flat:foreign	_	_
+8	off	off	ADJ	ADJ	Number=Sing	4	amod	_	_
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Study	Study	X	X	_	2	amod	_	_
+2	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	of	of	X	X	_	4	case	_	_
+4	clay	clay	X	X	_	2	nmod	_	_
+5	for	for	X	X	_	6	case	_	_
+6	defects	defects	X	X	_	2	nmod	_	_
+7	or	or	X	X	_	8	cc	_	_
+8	desired	desired	X	X	_	6	conj	_	_
+9	corrections	correction	NOUN	NOUN	Gender=Fem|Number=Plur	8	amod	_	_
+10	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+
+1	clay	clay	X	X	_	6	nsubj	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	slightly	slightly	X	X	_	1	flat:foreign	_	_
+4	out	out	X	X	_	3	amod	_	_
+5	of	of	X	X	_	6	case	_	_
+6	shape	shape	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+7	,	,	PUNCT	PUNCT	_	6	punct	_	_
+8	square	square	NOUN	NOUN	Gender=Masc|Number=Sing	12	nsubj	_	_
+9	straight	straight	X	X	_	8	amod	_	_
+10	sides	side	ADJ	ADJ	Gender=Masc|Number=Plur	8	nmod	_	_
+11	with	with	X	X	_	8	dep	_	_
+12	guide	guide	NOUN	NOUN	Gender=Masc|Number=Sing	6	dep	_	_
+13	sticks	stick	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	12	acl	_	_
+14	or	or	CCONJ	CCONJ	_	15	cc	_	_
+15	rulers	ruler	NOUN	NOUN	Gender=Masc|Number=Plur	13	conj	_	_
+16	pressed	pressed	ADJ	ADJ	_	12	amod	_	_
+17	against	against	X	X	_	12	amod	_	_
+18	opposite	opposite	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	parataxis	_	_
+19	sides	side	ADJ	ADJ	Number=Plur	18	amod	_	_
+20	,	,	PUNCT	PUNCT	_	12	punct	_	_
+21	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	24	cc	_	_
+22	smooth	smooth	ADJ	ADJ	Gender=Masc|Number=Sing	23	advmod	_	_
+23	round	round	ADJ	ADJ	Gender=Masc|Number=Sing	21	fixed	_	_
+24	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	12	conj	_	_
+25	with	with	X	X	_	24	flat:foreign	_	_
+26	damp	damp	X	X	_	12	amod	_	_
+27	fingers	fingers	X	X	_	12	amod	_	_
+28	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	If	If	X	X	_	15	nsubj	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	background	background	X	X	_	1	fixed	_	_
+4	of	of	X	X	_	5	case	_	_
+5	design	design	NOUN	NOUN	Gender=Masc|Number=Sing	3	nmod	_	_
+6	is	is	X	X	_	5	dep	_	_
+7	too	too	ADV	ADV	_	6	fixed	_	_
+8	smooth	smooth	ADV	ADV	_	5	amod	_	_
+9	,	,	PUNCT	PUNCT	_	5	punct	_	_
+10	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	5	dep	_	_
+11	you	you	X	X	_	10	flat:foreign	_	_
+12	wish	wish	X	X	_	10	flat:name	_	_
+13	to	to	X	X	_	15	dep	_	_
+14	create	create	X	X	_	13	fixed	_	_
+15	a	avoir	X	X	_	0	ROOT	_	_
+16	wood	wood	X	X	_	15	punct	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	0	ROOT	_	SpaceAfter=No
+2	grained	grained	NOUN	NOUN	Gender=Fem|Number=Sing	1	punct	_	_
+
+1	effect	effect	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	11	punct	_	_
+2	it	it	X	X	_	11	nsubj	_	_
+3	may	may	X	X	_	2	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	added	added	X	X	_	2	flat:foreign	_	_
+6	at	at	X	X	_	5	dep	_	_
+7	this	this	X	X	_	5	dep	_	_
+8	time	time	X	X	_	5	flat:foreign	_	_
+9	with	with	X	X	_	8	flat:foreign	_	_
+10	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+11	dull	dull	X	X	_	0	ROOT	_	_
+12	tool	tool	X	X	_	11	amod	_	_
+
+1	such	such	X	X	_	8	cc	_	_
+2	as	as	X	X	_	8	nsubj	_	_
+3	the	the	X	X	_	2	fixed	_	_
+4	handle	handl	ADJ	ADJ	Gender=Masc|Number=Sing	2	fixed	_	_
+5	of	of	X	X	_	4	fixed	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+7	fine	fin	ADJ	ADJ	Gender=Fem|Number=Sing	8	amod	_	_
+8	paintbrush	paintbrush	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Make	Make	X	X	_	0	ROOT	_	_
+2	slight	slight	X	X	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	smooth	smooth	X	X	_	8	advmod	_	_
+5	grooves	grooves	X	X	_	4	flat:foreign	_	_
+6	rather	rather	X	X	_	4	flat:foreign	_	_
+7	than	than	ADJ	ADJ	Number=Plur	4	amod	_	_
+8	cuts	cut	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+9	for	for	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	texture	texture	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+12	(	(	PUNCT	PUNCT	_	11	punct	_	_
+13	cuts	cut	NOUN	NOUN	Gender=Masc|Number=Plur	14	nsubj	_	_
+14	could	could	X	X	_	11	parataxis	_	_
+15	cause	cause	NOUN	NOUN	Gender=Fem|Number=Sing	14	flat:name	_	_
+16	air	air	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+17	pockets	pocket	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+18	under	under	X	X	_	1	flat:foreign	_	_
+19	the	the	X	X	_	1	flat:foreign	_	_
+20	glaze	glaze	X	X	_	19	flat:foreign	_	_
+21	creating	creating	X	X	_	1	flat:foreign	_	_
+22	pinholes	pinholes	X	X	_	21	amod	_	_
+23	or	or	X	X	_	24	cc	_	_
+24	craters	craters	X	X	_	21	conj	_	_
+25	in	in	X	X	_	1	flat:foreign	_	_
+26	the	the	X	X	_	1	dep	_	_
+27	glaze	glaze	X	X	_	1	flat:foreign	_	_
+28	during	during	X	X	_	1	flat:foreign	_	_
+29	firing	firing	PROPN	PROPN	_	1	dep	_	_
+30	)	)	PUNCT	PUNCT	_	1	punct	_	_
+31	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Leave	Leave	X	X	_	5	nsubj	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	clay	clay	X	X	_	1	flat:foreign	_	_
+4	on	on	PRON	PRON	Number=Sing|Person=3	5	nsubj	_	_
+5	plaster	plaster	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	dep	_	_
+6	board	board	X	X	_	5	advmod	_	_
+7	to	to	X	X	_	8	case	_	_
+8	dry	dry	X	X	_	5	obl:mod	_	_
+9	slowly	slowly	PROPN	PROPN	Gender=Masc|Number=Sing	8	amod	_	_
+10	,	,	PUNCT	PUNCT	_	5	punct	_	_
+11	covered	covered	X	X	_	5	conj	_	_
+12	lightly	lightly	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	11	amod	_	_
+13	with	with	X	X	_	11	dep	_	_
+14	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+15	loose	loose	NOUN	NOUN	Gender=Fem|Number=Sing	14	obj	_	_
+16	piece	piece	NOUN	NOUN	Gender=Fem|Number=Sing	14	obj	_	_
+17	of	of	X	X	_	18	case	_	_
+18	plastic	plastic	NOUN	NOUN	Gender=Fem|Number=Sing	16	nmod	_	_
+19	or	or	CCONJ	CCONJ	_	22	case	_	_
+20	cloth	cloth	PROPN	PROPN	_	19	flat:name	_	_
+21	to	to	X	X	_	19	flat:foreign	_	_
+22	prevent	prevent	X	X	_	14	conj	_	_
+23	warping	warping	NOUN	NOUN	Gender=Masc|Number=Plur	22	flat:name	_	_
+24	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Rectangular	rectangular	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	tiles	tile	ADJ	ADJ	Number=Plur	1	amod	_	_
+3	(	(	PUNCT	PUNCT	_	1	punct	_	_
+4	opposite	opposite	NOUN	NOUN	Gender=Fem|Number=Sing	1	parataxis	_	_
+5	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+6	,	,	PUNCT	PUNCT	_	8	punct	_	_
+7	right	right	X	X	_	8	advmod	_	_
+8	top	top	ADJ	ADJ	Gender=Masc|Number=Sing	4	conj	_	_
+9	)	)	PUNCT	PUNCT	_	1	punct	_	_
+10	:	:	PUNCT	PUNCT	_	1	punct	_	_
+11	Stoneware	Stoneware	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+12	clay	clay	X	X	_	11	nmod	_	_
+13	was	was	X	X	_	11	dep	_	_
+14	used	used	X	X	_	11	nmod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Clay	Clay	X	X	_	0	ROOT	_	_
+2	was	was	X	X	_	1	dep	_	_
+3	rolled	rolled	X	X	_	1	flat:foreign	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	1/4	1/4	NUM	NUM	NumType=Card	1	dep	_	SpaceAfter=No
+6	''	''	PUNCT	PUNCT	_	1	punct	_	_
+7	''	''	PUNCT	PUNCT	_	1	punct	_	_
+8	thickness	thicknes	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Back	Back	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	clay	clay	X	X	_	1	nmod	_	_
+4	scored	scored	X	X	_	1	flat:foreign	_	_
+
+1	or	or	X	X	_	4	dep	_	_
+2	roughened	roughened	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	for	for	ADP	ADP	_	1	dep	_	_
+4	proper	proper	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+5	gripping	gripping	ADJ	ADJ	Gender=Masc|Number=Plur	4	amod	_	_
+6	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	No	No	X	X	_	0	ROOT	_	_
+2	bisque	bisque	X	X	_	1	flat:foreign	_	_
+3	firing	firing	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Glazed	Glazed	PROPN	PROPN	_	0	ROOT	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	two	two	X	X	_	1	flat:foreign	_	_
+
+1	coats	coat	NOUN	NOUN	Gender=Masc|Number=Plur	2	nsubj	_	_
+2	of	of	X	X	_	3	dep	_	_
+3	Creek	Creek	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	Turn	Turn	X	X	_	0	ROOT	_	_
+
+1	white	white	X	X	_	2	advmod	_	_
+2	stoneware	stoneware	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+3	glaze	glaz	ADJ	ADJ	Number=Plur	2	amod	_	_
+4	(	(	PUNCT	PUNCT	_	2	punct	_	_
+5	no	no	X	X	_	6	case	_	_
+6	glaze	glaze	NOUN	NOUN	Number=Sing	2	nmod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	sides	side	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+3	or	or	CCONJ	CCONJ	_	2	obj	_	_
+4	bottom	bottom	NOUN	NOUN	Gender=Masc|Number=Sing	3	flat:name	_	_
+5	)	)	PUNCT	PUNCT	_	2	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Decorated	Decorated	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+3	unfired	unfired	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+4	glaze	glaze	X	X	_	3	amod	_	_
+5	with	with	X	X	_	3	flat:foreign	_	_
+6	one	one	X	X	_	3	advmod	_	_
+
+1	coat	coat	X	X	_	0	ROOT	_	_
+
+1	of	of	X	X	_	2	case	_	_
+2	one	one	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+2	stroke	stroke	X	X	_	1	flat:name	_	_
+3	ceramic	ceramic	X	X	_	1	flat:name	_	_
+
+1	colors	colors	X	X	_	0	ROOT	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	raised	raised	X	X	_	0	ROOT	_	_
+
+1	details	details	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	1	advmod	_	_
+3	designs	design	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+4	were	were	X	X	_	1	dep	_	_
+5	colored	colored	X	X	_	1	flat:foreign	_	_
+6	in	in	X	X	_	1	dep	_	_
+7	shades	shade	ADJ	ADJ	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+8	of	of	X	X	_	1	advmod	_	_
+9	yellow	yellow	X	X	_	1	dep	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	Number=Sing	8	advcl	_	SpaceAfter=No
+2	green	green	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	blue	blue	NOUN	NOUN	Gender=Fem|Number=Sing	1	conj	_	SpaceAfter=No
+5	-	-	PROPN	PROPN	_	1	conj	_	SpaceAfter=No
+6	green	green	PROPN	PROPN	_	1	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	brown	brown	X	X	_	0	ROOT	_	_
+9	and	and	X	X	_	8	dep	_	_
+10	pink	pink	X	X	_	8	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Tiles	tile	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+2	were	were	X	X	_	1	dep	_	_
+3	fired	fired	X	X	_	1	flat:foreign	_	_
+4	once	once	X	X	_	1	flat:foreign	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	cone	cone	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+7	05	05	ADJ	ADJ	_	6	amod	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Round	Round	X	X	_	20	amod	_	_
+2	plaque	plaque	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	(	(	PUNCT	PUNCT	_	1	punct	_	_
+4	opposite	opposite	NOUN	NOUN	Gender=Fem|Number=Sing	1	parataxis	_	_
+5	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+6	,	,	PUNCT	PUNCT	_	5	punct	_	_
+7	bottom	bottom	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	_
+8	)	)	PUNCT	PUNCT	_	1	punct	_	_
+9	:	:	PUNCT	PUNCT	_	1	punct	_	_
+10	White	White	X	X	_	1	flat:foreign	_	_
+11	clay	clay	X	X	_	10	flat:foreign	_	_
+12	was	was	X	X	_	10	dep	_	_
+13	used	used	X	X	_	10	flat:foreign	_	_
+14	,	,	PUNCT	PUNCT	_	15	punct	_	_
+15	rolled	rolled	X	X	_	1	conj	_	_
+16	to	to	X	X	_	15	dep	_	_
+17	1/4	1/4	NUM	NUM	NumType=Card	15	nummod	_	SpaceAfter=No
+18	''	''	PUNCT	PUNCT	_	1	punct	_	_
+19	''	''	PUNCT	PUNCT	_	1	parataxis	_	_
+20	thickness	thickness	PROPN	PROPN	_	0	ROOT	_	_
+21	.	.	PUNCT	PUNCT	_	20	punct	_	_
+
+1	Bisque	bisque	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	fired	fired	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	cone	cone	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+5	05	05	ADJ	ADJ	_	4	amod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Stained	Stained	X	X	_	0	ROOT	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	Jacquelyn'	Jacquelyn'	PROPN	PROPN	_	1	dep	_	SpaceAfter=No
+4	s	s	PRON	PRON	Person=3|Reflex=Yes	5	det	_	_
+5	ceramic	ceramic	X	X	_	1	dep	_	_
+6	unfired	unfired	X	X	_	5	flat:foreign	_	_
+7	stain	stain	ADJ	ADJ	Gender=Masc|Number=Sing	5	amod	_	_
+8	,	,	PUNCT	PUNCT	_	5	punct	_	_
+9	polished	polished	X	X	_	5	conj	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	following	following	X	X	_	1	dep	_	_
+12	manufacturer'	manufacturer'	PROPN	PROPN	_	14	cc	_	SpaceAfter=No
+13	s	s	DET	DET	Number=Plur|PronType=Dem	14	det	_	_
+14	directions	direction	NOUN	NOUN	Gender=Fem|Number=Plur	1	conj	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Opaque	opaque	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	cantaloupe	cantaloup	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
+3	and	and	X	X	_	2	advcl	_	_
+4	transparent	transparent	ADJ	ADJ	Gender=Masc|Number=Sing	1	parataxis	_	_
+5	wood	wood	X	X	_	1	flat:foreign	_	_
+
+1	brown	brown	X	X	_	0	ROOT	_	_
+2	were	were	X	X	_	1	dep	_	_
+3	used	used	X	X	_	1	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	No	No	X	X	_	0	ROOT	_	_
+2	further	further	X	X	_	1	flat:foreign	_	_
+3	firing	firing	X	X	_	1	flat:foreign	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Paperweight	Paperweight	PROPN	PROPN	_	0	ROOT	_	_
+2	(	(	PUNCT	PUNCT	_	1	punct	_	_
+3	opposite	opposite	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+4	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	top	top	ADJ	ADJ	Gender=Masc|Number=Plur	1	conj	_	_
+7	left	left	NOUN	NOUN	Gender=Masc|Number=Plur	6	flat:foreign	_	_
+8	)	)	PUNCT	PUNCT	_	1	punct	_	_
+9	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Red	Red	X	X	_	2	case	_	_
+2	clay	clay	X	X	_	10	dep	_	_
+3	was	was	X	X	_	2	dep	_	_
+4	used	used	X	X	_	2	dep	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	rolled	rolled	NOUN	NOUN	Gender=Fem|Number=Sing	2	conj	_	_
+7	1/2	1/2	NUM	NUM	NumType=Card	6	nummod	_	SpaceAfter=No
+8	''	''	PUNCT	PUNCT	_	2	punct	_	_
+9	''	''	PUNCT	PUNCT	_	2	punct	_	_
+10	thick	thick	PROPN	PROPN	_	0	ROOT	_	_
+11	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Mold	Mold	X	X	_	0	ROOT	_	_
+2	was	was	X	X	_	1	flat:foreign	_	_
+3	used	used	X	X	_	2	flat:foreign	_	_
+
+1	as	as	X	X	_	12	aux:tense	_	_
+2	pattern	pattern	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	1	flat:foreign	_	_
+4	clay	clay	X	X	_	1	flat:foreign	_	_
+5	cut	cut	X	X	_	1	dep	_	_
+6	by	by	X	X	_	1	dep	_	_
+7	holding	holding	X	X	_	1	dep	_	_
+8	knife	knife	PROPN	PROPN	_	1	flat:foreign	_	_
+9	at	at	X	X	_	1	punct	_	_
+10	about	about	X	X	_	1	advcl	_	_
+11	45-degree	45-degree	NOUN	NOUN	Gender=Masc|Number=Sing	1	obj	_	_
+12	angle	angle	NOUN	NOUN	Gender=Masc|Number=Sing	21	advmod	_	_
+13	,	,	PUNCT	PUNCT	_	15	punct	_	_
+14	to	to	X	X	_	15	dep	_	_
+15	form	form	X	X	_	12	parataxis	_	_
+16	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	15	obj	_	_
+17	undercut	undercut	ADJ	ADJ	Number=Sing	15	amod	_	_
+18	,	,	PUNCT	PUNCT	_	20	punct	_	_
+19	making	making	X	X	_	20	amod	_	_
+20	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	12	acl:relcl	_	_
+21	smaller	smaller	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+22	than	than	X	X	_	21	advmod	_	_
+23	the	the	X	X	_	21	advmod	_	_
+24	pattern	pattern	X	X	_	23	flat:foreign	_	_
+25	top	top	ADJ	ADJ	Gender=Masc|Number=Plur	23	flat:foreign	_	_
+26	.	.	PUNCT	PUNCT	_	21	punct	_	_
+
+1	While	While	X	X	_	4	dep	_	_
+2	clay	clay	X	X	_	1	flat:name	_	_
+3	is	is	X	X	_	4	dep	_	_
+4	still	still	X	X	_	21	nsubj	_	_
+5	pressed	pressed	X	X	_	4	acl	_	_
+6	in	in	X	X	_	7	case	_	_
+7	mold	mold	PROPN	PROPN	_	5	conj	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	press	press	X	X	_	4	conj	_	_
+10	three	three	X	X	_	4	flat:foreign	_	_
+11	equally	equally	X	X	_	4	flat:foreign	_	_
+12	spaced	spaced	X	X	_	13	advmod	_	_
+13	holes	hole	ADJ	ADJ	Number=Plur	11	conj	_	_
+14	1/4	1/4	NUM	NUM	NumType=Card	11	nummod	_	SpaceAfter=No
+15	''	''	PUNCT	PUNCT	_	4	punct	_	_
+16	''	''	X	X	_	4	parataxis	_	_
+17	deep	deep	ADV	ADV	_	4	advmod	_	_
+18	,	,	PUNCT	PUNCT	_	4	punct	_	_
+19	using	using	X	X	_	20	dep	_	_
+20	pencil	pencil	PROPN	PROPN	_	4	nmod	_	_
+21	eraser	eraser	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+22	,	,	PUNCT	PUNCT	_	21	punct	_	_
+23	in	in	X	X	_	24	case	_	_
+24	bottom	bottom	NOUN	NOUN	Gender=Masc|Number=Sing	21	obl:arg	_	_
+25	of	of	X	X	_	26	case	_	_
+26	clay	clay	X	X	_	24	nmod	_	_
+27	to	to	X	X	_	28	dep	_	_
+28	allow	allow	X	X	_	21	obl:arg	_	_
+29	for	for	X	X	_	21	dep	_	_
+30	proper	proper	VERB	VERB	VerbForm=Inf	21	xcomp	_	_
+31	drying	drying	X	X	_	21	obj	_	_
+32	and	and	X	X	_	21	obl:arg	_	_
+33	firing	firing	X	X	_	21	obj	_	_
+34	.	.	PUNCT	PUNCT	_	21	punct	_	_
+
+1	Paperweight	Paperweight	PROPN	PROPN	_	0	ROOT	_	_
+2	may	may	X	X	_	1	dep	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	personalized	personalized	X	X	_	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	0	ROOT	_	_
+2	back	back	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_
+3	while	whil	ADJ	ADJ	Number=Sing	1	amod	_	_
+4	clay	clay	X	X	_	1	flat:name	_	_
+5	is	is	X	X	_	4	dep	_	_
+6	leather	leather	X	X	_	1	flat:name	_	_
+7	hard	hard	ADJ	ADJ	Gender=Masc	1	amod	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Bisque	Bisque	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	fired	fired	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	cone	cone	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	05	05	ADJ	ADJ	_	1	nummod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Unglazed	unglazed	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Jars	jar	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	lids	lids	PROPN	PROPN	_	1	flat:name	_	_
+4	(	(	PUNCT	PUNCT	_	1	punct	_	_
+5	opposite	opposite	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+6	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	top	top	ADJ	ADJ	Gender=Masc|Number=Plur	5	conj	_	_
+9	left	left	NOUN	NOUN	Gender=Masc|Number=Plur	8	nsubj	_	_
+10	)	)	PUNCT	PUNCT	_	1	punct	_	_
+11	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Remove	Remove	X	X	_	6	dep	_	_
+2	wooden	wooden	X	X	_	1	flat:foreign	_	_
+3	design	design	X	X	_	1	flat:foreign	_	_
+4	head	head	X	X	_	1	dep	_	_
+5	from	from	X	X	_	4	dep	_	_
+6	bowl	bowl	ADV	ADV	_	0	ROOT	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	butter	butter	VERB	VERB	VerbForm=Inf	6	dep	_	_
+9	mold	mold	ADJ	ADJ	Gender=Masc|Number=Sing	8	obj	_	_
+10	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Fill	Fill	X	X	_	0	ROOT	_	_
+2	small	small	X	X	_	1	flat:foreign	_	_
+3	hole	hole	X	X	_	1	flat:foreign	_	_
+4	in	in	X	X	_	1	dep	_	_
+5	bowl	bowl	VERB	VERB	VerbForm=Inf	4	flat:foreign	_	_
+6	with	with	X	X	_	4	flat:foreign	_	_
+7	clay	clay	PROPN	PROPN	_	4	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Make	Make	X	X	_	2	dep	_	_
+2	paper	paper	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+3	patterns	patterns	X	X	_	2	punct	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	sections	section	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	of	of	ADP	ADP	_	4	case	_	_
+4	jar	jar	X	X	_	2	nmod	_	_
+5	and	and	X	X	_	2	dep	_	_
+6	lid	lid	X	X	_	2	amod	_	_
+7	(	(	PUNCT	PUNCT	_	2	punct	_	_
+8	see	see	X	X	_	9	cc	_	_
+9	Fig	Fig	PROPN	PROPN	_	2	appos	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	1	1	NUM	NUM	NumType=Card	3	punct	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	opposite	opposite	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	_
+5	)	)	PUNCT	PUNCT	_	3	punct	_	_
+6	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Measurements	measurement	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	for	for	ADP	ADP	_	1	dep	_	_
+3	rectangular	rectangular	NOUN	NOUN	Gender=Masc|Number=Plur	1	amod	_	_
+4	pattern	pattern	X	X	_	1	amod	_	_
+5	piece	piece	X	X	_	1	amod	_	_
+6	A	a	NOUN	NOUN	_	5	dep	_	_
+7	are	are	X	X	_	6	dep	_	_
+8	obtained	obtained	X	X	_	1	flat:foreign	_	_
+9	by	by	X	X	_	8	dep	_	_
+10	measuring	measuring	X	X	_	1	flat:foreign	_	_
+11	inside	insid	ADJ	ADJ	Number=Sing	1	amod	_	_
+12	circumference	circumference	X	X	_	1	flat:foreign	_	_
+13	and	and	X	X	_	12	dep	_	_
+14	depth	depth	X	X	_	12	flat:foreign	_	_
+15	of	of	X	X	_	16	dep	_	_
+16	butter	butter	VERB	VERB	VerbForm=Inf	14	dep	_	_
+17	mold	mold	PROPN	PROPN	_	1	nmod	_	_
+18	bowl	bowl	ADV	ADV	_	1	amod	_	_
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Pattern	Pattern	X	X	_	0	ROOT	_	_
+2	for	for	X	X	_	1	flat:foreign	_	_
+3	circular	circular	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+4	base	bas	ADJ	ADJ	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+5	piece	piece	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+6	B	b	NOUN	NOUN	_	5	nmod	_	_
+7	is	is	X	X	_	1	dep	_	_
+
+1	diameter	diameter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	Aj	Aj	PROPN	PROPN	_	1	obl:arg	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Use	Use	X	X	_	0	ROOT	_	_
+2	wooden	wooden	X	X	_	1	flat:foreign	_	_
+3	design	design	X	X	_	1	flat:foreign	_	_
+4	head	head	X	X	_	1	flat:foreign	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	mold	mold	PROPN	PROPN	_	1	flat:foreign	_	_
+7	for	for	X	X	_	8	case	_	_
+8	pattern	pattern	X	X	_	1	flat:foreign	_	_
+9	C	c	NOUN	NOUN	_	1	flat:foreign	_	_
+10	;	;	PUNCT	PUNCT	_	1	punct	_	_
+11	;	;	PUNCT	PUNCT	_	1	flat:foreign	_	_
+
+1	pattern	pattern	X	X	_	0	ROOT	_	_
+2	D	d	NOUN	NOUN	_	1	nmod	_	_
+3	for	for	X	X	_	1	dep	_	_
+4	lid	lid	X	X	_	1	nmod	_	_
+5	fits	fit	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+6	over	over	X	X	_	5	amod	_	_
+7	top	top	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+
+1	diameter	diameter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	of	of	ADP	ADP	_	3	case	_	_
+3	Aj	Aj	PROPN	PROPN	_	1	obl:arg	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Pattern	Pattern	X	X	_	0	ROOT	_	_
+2	for	for	X	X	_	1	flat:foreign	_	_
+3	inner	inner	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+4	lid	lid	X	X	_	1	flat:foreign	_	_
+
+1	piece	piece	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	E	e	NOUN	NOUN	_	1	amod	_	_
+
+1	fits	fits	ADV	ADV	_	0	ROOT	_	_
+
+1	inside	insid	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+
+1	Aj	Aj	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Jars	jar	NOUN	NOUN	Gender=Masc|Number=Plur	4	nsubj	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	assembled	assembled	PROPN	PROPN	_	1	flat:foreign	_	_
+4	in	in	X	X	_	0	ROOT	_	_
+5	bowl	bowl	VERB	VERB	VerbForm=Inf	4	fixed	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	butter	butter	VERB	VERB	VerbForm=Inf	4	xcomp	_	_
+8	mold	mold	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
+9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Use	Use	X	X	_	4	advmod	_	_
+2	white	white	X	X	_	1	flat:foreign	_	_
+3	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+4	buff	buff	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	clay	clay	PROPN	PROPN	_	4	flat:name	_	_
+6	,	,	PUNCT	PUNCT	_	4	punct	_	_
+7	rolled	rolled	X	X	_	4	nmod	_	_
+8	to	to	X	X	_	7	flat:foreign	_	_
+9	3/16	3/16	NUM	NUM	NumType=Card	4	punct	_	SpaceAfter=No
+10	''	''	PUNCT	PUNCT	_	4	punct	_	_
+11	''	''	PUNCT	PUNCT	_	12	dep	_	_
+12	thickness	thickness	PROPN	PROPN	_	4	nmod	_	_
+13	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	patterns	patterns	PROPN	PROPN	_	1	amod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	rolled	rolled	X	X	_	0	ROOT	_	_
+3	clay	clay	X	X	_	2	obj	_	_
+4	and	and	X	X	_	2	dep	_	_
+5	cut	cut	X	X	_	4	flat:foreign	_	_
+6	around	around	X	X	_	2	flat:foreign	_	_
+7	them	them	X	X	_	2	flat:foreign	_	_
+8	with	with	X	X	_	7	dep	_	_
+9	knife	knife	X	X	_	7	dep	_	_
+10	in	in	X	X	_	12	case	_	_
+11	vertical	vertical	ADJ	ADJ	Gender=Masc|Number=Sing	12	amod	_	_
+12	position	position	NOUN	NOUN	Gender=Fem|Number=Sing	2	obj	_	_
+13	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	clay	clay	X	X	_	2	nmod	_	_
+2	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	wall	wall	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	board	board	X	X	_	2	flat:name	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	To	To	X	X	_	2	nsubj	_	_
+2	assemble	assembler	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	20	dep	_	_
+3	jar	jar	NOUN	NOUN	Gender=Fem|Number=Sing	2	obj	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	put	pouvoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	20	dep	_	_
+6	paper	paper	VERB	VERB	VerbForm=Inf	5	nsubj	_	_
+7	pattern	pattern	X	X	_	6	dep	_	_
+8	B	b	NOUN	NOUN	_	6	obj	_	_
+9	for	for	ADP	ADP	_	10	case	_	_
+10	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	6	obl:mod	_	_
+11	in	in	X	X	_	12	case	_	_
+12	bottom	bottom	NOUN	NOUN	Gender=Masc|Number=Sing	10	nmod	_	_
+13	of	of	X	X	_	14	case	_	_
+14	mold	mold	X	X	_	10	nmod	_	_
+15	and	and	X	X	_	6	dep	_	_
+16	clay	clay	X	X	_	6	obl:arg	_	_
+17	disk	disk	X	X	_	6	obl:mod	_	_
+18	B	b	NOUN	NOUN	_	6	obj	_	_
+19	on	on	PRON	PRON	Number=Sing|Person=3	20	nsubj	_	_
+20	top	top	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+21	.	.	PUNCT	PUNCT	_	20	punct	_	_
+
+1	Line	Line	X	X	_	0	ROOT	_	_
+2	sides	side	ADJ	ADJ	Number=Plur	1	amod	_	_
+3	of	of	X	X	_	1	amod	_	_
+4	mold	mold	X	X	_	1	nmod	_	_
+5	with	with	X	X	_	1	flat:foreign	_	_
+6	paper	paper	X	X	_	1	flat:foreign	_	_
+7	pattern	pattern	X	X	_	1	flat:foreign	_	_
+
+1	Aj	Aj	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Bevel	bevel	NOUN	NOUN	Gender=Masc|Number=Sing	12	nsubj	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	score	score	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	ends	ends	X	X	_	1	flat:foreign	_	_
+5	of	of	X	X	_	6	case	_	_
+6	clay	clay	X	X	_	1	nmod	_	_
+7	piece	piece	X	X	_	1	flat:foreign	_	_
+8	A	à	ADP	ADP	_	1	dep	_	_
+9	so	so	X	X	_	8	dep	_	_
+10	that	that	X	X	_	1	flat:foreign	_	_
+11	they	they	X	X	_	12	nsubj	_	_
+12	overlap	overlap	X	X	_	0	ROOT	_	_
+13	about	about	ADJ	ADJ	Gender=Masc|Number=Plur	12	advmod	_	_
+14	1/2	1/2	NUM	NUM	NumType=Card	13	obj	_	SpaceAfter=No
+15	''	''	PUNCT	PUNCT	_	12	punct	_	_
+16	''	''	X	X	_	12	punct	_	_
+17	and	and	X	X	_	20	dep	_	_
+18	make	make	X	X	_	17	fixed	_	_
+19	even	even	ADV	ADV	_	17	dep	_	_
+20	thickness	thickness	PROPN	PROPN	_	12	dep	_	_
+21	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	clay	clay	X	X	_	1	nmod	_	_
+
+1	piece	piece	PROPN	PROPN	_	3	nsubj	_	_
+2	A	à	ADP	ADP	_	1	dep	_	_
+3	inside	insid	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+4	;	;	PUNCT	PUNCT	_	3	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	use	user	PUNCT	PUNCT	_	0	ROOT	_	_
+2	slip	slip	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl:arg	_	_
+3	to	to	X	X	_	4	dep	_	_
+4	join	join	NOUN	NOUN	_	1	obl:mod	_	_
+5	overlapped	overlapped	X	X	_	4	flat:name	_	_
+6	ends	ends	X	X	_	1	dep	_	_
+7	together	together	X	X	_	6	amod	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Join	Join	X	X	_	0	ROOT	_	_
+2	B	b	NOUN	NOUN	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	bottom	bottom	ADV	ADV	_	1	flat:foreign	_	_
+5	of	of	ADP	ADP	_	6	dep	_	_
+6	A	a	NOUN	NOUN	_	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	6	punct	_	_
+8	scoring	scoring	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+9	and	and	X	X	_	8	nmod	_	_
+10	reinforcing	reinforcing	X	X	_	9	dep	_	_
+11	with	with	X	X	_	9	dep	_	_
+12	clay	clay	X	X	_	8	nmod	_	_
+13	coil	coil	X	X	_	8	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Trim	trim	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	excess	excess	X	X	_	1	flat:foreign	_	_
+3	clay	clay	X	X	_	1	flat:foreign	_	_
+4	from	from	X	X	_	3	dep	_	_
+5	around	around	X	X	_	3	flat:foreign	_	_
+6	lip	lip	X	X	_	1	flat:foreign	_	_
+7	of	of	X	X	_	8	case	_	_
+8	mold	mold	NOUN	NOUN	Number=Sing	1	nmod	_	_
+9	and	and	X	X	_	1	dep	_	_
+10	set	set	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+11	aside	asid	ADJ	ADJ	Number=Sing	10	amod	_	_
+12	while	whil	ADJ	ADJ	Number=Sing	10	amod	_	_
+13	assembling	assembling	ADJ	ADJ	Gender=Masc	10	amod	_	_
+14	lid	lid	PROPN	PROPN	_	10	amod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	To	To	X	X	_	2	nsubj	_	_
+2	assemble	assembler	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	lid	lid	PROPN	PROPN	_	2	obj	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	press	press	X	X	_	2	dep	_	_
+6	clay	clay	X	X	_	5	flat:name	_	_
+7	piece	piece	X	X	_	2	obj	_	_
+8	C	c	NOUN	NOUN	_	2	obj	_	_
+9	in	in	X	X	_	10	case	_	_
+10	cavity	cavity	X	X	_	2	obl:arg	_	_
+11	of	of	X	X	_	12	case	_	_
+12	wooden	wooden	X	X	_	2	obl:mod	_	_
+13	design	design	X	X	_	2	obj	_	_
+14	head	head	X	X	_	13	amod	_	_
+15	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Press	Press	X	X	_	0	ROOT	_	_
+
+1	clay	clay	X	X	_	0	ROOT	_	_
+2	into	into	X	X	_	1	flat:foreign	_	_
+
+1	mold	mold	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	as	as	X	X	_	4	aux:tense	_	_
+3	instructed	instructed	X	X	_	2	dep	_	_
+4	in	in	X	X	_	1	advcl	_	_
+5	General	General	PROPN	PROPN	_	4	dep	_	_
+6	Directions	Directions	PROPN	PROPN	_	4	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Score	score	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	plain	plain	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	side	side	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	of	of	X	X	_	5	case	_	_
+5	C	c	NOUN	NOUN	_	3	obj	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	leave	leave	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	2	amod	_	_
+4	mold	mold	PROPN	PROPN	_	1	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Score	score	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	one	one	X	X	_	1	amod	_	_
+3	side	side	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	5	case	_	_
+5	disk	disk	NOUN	NOUN	Gender=Fem|Number=Sing	3	obl:mod	_	_
+6	D	d	NOUN	NOUN	_	5	nmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	join	join	X	X	_	0	ROOT	_	_
+3	to	to	X	X	_	2	dep	_	_
+4	C	c	NOUN	NOUN	_	2	nmod	_	_
+5	;	;	PUNCT	PUNCT	_	2	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	score	score	NOUN	NOUN	Gender=Masc|Number=Sing	8	nsubj	_	_
+2	other	other	X	X	_	1	amod	_	_
+3	side	side	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	5	case	_	_
+5	D	d	NOUN	NOUN	_	1	nmod	_	_
+6	and	and	X	X	_	1	dep	_	_
+7	one	one	X	X	_	1	dep	_	_
+8	side	side	X	X	_	13	dep	_	_
+9	of	of	X	X	_	10	case	_	_
+10	disk	disk	PRON	PRON	Number=Sing|Person=1|PronType=Prs	8	obl:mod	_	_
+11	E	e	NOUN	NOUN	_	8	obj	_	_
+12	and	and	X	X	_	8	dep	_	_
+13	join	join	X	X	_	0	ROOT	_	_
+14	as	as	X	X	_	13	xcomp	_	_
+15	before	before	X	X	_	13	flat:name	_	_
+16	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	While	While	PROPN	PROPN	_	7	nsubj	_	_
+2	assembled	assembled	PROPN	PROPN	_	1	flat:name	_	_
+3	lid	lid	X	X	_	1	flat:foreign	_	_
+4	is	is	X	X	_	5	case	_	_
+5	still	still	X	X	_	1	flat:foreign	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	advmod	_	_
+7	design	design	ADJ	ADJ	Gender=Masc|Number=Sing	13	advmod	_	_
+8	head	head	X	X	_	7	advmod	_	_
+9	,	,	PUNCT	PUNCT	_	7	punct	_	_
+10	gently	gently	ADJ	ADJ	Gender=Masc|Number=Plur	11	amod	_	_
+11	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	7	appos	_	_
+12	firmly	firmly	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+13	press	press	X	X	_	0	ROOT	_	_
+14	it	it	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	dep	_	_
+15	on	on	PRON	PRON	Number=Sing|Person=3	16	nsubj	_	_
+16	plaster	plaster	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	dep	_	_
+17	board	board	X	X	_	16	obj	_	_
+18	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	If	If	PROPN	PROPN	_	0	ROOT	_	_
+
+1	design	design	ADJ	ADJ	Gender=Masc	4	dep	_	_
+2	head	head	X	X	_	1	flat:foreign	_	_
+3	has	has	X	X	_	2	dep	_	_
+4	a	avoir	X	X	_	0	ROOT	_	_
+5	deep	deep	ADV	ADV	_	4	advmod	_	_
+6	cavity	cavity	X	X	_	4	obj	_	_
+7	,	,	PUNCT	PUNCT	_	4	punct	_	_
+8	clay	clay	X	X	_	4	obj	_	_
+9	lid	lid	X	X	_	8	amod	_	_
+10	will	will	X	X	_	8	nmod	_	_
+11	be	be	X	X	_	10	dep	_	_
+12	quite	quite	X	X	_	4	punct	_	_
+13	thick	thick	PROPN	PROPN	Gender=Masc|Number=Sing	4	advmod	_	_
+14	at	at	X	X	_	15	case	_	_
+15	this	this	X	X	_	16	amod	_	_
+16	point	point	PROPN	PROPN	Gender=Masc|Number=Sing	4	obj	_	_
+17	;	;	PUNCT	PUNCT	_	4	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	2	punct	_	_
+2	press	press	X	X	_	0	ROOT	_	_
+3	eraser	eraser	VERB	VERB	VerbForm=Inf	2	xcomp	_	_
+4	of	of	X	X	_	5	case	_	_
+5	pencil	pencil	PROPN	PROPN	_	3	obl:arg	_	_
+6	gently	gently	ADJ	ADJ	Number=Plur	5	amod	_	_
+7	1/4	1/4	NUM	NUM	NumType=Card	5	nummod	_	SpaceAfter=No
+8	''	''	PUNCT	PUNCT	_	2	punct	_	_
+9	''	''	PUNCT	PUNCT	_	2	punct	_	_
+10	deep	deep	ADV	ADV	_	11	advmod	_	_
+11	into	into	X	X	_	2	advcl	_	_
+12	deep	deep	X	X	_	2	dep	_	_
+13	clay	clay	X	X	_	2	flat:name	_	_
+14	to	to	X	X	_	2	dep	_	_
+15	allow	allow	X	X	_	2	xcomp	_	_
+16	vent	vent	ADV	ADV	_	15	advmod	_	_
+17	for	for	ADP	ADP	_	18	mark	_	_
+18	proper	proper	VERB	VERB	VerbForm=Inf	2	xcomp	_	_
+19	drying	drying	X	X	_	2	flat:foreign	_	_
+20	and	and	X	X	_	2	dep	_	_
+21	firing	firing	X	X	_	2	dep	_	_
+22	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Check	Check	PROPN	PROPN	_	2	nsubj	_	_
+2	fit	faire	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	ROOT	_	_
+3	of	of	X	X	_	4	case	_	_
+4	lid	lid	PROPN	PROPN	_	2	obj	_	_
+5	on	on	PRON	PRON	Number=Sing|Person=3	6	nsubj	_	_
+6	jar	jar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	_	_
+7	;	;	PUNCT	PUNCT	_	2	punct	_	_
+8	;	;	PUNCT	PUNCT	_	2	punct	_	_
+
+1	if	if	X	X	_	2	expl:comp	_	_
+2	inner	inner	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+3	lid	lid	X	X	_	2	obj	_	_
+4	is	is	X	X	_	3	dep	_	_
+5	too	too	ADV	ADV	_	4	fixed	_	_
+6	big	big	INTJ	INTJ	_	2	obj	_	_
+7	,	,	PUNCT	PUNCT	_	10	punct	_	_
+8	trim	trim	NOUN	NOUN	Gender=Masc|Number=Sing	10	nsubj	_	_
+9	to	to	X	X	_	10	aux:tense	_	_
+10	fit	faire	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	conj	_	_
+11	,	,	PUNCT	PUNCT	_	10	punct	_	_
+12	allowing	allowing	X	X	_	10	advmod	_	_
+13	room	room	X	X	_	12	dep	_	_
+14	for	for	X	X	_	15	case	_	_
+15	thickness	thickness	PROPN	PROPN	_	10	obl:mod	_	_
+16	of	of	ADP	ADP	_	17	case	_	_
+17	glaze	glaze	NOUN	NOUN	Number=Sing	10	obj	_	_
+18	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Remove	Remove	X	X	_	0	ROOT	_	_
+2	lid	lid	X	X	_	1	flat:foreign	_	_
+3	from	from	X	X	_	2	dep	_	_
+4	head	head	X	X	_	2	dep	_	_
+5	of	of	X	X	_	6	case	_	_
+6	mold	mold	NOUN	NOUN	Number=Sing	1	nmod	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Remove	Remove	X	X	_	0	ROOT	_	_
+2	jar	jar	X	X	_	1	flat:foreign	_	_
+3	from	from	X	X	_	2	dep	_	_
+4	mold	mold	X	X	_	1	flat:foreign	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	jar	jar	X	X	_	1	amod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	plaster	plaster	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	board	board	X	X	_	2	obj	_	_
+4	with	with	X	X	_	2	obj	_	_
+5	lid	lid	X	X	_	2	obj	_	_
+6	in	in	X	X	_	7	case	_	_
+7	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	2	obl:mod	_	_
+8	to	to	X	X	_	2	advmod	_	_
+9	dry	dry	X	X	_	8	fixed	_	_
+10	slowly	slowly	ADJ	ADJ	Gender=Masc|Number=Sing	8	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Bisque	bisque	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	fire	fire	X	X	_	1	fixed	_	_
+3	to	to	X	X	_	4	case	_	_
+4	cone	cone	NOUN	NOUN	Gender=Fem|Number=Sing	2	obl:mod	_	_
+5	08	08	X	X	_	4	nummod	_	_
+6	with	with	X	X	_	4	dep	_	_
+7	lid	lid	PROPN	PROPN	_	4	nmod	_	_
+8	on	on	PRON	PRON	Number=Sing|Person=3	9	nsubj	_	_
+9	jar	jar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	For	for	ADP	ADP	_	2	case	_	_
+2	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	4	nummod	_	_
+3	antique	antique	ADJ	ADJ	Number=Sing	2	amod	_	_
+4	effect	effect	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	0	ROOT	_	_
+2	jars	jar	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	brush	brush	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+5	Creek	Creek	PROPN	PROPN	_	4	amod	_	SpaceAfter=No
+6	-	-	PROPN	PROPN	_	1	flat:name	_	SpaceAfter=No
+7	Turn	Turn	X	X	_	1	dep	_	_
+
+1	brown	brown	X	X	_	2	advmod	_	_
+2	toner	toner	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	bisque	bisqu	ADJ	ADJ	Number=Sing	6	dep	_	_
+3	ware	ware	NOUN	NOUN	Gender=Fem|Number=Sing	2	flat:foreign	_	_
+4	and	and	X	X	_	2	flat:foreign	_	_
+5	sponge	sponge	X	X	_	2	flat:foreign	_	_
+6	it	it	X	X	_	0	ROOT	_	_
+7	off	off	ADJ	ADJ	Number=Sing	6	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Glaze	Glaze	X	X	_	0	ROOT	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	two	two	X	X	_	1	flat:foreign	_	_
+
+1	coats	coat	NOUN	NOUN	Gender=Masc|Number=Plur	3	nsubj	_	_
+2	of	of	X	X	_	3	case	_	_
+3	clear	clear	X	X	_	0	ROOT	_	_
+4	or	or	ADP	ADP	_	5	advmod	_	_
+5	transparent	transparent	ADJ	ADJ	Gender=Masc|Number=Sing	3	dep	_	_
+6	matt	matt	PROPN	PROPN	Gender=Masc|Number=Sing	5	obj	_	_
+7	glaze	glaze	PROPN	PROPN	_	5	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	large	large	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+3	jar	jar	X	X	_	1	flat:foreign	_	_
+4	was	was	X	X	_	3	dep	_	_
+5	brushed	brushed	X	X	_	3	dep	_	_
+6	with	with	X	X	_	3	dep	_	_
+7	Creek	Creek	X	X	_	3	dep	_	SpaceAfter=No
+8	-	-	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+9	Turn	Turn	X	X	_	1	flat:foreign	_	_
+10	green	green	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+11	toner	toner	X	X	_	1	flat:foreign	_	_
+12	and	and	X	X	_	1	flat:foreign	_	_
+13	sponged	sponged	PROPN	PROPN	_	1	flat:foreign	_	_
+14	off	off	ADJ	ADJ	Number=Sing	13	amod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Glaze	Glaze	X	X	_	0	ROOT	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	two	two	X	X	_	1	flat:foreign	_	_
+4	coats	coat	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:name	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	matt	matt	X	X	_	4	nmod	_	_
+7	glazes	glazes	PROPN	PROPN	_	1	nmod	_	_
+8	in	in	X	X	_	1	dep	_	_
+9	turquoise	turquoise	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+10	with	with	X	X	_	1	dep	_	_
+11	touches	touche	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+12	of	of	ADP	ADP	_	14	case	_	_
+13	blossom	blossom	X	X	_	14	amod	_	_
+14	pink	pink	PRON	PRON	Gender=Fem|Number=Sing|PronType=Dem	1	nmod	_	_
+15	on	on	PRON	PRON	Number=Sing|Person=3	1	dep	_	_
+16	lid	lid	PROPN	PROPN	_	1	flat:name	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	When	When	X	X	_	0	ROOT	_	_
+2	dry	dry	X	X	_	1	flat:foreign	_	_
+3	they	they	X	X	_	7	nsubj	_	_
+4	were	were	X	X	_	3	dep	_	_
+5	fired	fired	X	X	_	3	flat:foreign	_	_
+6	to	to	X	X	_	7	dep	_	_
+7	cone	cone	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+8	06	06	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+9	-	-	NOUN	NOUN	NumType=Card	1	nmod	_	SpaceAfter=No
+10	05	05	NOUN	NOUN	NumType=Card	1	nmod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Little	Little	PROPN	PROPN	_	3	nsubj	_	_
+2	folks	folk	ADV	ADV	_	1	amod	_	_
+3	set	set	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	:	:	PUNCT	PUNCT	_	3	punct	_	_
+5	(	(	PUNCT	PUNCT	_	3	punct	_	_
+6	Made	Made	X	X	_	3	parataxis	_	_
+7	from	from	X	X	_	6	dep	_	_
+8	modern	modern	X	X	_	6	amod	_	_
+9	wooden	wooden	X	X	_	6	flat:foreign	_	_
+10	molds	molds	X	X	_	6	flat:foreign	_	_
+11	Af	Af	X	X	_	3	dep	_	_
+12	.	.	PUNCT	PUNCT	_	3	punct	_	_
+13	)	)	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Roll	Roll	X	X	_	0	ROOT	_	_
+2	white	white	X	X	_	1	flat:foreign	_	_
+3	clay	clay	X	X	_	1	flat:foreign	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	3/16	3/16	NUM	NUM	NumType=Card	1	punct	_	SpaceAfter=No
+6	''	''	PUNCT	PUNCT	_	1	punct	_	_
+7	''	''	PUNCT	PUNCT	_	8	dep	_	_
+8	thickness	thickness	PROPN	PROPN	_	1	flat:foreign	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Salt	Salt	PROPN	PROPN	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	pepper	pepper	VERB	VERB	VerbForm=Inf	1	dep	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+5	Use	Use	X	X	_	1	dep	_	_
+6	mold	mold	X	X	_	5	amod	_	_
+7	to	to	X	X	_	5	flat:foreign	_	_
+8	cut	cut	X	X	_	7	fixed	_	_
+9	four	four	NOUN	NOUN	Gender=Masc|Number=Sing	5	flat:foreign	_	_
+
+1	side	sid	ADJ	ADJ	Number=Sing	2	advmod	_	_
+2	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	For	For	X	X	_	8	case	_	_
+2	top	top	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	2	dep	_	_
+4	bottom	bottom	X	X	_	2	dep	_	_
+5	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	use	user	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	punct	_	_
+8	short	short	X	X	_	14	nsubj	_	_
+9	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	8	nmod	_	_
+10	of	of	X	X	_	11	case	_	_
+11	mold	mold	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	8	nmod	_	_
+12	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_
+13	measurement	measurement	ADV	ADV	_	14	advmod	_	_
+14	guide	guid	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+15	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Press	Press	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	side	side	X	X	_	4	amod	_	_
+4	pieces	pieces	X	X	_	1	obl:mod	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	clay	clay	X	X	_	4	nmod	_	_
+7	into	into	X	X	_	4	flat:foreign	_	_
+8	cavity	cavity	X	X	_	4	nmod	_	_
+9	of	of	X	X	_	10	case	_	_
+10	mold	mold	NOUN	NOUN	Number=Sing	4	nmod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Trim	trim	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	excess	excess	X	X	_	1	flat:foreign	_	_
+3	clay	clay	X	X	_	1	flat:foreign	_	_
+4	from	from	X	X	_	3	dep	_	_
+5	rim	rim	NOUN	NOUN	_	3	flat:name	_	_
+6	of	of	ADP	ADP	_	7	case	_	_
+7	mold	mold	NOUN	NOUN	Number=Sing	1	nmod	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Cut	cut	ADV	ADV	_	0	ROOT	_	_
+
+1	beveled	beveled	ADJ	ADJ	Gender=Fem|Number=Plur	11	nsubj	_	_
+2	edge	edge	X	X	_	1	amod	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	4	nsubj	_	_
+4	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+5	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	4	punct	_	_
+6	sides	side	NOUN	NOUN	Gender=Masc|Number=Plur	4	obj	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	clay	clay	X	X	_	6	nmod	_	_
+9	at	at	X	X	_	6	dep	_	_
+10	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+11	45-degree	45-degree	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+
+1	angle	angle	NOUN	NOUN	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	to	to	X	X	_	3	aux:tense	_	_
+3	miter	miter	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+4	corners	corner	NOUN	NOUN	Gender=Masc|Number=Plur	3	amod	_	_
+5	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Score	score	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	beveled	beveled	X	X	_	0	ROOT	_	_
+2	edges	edges	X	X	_	1	amod	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	remove	remove	X	X	_	1	dep	_	_
+5	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+6	from	from	X	X	_	5	amod	_	_
+7	mold	mold	PROPN	PROPN	_	5	amod	_	_
+8	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	design	design	ADV	ADV	_	1	amod	_	SpaceAfter=No
+
+1	-	-	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	SpaceAfter=No
+2	side	side	X	X	_	5	aux:tense	_	_
+3	up	up	X	X	_	5	nsubj	_	_
+4	on	on	PRON	PRON	Number=Sing|Person=3	5	nsubj	_	_
+5	plaster	plaster	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	board	board	X	X	_	5	xcomp	_	_
+7	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Make	Make	X	X	_	0	ROOT	_	_
+2	all	all	X	X	_	1	dep	_	_
+3	four	four	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+4	sides	side	ADJ	ADJ	Number=Plur	3	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Cut	cut	ADV	ADV	_	5	advmod	_	_
+2	clay	clay	X	X	_	1	flat:foreign	_	_
+3	top	top	X	X	_	5	advmod	_	_
+4	and	and	X	X	_	3	dep	_	_
+5	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+6	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	5	obj	_	_
+7	;	;	PUNCT	PUNCT	_	5	punct	_	_
+8	;	;	PUNCT	PUNCT	_	5	punct	_	_
+
+1	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
+2	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+3	plaster	plaster	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	board	board	X	X	_	3	obj	_	_
+5	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Allow	Allow	X	X	_	0	ROOT	_	_
+2	all	all	X	X	_	1	dep	_	_
+3	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	become	become	X	X	_	1	dep	_	_
+6	leather	leather	X	X	_	5	flat:name	_	_
+7	hard	hard	ADJ	ADJ	Gender=Masc	1	flat:foreign	_	_
+8	before	before	X	X	_	7	flat:foreign	_	_
+
+1	constructing	constructing	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	2	expl:subj	_	_
+2	shaker	shaker	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	To	To	X	X	_	2	nsubj	_	_
+2	assemble	assembler	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	:	:	PUNCT	PUNCT	_	2	punct	_	_
+4	Construct	Construct	PROPN	PROPN	_	2	obj	_	_
+5	sides	side	ADJ	ADJ	Number=Plur	4	amod	_	_
+6	,	,	PUNCT	PUNCT	_	4	punct	_	_
+7	bottom	bottom	NOUN	NOUN	Gender=Masc|Number=Sing	4	nmod	_	_
+8	and	and	X	X	_	9	dep	_	_
+9	top	top	ADJ	ADJ	Gender=Masc|Number=Plur	4	amod	_	_
+10	as	as	X	X	_	4	dep	_	_
+11	for	for	X	X	_	12	case	_	_
+12	box	box	NOUN	NOUN	Gender=Fem|Number=Sing	10	obl:mod	_	_
+13	,	,	PUNCT	PUNCT	_	2	punct	_	_
+14	using	using	X	X	_	15	cc	_	_
+15	slip	slip	NOUN	NOUN	Gender=Masc|Number=Sing	20	expl:subj	_	_
+16	on	on	PRON	PRON	Number=Sing|Person=3	17	nsubj	_	_
+17	scored	scored	X	X	_	20	amod	_	_
+18	edges	edges	X	X	_	17	obj	_	_
+19	and	and	X	X	_	17	dep	_	_
+20	coils	coils	X	X	_	2	ccomp	_	_
+21	of	of	X	X	_	22	case	_	_
+22	clay	clay	X	X	_	20	obl:mod	_	_
+23	to	to	X	X	_	24	dep	_	_
+24	reinforce	reinforce	NOUN	NOUN	Gender=Masc|Number=Sing	20	advcl	_	_
+25	seams	seam	ADJ	ADJ	Gender=Masc|Number=Sing	24	amod	_	_
+26	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Join	Join	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	four	four	X	X	_	1	flat:foreign	_	_
+4	sides	side	ADJ	ADJ	Gender=Masc|Number=Plur	3	amod	_	_
+5	together	together	X	X	_	3	amod	_	_
+6	first	first	X	X	_	3	amod	_	_
+7	,	,	PUNCT	PUNCT	_	3	punct	_	_
+8	then	then	X	X	_	1	flat:foreign	_	_
+
+1	add	add	X	X	_	2	advmod	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	;	;	PUNCT	PUNCT	_	3	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	add	add	ADV	ADV	PronType=Int	2	advmod	_	_
+2	top	top	ADJ	ADJ	Gender=Masc|Number=Plur	3	amod	_	_
+3	last	last	X	X	_	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Use	Use	X	X	_	0	ROOT	_	_
+2	water	water	X	X	_	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	finger	finger	X	X	_	0	ROOT	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	smooth	smooth	ADV	ADV	_	3	advmod	_	_
+3	seams	seam	ADJ	ADJ	Gender=Masc|Number=Sing	1	fixed	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	edges	edges	X	X	_	1	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Turn	turn	ADV	ADV	_	2	advmod	_	_
+2	shaker	shaker	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	upside	upsid	ADJ	ADJ	Number=Sing	2	obj	_	_
+
+1	down	down	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Recess	Recess	PROPN	PROPN	_	2	amod	_	_
+2	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	slightly	slightly	X	X	_	2	amod	_	_
+4	to	to	X	X	_	5	dep	_	_
+5	allow	allow	X	X	_	2	nmod	_	_
+6	room	room	X	X	_	2	nmod	_	_
+
+1	for	for	ADP	ADP	_	2	mark	_	_
+2	stopper	stopper	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Cut	cut	ADV	ADV	_	7	advmod	_	_
+2	hole	hole	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	4	case	_	_
+4	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	for	for	ADP	ADP	_	6	case	_	_
+6	cork	cork	X	X	_	4	nmod	_	_
+7	stopper	stopper	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Add	Add	X	X	_	12	advmod	_	_
+2	holes	holes	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	4	dep	_	_
+4	top	top	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	forming	forming	X	X	_	4	conj	_	_
+7	`	`	ADP	ADP	_	9	case	_	SpaceAfter=No
+8	`	`	NUM	NUM	NumType=Card	9	case	_	_
+9	S	s	NOUN	NOUN	_	4	nmod	_	_
+10	''	''	X	X	_	1	punct	_	_
+11	for	for	X	X	_	12	case	_	_
+12	salt	salt	X	X	_	18	obl:mod	_	_
+13	and	and	X	X	_	12	dep	_	_
+14	`	`	ADP	ADP	_	16	case	_	SpaceAfter=No
+15	`	`	NUM	NUM	NumType=Card	16	nummod	_	_
+16	P	p	NOUN	NOUN	_	12	dep	_	_
+17	''	''	X	X	_	12	punct	_	_
+18	for	for	X	X	_	0	ROOT	_	_
+19	pepper	pepper	VERB	VERB	VerbForm=Inf	18	fixed	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Set	set	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+2	aside	aside	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	5	mark	_	_
+4	dry	dry	X	X	_	5	obl:mod	_	_
+5	thoroughly	thoroughly	ADJ	ADJ	Gender=Masc|Number=Plur	1	advcl	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sugar	Sugar	PROPN	PROPN	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	creamer	creamer	VERB	VERB	Tense=Pres|VerbForm=Part	1	amod	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+5	Cut	cut	NOUN	NOUN	Gender=Masc|Number=Sing	6	nsubj	_	_
+6	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl	_	_
+7	strip	strip	PROPN	PROPN	_	6	obj	_	_
+8	of	of	X	X	_	9	case	_	_
+9	clay	clay	X	X	_	6	obl:arg	_	_
+10	for	for	X	X	_	6	dep	_	_
+11	sides	sides	X	X	_	6	obj	_	_
+12	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+13	enough	enough	X	X	_	6	dep	_	_
+14	and	and	X	X	_	6	dep	_	_
+15	wide	wide	X	X	_	6	obj	_	_
+16	enough	enough	X	X	_	6	dep	_	_
+17	for	for	X	X	_	6	dep	_	_
+18	three	three	X	X	_	1	dep	_	_
+19	impressions	impression	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+20	of	of	X	X	_	21	case	_	_
+21	mold	mold	X	X	_	1	nmod	_	_
+22	design	design	ADJ	ADJ	Gender=Masc|Number=Sing	21	amod	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Press	Press	X	X	_	0	ROOT	_	_
+2	clay	clay	X	X	_	1	flat:foreign	_	_
+3	into	into	X	X	_	1	flat:foreign	_	_
+4	cavity	cavity	X	X	_	1	flat:foreign	_	_
+5	of	of	X	X	_	6	case	_	_
+6	one	one	X	X	_	1	dep	_	_
+7	mold	mold	X	X	_	1	flat:foreign	_	_
+8	three	three	X	X	_	1	flat:foreign	_	_
+9	times	times	X	X	_	8	flat:foreign	_	_
+10	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	bevel	bevel	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	overlapping	overlapping	X	X	_	1	punct	_	_
+
+1	ends	ends	X	X	_	0	ROOT	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	splice	splice	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	joint	joindre	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	score	score	NOUN	NOUN	Gender=Masc|Number=Sing	2	conj	_	_
+6	beveled	beveled	NOUN	NOUN	_	2	conj	_	_
+7	edges	edge	ADJ	ADJ	Gender=Masc|Number=Plur	6	amod	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Form	Form	X	X	_	6	nsubj	_	_
+2	clay	clay	X	X	_	1	flat:foreign	_	_
+3	strip	strip	X	X	_	1	flat:foreign	_	_
+4	into	into	X	X	_	1	flat:foreign	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_
+6	cylinder	cylinder	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+7	;	;	PUNCT	PUNCT	_	6	punct	_	_
+8	;	;	PUNCT	PUNCT	_	6	punct	_	_
+
+1	use	user	PUNCT	PUNCT	_	0	ROOT	_	_
+2	slip	slip	NOUN	NOUN	Gender=Masc|Number=Sing	1	nsubj	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	join	join	X	X	_	1	dep	_	_
+5	scored	scored	X	X	_	4	flat:name	_	_
+6	ends	end	ADJ	ADJ	Gender=Masc|Number=Plur	1	dep	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	2	nummod	_	_
+2	cylinder	cylinder	X	X	_	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	disk	disk	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	obj	_	_
+4	of	of	X	X	_	5	case	_	_
+5	clay	clay	X	X	_	2	obj	_	_
+6	slightly	slightly	X	X	_	2	obj	_	_
+7	larger	larger	VERB	VERB	VerbForm=Inf	2	xcomp	_	_
+8	than	than	ADJ	ADJ	Number=Plur	9	amod	_	_
+9	cylinder	cylinder	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+10	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Score	score	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	bottom	bottom	X	X	_	1	nmod	_	_
+3	edge	edge	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	5	case	_	_
+5	cylinder	cylinder	X	X	_	1	nmod	_	_
+6	and	and	X	X	_	1	dep	_	_
+7	join	join	X	X	_	1	dep	_	_
+8	to	to	X	X	_	7	dep	_	_
+9	disk	disk	X	X	_	7	dep	_	_
+10	with	with	X	X	_	1	parataxis	_	_
+11	slip	slip	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Trim	trim	ADJ	ADJ	NumType=Ord|Number=Sing	0	ROOT	_	_
+
+1	away	away	X	X	_	0	ROOT	_	_
+2	excess	excess	X	X	_	1	amod	_	_
+3	clay	clay	PROPN	PROPN	_	1	flat:name	_	_
+4	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	2	punct	_	_
+2	reinforce	reinforc	ADJ	ADJ	NumType=Ord|Number=Sing	0	ROOT	_	_
+3	seam	seam	VERB	VERB	Tense=Pres|VerbForm=Part	2	amod	_	_
+4	with	with	X	X	_	2	nmod	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	punct	_	_
+6	coil	coil	X	X	_	5	obj	_	_
+7	of	of	ADP	ADP	_	8	case	_	_
+8	clay	clay	PROPN	PROPN	_	5	obl:arg	_	_
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	form	form	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	sugar	sugar	X	X	_	1	flat:foreign	_	_
+6	bowl	bowl	ADV	ADV	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Make	Make	X	X	_	0	ROOT	_	_
+2	creamer	creamer	NOUN	NOUN	Gender=Masc|Number=Sing	1	acl	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	same	same	X	X	_	1	flat:foreign	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Handle	handle	ADV	ADV	_	5	advmod	_	_
+2	for	for	X	X	_	1	dep	_	_
+3	creamer	creamer	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	is	is	X	X	_	3	dep	_	_
+5	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+6	strip	strip	PROPN	PROPN	_	5	obj	_	_
+7	of	of	X	X	_	8	case	_	_
+8	clay	clay	X	X	_	5	obl:arg	_	_
+9	1/2	1/2	NUM	NUM	NumType=Card	8	nummod	_	SpaceAfter=No
+10	''	''	PUNCT	PUNCT	_	5	punct	_	_
+11	''	''	PUNCT	PUNCT	_	0	ROOT	_	_
+12	wide	wide	X	X	_	14	case	_	_
+13	and	and	X	X	_	12	fixed	_	_
+14	3	3	NUM	NUM	NumType=Card	11	obl:mod	_	SpaceAfter=No
+
+1	-	-	NUM	NUM	NumType=Card	2	punct	_	SpaceAfter=No
+2	1/2	1/2	NOUN	NOUN	NumType=Card	0	ROOT	_	SpaceAfter=No
+3	''	''	PUNCT	PUNCT	_	2	punct	_	_
+4	''	''	PUNCT	PUNCT	_	3	punct	_	_
+5	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	add	add	X	X	_	3	advmod	_	_
+3	handle	handl	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	3	obl:mod	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+7	wooden	wooden	X	X	_	6	obj	_	_
+8	dowel	dowel	X	X	_	1	flat:foreign	_	_
+9	against	against	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	flat:foreign	_	_
+11	inside	insid	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+12	wall	wall	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+13	of	of	X	X	_	14	mark	_	_
+14	creamer	creamer	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Score	score	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	outside	outside	X	X	_	0	ROOT	_	_
+3	of	of	X	X	_	4	expl:comp	_	_
+4	container	container	NOUN	NOUN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+5	where	where	X	X	_	2	dep	_	_
+6	handle	handl	ADJ	ADJ	Gender=Masc|Number=Sing	5	amod	_	_
+7	ends	ends	X	X	_	5	nmod	_	_
+8	will	will	X	X	_	5	dep	_	_
+9	be	be	X	X	_	8	dep	_	_
+10	joined	joined	X	X	_	2	dep	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Bend	bend	ADV	ADV	_	2	advmod	_	_
+2	handle	handl	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	;	;	PUNCT	PUNCT	_	2	punct	_	_
+4	;	;	PUNCT	PUNCT	_	2	punct	_	_
+
+1	press	press	X	X	_	0	ROOT	_	_
+2	scored	scored	X	X	_	1	flat:foreign	_	_
+3	handle	handl	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	ends	end	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+5	firmly	firmly	X	X	_	1	flat:foreign	_	_
+
+1	in	in	X	X	_	2	case	_	_
+2	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	using	using	X	X	_	2	dep	_	_
+4	dowel	dowel	X	X	_	2	dep	_	_
+5	to	to	X	X	_	6	case	_	_
+6	reinforce	reinforce	NUM	NUM	NumType=Card	7	nummod	_	_
+7	container	container	NOUN	NOUN	Gender=Masc|Number=Sing	2	nmod	_	_
+8	while	whil	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+9	pressing	pressing	X	X	_	2	amod	_	_
+10	;	;	PUNCT	PUNCT	_	2	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	use	user	PUNCT	PUNCT	_	4	dep	_	_
+2	slip	slip	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl:arg	_	_
+3	to	to	X	X	_	4	dep	_	_
+4	join	join	PROPN	PROPN	_	0	ROOT	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	To	To	X	X	_	16	nsubj	_	_
+2	form	form	X	X	_	1	flat:foreign	_	_
+3	spout	spout	ADV	ADV	_	2	advmod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	between	between	X	X	_	2	conj	_	_
+6	two	two	X	X	_	2	flat:foreign	_	_
+7	designs	design	NOUN	NOUN	Gender=Masc|Number=Plur	2	amod	_	_
+8	,	,	PUNCT	PUNCT	_	2	punct	_	_
+9	dampen	dampen	ADJ	ADJ	Gender=Masc|Number=Sing	2	advcl	_	_
+10	area	area	X	X	_	2	obj	_	_
+11	slightly	slightly	X	X	_	10	flat:foreign	_	_
+12	and	and	X	X	_	1	flat:foreign	_	_
+13	gently	gently	X	X	_	12	flat:foreign	_	_
+14	push	push	X	X	_	1	flat:foreign	_	_
+15	clay	clay	X	X	_	1	nmod	_	_
+16	outward	outward	PROPN	PROPN	_	0	ROOT	_	_
+17	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	Make	Make	X	X	_	0	ROOT	_	_
+2	lid	lid	X	X	_	1	flat:foreign	_	_
+3	for	for	X	X	_	4	dep	_	_
+4	sugar	sugar	X	X	_	1	flat:foreign	_	_
+5	bowl	bowl	ADV	ADV	_	4	advmod	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	same	same	X	X	_	1	flat:foreign	_	_
+8	as	as	X	X	_	1	dep	_	_
+9	jar	jar	X	X	_	8	obj	_	_
+10	lids	lids	PROPN	PROPN	_	8	obj	_	_
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	omitting	omitting	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+13	design	design	PROPN	PROPN	_	12	obj	_	_
+14	disk	disk	PROPN	PROPN	_	12	nmod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Cut	cut	ADV	ADV	_	2	nsubj	_	_
+2	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	notch	notch	X	X	_	2	obj	_	_
+4	in	in	X	X	_	5	case	_	_
+5	lid	lid	X	X	_	2	obl:arg	_	_
+6	for	for	X	X	_	7	case	_	_
+7	spoon	spoon	X	X	_	2	obl:arg	_	_
+8	handle	handl	ADJ	ADJ	Gender=Masc|Number=Sing	2	advmod	_	_
+9	if	if	X	X	_	10	case	_	_
+10	desired	desired	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	obj	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Set	Set	X	X	_	0	ROOT	_	_
+2	aside	aside	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	4	case	_	_
+4	dry	dry	ADV	ADV	_	1	obl:mod	_	_
+5	with	with	X	X	_	6	case	_	_
+6	lid	lid	X	X	_	1	punct	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	sugar	sugar	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	bowl	bowl	ADV	ADV	_	2	xcomp	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Vases	vase	NOUN	NOUN	Gender=Fem|Number=Plur	5	nsubj	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Make	Make	X	X	_	1	dep	_	_
+4	same	same	X	X	_	3	amod	_	_
+5	as	as	X	X	_	0	ROOT	_	_
+6	salt	salt	X	X	_	5	flat:foreign	_	_
+7	and	and	X	X	_	5	dep	_	_
+8	pepper	pepper	VERB	VERB	VerbForm=Inf	5	advcl	_	_
+9	shakers	shaker	NOUN	NOUN	Gender=Masc|Number=Plur	5	dep	_	_
+10	,	,	PUNCT	PUNCT	_	5	punct	_	_
+11	leaving	leaving	X	X	_	14	amod	_	_
+12	off	off	ADJ	ADJ	Number=Sing	11	amod	_	_
+13	top	top	ADJ	ADJ	Gender=Masc|Number=Sing	14	amod	_	_
+14	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	5	dep	_	_
+15	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Vases	vase	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	may	may	X	X	_	1	dep	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	made	made	X	X	_	1	dep	_	_
+5	into	into	X	X	_	1	dep	_	_
+6	candles	candles	X	X	_	1	nsubj	_	_
+7	by	by	X	X	_	1	dep	_	_
+8	filling	filling	X	X	_	7	flat:foreign	_	_
+9	with	with	X	X	_	7	flat:foreign	_	_
+10	melted	melted	X	X	_	7	flat:foreign	_	_
+11	wax	wax	ADV	ADV	_	12	advmod	_	_
+12	and	and	X	X	_	1	dep	_	_
+13	a	avoir	X	X	_	14	dep	_	_
+14	wick	wick	PROPN	PROPN	_	12	dep	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Napkin	Napkin	PROPN	PROPN	_	16	nsubj	_	_
+2	holder	holder	PROPN	PROPN	_	1	flat:name	_	_
+3	:	:	PUNCT	PUNCT	_	1	punct	_	_
+4	Cut	cut	NOUN	NOUN	Gender=Masc|Number=Sing	11	advmod	_	_
+5	a	avoir	X	X	_	11	dep	_	_
+6	piece	piece	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+7	of	of	X	X	_	5	fixed	_	_
+8	clay	clay	X	X	_	5	obj	_	_
+9	for	for	X	X	_	10	case	_	_
+10	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	11	obl:mod	_	_
+11	and	and	X	X	_	1	advcl	_	_
+12	two	two	X	X	_	11	flat:foreign	_	_
+13	for	for	X	X	_	11	dep	_	_
+14	sides	sides	X	X	_	11	flat:foreign	_	_
+15	each	each	X	X	_	11	flat:foreign	_	_
+16	about	about	ADJ	ADJ	Gender=Masc|Number=Plur	17	dep	_	_
+17	Af	Af	X	X	_	0	ROOT	_	_
+18	(	(	PUNCT	PUNCT	_	17	punct	_	_
+19	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	17	amod	_	_
+20	enough	enough	X	X	_	19	dep	_	_
+21	for	for	X	X	_	19	dep	_	_
+22	three	three	X	X	_	17	flat:foreign	_	_
+23	impressions	impression	NOUN	NOUN	Gender=Fem|Number=Plur	17	flat:foreign	_	_
+24	of	of	X	X	_	23	amod	_	_
+25	mold	mold	PROPN	PROPN	_	17	nmod	_	_
+26	)	)	PUNCT	PUNCT	_	17	punct	_	_
+27	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	Press	Press	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	two	two	X	X	_	1	flat:foreign	_	_
+4	sides	sides	X	X	_	1	flat:foreign	_	_
+5	into	into	X	X	_	1	dep	_	_
+6	cavity	cavity	X	X	_	1	flat:foreign	_	_
+7	of	of	X	X	_	8	case	_	_
+8	one	one	X	X	_	1	dep	_	_
+9	mold	mold	X	X	_	1	flat:foreign	_	_
+10	three	three	X	X	_	1	flat:foreign	_	_
+11	times	times	X	X	_	10	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Put	Put	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	cut	cut	X	X	_	1	flat:foreign	_	_
+3	pieces	pieces	X	X	_	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	plaster	plaster	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	board	board	X	X	_	2	obj	_	_
+4	to	to	X	X	_	2	dep	_	_
+5	dry	dry	ADV	ADV	_	4	fixed	_	_
+6	to	to	X	X	_	2	dep	_	_
+7	firm	firm	X	X	_	2	obj	_	_
+8	leather	leather	X	X	_	2	obj	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	3	nsubj	_	SpaceAfter=No
+2	hard	hard	ADJ	ADJ	Number=Sing	3	amod	_	_
+3	state	state	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Score	score	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	side	side	X	X	_	1	amod	_	_
+3	edges	edges	X	X	_	2	obj	_	_
+4	of	of	ADP	ADP	_	5	case	_	_
+5	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+6	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	join	join	X	X	_	4	nummod	_	_
+2	sides	sides	X	X	_	1	amod	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	base	base	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+5	with	with	X	X	_	4	dep	_	_
+6	slip	slip	NOUN	NOUN	Gender=Masc|Number=Sing	4	dep	_	_
+7	and	and	X	X	_	8	dep	_	_
+8	reinforce	reinforce	VERB	VERB	VerbForm=Inf	4	obj	_	_
+9	with	with	X	X	_	8	dep	_	_
+10	coil	coil	NOUN	NOUN	Gender=Masc	8	obj	_	_
+11	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	cardboard	cardboard	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	pattern	pattern	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	cut	cut	X	X	_	2	dep	_	_
+5	to	to	X	X	_	12	mark	_	_
+6	fit	faire	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	5	xcomp	_	_
+7	inside	insid	ADJ	ADJ	Number=Sing	5	flat:foreign	_	_
+8	holder	holder	X	X	_	5	flat:foreign	_	_
+9	will	will	X	X	_	5	flat:foreign	_	_
+10	help	help	X	X	_	9	dep	_	_
+11	to	to	X	X	_	5	dep	_	_
+12	prevent	prevent	X	X	_	2	advcl	_	_
+13	warping	warping	NOUN	NOUN	Gender=Masc|Number=Plur	12	flat:name	_	_
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	pattern	pattern	X	X	_	1	amod	_	_
+3	inside	insid	ADJ	ADJ	Number=Sing	1	amod	_	_
+4	holder	holder	X	X	_	1	flat:name	_	_
+5	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	use	user	PUNCT	PUNCT	_	0	ROOT	_	_
+2	three	three	X	X	_	1	dep	_	_
+3	strips	strips	X	X	_	2	flat:foreign	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	clay	clay	X	X	_	2	obl:arg	_	_
+6	to	to	X	X	_	7	case	_	_
+7	hold	hold	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl:mod	_	_
+8	in	in	X	X	_	9	case	_	_
+9	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+10	(	(	PUNCT	PUNCT	_	1	punct	_	_
+11	see	see	X	X	_	1	dep	_	_
+12	Fig	Fig	PROPN	PROPN	_	1	punct	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	2	2	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	page	page	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	71	71	NUM	NUM	NumType=Card	3	nummod	_	_
+5	)	)	PUNCT	PUNCT	_	1	punct	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Do	Do	X	X	_	5	nsubj	_	_
+2	not	not	X	X	_	1	flat:foreign	_	_
+3	use	user	X	X	_	1	dep	_	_
+4	wood	wood	X	X	_	1	flat:name	_	_
+5	as	as	X	X	_	0	ROOT	_	_
+6	it	it	X	X	_	5	dep	_	_
+7	will	will	X	X	_	5	dep	_	_
+8	not	not	X	X	_	7	dep	_	_
+9	shrink	shrink	X	X	_	7	advmod	_	_
+10	with	with	X	X	_	7	dep	_	_
+11	the	the	X	X	_	7	dep	_	_
+12	clay	clay	X	X	_	5	flat:foreign	_	_
+13	and	and	X	X	_	5	dep	_	_
+14	would	would	X	X	_	5	obj	_	_
+15	cause	cause	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+16	breakage	breakag	ADJ	ADJ	Gender=Masc|Number=Plur	5	obj	_	_
+17	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Let	Let	X	X	_	0	ROOT	_	_
+2	all	all	X	X	_	1	flat:foreign	_	_
+3	projects	projects	X	X	_	1	flat:foreign	_	_
+4	dry	dry	X	X	_	1	flat:foreign	_	_
+5	slowly	slowly	PROPN	PROPN	Gender=Masc|Number=Sing	4	amod	_	_
+
+1	for	for	X	X	_	0	ROOT	_	_
+
+1	several	several	X	X	_	0	ROOT	_	_
+
+1	days	days	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Clean	Clean	X	X	_	2	advmod	_	_
+2	greenware	greenware	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Bisque	bisque	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	fire	fire	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	4	dep	_	_
+4	cone	cone	NOUN	NOUN	Gender=Fem|Number=Sing	2	obl:mod	_	_
+5	08	08	NUM	NUM	NumType=Card	4	nummod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Inside	Inside	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	1	obl:mod	_	_
+4	was	was	X	X	_	3	dep	_	_
+5	glazed	glazed	PROPN	PROPN	_	3	nmod	_	_
+6	with	with	X	X	_	3	dep	_	_
+7	three	three	X	X	_	1	flat:foreign	_	_
+
+1	coats	coats	X	X	_	2	nsubj	_	_
+2	of	of	X	X	_	3	dep	_	_
+3	Creek	Creek	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	Turn	Turn	X	X	_	2	amod	_	_
+2	bottle	bottle	X	X	_	0	ROOT	_	_
+3	green	green	X	X	_	2	flat:foreign	_	_
+4	antique	antique	ADJ	ADJ	Number=Sing	2	amod	_	_
+5	glaze	glaze	PROPN	PROPN	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Outside	Outside	X	X	_	0	ROOT	_	_
+2	was	was	X	X	_	1	dep	_	_
+3	finished	finished	X	X	_	1	dep	_	_
+4	with	with	X	X	_	1	dep	_	_
+5	Creek	Creek	X	X	_	1	dep	_	SpaceAfter=No
+6	-	-	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+7	Turn	Turn	X	X	_	1	dep	_	_
+8	brown	brown	X	X	_	1	flat:foreign	_	_
+9	toner	toner	ADV	ADV	PronType=Int	1	flat:foreign	_	_
+10	brushed	brushed	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	and	and	X	X	_	8	dep	_	_
+3	sponged	sponged	PROPN	PROPN	_	2	obj	_	_
+4	off	off	ADJ	ADJ	Number=Sing	3	amod	_	_
+5	to	to	X	X	_	3	dep	_	_
+6	give	give	X	X	_	5	flat:foreign	_	_
+7	antique	antique	ADJ	ADJ	Number=Sing	5	amod	_	_
+8	finish	finish	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Fired	Fired	X	X	_	0	ROOT	_	_
+2	to	to	X	X	_	3	case	_	_
+3	cone	cone	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	06	06	PROPN	PROPN	_	3	nmod	_	SpaceAfter=No
+5	-	-	NOUN	NOUN	NumType=Card	3	nmod	_	SpaceAfter=No
+6	05	05	NOUN	NOUN	NumType=Card	3	nmod	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Changing	Changing	X	X	_	4	advmod	_	_
+2	colors	colors	X	X	_	4	advmod	_	_
+3	to	to	X	X	_	4	dep	_	_
+4	change	change	X	X	_	0	ROOT	_	_
+5	from	from	X	X	_	4	dep	_	_
+6	one	one	X	X	_	4	advmod	_	_
+7	color	color	X	X	_	4	dep	_	_
+8	yarn	yarn	X	X	_	7	flat:foreign	_	_
+9	to	to	X	X	_	7	dep	_	_
+10	another	another	X	X	_	7	flat:foreign	_	_
+11	:	:	PUNCT	PUNCT	_	4	punct	_	_
+12	When	When	X	X	_	4	dep	_	_
+13	changing	changing	X	X	_	12	flat:foreign	_	_
+14	from	from	X	X	_	12	dep	_	_
+15	one	one	X	X	_	12	flat:foreign	_	_
+16	color	color	X	X	_	12	flat:foreign	_	_
+17	to	to	X	X	_	12	flat:foreign	_	_
+18	another	another	X	X	_	12	flat:foreign	_	_
+19	,	,	PUNCT	PUNCT	_	4	punct	_	_
+20	whether	whether	X	X	_	4	nmod	_	_
+21	working	working	X	X	_	20	flat:foreign	_	_
+22	on	on	PRON	PRON	Number=Sing|Person=3	23	nsubj	_	_
+23	right	right	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	4	dep	_	_
+24	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	23	obj	_	_
+25	wrong	wrong	X	X	_	24	dep	_	_
+26	side	sid	ADJ	ADJ	Number=Sing	23	amod	_	_
+27	,	,	PUNCT	PUNCT	_	28	punct	_	_
+28	pick	pick	PROPN	PROPN	Gender=Masc|Number=Sing	4	dep	_	_
+29	up	up	X	X	_	4	dep	_	_
+30	the	the	X	X	_	4	dep	_	_
+31	new	new	X	X	_	4	dep	_	_
+32	strand	strand	X	X	_	4	dep	_	_
+33	from	from	X	X	_	32	dep	_	_
+34	underneath	underneath	X	X	_	4	dep	_	_
+35	dropped	dropped	PROPN	PROPN	_	4	dep	_	_
+36	strand	strand	X	X	_	4	advmod	_	_
+37	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Photograph	Photograph	X	X	_	0	ROOT	_	_
+2	shows	show	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	wrong	wrong	X	X	_	3	dep	_	_
+5	side	side	X	X	_	1	flat:foreign	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	work	work	X	X	_	1	dep	_	_
+8	with	with	X	X	_	1	dep	_	_
+9	light	light	X	X	_	1	flat:foreign	_	_
+10	strand	strand	X	X	_	1	dep	_	_
+11	being	being	X	X	_	12	advmod	_	_
+12	picked	picked	X	X	_	10	flat:foreign	_	_
+13	up	up	X	X	_	10	flat:foreign	_	_
+14	under	under	X	X	_	10	flat:foreign	_	_
+15	dark	dark	X	X	_	10	flat:foreign	_	_
+16	strand	strand	X	X	_	10	flat:foreign	_	_
+17	in	in	X	X	_	18	case	_	_
+18	position	position	NOUN	NOUN	Gender=Fem|Number=Sing	10	nmod	_	_
+19	to	to	X	X	_	10	flat:foreign	_	_
+20	be	be	X	X	_	10	dep	_	_
+21	purled	purled	PROPN	PROPN	_	1	dep	_	_
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	measure	measure	X	X	_	1	flat:foreign	_	_
+3	work	work	X	X	_	2	dep	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Spread	Spread	X	X	_	2	amod	_	_
+2	article	article	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	flat	flat	ADJ	ADJ	Number=Sing	3	amod	_	_
+3	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	to	to	X	X	_	8	dep	_	_
+2	required	required	X	X	_	1	flat:foreign	_	_
+3	width	width	X	X	_	1	flat:foreign	_	_
+4	before	before	X	X	_	1	flat:foreign	_	_
+5	measuring	measuring	X	X	_	1	flat:foreign	_	_
+6	length	length	X	X	_	5	flat:foreign	_	_
+7	at	at	X	X	_	1	dep	_	_
+8	center	center	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Measuring	Measuring	X	X	_	0	ROOT	_	_
+2	armhole	armhol	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	to	to	X	X	_	4	case	_	_
+4	measure	measure	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+5	armhole	armhole	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	acl	_	_
+6	:	:	PUNCT	PUNCT	_	1	punct	_	_
+7	Mark	Mark	PROPN	PROPN	Gender=Masc|Number=Sing	22	nsubj	_	_
+8	row	row	PROPN	PROPN	_	7	flat:name	_	_
+9	on	on	PRON	PRON	Number=Sing|Person=3	7	dep	_	_
+10	which	which	X	X	_	7	dep	_	_
+11	first	first	X	X	_	10	flat:foreign	_	_
+12	stitches	stitches	X	X	_	10	obl:arg	_	_
+13	have	haver	X	X	_	10	flat:foreign	_	_
+14	been	been	X	X	_	13	dep	_	_
+15	bound	bound	X	X	_	10	flat:foreign	_	_
+16	off	off	ADJ	ADJ	Number=Sing	10	flat:foreign	_	_
+17	for	for	X	X	_	7	dep	_	_
+18	armhole	armhole	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_
+19	by	by	X	X	_	7	nmod	_	_
+20	drawing	drawing	X	X	_	19	flat:name	_	_
+21	a	avoir	X	X	_	22	cop	_	_
+22	contrasting	contrasting	X	X	_	1	parataxis	_	_
+23	colored	colored	X	X	_	22	advmod	_	_
+24	thread	thread	X	X	_	22	obj	_	_
+25	through	through	X	X	_	24	amod	_	_
+26	it	it	X	X	_	22	obj	_	_
+27	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	work	work	X	X	_	1	nmod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+3	flat	flat	X	X	_	2	obj	_	_
+4	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	2	obj	_	_
+5	and	and	X	X	_	6	advmod	_	_
+6	smooth	smooth	X	X	_	0	ROOT	_	_
+7	out	out	ADJ	ADJ	Gender=Masc|Number=Sing	6	advmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Measure	Measure	X	X	_	0	ROOT	_	_
+2	straight	straight	X	X	_	1	amod	_	_
+3	up	up	X	X	_	2	dep	_	_
+4	from	from	X	X	_	3	dep	_	_
+5	marked	marked	X	X	_	1	flat:foreign	_	_
+6	row	row	X	X	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	See	See	X	X	_	2	punct	_	_
+2	illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	insert	insert	X	X	_	1	flat:foreign	_	_
+3	markers	marker	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+4	:	:	PUNCT	PUNCT	_	3	punct	_	_
+
+1	When	When	X	X	_	10	advmod	_	_
+2	directions	direction	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+3	read	read	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+4	`	`	ADP	ADP	_	6	case	_	SpaceAfter=No
+5	`	`	PRON	PRON	Person=3|Reflex=Yes	6	nummod	_	_
+6	sl	sl	PRON	PRON	PronType=Int	1	nmod	_	_
+7	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_
+8	marker	marker	PROPN	PROPN	_	1	flat:foreign	_	_
+9	on	on	PRON	PRON	Number=Sing|Person=3	10	nsubj	_	_
+10	needle	needle	X	X	_	13	obl:mod	_	_
+11	''	''	PUNCT	PUNCT	_	10	punct	_	_
+12	,	,	PUNCT	PUNCT	_	13	punct	_	_
+13	put	pouvoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	ROOT	_	_
+14	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	xcomp	_	_
+15	small	small	X	X	_	14	dep	_	_
+16	safety	safety	X	X	_	14	obj	_	_
+17	pin	pin	PRON	PRON	PronType=Rel	13	advmod	_	_
+18	,	,	PUNCT	PUNCT	_	13	punct	_	_
+19	paper	paper	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	advcl	_	_
+20	clip	clip	NOUN	NOUN	Gender=Masc|Number=Sing	19	obj	_	_
+21	,	,	PUNCT	PUNCT	_	20	punct	_	_
+22	or	or	NOUN	NOUN	Gender=Masc|Number=Sing	24	cc	_	_
+23	commercial	commercial	ADJ	ADJ	Gender=Masc|Number=Sing	22	amod	_	_
+24	ring	ring	X	X	_	19	dep	_	_
+25	marker	marker	PROPN	PROPN	_	24	obj	_	_
+26	on	on	PRON	PRON	Number=Sing|Person=3	27	nsubj	_	_
+27	needle	needle	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	24	obj	_	_
+28	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	working	working	X	X	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	always	always	X	X	_	1	dep	_	_
+5	slip	slip	X	X	_	1	flat:foreign	_	_
+6	marker	marker	PROPN	PROPN	_	5	flat:name	_	_
+7	from	from	X	X	_	5	dep	_	_
+8	one	one	X	X	_	5	flat:foreign	_	_
+9	needle	needle	X	X	_	5	flat:foreign	_	_
+10	to	to	X	X	_	1	flat:foreign	_	_
+11	another	another	X	X	_	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	To	To	X	X	_	11	nsubj	_	_
+2	mark	mark	PROPN	PROPN	_	1	flat:foreign	_	_
+3	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	cop	_	_
+4	row	row	X	X	_	3	obj	_	_
+5	or	or	X	X	_	3	obj	_	_
+6	stitch	stitch	ADJ	ADJ	Number=Sing	3	amod	_	_
+7	,	,	PUNCT	PUNCT	_	3	punct	_	_
+8	tie	tie	NOUN	NOUN	Gender=Fem|Number=Sing	3	dep	_	_
+9	contrasting	contrasting	ADJ	ADJ	Number=Sing	8	amod	_	_
+10	thread	thread	NOUN	NOUN	Gender=Masc|Number=Sing	3	obj	_	_
+11	around	around	X	X	_	0	ROOT	_	_
+12	end	end	X	X	_	11	dep	_	_
+13	of	of	ADP	ADP	_	14	case	_	_
+14	row	row	X	X	_	11	dep	_	_
+15	or	or	X	X	_	14	dep	_	_
+16	stitch	stitch	X	X	_	15	flat:foreign	_	_
+17	to	to	X	X	_	15	dep	_	_
+18	be	be	X	X	_	17	dep	_	_
+19	marked	marked	ADJ	ADJ	Number=Plur	14	flat:name	_	_
+20	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Backstitching	Backstitching	X	X	_	0	ROOT	_	_
+
+1	seam	seam	VERB	VERB	Tense=Pres|VerbForm=Part	0	ROOT	_	_
+2	to	to	X	X	_	1	advmod	_	_
+3	sew	sew	X	X	_	2	fixed	_	_
+4	seams	seams	VERB	VERB	VerbForm=Inf	3	advmod	_	_
+5	with	with	X	X	_	3	dep	_	_
+6	backstitch	backstitch	ADJ	ADJ	Number=Sing	3	amod	_	_
+7	:	:	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Most	Most	X	X	_	10	nsubj	_	_
+2	seams	seam	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	are	are	ADP	ADP	_	1	dep	_	_
+4	sewn	sewn	X	X	_	1	amod	_	_
+5	with	with	X	X	_	1	dep	_	_
+6	backstitch	backstitch	ADJ	ADJ	Number=Sing	1	amod	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	especially	especially	NOUN	NOUN	Gender=Fem|Number=Sing	1	appos	_	_
+9	on	on	PRON	PRON	Number=Sing|Person=3	10	nsubj	_	_
+10	curved	curved	PROPN	PROPN	_	0	ROOT	_	_
+11	,	,	PUNCT	PUNCT	_	10	punct	_	_
+12	slanted	slanted	X	X	_	10	dep	_	_
+13	or	or	CCONJ	CCONJ	_	10	conj	_	_
+14	loose	loose	NOUN	NOUN	Gender=Fem|Number=Sing	13	amod	_	_
+15	edges	edge	NOUN	NOUN	Gender=Masc|Number=Plur	13	flat:foreign	_	_
+16	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Pin	Pin	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	right	right	X	X	_	1	flat:foreign	_	_
+3	sides	side	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+6	together	together	X	X	_	5	amod	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	keeping	keeping	X	X	_	1	appos	_	_
+9	edges	edges	X	X	_	1	flat:foreign	_	_
+10	even	even	X	X	_	9	flat:name	_	_
+11	and	and	X	X	_	9	dep	_	_
+12	matching	matching	X	X	_	9	flat:foreign	_	_
+13	rows	rows	X	X	_	1	flat:foreign	_	_
+14	or	or	CCONJ	CCONJ	_	15	cc	_	_
+15	patterns	pattern	ADJ	ADJ	Gender=Masc|Number=Plur	1	conj	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thread	Thread	X	X	_	0	ROOT	_	_
+2	matching	matching	X	X	_	1	flat:foreign	_	_
+3	yarn	yarn	X	X	_	1	flat:foreign	_	_
+4	in	in	X	X	_	1	flat:foreign	_	_
+5	tapestry	tapestry	X	X	_	1	flat:foreign	_	_
+6	needle	needle	X	X	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Run	run	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	end	end	X	X	_	1	nmod	_	_
+3	of	of	X	X	_	5	dep	_	_
+4	yarn	yarn	X	X	_	5	obl:mod	_	_
+5	through	through	X	X	_	1	dep	_	_
+6	several	several	X	X	_	5	amod	_	_
+7	stitches	stitches	X	X	_	1	flat:foreign	_	_
+8	along	along	X	X	_	7	amod	_	_
+9	edge	edge	X	X	_	1	flat:foreign	_	_
+10	to	to	X	X	_	1	dep	_	_
+11	secure	secure	X	X	_	1	flat:foreign	_	_
+12	;	;	PUNCT	PUNCT	_	1	punct	_	_
+13	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	backstitch	backstitch	ADJ	ADJ	Number=Sing	2	amod	_	_
+2	pieces	piece	NOUN	NOUN	Gender=Fem|Number=Plur	5	obl:mod	_	_
+3	together	together	X	X	_	2	amod	_	_
+4	close	clore	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	2	acl	_	_
+5	to	to	X	X	_	0	ROOT	_	_
+6	edge	edge	X	X	_	5	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Do	Do	X	X	_	0	ROOT	_	_
+2	not	not	X	X	_	1	dep	_	_
+3	draw	draw	X	X	_	1	flat:foreign	_	_
+4	yarn	yarn	X	X	_	1	flat:foreign	_	_
+5	too	too	ADV	ADV	_	4	advmod	_	_
+6	tight	tight	X	X	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	See	See	X	X	_	2	punct	_	_
+2	illustration	illustration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	sew	sew	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	1	dep	_	_
+4	sleeves	sleever	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+5	:	:	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Place	place	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	sleeve	sleev	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	seam	seam	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
+4	at	at	X	X	_	5	mark	_	_
+5	center	center	VERB	VERB	VerbForm=Inf	1	advcl	_	_
+6	underarm	underarm	X	X	_	5	dep	_	_
+7	and	and	X	X	_	8	dep	_	_
+8	center	center	VERB	VERB	VerbForm=Inf	1	acl	_	_
+9	of	of	ADP	ADP	_	10	dep	_	_
+10	sleeve	sleeve	NOUN	NOUN	Gender=Fem|Number=Sing	8	obl:arg	_	_
+11	cap	cap	PROPN	PROPN	Gender=Masc|Number=Sing	10	nsubj	_	_
+12	at	at	X	X	_	13	cc	_	_
+13	shoulder	shoulder	X	X	_	10	dep	_	_
+14	seam	seam	VERB	VERB	Tense=Pres|VerbForm=Part	10	acl	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Ease	Ease	X	X	_	0	ROOT	_	_
+2	in	in	X	X	_	1	amod	_	_
+3	any	any	X	X	_	2	dep	_	_
+4	extra	extrer	VERB	VERB	Tense=Pres|VerbForm=Part	1	amod	_	_
+5	fullness	fullnes	ADJ	ADJ	Gender=Fem|Number=Plur	4	advmod	_	_
+6	evenly	evenly	X	X	_	1	amod	_	_
+7	around	around	ADJ	ADJ	Gender=Masc|Number=Plur	6	obl:arg	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Backstitch	Backstitch	X	X	_	0	ROOT	_	_
+
+1	seam	seam	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Weaving	Weaving	X	X	_	0	ROOT	_	_
+
+1	seam	seam	X	X	_	0	ROOT	_	_
+2	to	to	X	X	_	1	dep	_	_
+3	weave	weave	X	X	_	1	dep	_	_
+4	seams	seam	ADJ	ADJ	Gender=Masc|Number=Sing	3	amod	_	_
+5	together	together	X	X	_	1	dep	_	_
+6	:	:	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Straight	Straight	X	X	_	0	ROOT	_	_
+2	vertical	vertical	X	X	_	1	flat:foreign	_	_
+3	edges	edge	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	such	such	X	X	_	1	dep	_	_
+6	as	as	X	X	_	7	dep	_	_
+7	those	those	X	X	_	1	flat:foreign	_	_
+8	at	at	X	X	_	1	flat:foreign	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	back	back	X	X	_	1	dep	_	_
+11	seam	seam	VERB	VERB	Tense=Pres|VerbForm=Part	10	acl	_	_
+12	of	of	PRON	PRON	Person=3	1	dep	_	_
+13	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+14	sock	sock	PROPN	PROPN	_	1	flat:name	_	_
+15	,	,	PUNCT	PUNCT	_	16	punct	_	_
+16	can	can	X	X	_	1	dep	_	_
+17	be	be	X	X	_	16	dep	_	_
+18	woven	woven	PROPN	PROPN	_	16	dep	_	_
+19	together	together	X	X	_	16	dep	_	_
+20	invisibly	invisibly	X	X	_	16	flat:foreign	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thread	Thread	X	X	_	0	ROOT	_	_
+2	matching	matching	X	X	_	1	flat:foreign	_	_
+3	yarn	yarn	X	X	_	1	flat:foreign	_	_
+4	in	in	X	X	_	1	flat:foreign	_	_
+5	tapestry	tapestry	X	X	_	1	flat:foreign	_	_
+6	needle	needle	X	X	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Hold	Hold	X	X	_	0	ROOT	_	_
+2	edges	edges	X	X	_	1	flat:foreign	_	_
+3	together	together	X	X	_	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	right	right	X	X	_	6	advmod	_	_
+6	side	side	X	X	_	1	flat:foreign	_	_
+7	up	up	X	X	_	1	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No

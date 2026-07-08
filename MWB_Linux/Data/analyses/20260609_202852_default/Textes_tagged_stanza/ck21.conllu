@@ -1,0 +1,2719 @@
+1	Beckworth	Beckworth	PROPN	PROPN	_	0	ROOT	_	_
+
+1	handed	handed	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	pass	pass	X	X	_	2	flat:foreign	_	_
+4	to	to	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	colonel	colonel	NOUN	NOUN	Gender=Masc|Number=Sing	1	nsubj	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	21	nsubj	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	thought	thought	X	X	_	1	flat:foreign	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	suggestion	suggestion	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+7	of	of	X	X	_	10	case	_	_
+8	taking	taking	X	X	_	7	fixed	_	_
+9	it	it	X	X	_	7	dep	_	_
+10	himself	himself	PROPN	PROPN	_	1	dep	_	_
+11	would	would	X	X	_	1	flat:foreign	_	_
+12	tip	tip	X	X	_	1	flat:foreign	_	_
+13	the	the	X	X	_	1	dep	_	_
+14	colonel	colonel	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+15	in	in	X	X	_	14	amod	_	_
+16	the	the	X	X	_	14	dep	_	_
+17	direction	direction	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+18	of	of	X	X	_	1	advmod	_	_
+19	serving	serving	X	X	_	1	dep	_	_
+20	his	his	X	X	_	1	flat:foreign	_	_
+21	own	own	X	X	_	22	dep	_	_
+22	order	order	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	the	the	X	X	_	2	dep	_	_
+4	slip	slip	NOUN	NOUN	Gender=Masc|Number=Sing	3	flat:foreign	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	paper	paper	VERB	VERB	VerbForm=Inf	2	acl:relcl	_	_
+7	was	was	X	X	_	6	advmod	_	_
+8	folded	folded	ADJ	ADJ	Gender=Fem|NumType=Ord|Number=Sing	6	xcomp	_	_
+9	and	and	X	X	_	8	advmod	_	_
+10	absently	absently	X	X	_	8	obj	_	_
+
+1	thrust	thrust	X	X	_	0	ROOT	_	_
+2	into	into	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	2	case	_	_
+2	colonel'	colonel'	X	X	_	0	ROOT	_	SpaceAfter=No
+3	s	s	X	X	_	4	case	_	_
+4	belt	belt	NOUN	NOUN	Gender=Masc|Number=Plur	2	obl:arg	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Despite	Despite	X	X	_	0	ROOT	_	_
+2	his	his	X	X	_	1	dep	_	_
+3	yearning	yearning	ADJ	ADJ	Number=Plur	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	the	the	X	X	_	6	case	_	_
+6	colonel	colonel	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+7	would	would	X	X	_	6	flat:name	_	_
+8	not	not	X	X	_	6	dep	_	_
+9	go	go	X	X	_	6	nmod	_	_
+10	down	down	X	X	_	6	dep	_	_
+11	to	to	X	X	_	6	dep	_	_
+12	see	see	X	X	_	6	dep	_	_
+13	the	the	X	X	_	6	dep	_	_
+14	men	men	X	X	_	1	dep	_	_
+15	come	come	X	X	_	1	dep	_	_
+16	through	through	X	X	_	1	flat:foreign	_	_
+17	the	the	X	X	_	1	dep	_	_
+18	lines	line	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	would	would	X	X	_	1	flat:foreign	_	_
+
+1	remain	remain	X	X	_	4	nsubj	_	_
+2	in	in	X	X	_	4	advmod	_	_
+3	the	the	X	X	_	4	dep	_	_
+4	tent	ter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	waiting	waiting	X	X	_	13	dep	_	_
+7	impatiently	impatiently	ADJ	ADJ	Gender=Masc|Number=Sing	6	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	occupied	occupied	X	X	_	6	conj	_	_
+10	by	by	X	X	_	11	case	_	_
+11	some	some	X	X	_	9	nmod	_	_
+12	trivial	trivial	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+13	task	task	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	obj	_	_
+14	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Beckworth	Beckworth	PROPN	PROPN	_	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Sir	Sir	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	?	?	PUNCT	PUNCT	_	2	punct	_	_
+4	?	?	PUNCT	PUNCT	_	2	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Fetch	Fetch	PROPN	PROPN	_	14	nsubj	_	_
+3	me	me	X	X	_	2	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	copies	copie	NOUN	NOUN	Gender=Fem|Number=Plur	2	nmod	_	_
+6	of	of	X	X	_	5	amod	_	_
+7	everything	everything	X	X	_	8	amod	_	_
+8	B	b	NOUN	NOUN	_	6	obl:arg	_	_
+9	and	and	X	X	_	5	dep	_	_
+10	C	c	NOUN	NOUN	_	2	dep	_	_
+11	companies	companies	X	X	_	2	nmod	_	_
+12	have	haver	X	X	_	13	nummod	_	_
+13	requisitioned	requisitioned	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+14	in	in	X	X	_	0	ROOT	_	_
+15	the	the	X	X	_	14	dep	_	_
+16	last	last	X	X	_	14	flat:foreign	_	_
+17	six	six	NUM	NUM	NumType=Card	18	nummod	_	_
+18	months	month	NOUN	NOUN	Gender=Masc|Number=Plur	14	dep	_	_
+19	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	The	The	X	X	_	7	dep	_	_
+3	last	last	X	X	_	2	flat:foreign	_	_
+4	six	six	NUM	NUM	NumType=Card	5	nummod	_	_
+5	months	month	NOUN	NOUN	Gender=Masc|Number=Plur	2	dep	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	sir	sir	PROPN	PROPN	_	0	ROOT	_	_
+8	?	?	PUNCT	PUNCT	_	7	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	3	punct	_	_
+2	--	--	PUNCT	PUNCT	_	3	punct	_	_
+3	You	You	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	heard	heard	X	X	_	3	dep	_	_
+5	me	me	X	X	_	3	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	There'	there'	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	3	expl:comp	_	_
+3	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	dep	_	_
+4	lot	lot	NOUN	NOUN	Gender=Masc|Number=Sing	3	obj	_	_
+5	of	of	X	X	_	6	case	_	_
+6	waste	waste	PROPN	PROPN	Gender=Masc|Number=Sing	3	obj	_	_
+7	going	going	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+8	on	on	PRON	PRON	Number=Sing|Person=3	9	nsubj	_	_
+9	here	here	X	X	_	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	It'	It'	X	X	_	2	expl:subj	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	5	det	_	_
+3	got	got	X	X	_	2	dep	_	_
+4	to	to	X	X	_	5	dep	_	_
+5	stop	stop	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	I	i	NOUN	NOUN	_	0	ROOT	_	_
+2	want	want	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	to	to	X	X	_	1	flat:foreign	_	_
+4	take	take	X	X	_	3	dep	_	_
+5	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	xcomp	_	_
+6	look	look	NOUN	NOUN	Gender=Masc|Number=Sing	5	obj	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	no	no	X	X	_	1	dep	_	_
+4	damned	damned	ADJ	ADJ	Gender=Masc|Number=Sing	1	advmod	_	_
+5	holiday	holiday	PROPN	PROPN	_	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	Beckworth	Beckworth	PROPN	PROPN	_	1	nmod	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Get	Get	X	X	_	0	ROOT	_	_
+2	busy	busy	X	X	_	1	flat:foreign	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Yes	Yes	PROPN	PROPN	_	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	sir	sir	PROPN	PROPN	_	2	conj	_	_
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Beckworth	Beckworth	PROPN	PROPN	_	0	ROOT	_	_
+
+1	left	left	X	X	_	3	nsubj	_	_
+2	the	the	X	X	_	3	aux:tense	_	_
+3	tent	ter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Below	Below	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	he	he	X	X	_	3	punct	_	_
+3	could	could	X	X	_	1	flat:foreign	_	_
+4	see	see	X	X	_	3	dep	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	bright	bright	X	X	_	3	amod	_	_
+7	torches	torche	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+8	lighting	lighting	X	X	_	7	flat:foreign	_	_
+9	the	the	X	X	_	1	flat:foreign	_	_
+10	riverbank	riverbank	X	X	_	1	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	glanced	glanced	X	X	_	1	flat:name	_	_
+3	back	back	NOUN	NOUN	_	1	nmod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	case	_	_
+2	colonel	colonel	NOUN	NOUN	Gender=Masc|Number=Sing	6	nsubj	_	_
+3	crouched	crouched	PROPN	PROPN	_	2	flat:name	_	_
+4	tensely	tensely	ADJ	ADJ	Gender=Masc|Number=Sing	2	flat:name	_	_
+5	on	on	PRON	PRON	Number=Sing|Person=3	6	nsubj	_	_
+6	one	one	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	9	dep	_	_
+7	of	of	X	X	_	6	advmod	_	_
+8	the	the	X	X	_	9	dep	_	_
+9	folding	folding	X	X	_	0	ROOT	_	_
+10	chairs	chair	NOUN	NOUN	Gender=Fem|Number=Plur	9	advmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	methodically	methodically	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+3	tearing	tearing	X	X	_	2	flat:name	_	_
+4	at	at	X	X	_	5	case	_	_
+5	his	his	X	X	_	2	nmod	_	_
+6	thumbnail	thumbnail	X	X	_	2	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	4	dep	_	_
+2	bombproof	bombproof	X	X	_	1	flat:foreign	_	_
+3	was	was	X	X	_	1	flat:foreign	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	low	low	ADV	ADV	_	4	advmod	_	SpaceAfter=No
+6	-	-	ADJ	ADJ	Number=Sing	4	obj	_	SpaceAfter=No
+7	ceilinged	ceilinged	NOUN	NOUN	Gender=Masc|Number=Sing	4	obj	_	_
+8	structure	structure	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+9	of	of	X	X	_	12	aux:tense	_	_
+10	heavy	heavy	ADV	ADV	_	11	advmod	_	_
+11	timbers	timbers	ADV	ADV	_	9	advmod	_	_
+12	covered	covered	X	X	_	8	obl:mod	_	_
+13	with	with	X	X	_	12	dep	_	_
+14	earth	earth	X	X	_	12	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	It	It	PROPN	PROPN	_	0	ROOT	_	_
+2	stood	stood	X	X	_	1	flat:foreign	_	_
+3	some	some	X	X	_	1	flat:foreign	_	_
+4	fifty	fifty	X	X	_	1	flat:foreign	_	_
+5	paces	paces	X	X	_	1	flat:foreign	_	_
+6	from	from	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	edge	edge	X	X	_	1	flat:foreign	_	_
+9	of	of	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	flat:foreign	_	_
+11	bank	bank	X	X	_	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	From	From	X	X	_	10	nsubj	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	outside	outside	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	it	it	X	X	_	3	dep	_	_
+6	seemed	seemed	X	X	_	5	flat:foreign	_	_
+7	no	no	X	X	_	5	dep	_	_
+8	more	more	X	X	_	7	flat:foreign	_	_
+9	than	than	X	X	_	7	flat:foreign	_	_
+10	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	obl:mod	_	_
+11	low	low	ADJ	ADJ	Gender=Masc|Number=Sing	10	obl:arg	_	_
+12	drumlin	drumlin	PROPN	PROPN	_	10	obj	_	_
+13	,	,	PUNCT	PUNCT	_	15	punct	_	_
+14	a	avoir	X	X	_	15	aux:tense	_	_
+15	lump	lump	NOUN	NOUN	Number=Sing	0	ROOT	_	_
+16	on	on	PRON	PRON	Number=Sing|Person=3	17	nsubj	_	_
+17	the	the	X	X	_	15	dep	_	_
+18	dark	dark	X	X	_	17	flat:foreign	_	_
+19	earth	earth	X	X	_	17	obj	_	_
+20	.	.	PUNCT	PUNCT	_	15	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	crude	crude	NOUN	NOUN	Gender=Fem|Number=Sing	3	obl:mod	_	_
+3	ladder	ladder	X	X	_	0	ROOT	_	_
+4	ran	ran	X	X	_	5	expl:comp	_	_
+5	down	down	X	X	_	3	dep	_	_
+6	to	to	X	X	_	5	dep	_	_
+7	a	avoir	X	X	_	6	fixed	_	_
+8	wooden	wooden	X	X	_	6	dep	_	_
+9	floor	floor	X	X	_	6	flat:foreign	_	_
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Two	two	DET	DET	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	0	ROOT	_	_
+2	slits	slits	X	X	_	1	acl	_	_
+3	enabled	enabled	X	X	_	2	dep	_	_
+4	observers	observers	X	X	_	3	flat:foreign	_	_
+5	to	to	X	X	_	6	case	_	_
+6	watch	watch	X	X	_	2	obl:mod	_	_
+7	across	across	X	X	_	1	flat:foreign	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	river	river	VERB	VERB	VerbForm=Inf	8	xcomp	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	smelled	smelled	CCONJ	CCONJ	_	2	punct	_	_
+
+1	strongly	strongly	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	rank	rank	X	X	_	1	dep	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	fertile	fertile	ADJ	ADJ	Gender=Fem|Number=Sing	6	case	_	_
+6	earth	earth	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+7	,	,	PUNCT	PUNCT	_	6	punct	_	_
+8	rotting	rotting	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+9	wood	wood	X	X	_	8	flat:foreign	_	_
+10	and	and	X	X	_	8	dep	_	_
+11	urine	urine	NOUN	NOUN	Gender=Fem|Number=Sing	8	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	9	advmod	_	_
+2	plank	plank	X	X	_	1	flat:foreign	_	_
+3	floor	floor	X	X	_	1	flat:foreign	_	_
+4	was	was	X	X	_	1	flat:foreign	_	_
+5	slimed	slimed	ADJ	ADJ	Number=Sing	4	punct	_	_
+6	beneath	beneath	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+7	Watson'	watson'	ADP	ADP	_	9	case	_	SpaceAfter=No
+8	s	s	X	X	_	9	det	_	_
+9	boots	boot	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	At	At	X	X	_	0	ROOT	_	_
+2	least	least	ADV	ADV	_	1	fixed	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	Union	Union	PROPN	PROPN	_	1	flat:foreign	_	_
+5	officer	officer	X	X	_	1	flat:foreign	_	_
+6	had	had	X	X	_	5	dep	_	_
+7	been	been	X	X	_	5	dep	_	_
+8	decent	decent	X	X	_	1	flat:foreign	_	_
+9	enough	enough	X	X	_	1	flat:foreign	_	_
+10	to	to	X	X	_	1	flat:foreign	_	_
+11	provide	provide	X	X	_	1	flat:foreign	_	_
+12	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+13	candle	candle	PROPN	PROPN	_	12	obj	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	was	was	X	X	_	1	flat:foreign	_	_
+3	no	no	X	X	_	1	dep	_	_
+4	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	sit	sit	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+9	Watson	Watson	PROPN	PROPN	_	8	nmod	_	_
+10	walked	walked	PROPN	PROPN	_	9	flat:name	_	_
+11	slowly	slowly	PROPN	PROPN	Gender=Masc|Number=Sing	9	flat:name	_	_
+12	from	from	X	X	_	8	dep	_	_
+13	the	the	X	X	_	1	flat:foreign	_	_
+14	ladder	ladder	X	X	_	1	flat:foreign	_	_
+15	to	to	X	X	_	1	dep	_	_
+16	the	the	X	X	_	15	flat:foreign	_	_
+17	window	window	X	X	_	18	advmod	_	_
+18	slits	slits	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	advcl	_	_
+19	and	and	X	X	_	1	flat:foreign	_	_
+20	back	back	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	nmod	_	_
+21	,	,	PUNCT	PUNCT	_	20	punct	_	_
+22	stooping	stooping	ADP	ADP	_	30	advmod	_	_
+23	slightly	slightly	X	X	_	22	obl:arg	_	_
+24	to	to	X	X	_	22	dep	_	_
+25	avoid	avoid	X	X	_	24	fixed	_	_
+26	striking	striking	X	X	_	24	fixed	_	_
+27	his	his	X	X	_	22	flat:foreign	_	_
+28	head	head	X	X	_	27	flat:name	_	_
+29	on	on	PRON	PRON	Number=Sing|Person=3	30	nsubj	_	_
+30	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	dep	_	_
+31	heavy	heavy	ADV	ADV	_	32	advmod	_	_
+32	beams	beams	ADV	ADV	_	30	xcomp	_	_
+33	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	3	nsubj	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	corner	corner	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+4	was	was	X	X	_	3	dep	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	soldier	soldier	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:mod	_	_
+7	with	with	X	X	_	3	dep	_	_
+8	the	the	X	X	_	3	dep	_	_
+9	white	white	X	X	_	3	advmod	_	_
+10	flag	flag	PROPN	PROPN	_	3	obj	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	He	He	PROPN	PROPN	_	8	nsubj	_	_
+2	stood	stood	X	X	_	1	flat:foreign	_	_
+3	stiffly	stiffly	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+4	erect	erect	ADV	ADV	_	1	amod	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	clutching	clutching	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
+7	the	the	X	X	_	6	advmod	_	_
+8	staff	staff	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	,	,	PUNCT	PUNCT	_	10	punct	_	_
+10	his	his	X	X	_	8	conj	_	_
+11	body	body	X	X	_	10	amod	_	_
+12	half	half	X	X	_	8	punct	_	_
+13	hidden	hidden	X	X	_	8	dep	_	_
+14	by	by	X	X	_	13	dep	_	_
+15	the	the	X	X	_	16	dep	_	_
+16	limp	limp	X	X	_	8	nmod	_	_
+17	cloth	cloth	PROPN	PROPN	_	16	flat:name	_	_
+18	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	hardly	hardly	X	X	_	1	amod	_	_
+3	looked	looked	X	X	_	1	flat:foreign	_	_
+4	at	at	X	X	_	5	case	_	_
+5	him	him	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	man	man	X	X	_	1	flat:foreign	_	_
+3	had	had	X	X	_	1	flat:foreign	_	_
+4	come	come	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	floundering	floundering	ADV	ADV	_	4	amod	_	_
+6	aboard	aboard	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	flat	flat	X	X	_	1	flat:foreign	_	SpaceAfter=No
+
+1	-	-	ADJ	ADJ	Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	bottomed	bottomed	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	barge	barge	NOUN	NOUN	Gender=Fem|Number=Sing	1	amod	_	_
+3	at	at	X	X	_	8	case	_	_
+4	the	the	X	X	_	3	fixed	_	_
+5	last	last	X	X	_	3	flat:foreign	_	_
+6	instant	instant	NOUN	NOUN	Gender=Masc|Number=Sing	3	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	3	punct	_	_
+8	brandishing	brandishing	NOUN	NOUN	Gender=Masc|Number=Plur	1	obl:mod	_	_
+9	the	the	X	X	_	8	dep	_	_
+10	flag	flag	X	X	_	9	flat:foreign	_	_
+11	of	of	X	X	_	12	case	_	_
+12	truce	truce	NOUN	NOUN	Gender=Masc|Number=Sing	8	nmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	Someone	Someone	PROPN	PROPN	_	1	punct	_	_
+3	had	had	X	X	_	2	flat:name	_	_
+4	hauled	hauled	X	X	_	2	flat:foreign	_	_
+5	him	him	X	X	_	2	flat:foreign	_	_
+6	over	over	X	X	_	2	flat:foreign	_	_
+7	the	the	X	X	_	2	flat:foreign	_	_
+8	side	side	X	X	_	2	flat:foreign	_	_
+9	,	,	PUNCT	PUNCT	_	2	punct	_	_
+10	and	and	X	X	_	2	dep	_	_
+11	he	he	X	X	_	10	dep	_	_
+12	had	had	X	X	_	11	dep	_	_
+13	remained	remained	X	X	_	10	flat:foreign	_	_
+14	silent	siler	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	13	amod	_	_
+15	while	while	X	X	_	10	flat:foreign	_	_
+16	they	they	X	X	_	10	flat:foreign	_	_
+17	crossed	crossed	X	X	_	10	flat:foreign	_	_
+18	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	An	an	NOUN	NOUN	Gender=Masc|Number=Sing	4	nsubj	_	_
+2	officer	officer	X	X	_	1	flat:foreign	_	_
+3	with	with	X	X	_	2	flat:name	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	dep	_	_
+5	squad	squad	PROPN	PROPN	_	4	obj	_	_
+6	of	of	ADP	ADP	_	7	case	_	_
+7	men	men	X	X	_	4	obl:arg	_	_
+8	had	had	X	X	_	7	dep	_	_
+9	been	been	X	X	_	8	fixed	_	_
+10	waiting	waiting	X	X	_	4	flat:foreign	_	_
+11	on	on	PRON	PRON	Number=Sing|Person=3	12	nsubj	_	_
+12	the	the	X	X	_	13	dep	_	_
+13	bank	bank	X	X	_	0	ROOT	_	_
+14	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	The	The	X	X	_	19	advmod	_	_
+2	men	men	X	X	_	1	flat:foreign	_	_
+3	in	in	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	boats	boats	X	X	_	1	flat:foreign	_	_
+6	had	had	X	X	_	1	flat:foreign	_	_
+7	started	started	X	X	_	1	flat:foreign	_	_
+8	yelling	yelling	X	X	_	1	flat:foreign	_	_
+9	happily	happily	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+10	at	at	X	X	_	1	flat:foreign	_	_
+11	first	first	X	X	_	1	flat:foreign	_	_
+12	sight	sight	X	X	_	1	flat:foreign	_	_
+13	of	of	X	X	_	14	dep	_	_
+14	the	the	X	X	_	1	dep	_	_
+15	officer	officer	X	X	_	1	flat:foreign	_	_
+16	,	,	PUNCT	PUNCT	_	1	punct	_	_
+17	two	two	NOUN	NOUN	_	19	nsubj	_	_
+18	of	of	X	X	_	19	dep	_	_
+19	them	them	X	X	_	0	ROOT	_	_
+20	calling	calling	X	X	_	19	dep	_	_
+21	him	him	NOUN	NOUN	Gender=Masc|Number=Plur	19	obj	_	_
+22	Billy	Billy	PROPN	PROPN	Gender=Masc|Number=Sing	21	amod	_	_
+23	.	.	PUNCT	PUNCT	_	19	punct	_	_
+
+1	When	When	X	X	_	5	nsubj	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	boat	boat	X	X	_	1	flat:foreign	_	_
+4	had	had	X	X	_	1	dep	_	_
+5	touched	touched	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	,	,	PUNCT	PUNCT	_	5	punct	_	_
+7	the	the	X	X	_	5	advmod	_	_
+8	weaker	weaker	PROPN	PROPN	_	7	flat:foreign	_	_
+9	ones	ones	X	X	_	7	flat:foreign	_	_
+10	and	and	X	X	_	7	flat:foreign	_	_
+11	the	the	X	X	_	7	flat:foreign	_	_
+12	two	two	X	X	_	7	flat:foreign	_	_
+13	wounded	wounded	X	X	_	7	flat:foreign	_	_
+14	men	men	X	X	_	7	flat:foreign	_	_
+15	had	had	X	X	_	14	dep	_	_
+16	been	been	X	X	_	14	flat:foreign	_	_
+17	lifted	lifted	X	X	_	14	flat:foreign	_	_
+18	out	out	X	X	_	14	dep	_	_
+19	and	and	X	X	_	7	flat:foreign	_	_
+20	carried	carried	X	X	_	19	flat:foreign	_	_
+21	away	away	X	X	_	7	flat:foreign	_	_
+22	by	by	X	X	_	21	dep	_	_
+23	the	the	X	X	_	21	dep	_	_
+24	soldiers	soldiers	X	X	_	7	flat:foreign	_	_
+25	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	3	nsubj	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	presented	presented	X	X	_	0	ROOT	_	_
+4	his	his	X	X	_	3	advmod	_	_
+5	pouch	pouch	X	X	_	4	flat:name	_	_
+6	and	and	X	X	_	3	dep	_	_
+7	been	been	X	X	_	6	dep	_	_
+8	led	led	X	X	_	6	dep	_	_
+9	to	to	X	X	_	6	dep	_	_
+10	the	the	X	X	_	3	dep	_	_
+11	bombproof	bombproof	NOUN	NOUN	Gender=Masc|Number=Sing	3	obj	_	_
+12	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	officer	officer	X	X	_	1	flat:foreign	_	_
+3	had	had	X	X	_	2	dep	_	_
+4	told	told	X	X	_	2	punct	_	_
+
+1	him	him	X	X	_	0	ROOT	_	_
+
+1	that	that	X	X	_	3	dep	_	_
+2	both	both	X	X	_	1	flat:foreign	_	_
+3	lists	lists	X	X	_	6	dep	_	_
+4	must	must	ADJ	ADJ	Gender=Masc|Number=Sing	3	obj	_	_
+5	be	be	X	X	_	3	dep	_	_
+6	checked	checked	X	X	_	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	given	given	X	X	_	1	flat:foreign	_	_
+4	his	his	X	X	_	3	dep	_	_
+5	name	name	X	X	_	3	dep	_	_
+6	and	and	X	X	_	3	dep	_	_
+7	asked	asked	X	X	_	1	flat:name	_	_
+8	for	for	X	X	_	1	dep	_	_
+9	a	avoir	X	X	_	1	dep	_	_
+10	safe	safe	X	X	_	1	dep	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	2	punct	_	SpaceAfter=No
+2	conduct	conduct	X	X	_	0	ROOT	_	_
+3	pass	pass	X	X	_	2	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	10	dep	_	_
+2	officer	officer	X	X	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	surprised	surprised	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	said	said	X	X	_	8	case	_	_
+7	he	he	X	X	_	6	dep	_	_
+8	would	would	X	X	_	1	obl:mod	_	_
+9	have	haver	X	X	_	1	flat:foreign	_	_
+10	to	to	X	X	_	11	dep	_	_
+11	see	see	X	X	_	0	ROOT	_	_
+12	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	nodded	nodded	X	X	_	1	flat:foreign	_	_
+4	absently	absently	X	X	_	1	flat:name	_	_
+
+1	and	and	X	X	_	10	advmod	_	_
+2	muttered	muttered	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	1	flat:foreign	_	_
+4	he	he	X	X	_	3	dep	_	_
+5	would	would	X	X	_	3	dep	_	_
+6	check	check	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	lists	lists	X	X	_	9	dep	_	_
+9	himself	himself	PROPN	PROPN	_	1	dep	_	_
+10	later	later	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+11	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	He	He	PROPN	PROPN	_	9	nsubj	_	_
+2	had	had	X	X	_	1	flat:name	_	_
+3	peered	peered	X	X	_	1	flat:foreign	_	_
+4	through	through	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	darkness	darkness	X	X	_	1	flat:foreign	_	_
+7	at	at	X	X	_	1	dep	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	rampart	rampart	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	The	The	X	X	_	9	advmod	_	_
+2	men	men	X	X	_	1	flat:foreign	_	_
+3	he	he	X	X	_	4	case	_	_
+4	would	would	X	X	_	1	obl:mod	_	_
+5	take	take	X	X	_	1	flat:foreign	_	_
+6	back	back	X	X	_	1	flat:foreign	_	_
+7	across	across	X	X	_	1	flat:foreign	_	_
+8	the	the	X	X	_	9	dep	_	_
+9	river	river	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+10	stood	stood	X	X	_	9	dep	_	_
+11	there	there	X	X	_	9	amod	_	_
+12	,	,	PUNCT	PUNCT	_	9	punct	_	_
+13	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	9	dep	_	_
+14	he	he	ADP	ADP	_	15	case	_	_
+15	turned	turned	NOUN	NOUN	Gender=Masc|Number=Sing	13	nmod	_	_
+16	away	away	X	X	_	9	amod	_	_
+17	from	from	X	X	_	16	dep	_	_
+18	them	them	X	X	_	9	advmod	_	_
+19	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	He	he	ADV	ADV	_	0	ROOT	_	_
+2	wanted	wanted	X	X	_	1	dep	_	_
+3	no	no	X	X	_	4	case	_	_
+4	part	part	NOUN	NOUN	Number=Sing	1	nmod	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	emotions	emotion	NOUN	NOUN	Gender=Fem|Number=Plur	6	flat:foreign	_	_
+8	of	of	X	X	_	6	flat:foreign	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	exchange	exchange	X	X	_	1	flat:name	_	_
+11	,	,	PUNCT	PUNCT	_	1	punct	_	_
+12	no	no	X	X	_	1	dep	_	_
+13	memory	memory	NOUN	NOUN	_	12	flat:foreign	_	_
+14	of	of	X	X	_	15	dep	_	_
+15	the	the	X	X	_	12	flat:foreign	_	_
+16	joy	joy	X	X	_	12	flat:foreign	_	_
+17	and	and	X	X	_	12	flat:foreign	_	_
+18	gratitude	gratitude	X	X	_	12	flat:foreign	_	_
+19	that	that	X	X	_	12	flat:foreign	_	_
+20	other	other	X	X	_	12	flat:foreign	_	_
+21	men	men	X	X	_	12	flat:foreign	_	_
+22	felt	felt	X	X	_	12	flat:foreign	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	hoped	hoped	PROPN	PROPN	_	1	flat:name	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	alone	alone	X	X	_	1	dep	_	_
+7	in	in	X	X	_	9	case	_	_
+8	the	the	X	X	_	7	dep	_	_
+9	bombproof	bombproof	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+12	the	the	X	X	_	1	flat:foreign	_	_
+13	soldier	soldier	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+14	had	had	X	X	_	15	case	_	_
+15	followed	followed	X	X	_	13	nmod	_	_
+16	him	him	X	X	_	1	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Though	Though	X	X	_	3	nsubj	_	_
+2	Watson	Watson	PROPN	PROPN	_	3	nsubj	_	_
+3	carefully	carefully	X	X	_	0	ROOT	_	_
+4	ignored	ignored	X	X	_	3	flat:foreign	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	man	man	X	X	_	3	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	3	punct	_	_
+8	he	he	X	X	_	9	obj	_	_
+9	could	could	X	X	_	3	conj	_	_
+10	not	not	X	X	_	9	advmod	_	_
+11	deny	deny	X	X	_	9	advmod	_	_
+12	his	his	X	X	_	9	nsubj	_	_
+13	presence	presence	NOUN	NOUN	Gender=Fem|Number=Sing	9	nsubj	_	_
+14	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Perhaps	Perhaps	PROPN	PROPN	_	0	ROOT	_	_
+2	it	it	X	X	_	1	dep	_	_
+3	would	would	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	1	dep	_	_
+5	better	better	VERB	VERB	VerbForm=Inf	1	dep	_	_
+6	to	to	X	X	_	1	dep	_	_
+7	speak	speak	X	X	_	1	flat:foreign	_	_
+8	to	to	X	X	_	1	dep	_	_
+9	him	him	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	since	since	X	X	_	1	appos	_	_
+12	silence	silence	NOUN	NOUN	Gender=Fem|Number=Sing	11	nmod	_	_
+13	could	could	X	X	_	11	flat:foreign	_	_
+14	not	not	X	X	_	13	dep	_	_
+15	exorcise	exorciser	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	13	xcomp	_	_
+16	his	his	X	X	_	11	flat:foreign	_	_
+17	form	form	X	X	_	11	flat:foreign	_	_
+18	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	glanced	glanced	X	X	_	3	amod	_	_
+3	briefly	briefly	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	at	at	X	X	_	5	case	_	_
+5	him	him	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	5	punct	_	_
+7	seeing	seeing	X	X	_	8	amod	_	_
+8	only	only	X	X	_	5	nmod	_	_
+9	a	avoir	X	X	_	5	dep	_	_
+10	body	body	ADV	ADV	_	11	advmod	_	_
+11	rigidly	rigidly	ADJ	ADJ	NumType=Ord|Number=Sing	5	amod	_	_
+12	erect	erect	ADJ	ADJ	Gender=Masc|Number=Sing	5	amod	_	_
+13	behind	behind	X	X	_	12	flat:foreign	_	_
+14	the	the	X	X	_	12	dep	_	_
+15	languid	languid	X	X	_	12	advmod	_	_
+16	banner	banner	VERB	VERB	VerbForm=Inf	12	xcomp	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	We	We	X	X	_	0	ROOT	_	_
+3	won'	won'	ADP	ADP	_	2	dep	_	SpaceAfter=No
+4	t	t	X	X	_	2	dep	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	too	too	ADV	ADV	_	4	dep	_	_
+7	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	If	If	X	X	_	12	nsubj	_	_
+2	my	my	X	X	_	1	dep	_	_
+3	pass	pass	X	X	_	2	flat:name	_	_
+4	is	is	X	X	_	2	dep	_	_
+5	approved	approved	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	parataxis	_	_
+6	,	,	PUNCT	PUNCT	_	5	punct	_	_
+7	I	I	X	X	_	5	obl:mod	_	_
+8	may	may	X	X	_	7	flat:foreign	_	_
+9	be	be	X	X	_	8	dep	_	_
+10	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	fixed	_	_
+11	half	half	X	X	_	1	flat:foreign	_	_
+12	hour	hour	ADV	ADV	_	0	ROOT	_	_
+13	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	9	advmod	_	_
+2	soldier	soldier	X	X	_	1	flat:foreign	_	_
+3	answered	answered	X	X	_	1	flat:foreign	_	_
+4	in	in	X	X	_	1	flat:foreign	_	_
+5	a	avoir	X	X	_	1	fixed	_	_
+6	curious	curious	X	X	_	1	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	muffled	muffled	X	X	_	1	flat:foreign	_	_
+9	voice	voice	X	X	_	11	advcl	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	his	his	X	X	_	0	ROOT	_	_
+12	lips	lips	X	X	_	11	amod	_	_
+13	barely	barely	X	X	_	11	dep	_	_
+14	moving	moving	X	X	_	11	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	13	nsubj	_	_
+2	turned	turned	X	X	_	1	dep	_	_
+3	away	away	X	X	_	1	flat:foreign	_	_
+4	and	and	X	X	_	3	dep	_	_
+5	did	did	X	X	_	3	dep	_	_
+6	not	not	X	X	_	5	dep	_	_
+7	see	see	X	X	_	5	dep	_	_
+8	the	the	X	X	_	5	dep	_	_
+9	man'	man'	X	X	_	5	dep	_	SpaceAfter=No
+10	s	s	PRON	PRON	Person=3|Reflex=Yes	3	dep	_	_
+11	knees	knees	X	X	_	3	nmod	_	_
+12	buckle	buckle	X	X	_	3	flat:foreign	_	_
+13	and	and	X	X	_	14	dep	_	_
+14	his	his	X	X	_	16	dep	_	_
+15	body	body	X	X	_	14	advmod	_	_
+16	sag	sag	PROPN	PROPN	_	0	ROOT	_	_
+17	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Yes	Yes	PROPN	PROPN	_	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	sir	sir	PROPN	PROPN	_	2	conj	_	_
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	acknowledged	acknowledged	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:name	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	man	man	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	It	It	X	X	_	1	punct	_	_
+3	was	was	X	X	_	2	flat:foreign	_	_
+4	easier	easier	NOUN	NOUN	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+5	to	to	X	X	_	2	dep	_	_
+6	think	think	X	X	_	2	flat:foreign	_	_
+7	now	now	X	X	_	2	dep	_	_
+8	,	,	PUNCT	PUNCT	_	2	punct	_	_
+9	Watson	Watson	PROPN	PROPN	_	2	dep	_	_
+10	decided	decided	PROPN	PROPN	_	9	flat:name	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	8	advmod	_	_
+2	stiff	stiff	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+3	figure	figure	NOUN	NOUN	Gender=Fem|Number=Sing	1	parataxis	_	_
+4	in	in	X	X	_	3	amod	_	_
+5	the	the	X	X	_	1	fixed	_	_
+6	corner	corner	X	X	_	1	flat:foreign	_	_
+7	no	no	X	X	_	8	mark	_	_
+8	longer	longer	VERB	VERB	VerbForm=Inf	11	dep	_	_
+9	blocked	blocked	X	X	_	8	obj	_	_
+10	his	his	X	X	_	8	dep	_	_
+11	thoughts	thoughts	VERB	VERB	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+12	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	0	ROOT	_	_
+
+1	paced	paced	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	slowly	slowly	PROPN	PROPN	Gender=Masc|Number=Sing	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	stooping	stooping	ADV	ADV	_	1	advmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	4	punct	_	_
+2	staring	staring	NOUN	NOUN	Gender=Masc|Number=Sing	4	dep	_	_
+3	at	at	X	X	_	4	dep	_	_
+4	the	the	X	X	_	0	ROOT	_	_
+5	damp	damp	ADJ	ADJ	Gender=Fem|Number=Plur	4	advmod	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	slippery	slippery	PROPN	PROPN	_	0	ROOT	_	_
+3	floor	floor	ADJ	ADJ	Number=Plur	2	amod	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	He	He	PROPN	PROPN	_	2	expl:subj	_	_
+2	tried	tried	X	X	_	10	dep	_	_
+3	to	to	X	X	_	2	dep	_	_
+4	order	order	VERB	VERB	VerbForm=Inf	2	advmod	_	_
+5	the	the	X	X	_	2	dep	_	_
+6	words	words	X	X	_	2	obl:arg	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	the	the	X	X	_	2	obl:mod	_	_
+9	three	three	X	X	_	2	flat:foreign	_	_
+10	Union	Union	PROPN	PROPN	_	0	ROOT	_	_
+11	officers	officers	X	X	_	10	flat:name	_	_
+12	,	,	PUNCT	PUNCT	_	10	punct	_	_
+
+1	seeking	seeking	X	X	_	2	dep	_	_
+2	to	to	X	X	_	0	ROOT	_	_
+3	create	create	X	X	_	2	flat:foreign	_	_
+4	some	some	X	X	_	2	flat:foreign	_	_
+5	coherent	coherer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	flat:foreign	_	_
+6	portrait	portrer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	flat:foreign	_	_
+7	of	of	X	X	_	9	case	_	_
+8	the	the	X	X	_	7	fixed	_	_
+9	dead	dead	X	X	_	2	dep	_	_
+10	boy	boy	ADJ	ADJ	Gender=Masc|Number=Sing	9	amod	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	he	he	X	X	_	1	amod	_	_
+3	groped	groped	ADJ	ADJ	Number=Sing	1	punct	_	_
+4	blindly	blindly	NOUN	NOUN	Gender=Fem|Number=Sing	1	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	His	His	X	X	_	8	dep	_	_
+2	lack	lack	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	4	case	_	_
+4	success	success	PROPN	PROPN	_	1	nmod	_	_
+5	steadily	steadily	NOUN	NOUN	Number=Plur	1	flat:foreign	_	_
+6	eroded	eroded	ADJ	ADJ	Gender=Fem|Number=Sing	5	amod	_	_
+7	his	his	X	X	_	1	flat:foreign	_	_
+8	interest	interest	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	stopped	stopped	ADJ	ADJ	_	1	acl	_	_
+3	pacing	pacing	X	X	_	1	dep	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	leaned	leaned	X	X	_	1	appos	_	_
+6	against	against	X	X	_	5	flat:foreign	_	_
+7	the	the	X	X	_	5	dep	_	_
+8	dank	dank	ADP	ADP	_	5	acl	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	timbered	timbered	NOUN	NOUN	Gender=Masc|Number=Sing	8	advmod	_	_
+11	wall	wall	PROPN	PROPN	Gender=Masc|Number=Sing	10	flat:name	_	_
+12	and	and	X	X	_	10	dep	_	_
+13	let	let	X	X	_	10	flat:foreign	_	_
+14	his	his	X	X	_	10	flat:foreign	_	_
+15	mind	mind	X	X	_	10	flat:foreign	_	_
+16	drift	drift	X	X	_	10	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	à	ADP	ADP	_	2	nummod	_	_
+2	feeling	feeling	NOUN	NOUN	Gender=Masc|Number=Sing	17	nsubj	_	_
+3	of	of	ADP	ADP	_	4	case	_	_
+4	futility	futility	PROPN	PROPN	Gender=Fem|Number=Sing	2	nmod	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	conj	_	_
+7	enervation	enervation	NOUN	NOUN	Number=Sing	6	flat:name	_	_
+8	of	of	ADP	ADP	_	9	dep	_	_
+9	mind	mind	NOUN	NOUN	Gender=Fem|Number=Sing	6	nmod	_	_
+10	greater	greater	VERB	VERB	VerbForm=Inf	2	parataxis	_	_
+11	than	than	ADJ	ADJ	Number=Plur	10	xcomp	_	_
+12	any	any	X	X	_	10	dep	_	_
+13	fatigue	fatigue	NOUN	NOUN	Gender=Fem|Number=Sing	10	obj	_	_
+14	he	he	X	X	_	17	cc	_	_
+15	had	had	X	X	_	14	dep	_	_
+16	ever	ever	X	X	_	14	flat:foreign	_	_
+17	known	known	X	X	_	0	ROOT	_	_
+18	,	,	PUNCT	PUNCT	_	17	punct	_	_
+19	seeped	seeped	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	17	acl	_	_
+20	through	through	X	X	_	19	amod	_	_
+21	him	him	X	X	_	19	xcomp	_	_
+22	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	What	What	X	X	_	14	nsubj	_	_
+2	in	in	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	name	name	X	X	_	1	dep	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	God	God	X	X	_	1	dep	_	_
+7	was	was	X	X	_	1	dep	_	_
+8	he	he	X	X	_	1	dep	_	_
+9	doing	doing	X	X	_	1	dep	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	crouched	crouched	PROPN	PROPN	_	1	conj	_	_
+12	in	in	X	X	_	1	flat:foreign	_	_
+13	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	dep	_	_
+14	timbered	timbered	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+15	pit	pit	X	X	_	14	advmod	_	_
+16	on	on	PRON	PRON	Number=Sing|Person=3	17	nsubj	_	_
+17	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
+18	wrong	wrong	X	X	_	17	dep	_	_
+19	bank	bank	X	X	_	17	obj	_	_
+20	of	of	X	X	_	19	fixed	_	_
+21	the	the	X	X	_	19	dep	_	_
+22	river	river	VERB	VERB	VerbForm=Inf	17	xcomp	_	_
+23	?	?	PUNCT	PUNCT	_	14	punct	_	_
+24	?	?	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Why	Why	X	X	_	0	ROOT	_	_
+2	had	had	X	X	_	1	flat:name	_	_
+3	he	he	X	X	_	2	dep	_	_
+4	crossed	crossed	X	X	_	2	flat:name	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	dark	dark	X	X	_	1	flat:foreign	_	_
+7	water	water	ADJ	ADJ	Gender=Fem|Number=Sing	1	flat:name	_	_
+8	,	,	PUNCT	PUNCT	_	16	punct	_	_
+9	to	to	X	X	_	11	case	_	_
+10	bring	bring	X	X	_	11	amod	_	_
+11	back	back	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	16	obl:mod	_	_
+12	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	aux:tense	_	_
+13	group	group	X	X	_	12	obj	_	_
+14	of	of	X	X	_	12	advmod	_	_
+15	reclaimed	reclaimed	ADJ	ADJ	Gender=Masc|Number=Sing	12	obj	_	_
+16	soldiers	soldiers	PROPN	PROPN	_	1	nmod	_	_
+17	or	or	CCONJ	CCONJ	_	21	cc	_	_
+18	to	to	X	X	_	19	amod	_	_
+19	skulk	skulk	NOUN	NOUN	Gender=Masc|Number=Sing	20	obl:mod	_	_
+20	in	in	X	X	_	21	dep	_	_
+21	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
+22	foul	foul	NOUN	NOUN	Gender=Masc|Number=Sing	21	obj	_	SpaceAfter=No
+23	-	-	ADJ	ADJ	Number=Sing	21	obj	_	SpaceAfter=No
+24	smelling	smelling	NOUN	NOUN	Gender=Masc|Number=Sing	21	obj	_	_
+25	hole	hole	PROPN	PROPN	_	21	obj	_	_
+26	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	3	nsubj	_	_
+2	grew	grew	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	annoyed	annoyed	X	X	_	0	ROOT	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	at	at	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	same	same	X	X	_	1	flat:foreign	_	_
+5	time	time	X	X	_	6	obl:mod	_	_
+6	surprised	surprised	X	X	_	1	dep	_	_
+7	at	at	X	X	_	9	case	_	_
+8	that	that	X	X	_	9	amod	_	_
+9	emotion	emotion	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	was	was	X	X	_	3	dep	_	_
+3	conscious	conscious	X	X	_	5	dep	_	_
+4	of	of	X	X	_	5	expl:comp	_	_
+5	a	avoir	X	X	_	1	dep	_	_
+6	growing	growing	X	X	_	5	advmod	_	_
+7	sense	sense	X	X	_	5	obj	_	_
+8	of	of	X	X	_	9	dep	_	_
+9	absurdity	absurdity	PROPN	PROPN	_	5	obl:arg	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Hillman	Hillman	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	written	written	X	X	_	1	flat:name	_	_
+4	it	it	X	X	_	1	dep	_	_
+5	all	all	X	X	_	1	dep	_	_
+6	out	out	X	X	_	1	advmod	_	_
+7	,	,	PUNCT	PUNCT	_	9	punct	_	_
+8	hadn'	hadn'	PRON	PRON	Person=3	9	case	_	SpaceAfter=No
+9	t	t	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	_
+10	he	he	PROPN	PROPN	_	9	flat:name	_	_
+11	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	5	punct	_	_
+2	Wasn'	Wasn'	X	X	_	5	nummod	_	SpaceAfter=No
+3	t	t	X	X	_	2	flat:foreign	_	_
+4	the	the	X	X	_	2	flat:foreign	_	_
+5	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+6	official	official	X	X	_	5	amod	_	_
+7	enough	enough	X	X	_	5	flat:name	_	_
+8	?	?	PUNCT	PUNCT	_	5	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	What	What	X	X	_	0	ROOT	_	_
+2	did	did	X	X	_	1	dep	_	_
+3	he	he	X	X	_	4	dep	_	_
+4	hope	hope	X	X	_	1	flat:foreign	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	accomplish	accomplish	PROPN	PROPN	_	1	dep	_	_
+7	here	here	X	X	_	1	flat:foreign	_	_
+8	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Hillman	Hillman	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	had	had	X	X	_	1	flat:name	_	_
+3	ordered	ordered	X	X	_	1	flat:foreign	_	_
+4	him	him	X	X	_	1	dep	_	_
+5	not	not	X	X	_	4	dep	_	_
+6	to	to	X	X	_	7	dep	_	_
+7	leave	leave	X	X	_	4	flat:foreign	_	_
+8	the	the	X	X	_	4	flat:foreign	_	_
+9	far	far	X	X	_	4	flat:foreign	_	_
+10	bank	bank	ADJ	ADJ	Gender=Masc|Number=Plur	4	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Prompted	Prompted	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	by	by	PRON	PRON	Number=Sing|Person=1	4	nsubj	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_
+3	guilty	guilty	NOUN	NOUN	Gender=Fem|Number=Sing	4	advmod	_	_
+4	urge	urger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	,	,	PUNCT	PUNCT	_	15	punct	_	_
+6	he	he	X	X	_	15	cc	_	_
+7	had	had	X	X	_	6	flat:foreign	_	_
+8	disobeyed	disobeyed	PROPN	PROPN	_	6	flat:foreign	_	_
+9	the	the	X	X	_	6	flat:foreign	_	_
+10	order	order	X	X	_	6	flat:foreign	_	_
+11	of	of	X	X	_	6	fixed	_	_
+12	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	fixed	_	_
+13	man	man	X	X	_	6	flat:foreign	_	_
+14	he	he	ADP	ADP	_	15	case	_	_
+15	respected	respected	PROPN	PROPN	Gender=Masc|Number=Sing	4	obl:mod	_	_
+16	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	For	For	X	X	_	0	ROOT	_	_
+2	what	what	X	X	_	1	flat:foreign	_	_
+3	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	To	To	X	X	_	3	punct	_	_
+2	tell	tell	X	X	_	1	advmod	_	_
+3	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	something	something	X	X	_	3	flat:name	_	_
+5	he	he	X	X	_	6	case	_	_
+6	would	would	NOUN	NOUN	_	3	nmod	_	_
+7	find	find	X	X	_	3	amod	_	_
+8	out	out	X	X	_	7	dep	_	_
+9	for	for	ADP	ADP	_	10	case	_	_
+10	himself	himself	PROPN	PROPN	_	3	nmod	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	The	The	X	X	_	2	dep	_	_
+2	figure	figurer	X	X	_	9	obl:mod	_	_
+3	in	in	X	X	_	2	advmod	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	corner	corner	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	obj	_	_
+6	belched	belched	NOUN	NOUN	Gender=Masc|Number=Sing	5	obj	_	_
+7	loudly	loudly	PROPN	PROPN	_	5	nmod	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	a	avoir	X	X	_	0	ROOT	_	_
+10	deep	deep	ADV	ADV	_	9	advmod	_	_
+11	,	,	PUNCT	PUNCT	_	9	punct	_	_
+12	liquid	liquid	ADJ	ADJ	Gender=Fem|Number=Sing	13	amod	_	_
+13	eruption	eruption	NOUN	NOUN	Gender=Fem|Number=Sing	9	obj	_	_
+14	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	snorted	snorted	X	X	_	1	flat:name	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	then	then	X	X	_	1	flat:foreign	_	_
+5	laughed	laughed	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	flat:name	_	_
+6	aloud	aloud	ADJ	ADJ	Number=Plur	5	amod	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Exactly	exactly	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	!	!	PUNCT	PUNCT	_	1	punct	_	_
+
+1	!	!	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	4	nsubj	_	_
+2	soldier'	soldier'	PROPN	PROPN	_	1	fixed	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	4	expl:comp	_	_
+4	voice	voice	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+5	was	was	X	X	_	4	dep	_	_
+6	muffled	muffled	PROPN	PROPN	_	4	dep	_	_
+7	again	again	X	X	_	4	amod	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	stricken	stricken	X	X	_	4	conj	_	_
+10	with	with	X	X	_	9	dep	_	_
+11	chagrin	chagrin	NOUN	NOUN	Gender=Fem|Number=Sing	9	flat:name	_	_
+12	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	clutched	clutched	PROPN	PROPN	_	1	flat:name	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	staff	staff	NOUN	NOUN	Gender=Masc|Number=Sing	9	dep	_	_
+3	,	,	PUNCT	PUNCT	_	9	punct	_	_
+4	and	and	X	X	_	9	dep	_	_
+5	his	his	X	X	_	4	flat:foreign	_	_
+6	dark	dark	X	X	_	5	amod	_	_
+7	eyes	eyes	X	X	_	4	flat:foreign	_	_
+8	blinked	blinked	ADJ	ADJ	Number=Plur	4	flat:foreign	_	_
+9	apologetically	apologetically	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	'	'	PUNCT	PUNCT	_	0	ROOT	_	SpaceAfter=No
+3	scuse	scuse	PROPN	PROPN	_	2	dep	_	_
+4	me	me	PRON	PRON	Number=Sing|Person=1	2	dep	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	sir	sir	PROPN	PROPN	Gender=Masc|Number=Sing	4	conj	_	_
+7	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	7	expl:subj	_	_
+2	Let'	Let'	X	X	_	1	dep	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	7	expl:comp	_	_
+4	get	get	X	X	_	3	dep	_	_
+5	out	out	X	X	_	4	flat:foreign	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	here	here	X	X	_	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	ran	ran	PROPN	PROPN	_	1	flat:name	_	_
+3	up	up	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	ladder	ladder	X	X	_	1	flat:foreign	_	_
+6	and	and	X	X	_	1	dep	_	_
+7	stood	stood	X	X	_	6	flat:foreign	_	_
+8	for	for	X	X	_	6	flat:foreign	_	_
+9	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	flat:foreign	_	_
+10	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	6	flat:foreign	_	_
+11	sucking	sucking	X	X	_	6	flat:foreign	_	_
+12	in	in	X	X	_	15	case	_	_
+13	the	the	X	X	_	12	flat:foreign	_	_
+14	cool	cool	ADJ	ADJ	Number=Plur	15	amod	_	_
+15	air	air	NOUN	NOUN	Gender=Masc|Number=Sing	6	dep	_	_
+16	that	that	X	X	_	1	dep	_	_
+17	smelled	smelled	X	X	_	1	flat:name	_	_
+18	of	of	ADP	ADP	_	19	case	_	_
+19	mud	mud	X	X	_	1	dep	_	_
+20	and	and	X	X	_	1	dep	_	_
+21	river	river	X	X	_	1	flat:foreign	_	_
+22	weeds	weeds	X	X	_	1	flat:name	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	his	his	X	X	_	1	flat:foreign	_	_
+3	left	left	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	two	two	X	X	_	5	flat:foreign	_	_
+7	skiffs	skiff	X	X	_	5	flat:foreign	_	_
+8	dented	dented	X	X	_	5	flat:foreign	_	_
+
+1	their	their	X	X	_	3	nsubj	_	_
+2	sharp	sharp	X	X	_	1	flat:foreign	_	_
+3	bows	bows	X	X	_	0	ROOT	_	_
+4	into	into	X	X	_	3	dep	_	_
+
+1	the	the	X	X	_	3	dep	_	_
+2	soft	soft	X	X	_	1	flat:foreign	_	_
+3	bank	bank	X	X	_	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	flat	flat	X	X	_	1	flat:foreign	_	SpaceAfter=No
+
+1	-	-	ADJ	ADJ	Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	bottomed	bottomed	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+2	boat	boat	X	X	_	0	ROOT	_	_
+3	swung	swung	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	2	acl	_	_
+4	slowly	slowly	X	X	_	2	flat:foreign	_	_
+
+1	to	to	X	X	_	6	dep	_	_
+2	the	the	X	X	_	1	fixed	_	_
+3	pull	pull	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	current	currer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	soldier	soldier	NOUN	NOUN	Gender=Masc|Number=Sing	3	dep	_	_
+3	held	held	X	X	_	0	ROOT	_	_
+4	the	the	X	X	_	5	case	_	_
+5	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:mod	_	_
+6	of	of	PRON	PRON	Person=3	8	dep	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+8	frayed	frayed	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	dep	_	_
+9	rope	rope	NOUN	NOUN	Gender=Fem|Number=Sing	8	obj	_	_
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Three	Three	X	X	_	4	nsubj	_	_
+2	Union	Union	PROPN	PROPN	_	1	flat:foreign	_	_
+3	guards	guards	X	X	_	1	flat:foreign	_	_
+4	appeared	appeared	X	X	_	0	ROOT	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	carrying	carrying	NOUN	NOUN	Gender=Masc|Number=Plur	4	dep	_	_
+
+1	their	their	X	X	_	4	nsubj	_	_
+2	rifles	rifle	X	X	_	1	flat:foreign	_	_
+3	at	at	X	X	_	4	mark	_	_
+4	ready	ready	PROPN	PROPN	_	0	ROOT	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	stared	stared	X	X	_	1	fixed	_	_
+3	at	at	X	X	_	1	dep	_	_
+4	them	them	X	X	_	3	flat:foreign	_	_
+5	curiously	curiously	ADJ	ADJ	Gender=Masc|Number=Sing	3	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	They	They	X	X	_	17	nsubj	_	_
+2	were	were	X	X	_	1	punct	_	_
+3	stocky	stocky	X	X	_	1	acl	_	_
+4	men	men	NOUN	NOUN	_	3	advmod	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	well	well	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+7	fed	fed	X	X	_	6	nsubj	_	_
+8	and	and	X	X	_	6	dep	_	_
+9	clean	clean	X	X	_	6	amod	_	SpaceAfter=No
+10	-	-	PROPN	PROPN	Number=Sing	6	flat:name	_	SpaceAfter=No
+11	shaven	shaven	PROPN	PROPN	_	6	flat:name	_	_
+12	,	,	PUNCT	PUNCT	_	13	punct	_	_
+13	with	with	X	X	_	1	parataxis	_	_
+14	neat	neat	X	X	_	13	flat:name	_	_
+15	uniforms	uniform	ADJ	ADJ	Gender=Masc	13	amod	_	_
+16	and	and	X	X	_	13	dep	_	_
+17	sturdy	sturdy	X	X	_	0	ROOT	_	_
+18	boots	boots	ADV	ADV	_	17	obj	_	_
+19	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	Behind	Behind	X	X	_	4	nsubj	_	_
+2	them	them	X	X	_	1	flat:foreign	_	_
+3	shambled	shambled	ADV	ADV	_	2	advmod	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	4	advmod	_	_
+6	column	column	PROPN	PROPN	_	4	obj	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	weak	weak	NOUN	NOUN	Gender=Fem|Number=Sing	4	obl:arg	_	_
+9	,	,	PUNCT	PUNCT	_	10	punct	_	_
+10	tattered	tattered	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	conj	_	_
+11	men	men	ADJ	ADJ	Gender=Masc|Number=Plur	10	amod	_	_
+12	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	The	The	X	X	_	7	nsubj	_	_
+2	thin	thin	X	X	_	1	flat:foreign	_	_
+3	gray	gray	X	X	_	1	flat:foreign	_	_
+4	figures	figure	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+5	raised	raised	X	X	_	1	flat:foreign	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	hoarse	hoars	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	cawing	cawing	ADV	ADV	_	10	advmod	_	_
+10	cry	cry	PROPN	PROPN	Gender=Masc|Number=Sing	7	obl:mod	_	_
+11	like	like	X	X	_	7	dep	_	_
+12	the	the	X	X	_	7	dep	_	_
+13	call	call	X	X	_	12	flat:foreign	_	_
+14	of	of	X	X	_	12	fixed	_	_
+15	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	punct	_	_
+16	bird	bird	X	X	_	17	dep	_	_
+17	flock	flock	PROPN	PROPN	_	7	advmod	_	_
+18	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	They	They	X	X	_	2	nsubj	_	_
+2	moved	moved	X	X	_	0	ROOT	_	_
+3	toward	toward	X	X	_	2	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	skiffs	skiff	X	X	_	2	obj	_	_
+6	with	with	X	X	_	2	dep	_	_
+7	shocking	shocking	X	X	_	2	dep	_	_
+8	eagerness	eagernes	ADJ	ADJ	Number=Plur	2	obj	_	_
+9	,	,	PUNCT	PUNCT	_	2	punct	_	_
+10	elbowing	elbowing	X	X	_	11	advmod	_	_
+11	and	and	X	X	_	2	conj	_	_
+12	shoving	shoving	X	X	_	11	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Four	four	NOUN	NOUN	Gender=Masc|Number=Sing	10	expl:comp	_	_
+2	men	men	X	X	_	1	flat:foreign	_	_
+3	were	were	X	X	_	2	dep	_	_
+4	knocked	knocked	X	X	_	1	flat:foreign	_	_
+5	down	down	X	X	_	1	amod	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+8	did	did	X	X	_	7	nmod	_	_
+9	not	not	X	X	_	8	dep	_	_
+10	attempt	attempt	X	X	_	0	ROOT	_	_
+11	to	to	X	X	_	10	advmod	_	_
+12	rise	rise	NOUN	NOUN	Gender=Fem|Number=Sing	10	obj	_	_
+13	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	They	They	X	X	_	0	ROOT	_	_
+2	crept	crept	X	X	_	1	amod	_	_
+3	down	down	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	muddy	muddy	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+6	slope	slope	X	X	_	1	flat:foreign	_	_
+7	toward	toward	X	X	_	1	flat:foreign	_	_
+8	the	the	X	X	_	1	flat:foreign	_	_
+9	waiting	waiting	X	X	_	1	flat:foreign	_	_
+10	boats	boats	X	X	_	1	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Union	Union	PROPN	PROPN	_	1	flat:foreign	_	_
+3	soldiers	soldiers	X	X	_	1	flat:foreign	_	_
+4	grounded	grounded	X	X	_	3	amod	_	_
+
+1	arms	arms	X	X	_	0	ROOT	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	settled	settled	X	X	_	1	dep	_	_
+
+1	into	into	X	X	_	0	ROOT	_	_
+2	healthy	healthy	X	X	_	1	dep	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	indifferent	indifferer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+2	postures	posture	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+3	to	to	X	X	_	1	flat:foreign	_	_
+4	watch	watch	PROPN	PROPN	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	feeble	feeble	X	X	_	1	flat:foreign	_	_
+7	boarding	boarding	X	X	_	9	dep	_	_
+8	of	of	X	X	_	9	dep	_	_
+9	the	the	X	X	_	10	dep	_	_
+10	skiffs	skiff	X	X	_	1	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	crawling	crawling	X	X	_	1	flat:foreign	_	_
+3	men	men	X	X	_	1	flat:foreign	_	_
+4	tried	tried	X	X	_	1	flat:foreign	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	rise	rise	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+7	and	and	X	X	_	1	flat:foreign	_	_
+8	fell	fell	X	X	_	1	flat:foreign	_	_
+9	again	again	PROPN	PROPN	_	1	flat:foreign	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	No	No	X	X	_	0	ROOT	_	_
+2	one	one	X	X	_	1	flat:foreign	_	_
+3	moved	moved	X	X	_	1	flat:foreign	_	_
+4	to	to	X	X	_	1	flat:foreign	_	_
+5	them	them	X	X	_	1	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	12	nsubj	_	_
+2	watched	watched	X	X	_	1	dep	_	_
+3	two	two	X	X	_	1	dep	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	them	them	X	X	_	1	dep	_	_
+6	flounder	flounder	ADJ	ADJ	Gender=Masc|Number=Sing	5	amod	_	_
+7	into	into	X	X	_	6	advmod	_	_
+8	the	the	X	X	_	6	dep	_	_
+9	shallow	shallow	X	X	_	6	advmod	_	_
+10	water	water	X	X	_	6	dep	_	_
+11	and	and	X	X	_	6	dep	_	_
+12	listened	listened	X	X	_	0	ROOT	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	their	their	X	X	_	1	dep	_	_
+
+1	voices	voices	X	X	_	0	ROOT	_	_
+2	beg	beg	AUX	AUX	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	1	acl	_	_
+
+1	shrilly	shrilly	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+3	confused	confused	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	soaked	soaked	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+6	and	and	X	X	_	5	dep	_	_
+7	stumbling	stumbling	X	X	_	6	dep	_	_
+8	shift	shift	X	X	_	6	flat:foreign	_	_
+9	of	of	X	X	_	10	case	_	_
+10	bodies	body	NOUN	NOUN	Gender=Fem|Number=Plur	6	dep	_	_
+11	and	and	X	X	_	10	dep	_	_
+12	lifting	lifting	X	X	_	10	flat:foreign	_	_
+13	arms	arms	X	X	_	10	flat:foreign	_	_
+14	,	,	PUNCT	PUNCT	_	1	punct	_	_
+15	the	the	X	X	_	19	dep	_	_
+16	two	two	X	X	_	15	flat:foreign	_	_
+17	men	men	X	X	_	19	dep	_	_
+18	were	were	X	X	_	17	flat:foreign	_	_
+19	dragged	dragged	X	X	_	1	obl:mod	_	_
+20	into	into	X	X	_	19	amod	_	_
+21	the	the	X	X	_	1	dep	_	_
+22	same	same	X	X	_	1	dep	_	_
+23	skiff	skiff	NOUN	NOUN	Gender=Fem|Number=Sing	1	amod	_	_
+24	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	third	third	X	X	_	1	flat:foreign	_	_
+3	crawling	crawling	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	man	man	X	X	_	1	flat:foreign	_	_
+5	forced	forced	X	X	_	1	flat:foreign	_	_
+6	himself	himself	PROPN	PROPN	_	1	flat:foreign	_	_
+7	erect	erect	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	5	advmod	_	_
+2	swayed	swayed	ADV	ADV	_	5	nsubj	_	_
+3	like	lik	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	drunkard	drunkard	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	his	his	X	X	_	5	dep	_	_
+8	arms	arms	X	X	_	7	flat:foreign	_	_
+9	milling	milling	X	X	_	7	flat:foreign	_	_
+10	in	in	X	X	_	7	flat:foreign	_	_
+11	slow	slow	X	X	_	7	dep	_	_
+12	circles	circle	NOUN	NOUN	Gender=Masc|Number=Plur	7	amod	_	_
+13	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	0	ROOT	_	_
+2	paced	paced	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+
+1	forward	forward	X	X	_	0	ROOT	_	_
+2	unsteadily	unsteadily	NUM	NUM	NumType=Card	1	amod	_	_
+
+1	,	,	PUNCT	PUNCT	_	4	punct	_	_
+2	leaning	leaning	NOUN	NOUN	Gender=Masc|Number=Sing	4	advmod	_	_
+3	too	too	ADV	ADV	_	4	advmod	_	_
+4	far	far	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	_
+5	back	back	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	his	his	X	X	_	5	conj	_	_
+8	head	head	X	X	_	7	flat:foreign	_	_
+9	tilted	tilted	X	X	_	7	amod	_	_
+10	oddly	oddly	ADJ	ADJ	Number=Plur	7	amod	_	_
+11	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	His	His	X	X	_	0	ROOT	_	_
+2	steps	steps	X	X	_	1	flat:foreign	_	_
+3	were	were	X	X	_	1	flat:foreign	_	_
+4	short	short	X	X	_	1	flat:foreign	_	_
+5	and	and	X	X	_	4	amod	_	_
+6	stiff	stiff	X	X	_	4	amod	_	_
+7	,	,	PUNCT	PUNCT	_	4	punct	_	_
+8	and	and	X	X	_	1	dep	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	with	with	X	X	_	1	dep	_	_
+11	his	his	X	X	_	10	flat:foreign	_	_
+12	head	head	X	X	_	10	flat:foreign	_	_
+13	thrown	thrown	X	X	_	1	flat:foreign	_	_
+
+1	back	back	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	7	punct	_	_
+2	his	his	X	X	_	7	nsubj	_	_
+3	progress	progress	X	X	_	2	flat:foreign	_	_
+4	was	was	X	X	_	2	dep	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	_	_
+6	supercilious	supercilious	PROPN	PROPN	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+7	strut	strut	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	He	He	PROPN	PROPN	_	2	nsubj	_	_
+2	appeared	appeared	X	X	_	0	ROOT	_	_
+
+1	to	to	X	X	_	10	case	_	_
+2	be	be	X	X	_	1	fixed	_	_
+3	peering	peering	X	X	_	1	fixed	_	_
+4	haughtily	haughtily	NOUN	NOUN	_	1	dep	_	_
+5	down	down	X	X	_	1	flat:foreign	_	_
+6	his	his	X	X	_	5	dep	_	_
+7	nose	nose	X	X	_	1	flat:foreign	_	_
+8	at	at	X	X	_	1	dep	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	crowded	crowded	X	X	_	16	obl:mod	_	_
+11	and	and	X	X	_	10	dep	_	_
+12	unclean	unclean	X	X	_	10	advmod	_	_
+13	vessel	vessel	X	X	_	10	flat:foreign	_	_
+14	that	that	X	X	_	10	dep	_	_
+15	would	would	X	X	_	14	flat:foreign	_	_
+16	carry	carry	X	X	_	17	dep	_	_
+17	him	him	X	X	_	0	ROOT	_	_
+18	to	to	X	X	_	19	dep	_	_
+19	freedom	freedom	X	X	_	17	obl:mod	_	_
+20	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	0	ROOT	_	_
+2	stalked	stalked	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	into	into	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	water	water	X	X	_	1	flat:foreign	_	_
+6	and	and	X	X	_	1	dep	_	_
+7	fell	fell	X	X	_	1	dep	_	_
+8	heavily	heavily	X	X	_	1	flat:name	_	_
+9	over	over	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	side	side	X	X	_	1	flat:foreign	_	_
+12	of	of	X	X	_	13	mark	_	_
+13	the	the	X	X	_	1	dep	_	_
+14	flat	flat	X	X	_	1	dep	_	SpaceAfter=No
+
+1	-	-	ADJ	ADJ	Number=Sing	7	advmod	_	SpaceAfter=No
+2	bottomed	bottomed	ADJ	ADJ	Gender=Masc|Number=Sing	1	fixed	_	_
+3	barge	barg	ADJ	ADJ	Number=Sing	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	his	his	X	X	_	7	dep	_	_
+6	weight	weight	X	X	_	5	nsubj	_	_
+7	nearly	nearly	X	X	_	0	ROOT	_	_
+8	swamping	swamping	X	X	_	7	flat:foreign	_	_
+9	the	the	X	X	_	7	flat:foreign	_	_
+10	craft	craft	X	X	_	7	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	looked	looked	X	X	_	1	flat:foreign	_	_
+3	for	for	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	fourth	fourth	X	X	_	1	flat:foreign	_	_
+6	man	man	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	reached	reached	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	three	three	X	X	_	1	flat:foreign	_	_
+6	passive	passif	ADJ	ADJ	Gender=Fem|Number=Sing	5	amod	_	_
+7	guards	guard	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+8	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	he	he	X	X	_	2	case	_	_
+2	crept	crept	PROPN	PROPN	_	12	dep	_	_
+3	in	in	X	X	_	4	case	_	_
+4	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+5	incertain	incertain	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
+6	manner	manner	VERB	VERB	VerbForm=Inf	2	dep	_	_
+7	,	,	PUNCT	PUNCT	_	6	punct	_	_
+8	patting	patting	X	X	_	6	dep	_	_
+9	the	the	X	X	_	6	dep	_	_
+10	ground	ground	X	X	_	9	flat:foreign	_	_
+11	before	before	X	X	_	9	flat:foreign	_	_
+12	him	him	X	X	_	0	ROOT	_	_
+13	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	The	The	X	X	_	7	dep	_	_
+2	guards	guards	X	X	_	1	flat:foreign	_	_
+3	did	did	X	X	_	7	dep	_	_
+4	not	not	X	X	_	3	fixed	_	_
+5	look	look	NOUN	NOUN	Gender=Masc|Number=Sing	3	flat:foreign	_	_
+6	at	at	X	X	_	7	case	_	_
+7	him	him	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	2	dep	_	_
+2	figure	figurer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	5	nsubj	_	_
+4	the	the	X	X	_	5	case	_	_
+5	earth	earth	X	X	_	2	obj	_	_
+6	halted	halted	ADJ	ADJ	Number=Plur	5	amod	_	_
+7	,	,	PUNCT	PUNCT	_	5	punct	_	_
+8	seemingly	seemingly	NOUN	NOUN	Gender=Masc|Number=Sing	5	acl	_	_
+9	bewildered	bewildered	ADJ	ADJ	Gender=Masc	8	amod	_	_
+10	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	0	ROOT	_	_
+2	sank	sank	ADJ	ADJ	_	1	amod	_	_
+
+1	back	back	X	X	_	8	nsubj	_	_
+2	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+3	his	his	X	X	_	1	acl:relcl	_	_
+4	thin	thin	X	X	_	3	advmod	_	_
+5	haunches	haunche	NOUN	NOUN	_	1	acl:relcl	_	_
+6	like	lik	ADJ	ADJ	Gender=Masc|Number=Sing	5	amod	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+8	weary	weary	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	hound	hound	X	X	_	8	amod	_	_
+10	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Then	Then	PROPN	PROPN	_	0	ROOT	_	_
+2	he	he	X	X	_	1	punct	_	_
+3	began	began	X	X	_	2	flat:foreign	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	crawl	crawl	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	again	again	PROPN	PROPN	_	5	amod	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	5	nsubj	_	_
+2	watched	watched	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	creeping	creeping	X	X	_	1	flat:foreign	_	_
+5	figure	figurer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	5	nsubj	_	_
+2	felt	felt	X	X	_	1	flat:name	_	_
+3	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+4	spectator	spectator	ADJ	ADJ	Number=Plur	3	advcl	_	_
+5	interest	interest	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Would	Would	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	man	man	X	X	_	1	flat:foreign	_	_
+4	make	make	X	X	_	1	flat:foreign	_	_
+5	it	it	X	X	_	4	dep	_	_
+6	or	or	X	X	_	5	fixed	_	_
+7	not	not	X	X	_	6	dep	_	_
+8	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	If	If	X	X	_	6	nsubj	_	_
+2	only	only	X	X	_	1	flat:foreign	_	_
+3	there	there	X	X	_	1	flat:foreign	_	_
+4	was	was	X	X	_	6	expl:comp	_	_
+5	a	avoir	X	X	_	6	aux:tense	_	_
+6	clock	clock	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	for	for	X	X	_	8	case	_	_
+8	him	him	X	X	_	10	det	_	_
+9	to	to	X	X	_	10	dep	_	_
+10	crawl	crawl	NOUN	NOUN	Gender=Masc|Number=Sing	11	obl:mod	_	_
+11	against	against	ADJ	ADJ	Gender=Masc|Number=Plur	6	xcomp	_	_
+12	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	If	If	PROPN	PROPN	_	0	ROOT	_	_
+2	he	he	X	X	_	5	case	_	_
+3	failed	failed	X	X	_	2	flat:foreign	_	_
+4	to	to	X	X	_	5	dep	_	_
+5	reach	reach	X	X	_	1	obl:mod	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	riverbank	riverbank	X	X	_	1	flat:foreign	_	_
+8	in	in	X	X	_	1	flat:foreign	_	_
+9	five	five	X	X	_	8	fixed	_	_
+10	minutes	minute	NOUN	NOUN	Gender=Fem|Number=Plur	8	flat:foreign	_	_
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	say	say	PROPN	PROPN	_	1	conj	_	_
+13	,	,	PUNCT	PUNCT	_	1	punct	_	_
+14	then	then	X	X	_	1	dep	_	_
+15	the	the	X	X	_	14	flat:foreign	_	_
+16	skiffs	skiff	X	X	_	15	flat:foreign	_	_
+17	would	would	X	X	_	15	flat:foreign	_	_
+18	pull	pull	X	X	_	14	flat:foreign	_	_
+19	away	away	X	X	_	18	flat:foreign	_	_
+20	and	and	X	X	_	18	flat:foreign	_	_
+21	leave	leave	X	X	_	18	flat:foreign	_	_
+22	him	him	X	X	_	18	flat:foreign	_	_
+23	groping	groping	X	X	_	18	flat:foreign	_	_
+24	in	in	X	X	_	25	dep	_	_
+25	the	the	X	X	_	18	dep	_	_
+26	mud	mud	X	X	_	18	flat:foreign	_	_
+27	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Say	Say	X	X	_	0	ROOT	_	_
+
+1	three	three	X	X	_	0	ROOT	_	_
+2	minutes	minuter	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	flat:foreign	_	_
+4	make	make	X	X	_	1	flat:foreign	_	_
+5	it	it	X	X	_	1	flat:foreign	_	_
+6	sporting	sporting	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Still	Still	X	X	_	8	nmod	_	_
+2	the	the	X	X	_	6	dep	_	_
+3	guards	guards	X	X	_	2	flat:foreign	_	_
+4	did	did	X	X	_	6	nsubj	_	_
+5	not	not	X	X	_	4	fixed	_	_
+6	move	move	X	X	_	1	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	stood	stood	PROPN	PROPN	_	8	nmod	_	_
+10	inert	inert	ADJ	ADJ	Number=Sing	9	amod	_	_
+11	,	,	PUNCT	PUNCT	_	8	punct	_	_
+12	aloof	aloof	PROPN	PROPN	_	8	nmod	_	_
+13	from	from	X	X	_	12	dep	_	_
+14	the	the	X	X	_	8	dep	_	_
+15	slow	slow	X	X	_	8	nmod	_	SpaceAfter=No
+16	-	-	ADJ	ADJ	_	8	punct	_	SpaceAfter=No
+17	scrambling	scrambling	X	X	_	8	amod	_	_
+18	man	man	X	X	_	8	nmod	_	_
+19	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	The	The	X	X	_	2	advmod	_	_
+2	figure	figurer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	halted	halted	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	and	and	X	X	_	2	advmod	_	_
+6	Watson	Watson	PROPN	PROPN	_	5	dep	_	_
+7	gasped	gasped	PROPN	PROPN	_	5	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	11	case	_	_
+2	man	man	X	X	_	1	flat:foreign	_	_
+3	began	began	X	X	_	1	flat:foreign	_	_
+4	to	to	X	X	_	1	flat:foreign	_	_
+5	creep	creep	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	in	in	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	wrong	wrong	X	X	_	1	dep	_	_
+9	direction	direction	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+10	,	,	PUNCT	PUNCT	_	9	punct	_	_
+11	deceived	deceived	X	X	_	0	ROOT	_	_
+12	by	by	X	X	_	11	nummod	_	_
+13	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_
+14	slight	slight	NOUN	NOUN	Gender=Fem|Number=Sing	12	dep	_	_
+15	rise	rise	X	X	_	14	flat:foreign	_	_
+16	in	in	X	X	_	14	flat:foreign	_	_
+17	the	the	X	X	_	14	flat:foreign	_	_
+18	ground	ground	X	X	_	14	flat:foreign	_	_
+19	!	!	PUNCT	PUNCT	_	11	punct	_	_
+20	!	!	PUNCT	PUNCT	_	11	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	turned	turned	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	slowly	slowly	PROPN	PROPN	Gender=Masc|Number=Sing	2	amod	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+
+1	began	began	X	X	_	0	ROOT	_	_
+
+1	to	to	X	X	_	2	case	_	_
+2	crawl	crawl	PRON	PRON	Number=Sing|Person=1|PronType=Prs	0	ROOT	_	_
+
+1	back	back	X	X	_	0	ROOT	_	_
+2	up	up	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	bank	bank	X	X	_	3	flat:foreign	_	_
+5	toward	toward	X	X	_	4	flat:foreign	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	rampart	rampart	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	11	det	_	_
+2	raced	raced	X	X	_	1	flat:name	_	_
+3	for	for	ADP	ADP	_	4	case	_	_
+4	him	him	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	,	,	PUNCT	PUNCT	_	7	punct	_	_
+6	his	his	X	X	_	7	nmod	_	_
+7	boots	boots	X	X	_	1	conj	_	_
+8	slamming	slamming	X	X	_	7	amod	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	soft	soft	X	X	_	11	amod	_	_
+11	earth	earth	X	X	_	0	ROOT	_	_
+12	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	The	The	X	X	_	5	dep	_	_
+2	guards	guards	X	X	_	1	flat:foreign	_	_
+3	came	came	X	X	_	1	flat:foreign	_	_
+4	to	to	X	X	_	5	dep	_	_
+5	life	life	X	X	_	0	ROOT	_	_
+6	with	with	X	X	_	5	dep	_	_
+
+1	astonishing	astonishing	PRON	PRON	Number=Sing|PronType=Dem	0	ROOT	_	_
+
+1	menace	menacer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	They	They	X	X	_	4	nsubj	_	_
+2	spun	spun	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	flung	flung	X	X	_	0	ROOT	_	_
+5	their	their	X	X	_	4	obj	_	_
+6	rifles	rifle	NOUN	NOUN	Gender=Fem|Number=Plur	4	xcomp	_	_
+7	up	up	ADJ	ADJ	_	4	obj	_	_
+8	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	gesticulated	gesticulated	X	X	_	1	amod	_	_
+3	wildly	wildly	NOUN	NOUN	_	1	nmod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	One	One	X	X	_	0	ROOT	_	_
+2	man	man	X	X	_	1	flat:foreign	_	_
+3	dropped	dropped	X	X	_	1	flat:foreign	_	_
+4	to	to	X	X	_	1	flat:foreign	_	_
+5	his	his	X	X	_	1	flat:foreign	_	_
+6	knee	knee	X	X	_	1	flat:foreign	_	_
+7	for	for	X	X	_	1	flat:foreign	_	_
+8	better	better	VERB	VERB	VerbForm=Inf	1	xcomp	_	_
+9	aim	aim	PROPN	PROPN	Gender=Fem|Number=Sing	1	nsubj	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Let	Let	X	X	_	0	ROOT	_	_
+3	me	me	PRON	PRON	Number=Sing|Person=1	4	expl:comp	_	_
+4	help	help	X	X	_	5	dep	_	_
+5	him	him	NOUN	NOUN	Gender=Masc|Number=Sing	2	advmod	_	_
+6	,	,	PUNCT	PUNCT	_	2	punct	_	_
+7	for	for	X	X	_	11	case	_	_
+8	the	the	X	X	_	7	flat:foreign	_	_
+9	love	lover	X	X	_	7	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	God	God	X	X	_	2	obl:mod	_	_
+12	!	!	PUNCT	PUNCT	_	2	punct	_	_
+13	!	!	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	guards	guards	X	X	_	1	flat:foreign	_	_
+3	lowered	lowered	X	X	_	1	flat:foreign	_	_
+4	their	their	X	X	_	1	flat:foreign	_	_
+5	rifles	rifle	X	X	_	1	flat:foreign	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	their	their	X	X	_	1	flat:foreign	_	_
+8	rifles	rifle	X	X	_	1	flat:foreign	_	_
+9	and	and	X	X	_	1	flat:foreign	_	_
+10	peered	peered	X	X	_	9	advmod	_	_
+11	at	at	X	X	_	12	dep	_	_
+12	Watson	Watson	PROPN	PROPN	_	9	obl:arg	_	_
+13	with	with	X	X	_	12	flat:name	_	_
+14	sullen	sullen	ADJ	ADJ	Gender=Masc|Number=Sing	12	dep	_	_
+15	,	,	PUNCT	PUNCT	_	1	punct	_	_
+16	puzzled	puzzled	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	faces	face	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	2	advmod	_	_
+2	pounded	pounded	ADV	ADV	_	0	ROOT	_	_
+3	to	to	X	X	_	2	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	crawling	crawling	X	X	_	2	flat:foreign	_	_
+6	man	man	X	X	_	5	dep	_	_
+7	and	and	X	X	_	5	dep	_	_
+8	stopped	stopped	ADJ	ADJ	Gender=Fem|Number=Plur	2	amod	_	_
+9	,	,	PUNCT	PUNCT	_	2	punct	_	_
+10	panting	panting	X	X	_	11	cc	_	_
+11	heavily	heavily	PROPN	PROPN	Gender=Fem|Number=Sing	2	dep	_	_
+12	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	reached	reached	X	X	_	1	flat:foreign	_	_
+3	down	down	X	X	_	1	flat:foreign	_	_
+4	and	and	X	X	_	3	dep	_	_
+5	closed	closed	X	X	_	3	xcomp	_	_
+6	his	his	X	X	_	3	dep	_	_
+7	fingers	fingers	X	X	_	6	flat:name	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	the	the	X	X	_	0	ROOT	_	_
+3	man'	man'	X	X	_	2	dep	_	SpaceAfter=No
+4	s	s	PRON	PRON	Person=3|Reflex=Yes	5	expl:comp	_	_
+5	upper	upper	VERB	VERB	VerbForm=Inf	2	xcomp	_	_
+6	arm	arm	PROPN	PROPN	Gender=Masc|Number=Sing	2	obj	_	_
+7	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Beneath	Beneath	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	his	his	X	X	_	1	flat:foreign	_	_
+3	clutch	clutch	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	a	avoir	X	X	_	7	cop	_	_
+6	flat	flat	X	X	_	5	fixed	_	_
+7	strip	strip	X	X	_	1	parataxis	_	_
+8	of	of	ADP	ADP	_	9	case	_	_
+9	muscle	muscle	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+10	surged	surged	NOUN	NOUN	Gender=Fem|Number=Sing	1	amod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	the	the	X	X	_	0	ROOT	_	_
+3	bone	bon	ADJ	ADJ	Gender=Fem|Number=Sing	2	xcomp	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	bent	bent	X	X	_	1	flat:name	_	_
+3	awkwardly	awkwardly	X	X	_	2	flat:name	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	lifted	lifted	X	X	_	4	flat:foreign	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	man	man	X	X	_	6	flat:foreign	_	_
+8	to	to	X	X	_	1	dep	_	_
+9	his	his	X	X	_	1	dep	_	_
+10	feet	feet	X	X	_	9	flat:name	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	5	nsubj	_	_
+2	stared	stared	X	X	_	1	fixed	_	_
+3	into	into	X	X	_	1	flat:foreign	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	cadaverous	cadaverou	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+6	face	face	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+7	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Two	two	ADJ	ADJ	NumType=Ord|Number=Sing	0	ROOT	_	_
+2	clotted	clotted	X	X	_	1	flat:foreign	_	_
+3	balls	balls	X	X	_	2	dep	_	_
+
+1	the	the	X	X	_	6	dep	_	_
+2	color	color	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	mucus	mucus	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+5	rolled	rolled	X	X	_	1	flat:foreign	_	_
+6	between	between	X	X	_	0	ROOT	_	_
+7	fiery	fiery	PROPN	PROPN	_	6	dep	_	_
+8	lids	lids	PROPN	PROPN	_	7	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Light	light	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	sticks	stick	X	X	_	0	ROOT	_	_
+3	of	of	X	X	_	4	case	_	_
+4	fingers	finger	NOUN	NOUN	Gender=Masc|Number=Plur	2	obl:mod	_	_
+5	,	,	PUNCT	PUNCT	_	2	punct	_	_
+6	the	the	X	X	_	8	case	_	_
+7	tips	tips	X	X	_	8	amod	_	_
+8	gummy	gummy	X	X	_	2	obl:mod	_	_
+9	with	with	X	X	_	8	dep	_	_
+10	dark	dark	X	X	_	8	nmod	_	_
+11	earth	earth	X	X	_	8	amod	_	_
+12	,	,	PUNCT	PUNCT	_	2	punct	_	_
+13	patted	patted	ADJ	ADJ	NumType=Ord|Number=Sing	2	advcl	_	_
+14	at	at	X	X	_	15	case	_	_
+15	Watson'	watson'	ADP	ADP	_	13	nmod	_	SpaceAfter=No
+16	s	s	PRON	PRON	Person=3|Reflex=Yes	17	iobj	_	_
+17	throat	throat	NOUN	NOUN	Gender=Fem|Number=Sing	13	obl:mod	_	_
+18	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	4	dep	_	_
+2	man'	man'	X	X	_	1	flat:foreign	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	4	expl:comp	_	_
+4	voice	voice	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+5	was	was	X	X	_	4	dep	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	dep	_	_
+7	sweet	sweet	X	X	_	4	xcomp	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	patient	patient	NOUN	NOUN	Gender=Masc|Number=Sing	7	obl:mod	_	_
+10	whisper	whisper	ADJ	ADJ	Number=Sing	9	amod	_	_
+11	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	said	said	X	X	_	2	dep	_	_
+4	that	that	X	X	_	3	flat:foreign	_	_
+5	he'	he'	X	X	_	3	dep	_	SpaceAfter=No
+6	d	d	ADP	ADP	_	7	case	_	_
+7	take	take	X	X	_	3	dep	_	_
+8	my	my	X	X	_	3	flat:foreign	_	_
+9	arm	arm	X	X	_	3	flat:foreign	_	_
+10	and	and	X	X	_	11	dep	_	_
+11	get	get	X	X	_	3	flat:foreign	_	_
+12	me	me	X	X	_	2	dep	_	_
+13	right	right	X	X	_	2	dep	_	_
+14	there	there	X	X	_	2	flat:name	_	_
+15	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	you	you	X	X	_	1	amod	_	_
+3	ain'	ain'	X	X	_	2	dep	_	SpaceAfter=No
+4	t	t	X	X	_	1	nmod	_	_
+5	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	no	no	ADJ	ADJ	_	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	It	It	PROPN	PROPN	_	0	ROOT	_	_
+3	don'	don'	X	X	_	2	dep	_	SpaceAfter=No
+4	t	t	X	X	_	2	dep	_	_
+5	matter	matter	VERB	VERB	VerbForm=Inf	2	xcomp	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Is	Is	X	X	_	0	ROOT	_	_
+2	it	it	X	X	_	3	expl:subj	_	_
+3	far	far	PROPN	PROPN	Gender=Masc|Number=Sing	1	dep	_	_
+4	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	How	How	X	X	_	8	advmod	_	_
+2	far	far	X	X	_	1	flat:foreign	_	_
+3	could	could	X	X	_	1	flat:foreign	_	_
+4	it	it	X	X	_	3	dep	_	_
+5	be	be	X	X	_	3	dep	_	_
+6	,	,	PUNCT	PUNCT	_	8	punct	_	_
+7	Watson	Watson	PROPN	PROPN	_	8	nsubj	_	_
+8	thought	thought	X	X	_	0	ROOT	_	_
+9	bleakly	bleakly	ADJ	ADJ	Number=Plur	8	obj	_	_
+10	,	,	PUNCT	PUNCT	_	12	punct	_	_
+11	how	how	X	X	_	12	amod	_	_
+12	far	far	X	X	_	8	conj	_	_
+13	can	can	ADJ	ADJ	Gender=Masc|Number=Sing	12	nsubj	_	_
+14	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	xcomp	_	_
+15	blind	blind	X	X	_	14	obj	_	_
+16	man	man	X	X	_	17	advmod	_	_
+17	crawl	crawl	VERB	VERB	VerbForm=Inf	14	xcomp	_	_
+18	?	?	PUNCT	PUNCT	_	8	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Another	Another	X	X	_	11	nsubj	_	_
+2	body	body	X	X	_	1	flat:foreign	_	_
+3	length	length	X	X	_	2	flat:foreign	_	_
+4	or	or	X	X	_	9	cc	_	_
+5	all	all	X	X	_	4	dep	_	_
+6	the	the	X	X	_	4	dep	_	_
+7	rest	rest	X	X	_	4	flat:foreign	_	_
+8	of	of	X	X	_	9	dep	_	_
+9	his	his	X	X	_	2	dep	_	_
+10	nighted	nighted	X	X	_	11	dep	_	_
+11	life	life	X	X	_	0	ROOT	_	_
+12	?	?	PUNCT	PUNCT	_	11	punct	_	_
+13	?	?	PUNCT	PUNCT	_	11	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Not	Not	X	X	_	0	ROOT	_	_
+3	far	far	ADJ	ADJ	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	You	You	PROPN	PROPN	_	0	ROOT	_	_
+3	talk	talk	X	X	_	2	dep	_	_
+4	deep	deep	ADV	ADV	_	2	advmod	_	_
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Not	Not	X	X	_	4	nsubj	_	_
+2	like	like	X	X	_	1	flat:foreign	_	_
+3	us	us	X	X	_	4	advmod	_	_
+4	fellas	fella	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	It	it	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	raises	raiser	VERB	VERB	Mood=Imp|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	voice	voice	X	X	_	1	amod	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	bein	bein	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+7	in	in	X	X	_	8	case	_	_
+8	camp	camp	NOUN	NOUN	Gender=Masc|Number=Sing	6	nmod	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	You	you	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Secesh	Secesh	PROPN	PROPN	_	1	flat:name	_	_
+3	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	3	punct	_	_
+2	--	--	PUNCT	PUNCT	_	3	punct	_	_
+3	yes	yer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Come	Come	PROPN	PROPN	_	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	now	now	X	X	_	1	dep	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Can	Can	X	X	_	0	ROOT	_	_
+2	you	you	X	X	_	1	dep	_	_
+3	walk	walk	X	X	_	1	flat:name	_	_
+4	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	3	punct	_	_
+2	--	--	PUNCT	PUNCT	_	3	punct	_	_
+3	Why	Why	PROPN	PROPN	_	0	ROOT	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	course	course	NOUN	NOUN	Gender=Fem|Number=Sing	3	nmod	_	_
+6	I	i	ADJ	ADJ	_	5	amod	_	_
+7	can	can	X	X	_	5	amod	_	_
+8	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	I	i	NOUN	NOUN	_	0	ROOT	_	_
+2	can	can	X	X	_	1	flat:foreign	_	_
+3	walk	walk	X	X	_	1	flat:foreign	_	_
+4	real	real	X	X	_	1	flat:foreign	_	_
+5	good	good	X	X	_	1	amod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	2	nsubj	_	_
+2	stumbled	stumbled	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	down	down	X	X	_	2	flat:foreign	_	_
+4	the	the	X	X	_	2	flat:foreign	_	_
+5	bank	bank	X	X	_	2	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	10	advmod	_	_
+2	man	man	X	X	_	1	flat:foreign	_	_
+3	leaned	leaned	X	X	_	1	flat:foreign	_	_
+4	his	his	X	X	_	1	flat:foreign	_	_
+5	frail	frail	X	X	_	1	flat:foreign	_	_
+6	body	body	X	X	_	1	flat:foreign	_	_
+7	against	against	X	X	_	1	flat:foreign	_	_
+8	Watson'	watson'	ADP	ADP	_	10	mark	_	SpaceAfter=No
+9	s	s	PRON	PRON	Person=3|Reflex=Yes	10	obj	_	_
+10	shoulder	shoulder	X	X	_	0	ROOT	_	_
+11	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	He	He	PROPN	PROPN	_	7	nsubj	_	_
+2	was	was	X	X	_	1	flat:foreign	_	_
+3	no	no	X	X	_	1	dep	_	_
+4	heavier	heavier	VERB	VERB	Number=Plur|Tense=Past|VerbForm=Part	1	conj	_	_
+5	than	than	ADJ	ADJ	Number=Plur	1	amod	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	child	child	X	X	_	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	paused	paused	X	X	_	1	flat:name	_	_
+3	for	for	X	X	_	4	case	_	_
+4	breath	breath	X	X	_	1	nmod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	6	advmod	_	_
+2	man	man	X	X	_	1	flat:foreign	_	_
+3	wheezed	wheezed	PROPN	PROPN	_	1	flat:foreign	_	_
+4	weakly	weakly	PROPN	PROPN	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	his	his	X	X	_	0	ROOT	_	_
+7	fetid	fetid	X	X	_	6	flat:foreign	_	_
+8	breath	breath	X	X	_	6	flat:name	_	_
+9	beating	beating	X	X	_	6	flat:foreign	_	_
+10	softly	softly	VERB	VERB	Tense=Pres|VerbForm=Part	6	acl	_	_
+11	against	against	X	X	_	6	amod	_	_
+12	Watson'	watson'	ADP	ADP	_	6	nmod	_	SpaceAfter=No
+13	s	s	PRON	PRON	Person=3|Reflex=Yes	6	dep	_	_
+14	neck	neck	X	X	_	6	nmod	_	_
+15	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	His	His	X	X	_	0	ROOT	_	_
+2	sweet	sweet	X	X	_	1	dep	_	_
+3	whisper	whisper	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+4	came	came	X	X	_	1	flat:foreign	_	_
+5	after	after	X	X	_	1	flat:foreign	_	_
+6	great	great	X	X	_	5	amod	_	_
+7	effort	effort	NOUN	NOUN	Gender=Masc|Number=Sing	5	dep	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Oh	Oh	INTJ	INTJ	_	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Christ	Christ	PROPN	PROPN	_	2	conj	_	_
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	I	I	X	X	_	0	ROOT	_	_
+2	wish	wish	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	you	you	X	X	_	1	flat:foreign	_	_
+4	was	was	X	X	_	1	dep	_	_
+5	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	X	X	_	2	expl:pass	_	_
+2	promised	promised	X	X	_	0	ROOT	_	_
+3	to	to	X	X	_	2	advmod	_	_
+4	take	take	X	X	_	3	flat:foreign	_	_
+5	me	me	PRON	PRON	Number=Sing|Person=1	3	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	hush	hush	ADJ	ADJ	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	We'	we'	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+2	re	re	NOUN	NOUN	_	3	det	_	_
+3	almost	almost	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	there	ther	ADJ	ADJ	Gender=Masc|Number=Sing	3	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	2	nsubj	_	_
+2	supported	supported	X	X	_	15	dep	_	_
+3	the	the	X	X	_	2	advmod	_	_
+4	man	man	X	X	_	2	dep	_	_
+5	to	to	X	X	_	2	dep	_	_
+6	the	the	X	X	_	5	flat:foreign	_	_
+7	edge	edge	X	X	_	5	flat:foreign	_	_
+8	of	of	X	X	_	2	advcl	_	_
+9	the	the	X	X	_	8	flat:foreign	_	_
+10	bank	bank	X	X	_	8	flat:foreign	_	_
+11	and	and	X	X	_	8	flat:foreign	_	_
+12	passed	passed	X	X	_	8	flat:foreign	_	_
+13	the	the	X	X	_	8	flat:foreign	_	_
+14	frail	frail	X	X	_	8	flat:foreign	_	_
+15	figure	figurer	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+16	over	over	X	X	_	15	xcomp	_	_
+17	the	the	X	X	_	15	obl:arg	_	_
+18	bow	bow	X	X	_	15	advmod	_	_
+19	of	of	X	X	_	21	dep	_	_
+20	the	the	X	X	_	21	dep	_	_
+21	nearest	nearest	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	obl:arg	_	_
+22	skiff	skiff	NOUN	NOUN	Gender=Fem|Number=Sing	21	amod	_	_
+23	.	.	PUNCT	PUNCT	_	15	punct	_	_
+
+1	The	The	X	X	_	6	dep	_	_
+2	man	man	X	X	_	1	fixed	_	_
+3	swayed	swayed	ADV	ADV	_	1	fixed	_	_
+4	on	on	PRON	PRON	Number=Sing|Person=3	6	nsubj	_	_
+5	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_
+6	thwart	thwart	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	turning	turning	NOUN	NOUN	Gender=Masc|Number=Sing	6	obl:mod	_	_
+9	his	his	X	X	_	8	dep	_	_
+10	ruined	ruined	X	X	_	8	amod	_	_
+11	eyes	eyes	X	X	_	8	dep	_	_
+12	from	from	X	X	_	11	fixed	_	_
+13	side	side	X	X	_	11	flat:foreign	_	_
+14	to	to	X	X	_	11	dep	_	_
+15	side	side	X	X	_	8	amod	_	_
+16	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	turned	turned	X	X	_	1	dep	_	_
+3	away	away	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	sickened	sickened	PROPN	PROPN	_	3	obl:mod	_	_
+6	for	for	X	X	_	3	dep	_	_
+7	the	the	X	X	_	2	flat:foreign	_	_
+8	first	first	X	X	_	2	flat:foreign	_	_
+9	time	time	X	X	_	2	flat:foreign	_	_
+10	in	in	X	X	_	2	flat:foreign	_	_
+11	many	many	X	X	_	2	flat:foreign	_	_
+12	months	months	X	X	_	2	amod	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	heard	heard	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	patient	patient	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+5	voice	voice	X	X	_	1	acl	_	_
+6	calling	calling	X	X	_	5	xcomp	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	?	?	PUNCT	PUNCT	_	2	punct	_	_
+4	?	?	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Where	Where	X	X	_	0	ROOT	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	you	you	X	X	_	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	Henry	Henry	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	3	punct	_	_
+2	--	--	PUNCT	PUNCT	_	3	punct	_	_
+3	Make	Make	X	X	_	0	ROOT	_	_
+4	him	him	NOUN	NOUN	Gender=Masc|Number=Plur	5	dep	_	_
+5	lie	lier	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_
+6	down	down	ADJ	ADJ	Gender=Masc|Number=Plur	5	xcomp	_	_
+7	!	!	PUNCT	PUNCT	_	3	punct	_	_
+8	!	!	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	2	nsubj	_	_
+2	snatched	snatched	X	X	_	3	dep	_	_
+3	a	avoir	X	X	_	0	ROOT	_	_
+4	deep	deep	ADV	ADV	_	3	advmod	_	_
+5	breath	breath	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	_
+6	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	He	He	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	not	not	X	X	_	1	dep	_	_
+4	meant	meer	VERB	VERB	Tense=Pres|VerbForm=Part	1	acl	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	shout	shout	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	stood	stood	X	X	_	1	flat:foreign	_	_
+3	with	with	X	X	_	1	flat:foreign	_	_
+4	his	his	X	X	_	1	dep	_	_
+5	back	back	X	X	_	1	dep	_	_
+6	to	to	X	X	_	1	dep	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	skiff	skiff	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	men	men	X	X	_	1	flat:foreign	_	_
+3	mewed	mewed	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	and	and	X	X	_	2	advmod	_	_
+2	scratched	scratched	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	begging	begging	NOUN	NOUN	Gender=Masc|Number=Plur	2	appos	_	_
+5	to	to	X	X	_	4	dep	_	_
+6	be	be	X	X	_	5	dep	_	_
+7	taken	taken	PROPN	PROPN	Gender=Masc|Number=Sing	5	dep	_	_
+8	away	away	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	3	expl:comp	_	_
+2	spoke	spoke	X	X	_	3	amod	_	_
+3	bewilderedly	bewilderedly	X	X	_	0	ROOT	_	_
+
+1	to	to	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	dark	dark	X	X	_	1	flat:foreign	_	_
+
+1	night	night	X	X	_	0	ROOT	_	_
+2	flecked	flecked	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
+3	with	with	X	X	_	1	dep	_	_
+4	pine	piner	X	X	_	1	dep	_	SpaceAfter=No
+5	-	-	PROPN	PROPN	_	1	amod	_	SpaceAfter=No
+6	knot	knot	X	X	_	1	punct	_	_
+
+1	torches	torche	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	Goddamn	Goddamn	X	X	_	0	ROOT	_	_
+3	you	you	X	X	_	2	amod	_	_
+4	!	!	PUNCT	PUNCT	_	2	punct	_	_
+
+1	!	!	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	What	What	X	X	_	0	ROOT	_	_
+2	do	do	X	X	_	3	case	_	_
+3	you	you	X	X	_	1	obl:mod	_	_
+4	do	do	X	X	_	1	dep	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	them	them	X	X	_	1	dep	_	_
+7	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Intelligence	intelligence	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	jabbed	jabbed	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_
+3	at	at	X	X	_	1	dep	_	_
+4	him	him	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+5	accusingly	accusingly	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	was	was	X	X	_	1	flat:foreign	_	_
+3	angry	angry	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	sickened	sickened	PROPN	PROPN	_	3	conj	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	not	not	X	X	_	1	dep	_	_
+4	felt	felt	X	X	_	1	flat:foreign	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	during	during	X	X	_	1	dep	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	afternoon	afternoon	X	X	_	1	flat:foreign	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	No	No	X	X	_	4	advmod	_	_
+2	,	,	PUNCT	PUNCT	_	4	punct	_	_
+3	nor	nor	X	X	_	4	advmod	_	_
+4	later	later	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	All	All	X	X	_	0	ROOT	_	_
+2	his	his	X	X	_	1	flat:foreign	_	_
+3	emotions	emotion	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+4	had	had	X	X	_	1	dep	_	_
+5	been	been	X	X	_	4	dep	_	_
+6	inward	inward	PROPN	PROPN	_	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	self	self	PROPN	PROPN	Number=Sing	1	conj	_	SpaceAfter=No
+9	-	-	PROPN	PROPN	_	1	conj	_	SpaceAfter=No
+10	conscious	conscious	PROPN	PROPN	_	1	nsubj	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	war	war	X	X	_	1	flat:foreign	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+3	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	dep	_	_
+4	night	night	X	X	_	5	advmod	_	_
+5	like	like	X	X	_	0	ROOT	_	_
+6	this	this	X	X	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	5	punct	_	_
+8	it	it	X	X	_	5	dep	_	_
+9	was	was	X	X	_	8	flat:foreign	_	_
+10	only	only	X	X	_	8	flat:foreign	_	_
+11	the	the	X	X	_	8	flat:foreign	_	_
+
+1	outward	outward	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+2	emotions	emotion	NOUN	NOUN	Gender=Fem|Number=Plur	1	obj	_	_
+
+1	that	that	X	X	_	0	ROOT	_	_
+
+1	mattered	mattered	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	what	what	X	X	_	1	conj	_	_
+4	could	could	X	X	_	3	flat:name	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	flung	flung	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	3	acl	_	_
+7	out	out	X	X	_	6	advmod	_	_
+8	into	into	X	X	_	1	flat:foreign	_	_
+9	the	the	X	X	_	1	flat:foreign	_	_
+10	darkness	darkness	X	X	_	9	flat:foreign	_	_
+
+1	to	to	X	X	_	2	case	_	_
+2	damage	damage	X	X	_	0	ROOT	_	_
+3	others	others	PROPN	PROPN	_	2	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Yes	Yes	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	That	That	X	X	_	0	ROOT	_	_
+2	was	was	X	X	_	1	flat:foreign	_	_
+3	it	it	X	X	_	1	dep	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	was	was	X	X	_	1	dep	_	_
+3	sure	sur	ADJ	ADJ	Gender=Fem|Number=Sing	1	dep	_	_
+4	of	of	ADP	ADP	_	5	case	_	_
+5	it	it	PROPN	PROPN	_	1	dep	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	John'	John'	X	X	_	3	case	_	SpaceAfter=No
+2	s	s	PRON	PRON	Number=Plur|Person=1|Reflex=Yes	3	det	_	_
+3	type	type	NOUN	NOUN	Gender=Masc|Number=Sing	6	obl:mod	_	_
+4	of	of	ADP	ADP	_	5	case	_	_
+5	man	man	X	X	_	3	nmod	_	_
+6	allowed	allowed	X	X	_	8	dep	_	_
+7	this	this	X	X	_	6	dep	_	_
+8	sort	sortir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	of	of	X	X	_	8	advmod	_	_
+10	thing	thing	X	X	_	9	flat:foreign	_	_
+11	to	to	X	X	_	8	advmod	_	_
+12	happen	happen	X	X	_	8	xcomp	_	_
+13	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	What	What	PROPN	PROPN	_	3	nsubj	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_
+3	fool	fool	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+4	he	he	X	X	_	10	case	_	_
+5	had	had	X	X	_	4	fixed	_	_
+6	been	been	X	X	_	4	fixed	_	_
+7	to	to	X	X	_	4	dep	_	_
+8	think	think	X	X	_	4	fixed	_	_
+9	of	of	X	X	_	10	dep	_	_
+10	his	his	X	X	_	3	obl:mod	_	_
+11	brother	brother	X	X	_	10	flat:name	_	_
+12	!	!	PUNCT	PUNCT	_	3	punct	_	_
+13	!	!	PUNCT	PUNCT	_	3	punct	_	_
+
+1	So	So	X	X	_	0	ROOT	_	_
+2	Charles	Charles	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	was	was	X	X	_	2	dep	_	_
+4	dead	dead	X	X	_	2	flat:name	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	What	What	X	X	_	0	ROOT	_	_
+2	did	did	X	X	_	1	flat:foreign	_	_
+3	it	it	X	X	_	1	dep	_	_
+4	matter	matter	VERB	VERB	VerbForm=Inf	1	xcomp	_	_
+5	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	His	His	X	X	_	8	nsubj	_	_
+2	name	name	X	X	_	1	flat:foreign	_	_
+3	had	had	X	X	_	1	flat:foreign	_	_
+4	been	been	X	X	_	3	dep	_	_
+5	crossed	crossed	X	X	_	1	flat:foreign	_	_
+6	off	off	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+8	list	list	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Already	Already	PROPN	PROPN	_	2	nsubj	_	_
+2	his	his	X	X	_	0	ROOT	_	_
+3	cool	cool	ADJ	ADJ	Number=Plur	2	amod	_	_
+4	body	body	X	X	_	2	punct	_	_
+5	lay	lay	X	X	_	4	flat:foreign	_	_
+6	in	in	X	X	_	2	dep	_	_
+7	the	the	X	X	_	2	dep	_	_
+8	ground	ground	X	X	_	2	flat:foreign	_	_
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	What	What	X	X	_	0	ROOT	_	_
+2	words	words	X	X	_	1	flat:foreign	_	_
+3	had	had	X	X	_	1	dep	_	_
+4	any	any	X	X	_	1	flat:foreign	_	_
+5	meaning	meaning	X	X	_	1	flat:foreign	_	_
+6	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	2	punct	_	_
+2	What	What	X	X	_	0	ROOT	_	_
+3	had	had	X	X	_	2	flat:name	_	_
+4	he	he	X	X	_	2	dep	_	_
+5	thought	thought	ADJ	ADJ	Number=Sing	2	dep	_	_
+6	of	of	X	X	_	2	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	2	punct	_	_
+8	to	to	X	X	_	11	case	_	_
+9	go	go	X	X	_	8	flat:foreign	_	_
+10	to	to	X	X	_	8	flat:foreign	_	_
+11	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+12	,	,	PUNCT	PUNCT	_	2	punct	_	_
+13	grovel	grovel	NOUN	NOUN	Gender=Masc|Number=Sing	2	parataxis	_	_
+14	and	and	X	X	_	15	mark	_	_
+15	beg	beg	ADP	ADP	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	advcl	_	_
+16	understanding	understanding	X	X	_	15	dep	_	_
+17	?	?	PUNCT	PUNCT	_	2	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	To	To	X	X	_	2	dep	_	_
+2	confess	confess	X	X	_	0	ROOT	_	_
+3	with	with	X	X	_	2	dep	_	_
+4	a	avoir	X	X	_	2	dep	_	_
+5	canvas	canvas	X	X	_	2	obj	_	_
+6	chair	chair	X	X	_	5	amod	_	_
+7	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	prie	prier	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	parataxis	_	SpaceAfter=No
+10	-	-	PROPN	PROPN	_	2	advmod	_	SpaceAfter=No
+11	dieu	dieu	PROPN	PROPN	_	2	obj	_	_
+12	,	,	PUNCT	PUNCT	_	2	punct	_	_
+13	gouging	gouging	NOUN	NOUN	Gender=Masc|Number=Plur	2	obl:mod	_	_
+14	at	at	X	X	_	15	case	_	_
+15	his	his	X	X	_	2	obl:mod	_	_
+16	heart	heart	X	X	_	2	advmod	_	_
+17	until	until	X	X	_	2	dep	_	_
+18	a	avoir	X	X	_	21	cop	_	_
+19	rough	rough	X	X	_	18	dep	_	_
+20	and	and	X	X	_	18	dep	_	_
+21	stupid	stupid	X	X	_	2	dep	_	_
+22	hand	hand	X	X	_	2	dep	_	_
+23	bade	bade	X	X	_	2	punct	_	_
+24	him	him	NOUN	NOUN	Gender=Masc|Number=Sing	2	dep	_	_
+25	rise	rise	X	X	_	24	flat:foreign	_	_
+26	and	and	X	X	_	24	flat:foreign	_	_
+27	go	go	X	X	_	24	flat:foreign	_	_
+28	?	?	PUNCT	PUNCT	_	2	punct	_	_
+29	?	?	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Men	men	NOUN	NOUN	Gender=Masc|Number=Plur	17	nsubj	_	_
+2	were	were	X	X	_	1	flat:foreign	_	_
+3	slaughtered	slaughtered	X	X	_	1	flat:foreign	_	_
+4	every	every	X	X	_	1	flat:foreign	_	_
+5	day	day	X	X	_	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	tumbled	tumbled	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+8	into	into	X	X	_	7	amod	_	_
+9	eternity	eternity	X	X	_	1	flat:foreign	_	_
+10	like	like	X	X	_	9	flat:name	_	_
+11	so	so	X	X	_	9	dep	_	_
+12	many	many	X	X	_	9	dep	_	_
+13	torn	torn	PROPN	PROPN	_	9	flat:name	_	_
+14	parcels	parcels	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+15	flung	flung	VERB	VERB	Tense=Pres|VerbForm=Part	1	flat:foreign	_	_
+16	down	down	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+17	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+18	portable	portable	ADJ	ADJ	Number=Sing	19	det	_	_
+19	chute	chute	NOUN	NOUN	Gender=Fem|Number=Sing	17	obj	_	_
+20	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	What	What	X	X	_	7	dep	_	_
+2	made	made	X	X	_	1	punct	_	_
+3	him	him	X	X	_	7	nsubj	_	_
+4	think	think	ADJ	ADJ	Gender=Masc	3	amod	_	_
+5	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	3	appos	_	_
+6	had	had	X	X	_	5	flat:name	_	_
+7	a	avoir	X	X	_	11	dep	_	_
+8	right	right	X	X	_	7	dep	_	_
+9	to	to	X	X	_	7	dep	_	_
+10	witness	witness	X	X	_	7	advmod	_	_
+11	his	his	X	X	_	0	ROOT	_	_
+12	brother'	brother'	X	X	_	11	dep	_	SpaceAfter=No
+13	s	s	PRON	PRON	Person=3|Reflex=Yes	14	det	_	_
+14	humiliation	humiliation	NOUN	NOUN	Gender=Fem|Number=Sing	11	nmod	_	_
+15	?	?	PUNCT	PUNCT	_	11	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	What	What	X	X	_	8	amod	_	_
+2	right	right	X	X	_	1	flat:foreign	_	_
+3	had	had	X	X	_	1	flat:foreign	_	_
+4	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	any	any	X	X	_	1	flat:foreign	_	_
+7	special	special	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+8	consideration	consideration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+9	?	?	PUNCT	PUNCT	_	8	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	2	punct	_	_
+2	Was	Was	X	X	_	0	ROOT	_	_
+3	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+4	better	better	VERB	VERB	VerbForm=Inf	3	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	3	punct	_	_
+6	more	more	X	X	_	2	flat:foreign	_	_
+7	deserving	deserving	X	X	_	2	flat:foreign	_	_
+8	?	?	PUNCT	PUNCT	_	2	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	hell	hell	X	X	_	1	flat:foreign	_	_
+3	with	with	X	X	_	1	flat:foreign	_	_
+4	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Let	Let	X	X	_	0	ROOT	_	_
+
+1	him	him	X	X	_	12	nsubj	_	_
+2	chafe	chafe	X	X	_	4	case	_	_
+3	with	with	X	X	_	2	dep	_	_
+4	impatience	impatience	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	to	to	X	X	_	1	flat:foreign	_	_
+6	see	see	X	X	_	1	punct	_	_
+7	Charles	Charles	PROPN	PROPN	Gender=Masc|Number=Sing	6	flat:name	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	rip	rip	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+10	open	open	X	X	_	1	amod	_	_
+11	the	the	X	X	_	1	dep	_	_
+12	note	note	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+13	with	with	X	X	_	12	dep	_	_
+14	trembling	trembling	NOUN	NOUN	Gender=Masc|Number=Sing	12	dep	_	_
+15	hands	hand	ADJ	ADJ	Gender=Masc|Number=Plur	12	amod	_	_
+16	and	and	X	X	_	12	dep	_	_
+17	read	read	X	X	_	12	flat:foreign	_	_
+18	the	the	X	X	_	12	dep	_	_
+19	formal	formal	X	X	_	12	dep	_	_
+20	report	report	NOUN	NOUN	Gender=Masc|Number=Sing	12	nmod	_	_
+21	in	in	X	X	_	24	case	_	_
+22	Hillman'	Hillman'	PROPN	PROPN	_	21	dep	_	SpaceAfter=No
+23	s	s	PRON	PRON	Person=3|Reflex=Yes	24	det	_	_
+24	beautiful	beautiful	X	X	_	12	nmod	_	_
+25	,	,	PUNCT	PUNCT	_	28	punct	_	_
+26	schoolmaster'	schoolmaster'	PROPN	PROPN	_	28	nsubj	_	SpaceAfter=No
+27	s	s	PRON	PRON	Person=3|Reflex=Yes	28	obj	_	_
+28	hand	hand	X	X	_	12	dep	_	_
+29	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	would	would	X	X	_	1	flat:name	_	_
+3	curse	curse	X	X	_	1	flat:name	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	he	PRON	PRON	Number=Sing|Person=1	0	ROOT	_	_
+2	believed	believed	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	1	flat:foreign	_	_
+4	brave	brave	X	X	_	1	amod	_	_
+5	boys	boy	PROPN	PROPN	_	4	obj	_	_
+6	didn'	didn'	ADP	ADP	_	7	case	_	SpaceAfter=No
+7	t	t	PROPN	PROPN	_	4	obl:mod	_	_
+8	cry	cry	PROPN	PROPN	_	7	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Watson	Watson	PROPN	PROPN	_	0	ROOT	_	_
+2	spat	spat	ADJ	ADJ	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	1	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	ground	ground	X	X	_	1	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	0	ROOT	_	_
+2	was	was	X	X	_	1	flat:foreign	_	_
+3	grimly	grimly	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	satisfied	satisfied	ADJ	ADJ	Number=Sing	1	amod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	He	He	PROPN	PROPN	_	4	nsubj	_	_
+2	had	had	X	X	_	1	dep	_	_
+3	stupidly	stupidly	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	_
+4	thought	thought	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+5	himself	himself	PROPN	PROPN	_	4	obj	_	_
+
+1	compelled	compelled	PROPN	PROPN	_	7	dep	_	_
+2	to	to	X	X	_	3	dep	_	_
+3	ease	ease	X	X	_	4	dep	_	_
+4	his	his	X	X	_	1	flat:foreign	_	_
+5	brother'	brother'	X	X	_	4	dep	_	SpaceAfter=No
+6	s	s	PRON	PRON	Person=3|Reflex=Yes	7	expl:comp	_	_
+7	pain	pain	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Now	Now	X	X	_	0	ROOT	_	_
+2	he	he	X	X	_	3	case	_	_
+3	knew	knew	PROPN	PROPN	_	1	obl:mod	_	_
+4	perfectly	perfectly	X	X	_	1	flat:foreign	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	he	he	X	X	_	5	dep	_	_
+7	had	had	X	X	_	6	dep	_	_
+8	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+9	longed	longed	ADJ	ADJ	Gender=Masc|Number=Sing	8	amod	_	_
+10	to	to	X	X	_	13	dep	_	_
+11	increase	increase	X	X	_	10	flat:foreign	_	_
+12	his	his	X	X	_	10	flat:foreign	_	_
+13	own	own	X	X	_	1	advcl	_	_
+14	suffering	suffering	X	X	_	13	xcomp	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No

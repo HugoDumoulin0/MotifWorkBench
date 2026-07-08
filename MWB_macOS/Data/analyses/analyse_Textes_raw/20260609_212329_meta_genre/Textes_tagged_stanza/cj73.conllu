@@ -1,0 +1,2828 @@
+1	Organization	organization	NOUN	NOUN	Gender=Fem|Number=Sing	17	nsubj	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	In	In	X	X	_	1	dep	_	_
+4	this	this	X	X	_	3	flat:foreign	_	_
+5	publication	publication	X	X	_	3	flat:foreign	_	_
+6	measurements	measurement	NOUN	NOUN	Gender=Masc|Number=Plur	3	flat:foreign	_	_
+7	of	of	X	X	_	9	case	_	_
+8	interfacial	interfacial	ADJ	ADJ	Number=Plur	9	amod	_	_
+9	angles	angle	NOUN	NOUN	Gender=Masc|Number=Plur	3	nmod	_	_
+10	of	of	X	X	_	11	case	_	_
+11	crystals	crystal	NOUN	NOUN	Gender=Fem|Number=Sing	9	nmod	_	_
+12	are	are	X	X	_	3	flat:foreign	_	_
+13	used	used	X	X	_	3	flat:foreign	_	_
+14	to	to	X	X	_	15	dep	_	_
+15	classify	classify	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+16	and	and	X	X	_	15	advmod	_	_
+17	identify	identify	X	X	_	0	ROOT	_	_
+18	chemical	chemical	X	X	_	17	conj	_	_
+19	substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	17	xcomp	_	_
+20	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	T.	t.	NOUN	NOUN	Gender=Masc|Number=Sing	8	punct	_	_
+2	V.	v.	NOUN	NOUN	_	1	flat:name	_	_
+3	Barker	Barker	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	who	who	X	X	_	1	dep	_	_
+6	developed	developed	X	X	_	5	flat:name	_	_
+7	the	the	X	X	_	5	dep	_	_
+8	classification	classification	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	angle	angle	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	system	system	X	X	_	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	was	was	X	X	_	2	acl	_	_
+6	about	about	X	X	_	5	fixed	_	_
+7	to	to	X	X	_	5	flat:foreign	_	_
+8	begin	begin	X	X	_	5	flat:foreign	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+
+1	systematic	systematic	X	X	_	0	ROOT	_	_
+2	compilation	compilation	X	X	_	1	amod	_	_
+3	of	of	X	X	_	5	case	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	index	index	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	when	when	X	X	_	5	amod	_	_
+7	he	he	X	X	_	8	expl:pass	_	_
+8	died	died	X	X	_	5	conj	_	_
+9	in	in	X	X	_	1	amod	_	_
+10	1931	1931	NUM	NUM	NumType=Card	1	nummod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	amod	_	_
+2	compilation	compilation	X	X	_	0	ROOT	_	_
+3	work	work	X	X	_	2	nmod	_	_
+4	was	was	X	X	_	2	dep	_	_
+5	undertaken	undertaken	NOUN	NOUN	_	2	nmod	_	_
+
+1	by	by	X	X	_	3	nsubj	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	dep	_	_
+3	number	number	X	X	_	7	dep	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	interested	interested	X	X	_	6	amod	_	_
+6	crystallographers	crystallographer	NOUN	NOUN	Number=Plur	3	obj	_	_
+7	in	in	X	X	_	14	case	_	_
+8	the	the	X	X	_	7	dep	_	_
+9	Department	Department	X	X	_	7	dep	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	Mineralogy	Mineralogy	PROPN	PROPN	_	7	obl:arg	_	_
+12	of	of	X	X	_	7	dep	_	_
+13	the	the	X	X	_	7	dep	_	_
+14	University	University	X	X	_	0	ROOT	_	_
+15	Museum	Museum	PROPN	PROPN	_	14	flat:name	_	_
+16	at	at	X	X	_	17	case	_	_
+17	Oxford	Oxford	PROPN	PROPN	Gender=Masc|Number=Sing	14	nmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Since	Since	PROPN	PROPN	_	0	ROOT	_	_
+2	1948	1948	NUM	NUM	NumType=Card	1	nummod	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	working	working	X	X	_	3	flat:foreign	_	_
+5	headquarters	headquarters	X	X	_	1	flat:foreign	_	_
+6	has	has	X	X	_	5	dep	_	_
+7	been	been	X	X	_	5	dep	_	_
+8	the	the	X	X	_	5	flat:foreign	_	_
+9	Department	Department	X	X	_	5	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	Geology	Geology	X	X	_	5	dep	_	_
+12	and	and	X	X	_	5	flat:foreign	_	_
+13	Mineralogy	Mineralogy	PROPN	PROPN	_	1	flat:name	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Numerous	Numerous	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	cooperating	cooperating	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
+3	individuals	individual	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+4	in	in	X	X	_	5	case	_	_
+5	Great	Great	X	X	_	1	nmod	_	_
+6	Britain	Britain	X	X	_	1	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	Holland	Holland	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	United	United	X	X	_	10	flat:foreign	_	_
+12	States	States	X	X	_	10	flat:foreign	_	_
+13	,	,	PUNCT	PUNCT	_	1	punct	_	_
+14	and	and	X	X	_	1	dep	_	_
+15	Belgium	Belgium	X	X	_	14	flat:foreign	_	_
+16	have	hav	ADJ	ADJ	Gender=Masc|Number=Plur	14	flat:foreign	_	_
+17	contributed	contributed	X	X	_	14	flat:foreign	_	_
+18	editorially	editorially	ADJ	ADJ	Gender=Masc|Number=Sing	14	flat:foreign	_	_
+19	or	or	CCONJ	CCONJ	_	21	cc	_	_
+20	by	by	X	X	_	21	dep	_	_
+21	making	making	X	X	_	22	dep	_	_
+22	calculations	calculation	NOUN	NOUN	Gender=Fem|Number=Plur	14	flat:foreign	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Great	Great	X	X	_	2	nsubj	_	_
+2	interest	interest	X	X	_	0	ROOT	_	_
+3	and	and	X	X	_	2	advmod	_	_
+4	practical	practical	X	X	_	2	obj	_	_
+5	help	help	X	X	_	2	dep	_	_
+6	have	haver	X	X	_	2	obj	_	_
+7	been	been	X	X	_	6	dep	_	_
+8	given	given	X	X	_	2	dep	_	_
+9	by	by	X	X	_	2	obl:mod	_	_
+10	the	the	X	X	_	2	dep	_	_
+11	Barker	Barker	PROPN	PROPN	Gender=Masc|Number=Sing	2	obj	_	_
+12	Index	Index	X	X	_	2	dep	_	_
+13	Committee	Committee	PROPN	PROPN	_	2	obj	_	_
+14	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Financial	Financial	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	material	material	X	X	_	2	flat:foreign	_	_
+4	help	help	X	X	_	2	flat:foreign	_	_
+5	have	haver	X	X	_	6	amod	_	_
+6	come	come	NOUN	NOUN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+7	from	from	X	X	_	6	dep	_	_
+8	academic	academic	X	X	_	2	dep	_	_
+9	,	,	PUNCT	PUNCT	_	2	punct	_	_
+10	governmental	governmental	PROPN	PROPN	Gender=Fem|Number=Sing	2	dep	_	_
+11	,	,	PUNCT	PUNCT	_	2	punct	_	_
+12	and	and	X	X	_	2	flat:foreign	_	_
+13	industrial	industrial	X	X	_	12	flat:foreign	_	_
+
+1	organizations	organization	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	in	in	X	X	_	1	amod	_	_
+3	England	England	X	X	_	1	dep	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	Holland	Holland	X	X	_	1	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Editors	Editors	X	X	_	0	ROOT	_	_
+2	for	for	X	X	_	1	flat:foreign	_	_
+
+1	Volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	1	1	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	and	and	X	X	_	1	parataxis	_	_
+5	2	2	NUM	NUM	NumType=Card	4	nummod	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	were	were	X	X	_	1	amod	_	_
+
+1	M.	m.	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	W.	W.	PROPN	PROPN	_	1	flat:name	_	_
+3	Porter	porter	VERB	VERB	VerbForm=Inf	1	flat:name	_	_
+4	and	and	X	X	_	3	dep	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	late	late	X	X	_	1	dep	_	_
+7	R.	r.	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:name	_	_
+8	C.	C.	PROPN	PROPN	_	1	flat:name	_	_
+9	Spiller	Spiller	PROPN	PROPN	_	1	flat:name	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	both	both	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+12	of	of	ADP	ADP	_	13	case	_	_
+13	Oxford	Oxford	PROPN	PROPN	Gender=Masc|Number=Sing	11	nmod	_	_
+14	University	University	PROPN	PROPN	_	13	nmod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	third	third	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+4	remains	remain	ADJ	ADJ	Gender=Masc|Number=Plur	2	amod	_	_
+5	to	to	X	X	_	2	dep	_	_
+6	be	be	X	X	_	5	dep	_	_
+7	published	published	X	X	_	5	dep	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	1	1	NUM	NUM	NumType=Card	3	nummod	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	deals	deal	X	X	_	1	nmod	_	_
+7	with	with	X	X	_	6	nmod	_	_
+8	2991	2991	NUM	NUM	NumType=Card	6	punct	_	_
+
+1	compounds	compounds	X	X	_	0	ROOT	_	_
+2	belonging	belonging	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	tetragonal	tetragonal	X	X	_	1	advmod	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	hexagonal	hexagonal	ADJ	ADJ	Gender=Masc|Number=Sing	1	advmod	_	_
+8	and	and	X	X	_	7	amod	_	_
+9	trigonal	trigonal	X	X	_	7	flat:foreign	_	_
+10	,	,	PUNCT	PUNCT	_	7	punct	_	_
+11	and	and	X	X	_	7	dep	_	_
+12	orthorhombic	orthorhombic	X	X	_	7	flat:foreign	_	_
+13	systems	systems	X	X	_	7	flat:foreign	_	_
+14	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+
+1	Volume	Volume	PROPN	PROPN	_	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	5	punct	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	about	about	X	X	_	1	fixed	_	_
+4	3500	3500	NUM	NUM	NumType=Card	3	nummod	_	_
+5	monoclinic	monoclinic	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+6	substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	5	amod	_	_
+7	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	11	nsubj	_	_
+2	3	3	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	6	punct	_	_
+4	,	,	PUNCT	PUNCT	_	6	punct	_	_
+5	in	in	X	X	_	6	case	_	_
+6	preparation	preparation	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	6	punct	_	_
+8	will	will	X	X	_	6	nmod	_	_
+9	treat	treat	X	X	_	8	flat:foreign	_	_
+10	the	the	X	X	_	11	advmod	_	_
+11	anorthic	anorthic	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+12	compounds	compounds	X	X	_	11	dep	_	_
+13	described	described	X	X	_	11	xcomp	_	_
+14	in	in	X	X	_	17	mark	_	_
+15	Groth'	Groth'	X	X	_	14	dep	_	SpaceAfter=No
+16	s	s	PRON	PRON	Person=3|Reflex=Yes	17	aux:pass	_	_
+17	Chemische	chemische	NOUN	NOUN	Gender=Fem|Number=Sing	11	obl:mod	_	_
+18	Krystallographie	Krystallographie	PROPN	PROPN	_	17	nmod	_	_
+19	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	The	The	X	X	_	4	dep	_	_
+4	Barker	Barker	PROPN	PROPN	Gender=Masc|Number=Sing	9	nsubj	_	_
+5	system	system	X	X	_	4	flat:name	_	_
+6	is	is	X	X	_	4	dep	_	_
+7	based	based	X	X	_	4	dep	_	_
+8	on	on	PRON	PRON	Number=Sing|Person=3	9	nsubj	_	_
+9	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+10	use	user	X	X	_	9	xcomp	_	_
+11	of	of	X	X	_	12	dep	_	_
+12	the	the	X	X	_	9	advcl	_	_
+13	smallest	smallest	X	X	_	9	xcomp	_	_
+14	number	number	X	X	_	9	obj	_	_
+15	of	of	X	X	_	17	case	_	_
+16	interfacial	interfacial	X	X	_	17	amod	_	_
+17	angles	angle	NOUN	NOUN	Gender=Masc|Number=Plur	9	obl:arg	_	_
+18	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	17	amod	_	_
+19	for	for	X	X	_	20	case	_	_
+20	indexing	indexing	X	X	_	17	nmod	_	_
+21	purposes	purpose	NOUN	NOUN	Gender=Fem|Number=Plur	17	amod	_	_
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Other	Other	X	X	_	0	ROOT	_	_
+2	morphological	morphological	X	X	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	physical	physical	NOUN	NOUN	Number=Sing	2	conj	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	optical	optical	X	X	_	6	flat:foreign	_	_
+8	property	property	X	X	_	7	dep	_	_
+9	values	value	ADJ	ADJ	Number=Plur	6	flat:foreign	_	_
+10	are	are	X	X	_	6	flat:foreign	_	_
+11	also	also	X	X	_	6	flat:foreign	_	_
+12	given	given	X	X	_	6	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	of	of	X	X	_	1	amod	_	_
+3	data	data	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+5	The	The	X	X	_	9	dep	_	_
+6	index	index	X	X	_	5	flat:foreign	_	_
+7	is	is	X	X	_	8	case	_	_
+8	essentially	essentially	X	X	_	5	nmod	_	_
+9	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	aux:tense	_	_
+10	new	new	X	X	_	9	advmod	_	_
+11	treatment	treatment	ADV	ADV	_	9	advmod	_	_
+12	of	of	ADP	ADP	_	13	case	_	_
+13	previously	previously	NOUN	NOUN	Gender=Fem|Number=Sing	14	obl:mod	_	_
+14	compiled	compiled	X	X	_	9	ccomp	_	_
+15	morphological	morphological	X	X	_	1	parataxis	_	_
+16	data	data	ADJ	ADJ	Gender=Fem|Number=Sing	15	amod	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Most	Most	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	1	fixed	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	data	dater	X	X	_	1	flat:foreign	_	_
+5	used	used	X	X	_	1	flat:foreign	_	_
+6	are	are	X	X	_	1	dep	_	_
+7	from	from	X	X	_	6	flat:foreign	_	_
+8	Groth'	Groth'	X	X	_	6	dep	_	SpaceAfter=No
+9	s	s	PRON	PRON	Person=3|Reflex=Yes	10	iobj	_	_
+10	Chemische	chemische	NOUN	NOUN	Gender=Fem|Number=Sing	1	obj	_	_
+11	Krystallographie	Krystallographie	PROPN	PROPN	_	10	nmod	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Criticality	Criticality	PROPN	PROPN	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Every	Every	X	X	_	1	dep	_	_
+4	calculation	calculation	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+5	has	has	X	X	_	1	dep	_	_
+6	been	been	X	X	_	1	dep	_	_
+7	made	made	X	X	_	1	dep	_	_
+8	independently	independently	X	X	_	1	dep	_	_
+9	by	by	X	X	_	8	dep	_	_
+10	two	two	X	X	_	1	dep	_	_
+11	workers	workers	X	X	_	1	dep	_	_
+12	and	and	X	X	_	1	dep	_	_
+13	checked	checked	X	X	_	1	dep	_	_
+14	by	by	X	X	_	1	dep	_	_
+15	one	one	X	X	_	1	dep	_	_
+16	of	of	X	X	_	17	dep	_	_
+17	the	the	X	X	_	1	dep	_	_
+18	editors	editors	X	X	_	1	dep	_	_
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Use	Use	X	X	_	5	case	_	_
+2	of	of	X	X	_	3	amod	_	_
+3	nomenclature	nomenclature	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	symbols	symbol	NOUN	NOUN	Number=Plur	13	nsubj	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	units	unit	NOUN	NOUN	Gender=Masc|Number=Plur	5	conj	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	physical	physical	X	X	_	5	appos	_	_
+10	constants	constant	ADJ	ADJ	Gender=Masc|Number=Plur	9	amod	_	_
+11	:	:	PUNCT	PUNCT	_	5	punct	_	_
+12	Accepted	Accepted	X	X	_	5	dep	_	_
+13	crystallographic	crystallographic	NOUN	NOUN	_	0	ROOT	_	_
+14	symbolism	symbolism	NOUN	NOUN	Gender=Fem|Number=Plur	13	xcomp	_	_
+
+1	has	has	X	X	_	0	ROOT	_	_
+2	been	been	X	X	_	1	dep	_	_
+3	used	used	X	X	_	1	dep	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+2	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	other	other	X	X	_	3	dep	_	_
+2	symbols	symbols	X	X	_	1	flat:foreign	_	_
+3	related	related	X	X	_	0	ROOT	_	_
+4	to	to	X	X	_	3	dep	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	index	index	NOUN	NOUN	Gender=Masc|Number=Sing	3	obj	_	_
+7	necessarily	necessarily	X	X	_	6	amod	_	_
+8	have	haver	X	X	_	6	amod	_	_
+9	been	been	X	X	_	8	dep	_	_
+10	introduced	introduced	ADJ	ADJ	Gender=Masc	8	advcl	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Currency	Currency	X	X	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	This	This	X	X	_	1	dep	_	_
+
+1	publication	publication	X	X	_	0	ROOT	_	_
+2	covers	covers	X	X	_	1	flat:foreign	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	old	old	X	X	_	1	advmod	_	_
+
+1	literature	literature	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	(	(	PUNCT	PUNCT	_	1	punct	_	_
+3	Groth	Groth	PROPN	PROPN	_	1	appos	_	_
+4	)	)	PUNCT	PUNCT	_	1	punct	_	_
+5	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	there	there	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	4	case	_	_
+3	no	no	X	X	_	2	dep	_	_
+4	mechanism	mechanism	X	X	_	1	nmod	_	_
+5	for	for	X	X	_	1	dep	_	_
+6	keeping	keeping	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+9	up	up	X	X	_	8	dep	_	_
+10	to	to	X	X	_	1	dep	_	_
+11	date	date	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Format	format	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	7	advmod	_	_
+2	publication	publication	X	X	_	1	flat:foreign	_	_
+3	form	form	X	X	_	1	flat:foreign	_	_
+4	is	is	X	X	_	3	dep	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	clothbound	clothbound	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	books	book	ADJ	ADJ	Gender=Masc|Number=Plur	7	xcomp	_	_
+9	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	data	dater	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	2	punct	_	_
+4	presented	presented	X	X	_	1	flat:foreign	_	_
+5	in	in	X	X	_	1	flat:foreign	_	_
+6	lists	lists	X	X	_	1	flat:foreign	_	_
+7	and	and	X	X	_	1	flat:foreign	_	_
+8	tables	table	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Part	part	NOUN	NOUN	Number=Sing	0	ROOT	_	_
+2	1	1	NUM	NUM	NumType=Card	4	nummod	_	_
+3	in	in	ADP	ADP	_	4	case	_	_
+4	both	both	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	4	amod	_	_
+6	is	is	X	X	_	4	dep	_	_
+7	labeled	labeled	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+
+1	`	`	ADP	ADP	_	3	case	_	SpaceAfter=No
+2	`	`	ADP	ADP	_	3	case	_	_
+3	Introduction	introduction	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	And	And	X	X	_	3	dep	_	_
+
+1	Tables	table	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+
+1	''	''	PUNCT	PUNCT	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	19	nsubj	_	_
+2	tables	table	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+3	include	include	X	X	_	1	flat:foreign	_	_
+4	those	those	X	X	_	1	flat:foreign	_	_
+5	for	for	X	X	_	1	flat:foreign	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	classification	classification	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+8	angles	angle	NOUN	NOUN	Gender=Masc|Number=Plur	7	amod	_	_
+9	,	,	PUNCT	PUNCT	_	11	punct	_	_
+10	refractive	refractiv	ADJ	ADJ	Number=Sing	11	amod	_	_
+11	indices	indice	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+12	,	,	PUNCT	PUNCT	_	1	punct	_	_
+13	and	and	X	X	_	15	case	_	_
+14	melting	melting	X	X	_	15	amod	_	_
+15	points	point	NOUN	NOUN	Gender=Masc|Number=Plur	1	obl:mod	_	_
+16	of	of	X	X	_	19	case	_	_
+17	the	the	X	X	_	16	fixed	_	_
+18	various	various	X	X	_	19	amod	_	_
+19	types	type	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+20	of	of	ADP	ADP	_	21	case	_	_
+21	crystals	crystal	NOUN	NOUN	Gender=Fem|Number=Sing	19	obl:mod	_	_
+22	.	.	PUNCT	PUNCT	_	19	punct	_	_
+
+1	Part	Part	X	X	_	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+3	of	of	ADP	ADP	_	4	case	_	_
+4	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	1	1	NUM	NUM	NumType=Card	4	nummod	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	and	and	X	X	_	1	dep	_	_
+8	Parts	Parts	X	X	_	7	flat:foreign	_	_
+9	2	2	NUM	NUM	NumType=Card	8	nummod	_	_
+10	and	and	X	X	_	8	parataxis	_	_
+11	3	3	NUM	NUM	NumType=Card	8	nummod	_	_
+12	of	of	ADP	ADP	_	13	case	_	_
+13	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+14	2	2	NUM	NUM	NumType=Card	13	nummod	_	_
+15	,	,	PUNCT	PUNCT	_	1	punct	_	_
+16	contain	contain	X	X	_	1	nmod	_	_
+17	the	the	X	X	_	16	flat:foreign	_	_
+18	crystal	crystal	X	X	_	16	flat:foreign	_	_
+19	descriptions	description	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+20	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	These	These	X	X	_	6	nsubj	_	_
+2	are	are	X	X	_	1	punct	_	_
+3	grouped	grouped	PROPN	PROPN	_	1	conj	_	_
+4	into	into	X	X	_	1	flat:foreign	_	_
+5	sections	section	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+6	according	according	X	X	_	0	ROOT	_	_
+
+1	to	to	X	X	_	18	mark	_	_
+2	the	the	X	X	_	1	fixed	_	_
+3	crystal	crystal	X	X	_	1	dep	_	_
+4	system	system	X	X	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	and	and	X	X	_	4	dep	_	_
+7	within	within	X	X	_	6	flat:foreign	_	_
+8	each	each	X	X	_	6	flat:foreign	_	_
+9	section	section	NOUN	NOUN	Gender=Fem|Number=Sing	6	flat:foreign	_	_
+10	compounds	compounds	X	X	_	9	dep	_	_
+11	are	are	X	X	_	6	flat:foreign	_	_
+12	arranged	arranged	X	X	_	4	punct	_	_
+13	in	in	X	X	_	1	dep	_	_
+14	the	the	X	X	_	13	flat:foreign	_	_
+15	same	same	X	X	_	13	flat:foreign	_	_
+16	order	order	ADV	ADV	PronType=Int	18	advmod	_	_
+17	as	as	X	X	_	18	aux:tense	_	_
+18	in	in	X	X	_	0	ROOT	_	_
+19	Groth'	Groth'	X	X	_	18	dep	_	SpaceAfter=No
+20	s	s	PRON	PRON	Person=3|Reflex=Yes	21	iobj	_	_
+21	Chemische	chemische	NOUN	NOUN	Gender=Fem|Number=Sing	18	dep	_	_
+22	Krystallographie	Krystallographie	PROPN	PROPN	_	21	nmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	An	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	alphabetical	alphabetical	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	dep	_	_
+3	list	list	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	obj	_	_
+4	of	of	X	X	_	3	fixed	_	_
+5	chemical	chemical	X	X	_	3	dep	_	_
+6	and	and	X	X	_	3	advcl	_	_
+7	mineralogical	mineralogical	X	X	_	3	parataxis	_	_
+8	names	names	X	X	_	3	amod	_	_
+9	with	with	X	X	_	3	dep	_	_
+10	reference	reference	X	X	_	11	advmod	_	_
+11	numbers	numbers	X	X	_	2	obj	_	_
+12	enables	enable	ADJ	ADJ	Number=Plur	11	conj	_	_
+13	one	one	X	X	_	2	dep	_	_
+14	to	to	X	X	_	15	dep	_	_
+15	find	find	X	X	_	2	obl:mod	_	_
+16	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	aux:tense	_	_
+17	particular	particular	X	X	_	16	obj	_	_
+18	crystal	crystal	PROPN	PROPN	Gender=Masc|Number=Sing	16	obj	_	_
+19	description	description	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+20	.	.	PUNCT	PUNCT	_	19	punct	_	_
+
+1	References	reference	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	to	to	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	data	dater	X	X	_	1	flat:foreign	_	_
+5	sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+6	are	are	X	X	_	5	dep	_	_
+7	given	given	X	X	_	1	flat:foreign	_	_
+8	in	in	X	X	_	1	flat:foreign	_	_
+9	the	the	X	X	_	1	flat:foreign	_	_
+10	crystal	crystal	X	X	_	1	flat:foreign	_	_
+
+1	descriptions	description	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+
+1	distribution	distribution	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Barker	Barker	X	X	_	1	flat:foreign	_	_
+3	index	index	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	is	is	X	X	_	1	dep	_	_
+5	published	published	X	X	_	1	flat:foreign	_	_
+6	for	for	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	Barker	Barker	X	X	_	1	flat:foreign	_	_
+9	Index	Index	X	X	_	1	flat:foreign	_	_
+10	Committee	Committee	X	X	_	1	flat:foreign	_	_
+11	by	by	X	X	_	1	flat:foreign	_	_
+12	W.	W.	X	X	_	1	flat:foreign	_	_
+13	Heffer	Heffer	PROPN	PROPN	_	1	flat:foreign	_	_
+14	&	et	CCONJ	CCONJ	_	15	cc	_	_
+15	Sons	son	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+16	,	,	PUNCT	PUNCT	_	17	punct	_	_
+17	Ltd	Ltd	PROPN	PROPN	_	1	conj	_	SpaceAfter=No
+18	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	4	4	NUM	NUM	NumType=Card	3	nummod	_	_
+3	Petty	Petty	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	Cury	Cury	PROPN	PROPN	_	3	flat:name	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	Cambridge	Cambridge	PROPN	PROPN	Gender=Masc|Number=Sing	3	conj	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	England	England	X	X	_	3	dep	_	_
+9	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	1	1	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	containing	containing	X	X	_	1	nmod	_	_
+5	Parts	Parts	X	X	_	4	flat:foreign	_	_
+6	1	1	NUM	NUM	NumType=Card	4	dep	_	_
+7	and	and	NOUN	NOUN	_	4	parataxis	_	_
+8	2	2	NUM	NUM	NumType=Card	4	nummod	_	_
+9	was	was	X	X	_	4	flat:foreign	_	_
+10	published	published	X	X	_	4	flat:foreign	_	_
+11	in	in	X	X	_	1	parataxis	_	_
+12	1951	1951	NUM	NUM	NumType=Card	1	nummod	_	_
+13	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	in	in	X	X	_	10	expl:pass	_	_
+6	three	three	X	X	_	5	flat:foreign	_	_
+7	parts	part	NOUN	NOUN	Number=Plur	5	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	5	punct	_	_
+9	in	in	ADP	ADP	_	10	dep	_	_
+10	1956	1956	NUM	NUM	NumType=Card	4	nummod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	two	two	X	X	_	1	flat:foreign	_	_
+3	volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+4	are	ar	ADJ	ADJ	Gender=Masc|Number=Plur	3	amod	_	_
+
+1	available	available	X	X	_	0	ROOT	_	_
+2	from	from	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	publisher	publisher	X	X	_	1	flat:foreign	_	_
+5	for	for	ADP	ADP	_	6	case	_	_
+6	$	dollar	NOUN	NOUN	_	1	obl:mod	_	SpaceAfter=No
+7	16.80	16.80	NUM	NUM	NumType=Card	1	nmod	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	$	dollar	NOUN	NOUN	_	1	dep	_	SpaceAfter=No
+3	28.00	28.00	NUM	NUM	NumType=Card	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	respectively	respectively	PROPN	PROPN	_	1	conj	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	2	2	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	-	-	NOUN	NOUN	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	2	2	NOUN	NOUN	NumType=Card	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Crystal	Crystal	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	data	dater	X	X	_	17	dep	_	_
+2	organization	organization	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:name	_	_
+3	:	:	PUNCT	PUNCT	_	1	punct	_	_
+4	The	The	X	X	_	5	advmod	_	_
+5	present	present	X	X	_	11	dep	_	_
+6	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+7	of	of	X	X	_	8	case	_	_
+8	crystal	crystal	PROPN	PROPN	Gender=Masc|Number=Sing	5	obl:arg	_	_
+9	data	dater	X	X	_	5	dep	_	_
+10	was	was	X	X	_	9	dep	_	_
+11	written	written	X	X	_	1	flat:foreign	_	_
+12	by	by	X	X	_	1	flat:foreign	_	_
+13	J.D.H.	J.D.H.	PROPN	PROPN	_	1	nsubj	_	_
+14	Donnay	Donnay	PROPN	PROPN	_	13	flat:name	_	_
+15	,	,	PUNCT	PUNCT	_	13	punct	_	_
+16	the	the	X	X	_	17	case	_	_
+17	Johns	Johns	X	X	_	0	ROOT	_	_
+18	Hopkins	Hopkins	PROPN	PROPN	_	17	flat:name	_	_
+19	University	University	PROPN	PROPN	_	17	flat:name	_	_
+20	,	,	PUNCT	PUNCT	_	21	punct	_	_
+21	Baltimore	Baltimore	PROPN	PROPN	_	17	conj	_	_
+22	,	,	PUNCT	PUNCT	_	17	punct	_	_
+23	Md	md	NOUN	NOUN	_	17	nummod	_	SpaceAfter=No
+24	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	2	punct	_	_
+2	Part	part	NOUN	NOUN	_	22	nmod	_	_
+3	2	2	NUM	NUM	NumType=Card	2	nummod	_	_
+4	)	)	PUNCT	PUNCT	_	2	punct	_	_
+5	)	)	PUNCT	PUNCT	_	2	punct	_	_
+6	and	and	X	X	_	2	dep	_	_
+7	Werner	Werner	PROPN	PROPN	_	6	flat:foreign	_	_
+8	Nowacki	Nowacki	PROPN	PROPN	Gender=Masc|Number=Sing	6	flat:foreign	_	_
+9	,	,	PUNCT	PUNCT	_	10	punct	_	_
+10	University	University	PROPN	PROPN	Gender=Fem|Number=Sing	2	conj	_	_
+11	of	of	X	X	_	12	case	_	_
+12	Berne	Berne	PROPN	PROPN	Gender=Masc|Number=Sing	10	nmod	_	_
+13	,	,	PUNCT	PUNCT	_	2	punct	_	_
+14	Switzerland	Switzerland	PROPN	PROPN	_	2	nmod	_	_
+15	(	(	PUNCT	PUNCT	_	14	punct	_	_
+16	Part	part	NOUN	NOUN	_	14	appos	_	_
+17	1	1	NUM	NUM	NumType=Card	16	nummod	_	_
+18	)	)	PUNCT	PUNCT	_	14	punct	_	_
+19	)	)	PUNCT	PUNCT	_	2	punct	_	_
+20	with	with	X	X	_	2	dep	_	_
+21	the	the	X	X	_	2	dep	_	_
+22	collaboration	collaboration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+23	of	of	X	X	_	24	case	_	_
+24	Gabrielle	Gabrielle	PROPN	PROPN	Gender=Fem|Number=Sing	22	nmod	_	_
+25	Donnay	Donnay	PROPN	PROPN	_	24	flat:name	_	_
+26	,	,	PUNCT	PUNCT	_	22	punct	_	_
+27	U.	U.	PROPN	PROPN	_	22	nmod	_	_
+28	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	22	appos	_	_
+29	Geological	Geological	PROPN	PROPN	_	28	flat:name	_	_
+30	Survey	Survey	X	X	_	28	flat:name	_	_
+31	,	,	PUNCT	PUNCT	_	28	punct	_	_
+32	Washington	Washington	PROPN	PROPN	_	28	nmod	_	_
+33	,	,	PUNCT	PUNCT	_	22	punct	_	_
+34	D.	D.	PROPN	PROPN	_	22	appos	_	_
+35	C.	C.	PROPN	PROPN	_	34	flat:name	_	_
+36	.	.	PUNCT	PUNCT	_	22	punct	_	_
+
+1	Many	Many	X	X	_	0	ROOT	_	_
+2	collaborators	collaborators	X	X	_	1	flat:name	_	_
+3	in	in	X	X	_	2	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	United	United	X	X	_	2	flat:foreign	_	_
+6	States	States	X	X	_	1	flat:foreign	_	_
+7	and	and	X	X	_	1	flat:foreign	_	_
+8	Switzerland	Switzerland	X	X	_	1	flat:foreign	_	_
+9	helped	helped	X	X	_	1	flat:foreign	_	_
+10	in	in	X	X	_	1	dep	_	_
+11	collecting	collecting	X	X	_	1	flat:foreign	_	_
+12	and	and	X	X	_	1	flat:foreign	_	_
+13	assembling	assembling	X	X	_	1	flat:foreign	_	_
+14	data	data	ADJ	ADJ	Gender=Fem|Number=Sing	1	amod	_	_
+15	,	,	PUNCT	PUNCT	_	1	punct	_	_
+16	in	in	X	X	_	17	case	_	_
+17	making	making	X	X	_	1	dep	_	_
+18	calculations	calculation	NOUN	NOUN	Gender=Fem|Number=Plur	17	amod	_	_
+19	,	,	PUNCT	PUNCT	_	1	punct	_	_
+20	and	and	X	X	_	1	dep	_	_
+21	in	in	X	X	_	22	dep	_	_
+22	editing	editing	X	X	_	20	flat:foreign	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Support	support	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	came	came	X	X	_	1	nmod	_	_
+3	from	from	X	X	_	2	dep	_	_
+4	academic	academic	X	X	_	2	dep	_	_
+5	and	and	X	X	_	1	flat:foreign	_	_
+6	industrial	industrial	X	X	_	1	flat:foreign	_	_
+7	groups	group	X	X	_	1	flat:foreign	_	_
+8	in	in	X	X	_	9	case	_	_
+9	these	these	X	X	_	1	nmod	_	_
+10	two	two	X	X	_	1	flat:foreign	_	_
+11	countries	country	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	7	nsubj	_	_
+2	Geological	Geological	X	X	_	1	flat:foreign	_	_
+3	Society	Society	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	6	nmod	_	_
+5	America	America	PROPN	PROPN	_	6	obl:mod	_	_
+6	gave	gave	PRON	PRON	Number=Sing	1	nmod	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	grant	grer	VERB	VERB	Tense=Pres|VerbForm=Part	7	advmod	_	SpaceAfter=No
+9	-	-	PROPN	PROPN	Gender=Masc|Number=Plur	7	obj	_	SpaceAfter=No
+10	in	in	X	X	_	7	obl:arg	_	SpaceAfter=No
+11	-	-	PROPN	PROPN	_	7	obj	_	SpaceAfter=No
+12	aid	aid	X	X	_	7	punct	_	_
+13	to	to	X	X	_	7	dep	_	_
+14	complete	complete	X	X	_	13	flat:foreign	_	_
+15	the	the	X	X	_	13	flat:foreign	_	_
+16	work	work	X	X	_	13	flat:foreign	_	_
+17	and	and	X	X	_	13	flat:foreign	_	_
+18	bore	bore	NOUN	NOUN	Gender=Masc|Number=Sing	13	flat:foreign	_	_
+19	the	the	X	X	_	7	dep	_	_
+20	expenses	expenses	X	X	_	19	flat:foreign	_	_
+21	of	of	X	X	_	22	dep	_	_
+22	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	7	obl:mod	_	_
+23	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Preparation	preparation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	1	amod	_	_
+3	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+4	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	5	amod	_	_
+5	edition	edition	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+6	is	is	X	X	_	8	case	_	_
+7	in	in	X	X	_	8	dep	_	_
+8	progress	progress	X	X	_	5	nmod	_	_
+9	under	under	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	sponsorship	sponsorship	X	X	_	1	flat:foreign	_	_
+12	of	of	X	X	_	16	dep	_	_
+13	the	the	X	X	_	12	fixed	_	_
+14	Crystal	Crystal	X	X	_	12	flat:foreign	_	_
+15	Data	Data	X	X	_	16	dep	_	_
+16	Committee	committee	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	nmod	_	_
+17	of	of	X	X	_	1	dep	_	_
+18	the	the	X	X	_	1	dep	_	_
+
+1	American	American	X	X	_	0	ROOT	_	_
+
+1	Crystallographic	Crystallographic	PROPN	PROPN	_	0	ROOT	_	_
+2	Association	Association	PROPN	PROPN	_	1	amod	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Coeditors	Coeditors	PROPN	PROPN	_	0	ROOT	_	_
+2	are	are	X	X	_	1	punct	_	_
+
+1	J.D.H.	J.D.H.	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Donnay	Donnay	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	G.	G.	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+4	E.	E.	PROPN	PROPN	Gender=Masc|Number=Sing	3	flat:name	_	_
+5	Cox	Cox	PROPN	PROPN	Gender=Masc|Number=Sing	4	flat:name	_	_
+6	of	of	X	X	_	7	case	_	_
+7	Leeds	Leeds	PROPN	PROPN	_	3	nmod	_	_
+8	University	University	PROPN	PROPN	_	3	flat:name	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	and	and	X	X	_	12	cc	_	_
+11	Olga	Olga	X	X	_	10	flat:foreign	_	_
+12	Kennard	Kennard	PROPN	PROPN	_	1	nmod	_	_
+
+1	of	of	X	X	_	2	dep	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	National	National	X	X	_	0	ROOT	_	_
+
+1	Council	Council	X	X	_	0	ROOT	_	_
+
+1	for	for	X	X	_	2	case	_	_
+2	Medical	Medical	X	X	_	0	ROOT	_	_
+3	Research	Research	PROPN	PROPN	_	2	flat:name	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	London	London	PROPN	PROPN	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Financial	Financial	X	X	_	0	ROOT	_	_
+2	grants	grant	ADJ	ADJ	Gender=Masc|Number=Plur	1	amod	_	_
+
+1	have	haver	X	X	_	0	ROOT	_	_
+2	been	been	X	X	_	1	dep	_	_
+3	received	received	PROPN	PROPN	_	1	nsubj	_	_
+4	from	from	X	X	_	3	dep	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	National	National	X	X	_	1	dep	_	_
+
+1	Science	science	NOUN	NOUN	_	0	ROOT	_	_
+
+1	Foundation	Foundation	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	(	(	PUNCT	PUNCT	_	1	punct	_	_
+5	British	British	PROPN	PROPN	_	1	nmod	_	_
+6	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Institute	Institute	PROPN	PROPN	_	0	ROOT	_	_
+2	of	of	X	X	_	3	case	_	_
+3	Physics	Physics	X	X	_	1	nmod	_	_
+4	for	for	X	X	_	1	dep	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	compilation	compilation	X	X	_	1	nmod	_	_
+7	work	work	X	X	_	1	flat:foreign	_	_
+8	and	and	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	2	advmod	_	_
+2	publication	publication	X	X	_	0	ROOT	_	_
+3	costs	costs	X	X	_	2	amod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	11	case	_	_
+2	continuity	continuity	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	project	project	X	X	_	1	flat:foreign	_	_
+6	is	is	X	X	_	1	flat:foreign	_	_
+7	suggested	suggested	X	X	_	6	flat:foreign	_	_
+8	by	by	X	X	_	1	dep	_	_
+9	plans	plan	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+10	for	for	X	X	_	1	dep	_	_
+11	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	14	nmod	_	_
+12	eventual	eventual	ADJ	ADJ	Gender=Masc|Number=Plur	11	amod	_	_
+13	third	third	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+14	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Elements	element	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	alloys	alloy	NOUN	NOUN	Gender=Fem|Number=Sing	3	conj	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	inorganic	inorganic	VERB	VERB	Tense=Pres|VerbForm=Part	1	acl	_	_
+8	and	and	X	X	_	1	dep	_	_
+9	organic	organic	X	X	_	1	amod	_	_
+10	compounds	compounds	X	X	_	9	advmod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	7	punct	_	_
+2	Metal	metal	NOUN	NOUN	Gender=Masc|Number=Sing	7	nsubj	_	_
+3	data	dater	X	X	_	4	dep	_	_
+4	will	will	X	X	_	2	flat:foreign	_	_
+5	not	not	X	X	_	4	dep	_	_
+6	be	be	X	X	_	7	advmod	_	_
+7	included	included	X	X	_	0	ROOT	_	_
+8	in	in	X	X	_	7	advmod	_	_
+9	the	the	X	X	_	7	dep	_	_
+10	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	11	amod	_	_
+11	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	7	obj	_	_
+12	,	,	PUNCT	PUNCT	_	7	punct	_	_
+13	since	since	X	X	_	7	obj	_	_
+14	these	these	X	X	_	13	flat:foreign	_	_
+15	have	haver	X	X	_	13	flat:foreign	_	_
+16	been	been	X	X	_	13	dep	_	_
+17	collected	collected	X	X	_	13	dep	_	_
+18	independently	independently	X	X	_	13	flat:foreign	_	_
+19	by	by	X	X	_	13	dep	_	_
+20	W.	W.	X	X	_	13	nmod	_	_
+21	B.	B.	PROPN	PROPN	_	13	appos	_	_
+22	Pearson	Pearson	PROPN	PROPN	_	21	flat:name	_	_
+23	,	,	PUNCT	PUNCT	_	13	punct	_	_
+24	National	National	X	X	_	13	nmod	_	_
+25	Research	Research	X	X	_	13	flat:foreign	_	_
+26	Council	Council	X	X	_	13	flat:foreign	_	_
+27	,	,	PUNCT	PUNCT	_	28	punct	_	_
+28	Ottawa	Ottawa	PROPN	PROPN	Gender=Masc|Number=Sing	13	conj	_	_
+29	,	,	PUNCT	PUNCT	_	13	punct	_	_
+30	and	and	X	X	_	34	dep	_	_
+31	published	published	X	X	_	30	flat:foreign	_	_
+32	as	as	X	X	_	30	flat:foreign	_	_
+33	A	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	dep	_	_
+34	handbook	handbook	VERB	VERB	VerbForm=Inf	13	conj	_	_
+35	of	of	X	X	_	36	case	_	_
+36	lattice	lattice	NOUN	NOUN	Gender=Fem|Number=Sing	34	obl:arg	_	_
+37	spacings	spacings	X	X	_	36	amod	_	_
+38	and	and	X	X	_	13	dep	_	_
+39	structures	structure	NOUN	NOUN	Gender=Fem|Number=Plur	13	flat:foreign	_	_
+40	of	of	X	X	_	41	case	_	_
+41	metals	metal	NOUN	NOUN	Gender=Masc|Number=Plur	13	nmod	_	_
+42	and	and	X	X	_	13	dep	_	_
+43	alloys	alloys	X	X	_	13	flat:foreign	_	_
+44	by	by	X	X	_	13	dep	_	_
+45	Pergamon	Pergamon	X	X	_	13	flat:name	_	_
+46	Press	Press	PROPN	PROPN	_	13	flat:foreign	_	_
+47	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	)	)	PUNCT	PUNCT	_	2	punct	_	_
+2	properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	:	:	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Crystallographic	crystallographic	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	data	dater	X	X	_	1	flat:foreign	_	_
+3	resulting	resulting	X	X	_	1	dep	_	_
+4	mainly	mainly	X	X	_	1	dep	_	_
+5	from	from	X	X	_	4	dep	_	_
+6	X	x	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	2	punct	_	SpaceAfter=No
+2	ray	ray	PROPN	PROPN	_	0	ROOT	_	_
+3	and	and	X	X	_	2	dep	_	_
+
+1	electron	electron	X	X	_	2	dep	_	_
+2	diffraction	diffraction	NOUN	NOUN	Gender=Fem|Number=Sing	3	obl:mod	_	_
+3	measurements	measurement	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+4	are	are	X	X	_	3	dep	_	_
+
+1	presented	presented	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Cell	cell	ADV	ADV	_	2	amod	_	_
+2	dimensions	dimension	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	number	number	X	X	_	2	conj	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	formula	formula	NOUN	NOUN	Gender=Fem|Number=Sing	4	parataxis	_	_
+7	units	units	X	X	_	4	flat:foreign	_	_
+8	per	per	X	X	_	4	dep	_	_
+9	cell	cell	NOUN	NOUN	Gender=Fem|Number=Sing	4	amod	_	_
+10	,	,	PUNCT	PUNCT	_	4	punct	_	_
+11	space	space	NOUN	NOUN	Number=Sing	4	appos	_	_
+12	group	group	NOUN	NOUN	Gender=Masc|Number=Plur	11	amod	_	_
+13	,	,	PUNCT	PUNCT	_	11	punct	_	_
+14	and	and	X	X	_	21	advmod	_	_
+15	specific	specific	X	X	_	14	flat:foreign	_	_
+16	gravity	gravity	X	X	_	14	flat:foreign	_	_
+17	are	are	X	X	_	14	flat:foreign	_	_
+18	given	given	X	X	_	14	flat:foreign	_	_
+19	for	for	X	X	_	14	flat:foreign	_	_
+20	all	all	X	X	_	14	dep	_	_
+21	substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	11	nmod	_	_
+22	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	For	For	X	X	_	2	case	_	_
+2	some	some	X	X	_	5	obl:mod	_	_
+3	substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	auxiliary	auxiliary	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+6	properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	5	advmod	_	_
+7	such	such	X	X	_	5	dep	_	_
+8	as	as	X	X	_	7	flat:foreign	_	_
+9	the	the	X	X	_	7	dep	_	_
+10	melting	melting	X	X	_	11	amod	_	_
+11	point	point	NOUN	NOUN	Gender=Masc|Number=Sing	7	ccomp	_	_
+12	are	are	X	X	_	13	cc	_	_
+13	given	given	PROPN	PROPN	_	7	obl:arg	_	_
+14	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	of	of	X	X	_	1	amod	_	_
+3	data	data	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+5	Part	part	NOUN	NOUN	_	1	appos	_	_
+6	1	1	NUM	NUM	NumType=Card	5	nummod	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	of	of	X	X	_	10	dep	_	_
+9	the	the	X	X	_	10	dep	_	_
+10	present	present	X	X	_	1	advcl	_	_
+11	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	10	obj	_	_
+12	covers	covers	X	X	_	11	flat:name	_	_
+13	the	the	X	X	_	14	dep	_	_
+14	literature	literature	X	X	_	10	obl:mod	_	_
+15	to	to	X	X	_	10	dep	_	_
+16	mid-1948	mid-1948	PROPN	PROPN	Gender=Masc|Number=Sing	10	obj	_	_
+17	;	;	PUNCT	PUNCT	_	1	punct	_	_
+18	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Part	Part	X	X	_	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	up	up	X	X	_	8	dep	_	_
+6	to	to	X	X	_	5	flat:foreign	_	_
+7	the	the	X	X	_	5	flat:foreign	_	_
+8	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+9	of	of	ADP	ADP	_	10	dep	_	_
+10	1951	1951	NUM	NUM	NumType=Card	1	nmod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Much	Much	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	material	material	X	X	_	1	flat:foreign	_	_
+5	comes	comes	X	X	_	1	flat:foreign	_	_
+6	directly	directly	X	X	_	1	flat:foreign	_	_
+7	from	from	X	X	_	1	dep	_	_
+8	secondary	secondary	X	X	_	1	flat:foreign	_	_
+9	sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+10	such	such	X	X	_	9	flat:foreign	_	_
+11	as	as	X	X	_	1	dep	_	_
+12	Strukturbericht	Strukturbericht	PROPN	PROPN	_	1	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Criticality	Criticality	PROPN	PROPN	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	The	The	X	X	_	1	dep	_	_
+4	vast	vast	ADJ	ADJ	Number=Sing	5	amod	_	_
+5	number	number	X	X	_	7	dep	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	compounds	compounds	X	X	_	3	flat:foreign	_	_
+8	to	to	X	X	_	3	flat:foreign	_	_
+9	be	be	X	X	_	8	fixed	_	_
+10	covered	covered	X	X	_	3	flat:foreign	_	_
+11	,	,	PUNCT	PUNCT	_	1	punct	_	_
+12	the	the	X	X	_	1	dep	_	_
+13	limited	limited	X	X	_	12	flat:foreign	_	_
+14	resources	resources	X	X	_	12	flat:foreign	_	_
+15	to	to	X	X	_	12	flat:foreign	_	_
+16	do	do	X	X	_	12	flat:foreign	_	_
+17	the	the	X	X	_	12	flat:foreign	_	_
+18	job	job	NOUN	NOUN	Gender=Masc|Number=Sing	12	flat:foreign	_	_
+19	,	,	PUNCT	PUNCT	_	1	punct	_	_
+20	and	and	X	X	_	1	dep	_	_
+21	the	the	X	X	_	22	dep	_	_
+22	immediate	immediate	X	X	_	20	flat:foreign	_	_
+23	need	need	X	X	_	20	flat:foreign	_	_
+24	for	for	X	X	_	25	case	_	_
+25	this	this	X	X	_	20	flat:foreign	_	_
+26	type	type	NOUN	NOUN	Gender=Masc|Number=Sing	20	flat:foreign	_	_
+27	of	of	ADP	ADP	_	28	case	_	_
+28	compilation	compilation	NOUN	NOUN	Gender=Fem|Number=Sing	20	nmod	_	_
+29	precluded	precluded	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	28	acl	_	_
+30	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	31	case	_	_
+31	thorough	thorough	NOUN	NOUN	_	1	dep	_	_
+32	evaluation	evaluation	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:name	_	_
+33	of	of	X	X	_	35	dep	_	_
+34	all	all	X	X	_	33	fixed	_	_
+35	available	availabl	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+36	data	dater	X	X	_	1	flat:foreign	_	_
+37	in	in	X	X	_	1	dep	_	_
+38	the	the	X	X	_	1	dep	_	_
+39	present	present	X	X	_	1	dep	_	_
+40	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	39	obj	_	_
+41	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Future	future	NOUN	NOUN	Gender=Fem|Number=Sing	6	nsubj	_	_
+2	editions	edition	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+3	may	may	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	more	more	X	X	_	1	flat:foreign	_	_
+6	critical	critical	X	X	_	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Use	Use	X	X	_	5	case	_	_
+2	of	of	X	X	_	3	amod	_	_
+3	nomenclature	nomenclature	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	symbols	symbol	NOUN	NOUN	Number=Plur	23	obl:mod	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	units	unit	NOUN	NOUN	Gender=Masc|Number=Plur	5	conj	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	physical	physical	X	X	_	5	appos	_	_
+10	constants	constant	ADJ	ADJ	Gender=Masc|Number=Plur	9	amod	_	_
+11	:	:	PUNCT	PUNCT	_	9	punct	_	_
+12	Since	Since	X	X	_	5	appos	_	_
+13	Parts	Parts	X	X	_	12	flat:name	_	_
+14	1	1	NUM	NUM	NumType=Card	12	nummod	_	_
+15	,	,	PUNCT	PUNCT	_	12	punct	_	_
+16	and	and	X	X	_	12	dep	_	_
+17	2	2	NUM	NUM	NumType=Card	16	nummod	_	_
+18	,	,	PUNCT	PUNCT	_	12	punct	_	_
+19	were	were	X	X	_	12	dep	_	_
+20	prepared	prepared	X	X	_	19	flat:foreign	_	_
+21	independently	independently	X	X	_	19	flat:foreign	_	_
+22	,	,	PUNCT	PUNCT	_	12	punct	_	_
+23	the	the	X	X	_	0	ROOT	_	_
+24	abbreviation	abbreviation	NOUN	NOUN	Gender=Fem|Number=Sing	23	flat:foreign	_	_
+25	schemes	schemes	X	X	_	23	flat:foreign	_	_
+26	and	and	X	X	_	23	flat:foreign	_	_
+27	the	the	X	X	_	23	flat:foreign	_	_
+28	chemical	chemical	X	X	_	23	flat:foreign	_	_
+29	symbols	symbols	X	X	_	23	flat:foreign	_	_
+30	used	used	X	X	_	23	flat:foreign	_	_
+31	differ	differ	X	X	_	23	flat:foreign	_	_
+32	in	in	X	X	_	23	flat:foreign	_	_
+33	the	the	X	X	_	23	flat:foreign	_	_
+34	two	two	X	X	_	23	flat:foreign	_	_
+35	parts	part	NOUN	NOUN	Number=Plur	23	flat:foreign	_	_
+36	.	.	PUNCT	PUNCT	_	23	punct	_	_
+
+1	The	The	X	X	_	3	nmod	_	_
+2	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	3	amod	_	_
+3	edition	edition	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	should	should	X	X	_	3	amod	_	_
+5	have	haver	X	X	_	4	xcomp	_	_
+6	greater	greater	VERB	VERB	VerbForm=Inf	4	xcomp	_	_
+7	uniformity	uniformity	ADJ	ADJ	Gender=Masc|Number=Sing	6	xcomp	_	_
+8	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Currency	Currency	X	X	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	A	à	ADP	ADP	_	5	case	_	_
+4	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	5	amod	_	_
+5	edition	edition	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl:mod	_	_
+6	is	is	X	X	_	8	case	_	_
+7	in	in	X	X	_	8	case	_	_
+8	preparation	preparation	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	5	punct	_	_
+10	and	and	X	X	_	11	cc	_	_
+11	there	there	X	X	_	5	nmod	_	_
+12	are	are	X	X	_	11	dep	_	_
+13	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	12	fixed	_	_
+14	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	dep	_	_
+15	plans	plan	NOUN	NOUN	Gender=Masc|Number=Plur	11	dep	_	_
+16	for	for	X	X	_	11	dep	_	_
+17	a	avoir	X	X	_	11	dep	_	_
+18	third	third	PROPN	PROPN	Gender=Masc|Number=Sing	11	flat:name	_	_
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Format	format	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Data	Data	X	X	_	0	ROOT	_	_
+2	in	in	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	present	present	X	X	_	1	fixed	_	_
+5	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+6	are	are	X	X	_	4	dep	_	_
+7	presented	presented	X	X	_	1	flat:foreign	_	_
+8	in	in	X	X	_	1	flat:foreign	_	_
+9	tables	table	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+10	and	and	X	X	_	1	flat:foreign	_	_
+11	lists	lists	X	X	_	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Part	part	NOUN	NOUN	Number=Sing	0	ROOT	_	_
+2	1	1	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	deals	deal	X	X	_	18	nsubj	_	_
+5	with	with	X	X	_	4	flat:foreign	_	_
+6	the	the	X	X	_	4	dep	_	_
+7	classification	classification	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+8	of	of	X	X	_	9	case	_	_
+9	crystalline	crystalline	NOUN	NOUN	Gender=Fem|Number=Sing	7	nmod	_	_
+10	substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	9	nmod	_	_
+11	by	by	X	X	_	4	dep	_	_
+12	space	space	X	X	_	4	nmod	_	_
+13	groups	group	X	X	_	4	nmod	_	_
+14	and	and	X	X	_	4	dep	_	_
+15	is	is	X	X	_	4	dep	_	_
+16	not	not	X	X	_	4	dep	_	_
+17	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux:tense	_	_
+18	numerical	numerical	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	1	nmod	_	_
+19	data	data	ADJ	ADJ	Gender=Fem|Number=Sing	18	advmod	_	_
+20	compilation	compilation	NOUN	NOUN	Gender=Fem|Number=Sing	18	xcomp	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	compounds	compounds	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	4	case	_	_
+4	divided	divided	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	according	according	X	X	_	1	flat:foreign	_	_
+6	to	to	X	X	_	7	case	_	_
+7	composition	composition	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+8	into	into	X	X	_	7	amod	_	_
+9	seven	seven	X	X	_	1	flat:foreign	_	_
+10	categories	categorie	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Part	Part	X	X	_	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	contains	contain	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	determinative	determinativ	ADJ	ADJ	Number=Plur	4	amod	_	_
+6	tables	table	NOUN	NOUN	Gender=Fem|Number=Plur	4	amod	_	_
+7	for	for	X	X	_	1	dep	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	identification	identification	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+10	of	of	X	X	_	11	case	_	_
+11	crystalline	crystalline	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+12	substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	11	amod	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	These	These	X	X	_	4	nsubj	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	arranged	arranged	X	X	_	1	dep	_	_
+4	according	according	X	X	_	0	ROOT	_	_
+5	to	to	X	X	_	4	advmod	_	_
+6	crystal	crystal	PROPN	PROPN	Gender=Masc|Number=Sing	5	flat:foreign	_	_
+7	system	system	X	X	_	5	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	There	There	X	X	_	0	ROOT	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	formula	formuler	X	X	_	1	flat:foreign	_	_
+4	and	and	X	X	_	1	flat:foreign	_	_
+5	name	name	X	X	_	1	dep	_	_
+6	indexes	indexer	X	X	_	1	flat:foreign	_	_
+7	covering	covering	X	X	_	1	flat:foreign	_	_
+8	both	both	X	X	_	1	flat:foreign	_	_
+9	parts	part	NOUN	NOUN	Number=Plur	8	amod	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	References	reference	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	for	for	X	X	_	1	flat:foreign	_	_
+3	Part	Part	X	X	_	1	flat:foreign	_	_
+4	1	1	NUM	NUM	NumType=Card	3	nummod	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	are	are	X	X	_	0	ROOT	_	_
+2	given	given	X	X	_	1	flat:foreign	_	_
+3	at	at	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	end	end	X	X	_	1	flat:foreign	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	for	for	X	X	_	1	flat:foreign	_	_
+8	Part	part	NOUN	NOUN	_	1	dep	_	_
+9	2	2	NUM	NUM	NumType=Card	1	dep	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	in	in	X	X	_	1	flat:foreign	_	_
+12	the	the	X	X	_	11	flat:foreign	_	_
+13	tables	table	ADJ	ADJ	Number=Plur	11	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+
+1	distribution	distribution	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	The	The	X	X	_	5	nmod	_	_
+4	present	present	X	X	_	5	amod	_	_
+5	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+6	of	of	X	X	_	7	case	_	_
+7	crystal	crystal	PROPN	PROPN	Gender=Masc|Number=Sing	5	nmod	_	_
+8	data	data	ADJ	ADJ	Gender=Fem|Number=Sing	5	amod	_	_
+9	(	(	PUNCT	PUNCT	_	5	punct	_	_
+10	Af	Af	PROPN	PROPN	_	5	appos	_	_
+11	)	)	PUNCT	PUNCT	_	5	punct	_	_
+12	,	,	PUNCT	PUNCT	_	13	punct	_	_
+13	published	published	X	X	_	14	nsubj	_	_
+14	in	in	X	X	_	15	dep	_	_
+15	1954	1954	NUM	NUM	NumType=Card	1	nmod	_	_
+16	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	1	punct	_	_
+
+1	Memoir	memoir	NOUN	NOUN	Gender=Masc|Number=Sing	14	advcl	_	_
+2	60	60	NUM	NUM	NumType=Card	1	nummod	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	the	the	X	X	_	8	dep	_	_
+5	Geological	Geological	X	X	_	4	flat:foreign	_	_
+6	Society	Society	X	X	_	4	flat:foreign	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	America	America	PROPN	PROPN	_	1	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	14	punct	_	_
+10	is	is	X	X	_	14	nsubj:pass	_	_
+11	now	now	X	X	_	10	flat:foreign	_	_
+12	out	out	X	X	_	10	flat:foreign	_	_
+13	of	of	X	X	_	14	iobj	_	_
+14	print	print	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+15	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	The	The	X	X	_	17	advmod	_	_
+2	manuscript	manuscript	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	6	case	_	_
+4	the	the	X	X	_	3	fixed	_	_
+5	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	6	amod	_	_
+6	edition	edition	NOUN	NOUN	Gender=Masc|Number=Sing	2	nmod	_	_
+7	will	will	X	X	_	6	nmod	_	_
+8	probably	probably	X	X	_	6	amod	_	_
+9	be	be	X	X	_	10	mark	_	_
+10	ready	ready	X	X	_	1	flat:foreign	_	_
+11	by	by	X	X	_	10	obl:mod	_	_
+12	the	the	X	X	_	13	dep	_	_
+13	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	10	obl:mod	_	_
+14	of	of	ADP	ADP	_	15	case	_	_
+15	1960	1960	NUM	NUM	NumType=Card	10	obl:mod	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+17	2	2	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+18	-	-	NOUN	NOUN	NumType=Card	17	nmod	_	SpaceAfter=No
+19	3	3	NOUN	NOUN	NumType=Card	17	nmod	_	_
+20	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	Crystal	Crystal	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Structures	Structures	PROPN	PROPN	_	0	ROOT	_	_
+2	organization	organization	PROPN	PROPN	_	1	flat:name	_	_
+3	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	dep	_	_
+2	author	author	X	X	_	4	dep	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	Crystal	Crystal	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	Structures	Structures	PROPN	PROPN	_	4	flat:name	_	_
+6	is	is	X	X	_	4	dep	_	_
+
+1	Ralph	Ralph	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	W.G.	W.G.	PROPN	PROPN	_	1	flat:name	_	_
+3	Wyckoff	Wyckoff	PROPN	PROPN	_	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	University	University	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	_
+6	of	of	X	X	_	7	case	_	_
+7	Arizona	Arizona	PROPN	PROPN	Gender=Masc|Number=Sing	5	nmod	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	Tucson	Tucson	PROPN	PROPN	_	5	conj	_	_
+10	,	,	PUNCT	PUNCT	_	5	punct	_	_
+11	Arizona	Arizona	PROPN	PROPN	Gender=Masc|Number=Sing	5	nmod	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	3	advmod	_	_
+2	first	first	X	X	_	3	amod	_	_
+3	section	section	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	of	of	ADP	ADP	_	5	case	_	_
+5	this	this	X	X	_	3	nmod	_	_
+
+1	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	appeared	appeared	X	X	_	0	ROOT	_	_
+
+1	in	in	X	X	_	0	ROOT	_	_
+2	1948	1948	NUM	NUM	NumType=Card	1	nummod	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	last	last	X	X	_	1	flat:foreign	_	_
+6	supplement	supplement	ADV	ADV	_	7	advmod	_	_
+7	in	in	X	X	_	8	case	_	_
+8	1960	1960	NUM	NUM	NumType=Card	1	obl:mod	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Though	Though	X	X	_	0	ROOT	_	_
+2	now	now	X	X	_	1	dep	_	_
+3	complete	complet	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	6	punct	_	_
+5	the	the	X	X	_	6	case	_	_
+6	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	1	conj	_	_
+7	is	is	X	X	_	6	dep	_	_
+8	included	included	X	X	_	6	dep	_	_
+9	in	in	X	X	_	8	advmod	_	_
+10	this	this	X	X	_	8	obj	_	_
+11	directory	directory	X	X	_	8	obj	_	_
+12	because	because	NOUN	NOUN	Gender=Masc|Number=Plur	8	obj	_	_
+13	of	of	ADP	ADP	_	15	case	_	_
+14	its	its	X	X	_	13	fixed	_	_
+15	importance	importance	NOUN	NOUN	Gender=Fem|Number=Sing	8	obj	_	_
+16	and	and	X	X	_	6	dep	_	_
+17	because	because	X	X	_	16	flat:foreign	_	_
+18	of	of	X	X	_	16	flat:foreign	_	_
+19	the	the	X	X	_	16	flat:foreign	_	_
+20	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	16	flat:foreign	_	SpaceAfter=No
+21	-	-	NOUN	NOUN	Gender=Masc|Number=Sing	6	punct	_	SpaceAfter=No
+22	term	term	NOUN	NOUN	Gender=Masc|Number=Sing	6	nmod	_	_
+23	nature	nature	ADJ	ADJ	Number=Sing	22	amod	_	_
+24	of	of	ADP	ADP	_	26	dep	_	_
+25	its	its	X	X	_	26	case	_	_
+26	preparation	preparation	NOUN	NOUN	Gender=Fem|Number=Sing	22	nmod	_	_
+27	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Elements	element	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	inorganic	inorganic	VERB	VERB	Tense=Pres|VerbForm=Part	1	acl	_	_
+6	and	and	X	X	_	1	dep	_	_
+7	organic	organic	X	X	_	1	amod	_	_
+8	compounds	compounds	X	X	_	7	dep	_	_
+9	(	(	PUNCT	PUNCT	_	7	punct	_	_
+10	no	no	X	X	_	7	dep	_	_
+11	alloys	alloys	PROPN	PROPN	_	10	amod	_	_
+12	)	)	PUNCT	PUNCT	_	7	punct	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	3	nsubj	_	_
+2	data	dater	X	X	_	1	flat:foreign	_	_
+3	presented	presented	X	X	_	7	dep	_	_
+4	are	are	X	X	_	3	dep	_	_
+5	derived	derived	X	X	_	3	obj	_	_
+6	almost	almost	X	X	_	3	obj	_	_
+7	entirely	entirely	X	X	_	0	ROOT	_	_
+8	from	from	X	X	_	7	dep	_	_
+9	X	x	NOUN	NOUN	_	7	dep	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
+2	ray	ray	PROPN	PROPN	_	3	nummod	_	_
+3	diffraction	diffraction	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	measurements	measurement	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	include	include	X	X	_	1	flat:foreign	_	_
+4	atomic	atomic	X	X	_	1	dep	_	_
+
+1	coordinates	coordinate	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	cell	cell	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	dimensions	dimension	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	atomic	atomic	X	X	_	4	flat:foreign	_	_
+6	and	and	X	X	_	4	flat:foreign	_	_
+7	ionic	ionic	X	X	_	4	flat:foreign	_	_
+8	radii	radii	ADJ	ADJ	_	4	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	of	of	X	X	_	1	dep	_	_
+3	data	data	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+5	Published	Published	X	X	_	1	dep	_	_
+6	literature	literature	X	X	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Criticality	Criticality	PROPN	PROPN	_	13	nsubj	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	The	The	X	X	_	1	dep	_	_
+4	aim	aim	X	X	_	3	flat:foreign	_	_
+5	was	was	X	X	_	3	dep	_	_
+6	to	to	X	X	_	7	dep	_	_
+7	state	stater	X	X	_	3	flat:foreign	_	_
+8	the	the	X	X	_	9	dep	_	_
+9	results	results	X	X	_	3	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	all	all	X	X	_	3	dep	_	_
+12	available	availabl	ADJ	ADJ	Number=Sing	13	amod	_	_
+13	determinations	determinations	X	X	_	0	ROOT	_	_
+
+1	of	of	X	X	_	2	case	_	_
+2	atomic	atomic	X	X	_	0	ROOT	_	_
+
+1	positions	position	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	in	in	X	X	_	3	case	_	_
+3	crystals	crystal	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Presumably	Presumably	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	tabulated	tabulated	X	X	_	1	flat:foreign	_	_
+4	data	dater	X	X	_	3	punct	_	_
+5	are	are	X	X	_	6	case	_	_
+6	best	best	X	X	_	3	nmod	_	_
+7	available	availabl	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+8	values	value	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	2	advmod	_	_
+2	critical	critical	X	X	_	10	dep	_	_
+3	comments	comment	NOUN	NOUN	Gender=Masc|Number=Plur	2	advmod	_	_
+4	in	in	X	X	_	2	advmod	_	_
+5	the	the	X	X	_	2	punct	_	_
+6	textual	textual	X	X	_	2	amod	_	_
+7	sections	section	NOUN	NOUN	Gender=Fem|Number=Plur	2	obj	_	_
+8	of	of	X	X	_	9	case	_	_
+9	this	this	X	X	_	7	nmod	_	_
+10	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+11	are	are	X	X	_	10	dep	_	_
+12	invaluable	invaluabl	ADJ	ADJ	Number=Sing	10	amod	_	_
+13	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Use	Use	X	X	_	5	case	_	_
+2	of	of	X	X	_	3	amod	_	_
+3	nomenclature	nomenclature	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	symbols	symbol	NOUN	NOUN	Number=Plur	0	ROOT	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	units	unit	NOUN	NOUN	Gender=Masc|Number=Plur	5	conj	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	physical	physical	X	X	_	5	appos	_	_
+10	constants	constant	ADJ	ADJ	Gender=Masc|Number=Plur	9	amod	_	_
+11	:	:	PUNCT	PUNCT	_	9	punct	_	_
+12	The	The	X	X	_	5	dep	_	_
+13	terminology	terminology	X	X	_	12	flat:foreign	_	_
+14	used	used	X	X	_	12	flat:foreign	_	_
+15	conforms	conforms	X	X	_	12	flat:foreign	_	_
+16	to	to	X	X	_	12	flat:foreign	_	_
+17	that	that	X	X	_	12	flat:foreign	_	_
+18	of	of	X	X	_	19	case	_	_
+19	Internationale	internationale	NOUN	NOUN	Gender=Fem|Number=Sing	12	flat:foreign	_	_
+
+1	Tabellen	Tabellen	PROPN	PROPN	_	0	ROOT	_	_
+2	Zur	Zur	X	X	_	1	nmod	_	_
+3	Bestimmung	Bestimmung	PROPN	PROPN	_	1	nmod	_	_
+
+1	Von	von	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	Kristallstrukturen	Kristallstrukturen	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Currency	Currency	X	X	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	During	During	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	years	years	X	X	_	4	flat:foreign	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	supplement	supplement	ADV	ADV	_	10	advmod	_	_
+10	and	and	X	X	_	11	nmod	_	_
+11	replacement	replacement	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+12	sheets	sheets	X	X	_	11	amod	_	_
+13	were	were	X	X	_	1	punct	_	_
+
+1	issued	issued	X	X	_	0	ROOT	_	_
+2	periodically	periodically	ADJ	ADJ	Gender=Masc|Number=Sing	1	xcomp	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Coverage	coverage	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	literature	literature	X	X	_	1	flat:foreign	_	_
+5	extends	extends	X	X	_	1	flat:foreign	_	_
+6	through	through	X	X	_	1	flat:foreign	_	_
+7	1954	1954	NUM	NUM	NumType=Card	6	nummod	_	_
+
+1	and	and	X	X	_	2	dep	_	_
+2	includes	includes	X	X	_	4	dep	_	_
+3	some	some	X	X	_	2	obj	_	_
+4	1955	1955	NUM	NUM	NumType=Card	5	nummod	_	_
+5	references	reference	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+6	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	It	It	PROPN	PROPN	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	hoped	hoped	PROPN	PROPN	_	1	flat:foreign	_	_
+6	that	that	X	X	_	1	flat:foreign	_	_
+7	some	some	X	X	_	1	flat:foreign	_	_
+8	way	way	X	X	_	1	flat:foreign	_	_
+9	will	will	X	X	_	1	flat:foreign	_	_
+10	be	be	X	X	_	9	dep	_	_
+11	found	found	X	X	_	9	dep	_	_
+12	to	to	X	X	_	9	dep	_	_
+13	keep	keep	X	X	_	9	dep	_	_
+14	this	this	X	X	_	1	flat:foreign	_	_
+15	important	important	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+16	work	work	X	X	_	1	flat:foreign	_	_
+17	current	current	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+18	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Format	format	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	publication	publication	X	X	_	1	flat:foreign	_	_
+3	form	form	X	X	_	1	flat:foreign	_	_
+4	is	is	X	X	_	3	dep	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	of	of	X	X	_	7	case	_	_
+7	loose	loose	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	SpaceAfter=No
+8	-	-	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+9	leaf	leaf	X	X	_	1	flat:foreign	_	_
+10	sheets	sheets	X	X	_	1	flat:foreign	_	_
+11	(	(	PUNCT	PUNCT	_	1	punct	_	_
+12	Af	Af	PROPN	PROPN	_	1	flat:foreign	_	_
+13	)	)	PUNCT	PUNCT	_	1	punct	_	_
+14	contained	contained	X	X	_	1	flat:foreign	_	_
+15	in	in	X	X	_	16	case	_	_
+16	binders	binder	NOUN	NOUN	Gender=Fem|Number=Plur	14	nmod	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	10	nsubj	_	_
+2	book	book	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	4	case	_	_
+4	divided	divided	X	X	_	2	obl:mod	_	_
+5	into	into	X	X	_	1	flat:foreign	_	_
+6	chapters	chapters	X	X	_	1	flat:foreign	_	_
+7	and	and	X	X	_	1	flat:foreign	_	_
+8	in	in	X	X	_	1	flat:foreign	_	_
+9	each	each	X	X	_	1	flat:foreign	_	_
+10	chapter	chapter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+11	the	the	X	X	_	10	obj	_	_
+12	material	material	X	X	_	10	obj	_	_
+13	is	is	X	X	_	12	dep	_	_
+14	grouped	grouped	PROPN	PROPN	_	10	obj	_	_
+15	into	into	X	X	_	10	ccomp	_	_
+16	Text	Text	X	X	_	10	dep	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Tables	table	ADJ	ADJ	Number=Plur	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	Illustrations	illustration	NOUN	NOUN	Gender=Fem|Number=Plur	2	nmod	_	_
+5	,	,	PUNCT	PUNCT	_	2	punct	_	_
+6	and	and	X	X	_	2	dep	_	_
+7	Bibliography	Bibliography	X	X	_	6	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Each	Each	X	X	_	0	ROOT	_	_
+2	group	group	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	paginated	paginated	X	X	_	1	dep	_	_
+5	separately	separately	X	X	_	1	flat:foreign	_	_
+6	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	numbers	numbers	X	X	_	0	ROOT	_	_
+2	sometimes	sometimes	X	X	_	1	amod	_	_
+3	followed	followed	X	X	_	2	dep	_	_
+
+1	by	by	X	X	_	2	case	_	_
+2	letters	letter	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	are	are	X	X	_	2	case	_	_
+2	used	used	X	X	_	0	ROOT	_	_
+
+1	so	so	X	X	_	3	case	_	_
+2	that	that	X	X	_	3	amod	_	_
+3	insertions	insertion	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+4	can	can	X	X	_	3	dep	_	_
+5	be	be	X	X	_	4	fixed	_	_
+
+1	made	made	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Inorganic	Inorganic	PROPN	PROPN	_	0	ROOT	_	_
+2	structures	structure	NOUN	NOUN	Gender=Fem|Number=Plur	1	dep	_	_
+3	are	are	X	X	_	1	dep	_	_
+4	found	found	X	X	_	1	dep	_	_
+5	in	in	X	X	_	1	dep	_	_
+6	Chapters	chapter	NOUN	NOUN	_	1	nmod	_	_
+7	2	2	NUM	NUM	NumType=Card	1	obl:mod	_	_
+8	-	-	NUM	NUM	NumType=Card	9	nummod	_	_
+9	12	12	NUM	NUM	NumType=Card	1	obl:mod	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	organic	organic	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	ROOT	_	_
+2	structures	structure	NOUN	NOUN	Gender=Fem|Number=Plur	1	dep	_	_
+3	in	in	X	X	_	1	dep	_	_
+4	Chapters	chapter	NOUN	NOUN	_	1	nmod	_	_
+5	13	13	NUM	NUM	NumType=Card	1	obl:mod	_	_
+6	-	-	NUM	NUM	NumType=Card	1	nmod	_	_
+7	15	15	NOUN	NOUN	NumType=Card	1	obl:mod	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Within	Within	X	X	_	3	dep	_	_
+2	each	each	X	X	_	1	flat:foreign	_	_
+3	chapter	chapter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+4	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	3	obj	_	_
+5	effort	effort	NOUN	NOUN	Gender=Masc|Number=Sing	4	nmod	_	_
+
+1	has	has	X	X	_	0	ROOT	_	_
+2	been	been	X	X	_	1	dep	_	_
+3	made	made	X	X	_	1	dep	_	_
+4	to	to	X	X	_	1	dep	_	_
+5	group	group	X	X	_	4	flat:foreign	_	_
+6	together	together	X	X	_	4	flat:foreign	_	_
+7	those	those	X	X	_	4	flat:foreign	_	_
+8	crystals	crystals	X	X	_	4	flat:foreign	_	_
+9	with	with	X	X	_	4	flat:foreign	_	_
+10	similar	similar	X	X	_	1	dep	_	_
+11	structures	structure	NOUN	NOUN	Gender=Fem|Number=Plur	1	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	There	There	X	X	_	0	ROOT	_	_
+2	are	are	X	X	_	1	flat:foreign	_	_
+3	three	three	X	X	_	1	flat:foreign	_	_
+4	indexes	indexe	ADJ	ADJ	Number=Plur	3	amod	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	i.e	i.e	NOUN	NOUN	_	1	dep	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	8	punct	_	_
+2	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	8	nsubj	_	_
+3	inorganic	inorganic	ADJ	ADJ	Gender=Masc|Number=Sing	2	acl	_	_
+4	formula	formuler	X	X	_	2	amod	_	_
+5	index	index	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	8	punct	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	case	_	_
+8	mineralogical	mineralogical	NOUN	NOUN	Gender=Masc|Number=Sing	17	nsubj	_	_
+9	name	name	X	X	_	8	dep	_	_
+10	index	index	NOUN	NOUN	Gender=Masc|Number=Plur	8	dep	_	_
+11	,	,	PUNCT	PUNCT	_	8	punct	_	_
+12	and	and	X	X	_	15	cc	_	_
+13	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	fixed	_	_
+14	name	name	X	X	_	15	amod	_	_
+15	index	index	NOUN	NOUN	Gender=Masc|Number=Sing	8	dep	_	_
+16	to	to	X	X	_	17	advmod	_	_
+17	organic	organic	X	X	_	0	ROOT	_	_
+18	compounds	compounds	X	X	_	17	dep	_	_
+19	.	.	PUNCT	PUNCT	_	17	punct	_	_
+
+1	Publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+
+1	distribution	distribution	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Publisher	Publisher	X	X	_	1	nmod	_	_
+4	of	of	X	X	_	3	amod	_	_
+5	Crystal	Crystal	PROPN	PROPN	Gender=Masc|Number=Sing	3	flat:foreign	_	_
+6	Structures	Structures	PROPN	PROPN	_	3	flat:foreign	_	_
+7	is	is	X	X	_	3	dep	_	_
+8	Interscience	Interscience	X	X	_	3	flat:foreign	_	_
+9	Publishers	publisher	NOUN	NOUN	Gender=Masc|Number=Plur	3	flat:foreign	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	250	250	NUM	NUM	NumType=Card	12	nummod	_	_
+12	Fifth	fifth	ADJ	ADJ	Gender=Fem|NumType=Ord|Number=Plur	1	parataxis	_	_
+13	Avenue	avenue	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+14	,	,	PUNCT	PUNCT	_	1	punct	_	_
+15	New	New	X	X	_	1	nmod	_	_
+16	York	york	NOUN	NOUN	Gender=Fem|Number=Sing	15	nmod	_	_
+17	1	1	NUM	NUM	NumType=Card	16	nummod	_	_
+18	,	,	PUNCT	PUNCT	_	1	punct	_	_
+19	N.	n.	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+20	Y.	Y.	PROPN	PROPN	_	19	flat:name	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	3	nsubj	_	_
+2	work	work	X	X	_	1	flat:foreign	_	_
+3	consists	consists	X	X	_	0	ROOT	_	_
+4	of	of	ADP	ADP	_	5	case	_	_
+5	four	four	NOUN	NOUN	Gender=Masc|Number=Sing	3	xcomp	_	_
+6	sections	section	NOUN	NOUN	Gender=Fem|Number=Plur	5	amod	_	_
+7	and	and	X	X	_	3	advmod	_	_
+8	5	5	NUM	NUM	NumType=Card	9	nummod	_	_
+9	supplements	supplement	NOUN	NOUN	Gender=Masc|Number=Plur	3	obj	_	_
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Price	Price	PROPN	PROPN	Gender=Masc|Number=Sing	2	nsubj	_	_
+2	of	of	X	X	_	5	dep	_	_
+3	the	the	X	X	_	2	fixed	_	_
+4	complete	complete	X	X	_	2	fixed	_	_
+5	work	work	X	X	_	8	dep	_	_
+6	including	including	X	X	_	5	flat:foreign	_	_
+7	all	all	X	X	_	5	dep	_	_
+8	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+9	binders	binders	PRON	PRON	Number=Sing|PronType=Dem	8	obj	_	_
+10	is	is	X	X	_	9	dep	_	_
+11	$	dollar	NOUN	NOUN	Gender=Masc	8	obl:mod	_	SpaceAfter=No
+12	148.50	148.50	NUM	NUM	NumType=Card	8	dep	_	_
+13	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	2	2	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	-	-	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	4	4	NOUN	NOUN	NumType=Card	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	Dana'	dana'	NOUN	NOUN	Number=Plur	1	punct	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	4	expl:pass	_	_
+4	System	System	X	X	_	2	parataxis	_	_
+5	Of	Of	X	X	_	4	punct	_	_
+
+1	Mineralogy	Mineralogy	PROPN	PROPN	_	0	ROOT	_	_
+2	organization	organization	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:name	_	_
+3	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Six	Six	NUM	NUM	NumType=Card	2	nummod	_	_
+2	editions	edition	NOUN	NOUN	Gender=Fem|Number=Plur	8	nsubj	_	_
+3	of	of	X	X	_	4	case	_	_
+4	James	James	PROPN	PROPN	Gender=Masc|Number=Sing	2	nmod	_	_
+5	Dwight	Dwight	PROPN	PROPN	Gender=Masc|Number=Sing	4	flat:name	_	_
+6	Dana'	Dana'	X	X	_	4	dep	_	SpaceAfter=No
+7	s	s	PRON	PRON	Person=3|Reflex=Yes	8	expl:pass	_	_
+8	System	System	X	X	_	0	ROOT	_	_
+9	appeared	appeared	X	X	_	8	xcomp	_	_
+10	between	between	X	X	_	8	flat:foreign	_	_
+11	1837	1837	NUM	NUM	NumType=Card	8	nummod	_	_
+12	and	and	X	X	_	8	dep	_	_
+13	1892	1892	NUM	NUM	NumType=Card	8	nummod	_	_
+14	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	1915	1915	NUM	NUM	NumType=Card	1	flat:foreign	_	_
+
+1	Edward	Edward	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+3	Dana	Dana	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	editor	editor	X	X	_	9	nmod	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	the	the	X	X	_	5	flat:foreign	_	_
+8	sixth	sixth	X	X	_	5	dep	_	_
+9	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	asked	asked	NOUN	NOUN	Gender=Fem|Number=Sing	1	appos	_	_
+
+1	W.	W.	X	X	_	0	ROOT	_	_
+2	E.	E.	PROPN	PROPN	_	1	flat:name	_	_
+3	Ford	Ford	PROPN	PROPN	Gender=Masc|Number=Sing	2	flat:name	_	_
+4	of	of	ADP	ADP	_	2	punct	_	_
+
+1	Yale	Yale	X	X	_	4	nsubj	_	_
+2	University	University	X	X	_	1	flat:name	_	_
+3	to	to	X	X	_	4	dep	_	_
+4	prepare	prepare	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	a	avoir	X	X	_	4	xcomp	_	_
+6	seventh	seventh	X	X	_	7	amod	_	_
+7	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	4	obl:mod	_	_
+8	of	of	X	X	_	9	case	_	_
+9	his	his	X	X	_	7	nmod	_	_
+10	father'	father'	SCONJ	SCONJ	_	4	advmod	_	SpaceAfter=No
+11	s	s	PRON	PRON	Person=3|Reflex=Yes	12	det	_	_
+12	work	work	X	X	_	4	obj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	number	number	X	X	_	9	dep	_	_
+3	of	of	X	X	_	4	case	_	_
+4	people	people	X	X	_	2	obl:mod	_	_
+5	became	became	X	X	_	2	dep	_	_
+6	involved	involved	X	X	_	5	flat:foreign	_	_
+7	in	in	X	X	_	9	case	_	_
+8	the	the	X	X	_	7	dep	_	_
+9	preparation	preparation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+10	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	9	nmod	_	_
+
+1	work	work	X	X	_	0	ROOT	_	_
+
+1	was	was	X	X	_	0	ROOT	_	_
+
+1	slow	slow	X	X	_	0	ROOT	_	_
+
+1	until	until	X	X	_	0	ROOT	_	_
+
+1	1937	1937	NUM	NUM	NumType=Card	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	that	that	X	X	_	1	flat:foreign	_	_
+3	year	year	X	X	_	1	flat:foreign	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	grant	grer	VERB	VERB	Tense=Pres|VerbForm=Part	11	advcl	_	_
+6	was	was	X	X	_	5	dep	_	_
+7	obtained	obtained	X	X	_	5	obj	_	_
+8	from	from	X	X	_	7	dep	_	_
+9	the	the	X	X	_	5	dep	_	_
+10	Penrose	Penrose	X	X	_	5	obj	_	_
+11	Fund	Fund	X	X	_	1	flat:foreign	_	_
+12	of	of	X	X	_	1	flat:foreign	_	_
+13	the	the	X	X	_	1	flat:foreign	_	_
+14	Geological	Geological	X	X	_	1	flat:foreign	_	_
+15	Society	Society	X	X	_	1	flat:foreign	_	_
+16	of	of	X	X	_	1	flat:foreign	_	_
+17	America	America	PROPN	PROPN	_	1	dep	_	_
+18	to	to	X	X	_	1	dep	_	_
+19	finance	finance	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+20	additional	additional	X	X	_	1	flat:foreign	_	_
+21	full	full	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	SpaceAfter=No
+22	-	-	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	SpaceAfter=No
+23	time	time	X	X	_	1	flat:foreign	_	_
+24	workers	workers	X	X	_	1	flat:foreign	_	_
+25	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Money	Money	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	was	was	X	X	_	1	dep	_	_
+3	also	also	X	X	_	1	flat:foreign	_	_
+4	advanced	advanced	X	X	_	1	dep	_	_
+5	by	by	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	publishers	publisher	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+10	Wiley	Wiley	PROPN	PROPN	_	9	flat:name	_	_
+11	&	et	CCONJ	CCONJ	_	12	cc	_	_
+12	Sons	son	NOUN	NOUN	Gender=Masc|Number=Plur	9	conj	_	_
+13	,	,	PUNCT	PUNCT	_	1	punct	_	_
+14	Inc	Inc	PROPN	PROPN	_	1	dep	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	1	1	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	was	was	X	X	_	1	parataxis	_	_
+5	completed	completed	X	X	_	4	flat:foreign	_	_
+6	in	in	X	X	_	4	dep	_	_
+7	1941	1941	NUM	NUM	NumType=Card	4	flat:foreign	_	_
+8	and	and	X	X	_	4	dep	_	_
+9	published	published	X	X	_	8	flat:foreign	_	_
+10	in	in	X	X	_	4	flat:foreign	_	_
+11	1944	1944	NUM	NUM	NumType=Card	4	dep	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	editors	editors	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	4	dep	_	_
+4	this	this	X	X	_	2	obj	_	_
+5	volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	2	punct	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+
+1	Volume	Volume	PROPN	PROPN	_	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+
+1	,	,	PUNCT	PUNCT	_	0	ROOT	_	_
+2	were	were	X	X	_	1	dep	_	_
+3	the	the	X	X	_	2	flat:foreign	_	_
+4	late	late	X	X	_	3	flat:foreign	_	_
+5	Charles	Charles	PROPN	PROPN	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+6	Palache	Palache	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Clifford	Clifford	PROPN	PROPN	_	0	ROOT	_	_
+2	Frondel	Frondel	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	the	the	X	X	_	4	flat:foreign	_	_
+6	late	late	X	X	_	4	flat:foreign	_	_
+7	Harry	Harry	PROPN	PROPN	Gender=Masc|Number=Sing	4	flat:foreign	_	_
+8	Berman	Berman	PROPN	PROPN	_	4	flat:name	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	all	all	X	X	_	1	dep	_	_
+11	of	of	X	X	_	10	fixed	_	_
+12	Harvard	Harvard	PROPN	PROPN	Gender=Masc|Number=Sing	1	dep	_	_
+13	University	University	PROPN	PROPN	_	1	flat:name	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Work	Work	PROPN	PROPN	_	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	det	_	_
+2	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	2	2	NUM	NUM	NumType=Card	2	nummod	_	_
+4	,	,	PUNCT	PUNCT	_	10	punct	_	_
+5	was	was	X	X	_	4	dep	_	_
+6	begun	begun	X	X	_	5	flat:foreign	_	_
+7	in	in	X	X	_	5	flat:foreign	_	_
+8	1941	1941	NUM	NUM	NumType=Card	5	nummod	_	_
+9	,	,	PUNCT	PUNCT	_	10	punct	_	_
+10	interrupted	interrupted	ADJ	ADJ	Gender=Masc|Number=Plur	2	conj	_	_
+11	by	by	X	X	_	10	dep	_	_
+12	the	the	X	X	_	10	dep	_	_
+13	war	war	X	X	_	10	nsubj	_	_
+14	in	in	X	X	_	10	dep	_	_
+15	1942	1942	NUM	NUM	NumType=Card	10	nsubj	_	_
+16	,	,	PUNCT	PUNCT	_	10	punct	_	_
+17	and	and	X	X	_	10	dep	_	_
+18	resumed	resumed	ADJ	ADJ	Gender=Masc|Number=Sing	17	flat:foreign	_	_
+19	in	in	X	X	_	17	flat:foreign	_	_
+20	1945	1945	NUM	NUM	NumType=Card	17	flat:foreign	_	_
+21	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	was	was	X	X	_	4	advmod	_	_
+4	completed	completed	X	X	_	1	flat:foreign	_	_
+5	in	in	X	X	_	1	flat:foreign	_	_
+6	1950	1950	NUM	NUM	NumType=Card	1	nummod	_	_
+7	and	and	X	X	_	1	dep	_	_
+8	published	published	X	X	_	7	dep	_	_
+9	in	in	X	X	_	1	flat:foreign	_	_
+10	1951	1951	NUM	NUM	NumType=Card	1	nummod	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	a	NOUN	NOUN	_	0	ROOT	_	_
+2	supplementary	supplementary	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+
+1	grant	grer	VERB	VERB	Tense=Pres|VerbForm=Part	4	case	_	_
+2	from	from	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	Geological	Geological	X	X	_	0	ROOT	_	_
+5	Society	Society	X	X	_	4	flat:name	_	_
+6	of	of	X	X	_	7	case	_	_
+7	America	America	X	X	_	4	nmod	_	_
+8	helped	helped	X	X	_	4	dep	_	_
+9	finance	finance	X	X	_	4	amod	_	_
+10	its	its	X	X	_	4	punct	_	_
+
+1	publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Besides	beside	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	editors	editors	X	X	_	4	advmod	_	_
+4	there	there	X	X	_	1	nmod	_	_
+5	were	were	X	X	_	1	dep	_	_
+6	many	many	X	X	_	1	dep	_	_
+7	contributors	contributors	X	X	_	1	flat:name	_	_
+8	in	in	X	X	_	7	dep	_	_
+9	the	the	X	X	_	7	dep	_	_
+10	United	United	X	X	_	7	dep	_	_
+11	States	States	X	X	_	1	flat:foreign	_	_
+12	and	and	X	X	_	1	dep	_	_
+13	Great	Great	X	X	_	1	dep	_	_
+14	Britain	Britain	X	X	_	1	flat:foreign	_	_
+15	to	to	X	X	_	1	dep	_	_
+16	Volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+17	1	1	NUM	NUM	NumType=Card	16	nummod	_	_
+18	,	,	PUNCT	PUNCT	_	1	punct	_	_
+19	and	and	X	X	_	1	dep	_	_
+20	2	2	NUM	NUM	NumType=Card	19	nummod	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	W.	W.	PROPN	PROPN	Gender=Masc|Number=Sing	8	nsubj	_	_
+2	E.	E.	PROPN	PROPN	_	1	flat:name	_	_
+3	Ford	ford	ADJ	ADJ	Number=Sing	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	for	for	ADP	ADP	_	6	case	_	_
+6	example	example	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	continued	continued	X	X	_	0	ROOT	_	_
+9	to	to	X	X	_	10	dep	_	_
+10	supply	supply	X	X	_	8	obl:arg	_	_
+11	data	data	ADJ	ADJ	Gender=Masc|Number=Plur	8	advmod	_	_
+12	on	on	PRON	PRON	Number=Sing|Person=3	14	nsubj	_	_
+13	the	the	X	X	_	14	aux:tense	_	_
+14	occurrence	occurrence	NOUN	NOUN	Gender=Fem|Number=Sing	8	ccomp	_	_
+15	of	of	ADP	ADP	_	16	case	_	_
+16	minerals	mineral	NOUN	NOUN	Gender=Masc|Number=Plur	14	nmod	_	_
+17	until	until	X	X	_	16	amod	_	_
+18	his	his	X	X	_	16	amod	_	_
+19	death	death	NOUN	NOUN	Gender=Masc|Number=Sing	16	nmod	_	_
+20	in	in	X	X	_	21	case	_	_
+21	1939	1939	NUM	NUM	NumType=Card	16	nmod	_	_
+22	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	3	3	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	6	punct	_	_
+4	is	is	X	X	_	6	case	_	_
+5	nearing	nearing	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+6	completion	completion	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+7	and	and	X	X	_	6	dep	_	_
+8	there	there	X	X	_	1	nmod	_	_
+9	are	are	X	X	_	10	case	_	_
+10	plans	plan	NOUN	NOUN	Gender=Masc|Number=Plur	8	obl:mod	_	_
+11	to	to	X	X	_	1	dep	_	_
+12	revise	revise	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+13	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	12	xcomp	_	_
+14	1	1	NUM	NUM	NumType=Card	13	nummod	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	project	project	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	4	case	_	_
+4	currently	currently	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	supported	supported	X	X	_	4	acl	_	_
+6	by	by	X	X	_	4	dep	_	_
+7	Harvard	Harvard	PROPN	PROPN	Gender=Masc|Number=Sing	1	dep	_	_
+8	University	University	PROPN	PROPN	_	1	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	minerals	mineral	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Crystallographic	Crystallographic	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	physical	physical	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	optical	optical	NOUN	NOUN	Number=Sing	3	conj	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	and	and	X	X	_	1	dep	_	_
+8	chemical	chemical	X	X	_	7	flat:foreign	_	_
+9	properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	7	flat:foreign	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	2	advmod	_	_
+2	crystallographic	crystallographic	X	X	_	0	ROOT	_	_
+3	data	dater	X	X	_	2	obj	_	_
+4	given	given	X	X	_	2	obj	_	_
+5	include	include	X	X	_	2	punct	_	_
+6	interaxial	interaxial	X	X	_	2	obj	_	_
+
+1	angles	angle	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	unit	unir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+4	cell	cell	NOUN	NOUN	Gender=Fem|Number=Sing	3	obj	_	_
+
+1	dimensions	dimension	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+2	the	the	X	X	_	15	punct	_	_
+3	physical	physical	X	X	_	2	flat:foreign	_	_
+4	property	property	X	X	_	3	dep	_	_
+5	values	value	ADJ	ADJ	Number=Plur	3	amod	_	_
+6	include	include	X	X	_	2	flat:foreign	_	_
+7	hardness	hardness	X	X	_	6	amod	_	_
+8	,	,	PUNCT	PUNCT	_	6	punct	_	_
+9	melting	melting	ADP	ADP	_	10	nmod	_	_
+10	point	point	NOUN	NOUN	Gender=Masc|Number=Sing	6	acl:relcl	_	_
+11	,	,	PUNCT	PUNCT	_	2	punct	_	_
+12	and	and	X	X	_	2	flat:foreign	_	_
+13	specific	specific	X	X	_	12	flat:foreign	_	_
+14	gravity	gravity	X	X	_	12	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	of	of	X	X	_	1	amod	_	_
+3	data	data	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Almost	almost	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	entirely	entirely	X	X	_	1	flat:foreign	_	_
+3	original	original	ADJ	ADJ	Gender=Masc|Number=Sing	4	amod	_	_
+4	articles	article	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	in	in	X	X	_	6	case	_	_
+6	journals	journal	NOUN	NOUN	_	1	nmod	_	_
+7	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	14	nsubj	_	_
+2	abstracts	abstracts	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	2	flat:foreign	_	_
+4	other	other	X	X	_	2	flat:foreign	_	_
+5	compilations	compilation	NOUN	NOUN	Gender=Fem|Number=Plur	2	flat:foreign	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	8	det	_	_
+7	rare	rare	ADJ	ADJ	Number=Sing	8	amod	_	_
+8	occasions	occasion	NOUN	NOUN	Gender=Fem|Number=Plur	14	nsubj	_	_
+9	when	when	X	X	_	8	amod	_	_
+10	original	original	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+11	papers	papers	X	X	_	8	nmod	_	_
+12	are	are	X	X	_	14	dep	_	_
+13	not	not	X	X	_	12	dep	_	_
+14	available	availabl	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+15	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Criticality	Criticality	PROPN	PROPN	_	6	nsubj	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	All	All	X	X	_	1	dep	_	_
+4	information	information	ADJ	ADJ	Gender=Fem|Number=Sing	3	amod	_	_
+5	is	is	X	X	_	6	dep	_	_
+6	carefully	carefully	X	X	_	8	dep	_	_
+7	appraised	appraised	X	X	_	6	acl	_	_
+8	and	and	X	X	_	0	ROOT	_	_
+9	uncertain	uncertain	ADJ	ADJ	Gender=Masc|Number=Sing	8	dep	_	_
+
+1	facts	fact	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	designated	designated	X	X	_	2	flat:foreign	_	_
+4	by	by	X	X	_	2	dep	_	_
+5	(	(	PUNCT	PUNCT	_	2	punct	_	_
+6	'	'	NOUN	NOUN	_	1	punct	_	SpaceAfter=No
+7	?	?	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No
+
+1	'	'	PUNCT	PUNCT	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	)	)	PUNCT	PUNCT	_	2	punct	_	_
+2	An	An	X	X	_	0	ROOT	_	_
+3	authentic	authentic	X	X	_	4	case	_	_
+4	diffraction	diffraction	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+5	pattern	pattern	X	X	_	2	flat:foreign	_	_
+6	is	is	X	X	_	2	dep	_	_
+7	always	always	X	X	_	2	flat:foreign	_	_
+8	obtained	obtained	X	X	_	2	flat:foreign	_	_
+9	and	and	X	X	_	2	dep	_	_
+10	optical	optical	X	X	_	2	flat:foreign	_	_
+11	properties	properties	X	X	_	2	flat:foreign	_	_
+12	are	are	X	X	_	2	dep	_	_
+13	frequently	frequently	X	X	_	2	dep	_	_
+14	checked	checked	X	X	_	2	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Use	Use	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	3	amod	_	_
+3	nomenclature	nomenclature	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	symbols	symbol	NOUN	NOUN	Number=Plur	1	dep	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	units	unit	NOUN	NOUN	Gender=Masc|Number=Plur	5	conj	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	physical	physical	X	X	_	5	appos	_	_
+10	constants	constant	ADJ	ADJ	Gender=Masc|Number=Plur	9	amod	_	_
+11	:	:	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Recommendations	recommendation	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	of	of	X	X	_	1	amod	_	_
+3	international	international	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+
+1	authorities	authoritie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	8	punct	_	_
+2	such	such	X	X	_	8	dep	_	_
+3	as	as	X	X	_	2	flat:foreign	_	_
+4	the	the	X	X	_	2	flat:foreign	_	_
+5	International	international	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	flat:foreign	_	_
+6	Union	Union	PROPN	PROPN	_	2	flat:foreign	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	Crystallography	Crystallography	PROPN	PROPN	_	0	ROOT	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	are	are	X	X	_	11	case	_	_
+11	followed	followed	PROPN	PROPN	_	8	nmod	_	_
+12	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	3	nsubj	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	dep	_	_
+4	complete	complete	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	5	amod	_	_
+5	synonymy	synonymy	X	X	_	0	ROOT	_	_
+6	at	at	X	X	_	5	dep	_	_
+7	the	the	X	X	_	5	dep	_	_
+8	beginning	beginning	X	X	_	7	flat:foreign	_	_
+9	of	of	X	X	_	10	dep	_	_
+10	each	each	X	X	_	7	obl:arg	_	_
+11	species	species	X	X	_	12	iobj	_	_
+12	description	description	NOUN	NOUN	Gender=Fem|Number=Sing	5	nmod	_	_
+13	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Currency	Currency	X	X	_	16	nsubj	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Currency	Currency	X	X	_	1	dep	_	_
+4	in	in	X	X	_	3	flat:foreign	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	usual	usual	X	X	_	3	flat:foreign	_	_
+7	sense	sense	X	X	_	3	flat:foreign	_	_
+8	cannot	cannot	X	X	_	3	flat:foreign	_	_
+9	be	be	X	X	_	8	dep	_	_
+10	maintained	maintained	ADV	ADV	_	8	flat:foreign	_	_
+11	in	in	X	X	_	12	case	_	_
+12	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	3	dep	_	_
+13	undertaking	undertaking	X	X	_	12	amod	_	_
+14	of	of	X	X	_	15	case	_	_
+15	this	this	X	X	_	12	nmod	_	_
+16	sort	sortir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+17	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	Format	format	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	data	dater	X	X	_	1	flat:foreign	_	_
+3	are	are	X	X	_	1	flat:foreign	_	_
+4	presented	presented	X	X	_	1	flat:foreign	_	_
+5	in	in	X	X	_	1	flat:foreign	_	_
+6	text	text	X	X	_	1	flat:foreign	_	_
+7	and	and	X	X	_	1	flat:foreign	_	_
+8	tables	table	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+9	in	in	X	X	_	1	flat:foreign	_	_
+10	bound	bound	X	X	_	1	flat:foreign	_	_
+11	volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	1	1	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	7	punct	_	_
+4	of	of	X	X	_	7	nmod	_	_
+5	the	the	X	X	_	4	fixed	_	_
+6	seventh	seventh	X	X	_	4	flat:foreign	_	_
+7	edition	edition	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+8	contains	contain	ADJ	ADJ	Gender=Masc|Number=Plur	7	amod	_	_
+
+1	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	introduction	introduction	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	and	and	X	X	_	1	flat:foreign	_	_
+4	data	dater	X	X	_	1	flat:foreign	_	_
+5	for	for	X	X	_	1	dep	_	_
+6	eight	eight	X	X	_	1	dep	_	_
+7	classes	classe	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+8	of	of	ADP	ADP	_	9	case	_	_
+9	minerals	mineral	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+10	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	contains	contain	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+5	data	dater	X	X	_	4	amod	_	_
+6	for	for	X	X	_	4	dep	_	_
+7	forty	forty	ADV	ADV	_	4	amod	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	two	two	NOUN	NOUN	_	0	ROOT	_	_
+
+1	classes	classe	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	References	reference	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	are	are	X	X	_	1	amod	_	_
+3	given	given	X	X	_	1	flat:foreign	_	_
+4	at	at	X	X	_	3	dep	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:mod	_	_
+7	of	of	X	X	_	8	case	_	_
+8	each	each	X	X	_	3	obl:mod	_	_
+9	mineral	mineral	ADJ	ADJ	Gender=Masc|Number=Sing	3	amod	_	_
+10	description	description	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+11	and	and	X	X	_	1	flat:foreign	_	_
+12	a	avoir	X	X	_	1	flat:foreign	_	_
+13	general	general	PROPN	PROPN	_	1	flat:foreign	_	_
+14	index	index	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+15	is	is	X	X	_	1	dep	_	_
+16	given	given	X	X	_	1	flat:foreign	_	_
+17	at	at	X	X	_	16	dep	_	_
+18	the	the	X	X	_	16	dep	_	_
+19	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	16	obl:mod	_	_
+20	of	of	X	X	_	1	flat:foreign	_	_
+21	each	each	X	X	_	20	obl:arg	_	_
+22	volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	20	flat:foreign	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	There	There	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+5	comprehensive	comprehensive	X	X	_	1	flat:foreign	_	_
+6	index	index	X	X	_	1	flat:foreign	_	_
+7	in	in	X	X	_	8	case	_	_
+8	Volume	Volume	PROPN	PROPN	_	1	nmod	_	_
+9	3	3	NUM	NUM	NumType=Card	8	nummod	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	covering	covering	X	X	_	1	conj	_	_
+12	all	all	X	X	_	11	dep	_	_
+
+1	three	three	X	X	_	0	ROOT	_	_
+
+1	volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Publication	publication	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+
+1	distribution	distribution	NOUN	NOUN	Gender=Fem|Number=Sing	16	nsubj	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	1	1	NUM	NUM	NumType=Card	3	nummod	_	_
+5	(	(	PUNCT	PUNCT	_	1	punct	_	_
+6	(	(	PUNCT	PUNCT	_	1	punct	_	_
+7	Af	Af	PROPN	PROPN	_	1	appos	_	_
+8	)	)	PUNCT	PUNCT	_	1	punct	_	_
+9	of	of	X	X	_	12	case	_	_
+10	the	the	X	X	_	9	fixed	_	_
+11	seventh	seventh	X	X	_	12	amod	_	_
+12	edition	edition	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+13	of	of	X	X	_	12	amod	_	_
+14	Dana'	dana'	NOUN	NOUN	Number=Plur	13	dep	_	SpaceAfter=No
+15	s	s	PRON	PRON	Person=3|Reflex=Yes	16	expl:comp	_	_
+16	System	System	X	X	_	0	ROOT	_	_
+17	Of	Of	X	X	_	16	advmod	_	_
+18	Mineralogy	Mineralogy	PROPN	PROPN	_	16	dep	_	_
+19	was	was	X	X	_	18	dep	_	_
+20	published	published	X	X	_	19	dep	_	_
+21	in	in	X	X	_	18	dep	_	_
+22	1944	1944	NUM	NUM	NumType=Card	16	punct	_	_
+23	and	and	X	X	_	16	dep	_	_
+
+1	Volume	Volume	PROPN	PROPN	_	0	ROOT	_	_
+2	2	2	NUM	NUM	NumType=Card	1	nummod	_	_
+3	(	(	PUNCT	PUNCT	_	1	punct	_	_
+4	(	(	PUNCT	PUNCT	_	1	punct	_	_
+5	Af	Af	PROPN	PROPN	_	1	parataxis	_	_
+6	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	in	in	X	X	_	4	case	_	_
+2	1951	1951	NUM	NUM	NumType=Card	1	dep	_	_
+3	by	by	X	X	_	4	punct	_	_
+4	John	John	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	Wiley	Wiley	PROPN	PROPN	_	4	flat:name	_	_
+6	&	et	CCONJ	CCONJ	_	7	cc	_	_
+7	Sons	son	NOUN	NOUN	Gender=Masc|Number=Plur	4	conj	_	_
+8	,	,	PUNCT	PUNCT	_	4	punct	_	_
+9	Inc	Inc	PROPN	PROPN	_	4	appos	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	7	punct	_	_
+2	New	New	X	X	_	7	nsubj	_	_
+3	York	York	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	N.	n.	NOUN	NOUN	Gender=Masc|Number=Sing	2	appos	_	_
+6	Y.	Y.	PROPN	PROPN	_	5	flat:name	_	_
+7	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+8	(	(	PUNCT	PUNCT	_	7	punct	_	_
+
+1	The	The	X	X	_	10	dep	_	_
+2	association	association	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	of	of	X	X	_	4	case	_	_
+4	Wiley	Wiley	PROPN	PROPN	_	1	nmod	_	_
+5	&	et	CCONJ	CCONJ	_	6	cc	_	_
+6	Sons	son	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+7	with	with	X	X	_	6	flat:name	_	_
+8	the	the	X	X	_	1	flat:foreign	_	_
+9	Dana	Dana	X	X	_	1	flat:foreign	_	_
+10	Mineralogies	Mineralogies	X	X	_	0	ROOT	_	_
+11	dates	date	NOUN	NOUN	Gender=Fem|Number=Plur	10	nmod	_	_
+12	back	back	NOUN	NOUN	Gender=Masc|Number=Plur	10	obl:mod	_	_
+13	to	to	X	X	_	10	obl:mod	_	_
+14	1844	1844	NUM	NUM	NumType=Card	10	obl:mod	_	_
+15	when	when	ADJ	ADJ	Number=Plur	10	amod	_	_
+16	they	they	X	X	_	17	nsubj	_	_
+17	published	published	X	X	_	10	parataxis	_	_
+18	the	the	X	X	_	10	dep	_	_
+19	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	20	amod	_	_
+20	edition	edition	NOUN	NOUN	Gender=Masc|Number=Sing	10	obl:mod	_	_
+21	of	of	X	X	_	10	advmod	_	_
+22	the	the	X	X	_	10	dep	_	_
+23	system	system	X	X	_	10	obl:mod	_	_
+24	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	)	)	PUNCT	PUNCT	_	14	punct	_	_
+2	The	The	X	X	_	14	dep	_	_
+3	two	two	X	X	_	2	flat:foreign	_	_
+4	volumes	volume	NOUN	NOUN	Gender=Masc|Number=Plur	2	flat:foreign	_	_
+5	are	ar	ADJ	ADJ	Gender=Masc|Number=Plur	4	dep	_	_
+6	available	available	X	X	_	2	flat:foreign	_	_
+7	from	from	X	X	_	6	dep	_	_
+8	the	the	X	X	_	2	flat:foreign	_	_
+9	publisher	publisher	X	X	_	2	flat:foreign	_	_
+10	for	for	ADP	ADP	_	11	case	_	_
+11	$	dollar	NOUN	NOUN	_	2	obl:mod	_	SpaceAfter=No
+12	14.00	14.00	NUM	NUM	NumType=Card	14	nummod	_	_
+13	and	and	X	X	_	12	dep	_	_
+14	$	dollar	NOUN	NOUN	_	0	ROOT	_	SpaceAfter=No
+15	16.00	16.00	NUM	NUM	NumType=Card	14	nummod	_	_
+16	,	,	PUNCT	PUNCT	_	17	punct	_	_
+17	respectively	respectively	PROPN	PROPN	_	14	conj	_	_
+18	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	2	2	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+2	-	-	NUM	NUM	NumType=Card	1	nmod	_	SpaceAfter=No
+3	5	5	NOUN	NOUN	NumType=Card	1	nmod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	8	dep	_	_
+2	Groth	Groth	PROPN	PROPN	_	1	flat:foreign	_	_
+3	Institute	Institute	X	X	_	1	flat:foreign	_	_
+4	organization	organization	PROPN	PROPN	_	1	flat:foreign	_	_
+5	:	:	PUNCT	PUNCT	_	1	punct	_	_
+6	`	`	ADP	ADP	Definite=Def|Number=Plur|PronType=Art	1	dep	_	SpaceAfter=No
+7	`	`	X	X	_	6	punct	_	_
+8	The	The	X	X	_	20	obl:mod	_	_
+9	Groth	Groth	PROPN	PROPN	_	8	flat:foreign	_	_
+10	Institute	Institute	PROPN	PROPN	_	9	flat:name	_	_
+11	''	''	PUNCT	PUNCT	_	8	punct	_	_
+12	,	,	PUNCT	PUNCT	_	8	punct	_	_
+13	which	which	X	X	_	16	dep	_	_
+14	was	was	X	X	_	13	dep	_	_
+15	established	established	X	X	_	13	flat:foreign	_	_
+16	in	in	X	X	_	17	dep	_	_
+17	1958	1958	NUM	NUM	NumType=Card	8	nummod	_	_
+18	,	,	PUNCT	PUNCT	_	20	punct	_	_
+19	is	is	X	X	_	20	expl:comp	_	_
+20	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	22	dep	_	_
+21	group	group	X	X	_	20	obj	_	_
+22	activity	activity	X	X	_	23	nsubj	_	_
+23	affiliated	affiliated	X	X	_	0	ROOT	_	_
+24	with	with	X	X	_	23	dep	_	_
+25	the	the	X	X	_	23	dep	_	_
+26	Physics	Physics	X	X	_	23	obj	_	_
+
+1	Department	Department	X	X	_	0	ROOT	_	_
+
+1	of	of	X	X	_	0	ROOT	_	_
+2	The	The	X	X	_	1	flat:foreign	_	_
+
+1	Pennsylvania	Pennsylvania	X	X	_	0	ROOT	_	_
+
+1	State	State	X	X	_	0	ROOT	_	_
+2	University	University	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	University	university	NOUN	NOUN	_	1	nmod	_	_
+5	Park	Park	PROPN	PROPN	_	4	flat:name	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	Pa	Pa	PROPN	PROPN	_	1	conj	_	SpaceAfter=No
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Ray	Ray	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Pepinsky	Pepinsky	PROPN	PROPN	_	1	flat:name	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	Director	Director	X	X	_	1	flat:name	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	dep	_	_
+2	Institute	Institute	X	X	_	14	nsubj	_	_
+3	derives	derive	ADJ	ADJ	Number=Plur	2	amod	_	_
+4	its	its	X	X	_	7	case	_	_
+5	name	name	X	X	_	4	dep	_	_
+6	from	from	X	X	_	4	dep	_	_
+7	Paul	Paul	PROPN	PROPN	Gender=Masc|Number=Sing	2	nmod	_	_
+8	Von	Von	PROPN	PROPN	Gender=Masc|Number=Sing	7	flat:name	_	_
+9	Groth'	Groth'	PROPN	PROPN	_	7	flat:name	_	SpaceAfter=No
+10	s	s	PRON	PRON	Person=3|Reflex=Yes	11	det	_	_
+11	Chemische	chemische	NOUN	NOUN	Gender=Fem|Number=Sing	2	dep	_	_
+12	Krystallographie	Krystallographie	PROPN	PROPN	_	11	nmod	_	_
+13	,	,	PUNCT	PUNCT	_	14	punct	_	_
+14	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+15	five	five	ADV	ADV	_	14	flat:foreign	_	SpaceAfter=No
+
+1	-	-	ADJ	ADJ	Number=Sing	2	punct	_	SpaceAfter=No
+2	volume	volume	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	work	work	X	X	_	2	nmod	_	_
+
+1	which	which	X	X	_	2	nsubj	_	_
+2	appeared	appeared	X	X	_	0	ROOT	_	_
+3	between	between	X	X	_	2	obl:arg	_	_
+4	1906	1906	NUM	NUM	NumType=Card	3	nummod	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	1919	1919	NUM	NUM	NumType=Card	1	nummod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	resident	resider	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+3	staff	staff	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	is	is	X	X	_	5	dep	_	_
+5	large	large	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	consists	consists	X	X	_	1	flat:foreign	_	_
+8	of	of	ADP	ADP	_	9	dep	_	_
+9	professional	professional	ADJ	ADJ	Gender=Masc|Number=Plur	7	obl:arg	_	_
+10	assistants	assistant	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	graduate	graduate	X	X	_	1	parataxis	_	_
+13	students	student	ADJ	ADJ	Gender=Masc|Number=Plur	12	amod	_	_
+14	,	,	PUNCT	PUNCT	_	12	punct	_	_
+15	abstractors	abstractors	PROPN	PROPN	_	12	amod	_	_
+16	,	,	PUNCT	PUNCT	_	12	punct	_	_
+17	librarian	librarian	PROPN	PROPN	_	12	amod	_	_
+18	,	,	PUNCT	PUNCT	_	19	punct	_	_
+19	technical	technical	X	X	_	1	conj	_	_
+20	editor	editor	X	X	_	19	amod	_	_
+21	,	,	PUNCT	PUNCT	_	19	punct	_	_
+22	machine	machine	NOUN	NOUN	Gender=Fem|Number=Sing	19	appos	_	_
+23	operators	operators	X	X	_	22	flat:name	_	_
+24	,	,	PUNCT	PUNCT	_	25	punct	_	_
+25	secretarial	secretarial	PROPN	PROPN	_	1	conj	_	_
+26	help	help	X	X	_	1	flat:foreign	_	_
+27	,	,	PUNCT	PUNCT	_	26	punct	_	_
+28	and	and	X	X	_	1	flat:foreign	_	_
+29	others	others	X	X	_	28	flat:foreign	_	_
+30	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	There	There	X	X	_	0	ROOT	_	_
+2	are	are	X	X	_	1	flat:foreign	_	_
+3	also	also	X	X	_	1	flat:foreign	_	_
+4	corresponding	corresponding	X	X	_	1	flat:foreign	_	_
+5	members	members	X	X	_	1	flat:foreign	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	outside	outside	X	X	_	1	flat:foreign	_	_
+8	advisory	advisory	X	X	_	7	obj	_	_
+9	groups	group	X	X	_	7	obj	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+
+1	Air	Air	X	X	_	0	ROOT	_	_
+
+1	Force	Force	X	X	_	15	nsubj	_	_
+2	Office	Office	X	X	_	1	nmod	_	_
+3	of	of	X	X	_	4	case	_	_
+4	Scientific	Scientific	X	X	_	1	nmod	_	_
+5	Research	Research	X	X	_	4	flat:name	_	_
+6	has	has	X	X	_	4	dep	_	_
+7	provided	provided	X	X	_	1	flat:foreign	_	_
+8	financial	financial	X	X	_	7	flat:foreign	_	_
+9	assistance	assistance	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+10	in	in	X	X	_	1	amod	_	_
+11	the	the	X	X	_	1	dep	_	_
+12	early	early	X	X	_	13	amod	_	_
+13	stages	stage	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+14	of	of	X	X	_	15	dep	_	_
+15	the	the	X	X	_	18	dep	_	_
+16	Institute'	Institute'	PROPN	PROPN	_	15	dep	_	SpaceAfter=No
+17	s	s	PRON	PRON	Person=3|Reflex=Yes	18	nummod	_	_
+18	program	program	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+19	.	.	PUNCT	PUNCT	_	18	punct	_	_
+
+1	Substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	All	All	X	X	_	1	nmod	_	_
+4	crystalline	crystalline	NOUN	NOUN	Gender=Fem|Number=Sing	3	amod	_	_
+
+1	substances	substance	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	other	other	X	X	_	1	flat:foreign	_	_
+4	solid	solid	X	X	_	1	flat:foreign	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	3	punct	_	SpaceAfter=No
+2	state	stater	X	X	_	3	dep	_	_
+3	materials	materials	PROPN	PROPN	_	0	ROOT	_	_
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	The	The	X	X	_	11	nsubj	_	_
+4	aim	aim	X	X	_	3	flat:foreign	_	_
+5	is	is	X	X	_	4	dep	_	_
+6	to	to	X	X	_	7	case	_	_
+7	collect	collect	NOUN	NOUN	Gender=Masc|Number=Plur	3	nmod	_	_
+8	a	avoir	X	X	_	11	aux:tense	_	_
+9	very	very	X	X	_	8	dep	_	_
+10	broad	broad	X	X	_	8	flat:foreign	_	_
+11	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+12	of	of	X	X	_	13	case	_	_
+13	physical	physical	NOUN	NOUN	Gender=Masc|Number=Plur	11	obj	_	_
+14	,	,	PUNCT	PUNCT	_	13	punct	_	_
+15	chemical	chemical	PROPN	PROPN	Gender=Masc|Number=Sing	13	appos	_	_
+16	,	,	PUNCT	PUNCT	_	13	punct	_	_
+17	morphological	morphological	NOUN	NOUN	Gender=Fem|Number=Sing	13	appos	_	_
+18	,	,	PUNCT	PUNCT	_	17	punct	_	_
+19	and	and	X	X	_	17	appos	_	_
+20	structural	structural	ADJ	ADJ	Gender=Masc|Number=Sing	19	flat:foreign	_	_
+21	data	dater	X	X	_	19	flat:foreign	_	_
+22	for	for	X	X	_	23	case	_	_
+23	crystals	crystal	NOUN	NOUN	Gender=Masc|Number=Sing	17	conj	_	_
+24	on	on	PRON	PRON	Number=Sing|Person=3	25	nsubj	_	_
+25	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	26	aux:tense	_	_
+26	encyclopedic	encyclopedic	PROPN	PROPN	_	17	acl:relcl	_	_
+27	scale	scale	X	X	_	1	flat:foreign	_	_
+28	and	and	X	X	_	27	dep	_	_
+29	to	to	X	X	_	27	dep	_	_
+30	seek	seek	X	X	_	27	flat:foreign	_	_
+31	all	all	X	X	_	30	dep	_	_
+32	possible	possible	ADJ	ADJ	Number=Sing	27	amod	_	_
+33	useful	useful	X	X	_	27	amod	_	_
+34	and	and	X	X	_	27	dep	_	_
+35	revealing	revealing	X	X	_	1	flat:foreign	_	_
+36	correlations	correlation	ADJ	ADJ	Number=Plur	35	amod	_	_
+37	of	of	ADP	ADP	_	38	case	_	_
+38	properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	35	obl:mod	_	_
+39	with	with	X	X	_	1	flat:foreign	_	_
+40	internal	internal	X	X	_	1	flat:foreign	_	_
+41	structure	structure	NOUN	NOUN	Gender=Fem|Number=Sing	1	amod	_	_
+42	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sources	source	NOUN	NOUN	Gender=Fem|Number=Plur	15	nsubj	_	_
+2	of	of	X	X	_	1	dep	_	_
+3	data	data	NOUN	NOUN	Gender=Fem|Number=Sing	1	dep	_	_
+4	:	:	PUNCT	PUNCT	_	1	punct	_	_
+5	The	The	X	X	_	7	case	_	_
+6	first	first	X	X	_	7	amod	_	_
+7	stage	stage	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+8	of	of	ADP	ADP	_	9	case	_	_
+9	operation	operation	NOUN	NOUN	Gender=Fem|Number=Sing	7	nmod	_	_
+10	has	has	X	X	_	9	dep	_	_
+11	centered	centered	X	X	_	9	flat:name	_	_
+12	on	on	PRON	PRON	Number=Sing|Person=3	15	nsubj	_	_
+13	the	the	X	X	_	15	dep	_	_
+14	literature	literature	X	X	_	13	flat:foreign	_	_
+15	imaging	imaging	X	X	_	22	dep	_	_
+16	of	of	ADP	ADP	_	17	case	_	_
+17	critical	critical	X	X	_	15	dep	_	_
+18	or	or	CCONJ	CCONJ	_	19	cc	_	_
+19	summarizing	summarizing	X	X	_	17	conj	_	_
+20	tabulations	tabulation	NOUN	NOUN	Gender=Fem|Number=Plur	15	obj	_	_
+21	such	such	X	X	_	15	advcl	_	_
+22	as	as	X	X	_	23	dep	_	_
+23	the	the	X	X	_	24	dep	_	_
+24	Barker	Barker	X	X	_	0	ROOT	_	_
+
+1	Index	Index	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Coverage	coverage	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	of	of	X	X	_	1	flat:foreign	_	_
+3	primary	primary	X	X	_	1	dep	_	_
+4	literature	literature	X	X	_	1	flat:foreign	_	_
+5	will	will	X	X	_	1	dep	_	_
+6	follow	follow	X	X	_	1	amod	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Unpublished	unpublished	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	data	dater	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	dep	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	available	availabl	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	Groth	Groth	X	X	_	1	flat:foreign	_	_
+8	institute	institute	X	X	_	1	flat:foreign	_	_
+9	from	from	X	X	_	8	dep	_	_
+10	cooperating	cooperating	X	X	_	1	flat:foreign	_	_
+11	groups	group	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+12	and	and	X	X	_	1	dep	_	_
+13	individuals	individuals	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Criticality	Criticality	PROPN	PROPN	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	Critical	Critical	X	X	_	12	nsubj	_	_
+4	evaluation	evaluation	NOUN	NOUN	Gender=Fem|Number=Sing	3	amod	_	_
+5	of	of	X	X	_	7	case	_	_
+6	all	all	X	X	_	5	dep	_	_
+7	data	dater	X	X	_	3	nmod	_	_
+8	compiled	compiled	X	X	_	3	flat:foreign	_	_
+9	is	is	X	X	_	3	flat:foreign	_	_
+10	not	not	X	X	_	9	dep	_	_
+11	a	avoir	X	X	_	12	aux:tense	_	_
+12	primary	primary	X	X	_	1	parataxis	_	_
+13	aim	aim	X	X	_	12	obj	_	_
+14	of	of	X	X	_	15	case	_	_
+15	this	this	X	X	_	13	obl:arg	_	_
+16	project	project	X	X	_	13	flat:name	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	However	However	PROPN	PROPN	_	18	nsubj	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	the	the	X	X	_	4	aux:tense	_	_
+4	proposed	proposed	X	X	_	1	nmod	_	_
+5	correlation	correlation	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+6	of	of	X	X	_	7	dep	_	_
+7	the	the	X	X	_	4	obl:mod	_	_
+8	many	many	X	X	_	4	flat:foreign	_	_
+9	interrelated	interrelated	ADJ	ADJ	Gender=Masc	4	amod	_	_
+10	properties	propertie	NOUN	NOUN	Gender=Fem|Number=Plur	4	flat:foreign	_	_
+11	of	of	X	X	_	12	case	_	_
+12	crystals	crystal	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+13	will	will	X	X	_	4	nsubj	_	_
+14	reveal	reveal	X	X	_	4	dep	_	_
+15	discrepancies	discrepancie	ADJ	ADJ	Gender=Fem|Number=Plur	14	amod	_	_
+16	in	in	X	X	_	1	dep	_	_
+17	the	the	X	X	_	1	dep	_	_
+18	recorded	recorded	X	X	_	0	ROOT	_	_
+19	data	dater	X	X	_	18	obj	_	_
+20	and	and	X	X	_	19	fixed	_	_
+21	suggest	suggest	X	X	_	18	obj	_	_
+22	areas	areas	X	X	_	18	dep	_	_
+23	for	for	X	X	_	24	case	_	_
+24	reinvestigation	reinvestigation	NOUN	NOUN	Gender=Fem|Number=Sing	18	obj	_	_
+25	.	.	PUNCT	PUNCT	_	18	punct	_	_
+
+1	In	In	X	X	_	12	dep	_	_
+2	addition	addition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	the	the	X	X	_	8	expl:pass	_	_
+5	availability	availability	X	X	_	8	dep	_	_
+6	of	of	X	X	_	7	case	_	_
+7	computers	computer	NOUN	NOUN	Gender=Masc|Number=Plur	8	obl:mod	_	_
+8	will	will	ADJ	ADJ	Gender=Masc|Number=Plur	1	advcl	_	_
+9	permit	permettre	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	parataxis	_	_
+10	recalculation	recalculation	PROPN	PROPN	_	9	obj	_	_
+11	and	and	X	X	_	1	flat:foreign	_	_
+12	refinement	refinemer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+13	of	of	ADP	ADP	_	16	dep	_	_
+14	much	much	X	X	_	13	fixed	_	_
+15	structural	structural	ADJ	ADJ	Gender=Masc|Number=Sing	13	flat:foreign	_	_
+16	information	information	NOUN	NOUN	Gender=Fem|Number=Sing	12	obj	_	_
+17	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Use	Use	X	X	_	5	case	_	_
+2	of	of	X	X	_	3	amod	_	_
+3	nomenclature	nomenclature	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	symbols	symbol	NOUN	NOUN	Number=Plur	27	nsubj	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	units	unit	NOUN	NOUN	Gender=Masc|Number=Plur	5	conj	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	physical	physical	X	X	_	5	appos	_	_
+10	constants	constant	ADJ	ADJ	Gender=Masc|Number=Plur	9	amod	_	_
+11	:	:	PUNCT	PUNCT	_	9	punct	_	_
+12	For	For	X	X	_	9	nmod	_	_
+13	punched	punched	PROPN	PROPN	Gender=Masc|Number=Sing	12	amod	_	SpaceAfter=No
+14	-	-	PROPN	PROPN	Gender=Masc|Number=Sing	12	flat:foreign	_	SpaceAfter=No
+15	card	card	X	X	_	12	flat:foreign	_	_
+16	or	or	X	X	_	17	advmod	_	_
+17	tape	tape	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	acl:relcl	_	_
+18	storage	storage	NOUN	NOUN	Gender=Masc|Number=Sing	17	xcomp	_	_
+19	of	of	X	X	_	20	case	_	_
+20	information	information	NOUN	NOUN	Gender=Fem|Number=Sing	17	obl:arg	_	_
+21	all	all	X	X	_	20	dep	_	_
+22	literature	literature	X	X	_	17	advmod	_	_
+23	values	value	ADJ	ADJ	Number=Plur	22	amod	_	_
+24	must	must	PROPN	PROPN	Gender=Masc|Number=Sing	17	obj	_	_
+25	be	be	X	X	_	17	advmod	_	_
+26	conformed	conformed	ADJ	ADJ	Number=Sing	17	advmod	_	_
+27	to	to	X	X	_	0	ROOT	_	_
+28	a	avoir	X	X	_	27	flat:foreign	_	_
+29	common	common	X	X	_	30	det	_	_
+30	language	language	NOUN	NOUN	Gender=Masc|Number=Sing	28	obj	_	_
+31	.	.	PUNCT	PUNCT	_	27	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	this	this	X	X	_	1	flat:foreign	_	_
+3	way	way	X	X	_	1	flat:foreign	_	_
+4	a	avoir	X	X	_	5	aux:tense	_	_
+5	degree	degree	X	X	_	1	flat:foreign	_	_
+6	of	of	X	X	_	7	case	_	_
+7	unification	unification	NOUN	NOUN	Gender=Fem|Number=Sing	5	obl:mod	_	_
+8	of	of	X	X	_	9	case	_	_
+9	nomenclature	nomenclature	NOUN	NOUN	Gender=Fem|Number=Sing	5	acl:relcl	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	symbols	symbol	NOUN	NOUN	Number=Plur	1	nmod	_	_
+12	,	,	PUNCT	PUNCT	_	1	punct	_	_
+13	and	and	X	X	_	1	dep	_	_
+14	units	units	X	X	_	13	flat:foreign	_	_
+15	will	will	X	X	_	13	flat:foreign	_	_
+16	be	be	X	X	_	13	flat:foreign	_	_
+17	realized	realized	PROPN	PROPN	_	13	flat:foreign	_	_
+18	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No

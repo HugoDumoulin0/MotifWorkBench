@@ -8,24 +8,34 @@ The pipeline relies on linguistic annotation using Stanza (Qi et al. 2020), moti
 
 The CloSPEC algorithm (Béchet et al. 2015) can be found in the form of the binary file BideSpanTree. Some of the initial annotation, extraction and internal clustering scripts are based on the work of Mekki 2022.
 
-## How to use?
-Run: 
-```bash
-python src/main.py
-```
-
-The script will process all `.txt` files located into ```Data/textes_raw```. The textometric part of MWB needs a `metadata.tsv` file relating to its corpus texts (see textometric settings below).
-
-Here, MotifWorkBench is distributed with the nltk version of the Brown corpus (Kučera & Francis 1964)
 
 ## How to cite?
 If you like (or really hate) this work, please use the following citation:
 > Dumoulin, Hugo and Premat, Timothée (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026. Scripts at: [https://github.com/HugoDumoulin0/MotifWorkBench](https://github.com/HugoDumoulin0/MotifWorkBench)
 
-## Requirements
-This version works on Mac OS. A Windows and Linux implementation is coming.
+## Installation
+**MWB v.0.2** is available on three OS (Windows, MacOS, Linux)
 
-MWB needs Python, R, Perl, CWB and bash. On Mac OS, Docker is needed to run the Linux binaries of BideSpanTree motif extractor (see ```execute_closed_pattern.sh```).
+-> ``Windows``
+1. Download the ``MWB_Win`` folder from GitHub.
+2. Open the folder and run ``install_and_run_windows.bat``.
+3. To launch MWB after the initial installation, simply double-click the ``launch_windows.bat`` file.
+
+-> ``MacOS``
+1. Download the ``MWB_macOS`` folder from GitHub.
+2. Open the folder and run ``install_and_run_macos.command``.
+3. To launch MWB after the initial installation, simply double-click the ``launch_mwb_macos.command`` file.
+
+-> ``Linux``
+1. Download the ``MWB_Linux`` folder from GitHub.
+2. Open the folder and run ``install_and_run_linux.sh``
+3. To launch MWB after the initial installation, simply double-click the ``launch_motifworkbench.sh`` file.
+
+-----------------------
+
+**MWB v.0.1** is also available (folder ``MotifWorkBench``): 
+
+MWB v.0.1 needs Python, R, Perl, CWB and bash. On Mac OS, Docker is needed to run the Linux binaries of BideSpanTree motif extractor (see ```execute_closed_pattern.sh```).
 - Python requirements are listed in ```src/requirements.txt```
 - R packages are automatically downloaded if not installed, and loaded
 - [CWB download page](https://cwb.sourceforge.io/install.php)
@@ -43,6 +53,18 @@ brew install cwb
 cpan
 install CWB::CQP
 ```
+
+**How to use?**
+Run: 
+```bash
+python src/main.py
+```
+
+The script will process all `.txt` files located into ```Data/textes_raw```. The textometric part of MWB needs a `metadata.tsv` file relating to its corpus texts (see textometric settings below).
+
+Here, MotifWorkBench is distributed with the nltk version of the Brown corpus (Kučera & Francis 1964)
+
+------------------------
 
 ## What does it do?
 A simple run such as the one before goes through the following operations:
@@ -63,7 +85,6 @@ A simple run such as the one before goes through the following operations:
 - item: properties attached to an itemset, such as POS, lemma, etc.
 - a motif contains one or several itemsets, each containing one or several items.
 
-Basic parameters are accessible in `config.py` and through a Shiny graphic interface.
 
 ### Pattern mining settings
 Most notable pattern mining parameters used in MWB are:
@@ -81,7 +102,7 @@ The above parameters takes one or several numerical values.
  - `Pos` _idem_
  - `Dep` _idem_
  - `Feats` _idem_
- - `ìnternal_clustering`: if `TRUE`, MWB peforms a clustering of motifs before sending them to the textometrical analysis (makes CA computation way faster). Nota bene : when internal_clustering is enabled, the motifs displayed by CA and other statistical tools are the centroids of a cluster of similar motifs, not the exact motifs contained in the data.
+ - `ìnternal_clustering`: if `TRUE`, MWB peforms a clustering of motifs before sending them to the textometrical analysis (makes CA computation way faster)
 
 ### Textometric settings
 - `early_specifs`: if `TRUE`, MWB performs a prefiltering of motifs based on specific vocabulary (Lafon 1980). In this case, only motifs comprising at least one specific token will be mined. Early specificity filtering requires the following arguments:
@@ -92,15 +113,23 @@ The above parameters takes one or several numerical values.
 Finally, the textometric and visualisation approach rely on a metadata file: `metadata.tsv`. Its address can be changed by changing the value of `path_metadata == "./Data/metadata.tsv"`. The columns to use for spliting the data in contrastive subcorpora is `list_metadata`. Classically, the metadata file have a first column `id` containing the name of each texts, and additional columns containing various qualification of the texts. If your texts does not match the file `metadata.tsv` and/or the values passed to `list_metadata`, the textometric approach will not work.
 
 ## References
-- Béchet, N., Cellier, P., Charnois, T. and Crémilleux, B. (2015). Sequence mining under multiple constraints. In: Proceedings of the 30th Annual ACM Symposium on Applied Computing, 908-914. 
-- Béchet, N., Cellier, P., Charnois, Th., Crémilleux, B. and Quiniou, S. (2013). SDMC : un outil en ligne d'extraction de motifs séquentiels pour la fouille de textes. Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC'13), Jan 2013, Toulouse, France.
-- Dumoulin, H. and Premat, T. (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026.
-- Evert, S. and Hardie, A. (2011). Twenty-first century Corpus Workbench: Updating a query architecture for the new millennium. In Proceedings of the Corpus Linguistics 2011 conference, University of Birmingham, UK. 
-- Kassambara A., Mundt, F., Factoextra – Extract and Visualize the Results of Multivariate Data Analyses, R package documentation, 2020.
-- Lê, S., Josse, J., Husson, F., FactoMineR: an R package for multivariate analysis", Journal of statistical software 25, 2008, p.1-18.
-- Lebart, L., and Salem, A. (1988). Analyse statistique des données textuelles. Dunod.
-- Longrée, D. and Vanni, L. Identification des motifs textuels. Entre statistique et deep learning, Corpus [En ligne], 27 | 2025. URL : http://journals.openedition.org/corpus/10326 ; DOI : https://doi.org/10.4000/13woj 
-- Mekki, J. (2022). Caractérisation de registres de langue par extraction de motifs séquentiels émergents. PhD thesis, Université de Rennes. 
-- Mellet, S. and Longrée, D. (2012). Légitimité d'une unité textométrique : le motif. In A. Dister, D. Longrée, G. Purnelle (éds.), Actes des Journée d'analyse des données textuelles 2012, 715-728.
-- Qi P., Zhang Yuhao, Zhang Yuhui, Bolton J. and Manning Ch. D. (2020). Stanza: A Python Natural Language Processing Toolkit for Many Human Languages. In Association for Computational Linguistics (ACL) System Demonstrations.
+- Béchet, N., Cellier, P., Charnois, T. & Crémilleux, B. (2015). Sequence mining under multiple constraints. In: Proceedings of the 30th Annual ACM Symposium on Applied Computing, 908-914. 
+- Béchet, N., Cellier, P., Charnois, Th., Crémilleux, B. & Quiniou, S. (2013). « SDMC : un outil en ligne d'extraction de motifs séquentiels pour la fouille de textes ». Conférence Francophone sur l'Extraction et la Gestion des Connaissances (EGC'13), Jan 2013, Toulouse, France.
+- Dumoulin, Hugo and Premat, Timothée (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026.
+- Evert, Stefan and Hardie, Andrew (2011). Twenty-first century Corpus Workbench: Updating a query architecture for the new millennium. In Proceedings of the Corpus Linguistics 2011 conference, University of Birmingham, UK. 
+- Kassambara Alboukadel, Mundt Fabian, «Factoextra – Extract and Visualize the Results of Multivariate Data Analyses», R package documentation, 2020.
+- Lê Sébastien, Josse Julie, Husson François, "FactoMineR: an R package for multivariate analysis", Journal of statistical software 25, 2008, p.1-18.
+- Lebart, L., & Salem, A. (1988). Analyse statistique des données textuelles. Dunod.
+- Longrée, D. & Vanni, L. « Identification des motifs textuels. Entre statistique et deep learning », Corpus [En ligne], 27 | 2025, mis en ligne le 13 mai 2025, consulté le 16 mai 2025. URL : http://journals.openedition.org/corpus/10326 ; DOI : https://doi.org/10.4000/13woj 
+- Mekki, J. (2022). Caractérisation de registres de langue par extraction de motifs séquentiels émergents. Thèse de doctorat, Université de Rennes. 
+- Mellet, S. et Longrée, D. (2012). Légitimité d'une unité textométrique : le motif. In A. Dister, D. Longrée, G. Purnelle (éds.), Actes des Journée d'analyse des données textuelles 2012, 715-728. 
 
+## Version history
+
+-> ``MWB v.0.2``
+GUI format, concordancer, help page, run history, analysis settings, configuration profiles, built-in visualization interface, available on Linux, Mac, Windows, "installer".
+Made by da Silva Jean-Charles [GitHub : @jcharlesDS](https://github.com/jcharlesDS)
+
+
+-> ``MWB v.0.1``
+Base version, CLI format, available only on Mac and Linux with Docker.

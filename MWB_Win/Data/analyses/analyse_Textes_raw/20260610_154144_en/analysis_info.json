@@ -1,0 +1,54 @@
+{
+  "analysis_group_name": "analyse_Textes_raw",
+  "corpus_name": "analyse_Textes_raw",
+  "config_id": "20260610_154144_en",
+  "created_at": "2026-06-10T15:41:44.041164",
+  "config": {
+    "annotator_tool": "spacy",
+    "use_gpu": true,
+    "language": "en",
+    "earlySelection": false,
+    "seuil_early_selection": 200,
+    "filter_specifs": false,
+    "partition_cible": "test",
+    "seuil_banalité": 2,
+    "early_pos4lemma": "ADJ|NOUN|VERB",
+    "user_input_list": false,
+    "liste_earlyselection_lemma": [],
+    "internal_clustering": true,
+    "list_itemset_min": [
+      3
+    ],
+    "list_gap_min": [
+      0
+    ],
+    "list_gap_max": [
+      0
+    ],
+    "list_minsup_percent": [
+      25
+    ],
+    "threads": 4,
+    "Form": false,
+    "Lemma": true,
+    "Pos": true,
+    "Dep": true,
+    "Feats": false,
+    "path_corpus": "./Data/Corpus/Textes_raw",
+    "list_metadata": [
+      "id",
+      "genre"
+    ],
+    "specifs": false,
+    "liste_seuils_lemma": [
+      100,
+      200
+    ],
+    "downhill_pos4lemma": "ADJ|ADV|NOUN|VERB",
+    "liste_seuils_bigrams": [
+      100
+    ],
+    "mode": "gui",
+    "analysis_group_name": "analyse_Textes_raw"
+  }
+}

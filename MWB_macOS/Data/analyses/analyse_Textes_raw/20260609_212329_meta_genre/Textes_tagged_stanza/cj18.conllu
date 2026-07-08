@@ -1,0 +1,2625 @@
+1	6.4	6.4	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	15	dep	_	_
+2	primary	primary	X	X	_	1	flat:foreign	_	_
+3	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+4	theorem	theorem	X	X	_	1	flat:foreign	_	_
+5	We	We	X	X	_	4	dep	_	_
+6	are	are	X	X	_	4	dep	_	_
+7	trying	trying	X	X	_	4	dep	_	_
+8	to	to	X	X	_	1	flat:foreign	_	_
+9	study	study	X	X	_	8	flat:foreign	_	_
+10	a	avoir	X	X	_	11	aux:tense	_	_
+11	linear	linear	X	X	_	1	flat:foreign	_	_
+12	operator	operator	X	X	_	1	flat:foreign	_	_
+13	T	T	X	X	_	1	flat:foreign	_	_
+14	on	on	PRON	PRON	Number=Sing|Person=3	15	nsubj	_	_
+15	the	the	X	X	_	16	dep	_	_
+16	finite	finite	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	dimensional	dimensional	X	X	_	0	ROOT	_	_
+
+1	space	space	X	X	_	9	nsubj	_	_
+2	V	v	ADJ	ADJ	_	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	by	by	X	X	_	1	fixed	_	_
+5	decomposing	decomposing	X	X	_	4	flat:foreign	_	_
+6	T	T	X	X	_	4	flat:foreign	_	_
+7	into	into	X	X	_	4	flat:foreign	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	direct	direct	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+10	sum	sum	NOUN	NOUN	_	9	punct	_	_
+11	of	of	X	X	_	16	dep	_	_
+12	operators	operators	X	X	_	11	flat:foreign	_	_
+13	which	which	X	X	_	16	case	_	_
+14	are	are	X	X	_	13	dep	_	_
+15	in	in	X	X	_	16	case	_	_
+16	some	some	X	X	_	9	obl:mod	_	_
+17	sense	sense	X	X	_	9	dep	_	_
+18	elementary	elementary	X	X	_	9	advmod	_	_
+19	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	We	We	X	X	_	0	ROOT	_	_
+2	can	can	X	X	_	1	dep	_	_
+3	do	do	X	X	_	1	flat:foreign	_	_
+4	this	this	X	X	_	1	flat:foreign	_	_
+5	through	through	X	X	_	1	flat:foreign	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	characteristic	characteristic	X	X	_	1	flat:foreign	_	_
+8	values	value	ADJ	ADJ	Number=Plur	7	amod	_	_
+9	and	and	X	X	_	1	flat:foreign	_	_
+10	vectors	vectors	X	X	_	1	flat:foreign	_	_
+11	of	of	X	X	_	1	dep	_	_
+12	T	t	NOUN	NOUN	_	1	dep	_	_
+13	in	in	X	X	_	1	amod	_	_
+14	certain	certain	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+15	special	special	ADJ	ADJ	Gender=Masc|Number=Sing	16	amod	_	_
+16	cases	case	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+17	,	,	PUNCT	PUNCT	_	1	punct	_	_
+18	i.e	i.e	NOUN	NOUN	_	1	dep	_	SpaceAfter=No
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	13	punct	_	_
+2	when	when	X	X	_	5	case	_	_
+3	the	the	X	X	_	2	flat:foreign	_	_
+4	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+5	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	fixed	_	_
+6	for	for	X	X	_	1	dep	_	_
+7	T	T	X	X	_	6	flat:foreign	_	_
+8	factors	factors	ADV	ADV	_	6	flat:foreign	_	_
+9	over	over	X	X	_	6	flat:foreign	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	scalar	scalar	X	X	_	1	dep	_	_
+12	field	field	X	X	_	13	advmod	_	_
+13	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+14	into	into	X	X	_	13	punct	_	_
+
+1	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+2	product	product	X	X	_	5	cop	_	_
+3	of	of	X	X	_	5	nmod	_	_
+4	distinct	distinct	X	X	_	5	amod	_	_
+5	monic	monic	NOUN	NOUN	_	0	ROOT	_	_
+6	polynomials	polynomial	ADJ	ADJ	Gender=Masc|Number=Sing	5	acl	_	_
+7	of	of	ADP	ADP	_	8	case	_	_
+8	degree	degree	NOUN	NOUN	Gender=Masc|Number=Sing	6	obl:mod	_	_
+9	1	1	NUM	NUM	NumType=Card	8	nummod	_	_
+10	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	What	What	X	X	_	0	ROOT	_	_
+2	can	can	X	X	_	1	dep	_	_
+3	we	we	X	X	_	2	dep	_	_
+4	do	do	X	X	_	1	dep	_	_
+5	with	with	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	general	general	X	X	_	1	flat:foreign	_	_
+8	T	T	PROPN	PROPN	_	1	dep	_	_
+9	?	?	PUNCT	PUNCT	_	1	punct	_	_
+10	?	?	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+2	we	w	ADJ	ADJ	Number=Plur	3	expl:comp	_	_
+3	try	try	VERB	VERB	Mood=Cnd|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+4	to	to	X	X	_	5	dep	_	_
+5	study	study	X	X	_	3	obl:mod	_	_
+6	T	T	X	X	_	1	flat:foreign	_	_
+7	using	using	X	X	_	1	flat:foreign	_	_
+8	characteristic	characteristic	X	X	_	1	flat:foreign	_	_
+9	values	value	ADJ	ADJ	Number=Plur	8	amod	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	we	we	PROPN	PROPN	Gender=Masc|Number=Sing	8	conj	_	_
+12	are	are	X	X	_	13	punct	_	_
+13	confronted	confronted	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+14	with	with	X	X	_	13	dep	_	_
+15	two	two	X	X	_	1	flat:foreign	_	_
+16	problems	problems	X	X	_	1	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	First	First	X	X	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	T	T	X	X	_	8	nsubj	_	_
+4	may	may	X	X	_	3	flat:foreign	_	_
+5	not	not	X	X	_	4	dep	_	_
+6	have	haver	X	X	_	3	flat:foreign	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+8	single	single	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	characteristic	characteristic	X	X	_	8	advmod	_	_
+10	value	valu	ADJ	ADJ	Gender=Fem|Number=Sing	8	amod	_	_
+11	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	this	this	X	X	_	4	nsubj	_	_
+2	is	is	X	X	_	3	dep	_	_
+3	really	really	X	X	_	1	flat:foreign	_	_
+4	a	avoir	X	X	_	6	dep	_	_
+5	deficiency	deficiency	X	X	_	4	obj	_	_
+6	in	in	X	X	_	0	ROOT	_	_
+7	the	the	X	X	_	6	dep	_	_
+8	scalar	scalar	X	X	_	6	dep	_	_
+
+1	field	field	PROPN	PROPN	_	3	advmod	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	namely	namely	X	X	_	0	ROOT	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	that	that	X	X	_	3	dep	_	_
+6	it	it	X	X	_	5	dep	_	_
+7	is	is	X	X	_	6	dep	_	_
+8	not	not	X	X	_	6	dep	_	_
+9	algebraically	algebraically	X	X	_	6	dep	_	_
+10	closed	closed	NOUN	NOUN	Gender=Fem|Number=Sing	5	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Second	Second	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	even	even	PROPN	PROPN	_	1	conj	_	_
+4	if	if	X	X	_	3	dep	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	characteristic	characteristic	X	X	_	1	flat:foreign	_	_
+7	polynomial	polynomial	X	X	_	6	amod	_	_
+8	factors	factors	ADV	ADV	_	9	advmod	_	_
+9	completely	completely	X	X	_	1	flat:foreign	_	_
+10	over	over	X	X	_	1	dep	_	_
+11	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+12	into	into	X	X	_	1	advmod	_	_
+
+1	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	aux:tense	_	_
+2	product	product	X	X	_	14	dep	_	_
+3	of	of	X	X	_	4	nmod	_	_
+4	polynomials	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	2	acl:relcl	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	degree	degree	NOUN	NOUN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+7	1	1	NUM	NUM	NumType=Card	6	nummod	_	_
+8	,	,	PUNCT	PUNCT	_	2	punct	_	_
+9	there	there	NOUN	NOUN	Gender=Masc|Number=Sing	2	dep	_	_
+10	may	may	X	X	_	9	dep	_	_
+11	not	not	X	X	_	10	dep	_	_
+12	be	be	X	X	_	10	dep	_	_
+13	enough	enough	X	X	_	10	dep	_	_
+14	characteristic	characteristic	X	X	_	0	ROOT	_	_
+15	vectors	vectors	X	X	_	14	amod	_	_
+16	for	for	X	X	_	14	dep	_	_
+17	T	T	X	X	_	14	dep	_	_
+18	to	to	X	X	_	14	dep	_	_
+19	span	span	X	X	_	14	flat:foreign	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	space	space	X	X	_	1	dep	_	_
+3	V	v	ADJ	ADJ	_	2	amod	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	This	This	X	X	_	5	nsubj	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	clearly	clearly	X	X	_	1	nmod	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	deficiency	deficiency	X	X	_	0	ROOT	_	_
+6	in	in	X	X	_	5	amod	_	_
+7	T	t	NOUN	NOUN	_	6	dep	_	_
+8	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	The	The	X	X	_	3	expl:comp	_	_
+2	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	3	amod	_	_
+3	situation	situation	NOUN	NOUN	Gender=Fem|Number=Sing	5	nsubj	_	_
+4	is	is	X	X	_	5	expl:comp	_	_
+5	illustrated	illustrated	X	X	_	0	ROOT	_	_
+6	by	by	X	X	_	5	nsubj	_	_
+7	the	the	X	X	_	5	flat:foreign	_	_
+8	operator	operator	X	X	_	7	flat:foreign	_	_
+9	T	T	X	X	_	5	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+3	(	(	PUNCT	PUNCT	_	2	punct	_	_
+4	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	2	obj	_	_
+5	any	any	X	X	_	4	amod	_	_
+6	field	field	PROPN	PROPN	_	4	flat:foreign	_	_
+7	)	)	PUNCT	PUNCT	_	2	punct	_	_
+
+1	represented	represented	X	X	_	0	ROOT	_	_
+2	in	in	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	standard	standard	X	X	_	1	dep	_	_
+5	basis	basis	X	X	_	1	dep	_	_
+6	by	by	X	X	_	1	dep	_	_
+7	Af	Af	PROPN	PROPN	_	1	dep	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	characteristic	characteristic	X	X	_	1	flat:foreign	_	_
+3	polynomial	polynomial	X	X	_	2	amod	_	_
+4	for	for	X	X	_	2	dep	_	_
+5	A	a	NOUN	NOUN	_	1	flat:foreign	_	_
+6	is	is	X	X	_	1	flat:foreign	_	_
+7	Af	Af	X	X	_	1	flat:foreign	_	_
+8	and	and	X	X	_	1	flat:foreign	_	_
+9	this	this	X	X	_	1	flat:foreign	_	_
+10	is	is	X	X	_	9	dep	_	_
+11	plainly	plainly	X	X	_	1	flat:foreign	_	_
+12	also	also	X	X	_	1	flat:foreign	_	_
+13	the	the	X	X	_	1	flat:foreign	_	_
+14	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+15	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+16	for	for	X	X	_	1	flat:foreign	_	_
+17	A	a	NOUN	NOUN	_	1	dep	_	_
+18	(	(	PUNCT	PUNCT	_	1	punct	_	_
+19	or	or	CCONJ	CCONJ	_	1	appos	_	_
+20	for	for	X	X	_	19	dep	_	_
+21	T	t	NOUN	NOUN	_	19	flat:foreign	_	_
+22	)	)	PUNCT	PUNCT	_	1	punct	_	_
+23	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thus	Thus	PROPN	PROPN	_	0	ROOT	_	_
+2	T	T	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	not	not	X	X	_	3	dep	_	_
+5	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	2	amod	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	One	one	ADV	ADV	PronType=Int	13	advmod	_	_
+2	sees	sees	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	1	flat:foreign	_	_
+4	this	this	X	X	_	3	dep	_	_
+5	happens	happens	X	X	_	1	flat:foreign	_	_
+6	because	because	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	null	null	X	X	_	1	flat:foreign	_	_
+9	space	space	X	X	_	1	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	Af	Af	X	X	_	1	dep	_	_
+12	has	has	PUNCT	PUNCT	_	13	nummod	_	_
+13	dimension	dimension	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+14	1	1	NUM	NUM	NumType=Card	15	nummod	_	_
+15	only	only	NOUN	NOUN	Gender=Masc|Number=Plur	13	nmod	_	_
+16	.	.	PUNCT	PUNCT	_	13	punct	_	_
+
+1	On	on	PRON	PRON	Number=Sing|Person=3	8	nsubj	_	_
+2	the	the	X	X	_	8	aux:tense	_	_
+3	other	other	X	X	_	2	flat:foreign	_	_
+4	hand	hand	X	X	_	2	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	2	punct	_	_
+6	the	the	X	X	_	7	dep	_	_
+7	null	null	X	X	_	8	dep	_	_
+8	space	space	X	X	_	0	ROOT	_	_
+9	of	of	X	X	_	8	advcl	_	_
+10	Af	Af	X	X	_	8	dep	_	_
+
+1	and	and	X	X	_	3	advmod	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	null	null	X	X	_	0	ROOT	_	_
+4	space	space	X	X	_	3	flat:foreign	_	_
+5	of	of	X	X	_	3	punct	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	together	together	X	X	_	0	ROOT	_	_
+
+1	span	span	X	X	_	0	ROOT	_	_
+
+1	V	v	ADJ	ADJ	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	the	the	X	X	_	3	mark	_	_
+3	former	former	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+4	being	being	X	X	_	3	obj	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	subspace	subspace	PROPN	PROPN	_	3	obj	_	_
+7	spanned	spanned	X	X	_	3	xcomp	_	_
+8	by	by	X	X	_	3	dep	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	latter	latter	X	X	_	1	flat:foreign	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	subspace	subspace	X	X	_	0	ROOT	_	_
+
+1	spanned	spanned	X	X	_	0	ROOT	_	_
+
+1	by	by	X	X	_	0	ROOT	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	and	and	X	X	_	1	flat:foreign	_	_
+4	Af	Af	X	X	_	1	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	will	will	X	X	_	1	flat:foreign	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	more	more	X	X	_	1	flat:foreign	_	_
+5	or	or	X	X	_	1	flat:foreign	_	_
+6	less	less	X	X	_	1	flat:foreign	_	_
+7	our	our	X	X	_	1	dep	_	_
+8	general	general	X	X	_	1	flat:foreign	_	_
+9	method	method	X	X	_	1	flat:foreign	_	_
+10	for	for	X	X	_	1	flat:foreign	_	_
+11	the	the	X	X	_	1	flat:foreign	_	_
+12	second	second	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	1	amod	_	_
+13	problem	problem	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	PROPN	PROPN	_	0	ROOT	_	_
+2	(	(	PUNCT	PUNCT	_	1	punct	_	_
+3	remember	remember	X	X	_	1	parataxis	_	_
+4	this	this	X	X	_	3	dep	_	_
+5	is	is	X	X	_	3	dep	_	_
+6	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	3	dep	_	_
+7	assumption	assumption	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+8	)	)	PUNCT	PUNCT	_	1	punct	_	_
+9	the	the	X	X	_	11	case	_	_
+10	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	9	flat:foreign	_	_
+11	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl:mod	_	_
+12	for	for	X	X	_	14	cc	_	_
+13	T	t	NOUN	NOUN	_	12	flat:foreign	_	_
+14	decomposes	decomposer	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	advcl	_	_
+15	Af	Af	X	X	_	1	flat:foreign	_	_
+
+1	where	where	X	X	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	are	are	X	X	_	3	case	_	_
+2	distinct	distinct	X	X	_	3	amod	_	_
+3	elements	element	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+4	of	of	ADP	ADP	_	5	case	_	_
+5	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	3	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	3	punct	_	_
+
+1	then	then	X	X	_	17	nsubj	_	_
+2	we	we	X	X	_	1	dep	_	_
+3	shall	shall	X	X	_	1	dep	_	_
+4	show	show	X	X	_	1	dep	_	_
+5	that	that	X	X	_	1	dep	_	_
+6	the	the	X	X	_	1	dep	_	_
+7	space	space	X	X	_	1	dep	_	_
+8	V	v	ADJ	ADJ	_	1	flat:foreign	_	_
+9	is	is	X	X	_	1	dep	_	_
+10	the	the	X	X	_	1	dep	_	_
+11	direct	direct	X	X	_	1	flat:foreign	_	_
+12	sum	sum	PROPN	PROPN	_	1	flat:name	_	_
+13	of	of	X	X	_	15	dep	_	_
+14	the	the	X	X	_	15	dep	_	_
+15	null	null	X	X	_	17	obl:mod	_	_
+16	spaces	spaces	X	X	_	15	flat:foreign	_	_
+17	of	of	X	X	_	18	dep	_	_
+18	Af	af	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+3	operator	operator	X	X	_	1	flat:foreign	_	_
+4	is	is	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	special	special	X	X	_	7	amod	_	_
+7	case	case	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+8	of	of	X	X	_	9	case	_	_
+9	this	this	X	X	_	7	nmod	_	_
+10	in	in	X	X	_	1	flat:foreign	_	_
+11	which	which	X	X	_	1	flat:foreign	_	_
+12	Af	Af	X	X	_	1	flat:foreign	_	_
+13	for	for	X	X	_	1	flat:foreign	_	_
+14	each	each	X	X	_	1	flat:foreign	_	_
+15	i	i	ADJ	ADJ	_	1	flat:foreign	_	_
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	33	dep	_	_
+2	theorem	theorem	X	X	_	1	flat:foreign	_	_
+3	which	which	X	X	_	2	dep	_	_
+4	we	we	X	X	_	3	dep	_	_
+5	prove	prove	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	_	_
+6	is	is	X	X	_	2	dep	_	_
+7	more	more	X	X	_	1	flat:foreign	_	_
+8	general	general	X	X	_	1	flat:foreign	_	_
+9	than	than	X	X	_	1	flat:foreign	_	_
+10	what	what	X	X	_	1	flat:foreign	_	_
+11	we	we	X	X	_	1	flat:foreign	_	_
+12	have	haver	X	X	_	1	flat:foreign	_	_
+13	described	described	X	X	_	1	flat:foreign	_	_
+14	,	,	PUNCT	PUNCT	_	1	punct	_	_
+15	since	since	PROPN	PROPN	_	1	appos	_	_
+16	it	it	X	X	_	15	dep	_	_
+17	works	works	X	X	_	15	dep	_	_
+18	with	with	X	X	_	15	flat:foreign	_	_
+19	the	the	X	X	_	1	flat:foreign	_	_
+20	primary	primary	X	X	_	1	flat:foreign	_	_
+21	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+22	of	of	X	X	_	1	flat:foreign	_	_
+23	the	the	X	X	_	1	flat:foreign	_	_
+24	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+25	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+26	,	,	PUNCT	PUNCT	_	27	punct	_	_
+27	whether	whether	X	X	_	1	conj	_	_
+28	or	or	X	X	_	33	dep	_	_
+29	not	not	X	X	_	28	dep	_	_
+30	the	the	X	X	_	28	dep	_	_
+31	primes	prime	X	X	_	28	flat:foreign	_	_
+32	which	which	X	X	_	28	dep	_	_
+33	enter	enter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+34	are	are	X	X	_	33	dep	_	_
+35	all	all	X	X	_	34	dep	_	_
+36	of	of	X	X	_	37	dep	_	_
+37	first	first	X	X	_	38	dep	_	_
+38	degree	degree	X	X	_	33	obj	_	_
+39	.	.	PUNCT	PUNCT	_	33	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	reader	reader	X	X	_	1	flat:foreign	_	_
+3	will	will	NOUN	NOUN	_	1	flat:foreign	_	_
+4	find	find	X	X	_	3	amod	_	_
+5	it	it	X	X	_	4	dep	_	_
+6	helpful	helpful	X	X	_	1	flat:foreign	_	_
+7	to	to	X	X	_	1	dep	_	_
+8	think	think	X	X	_	1	flat:foreign	_	_
+9	of	of	X	X	_	1	flat:foreign	_	_
+10	the	the	X	X	_	1	flat:foreign	_	_
+11	special	special	X	X	_	1	flat:foreign	_	_
+12	case	case	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+13	when	when	X	X	_	12	amod	_	_
+14	the	the	X	X	_	1	flat:foreign	_	_
+15	primes	prime	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+16	are	are	X	X	_	1	flat:foreign	_	_
+17	of	of	X	X	_	18	case	_	_
+18	degree	degree	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl:mod	_	_
+19	1	1	NUM	NUM	NumType=Card	18	nummod	_	_
+20	,	,	PUNCT	PUNCT	_	1	punct	_	_
+21	and	and	X	X	_	1	flat:foreign	_	_
+22	even	even	X	X	_	21	flat:foreign	_	_
+23	more	more	X	X	_	21	flat:foreign	_	_
+24	particularly	particularly	X	X	_	21	flat:foreign	_	_
+25	,	,	PUNCT	PUNCT	_	21	punct	_	_
+26	to	to	X	X	_	32	dep	_	_
+27	think	think	X	X	_	26	flat:foreign	_	_
+28	of	of	X	X	_	26	flat:foreign	_	_
+29	the	the	X	X	_	26	flat:foreign	_	_
+30	proof	proof	X	X	_	26	flat:foreign	_	_
+31	of	of	X	X	_	32	dep	_	_
+32	Theorem	Theorem	X	X	_	21	advcl	_	_
+33	10	10	NUM	NUM	NumType=Card	32	nummod	_	_
+34	,	,	PUNCT	PUNCT	_	37	punct	_	_
+35	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	37	aux:tense	_	_
+36	special	special	ADJ	ADJ	Gender=Masc|Number=Sing	37	amod	_	_
+37	case	case	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+38	of	of	X	X	_	39	case	_	_
+39	this	this	X	X	_	37	nmod	_	_
+40	theorem	theorem	X	X	_	1	flat:foreign	_	_
+41	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Theorem	theorem	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	12	12	NUM	NUM	NumType=Card	1	nummod	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	3	punct	_	_
+2	primary	primary	X	X	_	3	amod	_	_
+3	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+4	theorem	theorem	ADJ	ADJ	Gender=Fem|Number=Sing	3	amod	_	_
+5	)	)	PUNCT	PUNCT	_	3	punct	_	_
+6	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Let	Let	X	X	_	4	nsubj	_	_
+2	T	T	X	X	_	1	flat:foreign	_	_
+3	be	be	X	X	_	1	flat:foreign	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	linear	linear	X	X	_	4	obj	_	_
+6	operator	operator	X	X	_	4	obj	_	_
+7	on	on	PRON	PRON	Number=Sing|Person=3	8	nsubj	_	_
+8	the	the	X	X	_	9	case	_	_
+9	finite	finite	NOUN	NOUN	Gender=Fem|Number=Sing	4	obl:mod	_	SpaceAfter=No
+10	-	-	PROPN	PROPN	_	4	obj	_	SpaceAfter=No
+11	dimensional	dimensional	X	X	_	4	obj	_	_
+12	vector	vector	X	X	_	4	obj	_	_
+13	space	space	X	X	_	4	obj	_	_
+14	V	v	ADJ	ADJ	_	4	amod	_	_
+15	over	over	X	X	_	4	flat:foreign	_	_
+16	the	the	X	X	_	18	advmod	_	_
+17	field	field	X	X	_	18	advmod	_	_
+18	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	4	advcl	_	_
+19	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Let	let	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	p	p	X	X	_	1	flat:foreign	_	_
+3	be	be	X	X	_	2	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+7	for	for	X	X	_	1	dep	_	_
+8	T	T	X	X	_	1	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Af	af	ADV	ADV	_	3	nmod	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	where	where	X	X	_	0	ROOT	_	_
+4	the	the	X	X	_	3	flat:foreign	_	_
+5	Af	Af	X	X	_	3	dep	_	_
+6	,	,	PUNCT	PUNCT	_	11	punct	_	_
+7	are	are	X	X	_	8	nummod	_	_
+8	distinct	distinct	X	X	_	11	obl:mod	_	_
+9	irreducible	irreducibl	ADJ	ADJ	Number=Sing	8	amod	_	_
+10	monic	monic	ADJ	ADJ	Number=Plur	8	amod	_	_
+11	polynomials	polynomial	ADJ	ADJ	Gender=Masc|Number=Sing	3	conj	_	_
+12	over	over	X	X	_	11	dep	_	_
+13	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	3	flat:foreign	_	_
+14	and	and	X	X	_	3	dep	_	_
+15	the	the	X	X	_	3	flat:foreign	_	_
+16	Af	Af	X	X	_	3	flat:foreign	_	_
+17	are	are	X	X	_	3	dep	_	_
+18	positive	positif	ADJ	ADJ	Gender=Fem|Number=Sing	17	amod	_	_
+19	integers	integer	NOUN	NOUN	Gender=Masc|Number=Plur	3	amod	_	_
+20	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Let	let	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	be	be	X	X	_	1	dep	_	_
+
+1	the	the	X	X	_	2	dep	_	_
+2	null	null	X	X	_	4	dep	_	_
+3	space	space	X	X	_	2	flat:foreign	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	Af	af	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Then	Then	PROPN	PROPN	_	0	ROOT	_	_
+2	(	(	PUNCT	PUNCT	_	1	punct	_	_
+3	A	a	NOUN	NOUN	_	1	appos	_	_
+4	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	3	punct	_	_
+2	(	(	PUNCT	PUNCT	_	3	punct	_	_
+3	B	b	NOUN	NOUN	_	0	ROOT	_	_
+4	)	)	PUNCT	PUNCT	_	3	punct	_	_
+5	each	each	X	X	_	3	amod	_	_
+6	Af	Af	X	X	_	5	dep	_	_
+7	is	is	X	X	_	5	dep	_	_
+8	invariant	invariant	ADJ	ADJ	Gender=Masc|Number=Sing	5	flat:foreign	_	_
+9	under	under	ADV	ADV	_	5	flat:foreign	_	_
+10	T	T	X	X	_	5	flat:foreign	_	_
+11	;	;	PUNCT	PUNCT	_	3	punct	_	_
+12	;	;	PUNCT	PUNCT	_	3	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	2	punct	_	_
+2	C	c	NOUN	NOUN	_	0	ROOT	_	_
+3	)	)	PUNCT	PUNCT	_	2	punct	_	_
+4	if	if	X	X	_	2	dep	_	_
+5	Af	Af	X	X	_	4	flat:foreign	_	_
+6	is	is	X	X	_	4	flat:foreign	_	_
+7	the	the	X	X	_	4	flat:foreign	_	_
+8	operator	operator	X	X	_	7	flat:foreign	_	_
+9	induced	induced	X	X	_	7	flat:foreign	_	_
+10	on	on	PRON	PRON	Number=Sing|Person=3	4	dep	_	_
+11	Af	Af	X	X	_	10	dep	_	_
+12	by	by	X	X	_	4	dep	_	_
+13	T	t	NOUN	NOUN	_	4	flat:foreign	_	_
+14	,	,	PUNCT	PUNCT	_	4	punct	_	_
+15	then	then	X	X	_	4	flat:foreign	_	_
+16	the	the	X	X	_	15	flat:foreign	_	_
+17	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	15	flat:foreign	_	_
+18	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	15	flat:foreign	_	_
+19	for	for	X	X	_	15	flat:foreign	_	_
+20	Af	Af	X	X	_	4	dep	_	_
+21	is	is	X	X	_	4	flat:foreign	_	_
+22	Af	Af	X	X	_	4	flat:foreign	_	_
+23	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Proof	Proof	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	idea	idea	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	1	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	proof	proof	X	X	_	1	flat:foreign	_	_
+6	is	is	X	X	_	1	dep	_	_
+7	this	this	X	X	_	1	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	direct	direct	X	X	_	1	flat:foreign	_	SpaceAfter=No
+4	-	-	PUNCT	PUNCT	_	1	flat:foreign	_	SpaceAfter=No
+5	sum	sum	PUNCT	PUNCT	_	6	amod	_	_
+6	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+7	(	(	PUNCT	PUNCT	_	6	punct	_	_
+8	A	a	NOUN	NOUN	_	6	appos	_	_
+9	)	)	PUNCT	PUNCT	_	6	punct	_	_
+10	is	is	X	X	_	20	case	_	_
+11	valid	valid	X	X	_	10	flat:foreign	_	_
+12	,	,	PUNCT	PUNCT	_	14	punct	_	_
+13	how	how	PROPN	PROPN	Gender=Masc|Number=Sing	14	nsubj	_	_
+14	can	can	X	X	_	10	flat:foreign	_	_
+15	we	we	X	X	_	14	dep	_	_
+16	get	get	X	X	_	10	flat:foreign	_	_
+17	hold	hold	X	X	_	10	flat:foreign	_	_
+18	of	of	X	X	_	10	flat:foreign	_	_
+19	the	the	X	X	_	10	flat:foreign	_	_
+20	projections	projection	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+
+1	Af	Af	X	X	_	2	nsubj	_	_
+2	associated	associated	X	X	_	0	ROOT	_	_
+3	with	with	X	X	_	2	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	2	nsubj	_	_
+6	?	?	PUNCT	PUNCT	_	2	punct	_	_
+
+1	?	?	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	2	punct	_	_
+2	projection	projection	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	Af	Af	X	X	_	2	dep	_	_
+
+1	will	will	X	X	_	0	ROOT	_	_
+2	be	be	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	identity	identity	X	X	_	3	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	4	advmod	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	and	and	X	X	_	4	dep	_	_
+4	zero	zero	X	X	_	0	ROOT	_	_
+5	on	on	X	X	_	6	nsubj	_	_
+6	the	the	X	X	_	4	parataxis	_	_
+7	other	other	X	X	_	6	xcomp	_	_
+8	Af	Af	PROPN	PROPN	_	4	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	We	We	X	X	_	4	nsubj	_	_
+2	shall	shall	X	X	_	1	flat:foreign	_	_
+3	find	find	X	X	_	1	flat:foreign	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	4	obj	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	such	such	X	X	_	0	ROOT	_	_
+2	that	that	X	X	_	1	flat:foreign	_	_
+3	Af	Af	X	X	_	1	flat:foreign	_	_
+4	is	is	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	identity	identity	X	X	_	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	3	nsubj	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	and	and	X	X	_	5	dep	_	_
+4	is	is	X	X	_	5	dep	_	_
+5	zero	zero	X	X	_	0	ROOT	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	the	the	X	X	_	5	parataxis	_	_
+8	other	other	X	X	_	7	flat:foreign	_	_
+9	Af	Af	X	X	_	5	dep	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	and	and	X	X	_	0	ROOT	_	_
+3	so	so	X	X	_	2	dep	_	_
+4	that	that	X	X	_	2	flat:foreign	_	_
+5	Af	af	ADV	ADV	_	2	dep	_	_
+6	,	,	PUNCT	PUNCT	_	2	punct	_	_
+7	etc.	etc.	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	For	For	X	X	_	5	advcl	_	_
+2	each	each	X	X	_	1	flat:foreign	_	_
+3	i	i	ADJ	ADJ	_	2	amod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	let	let	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	Af	af	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Since	Since	PROPN	PROPN	_	0	ROOT	_	_
+2	Af	Af	PROPN	PROPN	_	1	dep	_	_
+3	are	are	X	X	_	5	case	_	_
+4	distinct	distinct	X	X	_	5	amod	_	_
+5	prime	prime	NOUN	NOUN	Number=Sing	1	conj	_	_
+6	polynomials	polynomial	ADJ	ADJ	Gender=Masc|Number=Sing	5	acl	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	the	the	X	X	_	9	aux:tense	_	_
+9	polynomials	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+10	Af	Af	X	X	_	9	nmod	_	_
+
+1	are	are	PROPN	PROPN	_	2	case	_	_
+2	relatively	relatively	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	prime	prime	ADJ	ADJ	Gender=Fem|Number=Sing	2	amod	_	_
+4	(	(	PUNCT	PUNCT	_	2	punct	_	_
+5	Theorem	theorem	NOUN	NOUN	_	2	appos	_	_
+6	8	8	NUM	NUM	NumType=Card	5	nummod	_	_
+7	,	,	PUNCT	PUNCT	_	2	punct	_	_
+8	Chapter	chapter	VERB	VERB	VerbForm=Inf	2	parataxis	_	_
+9	4	4	NUM	NUM	NumType=Card	8	obj	_	_
+10	)	)	PUNCT	PUNCT	_	2	punct	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Thus	Thus	X	X	_	2	nsubj	_	_
+2	there	there	X	X	_	0	ROOT	_	_
+3	are	are	X	X	_	4	case	_	_
+4	polynomials	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	2	nmod	_	_
+
+1	Af	af	ADV	ADV	_	0	ROOT	_	_
+
+1	such	such	X	X	_	0	ROOT	_	_
+2	that	that	X	X	_	1	flat:foreign	_	_
+3	Af	Af	X	X	_	1	flat:foreign	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Note	note	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	also	also	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	1	flat:foreign	_	_
+4	if	if	X	X	_	1	dep	_	_
+5	Af	Af	PROPN	PROPN	_	1	dep	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	then	then	X	X	_	10	nsubj	_	_
+8	Af	Af	X	X	_	10	nsubj	_	_
+9	is	is	X	X	_	10	dep	_	_
+10	divisible	divisible	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
+11	by	by	X	X	_	10	obl:mod	_	_
+12	the	the	X	X	_	10	dep	_	_
+13	polynomial	polynomial	X	X	_	10	obj	_	_
+14	p	p	NOUN	NOUN	_	10	obj	_	_
+15	,	,	PUNCT	PUNCT	_	10	punct	_	_
+16	because	because	NOUN	NOUN	Gender=Fem|Number=Sing	10	obl:mod	_	_
+17	Af	af	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+18	contains	contains	X	X	_	1	nmod	_	_
+19	each	each	X	X	_	1	flat:foreign	_	_
+
+1	Af	Af	X	X	_	3	nsubj	_	_
+2	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_
+3	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	factor	factor	X	X	_	3	obj	_	_
+5	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	We	We	X	X	_	0	ROOT	_	_
+2	shall	shall	X	X	_	1	flat:foreign	_	_
+3	show	show	X	X	_	1	flat:foreign	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	polynomials	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+
+1	Af	af	ADV	ADV	_	0	ROOT	_	_
+
+1	behave	behave	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+2	in	in	X	X	_	1	dep	_	_
+3	the	the	X	X	_	2	dep	_	_
+4	manner	manner	VERB	VERB	VerbForm=Inf	2	dep	_	_
+5	described	described	X	X	_	2	flat:foreign	_	_
+6	in	in	X	X	_	2	flat:foreign	_	_
+7	the	the	X	X	_	2	dep	_	_
+8	first	first	X	X	_	2	dep	_	_
+9	paragraph	paragraph	X	X	_	2	dep	_	_
+10	of	of	X	X	_	12	dep	_	_
+11	the	the	X	X	_	10	fixed	_	_
+12	proof	proof	X	X	_	2	dep	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Let	Let	X	X	_	0	ROOT	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Since	Since	PROPN	PROPN	_	0	ROOT	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	P	p	NOUN	NOUN	_	1	flat:foreign	_	_
+5	divides	divides	X	X	_	1	dep	_	_
+6	Af	af	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+7	for	for	X	X	_	1	flat:foreign	_	_
+8	Af	af	ADV	ADV	_	1	dep	_	_
+9	,	,	PUNCT	PUNCT	_	12	punct	_	_
+10	we	we	X	X	_	12	dep	_	_
+11	have	haver	X	X	_	10	flat:foreign	_	_
+12	Af	Af	X	X	_	1	dep	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thus	Thus	PROPN	PROPN	_	7	nsubj	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	Af	Af	X	X	_	1	flat:foreign	_	_
+4	are	are	X	X	_	5	case	_	_
+5	projections	projection	NOUN	NOUN	Gender=Fem|Number=Plur	7	nsubj	_	_
+6	which	which	ADJ	ADJ	Gender=Masc|Number=Plur	5	nummod	_	_
+7	correspond	correspondre	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	to	to	X	X	_	9	case	_	_
+9	some	some	X	X	_	7	obl:mod	_	_
+10	direct	direct	ADJ	ADJ	Gender=Masc|Number=Sing	7	xcomp	_	SpaceAfter=No
+11	-	-	PUNCT	PUNCT	_	7	obj	_	SpaceAfter=No
+12	sum	sum	PUNCT	PUNCT	_	13	det	_	_
+13	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	7	obj	_	_
+14	of	of	X	X	_	13	amod	_	_
+15	the	the	X	X	_	13	dep	_	_
+16	space	space	X	X	_	13	nmod	_	_
+17	V	v	ADJ	ADJ	_	13	amod	_	_
+18	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	We	We	X	X	_	7	nsubj	_	_
+2	wish	wish	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	1	dep	_	_
+4	show	show	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	dep	_	_
+8	of	of	X	X	_	13	dep	_	_
+9	Af	Af	X	X	_	8	dep	_	_
+10	is	is	X	X	_	8	fixed	_	_
+11	exactly	exactly	X	X	_	10	flat:foreign	_	_
+12	the	the	X	X	_	8	dep	_	_
+13	subspace	subspace	PROPN	PROPN	_	7	obj	_	_
+14	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+15	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	It	It	PROPN	PROPN	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	clear	clear	X	X	_	1	flat:foreign	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+5	each	each	X	X	_	1	flat:foreign	_	_
+6	vector	vector	X	X	_	1	flat:foreign	_	_
+7	in	in	X	X	_	1	flat:foreign	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+10	of	of	X	X	_	1	flat:foreign	_	_
+11	Af	Af	X	X	_	10	dep	_	_
+12	is	is	X	X	_	1	dep	_	_
+13	in	in	X	X	_	1	flat:foreign	_	_
+14	Af	Af	X	X	_	1	flat:foreign	_	_
+15	for	for	X	X	_	1	flat:foreign	_	_
+16	if	if	X	X	_	17	obl:mod	_	_
+17	*	*	VERB	VERB	Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	SpaceAfter=No
+18	*	*	VERB	VERB	Tense=Past|VerbForm=Part|Voice=Pass	1	parataxis	_	SpaceAfter=No
+19	ya	ya	X	X	_	1	flat:foreign	_	_
+20	is	is	X	X	_	19	dep	_	_
+21	in	in	X	X	_	19	dep	_	_
+22	the	the	X	X	_	19	dep	_	_
+23	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+24	of	of	X	X	_	1	flat:foreign	_	_
+25	Af	af	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	dep	_	_
+26	,	,	PUNCT	PUNCT	_	1	punct	_	_
+27	then	then	X	X	_	1	flat:foreign	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	so	so	X	X	_	2	flat:foreign	_	_
+4	Af	Af	X	X	_	1	flat:foreign	_	_
+
+1	because	because	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	is	is	X	X	_	2	dep	_	_
+2	divisible	divisible	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	by	by	X	X	_	2	dep	_	_
+4	the	the	X	X	_	2	dep	_	_
+5	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	2	dep	_	_
+6	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	2	obj	_	_
+7	P	p	NOUN	NOUN	_	2	obj	_	_
+8	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Conversely	conversely	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	suppose	suppose	NOUN	NOUN	Gender=Fem|Number=Sing	1	acl	_	_
+4	that	that	X	X	_	3	dep	_	_
+5	*	*	VERB	VERB	Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	3	dep	_	SpaceAfter=No
+6	*	*	VERB	VERB	Tense=Past|VerbForm=Part|Voice=Pass	3	parataxis	_	SpaceAfter=No
+7	ya	ya	X	X	_	3	dep	_	_
+8	is	is	X	X	_	7	dep	_	_
+9	in	in	X	X	_	3	dep	_	_
+10	the	the	X	X	_	3	dep	_	_
+11	null	null	X	X	_	3	dep	_	_
+12	space	space	X	X	_	3	dep	_	_
+13	of	of	X	X	_	14	dep	_	_
+14	Af	af	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obl:arg	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Af	af	ADV	ADV	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	then	then	X	X	_	1	nmod	_	_
+
+1	Af	Af	X	X	_	3	nsubj	_	_
+2	is	is	X	X	_	3	dep	_	_
+3	divisible	divisible	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	by	by	X	X	_	3	obl:mod	_	_
+5	Af	Af	X	X	_	3	dep	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	so	so	X	X	_	1	flat:foreign	_	_
+3	Af	Af	PROPN	PROPN	_	1	dep	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	i.e	i.e	NOUN	NOUN	_	1	dep	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	then	then	X	X	_	1	amod	_	_
+
+1	it	it	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	immediate	immediate	X	X	_	1	flat:foreign	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+5	Af	Af	X	X	_	1	dep	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	i.e	i.e	NOUN	NOUN	_	1	dep	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	9	punct	_	_
+2	that	that	X	X	_	9	nsubj	_	_
+3	*	*	NUM	NUM	NumType=Card	2	punct	_	SpaceAfter=No
+4	*	*	VERB	VERB	Tense=Past|VerbForm=Part|Voice=Pass	2	flat:foreign	_	SpaceAfter=No
+5	ya	ya	X	X	_	2	flat:foreign	_	_
+6	is	is	X	X	_	5	dep	_	_
+7	in	in	X	X	_	5	dep	_	_
+8	the	the	X	X	_	5	dep	_	_
+9	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+10	of	of	X	X	_	9	advmod	_	_
+11	Af	Af	X	X	_	9	obj	_	_
+12	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	completes	completes	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	proof	proof	X	X	_	1	flat:foreign	_	_
+5	of	of	X	X	_	1	flat:foreign	_	_
+6	statement	statement	ADV	ADV	_	5	advmod	_	_
+7	(	(	PUNCT	PUNCT	_	1	punct	_	_
+8	A	a	NOUN	NOUN	_	1	parataxis	_	_
+9	)	)	PUNCT	PUNCT	_	1	punct	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	It	PROPN	PROPN	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	certainly	certainly	X	X	_	4	amod	_	_
+4	clear	clear	X	X	_	1	flat:foreign	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	subspaces	subspace	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+8	Af	af	ADJ	ADJ	Gender=Masc	1	flat:foreign	_	_
+9	are	are	X	X	_	1	flat:foreign	_	_
+10	invariant	invariant	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+11	under	under	ADV	ADV	_	1	flat:foreign	_	_
+12	T	t	ADJ	ADJ	_	1	flat:foreign	_	_
+13	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	operator	operator	X	X	_	3	flat:foreign	_	_
+5	induced	induced	X	X	_	3	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	4	nsubj	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	by	by	X	X	_	1	dep	_	_
+4	T	t	NOUN	NOUN	_	0	ROOT	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	then	then	X	X	_	4	conj	_	_
+7	evidently	evidently	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+
+1	Af	af	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	because	because	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+4	by	by	X	X	_	3	nmod	_	_
+5	definition	definition	NOUN	NOUN	Gender=Fem|Number=Sing	3	nmod	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	is	is	X	X	_	4	dep	_	_
+2	0	0	NUM	NUM	NumType=Card	4	punct	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	4	nsubj	_	_
+4	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	dep	_	_
+5	subspace	subspace	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	shows	show	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	2	flat:foreign	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	polynomial	polynomial	X	X	_	1	flat:foreign	_	_
+7	for	for	X	X	_	1	flat:foreign	_	_
+8	Af	Af	X	X	_	1	dep	_	_
+
+1	divides	divides	X	X	_	0	ROOT	_	_
+2	Af	af	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Conversely	conversely	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	let	let	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	G	gramme	NOUN	NOUN	_	3	nmod	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	any	any	X	X	_	4	flat:name	_	_
+7	polynomial	polynomial	X	X	_	4	flat:name	_	_
+8	such	such	X	X	_	3	dep	_	_
+9	that	that	X	X	_	8	flat:foreign	_	_
+10	Af	Af	X	X	_	8	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Then	Then	X	X	_	0	ROOT	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thus	Thus	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	3	nsubj	_	_
+2	is	is	X	X	_	3	dep	_	_
+3	divisible	divisible	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	by	by	X	X	_	3	dep	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	3	dep	_	_
+7	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	3	obj	_	_
+8	P	p	NOUN	NOUN	_	3	obj	_	_
+9	of	of	X	X	_	10	dep	_	_
+10	T	t	NOUN	NOUN	Gender=Masc|Number=Plur	3	obl:mod	_	_
+11	,	,	PUNCT	PUNCT	_	3	punct	_	_
+12	i.e	i.e	NOUN	NOUN	_	3	punct	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	Af	Af	PROPN	PROPN	_	3	amod	_	_
+3	divides	divide	NOUN	NOUN	Number=Plur	0	ROOT	_	_
+4	Af	af	NOUN	NOUN	Gender=Masc|Number=Plur	3	flat:name	_	_
+5	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	It	It	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	easily	easily	X	X	_	1	flat:foreign	_	_
+4	seen	seen	X	X	_	1	flat:foreign	_	_
+5	that	that	X	X	_	1	flat:foreign	_	_
+6	Af	Af	X	X	_	1	flat:foreign	_	_
+7	divides	divides	ADP	ADP	Definite=Def|Number=Plur|PronType=Art	1	conj	_	_
+8	G	gramme	NOUN	NOUN	_	1	nmod	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Hence	hence	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	polynomial	polynomial	X	X	_	1	flat:name	_	_
+5	for	for	X	X	_	1	flat:foreign	_	_
+6	Af	Af	X	X	_	5	flat:foreign	_	_
+7	is	is	X	X	_	5	flat:foreign	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Corollary	Corollary	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	are	are	X	X	_	3	case	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	projections	projection	NOUN	NOUN	Gender=Fem|Number=Plur	4	obl:mod	_	_
+4	associated	associated	X	X	_	0	ROOT	_	_
+5	with	with	X	X	_	4	dep	_	_
+6	the	the	X	X	_	4	dep	_	_
+7	primary	primary	X	X	_	4	dep	_	_
+8	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	4	obj	_	_
+9	of	of	X	X	_	8	amod	_	_
+10	T	t	NOUN	NOUN	Gender=Masc|Number=Plur	4	dep	_	_
+11	,	,	PUNCT	PUNCT	_	4	punct	_	_
+12	then	then	X	X	_	16	nsubj	_	_
+13	each	each	X	X	_	12	flat:foreign	_	_
+14	Af	Af	X	X	_	12	dep	_	_
+15	is	is	X	X	_	16	expl:comp	_	_
+16	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	dep	_	_
+17	polynomial	polynomial	X	X	_	16	obj	_	_
+18	in	in	X	X	_	16	advmod	_	_
+19	T	t	NOUN	NOUN	_	16	obj	_	_
+20	,	,	PUNCT	PUNCT	_	16	punct	_	_
+21	and	and	X	X	_	16	advmod	_	_
+22	accordingly	accordingly	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	21	acl	_	_
+23	if	if	X	X	_	22	dep	_	_
+24	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	dep	_	_
+25	linear	linear	X	X	_	24	obj	_	_
+26	operator	operator	X	X	_	24	obj	_	_
+27	U	u	NOUN	NOUN	_	4	dep	_	_
+28	commutes	commute	NOUN	NOUN	_	4	obj	_	_
+29	with	with	X	X	_	4	dep	_	_
+30	T	T	X	X	_	4	dep	_	_
+31	then	then	X	X	_	4	obj	_	_
+
+1	U	u	NOUN	NOUN	_	0	ROOT	_	_
+
+1	commutes	commuter	X	X	_	0	ROOT	_	_
+
+1	with	with	X	X	_	0	ROOT	_	_
+2	each	each	X	X	_	1	dep	_	_
+3	of	of	X	X	_	1	fixed	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	Af	af	ADV	ADV	_	1	dep	_	_
+
+1	,	,	PUNCT	PUNCT	_	0	ROOT	_	_
+2	i.e	i.e	NOUN	NOUN	_	1	dep	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	each	each	X	X	_	0	ROOT	_	_
+3	subspace	subspace	PROPN	PROPN	_	2	flat:name	_	_
+4	Af	Af	PROPN	PROPN	_	2	dep	_	_
+5	is	is	X	X	_	6	dep	_	_
+6	invariant	invariant	ADJ	ADJ	Gender=Masc|Number=Sing	2	advcl	_	_
+7	under	under	ADV	ADV	_	6	advmod	_	_
+8	U	u	NOUN	NOUN	_	6	obj	_	_
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+3	notation	notation	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+4	of	of	X	X	_	3	amod	_	_
+5	the	the	X	X	_	3	dep	_	_
+6	proof	proof	X	X	_	5	flat:foreign	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	Theorem	Theorem	X	X	_	3	nmod	_	_
+9	12	12	NUM	NUM	NumType=Card	8	nummod	_	_
+10	,	,	PUNCT	PUNCT	_	14	punct	_	_
+11	let	let	NOUN	NOUN	Gender=Masc|Number=Sing	14	nsubj	_	_
+12	us	us	X	X	_	11	dep	_	_
+13	take	take	X	X	_	12	flat:foreign	_	_
+14	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+15	look	look	NOUN	NOUN	Gender=Masc|Number=Sing	14	obj	_	_
+16	at	at	X	X	_	14	punct	_	_
+17	the	the	X	X	_	14	punct	_	_
+18	special	special	X	X	_	19	amod	_	_
+19	case	case	X	X	_	14	obl:mod	_	_
+20	in	in	X	X	_	21	case	_	_
+21	which	which	X	X	_	14	obl:mod	_	_
+22	the	the	X	X	_	14	dep	_	_
+23	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	14	punct	_	_
+24	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	14	obj	_	_
+25	for	for	X	X	_	14	dep	_	_
+26	T	T	X	X	_	25	flat:foreign	_	_
+27	is	is	X	X	_	25	flat:foreign	_	_
+28	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+29	product	product	X	X	_	28	fixed	_	_
+30	of	of	X	X	_	28	advcl	_	_
+31	first	first	X	X	_	28	dep	_	SpaceAfter=No
+32	-	-	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	SpaceAfter=No
+33	degree	degree	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+34	polynomials	polynomial	ADJ	ADJ	Gender=Masc|Number=Sing	33	amod	_	_
+35	,	,	PUNCT	PUNCT	_	1	punct	_	_
+36	i.e	i.e	NOUN	NOUN	_	1	dep	_	SpaceAfter=No
+37	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	the	the	X	X	_	3	case	_	_
+3	case	case	X	X	_	12	dep	_	_
+4	in	in	X	X	_	3	dep	_	_
+5	which	which	X	X	_	3	flat:foreign	_	_
+6	each	each	X	X	_	3	flat:foreign	_	_
+7	Af	Af	X	X	_	3	dep	_	_
+8	is	is	X	X	_	3	dep	_	_
+9	of	of	X	X	_	3	dep	_	_
+10	the	the	X	X	_	3	dep	_	_
+11	form	form	X	X	_	3	flat:foreign	_	_
+12	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+13	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Now	Now	X	X	_	3	nsubj	_	_
+2	the	the	X	X	_	3	expl:comp	_	_
+3	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	dep	_	_
+4	of	of	X	X	_	3	advmod	_	_
+5	Af	Af	X	X	_	4	dep	_	_
+6	is	is	X	X	_	4	flat:foreign	_	_
+7	the	the	X	X	_	8	dep	_	_
+8	null	null	X	X	_	3	obj	_	_
+9	space	space	X	X	_	3	obj	_	_
+10	Af	Af	X	X	_	0	ROOT	_	_
+11	of	of	X	X	_	12	dep	_	_
+12	Af	Af	X	X	_	10	dep	_	_
+13	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Let	Let	X	X	_	3	nsubj	_	_
+2	us	us	X	X	_	3	iobj	_	_
+3	put	pouvoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	0	ROOT	_	_
+4	Af	af	PRON	PRON	_	3	dep	_	_
+5	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	By	By	X	X	_	0	ROOT	_	_
+2	Theorem	Theorem	X	X	_	1	flat:foreign	_	_
+3	10	10	NUM	NUM	NumType=Card	2	nummod	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	D	d	NOUN	NOUN	_	1	nmod	_	_
+6	is	is	X	X	_	5	dep	_	_
+7	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+8	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	7	advmod	_	_
+9	operator	operator	X	X	_	7	obj	_	_
+10	which	which	X	X	_	7	advcl	_	_
+11	we	we	X	X	_	10	dep	_	_
+12	shall	shall	X	X	_	7	dep	_	_
+13	call	call	X	X	_	7	dep	_	_
+14	the	the	X	X	_	7	advcl	_	_
+15	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	7	advmod	_	_
+16	part	part	NOUN	NOUN	Number=Sing	7	obj	_	_
+17	of	of	X	X	_	18	case	_	_
+18	T	T	X	X	_	7	obl:arg	_	_
+19	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Let	Let	X	X	_	0	ROOT	_	_
+2	us	us	X	X	_	1	flat:foreign	_	_
+3	look	look	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	at	at	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	operator	operator	X	X	_	1	flat:foreign	_	_
+7	Af	Af	PROPN	PROPN	_	1	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Now	Now	X	X	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	Af	af	ADV	ADV	_	0	ROOT	_	_
+
+1	so	so	X	X	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	reader	reader	X	X	_	1	flat:foreign	_	_
+3	should	should	X	X	_	1	flat:foreign	_	_
+4	be	be	X	X	_	3	dep	_	_
+5	familiar	familiar	X	X	_	3	dep	_	_
+6	enough	enough	X	X	_	3	dep	_	_
+7	with	with	X	X	_	3	dep	_	_
+8	projections	projection	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+9	by	by	X	X	_	1	flat:foreign	_	_
+10	now	now	X	X	_	1	dep	_	_
+11	so	so	X	X	_	1	flat:foreign	_	_
+12	that	that	X	X	_	1	flat:foreign	_	_
+13	he	he	X	X	_	1	flat:foreign	_	_
+14	sees	sees	X	X	_	1	flat:foreign	_	_
+15	that	that	X	X	_	1	flat:foreign	_	_
+16	Af	Af	X	X	_	1	flat:foreign	_	_
+17	and	and	X	X	_	1	flat:foreign	_	_
+18	in	in	X	X	_	1	flat:foreign	_	_
+19	general	general	X	X	_	1	flat:foreign	_	_
+20	that	that	X	X	_	1	flat:foreign	_	_
+21	Af	Af	X	X	_	1	flat:foreign	_	_
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	When	When	X	X	_	0	ROOT	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	for	for	X	X	_	1	flat:foreign	_	_
+4	each	each	X	X	_	1	dep	_	_
+5	i	i	ADJ	ADJ	_	4	amod	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	we	we	X	X	_	1	dep	_	_
+8	shall	shall	X	X	_	1	flat:foreign	_	_
+9	have	haver	X	X	_	1	flat:foreign	_	_
+10	Af	af	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+11	,	,	PUNCT	PUNCT	_	1	punct	_	_
+12	because	because	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+13	the	the	X	X	_	12	flat:name	_	_
+14	operator	operator	X	X	_	13	flat:foreign	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	will	will	X	X	_	0	ROOT	_	_
+2	then	then	X	X	_	1	amod	_	_
+3	be	be	X	X	_	1	dep	_	_
+4	0	0	NUM	NUM	NumType=Card	1	punct	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	range	ranger	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	Af	af	NOUN	NOUN	Gender=Masc|Number=Plur	3	obj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Definition	definition	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Let	let	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	N	n	ADJ	ADJ	_	1	amod	_	_
+3	be	be	X	X	_	1	dep	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	dep	_	_
+5	linear	linear	X	X	_	4	obj	_	_
+6	operator	operator	X	X	_	4	obj	_	_
+7	on	on	PRON	PRON	Number=Sing|Person=3	8	nsubj	_	_
+8	the	the	X	X	_	1	dep	_	_
+9	vector	vector	X	X	_	1	flat:foreign	_	_
+10	space	space	X	X	_	1	amod	_	_
+11	V	v	ADJ	ADJ	_	1	amod	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	We	We	X	X	_	6	nsubj	_	_
+2	say	say	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	1	flat:foreign	_	_
+4	N	n	NOUN	NOUN	_	3	amod	_	_
+5	is	is	X	X	_	3	punct	_	_
+6	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	dep	_	_
+7	if	if	X	X	_	6	dep	_	_
+8	there	there	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	6	dep	_	_
+9	is	is	X	X	_	10	case	_	_
+10	some	some	X	X	_	8	obl:mod	_	_
+11	positive	positif	ADJ	ADJ	Gender=Fem|Number=Sing	10	amod	_	_
+12	integer	integer	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+13	R	r	NOUN	NOUN	_	12	nmod	_	_
+14	such	such	X	X	_	12	dep	_	_
+15	that	that	X	X	_	14	flat:foreign	_	_
+16	Af	Af	X	X	_	14	flat:foreign	_	_
+17	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Theorem	Theorem	X	X	_	0	ROOT	_	_
+2	13	13	NUM	NUM	NumType=Card	1	nummod	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Let	Let	X	X	_	4	nsubj	_	_
+2	T	T	X	X	_	1	flat:foreign	_	_
+3	be	be	X	X	_	1	flat:foreign	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	linear	linear	X	X	_	4	advmod	_	_
+6	operator	operator	X	X	_	4	obj	_	_
+7	on	on	PRON	PRON	Number=Sing|Person=3	8	nsubj	_	_
+8	the	the	X	X	_	9	case	_	_
+9	finite	finite	NOUN	NOUN	Gender=Fem|Number=Sing	4	obl:mod	_	SpaceAfter=No
+10	-	-	PROPN	PROPN	_	4	obj	_	SpaceAfter=No
+11	dimensional	dimensional	X	X	_	4	obj	_	_
+12	vector	vector	X	X	_	4	obj	_	_
+13	space	space	X	X	_	4	obj	_	_
+14	V	v	ADJ	ADJ	_	4	amod	_	_
+15	over	over	X	X	_	4	flat:foreign	_	_
+16	the	the	X	X	_	18	advmod	_	_
+17	field	field	X	X	_	18	advmod	_	_
+18	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	4	advcl	_	_
+19	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Suppose	suppose	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	that	that	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	1	dep	_	_
+5	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+6	for	for	X	X	_	1	dep	_	_
+7	T	t	NOUN	NOUN	_	6	flat:foreign	_	_
+8	decomposes	decomposer	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	1	conj	_	_
+9	over	over	NOUN	NOUN	_	1	dep	_	_
+10	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	1	amod	_	_
+11	into	into	X	X	_	1	dep	_	_
+12	a	avoir	X	X	_	13	aux:tense	_	_
+13	product	product	X	X	_	1	parataxis	_	_
+14	of	of	X	X	_	15	dep	_	_
+15	linear	linear	X	X	_	13	obj	_	_
+16	polynomials	polynomial	ADJ	ADJ	Gender=Masc|Number=Sing	13	amod	_	_
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Then	Then	X	X	_	4	nsubj	_	_
+2	there	there	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	dep	_	_
+5	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	4	advmod	_	_
+6	operator	operator	X	X	_	4	obj	_	_
+7	D	d	NOUN	NOUN	_	4	obj	_	_
+8	on	on	PRON	PRON	Number=Sing|Person=3	9	det	_	_
+9	V	v	ADJ	ADJ	_	12	nsubj	_	_
+10	and	and	X	X	_	9	dep	_	_
+11	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_
+12	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+13	operator	operator	X	X	_	12	obj	_	_
+14	N	n	ADJ	ADJ	_	12	xcomp	_	_
+15	in	in	X	X	_	12	conj	_	_
+16	V	v	NOUN	NOUN	_	12	obj	_	_
+17	such	such	X	X	_	12	dep	_	_
+18	that	that	X	X	_	17	flat:foreign	_	_
+19	(	(	PUNCT	PUNCT	_	12	punct	_	_
+20	A	a	NOUN	NOUN	_	12	parataxis	_	_
+21	)	)	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	4	punct	_	_
+3	(	(	PUNCT	PUNCT	_	4	punct	_	_
+4	b	b	NOUN	NOUN	_	1	appos	_	_
+5	)	)	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	11	advmod	_	_
+2	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+3	operator	operator	X	X	_	1	flat:foreign	_	_
+4	D	d	NOUN	NOUN	_	1	flat:foreign	_	_
+5	and	and	X	X	_	1	flat:foreign	_	_
+6	the	the	X	X	_	1	flat:foreign	_	_
+7	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+8	operator	operator	NOUN	NOUN	_	7	dep	_	_
+9	N	n	ADJ	ADJ	_	1	amod	_	_
+10	are	ar	ADJ	ADJ	_	1	flat:foreign	_	_
+11	uniquely	uniquely	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+12	determined	determined	X	X	_	11	dep	_	_
+13	by	by	X	X	_	11	dep	_	_
+14	(	(	PUNCT	PUNCT	_	11	punct	_	_
+15	A	a	NOUN	NOUN	_	11	parataxis	_	_
+16	)	)	PUNCT	PUNCT	_	11	punct	_	_
+17	and	and	X	X	_	11	amod	_	_
+18	(	(	PUNCT	PUNCT	_	17	punct	_	_
+19	B	b	NOUN	NOUN	_	11	obj	_	_
+20	)	)	PUNCT	PUNCT	_	11	punct	_	_
+21	and	and	X	X	_	11	dep	_	_
+22	each	each	X	X	_	21	flat:foreign	_	_
+23	of	of	X	X	_	24	dep	_	_
+24	them	them	X	X	_	21	dep	_	_
+25	is	is	X	X	_	21	dep	_	_
+26	a	avoir	X	X	_	11	dep	_	_
+27	polynomial	polynomial	X	X	_	26	obj	_	_
+28	in	in	X	X	_	11	dep	_	_
+29	T	t	NOUN	NOUN	_	11	obj	_	_
+30	.	.	PUNCT	PUNCT	_	11	punct	_	_
+
+1	Proof	Proof	X	X	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	We	We	X	X	_	4	dep	_	_
+2	have	haver	X	X	_	3	amod	_	_
+3	just	just	X	X	_	4	nsubj	_	_
+4	observed	observed	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+5	that	that	X	X	_	4	dep	_	_
+6	we	we	X	X	_	5	dep	_	_
+7	can	can	X	X	_	4	dep	_	_
+8	write	write	X	X	_	4	obj	_	_
+9	Af	Af	X	X	_	4	dep	_	_
+10	where	where	X	X	_	17	nsubj	_	_
+11	D	d	NOUN	NOUN	_	10	nmod	_	_
+12	is	is	X	X	_	10	dep	_	_
+13	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	10	amod	_	_
+14	and	and	X	X	_	10	nmod	_	_
+15	N	n	ADJ	ADJ	_	10	amod	_	_
+16	is	is	X	X	_	10	amod	_	_
+17	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+18	,	,	PUNCT	PUNCT	_	17	punct	_	_
+19	and	and	X	X	_	27	case	_	_
+20	where	where	X	X	_	19	flat:foreign	_	_
+21	D	d	NOUN	NOUN	_	20	nmod	_	_
+22	and	and	X	X	_	20	dep	_	_
+23	N	n	NOUN	NOUN	_	19	flat:foreign	_	_
+24	not	not	X	X	_	19	flat:foreign	_	_
+25	only	only	X	X	_	19	flat:foreign	_	_
+26	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	19	flat:foreign	_	_
+27	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	17	obl:mod	_	_
+28	are	are	X	X	_	29	case	_	_
+29	polynomials	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	17	obj	_	_
+30	in	in	X	X	_	29	amod	_	_
+31	T	t	NOUN	NOUN	_	17	obj	_	_
+32	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Now	Now	X	X	_	0	ROOT	_	_
+2	suppose	supposer	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	2	dep	_	_
+4	we	we	X	X	_	3	dep	_	_
+5	also	also	X	X	_	2	dep	_	_
+6	have	haver	X	X	_	1	flat:foreign	_	_
+7	Af	Af	X	X	_	1	flat:foreign	_	_
+
+1	where	where	NOUN	NOUN	_	10	nsubj	_	_
+2	D	d	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
+3	'	'	PUNCT	PUNCT	_	1	punct	_	_
+4	is	is	X	X	_	1	dep	_	_
+5	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	4	amod	_	_
+6	,	,	PUNCT	PUNCT	_	4	punct	_	_
+7	N	n	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
+8	'	'	ADP	ADP	_	7	punct	_	_
+9	is	is	X	X	_	10	dep	_	_
+10	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+11	,	,	PUNCT	PUNCT	_	10	punct	_	_
+12	and	and	X	X	_	10	advmod	_	_
+13	Af	Af	X	X	_	12	flat:foreign	_	_
+14	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	We	We	X	X	_	0	ROOT	_	_
+2	shall	shall	X	X	_	1	flat:foreign	_	_
+3	prove	prove	X	X	_	1	dep	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+5	Af	Af	X	X	_	1	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Since	Since	PROPN	PROPN	_	0	ROOT	_	_
+2	D	d	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
+3	'	'	PUNCT	PUNCT	_	1	punct	_	_
+4	and	and	X	X	_	1	nmod	_	_
+5	N	n	ADJ	ADJ	_	4	amod	_	SpaceAfter=No
+6	'	'	PUNCT	PUNCT	_	1	punct	_	_
+7	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+8	with	with	X	X	_	7	nsubj	_	_
+9	one	one	X	X	_	7	flat:foreign	_	_
+10	another	another	X	X	_	7	flat:foreign	_	_
+11	and	and	X	X	_	1	flat:foreign	_	_
+12	Af	Af	X	X	_	1	dep	_	_
+13	,	,	PUNCT	PUNCT	_	22	punct	_	_
+14	we	we	X	X	_	22	nsubj	_	_
+15	see	see	X	X	_	14	dep	_	_
+16	that	that	X	X	_	14	dep	_	_
+17	D	d	NOUN	NOUN	_	14	flat:foreign	_	SpaceAfter=No
+18	'	'	PUNCT	PUNCT	_	14	punct	_	_
+19	and	and	X	X	_	14	flat:foreign	_	_
+20	N	n	ADJ	ADJ	_	19	amod	_	SpaceAfter=No
+21	'	'	PUNCT	PUNCT	_	14	punct	_	_
+22	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+23	with	with	X	X	_	22	dep	_	_
+24	T	t	NOUN	NOUN	_	22	flat:name	_	_
+25	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thus	Thus	PROPN	PROPN	_	0	ROOT	_	_
+2	D	d	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
+3	'	'	PUNCT	PUNCT	_	1	punct	_	_
+4	and	and	X	X	_	1	nmod	_	_
+5	N	n	ADJ	ADJ	_	4	amod	_	SpaceAfter=No
+6	'	'	PUNCT	PUNCT	_	1	punct	_	_
+7	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+8	with	with	X	X	_	7	dep	_	_
+9	any	any	X	X	_	7	dep	_	_
+10	polynomial	polynomial	X	X	_	7	flat:name	_	_
+11	in	in	X	X	_	7	dep	_	_
+12	T	t	NOUN	NOUN	_	7	nmod	_	_
+13	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	hence	hence	NOUN	NOUN	Gender=Fem|Number=Sing	3	nsubj	_	_
+2	they	they	PRON	PRON	Gender=Masc|Number=Plur|Person=3	3	nsubj	_	_
+3	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	with	with	X	X	_	3	dep	_	_
+5	D	d	NOUN	NOUN	_	3	obj	_	_
+6	and	and	X	X	_	3	dep	_	_
+7	with	with	X	X	_	3	dep	_	_
+8	N	n	ADJ	ADJ	_	3	xcomp	_	_
+9	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Now	Now	X	X	_	0	ROOT	_	_
+2	we	we	X	X	_	1	flat:foreign	_	_
+3	have	haver	X	X	_	1	flat:foreign	_	_
+4	Af	Af	X	X	_	1	flat:foreign	_	_
+5	or	or	CCONJ	CCONJ	_	1	flat:foreign	_	_
+
+1	Af	Af	X	X	_	8	nsubj	_	_
+2	and	and	X	X	_	1	fixed	_	_
+3	all	all	X	X	_	2	punct	_	_
+4	four	four	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	these	these	X	X	_	4	obl:arg	_	_
+7	operators	operators	X	X	_	4	advmod	_	_
+8	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	with	with	X	X	_	8	dep	_	_
+10	one	one	X	X	_	8	advmod	_	_
+11	another	another	X	X	_	8	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Since	Since	PROPN	PROPN	_	0	ROOT	_	_
+2	D	d	NOUN	NOUN	_	1	nmod	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	D	d	NOUN	NOUN	_	1	nmod	_	SpaceAfter=No
+5	'	'	PUNCT	PUNCT	_	1	punct	_	_
+6	are	are	X	X	_	7	case	_	_
+7	both	both	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+8	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	7	amod	_	_
+9	and	and	X	X	_	11	iobj	_	_
+10	they	they	PRON	PRON	Gender=Masc|Number=Plur|Person=3	11	nsubj	_	_
+11	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
+12	,	,	PUNCT	PUNCT	_	15	punct	_	_
+13	they	they	PRON	PRON	Gender=Masc|Number=Plur|Person=3	15	nsubj	_	_
+14	are	are	X	X	_	15	punct	_	_
+15	simultaneously	simultaneously	X	X	_	11	conj	_	_
+16	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	15	amod	_	_
+17	,	,	PUNCT	PUNCT	_	15	punct	_	_
+18	and	and	X	X	_	1	flat:name	_	_
+19	Af	Af	X	X	_	18	flat:foreign	_	_
+20	is	is	X	X	_	19	advmod	_	_
+21	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	18	flat:foreign	_	_
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Since	Since	PROPN	PROPN	_	8	nsubj	_	_
+2	N	n	ADJ	ADJ	_	1	amod	_	_
+3	and	and	ADJ	ADJ	_	1	amod	_	_
+4	N	n	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
+5	'	'	ADP	ADP	_	1	punct	_	_
+6	are	are	X	X	_	7	case	_	_
+7	both	both	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+8	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+9	and	and	X	X	_	8	advmod	_	_
+10	they	they	X	X	_	11	nsubj	_	_
+11	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	ccomp	_	_
+12	,	,	PUNCT	PUNCT	_	11	punct	_	_
+13	the	the	X	X	_	11	advmod	_	_
+14	operator	operator	X	X	_	13	flat:foreign	_	_
+
+1	Af	Af	X	X	_	3	nsubj	_	_
+2	is	is	X	X	_	3	dep	_	_
+3	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	;	;	PUNCT	PUNCT	_	3	punct	_	_
+5	;	;	PUNCT	PUNCT	_	3	punct	_	_
+
+1	for	for	X	X	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	using	using	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	flat:foreign	_	_
+5	fact	fact	X	X	_	1	flat:foreign	_	_
+6	that	that	X	X	_	1	flat:foreign	_	_
+7	N	n	ADJ	ADJ	_	1	amod	_	_
+8	and	and	X	X	_	1	dep	_	_
+9	N	n	ADJ	ADJ	_	1	amod	_	SpaceAfter=No
+10	'	'	PUNCT	PUNCT	_	1	punct	_	_
+11	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+12	Af	Af	X	X	_	11	dep	_	_
+13	and	and	X	X	_	1	flat:foreign	_	_
+14	so	so	X	X	_	1	flat:foreign	_	_
+15	when	when	X	X	_	14	dep	_	_
+16	R	r	NOUN	NOUN	_	1	dep	_	_
+17	is	is	X	X	_	1	flat:foreign	_	_
+18	sufficiently	sufficiently	X	X	_	1	dep	_	_
+19	large	large	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+20	every	every	X	X	_	1	flat:foreign	_	_
+21	term	term	X	X	_	1	flat:foreign	_	_
+22	in	in	X	X	_	1	dep	_	_
+23	this	this	X	X	_	1	dep	_	_
+24	expression	expression	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+25	for	for	X	X	_	1	flat:foreign	_	_
+26	Af	Af	X	X	_	1	dep	_	_
+27	will	will	X	X	_	1	flat:foreign	_	_
+28	be	be	X	X	_	27	dep	_	_
+29	0	0	NUM	NUM	NumType=Card	27	nummod	_	_
+30	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Actually	Actually	PROPN	PROPN	_	4	nsubj	_	_
+2	,	,	PUNCT	PUNCT	_	4	punct	_	_
+3	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_
+4	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	operator	operator	X	X	_	4	dep	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	4	obl:mod	_	_
+8	n	n	ADJ	ADJ	_	7	amod	_	SpaceAfter=No
+9	-	-	ADJ	ADJ	_	7	amod	_	SpaceAfter=No
+10	dimensional	dimensional	X	X	_	7	amod	_	_
+11	space	space	X	X	_	7	amod	_	_
+12	must	must	ADJ	ADJ	Gender=Masc|Number=Sing	7	amod	_	_
+13	have	haver	X	X	_	7	advcl	_	_
+14	its	its	X	X	_	13	dep	_	_
+15	T	T	X	X	_	13	dep	_	_
+16	power	power	X	X	_	7	amod	_	_
+17	0	0	NUM	NUM	NumType=Card	7	nummod	_	_
+18	;	;	PUNCT	PUNCT	_	4	punct	_	_
+19	;	;	PUNCT	PUNCT	_	4	punct	_	_
+
+1	if	if	X	X	_	0	ROOT	_	_
+2	we	we	X	X	_	1	flat:foreign	_	_
+3	take	take	X	X	_	1	flat:foreign	_	_
+4	Af	Af	X	X	_	1	dep	_	_
+5	above	above	X	X	_	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	that	that	X	X	_	1	dep	_	_
+8	will	will	X	X	_	7	flat:foreign	_	_
+9	be	be	X	X	_	8	dep	_	_
+10	large	large	ADJ	ADJ	Number=Sing	8	amod	_	_
+11	enough	enough	X	X	_	7	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	It	X	X	_	0	ROOT	_	_
+2	then	then	X	X	_	1	flat:foreign	_	_
+3	follows	follows	X	X	_	2	flat:foreign	_	_
+4	that	that	X	X	_	2	flat:foreign	_	_
+
+1	Af	Af	X	X	_	3	advmod	_	_
+2	is	is	X	X	_	3	dep	_	_
+3	large	large	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+4	enough	enough	X	X	_	3	amod	_	_
+5	,	,	PUNCT	PUNCT	_	3	punct	_	_
+6	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	3	nmod	_	_
+7	this	this	X	X	_	6	nmod	_	_
+8	is	is	X	X	_	6	dep	_	_
+9	not	not	X	X	_	6	dep	_	_
+10	obvious	obvious	X	X	_	3	dep	_	_
+11	from	from	X	X	_	10	dep	_	_
+12	the	the	X	X	_	3	dep	_	_
+13	above	above	X	X	_	3	dep	_	_
+
+1	expression	expression	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	)	)	PUNCT	PUNCT	_	2	punct	_	_
+2	Now	Now	X	X	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	3	nsubj	_	_
+2	is	is	X	X	_	3	dep	_	_
+3	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	dep	_	_
+4	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	3	advmod	_	_
+5	operator	operator	X	X	_	3	obj	_	_
+6	which	which	X	X	_	9	dep	_	_
+7	is	is	X	X	_	6	fixed	_	_
+8	also	also	X	X	_	6	flat:foreign	_	_
+9	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+10	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	Such	Such	X	X	_	0	ROOT	_	_
+2	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+3	operator	operator	X	X	_	2	flat:name	_	_
+4	is	is	X	X	_	5	case	_	_
+5	obviously	obviously	X	X	_	1	obl:mod	_	_
+6	the	the	X	X	_	5	dep	_	_
+7	zero	zero	X	X	_	5	nmod	_	_
+8	operator	operator	X	X	_	5	flat:name	_	_
+9	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	3	punct	_	_
+2	for	for	ADP	ADP	_	3	case	_	_
+3	since	since	X	X	_	0	ROOT	_	_
+4	it	it	X	X	_	3	dep	_	_
+5	is	is	X	X	_	6	dep	_	_
+6	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	acl:relcl	_	_
+7	,	,	PUNCT	PUNCT	_	3	punct	_	_
+8	the	the	X	X	_	10	case	_	_
+9	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	8	flat:foreign	_	_
+10	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	3	nmod	_	_
+11	for	for	X	X	_	12	case	_	_
+12	this	this	X	X	_	3	nmod	_	_
+13	operator	operator	X	X	_	12	flat:name	_	_
+14	is	is	X	X	_	3	dep	_	_
+15	of	of	X	X	_	14	fixed	_	_
+16	the	the	X	X	_	3	dep	_	_
+17	form	form	X	X	_	3	flat:foreign	_	_
+18	Af	Af	X	X	_	3	dep	_	_
+19	for	for	X	X	_	20	case	_	_
+20	some	some	X	X	_	3	nmod	_	_
+21	Af	Af	PROPN	PROPN	_	3	dep	_	_
+22	;	;	PUNCT	PUNCT	_	3	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	then	then	X	X	_	1	nmod	_	_
+
+1	since	since	X	X	_	14	dep	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	operator	operator	X	X	_	1	flat:foreign	_	_
+4	is	is	X	X	_	1	dep	_	_
+5	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	the	the	X	X	_	1	fixed	_	_
+8	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	7	fixed	_	_
+9	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	7	flat:foreign	_	_
+10	cannot	cannot	X	X	_	7	fixed	_	_
+11	have	haver	X	X	_	10	flat:foreign	_	_
+12	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	dep	_	_
+13	repeated	repeated	X	X	_	12	obj	_	_
+14	root	root	X	X	_	0	ROOT	_	_
+15	;	;	PUNCT	PUNCT	_	14	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	hence	hence	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	and	and	X	X	_	13	dep	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	is	is	X	X	_	13	dep	_	_
+6	simply	simply	X	X	_	5	dep	_	_
+7	x	x	NOUN	NOUN	_	5	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	5	punct	_	_
+9	which	which	X	X	_	5	flat:foreign	_	_
+10	says	says	X	X	_	9	flat:foreign	_	_
+11	the	the	X	X	_	9	flat:foreign	_	_
+12	operator	operator	X	X	_	9	flat:foreign	_	_
+13	is	is	X	X	_	14	dep	_	_
+14	0	0	NUM	NUM	NumType=Card	0	ROOT	_	_
+15	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Thus	Thus	PROPN	PROPN	_	0	ROOT	_	_
+2	we	we	X	X	_	1	flat:foreign	_	_
+3	see	see	X	X	_	2	dep	_	_
+4	that	that	X	X	_	2	flat:foreign	_	_
+5	Af	Af	X	X	_	1	dep	_	_
+6	and	and	X	X	_	1	flat:foreign	_	_
+7	Af	Af	X	X	_	1	flat:foreign	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Corollary	Corollary	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Let	Let	X	X	_	5	nsubj	_	_
+2	V	v	ADJ	ADJ	_	1	amod	_	_
+3	be	be	X	X	_	1	dep	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	finite	finite	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	dimensional	dimensional	X	X	_	0	ROOT	_	_
+
+1	vector	vector	X	X	_	8	dep	_	_
+2	space	space	X	X	_	1	flat:foreign	_	_
+3	over	over	X	X	_	1	dep	_	_
+4	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	parataxis	_	_
+5	algebraically	algebraically	X	X	_	4	amod	_	_
+6	closed	closed	X	X	_	4	amod	_	_
+7	field	field	X	X	_	4	dep	_	_
+8	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	e.g	e.g	PROPN	PROPN	Gender=Fem|Number=Sing	8	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	6	punct	_	_
+2	the	the	X	X	_	6	advmod	_	_
+3	field	field	X	X	_	6	advmod	_	_
+4	of	of	ADP	ADP	_	6	dep	_	_
+5	complex	complex	X	X	_	6	amod	_	_
+6	numbers	numbers	X	X	_	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Then	Then	X	X	_	15	nsubj	_	_
+2	every	every	X	X	_	1	flat:foreign	_	_
+3	linear	linear	X	X	_	1	flat:foreign	_	_
+4	operator	operator	X	X	_	1	flat:foreign	_	_
+5	T	T	X	X	_	1	flat:foreign	_	_
+6	in	in	X	X	_	1	dep	_	_
+7	V	v	NOUN	NOUN	_	1	flat:foreign	_	_
+8	can	can	X	X	_	1	flat:foreign	_	_
+9	be	be	X	X	_	1	dep	_	_
+10	written	written	X	X	_	1	flat:foreign	_	_
+11	as	as	X	X	_	1	flat:foreign	_	_
+12	the	the	X	X	_	1	dep	_	_
+13	sum	sum	X	X	_	1	punct	_	_
+14	of	of	X	X	_	15	expl:comp	_	_
+15	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	dep	_	_
+16	diagonalizable	diagonalizabl	ADJ	ADJ	Number=Sing	15	advmod	_	_
+17	operator	operator	X	X	_	15	obj	_	_
+18	D	d	NOUN	NOUN	_	21	nsubj	_	_
+19	and	and	X	X	_	18	dep	_	_
+20	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	aux:tense	_	_
+21	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+22	operator	operator	X	X	_	21	obj	_	_
+
+1	N	n	ADJ	ADJ	_	0	ROOT	_	_
+
+1	which	which	X	X	_	2	nsubj	_	_
+2	commute	commuter	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	These	These	X	X	_	0	ROOT	_	_
+2	operators	operators	X	X	_	1	flat:foreign	_	_
+3	D	d	NOUN	NOUN	_	1	flat:foreign	_	_
+4	and	and	X	X	_	1	dep	_	_
+5	N	n	ADJ	ADJ	_	1	amod	_	_
+6	are	ar	ADJ	ADJ	_	1	punct	_	_
+7	unique	unique	ADJ	ADJ	Number=Sing	1	amod	_	_
+8	and	and	X	X	_	1	dep	_	_
+9	each	each	X	X	_	1	flat:foreign	_	_
+10	is	is	X	X	_	1	dep	_	_
+11	a	avoir	X	X	_	1	dep	_	_
+12	polynomial	polynomial	X	X	_	11	obj	_	_
+13	in	in	X	X	_	1	dep	_	_
+14	T	t	NOUN	NOUN	_	1	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	From	From	X	X	_	0	ROOT	_	_
+2	these	these	X	X	_	1	flat:foreign	_	_
+3	results	results	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	one	one	X	X	_	1	flat:foreign	_	_
+6	sees	sees	X	X	_	5	flat:foreign	_	_
+7	that	that	X	X	_	5	flat:foreign	_	_
+8	the	the	X	X	_	5	flat:foreign	_	_
+9	study	study	X	X	_	5	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	linear	linear	X	X	_	5	flat:foreign	_	_
+12	operators	operators	X	X	_	1	flat:foreign	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	vector	vector	X	X	_	12	dep	_	_
+3	spaces	spaces	X	X	_	2	advmod	_	_
+4	over	over	X	X	_	3	dep	_	_
+5	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	obj	_	_
+6	algebraically	algebraically	X	X	_	5	fixed	_	_
+7	closed	closed	X	X	_	5	amod	_	_
+8	field	field	X	X	_	5	flat:name	_	_
+9	is	is	X	X	_	10	case	_	_
+10	essentially	essentially	X	X	_	2	obj	_	_
+11	reduced	reduced	X	X	_	10	flat:foreign	_	_
+12	to	to	X	X	_	0	ROOT	_	_
+13	the	the	X	X	_	12	flat:foreign	_	_
+14	study	study	X	X	_	12	flat:foreign	_	_
+15	of	of	X	X	_	16	dep	_	_
+16	nilpotent	nilpoter	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	12	acl:relcl	_	_
+17	operators	operators	ADV	ADV	_	16	advmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	For	For	X	X	_	0	ROOT	_	_
+2	vector	vector	X	X	_	1	flat:foreign	_	_
+3	spaces	spaces	X	X	_	1	flat:foreign	_	_
+4	over	over	X	X	_	1	flat:foreign	_	_
+5	non-algebraically	non-algebraically	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	closed	closed	NOUN	NOUN	Gender=Fem|Number=Sing	5	amod	_	_
+7	fields	fields	X	X	_	5	dep	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	we	we	X	X	_	1	dep	_	_
+10	still	still	X	X	_	9	flat:foreign	_	_
+11	need	need	X	X	_	9	flat:foreign	_	_
+12	to	to	X	X	_	1	flat:foreign	_	_
+13	find	find	X	X	_	1	flat:foreign	_	_
+14	some	some	X	X	_	1	flat:foreign	_	_
+15	substitute	substitute	X	X	_	1	flat:foreign	_	_
+16	for	for	X	X	_	1	flat:foreign	_	_
+17	characteristic	characteristic	X	X	_	1	flat:foreign	_	_
+18	values	value	ADJ	ADJ	Number=Plur	17	amod	_	_
+19	and	and	X	X	_	1	flat:foreign	_	_
+20	vectors	vectors	X	X	_	1	flat:foreign	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	It	PROPN	PROPN	_	25	nsubj	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	a	avoir	X	X	_	1	flat:foreign	_	_
+4	very	very	X	X	_	3	obj	_	_
+5	interesting	interesting	X	X	_	3	advmod	_	_
+6	fact	fact	X	X	_	3	obj	_	_
+7	that	that	X	X	_	1	flat:foreign	_	_
+8	these	these	X	X	_	7	flat:foreign	_	_
+9	two	two	X	X	_	7	flat:foreign	_	_
+10	problems	problems	X	X	_	7	flat:foreign	_	_
+11	can	can	X	X	_	7	flat:foreign	_	_
+12	be	be	X	X	_	1	dep	_	_
+13	handled	handled	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+14	simultaneously	simultaneously	X	X	_	1	flat:foreign	_	_
+15	and	and	X	X	_	14	dep	_	_
+16	this	this	X	X	_	14	dep	_	_
+17	is	is	X	X	_	14	dep	_	_
+18	what	what	X	X	_	14	dep	_	_
+19	we	we	X	X	_	18	dep	_	_
+20	shall	shall	X	X	_	14	dep	_	_
+21	do	do	X	X	_	14	dep	_	_
+22	in	in	X	X	_	14	dep	_	_
+23	the	the	X	X	_	14	dep	_	_
+24	next	next	X	X	_	1	flat:foreign	_	_
+25	chapter	chapter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+26	.	.	PUNCT	PUNCT	_	25	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	concluding	concluding	ADV	ADV	_	1	flat:foreign	_	_
+3	this	this	X	X	_	1	flat:foreign	_	_
+4	section	section	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	we	we	PRON	PRON	Number=Sing|Person=1	1	dep	_	_
+7	should	should	X	X	_	1	flat:foreign	_	_
+8	like	like	X	X	_	7	advmod	_	_
+9	to	to	X	X	_	12	case	_	_
+10	give	give	X	X	_	9	flat:foreign	_	_
+11	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	9	fixed	_	_
+12	example	example	NOUN	NOUN	Gender=Masc|Number=Sing	7	obl:mod	_	_
+13	which	which	X	X	_	16	dep	_	_
+14	illustrates	illustrate	NOUN	NOUN	Number=Plur	13	flat:foreign	_	_
+15	some	some	X	X	_	13	flat:foreign	_	_
+16	of	of	X	X	_	17	dep	_	_
+17	the	the	X	X	_	18	dep	_	_
+18	ideas	ideas	X	X	_	7	advcl	_	_
+19	of	of	X	X	_	7	advmod	_	_
+20	the	the	X	X	_	7	dep	_	_
+21	primary	primary	X	X	_	1	dep	_	_
+22	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+23	theorem	theorem	ADJ	ADJ	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+24	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	We	We	X	X	_	3	expl:comp	_	_
+2	have	haver	X	X	_	3	amod	_	_
+3	chosen	chosen	X	X	_	12	nmod	_	_
+4	to	to	X	X	_	9	case	_	_
+5	give	give	X	X	_	4	flat:foreign	_	_
+6	it	it	X	X	_	4	dep	_	_
+7	at	at	X	X	_	4	dep	_	_
+8	the	the	X	X	_	4	dep	_	_
+9	end	end	NOUN	NOUN	Gender=Masc|Number=Sing	3	obl:mod	_	_
+10	of	of	X	X	_	12	dep	_	_
+11	the	the	X	X	_	12	dep	_	_
+12	section	section	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+13	since	since	X	X	_	12	nmod	_	_
+14	it	it	X	X	_	12	dep	_	_
+15	deals	deal	X	X	_	12	nmod	_	_
+16	with	with	X	X	_	12	dep	_	_
+17	differential	differential	X	X	_	12	nmod	_	_
+
+1	equations	equation	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+
+1	and	and	X	X	_	7	dep	_	_
+2	thus	thus	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	5	case	_	_
+4	not	not	X	X	_	3	dep	_	_
+5	purely	purely	PROPN	PROPN	_	1	obl:arg	_	_
+6	linear	linear	X	X	_	1	dep	_	_
+7	algebra	algebra	X	X	_	0	ROOT	_	_
+8	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Example	example	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	11	11	NUM	NUM	NumType=Card	1	nummod	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	primary	primary	X	X	_	1	flat:foreign	_	_
+4	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+5	theorem	theorem	ADJ	ADJ	Gender=Fem|Number=Sing	4	amod	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	it	it	X	X	_	31	nmod	_	_
+8	is	is	X	X	_	7	dep	_	_
+9	not	not	X	X	_	7	dep	_	_
+10	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	7	flat:foreign	_	_
+11	that	that	X	X	_	7	flat:foreign	_	_
+12	the	the	X	X	_	7	flat:foreign	_	_
+13	vector	vector	X	X	_	7	flat:foreign	_	_
+14	space	space	X	X	_	7	flat:foreign	_	_
+15	V	v	ADJ	ADJ	_	7	flat:foreign	_	_
+16	be	be	X	X	_	7	dep	_	_
+17	finite	finite	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	flat:foreign	_	_
+18	dimensional	dimensional	X	X	_	7	flat:foreign	_	_
+19	,	,	PUNCT	PUNCT	_	7	punct	_	_
+20	nor	nor	X	X	_	7	flat:foreign	_	_
+21	is	is	X	X	_	7	dep	_	_
+22	it	it	X	X	_	7	dep	_	_
+23	necessary	necessary	ADJ	ADJ	Gender=Masc|Number=Sing	7	flat:foreign	_	_
+24	for	for	ADP	ADP	_	25	case	_	_
+25	parts	part	NOUN	NOUN	Number=Plur	7	flat:foreign	_	_
+26	(	(	PUNCT	PUNCT	_	7	punct	_	_
+27	A	a	NOUN	NOUN	_	7	dep	_	_
+28	)	)	PUNCT	PUNCT	_	7	punct	_	_
+29	and	and	X	X	_	7	flat:foreign	_	_
+30	(	(	PUNCT	PUNCT	_	29	punct	_	_
+31	B	b	NOUN	NOUN	_	1	nmod	_	_
+32	)	)	PUNCT	PUNCT	_	1	punct	_	_
+33	that	that	X	X	_	1	flat:foreign	_	_
+34	P	p	NOUN	NOUN	_	33	flat:foreign	_	_
+35	be	be	X	X	_	34	dep	_	_
+36	the	the	X	X	_	33	flat:foreign	_	_
+37	minimal	minimal	ADJ	ADJ	Gender=Masc|Number=Sing	33	flat:foreign	_	_
+38	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	33	nmod	_	_
+39	for	for	X	X	_	33	dep	_	_
+40	T	T	X	X	_	33	flat:foreign	_	_
+41	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+
+1	T	T	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	a	avoir	X	X	_	1	dep	_	_
+4	linear	linear	X	X	_	3	obj	_	_
+5	operator	operator	X	X	_	3	obj	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	an	an	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+3	arbitrary	arbitrary	NOUN	NOUN	_	0	ROOT	_	_
+4	vector	vector	X	X	_	3	amod	_	_
+5	space	space	X	X	_	4	flat:foreign	_	_
+6	and	and	X	X	_	3	dep	_	_
+7	if	if	X	X	_	6	dep	_	_
+8	there	there	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	nmod	_	_
+9	is	is	X	X	_	11	expl:pass	_	_
+10	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+11	monic	monic	PROPN	PROPN	_	8	obl:mod	_	_
+12	polynomial	polynomial	X	X	_	8	amod	_	_
+13	P	p	NOUN	NOUN	_	8	parataxis	_	_
+14	such	such	X	X	_	8	dep	_	_
+15	that	that	X	X	_	14	flat:foreign	_	_
+16	Af	af	ADV	ADV	_	8	dep	_	_
+17	,	,	PUNCT	PUNCT	_	18	punct	_	_
+18	then	then	X	X	_	3	punct	_	_
+19	parts	part	NOUN	NOUN	Number=Plur	18	flat:foreign	_	_
+20	(	(	PUNCT	PUNCT	_	18	punct	_	_
+21	A	a	NOUN	NOUN	_	18	appos	_	_
+22	)	)	PUNCT	PUNCT	_	18	punct	_	_
+23	and	and	X	X	_	18	flat:foreign	_	_
+24	(	(	PUNCT	PUNCT	_	23	punct	_	_
+25	B	b	NOUN	NOUN	_	18	nmod	_	_
+26	)	)	PUNCT	PUNCT	_	18	punct	_	_
+27	of	of	X	X	_	28	case	_	_
+28	Theorem	Theorem	X	X	_	31	dep	_	_
+29	12	12	NUM	NUM	NumType=Card	31	nummod	_	_
+30	are	are	X	X	_	31	case	_	_
+31	valid	valid	X	X	_	18	flat:foreign	_	_
+32	for	for	X	X	_	18	dep	_	_
+33	T	T	X	X	_	18	dep	_	_
+34	with	with	X	X	_	18	flat:foreign	_	_
+35	the	the	X	X	_	18	flat:foreign	_	_
+36	proof	proof	X	X	_	18	flat:foreign	_	_
+37	which	which	X	X	_	18	dep	_	_
+38	we	we	X	X	_	37	dep	_	_
+39	gave	gave	VERB	VERB	VerbForm=Inf	18	amod	_	_
+40	.	.	PUNCT	PUNCT	_	18	punct	_	_
+
+1	Let	let	NOUN	NOUN	Gender=Fem|Number=Sing	4	nsubj	_	_
+2	N	n	ADJ	ADJ	_	1	amod	_	_
+3	be	be	X	X	_	1	dep	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	positive	positif	ADJ	ADJ	Gender=Fem|Number=Sing	4	obj	_	_
+6	integer	integer	PROPN	PROPN	Gender=Masc|Number=Sing	4	obj	_	_
+7	and	and	X	X	_	6	dep	_	_
+8	let	let	X	X	_	7	flat:foreign	_	_
+9	V	v	ADJ	ADJ	_	7	flat:foreign	_	_
+10	be	be	X	X	_	7	flat:foreign	_	_
+11	the	the	X	X	_	6	dep	_	_
+12	space	space	X	X	_	13	obl:mod	_	_
+13	of	of	X	X	_	15	obl:mod	_	_
+14	all	all	X	X	_	13	fixed	_	_
+15	N	n	NOUN	NOUN	_	16	nummod	_	_
+16	times	times	X	X	_	6	nmod	_	_
+17	continuously	continuously	X	X	_	6	dep	_	_
+18	differentiable	differentiabl	ADJ	ADJ	Number=Sing	4	punct	_	_
+19	functions	function	NOUN	NOUN	Gender=Fem|Number=Plur	4	obj	_	_
+20	F	f	ADJ	ADJ	Number=Plur	19	amod	_	_
+21	on	on	PRON	PRON	Number=Sing|Person=3	22	nsubj	_	_
+22	the	the	X	X	_	4	advcl	_	_
+23	real	real	X	X	_	22	flat:foreign	_	_
+24	line	line	X	X	_	22	obj	_	_
+25	which	which	X	X	_	24	flat:foreign	_	_
+26	satisfy	satisfy	X	X	_	22	xcomp	_	_
+27	the	the	X	X	_	22	flat:foreign	_	_
+28	differential	differential	X	X	_	22	flat:foreign	_	_
+29	equation	equation	X	X	_	4	obj	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	where	where	X	X	_	5	dep	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	are	are	X	X	_	4	case	_	_
+4	some	some	X	X	_	1	nmod	_	_
+5	fixed	fixed	X	X	_	0	ROOT	_	_
+6	constants	constant	ADJ	ADJ	Gender=Masc|Number=Plur	5	xcomp	_	_
+7	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+
+1	Af	af	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	denotes	denote	NOUN	NOUN	Number=Plur	0	ROOT	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	space	space	X	X	_	1	flat:foreign	_	_
+3	of	of	X	X	_	5	case	_	_
+4	N	n	ADJ	ADJ	_	5	nummod	_	_
+5	times	times	X	X	_	1	flat:foreign	_	_
+6	continuously	continuously	X	X	_	1	dep	_	_
+
+1	differentiable	differentiabl	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+
+1	functions	function	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	14	punct	_	_
+2	then	then	X	X	_	1	dep	_	_
+3	the	the	X	X	_	4	dep	_	_
+4	space	space	X	X	_	2	dep	_	_
+5	V	v	ADJ	ADJ	_	4	amod	_	_
+6	of	of	X	X	_	7	case	_	_
+7	solutions	solution	NOUN	NOUN	Gender=Fem|Number=Plur	2	nmod	_	_
+8	of	of	X	X	_	9	case	_	_
+9	this	this	X	X	_	7	nmod	_	_
+10	differential	differential	X	X	_	2	flat:foreign	_	_
+11	equation	equation	X	X	_	14	nsubj	_	_
+12	is	is	X	X	_	11	dep	_	_
+13	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_
+14	subspace	subspace	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+15	of	of	X	X	_	16	dep	_	_
+16	Af	af	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	14	dep	_	_
+17	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+2	D	d	NOUN	NOUN	_	1	nmod	_	_
+3	denotes	denote	NOUN	NOUN	Number=Plur	1	flat:foreign	_	_
+4	the	the	X	X	_	5	amod	_	_
+5	differentiation	differentiation	X	X	_	1	nmod	_	_
+6	operator	operator	X	X	_	5	nmod	_	_
+7	and	and	X	X	_	5	dep	_	_
+8	P	p	NOUN	NOUN	_	5	nmod	_	_
+9	is	is	X	X	_	5	dep	_	_
+10	the	the	X	X	_	1	flat:foreign	_	_
+11	polynomial	polynomial	X	X	_	1	flat:foreign	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+
+1	then	then	X	X	_	7	nsubj	_	_
+2	V	v	ADJ	ADJ	_	1	amod	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	null	null	X	X	_	1	flat:foreign	_	_
+6	space	space	X	X	_	5	flat:foreign	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	the	the	X	X	_	0	ROOT	_	_
+9	operator	operator	X	X	_	8	flat:foreign	_	_
+10	p	p	NOUN	NOUN	_	8	flat:foreign	_	_
+11	(	(	PUNCT	PUNCT	_	8	punct	_	_
+12	,	,	PUNCT	PUNCT	_	8	punct	_	_
+13	)	)	PUNCT	PUNCT	_	8	punct	_	_
+14	,	,	PUNCT	PUNCT	_	8	punct	_	_
+
+1	because	because	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	Af	Af	PROPN	PROPN	_	1	nmod	_	_
+
+1	simply	simply	X	X	_	0	ROOT	_	_
+2	says	says	X	X	_	1	flat:foreign	_	_
+3	Af	Af	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Let	Let	X	X	_	7	nsubj	_	_
+2	us	us	X	X	_	4	nmod	_	_
+3	now	now	X	X	_	4	dep	_	_
+4	regard	regard	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	D	d	NOUN	NOUN	_	4	nmod	_	_
+6	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	linear	linear	X	X	_	7	obj	_	_
+9	operator	operator	X	X	_	7	obj	_	_
+10	on	on	PRON	PRON	Number=Sing|Person=3	11	nsubj	_	_
+11	the	the	X	X	_	7	advcl	_	_
+12	subspace	subspace	PROPN	PROPN	_	11	xcomp	_	_
+13	V	v	ADJ	ADJ	_	11	xcomp	_	_
+14	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Then	Then	X	X	_	0	ROOT	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+2	we	we	X	X	_	1	dep	_	_
+3	are	are	X	X	_	4	case	_	_
+4	discussing	discussing	NOUN	NOUN	Gender=Masc|Number=Plur	1	obl:mod	_	_
+5	differentiable	differentiabl	ADJ	ADJ	Number=Sing	4	amod	_	_
+6	complex	complex	X	X	_	4	amod	_	SpaceAfter=No
+7	-	-	ADJ	ADJ	Number=Sing	1	flat:foreign	_	SpaceAfter=No
+8	valued	valued	ADV	ADV	_	1	dep	_	_
+
+1	functions	function	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+
+1	then	then	X	X	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	2	advmod	_	_
+2	and	and	X	X	_	0	ROOT	_	_
+3	V	v	ADJ	ADJ	_	2	flat:foreign	_	_
+4	are	are	ADP	ADP	_	5	punct	_	_
+5	complex	complex	X	X	_	2	flat:foreign	_	_
+6	vector	vector	X	X	_	2	flat:foreign	_	_
+7	spaces	space	ADJ	ADJ	Number=Plur	2	flat:foreign	_	_
+8	,	,	PUNCT	PUNCT	_	2	punct	_	_
+9	and	and	X	X	_	2	flat:foreign	_	_
+10	Af	Af	X	X	_	9	flat:foreign	_	_
+11	may	may	X	X	_	9	flat:foreign	_	_
+12	be	be	X	X	_	11	dep	_	_
+13	any	any	X	X	_	12	flat:foreign	_	_
+14	complex	complex	ADJ	ADJ	Number=Plur	15	amod	_	_
+15	numbers	numbers	X	X	_	9	obl:arg	_	_
+16	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	We	We	X	X	_	0	ROOT	_	_
+2	now	now	X	X	_	1	dep	_	_
+3	write	write	X	X	_	1	flat:foreign	_	_
+4	Af	Af	X	X	_	1	flat:foreign	_	_
+5	where	where	X	X	_	1	flat:foreign	_	_
+6	Af	Af	X	X	_	1	flat:foreign	_	_
+
+1	are	are	X	X	_	4	punct	_	_
+2	distinct	distinct	X	X	_	1	flat:foreign	_	_
+3	complex	complex	ADJ	ADJ	Gender=Masc	4	amod	_	_
+4	numbers	numbers	X	X	_	0	ROOT	_	_
+5	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	If	If	X	X	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	the	the	X	X	_	4	dep	_	_
+4	null	null	X	X	_	1	flat:foreign	_	_
+5	space	space	X	X	_	1	flat:foreign	_	_
+6	of	of	X	X	_	1	advcl	_	_
+7	Af	af	PRON	PRON	Gender=Masc|Number=Sing|Person=3|PronType=Prs	1	dep	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	then	then	X	X	_	1	flat:foreign	_	_
+10	Theorem	Theorem	X	X	_	9	flat:foreign	_	_
+11	12	12	NUM	NUM	NumType=Card	10	nummod	_	_
+12	says	says	X	X	_	9	flat:foreign	_	_
+13	that	that	X	X	_	9	flat:foreign	_	_
+14	Af	Af	X	X	_	9	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	6	nsubj	_	_
+2	other	other	X	X	_	1	flat:foreign	_	_
+3	words	words	X	X	_	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	6	punct	_	_
+5	if	if	X	X	_	6	nummod	_	_
+6	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	10	amod	_	_
+7	satisfies	satisfie	NOUN	NOUN	Gender=Fem|Number=Plur	6	amod	_	_
+8	the	the	X	X	_	6	flat:foreign	_	_
+9	differential	differential	X	X	_	6	flat:foreign	_	_
+10	equation	equation	X	X	_	0	ROOT	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	then	then	X	X	_	5	nsubj	_	_
+3	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	2	amod	_	_
+4	is	is	X	X	_	2	dep	_	_
+5	uniquely	uniquely	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+6	expressible	expressibl	ADJ	ADJ	Number=Sing	5	amod	_	_
+7	in	in	X	X	_	5	dep	_	_
+8	the	the	X	X	_	7	dep	_	_
+9	form	form	X	X	_	7	flat:foreign	_	_
+10	Af	Af	X	X	_	5	dep	_	_
+
+1	where	where	X	X	_	0	ROOT	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+
+1	satisfies	satisfies	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+2	differential	differential	X	X	_	1	flat:foreign	_	_
+
+1	equation	equation	X	X	_	0	ROOT	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Thus	Thus	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	study	study	X	X	_	3	flat:foreign	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	the	the	X	X	_	7	dep	_	_
+7	solutions	solution	X	X	_	3	flat:foreign	_	_
+8	to	to	X	X	_	3	flat:foreign	_	_
+9	the	the	X	X	_	3	flat:foreign	_	_
+10	equation	equation	NOUN	NOUN	Gender=Fem|Number=Sing	3	flat:foreign	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	is	is	X	X	_	3	dep	_	_
+2	reduced	reduced	X	X	_	1	flat:foreign	_	_
+3	to	to	X	X	_	4	dep	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	study	study	X	X	_	0	ROOT	_	_
+
+1	of	of	X	X	_	2	dep	_	_
+2	the	the	X	X	_	5	dep	_	_
+3	space	space	X	X	_	2	flat:foreign	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	solutions	solution	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+6	of	of	PRON	PRON	Person=3	8	dep	_	_
+7	a	avoir	X	X	_	8	aux:tense	_	_
+8	differential	differential	X	X	_	5	nmod	_	_
+
+1	equation	equation	X	X	_	0	ROOT	_	_
+2	of	of	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	form	form	X	X	_	1	dep	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	reduction	reduction	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	has	has	X	X	_	1	flat:foreign	_	_
+4	been	been	X	X	_	1	flat:foreign	_	_
+5	accomplished	accomplished	X	X	_	1	flat:foreign	_	_
+6	by	by	X	X	_	1	flat:foreign	_	_
+7	the	the	X	X	_	1	flat:foreign	_	_
+8	general	general	X	X	_	1	flat:foreign	_	_
+9	methods	methods	X	X	_	1	flat:foreign	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	linear	linear	X	X	_	1	flat:foreign	_	_
+12	algebra	algebra	X	X	_	1	amod	_	_
+13	,	,	PUNCT	PUNCT	_	1	punct	_	_
+14	i.e	i.e	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	by	by	X	X	_	0	ROOT	_	_
+3	the	the	X	X	_	4	dep	_	_
+4	primary	primary	X	X	_	2	flat:foreign	_	_
+5	decomposition	decomposition	NOUN	NOUN	Gender=Fem|Number=Sing	2	flat:foreign	_	_
+6	theorem	theorem	ADJ	ADJ	Gender=Fem|Number=Sing	2	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	To	To	X	X	_	0	ROOT	_	_
+2	describe	describe	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	space	space	X	X	_	1	flat:foreign	_	_
+5	of	of	X	X	_	6	case	_	_
+6	solutions	solution	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+7	to	to	X	X	_	1	flat:foreign	_	_
+8	Af	af	ADV	ADV	_	1	dep	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	one	one	X	X	_	1	flat:foreign	_	_
+11	must	must	ADJ	ADJ	Gender=Masc|Number=Sing	10	flat:foreign	_	_
+12	know	know	X	X	_	10	flat:foreign	_	_
+13	something	something	X	X	_	10	flat:foreign	_	_
+14	about	about	X	X	_	10	flat:foreign	_	_
+15	differential	differential	X	X	_	10	flat:foreign	_	_
+16	equations	equation	NOUN	NOUN	Gender=Fem|Number=Plur	10	flat:foreign	_	_
+17	;	;	PUNCT	PUNCT	_	1	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	that	that	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	one	one	X	X	_	1	flat:foreign	_	_
+5	must	must	ADJ	ADJ	Gender=Masc|Number=Sing	4	flat:foreign	_	_
+6	know	know	X	X	_	4	flat:foreign	_	_
+7	something	something	X	X	_	4	flat:foreign	_	_
+8	about	about	X	X	_	4	flat:foreign	_	_
+9	D	d	NOUN	NOUN	_	4	nmod	_	_
+10	other	other	X	X	_	4	flat:foreign	_	_
+11	than	than	X	X	_	4	flat:foreign	_	_
+12	the	the	X	X	_	4	flat:foreign	_	_
+13	fact	fact	X	X	_	4	flat:foreign	_	_
+14	that	that	X	X	_	4	flat:foreign	_	_
+15	it	it	X	X	_	4	dep	_	_
+16	is	is	X	X	_	4	dep	_	_
+17	a	avoir	X	X	_	4	flat:foreign	_	_
+18	linear	linear	X	X	_	4	flat:foreign	_	_
+19	operator	operator	X	X	_	4	flat:foreign	_	_
+20	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	However	However	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	one	one	X	X	_	1	dep	_	_
+4	does	does	X	X	_	3	flat:foreign	_	_
+5	not	not	X	X	_	4	dep	_	_
+6	need	need	X	X	_	4	dep	_	_
+7	to	to	X	X	_	3	flat:foreign	_	_
+8	know	know	X	X	_	3	flat:foreign	_	_
+9	very	very	X	X	_	3	flat:foreign	_	_
+10	much	much	X	X	_	3	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	It	It	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	very	very	X	X	_	1	dep	_	_
+4	easy	easy	X	X	_	1	flat:foreign	_	_
+5	to	to	X	X	_	1	dep	_	_
+6	establish	establish	X	X	_	1	flat:foreign	_	_
+7	by	by	X	X	_	8	case	_	_
+8	induction	induction	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	R	r	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	5	expl:pass	_	_
+3	that	that	X	X	_	2	amod	_	_
+4	if	if	X	X	_	3	dep	_	_
+5	F	f	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+6	is	is	X	X	_	5	dep	_	_
+
+1	in	in	X	X	_	4	dep	_	_
+2	Af	Af	X	X	_	1	dep	_	_
+3	then	then	X	X	_	1	flat:foreign	_	_
+4	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	that	that	X	X	_	0	ROOT	_	_
+2	is	is	X	X	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	Af	Af	PROPN	PROPN	_	1	dep	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	etc.	etc.	ADV	ADV	_	1	flat:foreign	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thus	Thus	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Af	Af	X	X	_	0	ROOT	_	_
+2	if	if	X	X	_	1	dep	_	_
+3	and	and	X	X	_	4	dep	_	_
+4	only	only	X	X	_	1	flat:foreign	_	_
+5	if	if	X	X	_	4	dep	_	_
+6	Af	Af	PROPN	PROPN	_	1	dep	_	_
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	à	ADP	ADP	_	2	case	_	_
+2	function	function	NOUN	NOUN	Gender=Fem|Number=Sing	4	obl:mod	_	_
+3	G	gramme	NOUN	NOUN	_	2	nmod	_	_
+4	such	such	X	X	_	0	ROOT	_	_
+5	that	that	X	X	_	4	flat:foreign	_	_
+6	Af	af	ADV	ADV	_	4	dep	_	_
+7	,	,	PUNCT	PUNCT	_	4	punct	_	_
+8	i.e	i.e	NOUN	NOUN	_	4	dep	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+10	,	,	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	must	must	NOUN	NOUN	Gender=Masc|Number=Sing	5	nsubj	_	_
+4	be	be	X	X	_	5	expl:comp	_	_
+5	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
+6	polynomial	polynomial	NOUN	NOUN	Gender=Masc|Number=Sing	5	obj	_	_
+7	function	function	NOUN	NOUN	Gender=Fem|Number=Sing	5	obj	_	_
+8	of	of	X	X	_	9	case	_	_
+9	degree	degree	X	X	_	5	obl:arg	_	_
+10	Af	Af	X	X	_	1	flat:foreign	_	_
+11	or	or	X	X	_	1	flat:foreign	_	_
+12	less	less	X	X	_	1	flat:foreign	_	_
+13	:	:	PUNCT	PUNCT	_	12	punct	_	_
+
+1	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Thus	thu	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	F	F	X	X	_	1	amod	_	_
+3	satisfies	satisfie	NOUN	NOUN	Gender=Fem|Number=Plur	1	amod	_	_
+
+1	Af	Af	PROPN	PROPN	_	6	advmod	_	_
+2	if	if	X	X	_	6	expl:pass	_	_
+3	and	and	X	X	_	4	dep	_	_
+4	only	only	X	X	_	2	flat:foreign	_	_
+5	if	if	X	X	_	4	dep	_	_
+6	F	f	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	10	dep	_	_
+7	has	has	X	X	_	6	dep	_	_
+8	the	the	X	X	_	9	dep	_	_
+9	form	form	X	X	_	6	advcl	_	_
+10	Af	Af	PROPN	PROPN	_	0	ROOT	_	_
+11	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Accordingly	accordingly	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	5	punct	_	_
+3	the	the	X	X	_	5	case	_	_
+4	'	'	PUNCT	PUNCT	_	5	punct	_	_
+5	functions	function	NOUN	NOUN	Gender=Fem|Number=Plur	1	nmod	_	_
+6	'	'	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Af	Af	X	X	_	6	dep	_	_
+2	span	span	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	6	dep	_	_
+4	space	space	X	X	_	3	flat:foreign	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	solutions	solution	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	Af	Af	X	X	_	6	nmod	_	_
+9	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Since	Since	PROPN	PROPN	_	0	ROOT	_	_
+2	Af	Af	PROPN	PROPN	_	1	dep	_	_
+
+1	are	are	X	X	_	3	mark	_	_
+2	linearly	linearly	ADV	ADV	PronType=Int	3	dep	_	_
+3	independent	independer	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	4	dep	_	_
+4	functions	function	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+5	and	and	X	X	_	4	dep	_	_
+6	the	the	X	X	_	4	flat:foreign	_	_
+7	exponential	exponential	X	X	_	4	flat:foreign	_	_
+
+1	function	function	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	has	has	X	X	_	1	dep	_	_
+3	no	no	X	X	_	1	dep	_	_
+4	zeros	zero	NOUN	NOUN	Gender=Masc|Number=Plur	3	conj	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	these	these	X	X	_	3	conj	_	_
+7	R	r	NOUN	NOUN	_	3	flat:foreign	_	_
+
+1	functions	function	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+
+1	Af	af	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	form	form	X	X	_	0	ROOT	_	_
+3	a	avoir	X	X	_	2	nsubj	_	_
+4	basis	basis	X	X	_	3	obj	_	_
+5	for	for	X	X	_	3	dep	_	_
+6	the	the	X	X	_	3	dep	_	_
+7	space	space	X	X	_	3	obj	_	_
+8	of	of	ADP	ADP	_	9	case	_	_
+9	solutions	solution	NOUN	NOUN	Gender=Fem|Number=Plur	3	obl:arg	_	_
+10	.	.	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No

@@ -1,0 +1,16 @@
+stanza
+numpy
+scipy
+pandas
+matplotlib
+transformers
+conllu
+torch
+docker
+pyqt6
+PyQt6-WebEngine
+pip
+
+# Annotateurs supplémentaires
+spacy
+spacy-conll

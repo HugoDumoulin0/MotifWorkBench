@@ -1,0 +1,2947 @@
+1	As	as	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	autumn	autumn	X	X	_	1	amod	_	_
+3	starts	starts	X	X	_	1	amod	_	_
+4	its	its	X	X	_	1	dep	_	_
+5	annual	annual	X	X	_	1	nmod	_	_
+6	sweep	sweep	X	X	_	1	amod	_	_
+7	,	,	PUNCT	PUNCT	_	14	punct	_	_
+8	few	few	X	X	_	14	dep	_	_
+9	Americans	Americans	X	X	_	8	flat:foreign	_	_
+10	and	and	X	X	_	9	flat:foreign	_	_
+11	Canadians	Canadians	X	X	_	9	flat:foreign	_	_
+12	realize	realize	X	X	_	9	flat:foreign	_	_
+13	how	how	X	X	_	14	dep	_	_
+14	fortunate	fortunate	X	X	_	1	conj	_	_
+15	they	they	X	X	_	1	flat:foreign	_	_
+16	are	are	X	X	_	15	dep	_	_
+
+1	in	in	X	X	_	6	dep	_	_
+2	having	having	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	world'	world'	X	X	_	1	flat:foreign	_	SpaceAfter=No
+5	s	s	PRON	PRON	Person=3|Reflex=Yes	6	dep	_	_
+6	finest	finest	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	fall	fall	X	X	_	6	flat:name	_	_
+8	coloring	coloring	X	X	_	6	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	Spectacular	Spectacular	X	X	_	1	punct	_	_
+3	displays	displays	X	X	_	6	cc	_	_
+4	of	of	X	X	_	5	case	_	_
+5	this	this	X	X	_	3	obl:mod	_	_
+6	sort	sortir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	punct	_	_
+7	are	are	ADP	ADP	_	8	case	_	_
+8	relatively	relatively	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	obl:mod	_	_
+9	rare	rare	ADJ	ADJ	Number=Sing	8	amod	_	_
+10	in	in	X	X	_	8	dep	_	_
+11	the	the	X	X	_	10	fixed	_	_
+12	entire	entire	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	obj	_	_
+13	land	land	X	X	_	14	expl:subj	_	_
+14	surface	surface	NOUN	NOUN	Gender=Fem|Number=Sing	6	obj	_	_
+15	of	of	X	X	_	17	case	_	_
+16	the	the	X	X	_	15	fixed	_	_
+17	earth	earth	X	X	_	6	obl:mod	_	_
+18	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	only	only	X	X	_	1	flat:foreign	_	_
+3	other	other	X	X	_	1	flat:foreign	_	_
+4	regions	region	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+5	so	so	X	X	_	1	dep	_	_
+6	blessed	blessed	X	X	_	1	flat:foreign	_	_
+7	are	are	X	X	_	1	flat:foreign	_	_
+8	the	the	X	X	_	1	flat:foreign	_	_
+9	British	British	X	X	_	1	flat:foreign	_	_
+10	Isles	Isles	PROPN	PROPN	_	1	flat:foreign	_	_
+11	,	,	PUNCT	PUNCT	_	1	punct	_	_
+12	western	western	NOUN	NOUN	Gender=Masc|Number=Sing	21	nsubj	_	_
+13	Europe	Europe	PROPN	PROPN	Gender=Fem|Number=Sing	12	nmod	_	_
+14	,	,	PUNCT	PUNCT	_	12	punct	_	_
+15	eastern	eastern	X	X	_	12	appos	_	_
+16	China	China	PROPN	PROPN	_	12	nmod	_	_
+17	,	,	PUNCT	PUNCT	_	12	punct	_	_
+18	southern	southern	X	X	_	12	acl	_	_
+19	Chile	Chile	X	X	_	18	advmod	_	_
+20	and	and	X	X	_	21	dep	_	_
+21	parts	part	X	X	_	1	flat:foreign	_	_
+22	of	of	X	X	_	23	case	_	_
+23	Japan	Japan	PROPN	PROPN	_	1	dep	_	_
+24	,	,	PUNCT	PUNCT	_	1	punct	_	_
+25	New	New	X	X	_	26	nsubj	_	_
+26	Zealand	Zealand	X	X	_	1	flat:foreign	_	_
+27	and	and	X	X	_	26	flat:foreign	_	_
+28	Tasmania	Tasmania	X	X	_	26	flat:foreign	_	_
+29	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Their	Their	X	X	_	3	nsubj	_	_
+2	autumn	autumn	X	X	_	1	flat:foreign	_	_
+3	tints	tints	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	23	advcl	_	_
+4	are	are	ADP	ADP	_	3	advmod	_	_
+5	all	all	X	X	_	4	dep	_	_
+6	fairly	fairly	VERB	VERB	VerbForm=Inf	3	xcomp	_	_
+7	low	low	ADJ	ADJ	Gender=Masc|Number=Sing	8	amod	_	_
+8	keyed	keyed	PROPN	PROPN	Gender=Masc|Number=Sing	6	obj	_	_
+9	compared	compared	X	X	_	6	dep	_	_
+10	with	with	X	X	_	6	dep	_	_
+11	the	the	X	X	_	6	dep	_	_
+12	fiery	fiery	PROPN	PROPN	_	6	obj	_	_
+13	stabs	stabs	PROPN	PROPN	_	12	amod	_	_
+14	of	of	X	X	_	15	case	_	_
+15	crimson	crimson	NOUN	NOUN	Gender=Masc|Number=Plur	12	nmod	_	_
+16	,	,	PUNCT	PUNCT	_	17	punct	_	_
+17	gold	gold	NOUN	NOUN	Gender=Fem|Number=Sing	15	conj	_	_
+18	,	,	PUNCT	PUNCT	_	19	punct	_	_
+19	purple	purpl	ADJ	ADJ	Gender=Fem|Number=Sing	12	conj	_	_
+20	,	,	PUNCT	PUNCT	_	21	punct	_	_
+21	bronze	bronze	NOUN	NOUN	Gender=Masc|Number=Sing	12	conj	_	_
+22	,	,	PUNCT	PUNCT	_	23	punct	_	_
+23	blue	blu	ADJ	ADJ	Gender=Fem|Number=Sing	0	ROOT	_	_
+24	and	and	X	X	_	23	dep	_	_
+25	vermilion	vermilion	X	X	_	23	amod	_	_
+26	that	that	X	X	_	23	dep	_	_
+27	flame	flame	X	X	_	23	dep	_	_
+28	up	up	X	X	_	27	dep	_	_
+29	in	in	X	X	_	23	advmod	_	_
+30	North	North	X	X	_	23	dep	_	_
+31	America	America	PROPN	PROPN	_	23	flat:foreign	_	_
+32	.	.	PUNCT	PUNCT	_	23	punct	_	_
+
+1	Jack	Jack	PROPN	PROPN	_	5	nsubj	_	_
+2	Frost	Frost	PROPN	PROPN	_	1	flat:name	_	_
+3	is	is	X	X	_	5	dep	_	_
+4	not	not	X	X	_	5	dep	_	_
+5	really	really	X	X	_	0	ROOT	_	_
+6	responsible	responsible	X	X	_	5	xcomp	_	_
+7	for	for	X	X	_	8	case	_	_
+8	this	this	X	X	_	5	obl:mod	_	_
+9	great	great	X	X	_	5	dep	_	_
+10	seasonal	seasonal	X	X	_	5	amod	_	_
+11	spectacle	spectacle	NOUN	NOUN	Gender=Masc|Number=Sing	5	obj	_	_
+12	;	;	PUNCT	PUNCT	_	5	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	in	in	X	X	_	0	ROOT	_	_
+2	fact	fact	NOUN	NOUN	Gender=Fem|Number=Plur	1	fixed	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+5	freezing	freezing	X	X	_	4	fixed	_	_
+6	autumn	autumn	PROPN	PROPN	_	4	obl:arg	_	_
+7	dulls	dulls	X	X	_	4	flat:foreign	_	_
+8	the	the	X	X	_	4	dep	_	_
+9	blaze	blaze	X	X	_	4	flat:foreign	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	7	dep	_	_
+2	best	best	X	X	_	1	flat:foreign	_	_
+3	effects	effects	X	X	_	2	nmod	_	_
+4	come	come	X	X	_	7	nsubj	_	_
+5	from	from	X	X	_	4	dep	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	combination	combination	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+8	of	of	X	X	_	10	case	_	_
+9	temperate	temperat	ADJ	ADJ	Number=Sing	10	amod	_	_
+10	climate	climate	X	X	_	7	obj	_	_
+11	and	and	X	X	_	10	dep	_	_
+12	plenty	plenty	X	X	_	10	flat:name	_	_
+13	of	of	X	X	_	14	case	_	_
+14	late	late	X	X	_	7	obl:arg	_	SpaceAfter=No
+15	-	-	PROPN	PROPN	_	7	conj	_	SpaceAfter=No
+16	summer	summer	X	X	_	7	dep	_	_
+17	rain	rain	X	X	_	7	amod	_	_
+18	,	,	PUNCT	PUNCT	_	19	punct	_	_
+19	followed	followed	X	X	_	7	conj	_	_
+20	by	by	X	X	_	7	dep	_	_
+21	sunny	sunny	X	X	_	20	flat:foreign	_	_
+22	days	days	X	X	_	20	flat:foreign	_	_
+23	and	and	X	X	_	20	flat:foreign	_	_
+
+1	cool	cool	ADJ	ADJ	Number=Plur	2	amod	_	_
+2	nights	night	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Foliage	foliage	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	pilgrimages	pilgrimages	PROPN	PROPN	Gender=Masc|Number=Sing	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	either	either	X	X	_	1	nmod	_	_
+5	organized	organized	X	X	_	4	amod	_	_
+6	or	or	X	X	_	7	cc	_	_
+7	individual	individual	ADJ	ADJ	Gender=Masc|Number=Plur	4	conj	_	_
+8	,	,	PUNCT	PUNCT	_	1	punct	_	_
+9	are	are	X	X	_	11	case	_	_
+10	becoming	becoming	X	X	_	9	fixed	_	_
+11	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	obl:mod	_	_
+12	autumn	autumn	X	X	_	11	amod	_	_
+13	item	item	PROPN	PROPN	_	1	nmod	_	_
+14	for	for	X	X	_	1	dep	_	_
+15	more	more	X	X	_	1	dep	_	_
+16	and	and	X	X	_	1	dep	_	_
+17	more	more	X	X	_	1	flat:foreign	_	_
+18	Americans	Americans	X	X	_	1	nmod	_	_
+19	each	each	X	X	_	1	flat:foreign	_	_
+20	year	year	X	X	_	1	amod	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Below	Below	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	is	is	X	X	_	4	dep	_	_
+3	a	avoir	X	X	_	4	dep	_	_
+4	specific	specific	X	X	_	1	flat:foreign	_	_
+5	guide	guid	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	keyed	keyed	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	_
+8	to	to	X	X	_	7	dep	_	_
+9	the	the	X	X	_	7	dep	_	_
+10	calendar	calendar	X	X	_	7	flat:foreign	_	_
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Nature	nature	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Canada	Canada	PROPN	PROPN	Gender=Masc|Number=Sing	1	amod	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Late	Late	X	X	_	2	dep	_	_
+2	September	September	X	X	_	7	dep	_	_
+3	finds	finds	X	X	_	2	flat:foreign	_	_
+4	Quebec'	Quebec'	PROPN	PROPN	Gender=Masc|Number=Sing	7	expl:subj	_	SpaceAfter=No
+5	s	s	PRON	PRON	Person=3|Reflex=Yes	7	expl:comp	_	_
+6	color	color	X	X	_	7	dep	_	_
+7	at	at	X	X	_	24	case	_	_
+8	its	its	X	X	_	7	fixed	_	_
+9	peak	peak	X	X	_	7	fixed	_	_
+10	,	,	PUNCT	PUNCT	_	11	punct	_	_
+11	especially	especially	X	X	_	7	dep	_	_
+12	in	in	X	X	_	11	dep	_	_
+13	the	the	X	X	_	11	dep	_	_
+14	Laurentian	Laurentian	X	X	_	11	dep	_	_
+15	hills	hills	X	X	_	11	dep	_	_
+16	and	and	X	X	_	11	dep	_	_
+17	in	in	X	X	_	11	dep	_	_
+18	the	the	X	X	_	11	dep	_	_
+19	area	area	X	X	_	11	dep	_	_
+20	south	south	X	X	_	11	dep	_	_
+21	of	of	X	X	_	11	dep	_	_
+22	the	the	X	X	_	11	dep	_	_
+23	St.	saint	X	X	_	11	dep	_	_
+24	Lawrence	Lawrence	PROPN	PROPN	_	0	ROOT	_	_
+25	River	River	PROPN	PROPN	_	24	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	Maritime	Maritime	PROPN	PROPN	_	1	flat:foreign	_	_
+4	provinces	province	X	X	_	1	flat:foreign	_	_
+5	farther	farther	X	X	_	1	flat:foreign	_	_
+6	east	east	X	X	_	1	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	the	the	X	X	_	1	flat:foreign	_	_
+9	tones	tones	X	X	_	8	flat:foreign	_	_
+10	are	are	X	X	_	1	flat:foreign	_	_
+11	a	avoir	X	X	_	1	flat:foreign	_	_
+12	little	little	PROPN	PROPN	Number=Sing	11	obj	_	_
+13	quieter	quieter	ADJ	ADJ	Gender=Fem|Number=Sing	12	amod	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Ontario'	Ontario'	PROPN	PROPN	_	3	cc	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	3	det	_	_
+3	foliage	foliage	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+4	is	is	X	X	_	3	dep	_	_
+5	most	most	X	X	_	3	dep	_	_
+6	vivid	vivid	X	X	_	3	dep	_	_
+7	from	from	X	X	_	6	dep	_	_
+8	about	about	X	X	_	3	dep	_	_
+9	Sept	Sept	NUM	NUM	NumType=Card	8	xcomp	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	23	23	NUM	NUM	NumType=Card	3	nummod	_	_
+2	to	to	X	X	_	1	dep	_	_
+3	Oct	Oct	X	X	_	0	ROOT	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	10	10	NUM	NUM	NumType=Card	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	with	with	X	X	_	3	case	_	_
+3	both	both	X	X	_	0	ROOT	_	_
+4	Muskoka	Muskoka	PROPN	PROPN	_	3	flat:name	_	_
+5	(	(	PUNCT	PUNCT	_	3	punct	_	_
+6	100	100	NUM	NUM	NumType=Card	7	nummod	_	_
+7	miles	mile	NOUN	NOUN	Gender=Masc|Number=Plur	3	appos	_	_
+8	north	north	PROPN	PROPN	Gender=Masc|Number=Sing	3	nmod	_	_
+9	of	of	X	X	_	10	case	_	_
+10	Toronto	Toronto	PROPN	PROPN	_	3	nmod	_	_
+11	)	)	PUNCT	PUNCT	_	3	punct	_	_
+12	and	and	X	X	_	3	dep	_	_
+13	Haliburton	Haliburton	PROPN	PROPN	_	12	flat:foreign	_	_
+14	(	(	PUNCT	PUNCT	_	12	punct	_	_
+15	125	125	NUM	NUM	NumType=Card	16	nummod	_	_
+16	miles	mile	NOUN	NOUN	Gender=Masc|Number=Plur	12	flat:foreign	_	_
+17	northwest	northwest	X	X	_	12	flat:foreign	_	_
+18	of	of	X	X	_	19	dep	_	_
+19	Toronto	Toronto	PROPN	PROPN	_	12	dep	_	_
+20	)	)	PUNCT	PUNCT	_	3	punct	_	_
+21	holding	holding	X	X	_	3	appos	_	_
+22	color	color	X	X	_	21	dep	_	_
+23	cavalcades	cavalcade	NOUN	NOUN	Gender=Fem|Number=Plur	21	flat:foreign	_	_
+24	starting	starting	X	X	_	21	dep	_	_
+25	Sept	Sept	NUM	NUM	NumType=Card	21	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	23	23	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	Canadian	Canadian	X	X	_	1	flat:foreign	_	_
+4	Rockies	Rockies	PROPN	PROPN	_	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	great	great	X	X	_	1	conj	_	_
+7	groves	groves	PROPN	PROPN	_	6	nmod	_	_
+8	of	of	ADP	ADP	_	9	case	_	_
+9	aspen	aspen	NOUN	NOUN	Gender=Masc|Number=Plur	6	nmod	_	_
+10	are	are	X	X	_	11	case	_	_
+11	already	already	NOUN	NOUN	Gender=Masc|Number=Plur	6	nmod	_	_
+12	glinting	glinting	X	X	_	6	amod	_	_
+13	gold	gold	PROPN	PROPN	_	6	amod	_	_
+14	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	New	New	X	X	_	0	ROOT	_	_
+2	England	England	X	X	_	1	flat:foreign	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Vermont'	vermont'	NOUN	NOUN	Number=Plur	8	expl:pass	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	8	expl:pass	_	_
+3	sugar	sugar	X	X	_	2	dep	_	_
+4	maples	maple	ADJ	ADJ	Number=Plur	3	amod	_	_
+5	are	are	X	X	_	6	case	_	_
+6	scarlet	scarlet	X	X	_	3	nmod	_	_
+7	from	from	X	X	_	6	dep	_	_
+8	Sept	Sept	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	25	25	NUM	NUM	NumType=Card	2	nummod	_	_
+2	to	to	X	X	_	3	dep	_	_
+3	Oct	Oct	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	15	15	NUM	NUM	NumType=Card	4	nummod	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	and	and	X	X	_	1	punct	_	_
+5	often	often	X	X	_	4	flat:foreign	_	_
+6	hit	hit	NOUN	NOUN	Gender=Masc|Number=Sing	4	flat:foreign	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	dep	_	_
+8	height	height	X	X	_	4	dep	_	_
+9	in	in	X	X	_	4	flat:foreign	_	_
+10	early	early	X	X	_	4	flat:foreign	_	_
+11	October	October	X	X	_	4	flat:foreign	_	_
+12	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	New	New	X	X	_	0	ROOT	_	_
+
+1	Hampshire	Hampshire	X	X	_	0	ROOT	_	_
+
+1	figures	figure	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	its	its	X	X	_	1	dep	_	_
+
+1	peak	peak	X	X	_	2	advmod	_	_
+2	around	around	X	X	_	0	ROOT	_	_
+3	Columbus	Columbus	X	X	_	2	dep	_	_
+4	Day	Day	X	X	_	2	flat:foreign	_	_
+
+1	and	and	X	X	_	2	dep	_	_
+2	boasts	boasts	X	X	_	6	obl:mod	_	_
+3	of	of	X	X	_	6	case	_	_
+4	all	all	X	X	_	3	advmod	_	_
+5	its	its	X	X	_	3	fixed	_	_
+6	hardwoods	hardwoods	X	X	_	0	ROOT	_	_
+7	including	including	X	X	_	6	dep	_	_
+8	the	the	X	X	_	6	dep	_	_
+9	yellow	yellow	X	X	_	6	dep	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	the	the	X	X	_	6	dep	_	_
+12	birches	birches	X	X	_	11	amod	_	_
+13	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	The	The	X	X	_	3	nsubj	_	_
+2	shades	shades	X	X	_	1	flat:foreign	_	_
+3	tend	tendre	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+4	to	to	X	X	_	3	advmod	_	_
+5	be	be	X	X	_	3	dep	_	_
+6	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	dep	_	_
+7	little	little	PROPN	PROPN	Gender=Masc|Number=Sing	6	obj	_	_
+8	softer	softer	ADJ	ADJ	Gender=Masc	7	amod	_	_
+9	in	in	X	X	_	11	case	_	_
+10	the	the	X	X	_	9	fixed	_	_
+11	forests	forests	X	X	_	3	dep	_	_
+12	that	that	X	X	_	3	dep	_	_
+13	blanket	blanket	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	xcomp	_	_
+14	so	so	X	X	_	15	expl:subj	_	_
+15	much	much	X	X	_	3	conj	_	_
+16	of	of	X	X	_	17	case	_	_
+17	Maine	Maine	PROPN	PROPN	Gender=Masc|Number=Sing	15	obl:arg	_	_
+18	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	In	In	X	X	_	9	dep	_	_
+2	western	western	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	Massachusetts	Massachusetts	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	and	and	X	X	_	1	flat:foreign	_	_
+5	northwest	northwest	X	X	_	1	flat:foreign	_	_
+6	Connecticut	Connecticut	PROPN	PROPN	_	1	dep	_	_
+7	,	,	PUNCT	PUNCT	_	9	punct	_	_
+8	the	the	X	X	_	9	dep	_	_
+9	Berkshires	Berkshires	X	X	_	19	dep	_	_
+10	are	are	X	X	_	9	dep	_	_
+11	at	at	X	X	_	12	case	_	_
+12	their	their	X	X	_	9	dep	_	_
+13	vibrant	vibrant	ADJ	ADJ	Gender=Masc|Number=Sing	14	amod	_	_
+14	prime	prime	NOUN	NOUN	Gender=Fem|Number=Sing	9	nmod	_	_
+15	the	the	X	X	_	9	dep	_	_
+16	first	first	X	X	_	15	flat:foreign	_	_
+17	week	week	NOUN	NOUN	Gender=Masc|Number=Sing	15	flat:foreign	_	_
+18	of	of	X	X	_	19	dep	_	_
+19	October	october	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+20	.	.	PUNCT	PUNCT	_	19	punct	_	_
+
+1	Middle	Middle	PROPN	PROPN	_	2	dep	_	_
+2	Atlantic	Atlantic	X	X	_	0	ROOT	_	_
+3	states	state	ADJ	ADJ	Number=Plur	2	flat:foreign	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	The	the	ADV	ADV	PronType=Int	0	ROOT	_	_
+2	Adirondacks	Adirondacks	PROPN	PROPN	_	1	flat:foreign	_	_
+3	blaze	blaze	NOUN	NOUN	Gender=Fem|Number=Sing	2	amod	_	_
+
+1	brightest	brightest	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+
+1	in	in	X	X	_	0	ROOT	_	_
+2	early	early	X	X	_	1	fixed	_	_
+3	October	October	PROPN	PROPN	_	1	dep	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+
+1	choice	choice	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	0	ROOT	_	_
+2	routes	route	NOUN	NOUN	Gender=Fem|Number=Plur	1	xcomp	_	_
+3	being	being	ADP	ADP	_	1	advmod	_	_
+4	9N	9N	PROPN	PROPN	Gender=Masc|Number=Sing	3	obj	_	_
+5	from	from	X	X	_	4	dep	_	_
+6	Saratoga	Saratoga	PROPN	PROPN	_	4	flat:name	_	_
+7	up	up	X	X	_	4	dep	_	_
+8	to	to	X	X	_	4	dep	_	_
+9	Lake	Lake	X	X	_	4	dep	_	_
+10	George	George	PROPN	PROPN	Gender=Masc|Number=Sing	4	flat:name	_	_
+11	and	and	X	X	_	1	dep	_	_
+12	73	73	NUM	NUM	NumType=Card	13	nummod	_	_
+13	and	and	X	X	_	1	parataxis	_	_
+14	86	86	NUM	NUM	NumType=Card	13	nummod	_	_
+15	in	in	X	X	_	1	dep	_	_
+16	the	the	X	X	_	15	fixed	_	_
+17	Lake	Lake	X	X	_	15	flat:foreign	_	_
+18	Placid	Placid	PROPN	PROPN	_	1	dep	_	_
+19	area	area	X	X	_	1	xcomp	_	_
+20	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Farther	Farther	PROPN	PROPN	_	8	nsubj	_	_
+2	south	south	X	X	_	1	flat:name	_	_
+3	in	in	X	X	_	1	flat:foreign	_	_
+4	New	New	X	X	_	1	nmod	_	_
+5	York	York	X	X	_	1	nmod	_	_
+6	there	there	X	X	_	1	flat:foreign	_	_
+7	is	is	X	X	_	6	dep	_	_
+8	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	dep	_	_
+9	heavy	heavy	ADV	ADV	_	8	advmod	_	_
+10	haze	haz	ADJ	ADJ	Gender=Fem|Number=Sing	8	obj	_	_
+11	of	of	X	X	_	12	dep	_	_
+12	color	color	X	X	_	8	obl:arg	_	_
+13	over	over	X	X	_	12	flat:foreign	_	_
+14	the	the	X	X	_	8	dep	_	_
+15	Catskills	Catskills	X	X	_	14	flat:foreign	_	_
+16	in	in	X	X	_	8	advcl	_	_
+17	mid	mid	ADV	ADV	_	8	advmod	_	SpaceAfter=No
+18	-	-	PROPN	PROPN	_	8	obl:arg	_	SpaceAfter=No
+19	October	October	PROPN	PROPN	_	8	obj	_	_
+20	,	,	PUNCT	PUNCT	_	21	punct	_	_
+21	notably	notably	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+22	along	along	ADJ	ADJ	Gender=Masc|Number=Sing	21	amod	_	_
+23	routes	route	NOUN	NOUN	Gender=Fem|Number=Plur	21	dep	_	_
+24	23	23	NUM	NUM	NumType=Card	26	nummod	_	_
+25	and	and	X	X	_	24	dep	_	_
+26	23A	23A	NUM	NUM	NumType=Card	21	nmod	_	_
+27	.	.	PUNCT	PUNCT	_	21	punct	_	_
+
+1	About	About	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	same	same	X	X	_	1	flat:foreign	_	_
+4	time	time	X	X	_	1	flat:foreign	_	_
+5	the	the	X	X	_	1	flat:foreign	_	_
+6	Alleghenies	Alleghenies	PROPN	PROPN	_	1	flat:foreign	_	_
+7	and	and	X	X	_	1	flat:foreign	_	_
+8	Poconos	Poconos	X	X	_	1	flat:foreign	_	_
+9	in	in	X	X	_	1	flat:foreign	_	_
+10	Pennsylvania	Pennsylvania	PROPN	PROPN	_	1	flat:foreign	_	_
+11	are	are	X	X	_	12	case	_	_
+12	magnificent	magnificent	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+
+1	--	--	ADJ	ADJ	Gender=Masc	0	ROOT	_	_
+
+1	Renovo	Renovo	PROPN	PROPN	_	0	ROOT	_	_
+
+1	holds	holds	X	X	_	0	ROOT	_	_
+
+1	its	its	X	X	_	2	case	_	_
+2	annual	annual	X	X	_	0	ROOT	_	_
+3	Flaming	Flaming	X	X	_	2	amod	_	_
+
+1	Foliage	foliage	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Festival	festival	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Oct	oct	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	14	14	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	15	15	NUM	NUM	NumType=Card	1	conj	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	New	New	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Jersey'	Jersey'	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	1	dep	_	_
+3	color	color	X	X	_	2	dep	_	_
+4	varies	varier	X	X	_	3	flat:foreign	_	_
+5	from	from	X	X	_	3	flat:foreign	_	_
+6	staccato	staccato	NOUN	NOUN	Gender=Masc|Number=Sing	3	flat:foreign	_	_
+7	to	to	X	X	_	1	dep	_	_
+8	pastel	pastel	X	X	_	7	flat:foreign	_	_
+9	all	all	X	X	_	8	dep	_	_
+10	the	the	X	X	_	7	flat:foreign	_	_
+11	way	way	X	X	_	7	flat:foreign	_	_
+12	from	from	X	X	_	7	flat:foreign	_	_
+13	the	the	X	X	_	7	flat:foreign	_	_
+14	Delaware	Delaware	X	X	_	7	flat:foreign	_	_
+15	Water	Water	PROPN	PROPN	_	7	flat:foreign	_	_
+16	Gap	Gap	PROPN	PROPN	_	7	flat:foreign	_	_
+17	to	to	X	X	_	18	dep	_	_
+18	Cape	Cape	X	X	_	1	acl:relcl	_	_
+19	May	May	PROPN	PROPN	_	18	flat:name	_	_
+20	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Southeast	southeast	PUNCT	PUNCT	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	During	During	X	X	_	8	advmod	_	_
+2	the	the	X	X	_	6	dep	_	_
+3	first	first	X	X	_	2	flat:foreign	_	_
+4	half	half	X	X	_	2	flat:foreign	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	October	October	X	X	_	8	obl:mod	_	_
+7	the	the	X	X	_	6	dep	_	_
+8	Blue	Blue	X	X	_	9	dep	_	_
+9	Ridge	Ridge	X	X	_	0	ROOT	_	_
+
+1	and	and	X	X	_	9	dep	_	_
+2	other	other	X	X	_	1	flat:foreign	_	_
+3	parts	part	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	1	fixed	_	_
+5	the	the	X	X	_	1	dep	_	_
+6	Appalachians	Appalachians	X	X	_	1	flat:foreign	_	_
+7	provide	provide	X	X	_	9	nsubj	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	spectacle	spectacle	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+10	stretching	stretching	ADJ	ADJ	Gender=Masc|Number=Sing	9	amod	_	_
+11	from	from	X	X	_	10	dep	_	_
+12	Maryland	Maryland	X	X	_	9	conj	_	_
+13	and	and	X	X	_	12	fixed	_	_
+14	West	West	X	X	_	9	conj	_	_
+15	Virginia	Virginia	PROPN	PROPN	_	9	dep	_	_
+16	to	to	X	X	_	9	dep	_	_
+17	Georgia	Georgia	PROPN	PROPN	_	9	nmod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	most	most	X	X	_	1	flat:foreign	_	_
+3	brilliant	brilliant	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+4	displays	displays	X	X	_	3	obj	_	_
+5	are	are	X	X	_	2	flat:foreign	_	_
+6	along	along	X	X	_	2	flat:foreign	_	_
+7	the	the	X	X	_	2	dep	_	_
+8	Skyline	Skyline	X	X	_	1	flat:foreign	_	_
+9	Drive	Drive	X	X	_	1	flat:foreign	_	_
+10	above	above	X	X	_	1	flat:foreign	_	_
+11	Virginia'	Virginia'	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+12	s	s	PRON	PRON	Person=3|Reflex=Yes	1	flat:foreign	_	_
+13	Shenandoah	Shenandoah	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+14	Valley	Valley	X	X	_	13	flat:name	_	_
+15	and	and	X	X	_	1	flat:foreign	_	_
+16	throughout	throughout	X	X	_	1	flat:foreign	_	_
+17	the	the	X	X	_	1	flat:foreign	_	_
+18	Great	Great	X	X	_	1	flat:foreign	_	_
+19	Smokies	Smokies	X	X	_	1	flat:foreign	_	_
+20	between	between	X	X	_	1	flat:foreign	_	_
+21	North	North	X	X	_	1	flat:foreign	_	_
+22	Carolina	Carolina	X	X	_	1	flat:foreign	_	_
+23	and	and	X	X	_	1	flat:foreign	_	_
+24	Tennessee	Tennessee	PROPN	PROPN	_	1	flat:foreign	_	_
+25	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Midwest	Midwest	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Michigan	Michigan	PROPN	PROPN	_	20	nsubj	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	Wisconsin	Wisconsin	PROPN	PROPN	_	5	nmod	_	_
+4	and	and	X	X	_	5	dep	_	_
+5	Minnesota	Minnesota	X	X	_	1	obl:mod	_	_
+6	have	haver	X	X	_	5	amod	_	_
+7	many	many	X	X	_	5	flat:foreign	_	_
+8	superb	superb	X	X	_	9	amod	_	_
+9	stretches	stretches	PROPN	PROPN	_	5	nmod	_	_
+10	of	of	X	X	_	11	dep	_	_
+11	color	color	X	X	_	5	dep	_	_
+12	which	which	X	X	_	11	flat:foreign	_	_
+13	reach	reach	X	X	_	11	flat:foreign	_	_
+14	their	their	X	X	_	1	dep	_	_
+15	height	height	X	X	_	1	dep	_	_
+16	from	from	X	X	_	15	flat:foreign	_	_
+17	the	the	X	X	_	15	dep	_	_
+18	last	last	X	X	_	15	flat:foreign	_	_
+19	few	few	X	X	_	20	expl:comp	_	_
+20	days	days	X	X	_	22	dep	_	_
+21	of	of	X	X	_	22	dep	_	_
+22	September	September	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+23	well	well	PROPN	PROPN	Gender=Masc|Number=Sing	22	flat:name	_	_
+24	into	into	X	X	_	22	dep	_	_
+25	October	October	X	X	_	22	flat:name	_	_
+26	,	,	PUNCT	PUNCT	_	27	punct	_	_
+27	especially	especially	X	X	_	22	conj	_	_
+28	in	in	X	X	_	22	dep	_	_
+29	their	their	X	X	_	22	dep	_	_
+
+1	northern	northern	ADV	ADV	_	2	amod	_	_
+2	sections	section	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	e.g	e.g	PROPN	PROPN	Gender=Fem|Number=Sing	2	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	6	punct	_	_
+2	Wisconsin'	Wisconsin'	PROPN	PROPN	_	6	nsubj	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	2	punct	_	_
+4	Vilas	Vilas	X	X	_	3	flat:foreign	_	_
+5	County	County	X	X	_	2	nmod	_	_
+6	whose	whose	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+
+1	Colorama	colorama	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	celebration	celebration	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+
+1	Sept	Sept	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	29-Oct	29-Oct	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	8	8	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	Wisconsin	Wisconsin	PROPN	PROPN	_	1	advmod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	take	take	X	X	_	3	dep	_	_
+5	route	route	NOUN	NOUN	Gender=Fem|Number=Sing	1	parataxis	_	_
+6	55	55	NUM	NUM	NumType=Card	7	nummod	_	_
+7	north	north	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+8	of	of	X	X	_	9	case	_	_
+9	Shawano	Shawano	PROPN	PROPN	_	1	nmod	_	_
+10	or	or	CCONJ	CCONJ	_	11	cc	_	_
+11	routes	route	NOUN	NOUN	Gender=Fem|Number=Plur	9	nmod	_	_
+12	78	78	NUM	NUM	NumType=Card	13	nummod	_	_
+13	and	and	X	X	_	16	case	_	_
+14	60	60	NUM	NUM	NumType=Card	16	nummod	_	_
+15	from	from	X	X	_	14	dep	_	_
+16	Portage	portage	NOUN	NOUN	Gender=Masc|Number=Sing	9	nmod	_	_
+17	to	to	X	X	_	16	dep	_	_
+18	Prairie	prairie	NOUN	NOUN	Gender=Fem|Number=Sing	9	nmod	_	_
+19	Du	de	ADP	ADP	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	case	_	_
+20	Chien	chien	NOUN	NOUN	Gender=Masc|Number=Sing	9	nmod	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	9	iobj	_	_
+2	Michigan	Michigan	PROPN	PROPN	_	1	flat:foreign	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	there	there	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+5	is	is	X	X	_	1	flat:foreign	_	_
+6	fine	fin	ADJ	ADJ	Gender=Fem|Number=Sing	7	amod	_	_
+7	color	color	X	X	_	1	dep	_	_
+8	on	on	PRON	PRON	Number=Sing|Person=3	9	nsubj	_	_
+9	route	router	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+10	27	27	NUM	NUM	NumType=Card	14	nummod	_	_
+11	up	up	X	X	_	10	dep	_	_
+12	to	to	X	X	_	10	fixed	_	_
+13	the	the	X	X	_	10	dep	_	_
+14	Mackinac	Mackinac	X	X	_	9	obj	_	_
+15	Straits	strait	NOUN	NOUN	Gender=Masc|Number=Plur	14	flat:name	_	_
+16	,	,	PUNCT	PUNCT	_	14	punct	_	_
+17	while	while	X	X	_	14	amod	_	_
+18	the	the	X	X	_	30	dep	_	_
+19	views	views	X	X	_	18	flat:foreign	_	_
+20	around	around	X	X	_	18	flat:foreign	_	_
+21	Marquette	Marquette	PROPN	PROPN	_	18	flat:foreign	_	_
+22	and	and	X	X	_	18	flat:foreign	_	_
+23	Iron	iron	ADV	ADV	_	18	flat:foreign	_	_
+24	Mountain	Mountain	PROPN	PROPN	_	18	flat:foreign	_	_
+25	in	in	X	X	_	18	flat:foreign	_	_
+26	the	the	X	X	_	25	fixed	_	_
+27	Upper	Upper	X	X	_	25	flat:foreign	_	_
+28	Peninsula	Peninsula	PROPN	PROPN	Gender=Fem|Number=Sing	18	flat:foreign	_	_
+29	are	are	X	X	_	18	flat:foreign	_	_
+30	spectacular	spectacular	X	X	_	9	obl:mod	_	_
+31	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	In	In	X	X	_	7	dep	_	_
+2	Minnesota	Minnesota	PROPN	PROPN	_	1	nsubj	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	Arrowhead	Arrowhead	X	X	_	1	dep	_	_
+5	County	County	X	X	_	1	flat:foreign	_	_
+6	and	and	X	X	_	1	dep	_	_
+7	route	route	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+8	53	53	NUM	NUM	NumType=Card	9	nummod	_	_
+9	north	north	PROPN	PROPN	Gender=Masc|Number=Sing	7	dep	_	_
+10	to	to	X	X	_	7	dep	_	_
+11	International	International	X	X	_	10	flat:foreign	_	_
+12	Falls	Falls	X	X	_	10	flat:foreign	_	_
+13	are	are	X	X	_	10	flat:foreign	_	_
+14	outstanding	outstanding	X	X	_	10	flat:foreign	_	_
+15	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Farther	Farther	PROPN	PROPN	_	19	nsubj	_	_
+2	south	south	X	X	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	there	there	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+5	are	are	X	X	_	7	case	_	_
+6	attractive	attractif	ADJ	ADJ	Gender=Fem|Number=Sing	7	amod	_	_
+7	patches	patche	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+8	all	all	X	X	_	1	dep	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	way	way	X	X	_	1	flat:foreign	_	_
+11	to	to	X	X	_	1	dep	_	_
+12	the	the	X	X	_	1	dep	_	_
+13	Ozarks	Ozarks	X	X	_	1	dep	_	_
+14	,	,	PUNCT	PUNCT	_	1	punct	_	_
+15	with	with	X	X	_	16	case	_	_
+16	some	some	X	X	_	1	nmod	_	_
+17	seasonal	seasonal	X	X	_	1	flat:foreign	_	_
+18	peaks	peaks	X	X	_	1	flat:foreign	_	_
+19	as	as	X	X	_	21	dep	_	_
+20	late	late	X	X	_	19	advmod	_	_
+21	as	as	X	X	_	0	ROOT	_	_
+22	early	early	X	X	_	21	advmod	_	_
+23	November	November	PROPN	PROPN	_	21	obj	_	_
+24	.	.	PUNCT	PUNCT	_	21	punct	_	_
+
+1	Illinois	illinois	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	SpaceAfter=No
+2	'	'	PUNCT	PUNCT	_	1	punct	_	_
+3	Shawnee	Shawnee	PROPN	PROPN	Gender=Masc|Number=Sing	1	dep	_	_
+
+1	National	national	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Forest	Forest	PROPN	PROPN	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	4	punct	_	_
+2	Missouri'	missouri'	PRON	PRON	Gender=Masc|Number=Plur|Person=3	4	nsubj	_	SpaceAfter=No
+3	s	s	PRON	PRON	Person=3|Reflex=Yes	4	expl:comp	_	_
+4	Iron	iron	ADV	ADV	_	12	advmod	_	_
+5	County	County	X	X	_	4	flat:foreign	_	_
+6	and	and	X	X	_	4	dep	_	_
+7	the	the	X	X	_	4	dep	_	_
+8	maples	maple	ADJ	ADJ	Number=Plur	4	dep	_	_
+9	of	of	ADP	ADP	_	10	case	_	_
+10	Hiawatha	Hiawatha	PROPN	PROPN	_	4	dep	_	_
+11	,	,	PUNCT	PUNCT	_	12	punct	_	_
+12	Kan	Kan	PROPN	PROPN	Number=Sing	0	ROOT	_	SpaceAfter=No
+13	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	should	should	X	X	_	0	ROOT	_	_
+2	be	be	X	X	_	1	dep	_	_
+3	at	at	X	X	_	1	dep	_	_
+4	their	their	X	X	_	1	dep	_	_
+5	best	best	X	X	_	1	dep	_	_
+6	in	in	X	X	_	1	advmod	_	_
+7	mid	mid	ADV	ADV	_	1	dep	_	SpaceAfter=No
+8	-	-	PROPN	PROPN	_	1	obl:arg	_	SpaceAfter=No
+9	October	October	PROPN	PROPN	_	1	obl:arg	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	West	West	X	X	_	1	flat:foreign	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	7	case	_	_
+2	Rockies	Rockies	X	X	_	1	flat:foreign	_	_
+3	have	haver	X	X	_	1	flat:foreign	_	_
+4	many	many	X	X	_	1	flat:foreign	_	_
+5	`	`	PROPN	PROPN	Gender=Masc|Number=Plur	1	flat:foreign	_	SpaceAfter=No
+6	`	`	X	X	_	7	case	_	_
+7	Aspencades	Aspencades	PROPN	PROPN	_	0	ROOT	_	_
+8	''	''	PUNCT	PUNCT	_	7	punct	_	_
+9	,	,	PUNCT	PUNCT	_	15	punct	_	_
+10	which	which	X	X	_	15	nsubj	_	_
+11	are	are	X	X	_	10	dep	_	_
+12	organized	organized	X	X	_	10	nmod	_	_
+13	tours	tour	X	X	_	10	dep	_	_
+14	of	of	X	X	_	15	dep	_	_
+15	the	the	X	X	_	17	dep	_	_
+16	aspen	aspen	X	X	_	15	flat:foreign	_	_
+17	areas	areas	X	X	_	22	cc	_	_
+18	with	with	X	X	_	17	flat:foreign	_	_
+19	frequent	frequent	X	X	_	17	dep	_	_
+20	stops	stop	X	X	_	17	flat:foreign	_	_
+21	at	at	X	X	_	22	aux:tense	_	_
+22	vantage	vantage	NOUN	NOUN	Gender=Masc|Number=Sing	28	amod	_	_
+23	points	point	NOUN	NOUN	Gender=Masc|Number=Plur	22	nmod	_	_
+24	for	for	X	X	_	25	case	_	_
+25	viewing	viewing	X	X	_	22	nmod	_	_
+26	the	the	X	X	_	22	flat:foreign	_	_
+27	golden	golden	X	X	_	22	amod	_	_
+28	panoramas	panorama	ADV	ADV	_	7	nmod	_	_
+29	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	In	In	X	X	_	7	amod	_	_
+2	Colorado	Colorado	PROPN	PROPN	_	1	nmod	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	Ouray	Ouray	PROPN	PROPN	_	1	obl:agent	_	_
+5	has	has	X	X	_	1	flat:foreign	_	_
+6	its	its	X	X	_	7	case	_	_
+7	Fall	Fall	X	X	_	0	ROOT	_	_
+8	Color	Color	X	X	_	7	dep	_	_
+9	Week	Week	X	X	_	8	dep	_	_
+10	Sept	Sept	NUM	NUM	NumType=Card	7	nummod	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	22	22	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	-	-	NOUN	NOUN	NumType=Card	2	punct	_	SpaceAfter=No
+2	29	29	NOUN	NOUN	NumType=Card	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	4	punct	_	_
+2	Rye	Rye	PROPN	PROPN	Gender=Masc|Number=Sing	1	dep	_	_
+3	and	and	X	X	_	2	dep	_	_
+4	Salida	Salida	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+5	both	both	PROPN	PROPN	_	4	flat:name	_	_
+6	sponsor	sponsor	X	X	_	4	dep	_	_
+7	Aspencades	Aspencades	PROPN	PROPN	_	6	nmod	_	_
+
+1	Sept	Sept	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	24	24	NUM	NUM	NumType=Card	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	6	punct	_	_
+2	and	and	X	X	_	5	dep	_	_
+3	Steamboat	Steamboat	PROPN	PROPN	_	2	flat:foreign	_	_
+4	Springs	Springs	X	X	_	2	flat:foreign	_	_
+5	has	has	PRON	PRON	Gender=Masc|Number=Sing|Person=3	6	dep	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_
+7	week	week	NOUN	NOUN	Gender=Masc|Number=Sing	6	obl:mod	_	SpaceAfter=No
+8	-	-	NOUN	NOUN	Gender=Masc|Number=Sing	6	obj	_	SpaceAfter=No
+9	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	6	punct	_	_
+10	Aspencade	Aspencade	PROPN	PROPN	_	6	obj	_	_
+11	Sept	Sept	NUM	NUM	NumType=Card	10	nummod	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	6	punct	_	_
+13	25	25	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	-	-	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+
+1	30	30	NOUN	NOUN	NumType=Card	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	New	New	PROPN	PROPN	Gender=Masc|Number=Sing	5	expl:subj	_	_
+3	Mexico'	Mexico'	PROPN	PROPN	Gender=Masc|Number=Sing	5	expl:subj	_	SpaceAfter=No
+4	s	s	PRON	PRON	Person=3|Reflex=Yes	5	expl:comp	_	_
+5	biggest	biggest	X	X	_	1	dep	_	_
+6	is	is	X	X	_	5	parataxis	_	_
+7	at	at	X	X	_	8	cc	_	_
+8	Ruidoso	Ruidoso	PROPN	PROPN	_	5	obl:mod	_	_
+9	Oct	oct	ADJ	ADJ	_	5	amod	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	7	7	NUM	NUM	NumType=Card	6	nummod	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	8	8	NUM	NUM	NumType=Card	1	conj	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	while	whil	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+6	Alamogordo	Alamogordo	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+7	and	and	X	X	_	6	dep	_	_
+
+1	Cloudcroft	Cloudcroft	PROPN	PROPN	_	0	ROOT	_	_
+2	cooperate	cooperate	X	X	_	1	flat:name	_	_
+3	in	in	X	X	_	4	mark	_	_
+4	similar	similar	X	X	_	1	dep	_	_
+5	trips	trip	X	X	_	4	obj	_	_
+
+1	Oct	oct	ADP	ADP	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	1	1	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Americana	Americana	PROPN	PROPN	_	2	amod	_	_
+2	pleasure	pleasure	X	X	_	0	ROOT	_	_
+3	domes	dome	ADJ	ADJ	Gender=Masc|Number=Plur	2	amod	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Two	two	DET	DET	Definite=Ind|Gender=Masc|Number=Plur|PronType=Art	12	nsubj	_	_
+2	sharply	sharply	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	contrasting	contrasting	ADJ	ADJ	Number=Sing	2	amod	_	_
+4	places	place	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+5	designed	designed	X	X	_	1	flat:foreign	_	_
+6	for	for	X	X	_	1	dep	_	_
+7	public	public	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+8	enjoyment	enjoyment	ADV	ADV	_	1	advmod	_	_
+9	are	are	X	X	_	10	case	_	_
+10	now	now	X	X	_	8	obl:arg	_	_
+11	on	on	PRON	PRON	Number=Sing|Person=3	12	nsubj	_	_
+12	display	display	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+13	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	The	The	X	X	_	7	nmod	_	_
+2	Corn	Corn	X	X	_	1	flat:foreign	_	_
+3	Palace	Palace	PROPN	PROPN	Gender=Masc|Number=Sing	2	flat:foreign	_	_
+4	at	at	X	X	_	5	case	_	_
+5	Mitchell	Mitchell	PROPN	PROPN	_	1	obl:mod	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+8	Dak	Dak	PROPN	PROPN	_	7	flat:name	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	7	punct	_	_
+2	`	`	ADP	ADP	_	4	case	_	SpaceAfter=No
+3	`	`	X	X	_	2	fixed	_	_
+4	the	the	X	X	_	7	advcl	_	_
+5	world'	world'	X	X	_	7	dep	_	SpaceAfter=No
+6	s	s	PRON	PRON	Person=3|Reflex=Yes	7	expl:comp	_	_
+7	corniest	corniest	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+8	building	building	ADV	ADV	_	7	dep	_	_
+9	''	''	PUNCT	PUNCT	_	7	punct	_	_
+10	,	,	PUNCT	PUNCT	_	7	punct	_	_
+11	has	has	PRON	PRON	Gender=Masc|Number=Sing|Person=3	14	nsubj	_	_
+12	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	14	aux:tense	_	_
+13	carnival	carnival	NOUN	NOUN	Gender=Masc|Number=Sing	12	advmod	_	_
+14	through	through	X	X	_	7	advcl	_	_
+15	Sept	Sept	NUM	NUM	NumType=Card	7	dep	_	SpaceAfter=No
+16	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	23	23	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	headlining	headlining	X	X	_	1	amod	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+
+1	Three	Three	X	X	_	0	ROOT	_	_
+2	Stooges	Stooges	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	1	flat:foreign	_	_
+4	Pee	Pee	X	X	_	1	flat:foreign	_	_
+5	Wee	Wee	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+6	Hunt	Hunt	PROPN	PROPN	_	1	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Since	Since	PROPN	PROPN	_	0	ROOT	_	_
+2	1892	1892	NUM	NUM	NumType=Card	1	punct	_	_
+
+1	ears	ears	X	X	_	3	nsubj	_	_
+2	of	of	X	X	_	3	dep	_	_
+3	red	red	X	X	_	0	ROOT	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	yellow	yellow	X	X	_	3	obj	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	purple	purple	NOUN	NOUN	Gender=Fem|Number=Sing	13	nsubj	_	_
+3	and	and	X	X	_	2	dep	_	_
+4	white	white	X	X	_	5	case	_	_
+5	corn	corn	NOUN	NOUN	Gender=Masc|Number=Sing	2	nmod	_	_
+6	have	haver	X	X	_	2	dep	_	_
+7	annually	annually	X	X	_	9	obl:mod	_	_
+8	been	been	X	X	_	7	dep	_	_
+9	nailed	nailed	PROPN	PROPN	_	2	acl:relcl	_	_
+10	to	to	X	X	_	11	dep	_	_
+11	11	11	NUM	NUM	NumType=Card	12	nummod	_	_
+12	big	big	X	X	_	2	dep	_	_
+13	picture	picture	X	X	_	0	ROOT	_	_
+14	panels	panel	X	X	_	13	amod	_	_
+15	to	to	X	X	_	13	dep	_	_
+16	create	create	X	X	_	15	fixed	_	_
+17	huge	huge	NOUN	NOUN	Number=Sing	15	flat:foreign	_	_
+
+1	`	`	ADP	ADP	_	3	case	_	SpaceAfter=No
+2	`	`	X	X	_	3	nummod	_	_
+3	paintings	paintings	X	X	_	0	ROOT	_	_
+4	''	''	PUNCT	PUNCT	_	3	punct	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+
+1	1961	1961	NUM	NUM	NumType=Card	0	ROOT	_	_
+
+1	theme	theme	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	Dakota	Dakota	X	X	_	1	flat:foreign	_	_
+5	Territorial	Territorial	X	X	_	1	flat:foreign	_	_
+
+1	Centennial	Centennial	PROPN	PROPN	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	9	punct	_	_
+2	with	with	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	pictures	pictures	X	X	_	3	flat:foreign	_	_
+5	including	including	X	X	_	3	flat:foreign	_	_
+6	the	the	X	X	_	3	flat:foreign	_	_
+7	Lewis	Lewis	X	X	_	3	flat:foreign	_	_
+8	and	and	X	X	_	1	fixed	_	_
+9	Clark	Clark	X	X	_	0	ROOT	_	_
+10	expedition	expedition	NOUN	NOUN	Gender=Fem|Number=Sing	9	flat:name	_	_
+11	,	,	PUNCT	PUNCT	_	9	punct	_	_
+12	the	the	X	X	_	15	dep	_	_
+13	first	first	X	X	_	12	fixed	_	_
+14	river	river	PRON	PRON	Number=Sing|PronType=Dem	12	flat:foreign	_	_
+15	steamboat	steamboat	NOUN	NOUN	Gender=Fem|Number=Plur	9	nmod	_	_
+16	,	,	PUNCT	PUNCT	_	9	punct	_	_
+17	the	the	X	X	_	9	dep	_	_
+18	1876	1876	NUM	NUM	NumType=Card	9	punct	_	_
+
+1	gold	gold	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+2	rush	rush	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+5	little	little	PROPN	PROPN	Number=Sing	4	obj	_	_
+6	red	red	ADJ	ADJ	Gender=Fem|Number=Sing	4	amod	_	_
+7	schoolhouse	schoolhouse	PROPN	PROPN	_	2	parataxis	_	_
+8	on	on	PRON	PRON	Number=Sing|Person=3	10	nsubj	_	_
+9	the	the	X	X	_	10	aux:tense	_	_
+10	prairie	prairie	NOUN	NOUN	Gender=Fem|Number=Sing	7	amod	_	_
+11	,	,	PUNCT	PUNCT	_	2	punct	_	_
+12	and	and	X	X	_	15	cc	_	_
+13	today'	today'	X	X	_	15	case	_	SpaceAfter=No
+14	s	s	DET	DET	Gender=Fem|Number=Sing	15	det	_	_
+15	construction	construction	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+16	of	of	ADP	ADP	_	17	case	_	_
+17	large	large	ADJ	ADJ	Number=Sing	15	nmod	_	_
+
+1	Missouri	Missouri	X	X	_	0	ROOT	_	_
+2	River	River	X	X	_	1	flat:name	_	_
+3	reservoirs	reservoir	ADJ	ADJ	Gender=Masc|Number=Plur	2	flat:name	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	panels	panel	X	X	_	1	flat:foreign	_	_
+3	will	will	X	X	_	1	flat:foreign	_	_
+4	stay	stay	X	X	_	3	dep	_	_
+5	up	up	X	X	_	4	dep	_	_
+6	until	until	X	X	_	3	amod	_	_
+7	they	they	X	X	_	3	flat:foreign	_	_
+8	are	are	X	X	_	3	dep	_	_
+9	replaced	replaced	X	X	_	3	dep	_	_
+10	next	next	X	X	_	3	flat:foreign	_	_
+11	summer	summer	PROPN	PROPN	_	3	flat:name	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Longwood	longwood	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	Gardens	Gardens	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	near	near	X	X	_	1	appos	_	_
+5	Kennett	Kennett	PROPN	PROPN	_	4	flat:name	_	_
+6	Square	Square	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	Pa	Pa	PROPN	PROPN	_	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	8	punct	_	_
+2	about	about	NOUN	NOUN	Gender=Masc|Number=Sing	8	dep	_	_
+3	12	12	NUM	NUM	NumType=Card	4	nummod	_	_
+4	miles	mile	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+5	from	from	X	X	_	2	dep	_	_
+6	Wilmington	Wilmington	PROPN	PROPN	_	2	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	Del	Del	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	8	punct	_	_
+10	)	)	PUNCT	PUNCT	_	8	punct	_	_
+11	,	,	PUNCT	PUNCT	_	16	punct	_	_
+12	was	was	X	X	_	11	dep	_	_
+13	developed	developed	X	X	_	11	dep	_	_
+14	and	and	X	X	_	11	dep	_	_
+15	heavily	heavily	X	X	_	11	flat:name	_	_
+16	endowed	endowed	VERB	VERB	Gender=Fem|Number=Plur|Tense=Past|VerbForm=Part	8	parataxis	_	_
+17	by	by	X	X	_	16	nsubj	_	_
+18	the	the	X	X	_	16	advmod	_	_
+19	late	late	X	X	_	16	dep	_	_
+20	Pierre	Pierre	PROPN	PROPN	Gender=Masc|Number=Sing	16	obj	_	_
+21	S.	S.	PROPN	PROPN	Gender=Masc|Number=Sing	20	flat:name	_	_
+22	Du	de	ADP	ADP	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	23	case	_	_
+23	Pont	Pont	PROPN	PROPN	Gender=Masc|Number=Sing	16	obl:arg	_	_
+24	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Every	Every	X	X	_	0	ROOT	_	_
+2	Wednesday	Wednesday	X	X	_	1	flat:foreign	_	_
+
+1	night	night	X	X	_	2	advmod	_	_
+2	through	through	X	X	_	3	dep	_	_
+3	Oct	Oct	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	11	11	NUM	NUM	NumType=Card	3	nummod	_	_
+3	there	there	NOUN	NOUN	Gender=Masc|Number=Sing	1	punct	_	_
+4	will	will	X	X	_	3	nmod	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	4	dep	_	_
+7	elaborate	elaborat	ADJ	ADJ	Gender=Masc|Number=Sing	6	amod	_	_
+8	colored	colored	X	X	_	6	amod	_	_
+9	fountain	fountain	ADJ	ADJ	Gender=Masc|Number=Sing	4	flat:foreign	_	_
+10	display	display	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	dep	_	_
+11	,	,	PUNCT	PUNCT	_	10	punct	_	_
+12	with	with	X	X	_	10	dep	_	_
+13	229	229	NUM	NUM	NumType=Card	14	nummod	_	_
+14	nozzles	nozzle	NOUN	NOUN	Gender=Fem|Number=Plur	16	dep	_	_
+15	throwing	throwing	ADV	ADV	_	16	advmod	_	_
+16	jets	jet	NOUN	NOUN	Gender=Masc|Number=Plur	10	ccomp	_	_
+17	of	of	X	X	_	18	case	_	_
+18	water	water	X	X	_	16	obl:mod	_	_
+19	up	up	X	X	_	16	dep	_	_
+20	to	to	X	X	_	16	dep	_	_
+21	130	130	NUM	NUM	NumType=Card	22	nummod	_	_
+22	feet	feet	NOUN	NOUN	Gender=Masc|Number=Plur	16	obj	_	_
+23	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	The	The	X	X	_	4	case	_	_
+2	`	`	X	X	_	1	flat:foreign	_	SpaceAfter=No
+3	`	`	ADP	ADP	_	4	case	_	_
+4	peacock	peacock	PROPN	PROPN	_	0	ROOT	_	_
+5	tail	tail	X	X	_	4	flat:name	_	_
+6	''	''	PUNCT	PUNCT	_	4	punct	_	_
+7	nozzle	nozzle	NOUN	NOUN	Gender=Fem|Number=Sing	11	nsubj	_	_
+8	throws	throws	PROPN	PROPN	_	11	nsubj	_	_
+9	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	11	aux:tense	_	_
+10	giant	giant	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+11	fan	fan	NOUN	NOUN	Gender=Masc|Number=Sing	4	parataxis	_	_
+12	of	of	X	X	_	15	case	_	_
+13	water	water	NOUN	NOUN	Gender=Fem|Number=Sing	12	fixed	_	_
+14	100	100	NUM	NUM	NumType=Card	15	nummod	_	_
+15	feet	feet	NOUN	NOUN	Gender=Masc|Number=Plur	11	obl:arg	_	_
+16	wide	wide	X	X	_	11	dep	_	_
+17	and	and	X	X	_	16	fixed	_	_
+18	40	40	NUM	NUM	NumType=Card	19	nummod	_	_
+19	feet	feet	NOUN	NOUN	Gender=Masc|Number=Plur	11	obj	_	_
+20	high	high	X	X	_	11	amod	_	_
+21	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	gardens	gardens	X	X	_	1	flat:foreign	_	_
+3	themselves	themselves	X	X	_	1	flat:foreign	_	_
+4	are	are	X	X	_	1	flat:foreign	_	_
+5	open	open	X	X	_	1	flat:foreign	_	_
+6	free	free	X	X	_	1	flat:foreign	_	_
+7	of	of	ADP	ADP	_	8	case	_	_
+8	charge	charge	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+9	the	the	X	X	_	1	flat:foreign	_	_
+10	year	year	X	X	_	1	flat:foreign	_	_
+11	round	round	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+12	,	,	PUNCT	PUNCT	_	1	punct	_	_
+13	and	and	X	X	_	1	flat:foreign	_	_
+14	the	the	X	X	_	1	flat:foreign	_	_
+15	192	192	NUM	NUM	NumType=Card	1	nummod	_	_
+16	permanent	permanent	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+17	employes	employes	PROPN	PROPN	_	1	flat:foreign	_	_
+18	make	make	X	X	_	1	flat:foreign	_	_
+19	sure	sur	X	X	_	1	flat:foreign	_	_
+20	that	that	X	X	_	1	flat:foreign	_	_
+21	not	not	X	X	_	1	flat:foreign	_	_
+22	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+23	dead	dead	X	X	_	1	flat:foreign	_	_
+24	or	or	CCONJ	CCONJ	_	25	advmod	_	_
+25	wilted	wilted	ADJ	ADJ	Gender=Masc	1	dep	_	_
+26	flower	flower	X	X	_	25	advmod	_	_
+27	is	is	X	X	_	28	dep	_	_
+28	ever	ever	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+29	seen	seen	X	X	_	28	nsubj	_	_
+30	indoors	indoors	X	X	_	28	dep	_	_
+31	or	or	X	X	_	1	flat:foreign	_	_
+32	out	out	X	X	_	31	dep	_	_
+33	by	by	X	X	_	1	flat:foreign	_	_
+34	any	any	X	X	_	1	flat:foreign	_	_
+35	visitor	visitor	X	X	_	1	flat:foreign	_	_
+36	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	4	nsubj	_	_
+2	greenhouses	greenhouses	X	X	_	1	flat:foreign	_	_
+3	alone	alon	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	cover	cover	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	3	3	NUM	NUM	NumType=Card	4	nummod	_	SpaceAfter=No
+6	-	-	NUM	NUM	NumType=Card	8	nummod	_	SpaceAfter=No
+7	1/2	1/2	NUM	NUM	NumType=Card	8	nummod	_	_
+8	acres	acre	NOUN	NOUN	Gender=Masc|Number=Plur	4	obj	_	_
+9	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Books	Books	X	X	_	0	ROOT	_	_
+2	clock	clock	X	X	_	1	flat:foreign	_	_
+3	without	without	X	X	_	1	flat:foreign	_	_
+4	hands	hand	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Carson	Carson	PROPN	PROPN	Gender=Masc|Number=Sing	5	nsubj	_	_
+2	McCullers	mcculler	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	after	after	X	X	_	5	dep	_	_
+5	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+6	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	5	advmod	_	_
+7	,	,	PUNCT	PUNCT	_	5	punct	_	_
+8	painful	painful	PROPN	PROPN	_	5	dep	_	_
+9	illness	illness	X	X	_	5	obl:arg	_	_
+10	that	that	X	X	_	5	advcl	_	_
+11	might	might	X	X	_	5	advcl	_	_
+12	have	haver	X	X	_	13	amod	_	_
+13	crushed	crushed	PROPN	PROPN	_	5	obl:arg	_	_
+14	a	avoir	X	X	_	15	case	_	_
+15	less	less	X	X	_	5	obl:mod	_	SpaceAfter=No
+16	-	-	X	X	_	5	obl:arg	_	SpaceAfter=No
+17	indomitable	indomitabl	ADJ	ADJ	Number=Sing	5	advcl	_	_
+18	soul	soul	ADV	ADV	_	5	advmod	_	_
+19	,	,	PUNCT	PUNCT	_	28	punct	_	_
+20	has	has	X	X	_	21	case	_	_
+21	come	come	NOUN	NOUN	Gender=Masc|Number=Sing	28	nsubj	_	_
+22	back	back	X	X	_	21	nmod	_	_
+23	with	with	X	X	_	22	dep	_	_
+24	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	21	nmod	_	_
+25	absolute	absolut	ADJ	ADJ	Number=Sing	21	amod	_	_
+26	gem	gem	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	nmod	_	_
+27	of	of	PRON	PRON	Person=3	28	expl:comp	_	_
+28	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	34	dep	_	_
+29	novel	novel	ADV	ADV	_	28	advmod	_	_
+30	which	which	X	X	_	28	obj	_	_
+31	jumped	jumped	X	X	_	28	amod	_	_
+32	high	high	PROPN	PROPN	_	28	obj	_	_
+33	on	on	PRON	PRON	Number=Sing|Person=3	34	nsubj	_	_
+34	best-seller	best-seller	ADJ	ADJ	Gender=Masc|Number=Sing	5	advcl	_	_
+35	lists	lists	X	X	_	34	obj	_	_
+36	even	even	X	X	_	35	fixed	_	_
+37	before	before	X	X	_	35	flat:foreign	_	_
+38	official	official	ADJ	ADJ	Gender=Masc|Number=Sing	35	flat:foreign	_	_
+39	publication	publication	NOUN	NOUN	Gender=Fem|Number=Plur	5	obj	_	_
+40	.	.	PUNCT	PUNCT	_	5	punct	_	_
+
+1	Though	Though	X	X	_	3	advmod	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	subject	subject	X	X	_	0	ROOT	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	segregation	segregation	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	in	in	X	X	_	2	dep	_	_
+4	her	her	X	X	_	3	dep	_	_
+5	native	natif	ADJ	ADJ	Gender=Fem|Number=Sing	3	xcomp	_	_
+6	South	South	X	X	_	3	obj	_	_
+7	--	--	X	X	_	2	dep	_	_
+8	has	has	X	X	_	2	punct	_	_
+9	been	been	X	X	_	2	dep	_	_
+10	thoroughly	thoroughly	NOUN	NOUN	_	2	nmod	_	_
+11	worked	worked	X	X	_	10	amod	_	_
+
+1	,	,	PUNCT	PUNCT	_	4	punct	_	_
+2	Miss	Miss	PROPN	PROPN	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	McCullers	mcculler	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+4	uses	use	ADJ	ADJ	Gender=Fem|Number=Plur	5	dep	_	_
+5	her	her	X	X	_	0	ROOT	_	_
+6	poet'	poet'	ADP	ADP	_	5	dep	_	SpaceAfter=No
+7	s	s	PRON	PRON	Person=3|Reflex=Yes	8	det	_	_
+8	instinct	instinct	NOUN	NOUN	Gender=Masc|Number=Sing	5	dep	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	storyteller'	storyteller'	ADP	ADP	_	4	case	_	SpaceAfter=No
+3	s	s	DET	DET	Number=Sing	4	det	_	_
+4	skill	skill	PRON	PRON	Number=Sing|Person=1|PronType=Prs	1	dep	_	_
+5	to	to	X	X	_	6	case	_	_
+6	reaffirm	reaffirm	NOUN	NOUN	Gender=Masc|Number=Sing	4	nmod	_	_
+7	her	her	X	X	_	4	dep	_	_
+8	place	place	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+9	at	at	X	X	_	4	dep	_	_
+10	the	the	X	X	_	9	flat:foreign	_	_
+11	very	very	X	X	_	9	flat:foreign	_	_
+12	top	top	X	X	_	9	flat:foreign	_	_
+13	of	of	X	X	_	9	fixed	_	_
+14	modern	modern	X	X	_	13	fixed	_	_
+
+1	American	American	X	X	_	0	ROOT	_	_
+2	writing	writing	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Franny	franny	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	and	and	X	X	_	1	dep	_	_
+3	Zooey	Zooey	PROPN	PROPN	_	1	flat:name	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	With	With	X	X	_	0	ROOT	_	_
+2	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	punct	_	_
+3	art	art	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	that	that	X	X	_	1	flat:foreign	_	_
+
+1	almost	almost	X	X	_	8	dep	_	_
+2	conceals	conceal	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+3	art	art	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	J.	J.	PROPN	PROPN	Gender=Masc|Number=Sing	1	appos	_	_
+6	D.	D.	PROPN	PROPN	_	5	flat:name	_	_
+7	Salinger	Salinger	PROPN	PROPN	_	6	flat:name	_	_
+8	can	can	X	X	_	12	case	_	_
+9	create	create	X	X	_	8	dep	_	_
+10	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	xcomp	_	_
+11	fictional	fictional	X	X	_	10	advmod	_	_
+12	world	world	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+13	so	so	X	X	_	17	cc	_	_
+14	authentic	authentic	X	X	_	17	case	_	_
+15	that	that	X	X	_	14	fixed	_	_
+16	it	it	X	X	_	14	dep	_	_
+17	hurts	hurt	ADJ	ADJ	Gender=Masc|Number=Plur	12	conj	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Here	Here	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	in	in	X	X	_	11	cc	_	_
+4	the	the	X	X	_	3	flat:foreign	_	_
+5	most	most	X	X	_	3	flat:foreign	_	_
+6	eagerly	eagerly	X	X	_	3	flat:foreign	_	_
+7	awaited	awaited	ADJ	ADJ	Gender=Masc|Number=Sing	3	flat:foreign	_	_
+8	novel	novel	ADV	ADV	_	3	fixed	_	_
+9	of	of	X	X	_	10	dep	_	_
+10	the	the	X	X	_	11	dep	_	_
+11	season	season	X	X	_	1	nmod	_	_
+12	(	(	PUNCT	PUNCT	_	11	punct	_	_
+13	his	his	X	X	_	11	appos	_	_
+14	first	first	X	X	_	13	fixed	_	_
+15	since	since	X	X	_	13	flat:foreign	_	_
+16	The	The	X	X	_	13	dep	_	_
+17	Catcher	Catcher	X	X	_	13	flat:foreign	_	_
+18	In	In	X	X	_	13	flat:foreign	_	_
+19	The	The	X	X	_	13	flat:foreign	_	_
+20	Rye	Rye	X	X	_	13	flat:foreign	_	_
+21	,	,	PUNCT	PUNCT	_	11	punct	_	_
+22	)	)	PUNCT	PUNCT	_	1	punct	_	_
+23	he	he	X	X	_	27	case	_	_
+24	tells	tells	DET	DET	Gender=Fem|Number=Plur	23	fixed	_	_
+25	of	of	PRON	PRON	Person=3	26	expl:comp	_	_
+26	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	23	fixed	_	_
+27	college	college	X	X	_	1	nmod	_	_
+28	girl	girl	X	X	_	1	flat:foreign	_	_
+29	in	in	X	X	_	30	case	_	_
+30	flight	flight	X	X	_	1	nmod	_	_
+31	from	from	X	X	_	30	dep	_	_
+32	the	the	X	X	_	1	flat:foreign	_	_
+33	life	life	X	X	_	1	flat:foreign	_	_
+34	around	around	X	X	_	1	flat:foreign	_	_
+35	her	her	X	X	_	1	flat:foreign	_	_
+36	and	and	X	X	_	1	dep	_	_
+37	the	the	X	X	_	1	dep	_	_
+38	tart	tart	X	X	_	1	flat:foreign	_	_
+39	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+40	sympathetic	sympathetic	X	X	_	1	amod	_	_
+41	help	help	X	X	_	1	flat:foreign	_	_
+42	she	she	X	X	_	43	advmod	_	_
+43	gets	gets	X	X	_	1	flat:foreign	_	_
+44	from	from	X	X	_	1	dep	_	_
+45	her	her	X	X	_	1	dep	_	_
+46	25-year	25-year	PROPN	PROPN	_	1	nmod	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	0	ROOT	_	SpaceAfter=No
+
+1	old	old	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	brother	brother	X	X	_	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	Head	Head	X	X	_	1	flat:foreign	_	_
+3	Of	of	ADP	ADP	_	1	punct	_	_
+4	Monsieur	Monsieur	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+5	M.	m.	NOUN	NOUN	Gender=Masc|Number=Sing	4	flat:name	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	Althea	Althea	PROPN	PROPN	_	1	flat:foreign	_	_
+8	Urn	Urn	PROPN	PROPN	Gender=Masc|Number=Sing	7	flat:name	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	a	NOUN	NOUN	_	13	expl:subj	_	_
+2	deft	deft	NOUN	NOUN	Gender=Masc|Number=Plur	1	amod	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	hilarious	hilarious	PROPN	PROPN	_	3	dep	_	_
+5	satire	satir	ADJ	ADJ	Gender=Fem|Number=Sing	1	conj	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	7	nsubj	_	_
+7	very	very	X	X	_	5	dep	_	_
+8	high	high	X	X	_	5	dep	_	_
+9	French	French	X	X	_	5	dep	_	_
+10	society	society	X	X	_	1	flat:foreign	_	_
+11	involving	involving	X	X	_	1	flat:foreign	_	_
+12	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	13	aux:tense	_	_
+13	statesman	statesman	VERB	VERB	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+14	with	with	X	X	_	15	case	_	_
+15	two	two	X	X	_	13	advmod	_	_
+16	enviable	enviable	ADJ	ADJ	Number=Sing	17	amod	_	_
+17	possessions	possession	NOUN	NOUN	Gender=Fem|Number=Plur	13	obj	_	_
+
+1	,	,	PUNCT	PUNCT	_	12	punct	_	_
+2	a	avoir	X	X	_	12	aux:tense	_	_
+3	lovely	lovely	X	X	_	2	obl:arg	_	_
+4	young	young	X	X	_	3	flat:name	_	_
+5	bride	bride	X	X	_	2	flat:foreign	_	_
+6	and	and	X	X	_	2	flat:foreign	_	_
+7	a	avoir	X	X	_	2	flat:foreign	_	_
+8	head	head	X	X	_	2	dep	_	_
+9	containing	containing	X	X	_	2	flat:foreign	_	_
+10	such	such	X	X	_	2	dep	_	_
+11	weighty	weighty	ADJ	ADJ	Number=Plur	2	flat:foreign	_	_
+12	thoughts	thoughts	X	X	_	0	ROOT	_	_
+13	that	that	X	X	_	12	dep	_	_
+14	he	he	X	X	_	16	case	_	_
+15	has	has	X	X	_	14	fixed	_	_
+16	occasionally	occasionally	NOUN	NOUN	Gender=Masc|Number=Sing	12	dep	_	_
+17	to	to	X	X	_	16	dep	_	_
+18	remove	remove	X	X	_	12	dep	_	_
+19	it	it	X	X	_	12	dep	_	_
+20	for	for	ADP	ADP	_	21	mark	_	_
+21	greater	greater	VERB	VERB	VerbForm=Inf	12	xcomp	_	_
+22	comfort	comfort	NOUN	NOUN	Gender=Masc|Number=Sing	21	obj	_	_
+23	.	.	PUNCT	PUNCT	_	12	punct	_	_
+
+1	There	There	PROPN	PROPN	Gender=Masc|Number=Sing	9	nsubj	_	_
+2	is	is	X	X	_	1	dep	_	_
+3	probably	probably	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+4	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+5	moral	moral	NOUN	NOUN	Gender=Masc|Number=Sing	4	obj	_	_
+6	in	in	X	X	_	8	case	_	_
+7	all	all	X	X	_	6	fixed	_	_
+8	this	this	X	X	_	5	dep	_	_
+9	about	about	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+10	`	`	X	X	_	12	case	_	SpaceAfter=No
+11	`	`	X	X	_	10	fixed	_	_
+12	mind	mind	X	X	_	9	obj	_	_
+13	vs	vs	X	X	_	12	amod	_	SpaceAfter=No
+14	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	heart	heart	X	X	_	0	ROOT	_	_
+2	''	''	PUNCT	PUNCT	_	1	punct	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	A	a	NOUN	NOUN	_	2	nummod	_	_
+2	Matter	Matter	X	X	_	0	ROOT	_	_
+3	Of	Of	X	X	_	2	dep	_	_
+
+1	Life	Life	X	X	_	0	ROOT	_	_
+2	And	And	X	X	_	1	flat:foreign	_	_
+3	Death	Death	X	X	_	1	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Virgilia	Virgilia	PROPN	PROPN	_	5	nsubj	_	_
+2	Peterson	Peterson	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	5	punct	_	_
+4	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	aux:tense	_	_
+5	critic	critic	X	X	_	0	ROOT	_	_
+6	by	by	X	X	_	5	advmod	_	_
+7	trade	trade	PROPN	PROPN	_	5	dep	_	_
+8	,	,	PUNCT	PUNCT	_	5	punct	_	_
+9	has	has	X	X	_	10	case	_	_
+10	turned	turned	NOUN	NOUN	Gender=Masc|Number=Sing	5	obl:mod	_	_
+11	her	her	X	X	_	10	advmod	_	_
+12	critical	critical	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	advcl	_	_
+13	eye	eye	ADV	ADV	_	12	advmod	_	_
+
+1	pitilessly	pitilessly	X	X	_	2	advmod	_	_
+2	and	and	X	X	_	0	ROOT	_	_
+3	honestly	honestly	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	herself	herself	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	in	in	X	X	_	4	case	_	_
+4	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	2	obl:mod	_	_
+5	autobiography	autobiography	X	X	_	2	flat:foreign	_	_
+
+1	more	more	X	X	_	0	ROOT	_	_
+
+1	of	of	X	X	_	2	expl:comp	_	_
+2	the	the	X	X	_	0	ROOT	_	_
+3	mind	mind	X	X	_	2	flat:foreign	_	_
+4	and	and	X	X	_	2	flat:foreign	_	_
+5	heart	heart	X	X	_	2	flat:foreign	_	_
+6	than	than	ADJ	ADJ	Number=Plur	5	fixed	_	_
+7	of	of	X	X	_	8	case	_	_
+8	specific	specific	X	X	_	5	dep	_	_
+9	events	event	NOUN	NOUN	Gender=Masc|Number=Plur	8	amod	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	It	It	X	X	_	8	nsubj	_	_
+2	is	is	X	X	_	3	case	_	_
+3	an	an	NOUN	NOUN	Gender=Masc|Number=Sing	1	nmod	_	_
+4	engrossing	engrossing	ADV	ADV	_	3	amod	_	_
+5	commentary	commentary	VERB	VERB	VerbForm=Inf	1	flat:foreign	_	_
+6	on	on	PRON	PRON	Number=Sing|Person=3	8	nsubj	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	aux:tense	_	_
+8	repressive	repressiv	ADJ	ADJ	Gender=Fem|Number=Sing	0	ROOT	_	_
+9	,	,	PUNCT	PUNCT	_	8	punct	_	_
+10	upper	upper	ADV	ADV	_	9	dep	_	SpaceAfter=No
+11	-	-	PROPN	PROPN	Gender=Fem|Number=Sing	8	parataxis	_	SpaceAfter=No
+12	middle	middle	NOUN	NOUN	Number=Sing	8	obl:mod	_	SpaceAfter=No
+13	-	-	PROPN	PROPN	_	8	punct	_	SpaceAfter=No
+14	class	class	X	X	_	8	dep	_	_
+15	New	New	X	X	_	14	nmod	_	_
+16	York	York	X	X	_	14	nmod	_	_
+17	way	way	X	X	_	14	dep	_	_
+18	of	of	X	X	_	19	dep	_	_
+19	life	life	X	X	_	17	nsubj	_	_
+20	in	in	X	X	_	17	flat:foreign	_	_
+21	the	the	X	X	_	17	dep	_	_
+22	first	first	X	X	_	17	dep	_	_
+23	part	part	NOUN	NOUN	Number=Sing	17	nsubj	_	_
+24	of	of	X	X	_	25	case	_	_
+25	this	this	X	X	_	17	dep	_	_
+26	century	century	X	X	_	25	flat:foreign	_	_
+27	.	.	PUNCT	PUNCT	_	8	punct	_	_
+
+1	Dark	Dark	X	X	_	0	ROOT	_	_
+2	Rider	Rider	X	X	_	1	flat:foreign	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	This	This	X	X	_	0	ROOT	_	_
+2	retelling	retelling	X	X	_	1	amod	_	_
+3	by	by	ADP	ADP	_	4	case	_	_
+4	Louis	Louis	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+5	Zara	Zara	PROPN	PROPN	_	4	flat:name	_	_
+6	of	of	X	X	_	8	case	_	_
+7	the	the	X	X	_	6	fixed	_	_
+8	brief	brief	NOUN	NOUN	Gender=Masc|Number=Sing	4	nmod	_	_
+9	,	,	PUNCT	PUNCT	_	4	punct	_	_
+10	anguished	anguished	NOUN	NOUN	Gender=Masc|Number=Sing	4	appos	_	_
+11	life	life	X	X	_	10	nmod	_	_
+12	of	of	X	X	_	13	dep	_	_
+13	Stephen	stephen	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	acl:relcl	_	_
+14	Crane	Crane	PROPN	PROPN	_	13	flat:name	_	_
+15	--	--	X	X	_	4	flat:name	_	_
+16	poet	poet	X	X	_	4	flat:name	_	_
+17	and	and	X	X	_	4	dep	_	_
+18	master	master	X	X	_	4	amod	_	_
+19	novelist	novelist	ADJ	ADJ	Gender=Masc|Number=Sing	18	ccomp	_	_
+20	at	at	ADP	ADP	_	21	case	_	_
+21	23	23	NUM	NUM	NumType=Card	19	obl:mod	_	_
+22	,	,	PUNCT	PUNCT	_	23	punct	_	_
+23	dead	dead	PROPN	PROPN	Gender=Masc|Number=Sing	1	conj	_	_
+24	at	at	VERB	VERB	Mood=Ind|Person=3|VerbForm=Fin	25	dep	_	_
+25	28	28	NUM	NUM	NumType=Card	23	nummod	_	_
+26	--	--	NOUN	NOUN	_	23	punct	_	_
+27	is	is	X	X	_	23	dep	_	_
+28	in	in	X	X	_	23	dep	_	_
+29	novelized	novelized	X	X	_	23	dep	_	_
+30	form	form	X	X	_	23	dep	_	_
+31	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	23	dep	_	_
+32	does	does	X	X	_	23	dep	_	_
+33	not	not	X	X	_	32	dep	_	_
+34	abuse	abuser	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	23	flat:name	_	_
+35	its	its	X	X	_	23	dep	_	_
+36	tragic	tragic	X	X	_	23	dep	_	_
+37	subject	subject	X	X	_	23	dep	_	_
+38	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Rural	rural	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Free	Free	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Rachel	Rachel	PROPN	PROPN	Gender=Fem|Number=Sing	1	conj	_	_
+5	Peden	Peden	PROPN	PROPN	_	4	flat:name	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Subtitled	Subtitled	PROPN	PROPN	_	0	ROOT	_	_
+2	A	A	PROPN	PROPN	_	1	nmod	_	_
+3	Farmwife'	Farmwife'	PROPN	PROPN	_	2	dep	_	SpaceAfter=No
+4	s	s	PRON	PRON	Person=3|Reflex=Yes	1	nmod	_	_
+
+1	Almanac	almanac	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+
+1	Of	Of	X	X	_	2	dep	_	_
+2	Country	Country	X	X	_	7	obl:mod	_	_
+3	Living	Living	X	X	_	2	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	this	this	X	X	_	2	dep	_	_
+6	is	is	X	X	_	5	dep	_	_
+7	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	dep	_	_
+8	gentle	gentle	X	X	_	0	ROOT	_	_
+9	and	and	X	X	_	8	dep	_	_
+10	nostalgic	nostalgic	ADJ	ADJ	Gender=Masc|Number=Sing	8	flat:foreign	_	_
+11	chronicle	chronicle	X	X	_	10	dep	_	_
+12	of	of	X	X	_	15	case	_	_
+13	the	the	X	X	_	12	fixed	_	_
+14	changing	changing	X	X	_	12	dep	_	_
+15	seasons	seasons	X	X	_	10	nmod	_	_
+16	seen	seen	X	X	_	15	dep	_	_
+17	through	through	X	X	_	10	dep	_	_
+18	the	the	X	X	_	10	dep	_	_
+19	clear	clear	X	X	_	10	dep	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	humorous	humorous	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	eye	eye	PROPN	PROPN	_	2	nsubj	_	_
+4	of	of	PRON	PRON	Person=3	5	expl:comp	_	_
+5	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	dep	_	_
+6	Hoosier	Hoosier	PROPN	PROPN	Gender=Masc|Number=Sing	5	obj	_	_
+7	housewife	housewife	PROPN	PROPN	Gender=Fem|Number=Sing	2	dep	_	_
+8	and	and	X	X	_	2	dep	_	_
+9	popular	popular	X	X	_	2	dep	_	_
+10	columnist	columnist	ADJ	ADJ	Gender=Masc|Number=Sing	2	nsubj	_	_
+11	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Dance	dance	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	Russians	Russians	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	4	punct	_	_
+4	Filipinos	Filipinos	PROPN	PROPN	_	1	conj	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Two	Two	X	X	_	15	nsubj	_	_
+2	noted	noted	X	X	_	1	flat:foreign	_	_
+3	troupes	troupe	NOUN	NOUN	Gender=Fem|Number=Plur	1	flat:foreign	_	_
+4	from	from	X	X	_	3	dep	_	_
+5	overseas	overseas	X	X	_	1	flat:foreign	_	_
+6	will	will	X	X	_	1	flat:foreign	_	_
+7	get	get	X	X	_	6	dep	_	_
+8	the	the	X	X	_	6	dep	_	_
+9	fall	fall	X	X	_	6	dep	_	_
+10	dance	dance	NOUN	NOUN	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+11	season	season	X	X	_	1	flat:foreign	_	_
+12	off	off	ADJ	ADJ	Number=Sing	11	amod	_	_
+13	to	to	X	X	_	1	dep	_	_
+14	a	avoir	X	X	_	15	aux:tense	_	_
+15	sparkling	sparkling	X	X	_	0	ROOT	_	_
+16	start	start	X	X	_	15	advmod	_	_
+17	.	.	PUNCT	PUNCT	_	15	punct	_	_
+
+1	Leningrad'	Leningrad'	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+2	s	s	PRON	PRON	Person=3|Reflex=Yes	1	dep	_	_
+
+1	Kirov	Kirov	PROPN	PROPN	_	0	ROOT	_	_
+2	Ballet	Ballet	PROPN	PROPN	_	1	flat:name	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	famous	famous	X	X	_	1	nmod	_	_
+5	for	for	X	X	_	1	dep	_	_
+6	classic	classic	X	X	_	1	nmod	_	_
+7	purity	purity	X	X	_	9	mark	_	_
+8	of	of	X	X	_	9	amod	_	_
+9	technique	technique	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+10	,	,	PUNCT	PUNCT	_	1	punct	_	_
+11	begins	begin	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+12	its	its	X	X	_	11	dep	_	_
+13	first	first	X	X	_	12	fixed	_	_
+14	U.S.	U.S.	X	X	_	1	punct	_	_
+15	tour	tour	X	X	_	1	nmod	_	_
+16	in	in	X	X	_	15	amod	_	_
+17	New	New	X	X	_	15	nmod	_	_
+18	York	York	PROPN	PROPN	_	15	nmod	_	_
+19	(	(	PUNCT	PUNCT	_	15	punct	_	_
+20	through	through	X	X	_	1	nmod	_	_
+21	Sept	Sept	NUM	NUM	NumType=Card	20	nummod	_	SpaceAfter=No
+22	.	.	PUNCT	PUNCT	_	1	punct	_	_
+23	30	30	NUM	NUM	NumType=Card	1	nummod	_	_
+24	)	)	PUNCT	PUNCT	_	1	punct	_	_
+25	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	2	punct	_	_
+2	Bayanihan	Bayanihan	X	X	_	22	nmod	_	_
+3	Philippine	Philippine	PROPN	PROPN	Gender=Masc|Number=Sing	2	flat:name	_	_
+4	Dance	Dance	X	X	_	2	dep	_	_
+5	Company	Company	X	X	_	2	amod	_	_
+6	,	,	PUNCT	PUNCT	_	2	punct	_	_
+7	with	with	X	X	_	2	dep	_	_
+8	music	music	X	X	_	7	flat:foreign	_	_
+9	and	and	X	X	_	2	dep	_	_
+10	dances	dance	NOUN	NOUN	Gender=Fem|Number=Plur	2	flat:foreign	_	_
+11	that	that	X	X	_	2	dep	_	_
+12	depict	depict	X	X	_	2	flat:foreign	_	_
+13	the	the	X	X	_	2	dep	_	_
+14	many	many	X	X	_	2	dep	_	_
+15	facets	facets	X	X	_	2	nmod	_	_
+16	of	of	ADP	ADP	_	17	case	_	_
+17	Filipino	Filipino	PROPN	PROPN	Gender=Masc|Number=Sing	2	nmod	_	_
+18	culture	culture	NOUN	NOUN	Gender=Fem|Number=Sing	17	nmod	_	_
+19	,	,	PUNCT	PUNCT	_	2	punct	_	_
+20	opens	open	ADJ	ADJ	Gender=Masc|Number=Plur	2	dep	_	_
+21	its	its	X	X	_	20	flat:foreign	_	_
+22	60-city	60-city	NOUN	NOUN	Number=Sing	0	ROOT	_	_
+23	U.S.	U.S.	X	X	_	22	punct	_	_
+24	tour	tour	X	X	_	22	nmod	_	_
+25	in	in	X	X	_	27	case	_	_
+26	San	San	X	X	_	27	iobj	_	_
+27	Francisco	Francisco	PROPN	PROPN	Gender=Masc|Number=Sing	22	nmod	_	_
+28	(	(	PUNCT	PUNCT	_	27	punct	_	_
+29	through	through	X	X	_	27	nmod	_	_
+30	Sept	Sept	NUM	NUM	NumType=Card	29	nummod	_	SpaceAfter=No
+31	.	.	PUNCT	PUNCT	_	22	punct	_	_
+
+1	24	24	NUM	NUM	NumType=Card	3	nummod	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+3	then	then	X	X	_	0	ROOT	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	via	via	ADP	ADP	_	6	case	_	_
+6	one	one	X	X	_	3	nmod	_	SpaceAfter=No
+7	-	-	ADJ	ADJ	Number=Sing	3	punct	_	SpaceAfter=No
+8	night	night	X	X	_	13	nsubj	_	_
+9	stands	stand	ADJ	ADJ	Gender=Masc|Number=Plur	8	amod	_	_
+10	,	,	PUNCT	PUNCT	_	8	punct	_	_
+11	moves	moves	X	X	_	8	flat:foreign	_	_
+12	on	on	PRON	PRON	Number=Sing|Person=3	13	nsubj	_	_
+13	to	to	X	X	_	3	acl:relcl	_	_
+14	Los	Los	X	X	_	13	obj	_	_
+15	Angeles	angeles	PRON	PRON	_	13	obl:arg	_	_
+16	(	(	PUNCT	PUNCT	_	3	punct	_	_
+17	Sept	Sept	NUM	NUM	NumType=Card	3	nummod	_	SpaceAfter=No
+18	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	29	29	NUM	NUM	NumType=Card	2	nummod	_	_
+2	thru	thru	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Oct	Oct	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	1	1	NUM	NUM	NumType=Card	0	ROOT	_	_
+
+1	)	)	PUNCT	PUNCT	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Festivals	festival	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	across	across	X	X	_	1	flat:foreign	_	_
+3	the	the	X	X	_	1	flat:foreign	_	_
+4	land	land	X	X	_	1	flat:foreign	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	With	With	X	X	_	0	ROOT	_	_
+
+1	harvests	harvests	X	X	_	0	ROOT	_	_
+2	in	in	X	X	_	1	flat:foreign	_	_
+3	full	full	X	X	_	1	dep	_	_
+4	swing	swing	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	,	,	PUNCT	PUNCT	_	1	punct	_	_
+6	you	you	X	X	_	1	appos	_	_
+7	can	can	X	X	_	6	flat:foreign	_	_
+8	enjoy	enjoy	X	X	_	6	flat:foreign	_	_
+9	festivals	festival	X	X	_	6	flat:foreign	_	_
+10	for	for	X	X	_	6	dep	_	_
+11	grapes	graper	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	6	acl	_	_
+12	at	at	X	X	_	6	dep	_	_
+13	Sonoma	Sonoma	PROPN	PROPN	_	6	flat:name	_	_
+14	,	,	PUNCT	PUNCT	_	15	punct	_	_
+15	Calif	Calif	PROPN	PROPN	_	6	conj	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	(	(	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sept	Sept	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+3	22	22	NUM	NUM	NumType=Card	1	nmod	_	SpaceAfter=No
+4	-	-	NOUN	NOUN	NumType=Card	1	nmod	_	SpaceAfter=No
+5	24	24	NOUN	NOUN	NumType=Card	1	nmod	_	_
+6	)	)	PUNCT	PUNCT	_	1	punct	_	_
+7	,	,	PUNCT	PUNCT	_	16	punct	_	_
+8	as	as	X	X	_	16	case	_	_
+9	well	well	PROPN	PROPN	Gender=Masc|Number=Sing	8	nsubj	_	_
+10	as	as	X	X	_	8	flat:foreign	_	_
+11	for	for	X	X	_	8	dep	_	_
+12	cranberries	cranberrie	NOUN	NOUN	Gender=Masc|Number=Plur	8	flat:foreign	_	_
+13	at	at	X	X	_	14	case	_	_
+14	Bandon	Bandon	PROPN	PROPN	Gender=Masc|Number=Sing	8	obl:mod	_	_
+15	,	,	PUNCT	PUNCT	_	8	punct	_	_
+16	Ore	Ore	PROPN	PROPN	_	1	conj	_	SpaceAfter=No
+17	.	.	PUNCT	PUNCT	_	1	punct	_	_
+18	(	(	PUNCT	PUNCT	_	1	punct	_	_
+19	Sept	Sept	NUM	NUM	NumType=Card	1	nummod	_	SpaceAfter=No
+20	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	28	28	NUM	NUM	NumType=Card	2	nummod	_	_
+2	thru	thru	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Oct	Oct	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	1	1	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	5	punct	_	_
+2	for	for	X	X	_	5	dep	_	_
+3	buckwheat	buckwheat	X	X	_	2	acl	_	_
+4	at	at	X	X	_	5	cc	_	_
+5	Kingwood	Kingwood	PROPN	PROPN	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	W.	W.	PROPN	PROPN	_	3	nsubj	_	_
+3	Va	aller	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	3	punct	_	_
+5	(	(	PUNCT	PUNCT	_	3	punct	_	_
+6	Sept	Sept	NUM	NUM	NumType=Card	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	28	28	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+2	-	-	NUM	NUM	NumType=Card	1	nmod	_	SpaceAfter=No
+3	30	30	NOUN	NOUN	NumType=Card	1	nmod	_	_
+4	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	sugar	sugar	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	cane	cane	NOUN	NOUN	Gender=Fem|Number=Sing	2	nmod	_	_
+4	at	at	X	X	_	2	dep	_	_
+5	New	New	X	X	_	2	dep	_	_
+6	Iberia	Iberia	PROPN	PROPN	_	2	nmod	_	_
+7	,	,	PUNCT	PUNCT	_	2	punct	_	_
+8	La	le	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	punct	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	2	punct	_	_
+10	(	(	PUNCT	PUNCT	_	2	punct	_	_
+11	Sept	Sept	NUM	NUM	NumType=Card	2	nummod	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	29	29	NUM	NUM	NumType=Card	2	nummod	_	_
+2	thru	thru	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Oct	Oct	X	X	_	0	ROOT	_	SpaceAfter=No
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	1	1	NUM	NUM	NumType=Card	6	punct	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+3	and	and	X	X	_	6	dep	_	_
+4	tobacco	tobacco	X	X	_	3	flat:foreign	_	_
+5	at	at	X	X	_	6	dep	_	_
+6	Richmond	Richmond	PROPN	PROPN	_	0	ROOT	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	Va	aller	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	6	punct	_	_
+10	(	(	PUNCT	PUNCT	_	6	punct	_	_
+11	Sept	Sept	NUM	NUM	NumType=Card	6	nummod	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	23	23	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+2	-	-	NUM	NUM	NumType=Card	1	nmod	_	SpaceAfter=No
+3	30	30	NOUN	NOUN	NumType=Card	1	nmod	_	_
+4	)	)	PUNCT	PUNCT	_	1	punct	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	mule	mule	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	4	case	_	_
+4	honored	honored	X	X	_	1	dep	_	_
+5	at	at	X	X	_	1	flat:foreign	_	_
+6	Benson	Benson	PROPN	PROPN	_	1	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	8	punct	_	_
+8	N.C.	N.C.	PROPN	PROPN	_	1	conj	_	_
+9	(	(	PUNCT	PUNCT	_	8	punct	_	_
+10	Sept	Sept	NUM	NUM	NumType=Card	1	nummod	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	22	22	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	23	23	NUM	NUM	NumType=Card	1	conj	_	_
+4	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	at	at	X	X	_	1	fixed	_	_
+3	Boron	Boron	PROPN	PROPN	_	1	dep	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	Calif	Calif	PROPN	PROPN	_	1	dep	_	SpaceAfter=No
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+7	(	(	PUNCT	PUNCT	_	1	punct	_	_
+8	Sept	Sept	NUM	NUM	NumType=Card	1	nummod	_	SpaceAfter=No
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	24	24	NUM	NUM	NumType=Card	2	nummod	_	_
+2	thru	thru	PROPN	PROPN	_	0	ROOT	_	_
+3	Oct	Oct	X	X	_	2	amod	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	1	1	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+3	,	,	PUNCT	PUNCT	_	1	punct	_	_
+4	while	while	X	X	_	1	amod	_	_
+5	the	the	X	X	_	6	dep	_	_
+6	legend	legend	X	X	_	4	flat:foreign	_	_
+7	of	of	X	X	_	8	dep	_	_
+8	the	the	X	X	_	6	dep	_	_
+9	Maid	Maid	X	X	_	8	flat:foreign	_	_
+10	of	of	X	X	_	4	flat:foreign	_	_
+11	the	the	X	X	_	12	dep	_	_
+12	Mist	Mist	X	X	_	4	flat:foreign	_	_
+13	is	is	X	X	_	12	dep	_	_
+14	celebrated	celebrated	X	X	_	12	dep	_	_
+15	at	at	X	X	_	4	flat:foreign	_	_
+16	Niagara	Niagara	X	X	_	4	flat:foreign	_	_
+17	Falls	Falls	X	X	_	4	flat:foreign	_	_
+18	through	through	X	X	_	4	flat:foreign	_	_
+19	the	the	X	X	_	4	flat:foreign	_	_
+20	24th	24th	X	X	_	4	flat:foreign	_	_
+21	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	fine	fin	ADJ	ADJ	Gender=Fem|Number=Sing	1	flat:foreign	_	_
+3	old	old	ADJ	ADJ	Gender=Masc|Number=Sing	4	advmod	_	_
+4	mansions	mansion	NOUN	NOUN	Number=Plur	1	flat:foreign	_	_
+5	of	of	X	X	_	1	flat:foreign	_	_
+6	U.S.	U.S.	X	X	_	1	flat:foreign	_	_
+7	Grant'	Grant'	PROPN	PROPN	_	10	nsubj	_	SpaceAfter=No
+8	s	s	PRON	PRON	Person=3|Reflex=Yes	10	nummod	_	_
+9	old	old	ADJ	ADJ	Gender=Masc|Number=Sing	10	amod	_	_
+10	home	home	X	X	_	1	flat:foreign	_	_
+11	town	town	ADV	ADV	_	1	flat:foreign	_	_
+12	of	of	ADP	ADP	_	13	dep	_	_
+13	Galena	Galena	PROPN	PROPN	_	11	obl:mod	_	_
+14	,	,	PUNCT	PUNCT	_	11	punct	_	_
+15	Ill	Ill	PROPN	PROPN	_	11	obl:mod	_	SpaceAfter=No
+16	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	are	are	X	X	_	0	ROOT	_	_
+2	open	open	X	X	_	1	flat:foreign	_	_
+3	for	for	X	X	_	4	case	_	_
+4	inspection	inspection	NOUN	NOUN	Gender=Fem|Number=Sing	1	obl:mod	_	_
+5	(	(	PUNCT	PUNCT	_	1	punct	_	_
+6	Sept	Sept	NUM	NUM	NumType=Card	1	nummod	_	SpaceAfter=No
+7	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	23	23	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	24	24	NUM	NUM	NumType=Card	1	conj	_	_
+4	)	)	PUNCT	PUNCT	_	1	punct	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	An	an	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	archery	archery	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	tournament	tournament	X	X	_	1	flat:foreign	_	_
+4	will	will	X	X	_	1	flat:foreign	_	_
+5	be	be	X	X	_	4	dep	_	_
+6	held	held	X	X	_	1	flat:foreign	_	_
+7	at	at	X	X	_	1	flat:foreign	_	_
+8	North	North	X	X	_	1	flat:foreign	_	_
+9	Falmouth	Falmouth	PROPN	PROPN	_	1	flat:name	_	_
+10	,	,	PUNCT	PUNCT	_	9	punct	_	_
+11	Mass	Mass	PROPN	PROPN	_	1	dep	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	(	(	PUNCT	PUNCT	_	2	punct	_	_
+2	Sept	Sept	NUM	NUM	NumType=Card	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	23	23	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	24	24	NUM	NUM	NumType=Card	1	conj	_	_
+4	)	)	PUNCT	PUNCT	_	1	punct	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	0	ROOT	_	_
+2	300th	300th	PROPN	PROPN	_	1	flat:foreign	_	_
+3	anniversaries	anniversaries	X	X	_	1	flat:foreign	_	_
+4	of	of	X	X	_	5	case	_	_
+5	Staten	Staten	PROPN	PROPN	_	3	obl:mod	_	_
+6	Island	Island	PROPN	PROPN	_	5	flat:name	_	_
+7	(	(	PUNCT	PUNCT	_	3	punct	_	_
+8	through	through	X	X	_	3	parataxis	_	_
+9	Sept	Sept	NUM	NUM	NumType=Card	8	nummod	_	SpaceAfter=No
+10	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	23	23	NUM	NUM	NumType=Card	3	nummod	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+3	and	and	X	X	_	0	ROOT	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	Mamaroneck	Mamaroneck	PROPN	PROPN	_	3	dep	_	_
+6	,	,	PUNCT	PUNCT	_	5	punct	_	_
+7	N.Y.	n.y.	ADP	ADP	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	amod	_	_
+8	(	(	PUNCT	PUNCT	_	5	punct	_	_
+9	through	through	NOUN	NOUN	Gender=Fem|Number=Sing	5	appos	_	_
+10	Sept	Sept	NUM	NUM	NumType=Card	9	nummod	_	SpaceAfter=No
+11	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	24	24	NUM	NUM	NumType=Card	3	nummod	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+3	will	will	X	X	_	0	ROOT	_	_
+4	both	both	X	X	_	3	flat:foreign	_	_
+5	include	include	X	X	_	3	dep	_	_
+6	parades	parade	X	X	_	3	dep	_	_
+7	and	and	X	X	_	3	dep	_	_
+8	pageants	pageer	VERB	VERB	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	3	amod	_	_
+9	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	Movies	movie	NOUN	NOUN	Gender=Fem|Number=Plur	0	ROOT	_	_
+2	Purple	Purple	X	X	_	1	flat:foreign	_	_
+
+1	Noon	Noon	X	X	_	0	ROOT	_	_
+2	:	:	PUNCT	PUNCT	_	1	punct	_	_
+3	This	This	X	X	_	1	dep	_	_
+4	French	French	X	X	_	3	flat:foreign	_	_
+
+1	film	film	NOUN	NOUN	Gender=Masc|Number=Sing	14	nsubj	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	set	set	NOUN	NOUN	Gender=Masc|Number=Sing	1	appos	_	_
+4	in	in	X	X	_	5	case	_	_
+5	Italy	Italy	PROPN	PROPN	_	3	nmod	_	_
+6	,	,	PUNCT	PUNCT	_	1	punct	_	_
+7	is	is	X	X	_	9	cc	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	summertime	summertime	NOUN	NOUN	Gender=Fem|Number=Sing	1	nmod	_	_
+10	splurge	splurge	NOUN	NOUN	Gender=Fem|Number=Sing	9	nmod	_	_
+11	in	in	X	X	_	9	amod	_	_
+12	shock	shock	PROPN	PROPN	_	11	flat:foreign	_	_
+13	and	and	X	X	_	9	dep	_	_
+14	terror	terror	X	X	_	0	ROOT	_	_
+15	all	all	X	X	_	14	advmod	_	_
+16	shot	shot	X	X	_	14	dep	_	_
+17	in	in	X	X	_	14	dep	_	_
+18	lovely	lovely	X	X	_	14	obj	_	_
+19	sunny	sunny	X	X	_	14	obj	_	_
+20	scenery	scenery	X	X	_	14	dep	_	_
+21	--	--	PUNCT	PUNCT	_	14	dep	_	_
+22	so	so	X	X	_	21	dep	_	_
+23	breath	breath	X	X	_	22	flat:foreign	_	SpaceAfter=No
+24	-	-	X	X	_	22	flat:foreign	_	SpaceAfter=No
+25	taking	taking	X	X	_	22	dep	_	_
+26	that	that	X	X	_	25	flat:foreign	_	_
+27	at	at	X	X	_	28	dep	_	_
+28	times	times	X	X	_	22	flat:foreign	_	_
+29	you	you	X	X	_	22	flat:foreign	_	_
+30	almost	almost	X	X	_	14	dep	_	_
+31	forget	forget	X	X	_	30	amod	_	_
+32	the	the	X	X	_	30	dep	_	_
+33	horrors	horrors	PROPN	PROPN	_	30	flat:foreign	_	_
+34	the	the	X	X	_	30	dep	_	_
+35	movie	movie	X	X	_	30	nmod	_	_
+36	is	is	X	X	_	30	dep	_	_
+37	dealing	dealing	X	X	_	30	nmod	_	_
+38	with	with	X	X	_	30	amod	_	_
+39	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	slowly	slowly	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+3	they	they	X	X	_	5	nsubj	_	_
+4	take	take	X	X	_	3	dep	_	_
+5	over	over	X	X	_	1	dep	_	_
+6	as	as	X	X	_	1	flat:foreign	_	_
+7	Alain	Alain	PROPN	PROPN	Gender=Masc|Number=Sing	6	obj	_	_
+8	Delon	Delon	PROPN	PROPN	_	7	flat:name	_	_
+9	(	(	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Life	Life	PROPN	PROPN	_	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	Sept	Sept	NUM	NUM	NumType=Card	1	nummod	_	SpaceAfter=No
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	15	15	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	)	)	PUNCT	PUNCT	_	1	punct	_	_
+
+1	,	,	PUNCT	PUNCT	_	4	punct	_	_
+2	playing	playing	NOUN	NOUN	Gender=Fem|Number=Sing	4	nsubj	_	_
+3	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux:tense	_	_
+4	sometimes	sometimer	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+5	appealing	appealing	ADJ	ADJ	Gender=Masc|Number=Sing	4	advmod	_	_
+
+1	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	always	always	X	X	_	1	amod	_	_
+3	criminal	criminal	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+4	boy	boy	ADJ	ADJ	Gender=Masc|Number=Sing	8	nsubj	_	_
+5	,	,	PUNCT	PUNCT	_	6	punct	_	_
+6	casually	casually	NOUN	NOUN	_	4	conj	_	_
+7	tells	tells	DET	DET	Gender=Fem|Number=Plur	6	dep	_	_
+8	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
+9	rich	rich	X	X	_	8	obj	_	_
+10	and	and	X	X	_	8	advmod	_	_
+11	foot	foot	PROPN	PROPN	_	8	obj	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	loose	loose	X	X	_	0	ROOT	_	_
+
+1	American	American	X	X	_	0	ROOT	_	_
+
+1	that	that	X	X	_	6	dep	_	_
+2	he	he	X	X	_	6	case	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	going	going	X	X	_	2	flat:foreign	_	_
+5	to	to	X	X	_	6	dep	_	_
+6	murder	murder	X	X	_	7	obl:mod	_	_
+7	him	him	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+8	,	,	PUNCT	PUNCT	_	7	punct	_	_
+9	then	then	X	X	_	7	dep	_	_
+10	does	does	X	X	_	9	flat:foreign	_	_
+11	it	it	X	X	_	10	dep	_	_
+12	even	even	ADV	ADV	_	10	dep	_	_
+13	while	while	X	X	_	9	flat:foreign	_	_
+14	the	the	X	X	_	9	flat:foreign	_	_
+15	American	American	X	X	_	9	flat:foreign	_	_
+16	is	is	X	X	_	9	dep	_	_
+17	trying	trying	X	X	_	16	flat:foreign	_	_
+18	to	to	X	X	_	9	dep	_	_
+19	puzzle	puzzle	NOUN	NOUN	Gender=Masc|Number=Sing	9	flat:foreign	_	_
+20	out	out	X	X	_	9	flat:foreign	_	_
+21	how	how	X	X	_	9	flat:foreign	_	_
+22	Delon	Delon	PROPN	PROPN	_	21	flat:name	_	_
+23	expects	expects	X	X	_	9	flat:foreign	_	_
+24	to	to	X	X	_	25	dep	_	_
+25	profit	profit	NOUN	NOUN	Gender=Masc|Number=Sing	9	nmod	_	_
+26	from	from	X	X	_	9	flat:foreign	_	_
+27	the	the	X	X	_	9	dep	_	_
+28	act	act	X	X	_	9	flat:foreign	_	_
+29	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Records	record	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Norma	Norma	PROPN	PROPN	_	1	flat:name	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Callas	calla	NOUN	NOUN	Gender=Fem|Number=Sing	10	nsubj	_	_
+2	devotees	devotees	X	X	_	1	amod	_	_
+3	will	will	X	X	_	1	nmod	_	_
+4	have	haver	X	X	_	3	amod	_	_
+5	good	good	X	X	_	3	flat:foreign	_	_
+6	reason	reason	PROPN	PROPN	_	3	dep	_	_
+7	to	to	X	X	_	3	dep	_	_
+8	do	do	X	X	_	7	fixed	_	_
+9	their	their	X	X	_	7	fixed	_	_
+10	customary	customary	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	ROOT	_	_
+11	cart	cart	X	X	_	10	obj	_	_
+12	wheels	wheels	X	X	_	11	amod	_	_
+13	over	over	X	X	_	10	conj	_	_
+14	a	avoir	X	X	_	23	dep	_	_
+15	new	new	X	X	_	14	dep	_	_
+16	and	and	X	X	_	14	dep	_	_
+17	complete	complete	X	X	_	14	advcl	_	_
+18	stereo	stereo	ADJ	ADJ	Gender=Masc|Number=Plur	14	punct	_	_
+19	version	version	NOUN	NOUN	Gender=Fem|Number=Sing	14	obj	_	_
+20	of	of	X	X	_	14	advmod	_	_
+21	the	the	X	X	_	14	dep	_	_
+22	Bellini	Bellini	PROPN	PROPN	_	14	obj	_	_
+23	opera	opera	NOUN	NOUN	Number=Plur	10	advcl	_	_
+24	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	Maria	Maria	PROPN	PROPN	Gender=Masc|Number=Sing	6	nsubj	_	_
+2	goes	goes	X	X	_	1	flat:name	_	_
+3	all	all	X	X	_	1	dep	_	_
+4	out	out	X	X	_	1	flat:foreign	_	_
+5	as	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:tense	_	_
+6	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	dep	_	_
+7	Druid	Druid	PROPN	PROPN	_	6	obj	_	_
+8	princess	princess	X	X	_	6	advmod	_	_
+9	who	who	X	X	_	11	case	_	_
+10	gets	gets	X	X	_	9	fixed	_	_
+11	two	two	X	X	_	6	obl:mod	_	SpaceAfter=No
+12	-	-	PROPN	PROPN	_	6	obj	_	SpaceAfter=No
+13	timed	timed	PROPN	PROPN	Gender=Masc|Number=Sing	6	obj	_	_
+14	by	by	NOUN	NOUN	_	6	obj	_	_
+15	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	case	_	_
+16	Roman	Roman	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+17	big	big	PROPN	PROPN	_	16	flat:name	_	_
+18	shot	shot	X	X	_	16	flat:name	_	_
+19	.	.	PUNCT	PUNCT	_	16	punct	_	_
+
+1	By	by	ADP	ADP	_	6	obl:mod	_	_
+2	turns	turns	X	X	_	1	dep	_	_
+3	,	,	PUNCT	PUNCT	_	6	punct	_	_
+4	her	her	X	X	_	6	nsubj	_	_
+5	beautifully	beautifully	X	X	_	4	flat:foreign	_	_
+6	sung	sung	X	X	_	0	ROOT	_	_
+7	Norma	Norma	PROPN	PROPN	_	6	obj	_	_
+8	is	is	X	X	_	6	dep	_	_
+9	fierce	fierc	ADJ	ADJ	Gender=Fem|Number=Sing	8	fixed	_	_
+10	,	,	PUNCT	PUNCT	_	6	punct	_	_
+11	tender	tender	VERB	VERB	VerbForm=Inf	6	advmod	_	_
+12	,	,	PUNCT	PUNCT	_	11	punct	_	_
+13	venomous	venomou	NOUN	NOUN	Gender=Masc|Number=Plur	11	obl:arg	_	_
+14	and	and	X	X	_	13	dep	_	_
+15	pitiful	pitiful	X	X	_	13	amod	_	_
+16	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	The	The	X	X	_	10	nmod	_	_
+2	tenor	tenor	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	lead	lead	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	Franco	Franco	PROPN	PROPN	_	1	conj	_	_
+6	Corelli	Corelli	PROPN	PROPN	_	5	flat:name	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	and	and	X	X	_	1	flat:foreign	_	_
+9	La	le	DET	DET	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	Scala	scala	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+11	cast	cast	X	X	_	10	amod	_	_
+12	under	under	X	X	_	10	amod	_	_
+13	Maestro	Maestro	X	X	_	10	nmod	_	_
+
+1	Tullio	Tullio	PROPN	PROPN	_	6	nsubj	_	_
+2	Serafin	Serafin	PROPN	PROPN	_	1	flat:name	_	_
+3	are	are	X	X	_	1	dep	_	_
+4	all	all	X	X	_	1	dep	_	_
+5	first	first	X	X	_	1	amod	_	_
+6	rate	rate	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+7	.	.	PUNCT	PUNCT	_	6	punct	_	_
+
+1	Jeremiah	Jeremiah	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Peabody'	Peabody'	PROPN	PROPN	_	1	dep	_	SpaceAfter=No
+3	s	s	X	X	_	1	dep	_	_
+4	polyunsaturated	polyunsaturated	X	X	_	1	dep	_	_
+5	quick	quick	PROPN	PROPN	Gender=Masc|Number=Sing	6	nsubj	_	_
+6	dissolving	dissolving	VERB	VERB	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
+7	fast	fast	X	X	_	6	obj	_	_
+8	acting	acting	X	X	_	6	obj	_	_
+9	pleasant	pleasant	X	X	_	8	advcl	_	_
+10	tasting	tasting	NOUN	NOUN	Gender=Masc|Number=Sing	8	obj	_	_
+11	green	green	ADJ	ADJ	Gender=Masc|Number=Sing	10	amod	_	_
+12	and	and	X	X	_	6	dep	_	_
+13	purple	purple	X	X	_	12	flat:foreign	_	_
+14	pills	pills	PROPN	PROPN	_	6	obj	_	_
+15	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	flat:foreign	_	_
+3	raucous	raucous	PROPN	PROPN	_	2	obj	_	_
+4	take	take	X	X	_	3	dep	_	SpaceAfter=No
+5	-	-	PROPN	PROPN	_	1	flat:foreign	_	SpaceAfter=No
+6	off	off	ADJ	ADJ	Number=Sing	1	punct	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	radio	radio	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	ROOT	_	_
+3	commercials	commercial	ADJ	ADJ	Number=Sing	2	xcomp	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	Singer	Singer	PROPN	PROPN	_	2	obl:arg	_	_
+6	Ray	Ray	PROPN	PROPN	Gender=Masc|Number=Sing	5	appos	_	_
+7	Stevens	Stevens	PROPN	PROPN	_	6	flat:name	_	_
+8	hawks	hawks	ADV	ADV	_	10	nsubj	_	_
+9	a	avoir	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	10	aux:tense	_	_
+10	cure	cure	NOUN	NOUN	Gender=Fem|Number=Sing	2	obl:mod	_	SpaceAfter=No
+11	-	-	PROPN	PROPN	_	2	obl:arg	_	SpaceAfter=No
+12	all	all	X	X	_	2	obl:arg	_	_
+13	for	for	X	X	_	2	dep	_	_
+14	neuritis	neuriti	ADJ	ADJ	Gender=Masc|Number=Sing	2	xcomp	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	neuralgia	neuralgia	PROPN	PROPN	_	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	head	head	PRON	PRON	Gender=Masc|Number=Plur|PronType=Dem	2	appos	_	SpaceAfter=No
+
+1	-	-	PRON	PRON	Gender=Masc|Number=Plur|PronType=Dem	2	punct	_	SpaceAfter=No
+2	cold	cold	PROPN	PROPN	_	0	ROOT	_	_
+3	distress	distress	X	X	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	3	punct	_	_
+5	beriberi	beriberi	NOUN	NOUN	Gender=Fem|Number=Sing	3	conj	_	_
+6	,	,	PUNCT	PUNCT	_	7	punct	_	_
+7	overweight	overweight	NOUN	NOUN	Gender=Fem|Number=Sing	5	conj	_	_
+8	,	,	PUNCT	PUNCT	_	9	punct	_	_
+9	fungus	fungu	NOUN	NOUN	Gender=Fem|Number=Sing	3	conj	_	_
+10	,	,	PUNCT	PUNCT	_	2	punct	_	_
+11	mungus	mungus	X	X	_	2	nmod	_	_
+
+1	and	and	X	X	_	0	ROOT	_	_
+2	water	water	X	X	_	1	flat:foreign	_	_
+3	on	on	PRON	PRON	Number=Sing|Person=3	4	nsubj	_	_
+4	the	the	X	X	_	5	dep	_	_
+5	knee	knee	X	X	_	1	dep	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Of	Of	X	X	_	3	dep	_	_
+2	the	the	X	X	_	3	dep	_	_
+3	nation'	nation'	PROPN	PROPN	_	12	nsubj	_	SpaceAfter=No
+4	s	s	PRON	PRON	Person=3|Reflex=Yes	3	dep	_	_
+5	eight	eight	NOUN	NOUN	Gender=Fem|Number=Sing	3	dep	_	_
+6	million	million	NUM	NUM	NumType=Card	3	dep	_	_
+7	pleasure	pleasure	NOUN	NOUN	Gender=Fem|Number=Sing	3	dep	_	SpaceAfter=No
+8	-	-	X	X	_	3	punct	_	SpaceAfter=No
+9	boat	boat	X	X	_	3	dep	_	_
+10	owners	owners	X	X	_	3	dep	_	_
+11	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux:tense	_	_
+12	sizable	sizabl	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+13	number	number	X	X	_	12	advmod	_	_
+
+1	have	haver	X	X	_	14	case	_	_
+2	learned	learned	X	X	_	1	flat:foreign	_	_
+3	that	that	X	X	_	1	dep	_	_
+4	late	late	X	X	_	1	dep	_	_
+5	autumn	autumn	PROPN	PROPN	_	1	flat:name	_	_
+6	is	is	X	X	_	1	dep	_	_
+7	one	one	X	X	_	1	dep	_	_
+8	of	of	X	X	_	1	fixed	_	_
+9	the	the	X	X	_	1	dep	_	_
+10	loveliest	loveliest	X	X	_	1	flat:foreign	_	_
+11	seasons	seasons	X	X	_	1	flat:foreign	_	_
+12	to	to	X	X	_	1	dep	_	_
+13	be	be	X	X	_	12	fixed	_	_
+14	afloat	afloat	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+15	--	--	PUNCT	PUNCT	_	14	punct	_	_
+16	at	at	X	X	_	28	case	_	_
+17	least	least	ADV	ADV	_	16	fixed	_	_
+18	in	in	X	X	_	16	fixed	_	_
+19	that	that	X	X	_	16	fixed	_	_
+20	broad	broad	X	X	_	16	flat:foreign	_	_
+21	balmy	balmy	ADJ	ADJ	Number=Plur	22	det	_	_
+22	region	region	NOUN	NOUN	Gender=Fem|Number=Sing	16	nsubj	_	_
+23	that	that	X	X	_	16	flat:foreign	_	_
+24	lies	lier	X	X	_	16	fixed	_	_
+25	below	below	X	X	_	16	flat:foreign	_	_
+26	America'	America'	X	X	_	16	dep	_	SpaceAfter=No
+27	s	s	X	X	_	16	dep	_	_
+28	belt	belt	X	X	_	14	obl:mod	_	_
+29	line	line	X	X	_	14	obj	_	_
+30	.	.	PUNCT	PUNCT	_	14	punct	_	_
+
+1	Waterways	Waterways	PROPN	PROPN	_	0	ROOT	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	busy	busy	X	X	_	1	flat:foreign	_	_
+4	right	right	X	X	_	1	dep	_	_
+5	now	now	X	X	_	1	dep	_	_
+6	from	from	X	X	_	5	flat:foreign	_	_
+7	the	the	X	X	_	1	dep	_	_
+8	Virginia	Virginia	X	X	_	1	dep	_	_
+
+1	capes	cape	X	X	_	0	ROOT	_	_
+2	to	to	X	X	_	1	dep	_	_
+3	the	the	X	X	_	1	dep	_	_
+4	Texas	Texas	X	X	_	1	dep	_	_
+5	coast	coast	X	X	_	1	flat:foreign	_	_
+6	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	There	There	X	X	_	0	ROOT	_	_
+2	true	true	X	X	_	1	advmod	_	_
+
+1	yachtsmen	yachtsman	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	often	often	ADJ	ADJ	Number=Plur	1	amod	_	_
+3	find	find	X	X	_	4	case	_	_
+4	November	November	X	X	_	1	dep	_	_
+5	winds	wind	NOUN	NOUN	Gender=Masc|Number=Plur	1	dep	_	_
+6	steadier	steadier	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+7	,	,	PUNCT	PUNCT	_	1	punct	_	_
+8	the	the	X	X	_	9	dep	_	_
+9	waters	wc	X	X	_	1	obl:mod	_	_
+10	cooler	cooler	VERB	VERB	VerbForm=Inf	9	amod	_	_
+11	,	,	PUNCT	PUNCT	_	13	punct	_	_
+12	the	the	X	X	_	13	case	_	_
+13	fish	fish	X	X	_	1	parataxis	_	_
+14	hungrier	hungrier	ADJ	ADJ	_	13	amod	_	_
+15	,	,	PUNCT	PUNCT	_	1	punct	_	_
+16	and	and	X	X	_	1	advmod	_	_
+17	rivers	rivers	X	X	_	16	flat:foreign	_	_
+18	more	more	X	X	_	16	flat:foreign	_	_
+19	pleasant	pleaser	VERB	VERB	Tense=Pres|VerbForm=Part	16	flat:foreign	_	_
+20	--	--	PUNCT	PUNCT	_	16	flat:foreign	_	_
+21	less	less	X	X	_	16	flat:foreign	_	_
+22	turbulence	turbulence	X	X	_	16	flat:foreign	_	_
+23	and	and	X	X	_	16	flat:foreign	_	_
+24	mud	mud	X	X	_	16	flat:foreign	_	_
+25	,	,	PUNCT	PUNCT	_	1	punct	_	_
+26	and	and	X	X	_	1	dep	_	_
+27	fewer	fewer	X	X	_	26	flat:foreign	_	_
+28	floating	floating	X	X	_	26	flat:foreign	_	_
+29	logs	log	NOUN	NOUN	Gender=Masc|Number=Plur	26	flat:foreign	_	_
+30	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	More	More	X	X	_	0	ROOT	_	_
+2	and	and	X	X	_	1	flat:foreign	_	_
+3	more	more	X	X	_	1	flat:foreign	_	_
+4	boats	boats	X	X	_	1	flat:foreign	_	_
+5	move	move	X	X	_	1	flat:foreign	_	_
+6	overland	overland	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+7	on	on	PRON	PRON	Number=Sing|Person=3	1	flat:foreign	_	_
+8	wheels	wheel	ADJ	ADJ	Number=Sing	1	flat:foreign	_	_
+9	(	(	PUNCT	PUNCT	_	1	punct	_	_
+10	1.8	1.8	NUM	NUM	NumType=Card	1	parataxis	_	_
+11	million	million	NUM	NUM	NumType=Card	10	amod	_	_
+
+1	trailers	trailer	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	now	now	X	X	_	2	dep	_	_
+4	in	in	X	X	_	2	flat:foreign	_	_
+5	use	user	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	flat:foreign	_	_
+6	)	)	PUNCT	PUNCT	_	1	punct	_	_
+7	and	and	X	X	_	11	case	_	_
+8	Midwesterners	Midwesterners	X	X	_	7	flat:foreign	_	_
+9	taking	taking	X	X	_	7	flat:foreign	_	_
+10	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	11	amod	_	_
+11	weekends	weekends	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+12	can	can	X	X	_	11	dep	_	_
+13	travel	travel	X	X	_	11	flat:foreign	_	_
+14	south	south	PROPN	PROPN	Gender=Masc|Number=Sing	11	flat:name	_	_
+15	with	with	X	X	_	11	dep	_	_
+16	their	their	X	X	_	11	conj	_	_
+17	craft	craft	X	X	_	11	amod	_	_
+18	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	19	dep	_	_
+2	the	the	X	X	_	1	flat:foreign	_	_
+3	Southwest	Southwest	X	X	_	1	dep	_	_
+4	,	,	PUNCT	PUNCT	_	1	punct	_	_
+5	the	the	X	X	_	9	iobj	_	_
+6	fall	fall	X	X	_	5	flat:foreign	_	_
+7	brings	brings	X	X	_	5	flat:foreign	_	_
+8	out	out	X	X	_	5	dep	_	_
+9	flotillas	flotiller	VERB	VERB	Number=Sing|Tense=Past|VerbForm=Part	1	advcl	_	_
+10	of	of	X	X	_	13	dep	_	_
+11	boatsmen	boatsmen	PROPN	PROPN	_	10	dep	_	_
+12	who	who	X	X	_	10	dep	_	_
+13	find	find	X	X	_	9	nmod	_	_
+14	the	the	X	X	_	13	dep	_	_
+15	summer	summer	X	X	_	13	flat:name	_	_
+16	too	too	ADV	ADV	_	13	dep	_	_
+17	hot	hot	X	X	_	9	dep	_	_
+18	for	for	X	X	_	19	case	_	_
+19	comfort	comfort	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+20	.	.	PUNCT	PUNCT	_	19	punct	_	_
+
+1	And	And	X	X	_	0	ROOT	_	_
+
+1	on	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	northern	northern	VERB	VERB	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	shores	shores	ADV	ADV	_	2	obj	_	_
+4	indomitable	indomitabl	ADJ	ADJ	Number=Sing	2	amod	_	_
+5	sailors	sailors	X	X	_	2	obj	_	_
+6	from	from	X	X	_	5	dep	_	_
+7	Long	Long	X	X	_	5	flat:foreign	_	_
+8	Island	Island	X	X	_	5	dep	_	_
+9	to	to	X	X	_	5	dep	_	_
+10	Lake	Lake	X	X	_	11	nmod	_	_
+11	Michigan	Michigan	PROPN	PROPN	_	5	dep	_	_
+12	will	will	X	X	_	11	flat:foreign	_	_
+13	beat	beat	X	X	_	12	flat:foreign	_	_
+14	around	around	X	X	_	12	flat:foreign	_	_
+15	the	the	X	X	_	16	dep	_	_
+16	buoys	buoys	PROPN	PROPN	Gender=Masc|Number=Sing	5	obl:arg	_	_
+17	in	in	X	X	_	16	amod	_	_
+18	dozens	dozens	X	X	_	17	fixed	_	_
+19	of	of	X	X	_	16	dep	_	_
+20	frostbite	frostbite	NOUN	NOUN	Gender=Fem|Number=Sing	16	amod	_	_
+21	races	race	NOUN	NOUN	Gender=Fem|Number=Plur	16	amod	_	_
+22	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Some	Some	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	pleasant	pleasant	X	X	_	1	acl	_	_
+3	fall	fall	X	X	_	1	flat:foreign	_	_
+4	cruising	cruising	X	X	_	1	flat:foreign	_	_
+5	country	country	X	X	_	1	flat:foreign	_	_
+6	is	is	X	X	_	5	dep	_	_
+7	mapped	mapped	X	X	_	5	dep	_	_
+8	out	out	X	X	_	5	dep	_	_
+9	below	below	ADJ	ADJ	Gender=Masc|Number=Plur	5	amod	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Boating	Boating	X	X	_	0	ROOT	_	_
+2	west	west	X	X	_	1	flat:foreign	_	_
+3	coast	coast	X	X	_	1	flat:foreign	_	_
+4	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Pleasure	Pleasure	X	X	_	13	nsubj	_	_
+2	boating	boating	X	X	_	1	flat:foreign	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	just	just	X	X	_	1	flat:foreign	_	_
+5	scooting	scooting	ADJ	ADJ	Gender=Masc	4	amod	_	_
+6	into	into	X	X	_	4	amod	_	_
+7	its	its	X	X	_	8	case	_	_
+8	best	best	X	X	_	1	nmod	_	_
+9	months	months	X	X	_	8	flat:name	_	_
+10	in	in	X	X	_	1	dep	_	_
+11	California	California	PROPN	PROPN	_	1	flat:name	_	_
+12	as	as	X	X	_	13	aux:tense	_	_
+13	crisp	crisp	PROPN	PROPN	_	0	ROOT	_	_
+14	breezes	breezes	X	X	_	13	dep	_	_
+15	bring	bring	X	X	_	13	dep	_	_
+16	out	out	X	X	_	13	dep	_	_
+17	craft	craft	NOUN	NOUN	Gender=Masc|Number=Sing	13	nmod	_	_
+18	of	of	X	X	_	13	dep	_	_
+19	every	every	X	X	_	18	fixed	_	_
+20	size	size	X	X	_	13	dep	_	_
+
+1	on	on	X	X	_	4	nsubj	_	_
+2	every	every	X	X	_	1	dep	_	_
+3	kind	kind	X	X	_	1	flat:name	_	_
+4	of	of	X	X	_	5	dep	_	_
+5	water	water	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	--	--	PUNCT	PUNCT	_	2	punct	_	_
+2	ocean	ocean	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+3	,	,	PUNCT	PUNCT	_	2	punct	_	_
+4	lake	lake	X	X	_	5	nsubj	_	_
+5	and	and	X	X	_	6	dep	_	_
+6	reservoir	reservoir	VERB	VERB	VerbForm=Inf	2	nmod	_	_
+7	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Shore	shore	ADV	ADV	_	2	advmod	_	_
+2	facilities	facilities	X	X	_	0	ROOT	_	_
+3	are	are	ADP	ADP	_	4	case	_	_
+4	enormous	enormou	NOUN	NOUN	Number=Plur	2	obl:arg	_	_
+
+1	--	--	ADJ	ADJ	Gender=Masc|Number=Plur	0	ROOT	_	_
+2	Los	Los	X	X	_	1	dep	_	_
+
+1	Angeles	Angeles	PROPN	PROPN	_	2	nsubj	_	_
+2	harbors	harbors	ADV	ADV	_	4	advmod	_	_
+3	5,000	5,000	NUM	NUM	NumType=Card	4	nummod	_	_
+4	boats	boat	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+5	,	,	PUNCT	PUNCT	_	4	punct	_	_
+6	and	and	X	X	_	4	dep	_	_
+7	Long	Long	X	X	_	6	flat:foreign	_	_
+8	Beach	Beach	PROPN	PROPN	_	6	flat:foreign	_	_
+9	3,000	3,000	NUM	NUM	NumType=Card	4	nummod	_	_
+
+1	--	--	ADJ	ADJ	Gender=Masc	2	punct	_	_
+2	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	marinas	mariner	PROPN	PROPN	Gender=Masc|Number=Sing	2	nmod	_	_
+4	are	are	X	X	_	5	case	_	_
+5	crowded	crowded	NOUN	NOUN	_	2	nmod	_	_
+6	everywhere	everywher	ADJ	ADJ	Number=Plur	5	nmod	_	_
+7	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	New	new	DET	DET	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+2	docks	dock	NOUN	NOUN	Gender=Masc|Number=Plur	4	nsubj	_	_
+3	and	and	X	X	_	2	dep	_	_
+4	ramps	ramps	X	X	_	0	ROOT	_	_
+5	are	are	X	X	_	7	case	_	_
+6	being	being	X	X	_	5	fixed	_	_
+7	rushed	rushed	X	X	_	4	obl:mod	_	_
+8	at	at	X	X	_	9	case	_	_
+9	Playa	Playa	PROPN	PROPN	_	4	obl:mod	_	_
+10	Del	Del	X	X	_	4	dep	_	_
+11	Rey	Rey	PROPN	PROPN	_	4	obj	_	_
+12	,	,	PUNCT	PUNCT	_	13	punct	_	_
+13	Ventura	Ventura	PROPN	PROPN	_	4	conj	_	_
+14	,	,	PUNCT	PUNCT	_	13	punct	_	_
+15	Dana	Dana	PROPN	PROPN	_	13	appos	_	_
+16	Point	Point	PROPN	PROPN	_	15	flat:name	_	_
+17	,	,	PUNCT	PUNCT	_	18	punct	_	_
+18	Oceanside	Oceanside	X	X	_	4	conj	_	_
+19	and	and	X	X	_	18	dep	_	_
+20	Mission	Mission	X	X	_	18	flat:foreign	_	_
+21	Bay	Bay	X	X	_	18	amod	_	_
+22	.	.	PUNCT	PUNCT	_	4	punct	_	_
+
+1	Inland	inland	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	outboard	outboard	NOUN	NOUN	Gender=Masc|Number=Sing	1	conj	_	_
+4	motorists	motorist	NOUN	NOUN	_	3	nmod	_	_
+
+1	welcome	welcome	X	X	_	2	nsubj	_	_
+2	cooler	cooler	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+3	weather	weather	X	X	_	2	obj	_	_
+4	and	and	X	X	_	2	dep	_	_
+5	the	the	X	X	_	2	dep	_	_
+6	chance	chance	X	X	_	2	obj	_	_
+7	to	to	X	X	_	2	dep	_	_
+8	buzz	buzz	NOUN	NOUN	Gender=Masc|Number=Sing	2	obj	_	_
+9	over	over	X	X	_	2	dep	_	_
+10	Colorado	Colorado	PROPN	PROPN	Gender=Masc|Number=Sing	2	obj	_	_
+11	River	River	X	X	_	10	flat:name	_	_
+12	sandbars	sandbars	X	X	_	10	flat:name	_	_
+13	and	and	X	X	_	10	dep	_	_
+14	Lake	Lake	X	X	_	2	obj	_	_
+
+1	Mead	Mead	PROPN	PROPN	_	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Newest	Newest	X	X	_	0	ROOT	_	_
+2	small	small	X	X	_	1	flat:foreign	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	boat	boat	X	X	_	0	ROOT	_	_
+2	playground	playground	X	X	_	1	amod	_	_
+3	is	is	X	X	_	1	dep	_	_
+4	the	the	X	X	_	1	dep	_	_
+5	Salton	Salton	X	X	_	1	flat:foreign	_	_
+6	Sea	Sea	PROPN	PROPN	_	1	flat:foreign	_	_
+
+1	,	,	PUNCT	PUNCT	_	3	punct	_	_
+2	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	aux:tense	_	_
+3	once	once	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	3	punct	_	SpaceAfter=No
+2	dry	dry	X	X	_	3	advmod	_	_
+3	desert	desert	X	X	_	9	dep	_	_
+4	sinkhole	sinkhole	X	X	_	3	amod	_	_
+5	which	which	X	X	_	3	dep	_	_
+6	is	is	X	X	_	5	dep	_	_
+7	now	now	X	X	_	5	dep	_	_
+8	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	9	aux:tense	_	_
+9	salty	salty	VERB	VERB	Gender=Masc|Tense=Past|VerbForm=Part	0	ROOT	_	_
+10	lake	lake	PRON	PRON	Gender=Fem|Number=Plur	12	det	_	_
+11	42	42	NUM	NUM	NumType=Card	12	nummod	_	_
+12	miles	mile	NOUN	NOUN	Gender=Masc|Number=Plur	9	obj	_	_
+13	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	12	amod	_	_
+14	and	and	X	X	_	12	nmod	_	_
+15	235	235	NUM	NUM	NumType=Card	16	nummod	_	_
+16	feet	feet	NOUN	NOUN	Gender=Masc|Number=Plur	12	nmod	_	_
+17	below	below	X	X	_	12	amod	_	_
+18	sea	sea	X	X	_	12	conj	_	_
+19	level	level	X	X	_	12	amod	_	_
+20	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	On	on	PRON	PRON	Number=Sing|Person=3	2	nsubj	_	_
+2	Nov	nov	ADJ	ADJ	Gender=Masc|NumType=Ord|Number=Sing	0	ROOT	_	SpaceAfter=No
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	11	11	NUM	NUM	NumType=Card	14	nummod	_	_
+2	,	,	PUNCT	PUNCT	_	3	punct	_	_
+3	12	12	NUM	NUM	NumType=Card	1	conj	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	racers	racer	NOUN	NOUN	Gender=Masc|Number=Plur	1	conj	_	_
+6	will	will	X	X	_	5	nmod	_	_
+7	drive	drive	X	X	_	6	flat:name	_	_
+8	their	their	X	X	_	6	dep	_	_
+9	flying	flying	X	X	_	6	dep	_	_
+10	shingles	shingle	NOUN	NOUN	Gender=Masc|Number=Plur	6	flat:foreign	_	_
+11	in	in	X	X	_	6	dep	_	_
+12	5-mile	5-mile	NUM	NUM	NumType=Card	1	punct	_	_
+13	laps	laps	ADV	ADV	_	12	fixed	_	_
+14	over	over	X	X	_	0	ROOT	_	_
+15	its	its	X	X	_	16	case	_	_
+16	500-mile	500-mile	NUM	NUM	NumType=Card	14	obl:mod	_	_
+17	speedboat	speedboat	ADJ	ADJ	Number=Sing	16	fixed	_	_
+
+1	course	course	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	In	In	X	X	_	0	ROOT	_	_
+2	San	San	X	X	_	1	flat:foreign	_	_
+
+1	Francisco	Francisco	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	Bay	Bay	PROPN	PROPN	_	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	winds	winds	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	are	are	X	X	_	4	case	_	_
+4	gusty	gusty	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+5	and	and	X	X	_	2	dep	_	_
+6	undependable	undependable	X	X	_	2	dep	_	_
+7	during	during	X	X	_	2	dep	_	_
+8	this	this	X	X	_	2	dep	_	_
+9	season	season	PROPN	PROPN	_	2	flat:foreign	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	A	à	ADP	ADP	_	3	case	_	_
+3	sailboat	sailboat	PROPN	PROPN	_	1	punct	_	_
+4	may	may	X	X	_	3	dep	_	_
+5	have	haver	X	X	_	7	nsubj	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	bone	bone	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	nmod	_	_
+8	in	in	X	X	_	15	case	_	_
+9	her	her	X	X	_	8	dep	_	_
+10	teeth	teeth	VERB	VERB	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	8	dep	_	_
+11	one	one	X	X	_	10	advmod	_	_
+12	minute	minute	NOUN	NOUN	Gender=Masc|Number=Sing	8	flat:foreign	_	_
+13	and	and	X	X	_	12	dep	_	_
+14	lie	lier	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	15	amod	_	_
+15	becalmed	becalmed	PROPN	PROPN	Gender=Masc|Number=Sing	3	nmod	_	_
+16	the	the	X	X	_	3	amod	_	_
+17	next	next	X	X	_	3	amod	_	_
+18	.	.	PUNCT	PUNCT	_	3	punct	_	_
+
+1	But	but	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	regattas	regatter	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	acl	_	_
+3	are	are	ADP	ADP	_	4	case	_	_
+4	scheduled	scheduled	X	X	_	2	obl:mod	_	_
+5	right	right	X	X	_	2	dep	_	_
+6	up	up	X	X	_	5	dep	_	_
+7	to	to	X	X	_	2	dep	_	_
+8	Christmas	Christmas	PROPN	PROPN	_	2	obl:mod	_	_
+9	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	9	advmod	_	_
+2	Corinthian	Corinthian	PROPN	PROPN	_	1	flat:foreign	_	_
+3	Yacht	Yacht	X	X	_	1	flat:foreign	_	_
+4	Club	club	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	in	in	X	X	_	1	flat:foreign	_	_
+6	Tiburon	Tiburon	PROPN	PROPN	_	1	flat:foreign	_	_
+7	launches	launches	X	X	_	1	flat:foreign	_	_
+8	its	its	X	X	_	9	cc	_	_
+9	winter	winter	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+10	races	race	ADJ	ADJ	Gender=Fem|Number=Plur	9	advmod	_	_
+11	Nov	nov	ADJ	ADJ	Gender=Masc|Number=Sing	9	obj	_	SpaceAfter=No
+12	.	.	PUNCT	PUNCT	_	9	punct	_	_
+
+1	5	5	NUM	NUM	NumType=Card	0	ROOT	_	_
+2	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Gulf	Gulf	X	X	_	0	ROOT	_	_
+2	Coast	Coast	X	X	_	1	flat:foreign	_	_
+3	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Hurricane	hurricane	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	Carla	Carla	PROPN	PROPN	_	2	nsubj	_	_
+2	damaged	damaged	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+3	70	70	NUM	NUM	NumType=Card	4	nummod	_	SpaceAfter=No
+4	%	pourcent	NOUN	NOUN	Gender=Masc	2	obj	_	_
+5	of	of	X	X	_	6	dep	_	_
+6	the	the	X	X	_	4	acl:relcl	_	_
+7	marinas	mariner	X	X	_	6	flat:foreign	_	_
+8	in	in	X	X	_	7	dep	_	_
+9	the	the	X	X	_	7	dep	_	_
+10	Galveston	Galveston	X	X	_	7	flat:name	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	2	punct	_	SpaceAfter=No
+2	Port	Port	PROPN	PROPN	_	0	ROOT	_	_
+
+1	Aransas	Aransas	PROPN	PROPN	_	0	ROOT	_	_
+
+1	area	area	X	X	_	0	ROOT	_	_
+2	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	dep	_	_
+3	fuel	fuel	ADJ	ADJ	Gender=Masc|Number=Sing	2	nmod	_	_
+4	service	service	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+5	is	is	X	X	_	6	case	_	_
+6	back	back	NOUN	NOUN	Gender=Masc|Number=Plur	1	obl:mod	_	_
+7	to	to	X	X	_	1	dep	_	_
+8	normal	normal	ADJ	ADJ	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+9	,	,	PUNCT	PUNCT	_	1	punct	_	_
+10	and	and	X	X	_	1	dep	_	_
+11	explorers	explorers	X	X	_	10	flat:foreign	_	_
+12	can	can	X	X	_	10	flat:foreign	_	_
+
+1	roam	roam	VERB	VERB	Tense=Pres|VerbForm=Part	0	ROOT	_	_
+2	as	avoir	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	1	xcomp	_	_
+3	far	far	NOUN	NOUN	Gender=Masc|Number=Sing	2	obj	_	_
+4	west	west	X	X	_	2	advmod	_	_
+5	as	as	X	X	_	6	case	_	_
+6	Port	Port	X	X	_	1	obl:arg	_	_
+7	Isabel	Isabel	PROPN	PROPN	_	6	flat:name	_	_
+8	on	on	PRON	PRON	Number=Sing|Person=3	9	nsubj	_	_
+9	the	the	VERB	VERB	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	advcl	_	_
+10	Mexican	mexican	ADV	ADV	_	9	advmod	_	_
+11	border	border	VERB	VERB	VerbForm=Inf	9	xcomp	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Sailing	Sailing	X	X	_	0	ROOT	_	_
+2	activity	activity	X	X	_	1	flat:name	_	_
+3	is	is	X	X	_	2	dep	_	_
+4	slowed	slowed	PROPN	PROPN	_	1	flat:foreign	_	_
+5	down	down	X	X	_	1	flat:foreign	_	_
+6	by	by	X	X	_	7	case	_	_
+7	Texas	Texas	X	X	_	5	obl:mod	_	_
+8	northers	norther	ADJ	ADJ	Gender=Masc|Number=Sing	7	flat:name	_	_
+9	,	,	PUNCT	PUNCT	_	5	punct	_	_
+10	but	but	NOUN	NOUN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+11	power	power	X	X	_	1	flat:foreign	_	_
+12	cruisers	cruisers	X	X	_	13	advmod	_	_
+13	can	can	X	X	_	11	flat:foreign	_	_
+14	move	move	X	X	_	11	flat:foreign	_	_
+15	freely	freely	ADJ	ADJ	Number=Plur	1	flat:foreign	_	_
+16	,	,	PUNCT	PUNCT	_	15	punct	_	_
+17	poking	poking	ADJ	ADJ	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+18	into	into	X	X	_	1	flat:foreign	_	_
+19	the	the	X	X	_	1	flat:foreign	_	_
+20	San	San	X	X	_	21	amod	_	_
+21	Jacinto	Jacinto	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:name	_	_
+22	,	,	PUNCT	PUNCT	_	23	punct	_	_
+23	Trinity	Trinity	PROPN	PROPN	Gender=Masc|Number=Sing	29	nummod	_	_
+24	and	and	X	X	_	23	dep	_	_
+25	Brazos	Brazos	X	X	_	23	flat:foreign	_	_
+26	rivers	rivers	X	X	_	23	flat:foreign	_	_
+27	(	(	PUNCT	PUNCT	_	23	punct	_	_
+28	fine	fin	ADJ	ADJ	Gender=Fem|Number=Sing	29	amod	_	_
+29	tarpon	tarpon	X	X	_	1	flat:foreign	_	_
+30	fishing	fishing	ADV	ADV	_	29	amod	_	_
+31	in	in	X	X	_	29	dep	_	_
+32	the	the	X	X	_	29	dep	_	_
+33	Brazos	Brazos	PROPN	PROPN	_	29	nmod	_	_
+34	)	)	PUNCT	PUNCT	_	29	punct	_	_
+35	or	or	X	X	_	36	cc	_	_
+36	pushing	pushing	X	X	_	1	conj	_	_
+37	eastward	eastward	X	X	_	36	advmod	_	_
+38	to	to	X	X	_	41	cc	_	_
+39	the	the	X	X	_	38	fixed	_	_
+40	pirate	pirate	NOUN	NOUN	Gender=Masc|Number=Sing	38	flat:foreign	_	_
+41	country	country	X	X	_	1	punct	_	_
+42	of	of	ADP	ADP	_	43	case	_	_
+43	Barataria	Barataria	PROPN	PROPN	Gender=Masc|Number=Sing	1	nmod	_	_
+44	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	Off	off	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	Grand	grand	ADJ	ADJ	Gender=Masc|Number=Sing	1	amod	_	_
+3	Isle	Isle	PROPN	PROPN	Gender=Masc|Number=Sing	5	nmod	_	_
+4	,	,	PUNCT	PUNCT	_	5	punct	_	_
+5	yachters	yachter	NOUN	NOUN	Gender=Masc|Number=Plur	1	nmod	_	_
+6	often	often	ADJ	ADJ	Number=Plur	5	amod	_	_
+7	visit	visit	X	X	_	5	nmod	_	_
+8	the	the	X	X	_	5	dep	_	_
+9	towering	towering	X	X	_	5	amod	_	_
+10	oil	oil	X	X	_	11	cc	_	_
+11	rigs	rigs	PROPN	PROPN	_	5	nmod	_	_
+12	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	The	The	X	X	_	7	nsubj	_	_
+2	Mississippi	Mississippi	PROPN	PROPN	Gender=Masc|Number=Sing	1	flat:foreign	_	_
+3	Sound	sound	VERB	VERB	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	flat:foreign	_	_
+4	leads	lead	ADJ	ADJ	Gender=Masc|Number=Plur	3	advmod	_	_
+5	into	into	X	X	_	3	dep	_	_
+6	a	avoir	AUX	AUX	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux:tense	_	_
+7	protected	protected	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+8	waterway	waterway	PROPN	PROPN	Gender=Masc|Number=Sing	7	xcomp	_	_
+9	running	running	X	X	_	14	cc	_	_
+10	about	about	VERB	VERB	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	14	dep	_	_
+11	200	200	NUM	NUM	NumType=Card	12	nummod	_	_
+12	miles	mile	NOUN	NOUN	Gender=Masc|Number=Plur	10	obj	_	_
+13	from	from	X	X	_	12	acl:relcl	_	_
+14	Pascagoula	Pascagoula	X	X	_	7	obl:mod	_	_
+15	to	to	X	X	_	14	dep	_	_
+16	Apalachicola	Apalachicola	PROPN	PROPN	_	14	flat:name	_	_
+17	.	.	PUNCT	PUNCT	_	7	punct	_	_
+
+1	Lower	Lower	X	X	_	2	amod	_	_
+2	Mississippi	Mississippi	PROPN	PROPN	Gender=Masc|Number=Sing	0	ROOT	_	_
+3	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Memphis	Memphis	X	X	_	0	ROOT	_	_
+2	stinkpotters	stinkpotters	X	X	_	1	nmod	_	_
+3	like	like	X	X	_	1	amod	_	_
+
+1	McKellar	McKellar	X	X	_	0	ROOT	_	_
+
+1	Lake	lak	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+2	,	,	PUNCT	PUNCT	_	1	punct	_	_
+3	inside	insid	ADJ	ADJ	Number=Sing	1	advcl	_	_
+4	the	the	X	X	_	3	flat:foreign	_	_
+5	city	city	X	X	_	4	flat:foreign	_	_
+6	limits	limits	X	X	_	4	flat:foreign	_	_
+7	,	,	PUNCT	PUNCT	_	3	punct	_	_
+8	and	and	X	X	_	3	dep	_	_
+
+1	sailors	sailors	X	X	_	0	ROOT	_	_
+2	look	look	ADV	ADV	_	1	advmod	_	_
+3	for	for	X	X	_	4	case	_	_
+4	autumn	autumn	X	X	_	1	obl:arg	_	_
+5	winds	winds	X	X	_	1	obl:arg	_	_
+6	at	at	X	X	_	1	dep	_	_
+7	Arkabutla	Arkabutla	PROPN	PROPN	_	1	dep	_	_
+
+1	Lake	Lake	X	X	_	0	ROOT	_	_
+
+1	where	where	X	X	_	0	ROOT	_	_
+2	fall	fall	X	X	_	1	dep	_	_
+3	racing	racing	X	X	_	1	dep	_	_
+4	is	is	X	X	_	1	dep	_	_
+5	now	now	X	X	_	4	dep	_	_
+6	in	in	X	X	_	1	dep	_	_
+7	progress	progress	X	X	_	1	flat:name	_	_
+8	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	River	River	X	X	_	0	ROOT	_	_
+2	cruising	cruising	X	X	_	1	flat:name	_	_
+3	for	for	X	X	_	1	dep	_	_
+4	small	small	X	X	_	1	dep	_	_
+5	craft	craft	X	X	_	1	flat:name	_	_
+6	is	is	X	X	_	1	dep	_	_
+7	ideal	ideal	X	X	_	1	nmod	_	_
+8	in	in	X	X	_	9	case	_	_
+9	November	November	PROPN	PROPN	_	1	nmod	_	_
+10	.	.	PUNCT	PUNCT	_	1	punct	_	_
+
+1	At	At	X	X	_	0	ROOT	_	_
+2	New	New	X	X	_	1	flat:foreign	_	_
+3	Orleans	Orleans	PROPN	PROPN	_	2	flat:name	_	_
+4	,	,	PUNCT	PUNCT	_	2	punct	_	_
+5	25-mile	25-mile	NOUN	NOUN	NumType=Card	2	nmod	_	SpaceAfter=No
+
+1	-	-	PUNCT	PUNCT	_	2	punct	_	SpaceAfter=No
+2	square	square	NOUN	NOUN	Number=Sing	0	ROOT	_	_
+3	Lake	Lake	X	X	_	2	amod	_	_
+4	Pontchartrain	Pontchartrain	PROPN	PROPN	_	2	flat:name	_	_
+
+1	has	has	X	X	_	3	case	_	_
+2	few	few	X	X	_	1	dep	_	_
+3	squalls	squall	NOUN	NOUN	Gender=Masc|Number=Plur	0	ROOT	_	_
+4	and	and	X	X	_	3	dep	_	_
+5	year	year	X	X	_	4	dep	_	SpaceAfter=No
+
+1	-	-	PROPN	PROPN	_	0	ROOT	_	SpaceAfter=No
+
+1	long	long	ADJ	ADJ	Gender=Masc|Number=Sing	2	amod	_	_
+2	boating	boating	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	Marinas	Marinas	PROPN	PROPN	_	0	ROOT	_	_
+2	are	are	X	X	_	1	dep	_	_
+3	less	less	X	X	_	1	amod	_	_
+
+1	plush	plush	ADV	ADV	_	0	ROOT	_	_
+
+1	than	than	X	X	_	0	ROOT	_	_
+
+1	the	the	X	X	_	0	ROOT	_	_
+
+1	Florida	Florida	X	X	_	0	ROOT	_	_
+
+1	type	typ	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	but	but	ADJ	ADJ	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	service	service	NOUN	NOUN	Gender=Masc|Number=Sing	0	ROOT	_	_
+
+1	is	is	X	X	_	4	case	_	_
+2	good	good	X	X	_	1	flat:foreign	_	_
+3	and	and	X	X	_	1	dep	_	_
+4	Creole	Creole	X	X	_	0	ROOT	_	_
+5	cooking	cooking	X	X	_	4	dep	_	_
+
+1	better	better	VERB	VERB	VerbForm=Inf	0	ROOT	_	_
+
+1	.	.	PUNCT	PUNCT	_	0	ROOT	_	_
+2	tva	tva	PROPN	PROPN	Gender=Masc|Number=Sing	1	punct	_	_
+3	lakes	lakes	X	X	_	2	flat:name	_	_
+4	.	.	PUNCT	PUNCT	_	2	punct	_	_
+
+1	Ten	ten	ADJ	ADJ	Gender=Masc|Number=Plur	4	nummod	_	_
+2	thousand	thousand	X	X	_	1	flat:foreign	_	_
+3	twisty	twisty	X	X	_	1	flat:foreign	_	_
+4	miles	mile	NOUN	NOUN	Gender=Masc|Number=Plur	7	dep	_	_
+5	of	of	ADP	ADP	_	6	case	_	_
+6	shoreline	shoreline	NOUN	NOUN	Gender=Fem|Number=Sing	4	nmod	_	_
+7	frame	frame	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+8	the	the	X	X	_	7	dep	_	_
+
+1	30-odd	30-odd	PROPN	PROPN	_	0	ROOT	_	_
+
+1	lakes	lakes	X	X	_	0	ROOT	_	_
+
+1	in	in	X	X	_	0	ROOT	_	_
+2	the	the	X	X	_	1	dep	_	_
+
+1	vast	vast	ADJ	ADJ	Number=Sing	0	ROOT	_	_
+
+1	Tennessee	Tennessee	PROPN	PROPN	_	10	nsubj	_	_
+2	River	River	X	X	_	1	flat:name	_	_
+3	system	system	X	X	_	1	dep	_	_
+4	that	that	X	X	_	1	dep	_	_
+5	loops	loop	NOUN	NOUN	Gender=Masc|Number=Plur	1	flat:foreign	_	_
+6	in	in	X	X	_	5	amod	_	_
+7	and	and	X	X	_	5	dep	_	_
+8	out	out	X	X	_	5	flat:foreign	_	_
+9	of	of	X	X	_	10	dep	_	_
+10	seven	seven	X	X	_	0	ROOT	_	_
+11	states	state	ADJ	ADJ	Number=Plur	10	amod	_	_
+12	.	.	PUNCT	PUNCT	_	10	punct	_	_
+
+1	When	When	X	X	_	2	amod	_	_
+2	dam	dam	VERB	VERB	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	ROOT	_	_
+
+1	construction	construction	NOUN	NOUN	Gender=Fem|Number=Sing	0	ROOT	_	_
+
+1	began	began	X	X	_	0	ROOT	_	_
+
+1	in	in	X	X	_	2	case	_	_
+2	1933	1933	NUM	NUM	NumType=Card	0	ROOT	_	_
+
+1	,	,	PUNCT	PUNCT	_	2	punct	_	_
+2	fewer	fewer	X	X	_	0	ROOT	_	_
+3	than	than	ADJ	ADJ	Number=Plur	2	amod	_	_
+4	600	600	NUM	NUM	NumType=Card	5	nummod	_	_
+5	boats	boat	NOUN	NOUN	Gender=Masc|Number=Plur	2	nmod	_	_
+6	used	used	X	X	_	2	dep	_	_
+7	these	these	X	X	_	6	flat:foreign	_	_
+8	waters	wc	X	X	_	6	flat:foreign	_	_
+9	;	;	PUNCT	PUNCT	_	2	punct	_	_
+
+1	;	;	PUNCT	PUNCT	_	0	ROOT	_	_
+
+1	today	today	X	X	_	0	ROOT	_	_
+2	there	there	X	X	_	1	amod	_	_
+3	are	are	X	X	_	4	case	_	_
+4	48,500	48,500	ADJ	ADJ	Number=Sing	1	nmod	_	_
+5	.	.	PUNCT	PUNCT	_	1	punct	_	SpaceAfter=No
