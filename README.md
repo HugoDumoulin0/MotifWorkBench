@@ -13,6 +13,16 @@ The CloSPEC algorithm (Béchet et al. 2015) can be found in the form of the bina
 If you like (or really hate) this work, please use the following citation:
 > Dumoulin, Hugo and Premat, Timothée (2026). The Motif Work Bench Pipeline: From Sequential Pattern Mining to Multidimensional Statistics. JADT 2026. Scripts at: [https://github.com/HugoDumoulin0/MotifWorkBench](https://github.com/HugoDumoulin0/MotifWorkBench)
 
+## Versions history
+
+-> ``MWB v.0.2``
+GUI format, concordancer, help page, run history, analysis settings, configuration profiles, built-in visualization interface, available on Linux, Mac, Windows, "installer".
+Made by da Silva Jean-Charles [GitHub : @jcharlesDS](https://github.com/jcharlesDS)
+
+-> ``MWB v.0.1``
+Base version, CLI format, available only on Mac and Linux with Docker.
+
+
 ## Installation
 **MWB v.0.2** is available on three OS (Windows, MacOS, Linux)
 
@@ -95,12 +105,3 @@ Finally, the textometric and visualisation approach rely on a metadata file: `me
 - Mekki, J. (2022). Caractérisation de registres de langue par extraction de motifs séquentiels émergents. Thèse de doctorat, Université de Rennes. 
 - Mellet, S. et Longrée, D. (2012). Légitimité d'une unité textométrique : le motif. In A. Dister, D. Longrée, G. Purnelle (éds.), Actes des Journée d'analyse des données textuelles 2012, 715-728. 
 
-## Version history
-
--> ``MWB v.0.2``
-GUI format, concordancer, help page, run history, analysis settings, configuration profiles, built-in visualization interface, available on Linux, Mac, Windows, "installer".
-Made by da Silva Jean-Charles [GitHub : @jcharlesDS](https://github.com/jcharlesDS)
-
-
--> ``MWB v.0.1``
-Base version, CLI format, available only on Mac and Linux with Docker.
