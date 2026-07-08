@@ -41,11 +41,6 @@ Base version, CLI format, available only on Mac and Linux with Docker.
 2. Open the folder and run ``install_and_run_linux.sh``
 3. To launch MWB after the initial installation, simply double-click the ``launch_motifworkbench.sh`` file.
 
------------------------
-
-Here, MotifWorkBench is distributed with the nltk version of the Brown corpus (Kučera & Francis 1964)
-
-------------------------
 
 ## What does it do?
 A simple run such as the one before goes through the following operations:
@@ -57,6 +52,12 @@ A simple run such as the one before goes through the following operations:
 4. [optional] Clustering patterns
 5. Computing multidimensional statistics with CQP and R
 6. Visualizing with Shiny GUI
+
+-----------------------
+
+Here, MotifWorkBench is distributed with the nltk version of the Brown corpus (Kučera & Francis 1964)
+
+------------------------
 
 [^1]: Stanza-produced `.conllu` files are modified so that they do not contain underscore (this is what MWB calls `underscore-fixing`). While it is normal for `.conllu` files to contains underscores, this is not suitable for pattern mining. As cols can't be empty, we chose to replace underscores by random integers.
 
