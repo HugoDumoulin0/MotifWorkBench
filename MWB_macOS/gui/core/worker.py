@@ -11,6 +11,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', 'src'))
 
 from main import run_analysis, AnalysisCancelled
+from mesure_S2MP import ALIGNMENT_VERSION
 from gui.core.analysis_paths import (
     generate_config_id, 
     create_analysis_structure,
@@ -55,6 +56,10 @@ class AnalysisWorker(QThread):
         self.config = config
         # Ajouter le mode GUI pour éviter le lancement automatique de Shiny
         self.config["mode"] = "gui"
+        if config.get("internal_clustering", True):
+            self.config["internal_clustering_alignment"] = ALIGNMENT_VERSION
+        else:
+            self.config.pop("internal_clustering_alignment", None)
         self._is_running = True
         self._stop_requested = False
         
@@ -109,6 +114,8 @@ class AnalysisWorker(QThread):
                 self._on_log(f"Nouvelle analyse : {self.analysis_group_name}/{self.config_id}")
             
             self._on_log(f"Dossier de sortie : Data/analyses/{self.analysis_group_name}/{self.config_id}/")
+            if self.config.get("internal_clustering", True):
+                self._on_log(f"Clustering interne : alignement {ALIGNMENT_VERSION}.")
             self._on_log("-" * 75)
             
             # Appelle la fonction d'analyse principale

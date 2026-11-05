@@ -7,18 +7,6 @@
 4. Suivre les instructions et l'application s'ouvrira pour vous.
 5. Après la première installation, vous pouvez lancer directement l'outil avec `launch_motifworkbench.sh`
 
-## Autorisation de lancement
-
-Si le lancement indique `Permission denied`, ouvrir un terminal dans le dossier
-`MWB_Linux`, puis exécuter :
-
-```sh
-chmod u+x install_and_run_linux.sh launch_motifworkbench.sh
-```
-
-Lancer ensuite `./install_and_run_linux.sh` pour l'installation, ou
-`./launch_motifworkbench.sh` si l'application est déjà installée.
-
 ## Alternative
 
 1. Installer Python

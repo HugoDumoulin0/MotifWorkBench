@@ -22,6 +22,9 @@ def _run_perl(script_name, *args):
     cmd = ["perl", str(SRC_DIR / script_name), *args]
     return subprocess.run(cmd, capture_output=True, text=True, cwd=PROJECT_ROOT, env=env)
 
+import json
+
+
 def cqp_freq_textes(pattern):
     ligne_de_table = {}
     query = f'pattern = {pattern}'
@@ -47,6 +50,21 @@ def cqp_general():
         texte = part[0][30:].strip()
         t = int(part[1].strip())
         dictionnaire_t[texte]=t
+    return T, dictionnaire_t
+
+def save_text_sizes(json_path="./Patterns_results/text_sizes.json"):
+    """Count tokens per text in the CWB corpus and store them in a JSON file:
+    {"total": T, "texts": {text_id: t}}. Tokens are all [word=".*"], punctuation included."""
+    T, dictionnaire_t = cqp_general()
+    T = int(T)
+    somme = sum(dictionnaire_t.values())
+    if somme != T:
+        # cqp_general reads the CQP output at fixed positions: a mismatch means the parsing is off
+        print(f"WARNING: sum of text sizes ({somme}) differs from corpus size ({T}), check cqp_general() parsing")
+    os.makedirs(os.path.dirname(json_path), exist_ok=True)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump({"total": T, "texts": dictionnaire_t}, f, ensure_ascii=False, indent=2)
+    print(f"Text sizes saved to {json_path} ({len(dictionnaire_t)} texts, {T} tokens)")
     return T, dictionnaire_t
 
 def cqp_index_property(property):

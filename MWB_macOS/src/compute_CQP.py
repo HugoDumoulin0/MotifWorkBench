@@ -342,7 +342,9 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
     DMT4_clos_corpus = f"{patterns_results_dir}/Closed/{args}_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
-    T, dictionnaire_t = enslave_perl.cqp_general()
+    T, dictionnaire_t = enslave_perl.save_text_sizes(
+        os.path.join(patterns_results_dir, "text_sizes.json")
+    )
     
     if total_motifs>0:
         if not os.path.exists(path_out):

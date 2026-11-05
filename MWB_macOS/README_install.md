@@ -7,17 +7,6 @@
 3. Suivre les instructions et l'application s'ouvrira pour vous.
 4. Pour relancer l'application après fermeture, cliquer simplement sur `launch_mwb_macos.command`
 
-## Autorisation de lancement
-
-Si macOS indique que vous ne disposez pas des autorisations nécessaires pour ouvrir
-un fichier `.command`, ouvrir le Terminal dans le dossier `MWB_macOS`, puis exécuter :
-
-```sh
-chmod u+x install_and_run_macos.command launch_mwb_macos.command
-```
-
-Relancer ensuite le fichier voulu par double-clic.
-
 ## Alternative
 
 1. Installer Python
