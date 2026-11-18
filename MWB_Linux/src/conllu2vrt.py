@@ -7,8 +7,35 @@ Created on Fri Apr 18 20:10:06 2025
 Modified by @JcharlesDS
 """
 
-from conllu import parse_incr
+from conllu import Token, parse_sentences
+from conllu.parser import DEFAULT_FIELDS, DEFAULT_FIELD_PARSERS, parse_line
 import os
+
+
+def iter_tokenlists(input_file):
+    fields = DEFAULT_FIELDS
+    parsers = DEFAULT_FIELD_PARSERS.copy()
+    xpos_parser = parsers.get("xpos") or parsers["xpostag"]
+    parsers.update(xpos=xpos_parser, xpostag=xpos_parser)
+    for sentence in parse_sentences(input_file):
+        tokens = []
+        for line in sentence.split("\n"):
+            line = line.lstrip()
+            if line.startswith("# global.columns = "):
+                fields = line.split("=", 1)[1].lower().split() or DEFAULT_FIELDS
+            elif not line or line.startswith("#"):
+                continue
+            elif "\t" not in line:
+                tokens.append(parse_line(line.rstrip(), fields, parsers))
+            else:
+                columns = line.split("\t")
+                token = Token(zip(fields, columns))
+                for index, field in enumerate(token):
+                    if field in parsers:
+                        token[field] = parsers[field](columns, index)
+                tokens.append(token)
+        yield tokens
+
 
 def format_value(value):
     # Si c'est un dict (ex: misc), on le formate comme "key1=val1|key2=val2"
@@ -34,25 +61,14 @@ def transform(path_stanza, path_vrt):
             input_file=f"{path_stanza}{file}"
             with open(input_file, "r", encoding="utf-8") as f_in:
                 sentence_id = 0            
-                for tokenlist in parse_incr(f_in):
+                for tokenlist in iter_tokenlists(f_in):
                     sentence_id += 1
                     f_out.write(f'<s id="{sentence_id}">\n')
                     for token in tokenlist:
                         # On ignore les multi-word tokens (ID de type tuple)
                         if isinstance(token.get("id", None), tuple):
                             continue
-                        values = [
-                        token.get("id", "_"),
-                        token.get("form", "_"),
-                        token.get("lemma", "_"),
-                        token.get("upostag", "_"),
-                        token.get("xpostag", "_"),
-                        token.get("feats", "_"),
-                        token.get("head", "_"),
-                        token.get("deprel", "_"),
-                        token.get("deps", "_"),
-                        token.get("misc", "_")
-                        ]
+                        values = [token.get(field, "_") for field in DEFAULT_FIELDS]
                         formatted = [format_value(v) for v in values]
                         f_out.write("\t".join(formatted) + "\n")
                     f_out.write("</s>\n")
