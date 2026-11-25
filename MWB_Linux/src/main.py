@@ -715,22 +715,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
         with StdoutLogger(_route_external_log):
             cwb.main(dir_textes_vrt=dir_textes_vrt, dir_cwb_corpus=dir_cwb_corpus)
         
-    if user_input_list and earlySelection:
-        _log("2.1 Early Selection ignorée : la liste manuelle de lemmes est activée.", LOG_INFO)
-    elif earlySelection:
-        _check_cancelled()
-        _log("-" * 75, LOG_INFO)
-        _log("2.1 Early Selection du lemme pour la recherche", LOG_INFO)
-        # Passer les chemins à early_selection pour éviter qu'il écrive dans Data/
-        with StdoutLogger(_route_external_log):
-            liste_earlyselection_lemma = early_selection.main(
-                seuil_early_selection, list_minsup_percent[0] if list_minsup_percent else 25, path_metadata, partition_cible, 
-                seuil_banalité, early_pos4lemma, filter_specifs,
-                dir_early_selection=dir_early_selection,
-                dir_lexiques=dir_lexiques,
-                registry_path=registry_path
-            )
-        
+    effective_restriction = []
     if user_input_list:
         path_lexique = f"{dir_lexiques}/dico_str_to_int_all_items.pk"
         lexique = tools.load_pickles(path_lexique)
@@ -739,14 +724,31 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
             os.makedirs(dir_early_selection, exist_ok=True)
             with open(f"{dir_early_selection}/{nom}.txt", "w") as f:
                 f.write(str(liste_earlyselection_lemma))
-        liste_lemma = []
-        lignes = liste_earlyselection_lemma
-        _log(str(lignes), LOG_DEBUG)
-        for l in lignes:
+        _log("Lemmes ciblés (liste manuelle) : " + ", ".join(liste_earlyselection_lemma), LOG_INFO)
+        for lemma in liste_earlyselection_lemma:
             _check_cancelled()
-            lemma_preformat = f'lemma_"{l}"'
-            liste_lemma.append(lexique[lemma_preformat])
-        
+            lemma_preformat = f'lemma_"{lemma}"'
+            if lemma_preformat not in lexique:
+                raise ValueError(f"Lemme de sélection absent du corpus : {lemma}")
+            effective_restriction.append(lexique[lemma_preformat])
+    elif earlySelection:
+        _check_cancelled()
+        _log("-" * 75, LOG_INFO)
+        _log("2.1 Early Selection du lemme pour la recherche", LOG_INFO)
+        # Passer les chemins à early_selection pour éviter qu'il écrive dans Data/
+        with StdoutLogger(_route_external_log):
+            effective_restriction = early_selection.main(
+                seuil_early_selection, list_minsup_percent[0] if list_minsup_percent else 25, path_metadata, partition_cible, 
+                seuil_banalité, early_pos4lemma, filter_specifs,
+                dir_early_selection=dir_early_selection,
+                dir_lexiques=dir_lexiques,
+                registry_path=registry_path
+            )
+
+    if (user_input_list or earlySelection) and not effective_restriction:
+        raise ValueError("La sélection ne contient aucun lemme présent dans le corpus.")
+    or_line = "OR=" + ",".join(map(str, effective_restriction)) + "\n" if effective_restriction else ""
+
     # ==================================
     # 3 - Extraction des motifs
     # ==================================
@@ -775,7 +777,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                     args = f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                     if user_input_list:
                         args = f"user_input_list_{nom}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    if earlySelection:
+                    elif earlySelection:
                         args = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                     args = args.replace("|", "-")
                     
@@ -816,10 +818,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                             set_up.write(f"GAPMIN={gap_min}\n")
                             set_up.write(f"GAPMAX={gap_max}\n")
                             set_up.write(f"NB_ITEMSET_MIN={nb_itemset_min}\n")
-                            if user_input_list:
-                                set_up.write(f"OR={str(liste_lemma)[1:-1]}\n")
-                            if earlySelection:
-                                set_up.write(f"OR={str(liste_earlyselection_lemma)[1:-1]}\n")
+                            set_up.write(or_line)
                         
                         # Fichier Load.ini fermé, maintenant on peut exécuter le binaire
                         try:
@@ -994,7 +993,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
         modif = ""
         if user_input_list:
             modif = f"user_input_list_{nom}_"
-        if earlySelection:
+        elif earlySelection:
             modif = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
         if internal_clustering:
             modif = modif + "internal_clustering_"

@@ -49,7 +49,9 @@ def generate_analysis_description(config: Dict) -> str:
     if config.get("specifs", False):
         parts.append("specifs")
     
-    if config.get("earlySelection", False):
+    if config.get("user_input_list", False):
+        parts.append("earlyList")
+    elif config.get("earlySelection", False):
         seuil = config.get("seuil_early_selection", 200)
         parts.append(f"early{seuil}")
     
@@ -82,7 +84,7 @@ def generate_analysis_description(config: Dict) -> str:
         parts.append(annotator_short)
     
     # 4. Paramètres avancés early selection (priorité basse)
-    if config.get("earlySelection", False):
+    if config.get("earlySelection", False) and not config.get("user_input_list", False):
         if config.get("filter_specifs", False):
             parts.append("earlySpecifs")
         
@@ -97,10 +99,7 @@ def generate_analysis_description(config: Dict) -> str:
         early_pos = config.get("early_pos4lemma", "ADJ|NOUN|VERB")
         if early_pos != "ADJ|NOUN|VERB":
             parts.append("earlyPosCustom")
-        
-        if config.get("user_input_list", False):
-            parts.append("earlyList")
-    
+
     # 5. Seuils comparaison (priorité basse)
     if config.get("specifs", False):
         seuils_lemma = config.get("liste_seuils_lemma", [100, 200])

@@ -1,501 +1,190 @@
-id	genre	num_words	num_sents
-ca01	news	2242	98
-ca02	news	2277	98
-ca03	news	2275	112
-ca04	news	2217	88
-ca05	news	2244	84
-ca06	news	2263	99
-ca07	news	2270	120
-ca08	news	2187	101
-ca09	news	2234	113
-ca10	news	2282	106
-ca11	news	2259	100
-ca12	news	2338	104
-ca13	news	2241	108
-ca14	news	2329	133
-ca15	news	2314	110
-ca16	news	2374	116
-ca17	news	2293	104
-ca18	news	2314	105
-ca19	news	2260	113
-ca20	news	2317	97
-ca21	news	2245	112
-ca22	news	2309	106
-ca23	news	2327	113
-ca24	news	2252	100
-ca25	news	2327	107
-ca26	news	2278	107
-ca27	news	2288	115
-ca28	news	2220	93
-ca29	news	2349	119
-ca30	news	2274	118
-ca31	news	2311	113
-ca32	news	2323	124
-ca33	news	2284	93
-ca34	news	2235	94
-ca35	news	2217	74
-ca36	news	2229	86
-ca37	news	2324	95
-ca38	news	2221	95
-ca39	news	2452	126
-ca40	news	2340	96
-ca41	news	2313	103
-ca42	news	2338	104
-ca43	news	2291	129
-ca44	news	2277	92
-cb01	editorial	2200	103
-cb02	editorial	2234	95
-cb03	editorial	2244	96
-cb04	editorial	2230	117
-cb05	editorial	2241	105
-cb06	editorial	2231	99
-cb07	editorial	2239	92
-cb08	editorial	2395	128
-cb09	editorial	2312	125
-cb10	editorial	2298	136
-cb11	editorial	2293	110
-cb12	editorial	2296	105
-cb13	editorial	2267	143
-cb14	editorial	2264	119
-cb15	editorial	2311	102
-cb16	editorial	2260	120
-cb17	editorial	2288	126
-cb18	editorial	2194	115
-cb19	editorial	2287	138
-cb20	editorial	2299	110
-cb21	editorial	2278	78
-cb22	editorial	2294	94
-cb23	editorial	2357	133
-cb24	editorial	2346	109
-cb25	editorial	2368	79
-cb26	editorial	2316	112
-cb27	editorial	2262	108
-cc01	reviews	2415	116
-cc02	reviews	2320	99
-cc03	reviews	2356	114
-cc04	reviews	2342	102
-cc05	reviews	2398	105
-cc06	reviews	2433	83
-cc07	reviews	2421	120
-cc08	reviews	2351	91
-cc09	reviews	2345	90
-cc10	reviews	2461	110
-cc11	reviews	2480	109
-cc12	reviews	2342	92
-cc13	reviews	2282	94
-cc14	reviews	2574	102
-cc15	reviews	2503	127
-cc16	reviews	2311	96
-cc17	reviews	2370	101
-cd01	religion	2213	84
-cd02	religion	2334	67
-cd03	religion	2332	84
-cd04	religion	2318	96
-cd05	religion	2410	71
-cd06	religion	2317	88
-cd07	religion	2359	122
-cd08	religion	2332	72
-cd09	religion	2314	170
-cd10	religion	2238	96
-cd11	religion	2304	67
-cd12	religion	2307	81
-cd13	religion	2236	104
-cd14	religion	2276	93
-cd15	religion	2315	99
-cd16	religion	2451	171
-cd17	religion	2343	151
-ce01	hobbies	2258	104
-ce02	hobbies	2279	124
-ce03	hobbies	2257	99
-ce04	hobbies	2295	96
-ce05	hobbies	2271	112
-ce06	hobbies	2222	94
-ce07	hobbies	2370	132
-ce08	hobbies	2226	130
-ce09	hobbies	2476	142
-ce10	hobbies	2402	131
-ce11	hobbies	2333	113
-ce12	hobbies	2288	121
-ce13	hobbies	2261	75
-ce14	hobbies	2346	168
-ce15	hobbies	2333	199
-ce16	hobbies	2223	130
-ce17	hobbies	2244	110
-ce18	hobbies	2302	83
-ce19	hobbies	2260	108
-ce20	hobbies	2251	123
-ce21	hobbies	2239	112
-ce22	hobbies	2402	107
-ce23	hobbies	2307	89
-ce24	hobbies	2253	124
-ce25	hobbies	2227	93
-ce26	hobbies	2243	90
-ce27	hobbies	2323	187
-ce28	hobbies	2291	125
-ce29	hobbies	2246	89
-ce30	hobbies	2294	152
-ce31	hobbies	2247	103
-ce32	hobbies	2339	119
-ce33	hobbies	2233	113
-ce34	hobbies	2300	109
-ce35	hobbies	2272	112
-ce36	hobbies	2232	75
-cf01	lore	2369	73
-cf02	lore	2264	124
-cf03	lore	2256	75
-cf04	lore	2258	124
-cf05	lore	2250	89
-cf06	lore	2424	166
-cf07	lore	2205	91
-cf08	lore	2356	113
-cf09	lore	2306	132
-cf10	lore	2332	102
-cf11	lore	2310	117
-cf12	lore	2361	96
-cf13	lore	2316	138
-cf14	lore	2285	70
-cf15	lore	2236	82
-cf16	lore	2331	123
-cf17	lore	2236	74
-cf18	lore	2328	101
-cf19	lore	2321	88
-cf20	lore	2278	90
-cf21	lore	2212	107
-cf22	lore	2431	116
-cf23	lore	2299	101
-cf24	lore	2384	148
-cf25	lore	2313	109
-cf26	lore	2258	122
-cf27	lore	2288	85
-cf28	lore	2267	96
-cf29	lore	2302	98
-cf30	lore	2259	95
-cf31	lore	2220	105
-cf32	lore	2322	112
-cf33	lore	2219	90
-cf34	lore	2300	114
-cf35	lore	2439	99
-cf36	lore	2362	127
-cf37	lore	2222	93
-cf38	lore	2405	60
-cf39	lore	2351	76
-cf40	lore	2250	86
-cf41	lore	2261	99
-cf42	lore	2355	106
-cf43	lore	2288	97
-cf44	lore	2245	96
-cf45	lore	2261	100
-cf46	lore	2267	112
-cf47	lore	2275	107
-cf48	lore	2222	57
-cg01	belles_lettres	2289	100
-cg02	belles_lettres	2311	90
-cg03	belles_lettres	2403	121
-cg04	belles_lettres	2359	147
-cg05	belles_lettres	2394	96
-cg06	belles_lettres	2397	108
-cg07	belles_lettres	2308	86
-cg08	belles_lettres	2322	88
-cg09	belles_lettres	2278	106
-cg10	belles_lettres	2301	71
-cg11	belles_lettres	2237	92
-cg12	belles_lettres	2332	145
-cg13	belles_lettres	2311	104
-cg14	belles_lettres	2320	97
-cg15	belles_lettres	2514	92
-cg16	belles_lettres	2226	73
-cg17	belles_lettres	2471	112
-cg18	belles_lettres	2289	107
-cg19	belles_lettres	2259	117
-cg20	belles_lettres	2286	88
-cg21	belles_lettres	2245	89
-cg22	belles_lettres	2291	95
-cg23	belles_lettres	2316	126
-cg24	belles_lettres	2211	73
-cg25	belles_lettres	2255	105
-cg26	belles_lettres	2195	85
-cg27	belles_lettres	2359	102
-cg28	belles_lettres	2211	64
-cg29	belles_lettres	2240	79
-cg30	belles_lettres	2328	121
-cg31	belles_lettres	2299	71
-cg32	belles_lettres	2314	101
-cg33	belles_lettres	2335	74
-cg34	belles_lettres	2351	123
-cg35	belles_lettres	2285	100
-cg36	belles_lettres	2386	146
-cg37	belles_lettres	2275	113
-cg38	belles_lettres	2317	75
-cg39	belles_lettres	2436	100
-cg40	belles_lettres	2318	119
-cg41	belles_lettres	2276	109
-cg42	belles_lettres	2221	100
-cg43	belles_lettres	2293	79
-cg44	belles_lettres	2238	72
-cg45	belles_lettres	2357	102
-cg46	belles_lettres	2214	85
-cg47	belles_lettres	2433	135
-cg48	belles_lettres	2204	103
-cg49	belles_lettres	2415	84
-cg50	belles_lettres	2312	102
-cg51	belles_lettres	2278	107
-cg52	belles_lettres	2277	86
-cg53	belles_lettres	2307	102
-cg54	belles_lettres	2328	118
-cg55	belles_lettres	2266	111
-cg56	belles_lettres	2282	87
-cg57	belles_lettres	2349	86
-cg58	belles_lettres	2286	75
-cg59	belles_lettres	2312	50
-cg60	belles_lettres	2251	119
-cg61	belles_lettres	2267	82
-cg62	belles_lettres	2285	82
-cg63	belles_lettres	2209	107
-cg64	belles_lettres	2347	71
-cg65	belles_lettres	2235	91
-cg66	belles_lettres	2302	71
-cg67	belles_lettres	2389	83
-cg68	belles_lettres	2348	80
-cg69	belles_lettres	2407	56
-cg70	belles_lettres	2262	89
-cg71	belles_lettres	2295	74
-cg72	belles_lettres	2247	83
-cg73	belles_lettres	2334	100
-cg74	belles_lettres	2408	99
-cg75	belles_lettres	2288	128
-ch01	government	2416	149
-ch02	government	2360	116
-ch03	government	2207	83
-ch04	government	2316	123
-ch05	government	2228	83
-ch06	government	2411	107
-ch07	government	2436	133
-ch08	government	2318	81
-ch09	government	2451	104
-ch10	government	2313	107
-ch11	government	2254	101
-ch12	government	2412	79
-ch13	government	2408	108
-ch14	government	2422	112
-ch15	government	2313	156
-ch16	government	2346	79
-ch17	government	2539	106
-ch18	government	2250	85
-ch19	government	2194	92
-ch20	government	2406	107
-ch21	government	2296	90
-ch22	government	2559	83
-ch23	government	2282	70
-ch24	government	2471	127
-ch25	government	2305	81
-ch26	government	2200	70
-ch27	government	2248	109
-ch28	government	2317	119
-ch29	government	2225	73
-ch30	government	2214	99
-cj01	learned	2189	71
-cj02	learned	2182	111
-cj03	learned	2205	84
-cj04	learned	2334	113
-cj05	learned	2276	95
-cj06	learned	2148	81
-cj07	learned	2370	102
-cj08	learned	2206	113
-cj09	learned	2302	97
-cj10	learned	2262	97
-cj11	learned	2277	102
-cj12	learned	2328	102
-cj13	learned	2294	76
-cj14	learned	2298	108
-cj15	learned	2317	115
-cj16	learned	2258	93
-cj17	learned	2291	86
-cj18	learned	2290	126
-cj19	learned	2333	127
-cj20	learned	2211	108
-cj21	learned	2229	78
-cj22	learned	2185	86
-cj23	learned	2337	110
-cj24	learned	2223	65
-cj25	learned	2292	120
-cj26	learned	2299	100
-cj27	learned	2257	95
-cj28	learned	2243	88
-cj29	learned	2230	96
-cj30	learned	2267	104
-cj31	learned	2335	61
-cj32	learned	2170	99
-cj33	learned	2241	97
-cj34	learned	2208	103
-cj35	learned	2401	104
-cj36	learned	2262	82
-cj37	learned	2186	83
-cj38	learned	2174	95
-cj39	learned	2339	95
-cj40	learned	2171	70
-cj41	learned	2250	84
-cj42	learned	2304	91
-cj43	learned	2250	95
-cj44	learned	2238	78
-cj45	learned	2214	108
-cj46	learned	2266	90
-cj47	learned	2260	115
-cj48	learned	2301	114
-cj49	learned	2189	81
-cj50	learned	2319	70
-cj51	learned	2257	100
-cj52	learned	2255	96
-cj53	learned	2327	71
-cj54	learned	2255	97
-cj55	learned	2222	86
-cj56	learned	2264	100
-cj57	learned	2239	87
-cj58	learned	2267	82
-cj59	learned	2270	72
-cj60	learned	2276	79
-cj61	learned	2331	89
-cj62	learned	2206	85
-cj63	learned	2299	88
-cj64	learned	2291	112
-cj65	learned	2386	82
-cj66	learned	2313	113
-cj67	learned	2210	78
-cj68	learned	2302	57
-cj69	learned	2281	102
-cj70	learned	2187	118
-cj71	learned	2296	126
-cj72	learned	2372	112
-cj73	learned	2486	185
-cj74	learned	2306	108
-cj75	learned	2242	92
-cj76	learned	2341	98
-cj77	learned	2525	122
-cj78	learned	2371	120
-cj79	learned	2246	97
-cj80	learned	2254	116
-ck01	fiction	2440	172
-ck02	fiction	2325	141
-ck03	fiction	2296	137
-ck04	fiction	2310	129
-ck05	fiction	2345	174
-ck06	fiction	2527	205
-ck07	fiction	2443	240
-ck08	fiction	2375	142
-ck09	fiction	2281	93
-ck10	fiction	2396	156
-ck11	fiction	2399	152
-ck12	fiction	2425	139
-ck13	fiction	2364	139
-ck14	fiction	2340	140
-ck15	fiction	2330	127
-ck16	fiction	2319	127
-ck17	fiction	2380	187
-ck18	fiction	2218	151
-ck19	fiction	2345	118
-ck20	fiction	2378	138
-ck21	fiction	2376	207
-ck22	fiction	2404	134
-ck23	fiction	2319	110
-ck24	fiction	2419	220
-ck25	fiction	2230	67
-ck26	fiction	2404	136
-ck27	fiction	2319	96
-ck28	fiction	2517	187
-ck29	fiction	2264	85
-cl01	mystery	2374	150
-cl02	mystery	2370	147
-cl03	mystery	2428	189
-cl04	mystery	2285	168
-cl05	mystery	2371	151
-cl06	mystery	2288	144
-cl07	mystery	2331	144
-cl08	mystery	2489	143
-cl09	mystery	2393	162
-cl10	mystery	2391	180
-cl11	mystery	2341	147
-cl12	mystery	2437	196
-cl13	mystery	2405	177
-cl14	mystery	2485	197
-cl15	mystery	2358	153
-cl16	mystery	2419	183
-cl17	mystery	2337	122
-cl18	mystery	2324	135
-cl19	mystery	2330	146
-cl20	mystery	2455	175
-cl21	mystery	2414	209
-cl22	mystery	2358	140
-cl23	mystery	2340	160
-cl24	mystery	2446	168
-cm01	science_fiction	2486	174
-cm02	science_fiction	2412	152
-cm03	science_fiction	2364	144
-cm04	science_fiction	2461	197
-cm05	science_fiction	2369	120
-cm06	science_fiction	2378	161
-cn01	adventure	2448	173
-cn02	adventure	2383	172
-cn03	adventure	2380	212
-cn04	adventure	2349	178
-cn05	adventure	2434	196
-cn06	adventure	2279	127
-cn07	adventure	2403	201
-cn08	adventure	2289	114
-cn09	adventure	2483	181
-cn10	adventure	2471	199
-cn11	adventure	2308	127
-cn12	adventure	2424	186
-cn13	adventure	2395	122
-cn14	adventure	2381	168
-cn15	adventure	2318	176
-cn16	adventure	2405	129
-cn17	adventure	2529	188
-cn18	adventure	2275	126
-cn19	adventure	2457	146
-cn20	adventure	2356	159
-cn21	adventure	2341	143
-cn22	adventure	2313	142
-cn23	adventure	2349	129
-cn24	adventure	2523	179
-cn25	adventure	2418	195
-cn26	adventure	2341	129
-cn27	adventure	2449	127
-cn28	adventure	2281	121
-cn29	adventure	2560	192
-cp01	romance	2332	131
-cp02	romance	2320	98
-cp03	romance	2422	146
-cp04	romance	2546	133
-cp05	romance	2346	131
-cp06	romance	2538	182
-cp07	romance	2385	144
-cp08	romance	2317	175
-cp09	romance	2187	69
-cp10	romance	2386	123
-cp11	romance	2346	119
-cp12	romance	2463	170
-cp13	romance	2338	112
-cp14	romance	2501	231
-cp15	romance	2524	179
-cp16	romance	2525	207
-cp17	romance	2288	116
-cp18	romance	2469	185
-cp19	romance	2449	174
-cp20	romance	2428	182
-cp21	romance	2520	120
-cp22	romance	2441	176
-cp23	romance	2546	172
-cp24	romance	2524	235
-cp25	romance	2310	99
-cp26	romance	2356	109
-cp27	romance	2459	207
-cp28	romance	2339	156
-cp29	romance	2417	150
-cr01	humor	2331	113
-cr02	humor	2392	113
-cr03	humor	2587	92
-cr04	humor	2256	118
-cr05	humor	2464	141
-cr06	humor	2506	123
-cr07	humor	2456	184
-cr08	humor	2371	70
-cr09	humor	2332	99
+id	genre	word_count	sentence_count	id_fichier	rang_oeuvre	titre	auteur	date	editeur	lieu_publication	langue_ident	langue_libelle	type_texte	sous_genre	theme	nombre_mots_xml	format_source	traduction_langue_source	traduction_titre_source	traducteur	url_publication	publication_numerique	annotation	source_bibliographique	description_projet	hyphenation_eol	hyphenation_description	normalisations	fichier_xml	fichier_txt
+About_1862_le-cas-de-m-guerin	ANT	17715	1336	About_1862_le-cas-de-m-guerin	1	Le cas de M. Guérin	Edmond About	1898	Non renseigné		fr	Français												Non renseigné, 1898	"[""Fichier réalisé par Vincent Bonnécuelle. Stage rémunéré Projet Pack Ambition International Région AURA de mai à juillet 2022."", ""Supervision : Julie Sorba. Université Grenoble Alpes. Laboratoire LIDILEM."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/About_1862_le-cas-de-m-guerin.xml	SF-ANT-TXT/ANT/About_1862_le-cas-de-m-guerin.txt
+Austruy_1904_l-eupantophone	ANT	74030	4586	Austruy_1904_l-eupantophone	1	L'Eupantophone	Henri Austruy	1904	Non renseigné		fr	Français												Non renseigné, 1904	"[""Fichier réalisé par Sarah Derrien. Stage rémunéré de juin-juillet 2022 financé par Programme Pack Ambition International AURA."", ""Supervision : Julie Sorba. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoire LIDILEM."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Austruy_1904_l-eupantophone.xml	SF-ANT-TXT/ANT/Austruy_1904_l-eupantophone.txt
+Bigot_1919_nounlegos-l-homme-qui-lit-dans-les-cerveaux	ANT	40910	1712	Bigot_1919_nounlegos-l-homme-qui-lit-dans-les-cerveaux	1	Nounlegos, l'homme qui lit dans les cerveaux	Raoul Bigot	1919	Éditions Pierre Lafitte		fr	Français												https://ia802901.us.archive.org/18/items/nounlegoslhommeq00bigo/nounlegoslhommeq00bigo.pdf	"[""Fichier réalisé par Lucas Motte-Michellon ; stage d'excellence UGA ; mai-juin 2023."", ""Supervision : Delphine Gleizes. Projet « PhraséoAnticipation». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"				Corpus SF-ANT/ANT/Bigot_1919_nounlegos-l-homme-qui-lit-dans-les-cerveaux.xml	SF-ANT-TXT/ANT/Bigot_1919_nounlegos-l-homme-qui-lit-dans-les-cerveaux.txt
+Boussenard_1888_les-secrets-de-monsieur-synthèse	ANT	175940	10711	Boussenard_1888_les-secrets-de-monsieur-synthèse	1	Les secrets de Monsieur Synthèse	Louis Boussenard	1888	La Bibliothèque électronique du Québec. Édition de référence : Paris, À la librairie illustrée.		fr	Français												https://beq.ebooksgratuits.com/vents/index.htm	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés. Par ailleurs, la numérotation des notes de bas de page a été mise en place de sorte que chacune a un numéro unique : dans la version initiale, chaque note de bas de page était référencée avec le numéro 1. Autre remarque : dans l'épilogue, le chapitre VII suit directement le chapitre V : ce n'est pas un oubli, dans l'édition utilisée la numérotation est fausse.		Corpus SF-ANT/ANT/Boussenard_1888_les-secrets-de-monsieur-synthèse.xml	SF-ANT-TXT/ANT/Boussenard_1888_les-secrets-de-monsieur-synthèse.txt
+Calvet_1883_dans-mille-ans	ANT	89150	4840	Calvet_1883_dans-mille-ans	1	Dans Mille Ans	Émile Calvet	1883	Librairie CH. Delagrave		fr	Français												https://gallica.bnf.fr/ark:/12148/bpt6k56266495.image	"[""Sous la supervision de Delphine Gleizes, Iva Novakova dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Romain Fernandez ; première année de Thèse - Projet IRGA (2024-2025)""]"				Corpus SF-ANT/ANT/Calvet_1883_dans-mille-ans.xml	SF-ANT-TXT/ANT/Calvet_1883_dans-mille-ans.txt
+Daudet_1894_les-morticoles	ANT	117784	7949	Daudet_1894_les-morticoles	1	Les Morticoles	Léon A. Daudet	1894	G. Charpentier et E.Fasquelle, éditeurs		fr	Français												https://archive.org/details/lesmorticoles00daudgoog/page/n9/mode/2up	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Daudet_1894_les-morticoles.xml	SF-ANT-TXT/ANT/Daudet_1894_les-morticoles.txt
+Daudet_1927_le-napus-fleau-de-l-an-2227	ANT	71479	3074	Daudet_1927_le-napus-fleau-de-l-an-2227	1	Le peuple du Pôle	Charles Derennes	1907	PARIS SOCIÉTÉ DU MERCURE DE FRANCE XXVI, RUE DE CONDÉ, XXVI		fr	Français												Bibliothèque nationale de France, département Littérature et art, Z BARRES-18450	"[""Fichier réalisé par Léo Mayère. Stage mai-juillet 2021 financé par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Daudet_1927_le-napus-fleau-de-l-an-2227.xml	SF-ANT-TXT/ANT/Daudet_1927_le-napus-fleau-de-l-an-2227.txt
+Derennes_1907_le-peuple-du-pole	ANT	49947	2230	Derennes_1907_le-peuple-du-pole	1	Le peuple du Pôle	Charles Derennes	1907	PARIS SOCIÉTÉ DU MERCURE DE FRANCE XXVI, RUE DE CONDÉ, XXVI		fr	Français												Bibliothèque nationale de France, département Littérature et art, Z BARRES-18450	"[""Fichier réalisé par Léo Mayère. Stage mai-juillet 2021 financé par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Derennes_1907_le-peuple-du-pole.xml	SF-ANT-TXT/ANT/Derennes_1907_le-peuple-du-pole.txt
+Faure-Graffigny_1889_les-aventures-d-un-savant-russe-le-soleil-et-les-petites-planetes	ANT	121545	6255	Faure-Graffigny_1889_les-aventures-d-un-savant-russe-le-soleil-et-les-petites-planetes	1	Aventures extraordinaires d'un savant russe II. Le Soleil est les petites planètes	Le Faure & Graffigny	1889	Edinger		fr	Français													"[""Sous la supervision de Delphine Gleizes, Iva Novakova dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Romain Fernandez ; première année de Thèse - Projet IRGA (2024-2025)""]"				Corpus SF-ANT/ANT/Faure-Graffigny_1889_les-aventures-d-un-savant-russe-le-soleil-et-les-petites-planetes.xml	SF-ANT-TXT/ANT/Faure-Graffigny_1889_les-aventures-d-un-savant-russe-le-soleil-et-les-petites-planetes.txt
+Faure-Graffigny_1891_les-aventures-d-un-savant-russe-les-planetes-geantes-et-les-cometes	ANT	81297	5427	Faure-Graffigny_1891_les-aventures-d-un-savant-russe-les-planetes-geantes-et-les-cometes	1	Aventures extraordinaires d'un savant russe III. Les Planètes géantes et les comètes	Le Faure & Graffigny	1891	Edinger		fr	Français													"[""Sous la supervision de Delphine Gleizes, Iva Novakova dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Romain Fernandez ; première année de Thèse - Projet IRGA (2024-2025)""]"				Corpus SF-ANT/ANT/Faure-Graffigny_1891_les-aventures-d-un-savant-russe-les-planetes-geantes-et-les-cometes.xml	SF-ANT-TXT/ANT/Faure-Graffigny_1891_les-aventures-d-un-savant-russe-les-planetes-geantes-et-les-cometes.txt
+Galopin_1906_le-docteur-omega-aventures-fantastiques-de-trois-francais-dans-la-planete-mars	ANT	49867	1972	Galopin_1906_le-docteur-omega-aventures-fantastiques-de-trois-francais-dans-la-planete-mars	1	Le Docteur Omega. Aventures fantastiques de trois Français dans la Planète Mars	Arnould GALOPIN	1906	Inconnu		fr	Français												https://espacetemps.tea-ebook.com/ebooks/le-docteur-omega-aventures-fantastiques-de-trois-francais-dans-la-planete-mars-5552003341840_1765_8.html	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Galopin_1906_le-docteur-omega-aventures-fantastiques-de-trois-francais-dans-la-planete-mars.xml	SF-ANT-TXT/ANT/Galopin_1906_le-docteur-omega-aventures-fantastiques-de-trois-francais-dans-la-planete-mars.txt
+Groc_1921_on-a-vole-la-tour-eiffel	ANT	48257	3229	Groc_1921_on-a-vole-la-tour-eiffel	1	On a volé la Tour Eiffel !	Léon Groc	Septembre-octobre 1921	Feuilleton paru dans L'Intransigeant, [s.n.] (Paris)		fr	Français												https://gallica.bnf.fr/ark:/12148/cb32793876w/date1921	"[""Fichier réalisé par Léo Mayère. Stage mai-juillet 2021 financé par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Groc_1921_on-a-vole-la-tour-eiffel.xml	SF-ANT-TXT/ANT/Groc_1921_on-a-vole-la-tour-eiffel.txt
+Gros_1879_un-volan-dans-les-glaces	ANT	67384	2799	Gros_1879_un-volan-dans-les-glaces	1	Un volcan dans les glaces	Jules Gros	1895	PARIS SOCIÉTÉ DU MERCURE DE FRANCE XXVI, RUE DE CONDÉ, XXVI		fr	Français												Bibliothèque nationale de France, département Littérature et art, Z BARRES-18450	"[""Fichier réalisé par Léo Mayère. Stage mai-juillet 2021 financé par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Gros_1879_un-volan-dans-les-glaces.xml	SF-ANT-TXT/ANT/Gros_1879_un-volan-dans-les-glaces.txt
+Hire_1908_la-roue-fulgurante	ANT	72662	4494	Hire_1908_la-roue-fulgurante	1	La Roue Fulgurante	Jean de la Hire	1908	le Livre moderne illustré		fr	Français												https://www.ebooksgratuits.com/details.php?book=2451	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Hire_1908_la-roue-fulgurante.xml	SF-ANT-TXT/ANT/Hire_1908_la-roue-fulgurante.txt
+Ivoi_1898_corsaire-triplex	ANT	130230	8975	Ivoi_1898_corsaire-triplex	1	Corsaire Triplex	Paul d'Ivoi	1898	Paris, Ancienne Librairie Furne, Boivin & cie, éditeurs. Édition de 1931		fr	Français												http://www.bouquineux.com/?telecharger=2129&Ivoi-Corsaire_Triplex_-_Voyages_excentriques_Volume_V	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Ivoi_1898_corsaire-triplex.xml	SF-ANT-TXT/ANT/Ivoi_1898_corsaire-triplex.txt
+Lanos_1920_l-aerobagne-32	ANT	40748	2365	Lanos_1920_l-aerobagne-32	1	L'Aéro-Bagne 32	E.M Laumann et Henri Lanos	1920	lectures pour tous : revue universelle et populaire illustré		fr	Français												https://gallica.bnf.fr/ark:/12148/bpt6k65484968.r=bagne?rk=64378;0 https://gallica.bnf.fr/ark:/12148/bpt6k6548497p.r=bagne?rk=42918;4 https://gallica.bnf.fr/ark:/12148/bpt6k65484983.r=bagne?rk=21459;2#	"[""Fichier réalisé par Lucas Motte-Michellon. Stage d'excellence UGA mai-juin 2023."", ""Supervision : Delphine Gleizes. Projet « PhraséoAnticipation ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"				Corpus SF-ANT/ANT/Lanos_1920_l-aerobagne-32.xml	SF-ANT-TXT/ANT/Lanos_1920_l-aerobagne-32.txt
+Laurie_1888_les-exiles-de-la-terre	ANT	117833	7225	Laurie_1888_les-exiles-de-la-terre	1	Les Exilés de la Terre	André Laurie	1888	J. Hetzel		fr	Français												Lien vers la source	"[""Sous la supervision de Delphine Gleizes, Iva Novakova dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Romain Fernandez ; première année de Thèse - Projet IRGA (2024-2025)""]"				Corpus SF-ANT/ANT/Laurie_1888_les-exiles-de-la-terre.xml	SF-ANT-TXT/ANT/Laurie_1888_les-exiles-de-la-terre.txt
+Laurie_1895_atlantis	ANT	64901	4032	Laurie_1895_atlantis	1	Atlantis	André Lauris	1895	Non renseigné		fr	Français												Non renseigné, 1895	"[""Fichier réalisé par Sarah Derrien. Stage rémunéré de juin-juillet 2022 financé par Programme Pack Ambition International AURA."", ""Supervision : Julie Sorba. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoire LIDILEM."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Laurie_1895_atlantis.xml	SF-ANT-TXT/ANT/Laurie_1895_atlantis.txt
+Le-Rouge_1908_le-prisonnier-de-la-planète-mars	ANT	62912	2936	Le-Rouge_1908_le-prisonnier-de-la-planète-mars	1	LE PRISONNIER DE LA PLANÈTE MARS	Gustave Le Rouge	1908	inconnu		fr	Français												https://www.ebooksgratuits.com/details.php?book=862	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Le-Rouge_1908_le-prisonnier-de-la-planète-mars.xml	SF-ANT-TXT/ANT/Le-Rouge_1908_le-prisonnier-de-la-planète-mars.txt
+Le-Rouge_1912_le-mysterieux-docteur-cornelius	ANT	186809	10298	Le-Rouge_1912_le-mysterieux-docteur-cornelius	1	Le mystérieux docteur Cornélius (Épisodes 1-9)	Gustave Le Rouge	1912	Maison du Livre Moderne		fr	Français												Lien vers la source	"[""Sous la supervision de Delphine Gleizes, Iva Novakova dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Romain Fernandez ; première année de Thèse - Projet IRGA (2024-2025)""]"				Corpus SF-ANT/ANT/Le-Rouge_1912_le-mysterieux-docteur-cornelius.xml	SF-ANT-TXT/ANT/Le-Rouge_1912_le-mysterieux-docteur-cornelius.txt
+Leroux_1923_la-machine-a-assassiner	ANT	66544	4340	Leroux_1923_la-machine-a-assassiner	1	La Machine à assassiner	Gustave Leroux	1923	Le Matin		fr	Français													"[""Sous la supervision de Delphine Gleizes, Iva Novakova et Romain Fernandez dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Juliette Dubost--Mattutzu ; dans le cadre d'un stage en 2024.""]"				Corpus SF-ANT/ANT/Leroux_1923_la-machine-a-assassiner.xml	SF-ANT-TXT/ANT/Leroux_1923_la-machine-a-assassiner.txt
+Leroux_1923_la_poupee_sanglante	ANT	66571	3719	Leroux_1923_la_poupee_sanglante	1	La Poupée sanglante	Gaston Leroux	1923	Le Matin		fr	Français													"[""Sous la supervision de Delphine Gleizes, Iva Novakova et Romain Fernandez dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Juliette Dubost--Mattutzu ; dans le cadre d'un stage en 2024.""]"				Corpus SF-ANT/ANT/Leroux_1923_la_poupee_sanglante.xml	SF-ANT-TXT/ANT/Leroux_1923_la_poupee_sanglante.txt
+Luguet_1909_une-descente-au-monde-sous-terrien	ANT	73269	3636	Luguet_1909_une-descente-au-monde-sous-terrien	1	Une descente au monde sous-terrien	Pierre Luguet	1909	Librairie nationale d’éducation et de récréation		fr	Français												https://fr.wikisource.org/wiki/Une_descente_au_monde_sous-terrien/Texte_entier#cite_note-2	"[""Fichier réalisé par Lucas Motte-Michellon ; stage d'excellence UGA ; mai-juin 2023."", ""Supervision : Delphine Gleizes. Projet « PhraséoAnticipation». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"				Corpus SF-ANT/ANT/Luguet_1909_une-descente-au-monde-sous-terrien.xml	SF-ANT-TXT/ANT/Luguet_1909_une-descente-au-monde-sous-terrien.txt
+Mael_1893_une-francaise-au-pole-nord	ANT	69429	3895	Mael_1893_une-francaise-au-pole-nord	1	Une française au pôle Nord	Pierre Maël	1893	Hachette		fr	Français												Lien vers la source	"[""Sous la supervision de Delphine Gleizes, Iva Novakova dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Romain Fernandez ; première année de Thèse - Projet IRGA (2024-2025)""]"				Corpus SF-ANT/ANT/Mael_1893_une-francaise-au-pole-nord.xml	SF-ANT-TXT/ANT/Mael_1893_une-francaise-au-pole-nord.txt
+Messac_1937_la-cite-des-asphyxies	ANT	89035	5286	Messac_1937_la-cite-des-asphyxies	1	La cité des asphyxiés	Régis Messac	1937	Edition spéciale		fr	Français												Document EPUB	"[""Fichier réalisé par Ivan Romaniuk. Vacations mai 2023 financées par l'UGA."", ""Supervision : Delphine Gleizes. Projet IRGA « PhraséoAnticipation ». Université Grenoble Alpes. Laboratoires Litt&Arts et LIDILEM.""]"				Corpus SF-ANT/ANT/Messac_1937_la-cite-des-asphyxies.xml	SF-ANT-TXT/ANT/Messac_1937_la-cite-des-asphyxies.txt
+Moselli_1919_la-prison-de-glace	ANT	76122	5751	Moselli_1919_la-prison-de-glace	1	La Prison de glace	José Moselli	1919	Sciences et Voyages		fr	Français												Lien vers la source	"[""Sous la supervision de Delphine Gleizes, Iva Novakova dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Romain Fernandez ; première année de Thèse - Projet IRGA (2024-2025)""]"				Corpus SF-ANT/ANT/Moselli_1919_la-prison-de-glace.xml	SF-ANT-TXT/ANT/Moselli_1919_la-prison-de-glace.txt
+Nau_1903_force-ennemie	ANT	83832	5296	Nau_1903_force-ennemie	1	Force ennemie	John-Antoine Nau	1903	La Plume		fr	Français												https://fr.wikisource.org/wiki/Force_ennemie/Premi%C3%A8re_partie	"[""Fichier réalisé par Lucas Motte-Michellon ; stage d'excellence UGA ; mai-juin 2023."", ""Supervision : Delphine Gleizes. Projet « PhraséoAnticipation». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"				Corpus SF-ANT/ANT/Nau_1903_force-ennemie.xml	SF-ANT-TXT/ANT/Nau_1903_force-ennemie.txt
+Pujol_1931_la-planete-invisible	ANT	41418	3624	Pujol_1931_la-planete-invisible	1	La planète invisible	René Pujol	1930-1931	Société parisienne d'édition		fr	Français												https://ebooks-bnr.com/ebooks/epub/pujol_la_planete_invisible.epub	"[""Sous la supervision de Delphine Gleizes, Iva Novakova et Romain Fernandez dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Juliette Dubost--Mattutzu ; dans le cadre d'un stage en 2024.""]"				Corpus SF-ANT/ANT/Pujol_1931_la-planete-invisible.xml	SF-ANT-TXT/ANT/Pujol_1931_la-planete-invisible.txt
+Quirielle_1920_les-voleurs-de-cerveaux	ANT	41361	2347	Quirielle_1920_les-voleurs-de-cerveaux	1	Les Voleurs de cerveaux	Jean de Quirielle	Avril, Mai et Juin 1920	Lectures pour tous : revue universelle et populaire illustrée ; Edi-Monde	Paris,	fr	Français												Disponible sur gallica (gallica.bnf.fr)	"[""Fichier réalisé par Marie-Lou Douillet. Stage mai-juin 2021 financé par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet de recherche commun autour de la littérature d'anticipation (XIXe-débutXXe siècle). Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.	"[""Les espaces entre le mot et la double ponctuation qui suivent ont été régularisés à un espace insécable."", ""Le résumé en début de l'épisode 1 est rassemblé ici : VOICI UN ÉTRANGE ET MERVEILLEUX ROMAN OU LA PUISSANCE DRAMATIQUE ATTEINT SON PLUS HAUT DEGRÉ. L'AUTEUR S'Y EST INSPIRÉ DES CURIEUSES DÉCOUVERTES DES PROFESSEURS CARREL ET LEDUC. IL A SU TRÈS HABILEMENT METTRE EN ŒUVRE LES DONNÉES SCIENTIFIQUES ACQUISES A LA SUITE DE LEURS TRAVAUX SUR LA CONSERVATION A L'ÉTAT VIVANT DES ORGANES DÉTACHÉS DU CORPS HUMAIN ET L'ORIGINE DE LA VIE. CHACUN LIRA AVEC UN PASSIONNANT INTÉRÊT CETTE ŒUVRE OU UNE ÉMOUVANTE INTRIGUE SENTIMENTALE SE MÊLE A L'ÉNIGME DES SITUATIONS."", ""Le résumé en fin de l'épisode 1 est rassemblé ici : A SUIVRE... JEAN DE QUIRIELLE. ET MAINTENANT… Quelle surprise nous réserve le mystère angoissant des VOLEURS de CERVEAUX ? Qu'apprendrons-nous, s'il nous est permis d'y pénétrer, dans le laboratoire où semble régner l'influence affolante des inconnus venus de l'Inde ? Le N° de Mai soulèvera-t-il un coin du voile ?"", ""Le résumé en début de l'épisode 2 est rassemblé ici : SUZANNE Motand, cousine et fiancée de l'aviateur Maurice de Belval, vit en Auverne, au château de Montchal, auprès de son père, le baron Morand, qui, depuis un certain temps déjà, s'adonne à des travaux de « biologie synthétique » en compagnie de trois Hindous, Harry Djahor ; Sindhya et Timour. Un laboratoire est le théâtre de leurs expériences secrètes. Tout le pays est en émoi à la suite de la découverte de trois cadavres de Bohémiens affreusement mutilés : ils ont le cerveau enlevé. Sur ces entrefaites, Suzanne surprend une discussion entre Sindhya et Mitidika, une Bohémienne qu'elle a déjà rencontrée au cours d'une promenade. Finalement, Mitidika se retire, fortement émue, par la vue d'un petit triangle de métal que Sindhya tient à la main. Péniblement impressionnée par l'atmosphère de mystère qui l'entoure, ainsi que par l'attitude louche du chauffeur Burdin, introduit au château par Djahor, Suzanne écrit à son fiancé, alors en Angleterre, en le suppliant de venir. Aussi, Belval est-il violemment surpris en recevant, quelques jours plus tard, une lettre de rupture de sa cousine. Il part aussitôt en avion avec son ami, l'explorateur Talbot-Dancel. En atterrissant à Montchal, l'aviateur se trouve en présence du baron Morand et de Suzanne ; les paroles qu'ils prononcent laissent supposer que leur volonté est dominée par une puissance mystérieuse."", ""Le résumé en fin de l'épisode 2 est rassemblé ici : A SUIVRE... JEAN DE QUIRIELLE"", ""Le résumé en début de l'épisode 3 est rassemblé ici : SUZANNE Morand, cousine et fiancée de l'aviateur Maurice de Belval, vit en Auvergne, au château de Montchal, auprès de son père, le baron Morand, qui s'adonne à, des travaux de « biologie synthétique » en compagnie de trois Hindous, Harry Djahor, Sindhya et Timour. Un laboratoire est le théâtre de leurs expériences secrètes. Tout le pays est en émoi à la suite de la découverte de trois cadavres de Bohémiens affreusement mutilés et qui ont le cerveau enlevé. Péniblement impressionnée par l'atmosphère de mystère qui l'entoure, ainsi que par l'attitude louche du chauffeur Burdin, introduit au château par Djahor, Suzanne écrit à son fiancé, alors en Angleterre, en le suppliant de venir. Aussi Belval est-il surpris en recevant, quelques jours plus tard, une lettre de rupture de sa cousine. Il part aussitôt en avion avec son ami, Talbot-Dancel. En atterrissant à Montchal, l'aviateur se trouve en présence du baron Morand et de Suzanne ; les paroles qu'ils prononcent laissent supposer que leur volonté est dominée par une puissance extérieure. Les événements énigmatiques se succèdent. Tout d'abord, on découvre aux environs de Montchal des plantes d'une espèce insoupçonnée. Enfin, une nuit que Belval et Talbot-Dancel, acharnés à connaître la vérité, cherchent à s'introduire dans le parc du château, ils surprennent une étrange scène : dans une clairière où sont rassemblés des Bohémiens, une vieille sorcière célèbre dans une improvisation barbare un personnage tout-puissant qu'elle appelle « le Maître ». Puis Sindhya et Burdin surviennent et une conversation s'engage où il est question d'une sorte de dieu inconnu : l'Innommable, qui réclame du sang humain. L'assistance semble disposée à livrer pour le sacrifice une jeune Bohémienne, Mitidika, et déjà celle-ci est saisie par Burdin, lorsque Belval et Talbot-Dancel surgissent, browning au poing, et délivrent la jeune fille. Mitidika fait les plus curieuses révélations. Grâce à une force secrète, le Maître, qui n'est autre que Djahor, exerce un ascendant inexplicable sur les hôtes de Montchal ainsi que sur les Bohémiens, et Quito, fiancé de Mitidika, ainsi subjugué, alimente de son sang l'Innommable. Les deux amis ont pu, en outre, s'emparer du carnet de notes de Burdin. La lecture en est des plus suggestives. Il y est dit, tout d'abord, que, grâce à une méthode nouvelle, Djahor a réussi à créer des êtres vivants : végétaux et sortes de reptiles."", ""Les illustrations de l'édition originale n'ont pas été retransmises dans ce document.""]"	Corpus SF-ANT/ANT/Quirielle_1920_les-voleurs-de-cerveaux.xml	SF-ANT-TXT/ANT/Quirielle_1920_les-voleurs-de-cerveaux.txt
+Renard_1908_le-docteur-lerne-sous-dieu	ANT	66957	4433	Renard_1908_le-docteur-lerne-sous-dieu	1	Le Docteur Lerne, sous-dieu	Maurice Renard	1908	Société du Mercure de France		fr	Français												https://fr.wikisource.org/wiki/Le_Docteur_Lerne,_sous-dieu/Texte_entier#cite_note-p303-3	"[""Fichier réalisé par Lucas Motte-Michellon ; stage d'excellence UGA ; mai-juin 2023."", ""Supervision : Delphine Gleizes. Projet « PhraséoAnticipation». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"				Corpus SF-ANT/ANT/Renard_1908_le-docteur-lerne-sous-dieu.xml	SF-ANT-TXT/ANT/Renard_1908_le-docteur-lerne-sous-dieu.txt
+Renard_1921_l-homme-truque	ANT	26625	2009	Renard_1921_l-homme-truque	1	L'HOMME TRUQUÉ	Maurice Renard	mars-21	Je sais tout		fr	Français												je sais tout	"[""Fichier réalisé par Ivan Romaniuk, vacations février 2023"", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Renard_1921_l-homme-truque.xml	SF-ANT-TXT/ANT/Renard_1921_l-homme-truque.txt
+Richepin_1911_l-aile-roman-des-temps-nouveaux	ANT	87808	3839	Richepin_1911_l-aile-roman-des-temps-nouveaux	1	L'aile : roman des temps nouveaux	Jean Richepin	1911	Pierre Laffitte et Cie (Paris)		fr	Français												Bibliothèque nationale de France, département Littérature et art, 8-Y2-60575, lien : https://gallica.bnf.fr/ark:/12148/bpt6k54529803	"[""Fichier réalisé par Ivan Romaniuk."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"				Corpus SF-ANT/ANT/Richepin_1911_l-aile-roman-des-temps-nouveaux.xml	SF-ANT-TXT/ANT/Richepin_1911_l-aile-roman-des-temps-nouveaux.txt
+Robida_1883_le-vingtième-siècle	ANT	106587	5835	Robida_1883_le-vingtième-siècle	1	Le vingtième siècle	Albert Robida	1883	(Paris)		fr	Français												https://fr.wikisource.org/wiki/Le_Vingti%C3%A8me_Si%C3%A8cle	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Robida_1883_le-vingtième-siècle.xml	SF-ANT-TXT/ANT/Robida_1883_le-vingtième-siècle.txt
+Rosny_1913_la-force-mysterieuse	ANT	36890	2940	Rosny_1913_la-force-mysterieuse	1	La Force mystérieuse	J.-H. Rosny aîné	1913	Non renseigné		fr	Français												Non renseigné, 1913	"[""Fichier réalisé par Vincent Bonnécuelle. Stage rémunéré Projet Pack Ambition International Région AURA de mai à juillet 2022."", ""Supervision : Julie Sorba. Université Grenoble Alpes. Laboratoire LIDILEM."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Rosny_1913_la-force-mysterieuse.xml	SF-ANT-TXT/ANT/Rosny_1913_la-force-mysterieuse.txt
+SF.fr.AYERDHAL__001	SF	94791	6977	SF.fr.AYERDHAL	1	L'histrion	Ayerdhal Yal	1993			fr		roman	SF		124600	epub	fr											Corpus SF-ANT/SF/SF.fr.AYERDHAL.xml	SF-ANT-TXT/SF/SF.fr.AYERDHAL__001.txt
+SF.fr.AYERDHAL__002	SF	108323	7327	SF.fr.AYERDHAL	2	Sexomorphoses	Ayerdhal Yal	1994			fr		roman	SF		140069	epub	fr											Corpus SF-ANT/SF/SF.fr.AYERDHAL.xml	SF-ANT-TXT/SF/SF.fr.AYERDHAL__002.txt
+SF.fr.AYERDHAL__003	SF	39416	3226	SF.fr.AYERDHAL	3	La bohême et l'ivraie	Ayerdhal Yal	1990			fr		roman	SF		52289	epub	fr											Corpus SF-ANT/SF/SF.fr.AYERDHAL.xml	SF-ANT-TXT/SF/SF.fr.AYERDHAL__003.txt
+SF.fr.AYERDHAL__004	SF	49280	3500	SF.fr.AYERDHAL	4	Polytan	Ayerdhal Yal	1994			fr		roman	SF		63432	epub	fr											Corpus SF-ANT/SF/SF.fr.AYERDHAL.xml	SF-ANT-TXT/SF/SF.fr.AYERDHAL__004.txt
+SF.fr.AYERDHAL__005	SF	48602	4026	SF.fr.AYERDHAL	5	Demain une oasis	Ayerdhal Yal	1992			fr		roman	SF		64648	epub	fr											Corpus SF-ANT/SF/SF.fr.AYERDHAL.xml	SF-ANT-TXT/SF/SF.fr.AYERDHAL__005.txt
+SF.fr.AYERDHAL__006	SF	47143	4047	SF.fr.AYERDHAL	6	Cybione	Ayerdhal Yal	1992			fr		roman	SF		62230	epub	fr											Corpus SF-ANT/SF/SF.fr.AYERDHAL.xml	SF-ANT-TXT/SF/SF.fr.AYERDHAL__006.txt
+SF.fr.BARBERI	SF	76864	7005	SF.fr.BARBERI	1	Le crépuscule des chimères	Barbéri Jacques	2002			fr		roman	SF		99665	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBERI.xml	SF-ANT-TXT/SF/SF.fr.BARBERI.txt
+SF.fr.BARBET__001	SF	43748	3040	SF.fr.BARBET	1	Les grognards d'Eridans	Barbet Pierre	1970			fr		roman	SF		54776	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__001.txt
+SF.fr.BARBET__002	SF	43895	3353	SF.fr.BARBET	2	Étoiles en perdition	Barbet Pierre	1970			fr		roman	SF		56227	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__002.txt
+SF.fr.BARBET__003	SF	39503	3699	SF.fr.BARBET	3	Le secret des Quasars	Barbet Pierre	1967			fr		roman	SF		51072	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__003.txt
+SF.fr.BARBET__004	SF	40422	3138	SF.fr.BARBET	4	La planète des Cristophons	Barbet Pierre	1968			fr		roman	SF		51452	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__004.txt
+SF.fr.BARBET__005	SF	37009	3604	SF.fr.BARBET	5	Hallali cosmique	Barbet Pierre	1967			fr		roman	SF		48397	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__005.txt
+SF.fr.BARBET__006	SF	54013	4651	SF.fr.BARBET	6	Babel 3805	Barbet Pierre	1962			fr		roman	SF		69599	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__006.txt
+SF.fr.BARBET__007	SF	38878	2934	SF.fr.BARBET	7	Évolution magnétique	Barbet Pierre	1968			fr		roman	SF		49127	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__007.txt
+SF.fr.BARBET__008	SF	47605	3879	SF.fr.BARBET	8	Les chimères de Séginus	Barbet Pierre	1969			fr		roman	SF		61366	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__008.txt
+SF.fr.BARBET__009	SF	37227	3898	SF.fr.BARBET	9	Les cavernicoles de Wolff	Barbet Pierre	1966			fr		roman	SF		48447	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__009.txt
+SF.fr.BARBET__010	SF	41730	3510	SF.fr.BARBET	10	L'éxilé du temps	Barbet Pierre	1969			fr		roman	SF		54293	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__010.txt
+SF.fr.BARBET__011	SF	31952	3328	SF.fr.BARBET	11	Les limiers de l'infini	Barbet Pierre	1966			fr		roman	SF		41854	epub	fr											Corpus SF-ANT/SF/SF.fr.BARBET.xml	SF-ANT-TXT/SF/SF.fr.BARBET__011.txt
+SF.fr.BARJAVEL__001	SF	43492	4039	SF.fr.BARJAVEL	1	Colomb de la Lune	Barjavel René	1962			fr		roman	SF		53597	litmod	fr											Corpus SF-ANT/SF/SF.fr.BARJAVEL.xml	SF-ANT-TXT/SF/SF.fr.BARJAVEL__001.txt
+SF.fr.BARJAVEL__002	SF	84434	7526	SF.fr.BARJAVEL	2	La nuit des temps	Barjavel René	1968			fr		roman	SF		110143	litmod	fr											Corpus SF-ANT/SF/SF.fr.BARJAVEL.xml	SF-ANT-TXT/SF/SF.fr.BARJAVEL__002.txt
+SF.fr.BORDAGE__001	SF	120794	6981	SF.fr.BORDAGE	1	Les griots célèstes 1 Qui-vient-du-bruit	Bordage Pierre	2002			fr		roman	SF		148933	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__001.txt
+SF.fr.BORDAGE__002	SF	31469	1879	SF.fr.BORDAGE	2	Les derniers hommes 5 Les douze tribus	Bordage Pierre	2000			fr		roman	SF		39274	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__002.txt
+SF.fr.BORDAGE__003	SF	151174	8298	SF.fr.BORDAGE	3	Abzalon	Bordage Pierre	1998			fr		roman	SF		188482	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__003.txt
+SF.fr.BORDAGE__004	SF	115766	7488	SF.fr.BORDAGE	4	Porteurs d'âmes	Bordage Pierre	2007			fr		roman	SF		145630	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__004.txt
+SF.fr.BORDAGE__005	SF	33190	1925	SF.fr.BORDAGE	5	Les derniers hommes 3 Les légions de l'apocalypse	Bordage Pierre	2000			fr		roman	SF		41337	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__005.txt
+SF.fr.BORDAGE__006	SF	35420	2166	SF.fr.BORDAGE	6	Les derniers hommes 6 Le dernier jugement	Bordage Pierre	2000			fr		roman	SF		44625	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__006.txt
+SF.fr.BORDAGE__007	SF	138564	7917	SF.fr.BORDAGE	7	Les fables de l'Humpur	Bordage Pierre	1999			fr		roman	SF		171122	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__007.txt
+SF.fr.BORDAGE__008	SF	112929	7316	SF.fr.BORDAGE	8	Les griots célèstes 2 Le dragon aux plumes de sang	Bordage Pierre	2003			fr		roman	SF		139411	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__008.txt
+SF.fr.BORDAGE__009	SF	33166	1845	SF.fr.BORDAGE	9	Les derniers hommes 2 Le cinquième ange	Bordage Pierre	2000			fr		roman	SF		40933	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__009.txt
+SF.fr.BORDAGE__010	SF	31771	2011	SF.fr.BORDAGE	10	Les derniers hommes 4 Les chemins du secret	Bordage Pierre	2000			fr		roman	SF		39826	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__010.txt
+SF.fr.BORDAGE__011	SF	32749	1699	SF.fr.BORDAGE	11	Les derniers hommes 1 Le peuple de l'eau	Bordage Pierre	1999			fr		roman	SF		40284	epub	fr											Corpus SF-ANT/SF/SF.fr.BORDAGE.xml	SF-ANT-TXT/SF/SF.fr.BORDAGE__011.txt
+SF.fr.BRUSS	SF	44625	4170	SF.fr.BRUSS	1	Brang	Bruss B. R.	1973			fr		roman	SF		54397	litmod	fr											Corpus SF-ANT/SF/SF.fr.BRUSS.xml	SF-ANT-TXT/SF/SF.fr.BRUSS.txt
+SF.fr.BRUSSOLO__001	SF	50630	3790	SF.fr.BRUSSOLO	1	Captain Suicide	Brussolo Serge	1992			fr		roman	SF		63838	epub	fr											Corpus SF-ANT/SF/SF.fr.BRUSSOLO.xml	SF-ANT-TXT/SF/SF.fr.BRUSSOLO__001.txt
+SF.fr.BRUSSOLO__002	SF	48713	3776	SF.fr.BRUSSOLO	2	Ce qui mordait le ciel	Brussolo Serge	1984			fr		roman	SF		61377	epub	fr											Corpus SF-ANT/SF/SF.fr.BRUSSOLO.xml	SF-ANT-TXT/SF/SF.fr.BRUSSOLO__002.txt
+SF.fr.BRUSSOLO__003	SF	52435	3775	SF.fr.BRUSSOLO	3	Le syndrome du scaphandrier	Brussolo Serge	1992			fr		roman	SF		65497	epub	fr											Corpus SF-ANT/SF/SF.fr.BRUSSOLO.xml	SF-ANT-TXT/SF/SF.fr.BRUSSOLO__003.txt
+SF.fr.CANAL__001	SF	38926	3554	SF.fr.CANAL	1	Animamea 2 La légende étoilée	Canal Richard	1987			fr		roman	SF		49520	epub	fr											Corpus SF-ANT/SF/SF.fr.CANAL.xml	SF-ANT-TXT/SF/SF.fr.CANAL__001.txt
+SF.fr.CANAL__002	SF	41373	3534	SF.fr.CANAL	2	Animamea 3 Les voix grises du monde gris	Canal Richard	1987			fr		roman	SF		52250	epub	fr											Corpus SF-ANT/SF/SF.fr.CANAL.xml	SF-ANT-TXT/SF/SF.fr.CANAL__002.txt
+SF.fr.CANAL__003	SF	39993	3674	SF.fr.CANAL	3	Animamea 1 Les ambulances du rêve	Canal Richard	1986			fr		roman	SF		50454	epub	fr											Corpus SF-ANT/SF/SF.fr.CANAL.xml	SF-ANT-TXT/SF/SF.fr.CANAL__003.txt
+SF.fr.CARSAC__001	SF	66452	6655	SF.fr.CARSAC	1	Pour patrie l'espace	Carsac Francis	1962			fr		roman	SF		84600	epub	fr											Corpus SF-ANT/SF/SF.fr.CARSAC.xml	SF-ANT-TXT/SF/SF.fr.CARSAC__001.txt
+SF.fr.CARSAC__002	SF	67412	6842	SF.fr.CARSAC	2	La vermine du lion	Carsac Francis	1966			fr		roman	SF		85388	epub	fr											Corpus SF-ANT/SF/SF.fr.CARSAC.xml	SF-ANT-TXT/SF/SF.fr.CARSAC__002.txt
+SF.fr.CARSAC__003	SF	66188	4976	SF.fr.CARSAC	3	Terre en fuite	Carsac Francis	1960			fr		roman	SF		81417	epub	fr											Corpus SF-ANT/SF/SF.fr.CARSAC.xml	SF-ANT-TXT/SF/SF.fr.CARSAC__003.txt
+SF.fr.CURVAL__001	SF	54431	3515	SF.fr.CURVAL	1	Un soupçon de néant	Curval Philippe	1977			fr		roman	SF		69716	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__001.txt
+SF.fr.CURVAL__002	SF	47709	2710	SF.fr.CURVAL	2	L'odeur de la bête	Curval Philippe	1981			fr		roman	SF		59250	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__002.txt
+SF.fr.CURVAL__003	SF	108767	6740	SF.fr.CURVAL	3	En souvenir du futur	Curval Philippe	1983			fr		roman	SF		136880	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__003.txt
+SF.fr.CURVAL__004	SF	68255	3428	SF.fr.CURVAL	4	Le ressac de l'espace	Curval Philippe	1962			fr		roman	SF		84041	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__004.txt
+SF.fr.CURVAL__005	SF	130527	9729	SF.fr.CURVAL	5	Lothar blues	Curval Philippe	2008			fr		roman	SF		166251	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__005.txt
+SF.fr.CURVAL__006	SF	46257	2998	SF.fr.CURVAL	6	Rut aux étoiles	Curval Philippe	1979			fr		roman	SF		58552	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__006.txt
+SF.fr.CURVAL__007	SF	73532	4951	SF.fr.CURVAL	7	Voyage à l'envers	Curval Philippe	2000			fr		roman	SF		91901	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__007.txt
+SF.fr.CURVAL__008	SF	92836	5270	SF.fr.CURVAL	8	Cette chère humanité	Curval Philippe	1976			fr		roman	SF		115732	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__008.txt
+SF.fr.CURVAL__009	SF	46077	2339	SF.fr.CURVAL	9	La forteresse de coton	Curval Philippe	1967			fr		roman	SF		56272	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__009.txt
+SF.fr.CURVAL__010	SF	53536	4416	SF.fr.CURVAL	10	Comment jouer à l'homme invisible en trois leçons	Curval Philippe	1986			fr		roman	SF		68527	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__010.txt
+SF.fr.CURVAL__011	SF	46004	3119	SF.fr.CURVAL	11	Les sables de Falun	Curval Philippe	1975			fr		roman	SF		56846	epub	fr											Corpus SF-ANT/SF/SF.fr.CURVAL.xml	SF-ANT-TXT/SF/SF.fr.CURVAL__011.txt
+SF.fr.DANTEC__001	SF	169316	10957	SF.fr.DANTEC	1	Babylon Babies	Dantec Maurice G.	1999			fr		roman	SF		212168	epub	fr											Corpus SF-ANT/SF/SF.fr.DANTEC.xml	SF-ANT-TXT/SF/SF.fr.DANTEC__001.txt
+SF.fr.DANTEC__002	SF	137547	7878	SF.fr.DANTEC	2	Artefact : machines à écrire 1.0	Dantec Maurice G.	2007			fr		roman	SF		171817	epub	fr											Corpus SF-ANT/SF/SF.fr.DANTEC.xml	SF-ANT-TXT/SF/SF.fr.DANTEC__002.txt
+SF.fr.DANTEC__003	SF	42169	2404	SF.fr.DANTEC	3	Comme Le Fantôme D'Un Jazzman Dans La Station Mir en déroute	Dantec Maurice G.	2009			fr		roman	SF		53599	epub	fr											Corpus SF-ANT/SF/SF.fr.DANTEC.xml	SF-ANT-TXT/SF/SF.fr.DANTEC__003.txt
+SF.fr.DAY	SF	58115	3947	SF.fr.DAY	1	La cité des crânes	Day Thomas	2005			fr		roman	SF		74869	epub	fr											Corpus SF-ANT/SF/SF.fr.DAY.xml	SF-ANT-TXT/SF/SF.fr.DAY.txt
+SF.fr.DEMUTH__001	SF	96814	9491	SF.fr.DEMUTH	1	Les années métalliques	Demuth Michel	1977			fr		roman	SF		126964	epub	fr											Corpus SF-ANT/SF/SF.fr.DEMUTH.xml	SF-ANT-TXT/SF/SF.fr.DEMUTH__001.txt
+SF.fr.DEMUTH__002	SF	97095	9235	SF.fr.DEMUTH	2	Les galaxiales 1	Demuth Michel	1976			fr		roman	SF		125949	epub	fr											Corpus SF-ANT/SF/SF.fr.DEMUTH.xml	SF-ANT-TXT/SF/SF.fr.DEMUTH__002.txt
+SF.fr.DEMUTH__003	SF	54160	5340	SF.fr.DEMUTH	3	La clé des étoiles	Demuth Michel	1977			fr		roman	SF		70285	epub	fr											Corpus SF-ANT/SF/SF.fr.DEMUTH.xml	SF-ANT-TXT/SF/SF.fr.DEMUTH__003.txt
+SF.fr.DIROLLO__001	SF	44974	4308	SF.fr.DIROLLO	1	Fresques de la tragédie humaine 3 La lumière des morts	Di Rollo Thierry	2002			fr		roman	SF		58769	epub	fr											Corpus SF-ANT/SF/SF.fr.DIROLLO.xml	SF-ANT-TXT/SF/SF.fr.DIROLLO__001.txt
+SF.fr.DIROLLO__002	SF	51524	4837	SF.fr.DIROLLO	2	Fresques de la tragédie humaine 5 Meddik	Di Rollo Thierry	2005			fr		roman	SF		67870	epub	fr											Corpus SF-ANT/SF/SF.fr.DIROLLO.xml	SF-ANT-TXT/SF/SF.fr.DIROLLO__002.txt
+SF.fr.DIROLLO__003	SF	51806	5116	SF.fr.DIROLLO	3	Fresques de la tragédie humaine 4 La profondeur des tombes	Di Rollo Thierry	2003			fr		roman	SF		68141	epub	fr											Corpus SF-ANT/SF/SF.fr.DIROLLO.xml	SF-ANT-TXT/SF/SF.fr.DIROLLO__003.txt
+SF.fr.DIROLLO__004	SF	62267	5941	SF.fr.DIROLLO	4	Fresques de la tragédie humaine 1 Number nine	Di Rollo Thierry	1997			fr		roman	SF		80733	epub	fr											Corpus SF-ANT/SF/SF.fr.DIROLLO.xml	SF-ANT-TXT/SF/SF.fr.DIROLLO__004.txt
+SF.fr.DRODE	SF	78882	5131	SF.fr.DRODE	1	Surface de la planète	Drode Daniel	1959			fr		roman	SF		100381	epub	fr											Corpus SF-ANT/SF/SF.fr.DRODE.xml	SF-ANT-TXT/SF/SF.fr.DRODE.txt
+SF.fr.DUFOUR	SF	79456	4986	SF.fr.DUFOUR	1	Le gout de l'immortalité	Dufour Catherine	2005			fr		roman	SF		99469	epub	fr											Corpus SF-ANT/SF/SF.fr.DUFOUR.xml	SF-ANT-TXT/SF/SF.fr.DUFOUR.txt
+SF.fr.FONTANA__001	SF	36575	2999	SF.fr.FONTANA	1	La colonne d'émeraude	Fontana Jean-Pierre	1992			fr		roman	SF		45593	epub	fr											Corpus SF-ANT/SF/SF.fr.FONTANA.xml	SF-ANT-TXT/SF/SF.fr.FONTANA__001.txt
+SF.fr.FONTANA__002	SF	39762	3377	SF.fr.FONTANA	2	La jaune	Fontana Jean-Pierre	1986			fr		roman	SF		49900	epub	fr											Corpus SF-ANT/SF/SF.fr.FONTANA.xml	SF-ANT-TXT/SF/SF.fr.FONTANA__002.txt
+SF.fr.GENEFORT__001	SF	113935	10089	SF.fr.GENEFORT	1	1 Le cycle d'Omale 1 Omale	Genefort Laurent	2001			fr		roman	SF		146014	epub	fr											Corpus SF-ANT/SF/SF.fr.GENEFORT.xml	SF-ANT-TXT/SF/SF.fr.GENEFORT__001.txt
+SF.fr.GENEFORT__002	SF	108806	9368	SF.fr.GENEFORT	2	3 Le cycle d'Omale 3 La muraille sainte d'Omale	Genefort Laurent	2004			fr			SF		139581	epub	fr											Corpus SF-ANT/SF/SF.fr.GENEFORT.xml	SF-ANT-TXT/SF/SF.fr.GENEFORT__002.txt
+SF.fr.GENEFORT__003	SF	117388	9629	SF.fr.GENEFORT	3	4 Le cycle d'Omale 4 Les vaisseaux d'Omale	Genefort Laurent	2014			fr			SF		149388	epub	fr											Corpus SF-ANT/SF/SF.fr.GENEFORT.xml	SF-ANT-TXT/SF/SF.fr.GENEFORT__003.txt
+SF.fr.GENEFORT__004	SF	114448	9132	SF.fr.GENEFORT	4	2 Le cycle d'Omale 2 Les conquérents d'Omale	Genefort Laurent	2002			fr			SF		145088	epub	fr											Corpus SF-ANT/SF/SF.fr.GENEFORT.xml	SF-ANT-TXT/SF/SF.fr.GENEFORT__004.txt
+SF.fr.GUIEU__001	SF	47760	3605	SF.fr.GUIEU	1	L'homme de l'espace	Guieu Jimmy	1954			fr		roman	SF		61672	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__001.txt
+SF.fr.GUIEU__002	SF	35650	2385	SF.fr.GUIEU	2	Nous les martiens	Guieu Jimmy	1954			fr		roman	SF		44195	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__002.txt
+SF.fr.GUIEU__003	SF	42144	2905	SF.fr.GUIEU	3	Opération aphrodite	Guieu Jimmy	1955			fr		roman	SF		53882	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__003.txt
+SF.fr.GUIEU__004	SF	37548	3171	SF.fr.GUIEU	4	Hantise sur le monde	Guieu Jimmy	1953			fr		roman	SF		49330	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__004.txt
+SF.fr.GUIEU__005	SF	41071	2570	SF.fr.GUIEU	5	L'agonie du verre	Guieu Jimmy	1955			fr		roman	SF		52933	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__005.txt
+SF.fr.GUIEU__006	SF	37673	2822	SF.fr.GUIEU	6	La dimension X	Guieu Jimmy	1953			fr		roman	SF		48613	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__006.txt
+SF.fr.GUIEU__007	SF	42963	2954	SF.fr.GUIEU	7	Le monde oublié	Guieu Jimmy	1954			fr		roman	SF		53413	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__007.txt
+SF.fr.GUIEU__008	SF	39205	3003	SF.fr.GUIEU	8	L'invasion de la terre	Guieu Jimmy	1952			fr		roman	SF		50591	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__008.txt
+SF.fr.GUIEU__009	SF	36031	2603	SF.fr.GUIEU	9	L'univers vivant	Guieu Jimmy	1953			fr		roman	SF		46107	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__009.txt
+SF.fr.GUIEU__010	SF	43188	3121	SF.fr.GUIEU	10	Au-delà de l'infini	Guieu Jimmy	1952			fr		roman	SF		56862	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__010.txt
+SF.fr.GUIEU__011	SF	38343	2194	SF.fr.GUIEU	11	Commandos de l'espace	Guieu Jimmy	1955			fr		roman	SF		48687	epub	fr											Corpus SF-ANT/SF/SF.fr.GUIEU.xml	SF-ANT-TXT/SF/SF.fr.GUIEU__011.txt
+SF.fr.HELIOT__001	SF	135033	10093	SF.fr.HELIOT	1	Ordre noir	Héliot Johan	2010			fr		roman	SF		170585	epub	fr											Corpus SF-ANT/SF/SF.fr.HELIOT.xml	SF-ANT-TXT/SF/SF.fr.HELIOT__001.txt
+SF.fr.HELIOT__002	SF	68131	5536	SF.fr.HELIOT	2	Les fils de l'air	Héliot Johan	2009			fr		roman	SF		86740	epub	fr											Corpus SF-ANT/SF/SF.fr.HELIOT.xml	SF-ANT-TXT/SF/SF.fr.HELIOT__002.txt
+SF.fr.HELIOT__003	SF	127951	8561	SF.fr.HELIOT	3	La harpe des étoiles	Héliot Johan	2003			fr		roman	SF		163627	epub	fr											Corpus SF-ANT/SF/SF.fr.HELIOT.xml	SF-ANT-TXT/SF/SF.fr.HELIOT__003.txt
+SF.fr.HELIOT__004	SF	52131	3644	SF.fr.HELIOT	4	Pandémonium	Héliot Johan	2002			fr		roman	SF		66322	epub	fr											Corpus SF-ANT/SF/SF.fr.HELIOT.xml	SF-ANT-TXT/SF/SF.fr.HELIOT__004.txt
+SF.fr.HELIOT__005	SF	18073	1368	SF.fr.HELIOT	5	Führer prime time	Héliot Johan	2005			fr		roman	SF		23493	epub	fr											Corpus SF-ANT/SF/SF.fr.HELIOT.xml	SF-ANT-TXT/SF/SF.fr.HELIOT__005.txt
+SF.fr.HELIOT__006	SF	41728	2844	SF.fr.HELIOT	6	Involution	Héliot Johan	2014			fr		roman	SF		52824	epub	fr											Corpus SF-ANT/SF/SF.fr.HELIOT.xml	SF-ANT-TXT/SF/SF.fr.HELIOT__006.txt
+SF.fr.HENNEBERG__001	SF	60694	5133	SF.fr.HENNEBERG	1	La rosée du soleil	Henneberg Charles	1959			fr		roman	SF		80250	epub	fr											Corpus SF-ANT/SF/SF.fr.HENNEBERG.xml	SF-ANT-TXT/SF/SF.fr.HENNEBERG__001.txt
+SF.fr.HENNEBERG__002	SF	73983	6502	SF.fr.HENNEBERG	2	Le chant des astronautes	Henneberg Charles	1958			fr		roman	SF		98171	epub	fr											Corpus SF-ANT/SF/SF.fr.HENNEBERG.xml	SF-ANT-TXT/SF/SF.fr.HENNEBERG__002.txt
+SF.fr.HERAULT	SF	36650	3515	SF.fr.HERAULT	1	Les premieres victoires	Hérault Paul-Jean	1987			fr		roman	SF		44675	litmod	fr											Corpus SF-ANT/SF/SF.fr.HERAULT.xml	SF-ANT-TXT/SF/SF.fr.HERAULT.txt
+SF.fr.JEURY__001	SF	48521	4734	SF.fr.JEURY	1	Le seigneur de l'histoire	Jeury Michel	1980			fr		roman	SF		57865	litmod	fr											Corpus SF-ANT/SF/SF.fr.JEURY.xml	SF-ANT-TXT/SF/SF.fr.JEURY__001.txt
+SF.fr.JEURY__002	SF	69419	7251	SF.fr.JEURY	2	Le temps incertain	Jeury Michel	1973			fr		roman	SF		90005	epub	fr											Corpus SF-ANT/SF/SF.fr.JEURY.xml	SF-ANT-TXT/SF/SF.fr.JEURY__002.txt
+SF.fr.KLEIN__001	SF	65322	6025	SF.fr.KLEIN	1	Les seigneurs de la guerre	Klein Gérard	1970			fr		roman	SF		83277	epub	fr											Corpus SF-ANT/SF/SF.fr.KLEIN.xml	SF-ANT-TXT/SF/SF.fr.KLEIN__001.txt
+SF.fr.KLEIN__002	SF	46308	4340	SF.fr.KLEIN	2	Le temps n'a pas d'odeur	Klein Gérard	1963			fr		roman	SF		58829	epub	fr											Corpus SF-ANT/SF/SF.fr.KLEIN.xml	SF-ANT-TXT/SF/SF.fr.KLEIN__002.txt
+SF.fr.KLEIN__003	SF	60506	4448	SF.fr.KLEIN	3	Le gambit des étoiles	Klein Gérard	1958			fr		roman	SF		76329	epub	fr											Corpus SF-ANT/SF/SF.fr.KLEIN.xml	SF-ANT-TXT/SF/SF.fr.KLEIN__003.txt
+SF.fr.LEFEBVRE	SF	133873	13391	SF.fr.LEFEBVRE	1	Le signe de l'Ogre	Lefebvre Julien	2007			fr		roman	SF		170707	epub	fr											Corpus SF-ANT/SF/SF.fr.LEFEBVRE.xml	SF-ANT-TXT/SF/SF.fr.LEFEBVRE.txt
+SF.fr.LEHMAN__001	SF	95695	9179	SF.fr.LEHMAN	1	Le Cycle de F.A.U.S.T 2 Les défenseurs	Lehman Serge	1996			fr		roman	SF		125997	epub	fr											Corpus SF-ANT/SF/SF.fr.LEHMAN.xml	SF-ANT-TXT/SF/SF.fr.LEHMAN__001.txt
+SF.fr.LEHMAN__002	SF	41899	4416	SF.fr.LEHMAN	2	Wonderland	Lehman Serge	1997			fr		roman	SF		55417	epub	fr											Corpus SF-ANT/SF/SF.fr.LEHMAN.xml	SF-ANT-TXT/SF/SF.fr.LEHMAN__002.txt
+SF.fr.LEHMAN__003	SF	111198	10553	SF.fr.LEHMAN	3	Aucune étoile aussi lointaine	Lehman Serge	1998			fr		roman	SF		145697	epub	fr											Corpus SF-ANT/SF/SF.fr.LEHMAN.xml	SF-ANT-TXT/SF/SF.fr.LEHMAN__003.txt
+SF.fr.LIGNY__001	SF	33916	2815	SF.fr.LIGNY	1	Bérénice	Ligny Jean-Marc	1990			fr		roman	SF		45807	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__001.txt
+SF.fr.LIGNY__002	SF	44844	2855	SF.fr.LIGNY	2	Albatroys	Ligny Jean-Marc	1991			fr		roman	SF		59228	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__002.txt
+SF.fr.LIGNY__003	SF	43400	3883	SF.fr.LIGNY	3	Aqua	Ligny Jean-Marc	2006			fr		roman	SF		57527	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__003.txt
+SF.fr.LIGNY__004	SF	42890	3731	SF.fr.LIGNY	4	Cyberkiller	Ligny Jean-Marc	1993			fr		roman	SF		56836	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__004.txt
+SF.fr.LIGNY__005	SF	28874	2798	SF.fr.LIGNY	5	Démons	Ligny Jean-Marc	1990			fr		roman	SF		39009	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__005.txt
+SF.fr.LIGNY__006	SF	32108	2704	SF.fr.LIGNY	6	Apex	Ligny Jean-Marc	1990			fr		roman	SF		43172	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__006.txt
+SF.fr.LIGNY__007	SF	25267	2257	SF.fr.LIGNY	7	Sorciers	Ligny Jean-Marc	1990			fr		roman	SF		33654	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__007.txt
+SF.fr.LIGNY__008	SF	44434	3733	SF.fr.LIGNY	8	Un été à Zédong	Ligny Jean-Marc	1988			fr		roman	SF		59746	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__008.txt
+SF.fr.LIGNY__009	SF	49844	4946	SF.fr.LIGNY	9	Biofeedback	Ligny Jean-Marc	1979			fr		roman	SF		68783	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY.xml	SF-ANT-TXT/SF/SF.fr.LIGNY__009.txt
+SF.fr.LIGNY~GOULT	SF	32979	3324	SF.fr.LIGNY~GOULT	1	Dreamworld	Ligny Jean-Marc ; Goult Dominique	1988			fr		roman	SF		44586	epub	fr											Corpus SF-ANT/SF/SF.fr.LIGNY~GOULT.xml	SF-ANT-TXT/SF/SF.fr.LIGNY~GOULT.txt
+SF.fr.PELOT	SF	36966	1751	SF.fr.PELOT	1	Mémoires d'un épouvantail blessé au combat	Pelot Pierre	1986			fr		roman	SF		45655	litmod	fr											Corpus SF-ANT/SF/SF.fr.PELOT.xml	SF-ANT-TXT/SF/SF.fr.PELOT.txt
+SF.fr.ROCHEFORT	SF	112774	8932	SF.fr.ROCHEFORT	1	Archaos ou Le jardin étincelant	Rochefort Christiane	1972			fr		roman	SF		145860	epub	fr											Corpus SF-ANT/SF/SF.fr.ROCHEFORT.xml	SF-ANT-TXT/SF/SF.fr.ROCHEFORT.txt
+SF.fr.RUFIN	SF	122541	9378	SF.fr.RUFIN	1	Globalia	Rufin Jean-Christophe	2004			fr		roman	SF		154563	epub	fr											Corpus SF-ANT/SF/SF.fr.RUFIN.xml	SF-ANT-TXT/SF/SF.fr.RUFIN.txt
+SF.fr.VANCAUWELAERT__001	SF	62992	5337	SF.fr.VANCAUWELAERT	1	Thomas Drimm 2 La Guerre des arbres commence le 13	Van Cauwelaert Didier	2010			fr		roman	SF		81983	epub	fr											Corpus SF-ANT/SF/SF.fr.VANCAUWELAERT.xml	SF-ANT-TXT/SF/SF.fr.VANCAUWELAERT__001.txt
+SF.fr.VANCAUWELAERT__002	SF	73108	6326	SF.fr.VANCAUWELAERT	2	Thomas Drimm 1 La Fin du monde tombe un jeudi	Van Cauwelaert Didier	2009			fr		roman	SF		95827	epub	fr											Corpus SF-ANT/SF/SF.fr.VANCAUWELAERT.xml	SF-ANT-TXT/SF/SF.fr.VANCAUWELAERT__002.txt
+SF.fr.VOLODINE__001	SF	152047	9188	SF.fr.VOLODINE	1	Terminus radieux	Volodine Antoine	2014			fr		roman	SF		187292	epub	fr											Corpus SF-ANT/SF/SF.fr.VOLODINE.xml	SF-ANT-TXT/SF/SF.fr.VOLODINE__001.txt
+SF.fr.VOLODINE__002	SF	76551	5733	SF.fr.VOLODINE	2	Dondog	Volodine Antoine	2002			fr		roman	SF		96561	epub	fr											Corpus SF-ANT/SF/SF.fr.VOLODINE.xml	SF-ANT-TXT/SF/SF.fr.VOLODINE__002.txt
+SF.fr.VONARBURG__001	SF	154421	11828	SF.fr.VONARBURG	1	Les voyageurs malgré eux	Vonarburg Élisabeth	1994			fr		roman	SF		203356	epub	fr											Corpus SF-ANT/SF/SF.fr.VONARBURG.xml	SF-ANT-TXT/SF/SF.fr.VONARBURG__001.txt
+SF.fr.VONARBURG__002	SF	193881	12663	SF.fr.VONARBURG	2	Chroniques du pays des mères	Vonarburg Élisabeth	1992			fr		roman	SF		248016	epub	fr											Corpus SF-ANT/SF/SF.fr.VONARBURG.xml	SF-ANT-TXT/SF/SF.fr.VONARBURG__002.txt
+SF.fr.WAGNER__001	SF	69726	6720	SF.fr.WAGNER	1	Les derniers jours de mai	Wagner Roland	1989			fr		roman	SF		87643	litmod	fr											Corpus SF-ANT/SF/SF.fr.WAGNER.xml	SF-ANT-TXT/SF/SF.fr.WAGNER__001.txt
+SF.fr.WAGNER__002	SF	705752	51231	SF.fr.WAGNER	2	Les futurs mystères de Paris	Wagner Roland	1998			fr		roman	SF		844041	epub	fr											Corpus SF-ANT/SF/SF.fr.WAGNER.xml	SF-ANT-TXT/SF/SF.fr.WAGNER__002.txt
+SF.fr.WAGNER__003	SF	136463	11927	SF.fr.WAGNER	3	Poupée aux yeux morts	Wagner Roland	1988			fr		roman	SF		171712	litmod	fr											Corpus SF-ANT/SF/SF.fr.WAGNER.xml	SF-ANT-TXT/SF/SF.fr.WAGNER__003.txt
+SF.fr.WALTHER__001	SF	42950	3382	SF.fr.WALTHER	1	Apollo XXV	Walther Daniel	1983			fr		roman	SF		55021	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__001.txt
+SF.fr.WALTHER__002	SF	38813	3529	SF.fr.WALTHER	2	Tigre	Walther Daniel	1988			fr		roman	SF		50540	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__002.txt
+SF.fr.WALTHER__003	SF	44309	3044	SF.fr.WALTHER	3	Le veilleur à la lisière du monde	Walther Daniel	1998			fr		roman	SF		56321	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__003.txt
+SF.fr.WALTHER__004	SF	39327	3687	SF.fr.WALTHER	4	La planète Jaja	Walther Daniel	1989			fr		roman	SF		50531	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__004.txt
+SF.fr.WALTHER__005	SF	55971	3416	SF.fr.WALTHER	5	L'Épouvante	Walther Daniel	1979			fr		roman	SF		70422	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__005.txt
+SF.fr.WALTHER__006	SF	44136	3226	SF.fr.WALTHER	6	Le destin de Swa	Walther Daniel	1983			fr		roman	SF		56515	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__006.txt
+SF.fr.WALTHER__007	SF	42985	2899	SF.fr.WALTHER	7	La légende de Swa	Walther Daniel	1983			fr		roman	SF		54069	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__007.txt
+SF.fr.WALTHER__008	SF	45658	3262	SF.fr.WALTHER	8	Le livre de Swa	Walther Daniel	1982			fr		roman	SF		57744	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__008.txt
+SF.fr.WALTHER__009	SF	39523	2534	SF.fr.WALTHER	9	Mais l'espace... Mais le temps...	Walther Daniel	1998			fr		roman	SF		49650	epub	fr											Corpus SF-ANT/SF/SF.fr.WALTHER.xml	SF-ANT-TXT/SF/SF.fr.WALTHER__009.txt
+SF.fr.WERBER__001	SF	130582	11897	SF.fr.WERBER	1	2 La trilogie des fourmis 2 Le jour des fourmis	Werber Bernard	1992			fr		roman	SF		165385	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__001.txt
+SF.fr.WERBER__002	SF	181102	17265	SF.fr.WERBER	2	Le rire du cyclope	Werber Bernard	2010			fr		roman	SF		232711	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__002.txt
+SF.fr.WERBER__003	SF	182826	17559	SF.fr.WERBER	3	Le Miroir de Cassandre	Werber Bernard	2009			fr		roman	SF		234575	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__003.txt
+SF.fr.WERBER__004	SF	102323	9798	SF.fr.WERBER	4	L'Ultime Secret	Werber Bernard	2001			fr		roman	SF		131553	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__004.txt
+SF.fr.WERBER__005	SF	17765	1872	SF.fr.WERBER	5	Le Livre Du Voyage	Werber Bernard	1997			fr		roman	SF		21480	litmod	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__005.txt
+SF.fr.WERBER__006	SF	150278	12904	SF.fr.WERBER	6	Les thanatonautes	Werber Bernard	1994			fr		roman	SF		191320	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__006.txt
+SF.fr.WERBER__007	SF	71537	6031	SF.fr.WERBER	7	La papillon des étoiles	Werber Bernard	2006			fr		roman	SF		90218	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__007.txt
+SF.fr.WERBER__008	SF	95094	8085	SF.fr.WERBER	8	Le Père de nos pères	Werber Bernard	1998			fr		roman	SF		119061	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__008.txt
+SF.fr.WERBER__009	SF	89303	8099	SF.fr.WERBER	9	1 La trilogie des fourmis 1 Les fourmis	Werber Bernard	1991			fr		roman	SF		113087	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__009.txt
+SF.fr.WERBER__010	SF	111618	10456	SF.fr.WERBER	10	L'Empire Des Anges	Werber Bernard	2000			fr		roman	SF		136582	litmod	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__010.txt
+SF.fr.WERBER__011	SF	172667	13619	SF.fr.WERBER	11	3 La trilogie des fourmis 3 La révolution des fourmis	Werber Bernard	1996			fr		roman	SF		215195	epub	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__011.txt
+SF.fr.WERBER__012	SF	40757	2694	SF.fr.WERBER	12	Le Livre Secret Des Fourmis	Werber Bernard	2002			fr		roman	SF		47819	litmod	fr											Corpus SF-ANT/SF/SF.fr.WERBER.xml	SF-ANT-TXT/SF/SF.fr.WERBER__012.txt
+SF.fr.WINTREBERT	SF	40343	3401	SF.fr.WINTREBERT	1	Les olympiades truquées	Wintrebert Joëlle	1987			fr		roman	SF		51182	epub	fr											Corpus SF-ANT/SF/SF.fr.WINTREBERT.xml	SF-ANT-TXT/SF/SF.fr.WINTREBERT.txt
+Spitz_1937_la-guerre-des-mouches	ANT	36330	1789	Spitz_1937_la-guerre-des-mouches	1	La Guerre des mouches	Jacques Spitz	1937	Non renseigné		fr	Français												Non renseigné	"[""Fichier réalisé par Ivan Romaniuk. Vacations mai 2023 financées par l'UGA."", ""Supervision : Delphine Gleizes. Projet IRGA « PhraséoAnticipation ». Université Grenoble Alpes. Laboratoires Litt&Arts et LIDILEM.""]"				Corpus SF-ANT/ANT/Spitz_1937_la-guerre-des-mouches.xml	SF-ANT-TXT/ANT/Spitz_1937_la-guerre-des-mouches.txt
+Toudouze_1914_le-petit-roi-d-ys	ANT	56269	1811	Toudouze_1914_le-petit-roi-d-ys	1	Le Petit Roi d'Ys	Georges-Gustave Toudouze	1923			fr	Français													"[""Sous la supervision de Delphine Gleizes, Iva Novakova et Romain Fernandez dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Juliette Dubost--Mattutzu ; dans le cadre d'un stage en 2024.""]"				Corpus SF-ANT/ANT/Toudouze_1914_le-petit-roi-d-ys.xml	SF-ANT-TXT/ANT/Toudouze_1914_le-petit-roi-d-ys.txt
+Valerie_1935_sur-l-autre-face-du-monde	ANT	58909	3854	Valerie_1935_sur-l-autre-face-du-monde	1	Sur l'autre face du monde	A. Valérie	1935	Sciences & Voyages		fr	Français													"[""Fichier réalisé par Romain Fernandez; première année de thèse - contrat IRGA ; Période 2023-2024"", ""Sous la supervision de Delphine Gleizes et Iva Novakova dans le cadre du projet IRGA \""PhraseoAnticipation\"" ; Université Grenoble Alpes. Laboratoire Litt&Arts et LIDILEM""]"				Corpus SF-ANT/ANT/Valerie_1935_sur-l-autre-face-du-monde.xml	SF-ANT-TXT/ANT/Valerie_1935_sur-l-autre-face-du-monde.txt
+Vallerey_1937_un_mois_sous_les_mers	ANT	82917	4332	Vallerey_1937_un_mois_sous_les_mers	1	Un mois sous les mers	Tancrède Vallerey	1937	Fernand Nathan		fr	Français													"[""Sous la supervision de Delphine Gleizes, Iva Novakova et Romain Fernandez dans le cadre du projet PhraseoAnticipation ; Université Grenoble Alpes. Laboratoire Litt&Arts"", ""Fichier réalisé par Juliette Dubost--Mattutzu ; dans le cadre d'un stage en 2024.""]"				Corpus SF-ANT/ANT/Vallerey_1937_un_mois_sous_les_mers.xml	SF-ANT-TXT/ANT/Vallerey_1937_un_mois_sous_les_mers.txt
+Varlet_1930_la-grande-panne	ANT	65622	3264	Varlet_1930_la-grande-panne	1	La Grande Panne	Théo Varlet	1930	Édition Ebooks libres et gratuits.		fr	Français												https://ebooks-bnr.com/varlet-theo-grande-panne/	"[""Fichier réalisé par Lucas Motte-Michellon ; stage d'excellence UGA ; mai-juin 2023."", ""Supervision : Delphine Gleizes. Projet « PhraséoAnticipation». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"				Corpus SF-ANT/ANT/Varlet_1930_la-grande-panne.xml	SF-ANT-TXT/ANT/Varlet_1930_la-grande-panne.txt
+Verne_1865_de-la-terre-a-la-lune	ANT	56438	3126	Verne_1865_de-la-terre-a-la-lune	1	De la Terre à la Lune	Jules Verne	1868	J. Hetzel et Compagnie		fr	Français												https://fr.wikisource.org/wiki/De_la_Terre_%C3%A0_la_Lune/Texte_entier	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Verne_1865_de-la-terre-a-la-lune.xml	SF-ANT-TXT/ANT/Verne_1865_de-la-terre-a-la-lune.txt
+Verne_1870-vint-mille-lieues-sous-les-mers	ANT	146730	9171	Verne_1870-vint-mille-lieues-sous-les-mers	1	Vingt-mille Lieues sous les mers	Jules Verne	1870	J. Hetzel		fr	Français												https://fr.wikisource.org/wiki/Vingt_mille_lieues_sous_les_mers/Texte_entier	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Verne_1870-vint-mille-lieues-sous-les-mers.xml	SF-ANT-TXT/ANT/Verne_1870-vint-mille-lieues-sous-les-mers.txt
+Verne_1879_les-cinq-cents-millions-de-la-begum	ANT	54939	2941	Verne_1879_les-cinq-cents-millions-de-la-begum	1	Les Cinq Cents Millions de la Begum	Jules Verne	1879	J. Hetzel et Compagnie		fr	Français												https://fr.wikisource.org/wiki/Les_Cinq_Cents_Millions_de_la_B%C3%A9gum	"[""Fichier réalisé par Ivan Romaniuk. Vacations mai 2023 financées par l'UGA."", ""Supervision : Delphine Gleizes. Projet IRGA « PhraséoAnticipation ». Université Grenoble Alpes. Laboratoires Litt&Arts et LIDILEM.""]"				Corpus SF-ANT/ANT/Verne_1879_les-cinq-cents-millions-de-la-begum.xml	SF-ANT-TXT/ANT/Verne_1879_les-cinq-cents-millions-de-la-begum.txt
+Verne_1892_le-chateau-des-carpathes	ANT	54406	2735	Verne_1892_le-chateau-des-carpathes	1	Le Château des Carpathes	Jules Verne	1892	J. Hetzel et Compagnie		fr	Français												https://fr.wikisource.org/wiki/Le_Ch%C3%A2teau_des_Carpathes/Texte_entier	"[""Fichier réalisé par Ivan Romaniuk. Vacations mai 2023 financées par l'UGA."", ""Supervision : Delphine Gleizes. Projet IRGA « PhraséoAnticipation ». Université Grenoble Alpes. Laboratoires Litt&Arts et LIDILEM.""]"				Corpus SF-ANT/ANT/Verne_1892_le-chateau-des-carpathes.xml	SF-ANT-TXT/ANT/Verne_1892_le-chateau-des-carpathes.txt
+Verne_1901_le-village-aerien	ANT	64284	3344	Verne_1901_le-village-aerien	1	Le Village aérien	Jules Verne	1901	Inconnu		fr	Français												http://www.bouquineux.com/index.php?telecharger=1240&Verne-Le_Village_a%C3%A9rien	"[""Fichier réalisé par Ivan Romaniuk. Vacations octobre 2022 financées par la région AURA (Programme Pack Ambition International)."", ""Supervision : Julie Sorba & Delphine Gleizes. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoires LIDILEM et Litt&Arts.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Verne_1901_le-village-aerien.xml	SF-ANT-TXT/ANT/Verne_1901_le-village-aerien.txt
+Veron_1864_monsieur-personne	ANT	24031	2570	Veron_1864_monsieur-personne	1	Monsieur Personne	Pierre Véron	1864	Non renseigné		fr	Français												Non renseigné, 1864	"[""Fichier réalisé par Sarah Derrien. Stage rémunéré de juin-juillet 2022 financé par Programme Pack Ambition International AURA."", ""Supervision : Julie Sorba. Projet « Approches numériques des textes littéraires : vers une convergence méthodologique ? ». Université Grenoble Alpes. Laboratoire LIDILEM."", ""Correction de l'encodage : Ivan Romaniuk, vacations février 2023 ATTENTION ! J'ai remarqué que la correction de l'OCR n'a pas du tout été fait : il faut soumettre ce fichier à un correcteur, car la segmentation des unités graphiques est défaillante.""]"	some	Des traits d'union sécants de fin de ligne sont présents, mais tous les traits d'union sécants de fin de ligne de l'édition originale ont été supprimés.		Corpus SF-ANT/ANT/Veron_1864_monsieur-personne.xml	SF-ANT-TXT/ANT/Veron_1864_monsieur-personne.txt

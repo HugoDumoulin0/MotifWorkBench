@@ -28,6 +28,13 @@ import execute_internal_clustering
 import json
 from pathlib import Path
 import zipfile
+import unicodedata
+import hashlib
+import pickle
+import ast
+import inspect
+
+from analysis_cache import file_fingerprint, paths_fingerprint, content_fingerprint
 
 from replace_underscore import replace_underscore_in_conllu 
 
@@ -101,16 +108,12 @@ class AnalysisCancelled(Exception):
     """Exception levée lorsqu'un arrêt utilisateur est demandé."""
 
 
-ANNOTATION_CACHE_VERSION = 1
+ANNOTATION_CACHE_VERSION = 2
 
 
 def _file_signature(path: Path) -> dict:
-    """Construit une signature légère pour valider un fichier source."""
-    stat = path.stat()
-    return {
-        "size": stat.st_size,
-        "mtime_ns": stat.st_mtime_ns,
-    }
+    """Identifie le contenu, même si la taille et la date sont conservées."""
+    return file_fingerprint(path)
 
 
 def _build_source_manifest(corpus_dir: Path, textes: list[str]) -> dict:
@@ -137,7 +140,7 @@ def _annotation_cache_is_valid(cache_paths: dict, expected_info: dict, source_ma
     if not cache_info:
         return False
 
-    for key in ("pipeline_version", "selected_corpus", "annotator", "language", "actual_model_name", "use_gpu"):
+    for key in ("pipeline_version", "selected_corpus", "annotator", "language", "actual_model_name", "use_gpu", "runtime", "code"):
         if cache_info.get(key) != expected_info.get(key):
             return False
 
@@ -155,12 +158,17 @@ def _annotation_cache_is_valid(cache_paths: dict, expected_info: dict, source_ma
             return False
         if not (underscore_dir / conllu_name).exists():
             return False
-
-    return True
+    expected_outputs = cache_info.get("outputs")
+    return bool(expected_outputs) and expected_outputs == paths_fingerprint(
+        [tagged_dir, underscore_dir]
+    )
 
 
 def _write_annotation_cache_info(cache_paths: dict, cache_info: dict) -> None:
     cache_paths["root"].mkdir(parents=True, exist_ok=True)
+    cache_info["outputs"] = paths_fingerprint(
+        [cache_paths["tagged"], cache_paths["underscore_fix"]]
+    )
     with open(cache_paths["cache_info"], "w", encoding="utf-8") as f:
         json.dump(cache_info, f, indent=2, ensure_ascii=False)
 
@@ -185,22 +193,58 @@ def _resolve_optional_path(project_root: Path, path_value: str) -> Path:
     return path
 
 
-def _copy_conllu_files(source_dir: Path, destination_dir: Path, recursive: bool = False) -> list[str]:
-    """Copie les fichiers .conllu d'un dossier vers un autre et retourne leurs stems."""
-    destination_dir.mkdir(parents=True, exist_ok=True)
+def _conllu_files(source_dir: Path, recursive: bool = False) -> list[Path]:
+    """Liste les textes en excluant les fichiers annexes des archives macOS."""
     pattern = source_dir.rglob("*.conllu") if recursive else source_dir.glob("*.conllu")
-    conllu_files = sorted(path for path in pattern if path.is_file())
+    return sorted(
+        path for path in pattern
+        if path.is_file() and not any(
+            part == "__MACOSX" or part.startswith("._")
+            for part in path.relative_to(source_dir).parts
+        )
+    )
+
+
+def _copy_conllu_files(source_dir: Path, destination_dir: Path, recursive: bool = False, metadata_ids=()) -> list[str]:
+    """Copie les fichiers .conllu d'un dossier vers un autre et retourne leurs stems."""
+    conllu_files = _conllu_files(source_dir, recursive)
     if not conllu_files:
         raise FileNotFoundError(f"Aucun fichier .conllu trouvé dans {source_dir}")
 
+    exact_ids = set(map(str, metadata_ids))
+    canonical_ids = {}
+    for text_id in exact_ids:
+        canonical_ids.setdefault(unicodedata.normalize("NFC", text_id), set()).add(text_id)
+    copies = []
+    for path in conllu_files:
+        text_id = path.stem
+        if text_id not in exact_ids:
+            matches = canonical_ids.get(unicodedata.normalize("NFC", text_id), set())
+            if not matches:
+                # Some ZIP creators write UTF-8 bytes without setting the ZIP
+                # Unicode flag. Repair only a name confirmed by the metadata.
+                try:
+                    decoded = text_id.encode("cp437").decode("utf-8")
+                except (UnicodeEncodeError, UnicodeDecodeError):
+                    decoded = text_id
+                matches = canonical_ids.get(unicodedata.normalize("NFC", decoded), set())
+            if len(matches) > 1:
+                raise ValueError(f"Identifiant de texte ambigu dans les métadonnées : {text_id}")
+            if matches:
+                text_id = next(iter(matches))
+        copies.append((path, text_id))
+    if len({unicodedata.normalize("NFC", text_id) for _, text_id in copies}) != len(copies):
+        raise ValueError("Plusieurs fichiers importés portent le même identifiant de texte.")
+
+    destination_dir.mkdir(parents=True, exist_ok=True)
     for existing in destination_dir.glob("*.conllu"):
         existing.unlink()
 
     stems = []
-    for path in conllu_files:
-        target = destination_dir / path.name
+    for path, text_id in copies:
+        target = destination_dir / f"{text_id}.conllu"
         shutil.copy2(path, target)
-        stems.append(path.stem)
+        stems.append(text_id)
     return sorted(stems)
 
 
@@ -220,15 +264,106 @@ def _generate_underscore_fix(source_dir: Path, destination_dir: Path, textes: li
 
 
 def _find_first_matching_directory(base_dir: Path, dir_names: tuple[str, ...]) -> Path | None:
-    """Cherche récursivement un dossier correspondant à l'un des noms fournis."""
+    """Préfère le dossier de textes à un éventuel dossier d'emballage homonyme."""
     lowered = {name.lower() for name in dir_names}
+    candidates = []
     for candidate in sorted(base_dir.rglob("*")):
-        if candidate.is_dir() and candidate.name.lower() in lowered:
+        if not candidate.is_dir() or candidate.name.lower() not in lowered:
+            continue
+        if any(part == "__MACOSX" or part.startswith("._")
+               for part in candidate.relative_to(base_dir).parts):
+            continue
+        candidates.append(candidate)
+        if _conllu_files(candidate):
             return candidate
+    return candidates[0] if candidates else None
+
+
+def build_pattern_key(nb_itemset_min, minsup_percent, gap_min, gap_max, restriction=None):
+    """Utilise la même identité dans l'extraction, le clustering et les statistiques."""
+    key = f"{nb_itemset_min}_{float(minsup_percent):.15g}_{gap_min}_{gap_max}"
+    if restriction:
+        encoded = json.dumps(restriction, sort_keys=True, ensure_ascii=False).encode("utf-8")
+        key = f"selected_{hashlib.sha256(encoded).hexdigest()[:20]}_{key}"
+    return key
+
+
+def _reset_generated_directory(directory):
+    directory = Path(directory)
+    if directory.exists():
+        shutil.rmtree(directory)
+    directory.mkdir(parents=True, exist_ok=True)
+
+
+def _validate_pickle(path, expected_type=dict):
+    with open(path, "rb") as stream:
+        value = pickle.load(stream)
+    if not isinstance(value, expected_type):
+        raise ValueError(f"Résultat invalide : {path}")
+    return value
+
+
+def _validate_matrix(path):
+    table = pd.read_csv(path, sep="\t", index_col=0, quoting=3)
+    if not len(table.columns) or table.index.has_duplicates:
+        raise ValueError(f"Tableau incomplet : {path}")
+    table.apply(pd.to_numeric, errors="raise")
+    return table
+
+
+def _stage_provenance(cache, modules, runtime_fields, functions=()):
+    """Select only the implementation and tools used by this computation."""
+    recorded_code = cache.run_inputs.get("code", {})
+    code = {module: value["sha256"] for module in modules for path, value in recorded_code.items()
+            if (Path(path).name == module or str(Path(path)).endswith("/" + module))
+            and isinstance(value, dict) and "sha256" in value}
+    if not code and recorded_code and not any(Path(path).suffix for path in recorded_code):
+        code = recorded_code
+    helpers = {function.__name__: ast.dump(ast.parse(inspect.getsource(function)), include_attributes=False)
+               for function in functions}
+    runtime = cache.run_inputs.get("runtime", {})
+    selected = {}
+    for field in ("python", *runtime_fields):
+        value = runtime
+        for part in field.split("."):
+            value = value.get(part) if isinstance(value, dict) else None
+        if value is not None:
+            selected[field] = value
+    if not selected and runtime:
+        selected = runtime
+    def content_only(value):
+        if isinstance(value, dict):
+            return {key: content_only(item) for key, item in value.items() if key != "path"}
+        return value
+    selected = content_only(selected)
+    signature = {"version": 2, "code": code, "helpers": helpers, "runtime": selected}
+    return hashlib.sha256(json.dumps(signature, sort_keys=True).encode("utf-8")).hexdigest()
+
+
+def _reuse_preparation(cache, name, inputs, dependencies, log):
+    record = cache.state["stages"].get(name)
+    if record and cache.stage_valid(name, inputs, record["outputs"], dependencies):
+        return cache.get_stage_result(name)
+    candidate = cache.find_reusable_stage(name, inputs, dependencies)
+    if candidate:
+        result = cache.adopt_stage(name, inputs, candidate, dependencies)
+        log(f"{name} : résultats vérifiés réutilisés depuis {Path(candidate['root']).name}.", level=1)
+        return result
     return None
 
 
-def run_analysis(config, progress_callback=None, log_callback=None, paths=None, should_stop_callback=None):
+def _reuse_result_files(cache, name, inputs, outputs, dependencies, log):
+    if cache.stage_valid(name, inputs, outputs, dependencies):
+        return True
+    candidate = cache.find_reusable_stage(name, inputs, dependencies)
+    if candidate:
+        cache.restore_stage_files(name, inputs, candidate, outputs, dependencies)
+        log(f"{name} : résultats vérifiés réutilisés depuis {Path(candidate['root']).name}.", level=1)
+        return True
+    return False
+
+
+def run_analysis(config, progress_callback=None, log_callback=None, paths=None, should_stop_callback=None, analysis_cache=None):
     """
     Lance l'analyse complète.
 
@@ -271,13 +406,61 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
             candidate = project_root / candidate
         return str(candidate)
     
-    # Ajouter ./bin au PATH pour que les scripts Perl trouvent les wrappers CWB Docker
-    bin_path = str(project_root / "bin")
-    os.environ["PATH"] = f"{bin_path}:{os.environ.get('PATH', '')}"
-    
     # Les chemins sont toujours fournis par la GUI via create_analysis_structure()
     if not paths:
         raise ValueError("Les chemins d'analyse doivent être fournis via le paramètre 'paths'")
+
+    if analysis_cache is None:
+        from analysis_cache import AnalysisCache, FileLock, build_run_inputs, atomic_json, snapshot_file
+
+        with FileLock(project_root / "logs" / ".pipeline.lock"), AnalysisCache(paths["root"]) as cache:
+            if should_stop_callback and should_stop_callback():
+                raise AnalysisCancelled("Analyse arrêtée par l'utilisateur.")
+            run_inputs = build_run_inputs(project_root, config)
+            cache.run_inputs = run_inputs
+            # Other entry modes also generate reports or launch Shiny as a
+            # side effect. Their full output set is outside the GUI cache.
+            cache.cacheable = run_inputs["cacheable"] and config.get("mode") == "gui"
+            previous = cache.completed_results(run_inputs)
+            if previous is not None:
+                if should_stop_callback and should_stop_callback():
+                    raise AnalysisCancelled("Analyse arrêtée par l'utilisateur.")
+                if log_callback:
+                    log_callback(format_log_message(0, "Analyse complète vérifiée : résultats réutilisés."))
+                if progress_callback:
+                    progress_callback("Résultats existants vérifiés", 100)
+                imported = cache.state["stages"].get("import", {}).get("result") or {}
+                if imported.get("model"):
+                    config["actual_model_name"] = imported["model"]
+                return previous
+            if not run_inputs["cacheable"] and log_callback:
+                log_callback(format_log_message(0, "Provenance incomplète : les étapes seront recalculées."))
+            runtime_config = dict(config)
+            metadata_source = Path(_resolve_user_path(config.get("path_metadata"), "Data/Corpus/metadata.tsv"))
+            metadata_snapshot = Path(paths["root"]) / "metadata.tsv"
+            snapshot_file(metadata_source, metadata_snapshot)
+            runtime_config["path_metadata"] = str(metadata_snapshot)
+            results = run_analysis(
+                runtime_config, progress_callback, log_callback, paths,
+                should_stop_callback, analysis_cache=cache,
+            )
+            final_inputs = build_run_inputs(project_root, config)
+            changed_inputs = any(final_inputs.get(key) != run_inputs.get(key)
+                                 for key in ("configuration", "sources", "code"))
+            if changed_inputs or (run_inputs["cacheable"] and final_inputs != run_inputs):
+                cache.invalidate_all()
+                raise RuntimeError("Les entrées ont changé pendant le calcul. Relancez l'analyse.")
+            if should_stop_callback and should_stop_callback():
+                raise AnalysisCancelled("Analyse arrêtée par l'utilisateur.")
+            cache.complete_run(run_inputs, results)
+            atomic_json(Path(paths["root"]) / "results_for_shiny.json", results)
+            if "actual_model_name" in runtime_config:
+                config["actual_model_name"] = runtime_config["actual_model_name"]
+            return results
+
+    # This environment is shared by the CQP helpers and is set under the lock.
+    bin_path = str(project_root / "bin")
+    os.environ["PATH"] = f"{bin_path}:{os.environ.get('PATH', '')}"
     
     # Organisation par groupe/config : Data/analyses/{analysis_group_name}/{config_id}/
     dir_tagged = str(paths["tagged"])
@@ -340,7 +523,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     seuil_banalité = config.get("seuil_banalité", 2)
     early_pos4lemma = config.get("early_pos4lemma", "ADJ|NOUN|VERB")
     user_input_list = config.get("user_input_list", False)
-    liste_earlyselection_lemma = config.get("liste_earlyselection_lemma", [])
+    automatic_selection = earlySelection and not user_input_list
     internal_clustering = config.get("internal_clustering", True)
     list_itemset_min = config.get("list_itemset_min", [3])
     list_gap_min = config.get("list_gap_min", [0])
@@ -360,6 +543,22 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     liste_seuils_bigrams = config.get("liste_seuils_bigrams", [100])
     mode = config.get("mode", "")
 
+    stage_common = {
+        key: hashlib.sha256(json.dumps(analysis_cache.run_inputs.get(key), sort_keys=True).encode("utf-8")).hexdigest()
+        for key in ("code", "runtime")
+    }
+    metadata_preview = pd.read_csv(path_metadata, sep="\t", index_col=0, dtype=str)
+    if metadata_preview.index.astype(str).str.normalize("NFC").has_duplicates:
+        raise ValueError("Le fichier de métadonnées contient des identifiants en double.")
+    required_metadata = set(list_metadata) - {"id"}
+    if automatic_selection and filter_specifs:
+        required_metadata.add(partition_cible)
+    missing_metadata = required_metadata - set(metadata_preview.columns)
+    if missing_metadata:
+        raise ValueError("Métadonnées introuvables : " + ", ".join(sorted(missing_metadata)))
+    if not list_metadata or not all((list_itemset_min, list_gap_min, list_gap_max, list_minsup_percent)):
+        raise ValueError("Sélectionnez une métadonnée et des paramètres de motifs complets.")
+
     python = "python3.7"
     
     # ==================================
@@ -373,8 +572,35 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     
     selected_corpus = str(config.get("selected_corpus", "")).strip() or Path(dir_textes_raw).name
     start_time = time.time()
-
+    source_paths = analysis_cache.run_inputs.get("sources", {}).get("corpus", {})
+    source_content = content_fingerprint(source_paths) if source_paths else {}
+    if input_type == "prepared_zip" and len(source_content) == 1:
+        source_content = next(iter(source_content.values()))
+    annotation_fields = ("annotator", "model_name", "model", "formatter", "installed_versions", "environment") if input_type == "raw_txt" else ()
+    import_modules = ("replace_underscore.py", "base.py", "spacy_annotator.py", "stanza_annotator.py")
     if input_type == "raw_txt":
+        import_modules += ("annotators/__init__.py",)
+    import_inputs = {
+        "implementation": _stage_provenance(
+            analysis_cache, import_modules,
+            annotation_fields, (_conllu_files, _copy_conllu_files, _generate_underscore_fix, _find_first_matching_directory),
+        ),
+        "sources": source_content,
+        "input_type": input_type,
+        "metadata_ids": sorted(metadata_preview.index.astype(str)),
+    }
+    if input_type == "raw_txt":
+        import_inputs["annotation"] = [annotator_name, language, use_gpu]
+    import_outputs = [dir_tagged, dir_underscore_fix]
+    imported = _reuse_preparation(analysis_cache, "import", import_inputs, (), _log)
+    if imported is not None:
+        dir_tagged = imported["tagged"]
+        dir_underscore_fix = imported["underscore_fix"]
+        textes = imported["texts"]
+        actual_model_name = imported["model"]
+        import_outputs = list(analysis_cache.state["stages"]["import"]["outputs"])
+        _log("Import vérifié : corpus annoté et correction réutilisés.", level=1)
+    elif input_type == "raw_txt":
         try:
             annotator = get_annotator(annotator_name)
             _log(f"1.1. Annotation avec {annotator.get_name()}: POS, lemma, UD", level=1)
@@ -424,6 +650,8 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
             "use_gpu": use_gpu,
             "source_dir": str(corpus_dir),
             "source_manifest": source_manifest,
+            "runtime": stage_common["runtime"],
+            "code": stage_common["code"],
         }
 
         shared_tagged_dir = cache_paths["tagged"]
@@ -482,6 +710,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
         dir_tagged = str(shared_tagged_dir)
         dir_underscore_fix = str(shared_underscore_dir)
     else:
+        analysis_cache.begin_stage("import")
         actual_model_name = "Importé"
         imported_path = _resolve_optional_path(project_root, input_source_path)
         if not input_source_path:
@@ -494,7 +723,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
             _log("1.1. Import d'un corpus annoté (.conllu)", level=1)
             if not imported_path.exists() or not imported_path.is_dir():
                 raise FileNotFoundError(f"Dossier de corpus annoté introuvable: {imported_path}")
-            textes = _copy_conllu_files(imported_path, tagged_dir_path)
+            textes = _copy_conllu_files(imported_path, tagged_dir_path, metadata_ids=metadata_preview.index)
             _generate_underscore_fix(tagged_dir_path, underscore_dir_path, textes, _log, _check_cancel)
             actual_model_name = "Importé (.conllu)"
         elif input_type == "prepared_zip":
@@ -523,12 +752,12 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                 )
 
             if tagged_source:
-                textes = _copy_conllu_files(tagged_source, tagged_dir_path, recursive=True)
+                textes = _copy_conllu_files(tagged_source, tagged_dir_path, recursive=True, metadata_ids=metadata_preview.index)
             else:
                 textes = []
 
             if underscore_source:
-                underscore_textes = _copy_conllu_files(underscore_source, underscore_dir_path, recursive=True)
+                underscore_textes = _copy_conllu_files(underscore_source, underscore_dir_path, recursive=True, metadata_ids=metadata_preview.index)
                 textes = underscore_textes or textes
                 if not tagged_source:
                     dir_tagged = str(underscore_dir_path)
@@ -546,6 +775,20 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
         if not textes:
             raise FileNotFoundError("Aucun fichier .conllu exploitable n'a été trouvé dans la source importée.")
 
+    if imported is None and input_type == "raw_txt":
+        import_outputs = [dir_tagged, dir_underscore_fix]
+    if imported is None:
+        analysis_cache.begin_stage("import")
+        analysis_cache.complete_stage(
+            "import", import_inputs, import_outputs,
+            result={"tagged": dir_tagged, "underscore_fix": dir_underscore_fix,
+                    "texts": textes, "model": actual_model_name},
+        )
+
+    missing_ids = {unicodedata.normalize("NFC", name) for name in textes} - set(metadata_preview.index.astype(str).str.normalize("NFC"))
+    if missing_ids:
+        raise ValueError("Textes absents des métadonnées : " + ", ".join(sorted(missing_ids)))
+
     config["actual_model_name"] = actual_model_name
     
     end_time = time.time()
@@ -561,106 +804,143 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     _progress("Création fichiers DMT4", 15)
     _check_cancel()
     
-    # Créer ou nettoyer le dossier DMT4
-    dmt4_prep_dir = dir_tagged_for_dmt4
-    if os.path.exists(dmt4_prep_dir):
-        _log("\t DMT4: Nettoyage du dossier existant...", level=2)
-        # Supprimer les fichiers temporaires (merged, etc.)
-        for f in os.listdir(dmt4_prep_dir):
-            if not f.endswith('.conllu'):
-                os.remove(os.path.join(dmt4_prep_dir, f))
+    dmt4_inputs = {
+        "implementation": _stage_provenance(
+            analysis_cache, ("conll_dmt4.py", "formate_patterns.py", "tools.py"), ("packages.pandas", "packages.numpy"),
+            (_validate_pickle,),
+        ),
+        "source": content_fingerprint([dir_underscore_fix]),
+        "attributes": [Form, Lemma, Pos, Dep, Feats],
+    }
+    dmt4_outputs = [dir_dmt4_files, dir_lexiques]
+    prepared = _reuse_preparation(analysis_cache, "dmt4", dmt4_inputs, ("import",), _log)
+    if prepared is not None:
+        dir_dmt4_files = prepared["dmt4_files"]
+        dir_lexiques = prepared["lexiques"]
+        _log("DMT4 et lexiques vérifiés : réutilisation.", level=1)
     else:
-        os.makedirs(dmt4_prep_dir, exist_ok=True)
-    
-    # Copier les fichiers CoNLL-U
-    _log("\t DMT4: Copie des fichiers CoNLL-U...", level=2)
-    for texte in textes:
-        _check_cancel()
-        destination = dmt4_prep_dir
-        source = f"{dir_underscore_fix}/{texte}.conllu"
-        dest_file = os.path.join(destination, f"{texte}.conllu")
-        if not os.path.exists(dest_file):
-            shutil.copy(source, destination)
-            _log(f"\t\t Copie: {texte}.conllu", level=3)
-    
-    liste_textes = ["merged"]
-    dmt4_merged_sorted = f"{dir_dmt4_files}/DMT4_merged_files_sorted.txt"
-    
-    if os.path.exists(dmt4_merged_sorted):
-        _log("\t Le fichier DMT4 trié existe déjà.", level=1)
+        analysis_cache.begin_stage("dmt4")
+        for directory in (dir_tagged_for_dmt4, dir_dmt4_files, dir_lexiques):
+            _reset_generated_directory(directory)
+        for texte in textes:
+            _check_cancel()
+            shutil.copy2(Path(dir_underscore_fix) / f"{texte}.conllu", dir_tagged_for_dmt4)
+        preparation = dir_tagged_for_dmt4.rstrip("/") + "/"
+        conll_dmt4.instancier_dict(preparation, dir_lexiques)
+        lexicon = _validate_pickle(Path(dir_lexiques) / "dico_str_to_int_all_items.pk")
+        if not lexicon:
+            raise ValueError("Le lexique DMT4 est vide.")
+        file_list = sorted(path.name for path in Path(dir_tagged_for_dmt4).glob("*.conllu"))
+        tools.concat_multiple_conll(preparation, file_list, "merged")
+        conll_dmt4.transform_data(preparation, "merged", Form, Lemma, Pos, Dep, Feats, dir_dmt4_files, dir_lexiques)
+        conll_dmt4.sort_dmtfiles(dir_dmt4_files.rstrip("/") + "/")
+        conll_dmt4.make_DMT4_file("merged", dir_dmt4_files)
+        sorted_dmt4 = Path(dir_dmt4_files) / "DMT4_merged_files_sorted.txt"
+        if not sorted_dmt4.is_file() or sorted_dmt4.stat().st_size == 0:
+            raise ValueError("La préparation DMT4 n'a produit aucune séquence exploitable.")
+        formate_patterns.make_dict_int_to_str(
+            str(Path(dir_lexiques) / "dico_str_to_int_all_items.pk"),
+            str(Path(dir_lexiques) / "dico_int_to_str_all_items.pk"),
+        )
+        analysis_cache.complete_stage(
+            "dmt4", dmt4_inputs, dmt4_outputs, dependencies=("import",),
+            result={"dmt4_files": dir_dmt4_files, "lexiques": dir_lexiques},
+        )
+
+    vrt_inputs = {
+        "implementation": _stage_provenance(analysis_cache, ("conllu2vrt.py",), ("packages.conllu",)),
+        "source": content_fingerprint([dir_tagged]),
+    }
+    converted = _reuse_preparation(analysis_cache, "vrt", vrt_inputs, ("import",), _log)
+    if converted is not None:
+        dir_textes_vrt = converted["textes_vrt"]
+        _log("VRT vérifié : réutilisation.", level=1)
     else:
+        analysis_cache.begin_stage("vrt")
+        _reset_generated_directory(dir_textes_vrt)
         _check_cancel()
-        if not os.path.exists(dir_dmt4_files):
-            os.makedirs(dir_dmt4_files, exist_ok=True)
-        _log("\t DMT4: Création du fichier DMT4.", level=1)
-        # S'assurer que le chemin se termine par / pour les fonctions de concaténation
-        dmt4_prep_dir_slash = dmt4_prep_dir.rstrip("/") + "/"
-        conll_dmt4.instancier_dict(dmt4_prep_dir_slash, dir_lexiques)
-        # Ne sélectionner que les fichiers .conllu
-        path = dmt4_prep_dir_slash
-        file_list = [f for f in os.listdir(dmt4_prep_dir) if f.endswith('.conllu')]
-        _log(f"\t DMT4: Concaténation de {len(file_list)} fichiers...", level=2)
-        tools.concat_multiple_conll(path, file_list, "merged")
-        for texte in liste_textes:
-            conll_dmt4.transform_data(dmt4_prep_dir_slash, texte, Form, Lemma, Pos, Dep, Feats, dir_dmt4_files, dir_lexiques)
-        # S'assurer que le chemin se termine par / pour sort_dmtfiles
-        dir_dmt4_files_slash = dir_dmt4_files.rstrip("/") + "/"
-        conll_dmt4.sort_dmtfiles(dir_dmt4_files_slash)
-        for texte in liste_textes:
-            conll_dmt4.make_DMT4_file(texte, dir_dmt4_files)
-    
-    path_tagged = dir_tagged.rstrip("/") + "/"
-    path_vrt = dir_textes_vrt.rstrip("/") + "/"
-    _check_cancel()
-    with StdoutLogger(log_callback, level=2):
-        conllu2vrt.transform(path_tagged, path_vrt)
-    if not os.path.exists(dir_cwb_corpus):
-        os.makedirs(dir_cwb_corpus, exist_ok=True)
-    with StdoutLogger(log_callback, level=2):
-        cwb.main(dir_cwb_corpus, dir_textes_vrt)
-        
-    if earlySelection:
-        _check_cancel()
-        _log("-" * 75, level=0)
-        _log("2.1 Early Selection du lemme pour la recherche", level=0)
-        path_lexique = f"{dir_lexiques}/dico_str_to_int_all_items.pk"
-        early_selection_minsup = list_minsup_percent[0] if list_minsup_percent else 25
-        if filter_specifs and len(list_minsup_percent) > 1:
-            _log(
-                f"Filtrage par spécificités actif : le minsup utilisé pour l'early selection sera {early_selection_minsup}% "
-                f"(première valeur configurée).",
-                level=2,
-            )
         with StdoutLogger(log_callback, level=2):
-            liste_earlyselection_lemma = early_selection.main(
-                seuil_early_selection, 
-                early_selection_minsup,
-                path_metadata, 
-                partition_cible, 
-                seuil_banalité, 
-                early_pos4lemma, 
-                filter_specifs,
-                path_out=dir_early_selection,
-                path_lexique=path_lexique,
-                registry_path=registry_path
-            )
-        
-    if user_input_list:
+            conllu2vrt.transform(dir_tagged.rstrip("/") + "/", dir_textes_vrt.rstrip("/") + "/")
+        merged_vrt = Path(dir_textes_vrt) / "merged.vrt"
+        if not merged_vrt.is_file() or not merged_vrt.stat().st_size:
+            raise RuntimeError("La conversion VRT est incomplète.")
+        analysis_cache.complete_stage("vrt", vrt_inputs, [dir_textes_vrt], dependencies=("import",),
+                                      result={"textes_vrt": dir_textes_vrt})
+
+    cwb_inputs = {
+        "implementation": _stage_provenance(
+            analysis_cache, ("cwb.py",),
+            ("tools.cwb-encode", "tools.cwb-makeall", "tools.native_cwb-encode", "tools.native_cwb-makeall", "wrappers", "docker_images"),
+        ),
+        "source": content_fingerprint([dir_textes_vrt]),
+    }
+    indexed = _reuse_preparation(analysis_cache, "cwb", cwb_inputs, ("vrt",), _log)
+    if indexed is not None:
+        dir_cwb_corpus = indexed["cwb_corpus"]
+        _log("Index CWB vérifié : réutilisation.", level=1)
+    else:
+        analysis_cache.begin_stage("cwb")
+        _reset_generated_directory(dir_cwb_corpus)
         _check_cancel()
-        path_lexique = f"{dir_lexiques}/dico_str_to_int_all_items.pk"
-        lexique = tools.load_pickles(path_lexique)
-        nom = f"user_input_{time.time()}"
-        if dir_early_selection:
-            os.makedirs(dir_early_selection, exist_ok=True)
-            with open(f"{dir_early_selection}/{nom}.txt", "w") as f:
-                f.write(str(liste_earlyselection_lemma))
-        liste_lemma = []
-        lignes = liste_earlyselection_lemma
-        _log(str(lignes), level=3)
-        for l in lignes:
-            lemma_preformat = f'lemma_"{l}"'
-            liste_lemma.append(lexique[lemma_preformat])
-        
+        with StdoutLogger(log_callback, level=2):
+            cwb.main(dir_cwb_corpus, dir_textes_vrt)
+        registry_file = Path(dir_cwb_corpus) / "registry" / "merged"
+        index_files = list((Path(dir_cwb_corpus) / "data" / "merged").glob("*.corpus"))
+        if not registry_file.is_file() or not registry_file.stat().st_size or not index_files:
+            raise RuntimeError("L'index CWB est incomplet.")
+        analysis_cache.complete_stage("cwb", cwb_inputs, [dir_cwb_corpus], dependencies=("vrt",),
+                                      result={"cwb_corpus": dir_cwb_corpus})
+    registry_path = str(Path(dir_cwb_corpus) / "registry")
+    os.environ["CORPUS_REGISTRY_PATH"] = registry_path
+
+    early_dependencies = []
+    effective_restriction = []
+    nom = ""
+    if user_input_list:
+        lexique = tools.load_pickles(str(Path(dir_lexiques) / "dico_str_to_int_all_items.pk"))
+        manual_lemmas = config.get("liste_earlyselection_lemma", [])
+        for lemma in manual_lemmas:
+            encoded = f'lemma_"{lemma}"'
+            if encoded not in lexique:
+                raise ValueError(f"Lemme de sélection absent du corpus : {lemma}")
+            effective_restriction.append(lexique[encoded])
+        nom = hashlib.sha256(json.dumps(manual_lemmas, ensure_ascii=False).encode("utf-8")).hexdigest()[:20]
+        _log("Lemmes ciblés (liste manuelle) : " + ", ".join(manual_lemmas), level=1)
+    elif automatic_selection:
+        _check_cancel()
+        early_inputs = {
+            **stage_common,
+            "parameters": [seuil_early_selection, list_minsup_percent[0], partition_cible,
+                           seuil_banalité, early_pos4lemma, filter_specifs],
+            "metadata": file_fingerprint(Path(path_metadata)),
+        }
+        early_outputs = [dir_early_selection]
+        early_dependencies = ["early_selection"]
+        if analysis_cache.stage_valid("early_selection", early_inputs, early_outputs, dependencies=("dmt4", "cwb")):
+            effective_restriction = analysis_cache.get_stage_result("early_selection")
+            _log("Early selection vérifiée : réutilisation.", level=1)
+        else:
+            analysis_cache.begin_stage("early_selection")
+            _reset_generated_directory(dir_early_selection)
+            with StdoutLogger(log_callback, level=2):
+                effective_restriction = early_selection.main(
+                    seuil_early_selection, list_minsup_percent[0], path_metadata,
+                    partition_cible, seuil_banalité, early_pos4lemma, filter_specifs,
+                    path_out=dir_early_selection,
+                    path_lexique=str(Path(dir_lexiques) / "dico_str_to_int_all_items.pk"),
+                    registry_path=registry_path,
+                )
+            analysis_cache.complete_stage(
+                "early_selection", early_inputs, early_outputs,
+                dependencies=("dmt4", "cwb"), result=effective_restriction,
+            )
+
+    if (earlySelection or user_input_list) and not effective_restriction:
+        raise ValueError("La sélection ne contient aucun lemme présent dans le corpus.")
+
+    def pattern_key(nb_itemset_min, minsup_percent, gap_min, gap_max):
+        return build_pattern_key(nb_itemset_min, minsup_percent, gap_min, gap_max, effective_restriction)
+
     # ==================================
     # 3 - Extraction des motifs
     # ==================================
@@ -678,21 +958,40 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     if not os.path.exists(path_file_closed):
         os.makedirs(path_file_closed, exist_ok=True)
     
+    extraction_stages = []
+    extraction_signatures = {}
     for nb_itemset_min in list_itemset_min:
         for gap_min in list_gap_min:
             for gap_max in list_gap_max:
                 for minsup_percent in list_minsup_percent:
                     _check_cancel()
-                    args = f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    if user_input_list:
-                        args = f"user_input_list_{nom}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    if earlySelection:
-                        args = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    args = args.replace("|", "-")
-                    
-                    if os.path.exists(f"{dir_patterns_results}/Closed/{args}_DMT4_merged_files_sorted_closed.txt"):
-                        _log(f"\t Le fichier de motifs clos existe déjà pour {args}.", level=1)
+                    args = pattern_key(nb_itemset_min, minsup_percent, gap_min, gap_max)
+                    stage = f"extraction:{args}"
+                    extraction_stages.append(stage)
+                    closed_text = Path(dir_patterns_results) / "Closed" / f"{args}_DMT4_merged_files_sorted_closed.txt"
+                    closed_pickle = closed_text.with_suffix(".pk")
+                    extraction_outputs = [closed_text, closed_pickle]
+                    extraction_inputs = {
+                        "implementation": _stage_provenance(
+                            analysis_cache, ("tools.py", "compute_emergent_sequential_patterns.py"), ("tools.bidespantree",),
+                            (build_pattern_key, _validate_pickle),
+                        ),
+                        "dmt4": content_fingerprint([dir_dmt4_files, dir_lexiques]),
+                        "attributes": [Form, Lemma, Pos, Dep, Feats],
+                        "parameters": [nb_itemset_min, minsup_percent, gap_min, gap_max, threads],
+                        "restriction": effective_restriction,
+                    }
+                    if effective_restriction:
+                        # Older restricted runs could merge two OR lists under one cache key.
+                        extraction_inputs["restriction_mode"] = "single_or"
+                    extraction_signatures[args] = extraction_inputs
+                    extraction_dependencies = ["dmt4", *early_dependencies]
+                    if _reuse_result_files(analysis_cache, stage, extraction_inputs, extraction_outputs, extraction_dependencies, _log):
+                        _log(f"Motifs clos vérifiés : réutilisation pour {args}.", level=1)
                     else:
+                        analysis_cache.begin_stage(stage)
+                        for output_file in extraction_outputs:
+                            output_file.unlink(missing_ok=True)
                         dmt4_files = f"{dir_dmt4_files}/DMT4_merged_files_sorted.txt"
                         
                         # Vérifier que le fichier DMT4 trié existe
@@ -732,10 +1031,8 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                             set_up.write(f"GAPMIN={gap_min}\n")
                             set_up.write(f"GAPMAX={gap_max}\n")
                             set_up.write(f"NB_ITEMSET_MIN={nb_itemset_min}\n")
-                            if user_input_list:
-                                set_up.write(f"OR={str(liste_lemma)[1:-1]}\n")
-                            if earlySelection:
-                                set_up.write(f"OR={str(liste_earlyselection_lemma)[1:-1]}\n")
+                            if effective_restriction:
+                                set_up.write("OR=" + ",".join(map(str, effective_restriction)) + "\n")
                         
                         # Fichier Load.ini fermé, maintenant on peut exécuter le binaire
                         try:
@@ -764,12 +1061,15 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                             result_size = os.path.getsize(output_path_abs)
                             _log(f"\t\t Fichier de résultats: {output_path} ({result_size} bytes)", level=2)
                             if result_size == 0:
-                                _log(f"\t\t ⚠ ATTENTION: Le fichier de résultats est vide!", level=0)
+                                _log(f"\t\t Aucun motif extrait pour {args}.", level=1)
                                 if result.stderr:
                                     _log(f"\t\t Stderr: {result.stderr}", level=1)
                         except (FileNotFoundError, subprocess.CalledProcessError, PermissionError, OSError) as e:
                             # Si direct échoue, essayer Docker
                             _log(f"\t\t Exécution directe impossible ({type(e).__name__}), tentative avec Docker...", level=1)
+                            # A fallback executor needs its own provenance before
+                            # its results can become an automatic cache hit.
+                            analysis_cache.cacheable = False
                             try:
                                 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
                                 output_path_rel = os.path.relpath(output_path_abs, base_dir)
@@ -819,6 +1119,14 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                                     )
                         except Exception as e:
                             _log(f"Erreur lors de l'extraction des motifs: {str(e)}", level=0)
+                            raise
+                        _check_cancel()
+                        compute_emergent_sequential_patterns.from_txt_to_dict(str(closed_text))
+                        motifs = _validate_pickle(closed_pickle)
+                        analysis_cache.complete_stage(
+                            stage, extraction_inputs, extraction_outputs,
+                            dependencies=extraction_dependencies, result={"motif_count": len(motifs)},
+                        )
 
         end_time = time.time()
         time_DMT4 = end_time - start_time
@@ -831,62 +1139,61 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     _log("4. Extraction des motifs caractéristiques", level=0)
     _progress("Calcul des motifs caractéristiques", 55)
     
-    rep_clos = f"{dir_patterns_results}/Closed/"
-    for f_clos in os.listdir(rep_clos):
-        if "txt" not in f_clos:
-            continue
-        compute_emergent_sequential_patterns.from_txt_to_dict(os.path.join(rep_clos, f_clos))
+    _log("Les dictionnaires de motifs clos sont validés avec leur extraction.", level=1)
     
     
     # ================================
     # 4.bis - Clustering interne
     # ================================
     
+    clustering_stages = []
+    time_clustering = 0
     if internal_clustering:
         _progress("Clustering interne", 60)
         start_time = time.time()
-        _check_cancel()
-        for d in [dir_clustering_results, f"{dir_clustering_results}/Clusters", f"{dir_clustering_results}/Medoids"]:
-            if not os.path.exists(d):
-                os.makedirs(d, exist_ok=True)
-        nbr_pool = 10
+        for directory in (dir_clustering_results, Path(dir_clustering_results) / "Clusters", Path(dir_clustering_results) / "Medoids"):
+            Path(directory).mkdir(parents=True, exist_ok=True)
         for nb_itemset_min in list_itemset_min:
             for gap_min in list_gap_min:
                 for gap_max in list_gap_max:
                     for minsup_percent in list_minsup_percent:
                         _check_cancel()
-                        # Vérifier que le fichier des motifs clos existe et n'est pas vide
-                        closed_pattern_file = f"{dir_patterns_results}/Closed/{args}_DMT4_merged_files_sorted_closed.pk"
-                        if not os.path.exists(closed_pattern_file):
-                            _log(f"⚠ Fichier de motifs clos manquant: {closed_pattern_file}", level=0)
-                            _log("Le clustering ne peut pas être effectué sans motifs clos.", level=0)
+                        args = pattern_key(nb_itemset_min, minsup_percent, gap_min, gap_max)
+                        closed_pickle = Path(dir_patterns_results) / "Closed" / f"{args}_DMT4_merged_files_sorted_closed.pk"
+                        motifs = _validate_pickle(closed_pickle)
+                        stage = f"clustering:{args}"
+                        clustering_stages.append(stage)
+                        cluster_inputs = {
+                            "implementation": _stage_provenance(
+                                analysis_cache, ("mesure_S2MP.py", "regroupement.py", "execute_internal_clustering.py", "formate_patterns.py"),
+                                ("packages.numpy", "packages.scipy", "packages.pandas"), (_validate_pickle,),
+                            ),
+                            "alignment": config.get("internal_clustering_alignment"),
+                            "extraction": extraction_signatures[args],
+                            "closed": content_fingerprint([closed_pickle]),
+                        }
+                        cluster_outputs = [
+                            Path(dir_clustering_results) / folder / f"{args}_{suffix}_{level}.pk"
+                            for level in (1, 2, 3)
+                            for folder, suffix in (("Clusters", "clustering"), ("Medoids", "medoids"))
+                        ] if motifs else []
+                        dependencies = (f"extraction:{args}",)
+                        if _reuse_result_files(analysis_cache, stage, cluster_inputs, cluster_outputs, dependencies, _log):
+                            _log(f"Clusters et médoïdes vérifiés : réutilisation pour {args}.", level=1)
                             continue
-                        
-                        file_size = os.path.getsize(closed_pattern_file)
-                        _log(f"Fichier de motifs clos: {closed_pattern_file} ({file_size} bytes)", level=2)
-                        
-                        if not os.path.exists(f"{dir_clustering_results}/Clusters/{args}_clustering_3.pk"):
-                            _log("Exécution du clustering interne...", level=1)
-                            # Rediriger stdout pour capturer les outputs du clustering
-                            import io
-                            old_stdout = sys.stdout
-                            sys.stdout = io.StringIO()
-                            try:
-                                execute_internal_clustering.main(nbr_pool, args, dir_clustering_results, dir_patterns_results)
-                                clustering_output = sys.stdout.getvalue()
-                                # Rediriger chaque ligne vers le log
-                                for line in clustering_output.split('\n'):
-                                    if line.strip():
-                                        _log(line, level=2)
-                            finally:
-                                sys.stdout = old_stdout
-                        else:
-                            _log("-" * 75, level=2)
-                            _log("4.bis Clustering interne : fichier de clusters déjà existant.", level=1)
-                            
-        end_time = time.time()
-        time_clustering = end_time - start_time
-    
+                        analysis_cache.begin_stage(stage)
+                        for output_file in cluster_outputs:
+                            output_file.unlink(missing_ok=True)
+                            output_file.with_suffix(".txt").unlink(missing_ok=True)
+                        if motifs:
+                            with StdoutLogger(log_callback, level=2):
+                                execute_internal_clustering.main(10, args, dir_clustering_results, dir_patterns_results)
+                            _check_cancel()
+                            for output_file in cluster_outputs:
+                                _validate_pickle(output_file)
+                        analysis_cache.complete_stage(stage, cluster_inputs, cluster_outputs, dependencies=dependencies)
+        time_clustering = time.time() - start_time
+
     # ==================================
     # 5 - Calcul statistiques (CQP + R)
     # ==================================
@@ -894,225 +1201,117 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
     _progress("Calcul statistiques (CQP + R)", 75)
     start_time = time.time()
     _check_cancel()
-    for d in [f"{dir_patterns_results}/Specifs/", f"{dir_patterns_results}/R"]:
-        if not os.path.exists(d):
-            os.makedirs(d, exist_ok=True)
-    _log("-" * 75, level=0)
-    _log("5. Calcul statistique des motifs caractéristiques", level=0)
-    
-    # Rediriger stdout vers le log pour capturer les messages des scripts
-    with StdoutLogger(log_callback, level=2):
-        df_metadata = pd.read_csv(path_metadata, sep="\t", index_col=0)
+    statistics_inputs = {
+        **stage_common,
+        "metadata": file_fingerprint(Path(path_metadata)),
+        "metadata_columns": list_metadata,
+        "specifs": specifs,
+        "internal_clustering": internal_clustering,
+        "lemma_thresholds": liste_seuils_lemma,
+        "lemma_pos": downhill_pos4lemma,
+        "bigram_thresholds": liste_seuils_bigrams,
+    }
+    statistics_outputs = [
+        Path(dir_patterns_results) / "R",
+        Path(dir_patterns_results) / "Specifs",
+        Path(dir_patterns_results) / "text_sizes.json",
+        Path(path_metadata),
+    ]
+    statistics_dependencies = ["cwb", *extraction_stages, *clustering_stages]
+    if analysis_cache.stage_valid("statistics", statistics_inputs, statistics_outputs, dependencies=statistics_dependencies):
+        results = analysis_cache.get_stage_result("statistics")
+        _log("Tableaux statistiques vérifiés : réutilisation.", level=1)
+    else:
+        analysis_cache.begin_stage("statistics")
+        for directory in statistics_outputs[:2]:
+            _reset_generated_directory(directory)
+        statistics_outputs[2].unlink(missing_ok=True)
         results = {}
-        
-        modif = ""
-        if user_input_list:
-            modif = f"user_input_list_{nom}_"
-        if earlySelection:
-            modif = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
-        if internal_clustering:
-            modif = modif + "internal_clustering_"
-        
-        for metadata in list_metadata:
-            _check_cancel()
-            for nb_itemset_min in list_itemset_min:
-                for gap_min in list_gap_min:
-                    for gap_max in list_gap_max:
-                        _check_cancel()
-                        path_R = f"{dir_patterns_results}/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}_gap_max{gap_max}/"
-                        if not os.path.exists(path_R):
-                            for sub in [f"{dir_patterns_results}/R/",
-                                        f"{dir_patterns_results}/R/{metadata}/",
-                                        f"{dir_patterns_results}/R/{metadata}/{modif}motifs/",
-                                        f"{dir_patterns_results}/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/",
-                                        f"{dir_patterns_results}/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/",
-                                        f"{dir_patterns_results}/R/{metadata}/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}_gap_max{gap_max}/"]:
-                                if not os.path.exists(sub):
-                                    os.makedirs(sub, exist_ok=True)
-                        for minsup_percent in list_minsup_percent:
-                            _check_cancel()
-                            _log(f"Minsup: {minsup_percent}%", level=1)
-                            path_out = f"{path_R}minsup{str(minsup_percent)}/"
-                            if os.path.exists(path_out):
-                                for dir in os.listdir(path_out):
-                                    _log(f"Déjà calculé {dir}", level=2)
-                                    fichiers = sorted(os.listdir(path_out + dir), key=lambda f: os.path.getmtime(os.path.join(path_out + dir, f)), reverse=True)
-                                    # Filtrer pour ne garder que les fichiers avec timestamps valides
-                                    fichiers = [f for f in fichiers if is_valid_timestamp_filename(f)]
-                                    for f in fichiers:
-                                        if "motifsTexte_" in f:
-                                            file_path = path_out + dir + "/" + f
-                                            # Vérifier que le fichier n'est pas vide/corrompu
-                                            try:
-                                                # Lire le fichier pour vérifier qu'il est valide
-                                                df_test = pd.read_csv(file_path, sep="\t", index_col=0, nrows=1)
-                                                if df_test.empty or len(df_test.columns) == 0:
-                                                    _log(f"⚠️  Fichier corrompu détecté (vide ou sans colonnes) : {file_path}", level=0)
-                                                    _log(f"   Recalcul nécessaire...", level=0)
-                                                    break  # Sortir de la boucle pour forcer le recalcul
-                                            except Exception as e:
-                                                _log(f"⚠️  Erreur lecture fichier existant : {file_path}", level=0)
-                                                _log(f"   {str(e)}", level=1)
-                                                _log(f"   Recalcul nécessaire...", level=0)
-                                                break  # Sortir de la boucle pour forcer le recalcul
-                                            
-                                            if internal_clustering:
-                                                if "_FUS" in f:
-                                                    results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_path
-                                                else:
-                                                    df_k = pd.read_csv(file_path, sep="\t", index_col=0)
-                                                    path_input = f"{dir_lexiques}/dico_str_to_int_all_items.pk"
-                                                    path_output = f"{dir_lexiques}/dico_int_to_str_all_items.pk"
-                                                    lexic_int_str = formate_patterns.make_dict_int_to_str(path_input, path_output)
-                                                    df_k = compute_CQP.fusion_internal_clusters(df_k, lexic_int_str, args, dir_clustering_results)
-                                                    f_fus = f[:-4] + "_FUS.tsv"
-                                                    df_k.to_csv(path_out + dir + "/" + f_fus, sep="\t")
-                                                    results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = path_out + dir + "/" + f_fus
-                                            else:
-                                                results[f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = file_path
+        with StdoutLogger(log_callback, level=2):
+            df_metadata = pd.read_csv(path_metadata, sep="\t", index_col=0, dtype=str)
+            import enslave_perl
+            text_sizes = enslave_perl.save_text_sizes(str(statistics_outputs[2]))
+            missing_texts = {unicodedata.normalize("NFC", name) for name in textes} - {unicodedata.normalize("NFC", name) for name in text_sizes[1]}
+            if missing_texts:
+                raise ValueError("Tailles CWB manquantes pour : " + ", ".join(sorted(missing_texts)))
+            modif = ""
+            if user_input_list:
+                modif = f"user_input_list_{nom}_"
+            elif automatic_selection:
+                modif = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
+            if internal_clustering:
+                modif += "internal_clustering_"
+            metadata_order = sorted(list_metadata, key=lambda name: name != "id")
+            for metadata in metadata_order:
+                for nb_itemset_min in list_itemset_min:
+                    for gap_min in list_gap_min:
+                        for gap_max in list_gap_max:
+                            for minsup_percent in list_minsup_percent:
+                                _check_cancel()
+                                args = pattern_key(nb_itemset_min, minsup_percent, gap_min, gap_max)
+                                closed_pickle = Path(dir_patterns_results) / "Closed" / f"{args}_DMT4_merged_files_sorted_closed.pk"
+                                if not _validate_pickle(closed_pickle):
+                                    _log(f"Aucun motif pour {args} : résultat vide validé.", level=1)
+                                    continue
+                                path_out = (Path(dir_patterns_results) / "R" / metadata / f"{modif}motifs"
+                                            / f"itemset_min{nb_itemset_min}" / f"gap_min{gap_min}_gap_max{gap_max}"
+                                            / f"minsup{minsup_percent}")
+                                path_out.mkdir(parents=True, exist_ok=True)
+                                results, _ = compute_CQP.main(
+                                    textes, minsup_percent, gap_min, gap_max, nb_itemset_min,
+                                    specifs, df_metadata, modif, metadata, internal_clustering,
+                                    results, str(path_out) + "/", mode, args,
+                                    dir_clustering_results, dir_patterns_results, registry_path, dir_lexiques,
+                                    text_sizes=text_sizes,
+                                )
+                                result_key = f"{metadata}_{modif}motifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"
+                                if result_key not in results:
+                                    raise RuntimeError(f"Le calcul n'a pas produit le tableau demandé : {result_key}")
+                                if specifs and f"{metadata}_specifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}" not in results:
+                                    raise RuntimeError(f"Le calcul n'a pas produit les spécificités demandées pour {metadata}.")
 
-                                            if specifs:
-                                                latest_specif = compute_CQP.find_latest_specif_output(
-                                                    dir_patterns_results,
-                                                    path_out + dir + "/",
-                                                )
-                                                if latest_specif:
-                                                    results[f"{metadata}_specifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = latest_specif
-                                            break
-                            else:
-                                _log("Calcul en cours...", level=1)
-                                results, path_out = compute_CQP.main(textes, minsup_percent, gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out, mode, args, dir_clustering_results, dir_patterns_results, registry_path, dir_lexiques)
-        
-        for metadata in list_metadata:
-            _check_cancel()
-            _log(metadata, level=2)
-            if not os.path.exists(f"{dir_patterns_results}/R/{metadata}"):
-                os.makedirs(f"{dir_patterns_results}/R/{metadata}", exist_ok=True)
-            
-            # POS
-            _log("pos", level=2)
-            path_pos = f"{dir_patterns_results}/R/{metadata}/"
-            execution_time = datetime.datetime.now()
-            if not os.path.exists(f"{dir_patterns_results}/R/{metadata}/pos/"):
-                os.makedirs(f"{dir_patterns_results}/R/{metadata}/pos/", exist_ok=True)
-                if metadata != "id":
-                    path_id = f"{dir_patterns_results}/R/id/pos/"
-                    modif = ""
-                    if os.path.exists(path_id):
-                        try:
-                            file_out_pos, file_total, path_out, df_pos = compute_CQP.get_already_computed_df_id("pos", minsup_percent, gap_min, gap_max, nb_itemset_min, path_id, path_pos, modif)
-                        except (FileNotFoundError, Exception) as e:
-                            _log(f"⚠️  Aucun fichier POS valide trouvé, recalcul nécessaire...", level=0)
-                            file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos, registry_path)
-                    else:
-                        file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos, registry_path)
-                    df_pos = compute_CQP.textes2metadata(df_pos, df_metadata, metadata).T
-                else:
-                    file_out_pos, path_out, df_pos, file_total = compute_CQP.compute_freq_TextesPos_AFC(execution_time, path_pos, registry_path)
-                df_pos.to_csv(file_out_pos, sep="\t")
-                _log(f"file_out_pos : {file_out_pos}", level=2)
-                if mode == "auto":
-                    subprocess.call(["Rscript", "./src/AFC.R", file_out_pos, path_out])
-                df_pos = compute_CQP.add_total(df_pos)
-                df_pos.to_csv(file_total, sep="\t")
-                results[f"{metadata}_pos"] = file_out_pos
-            else:
-                _log(f"Le fichier de résultats pour POS existe déjà", level=1)
-                doss = f"{dir_patterns_results}/R/{metadata}/pos/"
-                liste = [doss + f for f in os.listdir(doss) if "posTexte_" in f and is_valid_timestamp_filename(f)]
-                tri = sorted(liste, key=os.path.getmtime, reverse=True)
-                if tri:
-                    results[f"{metadata}_pos"] = tri[0]
-                else:
-                    _log(f"⚠ Aucun fichier POS trouvé dans {doss}", level=0)
-        
-        # Lemma
-        for seuil in liste_seuils_lemma:
-            _log(f"{seuil}lemma{downhill_pos4lemma}", level=2)
-            path_lemma = f"{dir_patterns_results}/R/{metadata}/"
-            execution_time = datetime.datetime.now()
-            if not os.path.exists(f"{dir_patterns_results}/R/{metadata}/{seuil}lemma{downhill_pos4lemma}"):
-                os.makedirs(f"{dir_patterns_results}/R/{metadata}/{seuil}lemma{downhill_pos4lemma}", exist_ok=True)
-                if metadata != "id":
-                    path_id = f"{dir_patterns_results}/R/id/{seuil}lemma{downhill_pos4lemma}/"
-                    modif = ""
-                    if os.path.exists(path_id):
-                        try:
-                            file_out_lemma, file_total, path_out, df_lemma = compute_CQP.get_already_computed_df_id(
-                                f"{seuil}lemma{downhill_pos4lemma}", minsup_percent, gap_min, gap_max, nb_itemset_min, path_id, path_lemma, modif
-                            )
-                        except (FileNotFoundError, Exception) as e:
-                            _log(f"⚠️  Aucun fichier Lemma valide trouvé, recalcul nécessaire...", level=0)
-                            file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma, registry_path)
-                    else:
-                        file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma, registry_path)
-                    df_lemma = compute_CQP.textes2metadata(df_lemma, df_metadata, metadata).T
-                else:
-                    file_out_lemma, path_out, df_lemma, file_total = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, path_lemma, downhill_pos4lemma, registry_path)
-                df_lemma.to_csv(file_out_lemma, sep="\t")
-                if mode == "auto":
-                    subprocess.call(["Rscript", "./src/AFC.R", file_out_lemma, path_out])
-                df_lemma = compute_CQP.add_total(df_lemma)
-                df_lemma.to_csv(file_total, sep="\t")
-                results[f"{metadata}_{seuil}lemma{downhill_pos4lemma}"] = file_out_lemma
-            else:
-                _log(f"already computed {seuil}lemma{downhill_pos4lemma}", level=1)
-                doss = f"{dir_patterns_results}/R/{metadata}/{seuil}lemma{downhill_pos4lemma}/"
-                liste = [doss + f for f in os.listdir(doss) if f"{seuil}lemma{downhill_pos4lemma}Texte_" in f and is_valid_timestamp_filename(f)]
-                tri = sorted(liste, key=os.path.getmtime, reverse=True)
-                if tri:
-                    results[f"{metadata}_{seuil}lemma{downhill_pos4lemma}"] = tri[0]
-                else:
-                    _log(f"⚠ Aucun fichier Lemma trouvé dans {doss}", level=0)
-        
-        # Bigrams
-        for seuil in liste_seuils_bigrams:
-            _log(f"{seuil}bigrams", level=2)
-            path_big = f"{dir_patterns_results}/R/{metadata}/"
-            execution_time = datetime.datetime.now()
-            if not os.path.exists(f"{dir_patterns_results}/R/{metadata}/{seuil}bigramslemma"):
-                os.makedirs(f"{dir_patterns_results}/R/{metadata}/{seuil}bigramslemma", exist_ok=True)
-                if metadata != "id":
-                    path_id = f"{dir_patterns_results}/R/id/{seuil}bigramslemma/"
-                    modif = ""
-                    if os.path.exists(path_id):
-                        try:
-                            file_out_bigrams, file_total, path_out, df_big = compute_CQP.get_already_computed_df_id(
-                                f"{seuil}bigramslemma", minsup_percent, gap_min, gap_max, nb_itemset_min, path_id, path_big, modif
-                            )
-                        except (FileNotFoundError, Exception) as e:
-                            _log(f"⚠️  Aucun fichier Bigrams valide trouvé, recalcul nécessaire...", level=0)
-                            file_out_bigrams, path_out, df_big = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil, registry_path)
-                    else:
-                        file_out_bigrams, path_out, df_big = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil, registry_path)
-                    df_big = compute_CQP.textes2metadata(df_big, df_metadata, metadata).T
-                else:
-                    file_out_bigrams, path_out, df_big = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, path_big, seuil, registry_path)
-                df_big.to_csv(file_out_bigrams, sep="\t")
-                if mode == "auto":
-                    subprocess.call(["Rscript", "./src/AFC.R", file_out_bigrams, path_out])
-                results[f"{metadata}_{seuil}bigramslemma"] = file_out_bigrams
-            else:
-                _log(f"already computed {seuil}bigrams", level=1)
-                doss = f"{dir_patterns_results}/R/{metadata}/{seuil}bigramslemma/"
-                liste = [doss + f for f in os.listdir(doss) if "bigramslemmaTexte_" in f and is_valid_timestamp_filename(f)]
-                tri = sorted(liste, key=os.path.getmtime, reverse=True)
-                if tri:
-                    results[f"{metadata}_{seuil}bigramslemma"] = tri[0]
-                else:
-                    _log(f"⚠ Aucun fichier Bigrams trouvé dans {doss}", level=0)
+            # Count each comparison representation once, then use the existing
+            # metadata aggregation for each selected partition.
+            representations = [("pos", "pos", None)]
+            representations += [(f"{seuil}lemma{downhill_pos4lemma}", "lemma", seuil) for seuil in liste_seuils_lemma]
+            representations += [(f"{seuil}bigramslemma", "bigrams", seuil) for seuil in liste_seuils_bigrams]
+            comparison_counts = {}
+            for metadata in metadata_order:
+                for representation, kind, seuil in representations:
+                    _check_cancel()
+                    if representation not in comparison_counts:
+                        comparison_dir = Path(dir_patterns_results) / "R" / metadata
+                        comparison_dir.mkdir(parents=True, exist_ok=True)
+                        base = str(comparison_dir) + "/"
+                        execution_time = datetime.datetime.now()
+                        if kind == "pos":
+                            file_out, _, table, _ = compute_CQP.compute_freq_TextesPos_AFC(execution_time, base, registry_path)
+                        elif kind == "lemma":
+                            file_out, _, table, _ = compute_CQP.compute_freq_TextesLemma_AFC(seuil, execution_time, base, downhill_pos4lemma, registry_path)
+                        else:
+                            file_out, _, table = compute_CQP.compute_freq_Textes_BigramsLemma_noAFC(execution_time, base, seuil, registry_path)
+                        comparison_counts[representation] = (table, Path(file_out).name)
+                    raw_table, filename = comparison_counts[representation]
+                    table = raw_table.copy() if metadata == "id" else compute_CQP.textes2metadata(raw_table, df_metadata, metadata).T
+                    target_dir = Path(dir_patterns_results) / "R" / metadata / representation
+                    target_dir.mkdir(parents=True, exist_ok=True)
+                    file_out = target_dir / filename
+                    table.to_csv(file_out, sep="\t")
+                    if kind != "bigrams":
+                        total_name = filename.replace("Texte_", "TexteOrdered_", 1)
+                        compute_CQP.add_total(table).to_csv(target_dir / total_name, sep="\t")
+                    results[f"{metadata}_{representation}"] = str(file_out)
+                    if mode == "auto":
+                        subprocess.run(["Rscript", str(Path(__file__).parent / "AFC.R"), str(file_out), str(target_dir)], check=True)
+        _check_cancel()
+        for file_out in results.values():
+            _validate_matrix(file_out)
+        analysis_cache.complete_stage(
+            "statistics", statistics_inputs, statistics_outputs,
+            dependencies=statistics_dependencies, result=results,
+        )
+    time_stats = time.time() - start_time
 
-        _log(str(results), level=3)
-        
-        # Réinitialiser les paramètres aux premières valeurs pour la section POS/Lemma/Bigrams
-        nb_itemset_min = list_itemset_min[0] if list_itemset_min else 3
-        gap_min = list_gap_min[0] if list_gap_min else 0
-        gap_max = list_gap_max[0] if list_gap_max else 0
-        minsup_percent = list_minsup_percent[0] if list_minsup_percent else 25
-        
-        end_time = time.time()
-        time_stats = end_time - start_time
-    
     _check_cancel()
     _progress("Analyse terminée", 100)
     

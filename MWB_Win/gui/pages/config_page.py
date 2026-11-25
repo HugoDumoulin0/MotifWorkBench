@@ -468,8 +468,8 @@ class ConfigPage(QWidget):
         form_early.addRow(_tooltip_label("POS pour early sel. :", "Restreindre l'early selection à ces POS."), self._w_early_pos4lemma)
 
         self._w_user_input_list = QCheckBox("Utiliser une liste de lemmes manuelle")
-        self._w_user_input_list.setToolTip("Utiliser une liste de lemmes fournie manuellement au lieu de l'early selection automatique.")
-        self._w_user_input_list.toggled.connect(self._update_manual_lemma_list_state)
+        self._w_user_input_list.setToolTip("Chaque motif doit contenir au moins un des lemmes saisis. Cette liste remplace la sélection automatique.")
+        self._w_user_input_list.toggled.connect(self._update_early_selection_state)
         form_early.addRow("", self._w_user_input_list)
 
         self._w_liste_earlyselection = QLineEdit()
@@ -478,7 +478,7 @@ class ConfigPage(QWidget):
         form_early.addRow(_tooltip_label("Lemmes :", "Liste manuelle de lemmes à cibler."), self._w_liste_earlyselection)
 
         layout.addWidget(self._grp_early)
-        self._update_early_selection_state(self._w_earlySelection.isChecked())
+        self._update_early_selection_state()
 
         # Clustering interne
         grp_clust = QGroupBox("Clustering interne")
@@ -827,7 +827,7 @@ class ConfigPage(QWidget):
         finally:
             sys.path.pop(0)
 
-    def _update_early_selection_state(self, enabled: bool):
+    def _update_early_selection_state(self):
         """Grise et désactive les paramètres d'early selection quand l'option est décochée."""
         widgets = [
             self._w_seuil_early,
@@ -837,16 +837,11 @@ class ConfigPage(QWidget):
             self._w_early_pos4lemma,
         ]
 
+        manual = self._w_user_input_list.isChecked()
         for widget in widgets:
-            widget.setEnabled(enabled)
+            widget.setEnabled(self._w_earlySelection.isChecked() and not manual)
+        self._w_liste_earlyselection.setEnabled(manual)
 
-        self._w_user_input_list.setEnabled(True)
-        self._update_manual_lemma_list_state(self._w_user_input_list.isChecked())
-
-    def _update_manual_lemma_list_state(self, enabled: bool):
-        """Active la saisie des lemmes manuels indépendamment de l'early selection."""
-        self._w_liste_earlyselection.setEnabled(enabled)
-    
     # ========================================================
     # Chargement et lecture de la configuration dans l'UI
     # ========================================================
@@ -928,8 +923,7 @@ class ConfigPage(QWidget):
         self._w_early_pos4lemma.setText(cfg.get("early_pos4lemma", "ADJ|NOUN|VERB"))
         self._w_user_input_list.setChecked(cfg.get("user_input_list", False))
         self._w_liste_earlyselection.setText(", ".join(cfg.get("liste_earlyselection_lemma", [])))
-        self._update_early_selection_state(self._w_earlySelection.isChecked())
-        self._update_manual_lemma_list_state(self._w_user_input_list.isChecked())
+        self._update_early_selection_state()
         self._w_internal_clustering.setChecked(cfg.get("internal_clustering", True))
         self._w_gap_min.setValue(cfg.get("list_gap_min", [0])[0])
         self._w_gap_max.setValue(cfg.get("list_gap_max", [0])[0])

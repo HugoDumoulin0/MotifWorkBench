@@ -14,6 +14,7 @@ if str(SRC_DIR) not in sys.path:
 
 import formate_patterns
 import tools
+from gui.core.analysis_paths import resolve_analysis_artifact
 
 
 def _load_last_analysis(project_root: Path) -> dict:
@@ -72,8 +73,9 @@ def load_closed_patterns_from_last_analysis(project_root: Path) -> list[dict[str
         return []
 
     analysis_root = project_root / "Data" / "analyses" / analysis_group_name / config_id
-    lexic_int_str_path = analysis_root / "Lexiques" / "dico_int_to_str_all_items.pk"
-    lexic_str_int_path = analysis_root / "Lexiques" / "dico_str_to_int_all_items.pk"
+    lexiques = resolve_analysis_artifact(analysis_root, "dmt4", "lexiques", analysis_root / "Lexiques")
+    lexic_int_str_path = lexiques / "dico_int_to_str_all_items.pk"
+    lexic_str_int_path = lexiques / "dico_str_to_int_all_items.pk"
 
     try:
         if lexic_int_str_path.exists():

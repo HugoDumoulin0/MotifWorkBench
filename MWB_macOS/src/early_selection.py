@@ -48,9 +48,7 @@ def compute_early_df_lemmes(seuil, early_pos4lemma, registry_path):
 
 def dictionnaire_t_target(dictionnaire_t, df_target,partition_cible):
     """Agrège les tailles de textes par colonne de métadonnées."""
-    df_target["taille"]=df_target.index.map(dictionnaire_t)
-    dictionnaire_t_result = df_target.groupby(partition_cible)["taille"].sum().to_dict()
-    return dictionnaire_t_result
+    return compute_CQP.aggregate_t_by_metadata(dictionnaire_t, df_target, partition_cible)
 
 
 def _load_specif_rows(specif_output_path, seuil_banalité):

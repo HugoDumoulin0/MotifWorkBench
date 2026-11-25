@@ -8,9 +8,10 @@ from PyQt6.QtWidgets import (
     QScrollArea, QWidget, QListWidget, QListWidgetItem, QMessageBox
 )
 from PyQt6.QtGui import QFont, QBrush, QColor
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, pyqtSignal
 
 from gui.widgets.base_page import BasePage, TEXT_PRIMARY, ACCENT
+from gui.core.analysis_paths import get_analysis_root
 from gui.core.run_history import clear_run_history, load_run_history
 
 class HistoryPage(BasePage):
@@ -19,6 +20,8 @@ class HistoryPage(BasePage):
     triés par date de modification.
     """
     
+    open_analysis_requested = pyqtSignal(str)
+
     def __init__(self, parent=None):
         super().__init__(parent)
         self._build_ui()
@@ -71,6 +74,11 @@ class HistoryPage(BasePage):
             }}
         """)
         actions_layout.addWidget(self._refresh_btn)
+        self._open_btn = QPushButton("Ouvrir dans Shiny")
+        self._open_btn.setMinimumHeight(38)
+        self._open_btn.setEnabled(False)
+        self._open_btn.clicked.connect(self._open_selected_analysis)
+        actions_layout.addWidget(self._open_btn)
 
         self._clear_btn = QPushButton("Supprimer l'historique")
         self._clear_btn.setMinimumHeight(38)
@@ -115,6 +123,8 @@ class HistoryPage(BasePage):
         
         self._history_list = QListWidget()
         self._history_list.setMinimumHeight(400)
+        self._history_list.currentItemChanged.connect(self._update_open_button)
+        self._history_list.itemDoubleClicked.connect(lambda _item: self._open_selected_analysis())
         self._history_list.setStyleSheet(f"""
             QListWidget {{
                 background: #ffffff;
@@ -167,7 +177,7 @@ class HistoryPage(BasePage):
             return f"{seconds:.1f}s" if seconds < 10 else f"{secs}s"
         
         
-    def _refresh_history(self):
+    def _refresh_history(self, _results=None):
         self._history_list.clear()
 
         history = load_run_history()
@@ -194,7 +204,10 @@ class HistoryPage(BasePage):
                 f"{lang} | {gpu} | threads={threads} | minsup={minsup}"
             )
 
+            if run.get("analysis_group_name") and run.get("config_id"):
+                line += f" | {run['analysis_group_name']}/{run['config_id']}"
             item = QListWidgetItem(line)
+            item.setData(Qt.ItemDataRole.UserRole, run)
             item.setFlags(Qt.ItemFlag.ItemIsEnabled | Qt.ItemFlag.ItemIsSelectable)
 
             fg, bg = self._status_colors(status)
@@ -211,6 +224,28 @@ class HistoryPage(BasePage):
                 font = QFont("Helvetica Neue", 10)
                 sub.setFont(font)
                 self._history_list.addItem(sub)
+
+    def _selected_analysis_root(self):
+        item = self._history_list.currentItem()
+        run = item.data(Qt.ItemDataRole.UserRole) if item is not None else None
+        if not isinstance(run, dict) or run.get("status") != "success":
+            return None
+        if run.get("analysis_group_name") and run.get("config_id"):
+            return get_analysis_root(run["analysis_group_name"], run["config_id"])
+        return None
+
+    def _update_open_button(self, *_args):
+        root = self._selected_analysis_root()
+        self._open_btn.setEnabled(root is not None and root.is_dir())
+
+    def _open_selected_analysis(self):
+        root = self._selected_analysis_root()
+        if root is not None:
+            self.open_analysis_requested.emit(str(root.resolve()))
+
+    def showEvent(self, event):
+        super().showEvent(event)
+        self._refresh_history()
 
     def _clear_history(self):
         confirm = QMessageBox.question(

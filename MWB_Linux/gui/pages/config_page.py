@@ -481,8 +481,7 @@ class ConfigPage(QWidget):
 
         self._w_user_input_list = QCheckBox("Utiliser une liste de lemmes manuelle")
         self._w_user_input_list.setToolTip(
-            "Utiliser une liste de lemmes fournie manuellement. "
-            "Cette option peut être utilisée avec ou sans early selection automatique."
+            "Chaque motif doit contenir au moins un des lemmes saisis. Cette liste remplace la sélection automatique."
         )
         self._w_user_input_list.toggled.connect(lambda _checked: self._update_early_selection_state(self._w_earlySelection.isChecked()))
         form_early.addRow("", self._w_user_input_list)

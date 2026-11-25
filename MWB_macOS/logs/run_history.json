@@ -1,0 +1,210 @@
+[
+  {
+    "timestamp": "2026-11-25 15:39:55",
+    "status": "success",
+    "duration_seconds": 109.59,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 4,
+    "minsup": [
+      25.0
+    ],
+    "details": "Analyse terminée avec succès.",
+    "analysis_group_name": "analyse_Textes_raw",
+    "config_id": "20261125_153805_specifs_meta_genre",
+    "analysis_root": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261125_153805_specifs_meta_genre",
+    "results_manifest": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261125_153805_specifs_meta_genre/results_for_shiny.json"
+  },
+  {
+    "timestamp": "2026-11-22 11:47:57",
+    "status": "success",
+    "duration_seconds": 3910.82,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 10,
+    "minsup": [
+      0.1
+    ],
+    "details": "Analyse terminée avec succès.",
+    "analysis_group_name": "analyse_Textes_raw",
+    "config_id": "20261122_104246_sup0.1pct_specifs_early200_nopos_part_genre_meta_+",
+    "analysis_root": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_104246_sup0.1pct_specifs_early200_nopos_part_genre_meta_+",
+    "results_manifest": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_104246_sup0.1pct_specifs_early200_nopos_part_genre_meta_+/results_for_shiny.json"
+  },
+  {
+    "timestamp": "2026-11-22 10:42:04",
+    "status": "stopped",
+    "duration_seconds": 452.78,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 10,
+    "minsup": [
+      0.1
+    ],
+    "details": "Analyse arrêtée par l'utilisateur.",
+    "analysis_group_name": "analyse_Textes_raw",
+    "config_id": "20261122_103431_sup0.1pct_specifs_early200_nopos_nodep_part_genre+",
+    "analysis_root": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_103431_sup0.1pct_specifs_early200_nopos_nodep_part_genre+",
+    "results_manifest": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_103431_sup0.1pct_specifs_early200_nopos_nodep_part_genre+/results_for_shiny.json"
+  },
+  {
+    "timestamp": "2026-11-22 09:27:33",
+    "status": "success",
+    "duration_seconds": 739.48,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 10,
+    "minsup": [
+      0.1
+    ],
+    "details": "Analyse terminée avec succès.",
+    "analysis_group_name": "analyse_Textes_raw",
+    "config_id": "20261122_091514_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "analysis_root": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_091514_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "results_manifest": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_091514_sup0.1pct_specifs_nopos_nodep_meta_genre/results_for_shiny.json"
+  },
+  {
+    "timestamp": "2026-11-22 09:12:02",
+    "status": "error",
+    "duration_seconds": 18.0,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 10,
+    "minsup": [
+      0.1
+    ],
+    "details": "Erreur lors de l'analyse : Échec du calcul R des spécificités: Le chargement a nécessité le package : dplyr\n\nAttachement du package : ‘dplyr’\n\nLes objets suivants sont masqués depuis ‘package:stats’:\n\n    filter, lag\n\nLes objets suivants sont masqués depuis ‘package:base’:\n\n    intersect, setdiff, setequal, union\n\nLe chargement a nécessité le package : textometry\nLe chargement a nécessité le packa",
+    "analysis_group_name": "analyse_Textes_raw",
+    "config_id": "20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "analysis_root": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "results_manifest": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre/results_for_shiny.json"
+  },
+  {
+    "timestamp": "2026-11-22 08:46:45",
+    "status": "error",
+    "duration_seconds": 707.35,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 10,
+    "minsup": [
+      0.1
+    ],
+    "details": "Erreur lors de l'analyse : Échec du calcul R des spécificités: Le chargement a nécessité le package : dplyr\n\nAttachement du package : ‘dplyr’\n\nLes objets suivants sont masqués depuis ‘package:stats’:\n\n    filter, lag\n\nLes objets suivants sont masqués depuis ‘package:base’:\n\n    intersect, setdiff, setequal, union\n\nLe chargement a nécessité le package : textometry\nLe chargement a nécessité le packa",
+    "analysis_group_name": "analyse_Textes_raw",
+    "config_id": "20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "analysis_root": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "results_manifest": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre/results_for_shiny.json"
+  },
+  {
+    "timestamp": "2026-11-22 08:22:30",
+    "status": "stopped",
+    "duration_seconds": 720.57,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 10,
+    "minsup": [
+      0.1
+    ],
+    "details": "Analyse arrêtée par l'utilisateur.",
+    "analysis_group_name": "analyse_Textes_raw",
+    "config_id": "20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "analysis_root": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre",
+    "results_manifest": "/Users/hugodumoulin/Desktop/ArchivU/Travail/motifs/MotifWorkBench_dev/MWB_macOS/Data/analyses/analyse_Textes_raw/20261122_081030_sup0.1pct_specifs_nopos_nodep_meta_genre/results_for_shiny.json"
+  },
+  {
+    "timestamp": "2026-11-05 16:27:42",
+    "status": "success",
+    "duration_seconds": 109.15,
+    "language": "fr",
+    "use_gpu": true,
+    "threads": 4,
+    "minsup": [
+      25.0
+    ],
+    "details": "Analyse terminée avec succès."
+  },
+  {
+    "timestamp": "2026-11-05 16:25:24",
+    "status": "success",
+    "duration_seconds": 3.13,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 4,
+    "minsup": [
+      25.0
+    ],
+    "details": "Analyse terminée avec succès."
+  },
+  {
+    "timestamp": "2026-11-05 16:23:20",
+    "status": "success",
+    "duration_seconds": 3.54,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 4,
+    "minsup": [
+      25.0
+    ],
+    "details": "Analyse terminée avec succès."
+  },
+  {
+    "timestamp": "2026-11-05 16:22:56",
+    "status": "stopped",
+    "duration_seconds": 2.77,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 4,
+    "minsup": [
+      25
+    ],
+    "details": "Analyse arrêtée par l'utilisateur."
+  },
+  {
+    "timestamp": "2026-11-05 16:17:55",
+    "status": "success",
+    "duration_seconds": 109.66,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 4,
+    "minsup": [
+      24.9
+    ],
+    "details": "Analyse terminée avec succès."
+  },
+  {
+    "timestamp": "2026-11-05 16:16:04",
+    "status": "stopped",
+    "duration_seconds": 26.37,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 4,
+    "minsup": [
+      24.9
+    ],
+    "details": "Analyse arrêtée par l'utilisateur."
+  },
+  {
+    "timestamp": "2026-11-05 15:37:50",
+    "status": "success",
+    "duration_seconds": 108.77,
+    "language": "fr",
+    "use_gpu": false,
+    "threads": 4,
+    "minsup": [
+      25.0
+    ],
+    "details": "Analyse terminée avec succès."
+  },
+  {
+    "timestamp": "2026-11-05 14:17:36",
+    "status": "success",
+    "duration_seconds": 6838.92,
+    "language": "fr",
+    "use_gpu": true,
+    "threads": 4,
+    "minsup": [
+      10.0
+    ],
+    "details": "Analyse terminée avec succès."
+  }
+]

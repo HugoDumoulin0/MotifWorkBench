@@ -1,0 +1,9 @@
+{
+  "log_level": "normal",
+  "log_retention_days": 30,
+  "closed_pattern_display_mode": "words",
+  "offer_prepared_archive_prompt": true,
+  "prepared_archive_prompted_corpora": [
+    "Textes_raw"
+  ]
+}

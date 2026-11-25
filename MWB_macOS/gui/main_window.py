@@ -137,6 +137,9 @@ class MainWindow(QMainWindow):
         analysis_page.set_config_page(config_page)
         analysis_page.analysis_finished.connect(self._shiny_page.refresh_from_latest_analysis)
         analysis_page.analysis_finished.connect(self._concordancer_page.refresh_from_latest_analysis)
+        history_page = self._pages_def[5][1]
+        analysis_page.analysis_finished.connect(history_page._refresh_history)
+        history_page.open_analysis_requested.connect(self._open_analysis_results)
         
         self._stack = QStackedWidget()
         self._nav_buttons = []
@@ -161,6 +164,14 @@ class MainWindow(QMainWindow):
         for btn in self._nav_buttons:
             btn.setChecked(btn is clicked_btn)
     
+    def closeEvent(self, event):
+        self._shiny_page.shutdown()
+        super().closeEvent(event)
+
+    def _open_analysis_results(self, analysis_root):
+        self._navigate(self._shiny_page, self._nav_buttons[3])
+        self._shiny_page.open_analysis(analysis_root)
+
     def _toggle_sidebar(self):
         """
         Affiche ou rétracte la sidebar.

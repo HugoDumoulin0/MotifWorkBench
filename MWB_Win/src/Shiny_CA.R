@@ -167,6 +167,21 @@ extract_gapmin    <- function(cands) unique(sub(".*_[^_]+_([^_]+)_[^_]+_[^_]+$",
 extract_gapmax    <- function(cands) unique(sub(".*_[^_]+_[^_]+_([^_]+)_[^_]+$", "\\1", cands))
 extract_itemsetmin <- function(cands) unique(sub(".*_[^_]+_[^_]+_[^_]+_([^_]+)$", "\\1", cands))
 
+# Scale the rendered label sizes so contribution-based sizing keeps its proportions.
+export_point_labels <- function(plot, percent) {
+  if (percent == 100) return(plot)
+  draw_labels <- function(self, data, ...) {
+    data$size <- data$size * percent / 100
+    ggplot2::ggproto_parent(ggplot2::Geom, self)$draw_layer(data, ...)
+  }
+  plot$layers <- lapply(plot$layers, function(layer) {
+    if (!inherits(layer$geom, c("GeomTextRepel", "GeomText"))) return(layer)
+    geom <- ggplot2::ggproto(NULL, layer$geom, draw_layer = draw_labels)
+    ggplot2::ggproto(NULL, layer, geom = geom)
+  })
+  plot
+}
+
 #--------------------------------------------------------------
 # SERVER
 #--------------------------------------------------------------
@@ -515,7 +530,8 @@ server <- function(input, output, session){
         base_dir <- getwd()
         file_name <- paste("Patterns_results/CA_plots/CA_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
         full_path <- file.path(base_dir, file_name)
-        ggsave(full_path, plot = CA__plot(), width = 12, height = 9, dpi = 300)
+        export_plot <- export_point_labels(CA__plot(), input$factor_export_label_pct)
+        ggsave(full_path, plot = export_plot, width = 12, height = 9, dpi = 300)
         showNotification(paste("Plot saved to:", full_path), type = "message")
       }
     )
@@ -819,7 +835,8 @@ server <- function(input, output, session){
         base_dir <- getwd()
         file_name <- paste("Patterns_results/CA_plots/Cluster_by_points", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
         full_path <- file.path(base_dir, file_name)
-        ggsave(full_path, plot = plot_CA_clusters(), width = 12, height = 9, dpi = 300)
+        export_plot <- export_point_labels(plot_CA_clusters(), input$cluster_export_label_pct)
+        ggsave(full_path, plot = export_plot, width = 12, height = 9, dpi = 300)
         showNotification(paste("Plot saved to:", full_path), type = "message")
       }
     )
@@ -1116,6 +1133,8 @@ ui <- page_navbar(
             # p(HTML("<i>Scaling labels often results in lesser constributive labels disapearing. You might need to deactivate jittering if lines are displayed with no labels:</i>")),
             # checkboxInput("deactivate_jitter", HTML("Deactivate jittering <i>(only available with 'Label size' checked)</i>"), value=FALSE),
             textInput("plot_title_CA", "Plot Title:", value = "CA - Biplot"),
+            sliderInput("factor_export_label_pct", "Point label size in export (%)",
+                        min = 100, max = 300, value = 100, step = 25),
             actionButton(
                   inputId = "save_CA_plot",
                   label = "Save plot",
@@ -1249,6 +1268,8 @@ ui <- page_navbar(
               textInput("plot_title_parang", "Plot title", value = ""),
               textInput("plot_xlab_parang", "X axis title:", value = "Dimension 1"),
               textInput("plot_ylab_parang", "Y axis title", value = "Dimension 2"),
+              sliderInput("cluster_export_label_pct", "Point label size in export (%)",
+                          min = 100, max = 300, value = 100, step = 25),
               actionButton(
                 inputId = "save_cluster_v_test_post",
                 label = "Save plot",

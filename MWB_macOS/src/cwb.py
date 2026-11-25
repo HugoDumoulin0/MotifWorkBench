@@ -65,8 +65,7 @@ def main(dir_cwb_corpus, dir_textes_vrt):
         result_encode = _run_command(cmd_encode)
     except (FileNotFoundError, subprocess.CalledProcessError) as exc:
         error_output = getattr(exc, "stderr", "") or str(exc)
-        print(f"Erreur lors de l'encodage CWB: {error_output}")
-        return
+        raise RuntimeError(f"Erreur lors de l'encodage CWB: {error_output}") from exc
     if result_encode.stdout:
         print(result_encode.stdout, end="")
     
@@ -80,8 +79,7 @@ def main(dir_cwb_corpus, dir_textes_vrt):
         result_makeall = _run_command(cmd_makeall)
     except (FileNotFoundError, subprocess.CalledProcessError) as exc:
         error_output = getattr(exc, "stderr", "") or str(exc)
-        print(f"Erreur lors de l'indexation CWB: {error_output}")
-        return
+        raise RuntimeError(f"Erreur lors de l'indexation CWB: {error_output}") from exc
     if result_makeall.stdout:
         print(result_makeall.stdout, end="")
 

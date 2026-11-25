@@ -55,8 +55,9 @@ def build_run_entry(
     duration_seconds: float,
     config: dict[str, Any],
     details: str = "",
+    analysis_root: str | Path | None = None,
 ) -> dict[str, Any]:
-    return {
+    entry = {
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "status": status,  # success | error | stopped
         "duration_seconds": round(max(duration_seconds, 0.0), 2),
@@ -66,3 +67,12 @@ def build_run_entry(
         "minsup": config.get("list_minsup_percent", []),
         "details": details,
     }
+    if analysis_root is not None:
+        root = Path(analysis_root).resolve()
+        entry.update(
+            analysis_group_name=root.parent.name,
+            config_id=root.name,
+            analysis_root=str(root),
+            results_manifest=str(root / "results_for_shiny.json"),
+        )
+    return entry

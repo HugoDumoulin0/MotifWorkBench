@@ -17,6 +17,7 @@ import datetime
 import subprocess
 import enslave_perl
 import re
+import unicodedata
 from pathlib import Path
 from config import *
 
@@ -38,6 +39,11 @@ def is_valid_timestamp_filename(filename):
 def textes2metadata(df, df_target, metadata):
     df_combined = df.T
     df_target = df_target.astype(str)
+    # CWB exposes NFC identifiers even when filenames use decomposed accents.
+    df_combined.index = df_combined.index.astype(str).str.normalize("NFC")
+    df_target.index = df_target.index.astype(str).str.normalize("NFC")
+    if df_combined.index.has_duplicates or df_target.index.has_duplicates:
+        raise ValueError("Plusieurs textes partagent le même identifiant Unicode.")
     df_combined[metadata] = df_target[metadata]
     # On groupe par target et on additionne les lemmes
     df_targetXlemmes = df_combined.groupby(metadata).sum()  
@@ -46,8 +52,14 @@ def textes2metadata(df, df_target, metadata):
 
 def aggregate_t_by_metadata(dictionnaire_t, df_target, metadata):
     df_target = df_target.copy()
+    df_target.index = df_target.index.astype(str).str.normalize("NFC")
+    if df_target.index.has_duplicates:
+        raise ValueError("Plusieurs textes partagent le même identifiant Unicode.")
+    normalized_sizes = {unicodedata.normalize("NFC", str(text_id)): size for text_id, size in dictionnaire_t.items()}
+    if len(normalized_sizes) != len(dictionnaire_t):
+        raise ValueError("Plusieurs tailles de textes partagent le même identifiant Unicode.")
     df_target[metadata] = df_target[metadata].astype(str)
-    df_target["taille"] = df_target.index.map(dictionnaire_t).fillna(0)
+    df_target["taille"] = df_target.index.map(normalized_sizes).fillna(0)
     return df_target.groupby(metadata)["taille"].sum().to_dict()
 
 
@@ -229,31 +241,73 @@ def compute_freq_TextesPos_AFC(execution_time, path_out, registry_path=None):
     return file_out, path_out, df_pos, file_total
 
 
-def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t, patterns_results_dir):
-    dictionnaire_f = df_k.sum(axis=1).to_dict()
-    dictionnaire_k = df_k.T.to_dict()
-    données_specifs = []
-    for motif in dictionnaire_k.keys():
-        for texte in dictionnaire_k[motif].keys():
-            données_specifs.append({
-                "fichier":texte,
-                "motif":motif,
-                "k":dictionnaire_k[motif][texte],
-                "f":dictionnaire_f[motif],
-                "t":dictionnaire_t[texte],
-                "T":T    
-                })
-    df_spec = pd.DataFrame(données_specifs)
-    # Formatter le timestamp sans espaces ni caractères problématiques
+def _validate_specifs_counts(df_k, T, dictionnaire_t):
+    """Le modèle hypergéométrique exige k <= t, f <= T et t > 0 : on refuse explicitement sinon."""
+    t_series = pd.Series({col: dictionnaire_t[col] for col in df_k.columns}, dtype=float)
+    problems = []
+    if (t_series <= 0).any():
+        problems.append("partitions de taille nulle : " + ", ".join(map(str, t_series[t_series <= 0].index[:10])))
+    over_t = df_k.gt(t_series, axis=1)
+    if over_t.values.any():
+        n_cells = int(over_t.values.sum())
+        motifs = list(df_k.index[over_t.any(axis=1)][:3])
+        problems.append(f"{n_cells} fréquence(s) de motif supérieure(s) à la taille de la partition (ex. : {motifs})")
+    f_over = df_k.sum(axis=1) > T
+    if f_over.any():
+        problems.append(f"{int(f_over.sum())} motif(s) plus fréquent(s) que la taille du corpus")
+    if problems:
+        raise ValueError("Spécificités impossibles à calculer : " + " ; ".join(problems))
+
+
+def compute_specifs_function(df_k, minsup_percent, execution_time, specifs, path_out, T, dictionnaire_t, patterns_results_dir, keep_rows=None):
+    """Calcule les spécificités sur des fréquences de motifs NON fusionnées.
+
+    df_k : motifs x partitions (comptes des motifs individuels).
+    keep_rows : si fourni (clustering interne), le specif_*.tsv final ne garde que ces motifs
+    (les médoïdes, dans cet ordre) ; la table complète est conservée dans allmotifs_specif_*.tsv.
+    """
+    df_k = df_k.apply(pd.to_numeric)
+    _validate_specifs_counts(df_k, T, dictionnaire_t)
+    # Table large (motifs x partitions) + ligne "others" = taille t de chaque partition.
+    # Le format long n'est plus utilisé ici : il ferait des millions de lignes sans clustering préalable.
+    df_wide = df_k.copy()
+    df_wide.loc["others"] = [dictionnaire_t[col] for col in df_k.columns]
+    df_wide.index.name = "motif"
     timestamp = execution_time.strftime('%Y%m%d_%H%M%S')
     specifs_dir = _build_specifs_output_dir(patterns_results_dir, path_out)
-    file_out=f"{specifs_dir}SpecifsMotifsTexte_df_{timestamp}.tsv"
-    df_spec.to_csv(file_out, sep="\t", encoding="utf-8", index=False)
+    file_out = f"{specifs_dir}SpecifsMotifsTexte_wide_{timestamp}.tsv"
+    # Écriture brute (motifs non échappés, relus par R avec quote="") : pandas échapperait les guillemets.
+    if any("\t" in str(name) or "\n" in str(name) for name in df_wide.index):
+        raise ValueError("Un motif contient une tabulation ou un saut de ligne : format TSV impossible.")
+    with open(file_out, "w", encoding="utf-8", newline="") as handle:
+        handle.write("\t".join(["motif"] + [str(col) for col in df_wide.columns]) + "\n")
+        for name, values in zip(df_wide.index, df_wide.itertuples(index=False, name=None)):
+            handle.write("\t".join([str(name)] + [format(float(v), "g") if float(v) != int(v) else str(int(v)) for v in values]) + "\n")
     final_specif_path = None
     if specifs==True:
         _run_specifs_rscript(minsup_percent, timestamp, specifs_dir, file_out)
         final_specif_path = f"{specifs_dir}specif_{timestamp}.tsv"
+        if keep_rows is not None:
+            full_path = f"{specifs_dir}allmotifs_specif_{timestamp}.tsv"
+            os.replace(final_specif_path, full_path)
+            _write_specif_subset(full_path, final_specif_path, keep_rows)
     return file_out, final_specif_path
+
+
+def _write_specif_subset(full_path, subset_path, keep_rows):
+    """Recopie l'en-tête et les lignes des motifs demandés, sans réinterpréter les valeurs écrites par R."""
+    with open(full_path, encoding="utf-8") as handle:
+        header = handle.readline()
+        lines = {}
+        for line in handle:
+            lines[line.split("\t", 1)[0]] = line
+    missing = [row for row in keep_rows if row not in lines]
+    if missing:
+        raise RuntimeError(f"Spécificités absentes pour {len(missing)} médoïde(s), ex. : {missing[:3]}")
+    with open(subset_path, "w", encoding="utf-8") as handle:
+        handle.write(header)
+        for row in keep_rows:
+            handle.write(lines[row])
 
 def fusion_internal_clusters(df, lexic_int_str, args, clustering_results_dir="./Clustering_results"):
     # Charger les fichiers de clustering depuis le bon répertoire
@@ -288,7 +342,7 @@ def fusion_internal_clusters(df, lexic_int_str, args, clustering_results_dir="./
     df_result = pd.concat(dfs_fusionnes)
     return df_result
 
-def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_out,modif):
+def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemset_min, path_id, path_out,modif, want_raw=False):
     print("re-using computing data from 'id' metadata instanciation of script")
     if forme=="motifs":
         for file in os.listdir(path_id):
@@ -305,22 +359,17 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
     df_k = None
     
     for f_candidate in fichiers: 
-        if f"{forme}Texte_" in f_candidate:
-            if _uses_internal_clustering(modif):
-                if "_FUS" in f_candidate:
-                    print("re-using : " + f_candidate)
-                    file_id=path_id+"/"+f_candidate
-                    df_k=pd.read_csv(file_id, sep="\t", index_col=0)
-                    f = f_candidate
-                    break
-                else:
-                    print("Error : internal_clustering_id is missing")
-            else:
-                print("re-using : " + f_candidate)
-                file_id=path_id+"/"+f_candidate
-                df_k=pd.read_csv(file_id, sep="\t", index_col=0)
-                f = f_candidate
-                break
+        if f"{forme}Texte_" not in f_candidate:
+            continue
+        if _uses_internal_clustering(modif):
+            # want_raw : matrice des motifs individuels (avant fusion) ; sinon matrice fusionnée
+            if ("_FUS" in f_candidate) == want_raw:
+                continue
+        print("re-using : " + f_candidate)
+        file_id=path_id+"/"+f_candidate
+        df_k=pd.read_csv(file_id, sep="\t", index_col=0)
+        f = f_candidate
+        break
     
     # Si aucun fichier valide n'a été trouvé, lever une exception
     if f is None or df_k is None:
@@ -334,17 +383,20 @@ def get_already_computed_df_id(forme, minsup_percent,gap_min, gap_max, nb_itemse
         os.mkdir(path_out)
     return file_out, file_total, path_out, df_k
      
-def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out, mode, args, clustering_results_dir="./Clustering_results", patterns_results_dir="./Patterns_results", registry_path=None, lexiques_dir="./Data/Lexiques"):
+def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs, df_metadata, modif, metadata, internal_clustering, results, path_out, mode, args, clustering_results_dir="./Clustering_results", patterns_results_dir="./Patterns_results", registry_path=None, lexiques_dir="./Data/Lexiques", text_sizes=None):
     execution_time = datetime.datetime.now()
     path_input = f"{lexiques_dir}/dico_str_to_int_all_items.pk"
     path_output = f"{lexiques_dir}/dico_int_to_str_all_items.pk"
-    lexic_int_str = formate_patterns.make_dict_int_to_str(path_input, path_output)
+    if os.path.isfile(path_output):
+        lexic_int_str = formate_patterns.load_lexique(path_output)
+    else:
+        lexic_int_str = formate_patterns.make_dict_int_to_str(path_input, path_output)
     DMT4_clos_corpus = f"{patterns_results_dir}/Closed/{args}_DMT4_merged_files_sorted_closed.pk"
     liste_motifs_clos_corpus = tools.from_pk_corpus_to_list(DMT4_clos_corpus)
     total_motifs=len(liste_motifs_clos_corpus)
-    T, dictionnaire_t = enslave_perl.save_text_sizes(
-        os.path.join(patterns_results_dir, "text_sizes.json")
-    )
+    if text_sizes is None:
+        text_sizes = enslave_perl.save_text_sizes(os.path.join(patterns_results_dir, "text_sizes.json"))
+    T, dictionnaire_t = text_sizes
     
     if total_motifs>0:
         if not os.path.exists(path_out):
@@ -352,36 +404,40 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
             
         if metadata!="id":## cas de annee, genre, etc.##
             print(metadata)
-            path_id = f"{patterns_results_dir}/R/id/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}/gap_max{gap_max}/minsup{str(minsup_percent)}/"
+            path_id = f"{patterns_results_dir}/R/id/{modif}motifs/itemset_min{nb_itemset_min}/gap_min{gap_min}_gap_max{gap_max}/minsup{str(minsup_percent)}/"
             if os.path.exists(path_id):
                 try:
-                    file_out_motifs, file_total, path_out, df_k = get_already_computed_df_id("motifs", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id,path_out,modif)
+                    # Toujours repartir des motifs individuels : les spécificités se calculent avant fusion.
+                    file_out_motifs, file_total, path_out, df_raw = get_already_computed_df_id("motifs", minsup_percent,gap_min, gap_max, nb_itemset_min, path_id,path_out,modif, want_raw=True)
                 except (FileNotFoundError, Exception) as e:
                     print("Aucun fichier Motifs valide trouvé, recalcul nécessaire...")
-                    df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
+                    df_raw, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
             else:
                 print("computing from scratch")
-                df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
+                df_raw, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
 
+            # Agrégation par métadonnée (somme par colonne : commute avec la fusion des clusters)
+            df_raw = textes2metadata(df_raw, df_metadata, metadata).T
+            dictionnaire_t = aggregate_t_by_metadata(dictionnaire_t, df_metadata, metadata)
             if internal_clustering:
-                if "_FUS" not in os.path.basename(file_out_motifs):
-                    df_k = fusion_internal_clusters(df_k, lexic_int_str, args, clustering_results_dir)
-                    file_out_motifs = _with_fus_suffix(file_out_motifs)
-                else:
-                    print("re-using fused motifs matrix for metadata aggregation")
-
-            df_k = textes2metadata(df_k, df_metadata, metadata.split('_')[-1]).T
-            dictionnaire_t = aggregate_t_by_metadata(dictionnaire_t, df_metadata, metadata.split('_')[-1])
+                df_k = fusion_internal_clusters(df_raw, lexic_int_str, args, clustering_results_dir)
+                file_out_motifs = _with_fus_suffix(file_out_motifs)
+            else:
+                df_k = df_raw
             df_k.to_csv(file_out_motifs, sep="\t")
         
         else:
             print(metadata)
-            df_k, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
+            df_raw, path_out, total_motifs, file_out_motifs, file_total = compute_freq_TextesMotifs_AFC(liste_motifs_clos_corpus, execution_time, path_out, total_motifs, lexic_int_str, registry_path)
                 
             if internal_clustering:
-                df_k = fusion_internal_clusters(df_k, lexic_int_str, args, clustering_results_dir)
+                # Conserver la matrice non fusionnée : réutilisée par les autres métadonnées et les spécificités
+                df_raw.to_csv(file_out_motifs, sep="\t")
+                df_k = fusion_internal_clusters(df_raw, lexic_int_str, args, clustering_results_dir)
                 file_out_motifs = _with_fus_suffix(file_out_motifs)
                 print(file_out_motifs)
+            else:
+                df_k = df_raw
 
             df_k.to_csv(file_out_motifs, sep="\t")
             
@@ -389,8 +445,10 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
 
         
         if specifs:
+                # Spécificités AVANT clustering : sur les motifs individuels, puis chaque cluster
+                # reçoit la spécificité de son médoïde (la somme des membres double-compte les occurrences).
                 _specif_input, final_specif_path = compute_specifs_function(
-                    df_k,
+                    df_raw,
                     minsup_percent,
                     execution_time,
                     specifs,
@@ -398,6 +456,7 @@ def main(types_textes, minsup_percent,gap_min, gap_max, nb_itemset_min, specifs,
                     T,
                     dictionnaire_t,
                     patterns_results_dir,
+                    keep_rows=list(df_k.index) if internal_clustering else None,
                 )
                 if final_specif_path:
                     results[f"{metadata}_specifs_{minsup_percent}_{gap_min}_{gap_max}_{nb_itemset_min}"] = final_specif_path

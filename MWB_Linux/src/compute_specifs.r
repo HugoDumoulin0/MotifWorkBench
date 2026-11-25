@@ -80,6 +80,18 @@ custom_specif <- function (df) {
 # Load and treat data
 #----------------------------------------------
 
+# Deux formats d'entrée :
+#  - large (compute_CQP, motifs) : 1re colonne "motif", une colonne par partition, ligne "others" = t
+#  - long (early_selection, lemmes) : colonnes fichier / motif / k / f / t / T
+header <- strsplit(readLines(path_in, n = 1, encoding = "UTF-8"), "\t", fixed = TRUE)[[1]]
+is_long_format <- all(c("fichier", "motif", "k", "f", "t", "T") %in% header)
+
+if (!is_long_format) {
+  # Lecture sans interprétation des guillemets : les motifs en contiennent ({pos_"ADP"} …)
+  df_final <- read.delim(path_in, sep = "\t", quote = "", comment.char = "",
+                         check.names = FALSE, row.names = 1, encoding = "UTF-8")
+  if (!("others" %in% rownames(df_final))) stop("Ligne 'others' (tailles des partitions) absente de l'entrée.")
+} else {
 df <- read.delim(path_in, sep="\t")
 
 # Shape pseudo-lexical table (≠ lex.tab. because last row is t and not REST)
@@ -113,6 +125,7 @@ t_row <- df2 %>%
 ## Bind the new row at the bottom of df_wide
 df_final <- bind_rows(df_wide, t_row) %>%
   column_to_rownames("motif")  # make 'motif' the row names col.
+}
 
 specif_table <- custom_specif(df_final)
 specif_table <- specif_table[rownames(specif_table) != "others", , drop = FALSE]

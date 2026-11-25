@@ -4,6 +4,7 @@ Envoie des signaux pour mettre à jour l'UI.
 """
 
 from PyQt6.QtCore import QThread, pyqtSignal
+from copy import deepcopy
 import os
 import sys
 
@@ -53,7 +54,7 @@ class AnalysisWorker(QThread):
         config: dict contenant les paramètres de l'analyse 
         """
         super().__init__()
-        self.config = config
+        self.config = deepcopy(config)
         # Ajouter le mode GUI pour éviter le lancement automatique de Shiny
         self.config["mode"] = "gui"
         if config.get("internal_clustering", True):
@@ -70,7 +71,7 @@ class AnalysisWorker(QThread):
         )
         
         # Chercher si une analyse avec cette configuration existe déjà
-        existing_config_id = find_existing_analysis(self.analysis_group_name, config)
+        existing_config_id = find_existing_analysis(self.analysis_group_name, self.config)
         
         if existing_config_id:
             # Réutiliser l'analyse existante
@@ -96,10 +97,10 @@ class AnalysisWorker(QThread):
                 self.paths["early_selection"] = root / "earlySelection"
         else:
             # Créer une nouvelle analyse
-            self.config_id = generate_config_id(config)
+            self.config_id = generate_config_id(self.config)
             self.reusing_existing = False
             # Créer la structure de dossiers pour cette analyse
-            self.paths = create_analysis_structure(self.analysis_group_name, self.config_id, config)
+            self.paths = create_analysis_structure(self.analysis_group_name, self.config_id, self.config)
 
     def run(self):
         """
@@ -118,7 +119,6 @@ class AnalysisWorker(QThread):
                 self._on_log(f"Clustering interne : alignement {ALIGNMENT_VERSION}.")
             self._on_log("-" * 75)
             
-            # Appelle la fonction d'analyse principale
             results = run_analysis(
                 self.config,
                 progress_callback=self._on_progress,
@@ -126,7 +126,7 @@ class AnalysisWorker(QThread):
                 paths=self.paths,
                 should_stop_callback=self.should_stop,
             )
-            
+
             # Envoie les résultats finaux
             if self._stop_requested:
                 self.stopped.emit("Analyse arrêtée par l'utilisateur.")

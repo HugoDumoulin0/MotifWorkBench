@@ -45,6 +45,8 @@ class ConfigPage(QWidget):
         self._project_root = Path(__file__).resolve().parents[2]
         self._corpus_root = self._project_root / "Data" / "Corpus"
         self._available_corpora: dict[str, Path] = {}
+        # Fichier metadata.tsv choisi manuellement (bypass de l'assistant). Vide = <corpus>/metadata.tsv
+        self._custom_metadata_path: str = ""
         
         # Flags de gestion de l'état
         self._loading = True  # True pendant le chargement initial pour ignorer les signaux
@@ -303,7 +305,43 @@ class ConfigPage(QWidget):
             "background:#2a2a3a; color:#ffffff; border:none; border-radius:6px; padding:4px 14px;"
         )
         self._btn_metadata_wizard.clicked.connect(self._open_metadata_wizard)
-        form_corpus.addRow("", self._btn_metadata_wizard)
+
+        # Sélection directe d'un metadata.tsv existant, sans passer par l'assistant
+        self._btn_pick_metadata = QPushButton("Choisir un fichier metadata.tsv…")
+        self._btn_pick_metadata.setMinimumHeight(34)
+        self._btn_pick_metadata.setToolTip(
+            "Utiliser directement un fichier metadata.tsv existant, sans passer par l'assistant "
+            "(aucune vérification, fusion ni réécriture du fichier)."
+        )
+        self._btn_pick_metadata.setStyleSheet(
+            "background:#2a2a3a; color:#ffffff; border:none; border-radius:6px; padding:4px 14px;"
+        )
+        self._btn_pick_metadata.clicked.connect(self._pick_metadata_file)
+
+        self._btn_reset_metadata = QPushButton("Réinitialiser")
+        self._btn_reset_metadata.setMinimumHeight(34)
+        self._btn_reset_metadata.setToolTip("Revenir au metadata.tsv du corpus sélectionné.")
+        self._btn_reset_metadata.setStyleSheet(
+            "background:#4b5563; color:#ffffff; border:none; border-radius:6px; padding:4px 14px;"
+        )
+        self._btn_reset_metadata.clicked.connect(self._reset_metadata_file)
+        self._btn_reset_metadata.hide()
+
+        metadata_buttons_row = QWidget()
+        metadata_buttons_layout = QHBoxLayout(metadata_buttons_row)
+        metadata_buttons_layout.setContentsMargins(0, 0, 0, 0)
+        metadata_buttons_layout.setSpacing(8)
+        metadata_buttons_layout.addWidget(self._btn_metadata_wizard)
+        metadata_buttons_layout.addWidget(self._btn_pick_metadata)
+        metadata_buttons_layout.addWidget(self._btn_reset_metadata)
+        form_corpus.addRow("", metadata_buttons_row)
+
+        self._w_metadata_file_status = QLabel()
+        self._w_metadata_file_status.setWordWrap(True)
+        self._w_metadata_file_status.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        self._w_metadata_file_status.setStyleSheet("color: #4b5563; background: transparent; font-style: italic;")
+        self._w_metadata_file_status.hide()
+        form_corpus.addRow("", self._w_metadata_file_status)
         layout.addWidget(grp_corpus)
         
         # Langue et Annotation
@@ -357,8 +395,8 @@ class ConfigPage(QWidget):
         form_motifs = QFormLayout(grp_motifs)
 
         self._w_minsup = QDoubleSpinBox()
-        self._w_minsup.setRange(0.1, 100.0)
-        self._w_minsup.setDecimals(1)
+        self._w_minsup.setRange(0.00000000001, 100.0)
+        self._w_minsup.setDecimals(10)
         self._w_minsup.setSingleStep(0.1)
         self._w_minsup.setSuffix(" %")
         self._w_minsup.setToolTip("Fréquence minimale (en % des séquences) pour qu'un motif soit retenu.")
@@ -437,7 +475,7 @@ class ConfigPage(QWidget):
         form_early.addRow(_tooltip_label("POS pour early sel. :", "Restreindre l'early selection à ces POS."), self._w_early_pos4lemma)
 
         self._w_user_input_list = QCheckBox("Utiliser une liste de lemmes manuelle")
-        self._w_user_input_list.setToolTip("Utiliser une liste de lemmes fournie manuellement, avec ou sans early selection.")
+        self._w_user_input_list.setToolTip("Chaque motif doit contenir au moins un des lemmes saisis. Cette liste remplace la sélection automatique.")
         form_early.addRow("", self._w_user_input_list)
 
         self._w_liste_earlyselection = QLineEdit()
@@ -446,9 +484,8 @@ class ConfigPage(QWidget):
         form_early.addRow(_tooltip_label("Lemmes :", "Liste manuelle de lemmes à cibler."), self._w_liste_earlyselection)
 
         self._w_earlySelection.stateChanged.connect(self._update_early_selection_ui)
-        self._w_user_input_list.stateChanged.connect(self._update_manual_lemma_ui)
+        self._w_user_input_list.stateChanged.connect(self._update_early_selection_ui)
         self._update_early_selection_ui()
-        self._update_manual_lemma_ui()
 
         layout.addWidget(grp_early)
 
@@ -576,6 +613,10 @@ class ConfigPage(QWidget):
         if selected_corpus and self._w_selected_corpus.findText(selected_corpus) >= 0:
             self._w_selected_corpus.setCurrentText(selected_corpus)
         self._w_list_metadata.setText(", ".join(cfg.get("list_metadata", ["id"])))
+        if cfg.get("path_metadata_custom") and path_metadata:
+            self._set_custom_metadata_path(path_metadata, mark_modified=False)
+        else:
+            self._set_custom_metadata_path("", mark_modified=False)
         input_type = cfg.get("input_type", "raw_txt")
         input_type_index = self._w_input_type.findData(input_type)
         self._w_input_type.setCurrentIndex(input_type_index if input_type_index >= 0 else 0)
@@ -622,6 +663,9 @@ class ConfigPage(QWidget):
         else:
             metadata_corpus_dir = "./Data/Corpus/Textes_raw"
         path_metadata = str(Path(metadata_corpus_dir) / "metadata.tsv")
+        custom_metadata = getattr(self, "_custom_metadata_path", "")
+        if custom_metadata:
+            path_metadata = custom_metadata
         input_type = self._w_input_type.currentData() or "raw_txt"
         input_source_path = self._w_input_source_path.text().strip()
 
@@ -634,7 +678,7 @@ class ConfigPage(QWidget):
             "language": self._w_language.currentText().strip().lower(),
             "annotator": self._w_annotator.currentData(),  # stanza ou spacy
             "use_gpu": self._w_gpu_choice.currentText() == "GPU" if (self._gpu_available and self._w_gpu_choice) else False,
-            "list_minsup_percent": [round(float(self._w_minsup.value()), 1)],
+            "list_minsup_percent": [round(float(self._w_minsup.value()), 10)],
             "list_itemset_min": [self._w_itemset_min.value()],
             "Lemma": self._w_Lemma.isChecked(),
             "Pos": self._w_Pos.isChecked(),
@@ -643,6 +687,7 @@ class ConfigPage(QWidget):
             "Feats": self._w_Feats.isChecked(),
             "metadata_corpus_dir": metadata_corpus_dir,
             "path_metadata": path_metadata,
+            "path_metadata_custom": bool(custom_metadata),
             "list_metadata": parse_str_list(self._w_list_metadata.text()),
             # Avancé
             # download option removed (automatic detection)
@@ -705,7 +750,8 @@ class ConfigPage(QWidget):
         if not corpus_path:
             return
         self._w_metadata_corpus_dir.setText(str(corpus_path))
-        self._w_path_metadata.setText(str(corpus_path / "metadata.tsv"))
+        custom_metadata = getattr(self, "_custom_metadata_path", "")
+        self._w_path_metadata.setText(custom_metadata or str(corpus_path / "metadata.tsv"))
         self._update_corpus_summary(corpus_path)
 
     def _update_corpus_summary(self, corpus_path: Path):
@@ -823,7 +869,7 @@ class ConfigPage(QWidget):
 
     def _update_early_selection_ui(self):
         """Grise les options de pré-filtrage quand l'early selection est désactivée."""
-        enabled = self._w_earlySelection.isChecked()
+        enabled = self._w_earlySelection.isChecked() and not self._w_user_input_list.isChecked()
         for widget in (
             self._w_seuil_early,
             self._w_filter_specifs,
@@ -832,11 +878,6 @@ class ConfigPage(QWidget):
             self._w_early_pos4lemma,
         ):
             widget.setEnabled(enabled)
-        self._update_manual_lemma_ui()
-
-    def _update_manual_lemma_ui(self):
-        """La liste manuelle est pilotée par sa propre case, indépendamment de l'early selection."""
-        self._w_user_input_list.setEnabled(True)
         self._w_liste_earlyselection.setEnabled(self._w_user_input_list.isChecked())
 
     def get_config(self) -> dict:
@@ -857,6 +898,7 @@ class ConfigPage(QWidget):
 
         if dialog.exec() == QDialog.DialogCode.Accepted:
             result_cfg = dialog.get_result_config()
+            self._set_custom_metadata_path("", mark_modified=False)
             self._w_metadata_corpus_dir.setText(result_cfg["metadata_corpus_dir"])
             self._w_path_metadata.setText(result_cfg["path_metadata"])
             self._w_list_metadata.setText(", ".join(result_cfg["list_metadata"]))
@@ -864,6 +906,76 @@ class ConfigPage(QWidget):
             corpus_dir_name = Path(result_cfg["metadata_corpus_dir"]).name
             if self._w_selected_corpus.findText(corpus_dir_name) >= 0:
                 self._w_selected_corpus.setCurrentText(corpus_dir_name)
+
+    def _pick_metadata_file(self):
+        """Sélection directe d'un metadata.tsv, sans aucune autre fonction de l'assistant."""
+        start = self._custom_metadata_path or self._w_path_metadata.text().strip()
+        start_dir = Path(start).parent if start else self._corpus_root
+        if not start_dir.exists():
+            start_dir = self._corpus_root if self._corpus_root.exists() else self._project_root
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            "Choisir un fichier metadata.tsv",
+            str(start_dir),
+            "Fichiers TSV (*.tsv);;Tous les fichiers (*)",
+        )
+        if not path:
+            return
+        columns = self._read_tsv_columns(path)
+        if columns is None:
+            QMessageBox.warning(
+                self,
+                "Fichier illisible",
+                "Impossible de lire ce fichier. Vérifiez qu'il s'agit d'un fichier texte UTF-8 "
+                "séparé par des tabulations.",
+            )
+            return
+        if len(columns) < 2:
+            reply = QMessageBox.question(
+                self,
+                "Format inattendu",
+                "La première ligne ne contient pas plusieurs colonnes séparées par des tabulations.\n"
+                "Utiliser ce fichier quand même ?",
+            )
+            if reply != QMessageBox.StandardButton.Yes:
+                return
+        self._set_custom_metadata_path(path)
+
+    def _reset_metadata_file(self):
+        self._set_custom_metadata_path("")
+
+    @staticmethod
+    def _read_tsv_columns(path: str) -> list[str] | None:
+        try:
+            with open(path, "r", encoding="utf-8-sig") as handle:
+                header = handle.readline().rstrip("\r\n")
+        except (OSError, UnicodeDecodeError):
+            return None
+        return [col.strip() for col in header.split("\t") if col.strip()]
+
+    def _set_custom_metadata_path(self, path: str, mark_modified: bool = True):
+        self._custom_metadata_path = str(path) if path else ""
+        if self._custom_metadata_path:
+            self._w_path_metadata.setText(self._custom_metadata_path)
+            columns = self._read_tsv_columns(self._custom_metadata_path)
+            if columns is None:
+                cols_text = "fichier introuvable ou illisible"
+            else:
+                cols_text = "colonnes : " + (", ".join(columns) if columns else "aucune")
+            self._w_metadata_file_status.setText(
+                f"metadata.tsv utilisé : {self._custom_metadata_path}\n({cols_text})"
+            )
+            self._w_metadata_file_status.show()
+            self._btn_reset_metadata.show()
+        else:
+            self._w_metadata_file_status.clear()
+            self._w_metadata_file_status.hide()
+            self._btn_reset_metadata.hide()
+            selected = self._w_selected_corpus.currentText().strip()
+            if selected in self._available_corpora:
+                self._w_path_metadata.setText(str(self._available_corpora[selected] / "metadata.tsv"))
+        if mark_modified:
+            self._mark_config_modified()
 
     def get_current_config(self) -> dict:
         """Retourne la configuration actuelle lue depuis l'UI (sans persister)."""

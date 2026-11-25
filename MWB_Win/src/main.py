@@ -169,10 +169,7 @@ def _write_bidespantree_load_ini(
     gap_min: int,
     gap_max: int,
     nb_itemset_min: int,
-    liste_lemma=None,
-    liste_earlyselection_lemma=None,
-    user_input_list: bool = False,
-    earlySelection: bool = False,
+    or_line: str,
 ) -> None:
     """Écrit le fichier `Load.ini` pour BideSpanTree."""
     with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
@@ -182,10 +179,7 @@ def _write_bidespantree_load_ini(
         set_up.write(f"GAPMIN={gap_min}\n")
         set_up.write(f"GAPMAX={gap_max}\n")
         set_up.write(f"NB_ITEMSET_MIN={nb_itemset_min}\n")
-        if user_input_list:
-            set_up.write(f"OR={str(liste_lemma)[1:-1]}\n")
-        if earlySelection:
-            set_up.write(f"OR={str(liste_earlyselection_lemma)[1:-1]}\n")
+        set_up.write(or_line)
 
 
 def _is_windows_file_lock(error: OSError) -> bool:
@@ -777,20 +771,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
         with StdoutLogger(_route_external_log):
             cwb.main(dir_textes_vrt=dir_textes_vrt, dir_cwb_corpus=dir_cwb_corpus)
         
-    if earlySelection:
-        _check_cancelled()
-        _log("-" * 75, LOG_INFO)
-        _log("2.1 Early Selection du lemme pour la recherche", LOG_INFO)
-        # Passer les chemins à early_selection pour éviter qu'il écrive dans Data/
-        with StdoutLogger(_route_external_log):
-            liste_earlyselection_lemma = early_selection.main(
-                seuil_early_selection, "", path_metadata, partition_cible, 
-                seuil_banalité, early_pos4lemma, filter_specifs,
-                dir_early_selection=dir_early_selection,
-                dir_lexiques=dir_lexiques,
-                registry_path=registry_path
-            )
-        
+    effective_restriction = []
     if user_input_list:
         path_lexique = f"{dir_lexiques}/dico_str_to_int_all_items.pk"
         lexique = tools.load_pickles(path_lexique)
@@ -799,14 +780,31 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
             os.makedirs(dir_early_selection, exist_ok=True)
             with open(f"{dir_early_selection}/{nom}.txt", "w") as f:
                 f.write(str(liste_earlyselection_lemma))
-        liste_lemma = []
-        lignes = liste_earlyselection_lemma
-        _log(str(lignes), LOG_DEBUG)
-        for l in lignes:
+        _log("Lemmes ciblés (liste manuelle) : " + ", ".join(liste_earlyselection_lemma), LOG_INFO)
+        for lemma in liste_earlyselection_lemma:
             _check_cancelled()
-            lemma_preformat = f'lemma_"{l}"'
-            liste_lemma.append(lexique[lemma_preformat])
-        
+            lemma_preformat = f'lemma_"{lemma}"'
+            if lemma_preformat not in lexique:
+                raise ValueError(f"Lemme de sélection absent du corpus : {lemma}")
+            effective_restriction.append(lexique[lemma_preformat])
+    elif earlySelection:
+        _check_cancelled()
+        _log("-" * 75, LOG_INFO)
+        _log("2.1 Early Selection du lemme pour la recherche", LOG_INFO)
+        # Passer les chemins à early_selection pour éviter qu'il écrive dans Data/
+        with StdoutLogger(_route_external_log):
+            effective_restriction = early_selection.main(
+                seuil_early_selection, "", path_metadata, partition_cible, 
+                seuil_banalité, early_pos4lemma, filter_specifs,
+                dir_early_selection=dir_early_selection,
+                dir_lexiques=dir_lexiques,
+                registry_path=registry_path
+            )
+
+    if (user_input_list or earlySelection) and not effective_restriction:
+        raise ValueError("La sélection ne contient aucun lemme présent dans le corpus.")
+    or_line = "OR=" + ",".join(map(str, effective_restriction)) + "\n" if effective_restriction else ""
+
     # ==================================
     # 3 - Extraction des motifs
     # ==================================
@@ -835,7 +833,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                     args = f"{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                     if user_input_list:
                         args = f"user_input_list_{nom}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
-                    if earlySelection:
+                    elif earlySelection:
                         args = f"{seuil_early_selection}early{early_pos4lemma}_specifs{filter_specifs}{partition_cible}_{nb_itemset_min}_{minsup_percent}_{gap_min}{gap_max}"
                     args = args.replace("|", "-")
                     
@@ -869,17 +867,9 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                         # Utiliser un chemin absolu pour le corpus dans Load.ini
                         dmt4_files_abs = os.path.abspath(dmt4_files)
                         
-                        with open("BideSpanTree/bin/Load.ini", "w", encoding="utf8") as set_up:
-                            set_up.write(f"MINSUP={minsup}\n")
-                            set_up.write(f"CORPUS={dmt4_files_abs}\n")
-                            set_up.write(f"THREAD={threads}\n")
-                            set_up.write(f"GAPMIN={gap_min}\n")
-                            set_up.write(f"GAPMAX={gap_max}\n")
-                            set_up.write(f"NB_ITEMSET_MIN={nb_itemset_min}\n")
-                            if user_input_list:
-                                set_up.write(f"OR={str(liste_lemma)[1:-1]}\n")
-                            if earlySelection:
-                                set_up.write(f"OR={str(liste_earlyselection_lemma)[1:-1]}\n")
+                        _write_bidespantree_load_ini(
+                            dmt4_files_abs, minsup, threads, gap_min, gap_max, nb_itemset_min, or_line
+                        )
                         
                         # Fichier Load.ini fermé, maintenant on peut exécuter le binaire
                         try:
@@ -926,17 +916,12 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
                                 base_dir = str(_project_root())
                                 rel_dmt4_path = os.path.relpath(dmt4_files_abs, base_dir).replace("\\", "/")
                                 rel_output_path = os.path.relpath(output_path_abs, base_dir).replace("\\", "/")
-                                docker_or_line = ""
-                                if user_input_list:
-                                    docker_or_line = f"OR={str(liste_lemma)[1:-1]}\\n"
-                                if earlySelection:
-                                    docker_or_line = f"OR={str(liste_earlyselection_lemma)[1:-1]}\\n"
                                 subprocess.run(
                                     ["docker", "run", "--rm", "--platform", "linux/amd64",
                                      "-v", f"{base_dir}:/data",
                                      "ubuntu:22.04",
                                      "bash", "-c",
-                                     f"mkdir -p /data/$(dirname '{rel_output_path}') && cd /data/BideSpanTree/bin && printf 'MINSUP={minsup}\\nCORPUS=/data/{rel_dmt4_path}\\nTHREAD={threads}\\nGAPMIN={gap_min}\\nGAPMAX={gap_max}\\nNB_ITEMSET_MIN={nb_itemset_min}\\n{docker_or_line}' > Load.ini && chmod +x bidespantree && ./bidespantree > /data/{rel_output_path}"],
+                                     f"mkdir -p /data/$(dirname '{rel_output_path}') && cd /data/BideSpanTree/bin && printf 'MINSUP={minsup}\\nCORPUS=/data/{rel_dmt4_path}\\nTHREAD={threads}\\nGAPMIN={gap_min}\\nGAPMAX={gap_max}\\nNB_ITEMSET_MIN={nb_itemset_min}\\n{or_line}' > Load.ini && chmod +x bidespantree && ./bidespantree > /data/{rel_output_path}"],
                                     check=True,
                                     capture_output=True,
                                     text=True,
@@ -1067,7 +1052,7 @@ def run_analysis(config, progress_callback=None, log_callback=None, paths=None, 
         modif = ""
         if user_input_list:
             modif = f"user_input_list_{nom}_"
-        if earlySelection:
+        elif earlySelection:
             safe_early_pos4lemma = compute_CQP.sanitize_path_component(early_pos4lemma)
             modif = f"{seuil_early_selection}early{safe_early_pos4lemma}_specifs{filter_specifs}{partition_cible}_"
         if internal_clustering:

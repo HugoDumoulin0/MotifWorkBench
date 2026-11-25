@@ -5,7 +5,6 @@ la progression en direct de cette dernière.
 @jcharlesDS (2026)
 """
 
-import json
 import time
 import html
 import re
@@ -600,24 +599,13 @@ class AnalysisPage(BasePage):
         self._logs_text.append("\n[ANALYSE TERMINÉE]")
         
         try:
-            json_path = save_results_for_shiny(results)
+            worker = self._worker
+            root = worker.paths.get("root") if worker is not None else None
+            metadata = worker.config.get("path_metadata") if worker is not None else None
+            json_path = save_results_for_shiny(results, root, metadata)
             self._logs_text.append(f"[SHINY] JSON prêt: {json_path}")
         except Exception as exc:
             self._logs_text.append(f"[SHINY] Erreur JSON Shiny: {exc}")
-        
-        # Sauvegarder les chemins de la dernière analyse pour la page Résultats
-        if hasattr(self._worker, 'paths') and self._worker.paths:
-            last_analysis_info = {
-                "analysis_group_name": self._worker.analysis_group_name,
-                "config_id": self._worker.config_id,
-                "patterns_results": str(self._worker.paths["patterns_results"]),
-                "clustering_results": str(self._worker.paths["clustering_results"]),
-                "logs": str(self._worker.paths["logs"])
-            }
-            last_analysis_file = self._project_root / "logs" / "last_analysis.json"
-            last_analysis_file.parent.mkdir(parents=True, exist_ok=True)
-            with open(last_analysis_file, 'w', encoding='utf-8') as f:
-                json.dump(last_analysis_info, f, indent=2, ensure_ascii=False)
 
         self.analysis_finished.emit(results)
 
@@ -749,7 +737,8 @@ class AnalysisPage(BasePage):
                 status=status,
                 duration_seconds=duration_seconds,
                 config=self._current_config,
-                details=details
+                details=details,
+                analysis_root=self._worker.paths.get("root") if self._worker is not None else None,
             )
         )
         self._history_recorded = True

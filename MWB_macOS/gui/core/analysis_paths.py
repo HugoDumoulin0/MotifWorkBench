@@ -71,6 +71,15 @@ def compute_config_hash(config: dict) -> str:
     return hashlib.md5(config_str.encode()).hexdigest()[:6]
 
 
+def _config_identity(config: dict) -> str:
+    """Exact explicit settings, preserving missing fields and numeric types."""
+    return json.dumps(
+        {key: value for key, value in config.items()
+         if key not in {"mode", "analysis_group_name", "actual_model_name"}},
+        sort_keys=True, ensure_ascii=False, allow_nan=False,
+    )
+
+
 def find_existing_analysis(analysis_group_name: str, config: dict) -> str | None:
     """
     Cherche si une analyse avec la meme configuration existe deja pour ce groupe.
@@ -80,7 +89,7 @@ def find_existing_analysis(analysis_group_name: str, config: dict) -> str | None
     if not analysis_group_path.exists():
         return None
     
-    target_hash = compute_config_hash(config)
+    target_identity = _config_identity(config)
     
     # Parcourir toutes les analyses existantes pour ce corpus
     for config_dir in sorted(analysis_group_path.iterdir(), reverse=True):
@@ -92,13 +101,12 @@ def find_existing_analysis(analysis_group_name: str, config: dict) -> str | None
             try:
                 with open(info_file, 'r', encoding='utf-8') as f:
                     info = json.load(f)
-                    existing_config = info.get("config", {})
-                    existing_hash = compute_config_hash(existing_config)
+                    existing_config = info["config"]
                     
-                    if existing_hash == target_hash:
+                    if _config_identity(existing_config) == target_identity:
                         # Configuration identique trouvée !
                         return config_dir.name
-            except (json.JSONDecodeError, KeyError):
+            except (ValueError, KeyError, AttributeError, TypeError, OSError):
                 continue
     
     return None
@@ -110,7 +118,14 @@ def generate_config_id(config: dict) -> str:
     Format: YYYYMMDD_HHMMSS_<description>
     Description: seulement les paramètres différents des valeurs par défaut.
     """
-    return generate_analysis_id(config)
+    candidate = generate_analysis_id(config)
+    group = config.get("analysis_group_name", "analyse_corpus_sans_nom")
+    identity = candidate
+    suffix = 2
+    while get_analysis_root(group, identity).exists():
+        identity = f"{candidate}_{suffix}"
+        suffix += 1
+    return identity
 
 
 def get_analysis_root(analysis_group_name: str, config_id: str) -> Path:
@@ -123,12 +138,27 @@ def get_analysis_root(analysis_group_name: str, config_id: str) -> Path:
     return get_analyses_root() / analysis_group_name / config_id
 
 
+def resolve_analysis_artifact(analysis_root: Path, stage: str, key: str, fallback: Path) -> Path:
+    """Find a shared artifact using the selected analysis' recorded provenance."""
+    from analysis_cache import recorded_stage_result
+    result = recorded_stage_result(analysis_root, stage)
+    if isinstance(result, dict) and result.get(key):
+        path = Path(result[key])
+        if path.exists():
+            return path
+    return fallback
+
+
 def create_analysis_structure(analysis_group_name: str, config_id: str, config: dict) -> dict:
     """
     Crée la structure complète de dossiers pour une nouvelle analyse.
     Retourne un dictionnaire avec tous les chemins.
     """
     root = get_analysis_root(analysis_group_name, config_id)
+    try:
+        root.mkdir(parents=True, exist_ok=False)
+    except FileExistsError as error:
+        raise RuntimeError("Ce dossier d'analyse vient d'être créé par un autre lancement. Relancez l'analyse.") from error
     
     paths = {
         "root": root,

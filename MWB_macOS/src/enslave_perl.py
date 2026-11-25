@@ -20,7 +20,11 @@ def _run_perl(script_name, *args):
     if not env.get("CORPUS_REGISTRY_PATH"):
         raise RuntimeError("CORPUS_REGISTRY_PATH est requis pour interroger le corpus CWB.")
     cmd = ["perl", str(SRC_DIR / script_name), *args]
-    return subprocess.run(cmd, capture_output=True, text=True, cwd=PROJECT_ROOT, env=env)
+    result = subprocess.run(cmd, capture_output=True, text=True, cwd=PROJECT_ROOT, env=env)
+    if result.returncode != 0:
+        details = (result.stderr or result.stdout).strip()
+        raise RuntimeError(f"Échec de la requête CQP ({script_name}) : {details}")
+    return result
 
 import json
 
@@ -60,7 +64,7 @@ def save_text_sizes(json_path="./Patterns_results/text_sizes.json"):
     somme = sum(dictionnaire_t.values())
     if somme != T:
         # cqp_general reads the CQP output at fixed positions: a mismatch means the parsing is off
-        print(f"WARNING: sum of text sizes ({somme}) differs from corpus size ({T}), check cqp_general() parsing")
+        raise RuntimeError(f"Tailles CWB incohérentes : somme des textes {somme}, taille du corpus {T}.")
     os.makedirs(os.path.dirname(json_path), exist_ok=True)
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump({"total": T, "texts": dictionnaire_t}, f, ensure_ascii=False, indent=2)

@@ -11,8 +11,6 @@ args <- commandArgs(trailingOnly = TRUE)
 
 path = args[1]
 
-dir.create("./Patterns_results/CA_plots", recursive = TRUE, showWarnings = FALSE)
-
 rep_name=path
 
 #--------------------------------------------------------------
@@ -65,59 +63,102 @@ ipak(packages)
 args <- commandArgs(trailingOnly = TRUE)
 json_input <- args[1]
 
-last_analysis_file <- file.path(dirname(normalizePath(json_input)), "last_analysis.json")
-print(last_analysis_file)
-
-patterns_dir <- if (file.exists(last_analysis_file)) {
-  fromJSON(last_analysis_file)$patterns_results
-} else {
-  file.path(getwd(), "Patterns_results")
+resolve_analysis_path <- function(path, root) {
+  if (grepl("^(/|[A-Za-z]:[/\\\\])", path)) path else file.path(root, path)
 }
 
+json_input <- normalizePath(json_input, mustWork = TRUE)
+analysis_root <- if (length(args) >= 4) {
+  normalizePath(args[4], mustWork = TRUE)
+} else if (file.exists(file.path(dirname(json_input), "analysis_info.json"))) {
+  dirname(json_input)
+} else {
+  last_analysis_file <- file.path(dirname(json_input), "last_analysis.json")
+  if (file.exists(last_analysis_file)) {
+    dirname(fromJSON(last_analysis_file)$patterns_results)
+  } else {
+    getwd()
+  }
+}
+
+patterns_dir <- file.path(analysis_root, "Patterns_results")
+context_path <- file.path(analysis_root, "shiny_context.json")
+shiny_context <- if (file.exists(context_path)) fromJSON(context_path) else list()
 ca_plots_dir <- file.path(patterns_dir, "CA_plots")
 dir.create(ca_plots_dir, recursive = TRUE, showWarnings = FALSE)
 
-# Load JSON from python
-datasets <- fromJSON(paste(json_input, collapse = ""))
-
+# The mapping and every analysis resource share the explicitly selected root.
+datasets <- fromJSON(json_input)
+datasets <- lapply(datasets, resolve_analysis_path, root = analysis_root)
 
 print(datasets)
 
-normal_dataset_names <- names(datasets)[!grepl("_specifs_", names(datasets))]
-specif_dataset_names <- names(datasets)[grepl("_specifs_", names(datasets))]
-metadata_name <- unique(sub("_.*", "", normal_dataset_names))
-
-text_json <- file.path(patterns_dir,"text_sizes.json")
-print(text_json)
-text_size <- fromJSON(text_json)
+is_specif_dataset <- grepl("_specifs_", names(datasets), fixed = TRUE)
+normal_dataset_names <- names(datasets)[!is_specif_dataset]
+specif_dataset_names <- names(datasets)[is_specif_dataset]
+specif_metadata <- sub("^(.*)_specifs_.*$", "\\1", specif_dataset_names)
+specif_metadata_names <- unique(specif_metadata)
+normal_dataset_metadata <- vapply(datasets[normal_dataset_names], function(path) {
+  normalized <- gsub("\\\\", "/", path)
+  if (grepl("/Patterns_results/R/", normalized, fixed = TRUE)) {
+    sub("^.*/Patterns_results/R/([^/]+)/.*$", "\\1", normalized)
+  } else {
+    NA_character_
+  }
+}, character(1))
+missing_metadata <- is.na(normal_dataset_metadata)
+normal_dataset_metadata[missing_metadata] <- sub("_.*", "", normal_dataset_names[missing_metadata])
+metadata_name <- unique(normal_dataset_metadata)
 
 # Build size (nb of tokens) of each value of each metadata column, summing the
 # sizes of its texts, e.g. metadata_sizes$genre["news"]. Every column of the
 # metadata file is covered (whatever was selected in python), id included:
 # metadata_sizes$id gives the size of each text
-analysis_info <- fromJSON(
-  file.path(dirname(patterns_dir), "analysis_info.json")
-)
-metadata_path <- analysis_info$config$path_metadata
+read_metadata_sizes <- function(patterns_dir) {
+  text_json <- file.path(patterns_dir, "text_sizes.json")
+  analysis_info_path <- file.path(dirname(patterns_dir), "analysis_info.json")
+  # Older analyses can have CA and specificity tables without PCA sizes.
+  if (!file.exists(text_json)) {
+    return(list())
+  }
 
-metadata <- read.csv(
-  metadata_path,
-  sep = "\t",
-  colClasses = "character",
-  check.names = FALSE
-)
-id_col <- names(metadata)[1]
-texts_sizes <- unlist(text_size$texts)
-metadata$size <- texts_sizes[metadata[[id_col]]]
-if (any(is.na(metadata$size))) {
-  warning("Texts without size in text_sizes.json: ",
-          paste(metadata[[id_col]][is.na(metadata$size)], collapse = ", "))
+  text_sizes <- unlist(fromJSON(text_json)$texts)
+  names(text_sizes) <- stringi::stri_trans_nfc(names(text_sizes))
+  text_sizes[duplicated(names(text_sizes)) | duplicated(names(text_sizes), fromLast = TRUE)] <- NA_real_
+  sizes <- list(id = text_sizes)
+
+  snapshot <- file.path(dirname(patterns_dir), "metadata.tsv")
+  metadata_path <- if (file.exists(snapshot)) {
+    snapshot
+  } else if (!is.null(shiny_context$metadata_path)) {
+    resolve_analysis_path(shiny_context$metadata_path, dirname(patterns_dir))
+  } else {
+    if (!file.exists(analysis_info_path)) return(sizes)
+    configured <- fromJSON(analysis_info_path)$config$path_metadata
+    if (is.null(configured)) return(sizes)
+    resolve_analysis_path(configured, getwd())
+  }
+  if (!file.exists(metadata_path)) return(sizes)
+
+  metadata <- read.delim(
+    metadata_path,
+    colClasses = "character",
+    check.names = FALSE
+  )
+  id_col <- names(metadata)[1]
+  metadata[[id_col]] <- stringi::stri_trans_nfc(metadata[[id_col]])
+  metadata$size <- text_sizes[metadata[[id_col]]]
+  invalid <- !is.finite(metadata$size) | metadata$size <= 0 |
+    duplicated(metadata[[id_col]]) | duplicated(metadata[[id_col]], fromLast = TRUE)
+  metadata$size[invalid] <- NA_real_
+  for (col in setdiff(names(metadata), c("size", "id", id_col))) {
+    groups <- stringi::stri_trans_nfc(metadata[[col]])
+    sizes[[col]] <- tapply(metadata$size, groups, sum)
+  }
+  sizes[[id_col]] <- text_sizes
+  sizes
 }
-metadata_cols <- setdiff(names(metadata), "size")
-metadata_sizes <- lapply(metadata_cols, function(col) {
-  tapply(metadata$size, metadata[[col]], sum, na.rm = TRUE)
-})
-names(metadata_sizes) <- metadata_cols
+metadata_sizes <- read_metadata_sizes(patterns_dir)
 print("Metadata sizes:")
 print(metadata_sizes)
 
@@ -172,12 +213,6 @@ pattern_representations <- unique(ifelse(
 
 
 
-pattern_representation <- pattern_representations
-minsup_display <- minsup
-gapmin_display <- gapmin
-gapmax_display <- gapmax
-itemsetmin_display <- itemsetmin
-
 #--------------------------------------------------------------
 # HELPERS FOR CASCADING DROPDOWNS
 #--------------------------------------------------------------
@@ -187,7 +222,7 @@ get_candidates <- function(meta=NULL, rep=NULL, minsup=NULL, gapmin=NULL, gapmax
   cands <- normal_dataset_names
 
   if (!is.null(meta))
-    cands <- cands[startsWith(cands, paste0(meta, "_"))]
+    cands <- cands[normal_dataset_metadata[cands] == meta]
   if (!is.null(rep)) {
     if (grepl("motif", rep, ignore.case=TRUE))
       cands <- cands[grepl("motif", cands, ignore.case=TRUE)]
@@ -195,41 +230,67 @@ get_candidates <- function(meta=NULL, rep=NULL, minsup=NULL, gapmin=NULL, gapmax
       cands <- cands[endsWith(cands, paste0("_", rep))]
   }
   if (!is.null(minsup))
-    cands <- cands[grepl(paste0("_", minsup, "_[^_]+_[^_]+_[^_]+$"), cands, perl=TRUE)]
+    cands <- cands[sub(".*_([^_]+)_[^_]+_[^_]+_[^_]+$", "\\1", cands) == minsup]
   if (!is.null(gapmin))
-    cands <- cands[grepl(paste0("_[^_]+_", gapmin, "_[^_]+_[^_]+$"), cands, perl=TRUE)]
+    cands <- cands[sub(".*_[^_]+_([^_]+)_[^_]+_[^_]+$", "\\1", cands) == gapmin]
   if (!is.null(gapmax))
-    cands <- cands[grepl(paste0("_[^_]+_[^_]+_", gapmax, "_[^_]+$"), cands, perl=TRUE)]
+    cands <- cands[sub(".*_[^_]+_[^_]+_([^_]+)_[^_]+$", "\\1", cands) == gapmax]
   cands
 }
 
 
-get_specif_candidates <- function(meta=NULL) {
-  cands <- specif_dataset_names
-  if (!is.null(meta))
-    cands <- cands[startsWith(cands, paste0(meta, "_specifs_"))]
-  cands
+get_specif_candidates <- function(meta) {
+  specif_dataset_names[specif_metadata == meta]
 }
 
 format_specif_choices <- function(cands) {
-  if (length(cands) == 0) {
-    return(character(0))
-  }
-  labels <- sub("^([^_]+)_specifs_", "", cands)
-  names(cands) <- labels
-  cands
+  setNames(cands, sub("^.*_specifs_", "", cands))
 }
 
 format_specif_table_for_display <- function(df) {
   as.data.frame(lapply(df, function(col) {
     if (is.numeric(col)) {
-      out <- as.character(col)
+      out <- chartr(".", ",", as.character(col))
       out[is.infinite(col) & col > 0] <- "Inf"
       out[is.infinite(col) & col < 0] <- "-Inf"
       return(out)
     }
     col
   }), check.names = FALSE, row.names = rownames(df), stringsAsFactors = FALSE)
+}
+
+specif_datatable <- function(df) {
+  numeric_columns <- unname(which(vapply(df, is.numeric, logical(1))))
+  display <- format_specif_table_for_display(df)
+  column_defs <- list()
+  if (length(numeric_columns)) {
+    # Keep the original numbers for server-side sorting. Display strings preserve
+    # decimal commas and +/-Inf, which would otherwise become null in JSON.
+    ordering <- df[numeric_columns]
+    all_names <- make.unique(c(names(df), paste0("..specif_sort_", numeric_columns)))
+    names(ordering) <- tail(all_names, length(numeric_columns))
+    display <- cbind(display, ordering)
+    hidden_columns <- ncol(df) + seq_along(numeric_columns)
+    # DT column zero contains row names, so R's one-based positions match here.
+    column_defs <- lapply(seq_along(numeric_columns), function(i) {
+      list(targets = numeric_columns[i], orderData = hidden_columns[i])
+    })
+    column_defs[[length(column_defs) + 1L]] <- list(
+      targets = hidden_columns, visible = FALSE, searchable = FALSE
+    )
+  }
+  datatable(
+    display,
+    options = list(
+      pageLength = 15,
+      autoWidth = TRUE,
+      scrollX = TRUE,
+      language = list(decimal = ","),
+      columnDefs = column_defs
+    ),
+    filter = "top",
+    rownames = TRUE
+  )
 }
 
 
@@ -239,39 +300,63 @@ extract_gapmin    <- function(cands) unique(sub(".*_[^_]+_([^_]+)_[^_]+_[^_]+$",
 extract_gapmax    <- function(cands) unique(sub(".*_[^_]+_[^_]+_([^_]+)_[^_]+$", "\\1", cands))
 extract_itemsetmin <- function(cands) unique(sub(".*_[^_]+_[^_]+_[^_]+_([^_]+)$", "\\1", cands))
 
+# Initialize each dropdown from choices compatible with its predecessors.
+initial_candidates <- if (length(metadata_name)) get_candidates(meta = metadata_name[1]) else character(0)
+pattern_representation <- extract_reps(initial_candidates)
+initial_motifs <- initial_candidates[grepl("motif", initial_candidates, ignore.case = TRUE)]
+minsup_display <- extract_minsup(initial_motifs)
+gapmin_candidates <- if (length(minsup_display)) {
+  get_candidates(meta = metadata_name[1], rep = "motif", minsup = minsup_display[1])
+} else character(0)
+gapmin_display <- extract_gapmin(gapmin_candidates)
+gapmax_candidates <- if (length(gapmin_display)) {
+  get_candidates(meta = metadata_name[1], rep = "motif", minsup = minsup_display[1], gapmin = gapmin_display[1])
+} else character(0)
+gapmax_display <- extract_gapmax(gapmax_candidates)
+itemset_candidates <- if (length(gapmax_display)) {
+  get_candidates(meta = metadata_name[1], rep = "motif", minsup = minsup_display[1],
+                 gapmin = gapmin_display[1], gapmax = gapmax_display[1])
+} else character(0)
+itemsetmin_display <- extract_itemsetmin(itemset_candidates)
+
+# Scale the rendered label sizes so contribution-based sizing keeps its proportions.
+export_point_labels <- function(plot, percent) {
+  if (percent == 100) return(plot)
+  draw_labels <- function(self, data, ...) {
+    data$size <- data$size * percent / 100
+    ggplot2::ggproto_parent(ggplot2::Geom, self)$draw_layer(data, ...)
+  }
+  plot$layers <- lapply(plot$layers, function(layer) {
+    if (!inherits(layer$geom, c("GeomTextRepel", "GeomText"))) return(layer)
+    geom <- ggplot2::ggproto(NULL, layer$geom, draw_layer = draw_labels)
+    ggplot2::ggproto(NULL, layer, geom = geom)
+  })
+  plot
+}
+
 #--------------------------------------------------------------
 # SERVER
 #--------------------------------------------------------------
 server <- function(input, output, session){
 
-
-  output$has_specifs_available <- renderText({
-    if (has_specifs) "true" else "false"
-  })
-  outputOptions(output, "has_specifs_available", suspendWhenHidden = FALSE)
-
-
 # Deal with input selection
   input_selection <- reactive({
-    dataset_select <- req(input$dataset_select)           # selecting df all in one
-    df_select_concatenated <- req(df_select_concatenated(), cancelOutput = FALSE)   # selecting df by separate categories
-
-     if (input$input_sel_method == FALSE) {
-      df <- df_select_concatenated
-     } else { 
-      df <- dataset_select
-     }
-    path <- datasets[[df]]   # extract path
-    # Ensure it's a single string
-    if(!is.character(path) || length(path) != 1){
+    df <- if (isTRUE(input$input_sel_method)) {
+      req(input$dataset_select)
+    } else {
+      req(df_select_concatenated(), cancelOutput = FALSE)
+    }
+    req(df %in% normal_dataset_names)
+    path <- datasets[[df]]
+    if (!is.character(path) || length(path) != 1) {
       stop("Selected dataset is not a valid file path")
     }
-    path
+    df
   })
 
   # Load selected data
   data1 <- reactive({
-    path <- req(input_selection())
+    path <- datasets[[req(input_selection())]]
     data <- read.csv(path, sep="\t", row.names = 1, header=T, check.names = FALSE)
   })
 
@@ -290,14 +375,16 @@ server <- function(input, output, session){
     # Observation table from the contingency table: texts (or metadata values)
     # become the individuals (rows), motifs the variables (columns)
     obs <- as.data.frame(t(data), check.names = FALSE)
-    # Relative counts: divide each row by the size (nb of tokens) of its text
-    # or metadata value, taken from the metadata whose values match the row names
-    sizes <- Find(function(s) all(rownames(obs) %in% names(s)), metadata_sizes)
-    if (is.null(sizes)) {
-      warning("No text/metadata sizes match the rows: PCA uses absolute counts")
-      return(obs)
-    }
-    obs / sizes[rownames(obs)]
+    meta <- normal_dataset_metadata[[input_selection()]]
+    sizes <- metadata_sizes[[meta]]
+    shiny::validate(need(length(sizes) > 0, paste("ACP impossible : tailles indisponibles pour", meta)))
+    ids <- stringi::stri_trans_nfc(rownames(obs))
+    denominators <- as.numeric(sizes[ids])
+    invalid <- !is.finite(denominators) | denominators <= 0 |
+      duplicated(ids) | duplicated(ids, fromLast = TRUE)
+    shiny::validate(need(!any(invalid), paste("ACP impossible : taille absente, invalide ou identifiant ambigu pour",
+                                       paste(rownames(obs)[invalid], collapse = ", "))))
+    sweep(obs, 1L, denominators, "/")
   })
 
 
@@ -346,33 +433,25 @@ server <- function(input, output, session){
 
   specif_selection <- reactive({
     req(has_specifs)
-    req(input$specifs_metadata_select)
-    req(input$specifs_table_select)
-    path <- datasets[[input$specifs_table_select]]
-    if(!is.character(path) || length(path) != 1){
-      stop("Selected specif dataset is not a valid file path")
-    }
+    meta <- req(input$specifs_metadata_select)
+    selected <- req(input$specifs_table_select)
+    req(selected %in% get_specif_candidates(meta))
+    path <- datasets[[selected]]
+    shiny::validate(need(
+      is.character(path) && length(path) == 1L && file.exists(path),
+      "Le fichier de spécificités est introuvable."
+    ))
     path
   })
 
   specif_data <- reactive({
     path <- req(specif_selection())
-    df <- read.csv(path, sep="\t", row.names = 1, header = TRUE, check.names = FALSE)
-    format_specif_table_for_display(df)
+    read.delim(path, row.names = 1, quote = "", check.names = FALSE)
   })
 
   output$specifs_table <- renderDT({
     req(has_specifs)
-    datatable(
-      specif_data(),
-      options = list(
-        pageLength = 15,
-        autoWidth = TRUE,
-        scrollX = TRUE
-      ),
-      filter = "top",
-      rownames = TRUE
-    )
+    specif_datatable(specif_data())
   })
 
 
@@ -658,7 +737,8 @@ server <- function(input, output, session){
                                               ggtheme = ggplot2::theme_minimal())
 
       # Rows only: columns (variables) are drawn in the circle plot
-      add_factor_layers(pca_plot, points_data, input$plot_title_PCA, show_cols = FALSE)
+      add_factor_layers(pca_plot, points_data, input$plot_title_PCA, show_cols = FALSE) +
+        ggplot2::theme(legend.position = "bottom")
     })
 
     # Circle plot
@@ -753,18 +833,19 @@ server <- function(input, output, session){
         p <- p + guides(size = "none")
       }
 
-      p + labs(title = input$plot_title_PCA_circle)
+      p + labs(title = input$plot_title_PCA_circle) +
+        ggplot2::theme(legend.position = "bottom")
     })
     
     # Display it
     output$PCAplot <- renderPlot({
       p <- req(PCA__plot())
       p
-    }, res = 96)
+    }, res = 96, execOnResize = TRUE)
     output$PCAcircleplot <- renderPlot({
       p <- req(PCA_circle_plot())
       p
-    }, res = 96)
+    }, res = 96, execOnResize = TRUE)
 
   # ------------- CA ploting -------------
     # Store the plot as a reactive
@@ -803,7 +884,8 @@ server <- function(input, output, session){
         for (name in names(plots)) {
           file_name <- paste("CA_plots/", name, "_", timestamp, ".png", sep="")
           full_path <- file.path(patterns_dir, file_name)
-          ggsave(full_path, plot = plots[[name]], width = 12, height = 9, dpi = 300)
+          export_plot <- export_point_labels(plots[[name]], input$factor_export_label_pct)
+          ggsave(full_path, plot = export_plot, width = 12, height = 9, dpi = 300)
           showNotification(paste("Plot saved to:", full_path), type = "message")
         }
 
@@ -1171,7 +1253,8 @@ server <- function(input, output, session){
         #base_dir <- getwd()
         file_name <- paste("CA_plots/Cluster_by_points", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
         full_path <- file.path(patterns_dir, file_name)
-        ggsave(full_path, plot = plot_CA_clusters(), width = 12, height = 9, dpi = 300)
+        export_plot <- export_point_labels(plot_CA_clusters(), input$cluster_export_label_pct)
+        ggsave(full_path, plot = export_plot, width = 12, height = 9, dpi = 300)
         showNotification(paste("Plot saved to:", full_path), type = "message")
       }
     )
@@ -1193,42 +1276,53 @@ server <- function(input, output, session){
 
 # ------------- Cascading dropdown updates -------------
 
+  update_cascade_input <- function(id, choices) {
+    previous <- isolate(input[[id]])
+    selected <- if (length(previous) && previous %in% choices) previous else head(choices, 1)
+    updateSelectInput(session, id, choices = choices, selected = selected)
+  }
+
   observeEvent(input$dataset_select_metadata, {
-    cands <- get_candidates(meta=input$dataset_select_metadata)
-    reps <- extract_reps(cands)
-    updateSelectInput(session, "dataset_select_representation", choices=reps, selected=reps[1])
-  }, ignoreInit=TRUE)
+    cands <- get_candidates(meta = input$dataset_select_metadata)
+    update_cascade_input("dataset_select_representation", extract_reps(cands))
+  })
 
-  observeEvent(input$dataset_select_representation, {
-    meta <- input$dataset_select_metadata
-    rep  <- input$dataset_select_representation
-    if (grepl("motif", rep, ignore.case=TRUE)) {
-      vals <- extract_minsup(get_candidates(meta=meta, rep=rep))
-      updateSelectInput(session, "dataset_select_minsup", choices=vals, selected=vals[1])
-    }
-  }, ignoreInit=TRUE)
+  observeEvent(list(input$dataset_select_metadata, input$dataset_select_representation), {
+    rep <- req(input$dataset_select_representation)
+    if (!grepl("motif", rep, ignore.case = TRUE)) return()
+    cands <- get_candidates(meta = req(input$dataset_select_metadata), rep = rep)
+    update_cascade_input("dataset_select_minsup", extract_minsup(cands))
+  })
 
-  observeEvent(input$dataset_select_minsup, {
-    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, minsup=input$dataset_select_minsup)
-    vals <- extract_gapmin(cands)
-    updateSelectInput(session, "dataset_select_gapmin", choices=vals, selected=vals[1])
-  }, ignoreInit=TRUE)
+  observeEvent(list(input$dataset_select_metadata, input$dataset_select_representation,
+                    input$dataset_select_minsup), {
+    rep <- req(input$dataset_select_representation)
+    if (!grepl("motif", rep, ignore.case = TRUE)) return()
+    cands <- get_candidates(meta = req(input$dataset_select_metadata), rep = rep,
+                            minsup = req(input$dataset_select_minsup))
+    update_cascade_input("dataset_select_gapmin", extract_gapmin(cands))
+  })
 
-  observeEvent(input$dataset_select_gapmin, {
-    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin)
-    vals <- extract_gapmax(cands)
-    updateSelectInput(session, "dataset_select_gapmax", choices=vals, selected=vals[1])
-  }, ignoreInit=TRUE)
+  observeEvent(list(input$dataset_select_metadata, input$dataset_select_representation,
+                    input$dataset_select_minsup, input$dataset_select_gapmin), {
+    rep <- req(input$dataset_select_representation)
+    if (!grepl("motif", rep, ignore.case = TRUE)) return()
+    cands <- get_candidates(meta = req(input$dataset_select_metadata), rep = rep,
+                            minsup = req(input$dataset_select_minsup),
+                            gapmin = req(input$dataset_select_gapmin))
+    update_cascade_input("dataset_select_gapmax", extract_gapmax(cands))
+  })
 
-  observeEvent(input$dataset_select_gapmax, {
-    if (!grepl("motif", input$dataset_select_representation, ignore.case=TRUE)) return()
-    cands <- get_candidates(meta=input$dataset_select_metadata, rep=input$dataset_select_representation, minsup=input$dataset_select_minsup, gapmin=input$dataset_select_gapmin, gapmax=input$dataset_select_gapmax)
-    vals <- extract_itemsetmin(cands)
-    updateSelectInput(session, "dataset_select_itemsetmin", choices=vals, selected=vals[1])
-  }, ignoreInit=TRUE)
-
+  observeEvent(list(input$dataset_select_metadata, input$dataset_select_representation,
+                    input$dataset_select_minsup, input$dataset_select_gapmin, input$dataset_select_gapmax), {
+    rep <- req(input$dataset_select_representation)
+    if (!grepl("motif", rep, ignore.case = TRUE)) return()
+    cands <- get_candidates(meta = req(input$dataset_select_metadata), rep = rep,
+                            minsup = req(input$dataset_select_minsup),
+                            gapmin = req(input$dataset_select_gapmin),
+                            gapmax = req(input$dataset_select_gapmax))
+    update_cascade_input("dataset_select_itemsetmin", extract_itemsetmin(cands))
+  })
 
   observe({
     req(has_specifs)
@@ -1244,25 +1338,21 @@ df_select_concatenated <- reactive({
   representation_select <- req(input$dataset_select_representation)
 
   if (grepl("motif", representation_select, ignore.case = TRUE)) {
-    minsup_select        <- as.character(req(input$dataset_select_minsup))
-    gapmin_select        <- as.character(req(input$dataset_select_gapmin))
-    gapmax_select        <- as.character(req(input$dataset_select_gapmax))
-    itemsetmin_select    <- as.character(req(input$dataset_select_itemsetmin))
-
-    suffix <- paste(minsup_select, gapmin_select, gapmax_select, itemsetmin_select, sep = "_")
-
-
-    candidates <- normal_dataset_names
-
-    candidates <- candidates[startsWith(candidates, paste0(metadata_select, "_"))]
-    candidates <- candidates[grepl("motif", candidates, ignore.case = TRUE)]
-    candidates <- candidates[endsWith(candidates, suffix)]
-
+    candidates <- get_candidates(
+      meta = metadata_select, rep = representation_select,
+      minsup = as.character(req(input$dataset_select_minsup)),
+      gapmin = as.character(req(input$dataset_select_gapmin)),
+      gapmax = as.character(req(input$dataset_select_gapmax))
+    )
+    itemset <- as.character(req(input$dataset_select_itemsetmin))
+    candidates <- candidates[sub(".*_([^_]+)$", "\\1", candidates) == itemset]
+    req(length(candidates) > 0)
     df <- candidates[1]
   } else {
     df <- paste(metadata_select, representation_select, sep = "_")
   }
 
+  req(df %in% normal_dataset_names)
   df
 })
 
@@ -1284,6 +1374,19 @@ observe({
 ui <- page_navbar(
   tags$head(
     tags$style(HTML("
+      .pca-map[data-full-screen='true'] > .card-body {
+        overflow: auto;
+        overscroll-behavior: contain;
+      }
+      .pca-map[data-full-screen='true'] .shiny-plot-output {
+        min-width: 200vw;
+        min-height: 200vh;
+        cursor: grab;
+        user-select: none;
+      }
+      .pca-map[data-full-screen='true'] .shiny-plot-output:active {
+        cursor: grabbing;
+      }
       /* Make dropdown options wrap long words */
       .selectize-dropdown .option {
         white-space: normal !important;
@@ -1315,6 +1418,26 @@ ui <- page_navbar(
         width: 100%;
         word-break: break-all;
       }
+    ")),
+    tags$script(HTML("
+      document.addEventListener('pointerdown', function(event) {
+        if (event.pointerType !== 'mouse' || event.button !== 0) return;
+        const plot = event.target.closest('.pca-map[data-full-screen=true] .shiny-plot-output');
+        if (!plot) return;
+        const viewport = plot.closest('.card-body');
+        const startX = event.clientX, startY = event.clientY;
+        const left = viewport.scrollLeft, top = viewport.scrollTop;
+        function pan(move) {
+          viewport.scrollLeft = left + startX - move.clientX;
+          viewport.scrollTop = top + startY - move.clientY;
+        }
+        event.preventDefault();
+        plot.setPointerCapture(event.pointerId);
+        plot.addEventListener('pointermove', pan);
+        plot.addEventListener('lostpointercapture', function() {
+          plot.removeEventListener('pointermove', pan);
+        }, {once: true});
+      });
     "))
   ),
   useShinyjs(),
@@ -1512,6 +1635,8 @@ ui <- page_navbar(
               textInput("plot_title_PCA_circle", "Circle plot title:", value = "PCA - Variables")
             ),
 
+            sliderInput("factor_export_label_pct", "Point label size in export (%)",
+                        min = 100, max = 300, value = 100, step = 25),
             actionButton(
                   inputId = "save_CA_plot",
                   label = "Save plot",
@@ -1645,6 +1770,8 @@ ui <- page_navbar(
               textInput("plot_title_parang", "Plot title", value = ""),
               textInput("plot_xlab_parang", "X axis title:", value = "Dimension 1"),
               textInput("plot_ylab_parang", "Y axis title", value = "Dimension 2"),
+              sliderInput("cluster_export_label_pct", "Point label size in export (%)",
+                          min = 100, max = 300, value = 100, step = 25),
               actionButton(
                 inputId = "save_cluster_v_test_post",
                 label = "Save plot",
@@ -1653,19 +1780,17 @@ ui <- page_navbar(
                 style = "width: 100%;"
               )
           ),
-          conditionalPanel(
+          if (has_specifs) conditionalPanel(
             condition="input.tabselected == 'specifs'",
               selectInput(
                 inputId = "specifs_metadata_select",
                 label = "Métadonnée",
-                choices = metadata_name,
-                selected = metadata_name[1]
+                choices = specif_metadata_names
               ),
               selectInput(
                 inputId = "specifs_table_select",
                 label = "Table de spécificités",
-                choices = format_specif_choices(get_specif_candidates(metadata_name[1])),
-                selected = if (length(get_specif_candidates(metadata_name[1])) > 0) get_specif_candidates(metadata_name[1])[1] else character(0)
+                choices = format_specif_choices(get_specif_candidates(specif_metadata_names[1]))
               )
           ),
 
@@ -1684,8 +1809,10 @@ ui <- page_navbar(
             condition = "input.analysis_method == 'PCA'",
             layout_columns(
               col_widths = c(6, 6),
-              card(plotOutput("PCAplot", height = "700px")),
-              card(plotOutput("PCAcircleplot", height = "700px"))
+              card(class = "pca-map", full_screen = TRUE, height = "700px",
+                   plotOutput("PCAplot", height = "100%")),
+              card(class = "pca-map", full_screen = TRUE, height = "700px",
+                   plotOutput("PCAcircleplot", height = "100%"))
             )
           ),
           conditionalPanel(
@@ -1719,54 +1846,6 @@ ui <- page_navbar(
           "Clusters representatives",
           value = "parang_panel",
 
-          # card(
-            # plotOutput("CA_clusters_plot"),
-            # textOutput("cluster_error_msg_parang"),
-            # card_footer("Depending on data size, clusters' representatives computation may take some time.")
-          # )
-        # ),
-        # nav_panel(
-          # "Data",
-            # fluidRow(
-              # card(
-                # h4("Contingency table"),
-                # column(
-                  # width = 12,
-                  # tags$p(
-                    # style = "color: #6b7280; font-style: italic; margin-bottom: 10px;",
-                    # "Éléments étudiés : Motifs"
-                  # ),
-                  # DTOutput("data_table")
-                # ))
-            # )
-        # ),
-        # nav_panel(
-          # "Specifs",
-          # value = "specifs",
-          # conditionalPanel(
-            # condition = "output.has_specifs_available == 'true'",
-            # fluidRow(
-              # card(
-                # h4("Table de spécificités"),
-                # column(
-                  # width = 12,
-                  # tags$p(
-                    # style = "color: #6b7280; font-style: italic; margin-bottom: 10px;",
-                    # "Éléments étudiés : Motifs"
-                  # ),
-                  # DTOutput("specifs_table")
-                # )
-              # )
-            # )
-          # ),
-          # conditionalPanel(
-            # condition = "output.has_specifs_available == 'false'",
-            # card(
-              # p("Aucune table de spécificités disponible pour cette analyse.")
-            # )
-          # )
-        # ),
-
           # One tab per type of representative; the selected tab's value sets input$parang_paraORdist
           navset_card_tab(
             id = "parang_paraORdist",
@@ -1793,9 +1872,19 @@ ui <- page_navbar(
                   width = 12,
                   DTOutput("data_table")
                 ),
-              card_footer("Observations are given a rate relative to size of part (text, genre, etc.) for the PCA obs. table.")
+                card_footer("PCA observations are expressed relative to part size (text, genre, etc.) when sizes are available.")
+              )
             )
-        )),
+        ),
+        nav_panel(
+          "Specifs",
+          value = "specifs",
+          if (has_specifs) {
+            card(DTOutput("specifs_table"))
+          } else {
+            card(p("Aucune table de spécificités disponible pour cette analyse."))
+          }
+        ),
 
       # ),
 

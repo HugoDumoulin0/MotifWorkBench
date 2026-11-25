@@ -26,6 +26,7 @@ except ImportError:
 from gui.widgets.base_page import BasePage, TEXT_PRIMARY, ACCENT
 from gui.core.app_settings import load_app_settings, save_app_settings
 from gui.core.closed_patterns import load_closed_patterns_from_last_analysis
+from gui.core.analysis_paths import resolve_analysis_artifact
 
 import sys
 import os
@@ -822,10 +823,12 @@ class ConcordancerPage(BasePage):
                 return ""
             
             # Construire le chemin vers le registre CWB de cette analyse
-            registry_path = (
+            analysis_root = (
                 self._project_root / "Data" / "analyses"
-                / analysis_group_name / config_id / "cwb-corpus" / "registry"
+                / analysis_group_name / config_id
             )
+            corpus = resolve_analysis_artifact(analysis_root, "cwb", "cwb_corpus", analysis_root / "cwb-corpus")
+            registry_path = corpus / "registry"
             
             # Vérifier si le registre existe
             if registry_path.exists():
