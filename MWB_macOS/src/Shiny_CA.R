@@ -87,6 +87,14 @@ shiny_context <- if (file.exists(context_path)) fromJSON(context_path) else list
 ca_plots_dir <- file.path(patterns_dir, "CA_plots")
 dir.create(ca_plots_dir, recursive = TRUE, showWarnings = FALSE)
 
+# ---- Concordancer (CWB/CQP) ---- #
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+script_dir <- if (length(script_arg)) dirname(normalizePath(sub("^--file=", "", script_arg[1]))) else file.path(getwd(), "src")
+source(file.path(script_dir, "CQP_concordancer.r"), encoding = "UTF-8")
+cqp_bin <- cqp_find_binary(dirname(script_dir))
+cqp_registry <- cqp_registry_dir(analysis_root, shiny_context)
+cqp_metadata <- cqp_load_metadata(analysis_root, shiny_context)
+
 # The mapping and every analysis resource share the explicitly selected root.
 datasets <- fromJSON(json_input)
 datasets <- lapply(datasets, resolve_analysis_path, root = analysis_root)
@@ -338,6 +346,10 @@ export_point_labels <- function(plot, percent) {
 # SERVER
 #--------------------------------------------------------------
 server <- function(input, output, session){
+
+  # ------------- Concordancer tab -------------
+  concordancer <- cqp_concordancer_server("conc", cqp_registry, cqp_bin, metadata = cqp_metadata,
+                                          analysis_root = analysis_root, project_root = dirname(script_dir))
 
   # ------------- Export resolution (shared by all "Save plot" buttons) -------------
   # Default sizes per tab (inches) - used when "Default" is selected, and to prefill "Custom"
@@ -1969,6 +1981,11 @@ ui <- page_navbar(
           } else {
             card(p("Aucune table de spécificités disponible pour cette analyse."))
           }
+        ),
+        nav_panel(
+          "Concordances",
+          value = "concordances",
+          card(cqp_concordancer_ui("conc", cqp_registry, cqp_bin))
         ),
 
       # ),

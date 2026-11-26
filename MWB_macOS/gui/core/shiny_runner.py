@@ -368,8 +368,11 @@ def is_shiny_running(host: str = "127.0.0.1", port: int = 3838) -> bool:
 
 def _launch_context(json_path: Path, root: Path, host: str, port: int) -> tuple:
     digest = hashlib.sha256(json_path.read_bytes())
+    # The viewer's own R code is part of the context, so that editing it restarts Shiny
+    src = project_root() / "src"
     for path in (root / "shiny_context.json", root / "analysis_info.json", root / "metadata.tsv",
-                 root / "Patterns_results" / "text_sizes.json"):
+                 root / "Patterns_results" / "text_sizes.json",
+                 src / "Shiny_CA.R", src / "CQP_concordancer.r"):
         if path.is_file():
             digest.update(path.read_bytes())
     context = _read_json(root / "shiny_context.json")
