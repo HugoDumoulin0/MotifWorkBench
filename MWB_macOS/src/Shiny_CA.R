@@ -118,13 +118,36 @@ missing_metadata <- is.na(normal_dataset_metadata)
 normal_dataset_metadata[missing_metadata] <- sub("_.*", "", normal_dataset_names[missing_metadata])
 metadata_name <- unique(normal_dataset_metadata)
 
+read_analysis_metadata <- function(patterns_dir) {
+  analysis_info_path <- file.path(dirname(patterns_dir), "analysis_info.json")
+  snapshot <- file.path(dirname(patterns_dir), "metadata.tsv")
+  metadata_path <- if (file.exists(snapshot)) {
+    snapshot
+  } else if (!is.null(shiny_context$metadata_path)) {
+    resolve_analysis_path(shiny_context$metadata_path, dirname(patterns_dir))
+  } else {
+    if (!file.exists(analysis_info_path)) return(NULL)
+    configured <- fromJSON(analysis_info_path)$config$path_metadata
+    if (is.null(configured)) return(NULL)
+    resolve_analysis_path(configured, getwd())
+  }
+  if (!file.exists(metadata_path)) return(NULL)
+
+  metadata <- read.delim(
+    metadata_path,
+    colClasses = "character",
+    check.names = FALSE
+  )
+  metadata[] <- lapply(metadata, stringi::stri_trans_nfc)
+  metadata
+}
+
 # Build size (nb of tokens) of each value of each metadata column, summing the
 # sizes of its texts, e.g. metadata_sizes$genre["news"]. Every column of the
 # metadata file is covered (whatever was selected in python), id included:
 # metadata_sizes$id gives the size of each text
-read_metadata_sizes <- function(patterns_dir) {
+read_metadata_sizes <- function(patterns_dir, metadata) {
   text_json <- file.path(patterns_dir, "text_sizes.json")
-  analysis_info_path <- file.path(dirname(patterns_dir), "analysis_info.json")
   # Older analyses can have CA and specificity tables without PCA sizes.
   if (!file.exists(text_json)) {
     return(list())
@@ -135,38 +158,20 @@ read_metadata_sizes <- function(patterns_dir) {
   text_sizes[duplicated(names(text_sizes)) | duplicated(names(text_sizes), fromLast = TRUE)] <- NA_real_
   sizes <- list(id = text_sizes)
 
-  snapshot <- file.path(dirname(patterns_dir), "metadata.tsv")
-  metadata_path <- if (file.exists(snapshot)) {
-    snapshot
-  } else if (!is.null(shiny_context$metadata_path)) {
-    resolve_analysis_path(shiny_context$metadata_path, dirname(patterns_dir))
-  } else {
-    if (!file.exists(analysis_info_path)) return(sizes)
-    configured <- fromJSON(analysis_info_path)$config$path_metadata
-    if (is.null(configured)) return(sizes)
-    resolve_analysis_path(configured, getwd())
-  }
-  if (!file.exists(metadata_path)) return(sizes)
-
-  metadata <- read.delim(
-    metadata_path,
-    colClasses = "character",
-    check.names = FALSE
-  )
+  if (is.null(metadata)) return(sizes)
   id_col <- names(metadata)[1]
-  metadata[[id_col]] <- stringi::stri_trans_nfc(metadata[[id_col]])
   metadata$size <- text_sizes[metadata[[id_col]]]
   invalid <- !is.finite(metadata$size) | metadata$size <= 0 |
     duplicated(metadata[[id_col]]) | duplicated(metadata[[id_col]], fromLast = TRUE)
   metadata$size[invalid] <- NA_real_
   for (col in setdiff(names(metadata), c("size", "id", id_col))) {
-    groups <- stringi::stri_trans_nfc(metadata[[col]])
-    sizes[[col]] <- tapply(metadata$size, groups, sum)
+    sizes[[col]] <- tapply(metadata$size, metadata[[col]], sum)
   }
   sizes[[id_col]] <- text_sizes
   sizes
 }
-metadata_sizes <- read_metadata_sizes(patterns_dir)
+analysis_metadata <- read_analysis_metadata(patterns_dir)
+metadata_sizes <- read_metadata_sizes(patterns_dir, analysis_metadata)
 print("Metadata sizes:")
 print(metadata_sizes)
 
@@ -756,6 +761,87 @@ server <- function(input, output, session){
     FactoMineR::PCA(data, graph = FALSE, ncp = 2, scale.unit=TRUE)
   })
 
+  # Each active point (text or aggregate) must belong to exactly one level.
+  supplementary_groups <- reactive({
+    req(isTRUE(input$show_supplementary))
+    meta <- normal_dataset_metadata[[req(input_selection())]]
+    id_col <- names(analysis_metadata)[1]
+    key <- if (meta == "id") id_col else meta
+    if (is.null(analysis_metadata) || !key %in% names(analysis_metadata)) return(list())
+
+    ids <- stringi::stri_trans_nfc(rownames(req(data_PCA())))
+    index <- match(analysis_metadata[[key]], ids)
+    active <- !is.na(index)
+    candidates <- setdiff(names(analysis_metadata), c(key, id_col, "id"))
+    groups <- list()
+    for (name in candidates) {
+      pairs <- unique(data.frame(index = index[active], level = analysis_metadata[[name]][active]))
+      if (anyDuplicated(pairs$index)) next
+      values <- pairs$level[match(seq_along(ids), pairs$index)]
+      if (anyNA(values) || any(!nzchar(trimws(values)))) next
+      group <- factor(values)
+      if (nlevels(group) > 1L && nlevels(group) < length(ids)) {
+        groups[[name]] <- group
+      }
+    }
+    groups
+  })
+
+  output$supplementary_selector <- renderUI({
+    choices <- names(supplementary_groups())
+    if (!length(choices)) return(helpText("No metadata can group these active individuals."))
+    selected <- isolate(input$supplementary_variable)
+    selectInput("supplementary_variable", "Supplementary metadata", choices,
+                selected = if (length(selected) && selected %in% choices) selected else choices[1])
+  })
+
+  # Keep the two-axis PCA used by the maps and HCPC. Retrieve the remaining
+  # scores only when a supplementary variable is requested, once per dataset.
+  all_axis_scores <- reactive({
+    scores <- res_pca()$ind$coord
+    data <- data_PCA()
+    n_axes <- min(nrow(data) - 1L, ncol(data))
+    if (n_axes > ncol(scores)) {
+      full <- FactoMineR::PCA(data, graph = FALSE, ncp = n_axes)$ind$coord
+      full[, seq_len(ncol(scores))] <- scores
+      return(full)
+    }
+    scores
+  })
+
+  supplementary_stats <- reactive({
+    if (!isTRUE(input$show_supplementary) || is.null(input$supplementary_variable)) return(NULL)
+    group <- supplementary_groups()[[input$supplementary_variable]]
+    if (is.null(group)) return(NULL)
+    scores <- all_axis_scores()
+    counts <- as.numeric(table(group))
+    centers <- rowsum(scores, group) / counts
+    means <- colMeans(scores)
+    between <- colSums(counts * sweep(centers, 2L, means)^2)
+    total <- colSums(sweep(scores, 2L, means)^2)
+    # Numerically null axes carry no inertia and have no defined eta squared.
+    valid <- sqrt(total) > max(sqrt(total)) * max(dim(data_PCA())) * .Machine$double.eps
+    eta2 <- rep(NA_real_, ncol(scores))
+    eta2[valid] <- pmin(1, between[valid] / total[valid])
+    list(centers = data.frame(x = centers[, 1], y = centers[, 2], level = rownames(centers)),
+         eta2 = eta2)
+  })
+
+  output$supplementary_eta <- renderDT({
+    stats <- req(supplementary_stats())
+    table <- data.frame(Axis = seq_along(stats$eta2), `η²` = stats$eta2, check.names = FALSE)
+    caption <- paste("η² by PCA axis —", input$supplementary_variable)
+    if (anyNA(stats$eta2)) caption <- paste0(caption, ". Blank values indicate axes with zero inertia.")
+    DT::formatRound(DT::datatable(table, rownames = FALSE, caption = caption,
+      options = list(dom = "tp", pageLength = 10)), "η²", digits = 4)
+  })
+
+  output$has_supplementary_eta <- renderText({
+    if (isTRUE(input$show_supplementary) &&
+        isTRUE(input$supplementary_variable %in% names(supplementary_groups()))) "yes" else "no"
+  })
+  outputOptions(output, "has_supplementary_eta", suspendWhenHidden = FALSE)
+
   # ------------- Prepare data for PCA ploting -------------
   # Rows are the PCA individuals, columns the PCA variables, so the same
   # Rows/Columns settings apply as for CA
@@ -807,7 +893,16 @@ server <- function(input, output, session){
                                               ggtheme = ggplot2::theme_minimal())
 
       # Rows only: columns (variables) are drawn in the circle plot
-      add_factor_layers(pca_plot, points_data, input$plot_title_PCA, show_cols = FALSE) +
+      pca_plot <- add_factor_layers(pca_plot, points_data, input$plot_title_PCA, show_cols = FALSE)
+      stats <- supplementary_stats()
+      if (!is.null(stats)) {
+        pca_plot <- pca_plot +
+          geom_point(data = stats$centers, aes(x, y), inherit.aes = FALSE,
+                     shape = 8, colour = "#762A83", size = 4, stroke = 1.2) +
+          ggrepel::geom_text_repel(data = stats$centers, aes(x, y, label = level),
+                     inherit.aes = FALSE, colour = "#762A83", force = input$jitter_strength)
+      }
+      pca_plot +
         ggplot2::theme(legend.position = "bottom")
     })
 
@@ -1705,6 +1800,8 @@ ui <- page_navbar(
               textInput("plot_title_CA", "Plot Title:", value = "CA - Biplot")
             ),
             conditionalPanel(condition = "input.analysis_method == 'PCA'",
+              checkboxInput("show_supplementary", "Show supplementary variable", value = FALSE),
+              conditionalPanel("input.show_supplementary", uiOutput("supplementary_selector")),
               textInput("plot_title_PCA", "Individuals plot title:", value = "PCA - Individuals"),
               textInput("plot_title_PCA_circle", "Circle plot title:", value = "PCA - Variables")
             ),
@@ -1906,8 +2003,16 @@ ui <- page_navbar(
             condition = "input.analysis_method == 'PCA'",
             layout_columns(
               col_widths = c(6, 6),
-              card(class = "pca-map", full_screen = TRUE, height = "700px",
-                   plotOutput("PCAplot", height = "100%")),
+              div(
+                card(class = "pca-map", full_screen = TRUE, height = "700px",
+                     plotOutput("PCAplot", height = "100%")),
+                conditionalPanel("input.show_supplementary && output.has_supplementary_eta === 'yes'",
+                  class = "mt-2",
+                  accordion(open = FALSE,
+                    accordion_panel("η² by PCA axis", DTOutput("supplementary_eta"))
+                  )
+                )
+              ),
               card(class = "pca-map", full_screen = TRUE, height = "700px",
                    plotOutput("PCAcircleplot", height = "100%"))
             )
