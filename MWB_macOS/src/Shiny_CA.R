@@ -339,6 +339,63 @@ export_point_labels <- function(plot, percent) {
 #--------------------------------------------------------------
 server <- function(input, output, session){
 
+  # ------------- Export resolution (shared by all "Save plot" buttons) -------------
+  # Default sizes per tab (inches) - used when "Default" is selected, and to prefill "Custom"
+  export_defaults <- function(tab = input$tabselected) {
+    if (isTRUE(tab %in% c("scree", "contrib"))) c(width = 8, height = 6) else c(width = 12, height = 9)
+  }
+  export_unit_to_in <- function(units, dpi) {
+    switch(units, `in` = 1, cm = 1 / 2.54, mm = 1 / 25.4, px = 1 / dpi)
+  }
+  # Returns list(width, height, units, dpi) for ggsave()/png(), or NULL (with a notification) if invalid
+  export_dims <- function(default_w, default_h, default_dpi = 300) {
+    if (!identical(input$export_mode, "custom")) {
+      return(list(width = default_w, height = default_h, units = "in", dpi = default_dpi))
+    }
+    w <- input$export_width; h <- input$export_height; dpi <- input$export_dpi; units <- input$export_units
+    if (!isTruthy(w) || !isTruthy(h) || w <= 0 || h <= 0) {
+      showNotification("Export: width and height must be positive numbers.", type = "error"); return(NULL)
+    }
+    if (!isTruthy(dpi) || dpi < 72 || dpi > 1200) {
+      showNotification("Export: DPI must be between 72 and 1200.", type = "error"); return(NULL)
+    }
+    k <- export_unit_to_in(units, dpi)
+    if (w * k * dpi * h * k * dpi > 1e8) {
+      showNotification("Export: image too large (over 100 megapixels). Reduce size or DPI.", type = "error"); return(NULL)
+    }
+    list(width = w, height = h, units = units, dpi = dpi)
+  }
+  # Prefill custom fields with the current tab's defaults when switching to "Custom"
+  observeEvent(input$export_mode, {
+    if (identical(input$export_mode, "custom")) {
+      d <- export_defaults()
+      k <- export_unit_to_in(input$export_units, input$export_dpi)
+      updateNumericInput(session, "export_width",  value = round(d[["width"]]  / k, 2))
+      updateNumericInput(session, "export_height", value = round(d[["height"]] / k, 2))
+    }
+  }, ignoreInit = TRUE)
+  # Convert width/height when units change, so the physical size is kept
+  export_prev_units <- reactiveVal("in")
+  observeEvent(input$export_units, {
+    old <- export_prev_units(); new <- input$export_units
+    if (!identical(old, new) && isTruthy(input$export_dpi)) {
+      f <- export_unit_to_in(old, input$export_dpi) / export_unit_to_in(new, input$export_dpi)
+      if (isTruthy(input$export_width))  updateNumericInput(session, "export_width",  value = round(input$export_width  * f, 2))
+      if (isTruthy(input$export_height)) updateNumericInput(session, "export_height", value = round(input$export_height * f, 2))
+    }
+    export_prev_units(new)
+  }, ignoreInit = TRUE)
+  output$export_px_info <- renderText({
+    if (identical(input$export_mode, "custom")) {
+      w <- input$export_width; h <- input$export_height; dpi <- input$export_dpi; units <- input$export_units
+      req(isTruthy(w), isTruthy(h), isTruthy(dpi))
+    } else {
+      d <- export_defaults(); w <- d[["width"]]; h <- d[["height"]]; dpi <- 300; units <- "in"
+    }
+    k <- export_unit_to_in(units, dpi)
+    sprintf("Output: %d \u00d7 %d px", round(w * k * dpi), round(h * k * dpi))
+  })
+
 # Deal with input selection
   input_selection <- reactive({
     df <- if (isTRUE(input$input_sel_method)) {
@@ -496,7 +553,8 @@ server <- function(input, output, session){
       #base_dir <- getwd()
       file_name <- paste("CA_plots/ScreePlot_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
       full_path <- file.path(patterns_dir, file_name)
-      ggsave(full_path, plot = scree_plot(), width = 8, height = 6, dpi = 300)
+      d <- req(export_dims(8, 6))
+      ggsave(full_path, plot = scree_plot(), width = d$width, height = d$height, units = d$units, dpi = d$dpi)
       showNotification(paste("Plot saved to:", full_path), type = "message")
     }
   )
@@ -881,11 +939,12 @@ server <- function(input, output, session){
         }
         #base_dir <- getwd()
         timestamp <- format(Sys.time(), "%Y-%m-%d_%H-%M-%S")
+        d <- req(export_dims(12, 9))
         for (name in names(plots)) {
           file_name <- paste("CA_plots/", name, "_", timestamp, ".png", sep="")
           full_path <- file.path(patterns_dir, file_name)
-          export_plot <- export_point_labels(plots[[name]], input$factor_export_label_pct)
-          ggsave(full_path, plot = export_plot, width = 12, height = 9, dpi = 300)
+          export_plot <- export_point_labels(plots[[name]], if (identical(input$export_mode, "custom")) input$factor_export_label_pct else 100)
+          ggsave(full_path, plot = export_plot, width = d$width, height = d$height, units = d$units, dpi = d$dpi)
           showNotification(paste("Plot saved to:", full_path), type = "message")
         }
 
@@ -959,7 +1018,8 @@ server <- function(input, output, session){
       #base_dir <- getwd()
       file_name <- paste("CA_plots/Contrib_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
       full_path <- file.path(patterns_dir, file_name)
-      ggsave(full_path, plot = contrib_plot(), width = 8, height = 6, dpi = 300)
+      d <- req(export_dims(8, 6))
+      ggsave(full_path, plot = contrib_plot(), width = d$width, height = d$height, units = d$units, dpi = d$dpi)
       showNotification(paste("Plot saved to:", full_path), type = "message")
     }
   )
@@ -1033,7 +1093,8 @@ server <- function(input, output, session){
     if (!dir.exists(full_dir)) dir.create(full_dir, recursive = TRUE)
     full_path <- file.path(full_dir, paste0("Clusters_", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png"))
 
-    png(full_path, width = 12, height = 9, units="in", res=300)
+    d <- req(export_dims(12, 9))
+    png(full_path, width = d$width, height = d$height, units = d$units, res = d$dpi)
     plot.HCPC(hclust, choice = type, ind.names = ind_name)
     dev.off()
 
@@ -1253,8 +1314,9 @@ server <- function(input, output, session){
         #base_dir <- getwd()
         file_name <- paste("CA_plots/Cluster_by_points", format(Sys.time(), "%Y-%m-%d_%H-%M-%S"), ".png", sep="")
         full_path <- file.path(patterns_dir, file_name)
-        export_plot <- export_point_labels(plot_CA_clusters(), input$cluster_export_label_pct)
-        ggsave(full_path, plot = export_plot, width = 12, height = 9, dpi = 300)
+        export_plot <- export_point_labels(plot_CA_clusters(), if (identical(input$export_mode, "custom")) input$cluster_export_label_pct else 100)
+        d <- req(export_dims(12, 9))
+        ggsave(full_path, plot = export_plot, width = d$width, height = d$height, units = d$units, dpi = d$dpi)
         showNotification(paste("Plot saved to:", full_path), type = "message")
       }
     )
@@ -1635,8 +1697,6 @@ ui <- page_navbar(
               textInput("plot_title_PCA_circle", "Circle plot title:", value = "PCA - Variables")
             ),
 
-            sliderInput("factor_export_label_pct", "Point label size in export (%)",
-                        min = 100, max = 300, value = 100, step = 25),
             actionButton(
                   inputId = "save_CA_plot",
                   label = "Save plot",
@@ -1770,14 +1830,39 @@ ui <- page_navbar(
               textInput("plot_title_parang", "Plot title", value = ""),
               textInput("plot_xlab_parang", "X axis title:", value = "Dimension 1"),
               textInput("plot_ylab_parang", "Y axis title", value = "Dimension 2"),
-              sliderInput("cluster_export_label_pct", "Point label size in export (%)",
-                          min = 100, max = 300, value = 100, step = 25),
               actionButton(
                 inputId = "save_cluster_v_test_post",
                 label = "Save plot",
                 icon = icon("download"), # FontAwesome icon before text, as in downloadButton
                 class = "btn-primary", # Optional: Bootstrap color styling
                 style = "width: 100%;"
+              )
+          ),
+          conditionalPanel(
+            condition = "['PCA-CA', 'scree', 'contrib', 'clustering', 'parang_panel'].indexOf(input.tabselected) > -1",
+              hr(),
+              radioButtons("export_mode", "Export resolution",
+                           choices = c("Default" = "default", "Custom" = "custom"),
+                           selected = "default", inline = TRUE),
+              conditionalPanel(
+                condition = "input.export_mode == 'custom'",
+                fluidRow(
+                  column(6, numericInput("export_width",  "Width",  value = 12, min = 0.1, step = 0.5)),
+                  column(6, numericInput("export_height", "Height", value = 9,  min = 0.1, step = 0.5))
+                ),
+                fluidRow(
+                  column(6, selectInput("export_units", "Units", choices = c("in", "cm", "mm", "px"), selected = "in")),
+                  column(6, numericInput("export_dpi", "DPI", value = 300, min = 72, max = 1200, step = 50))
+                )
+              ),
+              helpText(textOutput("export_px_info", inline = TRUE)),
+              conditionalPanel(condition = "input.export_mode == 'custom' && input.tabselected == 'PCA-CA'",
+                sliderInput("factor_export_label_pct", "Point label size in export (%)",
+                            min = 100, max = 300, value = 100, step = 25)
+              ),
+              conditionalPanel(condition = "input.export_mode == 'custom' && input.tabselected == 'parang_panel'",
+                sliderInput("cluster_export_label_pct", "Point label size in export (%)",
+                            min = 100, max = 300, value = 100, step = 25)
               )
           ),
           if (has_specifs) conditionalPanel(
