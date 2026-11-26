@@ -23,6 +23,11 @@ import pickle
 import formate_patterns
 
 
+def is_word_row(line):
+    """Only integer CoNLL-U IDs represent words in the CQP token stream."""
+    return line.partition("\t")[0].isdigit()
+
+
 def save_dict(dict, lexiques_dir="Data/Lexiques"):
     """
     input : dict(mot:int)
@@ -58,7 +63,7 @@ def instancier_dict(rep="1_data/0_tagged_annotated_corpus/", lexiques_dir="Data/
             conll_f = conll_in.read()
             conll = [el for el in conll_f.split("\n") if el != '']
             for line in conll:
-                if not line.startswith('#'):
+                if is_word_row(line):
                     tokens = line.split("\t")[1:]
                     form = 'form_"{}"'.format(tokens[0])
                     lemma = 'lemma_"{}"'.format(tokens[1])
@@ -129,7 +134,7 @@ def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats, dmt4_dir="Data
                 conll = [el for el in conll.read().split("\n") if el != '']
                 # print(conll.readlines())
                 for token in conll:
-                    if not token.startswith("#"):
+                    if is_word_row(token):
                         seg_token_parsed = token.split("\t")
                         # print(seg_token_parsed)
                         nbr_token = seg_token_parsed[0]
@@ -206,6 +211,8 @@ def corpus_form_dict(rep, type_texte):
         with open(os.path.join(rep,file_conll), "r+", encoding="utf-8", errors='ignore') as conll :
             conll = [el for el in conll.read().split("\n") if el != '']
             for token in conll:
+                if not is_word_row(token):
+                    continue
                 seg_token_parsed = token.split("\t")
                 nbr_token = seg_token_parsed[0]
                 if nbr_token == "1":

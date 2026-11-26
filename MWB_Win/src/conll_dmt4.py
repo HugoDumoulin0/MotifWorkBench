@@ -23,20 +23,22 @@ import pickle
 import formate_patterns
 
 
-def save_dict(dict, lexiques_dir=""):
+def is_word_row(line):
+    """Only integer CoNLL-U IDs represent words in the CQP token stream."""
+    return line.partition("\t")[0].isdigit()
+
+
+def save_dict(dict, lexiques_dir="Data/Lexiques"):
     """
     input : dict(mot:int)
             ex : {'foulard': 3692, 'simple': 3693, 'intégral': 3694}
     do : save dict local in pickle format and txt format
     ouput : bool (ok|ko)
     """
-    if not lexiques_dir:
-        raise ValueError("lexiques_dir est requis pour save_dict().")
     if not os.path.exists(lexiques_dir):
         os.makedirs(lexiques_dir, exist_ok=True)
     try:
-        with open(f"{lexiques_dir}/dico_str_to_int_all_items.pk", "wb") as handle:
-            pickle.dump(dict, handle)
+        pickle.dump(dict, open(f"{lexiques_dir}/dico_str_to_int_all_items.pk", "wb"))
         df = pd.DataFrame.from_dict(dict, orient="index")
         df.to_csv(f"{lexiques_dir}/dico_str_to_int_all_items.tsv", sep="\t", encoding="utf-8")
         return df
@@ -44,19 +46,14 @@ def save_dict(dict, lexiques_dir=""):
         return False
 
 
-def instancier_dict(rep="", lexiques_dir=""):
+def instancier_dict(rep="1_data/0_tagged_annotated_corpus/", lexiques_dir="Data/Lexiques"):
     """
     input: dir where are all the parsed files
     do : 1. make a dict ex : {'foulard': 3692, 'simple': 3693, 'intégral': 3694}
          2. save dict local in pickle format and txt format
-            ex : <lexiques_dir>/dico_str_to_int_all_items.pk
+            ex : data/Lexiques/dico_str_to_int_all_items.p
     ouput : bool (ok|ko)
     """
-    if not rep:
-        raise ValueError("rep est requis pour instancier_dict().")
-    if not lexiques_dir:
-        raise ValueError("lexiques_dir est requis pour instancier_dict().")
-
     dico_str_to_int = dict()
     i = 1
     for file_conll in os.listdir(rep):
@@ -66,7 +63,7 @@ def instancier_dict(rep="", lexiques_dir=""):
             conll_f = conll_in.read()
             conll = [el for el in conll_f.split("\n") if el != '']
             for line in conll:
-                if not line.startswith('#'):
+                if is_word_row(line):
                     tokens = line.split("\t")[1:]
                     form = 'form_"{}"'.format(tokens[0])
                     lemma = 'lemma_"{}"'.format(tokens[1])
@@ -90,8 +87,7 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
     input : dmt file
     ouput : dmt file sorted
     """
-    with open(DMT4_file, "r", encoding="utf-8") as handle:
-        DMT4_file_opened = handle.read()
+    DMT4_file_opened = open(DMT4_file).read()
     liste_sequences = [el for el in re.split("seqId [0-9]+\n", DMT4_file_opened) if el != ""]
     liste_itemsets = [sequence.split("\n") for sequence in liste_sequences]
     with open('{}_sorted.txt'.format(DMT4_file[:-4]), "w+", encoding="utf-8") as file_out :
@@ -117,22 +113,16 @@ def sort_itemset_in_sequence_DMT4_file(DMT4_file):
     return "{} : Sorted".format(DMT4_file[:-4])
 
 
-def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats, dmt4_dir="", lexiques_dir=""):
+def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats, dmt4_dir="Data/DMT4_files", lexiques_dir="Data/Lexiques"):
     """
     input : 1. nbr d'items par itemset,
                 ex : 4
             2. repertoire ou sont les fichiers parses format conll
-                ex : "<rep>/"
+                ex : "1_data/0_tagged_annotated_corpus/"
     do : transforme les fichiers conll en fichiers dmt4 avec le lexic tranforme en entiers
     output : bool (ok|ko)
     """
-    if not dmt4_dir:
-        raise ValueError("dmt4_dir est requis pour transform_data().")
-    if not lexiques_dir:
-        raise ValueError("lexiques_dir est requis pour transform_data().")
-
-    with open(f"{lexiques_dir}/dico_str_to_int_all_items.pk","rb") as handle:
-        dict_lexic = pickle.load(handle)
+    dict_lexic = pickle.load(open(f"{lexiques_dir}/dico_str_to_int_all_items.pk","rb"))
     index_seq = 1
     # print(os.listdir(rep))
     for i, file_conll in enumerate(os.listdir(rep)):
@@ -144,7 +134,7 @@ def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats, dmt4_dir="", l
                 conll = [el for el in conll.read().split("\n") if el != '']
                 # print(conll.readlines())
                 for token in conll:
-                    if not token.startswith("#"):
+                    if is_word_row(token):
                         seg_token_parsed = token.split("\t")
                         # print(seg_token_parsed)
                         nbr_token = seg_token_parsed[0]
@@ -191,15 +181,12 @@ def transform_data(rep, type_texte, Form, Lemma, Pos, Dep, Feats, dmt4_dir="", l
     return True
 
 
-def sort_dmtfiles(rep_dmtfiles=""):
+def sort_dmtfiles(rep_dmtfiles="Data/DMT4_files/"):
     """
     input : repertoire ou se trouvent les fichiers dmtfiles
     do : trie les items dans l'ordre croissant
     ouput : bool (ok|ko)
     """
-    if not rep_dmtfiles:
-        raise ValueError("rep_dmtfiles est requis pour sort_dmtfiles().")
-
     for file in os.listdir(rep_dmtfiles):
         # print(f'listdir(rep_dmtfiles) : {file}')
         if file[0]==".":continue
@@ -224,6 +211,8 @@ def corpus_form_dict(rep, type_texte):
         with open(os.path.join(rep,file_conll), "r+", encoding="utf-8", errors='ignore') as conll :
             conll = [el for el in conll.read().split("\n") if el != '']
             for token in conll:
+                if not is_word_row(token):
+                    continue
                 seg_token_parsed = token.split("\t")
                 nbr_token = seg_token_parsed[0]
                 if nbr_token == "1":
@@ -237,17 +226,13 @@ def corpus_form_dict(rep, type_texte):
                 dict_out[index_seq] = " ".join(list_form)
     return dict_out
 
-def make_DMT4_file(type_texte, dmt4_dir=""):
+def make_DMT4_file(type_texte, dmt4_dir="Data/DMT4_files"):
     """
     input:
     ouput:
     do:
     """
-    if not dmt4_dir:
-        raise ValueError("dmt4_dir est requis pour make_DMT4_file().")
-
-    with open(f"{dmt4_dir}/DMT4_{type_texte}_files_sorted.txt", "r", encoding="utf-8") as handle:
-        dmt4_txt = re.split(r'seqId [0-9]*', handle.read())
+    dmt4_txt =  re.split(r'seqId [0-9]*', open(f"{dmt4_dir}/DMT4_{type_texte}_files_sorted.txt").read())
     dict_dmt4 = dict()
     for i, seq in enumerate(dmt4_txt):
         if seq == "": continue
@@ -262,8 +247,4 @@ def make_DMT4_file(type_texte, dmt4_dir=""):
     formate_patterns.dump_pk(dict_dmt4, f"{dmt4_dir}/DMT4_{type_texte}_dict_sorted.pk")
     return dict_dmt4
 
-    if not rep_dmtfiles:
-        raise ValueError("rep_dmtfiles est requis pour sort_dmtfiles().")
 
-    if not dmt4_dir:
-        raise ValueError("dmt4_dir est requis pour make_DMT4_file().")
